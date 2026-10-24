@@ -365,17 +365,27 @@
   function meter(id,ratio,baselineText,quality){
     const level=ratio<70?"Very low":ratio<90?"Low":ratio<=110?"Working baseline":ratio<=140?"High":"Very high";
     const position=clamp((ratio-40)/160*100,0,100);
-    const q=quality==="documented"?"Wartime return":
+    const q=quality==="documented"?"Original wartime return":
       quality==="adjusted"?"Counterfactual adjustment to wartime return":
       quality==="derived"?"Derived from wartime return":
       quality==="constrained"?"Constrained by annual data":"Working estimate / scenario";
+    const hasAnchor=["documented","adjusted","derived","constrained"].includes(quality);
+    const stretch=hasAnchor?(ratio<65||ratio>145):(ratio<50||ratio>165);
+    const near=hasAnchor?(ratio>=90&&ratio<=110):(ratio>=80&&ratio<=120);
+    const grade=stretch?"Highly speculative":near?"Close to working assumption":"Plausible sensitivity only";
+    const gradeClass=stretch?"meter-warning":near?"meter-near":"meter-stretch";
     const html='<div class="model-meter"><div class="meter-caption">'+
       '<strong>'+level+'</strong> relative to this period. '+baselineText+
       '</div><div class="meter-scale"><i></i><i></i><i></i><i></i><i></i></div>'+
       '<div style="height:10px;position:relative"><span style="position:absolute;left:calc('+position+
       '% - 5px);top:-6px;color:#f2e6bd;font-size:17px">▲</span></div>'+
       '<div class="meter-labels"><span>Very low</span><span>Low</span><span>Normal / working estimate</span><span>High</span><span>Very high</span></div>'+
-      '<div class="evidence-line">Evidence: <b>'+q+'</b></div></div>';
+      '<div class="evidence-line">Historical input basis (does not change when moving the slider): <b>'+q+'</b></div>'+
+      '<div class="meter-grade '+gradeClass+'"><strong>Current slider assessment: '+grade+'.</strong> '+
+      (stretch?'Far outside the local anchor range; test as an extreme counterfactual, not as a historical estimate.':
+      near?'Near the selected modeling baseline; this is not proof the baseline was historically correct.':
+      'Changes the modeled outcome. Specific independent historical validation is not available for this multiplier.')+
+      '</div></div>';
     $(id+"-meter").innerHTML=html;
   }
   function controls(){
@@ -538,8 +548,8 @@
       "Showing "+D.label(start)+"–"+D.label(end)+
       ". This line reconstructs the <strong>serviceable single-engine fighter aircraft</strong> series, not all Luftwaffe aircraft and not the number of pilots. Original period aircraft strength may not correspond to the same reporting category at every anchor.";
     const numbers=[
-      ["Fighters ready · selected start",fmt(first.aircraft),"source "+first.aq],
-      ["Fighters ready · selected end",fmt(last.aircraft),"source "+last.aq],
+      ["Fighters ready · selected start",fmt(first.aircraft),first.aq==="documented"?"RAF AHB VII/107 source return":first.aq+" / not directly observed"],
+      ["Fighters ready · selected end",fmt(last.aircraft),last.aq==="documented"?"RAF AHB VII/107 source return":last.aq+" / not directly observed"],
       ["1944 single-engine acceptances",fmt(D.acceptances44.reduce((a,b)=>a+b,0)),"official USAAF wartime history"],
       ["1944 fighter write-offs","≈8,500","USAAF estimate; year total, not per month"]
     ];
@@ -554,7 +564,7 @@
     const elem=$("production-chart").nextElementSibling;
     if(elem&&!elem.querySelector(".model-key"))elem.insertAdjacentHTML("afterend",labels);
     $("equipment-ledger").innerHTML=rows.map(r=>'<tr><td>'+r.month+'</td>'+
-      '<td>'+fmt(r.aircraft)+'</td><td><span class="source-tag '+(r.aq==="documented"?"":"estimate-tag")+'">'+r.aq+'</span></td>'+
+      '<td>'+fmt(r.aircraft)+'</td><td><span title="'+(r.aq==="documented"?"Original German Quartermaster RAF VII/107 source checkpoint":r.aq==="interpolated"?"Between source checkpoints, not an exact return":"Explicit non-source model assumption")+'" class="source-tag '+(r.aq==="documented"?"":"estimate-tag")+'">'+(r.aq==="documented"?"SOURCE — serviceable":r.aq==="interpolated"?"INTERPOLATED":"MODEL")+'</span></td>'+
       '<td>'+(r.accepted===null?"—":fmt(r.accepted))+'</td>'+
       '<td class="small">'+(r.productionDefinition||"—")+'</td>'+ 
       '<td>'+(r.writtenOff===null?"—":fmt(r.writtenOff))+'</td>'+

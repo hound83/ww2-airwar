@@ -32,14 +32,27 @@
     [1944,7,2600,"model"],[1944,11,3000,"model"],[1945,0,2800,"model"],
     [1945,3,2200,"model"],[1945,4,1700,"model"]
   ].map(p=>({i:idx(p[0],p[1]),value:p[2],quality:p[3]}));
+  // SERVICEABLE aircraft, not fighters on strength and not deployed pilots.
+  // Source: original German returns, RAF AHB translation VII/107 (1951).
+  // Dates within each month are documented individually in atlas-v6-data.js.
+  // The simulations need a continuous monthly curve; intermediate months are
+  // explicitly interpolated, and May 1945 remains a SCENARIO, not a return.
   const aircraftPoints = [
     [1936,6,150,"model"],[1937,0,230,"model"],[1938,0,400,"model"],
-    [1939,8,788,"reference"],[1940,2,817,"documented"],[1940,7,787,"reference"],
-    [1941,5,898,"reference"],[1942,6,945,"reference"],
-    [1943,4,980,"reference"],[1943,7,1019,"documented"],
-    [1943,8,1080,"documented"],[1943,9,1193,"documented"],[1943,10,1140,"documented"],
-    [1943,11,1095,"documented"],[1944,4,1063,"reference"],
-    [1945,0,1469,"reference"],[1945,3,1305,"reference"],[1945,4,800,"model"]
+    [1938,7,453,"documented"],[1939,7,686,"documented"],[1939,8,676,"documented"],
+    [1940,2,817,"documented"],[1940,7,853,"documented"],[1940,8,721,"documented"],
+    [1941,5,1110,"documented"],[1941,11,670,"documented"],
+    [1942,5,926,"documented"],[1942,11,908,"documented"],
+    [1943,3,1040,"documented"],[1943,4,1255,"documented"],
+    [1943,5,1361,"documented"],[1943,7,1019,"documented"],
+    [1943,11,1095,"documented"],[1944,2,1188,"documented"],
+    [1944,3,1114,"documented"],[1944,4,1111,"documented"],
+    [1944,5,895,"documented"],[1944,6,1193,"documented"],
+    [1944,7,1043,"documented"],[1944,8,1413,"documented"],
+    [1944,9,2487,"documented"],
+    [1944,10,2256,"documented"],[1944,11,1521,"documented"],
+    [1945,0,1610,"documented"],[1945,3,1648,"documented"],
+    [1945,4,800,"model"]
   ].map(p=>({i:idx(p[0],p[1]),value:p[2],quality:p[3]}));
   const tempoPoints = [
     [1936,6,0],[1939,8,11],[1940,6,21],[1940,11,14],

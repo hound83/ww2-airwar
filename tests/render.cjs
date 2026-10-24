@@ -17,7 +17,7 @@ function node(id='',classes=[]){
 const all=new Map(),ensure=id=>all.get(id)||((all.set(id,node(id))),all.get(id));
 const oldRoot=node('main',['layout']);oldRoot.children=[node('controls',['controls']),node('timeline',['timeline-panel']),node('old-section',['panel'])];
 const timeline=oldRoot.children[1];
-const nav=['pilot','equipment','balance','fleet','pilothistory','losses','comparison','sources','about'].map(tab=>{
+const nav=['pilot','equipment','balance','fleet','pilothistory','losses','comparison','campaigns','sources','about'].map(tab=>{
   const el=node('nav-'+tab);el.dataset.v4Tab=tab;return el;
 });
 const selectors={
@@ -32,7 +32,7 @@ const document={
   querySelectorAll:selector=>selector==='[data-v4-tab]'?nav:[]
 };
 const ctx=vm.createContext({document,window:{},console,setTimeout(){},clearTimeout(){}});
-for(const filename of ['model-v3-data.js','model-v4-data.js'])
+for(const filename of ['model-v3-data.js','model-v4-data.js','atlas-v6-data.js'])
   vm.runInContext(fs.readFileSync(path.join(root,filename),'utf8'),ctx,{filename});
 ctx.window.LuftLabQA={inspect:()=>({start:78,end:89})};
 vm.runInContext(fs.readFileSync(path.join(root,'model-v4.js'),'utf8'),ctx,{filename:'model-v4.js'});
@@ -43,6 +43,7 @@ for(const [tab,text] of [
   ['pilothistory','The pilots behind the aircraft'],
   ['losses','What was lost, where, and to whom?'],
   ['comparison','How airpower was supplied and employed'],
+  ['campaigns','From the Condor Legion to VE Day'],
   ['sources','Audit the numbers'],
   ['about','Why this atlas exists'],
   ['pilot','The experienced core']
@@ -75,4 +76,15 @@ ensure('v5-ops-theater').listeners.change({target:{value:'MTO'}});
 assert.ok(ensure('v4-body').innerHTML.includes('16,344'));
 assert.ok(ensure('v4-body').innerHTML.includes('6,232'));
 assert.ok(!ensure('v4-body').innerHTML.includes('DEBATE CHECK'));
-console.log('PASS: all nine navigation paths, historical pilot series, neutral industry view and annual loss/claim panels');
+nav.find(n=>n.dataset.v4Tab==='fleet').click();
+assert.ok(ensure('v4-body').innerHTML.includes('German Quartermaster returns'));
+assert.ok(ensure('v4-body').innerHTML.includes('serviceable'));
+nav.find(n=>n.dataset.v4Tab==='losses').click();
+assert.ok(ensure('v4-body').innerHTML.includes('Eighth Fighter Command'));
+assert.ok(ensure('v4-body').innerHTML.includes('890'));
+nav.find(n=>n.dataset.v4Tab==='sources').click();
+assert.ok(ensure('v4-body').innerHTML.includes('Wikipedia bibliography cross-check'));
+assert.ok(ensure('v4-body').innerHTML.includes('Chapter 22'));
+assert.ok(ensure('v4-body').innerHTML.includes('RAF AHB VII/107'));
+assert.ok(selectors.footer.textContent.includes('v6.0'));
+console.log('PASS: all ten navigation paths, RAF German original returns, RAF/USAAF claims, historical archive and new source browser');

@@ -38,6 +38,7 @@
     const d=s.detail?.(r);
     if(d?.quality){
       evidence={recorded:'Recorded source point',documented:'Recorded source point',
+        'recorded-secondary':'Recorded / compiled from wartime records',
         'estimated-high':'Nearby-point interpolation · higher confidence',
         'estimated-low':'Estimate · lower confidence',unavailable:'Unavailable',
         interpolated:'Interpolation',reference:'Sourced snapshot',derived:'Derived from source' }[d.quality]||d.quality;
@@ -51,7 +52,7 @@
     return {name:s.name||names[id]?.[j]||'Series '+(j+1),amount,evidence,color:s.color};
   }
   function dimensions(el,id){
-    const newer=id.startsWith('v4-')||id.startsWith('v5-');
+    const newer=id.startsWith('v4-')||id.startsWith('v5-')||id.startsWith('v6-');
     const vb=el.viewBox?.baseVal;
     const w=vb?.width|| (newer?980:600);
     return {w,l:newer?62:52,r:newer?24:18,y1:newer?18:12,y2:newer?216:226};

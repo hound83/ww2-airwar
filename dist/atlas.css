@@ -184,3 +184,26 @@ svg circle[fill="#8bdd9e"]{fill:#9cbd9d}svg circle[fill="#fa7b81"]{fill:#c78073}
 .atlas-tooltip-foot{font-size:10px;color:#aeb9a9;display:block;border-top:1px solid #48574b;margin-top:9px;padding-top:8px}
 svg.graph:focus-visible,svg.v4-plot:focus-visible{outline:2px solid #d3c291;outline-offset:3px}
 @media(max-width:760px){.atlas-tooltip{width:min(286px,calc(100% - 16px));padding:10px}.v4-navrow{gap:6px}}
+
+/* v6 additions follow the existing field-grey/olive visual identity. */
+.v6-campaign-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.v6-campaign-card{background:#2e3b33;border:1px solid #596954;border-left:3px solid #a2b08c;border-radius:10px;padding:15px;min-width:0}
+.v6-campaign-card small{color:#d3c497;letter-spacing:.015em;font-weight:750;font-size:11px}
+.v6-campaign-card h3{font-size:15px;line-height:1.35;margin:9px 0;color:#f0efe4}
+.v6-campaign-card p{font-size:12px;line-height:1.65;color:#d0d4c3}
+.v6-campaign-card .tiny{font-size:10px}
+.v6-linkgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.v6-linkgrid a{display:block;border:1px solid #596956;background:#2d3c33;border-radius:8px;padding:11px 12px;font-size:12px;color:#e4e5d0;text-decoration:none;line-height:1.45}
+.v6-linkgrid a:hover,.v6-linkgrid a:focus-visible{border-color:#b5c395;background:#3b4b3d}
+.v6-linkgrid small{display:block;color:#aeb7a5;font-size:10px;margin-top:5px}
+.v6-search{margin-bottom:15px;border:1px solid #596954;border-radius:9px;padding:13px;background:#2b3730}
+.v6-search label{display:block;font-size:12px;color:#d5dcc8;font-weight:650;margin-bottom:8px}
+.v6-search input{width:min(100%,640px);font:inherit;background:#1d2823;color:#e5e7d8;border:1px solid #7b8670;border-radius:8px;padding:9px 11px;outline-offset:3px}
+.v4-sourcecard[hidden]{display:none!important}
+.meter-grade{font-size:11px;line-height:1.6;border-radius:7px;padding:8px 10px;margin-top:9px;border-left:3px solid #869d79;color:#e0e7d4;background:#304536}
+.meter-grade strong{display:inline}
+.meter-grade.meter-stretch{border-color:#d0b37e;background:#444032;color:#f0e3c8}
+.meter-grade.meter-warning{border-color:#cc877e;background:#4b3632;color:#f6d6c8}
+.meter-grade.meter-near{border-color:#94bb8e}
+@media(max-width:1150px){.v6-campaign-grid,.v6-linkgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.v6-campaign-grid,.v6-linkgrid{grid-template-columns:1fr}}
