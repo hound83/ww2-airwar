@@ -9,9 +9,9 @@ const D=ctx.window.LuftData,X=ctx.window.AirWarV6Data,QA=ctx.window.AirWarV6QA;
 assert.equal(QA.version,'6.0');
 assert.equal(QA.returnCount(),27);
 assert.equal(QA.chapterCount(),22);
-assert.equal(QA.wikiCount(),23);
-assert.ok(QA.bibliographyCount()>=18);
-assert.ok(QA.sourceCount()>=13);
+assert.equal(QA.wikiCount(),24);
+assert.ok(QA.bibliographyCount()>=34);
+assert.ok(QA.sourceCount()>=16);
 for(const [k,p] of X.germanFighterReadiness.entries()){
   assert.equal(p.quality,'recorded');
   assert.equal(p.source,'ahb107');
