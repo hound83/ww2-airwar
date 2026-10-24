@@ -1,9 +1,13 @@
-/* European Air War Atlas v7.1 — dated German aircraft-loss transcriptions. */
+/* European Air War Atlas v7.2 — visually audited dated German loss returns. */
 (function(){
   'use strict';
-  const D=window.LuftData,V=window.LuftV4Data,X=window.AirWarV6Data,Y=window.AirWarV7Data,Z=window.AirWarV71Data,QA=window.LuftLabQA;
-  if(!D||!V||!X||!Y||!Z||!QA)throw Error('Load the historical datasets and original simulator before the Air War Atlas.');
-  Object.assign(V.SOURCES,X.sourceIndex,Y.sourceIndex,Z.sourceIndex);
+  const D=window.LuftData,V=window.LuftV4Data,X=window.AirWarV6Data,Y=window.AirWarV7Data,
+    Z71=window.AirWarV71Data,U=window.AirWarV72Data,QA=window.LuftLabQA;
+  if(!D||!V||!X||!Y||!Z71||!U||!QA)throw Error('Load the historical datasets, scanned return transcriptions and original simulator before the Air War Atlas.');
+  const Z={...Z71,monthlyReturns:[...Z71.monthlyReturns,...U.monthlyReturns].sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater)),
+    qualityNotes:{...Z71.qualityNotes,...U.qualityNotes},
+    get(i,theater){return this.monthlyReturns.find(p=>p.i===i&&p.theater===theater)||null;}};
+  Object.assign(V.SOURCES,X.sourceIndex,Y.sourceIndex,Z.sourceIndex,U.sourceIndex);
   const $=id=>document.getElementById(id);
   const fmt=(n,d=0)=>n==null||!Number.isFinite(n)?'—':Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
   const pct=(n,d=1)=>n==null?'—':fmt(n,d)+'%';
@@ -31,7 +35,7 @@
   const tl=document.querySelector('.timeline-panel');
   const navRoot=document.createElement('div');navRoot.id='v4-navigation';
   navRoot.innerHTML='<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span>'+ 
-    '<span class="tiny">Version 7.1 · Original German loss returns · audited month totals</span></div>'+ 
+    '<span class="tiny">Version 7.2 · 30 verified German monthly loss returns · 12 original reports</span></div>'+ 
     '<div class="v4-navrow">'+nav.map(([id,title])=>'<button type="button" class="v4-nav" data-v4-tab="'+id+'">'+title+'</button>').join('')+'</div>';
   tl.insertBefore(navRoot,tl.firstChild);
   const toolbar=document.createElement('div');toolbar.id='v4-tools';toolbar.className='v4-tools';
@@ -46,7 +50,7 @@
   document.querySelector('h1').innerHTML='European Air War <span>Atlas</span>';
   document.querySelector('.kicker').textContent='Source-led aviation history · interactive research laboratory';
   document.querySelector('.lead').textContent='From the Condor Legion to VE Day: inspect pilot attrition, inventories, production, loss returns, credited claims and Allied airpower. Original wartime figures, interpolation and hypothetical scenarios remain distinct.';
-  document.querySelector('footer').textContent='European Air War Atlas v7.1 · July 1936–8 May 1945 · Original German monthly airframe totals, provisional aircraft-type transcription and transparent gaps · Browser-only website.';
+  document.querySelector('footer').textContent='European Air War Atlas v7.2 · July 1936–8 May 1945 · 30 original German command-month aircraft loss returns, provisional June type rows and visible gaps · Browser-only website.';
   // Update an obsolete legacy v3 narrative. Monthly Murray rates through May
   // 1944 have now been transcribed; months beyond that remain scenario inputs.
   for(const tile of document.querySelectorAll('.info-card')){
@@ -270,6 +274,33 @@
     if(weighted.length)weighted[0].value+=difference;
     return {gross,eligible:Math.round(eligible),weighted};
   }
+  function originalCoverageMatrix(range,theaters,metric){
+    const selected=new Set(range),years=[...new Set(range.map(i=>1936+Math.floor((i+6)/12)))];
+    const shortMonths=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const available=range.reduce((n,i)=>n+theaters.filter(t=>Z.get(i,t)).length,0);
+    const cells=range.length*theaters.length;
+    const recordMonth=(year,month)=>D.idx(year,month);
+    const matrix=years.map(year=>{
+      const head='<div class="v72-matrix-year">'+year+'</div><div class="v72-matrix-months">'+shortMonths.map(m=>'<span>'+m+'</span>').join('')+'</div>';
+      const rows=theaters.map(theater=>'<div class="v72-matrix-label">'+(theater==='Reich'?'Reich':'West')+'</div>'+ 
+        '<div class="v72-matrix-months v72-matrix-values">'+shortMonths.map((monthName,month)=>{
+          const i=recordMonth(year,month),inRange=i>=0&&i<D.MONTHS&&selected.has(i);
+          if(!inRange)return '<span class="v72-matrix-outside" title="Outside the selected interval">·</span>';
+          const record=Z.get(i,theater);
+          if(!record)return '<span class="v72-matrix-empty" title="'+monthName+' '+year+' · '+safe(theater)+' · No verified original monthly return imported; not zero">—</span>';
+          const source=V.SOURCES[record.sourceId];
+          const info=monthName+' '+year+' · '+theater+' · '+fmt(record[metric])+' '+metric+
+            ' · '+fmt(record.destroyed)+' total destroyed / '+fmt(record.damaged)+' damaged. '+
+            (source?.short||'Original German return')+(record.page?' · scan p'+record.page:'')+'. Click to inspect.';
+          return '<button type="button" class="v72-matrix-recorded'+(ui.focus===i?' is-selected':'')+'" data-v72-month="'+i+'" title="'+safe(info)+'" aria-label="'+safe(info)+'">'+fmt(record[metric])+'</button>';
+        }).join('')+'</div>').join('');
+      return '<div class="v72-matrix-group">'+head+rows+'</div>';
+    }).join('');
+    return '<div class="v72-matrix-wrap"><div class="v72-matrix-summary"><strong>Where original counts exist · '+available+'/'+cells+' command-month cells</strong>'+ 
+      '<span><i class="v72-swatch-observed"></i> Recorded number <i class="v72-swatch-absent"></i> — unverified (not zero)</span></div>'+ 
+      '<p class="tiny">Each number is the selected loss category for that reporting command and month. Hover for all-category totals and the archival page; click an observed month to inspect it. A blank/dash means <strong>we have not verified a compatible total</strong>, not that aircraft losses were zero.</p>'+ 
+      '<div class="v72-matrix">'+matrix+'</div></div>';
+  }
   function renderOriginalLossReturns(){
     const {a,b,range}=months();
     const theaters=ui.v71Theater==='Both'?['Reich','Western Front']:[ui.v71Theater];
@@ -277,32 +308,38 @@
     const metric=ui.v71Metric;
     const metricLabels={destroyed:'Aircraft destroyed · all causes',enemyDestroyed:'Destroyed by enemy action',
       otherOperationalDestroyed:'Operational losses · not enemy action',nonOperationalDestroyed:'Non-operational write-offs',
-      damaged:'Aircraft damaged · all causes'};
+      damaged:'Aircraft damaged · all causes',enemyDamaged:'Damaged by enemy action',
+      otherOperationalDamaged:'Operational damage · not enemy action',nonOperationalDamaged:'Non-operational damage',
+      missing:'Missing aircraft · included in enemy destroyed'};
     const palette={'Reich':'#a9b58b','Western Front':'#d6ae75'};
     const controls='<div class="v4-subcontrols">'+
       '<div><label for="v71-theater">Original German reporting command</label><select id="v71-theater">'+
-      [['Both','Both commands'],['Reich','Luftflotte Reich'],['Western Front','Luftflotte 3 · Western Front']].map(([key,label])=>
+      [['Both','Both commands'],['Reich','Luftflotte Reich'],['Western Front','Luftflotte 3 / LW Kommando West']].map(([key,label])=>
         '<option value="'+key+'"'+(ui.v71Theater===key?' selected':'')+'>'+label+'</option>').join('')+'</select></div>'+ 
       '<div><label for="v71-metric">Original loss category</label><select id="v71-metric">'+
       Object.entries(metricLabels).map(([key,label])=>'<option value="'+key+'"'+(metric===key?' selected':'')+'>'+label+'</option>').join('')+'</select></div></div>';
     const totalSeries=theaters.map(theater=>({name:theater+' · '+metricLabels[metric],color:palette[theater],
       value:r=>Z.get(r.i,theater)?.[metric]??null}));
-    const observed=Z.get(ui.focus,ui.v71Theater==='Both'?'Reich':ui.v71Theater);
-    const cards=observed&&ui.v71Theater!=='Both'?'<div class="v4-statgrid">'+
-      card(fmt(observed.destroyed),'All-cause aircraft write-offs',observed.month+' · '+observed.theater+' · '+tag('recorded'),'var(--gold)')+
-      card(fmt(observed.enemyDestroyed),'Destroyed by enemy action','Includes missing aircraft already; not an extra category','var(--red)')+
-      card(fmt(observed.damaged),'Aircraft damaged · all causes','Damage is NOT another destroyed aircraft','var(--teal)')+'</div>':'';
+    const observed=theaters.map(t=>Z.get(ui.focus,t)).filter(Boolean);
+    const cards=observed.length?'<div class="v4-statgrid">'+observed.flatMap(r=>[
+      card(fmt(r.destroyed),r.theater+' · all-cause destroyed',r.month+' · '+tag('recorded'),'var(--gold)'),
+      card(fmt(r.damaged),r.theater+' · all-cause damaged',r.month+' · damage is not another write-off','var(--teal)')
+    ]).join('')+'</div>':'';
     const sourceTable=records.length?table(['Source month','German command','Enemy destroyed / damaged',
-      'Other operational destroyed / damaged','Non-operational destroyed / damaged','All destroyed / damaged','Evidence'],records.map(p=>[
+      'Other operational destroyed / damaged','Non-operational destroyed / damaged','All destroyed / damaged','Missing¹','Evidence'],records.map(p=>[
         p.month,safe(p.theater),fmt(p.enemyDestroyed)+' / '+fmt(p.enemyDamaged),
         fmt(p.otherOperationalDestroyed)+' / '+fmt(p.otherOperationalDamaged),
         fmt(p.nonOperationalDestroyed)+' / '+fmt(p.nonOperationalDamaged),
-        '<strong>'+fmt(p.destroyed)+' / '+fmt(p.damaged)+'</strong>',tag('recorded','Read from printed MONTH’S TOTAL, not inferred')+' '+cite(p.sourceId)
-      ])):'<div class="v7-empty-chart"><strong>No imported original monthly total in this date window</strong><p>Coverage is currently May–June 1944 for these two German commands. Unavailable months and other theaters are not zero. Select a matching date range to view original source counts.</p></div>';
+        '<strong>'+fmt(p.destroyed)+' / '+fmt(p.damaged)+'</strong>',fmt(p.missing),
+        tag('recorded','Read from printed MONTH’S TOTAL, not inferred')+' '+cite(p.sourceId)+(p.page?' · PDF p'+p.page:'')
+      ])):'<div class="v7-empty-chart"><strong>No original monthly total imported in this selected period</strong><p>These original command totals are verified for September 1943–November 1944. Earlier, later and other-theater observations remain unverified, not zero. Choose an overlapping period to view the original numbers.</p></div>';
     const primary=section('Original German aircraft loss returns · monthly totals',
-      'Directly read from RAF Air Historical Branch translations of wartime German tables. These are <strong>aircraft destroyed or damaged</strong>, not Allied victory claims or pilot casualties. Four month-end all-type figures are verified; other dates remain explicitly missing.',
-      controls+cards+chart('v71-original-monthly',range.map(i=>({i,label:D.label(i)})),totalSeries)+sourceTable+
-      '<p class="tiny">'+safe(Z.qualityNotes.month)+' '+safe(Z.qualityNotes.definitions)+' '+safe(Z.qualityNotes.discrepancy)+'</p>');
+      'Thirty month-end all-aircraft command totals, independently checked against original German loss-return images preserved by the RAF Air Historical Branch. These are <strong>destroyed / damaged aircraft</strong>, not Allied claims or pilot casualties. Original counts are shown only where verified.',
+      controls+cards+chart('v71-original-monthly',range.map(i=>({i,label:D.label(i)})),totalSeries)+
+      originalCoverageMatrix(range,theaters,metric)+sourceTable+
+      '<p class="tiny">¹ Missing aircraft were already classified among enemy-action destroyed; do not add them again. '+
+      safe(Z.qualityNotes.month)+' '+safe(Z.qualityNotes.definitions)+' '+safe(Z.qualityNotes.corrected)+' '+
+      safe(Z.qualityNotes.boundary)+' '+safe(Z.qualityNotes.discrepancy)+'</p>');
     const types=Z.juneByType.filter(x=>x.i>=a&&x.i<=b&&theaters.includes(x.theater));
     const typeRows=types.map(p=>[safe(p.theater),safe(p.type),fmt(p.enemyDestroyed),fmt(p.otherOperationalDestroyed),
       fmt(p.nonOperationalDestroyed),'<strong>'+fmt(p.destroyed)+'</strong>',fmt(p.damaged),
@@ -321,7 +358,7 @@
     const imported=Z.monthlyReturns.filter(x=>V.SOURCES[x.sourceId]?.url===report.url);
     if(!imported.length)return tag('unavailable','Original report located, cells not yet imported')+' Archive located; numbers awaiting transcription';
     const hasTypes=Z.juneByType.some(x=>V.SOURCES[x.sourceId]?.url===report.url);
-    return tag('recorded','Original month-end all-aircraft totals checked')+' All-type totals imported'+
+    return tag('recorded','Original month-end all-aircraft totals checked against scan images')+' '+imported.length+' month-end total'+(imported.length!==1?'s':'')+' imported'+
       (hasTypes?' · '+tag('provisional')+' June Bf 109 / Fw 190 source-line draft':' · model-by-model entries pending');
   }
   function renderLosses(){
@@ -364,7 +401,7 @@
         records.length?table(['Period','Front','Average inventory','Operational / combat losses','Total all-cause losses','Total vs inventory*'],tableRows)+
           '<p class="tiny">*Quarterly losses divided by average strength. Not the per-sortie loss probability; aircraft may turn over multiple times during a quarter. </p>':
           '<p class="small">No compatible dated loss block overlaps this interval. Earlier RAF/German returns remain linked under Research & sources.</p>')+
-      section('Captured German aircraft-loss register: what survives, and when','The RAF Air Historical Branch preserved <strong>20 identified original German returns</strong>. Four printed month-end all-aircraft totals from four reports are imported in 7.1; June Bf 109 / Fw 190 breakdowns remain preliminary. Other original tables are cataloged, not silently populated.',
+      section('Captured German aircraft-loss register: what survives, and when','The RAF Air Historical Branch preserved <strong>20 identified original German returns</strong>. Version 7.2 includes <strong>30 manually checked month-end totals from 12 original volumes</strong>, covering two German reporting commands. June Bf 109 / Fw 190 source-line breakdowns remain preliminary; other original tables are cataloged and explicitly untranscribed.',
         '<div class="v7-archive-controls"><label for="v7-archive-theater">Filter original reports by theater</label><select id="v7-archive-theater">'+
         ['All','All fronts','Reich','Western Front','Eastern Front','Mediterranean','Norway'].map(t=>'<option value="'+t+'"'+(ui.archiveTheater===t?' selected':'')+'>'+t+'</option>').join('')+'</select></div>'+ 
         (Y.lossCatalog.filter(p=>p.start<=months().b&&p.end>=months().a&&(ui.archiveTheater==='All'||ui.archiveTheater===p.theater)).length?
@@ -689,14 +726,24 @@
       'RAF_Spitfire_selected','RAF_Hurricane_selected','German_SE_fighter_stock_allfront','German_SE_fighter_serviceable_allfront','German_SE_fighter_stock_quality',
       'German_pilots_modeled','German_fighter_writeoffs','German_writeoff_quality','Bf109_estimated','Fw190_estimated',
       'Reich_all_aircraft_destroyed_PRIMARY','Reich_all_aircraft_damaged_PRIMARY',
+      'Reich_enemy_destroyed_PRIMARY','Reich_enemy_damaged_PRIMARY',
+      'Reich_other_operational_destroyed_PRIMARY','Reich_other_operational_damaged_PRIMARY',
+      'Reich_nonoperational_destroyed_PRIMARY','Reich_nonoperational_damaged_PRIMARY',
+      'Reich_missing_subset_enemy_destroyed_PRIMARY','Reich_primary_source_id',
       'Western_all_aircraft_destroyed_PRIMARY','Western_all_aircraft_damaged_PRIMARY',
+      'Western_enemy_destroyed_PRIMARY','Western_enemy_damaged_PRIMARY',
+      'Western_other_operational_destroyed_PRIMARY','Western_other_operational_damaged_PRIMARY',
+      'Western_nonoperational_destroyed_PRIMARY','Western_nonoperational_damaged_PRIMARY',
+      'Western_missing_subset_enemy_destroyed_PRIMARY','Western_primary_source_id',
       'Reich_Bf109_destroyed_PROVISIONAL','Reich_Fw190_destroyed_PROVISIONAL',
       'Western_Bf109_destroyed_PROVISIONAL','Western_Fw190_destroyed_PROVISIONAL'];
+    const sourceColumns=(record)=>record?[record.destroyed,record.damaged,record.enemyDestroyed,record.enemyDamaged,
+      record.otherOperationalDestroyed,record.otherOperationalDamaged,record.nonOperationalDestroyed,
+      record.nonOperationalDamaged,record.missing,record.sourceId]:Array(10).fill('');
     const body=[columns,...range.map(i=>{const s=allSnapshot(i),l=germanLoss(i);
       return [D.label(i),...s.us.map(x=>x.value??''),s.raf[0].value??'',s.raf[1].value??'',
         s.onStrength.value??'',s.ready.value??'',s.onStrength.quality,s.pilot.value,l.value??'',l.quality,...s.german.map(x=>x.value??''),
-        Z.get(i,'Reich')?.destroyed??'',Z.get(i,'Reich')?.damaged??'',
-        Z.get(i,'Western Front')?.destroyed??'',Z.get(i,'Western Front')?.damaged??'',
+        ...sourceColumns(Z.get(i,'Reich')),...sourceColumns(Z.get(i,'Western Front')),
         Z.byType(i,'Reich','Bf 109')?.destroyed??'',Z.byType(i,'Reich','Fw 190')?.destroyed??'',
         Z.byType(i,'Western Front','Bf 109')?.destroyed??'',Z.byType(i,'Western Front','Fw 190')?.destroyed??''];})]
       .map(row=>row.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')).join('\n');
@@ -711,7 +758,8 @@
   $('v4-markers-check').addEventListener('change',e=>{ui.markers=e.target.checked;window.AirWarAtlasV5?.setMarkers(ui.markers);});
   $('v4-sources-check').addEventListener('change',e=>{ui.sources=e.target.checked;render();});
   $('v4-export').addEventListener('click',exportCsv);
-  extra.addEventListener('click',e=>{if(e.target.closest('[data-v7-expand]')){ui.chartFullRange=!ui.chartFullRange;render();}});
+  extra.addEventListener('click',e=>{if(e.target.closest('[data-v7-expand]')){ui.chartFullRange=!ui.chartFullRange;render();}
+    const month=e.target.closest('[data-v72-month]');if(month){ui.focus=+month.dataset.v72Month;render();}});
   extra.addEventListener('change',e=>{if(e.target.id==='v7-archive-theater'){ui.archiveTheater=e.target.value;render();}});
   extra.addEventListener('change',e=>{if(e.target.id==='v71-theater'){ui.v71Theater=e.target.value;render();}
     if(e.target.id==='v71-metric'){ui.v71Metric=e.target.value;render();}});
@@ -723,7 +771,8 @@
   const originalViews=['view-pilot','view-equipment'];
   originalViews.forEach(id=>$(id).addEventListener('click',()=>{ui.view=id.replace('view-','');render();}));
   // QA API permits inspection without touching the original simulator's API.
-  window.AirWarAtlasQA={version:'7.1',snapshot:i=>allSnapshot(i),attrition:i=>germanLoss(i),sourceIds:()=>Object.keys(V.SOURCES),
+  window.AirWarAtlasQA={version:'7.2',snapshot:i=>allSnapshot(i),attrition:i=>germanLoss(i),sourceIds:()=>Object.keys(V.SOURCES),
+    originalLoss:(i,theater)=>Z.get(i,theater),verifiedOriginalMonths:()=>Z.monthlyReturns.length,
     view:()=>ui.view,config:()=>({...ui}),historicalMilestones:()=>V.milestones.length};
   // Opening view aligns with saved period without hiding any legacy capabilities.
   ui.focus=Math.min(106,QA.inspect().end);render();

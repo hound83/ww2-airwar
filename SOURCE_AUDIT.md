@@ -1,4 +1,58 @@
-# WW2 European Air War Atlas v7.1 — historical source audit
+# WW2 European Air War Atlas v7.2 — historical source audit
+
+## Version 7.2: 26 further original month-end totals, visually verified
+
+**Scope:** exactly eight additional RAF Air Historical Branch (AHB) volumes of captured German aircraft-loss returns, yielding **26 newly transcribed source-printed monthly totals** (plus the four earlier v7.1 totals = 30). Each figure below was read **from the original rendered scan image**, not accepted from OCR alone. The values are aircraft, not pilots or Allied fighter claims. Reported *enemy action*, *other operational* and *non-operational* losses are distinct; each has separate *destroyed/damaged* columns. The “Missing” column is **already part of enemy-action destroyed** and does not increase the total.
+
+The source references below link to the **original RAF PDF landing pages**. The page suffix in the numerical table is the numbered *PDF page* within that linked report, allowing reproduction of every digit. Original source links:
+
+| Source | Original reporting scope | Checked month-end total pages, as numbered in PDF |
+| --- | --- | --- |
+| [VII/149](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-1-september-31-december-1943/) | Luftflotte Reich, Sep–Dec 1943 | 18, 38, 54, 72 |
+| [VII/148](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-september-31st-december-1943/) | Luftflotte 3 (West), Sep–Dec 1943 | **20**, 36, 50, 63; PDF 21 is actually *1 October*, not the September total |
+| [VII/138](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-january-april-1944/) | Luftflotte Reich, Jan–Apr 1944 | 18, 38, **61**, 87 |
+| [VII/135](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-january-30th-april-1944/) | Luftflotte 3 (West), Jan–Apr 1944 | 14, 29, 45, 62 |
+| [VII/142](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-july-september-1944/) | Luftflotte Reich, Jul–Sep 1944 | 29, 56, 80 |
+| [VII/144](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-july-31st-august-1944/) | Luftflotte 3 (West), Jul–Aug 1944 | 28, 56 |
+| [VII/143](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-october-november-1944/) | Luftflotte Reich, Oct–Nov 1944 | 23, 46 |
+| [VII/145](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-renamed-luftwaffe-kommando-west-on-20th-september-1944-1st-september-30th-november-1944/) | **Luftwaffenkommando West**, Sep–Nov 1944, after Luftflotte 3 reorganization | 14, 30, 42 |
+
+### Original numeric transcription (additional v7.2 rows)
+
+| Month | Command | Enemy dest/dam | Other operational dest/dam | Non-operational dest/dam | **All dest/dam** | Missing¹ | AHB / PDF page |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Sep 1943 | Reich | 82 / 18 | 68 / 39 | 117 / 114 | **267 / 171** | 21 | VII/149 p18 |
+| Sep 1943 | West | 140 / 77 | 22 / 55 | 71 / 136 | **233 / 268** | 40 | VII/148 p20 |
+| Oct 1943 | Reich | 177 / 61 | 78 / 86 | 92 / 149 | **347 / 296** | 50 | VII/149 p38 |
+| Oct 1943 | West | 107 / 26 | 20 / 29 | 73 / 121 | **200 / 176** | 48 | VII/148 p36 |
+| Nov 1943 | Reich | 142 / 34 | 77 / 67 | 113 / 91 | **332 / 192** | 47 | VII/149 p54 |
+| Nov 1943 | West | 70 / 36 | 14 / 42 | 68 / 81 | **152 / 159** | 23 | VII/148 p50 |
+| Dec 1943 | Reich | 120 / 30 | 72 / 56 | 102 / 91 | **294 / 177** | 33 | VII/149 p72 |
+| Dec 1943 | West | 129 / 48 | 21 / 30 | 44 / 63 | **194 / 141** | 37 | VII/148 p63 |
+| Jan 1944 | Reich | 223 / 64 | 127 / 81 | 94 / 102 | **444 / 247** | 34 | VII/138 p18 |
+| Jan 1944 | West | 159 / 62 | 46 / 58 | 84 / 158 | **289 / 278** | 60 | VII/135 p14 |
+| Feb 1944 | Reich | 359 / 94 | 74 / 89 | 104 / 148 | **537 / 331** | 41 | VII/138 p38 |
+| Feb 1944 | West | 192 / 86 | 38 / 80 | 78 / 164 | **308 / 330** | 72 | VII/135 p29 |
+| Mar 1944 | Reich | 389 / 138 | 95 / 96 | 178 / **202** | **662 / 436** | 46 | VII/138 p61 **corrected total** |
+| Mar 1944 | West | 288 / 110 | 41 / 47 | 79 / 163 | **408 / 320** | 66 | VII/135 p45 |
+| Apr 1944 | Reich | 580 / 193 | 83 / 92 | 177 / 268 | **840 / 553** | 45 | VII/138 p87 |
+| Apr 1944 | West | 260 / 104 | 38 / 57 | 78 / 208 | **376 / 369** | 59 | VII/135 p62 |
+| Jul 1944 | Reich | 383 / 119 | 76 / 102 | 181 / 420 | **640 / 641** | 45 | VII/142 p29 |
+| Jul 1944 | West | 602 / 126 | 135 / 215 | 46 / 116 | **783 / 457** | 247 | VII/144 p28 |
+| Aug 1944 | Reich | 431 / 125 | 55 / 99 | 170 / 365 | **656 / 589** | 42 | VII/142 p56 |
+| Aug 1944 | West | 715 / 98 | 102 / 152 | 51 / 130 | **868 / 380** | 234 | VII/144 p56 |
+| Sep 1944 | Reich | 600 / 158 | 74 / 115 | 172 / 251 | **846 / 524** | 86 | VII/142 p80 |
+| Sep 1944 | West² | 204 / 23 | 26 / 35 | 10 / 30 | **240 / 88** | 58 | VII/145 p14 |
+| Oct 1944 | Reich | 171 / 52 | 50 / 83 | 162 / 241 | **383 / 376** | 28 | VII/143 p23 |
+| Oct 1944 | West² | 157 / 30 | 40 / 57 | 25 / 58 | **222 / 145** | 47 | VII/145 p30 |
+| Nov 1944 | Reich | 413 / 109 | 94 / 117 | 165 / 218 | **672 / 444** | 73 | VII/143 p46 |
+| Nov 1944 | West² | 155 / 36 | 43 / 48 | 22 / 34 | **220 / 118** | 49 | VII/145 p42 |
+
+¹ Missing aircraft is **a subset of enemy-action destroyed**. ² The command changes designation/organization in September; this is not a time-invariant geographical sample of every German unit fighting in the West.
+
+**Manual image check with material correction:** VII/138 PDF p61 shows the Reich March 1944 total under *non-operational damaged* with an old `304` overwritten by **`202`**. Plain OCR preferentially retained `304`; the dashboard uses the visibly amended `202` and records the edit in source metadata. The Western September 1943 report's month-end row appears on **PDF p20**, although an automated pass initially selected p21, already dated 1 October. Both corrections were confirmed visually before numerical import.
+
+**Deliberate limits:** No per-model 1943–44 counts are inferred from these all-aircraft month-end totals. None of these German command tables alone covers the Eastern Front, Italy or the entirety of the Luftwaffe. The RAF catalog contains further original reports not yet numerically transcribed. The website's coverage calendar and CSV distinguish every observed month from each unverified month. June 1944 Bf 109/Fw 190 type-level figures remain a *separate provisional line-by-line OCR transcript* (below), not a recorded monthly type subtotal.
 
 ## Version 7.1: original 1944 German aircraft-loss returns digitized
 

@@ -16,7 +16,7 @@ const {chromium}=require('playwright');
     assert.deepEqual(errors,[],'No uncaught startup errors');
     assert.equal(await page.title(),'European Air War Atlas · Pilots, Aircraft and Operations 1936–1945');
     assert.equal(await page.locator('[data-v4-tab]').count(),10);
-    assert.ok((await page.locator('#v4-navigation').innerText()).includes('Version 7.1'));
+    assert.ok((await page.locator('#v4-navigation').innerText()).includes('Version 7.2'));
     assert.ok((await page.locator('#v4-body').innerText()).includes('What was the Luftwaffe facing?'));
     const stats=await page.evaluate(()=>({
       months:window.LuftData.MONTHS,

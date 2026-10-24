@@ -34,7 +34,7 @@ for(const row of Z.juneByType){
   assert.ok(row.damaged<QA.get(row.i,row.theater).damaged,'type subset cannot exceed all damaged');
 }
 const site=fs.readFileSync(path.join(root,'index.html'),'utf8');
-assert.ok(site.includes('./dist/atlas-v71-data.js?v=7.1'));
+assert.ok(site.includes('./dist/atlas-v71-data.js?v=7.2'));
 assert.ok(site.indexOf('atlas-v71-data.js')<site.indexOf('model-v4.js'));
-assert.ok(fs.readFileSync(path.join(root,'dist','model-v4.js'),'utf8').includes("version:'7.1'"));
+assert.ok(fs.readFileSync(path.join(root,'dist','model-v4.js'),'utf8').includes("version:'7.2'"));
 console.log('PASS v7.1: original German monthly totals, damaged/destroyed category logic, provisional type transcription and true missing states');
