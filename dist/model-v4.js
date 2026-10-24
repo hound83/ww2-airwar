@@ -1,4 +1,4 @@
-/* European Air War Atlas v4 — additive to, not a replacement for, v3. */
+/* European Air War Atlas v5 — historical views layered over the original simulations. */
 (function(){
   'use strict';
   const D=window.LuftData,V=window.LuftV4Data,QA=window.LuftLabQA;
@@ -15,11 +15,12 @@
   const tag=(q,more='')=>'<span title="'+safe(more||labelQuality(q))+'" class="v4-tag '+
     (q==='recorded'||q==='documented'?'is-recorded':q==='estimated-high'||q==='derived'?'is-higher':
     q==='unavailable'?'is-missing':'is-lower')+'">'+labelQuality(q)+'</span>';
-  const nav=[['pilot','Pilot simulator'],['equipment','Aircraft simulator'],['balance','Airpower balance'],
-    ['fleet','Fleet by type'],['losses','Losses & attribution'],['comparison','P-47 vs P-51'],['sources','Research & sources']];
+  const nav=[['balance','Airpower overview'],['fleet','Aircraft & equipment'],['pilothistory','Pilots & experience'],
+    ['losses','Losses & claims'],['comparison','Industry & operations'],['pilot','Pilot simulator'],
+    ['equipment','Aircraft simulator'],['sources','Research & sources'],['about','About the project']];
   let ui={view:'balance',focus:D.idx(1943,7),sources:false,lossGaps:false,fwShare:33,
-    comparison:'period',weightMethod:'fleet',weights:{'P-47':45,'P-51':20,'P-38':15,'Spitfire':15,'Other Allied':5},
-    airCombat:35,western:80};
+    markers:true,comparison:'period',weightMethod:'fleet',weights:{'P-47':45,'P-51':20,'P-38':15,'Spitfire':15,'Other Allied':5},
+    airCombat:35,western:80,opsTheater:'ETO',lossAirClass:'Fighter'};
   const oldRoot=document.querySelector('main.layout');
   const extra=document.createElement('section');extra.id='v4-workspace';extra.className='panel';
   extra.innerHTML='<div id="v4-head"></div><div id="v4-body"></div><div id="v4-source-panel" class="v4-sources"></div>';
@@ -28,21 +29,22 @@
   const tl=document.querySelector('.timeline-panel');
   const navRoot=document.createElement('div');navRoot.id='v4-navigation';
   navRoot.innerHTML='<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span>'+ 
-    '<span class="tiny">Version 4.0 · Original simulations preserved</span></div>'+ 
+    '<span class="tiny">Version 5.0 · Source-led analysis & preserved simulations</span></div>'+ 
     '<div class="v4-navrow">'+nav.map(([id,title])=>'<button type="button" class="v4-nav" data-v4-tab="'+id+'">'+title+'</button>').join('')+'</div>';
   tl.insertBefore(navRoot,tl.firstChild);
   const toolbar=document.createElement('div');toolbar.id='v4-tools';toolbar.className='v4-tools';
   toolbar.innerHTML='<div class="v4-tool"><label for="v4-month">Inspect month</label><select id="v4-month">'+
     Array.from({length:D.MONTHS},(_,i)=>'<option value="'+i+'">'+D.label(i)+'</option>').join('')+'</select></div>'+ 
     '<label class="v4-check"><input type="checkbox" id="v4-estimate-gaps"> Show lower-confidence loss gap estimates</label>'+ 
+    '<label class="v4-check"><input type="checkbox" id="v4-markers-check" checked> Show historical event markers</label>'+ 
     '<label class="v4-check"><input type="checkbox" id="v4-sources-check"> Show source notes</label>'+ 
     '<button class="btn" id="v4-export">Export selected data CSV</button>';
   tl.appendChild(toolbar);
   document.title='European Air War Atlas · Pilots, Aircraft and Operations 1936–1945';
   document.querySelector('h1').innerHTML='European Air War <span>Atlas</span>';
   document.querySelector('.kicker').textContent='Source-led aviation history · interactive research laboratory';
-  document.querySelector('.lead').textContent='From the Condor Legion to VE Day: explore surviving pilots, aircraft inventories, Allied force buildup, combat losses, claims and the changing P-47/P-51 roles. Recorded facts and scenario estimates are deliberately kept distinct.';
-  document.querySelector('footer').textContent='European Air War Atlas v4.0 · 1936–8 May 1945 · Historical reconstruction and hypothesis lab · All charts and simulations run locally in your browser.';
+  document.querySelector('.lead').textContent='From the Condor Legion to VE Day: inspect pilot attrition, inventories, production, loss returns, credited claims and Allied airpower. Original wartime figures, interpolation and hypothetical scenarios remain distinct.';
+  document.querySelector('footer').textContent='European Air War Atlas v5.0 · July 1936–8 May 1945 · Historical source explorer and hypothesis lab · Runs locally in your browser.';
 
   function card(value,title,foot,color='var(--teal)'){
     return '<div class="v4-stat" style="--accent:'+color+'"><div class="v4-number">'+value+'</div><div class="v4-label">'+title+'</div><div class="v4-foot">'+foot+'</div></div>';
@@ -56,6 +58,7 @@
   function table(headers,rows){return '<div class="tablewrap"><table class="v4-table"><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+rows.map(cols=>
     '<tr>'+cols.map(col=>'<td>'+col+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';}
   function chart(id,rows,series,{height=252,percent=false}={}){
+    (window.AirWarGraphRegistry??=new Map()).set(id,{rows,series,opts:{percent},origin:'historical'});
     const W=980,H=height,L=62,R=24,T=18,B=36,innerW=W-L-R,innerH=H-T-B;
     const nums=series.flatMap(s=>rows.map(r=>s.value(r)).filter(v=>typeof v==='number'&&Number.isFinite(v)));
     const max=Math.max(1,...nums)*1.08;
@@ -177,7 +180,7 @@
         '<p class="v4-callout">*No original ETO fighter-loss total has been extracted for this month. A missing number means unknown, not zero. '+cite('digest104')+'</p>'))+
       section('USAAF ETO fighter losses · actual monthly totals', 'Includes fighters of all models, combat and accident losses combined. This is a recorded aggregate, unlike the individual-type allocations.',
         chart('v4-usa-losses',range.map(i=>({i,label:D.label(i)})),[
-          {name:'USAAF ETO fighter losses (all types)',color:'#fa7b81',value:r=>V.usaFighterLossMonthly.find(p=>p.i===r.i)?.value??null}
+          {name:'USAAF ETO fighter losses (all types)',color:'#fa7b81',value:r=>V.usaFighterLossMonthly.find(p=>p.i===r.i)?.value??null,source:'digest104'}
         ])+table(['Month','All fighter-aircraft losses','Confidence','Reporting series'],
           V.usaFighterLossMonthly.filter(p=>p.i>=months().a&&p.i<=months().b).map(p=>[D.label(p.i),fmt(p.value),tag('recorded'),'USAAF Statistical Digest Table 104']))+
         '<p class="tiny">'+cite('digest104')+' · The extracted source segment currently runs July 1943–April 1944. Never extend it as a fabricated late-war curve.</p>')+
@@ -218,6 +221,10 @@
   function renderLosses(){
     const records=lossPeriods(),snap=estimatedAttribution(ui.focus),{range}=months();
     const r=V.theaterLosses.find(x=>ui.focus>=x.a&&ui.focus<=x.b);
+    const focusClaim=V.usaFighterClaimsMonthly.find(x=>x.i===ui.focus);
+    const monthlyClaims=V.usaFighterClaimsMonthly.filter(x=>range.includes(x.i));
+    const combatLosses=V.usCombatLosses[ui.lossAirClass];
+    const lossFocus=combatLosses.find(x=>x.i===ui.focus),lossRows=combatLosses.filter(x=>range.includes(x.i));
     const tableRows=records.flatMap(q=>['west','med','east'].map(k=>[q.label,({west:'Western Front',med:'Mediterranean',east:'Eastern Front'})[k],
       fmt(q[k].strength),fmt(q[k].combat),fmt(q[k].all),pct(100*q[k].all/q[k].strength)]));
     $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">CAUSES · THEATERS · AIRCRAFT ATTRIBUTION</div><h2>What was lost, where, and to whom?</h2><p>Actual German airframe loss returns, all-theater benchmarks and an explicitly hypothetical Allied fighter attribution workbench. Fighter claims are not confirmed German destroyed aircraft.</p></div><div class="v4-inspect">Selected month<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
@@ -238,8 +245,8 @@
         '<div class="v4-comparison-note"><strong>German combat write-offs</strong><span>May include bombing, ground attack, air-to-air, flak and consequences of damage</span></div>'+ 
         '<div class="v4-comparison-note"><strong>German noncombat write-offs</strong><span>Administrative causes, sometimes with earlier combat damage</span></div>'+ 
         '<p class="small">Do not subtract Allied claims from German all-cause losses or equate an individual claim to a destroyed aircraft.</p>',cite('rafreports'))+'</div>'+ 
-      section('Explore Allied claim-based attribution',
-        'This is a sensitivity tool, not a historical reconstruction. When independently dated Allied accepted claims become available, they can replace the proxy weights below.',
+      section('Explore a hypothetical attribution scenario',
+        'This is a sensitivity tool, not a historical reconstruction. Enter independently dated model-level accepted-claim shares if you have them; inventory weighting is only a weaker fallback.',
         '<div class="v4-subcontrols">'+
         '<div><label for="v4-weight-method">Attribution weighting input</label><select id="v4-weight-method"><option value="fleet"'+(ui.weightMethod==='fleet'?' selected':'')+'>Fighter availability proxy — LOWER confidence</option><option value="manual"'+(ui.weightMethod==='manual'?' selected':'')+'>Enter Allied accepted-claim percentages</option></select></div>'+ 
         '<div class="v4-rangecontrol"><label for="v4-combatshare">Scenario: German fighter losses attributed to air combat <b>'+ui.airCombat+'%</b></label><input class="range" id="v4-combatshare" type="range" min="5" max="80" step="5" value="'+ui.airCombat+'"/></div>'+ 
@@ -255,61 +262,159 @@
         '<p class="v4-callout">Even if 33% of accepted Allied claims belonged to a P-51, that would support allocating <em>a specified Allied air-to-air loss pool</em> by claim share—not 33% of all German losses or personnel deaths. Historical claims also require consistent theaters, time windows, and reconciliation rules.</p>')+
       section('German aircraft losses through the selected interval','1944 write-offs remain an aggregate allocation and may not follow any particular model’s historical monthly path.',
         chart('v4-lossplot',range.map(i=>({i,label:D.label(i)})),[
-          {name:'German fighter aircraft written off',color:'#fa7b81',value:r=>germanLoss(r.i).value}
+          {name:'German fighter aircraft written off',color:'#fa7b81',value:r=>germanLoss(r.i).value,detail:r=>germanLoss(r.i)}
         ])+'<p class="tiny">Only sourced months and explicitly allocated 1944 scenarios are plotted; gaps stay blank.</p>')+
-      section('Personnel attrition · separate scale','Pilot casualty rates are NOT aircraft loss rates, and their original definitions must be retained.',
+      section('USAAF ETO fighter claims and actual U.S. fighter losses · yearly source totals','Independent USAAF measures: credited enemy aircraft in air/on ground versus U.S. first-line fighter losses (combat and accidents). IMPORTANT: 1945 claims cover Jan–May, while the separate Table 104 loss subtotal covers Jan–Aug, including post-VE; they are not matched-period ratios.',
+        table(['Year','Fighter credits · air','Credits · ground','ETO first-line fighter losses','Evidence'],
+          V.usaFighterClaimsAnnual.map(x=>[x.year+(x.year===1945?' · claims Jan–May / losses Jan–Aug':''),fmt(x.air),fmt(x.ground),
+            fmt(V.usaFighterLossAnnual.find(a=>a.year===x.year)?.value),tag('recorded')]))+
+        '<p class="v4-callout">These are <strong>U.S. fighter-class claims</strong>, not a P-47, P-51, P-38 or RAF breakdown. First-line fighter losses include combat plus accident losses. The different 1945 end dates matter: <strong>do not divide claims by losses in that row</strong>, or treat the losses as VE-Day-only totals. '+cite('digest167')+' · '+cite('digest104')+'</p>')+
+      section('Original USAAF fighter claims · every month, 1942–45',
+        'Direct monthly figures from the original USAAF Statistical Digest Table 167. This is the fighter AIRCRAFT CLASS, all ETO fighter models combined, rather than model-specific P-47/P-51/P-38 claims. Select an interval above and hover/tap either trace for exact credits.',
+        '<div class="v4-statgrid">'+
+        card(focusClaim?fmt(focusClaim.air):'—','Enemy aircraft credited in air · '+D.label(ui.focus),focusClaim?tag('recorded')+' Official Table 167':'Month outside original August 1942–May 1945 reporting','var(--blue)')+
+        card(focusClaim?fmt(focusClaim.ground):'—','Enemy aircraft credited on ground · '+D.label(ui.focus),focusClaim?tag('recorded')+' Official Table 167':'Not reported for selected date','var(--gold)')+'</div>'+
+        chart('v5-claims-monthly',range.map(i=>({i,label:D.label(i)})),[
+          {name:'USAAF fighter class · in-air credits',color:'#788d89',value:r=>V.usaFighterClaimsMonthly.find(x=>x.i===r.i)?.air??null,source:'digest167'},
+          {name:'USAAF fighter class · ground credits',color:'#b28b59',value:r=>V.usaFighterClaimsMonthly.find(x=>x.i===r.i)?.ground??null,source:'digest167'}
+        ])+
+        (monthlyClaims.length?table(['Month','Air credits','Ground credits','Total fighter credits','Evidence'],monthlyClaims.map(x=>[
+          D.label(x.i),fmt(x.air),fmt(x.ground),fmt(x.total),tag('recorded')])):
+          '<p class="small">No official Table 167 fighter-class monthly observations within this selected interval.</p>')+
+        '<p class="v4-callout">Important: the sharp April 1945 ground-claim spike reflects <em>credited claims against aircraft on the ground</em>; it is not 3,703 German pilots killed, nor verified aircraft write-offs. Zero denotes a source-reported zero; dates before August 1942 remain unavailable. '+cite('digest167')+'</p>')+
+      section('American combat-mission aircraft losses · by cause and class',
+        'A separate original return (Table 159), not the Table 104 first-line inventory write-offs. Its enemy-aircraft, antiaircraft and other-cause attributions apply to planes lost on U.S. COMBAT MISSIONS. It does not say which German aircraft or unit caused each loss.',
+        '<div class="v4-subcontrols"><div><label for="v5-loss-class">American aircraft class</label><select id="v5-loss-class">'+
+          ['Fighter','Heavy bomber','Medium/light bomber'].map(k=>'<option value="'+k+'"'+(k===ui.lossAirClass?' selected':'')+'>'+k+'</option>').join('')+
+          '</select></div></div>'+
+        '<div class="v4-statgrid">'+
+        card(lossFocus?fmt(lossFocus.total):'—','Recorded combat-mission aircraft lost · '+D.label(ui.focus),lossFocus?tag('recorded')+' '+ui.lossAirClass:'1942–43 monthly breakdown unavailable','var(--red)')+
+        card(lossFocus?fmt(lossFocus.enemy):'—','Attributed to enemy aircraft',lossFocus?tag('recorded')+' USAAF aircraft lost in combat':'Original Table 159 monthly returns start January 1944','var(--blue)')+
+        card(lossFocus?fmt(lossFocus.flak):'—','Attributed to antiaircraft fire',lossFocus?tag('recorded')+' Flak-caused aircraft loss':'Not a count of German air-to-air victories','var(--gold)')+'</div>'+
+        chart('v5-us-combat-loss-cause',range.map(i=>({i,label:D.label(i)})),[
+          {name:ui.lossAirClass+' · lost to enemy aircraft',color:'#8795a1',value:r=>combatLosses.find(x=>x.i===r.i)?.enemy??null,source:'digest159'},
+          {name:ui.lossAirClass+' · lost to flak',color:'#ad8660',value:r=>combatLosses.find(x=>x.i===r.i)?.flak??null,source:'digest159'},
+          {name:ui.lossAirClass+' · other combat-mission causes',color:'#a16c69',value:r=>combatLosses.find(x=>x.i===r.i)?.other??null,source:'digest159'}
+        ])+
+        (lossRows.length?table(['Month','Total lost','Enemy aircraft','Flak','Other causes','Evidence'],lossRows.map(x=>[
+          D.label(x.i),fmt(x.total),fmt(x.enemy),fmt(x.flak),fmt(x.other),tag('recorded')])):
+          '<p class="small">Monthly Table 159 cause data begin January 1944. Earlier 1942–43 totals exist only as published annual aggregates.</p>')+
+        table(['Reporting year','Combat-mission losses','Enemy aircraft','Antiaircraft','Other causes'],
+          Object.entries(V.usCombatLossesAnnual[ui.lossAirClass]).map(([year,x])=>[
+            year+(year==='1942'?' · Aug–Dec':year==='1945'?' · Jan–May':''),fmt(x.total),fmt(x.enemy),fmt(x.flak),fmt(x.other)]))+
+        '<p class="v4-callout"><strong>These are U.S. aircraft lost—not German losses.</strong> A crash attributed to “other causes” here is an outcome of a combat mission, not necessarily a routine peacetime accident. Table 104 has a broader first-line loss accounting definition; therefore the two totals need not match. '+cite('digest159')+'</p>')+
+      section('Personnel attrition · separate scale','The series below contains only historically reported German fighter-pilot strength-loss rates; no simulated periods are disguised as source records.',
         chart('v4-pilotloss-plot',range.map(i=>({i,label:D.label(i)})),[
-          {name:'Monthly fighter-pilot casualty rate (recorded / modeled)',color:'#f4c46a',value:r=>D.rate(r.i).value*100}
-        ],{percent:true})+'<p class="tiny">1942, 1943 and January–May 1944 pilot casualty rates are sourced from Murray. Other periods are the preserved simulator’s assumptions. '+cite('murray')+'</p>');
+          {name:'Reported fighter-pilot strength loss %',color:'#f4c46a',value:r=>V.pilotAttrition.find(p=>p.i===r.i)?.value??null,source:'murray'}
+        ],{percent:true})+'<p class="tiny">January 1942–May 1944 rates reported in Murray’s Table LXVIII and related 1944 casualty returns. See Pilots & experience for original counts and definitions. '+cite('murray')+'</p>');
     $('v4-weight-method').addEventListener('change',e=>{ui.weightMethod=e.target.value;render();});
+    $('v5-loss-class').addEventListener('change',e=>{ui.lossAirClass=e.target.value;render();});
     for(const [id,key] of [['v4-combatshare','airCombat'],['v4-westernshare','western']])$(id).addEventListener('input',e=>{ui[key]=+e.target.value;render();});
     document.querySelectorAll('[data-v4-weight]').forEach(e=>e.addEventListener('input',x=>{ui.weights[e.dataset.v4Weight]=+x.target.value;render();}));
   }
-  function renderComparison(){
-    const compareY=1944,c47=V.usaCosts['P-47'][compareY],c51=V.usaCosts['P-51'][compareY];
-    const discount=100*(1-c51/c47),{a,b,range}=months(),year=D.at(ui.focus).y;
-    const relevant=V.flyingHours.filter(x=>x.a<=b&&x.b>=a);
-    const american=allSnapshot(ui.focus).us;
-    const ccrews=V.usCrews;
-    const seats=['P-47','P-51','P-38'].map((x,i)=>({name:x,pilot:V.sample(ccrews[x],ui.focus),airframe:american.find(y=>y.type===x)}));
-    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">DEBATE CHECK · EXPOSURE · ECONOMICS · MISSION</div><h2>Thunderbolt vs Mustang</h2><p>Not a contest with a pre-decided winner. Compare what was available, when it flew, what it cost, and which duties the aircraft were assigned.</p></div><div class="v4-inspect">Reference month<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
-      '<div class="v4-statgrid">'+card(money(c47),'P-47 · 1944 authorized unit cost','USAAF Digest, Table 82. Flyaway with factory equipment, not lifetime operating cost','var(--blue)')+
-      card(money(c51),'P-51 · 1944 authorized unit cost','Same USAAF fiscal-year accounting basis','var(--teal)')+
-      card(pct(discount,1),'P-51 unit cost advantage','Relative to the P-47; '+fmt(c47/c51,2)+'× aircraft per dollar at these flyaway prices','var(--gold)')+
-      card('Unresolved','4,429 P-47 European kills','Greg’s reported total; original counting definition not independently corroborated','var(--purple)')+'</div>'+ 
-      section('Equipment costs across fiscal years','Actual original wartime numbers from the screenshot and USAAF Table 82. Do not interpret these as a per-sortie or all-in program cost.',
-        table(['Fiscal year','P-38','P-47','P-51','P-47 price premium'],[1942,1943,1944,1945].map(y=>[
-          String(y),money(V.usaCosts['P-38'][y]),money(V.usaCosts['P-47'][y]),money(V.usaCosts['P-51'][y]),
-          V.usaCosts['P-47'][y]&&V.usaCosts['P-51'][y]?pct(100*(V.usaCosts['P-47'][y]/V.usaCosts['P-51'][y]-1),1):'—']))+
-        '<p class="v4-callout">The Mustang’s procurement-price advantage is real in the <em>authorized average flyaway</em> figures. Fuel use, maintenance hours, replacements, engines, spare parts, training and mission effectiveness would be needed to calculate total wartime value. </p>')+
-      section('Who was flying before D-Day?','Actual U.S. European fighter strength snapshots; P-51s rose sharply in 1944, while P-47s were more numerous through the main build-up.',
-        chart('v4-eto-plot',range.map(i=>({i,label:D.label(i)})),[
-          {name:'P-47 ETO inventory',color:'#82b9ff',value:r=>V.airframe('P-47',r.i,'USAAF').value},
-          {name:'P-51 ETO inventory',color:'#48d3c5',value:r=>V.airframe('P-51',r.i,'USAAF').value},
-          {name:'P-38 ETO inventory',color:'#f4c46a',value:r=>V.airframe('P-38',r.i,'USAAF').value}
+  function renderPilotHistory(){
+    const {range}=months(),focus=V.pilotAttrition.find(x=>x.i===ui.focus),
+      count=V.pilotCasualtyCounts.find(x=>x.i===ui.focus);
+    const rateRows=V.pilotAttrition.filter(x=>range.includes(x.i));
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">PERSONNEL RETURNS · COHORT EXPERIENCE</div><h2>The pilots behind the aircraft</h2><p>Monthly source-reported German fighter-pilot strength losses are observable. The percentage with 200 encounters, 20 credited victories, or years of surviving combat is not recorded in these aggregate tables. Explore that distinction below.</p></div><div class="v4-inspect">Inspection month<strong>'+D.label(ui.focus)+'</strong></div></div>'+
+      '<div class="v4-statgrid">'+
+      card(focus?pct(focus.value):'—','Fighter-pilot strength lost this month',focus?tag('recorded')+' Murray Table LXVIII, not solely fatalities':'No comparable source rate for this exact month','var(--red)')+
+      card(count?fmt(count.value):'—','Source-reported fighter-pilot casualties',count?tag('recorded')+' Losses include categories beyond killed':'An absolute count cannot be inferred from modeled strength','var(--gold)')+
+      card(fmt(rateRows.length),'Reported rate months in range','Documented monthly pilot-strength loss percentages; 1942–May 1944','var(--teal)')+
+      card('Not observed','Average kills or sorties','Per-pilot experience distribution requires personnel-level records','var(--blue)')+'</div>'+
+      section('German fighter-pilot attrition · monthly source series','Dates without a comparable wartime rate stay blank. This is NOT a mortality curve, a claims curve, or the simulator output.',
+        chart('v5-pilot-source-rate',range.map(i=>({i,label:D.label(i)})),[
+          {name:'Reported fighter-pilot strength loss %',color:'#c89555',value:r=>V.pilotAttrition.find(p=>p.i===r.i)?.value??null,source:'murray'}
+        ],{percent:true})+
+        '<div class="v4-callout">A monthly loss of 15% of pilot strength does <strong>not</strong> mean 15% killed. The source’s definition can include wounded, missing, captured or removed from active strength. Replacement pilots can also enter between monthly reports. '+cite('murray')+'</div>')+
+      section('Recorded individual-month counts, where available','Counts are not extrapolated to other months. The corresponding percentage may derive from a different source table with its own denominator.',
+        chart('v5-pilot-source-count',range.map(i=>({i,label:D.label(i)})),[
+          {name:'Recorded fighter-pilot casualties',color:'#b06f55',value:r=>V.pilotCasualtyCounts.find(p=>p.i===r.i)?.value??null,source:'murray'}
         ])+
-        table(['Model',''+D.label(ui.focus)+' strength','Quality','USAAF ETO fighter crews on hand','Crew basis'],
-          seats.map(x=>[x.name,fmt(x.airframe.value),tag(x.airframe.quality),fmt(x.pilot.value),tag(x.pilot.quality)]) )+
-        '<p class="tiny">Crew figures exist as dated source points for Aug 1943 and mid-1944; extrapolation beyond these points is disabled.</p>')+
-      section('Operational exposure, not just scoreboard','Flying hours provide a more consistent denominator for comparing effort than comparing raw claims without total sorties.',
-        V.flyingHours.map(q=>panel(q.label+' · European flying hours',fraction([
-          {label:'P-47',value:q.p47,color:'#82b9ff'},{label:'P-51',value:q.p51,color:'#48d3c5'}])+ '<p class="tiny">P-47 '+fmt(q.p47)+' hours; P-51 '+fmt(q.p51)+' hours. Quarter includes all aircraft operations in the stated reporting region.</p>')).join('')+
-        '<div class="v4-callout">These 1944 hours are especially relevant to Greg’s claim about the P-47’s early numerical dominance. <strong>Q2 includes the weeks after 6 June</strong>, so quarter totals cannot alone answer the exact pre-D-Day comparison.</div>')+
-      '<div class="v4-columns">'+panel('The D-Day preparation window',
-        '<p>US planners developed cross-Channel invasion plans during early 1943; the COSSAC outline plan was presented in July 1943. Landings took place on 6 June 1944.</p>'+ 
-        '<p class="small">Test Greg’s 9-of-11-months observation against <em>frontline inventory, serviceable aircraft, actual fighter sorties, hours and accepted air-to-air claims</em> as those records become available. These are different questions.</p>',cite('navy'))+
-      panel('Mission assignments changed',
-        '<p>Long-range bomber escort was central to engaging the German fighter force before D-Day. The P-47 also excelled at armed reconnaissance and close support; the P-51 progressively carried more long-range escort work.</p>'+ 
-        '<p class="small">A higher late-war P-51 tally can reflect additional time spent seeking and engaging enemy fighters, while P-47s may have been assigned ground targets. It does not by itself establish better aircraft-on-aircraft effectiveness.</p>',cite('murray'))+'</div>'+ 
-      section('Greg’s P-47 numerical claims — verification status','Reference material is retained for the original debate, with disagreements and scope changes visible.',
-        table(['Claim / measure','Reported value','What it measures','Current confidence'],[
-          ['P-47 European aerial victories (video)','4,429','Definition and theater/campaign boundary not recovered',tag('estimated-low','Unverified reported claim, NOT a derived estimate')],
-          ['P-47 combat sorties (museum slide)','546,000','Likely a broad war-total metric; theater scope unestablished',tag('estimated-low','Second-hand summary shown in uploaded screenshot')],
-          ['P-47 combat loss rate (museum slide)','0.7%','Depends on “combat sorties” and “loss” definition',tag('estimated-low')],
-          ['P-47 targets destroyed air + ground (museum slide)','11,878','Combines claimed aircraft in air and on ground',tag('estimated-low')],
-          ['P-47 fiscal-year 1944 flyaway cost','$85,578','Original USAAF official cost accounting',tag('recorded')],
-          ['P-51 fiscal-year 1944 flyaway cost','$51,572','Identical official table and accounting definition',tag('recorded')]
-        ])+'<p class="small">The museum statistics come from your Millville Army Air Field Museum slide. Without an accompanying source methodology, I will not blend its 11,878 all-target figure into a recorded aerial kill series.</p>');
+        table(['Month','Reported strength lost','Reported count','Evidence'],rateRows.map(p=>[
+          D.label(p.i),pct(p.value),fmt(V.pilotCasualtyCounts.find(x=>x.i===p.i)?.value),tag('recorded')]))+
+        '<p class="tiny">Murray’s Table LXVIII chart gives rates; adjacent 1943–44 tables supply only the listed absolute casualty counts. Missing months are truly missing, not zero.</p>')+
+      '<div class="v4-columns">'+panel('What happened to the 1940 veterans?',
+        '<p>Surviving the Battle of Britain might produce valuable operational experience, but losing aircraft, pilots, and veteran flight leaders also damages future training and unit continuity.</p><p class="small">A named 1940 cohort can be followed through 1945 <em>as a scenario</em>. We cannot infer a precise surviving fraction from aggregate fighter-aircraft losses.</p>',cite('rafBattle'))+
+      panel('What surviving aces can—and cannot—tell us',
+        '<p>The reference pilots in the simulator span hundreds to over a thousand sorties, widely different theaters and years of combat. Famous aces are a <strong>survivorship-selected</strong> minority, not a representative sample of all German pilots.</p><p class="small">Turn to the Pilot simulator for modeled cohorts, exposure differences, correlated skill and newcomer risks.</p>',cite('murray'))+'</div>'+
+      section('Explore the hypothetical cohort model','The original Monte Carlo engine tracks individuals with sorties, encounters and accumulated claims, plus a varying risk of loss. These trajectories are NOT reconstructed service records.',
+        '<button class="btn primary" id="v5-open-simulator">Open cohort simulation ↗</button>');
+    $('v5-open-simulator').addEventListener('click',()=>setView('pilot'));
+  }
+  function renderComparison(){
+    const {range}=months(),american=allSnapshot(ui.focus).us;
+    const seats=['P-47','P-51','P-38'].map(type=>({name:type,pilot:V.sample(V.usCrews[type],ui.focus),airframe:american.find(x=>x.type===type)}));
+    const c1944=V.usaCosts,claims1944=V.usaFighterClaimsAnnual.find(x=>x.year===1944);
+    const sorties=V.usaFighterSorties[ui.opsTheater],sortieFocus=sorties.find(x=>x.i===ui.focus);
+    const sortieRange=sorties.filter(x=>range.includes(x.i));
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">INDUSTRIAL OUTPUT · OPERATIONAL EXPOSURE</div><h2>How airpower was supplied and employed</h2><p>Production, aircraft procurement cost, theater inventory, flying hours and confirmed reporting categories tell different parts of the story. Explore aircraft types without equating cost, availability or credited victories with intrinsic fighter quality.</p></div><div class="v4-inspect">Inventory month<strong>'+D.label(ui.focus)+'</strong></div></div>'+
+      '<div class="v4-statgrid">'+
+      card(money(c1944['P-38'][1944]),'P-38 · 1944 unit procurement cost','Average flyaway price; original USAAF fiscal-year basis','var(--blue)')+
+      card(money(c1944['P-47'][1944]),'P-47 · 1944 unit procurement cost','Same accounting definition; excludes service costs','var(--teal)')+
+      card(money(c1944['P-51'][1944]),'P-51 · 1944 unit procurement cost','Same accounting definition; not cost per sortie','var(--gold)')+
+      card(fmt(claims1944.air),'1944 USAAF ETO fighter aerial credits','All fighter models combined; claimed, not independently confirmed','var(--red)')+'</div>'+
+      section('Airframe procurement costs','Original average wartime U.S. military aircraft costs, not maintenance or lifetime operating cost. Different model contracts and changing production scale affect comparisons.',
+        table(['Fiscal year','P-38 Lightning','P-47 Thunderbolt','P-51 Mustang','Accounting status'],[1942,1943,1944,1945].map(y=>[
+          String(y),money(c1944['P-38'][y]),money(c1944['P-47'][y]),money(c1944['P-51'][y]),tag('recorded')]))+
+        '<p class="tiny">'+cite('cost')+' · Do not extrapolate these prices into unobserved sortie costs or assume each model had an identical role.</p>')+
+      section('U.S. factories versus European aircraft inventories','Worldwide annual acceptances are separate from ETO operational strength; no interpolation can prove the aircraft were serviceable or engaged at any exact moment.',
+        table(['Calendar year','P-38 accepted worldwide','P-47 accepted worldwide','P-51 accepted worldwide'],[1942,1943,1944,1945].map(y=>[
+          String(y)+(y===1945?' · full US year':''),...['P-38','P-47','P-51'].map(t=>fmt(V.usaAnnualAccepted[t][y]))]))+
+        chart('v4-eto-plot',range.map(i=>({i,label:D.label(i)})),[
+          {name:'P-47 · USAAF ETO',color:'#82b9ff',value:r=>V.airframe('P-47',r.i,'USAAF').value,detail:r=>V.airframe('P-47',r.i,'USAAF')},
+          {name:'P-51 · USAAF ETO',color:'#48d3c5',value:r=>V.airframe('P-51',r.i,'USAAF').value,detail:r=>V.airframe('P-51',r.i,'USAAF')},
+          {name:'P-38 · USAAF ETO',color:'#f4c46a',value:r=>V.airframe('P-38',r.i,'USAAF').value,detail:r=>V.airframe('P-38',r.i,'USAAF')}
+        ])+
+        table(['USAAF model','ETO aircraft · '+D.label(ui.focus),'Quality','Fighter crews on hand','Crew evidence'],seats.map(x=>[
+          x.name,fmt(x.airframe.value),tag(x.airframe.quality),fmt(x.pilot.value),tag(x.pilot.quality)]))+
+        '<p class="tiny">USAAF strength is reconstructed from quarterly snapshots; crew snapshots cover only a few dated months. '+cite('usa')+'</p>')+
+      section('European flying hours · currently verified comparison blocks','Quarterly hours are an exposure measure; they mix distinct missions and include periods after D-Day. Missing types/quarters are not zero.',
+        '<div class="v4-columns">'+V.flyingHours.map(q=>panel(q.label,fraction([
+          {label:'P-47',value:q.p47,color:'#82b9ff'},{label:'P-51',value:q.p51,color:'#48d3c5'}])+
+          '<p class="tiny">P-47 '+fmt(q.p47)+' hours · P-51 '+fmt(q.p51)+' hours</p>',cite('hrs'))).join('')+'</div>')+
+      section('Monthly USAAF fighter missions by role · original combat sortie returns',
+        'Table 128 records the number of fighter SORTIES by mission, not the number of unique pilots or fighter models. Choose ETO or Mediterranean; the latter is a distinct theater and should not be added to German Western Front fighter totals without reconciling the scope.',
+        '<div class="v4-subcontrols"><div><label for="v5-ops-theater">Recorded theater</label><select id="v5-ops-theater">'+
+          '<option value="ETO"'+(ui.opsTheater==='ETO'?' selected':'')+'>European Theater (ETO)</option>'+
+          '<option value="MTO"'+(ui.opsTheater==='MTO'?' selected':'')+'>Mediterranean Theater (MTO)</option></select></div></div>'+
+        '<div class="v4-statgrid">'+
+        card(sortieFocus?fmt(sortieFocus.total):'—','Total fighter combat sorties · '+D.label(ui.focus),sortieFocus?tag('recorded')+' All USAAF fighter models':'No Table 128 data for selected date','var(--blue)')+
+        card(sortieFocus?pct(sortieFocus.escort/sortieFocus.total*100):'—','Escort share · '+D.label(ui.focus),sortieFocus?fmt(sortieFocus.escort)+' escort sorties':'Source begins January 1943','var(--teal)')+
+        card(sortieFocus?pct(sortieFocus.strike/sortieFocus.total*100):'—','Strike share · '+D.label(ui.focus),sortieFocus?fmt(sortieFocus.strike)+' bombing/strafing sorties':'Not a zero before January 1943','var(--gold)')+'</div>'+
+        chart('v5-us-sorties-role',range.map(i=>({i,label:D.label(i)})),[
+          {name:'USAAF fighter escort sorties',color:'#7a9085',value:r=>sorties.find(x=>x.i===r.i)?.escort??null,source:'digest128'},
+          {name:'Bombing and strafing sorties',color:'#b58d59',value:r=>sorties.find(x=>x.i===r.i)?.strike??null,source:'digest128'},
+          {name:'Reconnaissance sorties',color:'#8698ab',value:r=>sorties.find(x=>x.i===r.i)?.recon??null,source:'digest128'},
+          {name:'Other fighter combat sorties',color:'#a17675',value:r=>sorties.find(x=>x.i===r.i)?.other??null,source:'digest128'}
+        ])+
+        (sortieRange.length?table(['Month','All sorties','Escorts','Bombing / strafing','Recon','Other*','Evidence'],sortieRange.map(x=>[
+          D.label(x.i),fmt(x.total),fmt(x.escort),fmt(x.strike),fmt(x.recon),fmt(x.other),tag('recorded')])):
+          '<p class="small">No documented Table 128 fighter-sortie returns in the selected date range.</p>')+
+        '<p class="v4-callout">*Other includes combat patrols, interceptions, sweeps and sea-search flights. The large recorded shift into strike sorties across 1944–45 reflects <em>mission assignment</em>, not an inherent performance ranking of aircraft types. Figures cover <strong>all USAAF fighters</strong>, without a P-47/P-51/P-38 split. '+cite('digest128')+'</p>')+
+      section('ETO fighter claims are not by model in the surviving digest table','Table 167 is explicitly grouped by aircraft CLASS (fighter, bomber), not a P-38 / P-47 / P-51 breakdown. Do not apportion these original totals by aircraft inventory and call them observed model victories.',
+        table(['Reporting year','Fighter air-to-air credits','Fighter aircraft destroyed on ground · credited','Combined claims','Source'],
+          V.usaFighterClaimsAnnual.map(c=>[c.year+(c.year===1945?' · Jan–May':''),fmt(c.air),fmt(c.ground),fmt(c.total),tag('recorded')]))+
+        '<p class="v4-callout">These are <strong>U.S. wartime credited claims</strong>, not German independently verified destruction. Losses, pilot deaths, and claims must remain separate measures. '+cite('digest167')+'</p>')+
+      '<div class="v4-columns">'+panel('Changes in operational assignments',
+        '<p>Mission mix changed throughout the war: escort, interception, armed reconnaissance and ground support exposed pilots to different opponents and threats.</p><p class="small">A change in credited aerial victories without a comparable exposure denominator does not by itself measure fighter-to-fighter combat performance.</p>',cite('murray'))+
+      panel('Time-window discipline',
+        '<p>The COSSAC invasion outline was presented in July 1943; the landings were 6 June 1944.</p><p class="small">A quarterly flight-hours value that includes late June 1944 cannot be used as a precise “pre-D-Day only” result. Monthly claims by individual model remain outside this source set.</p>',cite('navy'))+'</div>';
+    $('v5-ops-theater').addEventListener('change',e=>{ui.opsTheater=e.target.value;render();});
+  }
+  function renderAbout(){
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">PROJECT NOTES</div><h2>Why this atlas exists</h2><p>A historical research tool for the European air war, from Spanish Civil War volunteer fighter units to the end of fighting in Europe. It investigates how pilots, equipment, replacements, force employment and losses interacted over time.</p></div></div>'+
+      section('The starting question','The project began with curiosity about different Allied fighter aircraft and their wartime assignments. The scope widened as the larger questions about German pilot attrition, Allied force strength, industrial capacity and archive quality proved more revealing.',
+        '<p class="small">This is not an aircraft-ranking exercise or an attempt to validate one commentator’s preferred conclusion. Historical interpretations may motivate questions; source records determine which numerical claims can be shown.</p>')+
+      section('Two engines, different answers','Historical records and hypothetical dynamics are offered side by side, but should never be silently merged.',
+        '<div class="v4-columns">'+panel('Source-led views',
+          '<p>Documented national reports, dated theater inventories, factory output, costs, fighter-pilot attrition rates and aggregate victory credits. Values are marked as recorded, derived, higher-confidence estimates, lower-confidence estimates or unavailable.</p>')+
+        panel('Pilot and equipment simulations',
+          '<p>Adjustable cohorts, loss exposure, flying tempos, combat encounters and credited claims. The model explores plausible mechanisms and alternative assumptions, not the personal biographies of every historical fighter pilot.</p>')+'</div>')+
+      section('What an honest number requires','Every quantity should have an original reporting population, theater, exact period, category and citation.',
+        '<ul><li>Claimed aircraft destroyed ≠ independently documented German aircraft losses.</li><li>Aircraft produced ≠ aircraft delivered ≠ aircraft operationally ready.</li><li>Fighter-pilot strength losses ≠ deaths; men can return from injury or be reassigned.</li><li>Interpolated months remain estimates; undocumented 1945 months are never fabricated.</li><li>German, British and American strength snapshots often measure different things.</li></ul>')+
+      section('Research continuity','A locally running static website hosted from the public repository, with datasets and tests kept in separable source files.',
+        '<p class="small">Use the Research & sources tab to audit provenance and known gaps; the simulator and export tools remain accessible in their own tabs.</p>');
   }
   function renderSources(){
     $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">METHOD · DOCUMENTARY TRAIL</div><h2>Audit the numbers</h2><p>Every plotted historical quantity has a definition, time scope and provenance category. The simulator makes assumptions explicit and leaves unavailable records blank.</p></div></div>'+ 
@@ -328,7 +433,7 @@
           '<ul><li>Every German fighter pilot’s individual experience and combat years</li><li>German casualties matched to each exact P-47/P-51/Spitfire kill claim</li><li>All fronts’ monthly aircraft losses divided by exact German model</li><li>Monthly RAF and Soviet pilot strength across all commands</li><li>May 1945 “unreported losses” manufactured from an empty record</li></ul>')+
         panel('Data-quality safeguards',
           '<ul><li>Absence appears as —, never as a zero casualty event</li><li>All counts are bounded to actual selected historical periods</li><li>1980s/2010s author interpretations are distinguished from wartime tabulations</li><li>Full-quarter observations are never silently monthlyized</li><li>Aircraft-on-strength, operational-ready, crew-on-hand and accepted production are separate series</li></ul>')+'</div>')+
-      section('Original pilot laboratory remains intact','Use the first two navigation tabs for the existing 1936–1945 Monte Carlo cohort model, sortie/encounter/claim distributions, equipment ledger and veteran-case benchmarking.',
+      section('Original pilot laboratory remains intact','Use the Pilot simulator and Aircraft simulator tabs for the existing 1936–1945 Monte Carlo cohort model, sortie/encounter/claim distributions, equipment ledger and veteran-case benchmarking.',
         '<button class="btn primary" id="v4-return-pilots">Open pilot simulation ↗</button>');
     $('v4-return-pilots').addEventListener('click',()=>setView('pilot'));
   }
@@ -349,15 +454,19 @@
     });
     $('v4-tools').hidden=!v4view;
     $('v4-month').value=ui.focus;$('v4-estimate-gaps').checked=ui.lossGaps;$('v4-sources-check').checked=ui.sources;
+    $('v4-markers-check').checked=ui.markers;
     if(!v4view)return;
     $('v4-head').innerHTML='<div class="v4-eyebrow">'+D.label(a)+' → '+D.label(b)+
       '<span> · '+(b-a+1)+' selected months · Snapshot '+D.label(ui.focus)+'</span></div>';
     if(ui.view==='balance')renderBalance();
     if(ui.view==='fleet')renderFleet();
     if(ui.view==='losses')renderLosses();
+    if(ui.view==='pilothistory')renderPilotHistory();
     if(ui.view==='comparison')renderComparison();
     if(ui.view==='sources')renderSources();
+    if(ui.view==='about')renderAbout();
     renderNotes();
+    window.AirWarAtlasV5?.enhanceAll();
   }
   function setView(view){
     ui.view=view;
@@ -380,6 +489,7 @@
   document.querySelectorAll('[data-v4-tab]').forEach(el=>el.addEventListener('click',()=>setView(el.dataset.v4Tab)));
   $('v4-month').addEventListener('change',e=>{ui.focus=+e.target.value;render();});
   $('v4-estimate-gaps').addEventListener('change',e=>{ui.lossGaps=e.target.checked;render();});
+  $('v4-markers-check').addEventListener('change',e=>{ui.markers=e.target.checked;window.AirWarAtlasV5?.setMarkers(ui.markers);});
   $('v4-sources-check').addEventListener('change',e=>{ui.sources=e.target.checked;render();});
   $('v4-export').addEventListener('click',exportCsv);
   // Original v3 owns the dual range handles. Listen after their own callbacks;

@@ -458,6 +458,10 @@
       }
     }
     el.innerHTML=html;
+    // The website layer enhances the original SVG with a keyboard-accessible
+    // nearest-month tooltip. Keep raw counts and model metadata for inspection.
+    (window.AirWarGraphRegistry??=new Map()).set(id,{rows,series,opts,origin:'simulator'});
+    window.AirWarAtlasV5?.enhance(id);
   }
   function pilotView(){
     const c=collect(),last=c.series[c.series.length-1],n=c.end.count||1;
@@ -511,7 +515,7 @@
       '<strong>'+b[0]+'</strong><div style="font-size:23px;font-weight:850">'+(b[3]?b[1]:fmt(b[1])+
       ' <span class="small">('+pc(100*b[1]/n)+')</span>')+'</div></div>').join("");
     $("ledger").innerHTML=c.series.map(r=>{
-      const quality=r.rateQuality==="documented"?"source":"model";
+    const quality=r.rateQuality==="documented"?"source":"model";
       return '<tr><td>'+r.month+' <span class="source-tag '+(quality==="model"?"estimate-tag":"")+'">'+quality+'</span></td>'+
         '<td>'+fmt(r.count)+'</td><td>'+r.strengthAnchor.quality+'</td><td>'+pc(100*r.lossRate)+'</td>'+
         '<td>'+fmt(r.actualLoss)+'</td><td>'+fmt(r.cohort)+'</td><td>'+fmt(r.meanSorties)+'</td>'+

@@ -17,7 +17,7 @@ function node(id='',classes=[]){
 const all=new Map(),ensure=id=>all.get(id)||((all.set(id,node(id))),all.get(id));
 const oldRoot=node('main',['layout']);oldRoot.children=[node('controls',['controls']),node('timeline',['timeline-panel']),node('old-section',['panel'])];
 const timeline=oldRoot.children[1];
-const nav=['pilot','equipment','balance','fleet','losses','comparison','sources'].map(tab=>{
+const nav=['pilot','equipment','balance','fleet','pilothistory','losses','comparison','sources','about'].map(tab=>{
   const el=node('nav-'+tab);el.dataset.v4Tab=tab;return el;
 });
 const selectors={
@@ -40,9 +40,11 @@ assert.equal(ctx.window.AirWarAtlasQA.view(),'balance');
 for(const [tab,text] of [
   ['balance','What was the Luftwaffe facing?'],
   ['fleet','The fleet, aircraft by aircraft'],
+  ['pilothistory','The pilots behind the aircraft'],
   ['losses','What was lost, where, and to whom?'],
-  ['comparison','Thunderbolt vs Mustang'],
+  ['comparison','How airpower was supplied and employed'],
   ['sources','Audit the numbers'],
+  ['about','Why this atlas exists'],
   ['pilot','The experienced core']
 ]){
   nav.find(n=>n.dataset.v4Tab===tab).click();
@@ -54,4 +56,23 @@ assert.ok(ensure('v4-body').innerHTML.includes('Official USAAF ETO total'));
 assert.ok(ensure('v4-body').innerHTML.includes('lower-confidence estimates'));
 nav.find(n=>n.dataset.v4Tab==='losses').click();
 assert.ok(ensure('v4-body').innerHTML.includes('Personnel attrition'));
-console.log('PASS: all seven navigation paths and new historical panels render in a DOM-compatible harness');
+assert.ok(ensure('v4-body').innerHTML.includes('5,602'));
+assert.ok(ensure('v4-body').innerHTML.includes('4,758'));
+assert.ok(ensure('v4-body').innerHTML.includes('v5-claims-monthly'));
+assert.ok(ensure('v4-body').innerHTML.includes('every month, 1942–45'));
+assert.ok(ensure('v4-body').innerHTML.includes('v5-us-combat-loss-cause'));
+assert.ok(ensure('v4-body').innerHTML.includes('3,765'));
+ensure('v5-loss-class').listeners.change({target:{value:'Heavy bomber'}});
+assert.ok(ensure('v4-body').innerHTML.includes('3,497'));
+nav.find(n=>n.dataset.v4Tab==='pilothistory').click();
+assert.ok(ensure('v4-body').innerHTML.includes('15.7%'));
+assert.ok(!ensure('v4-body').innerHTML.includes('4,429'));
+nav.find(n=>n.dataset.v4Tab==='comparison').click();
+assert.ok(ensure('v4-body').innerHTML.includes('not by model'));
+assert.ok(ensure('v4-body').innerHTML.includes('v5-us-sorties-role'));
+assert.ok(ensure('v4-body').innerHTML.includes('5,741'));
+ensure('v5-ops-theater').listeners.change({target:{value:'MTO'}});
+assert.ok(ensure('v4-body').innerHTML.includes('16,344'));
+assert.ok(ensure('v4-body').innerHTML.includes('6,232'));
+assert.ok(!ensure('v4-body').innerHTML.includes('DEBATE CHECK'));
+console.log('PASS: all nine navigation paths, historical pilot series, neutral industry view and annual loss/claim panels');
