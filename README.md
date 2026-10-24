@@ -1,6 +1,6 @@
 # European Air War Atlas · 1936–May 1945
 
-**Version 7.0** · Original German pilot-replacement conference, dated operational returns, source-coverage charts and located German loss-register archive.
+**Version 7.1** · Verified May–June 1944 original German aircraft-loss totals, cause-level airframe categories, and candidly provisional Bf 109/Fw 190 June transcriptions; all prior v7 capabilities remain.
 
 An interactive, source-led historical dashboard for the European air war: fighter-pilot attrition and experience, German and Allied equipment, aircraft production, theater strength, casualties, victory claims and hypothetical cohort simulations.
 
@@ -8,14 +8,21 @@ An interactive, source-led historical dashboard for the European air war: fighte
 
 > The dashboard is a historical exploration and **scenario model**, not a precise reconstruction of every airframe or pilot. It distinguishes observed returns, derived values, two confidence grades of estimation and hypothetical scenarios. Unsupported months are **visually identified** and never treated as zero.
 
-### New in v7.0
+### New in v7.1
+
+- **Four primary month-end aircraft-loss totals transcribed and checked against original scans:** Luftflotte Reich and Luftflotte 3 (Western Front), May and June 1944. Enemy action, other operational losses and non-operational losses are separate; each has **destroyed and damaged** columns. Aircraft missing are **already included** in enemy-action destroyed. These are **not** German fighter-only casualties or confirmed Allied kills.
+- **May all-aircraft write-offs:** Reich **924**, Western Front **343**. **June:** Reich **433**, Western Front **998**. The printed Western May enemy-action subtotal **228** may differ by one from adding its legible component headings; the site preserves the printed value and explicitly flags the discrepancy.
+- **June Bf 109 / Fw 190 aircraft-type research view:** 167 OCR-assisted type rows across two original German command registers, with inverted text-layer page and suspect glyphs checked against scans. These remain **provisional working transcriptions**, not independently verified complete month-by-type records; no allocation is generated for other months.
+- **New loss-cause and theater controls** on the Losses & claims tab, missing-month-aware charts, direct citations, hover inspection and CSV export columns that identify original versus provisional data.
+
+### Introduced in v7.0
 
 - **Visible missing-data coverage:** every archival chart reports how many selected months have observations, displays an observed/missing coverage strip, and allows switching between *focus on observed months* and *full selected period* with visually hatched gaps. Entirely unsupported periods receive an explanatory panel. Hover/touch/keyboard inspection identifies unavailable points without pretending zero losses.
 - **Captured original personnel record:** 15–16 May 1944 Göring/Galland conference reports **489 fighter pilots lost** against **396 replacements** in April. We explicitly retain and contrast the **447** in the preexisting compiled series; reporting definitions cannot simply be assumed identical. Its net 93-person flow difference is not a complete historical force balance.
 - **German fighter-pilot readiness:** at 31 December 1943, **2,395** frontline single-engine fighter pilots, **1,491** fully and **291** partially combat-ready, 613 residual classified only by subtraction.
 - **Luftflotte Reich fighter availability:** 1 June, 1 July and 27 July 1944 original strength versus ready figures; two JG 53 Gruppe-level equipment/personnel cases from the spring battles.
 - **Fuel-production bottleneck:** seven dated 1944–45 aviation versus overall fuel-capacity percentages from Murray Table LVIII; percentages of production capacity, **not tonnes or inventories**.
-- **Twenty identifiable original RAF translations of captured German aircraft-loss reports**, filtering by theater and selection window. They are linked and labeled **untranscribed**, not represented as per-type/month historical loss counts until original cells are checked.
+- **Twenty identifiable original RAF translations of captured German aircraft-loss reports**, filtering by theater and selection window. V7.1 now distinguishes the four documents with imported May/June month-end totals from reports still awaiting numerical transcription.
 
 ## What it includes
 
@@ -39,7 +46,7 @@ The project is a static site. There is no backend, no database, no telemetry, no
 - Open the **GitHub Pages website** linked above. The root `index.html` references files in `dist/` and is no longer a redundant giant standalone release.
 - For local editing, serve the project directory with a simple HTTP file server such as `python3 -m http.server 8000` and open its localhost URL.
 - To rebuild the root entrypoint after editing `dist/index.html`: `node scripts/build-web.cjs`.
-- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
+- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/v71.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
 
 The GitHub Pages site is served from the repository's `main` branch and root directory, **once Pages is enabled** under *Settings → Pages → Deploy from a branch → main / (root)*. If you get a 404 on the Pages link, that repository setting still needs enabling.
 
@@ -86,6 +93,8 @@ For a clickable bibliography showing **which Wikipedia page referenced which pot
 | `dist/model-v4-data.js` | New annotated dated historical data series |
 | `dist/atlas-v6-data.js` | RAF VII/107 returns, separate WWII fighter-type awards, campaign and complete bibliography audit |
 | `dist/atlas-v7-data.js` | German fighter-pilot flows, readiness, training/fuel context and twenty original German loss-return archive links |
+| `dist/atlas-v71-data.js` | Four source-checked May–June 1944 German monthly totals and explicitly provisional June Bf 109/Fw 190 source-line breakdown |
+| `scripts/inspect-ahb-losses.py` | Reproducible OCR inspection aid for 1944 RAF loss scans; see source caveats before treating its output as measured totals |
 | `dist/model-v4.js` | New Atlas views and interactive analyses |
 | `dist/atlas-v5.js` | Chart tooltips, tap and keyboard inspection, historical event overlays |
 | `dist/atlas-v6.js` | Versioned source-integrity helper and integration |

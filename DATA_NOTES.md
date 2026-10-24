@@ -70,5 +70,20 @@ V7 adds original captured German command data **without** adjusting the legacy c
 
 Murray's 31 Dec 1943 2,395 German frontline single-engine fighter pilots comprise 1,491 ready, 291 partly ready, and **613 derived residual**. Luftflotte Reich 1944 readiness points are geographically restricted, not Germany-wide totals. Seven Murray fuel series points are **percentages of refinery production capacity**, not aviation gasoline tonnage or inventory at airfields. The unit reports for III./JG53 and II./JG53 illustrate intensity; they cannot be scaled to all squadrons.
 
-The 20 AHB original German aircraft-loss volumes now have exact date-window and theater links in a filterable index. **No aircraft-type month counts have been imported from those still-untranscribed scans.** Before doing so, transcribe the original columns and reconcile reporting-unit boundaries, damaged vs completely destroyed categories and delayed corrections. The monthly chart coverage strip reports absence honestly, never converting missing dates into invented zeros or a continuous curve.
+The 20 AHB original German aircraft-loss volumes have exact date-window and theater links in a filterable index. V7 originally left the scans numerically untranscribed; v7.1 has now added the first four verified month-end all-aircraft totals and the separately labeled provisional aircraft-type transcript. The monthly chart coverage strip reports absence honestly, never converting missing dates into invented zeros or a continuous curve.
+
+## V7.1: exact German month-end loss returns, May–June 1944
+
+Original RAF AHB reports VII/134 (Reich May), VII/133 (Western Front May), VII/139 (Reich June) and VII/136 (Western Front June) were inspected at the original scanned **MONTH'S TOTAL / TOTAL LOSSES** row. The three top-level outcome classes do not overlap; **missing aircraft are part of enemy-action destroyed**. "Damaged" is not interchangeable with destroyed. Reporting geography is Luftflotte Reich or Luftflotte 3, **not the entire German air force**.
+
+| Month / command | Enemy-action destroyed / damaged | Other operational destroyed / damaged | Non-operational destroyed / damaged | All destroyed / damaged |
+| --- | ---: | ---: | ---: | ---: |
+| May 1944 Reich · VII/134 p22 | 556 / 180 | 107 / 157 | 261 / 349 | **924 / 686** |
+| May 1944 Western Front · VII/133 p15 | 228 / 71 | 27 / 51 | 88 / 147 | **343 / 269** |
+| June 1944 Reich · VII/139 p24 | 208 / 90 | 42 / 44 | 183 / 405 | **433 / 539** |
+| June 1944 Western Front · VII/136 p23 | 818 / 220 | 113 / 219 | 67 / 160 | **998 / 599** |
+
+**Original transcription caveat:** West May's printed enemy-action subtotal is 228, but adding its visibly legible breakdown of subcauses seems to yield 229. We preserve the printed subtotal and show this one-unit discrepancy openly. The final monthly totals are distinct from long-run all-front single-engine-fighter losses by Murray / Zamansky, and the sources' named damaged-aircraft category is not a write-off by definition.
+
+The provisional **June 1944** Bf 109/Fw 190 subtotals were obtained with `scripts/inspect-ahb-losses.py`, whose source PDFs are linked from the dashboard. Page 15 of both June PDFs has an inverted searchable text layer; four aircraft-type rows per document were read directly from the upright scans, and five ambiguous OCR cells were corrected by eye. These candidate sums are *not yet independently reconciled against every original daily row*. They are kept separate from the four verified monthly totals, and no modeled percentages are used to fill May's aircraft-type breakdown or dates elsewhere.
 

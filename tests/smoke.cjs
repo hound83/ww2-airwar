@@ -15,7 +15,8 @@ const {chromium}=require('playwright');
     await page.waitForTimeout(1100);
     assert.deepEqual(errors,[],'No uncaught startup errors');
     assert.equal(await page.title(),'European Air War Atlas · Pilots, Aircraft and Operations 1936–1945');
-    assert.equal(await page.locator('[data-v4-tab]').count(),9);
+    assert.equal(await page.locator('[data-v4-tab]').count(),10);
+    assert.ok((await page.locator('#v4-navigation').innerText()).includes('Version 7.1'));
     assert.ok((await page.locator('#v4-body').innerText()).includes('What was the Luftwaffe facing?'));
     const stats=await page.evaluate(()=>({
       months:window.LuftData.MONTHS,
@@ -34,6 +35,7 @@ const {chromium}=require('playwright');
       ['losses','What was lost, where, and to whom?'],
       ['pilothistory','The pilots behind the aircraft'],
       ['comparison','How airpower was supplied and employed'],
+      ['campaigns','Campaigns and source archives'],
       ['sources','Audit the numbers'],
       ['about','Why this atlas exists'],
       ['pilot','The experienced core'],
@@ -45,6 +47,13 @@ const {chromium}=require('playwright');
       assert.ok(body.includes(text),tab+' has its required content');
       assert.deepEqual(errors,[],tab+' no runtime errors');
     }
+    await page.locator('[data-v4-tab="losses"]').click();
+    assert.ok((await page.locator('#v4-body').innerText()).includes('Original German aircraft loss returns'));
+    assert.ok((await page.locator('#v4-body').innerText()).includes('May 1944'));
+    await page.locator('#v71-theater').selectOption('Western Front');
+    await page.locator('#v71-metric').selectOption('enemyDestroyed');
+    assert.ok((await page.locator('#v4-body').innerText()).includes('228 / 71'));
+    assert.ok((await page.locator('#v4-body').innerText()).includes('Source transcription'));
     await page.locator('[data-v4-tab="fleet"]').click();
     await page.locator('#v4-month').selectOption(String(stats.v3.start+7));
     await page.locator('[data-v4-tab="pilothistory"]').click();

@@ -1,4 +1,30 @@
-# WW2 European Air War Atlas v7 — historical source audit
+# WW2 European Air War Atlas v7.1 — historical source audit
+
+## Version 7.1: original 1944 German aircraft-loss returns digitized
+
+The following four numbers series were read from **printed month-end TOTAL rows**, directly visible in the RAF Air Historical Branch scans of captured German records. They count **all aircraft types**, separated by command and source-defined cause, not fighter pilots, Allied claims or enemy aircraft in the entire European theater.
+
+| Original report · final-page locator | Month and command | Enemy destroyed / damaged | Other operational destroyed / damaged | Non-operational destroyed / damaged | Sum destroyed / damaged |
+| --- | --- | ---: | ---: | ---: | ---: |
+| [VII/134, PDF page 22](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-may-1944/) | May 1944, Reich | 556 / 180 | 107 / 157 | 261 / 349 | **924 / 686** |
+| [VII/133, PDF page 15](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-may-1944/) | May 1944, Luftflotte 3 | 228 / 71 | 27 / 51 | 88 / 147 | **343 / 269** |
+| [VII/139, PDF page 24](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-june-1944/) | June 1944, Reich | 208 / 90 | 42 / 44 | 183 / 405 | **433 / 539** |
+| [VII/136, PDF page 23](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-june-1944/) | June 1944, Luftflotte 3 | 818 / 220 | 113 / 219 | 67 / 160 | **998 / 599** |
+
+The enemy-action subtotal includes "missing" aircraft; this value **must not be added a second time**. A reported damaged aircraft does not count as a destroyed aircraft. The historical sources' geography is a specific Luftflotte, not a harmonized whole-front inventory. The West May source also has a possible **one-aircraft arithmetic disagreement**: the visibly legible subcauses appear to add to 229 enemy-action destructions, while its printed summary is 228. We preserve 228 as printed and do not silently repair the original.
+
+### June aircraft-model rows — transcription progress and remaining uncertainty
+
+The June Reich and Western PDFs list aircraft types day by day, including the Bf 109 (usually printed Me 109) and Fw 190 across fighter, ground-attack, bomber and reconnaissance units. `scripts/inspect-ahb-losses.py` parses OCR word positions into the three non-overlapping outcome columns, adjusts for page-specific shifts, and supplies individually reviewed corrections for five ambiguous cells and **the text-inverted page 15 of each original PDF**. Current source-line candidates:
+
+| June source · model | Enemy-action destroyed / damaged | Other operational destroyed / damaged | Non-operational destroyed / damaged | Working destroyed total |
+| --- | ---: | ---: | ---: | ---: |
+| Reich · Bf 109 | 46 / 19 | 10 / 11 | 61 / 113 | **117** |
+| Reich · Fw 190 | 22 / 7 | 3 / 3 | 30 / 100 | **55** |
+| Western Front · Bf 109 | 301 / 81 | 39 / 92 | 20 / 58 | **360** |
+| Western Front · Fw 190 | 173 / 45 | 16 / 46 | 12 / 24 | **201** |
+
+These aircraft-model sums are **provisional transcription candidates**, not fully independently reconciled month-end model totals. The source does *not* itself provide a printed "Bf 109 June total" suitable for a direct check, and OCR can omit entire faint rows. We therefore do **not** silently promote these values into the historical confirmed series, generalize them to other months, or calculate a claim-specific German kill share from them. Date- and type-complete independent audit is the next source-quality milestone.
 
 ## Version 7.0: additional primary and source-compiled evidence
 
