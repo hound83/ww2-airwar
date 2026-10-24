@@ -38,13 +38,20 @@ const {chromium}=require('playwright');
       ['campaigns','Campaigns and source archives'],
       ['sources','Audit the numbers'],
       ['about','Why this atlas exists'],
-      ['pilot','The experienced core'],
-      ['equipment','Aircraft / material losses']
+      ['pilot','Historical scenario controls'],
+      ['equipment','Historical scenario controls']
     ]){
       await page.locator('[data-v4-tab="'+tab+'"]').click();
       await page.waitForTimeout(120);
-      const body=await page.locator('body').innerText();
-      assert.ok(body.includes(text),tab+' has its required content');
+      if(tab==='pilot'||tab==='equipment'){
+        // The two original simulators deliberately restore the legacy workspace;
+        // #v4-body remains mounted but is hidden rather than re-rendered.
+        assert.equal(await page.locator('[data-v4-tab="'+tab+'"]').getAttribute('aria-current'),'page');
+        assert.ok(await page.getByRole('heading',{name:text}).isVisible(),tab+' original controls remain accessible');
+      }else{
+        const body=await page.locator('#v4-body').innerText();
+        assert.ok(body.includes(text),tab+' has its required content');
+      }
       assert.deepEqual(errors,[],tab+' no runtime errors');
     }
     await page.locator('[data-v4-tab="losses"]').click();
