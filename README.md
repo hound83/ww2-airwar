@@ -1,27 +1,36 @@
 # European Air War Atlas · 1936–May 1945
 
-**Version 6.0** · Original German Quartermaster records + Allied official history + source-by-source research trail.
+**Version 7.0** · Original German pilot-replacement conference, dated operational returns, source-coverage charts and located German loss-register archive.
 
 An interactive, source-led historical dashboard for the European air war: fighter-pilot attrition and experience, German and Allied equipment, aircraft production, theater strength, casualties, victory claims and hypothetical cohort simulations.
 
 **[Open the dashboard](https://hound83.github.io/ww2-airwar/)**
 
-> The dashboard is a historical exploration and **scenario model**, not a precise reconstruction of every airframe or pilot. The app distinguishes observed returns, derived values, two confidence grades of estimation and hypothetical scenarios. It deliberately leaves unsupported months blank.
+> The dashboard is a historical exploration and **scenario model**, not a precise reconstruction of every airframe or pilot. It distinguishes observed returns, derived values, two confidence grades of estimation and hypothetical scenarios. Unsupported months are **visually identified** and never treated as zero.
+
+### New in v7.0
+
+- **Visible missing-data coverage:** every archival chart reports how many selected months have observations, displays an observed/missing coverage strip, and allows switching between *focus on observed months* and *full selected period* with visually hatched gaps. Entirely unsupported periods receive an explanatory panel. Hover/touch/keyboard inspection identifies unavailable points without pretending zero losses.
+- **Captured original personnel record:** 15–16 May 1944 Göring/Galland conference reports **489 fighter pilots lost** against **396 replacements** in April. We explicitly retain and contrast the **447** in the preexisting compiled series; reporting definitions cannot simply be assumed identical. Its net 93-person flow difference is not a complete historical force balance.
+- **German fighter-pilot readiness:** at 31 December 1943, **2,395** frontline single-engine fighter pilots, **1,491** fully and **291** partially combat-ready, 613 residual classified only by subtraction.
+- **Luftflotte Reich fighter availability:** 1 June, 1 July and 27 July 1944 original strength versus ready figures; two JG 53 Gruppe-level equipment/personnel cases from the spring battles.
+- **Fuel-production bottleneck:** seven dated 1944–45 aviation versus overall fuel-capacity percentages from Murray Table LVIII; percentages of production capacity, **not tonnes or inventories**.
+- **Twenty identifiable original RAF translations of captured German aircraft-loss reports**, filtering by theater and selection window. They are linked and labeled **untranscribed**, not represented as per-type/month historical loss counts until original cells are checked.
 
 ## What it includes
 
 - **Airpower overview:** German *on strength versus serviceable* aircraft from captured German returns, compared carefully with selected USAAF ETO/RAF fighter organizational inventories, plus theater allocation.
 - **Aircraft & equipment:** Original dated worldwide German fighter-strength and serviceability observations (1938–April 1945), multi-aircraft-class archival snapshots, preserved Bf 109/Fw 190 estimates, P-38/P-47/P-51, Spitfire, Hurricane, Typhoon, Tempest and RAF Mustang. Factory production and confidence-labeled losses remain separate.
-- **Pilots & experience:** source-reported monthly fighter-pilot strength attrition percentages January 1942–May 1944; absolute casualty counts only for documented months.
+- **Pilots & experience:** source-reported monthly fighter-pilot strength attrition percentages January 1942–May 1944; absolute casualty counts only for documented months; original replacement flow, 1943 pilot readiness and two local JG 53 unit reports.
 - **Losses & claims:** original German theater loss returns, yearly USAAF ETO fighter losses, **complete monthly (August 1942–May 1945) USAAF fighter-class in-air and on-ground credited claims**, **month-by-month U.S. fighter and bomber combat-mission losses by cause (1944–May 1945)**, a separate *Eighth Fighter Command whole-war type-specific claims/loss summary*, original Big Week campaign figures and the expressly **hypothetical** attribution workbench.
-- **Industry & operations:** original aircraft procurement costs, yearly U.S. production, European aircraft inventory and flying hours, plus **all 29 monthly USAAF fighter-sortie reports by mission role (1943–May 1945)** with an ETO/Mediterranean switch.
+- **Industry & operations:** original aircraft procurement costs, yearly U.S. production, European aircraft inventory and flying hours, three dated Reich-only fighter readiness records, fuel-capacity records, plus **all 29 monthly USAAF fighter-sortie reports by mission role (1943–May 1945)** with an ETO/Mediterranean switch.
 - **Campaigns & archives:** original Condor Legion through VE-Day date windows, all **22 chapters** of USAAF official history Volume III, and a valuable original **September 1944 four-command Allied operational-strength comparison**.
 - **Pilot simulator:** preserved Monte Carlo model of novice/veteran risk, sorties, combat encounters, credited claims, returning pilots and Condor Legion/Battle of Britain cohorts through May 1945.
 - **Aircraft simulator:** the existing modeled German readiness/production/write-off views.
 - **Research & sources / About:** search original archives, audit the explicit **Wikipedia article → bibliographic citation → verified record** trail, inspect 22 history chapters, provenance, missing data and project history. Show/hide detailed notes through *Show source notes*.
 - **Timeline:** July 1936–8 May 1945, with scenario presets, a selected-month inspector and toggleable historical event markers.
 
-Charts support **mouse hover, touch/tap and keyboard focus + left/right arrows** to inspect exact monthly numbers and their confidence level.
+Charts support **mouse hover, touch/tap and keyboard focus + left/right arrows** to inspect exact monthly numbers and their confidence level. The coverage strip exposes missing historical months; use its button to change the chart's horizontal view.
 
 ## Run it
 
@@ -30,7 +39,7 @@ The project is a static site. There is no backend, no database, no telemetry, no
 - Open the **GitHub Pages website** linked above. The root `index.html` references files in `dist/` and is no longer a redundant giant standalone release.
 - For local editing, serve the project directory with a simple HTTP file server such as `python3 -m http.server 8000` and open its localhost URL.
 - To rebuild the root entrypoint after editing `dist/index.html`: `node scripts/build-web.cjs`.
-- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
+- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
 
 The GitHub Pages site is served from the repository's `main` branch and root directory, **once Pages is enabled** under *Settings → Pages → Deploy from a branch → main / (root)*. If you get a 404 on the Pages link, that repository setting still needs enabling.
 
@@ -76,6 +85,7 @@ For a clickable bibliography showing **which Wikipedia page referenced which pot
 | `dist/model-v3.js` | Preserved Monte Carlo pilot/equipment application |
 | `dist/model-v4-data.js` | New annotated dated historical data series |
 | `dist/atlas-v6-data.js` | RAF VII/107 returns, separate WWII fighter-type awards, campaign and complete bibliography audit |
+| `dist/atlas-v7-data.js` | German fighter-pilot flows, readiness, training/fuel context and twenty original German loss-return archive links |
 | `dist/model-v4.js` | New Atlas views and interactive analyses |
 | `dist/atlas-v5.js` | Chart tooltips, tap and keyboard inspection, historical event overlays |
 | `dist/atlas-v6.js` | Versioned source-integrity helper and integration |

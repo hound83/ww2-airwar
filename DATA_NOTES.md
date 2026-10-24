@@ -64,3 +64,11 @@ This file documents the most important scope boundaries behind the European Air 
 5. Add RAF 1940 and 1944 fighter readiness, original RAF claims and Soviet theater strengths at matching scopes.
 
 Missing values are missing; they are not zero. A high-fidelity historical dashboard must sometimes leave a blank cell.
+# V7: archival personnel flows, readiness and visible source gaps
+
+V7 adds original captured German command data **without** adjusting the legacy casualty calibration by fiat. For April 1944 RAF AHB VII/71/Galland reports 489 pilots lost, 396 reinforcements; the existing Murray monthly absolute series is 447. The difference in report population or definitions is not sufficiently reconciled to treat 489 and 447 as interchangeable. The 93-pilot arithmetic difference between reported flows is **not** total fighter pilot net strength, and neither count is pilot deaths alone.
+
+Murray's 31 Dec 1943 2,395 German frontline single-engine fighter pilots comprise 1,491 ready, 291 partly ready, and **613 derived residual**. Luftflotte Reich 1944 readiness points are geographically restricted, not Germany-wide totals. Seven Murray fuel series points are **percentages of refinery production capacity**, not aviation gasoline tonnage or inventory at airfields. The unit reports for III./JG53 and II./JG53 illustrate intensity; they cannot be scaled to all squadrons.
+
+The 20 AHB original German aircraft-loss volumes now have exact date-window and theater links in a filterable index. **No aircraft-type month counts have been imported from those still-untranscribed scans.** Before doing so, transcribe the original columns and reconcile reporting-unit boundaries, damaged vs completely destroyed categories and delayed corrections. The monthly chart coverage strip reports absence honestly, never converting missing dates into invented zeros or a continuous curve.
+

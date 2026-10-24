@@ -52,7 +52,7 @@
     return {name:s.name||names[id]?.[j]||'Series '+(j+1),amount,evidence,color:s.color};
   }
   function dimensions(el,id){
-    const newer=id.startsWith('v4-')||id.startsWith('v5-')||id.startsWith('v6-');
+    const newer=id.startsWith('v4-')||id.startsWith('v5-')||id.startsWith('v6-')||id.startsWith('v7-');
     const vb=el.viewBox?.baseVal;
     const w=vb?.width|| (newer?980:600);
     return {w,l:newer?62:52,r:newer?24:18,y1:newer?18:12,y2:newer?216:226};
@@ -101,8 +101,10 @@
         const fracData=(pos-geom.l)/(geom.w-geom.l-geom.r);
         const index=indexOverride??Math.max(0,Math.min(data.rows.length-1,Math.round(fracData*(data.rows.length-1))));
         state.current=index;
-        const r=data.rows[index],present=data.series.map((s,j)=>describe(id,r,s,j,data.opts||{},data.origin)).filter(Boolean);
-        if(!present.length){hide();return;}
+        const r=data.rows[index],entries=data.series.map((s,j)=>describe(id,r,s,j,data.opts||{},data.origin));
+        const present=entries.filter(Boolean);
+        // Absent historical observations are not zero: leave the crosshair
+        // and date visible and explain the gap on hover / touch / keyboard.
         const xSvg=geom.l+(geom.w-geom.l-geom.r)*(data.rows.length===1?.5:index/(data.rows.length-1));
         if(!state.cross||!state.cross.isConnected){state.cross=svgLine('atlas-crosshair');el.appendChild(state.cross);}
         for(const [key,val] of Object.entries({x1:xSvg,x2:xSvg,y1:geom.y1,y2:geom.y2}))state.cross.setAttribute(key,String(val));
@@ -112,7 +114,9 @@
         const event=historical?.milestones?.find(x=>x.i===r.i);
         tip.innerHTML='<strong class="atlas-tooltip-title">'+esc(labelOf(r))+'</strong>'+
           (event?'<p class="atlas-tooltip-event">◆ '+esc(event.title)+'</p>':'')+
-          present.map(p=>'<div class="atlas-tooltip-row"><i style="background:'+esc(p.color||'#c3b389')+'"></i><span>'+esc(p.name)+'</span><b>'+esc(p.amount)+'</b><small>'+esc(p.evidence)+'</small></div>').join('')+
+          (present.length?entries.map((p,j)=>p?'<div class="atlas-tooltip-row"><i style="background:'+esc(p.color||'#c3b389')+'"></i><span>'+esc(p.name)+'</span><b>'+esc(p.amount)+'</b><small>'+esc(p.evidence)+'</small></div>':
+            '<div class="atlas-tooltip-row"><i style="background:'+esc(data.series[j].color||'#a8a598')+'"></i><span>'+esc(data.series[j].name||'Series '+(j+1))+'</span><b>—</b><small>No verified value at this date</small></div>').join(''):
+            '<div class="v7-tooltip-absent">No comparable historical observation for this month. <strong>Missing ≠ zero.</strong></div>')+
           '<span class="atlas-tooltip-foot">'+esc(sourceLine)+'</span>';
         tip.hidden=false;
         const parentRect=parent.getBoundingClientRect();

@@ -58,7 +58,7 @@ assert.equal(X.september44Allied.germanWest.fightersOnStrength,431);
 assert.equal(new Set(X.historyChapters.map(p=>p.url)).size,22);
 const rootHtml=fs.readFileSync(path.join(root,'index.html'),'utf8');
 for(const asset of ['atlas-v6-data.js','atlas-v6.js','model-v3.js','model-v4.js','atlas.css'])
-  assert.ok(rootHtml.includes('./dist/'+asset+'?v=6.0'));
+  assert.ok(rootHtml.includes('./dist/'+asset+'?v=7.0'));
 assert.ok(rootHtml.indexOf('atlas-v6-data.js')<rootHtml.indexOf('model-v4.js'));
 assert.ok(rootHtml.indexOf('atlas-v5.js')<rootHtml.indexOf('atlas-v6.js'));
 console.log('PASS: v6 aircraft records, date windows, observed/estimated distinction, source-audited Eighth Command totals, campaign tables, bibliography and publication assets');

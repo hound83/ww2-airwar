@@ -32,7 +32,7 @@ const document={
   querySelectorAll:selector=>selector==='[data-v4-tab]'?nav:[]
 };
 const ctx=vm.createContext({document,window:{},console,setTimeout(){},clearTimeout(){}});
-for(const filename of ['model-v3-data.js','model-v4-data.js','atlas-v6-data.js'])
+for(const filename of ['model-v3-data.js','model-v4-data.js','atlas-v6-data.js','atlas-v7-data.js'])
   vm.runInContext(fs.readFileSync(path.join(root,filename),'utf8'),ctx,{filename});
 ctx.window.LuftLabQA={inspect:()=>({start:78,end:89})};
 vm.runInContext(fs.readFileSync(path.join(root,'model-v4.js'),'utf8'),ctx,{filename:'model-v4.js'});
@@ -86,5 +86,15 @@ nav.find(n=>n.dataset.v4Tab==='sources').click();
 assert.ok(ensure('v4-body').innerHTML.includes('Wikipedia bibliography cross-check'));
 assert.ok(ensure('v4-body').innerHTML.includes('Chapter 22'));
 assert.ok(ensure('v4-body').innerHTML.includes('RAF AHB VII/107'));
-assert.ok(selectors.footer.textContent.includes('v6.0'));
+assert.ok(selectors.footer.textContent.includes('v7.0'));
+assert.ok(ctx.window.AirWarAtlasQA.version==='7.0');
+nav.find(n=>n.dataset.v4Tab==='pilothistory').click();
+assert.ok(ensure('v4-body').innerHTML.includes('489'));
+assert.ok(ensure('v4-body').innerHTML.includes('396'));
+assert.ok(ensure('v4-body').innerHTML.includes('v7-coverage-track'));
+nav.find(n=>n.dataset.v4Tab==='losses').click();
+assert.ok(ensure('v4-body').innerHTML.includes('Captured German aircraft-loss register'));
+assert.ok(ensure('v4-body').innerHTML.includes('VII/149'));
+nav.find(n=>n.dataset.v4Tab==='sources').click();
+assert.ok(ensure('v4-body').innerHTML.includes('Twenty original German aircraft-loss returns'));
 console.log('PASS: all ten navigation paths, RAF German original returns, RAF/USAAF claims, historical archive and new source browser');
