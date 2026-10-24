@@ -45,6 +45,14 @@
   document.querySelector('.kicker').textContent='Source-led aviation history · interactive research laboratory';
   document.querySelector('.lead').textContent='From the Condor Legion to VE Day: inspect pilot attrition, inventories, production, loss returns, credited claims and Allied airpower. Original wartime figures, interpolation and hypothetical scenarios remain distinct.';
   document.querySelector('footer').textContent='European Air War Atlas v5.0 · July 1936–8 May 1945 · Historical source explorer and hypothesis lab · Runs locally in your browser.';
+  // Update an obsolete legacy v3 narrative. Monthly Murray rates through May
+  // 1944 have now been transcribed; months beyond that remain scenario inputs.
+  for(const tile of document.querySelectorAll('.info-card')){
+    if(!tile.textContent?.includes('1942 & 1944 loss curves'))continue;
+    const heading=tile.querySelector('strong'),detail=tile.querySelector('p');
+    if(heading)heading.innerHTML='1942–May 1944 documented loss rates <span class="source-tag">SOURCE</span>';
+    if(detail)detail.textContent='Murray’s fighter-pilot strength-loss series is entered month by month through May 1944. Earlier wartime prehistory and late-1944/1945 hazards remain explicitly modeled assumptions.';
+  }
 
   function card(value,title,foot,color='var(--teal)'){
     return '<div class="v4-stat" style="--accent:'+color+'"><div class="v4-number">'+value+'</div><div class="v4-label">'+title+'</div><div class="v4-foot">'+foot+'</div></div>';
