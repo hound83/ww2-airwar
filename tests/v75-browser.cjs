@@ -1,0 +1,42 @@
+'use strict';
+const assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
+const {chromium}=require('playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+ const page=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ try{
+   await page.goto(pathToFileURL(path.join(__dirname,'../index.html')).href+'?preview=7.5',{waitUntil:'load'});
+   await page.locator('.v75-home-grid').waitFor({state:'visible',timeout:12000});
+   assert.equal(await page.locator('.v75-photo-card').count(),9);
+   assert.equal(await page.locator('#v4-navigation .v4-navrow').isVisible(),false,'home uses photo navigation');
+   await page.screenshot({path:'v75-preview-home.png',fullPage:false});
+   await page.locator('[data-v74-open="fleet"]').click();
+   await page.getByRole('heading',{name:'Aircraft & Equipment'}).waitFor();
+   await page.locator('#v75-aircraft-select').selectOption('P-47');
+   assert.ok((await page.locator('#v4-body').innerText()).includes('Monthly factory acceptances'));
+   await page.locator('[data-v4-tab="pilothistory"]').click();
+   assert.ok((await page.locator('#v4-body').innerText()).includes('Pilots & Experience'));
+   await page.locator('[data-v4-tab="losses"]').click();
+   assert.ok((await page.locator('#v4-body').innerText()).includes('Losses & Claims'));
+   await page.locator('[data-v4-tab="comparison"]').click();
+   assert.ok((await page.locator('#v4-body').innerText()).includes('Industry & Operations'));
+   await page.locator('[data-v4-tab="campaigns"]').click();
+   await page.locator('#v75-show-campaigns').click();
+   assert.ok(await page.locator('[data-v75-preset="barbarossa"]').isVisible());
+   await page.locator('[data-v75-preset="barbarossa"]').click();
+   assert.equal(await page.locator('[data-v73-theater="east"]').getAttribute('aria-pressed'),'true');
+   await page.locator('[data-v4-tab="sources"]').click();
+   assert.ok(await page.locator('[data-v75-source-search]').isVisible());
+   await page.locator('[data-v4-tab="about"]').click();
+   assert.ok((await page.locator('#v4-body').innerText()).includes('Development roadmap'));
+   await page.locator('[data-v4-tab="pilot"]').click();
+   assert.equal(await page.evaluate(()=>window.AirWarAtlasQA.view()),'pilot');
+   await page.locator('[data-v4-tab="home"]').click();
+   await page.setViewportSize({width:390,height:844});
+   await page.locator('.v75-home-grid').waitFor({state:'visible'});
+   assert.ok(await page.locator('.v75-photo-card').first().isVisible());
+   assert.deepEqual(errors,[],'No runtime errors across views');
+   console.log('PASS v7.5 preview browser: home, fleet, pilots, losses, industry, campaigns, sources, about, simulator & mobile');
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       - name: Rebuild HTML and verify reproducibility
         run: |
           node scripts/build-web.cjs
@@ -22,3 +22,16 @@ jobs:
             echo "RUN $file"
             node "$file"
           done
+      - name: Install browser smoke dependencies
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Preview browser end-to-end
+        run: node tests/v75-browser.cjs
+      - name: Save preview screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v75-preview-home
+          path: v75-preview-home.png
+          if-no-files-found: ignore
