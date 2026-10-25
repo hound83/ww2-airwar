@@ -1,0 +1,24 @@
+name: V75 preview validation
+on:
+  push:
+    branches: [v7.5-preview]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Rebuild HTML and verify reproducibility
+        run: |
+          node scripts/build-web.cjs
+          git diff --exit-code -- index.html
+      - name: Verify historical data and v7.4 regression baseline
+        run: |
+          set -e
+          for file in tests/data.cjs tests/v6.cjs tests/v7.cjs tests/v71.cjs tests/v72.cjs tests/v73.cjs tests/v74.cjs tests/render.cjs tests/tooltips.cjs tests/v75.cjs; do
+            echo "RUN $file"
+            node "$file"
+          done

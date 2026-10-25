@@ -1,4 +1,4 @@
-/* European Air War Atlas v7.4 — source-led, front-aware visual research. */
+/* European Air War Atlas 7.4 + opt-in 7.5 development preview. Historical baseline preserved. */
 (function(){
   'use strict';
   const D=window.LuftData,V=window.LuftV4Data,X=window.AirWarV6Data,Y=window.AirWarV7Data,
@@ -972,6 +972,11 @@
     if(!v4view)return;
     $('v4-head').innerHTML='<div class="v4-eyebrow">'+D.label(a)+' → '+D.label(b)+
       '<span> · '+(b-a+1)+' selected months'+(ui.detailMonth!=null?' · detail '+D.label(ui.detailMonth):' · period end '+D.label(b))+'</span></div>';
+    const isV75Preview=String(window.location?.search||'').includes('preview=7.5');
+    document.body.classList.toggle('v75-preview',isV75Preview);
+    const v75Body=isV75Preview?window.AirWarV75Views?.render(ui.view,{ui,D,V,X,Y,Z,H,W,QA,period:months(),allSnapshot,germanTheater,chart,fmt,tag,cite}):null;
+    if(v75Body!=null){$('v4-body').innerHTML=v75Body;}
+    else{
     if(ui.view==='home')renderHome();
     if(ui.view==='balance')renderBalance();
     if(ui.view==='fleet')renderFleet();
@@ -981,21 +986,23 @@
     if(ui.view==='campaigns')renderCampaigns();
     if(ui.view==='sources')renderSources();
     if(ui.view==='about')renderAbout();
-    $('v73-extra').innerHTML=ui.view==='fleet'?variantExplorer()+nationalLedgers():ui.view==='campaigns'?battleOfBritainDetail():'';
-    $('v73-period-banner').innerHTML=['home','about','sources'].includes(ui.view)?'':periodOverview();
-    $('v73-feature-banner').innerHTML=(ui.theater!=='overall'&&!['home','balance','about','sources'].includes(ui.view)?
+    }
+    $('v73-extra').innerHTML=v75Body!=null?'':ui.view==='fleet'?variantExplorer()+nationalLedgers():ui.view==='campaigns'?battleOfBritainDetail():'';
+    $('v73-period-banner').innerHTML=v75Body!=null?'':['home','about','sources'].includes(ui.view)?'':periodOverview();
+    $('v73-feature-banner').innerHTML=v75Body!=null?'':(ui.theater!=='overall'&&!['home','balance','about','sources'].includes(ui.view)?
       '<p class="v73-front-warning">'+safe(theaterLabels())+': this page also contains all-front, nationwide or differently scoped reference figures. Those sections are background, <strong>not</strong> automatically assigned to the selected front.</p>':'')+
       (ui.view==='home'?'':easternFrontLens()+(ui.view==='losses'?theaterLossInsight():''));
-    $('v73-detail-banner').innerHTML=ui.detailMonth!=null&&!['home','about','sources'].includes(ui.view)?'<div class="v73-detail-note">Inspecting '+D.label(ui.detailMonth)+' within '+D.label(a)+'–'+D.label(b)+' <button type="button" data-v73-clear-month>Return to period end</button></div>':'';
+    $('v73-detail-banner').innerHTML=v75Body!=null?'':ui.detailMonth!=null&&!['home','about','sources'].includes(ui.view)?'<div class="v73-detail-note">Inspecting '+D.label(ui.detailMonth)+' within '+D.label(a)+'–'+D.label(b)+' <button type="button" data-v73-clear-month>Return to period end</button></div>':'';
     renderNotes();
     window.AirWarAtlasV5?.enhanceAll();
-    progressivelyCollapse();
+    if(v75Body==null)progressivelyCollapse();
     for(const el of document.querySelectorAll('#v4-body details'))if(openDetails.has(el.querySelector('summary')?.textContent))el.open=true;
   }
   function setView(view){
     ui.view=view;
     if(view==='pilot'||view==='equipment'){$('view-'+view).click();}
     render();
+    if(typeof window.scrollTo==='function')window.scrollTo(0,0);
   }
   function exportCsv(){
     const {range}=months();const columns=['month','USAAF_P47_ETO','USAAF_P51_ETO','USAAF_P38_ETO',
@@ -1034,11 +1041,26 @@
   $('v4-markers-check').addEventListener('change',e=>{ui.markers=e.target.checked;window.AirWarAtlasV5?.setMarkers(ui.markers);});
   $('v4-sources-check').addEventListener('change',e=>{ui.sources=e.target.checked;render();});
   $('v4-export').addEventListener('click',exportCsv);
-  extra.addEventListener('click',e=>{if(e.target.closest('[data-v7-expand]')){ui.chartFullRange=!ui.chartFullRange;render();}
+  extra.addEventListener('click',e=>{ 
+    const preset=e.target.closest('[data-v75-preset]');
+    if(preset&&window.AirWarV75Views){
+      const c=window.AirWarV75Views.campaigns.find(x=>x.id===preset.dataset.v75Preset);
+      if(c){
+        ui.theater=c.theater;ui.detailMonth=null;
+        $('start').value=D.idx(...c.start);$('end').value=D.idx(...c.end);
+        for(const id of ['start','end'])$(id).dispatchEvent(new Event('input',{bubbles:true}));
+        setTimeout(render,0);return;
+      }
+    }
+    if(e.target.closest('#v75-show-campaigns')){window.AirWarV75Views.state.showCampaigns=!window.AirWarV75Views.state.showCampaigns;render();return;}
+    if(e.target.closest('[data-v7-expand]')){ui.chartFullRange=!ui.chartFullRange;render();}
     if(e.target.closest('[data-v73-clear-month]')){ui.detailMonth=null;render();}
     const open=e.target.closest('[data-v74-open]');if(open){setView(open.dataset.v74Open);return;}
     const month=e.target.closest('[data-v72-month]');if(month){ui.detailMonth=+month.dataset.v72Month;render();}});
-  extra.addEventListener('change',e=>{if(e.target.id==='v7-archive-theater'){ui.archiveTheater=e.target.value;render();}});
+  extra.addEventListener('change',e=>{
+    if(e.target.id==='v75-aircraft-select'&&window.AirWarV75Views){window.AirWarV75Views.state.aircraft=e.target.value;render();return;}
+    if(e.target.matches('[data-v75-source-search]')&&window.AirWarV75Views){window.AirWarV75Views.state.sourceQuery=e.target.value;render();return;}
+    if(e.target.id==='v7-archive-theater'){ui.archiveTheater=e.target.value;render();}});
   extra.addEventListener('change',e=>{if(e.target.id==='v71-theater'){ui.v71Theater=e.target.value;render();}
     if(e.target.id==='v71-metric'){ui.v71Metric=e.target.value;render();}});
   // Original v3 owns the dual range handles. Listen after their own callbacks;
