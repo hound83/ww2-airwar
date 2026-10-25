@@ -31,7 +31,9 @@ for(const v of ['home','balance','fleet','pilothistory','losses','comparison','c
 assert.equal((A.render('home',rc).match(/v75-photo-card/g)||[]).length,9,'9 navigation photo cards');
 A.state.aircraft='P-47';
 assert.ok(A.render('fleet',rc).includes('Monthly factory acceptances'),'documented P-47 monthly series visible');
-assert.ok(A.render('pilothistory',rc).includes('Not yet a compatible personnel series'),'no fake Allied pilot series');
+assert.ok(A.render('pilothistory',rc).includes('Other pilot populations'),'no fake Allied pilot series');
+rc.ui.theater='east';assert.ok(A.render('pilothistory',rc).includes('Soviet source checkpoint'),'Eastern research scope is explicit');
+rc.ui.theater='overall';
 assert.ok(A.render('industry',rc)===null,'unrecognized internal route does not render random view');
 rc.ui.theater='east';
 assert.ok(A.render('losses',rc).includes('Eastern Front source gap'),'West return must not be mislabelled East');

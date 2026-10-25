@@ -71,9 +71,7 @@ function aircraft(ctx){
  const monthlyRows=isUS?period.range.map(i=>{const d=D.at(i);return {i,label:D.label(i),value:usModel?.years?.[d.y]?.[chosen]?.[d.m]??null};}):[];
  const monthlyChart=isUS&&usModel?box('Monthly factory acceptances · '+chosen,renderChart(ctx,'v75-type-production',monthlyRows,[{name:chosen+' · USAAF factory acceptances (worldwide)',color:'#a6c6ae',value:x=>x.value}], 'Table 76 · primary historical report, transcription checked against full-year control totals. Worldwide U.S. factory acceptance is not operational strength in Europe.')):'';
 
- const yearly=isUS?Array.from({length:6},(_,k)=>({year:1940+k,value:V.usaAnnualAccepted?.[chosen]?.[1940+k]??null})):
- W.usaFactory.reduce((m,r)=>{if(r.year<=1945){m[r.year]??=0;m[r.year]+=r.fighters}return m;},{});
- const yrRows=isUS?yearly:Array.from({length:6},(_,k)=>({year:1940+k,value:yearly[1940+k]??null}));
+ const yrRows=isUS?Array.from({length:6},(_,k)=>({year:1940+k,value:V.usaAnnualAccepted?.[chosen]?.[1940+k]??null})):[];
  const bars=yrRows.map(x=>({year:x.year,count:x.value??null}));
  const barmax=Math.max(1,...bars.map(x=>x.count??0));
  const chartBody='<div class="v75-bars">'+bars.map(x=>'<div><span>'+esc(x.year)+'</span><div class="v75-bar-track">'+(x.count==null?'<i class="v75-missing">Unknown</i>':'<i style="width:'+Math.max(2,100*x.count/barmax).toFixed(2)+'%"></i>')+'</div><b>'+format(x.count)+'</b></div>').join('')+'</div>';
@@ -82,8 +80,7 @@ function aircraft(ctx){
   '<div class="v75-chooser"><label>Aircraft family <select id="v75-aircraft-select">'+choices.map(n=>'<option '+(n===chosen?'selected':'')+'>'+esc(n)+'</option>').join('')+'</select></label></div>'+
   box(chosen+' — variant development','<div class="v75-variant-row">'+variants.map((v,i)=>'<span>'+esc(v)+'<small>Variant '+(i+1)+'</small></span>').join('')+'</div><p class="v75-caption">Variant order is orientation only. Exact first service dates, configurations and per-variant quantities require source-verified aircraft-block data; a dash is not a zero.</p>')+
   monthlyChart+
-  box(isUS?'Factory acceptances by year · '+chosen:'Worldwide USAAF fighter acceptances · production benchmark',chartBody+
-    disclaimer(isUS?'US factory acceptances, not '+chosen+' operational inventory in the European theater.':'U.S. fighter production benchmark only; it is NOT production of '+esc(chosen)+'. German/UK variant ledgers require additional archival sources.'))+
+  (isUS?box('Factory acceptances by year · '+chosen,chartBody+disclaimer('Worldwide U.S. factory acceptances, not ETO inventory, assignments, losses or serviceable aircraft.')):box('Production by variant · archival research required',note('No audited family series yet','A U.S. national production figure would be unrelated to '+esc(chosen)+'. This page therefore does not substitute foreign production for the selected aircraft. German, RAF and Soviet original or validated secondary output reports are research priorities.')))+
   box('Source-supported operation and performance',note('Do not confuse the measures','Production, aircraft on strength, serviceability and losses belong in linked but separately defined series. Per-variant performance curves will be added only after test conditions and engine/boost data are validated.'))+
   details('Technical profiles and documentation','<p>Aircraft test parameters are variant- and engine-setting-specific. This view preserves the research target: motor, weight, armament, wing loading, speed and climb vs altitude, where source measurements exist.</p>');
 }
@@ -92,25 +89,43 @@ function pilots(ctx){
  const lossMap=new Map(losses.map(x=>[x.i,x.value])),rateMap=new Map(rates.map(x=>[x.i,x.value]));
  const rows=r.map(i=>({i,label:D.label(i)}));
  const total=sum(losses,'value');
+ const east=ctx.ui.theater==='east', west=ctx.ui.theater==='west';
+ const sovMay=ctx.W.sovietEarly.find(p=>p.period==='1942-05');
  return header(ctx,'Pilots & Experience','How were trained aircrews lost and replaced, and what happened to veteran experience? Fighter pilots are the primary population, not the only one.')+
-  '<div class="v75-statrow">'+stat(total.value,'German fighter-pilot casualties in reported months',losses.length+'/'+r.length+' months covered')+stat(null,'RAF/USAAF/VVS equivalent','Not yet a compatible personnel series')+'</div>'+
-  box('Documented pilot casualties · Germany (partial Europe)',renderChart(ctx,'v75-pilot-casualties',rows,[{name:'German fighter-pilot casualties (reported)',color:'#d9a47a',value:x=>lossMap.get(x.i)??null}], 'Casualties are not necessarily fatalities. No missing month is treated as zero.'))+
-  box('Loss percentage · separate population and definition',renderChart(ctx,'v75-pilot-attrition',rows,[{name:'Reported German fighter-pilot strength losses',color:'#a3c7bd',value:x=>rateMap.get(x.i)??null}], 'Monthly percentage losses may not share the same denominator as the casualty-count series; do not derive absolute losses by multiplication without matching both.') )+
+  (east?box('Soviet source checkpoint · May 1942',period.range.includes(D.idx(1942,4))?'<div class="v75-statrow">'+stat(sovMay?.trainedFighterCrews,'Trained VVS fighter crews · front + reserve','Source-based transcription, 1 May 1942 reporting scope')+stat(sovMay?.fighters,'VVS fighter aircraft · same report','Aircraft are not pilot headcounts')+'</div>':note('No comparable Soviet pilot monthly series','The retained source includes a fighter-crew checkpoint in May 1942; it cannot be extrapolated through a different selected period.')):'<div class="v75-statrow">'+stat(total.value,'German fighter-pilot casualties · all fronts',losses.length+'/'+r.length+' reported months')+stat(null,'Other pilot populations','Additional RAF / USAAF / VVS personnel returns required')+'</div>')+
+  (west?note('All-front German source, not West-only','The monthly fighter-pilot series has no source-audited Western theater split. It is shown below for background only, not a Western Front total.'):'')+
+  (east?'':  box('Documented pilot casualties · Germany (partial Europe)',renderChart(ctx,'v75-pilot-casualties',rows,[{name:'German fighter-pilot casualties (reported)',color:'#d9a47a',value:x=>lossMap.get(x.i)??null}], 'Casualties are not necessarily fatalities. No missing month is treated as zero.'))+
+  box('Loss percentage · separate population and definition',renderChart(ctx,'v75-pilot-attrition',rows,[{name:'Reported German fighter-pilot strength losses',color:'#a3c7bd',value:x=>rateMap.get(x.i)??null}], 'Monthly percentage losses may not share the same denominator as the casualty-count series; do not derive absolute losses by multiplication without matching both.') ))+
   note('What needs more evidence','RAF, USAAF and VVS pilot flows, training and squadron/group rosters remain research priorities. No JG 53 case study will be scaled into an entire air force.')+
   details('Cohort interpretation','<p>Survival of an original operational cohort differs from fatalities: injuries, POW status, transfers and retirement may remove a pilot from operational service. Cohort models belong to the Pilot Simulator, not to the historical record.</p>');
 }
 function losses(ctx){
- const {D,Z,period,ui}=ctx,records=Z.monthlyReturns.filter(p=>period.range.includes(p.i)&&(ui.theater==='west'?p.theater==='Western Front':ui.theater==='east'?false:p.theater==='Reich'));
- const byIdx=new Map(records.map(p=>[p.i,p])),rows=period.range.map(i=>({i,label:D.label(i)}));
- const sumDestroyed=sum(records,'destroyed'),sumDamaged=sum(records,'damaged');
- return header(ctx,'Losses & Claims','Write-offs first, damage separately and aerial victory claims never counted as independently confirmed destruction.')+
-  (ui.theater==='east'?note('Eastern Front source gap','The currently transcribed German command-return series cover Western and Reich commands. These cannot be relabeled Eastern Front losses. VVS and Eastern German monthly loss returns remain a research priority.'):'<div class="v75-statrow">'+stat(sumDestroyed.value,'Reported German aircraft destroyed',sumDestroyed.covered+'/'+rows.length+' months, partial theater')+stat(sumDamaged.value,'Reported German aircraft damaged',sumDamaged.covered+'/'+rows.length+' months, not write-offs')+'</div>'+
-   box('Reported German command losses over time',renderChart(ctx,'v75-losses',rows,[
-     {name:'Destroyed / written off',color:'#d68b78',value:x=>byIdx.get(x.i)?.destroyed??null},
-     {name:'Damaged',color:'#c0b68d',value:x=>byIdx.get(x.i)?.damaged??null}],
-     'These are two different outcomes. Reich is not the entire Luftwaffe. Gaps are genuinely missing, and reported damage should not be added to write-offs.'), 'v75-hero-panel'))+
-  note('Claims are a different series','To compare victory claims to loss reports, nationality, dates, front, claim type and opponent must match. A simple national claim-versus-national-loss subtraction would be misleading.')+
-  details('Available command returns and source limitations',records.length?'<div class="v75-tablewrap"><table><thead><tr><th>Report</th><th>Destroyed</th><th>Damaged</th><th>Source</th></tr></thead><tbody>'+records.map(p=>'<tr><td>'+esc(D.label(p.i))+' · '+esc(p.theater)+'</td><td>'+format(p.destroyed)+'</td><td>'+format(p.damaged)+'</td><td>'+esc(p.sourceId)+'</td></tr>').join('')+'</tbody></table></div>':'<p>No comparable original reports for the chosen theater and interval.</p>');
+ const {D,Z,period,ui}=ctx;
+ const records=Z.monthlyReturns.filter(p=>period.range.includes(p.i)&&(ui.theater==='west'?p.theater==='Western Front':ui.theater==='east'?false:['Reich','Western Front'].includes(p.theater)));
+ const byTheater=(theater)=>new Map(records.filter(p=>p.theater===theater).map(p=>[p.i,p]));
+ const reich=byTheater('Reich'),west=byTheater('Western Front');
+ const rows=period.range.map(i=>({i,label:D.label(i)}));
+ const destroyed=sum(records,'destroyed'),damaged=sum(records,'damaged');
+ const overview='<div class="v75-statrow">'+
+   stat(destroyed.value,'German aircraft destroyed · reported commands',destroyed.covered+' reports across '+rows.length+' months · incomplete theater coverage')+
+   stat(damaged.value,'German aircraft damaged · reported commands',damaged.covered+' reports; damaged aircraft are not write-offs')+'</div>';
+ const series=[
+   {name:'Reich · destroyed',color:'#d68b78',value:x=>reich.get(x.i)?.destroyed??null},
+   {name:'Western command · destroyed',color:'#e4c28f',value:x=>west.get(x.i)?.destroyed??null},
+   {name:'Reich · damaged',color:'#b17f85',value:x=>reich.get(x.i)?.damaged??null},
+   {name:'Western command · damaged',color:'#97b2ad',value:x=>west.get(x.i)?.damaged??null}
+ ];
+ const graph=box('German command loss reports · distinct populations',
+   renderChart(ctx,'v75-losses',rows,series,
+   'Reich and Western Front are distinct commands, neither equal to all Germany. The plotted series are not total European losses. Damaged aircraft are not counted as destroyed.'),'v75-hero-panel');
+ const gap=note('Eastern Front source gap','Existing German command-return series cover Western and Reich reporting units. They cannot be reassigned to Eastern German or Soviet losses.');
+ return header(ctx,'Losses & Claims','Write-offs first, damage separately and victory claims never treated as independently confirmed destruction.')+
+  (ui.theater==='east'?gap:overview+graph)+
+  note('Victory claims differ from losses','Nationality, dates, aircraft class, theater and opponent must match before claims can be compared with recorded enemy write-offs.')+
+  details('Available command returns · original monthly observations',records.length?
+    '<div class="v75-tablewrap"><table><thead><tr><th>Report</th><th>Destroyed</th><th>Damaged</th><th>Source</th></tr></thead><tbody>'+
+    records.map(p=>'<tr><td>'+esc(D.label(p.i))+' · '+esc(p.theater)+'</td><td>'+format(p.destroyed)+'</td><td>'+format(p.damaged)+'</td><td>'+esc(p.sourceId)+'</td></tr>').join('')+'</tbody></table></div>':
+    '<p>No compatible reported command returns for this selected area and period.</p>');
 }
 function industry(ctx){
  const {D,W,period}=ctx,selected=W.usaFactory.filter(p=>period.range.includes(D.idx(p.year,p.month))),all=period.range.map(i=>({i,label:D.label(i)}));
