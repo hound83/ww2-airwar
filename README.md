@@ -1,6 +1,6 @@
 # European Air War Atlas · 1936–May 1945
 
-**Version 7.2** · Thirty visually verified September 1943–November 1944 original German aircraft-loss command-month totals, a numerical missing-data calendar, full cause-level destroyed/damaged breakdown and June 1944 aircraft-type rows clearly kept provisional. All previous capabilities remain.
+**Version 7.3** · Theater-aware, period-first airpower research with Soviet VVS original source checkpoints, collapsible ledgers, estimated monthly airframe-variant mixes, and event-weighted German theater-loss reconstructions. All thirty v7.2 original German command-month observations remain unchanged.
 
 An interactive, source-led historical dashboard for the European air war: fighter-pilot attrition and experience, German and Allied equipment, aircraft production, theater strength, casualties, victory claims and hypothetical cohort simulations.
 
@@ -8,7 +8,16 @@ An interactive, source-led historical dashboard for the European air war: fighte
 
 > The dashboard is a historical exploration and **scenario model**, not a precise reconstruction of every airframe or pilot. It distinguishes observed returns, derived values, two confidence grades of estimation and hypothetical scenarios. Unsupported months are **visually identified** and never treated as zero.
 
-### New in v7.2
+### New in v7.3
+
+- **Period-first analysis:** a selected date interval produces average fighter inventories, start/end fighter strength and cumulative flows only where valid. Clicking an archival month optionally drills in; there is no second mandatory month picker. The date slider disappears entirely from About and Research & sources.
+- **Overall / Western / Eastern theater lens** across historical views, with a sourced Eastern Front fighter chart and separate scope notes. *Overall is not simply West + East:* Germany's reported fighter class can also include Mediterranean, Scandinavia, Reich defense and other areas. The existing pilot and aircraft simulators retain their independent front-exposure controls, without pretending to be complete Soviet operational simulators.
+- **Five original Soviet fighter-strength checkpoints** from published Soviet General Staff statistical tables, 1 July 1943 through 1 May 1945. They count VVS **front air armies and command reserves**, not every Soviet air service. The source is transcribed at RKKA.es with original Soviet archival document references. Direct dates are recorded; between-point reconstructions are marked *Interpolated*, not recorded; unsupported years remain blank.
+- **Aircraft variants** (e.g. Bf 109 E/F/G/K-4, P-51 B/C vs D/K) with explicit modeled deployment windows and month/year views. Numerical subtype splits are **Estimated** from model weights and the existing type-family inventory, never claimed as original wartime by-variant counts. German, RAF, USAAF and Soviet monthly ledgers expand independently and have sticky column headers.
+- **Event-sensitive monthly German loss estimates** distribute verified *quarterly*, front-specific **all-aircraft** totals over constituent months, with weights for major actions. The months carry an **Estimated** status; source quarterly sums reconcile exactly. This is a transparent allocation scenario, not a discovered original monthly return. Ordinary straight-line values strictly between two original stock checkpoints carry **Interpolated** status.
+- **Less visual noise:** supplementary datasets now default to collapsed panels, original German returns no longer crowd the airpower overview, Battle of Britain RAF comparisons appear only with the relevant campaign, country and theater coverage is stated, and chart hover readouts sit beside the pointer with crosshair/active-point emphasis. The sticky settings sidebar is visually isolated from passing graphs.
+
+### Added in v7.2
 
 - **26 additional original month-end returns** manually read from eight more captured German reports (RAF AHB VII/148–149, VII/135/138, VII/142/144 and VII/143/145), augmenting v7.1's four. Both Reich and Western-command series now have verified monthly totals for **all fifteen months from September 1943 through November 1944**. They do **not** represent all German aircraft on all fronts.
 - **Explicit number-and-gap calendar:** each year has one row per selected German command, with a number in each source-covered month and a hatched **—** in unsupported months. Hover for the original citation, click a covered cell to inspect that month. Missing months never turn into zero.
@@ -42,7 +51,7 @@ An interactive, source-led historical dashboard for the European air war: fighte
 - **Pilot simulator:** preserved Monte Carlo model of novice/veteran risk, sorties, combat encounters, credited claims, returning pilots and Condor Legion/Battle of Britain cohorts through May 1945.
 - **Aircraft simulator:** the existing modeled German readiness/production/write-off views.
 - **Research & sources / About:** search original archives, audit the explicit **Wikipedia article → bibliographic citation → verified record** trail, inspect 22 history chapters, provenance, missing data and project history. Show/hide detailed notes through *Show source notes*.
-- **Timeline:** July 1936–8 May 1945, with scenario presets, a selected-month inspector and toggleable historical event markers.
+- **Timeline:** July 1936–8 May 1945, with scenario presets, period-wide analysis, optional month inspection by clicking original return calendar entries and toggleable historical event markers.
 
 Charts support **mouse hover, touch/tap and keyboard focus + left/right arrows** to inspect exact monthly numbers and their confidence level. The coverage strip exposes missing historical months; use its button to change the chart's horizontal view.
 
@@ -53,7 +62,7 @@ The project is a static site. There is no backend, no database, no telemetry, no
 - Open the **GitHub Pages website** linked above. The root `index.html` references files in `dist/` and is no longer a redundant giant standalone release.
 - For local editing, serve the project directory with a simple HTTP file server such as `python3 -m http.server 8000` and open its localhost URL.
 - To rebuild the root entrypoint after editing `dist/index.html`: `node scripts/build-web.cjs`.
-- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/v71.cjs`, `node tests/v72.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
+- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/v71.cjs`, `node tests/v72.cjs`, `node tests/v73.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
 
 The GitHub Pages site is served from the repository's `main` branch and root directory, **once Pages is enabled** under *Settings → Pages → Deploy from a branch → main / (root)*. If you get a 404 on the Pages link, that repository setting still needs enabling.
 
@@ -63,8 +72,8 @@ The minimum rule is that **fighter-aircraft stock, serviceable aircraft, newly a
 
 - **Recorded:** published table with the same date and definition.
 - **Derived:** reproducible calculation from a recorded source quantity.
-- **Estimated (higher confidence):** short interpolation between comparable dated returns.
-- **Estimated (lower confidence):** broad interpolation, cross-series allocation or inferred model shares.
+- **Interpolated:** directly between dated, compatible source observations; long intervals remain low confidence and have an explanatory note.
+- **Estimated:** event-weighted monthly allocations, geographical shares and invented-by-necessity fighter variant splits, with the assumptions disclosed.
 - **Scenario only:** a freely adjustable hypothetical mechanism.
 
 Special date caution: **USAAF Table 167 claims end May 1945**, whereas the separate **Table 104 first-line aircraft-loss subtotal for 1945 covers January–August**, including post-war administration. The app identifies both periods and does not imply a matched-denominator kill/loss ratio.
@@ -85,6 +94,8 @@ An estimated number is never styled as wartime documentation merely because it h
 - [USAAF official European war history, Volume III, all 22 chapters](https://www.ibiblio.org/hyperwar/AAF/III/); notably [chapter 2, Big Week](https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-2.html) and [chapter 17, Check at the Rhine](https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-17.html).
 - [Eighth Fighter Command Summary of Combat Operations](https://www.wwiiaircraftperformance.org/marshall/SUMMARY_OF_COMBAT_OPERATIONS.pdf), research compilation of wartime award/crew records, and [US Strategic Bombing Survey](https://www.ibiblio.org/hyperwar/AAF/USSBS/ETO-Summary.html).
 - [RAF AHB translated German aircraft loss series, 1939–44](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-german-translations/); [Bundesarchiv guide to aircraft-loss research](https://www.bundesarchiv.de/en/research-our-records/research-by-topic/the-fate-of-downed-airplanes-and-their-crews-in-the-second-world-war/), and [NARA RG18](https://www.archives.gov/research/guide-fed-records/groups/018.html).
+- [Soviet Air Force General Staff figures, archive-cited Russian-language statistical tables](https://www.rkka.es/Estadisticas/VVS_stat/02/02_08.htm), with additional dated tables in the v7.3 source ledgers. The source's force definition explicitly excludes PVO and Naval Aviation from our front-air-army calculation.
+- [National Museum of the USAF: North American P-51D](https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196263/north-american-p-51d-mustang/) supports introductory B/C and D deployment chronology, **not** our estimated monthly P-51 model split.
 
 For a clickable bibliography showing **which Wikipedia page referenced which potentially useful monograph**, which source was actually inspected, and which leads remain unverified, see [SOURCE_AUDIT.md](SOURCE_AUDIT.md) and the live **Research & sources** tab.
 
@@ -102,6 +113,8 @@ For a clickable bibliography showing **which Wikipedia page referenced which pot
 | `dist/atlas-v7-data.js` | German fighter-pilot flows, readiness, training/fuel context and twenty original German loss-return archive links |
 | `dist/atlas-v71-data.js` | Four source-checked May–June 1944 German monthly totals and explicitly provisional June Bf 109/Fw 190 source-line breakdown |
 | `dist/atlas-v72-data.js` | Twenty-six additional visually checked 1943–44 original German monthly totals and eight source-linked PDF-page maps; no inferred gaps |
+| `dist/atlas-v73-data.js` | Soviet front-air-army source checkpoints, estimated variant allocation windows, event-weighted quarter-to-month German theater-loss models |
+| `tests/v73.cjs` | V7.3 sourcing, reconstruction classification and loss-quarter reconciliation tests |
 | `scripts/inspect-ahb-losses.py` | Reproducible OCR inspection aid for 1944 RAF loss scans; see source caveats before treating its output as measured totals |
 | `dist/model-v4.js` | New Atlas views and interactive analyses |
 | `dist/atlas-v5.js` | Chart tooltips, tap and keyboard inspection, historical event overlays |

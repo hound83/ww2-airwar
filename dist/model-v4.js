@@ -1,21 +1,21 @@
-/* European Air War Atlas v7.2 — visually audited dated German loss returns. */
+/* European Air War Atlas v7.3 — period-first, multi-theater research views. */
 (function(){
   'use strict';
   const D=window.LuftData,V=window.LuftV4Data,X=window.AirWarV6Data,Y=window.AirWarV7Data,
-    Z71=window.AirWarV71Data,U=window.AirWarV72Data,QA=window.LuftLabQA;
-  if(!D||!V||!X||!Y||!Z71||!U||!QA)throw Error('Load the historical datasets, scanned return transcriptions and original simulator before the Air War Atlas.');
+    Z71=window.AirWarV71Data,U=window.AirWarV72Data,H=window.AirWarV73Data,QA=window.LuftLabQA;
+  if(!D||!V||!X||!Y||!Z71||!U||!H||!QA)throw Error('Load the historical datasets, scanned return transcriptions and original simulator before the Air War Atlas.');
   const Z={...Z71,monthlyReturns:[...Z71.monthlyReturns,...U.monthlyReturns].sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater)),
     qualityNotes:{...Z71.qualityNotes,...U.qualityNotes},
     get(i,theater){return this.monthlyReturns.find(p=>p.i===i&&p.theater===theater)||null;}};
-  Object.assign(V.SOURCES,X.sourceIndex,Y.sourceIndex,Z.sourceIndex,U.sourceIndex);
+  Object.assign(V.SOURCES,X.sourceIndex,Y.sourceIndex,Z.sourceIndex,U.sourceIndex,H.sources);
   const $=id=>document.getElementById(id);
   const fmt=(n,d=0)=>n==null||!Number.isFinite(n)?'—':Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
   const pct=(n,d=1)=>n==null?'—':fmt(n,d)+'%';
   const money=n=>n==null?'—':'$'+fmt(n);
   const safe=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const labelQuality=q=>({recorded:'Recorded',documented:'Recorded','recorded-secondary':'Source-compiled',reference:'Sourced',derived:'Derived',
-    'estimated-high':'Estimate · higher confidence','estimated-low':'Estimate · lower confidence',
-    interpolated:'Estimate · lower confidence',allocated:'Allocated · lower confidence',model:'Scenario only',
+    'estimated-high':'Interpolated','estimated-low':'Estimated',estimated:'Estimated',
+    interpolated:'Interpolated',allocated:'Estimated allocation',model:'Scenario only',
     provisional:'Source transcription · provisional',unavailable:'No verified figure'}[q]||q);
   const tag=(q,more='')=>'<span title="'+safe(more||labelQuality(q))+'" class="v4-tag '+
     (q==='recorded'||q==='documented'?'is-recorded':q==='recorded-secondary'||q==='estimated-high'||q==='derived'?'is-higher':
@@ -23,24 +23,25 @@
   const nav=[['balance','Airpower overview'],['fleet','Aircraft & equipment'],['pilothistory','Pilots & experience'],
     ['losses','Losses & claims'],['comparison','Industry & operations'],['campaigns','Campaigns & archives'],['pilot','Pilot simulator'],
     ['equipment','Aircraft simulator'],['sources','Research & sources'],['about','About the project']];
-  let ui={view:'balance',focus:D.idx(1943,7),sources:false,lossGaps:false,fwShare:33,
+  let ui={view:'balance',focus:D.idx(1943,7),detailMonth:null,theater:'overall',sources:false,lossGaps:false,fwShare:33,
     markers:true,comparison:'period',weightMethod:'fleet',weights:{'P-47':45,'P-51':20,'P-38':15,'Spitfire':15,'Other Allied':5},
     airCombat:35,western:80,opsTheater:'ETO',lossAirClass:'Fighter',chartFullRange:false,archiveTheater:'All',
     v71Theater:'Both',v71Metric:'destroyed'};
   const oldRoot=document.querySelector('main.layout');
   const extra=document.createElement('section');extra.id='v4-workspace';extra.className='panel';
-  extra.innerHTML='<div id="v4-head"></div><div id="v4-body"></div><div id="v4-source-panel" class="v4-sources"></div>';
+  extra.innerHTML='<div id="v4-head"></div><div id="v73-detail-banner"></div><div id="v73-period-banner"></div><div id="v73-feature-banner"></div><div id="v4-body"></div><div id="v73-extra"></div><div id="v4-source-panel" class="v4-sources"></div>';
   for(const el of [...oldRoot.children])if(!el.classList.contains('controls')&&!el.classList.contains('timeline-panel'))el.classList.add('v4-old-section');
   oldRoot.appendChild(extra);
   const tl=document.querySelector('.timeline-panel');
   const navRoot=document.createElement('div');navRoot.id='v4-navigation';
   navRoot.innerHTML='<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span>'+ 
-    '<span class="tiny">Version 7.2 · 30 verified German monthly loss returns · 12 original reports</span></div>'+ 
+    '<span class="tiny">Version 7.3 · period-first atlas · original archival returns preserved</span></div>'+ 
     '<div class="v4-navrow">'+nav.map(([id,title])=>'<button type="button" class="v4-nav" data-v4-tab="'+id+'">'+title+'</button>').join('')+'</div>';
   tl.insertBefore(navRoot,tl.firstChild);
   const toolbar=document.createElement('div');toolbar.id='v4-tools';toolbar.className='v4-tools';
-  toolbar.innerHTML='<div class="v4-tool"><label for="v4-month">Inspect month</label><select id="v4-month">'+
-    Array.from({length:D.MONTHS},(_,i)=>'<option value="'+i+'">'+D.label(i)+'</option>').join('')+'</select></div>'+ 
+  toolbar.innerHTML='<div class="v73-theater" role="group" aria-label="Historical theater"><span>Theater</span>'+ 
+    [['overall','Overall'],['west','Western Front'],['east','Eastern Front']].map(([id,name])=>'<button type="button" data-v73-theater="'+id+'" aria-pressed="false">'+name+'</button>').join('')+'</div>'+ 
+    '<span class="v73-simulator-note" id="v73-simulator-note" hidden>Theater is research context here; the legacy German pilot/aircraft simulator has its own front-exposure controls.</span>'+ 
     '<label class="v4-check"><input type="checkbox" id="v4-estimate-gaps"> Show lower-confidence loss gap estimates</label>'+ 
     '<label class="v4-check"><input type="checkbox" id="v4-markers-check" checked> Show historical event markers</label>'+ 
     '<label class="v4-check"><input type="checkbox" id="v4-sources-check"> Show source notes</label>'+ 
@@ -50,7 +51,7 @@
   document.querySelector('h1').innerHTML='European Air War <span>Atlas</span>';
   document.querySelector('.kicker').textContent='Source-led aviation history · interactive research laboratory';
   document.querySelector('.lead').textContent='From the Condor Legion to VE Day: inspect pilot attrition, inventories, production, loss returns, credited claims and Allied airpower. Original wartime figures, interpolation and hypothetical scenarios remain distinct.';
-  document.querySelector('footer').textContent='European Air War Atlas v7.2 · July 1936–8 May 1945 · 30 original German command-month aircraft loss returns, provisional June type rows and visible gaps · Browser-only website.';
+  document.querySelector('footer').textContent='European Air War Atlas v7.3 · July 1936–8 May 1945 · historical theater filtering, period summaries and provenance-aware estimates · Browser-only website.';
   // Update an obsolete legacy v3 narrative. Monthly Murray rates through May
   // 1944 have now been transcribed; months beyond that remain scenario inputs.
   for(const tile of document.querySelectorAll('.info-card')){
@@ -93,9 +94,17 @@
     }}
     for(let i=0;i<=4;i++){const y=T+innerH*(i/4);body+='<line class="v4-gridline" x1="'+L+'" x2="'+(W-R)+'" y1="'+y+'" y2="'+y+'"/><text class="v4-tick" x="'+(L-10)+'" y="'+(y+4)+'" text-anchor="end">'+fmt(max*(1-i/4),0)+(percent?'%':'')+'</text>';}
     for(let j=0;j<Math.min(5,plotted.length);j++){const k=Math.round(j*(plotted.length-1)/Math.max(1,Math.min(4,plotted.length-1)));body+='<text class="v4-tick" x="'+px(k)+'" y="'+(H-8)+'" text-anchor="middle">'+safe(plotted[k].label)+'</text>';}
-    for(const s of series){let d='',begun=false;plotted.forEach((r,k)=>{const v=s.value(r);if(v==null||!Number.isFinite(v)){begun=false;return;}d+=(begun?'L':'M')+px(k).toFixed(1)+','+py(v).toFixed(1)+' ';begun=true;});
-      body+='<path fill="none" stroke="'+s.color+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="'+d+'"/>';
-      if(plotted.length<=20)plotted.forEach((r,k)=>{const v=s.value(r);if(v!=null&&Number.isFinite(v))body+='<circle cx="'+px(k)+'" cy="'+py(v)+'" r="3" fill="'+s.color+'"><title>'+safe(r.label)+': '+s.name+' '+fmt(v)+'</title></circle>';});
+    for(const s of series){
+      const state=r=>s.detail?.(r)?.quality||(s.source?'recorded':'recorded');
+      const style=q=>q==='recorded'||q==='documented'||q==='recorded-secondary'?'':q==='interpolated'||q==='estimated-high'?' stroke-dasharray="7 5"':' stroke-dasharray="2 6"';
+      plotted.forEach((r,k)=>{
+        const v=s.value(r);if(v==null||!Number.isFinite(v))return;
+        if(k){const last=s.value(plotted[k-1]);if(last!=null&&Number.isFinite(last)){
+          const q=state(r)==='recorded'?state(plotted[k-1]):state(r);
+          body+='<path fill="none" stroke="'+s.color+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"'+style(q)+' d="M'+px(k-1).toFixed(1)+','+py(last).toFixed(1)+' L'+px(k).toFixed(1)+','+py(v).toFixed(1)+'"/>';
+        }}
+        if(plotted.length<=20)body+='<circle cx="'+px(k)+'" cy="'+py(v)+'" r="'+(state(r)==='recorded'?3.3:2.5)+'" '+(state(r)==='recorded'?'fill="'+s.color+'"':'fill="#2b392f" stroke="'+s.color+'" stroke-width="1.5"')+'><title>'+safe(r.label)+': '+s.name+' '+fmt(v)+' · '+labelQuality(state(r))+'</title></circle>';
+      });
     }
     const runs=[];let begin=0,was=false;rows.forEach((r,k)=>{const yes=observed.includes(k);if(k&&yes!==was){runs.push({begin,end:k-1,observed:was});begin=k;}was=yes;});runs.push({begin,end:rows.length-1,observed:was});
     const coverageMap='<div class="v7-coverage-track" role="img" aria-label="'+coverage+' of '+rows.length+' months have a plotted value">'+runs.map(run=>'<span class="'+(run.observed?'v7-covered':'v7-uncovered')+'" style="flex:'+ (run.end-run.begin+1)+'" title="'+safe(rows[run.begin].label)+'–'+safe(rows[run.end].label)+' · '+(run.observed?'value available: see tooltip for source/estimate status':'no observation')+'"></span>').join('')+'</div>';
@@ -103,11 +112,19 @@
       '<button type="button" class="v7-expand-btn" data-v7-expand="1">'+(ui.chartFullRange?'Focus on observed dates':'Show full selected period + missing months')+' ↗</button>':
       '<p class="v7-coverage">'+coverage+' months with a value · see tooltip for recorded versus estimated status</p>';
     return '<svg class="v4-plot" id="'+id+'" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+safe(series.map(s=>s.name).join(' and '))+' across '+safe(plotted[0].label)+' to '+safe(plotted.at(-1).label)+'">'+body+'</svg>'+gapText+ 
-      '<div class="v4-legend">'+series.map(s=>'<span><i style="background:'+s.color+'"></i>'+safe(s.name)+'</span>').join('')+'</div>';
+      '<div class="v4-legend">'+series.map(s=>'<span><i style="background:'+s.color+'"></i>'+safe(s.name)+'</span>').join('')+'</div><p class="tiny">Solid: recorded when status is known · dashed: interpolated · dotted: estimated. Hover to inspect individual source status.</p>';
   }
   function months(){const v=QA.inspect();return {a:v.start,b:v.end,range:Array.from({length:v.end-v.start+1},(_,k)=>v.start+k)};}
   function sampleAir(i,branch,type){return V.airframe(type,i,branch);}
   function knownSum(values){const usable=values.filter(x=>x.value!=null);return usable.length?usable.reduce((a,x)=>a+x.value,0):null;}
+  function combinedSeriesQuality(series){
+    if(!series.some(x=>x.value!=null))return {quality:'unavailable',note:'No compatible sources for this interval.'};
+    const gaps=series.filter(x=>x.value==null);
+    const inferred=series.filter(x=>x.value!=null&&x.quality!=='recorded');
+    return {quality:gaps.length?'estimated':inferred.length?'interpolated':'recorded',
+      note:(gaps.length?'Partial total: '+gaps.length+' unavailable type series. ':'')+
+      (inferred.length?'Contains '+inferred.length+' between-source/model series.':'All component values observed directly.')};
+  }
   function allSnapshot(i){
     const us=['P-47','P-51','P-38'].map(type=>({type,...sampleAir(i,'USAAF',type)}));
     const raf=['Spitfire','Hurricane','Typhoon','Tempest','Mustang (RAF)'].map(type=>({type,...sampleAir(i,'RAF',type)}));
@@ -117,6 +134,124 @@
       ready:{value:record.serviceable,quality:record.quality,source:'ahb107',note:record.note},
       onStrength:{value:record.strength,quality:record.quality,source:'ahb107',note:record.note},pilot:D.pilots(i),
       usTotal:knownSum(us),rafTotal:knownSum(raf)};
+  }
+  // Only the German all-front fighter CLASS has enough dated checkpoints for a
+  // front-allocation proxy; it is not a German theater-level measured return.
+  function germanTheater(i,measure='serviceable'){
+    const p=X.germanAt(i),key=measure==='strength'?'strength':'serviceable';
+    if(ui.theater==='overall')return {value:p[key],quality:p.quality,note:'German single-engine fighters, all fronts; '+p.note};
+    const shares=V.share(i),factor=shares?.[ui.theater];
+    if(factor==null||p[key]==null)return {value:null,quality:'unavailable',note:'No compatible front assignment and fighter-strength estimate for this date.'};
+    return {value:Math.round(p[key]*factor/100),quality:'estimated',note:'Approximate theater allocation: '+factor+'% of ALL-FRONT German fighters, based on period-level distribution. Not a monthly German theater return.'};
+  }
+  function theaterLabels(){return {overall:'European air war · all available theaters',west:'Western Front · Germany / RAF / USAAF',east:'Eastern Front · Germany / Soviet VVS'}[ui.theater];}
+  function numericMean(values){const valid=values.filter(x=>Number.isFinite(x));return valid.length?valid.reduce((a,b)=>a+b,0)/valid.length:null;}
+  function periodOverview(){
+    const {a,b,range}=months();
+    const german=range.map(i=>germanTheater(i)),known=german.filter(x=>x.value!=null);
+    const mean=numericMean(german.map(x=>x.value));
+    const begin=german[0]?.value,end=german.at(-1)?.value;
+    const westLoss=Z.monthlyReturns.filter(p=>range.includes(p.i)&&p.theater==='Western Front');
+    const germanLossRecords=Z.monthlyReturns.filter(p=>range.includes(p.i)&&p.theater==='Reich');
+    const eastRates=range.map(i=>H.sovietAt(i,'reconstruct')).filter(x=>x.value!=null);
+    const sovietDirect=range.filter(i=>H.soviet.some(p=>p.i===i)).length;
+    const claims=V.usaFighterClaimsMonthly.filter(x=>range.includes(x.i));
+    const scope=ui.theater==='east'?'Soviet front air-army inventories: '+sovietDirect+' directly recorded checkpoints / '+range.length+' months. VVS reserves are included; PVO and Naval Aviation are excluded.':
+      ui.theater==='west'?'Western German command returns cover '+westLoss.length+' months, not all German forces in western Europe. USAAF ETO / RAF organizational populations are separately defined.':
+      'Overall combines the scope of multiple original sources, NOT simply West + East. Mediterranean, Reich defense, Scandinavia and other areas matter.';
+    const qualityRate=range.length?known.length/range.length:0;
+    const grade=qualityRate>=.9?'Strong coverage':qualityRate>=.45?'Partial coverage':'Limited evidence';
+    const first=begin==null?'—':fmt(begin),last=end==null?'—':fmt(end);
+    const rows=[
+      {label:'German fighters · monthly average',value:fmt(mean),note:known.length+'/'+range.length+' months with modeled/observed values; '+(ui.theater==='overall'?'all-front source definition':'front allocation · estimated')},
+      {label:'German fighters · start → end',value:first+' → '+last,note:'Stock at period boundaries · never summed across months'},
+      ui.theater==='east'?{label:'VVS front fighters · average',value:fmt(numericMean(eastRates.map(x=>x.value))),note:sovietDirect+' direct checkpoints; intermediate months reconstructed · estimated'}:
+      ui.theater==='west'?{label:'Western German command · destroyed',value:fmt(westLoss.reduce((s,x)=>s+x.destroyed,0)),note:westLoss.length+'/'+range.length+' verified source months · PARTIAL total, all aircraft classes'}:
+        {label:'USAAF ETO · credited air victories',value:fmt(claims.reduce((s,x)=>s+x.air,0)),note:claims.length+'/'+range.length+' recorded months · credited, not confirmed aircraft losses'}
+    ];
+    return '<div class="v73-period-overview"><div class="v73-period-title"><div><span class="kicker">PERIOD ANALYSIS</span><h2>'+safe(theaterLabels())+'</h2><p>'+D.label(a)+' – '+D.label(b)+' · '+range.length+' months. Flows are summed; inventory is averaged and shown at both boundaries.</p></div><span class="v73-coverage-grade" title="Coverage refers only to the German fighter-stock series in this strip; each chart has its own evidence status.">'+grade+'</span></div>'+ 
+      '<div class="v73-metrics">'+rows.map(p=>'<div><small>'+safe(p.label)+'</small><strong>'+p.value+'</strong><span>'+safe(p.note)+'</span></div>').join('')+'</div>'+ 
+      '<p class="v73-scope-note">'+safe(scope)+' Source points are <strong>recorded</strong>; ordinary between-point interpolation is <strong>interpolated</strong>; event-weighted allocation or other assumptions are <strong>estimated</strong>. Simulators remain hypothetical.</p></div>';
+  }
+  function details(title,content,open=false){return '<details class="v73-details"'+(open?' open':'')+'><summary>'+title+' <span>Expand / collapse</span></summary><div class="v73-details-body">'+content+'</div></details>';}
+  function variantExplorer(){
+    const {a,b,range}=months(),interval=range.length>18?12:1;
+    const families=ui.theater==='east'?[['Germany','Bf 109'],['Germany','Fw 190']]:
+      ui.theater==='west'?[['Germany','Bf 109'],['Germany','Fw 190'],['RAF','Spitfire'],['RAF','Hurricane'],['USAAF','P-51'],['USAAF','P-47'],['USAAF','P-38']]:
+      [['Germany','Bf 109'],['Germany','Fw 190'],['RAF','Spitfire'],['RAF','Hurricane'],['USAAF','P-51'],['USAAF','P-47'],['USAAF','P-38']];
+    const sample=(side,family,i)=>{
+      if(side==='Germany')return V.germanType(i,family,ui.fwShare/100).value;
+      return V.airframe(family,i,side).value;
+    };
+    const tables=families.map(([side,family])=>{
+      const entries=H.variants.filter(v=>v.family===family&&v.side===side&&v.to>=a&&v.from<=b);
+      if(!entries.length)return '';
+      const sampled=range.filter((_,k)=>k%interval===0||k===range.length-1);
+      const columns=entries.map(v=>({type:v.type,period:D.label(v.from)+' – '+D.label(v.to),
+        values:sampled.map(i=>H.mix(family,side,i,sample(side,family,i)).find(x=>x.type===v.type)?.value??null)}));
+      return details(side+' · '+family+' — '+entries.length+' variants',
+        '<p class="v73-estimate-warning">Estimated subtype allocation, NOT recorded monthly variant strength. Heuristic rise/retirement windows distribute the already estimated family inventory. Do not use these values as wartime counts. Service windows indicate model availability, not factory production dates. '+(family==='P-51'?cite('p51museum'):cite('variantContext'))+'</p>'+ 
+        table(['Operational variant / modeled window',...sampled.map(i=>D.label(i))],columns.map(c=>[safe(c.type)+'<br><small>'+safe(c.period)+'</small>',...c.values.map(v=>v==null?'—':fmt(v)+' <span class="v73-est-mark" title="Scenario allocation · estimated">≈</span>')])));
+    }).join('');
+    return section('Fighter variants through the selected period','Subtype windows and provisional monthly/yearly strength allocation for each fighter family. For long periods the table samples once per year; change the range to see every month. The count estimates are a research scaffold, not a verified serial/variant inventory.',
+      '<div class="v73-caution">A model may illustrate how E → F → G → K evolved, but a source-derived monthly variant census still needs original equipment returns. No inferred numbers are marked Recorded.</div>'+tables);
+  }
+  function nationalLedgers(){
+    const {range}=months();
+    const german=range.map(i=>{const s=X.germanAt(i);return [D.label(i),fmt(s.strength),fmt(s.serviceable),s.quality==='recorded'?'':tag(s.quality,s.note)];});
+    const britain=range.map(i=>{const s=allSnapshot(i).raf;return [D.label(i),...['Spitfire','Hurricane','Typhoon','Tempest','Mustang (RAF)'].map(t=>fmt(s.find(x=>x.type===t)?.value)),
+      s.every(x=>x.quality==='recorded')?'':tag(s.some(x=>x.quality==='unavailable')?'unavailable':s.some(x=>x.quality==='estimated-low')?'estimated-low':'interpolated')];});
+    const us=range.map(i=>{const s=allSnapshot(i).us;return [D.label(i),...['P-38','P-47','P-51'].map(t=>fmt(s.find(x=>x.type===t)?.value)),
+      s.every(x=>x.quality==='recorded')?'':tag(s.some(x=>x.quality==='unavailable')?'unavailable':s.some(x=>x.quality==='estimated-low')?'estimated-low':'interpolated')];});
+    const soviet=range.map(i=>{const s=H.sovietAt(i,'reconstruct'),source=H.soviet.find(x=>x.i===i);return [D.label(i),fmt(s.value),source?fmt(source.total):'—',
+      source?fmt(source.unserviceableFighters):'—',s.quality==='recorded'?'':tag(s.quality),source?cite(source.source):'—'];});
+    return section('Monthly evidence ledgers by country','Tables open independently; column headings stay visible while scrolling. Figures outside their source populations are not merged. A blank evidence cell signifies a directly recorded observation.',
+      details('Germany · all-front single-engine fighters',table(['Month','On hand','Serviceable','Status (non-recorded only)'],german)+'<p class="tiny">German worldwide fighter class; not limited to any individual front. '+cite('ahb107')+'</p>')+
+      details('United Kingdom · RAF selected models',table(['Month','Spitfire','Hurricane','Typhoon','Tempest','RAF Mustang','Status'],britain)+'<p class="tiny">Fighter Command / Air Defence GB and 2 TAF where available, not all RAF aircraft. '+cite('raf')+'</p>')+
+      details('United States · USAAF ETO fighter models',table(['Month','P-38','P-47','P-51','Status'],us)+'<p class="tiny">ETO operational strength (not worldwide U.S. production); source checkpoints are quarterly. '+cite('usa')+'</p>')+
+      details('Soviet Union · VVS front air armies & reserves',table(['Month','Fighters on strength','All combat aircraft','Fighters unserviceable¹','Status','Original return'],soviet)+
+        '<p class="tiny">¹ Unserviceable fighter count is given only on direct source dates. PVO, Naval Aviation and long-range forces are outside this definition. Annual/long-gap estimates are not presented as monthly wartime returns. '+cite('vvs1943')+'</p>'));
+  }
+  function theaterLossInsight(){
+    const {a,b,range}=months(),fronts=ui.theater==='east'?['east']:ui.theater==='west'?['west']:['west','east','med'];
+    const names={west:'German losses · Western Front',east:'German losses · Eastern Front',med:'German losses · Mediterranean'};
+    const colors={west:'#9bb5c0',east:'#a6b993',med:'#d2b27a'};
+    const series=fronts.map(front=>({name:names[front],color:colors[front],
+      value:r=>H.quarterLossAt(r.i,front,'all').value,detail:r=>H.quarterLossAt(r.i,front,'all')}));
+    const rows=fronts.map(front=>{
+      const estimates=range.map(i=>H.quarterLossAt(i,front,'all'));
+      return [names[front],fmt(estimates.filter(x=>x.value!=null).reduce((a,x)=>a+x.value,0)),
+        estimates.filter(x=>x.value!=null).length+'/'+range.length,tag('estimated','Monthly values allocated from recorded quarter totals')];
+    });
+    return section('German aircraft losses · selected front and entire period','Original quarter-level German all-aircraft losses (not exclusively fighters) are distributed across component months using explicit historical-event weights. Periods containing full quarters reconcile exactly to source totals; partial-quarter selections are estimated. These are NOT monthly archival observations.',
+      table(['Front','Selected months · losses (partial)','Months modeled','Monthly status'],rows)+
+      chart('v73-front-loss',range.map(i=>({i,label:D.label(i)})),series)+
+      '<p class="v4-callout">Month-to-month peaks here are an <strong>estimated</strong> allocation of actual quarterly loss totals, not direct wartime reports. A month with an offensive can receive a greater model weight. The underlying quarterly statistics remain separately available and unchanged. '+cite('german')+'</p>');
+  }
+  function easternFrontLens(){
+    if(ui.theater!=='east'||!['fleet','pilothistory','comparison','campaigns'].includes(ui.view))return '';
+    const {range}=months();
+    const note=ui.view==='pilothistory'?
+      'No matched monthly Soviet pilot-strength or pilot-casualty series has been verified. The preserved German personnel series is all-front: it cannot be relabeled Eastern Front.':
+      ui.view==='comparison'?
+      'The original U.S. procurement, cost and ETO sortie records are historical background, not Eastern Front operational counts. This front-specific stock overview uses only compatible country and period definitions.':
+      ui.view==='campaigns'?
+      'Campaign cards below are filtered to eastern campaigns. The full official USAAF Volume III bibliography is available as supplementary western-theater research.':
+      'Soviet figures are front air-army plus command reserve fighters, not all Soviet aviation. German eastern stock is a geographic allocation estimate. Verified Soviet type-by-type monthly returns are not yet available.';
+    return section('Eastern Front · available direct evidence',note,
+      chart('v73-eastern-lens',range.map(i=>({i,label:D.label(i)})),[
+        {name:'Soviet VVS fighters · front armies and reserves',color:'#8eafaa',value:r=>H.sovietAt(r.i,'reconstruct').value,detail:r=>H.sovietAt(r.i,'reconstruct')},
+        {name:'German S.E. fighters · Eastern allocation (est.)',color:'#d2b27a',value:r=>germanTheater(r.i,'strength').value,detail:r=>germanTheater(r.i,'strength')}
+      ])+'<p class="tiny">Original Soviet dated fighter counts: '+H.soviet.filter(p=>range.includes(p.i)).map(p=>D.label(p.i)+' · '+fmt(p.fighters)).join('; ')+'. No figures outside source-supported dates are silently inferred. '+cite('vvs1943')+' · '+cite('vvs1945may')+'</p>');
+  }
+  function battleOfBritainDetail(){
+    const {a,b}=months();
+    if(b<D.idx(1940,6)||a>D.idx(1940,8)||ui.theater==='east')return '';
+    return details('Battle of Britain · RAF combat-ready fighters (July–September 1940)',
+      table(['On date','Spitfires ready','Hurricanes ready','Combined ready'],[6,7,8].map(m=>{
+        const i=D.idx(1940,m),sp=V.rafReady1940.Spitfire.find(x=>x.i===i).value,hu=V.rafReady1940.Hurricane.find(x=>x.i===i).value;
+        return [D.label(i),fmt(sp),fmt(hu),fmt(sp+hu)];
+      }))+'<p class="tiny">Fighter Command combat-ready squadrons, not RAF worldwide aircraft on hand. Original historical research context for this campaign only. '+cite('raf1940')+'</p>');
   }
   function alliedMonthlyLoss(i){
     const reported=V.usaFighterLossMonthly.find(x=>x.i===i);
@@ -136,40 +271,37 @@
   function qualityText(q){return q==='recorded'?'An original dated observation.':q==='recorded-secondary'?'Source-compiled with some interpretive classifications.':q==='estimated-high'?'Interpolated from nearby source snapshots; relatively short gap.':q==='estimated-low'?'Longer interpolation or an explicit approximation; substantial uncertainty.':q==='derived'?'Calculated from a recorded numerator/denominator.':q==='unavailable'?'No compatible period/type observation verified.':'A transparent model assumption.';}
   function pointRows(list){return list.map(r=>[r.type,fmt(r.value),tag(r.quality,r.note),safe(qualityText(r.quality))]);}
   function renderBalance(){
-    const {a,b,range}=months(),s=allSnapshot(ui.focus),share=V.share(ui.focus),
-      ready=s.ready.value,forceUS=s.usTotal,forceRAF=s.rafTotal;
-    const d=atStr=>D.idx(atStr[0],atStr[1]);
-    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">WAR-WIDE FORCE COMPARISON</div><h2>What was the Luftwaffe facing?</h2><p>Use the time handles above to inspect any interval. These are separate national/theater reporting series; aircraft on hand, combat-ready aircraft and pilot crews must not be conflated.</p></div><div class="v4-inspect">Month in focus<strong>'+D.label(ui.focus)+'</strong>'+tag(s.ready.quality)+'</div></div>'+ 
-      '<div class="v4-statgrid">'+
-      card(fmt(ready),'German serviceable single-engine fighters',tag(s.ready.quality,s.ready.note)+' · Worldwide German fighter CLASS; source if checkpoint, interpolation if between checkpoints')+
-      card(fmt(forceUS),'USAAF ETO P-38 / P-47 / P-51','Operational strength; '+(s.us.some(x=>x.quality==='unavailable')?'partial period coverage':labelQuality(s.us[0].quality)),'var(--blue)')+
-      card(fmt(forceRAF),'RAF selected fighter models','Fighter Command + 2nd TAF; five listed types only, not all RAF aircraft','var(--gold)')+
-      card(fmt(s.pilot.value),'Luftwaffe fighter pilots on duty','Source constrained 1943/early 1944; elsewhere simulation assumptions','var(--purple)')+'</div>'+ 
-      section('Air forces over time — distinct reporting populations','The two German curves come from the SAME original return series: total aircraft on hand and its serviceable subset. The Allied curves are theater-organizational strengths, and do not mean the same thing.',
-        chart('v4-force-graph',range.map(i=>({i,label:D.label(i)})),[
-          {name:'German S.E. fighters · serviceable, all fronts',color:'#48d3c5',value:r=>X.germanAt(r.i).serviceable,detail:r=>X.germanAt(r.i)},
-          {name:'German S.E. fighters · on strength, all fronts',color:'#d2b27a',value:r=>X.germanAt(r.i).strength,detail:r=>X.germanAt(r.i)},
-          {name:'USAAF ETO P-38/P-47/P-51',color:'#82b9ff',value:r=>allSnapshot(r.i).usTotal},
-          {name:'RAF selected fighter models',color:'#f4c46a',value:r=>allSnapshot(r.i).rafTotal}
-        ])+'<p class="v4-callout">Original German fighter strength and operational/serviceable strength are <strong>different denominators</strong>. The monthly dots between original dates are explicitly graded interpolation; after 13 April 1945 the source-led curve stops. RAF and USAAF curves are their selected organizations and may include different front assignments. <strong>Do not interpret crossing lines as a numerical battle outcome.</strong> '+cite('ahb107')+'</p>')+
-      '<div class="v4-columns">'+panel('Germany · geographical allocation',share?
-        fraction([{label:'Western Front',value:share.west,color:'#82b9ff'},
-          {label:'Eastern Front',value:share.east,color:'#48d3c5'},
-          {label:'Mediterranean',value:share.med,color:'#f4c46a'},
-          {label:'Scandinavia',value:share.north,color:'#b89cfb'}])+
-        '<p class="small">Percentage of German single-engine fighter strength over the relevant archival period. These are <strong>not loss shares</strong>.</p>':
-        '<p class="small">No matching German theater-allocation snapshot for '+D.label(ui.focus)+'. Select August 1942–May 1945 for period-based historical allocation.</p>',cite('german'))+
-        panel('Original German strength / serviceability',table(['RAF original reporting date','On hand','Serviceable','Evidence'],
-          X.germanFighterReadiness.filter((p,k)=>k%4===0||k===X.germanFighterReadiness.length-1).map(p=>[
-            p.date,fmt(p.strength),fmt(p.serviceable),tag('recorded',p.note)]))+
-        '<p class="tiny">AHB VII/107: German Quartermaster all-front single-engine fighters. The observed dates are not regular monthly snapshots. More checkpoints and all aircraft classes appear under Aircraft & equipment. '+cite('ahb107')+'</p>')+'</div>'+ 
-      section('Battle of Britain · RAF actual ready fighters', 'Original RAF operational-readiness checkpoints are tracked separately from the broader RAF organization series.',
-        table(['On date','Spitfires ready','Hurricanes ready','Combined ready','Evidence'],[6,7,8].map(m=>{
-          const i=D.idx(1940,m),sp=V.rafReady1940.Spitfire.find(x=>x.i===i).value,hu=V.rafReady1940.Hurricane.find(x=>x.i===i).value;
-          return [D.label(i),fmt(sp),fmt(hu),fmt(sp+hu),tag('recorded')];
-        }))+'<p class="tiny">Fighter Command combat-ready squadrons only; excludes unserviceable and reserve aircraft. '+cite('raf1940')+'</p>')+
-      section('Air-war milestones', 'Events within the selected time range; veteran cohorts can still be followed into later years using the preserved pilot simulator.',
-        '<div class="v4-eventlist">'+V.milestones.filter(x=>x.i>=a&&x.i<=b).map(x=>'<div class="v4-event"><span>'+D.label(x.i)+'</span><strong>'+x.title+'</strong><p>'+x.detail+'</p></div>').join('')+'</div>');
+    const {a,b,range}=months(),share=V.share(b),r=range.map(i=>({i,label:D.label(i)}));
+    const series=ui.theater==='east' ? [
+      {name:'German S.E. fighter stock · East allocation (est.)',color:'#b7a877',value:x=>germanTheater(x.i,'strength').value,detail:x=>germanTheater(x.i,'strength')},
+      {name:'Soviet VVS front fighter stock (recorded/interpolated)',color:'#8eafaa',value:x=>H.sovietAt(x.i,'reconstruct').value,detail:x=>H.sovietAt(x.i,'reconstruct')}
+    ] : [
+      {name:'German serviceable S.E. fighters · '+(ui.theater==='west'?'Western allocation':'all fronts'),color:'#a6b993',value:x=>germanTheater(x.i).value,detail:x=>germanTheater(x.i)},
+      {name:'German single-engine fighters on hand',color:'#d2b27a',value:x=>germanTheater(x.i,'strength').value,detail:x=>germanTheater(x.i,'strength')},
+      {name:'USAAF ETO P-38 / P-47 / P-51',color:'#9bb5c0',value:x=>allSnapshot(x.i).usTotal,
+        detail:x=>combinedSeriesQuality(allSnapshot(x.i).us)},
+      {name:'RAF selected fighters · Fighter Command / 2 TAF',color:'#b3a4a1',value:x=>allSnapshot(x.i).rafTotal,
+        detail:x=>combinedSeriesQuality(allSnapshot(x.i).raf)},
+      ...(ui.theater==='overall'?[{name:'Soviet VVS fighters · front armies + reserves',color:'#81a8a4',
+        value:x=>H.sovietAt(x.i,'reconstruct').value,detail:x=>H.sovietAt(x.i,'reconstruct')}]:[])
+    ];
+    const geography=share?fraction([{label:'West',value:share.west,color:'#9bb5c0'},{label:'East',value:share.east,color:'#a6b993'},
+      {label:'Mediterranean',value:share.med,color:'#d2b27a'},{label:'Scandinavia',value:share.north,color:'#b3a4a1'}]):
+      '<p>No compatible German geographic strength distribution for the selected period end.</p>';
+    const sortiesE=V.usaFighterSorties.ETO.filter(x=>range.includes(x.i)).reduce((n,x)=>n+x.total,0),
+      sortiesM=V.usaFighterSorties.MTO.filter(x=>range.includes(x.i)).reduce((n,x)=>n+x.total,0);
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">AIR POWER · THEATER COMPARISON</div><h2>'+safe(ui.theater==='overall'?'The European air war — air forces over time':ui.theater==='west'?'The Western Front — air power & operations':'The Eastern Front — Luftwaffe and Soviet VVS')+'</h2><p>A broad Allied-and-German perspective, with distinct reporting populations and confidence labels. The chosen interval drives the comparison; detailed dates are inspected directly on charts.</p></div></div>'+ 
+      section('Fighter strength across the selected period','Inventory is a stock, not a total produced or lost. Different air forces report different organizational populations. A German geographic allocation is always an estimate.',
+        chart('v4-force-graph',r,series)+'<p class="v4-callout">'+(ui.theater==='east'?'Soviet VVS front air-army + reserve checkpoints are directly source-transcribed. Intervening months are labeled interpolated or estimated; Germany uses approximate geography. Soviet PVO/naval aviation is excluded.':
+        'German Quartermaster class stock is all-front and distinct from the RAF and USAAF selected theater organizations. A crossing of lines is not a combat outcome.')+' '+cite('ahb107')+(ui.theater==='east'?' · '+cite('vvs1945jan'):'')+'</p>')+
+      section('Where the aircraft were deployed','Country-by-country scope is shown; only compatible source-defined quantities are compared. No spurious national geographical percentages.',
+        '<div class="v4-columns">'+panel('Germany · fighter theater allocation',geography+'<p class="tiny">Proportions are historical period bands, not month-specific counts or loss shares. '+cite('german')+'</p>')+
+        panel('United States · reported fighter sorties',(sortiesE+sortiesM?fraction([{label:'European Theater (ETO)',value:sortiesE,color:'#9bb5c0'},{label:'Mediterranean Theater (MTO)',value:sortiesM,color:'#d2b27a'}]):
+          '<p>No USAAF ETO/MTO sorties in this selected interval.</p>')+
+          '<p class="tiny">This allocation is <strong>sorties</strong> rather than aircraft strength. The RAF selected series represents UK air-defense and tactical organizations; its worldwide theater percentage is not established here. '+cite('digest128')+'</p>')+'</div>')+
+      details('Historical German aircraft-strength returns · supporting records',
+        table(['Original date','All-front on hand','All-front serviceable','Evidence'],X.germanFighterReadiness.filter(p=>p.i>=a&&p.i<=b).map(p=>[p.date,fmt(p.strength),fmt(p.serviceable),tag('recorded')]))+cite('ahb107'))+
+      details('Events in this period', '<div class="v4-eventlist">'+V.milestones.filter(x=>x.i>=a&&x.i<=b).map(x=>'<div class="v4-event"><span>'+D.label(x.i)+'</span><strong>'+x.title+'</strong><p>'+x.detail+'</p></div>').join('')+'</div>');
   }
   // Reported 1943 monthly fighter-aircraft writeoff shares for Oct–Dec; 1944 annual
   // allocation is inherited unchanged from v3. Gaps never silently become zeros.
@@ -202,7 +334,7 @@
     const allyRows=[...us.map(x=>({...x,side:'USAAF'})),...raf.map(x=>({...x,side:'RAF'}))].map(x=>{const p=production(x.type),allocation=allyLoss?.parts.find(part=>part.name===x.type);
       return [x.side+' · '+x.type,fmt(x.value),tag(x.quality,x.note),fmt(p.value)+(p.value!=null?'<div class="tiny">Worldwide, full '+year+' year</div>':''),fmt(allocation?.value),
         allocation?tag('estimated-low',allyLoss.note):tag('unavailable','No recorded by-model loss total for this organization and month.')];});
-    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">AIRCRAFT STOCK · MOVEMENTS · LOSSES</div><h2>The fleet, aircraft by aircraft</h2><p>Month-end aircraft strength and per-model allocation. A factory acceptance, an aircraft at the front, an aircraft ready to fly, and a write-off are four different quantities.</p></div><div class="v4-inspect">Inventory month<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">AIRCRAFT STOCK · MOVEMENTS · LOSSES</div><h2>The fleet, aircraft by aircraft</h2><p>Month-end aircraft strength and per-model allocation. A factory acceptance, an aircraft at the front, an aircraft ready to fly, and a write-off are four different quantities.</p></div><div class="v4-inspect">'+(ui.detailMonth==null?'Period-end snapshot':'Inspected month')+'<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
       '<div class="v4-columns">'+panel('German piston day fighters · on strength',fraction(german.map((x,k)=>({label:x.type,value:x.value||0,color:k?'#f4c46a':'#48d3c5'})))+
          '<div class="v4-subcontrol"><label for="v4-fwshare">Fallback Fw 190 share when no type snapshot exists <b>'+ui.fwShare+'%</b></label><input class="range" type="range" min="10" max="65" step="1" id="v4-fwshare" value="'+ui.fwShare+'"><p class="tiny">Only affects unsupported dates. It does not overwrite dated German type observations.</p></div>',tag('estimated-low')+' · Bf 109 residual and inter-snapshot splits are estimates.')+
       panel('USAAF ETO fighter families',fraction(us.map((x,k)=>({label:x.type,value:x.value||0,color:['#82b9ff','#b89cfb','#8bdd9e'][k]})))+
@@ -242,11 +374,11 @@
         '<p class="tiny">'+cite('digest104')+' · The extracted source segment currently runs July 1943–April 1944. Never extend it as a fabricated late-war curve.</p>')+
       section('How type availability changed','Three main American fighter types and two German fighter families. German families are estimated outside dated stock returns.',
         chart('v4-fleet-plot',range.map(i=>({i,label:D.label(i)})),[
-          {name:'P-47 · USAAF ETO',color:'#82b9ff',value:r=>V.airframe('P-47',r.i,'USAAF').value},
-          {name:'P-51 · USAAF ETO',color:'#b89cfb',value:r=>V.airframe('P-51',r.i,'USAAF').value},
-          {name:'P-38 · USAAF ETO',color:'#8bdd9e',value:r=>V.airframe('P-38',r.i,'USAAF').value},
-          {name:'Bf 109 · Germany',color:'#48d3c5',value:r=>V.germanType(r.i,'Bf 109',ui.fwShare/100).value},
-          {name:'Fw 190 · Germany',color:'#f4c46a',value:r=>V.germanType(r.i,'Fw 190',ui.fwShare/100).value}
+          {name:'P-47 · USAAF ETO',color:'#82b9ff',value:r=>V.airframe('P-47',r.i,'USAAF').value,detail:r=>V.airframe('P-47',r.i,'USAAF')},
+          {name:'P-51 · USAAF ETO',color:'#b89cfb',value:r=>V.airframe('P-51',r.i,'USAAF').value,detail:r=>V.airframe('P-51',r.i,'USAAF')},
+          {name:'P-38 · USAAF ETO',color:'#8bdd9e',value:r=>V.airframe('P-38',r.i,'USAAF').value,detail:r=>V.airframe('P-38',r.i,'USAAF')},
+          {name:'Bf 109 · Germany',color:'#48d3c5',value:r=>V.germanType(r.i,'Bf 109',ui.fwShare/100).value,detail:r=>V.germanType(r.i,'Bf 109',ui.fwShare/100)},
+          {name:'Fw 190 · Germany',color:'#f4c46a',value:r=>V.germanType(r.i,'Fw 190',ui.fwShare/100).value,detail:r=>V.germanType(r.i,'Fw 190',ui.fwShare/100)}
         ]))+
       section('Factory numbers versus deployment', 'A wartime industrial output series is not a frontline inventory ledger.',
         '<div class="v4-columns">'+panel('German NEW fighter production · 1943',table(['Month','Bf 109','Fw 190','Combined'],
@@ -368,16 +500,18 @@
     const monthlyClaims=V.usaFighterClaimsMonthly.filter(x=>range.includes(x.i));
     const combatLosses=V.usCombatLosses[ui.lossAirClass];
     const lossFocus=combatLosses.find(x=>x.i===ui.focus),lossRows=combatLosses.filter(x=>range.includes(x.i));
-    const tableRows=records.flatMap(q=>['west','med','east'].map(k=>[q.label,({west:'Western Front',med:'Mediterranean',east:'Eastern Front'})[k],
+    const selectedFronts=ui.theater==='west'?['west']:ui.theater==='east'?['east']:['west','med','east'];
+    const tableRows=records.flatMap(q=>selectedFronts.map(k=>[q.label,({west:'Western Front',med:'Mediterranean',east:'Eastern Front'})[k],
       fmt(q[k].strength),fmt(q[k].combat),fmt(q[k].all),pct(100*q[k].all/q[k].strength)]));
     const eighthAir=X.eighthAggregate.air;
-    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">CAUSES · THEATERS · AIRCRAFT ATTRIBUTION</div><h2>What was lost, where, and to whom?</h2><p>Actual German airframe loss returns, all-theater benchmarks and an explicitly hypothetical Allied fighter attribution workbench. Fighter claims are not confirmed German destroyed aircraft.</p></div><div class="v4-inspect">Selected month<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
-      (r?'<div class="v4-statgrid">'+card(fmt(r.west.combat),'West · combat aircraft losses','All German operational aircraft, full '+r.label,'var(--blue)')+
-        card(fmt(r.med.combat),'Mediterranean · combat losses','All aircraft categories; '+r.label,'var(--gold)')+
-        card(fmt(r.east.combat),'East · combat aircraft losses','All aircraft categories; '+r.label,'var(--teal)')+
-        card(fmt(r.west.all+r.med.all+r.east.all),'Total losses · all causes','Across the three reported fronts, full '+r.label,'var(--red)')+'</div>':
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">CAUSES · THEATERS · AIRCRAFT ATTRIBUTION</div><h2>What was lost, where, and to whom?</h2><p>Actual German airframe loss returns, all-theater benchmarks and an explicitly hypothetical Allied fighter attribution workbench. Fighter claims are not confirmed German destroyed aircraft.</p></div><div class="v4-inspect">'+(ui.detailMonth==null?'Period-end reference':'Inspected month')+'<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
+      (r?'<div class="v4-statgrid">'+selectedFronts.map((front,k)=>card(fmt(r[front].combat),
+        ({west:'West',east:'East',med:'Mediterranean'})[front]+' · combat aircraft losses',
+        'All aircraft classes · complete '+r.label,['var(--blue)','var(--teal)','var(--gold)'][k])).join('')+
+        card(fmt(selectedFronts.reduce((n,front)=>n+r[front].all,0)),'Selected fronts · all-cause losses',
+          'Complete '+r.label+'; only listed fronts, not necessarily all German losses','var(--red)')+'</div>':
         '<div class="warning">No compatible original German all-type theater-loss checkpoint covers '+D.label(ui.focus)+'. For verified quarter-level analysis select September 1943–September 1944.</div>')+
-      renderOriginalLossReturns()+
+      (ui.theater==='east'?details('Reich / Western German original returns · not Eastern Front',renderOriginalLossReturns()):renderOriginalLossReturns())+
       section('Aircraft-type fighter victory credits — Eighth Fighter Command (whole war)','The credited P-47 / P-51 / P-38 victory split really is available, but the reporting universe is the <strong>US Eighth Fighter Command</strong>, not every Allied aircraft or every German loss in Europe. Fractional credits reflect joint awards; losses by cause were categorized by the later compiler.',
         '<div class="v4-statgrid">'+
           card(fmt(X.eighthAggregate.air,0),'Eighth Fighter Command · air victory credits',tag('recorded-secondary')+' Victory Credits Board and group records','var(--blue)')+
@@ -488,7 +622,7 @@
     const {range}=months(),focus=V.pilotAttrition.find(x=>x.i===ui.focus),
       count=V.pilotCasualtyCounts.find(x=>x.i===ui.focus);
     const rateRows=V.pilotAttrition.filter(x=>range.includes(x.i));
-    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">PERSONNEL RETURNS · COHORT EXPERIENCE</div><h2>The pilots behind the aircraft</h2><p>Monthly source-reported German fighter-pilot strength losses are observable. The percentage with 200 encounters, 20 credited victories, or years of surviving combat is not recorded in these aggregate tables. Explore that distinction below.</p></div><div class="v4-inspect">Inspection month<strong>'+D.label(ui.focus)+'</strong></div></div>'+
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">PERSONNEL RETURNS · COHORT EXPERIENCE</div><h2>The pilots behind the aircraft</h2><p>Monthly source-reported German fighter-pilot strength losses are observable. The percentage with 200 encounters, 20 credited victories, or years of surviving combat is not recorded in these aggregate tables. Explore that distinction below.</p></div><div class="v4-inspect">'+(ui.detailMonth==null?'Period-end reference':'Inspected month')+'<strong>'+D.label(ui.focus)+'</strong></div></div>'+ 
       '<div class="v4-statgrid">'+
       card(focus?pct(focus.value):'—','Fighter-pilot strength lost this month',focus?tag('recorded')+' Murray Table LXVIII, not solely fatalities':'No comparable source rate for this exact month','var(--red)')+
       card(count?fmt(count.value):'—','Source-reported fighter-pilot casualties',count?tag('recorded')+' Losses include categories beyond killed':'An absolute count cannot be inferred from modeled strength','var(--gold)')+
@@ -540,7 +674,7 @@
     const c1944=V.usaCosts,claims1944=V.usaFighterClaimsAnnual.find(x=>x.year===1944);
     const sorties=V.usaFighterSorties[ui.opsTheater],sortieFocus=sorties.find(x=>x.i===ui.focus);
     const sortieRange=sorties.filter(x=>range.includes(x.i));
-    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">INDUSTRIAL OUTPUT · OPERATIONAL EXPOSURE</div><h2>How airpower was supplied and employed</h2><p>Production, aircraft procurement cost, theater inventory, flying hours and confirmed reporting categories tell different parts of the story. Explore aircraft types without equating cost, availability or credited victories with intrinsic fighter quality.</p></div><div class="v4-inspect">Inventory month<strong>'+D.label(ui.focus)+'</strong></div></div>'+
+    $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">INDUSTRIAL OUTPUT · OPERATIONAL EXPOSURE</div><h2>How airpower was supplied and employed</h2><p>Production, aircraft procurement cost, theater inventory, flying hours and confirmed reporting categories tell different parts of the story. Explore aircraft types without equating cost, availability or credited victories with intrinsic fighter quality.</p></div><div class="v4-inspect">'+(ui.detailMonth==null?'Period-end reference':'Inspected month')+'<strong>'+D.label(ui.focus)+'</strong></div></div>'+
       '<div class="v4-statgrid">'+
       card(money(c1944['P-38'][1944]),'P-38 · 1944 unit procurement cost','Average flyaway price; original USAAF fiscal-year basis','var(--blue)')+
       card(money(c1944['P-47'][1944]),'P-47 · 1944 unit procurement cost','Same accounting definition; excludes service costs','var(--teal)')+
@@ -613,12 +747,15 @@
   }
   function renderCampaigns(){
     const {a,b}=months();
-    const selected=X.campaignCases.filter(p=>p.a<=b&&p.b>=a);
+    const eastern=new Set(['barbarossa','citadel']);
+    const western=new Set(['britain','schweinfurt','bigweek','overlord','bodenplatte']);
+    const selected=X.campaignCases.filter(p=>p.a<=b&&p.b>=a&&
+      (ui.theater==='overall'||(ui.theater==='east'?eastern:western).has(p.id)));
     const chapterRows=X.historyChapters.map(c=>['Chapter '+c.chapter,safe(c.title),safe(c.theatre),
       '<a href="'+c.url+'" rel="noreferrer" target="_blank">Read original chapter ↗</a>']);
     $('v4-body').innerHTML='<div class="v4-hero"><div><div class="kicker">CAMPAIGN HISTORY · CROSS-REFERENCED ARCHIVES</div><h2>From the Condor Legion to VE Day</h2>'+ 
       '<p>Campaign landmarks use the shared 1936–May 1945 timeline. A campaign article is a research starting point; official primary/secondary documents decide which numbers enter the calculator.</p></div><div class="v4-inspect">Active interval<strong>'+D.label(a)+' — '+D.label(b)+'</strong></div></div>'+ 
-      section('Campaigns in your selected time window','Switch the handles above to see another phase. Clicking the research links never changes the model values.',
+      section('Campaigns in your selected time window','These are selected research case studies, not a complete catalog of major operations. Theater selection filters their geographical emphasis; clicking the research links never changes model values.',
         selected.length?'<div class="v6-campaign-grid">'+selected.map(p=>'<article class="v6-campaign-card"><small>'+D.label(p.a)+' – '+D.label(p.b)+'</small>'+ 
           '<h3>'+safe(p.name)+'</h3><p class="tiny">'+safe(p.scale)+'</p><p>'+safe(p.note)+'</p><p class="tiny">'+cite(p.source)+' · <a target="_blank" rel="noreferrer" href="'+p.wiki+'">Wikipedia references trail ↗</a></p></article>').join('')+'</div>':
         '<p class="small">No featured campaign intersects this selection; the annual/archive series still apply. Move your range or open the research bibliography.</p>')+
@@ -690,21 +827,60 @@
     if(ui.sources){sourcePanel.innerHTML='<h3>Source notes and exact reporting definitions</h3>'+Object.entries(V.SOURCES).map(([id,s])=>
       '<p><strong>'+s.short+'</strong> — '+s.note+' '+cite(id)+'</p>').join('');}
   }
+  function progressivelyCollapse(){
+    if(typeof document.querySelectorAll!=='function'||typeof document.createElement!=='function')return;
+    const primary={
+      fleet:['Germany · month-by-type accounting','Allies · operational strength by fighter type'],
+      pilothistory:['German fighter-pilot attrition · monthly source series'],
+      losses:['Original German all-aircraft losses by front','German aircraft losses through the selected interval'],
+      comparison:['U.S. factories versus European aircraft inventories','Monthly USAAF fighter missions by role'],
+      campaigns:['Campaigns in your selected time window']
+    }[ui.view];
+    if(!primary)return;
+    // Eastern selection never silently treats western Allied or worldwide
+    // background material as east-specific: keep it available collapsed.
+    if(ui.theater==='east'&&['fleet','pilothistory','comparison'].includes(ui.view)){
+      const body=$('v4-body'),wrapper=document.createElement('details');wrapper.className='v73-details v73-wrapped';
+      const heading=document.createElement('summary');heading.textContent='Other theaters / all-front historical reference · Expand';
+      wrapper.appendChild(heading);
+      for(const child of [...body.children])if(!child.classList.contains('v4-hero'))wrapper.appendChild(child);
+      body.appendChild(wrapper);
+      return;
+    }
+    for(const sectionEl of document.querySelectorAll('#v4-body > .v4-section')){
+      const h=sectionEl.querySelector('h2');
+      if(!h||primary.some(p=>h.textContent.includes(p)))continue;
+      // Native reparenting preserves existing input listeners and the chart
+      // instances. Do not replace innerHTML after a view wires its controls.
+      const wrapper=document.createElement('details');wrapper.className='v73-details v73-wrapped';
+      const label=document.createElement('summary');label.textContent=h.textContent+' · Supporting detail';
+      sectionEl.parentNode.insertBefore(wrapper,sectionEl);
+      wrapper.appendChild(label);wrapper.appendChild(sectionEl);
+    }
+  }
   function render(){
     const v3=QA.inspect(),{a,b}=months();
-    if(ui.focus<a)ui.focus=a;if(ui.focus>b)ui.focus=b;
+    if(ui.detailMonth!=null&&(ui.detailMonth<a||ui.detailMonth>b))ui.detailMonth=null;
+    ui.focus=ui.detailMonth??b;
     const v4view=!['pilot','equipment'].includes(ui.view);
     document.body.classList.toggle('v4-on',v4view);
+    document.body.classList.toggle('v73-on',true);
+    document.body.classList.toggle('v73-static',ui.view==='about'||ui.view==='sources');
+    document.body.classList.toggle('v73-simulator',!v4view);
     document.querySelectorAll('[data-v4-tab]').forEach(el=>{
       el.classList.toggle('active',el.dataset.v4Tab===ui.view);
       el.setAttribute('aria-current',el.dataset.v4Tab===ui.view?'page':'false');
     });
-    $('v4-tools').hidden=!v4view;
-    $('v4-month').value=ui.focus;$('v4-estimate-gaps').checked=ui.lossGaps;$('v4-sources-check').checked=ui.sources;
+    $('v4-tools').hidden=ui.view==='about'||ui.view==='sources';
+    $('v73-simulator-note').hidden=v4view;
+    document.querySelectorAll('[data-v73-theater]').forEach(el=>{
+      const selected=el.dataset.v73Theater===ui.theater;el.classList.toggle('active',selected);el.setAttribute('aria-pressed',String(selected));
+    });
+    $('v4-estimate-gaps').checked=ui.lossGaps;$('v4-sources-check').checked=ui.sources;
     $('v4-markers-check').checked=ui.markers;
     if(!v4view)return;
     $('v4-head').innerHTML='<div class="v4-eyebrow">'+D.label(a)+' → '+D.label(b)+
-      '<span> · '+(b-a+1)+' selected months · Snapshot '+D.label(ui.focus)+'</span></div>';
+      '<span> · '+(b-a+1)+' selected months'+(ui.detailMonth!=null?' · detail '+D.label(ui.detailMonth):' · period end '+D.label(b))+'</span></div>';
     if(ui.view==='balance')renderBalance();
     if(ui.view==='fleet')renderFleet();
     if(ui.view==='losses')renderLosses();
@@ -713,8 +889,15 @@
     if(ui.view==='campaigns')renderCampaigns();
     if(ui.view==='sources')renderSources();
     if(ui.view==='about')renderAbout();
+    $('v73-extra').innerHTML=ui.view==='fleet'?variantExplorer()+nationalLedgers():ui.view==='campaigns'?battleOfBritainDetail():'';
+    $('v73-period-banner').innerHTML=['about','sources'].includes(ui.view)?'':periodOverview();
+    $('v73-feature-banner').innerHTML=(ui.theater!=='overall'&&!['balance','about','sources'].includes(ui.view)?
+      '<p class="v73-front-warning">'+safe(theaterLabels())+': this page also contains all-front, nationwide or differently scoped reference figures. Those sections are background, <strong>not</strong> automatically assigned to the selected front.</p>':'')+
+      easternFrontLens()+(ui.view==='losses'?theaterLossInsight():'');
+    $('v73-detail-banner').innerHTML=ui.detailMonth!=null?'<div class="v73-detail-note">Inspecting '+D.label(ui.detailMonth)+' within '+D.label(a)+'–'+D.label(b)+' <button type="button" data-v73-clear-month>Return to period end</button></div>':'';
     renderNotes();
     window.AirWarAtlasV5?.enhanceAll();
+    progressivelyCollapse();
   }
   function setView(view){
     ui.view=view;
@@ -753,27 +936,29 @@
     anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1200);
   }
   document.querySelectorAll('[data-v4-tab]').forEach(el=>el.addEventListener('click',()=>setView(el.dataset.v4Tab)));
-  $('v4-month').addEventListener('change',e=>{ui.focus=+e.target.value;render();});
+  document.querySelectorAll('[data-v73-theater]').forEach(el=>el.addEventListener('click',()=>{ui.theater=el.dataset.v73Theater;ui.detailMonth=null;ui.v71Theater=ui.theater==='west'?'Western Front':'Both';render();}));
   $('v4-estimate-gaps').addEventListener('change',e=>{ui.lossGaps=e.target.checked;render();});
   $('v4-markers-check').addEventListener('change',e=>{ui.markers=e.target.checked;window.AirWarAtlasV5?.setMarkers(ui.markers);});
   $('v4-sources-check').addEventListener('change',e=>{ui.sources=e.target.checked;render();});
   $('v4-export').addEventListener('click',exportCsv);
   extra.addEventListener('click',e=>{if(e.target.closest('[data-v7-expand]')){ui.chartFullRange=!ui.chartFullRange;render();}
-    const month=e.target.closest('[data-v72-month]');if(month){ui.focus=+month.dataset.v72Month;render();}});
+    if(e.target.closest('[data-v73-clear-month]')){ui.detailMonth=null;render();}
+    const month=e.target.closest('[data-v72-month]');if(month){ui.detailMonth=+month.dataset.v72Month;render();}});
   extra.addEventListener('change',e=>{if(e.target.id==='v7-archive-theater'){ui.archiveTheater=e.target.value;render();}});
   extra.addEventListener('change',e=>{if(e.target.id==='v71-theater'){ui.v71Theater=e.target.value;render();}
     if(e.target.id==='v71-metric'){ui.v71Metric=e.target.value;render();}});
   // Original v3 owns the dual range handles. Listen after their own callbacks;
   // never rewrite or replace its simulation state, URL persistence or exports.
-  for(const id of ['start','end'])$(id).addEventListener('input',()=>{setTimeout(render,0);});
-  document.querySelectorAll('[data-scenario]').forEach(e=>e.addEventListener('click',()=>setTimeout(render,0)));
+  for(const id of ['start','end'])$(id).addEventListener('input',()=>{ui.detailMonth=null;setTimeout(render,0);});
+  document.querySelectorAll('[data-scenario]').forEach(e=>e.addEventListener('click',()=>{ui.detailMonth=null;setTimeout(render,0);}));
   $('reset').addEventListener('click',()=>setTimeout(render,180));
   const originalViews=['view-pilot','view-equipment'];
   originalViews.forEach(id=>$(id).addEventListener('click',()=>{ui.view=id.replace('view-','');render();}));
   // QA API permits inspection without touching the original simulator's API.
-  window.AirWarAtlasQA={version:'7.2',snapshot:i=>allSnapshot(i),attrition:i=>germanLoss(i),sourceIds:()=>Object.keys(V.SOURCES),
+  window.AirWarAtlasQA={version:'7.3',snapshot:i=>allSnapshot(i),attrition:i=>germanLoss(i),sourceIds:()=>Object.keys(V.SOURCES),
     originalLoss:(i,theater)=>Z.get(i,theater),verifiedOriginalMonths:()=>Z.monthlyReturns.length,
-    view:()=>ui.view,config:()=>({...ui}),historicalMilestones:()=>V.milestones.length};
+    view:()=>ui.view,config:()=>({...ui}),theaterGerman:germanTheater,periodOverview,
+    historicalMilestones:()=>V.milestones.length};
   // Opening view aligns with saved period without hiding any legacy capabilities.
-  ui.focus=Math.min(106,QA.inspect().end);render();
+  ui.focus=QA.inspect().end;render();
 })();

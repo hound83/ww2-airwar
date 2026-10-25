@@ -16,8 +16,8 @@ const {chromium}=require('playwright');
     assert.deepEqual(errors,[],'No uncaught startup errors');
     assert.equal(await page.title(),'European Air War Atlas · Pilots, Aircraft and Operations 1936–1945');
     assert.equal(await page.locator('[data-v4-tab]').count(),10);
-    assert.ok((await page.locator('#v4-navigation').innerText()).includes('Version 7.2'));
-    assert.ok((await page.locator('#v4-body').innerText()).includes('What was the Luftwaffe facing?'));
+    assert.ok((await page.locator('#v4-navigation').innerText()).includes('Version 7.3'));
+    assert.ok((await page.locator('#v4-body').innerText()).includes('The European air war'));
     const stats=await page.evaluate(()=>({
       months:window.LuftData.MONTHS,
       milestone:window.AirWarAtlasQA.historicalMilestones(),
@@ -62,7 +62,9 @@ const {chromium}=require('playwright');
     assert.ok((await page.locator('#v4-body').innerText()).includes('228 / 71'));
     assert.ok((await page.locator('#v4-body').innerText()).includes('Source transcription'));
     await page.locator('[data-v4-tab="fleet"]').click();
-    await page.locator('#v4-month').selectOption(String(stats.v3.start+7));
+    await page.locator('[data-v73-theater="east"]').click();
+    assert.ok((await page.locator('#v4-body').innerText()).includes('Soviet Union'));
+    await page.locator('[data-v73-theater="overall"]').click();
     await page.locator('[data-v4-tab="pilothistory"]').click();
     await page.locator('#v5-pilot-source-rate').hover({position:{x:500,y:100}});
     assert.ok(await page.locator('.atlas-tooltip:visible').count(),'Chart hover renders historical tooltip');

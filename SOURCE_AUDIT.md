@@ -189,3 +189,23 @@ All **24 Wikipedia article entry points in the dashboard have now been opened an
 - **Unavailable:** when the historical reporting series has no matching date/category, the corresponding cell/line is empty, even if a simulator still runs for the date.
 
 The comparison between Allied **claims** and German **losses** is particularly sensitive to theater, date, cause and mission accounting. An Eighth Command type's share of all its wartime victory credits is not automatically its share of the whole war's German aircraft losses. Likewise a German production total is not an aircraft-ready inventory total.
+
+## V7.3 Eastern Front source additions and provenance
+
+The Soviet checkpoints were found in a 1962 **Soviet Air Force General Staff statistical compilation**, transcribed into searchable tables at RKKA.es with references to the USSR Ministry of Defence archive. The latter is an identifiable source transcript, not a claim that our team inspected each Soviet physical archival file. The dashboard links each transcription individually:
+
+| Original dated force snapshot | VVS front air-army and reserve fighters | Online transcription and archival context |
+| --- | ---: | --- |
+| 1 July 1943 | 3,690 | [Source table](https://www.rkka.es/Estadisticas/VVS_stat/02/02_08.htm) |
+| 1 January 1944 | 3,926 | [Source table](https://www.rkka.es/Estadisticas/VVS_stat/02/02_09.htm) |
+| 1 June 1944 | 5,815 | [Source table](https://www.rkka.es/Estadisticas/VVS_stat/02/02_10.htm) |
+| 1 January 1945 | 5,810 | [Source table](https://www.rkka.es/Estadisticas/VVS_stat/02/02_11.htm) |
+| 1 May 1945 | 6,268 | [Source table](https://www.rkka.es/Estadisticas/VVS_stat/02/02_12.htm) |
+
+The extracted category is **fighter planes in front air armies and reserves**, not the sum of all Soviet air forces, and it is not directly the number of *serviceable* planes. In particular, Soviet PVO air defense and naval/long-range air wings are excluded. These source-defined Soviet totals are compared graphically to *estimated* German front allocation with prominent labeling, never presented as a source-perfect like-for-like air superiority ratio. No pre-July-1943 Soviet VVS fighter count has been invented.
+
+For subtype chronology, the [National Museum of the USAF P-51D fact sheet](https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196263/north-american-p-51d-mustang/) supports late-1943 B/C and spring-1944 D introductions, **not** monthly by-model operational counts. The [RAF Museum aircraft listings](https://www.rafmuseum.org.uk/london/things-to-see-and-do/london-aircraft/) are an equipment research entry point; the v7.3 illustrative mixture for 19 variants has no verified original month-by-month type ledger. Every numerical subtype estimate is labeled accordingly.
+
+The German eastern / western / Mediterranean quarterly loss reconstruction derives *quarter totals* from the existing bibliographically traced Zamansky Table 15. The invented monthly event-weight multipliers are deliberately stored in `dist/atlas-v73-data.js`, not in the source transcription, and every three-month sum is regression-tested against its original quarterly total. A weighted month is **Estimated**; a simple between-observation interpolated stock is **Interpolated**; neither is an original monthly report. The existing German 30 exact Reich/Western monthly archival command totals remain unchanged, narrower in geography, and separate from the quarter-allocation series.
+
+**Future source priorities:** verify fighter subtype proportions in German RLM equipment returns, RAF/USAAF squadron-by-squadron allocations and Soviet fighter-type air-army registers; extend Soviet VVS earlier than July 1943; find direct Soviet losses per front and operational month before building any Soviet attrition simulation. Mediterranean, Scandinavia and Reich defense need separately scoped drilldown filters in a later version.

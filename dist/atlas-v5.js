@@ -39,8 +39,8 @@
     if(d?.quality){
       evidence={recorded:'Recorded source point',documented:'Recorded source point',
         'recorded-secondary':'Recorded / compiled from wartime records',
-        'estimated-high':'Nearby-point interpolation · higher confidence',
-        'estimated-low':'Estimate · lower confidence',unavailable:'Unavailable',
+        'estimated-high':'Interpolated · short gap',
+        'estimated-low':'Estimated · model allocation',estimated:'Estimated · model allocation',unavailable:'Unavailable',
         interpolated:'Interpolation',reference:'Sourced snapshot',derived:'Derived from source' }[d.quality]||d.quality;
     }else if(s.source){
       evidence='Recorded · '+(historical?.SOURCES?.[s.source]?.short||s.source);
@@ -49,10 +49,10 @@
     }else if(r.wq&&j===1){
       evidence=r.wq==='unavailable'?'Unavailable':'Estimated / allocated from other totals';
     }
-    return {name:s.name||names[id]?.[j]||'Series '+(j+1),amount,evidence,color:s.color};
+    return {name:s.name||names[id]?.[j]||'Series '+(j+1),amount,evidence,note:d?.note||'',color:s.color};
   }
   function dimensions(el,id){
-    const newer=id.startsWith('v4-')||id.startsWith('v5-')||id.startsWith('v6-')||id.startsWith('v7-');
+    const newer=/^v\d+-/.test(id);
     const vb=el.viewBox?.baseVal;
     const w=vb?.width|| (newer?980:600);
     return {w,l:newer?62:52,r:newer?24:18,y1:newer?18:12,y2:newer?216:226};
@@ -92,9 +92,9 @@
       parent.appendChild(tip);
       el.setAttribute('tabindex','0');
       el.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight');
-      state={tip,current:0,cross:null};attached.set(el,state);
-      const hide=()=>{tip.hidden=true;if(state.cross)state.cross.style.display='none';};
-      const move=(x,indexOverride)=>{
+      state={tip,current:0,cross:null,marker:null};attached.set(el,state);
+      const hide=()=>{tip.hidden=true;if(state.cross)state.cross.style.display='none';if(state.marker)state.marker.style.display='none';};
+      const move=(x,indexOverride,y)=>{
         const data=registry?.get(id);if(!data?.rows?.length)return;
         const rect=el.getBoundingClientRect(),geom=dimensions(el,id);
         const frac=(x-rect.left)/Math.max(1,rect.width),pos=frac*geom.w;
@@ -109,25 +109,37 @@
         if(!state.cross||!state.cross.isConnected){state.cross=svgLine('atlas-crosshair');el.appendChild(state.cross);}
         for(const [key,val] of Object.entries({x1:xSvg,x2:xSvg,y1:geom.y1,y2:geom.y2}))state.cross.setAttribute(key,String(val));
         state.cross.style.display='';
+        const actual=present[0],first=actual?data.series.find(s=>valid(seriesValue(s,r))):null;
+        if(first&&data.origin==='historical'){
+          const numbers=data.series.flatMap(s=>data.rows.map(row=>seriesValue(s,row)).filter(valid)),max=Math.max(1,...numbers)*1.08;
+          const value=seriesValue(first,r),height=el.viewBox?.baseVal?.height||252;
+          const ySvg=18+(height-18-36)*(1-value/max);
+          if(!state.marker||!state.marker.isConnected){state.marker=document.createElementNS('http://www.w3.org/2000/svg','circle');state.marker.setAttribute('class','atlas-active-dot');state.marker.setAttribute('pointer-events','none');el.appendChild(state.marker);}
+          for(const [key,val] of Object.entries({cx:xSvg,cy:ySvg,r:5}))state.marker.setAttribute(key,String(val));
+          state.marker.style.display='';
+        }else if(state.marker)state.marker.style.display='none';
         const sourceLine=data.origin==='simulator'?'Illustrative simulation · not individual service records':
           'Figures follow the source and confidence definitions shown in the panels';
         const event=historical?.milestones?.find(x=>x.i===r.i);
         tip.innerHTML='<strong class="atlas-tooltip-title">'+esc(labelOf(r))+'</strong>'+
           (event?'<p class="atlas-tooltip-event">◆ '+esc(event.title)+'</p>':'')+
-          (present.length?entries.map((p,j)=>p?'<div class="atlas-tooltip-row"><i style="background:'+esc(p.color||'#c3b389')+'"></i><span>'+esc(p.name)+'</span><b>'+esc(p.amount)+'</b><small>'+esc(p.evidence)+'</small></div>':
+          (present.length?entries.map((p,j)=>p?'<div class="atlas-tooltip-row"><i style="background:'+esc(p.color||'#c3b389')+'"></i><span>'+esc(p.name)+'</span><b>'+esc(p.amount)+'</b><small>'+esc(p.evidence)+(p.note?' · '+esc(p.note):'')+'</small></div>':
             '<div class="atlas-tooltip-row"><i style="background:'+esc(data.series[j].color||'#a8a598')+'"></i><span>'+esc(data.series[j].name||'Series '+(j+1))+'</span><b>—</b><small>No verified value at this date</small></div>').join(''):
             '<div class="v7-tooltip-absent">No comparable historical observation for this month. <strong>Missing ≠ zero.</strong></div>')+
           '<span class="atlas-tooltip-foot">'+esc(sourceLine)+'</span>';
         tip.hidden=false;
         const parentRect=parent.getBoundingClientRect();
-        const overlayX=rect.left-parentRect.left+(xSvg/geom.w)*rect.width;
-        const maxX=Math.max(8,parentRect.width-302);
-        tip.style.left=Math.min(maxX,Math.max(8,overlayX-135))+'px';
-        tip.style.top=Math.max(0,rect.top-parentRect.top+8)+'px';
+        const pointerX=x-parentRect.left,pointerY=(y??(rect.top+rect.height/2))-parentRect.top;
+        const width=tip.offsetWidth||294,height=tip.offsetHeight||Math.max(150,60+present.length*55);
+        const spaceRight=parentRect.width-(pointerX+18+width);
+        const left=spaceRight>=8?pointerX+18:pointerX-width-18;
+        const above=pointerY+height+12>Math.max(parentRect.height||rect.height,rect.top-parentRect.top+rect.height);
+        tip.style.left=Math.max(8,Math.min(Math.max(8,parentRect.width-width-8),left))+'px';
+        tip.style.top=Math.max(4,above?pointerY-height-12:pointerY+12)+'px';
       };
-      el.addEventListener('pointermove',e=>move(e.clientX));
+      el.addEventListener('pointermove',e=>move(e.clientX,null,e.clientY));
       el.addEventListener('pointerleave',e=>{if(e.pointerType!=='touch')hide();});
-      el.addEventListener('click',e=>move(e.clientX));
+      el.addEventListener('click',e=>move(e.clientX,null,e.clientY));
       el.addEventListener('focus',()=>move(el.getBoundingClientRect().left,Math.min(state.current,(registry?.get(id)?.rows.length||1)-1)));
       el.addEventListener('blur',hide);
       el.addEventListener('keydown',e=>{

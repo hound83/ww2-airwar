@@ -201,8 +201,8 @@
     const strength=Math.round(before.strength+(after.strength-before.strength)*t);
     const serviceable=Math.round(before.serviceable+(after.serviceable-before.serviceable)*t);
     return {i,strength,serviceable,readyPct:100*serviceable/strength,
-      source:'ahb107',quality:span<=4?'estimated-high':'estimated-low',
-      note:`Linear interpolation between ${before.date} and ${after.date} (gap ${span} months). Not an observed German monthly return.`};
+      source:'ahb107',quality:'interpolated',
+      note:`Linear interpolation between ${before.date} and ${after.date} (gap ${span} months). ${span>6?'LONG GAP / reduced confidence. ':''}Not an observed German monthly return.`};
   }
   window.AirWarV6Data={sourceIndex,germanFighterReadiness,germanClassSnapshots,germanAt,
     eighthFighterTypes,eighthAggregate,campaignCases,bigWeekOfficial,historyChapters,wikiTopics,researchTrails,september44Allied};

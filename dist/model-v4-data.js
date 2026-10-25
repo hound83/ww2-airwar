@@ -234,7 +234,7 @@
     const lo=series.filter(p=>p.i<i).at(-1),hi=series.find(p=>p.i>i);
     if(!lo||!hi){if(!allowExtrapolate)return {value:null,quality:'unavailable',source:null};return {...(lo||hi),quality:'estimated-low',note:'Scenario extension beyond nearest reported snapshot'};}
     const value=Math.round(lo.value+(hi.value-lo.value)*(i-lo.i)/(hi.i-lo.i));
-    return {i,value,source:lo.source===hi.source?lo.source:lo.source+'+'+hi.source,quality:hi.i-lo.i<=4?'estimated-high':'estimated-low',note:'Linearly interpolated between dated source snapshots; no monthly observation'};
+    return {i,value,source:lo.source===hi.source?lo.source:lo.source+'+'+hi.source,quality:'interpolated',note:'Linearly interpolated between dated source snapshots ('+(hi.i-lo.i)+'-month span); no monthly observation'+(hi.i-lo.i>6?'; long gap, low confidence':'')};
   }
   function airframe(type,i,side){return sample((side==='USAAF'?usa:raf)[type],i);}
   function share(i){return sectorShares.find(x=>i>=x.a&&i<=x.b)||null;}
