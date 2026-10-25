@@ -1,6 +1,6 @@
 # European Air War Atlas · 1936–May 1945
 
-**Version 7.3** · Theater-aware, period-first airpower research with Soviet VVS original source checkpoints, collapsible ledgers, estimated monthly airframe-variant mixes, and event-weighted German theater-loss reconstructions. All thirty v7.2 original German command-month observations remain unchanged.
+**Version 7.4** · A historical-photo home page, five-level readable typography, early Soviet VVS returns, 68 monthly U.S. factory-acceptance observations, front-aware views and preserved research leads. The full v7.3 work, original 30 German command-month returns, simulations and source distinctions remain available.
 
 An interactive, source-led historical dashboard for the European air war: fighter-pilot attrition and experience, German and Allied equipment, aircraft production, theater strength, casualties, victory claims and hypothetical cohort simulations.
 
@@ -8,7 +8,18 @@ An interactive, source-led historical dashboard for the European air war: fighte
 
 > The dashboard is a historical exploration and **scenario model**, not a precise reconstruction of every airframe or pilot. It distinguishes observed returns, derived values, two confidence grades of estimation and hypothetical scenarios. Unsupported months are **visually identified** and never treated as zero.
 
-### New in v7.3
+### New in v7.4
+
+- **Six equal visual destinations:** airpower & aircraft, pilots, losses, industry, simulations, and research. Each uses a self-hosted historical photograph. Original image attribution/rights are recorded in [`research/sources/visual-credits.md`](research/sources/visual-credits.md); no data chart uses a photograph as quantitative evidence.
+- **Legibility and historical style:** five deliberate typography levels (40/24/18/16/14px), Barlow Condensed headlines + Source Sans 3 body with locally included open font licenses, restrained olive/bronze visual language, clearer button groups. No new framework, external font CDN or database.
+- **Navigation and leakage repaired:** the original model's legacy period/view controls no longer appear in Research, About or the home view. The historical simulation remains accessible through its dedicated tabs. Research no longer displays a redundant link to a simulator already in the navigation.
+- **USAAF monthly industrial history:** new directly recorded Table 74 factory acceptances, every month January 1940–August 1945 (68 rows). The selected-date chart, category-composition bars and optional complete month ledger retain worldwide source scope. Source transcription has three documented suspicious digits normalized by annual/row reconciliation, *not hidden from the user*.
+- **Early Soviet archive returns:** five explicitly scoped source-compiled VVS observations between June 1941 and July 1942, including May 1942 **1,270 trained fighter crews** (not to be mistaken for aircraft). The June 1941 border districts and October 1941 incomplete front list remain separate from later front-plus-reserve observations, avoiding a false continuous USSR-wide strength trend.
+- **Honest loss visualizations:** documented German all-aircraft destruction categories appear as a stacked composition only for months/commands with directly verified totals, with missing months excluded rather than considered zero. Coverage grades now distinguish direct German fighter-stock returns from reconstructed data.
+- **Save discoveries even when not plotted:** new [`research/`](research/README.md) inventory documents original archive URLs, reporting scopes, candidate datasets, a disputed November 1941/1942 Soviet return and concrete follow-up work. A later front-strength map can use the same geographic definitions (proposed v7.5).
+- **Regressions:** every previous version's data tests retained, plus [`tests/v74.cjs`](tests/v74.cjs) checks all 68 source rows against annual and category totals, photographs, typography assets, source metadata, load order and homepage.
+
+### Added in v7.3
 
 - **Period-first analysis:** a selected date interval produces average fighter inventories, start/end fighter strength and cumulative flows only where valid. Clicking an archival month optionally drills in; there is no second mandatory month picker. The date slider disappears entirely from About and Research & sources.
 - **Overall / Western / Eastern theater lens** across historical views, with a sourced Eastern Front fighter chart and separate scope notes. *Overall is not simply West + East:* Germany's reported fighter class can also include Mediterranean, Scandinavia, Reich defense and other areas. The existing pilot and aircraft simulators retain their independent front-exposure controls, without pretending to be complete Soviet operational simulators.
@@ -46,7 +57,7 @@ An interactive, source-led historical dashboard for the European air war: fighte
 - **Aircraft & equipment:** Original dated worldwide German fighter-strength and serviceability observations (1938–April 1945), multi-aircraft-class archival snapshots, preserved Bf 109/Fw 190 estimates, P-38/P-47/P-51, Spitfire, Hurricane, Typhoon, Tempest and RAF Mustang. Factory production and confidence-labeled losses remain separate.
 - **Pilots & experience:** source-reported monthly fighter-pilot strength attrition percentages January 1942–May 1944; absolute casualty counts only for documented months; original replacement flow, 1943 pilot readiness and two local JG 53 unit reports.
 - **Losses & claims:** original German theater loss returns, yearly USAAF ETO fighter losses, **complete monthly (August 1942–May 1945) USAAF fighter-class in-air and on-ground credited claims**, **month-by-month U.S. fighter and bomber combat-mission losses by cause (1944–May 1945)**, a separate *Eighth Fighter Command whole-war type-specific claims/loss summary*, original Big Week campaign figures and the expressly **hypothetical** attribution workbench.
-- **Industry & operations:** original aircraft procurement costs, yearly U.S. production, European aircraft inventory and flying hours, three dated Reich-only fighter readiness records, fuel-capacity records, plus **all 29 monthly USAAF fighter-sortie reports by mission role (1943–May 1945)** with an ETO/Mediterranean switch.
+- **Industry & operations:** original aircraft procurement costs, **68 monthly worldwide USAAF factory acceptances** (1940–Aug 1945), yearly U.S. type production, European aircraft inventory and flying hours, three dated Reich-only fighter readiness records, fuel-capacity records, plus **all 29 monthly USAAF fighter-sortie reports by mission role (1943–May 1945)** with an ETO/Mediterranean switch.
 - **Campaigns & archives:** original Condor Legion through VE-Day date windows, all **22 chapters** of USAAF official history Volume III, and a valuable original **September 1944 four-command Allied operational-strength comparison**.
 - **Pilot simulator:** preserved Monte Carlo model of novice/veteran risk, sorties, combat encounters, credited claims, returning pilots and Condor Legion/Battle of Britain cohorts through May 1945.
 - **Aircraft simulator:** the existing modeled German readiness/production/write-off views.
@@ -62,7 +73,8 @@ The project is a static site. There is no backend, no database, no telemetry, no
 - Open the **GitHub Pages website** linked above. The root `index.html` references files in `dist/` and is no longer a redundant giant standalone release.
 - For local editing, serve the project directory with a simple HTTP file server such as `python3 -m http.server 8000` and open its localhost URL.
 - To rebuild the root entrypoint after editing `dist/index.html`: `node scripts/build-web.cjs`.
-- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/v71.cjs`, `node tests/v72.cjs`, `node tests/v73.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
+- To rebuild the 7.4 monthly factory data after checking the source HTML: `python scripts/import-aafsd74.py /path/to/aafsd-3.html` then `python scripts/build-v74-data.py` and the Pages build command above.
+- To verify: `node tests/data.cjs`, `node tests/v6.cjs`, `node tests/v7.cjs`, `node tests/v71.cjs`, `node tests/v72.cjs`, `node tests/v73.cjs`, `node tests/v74.cjs`, `node tests/render.cjs` and `node tests/tooltips.cjs` (optional Playwright smoke test if a Chromium browser is installed).
 
 The GitHub Pages site is served from the repository's `main` branch and root directory, **once Pages is enabled** under *Settings → Pages → Deploy from a branch → main / (root)*. If you get a 404 on the Pages link, that repository setting still needs enabling.
 
@@ -114,6 +126,11 @@ For a clickable bibliography showing **which Wikipedia page referenced which pot
 | `dist/atlas-v71-data.js` | Four source-checked May–June 1944 German monthly totals and explicitly provisional June Bf 109/Fw 190 source-line breakdown |
 | `dist/atlas-v72-data.js` | Twenty-six additional visually checked 1943–44 original German monthly totals and eight source-linked PDF-page maps; no inferred gaps |
 | `dist/atlas-v73-data.js` | Soviet front-air-army source checkpoints, estimated variant allocation windows, event-weighted quarter-to-month German theater-loss models |
+| `dist/atlas-v74-data.js` | Five early Soviet observations with distinct reporting populations; 68 monthly worldwide USAAF factory acceptance records and citations |
+| `dist/assets/` | Six credited historical photographs, self-hosted open licensed headline and body font files |
+| `research/` | Unused candidate sources, provenance definitions, original monthly Table 74 import and archive follow-up trail |
+| `scripts/import-aafsd74.py` and `scripts/build-v74-data.py` | Reproducible source transcription, anomaly log, annual reconciliation and static module build |
+| `tests/v74.cjs` | Factory production control totals, Soviet source scopes, archival and homepage assets |
 | `tests/v73.cjs` | V7.3 sourcing, reconstruction classification and loss-quarter reconciliation tests |
 | `scripts/inspect-ahb-losses.py` | Reproducible OCR inspection aid for 1944 RAF loss scans; see source caveats before treating its output as measured totals |
 | `dist/model-v4.js` | New Atlas views and interactive analyses |

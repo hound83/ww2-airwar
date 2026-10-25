@@ -35,6 +35,6 @@ assert.ok(QA.archiveCoverage(D.idx(1944,3),D.idx(1944,3),'Reich').some(p=>p.id==
 assert.equal(QA.archiveCoverage(D.idx(1945,4),D.idx(1945,4)).length,0);
 const site=fs.readFileSync(path.join(root,'index.html'),'utf8');
 for(const asset of ['atlas-v7-data.js','model-v4.js','atlas-v5.js'])
-  assert.ok(site.includes('./dist/'+asset+'?v=7.3'),asset);
+  assert.ok(site.includes('./dist/'+asset+'?v=7.4'),asset);
 assert.ok(site.indexOf('atlas-v7-data.js')<site.indexOf('model-v4.js'));
 console.log('PASS: original pilot flows vs independent casualty series; archival report index; exact dates and no fabricated loss data');

@@ -44,11 +44,11 @@ for(const [side,family] of [['Germany','Bf 109'],['Germany','Fw 190'],['RAF','Sp
 assert.equal(H.mix('P-51','USAAF',D.idx(1943,0),700).length,0,'pre-European P-51 must not be assigned a subtype');
 assert.equal(X.germanAt(D.idx(1945,4)).strength,null,'no May 1945 archival fighter return invented');
 const model=fs.readFileSync(path.join(root,'dist/model-v4.js'),'utf8');
-assert.ok(model.includes("version:'7.3'"));
+assert.ok(model.includes("version:'7.4'"));
 assert.ok(model.includes('data-v73-theater'));
 assert.ok(model.includes('periodOverview()'));
 assert.ok(!model.includes('id="v4-month"'),'one selected period, no redundant month dropdown');
 assert.ok(model.includes('easternFrontLens()'),'east front has explicit, front-specific view');
 const page=fs.readFileSync(path.join(root,'index.html'),'utf8');
-assert.ok(page.indexOf('atlas-v73-data.js?v=7.3')<page.indexOf('model-v4.js?v=7.3'));
+assert.ok(page.indexOf('atlas-v73-data.js?v=7.4')<page.indexOf('model-v4.js?v=7.4'));
 console.log('PASS v7.3: Soviet sourced checkpoints, gap discipline, event-weighted estimates reconcile to quarter totals, model-only fighter variants, theater controls and period-first UX');

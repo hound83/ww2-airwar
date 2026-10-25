@@ -17,7 +17,7 @@ function node(id='',classes=[]){
 const all=new Map(),ensure=id=>all.get(id)||((all.set(id,node(id))),all.get(id));
 const oldRoot=node('main',['layout']);oldRoot.children=[node('controls',['controls']),node('timeline',['timeline-panel']),node('old-section',['panel'])];
 const timeline=oldRoot.children[1];
-const nav=['pilot','equipment','balance','fleet','pilothistory','losses','comparison','campaigns','sources','about'].map(tab=>{
+const nav=['home','pilot','equipment','balance','fleet','pilothistory','losses','comparison','campaigns','sources','about'].map(tab=>{
   const el=node('nav-'+tab);el.dataset.v4Tab=tab;return el;
 });
 const theaters=['overall','west','east'].map(t=>{const el=node('theater-'+t);el.dataset.v73Theater=t;return el;});
@@ -33,12 +33,13 @@ const document={
   querySelectorAll:selector=>selector==='[data-v4-tab]'?nav:selector==='[data-v73-theater]'?theaters:[]
 };
 const ctx=vm.createContext({document,window:{},console,setTimeout(){},clearTimeout(){}});
-for(const filename of ['model-v3-data.js','model-v4-data.js','atlas-v6-data.js','atlas-v7-data.js','atlas-v71-data.js','atlas-v72-data.js','atlas-v73-data.js'])
+for(const filename of ['model-v3-data.js','model-v4-data.js','atlas-v6-data.js','atlas-v7-data.js','atlas-v71-data.js','atlas-v72-data.js','atlas-v73-data.js','atlas-v74-data.js'])
   vm.runInContext(fs.readFileSync(path.join(root,filename),'utf8'),ctx,{filename});
 ctx.window.LuftLabQA={inspect:()=>({start:78,end:89})};
 vm.runInContext(fs.readFileSync(path.join(root,'model-v4.js'),'utf8'),ctx,{filename:'model-v4.js'});
-assert.equal(ctx.window.AirWarAtlasQA.view(),'balance');
+assert.equal(ctx.window.AirWarAtlasQA.view(),'home');
 for(const [tab,text] of [
+  ['home','Explore the air war from every side.'],
   ['balance','The European air war — air forces over time'],
   ['fleet','The fleet, aircraft by aircraft'],
   ['pilothistory','The pilots behind the aircraft'],
@@ -87,8 +88,8 @@ nav.find(n=>n.dataset.v4Tab==='sources').click();
 assert.ok(ensure('v4-body').innerHTML.includes('Wikipedia bibliography cross-check'));
 assert.ok(ensure('v4-body').innerHTML.includes('Chapter 22'));
 assert.ok(ensure('v4-body').innerHTML.includes('RAF AHB VII/107'));
-assert.ok(selectors.footer.textContent.includes('v7.3'));
-assert.ok(ctx.window.AirWarAtlasQA.version==='7.3');
+assert.ok(selectors.footer.textContent.includes('v7.4'));
+assert.ok(ctx.window.AirWarAtlasQA.version==='7.4');
 assert.equal(ctx.window.AirWarAtlasQA.verifiedOriginalMonths(),30);
 nav.find(n=>n.dataset.v4Tab==='pilothistory').click();
 assert.ok(ensure('v4-body').innerHTML.includes('489'));
