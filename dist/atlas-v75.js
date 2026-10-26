@@ -168,17 +168,17 @@ function about(ctx){
   details('Static architecture','<p>The Atlas runs on GitHub Pages with historical datasets and source notes in the public repository. No user account or database is required to explore its research and simulations.</p>');
 }
 function render(view,ctx){
- const E=window.AirWarV75EvidenceViews, L=window.AirWarV75Lab;
+ const E=window.AirWarV75EvidenceViews, L=window.AirWarV75Lab, G=window.AirWarV75GermanViews;
  if(view==='home')return home(ctx);
  if(view==='balance')return airpower(ctx);
- if(view==='fleet')return aircraft(ctx);
+ if(view==='fleet')return aircraft(ctx)+(G?.aircraft(ctx)||'');
  if(view==='pilothistory')return pilots(ctx)+(E?.pilots(ctx)||'');
  if(view==='losses')return losses(ctx)+(E?.loss(ctx)||'');
- if(view==='comparison')return industry(ctx)+(E?.production(ctx)||'');
+ if(view==='comparison')return industry(ctx)+(E?.production(ctx)||'')+(G?.industry(ctx)||'');
  if(view==='campaigns')return campaignsView(ctx)+(E?.campaigns(ctx)||'');
  if(view==='pilot')return L?.pilotView(ctx)||'<p>Pilot simulator module not loaded.</p>';
  if(view==='equipment')return L?.aircraftView(ctx)||'<p>Aircraft simulation module not loaded.</p>';
- if(view==='sources')return research(ctx)+(E?.research(ctx)||'');
+ if(view==='sources')return research(ctx)+(E?.research(ctx)||'')+(G?.research(ctx)||'');
  if(view==='about')return about(ctx);
  return null;
 }

@@ -1,9 +1,16 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const ctx=vm.createContext({window:{}}),root=path.resolve(__dirname,'../dist');
-for(const file of ['atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-lab.js','atlas-v75-evidence-views.js'])
+for(const file of ['atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-lab.js','atlas-v75-evidence-views.js','atlas-v75-german-production.js','atlas-v75-german-views.js'])
  vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
 const E=ctx.window.AirWarV75Evidence,L=ctx.window.AirWarV75Lab;
+const G=ctx.window.AirWarV75GermanProduction;
+assert.equal(G.years[1943].actual.reduce((s,n)=>s+n,0),25527,'1943 cross-checked annual control');
+assert.equal(G.years[1944].actual.reduce((s,n)=>s+n,0),39807,'1944 USSBS control');
+assert.equal(G.years[1945].actual[3],null,'April 1945 true missing, not zero');
+assert.equal(G.conflicts[0].status.startsWith('UNRESOLVED'),true);
+assert.equal(G.source.provenance,'secondary');
+assert.equal(G.typeCheckpoints.find(x=>x.type==='Bf 109'&&x.date==='1943-12').count,357);
 const total=(rs,k)=>rs.reduce((s,x)=>s+x[k],0);
 assert.equal(E.rafPilots.length,8);
 assert.equal(E.rafPilots[0].operational,1200);
