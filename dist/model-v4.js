@@ -995,6 +995,7 @@
     $('v73-detail-banner').innerHTML=v75Body!=null?'':ui.detailMonth!=null&&!['home','about','sources'].includes(ui.view)?'<div class="v73-detail-note">Inspecting '+D.label(ui.detailMonth)+' within '+D.label(a)+'–'+D.label(b)+' <button type="button" data-v73-clear-month>Return to period end</button></div>':'';
     renderNotes();
     window.AirWarAtlasV5?.enhanceAll();
+    window.AirWarV75AircraftView?.enhanceAll();
     if(v75Body==null)progressivelyCollapse();
     for(const el of document.querySelectorAll('#v4-body details'))if(openDetails.has(el.querySelector('summary')?.textContent))el.open=true;
   }

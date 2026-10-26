@@ -30,6 +30,8 @@ P-47 controls: 435 mph at 31,000 ft, climb 1,520 ft/min at 28,000 ft. Absolute m
 
 Historical entries have `model: null`. The solver accepts only immutable illustrative models returned by `modelFor`. The registry deliberately has no historical simulation enabled yet. Adding measured points or an interpolated curve is insufficient to enable aircraft physics.
 
+Graph interaction: dashed visual guides connect observations only within the same test configuration and supercharger gear. They do not add measurements or change the optional reconstruction setting. Floating readouts snap to the nearest reported altitude using the actual, irregular altitude spacing and show exact values, units, gear and source. Mouse hover, touch taps and left/right arrow keys are supported; Escape dismisses the readout. The illustrative signed-energy plot has the same inspection controls with explicit scenario labels.
+
 ## Adding coverage
 
 1. Add an exact test configuration with stable ID, force/research context, family, mark/block, specimen, engine and source. Keep different ratings, propellers, engines and test airframes separate, even for the same variant.

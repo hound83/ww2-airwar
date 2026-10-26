@@ -125,9 +125,13 @@ function signedEnergyPlot(rows){
  const abs=Math.max(1,...values.map(Math.abs))*1.08;
  const px=i=>L+i*(W-L-R)/(rows.length-1),py=v=>T+(H-T-B)*(.5-v/(2*abs));
  const line=k=>rows.map((r,i)=>px(i).toFixed(1)+','+py(r[k]).toFixed(1)).join(' ');
+ window.AirWarV75AircraftView?.registerChart('v75-flight-energy',{
+  geometry:{width:W,left:L,right:R,top:T,bottom:H-B,xMin:0,xMax:rows.length-1,yMin:-abs,yMax:abs},
+  rows:rows.map((r,i)=>({x:i,label:r.label+' TAS',values:[{name:'Supercharger reference',value:r.ap,color:'#a4c9ad',unit:'m/s',note:'Illustrative specific excess power · not aircraft-calibrated'},{name:'Turbo reference',value:r.bp,color:'#d5ac7c',unit:'m/s',note:'Illustrative specific excess power · not aircraft-calibrated'}]}))
+ });
  const axis='<line x1="'+L+'" y1="'+py(0)+'" x2="'+(W-R)+'" y2="'+py(0)+'" stroke="#dbc498" stroke-width="1.8" stroke-dasharray="6 5"/>';
  const captions=[0,Math.floor((rows.length-1)/2),rows.length-1].map(i=>'<text x="'+px(i)+'" y="'+(H-10)+'" text-anchor="middle" fill="#d3dfd2" font-size="14">'+esc(rows[i].label)+'</text>').join('');
- return '<div class="v75-signed-chart"><svg role="img" aria-label="Illustrative specific excess power versus true airspeed, including negative energy regions" viewBox="0 0 '+W+' '+H+'" width="100%">'+axis+
+ return '<div class="v75-signed-chart"><svg id="v75-flight-energy" role="img" aria-label="Illustrative specific excess power versus true airspeed, including negative energy regions. Hover, tap or use arrow keys to inspect." viewBox="0 0 '+W+' '+H+'" width="100%">'+axis+
  '<text x="10" y="'+(T+14)+'" font-size="13" fill="#e4cfa9">+'+pretty(abs,1)+'</text>'+
  '<text x="24" y="'+(py(0)-7)+'" font-size="13" fill="#f1e0ad">0</text>'+
  '<text x="10" y="'+(H-B-5)+'" font-size="13" fill="#e4cfa9">-'+pretty(abs,1)+'</text>'+

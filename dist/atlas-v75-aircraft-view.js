@@ -5,6 +5,50 @@ const R=window.AirWarV75Aircraft;
 const S={left:'spitfire-lfix-bs543',right:'p51b5-436883',altitudeFt:10000,reconstruct:false,mode:'historical'};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=n=>Number.isFinite(n)?n.toLocaleString('en-US',{maximumFractionDigits:1}):'—';
+const charts=new Map(),attached=new WeakSet();
+function registerChart(id,data){charts.set(id,data);}
+function enhanceAll(){
+ for(const [id,data] of charts){
+  const svg=document.getElementById(id);if(!svg||attached.has(svg)||!data.rows.length)continue;
+  attached.add(svg);
+  const tip=document.createElement('div');tip.className='v75-flight-tooltip';tip.hidden=true;
+  tip.setAttribute('role','status');tip.setAttribute('aria-live','polite');svg.parentElement.appendChild(tip);
+  const overlay=document.createElementNS('http://www.w3.org/2000/svg','g');
+  overlay.setAttribute('class','v75-flight-inspection');overlay.setAttribute('pointer-events','none');svg.appendChild(overlay);
+  svg.setAttribute('tabindex','0');svg.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Escape');
+  let current=0;
+  const hide=()=>{tip.hidden=true;overlay.innerHTML='';};
+  const show=(index,event)=>{
+   current=Math.max(0,Math.min(data.rows.length-1,index));
+   const row=data.rows[current],g=data.geometry,rect=svg.getBoundingClientRect();
+   const x=g.left+(row.x-g.xMin)/(g.xMax-g.xMin)*(g.width-g.left-g.right);
+   overlay.innerHTML='<line x1="'+x+'" x2="'+x+'" y1="'+g.top+'" y2="'+g.bottom+'" stroke="#f1dfae" stroke-dasharray="4 4"/>'+row.values.map(v=>
+    '<circle cx="'+x+'" cy="'+(g.bottom-(v.value-g.yMin)/(g.yMax-g.yMin)*(g.bottom-g.top))+'" r="7" fill="none" stroke="'+v.color+'" stroke-width="2"/>').join('');
+   tip.innerHTML='<strong>'+esc(row.label)+'</strong>'+row.values.map(v=>'<div><b style="color:'+v.color+'">'+esc(v.name)+'</b><span>'+num(v.value)+' '+esc(v.unit)+'</span><small>'+esc(v.note)+'</small></div>').join('');
+   tip.hidden=false;
+   const box=tip.getBoundingClientRect(),px=event?.clientX??rect.left+x/g.width*rect.width,py=event?.clientY??rect.top+rect.height/2;
+   const left=px+18+box.width<window.innerWidth-8?px+18:px-box.width-18;
+   const top=py+14+box.height<window.innerHeight-8?py+14:py-box.height-14;
+   tip.style.left=Math.max(8,Math.min(window.innerWidth-box.width-8,left))+'px';
+   tip.style.top=Math.max(8,Math.min(window.innerHeight-box.height-8,top))+'px';
+  };
+  const inspect=e=>{
+   const rect=svg.getBoundingClientRect(),g=data.geometry;
+   const altitude=g.xMin+((e.clientX-rect.left)/rect.width*g.width-g.left)/(g.width-g.left-g.right)*(g.xMax-g.xMin);
+   let index=0;data.rows.forEach((r,i)=>{if(Math.abs(r.x-altitude)<Math.abs(data.rows[index].x-altitude))index=i;});
+   show(index,e);
+  };
+  svg.addEventListener('pointermove',inspect);
+  svg.addEventListener('pointerdown',inspect);
+  svg.addEventListener('click',inspect);
+  svg.addEventListener('pointerleave',e=>{if(e.pointerType!=='touch')hide();});
+  svg.addEventListener('focus',()=>show(current));svg.addEventListener('blur',hide);
+  svg.addEventListener('keydown',e=>{
+   if(e.key==='Escape')hide();
+   if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1));}
+  });
+ }
+}
 function options(selected){return [...new Set(R.entries.map(e=>e.force))].filter(f=>f!=='Engineering references').map(force=>'<optgroup label="'+esc(force)+'">'+R.entries.filter(e=>e.force===force).map(e=>'<option value="'+e.id+'"'+(e.id===selected?' selected':'')+'>'+esc(e.name)+' · '+e.status+'</option>').join('')+'</optgroup>').join('');}
 function scatter(a,b,metric){
  const all=[...R.observations(a.id,metric),...R.observations(b.id,metric)];
@@ -12,17 +56,27 @@ function scatter(a,b,metric){
  const W=800,H=290,L=65,T=25,B=48,RR=25;
  const xmax=Math.max(1,...all.map(p=>p.altitudeFt)),ymax=Math.max(1,...all.map(p=>p.value))*1.12;
  const px=x=>L+x/xmax*(W-L-RR),py=y=>H-B-y/ymax*(H-T-B);
- let svg='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Reported '+metric+' test points by altitude; no connecting interpolation">';
+ const id='v75-flight-'+metric;
+ const series=[[a,'#a4c9ad',false],[b,'#e5b87f',true]];
+ registerChart(id,{geometry:{width:W,left:L,right:RR,top:T,bottom:H-B,xMin:0,xMax:xmax,yMin:0,yMax:ymax},rows:[...new Set(all.map(p=>p.altitudeFt))].sort((x,y)=>x-y).map(x=>({x,label:'Reported at '+num(x)+' ft',values:series.flatMap(([entry,color])=>R.observations(entry.id,metric).filter(p=>p.altitudeFt===x).map(p=>({name:entry.name,value:p.value,unit:p.unit,color,note:p.gear+' gear · reported test result · '+R.sources[p.sourceId].title})))}))});
+ let svg='<svg id="'+id+'" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Reported '+metric+' by altitude. Dashed lines connect observations within each gear. Hover, tap or use arrow keys to inspect reported points.">';
  for(let i=0;i<=4;i++){
   const x=xmax*i/4,y=ymax*i/4;
   svg+='<line x1="'+L+'" x2="'+(W-RR)+'" y1="'+py(y)+'" y2="'+py(y)+'" stroke="#42534b"/>'+
   '<text x="'+(L-8)+'" y="'+(py(y)+4)+'" text-anchor="end">'+num(y)+'</text><text x="'+px(x)+'" y="'+(H-25)+'" text-anchor="middle">'+num(x)+'</text>';
  }
- for(const [entry,color,square] of [[a,'#a4c9ad',false],[b,'#e5b87f',true]])for(const p of R.observations(entry.id,metric)){
+ for(const [entry,color] of series){
+  const points=R.observations(entry.id,metric);
+  for(const gear of new Set(points.map(p=>p.gear))){
+   const sorted=points.filter(p=>p.gear===gear).sort((p,q)=>p.altitudeFt-q.altitudeFt);
+   if(sorted.length>1)svg+='<polyline class="v75-flight-connector" data-aircraft="'+entry.id+'" data-gear="'+esc(gear)+'" points="'+sorted.map(p=>px(p.altitudeFt)+','+py(p.value)).join(' ')+'" fill="none" stroke="'+color+'" stroke-width="2.5" stroke-dasharray="7 4"/>';
+  }
+ }
+ for(const [entry,color,square] of series)for(const p of R.observations(entry.id,metric)){
   const title=esc(entry.name+' · '+num(p.altitudeFt)+' ft · '+num(p.value)+' '+p.unit+' · '+p.gear+' · reported test result');
   svg+=square?'<rect x="'+(px(p.altitudeFt)-4)+'" y="'+(py(p.value)-4)+'" width="8" height="8" fill="'+color+'"><title>'+title+'</title></rect>':'<circle cx="'+px(p.altitudeFt)+'" cy="'+py(p.value)+'" r="5" fill="'+color+'"><title>'+title+'</title></circle>';
  }
- return '<div class="v75-test-plot">'+svg+'<text x="'+(W/2)+'" y="'+(H-3)+'" text-anchor="middle">Altitude · ft</text></svg></div><p class="v75-caption">Circle: '+esc(a.name)+' · Square: '+esc(b.name)+'. '+(metric==='speed'?'True airspeed · mph.':'Climb rate · ft/min.')+' Only reported points are plotted. Test weights, ratings and cooling conditions differ; this is not a controlled ranking. Exact values are in the tables below.</p>';
+ return '<div class="v75-test-plot">'+svg+'<text x="'+(W/2)+'" y="'+(H-3)+'" text-anchor="middle">Altitude · ft</text></svg></div><p class="v75-caption">Circle: '+esc(a.name)+' · Square: '+esc(b.name)+'. '+(metric==='speed'?'True airspeed · mph.':'Climb rate · ft/min.')+' Dashed lines connect reported points within each supercharger gear as visual guides; they are not additional measurements. Breaks separate gears. Hover, tap or use arrow keys for the nearest reported altitude and its available results. Test weights, ratings and cooling conditions differ; this is not a controlled ranking. Exact values are in the tables below.</p>';
 }
 function card(e){
  const src=R.sources[e.sourceId],points=e.observations;
@@ -65,5 +119,5 @@ function change(id,value){
  if(id==='v75-performance-reconstruct'&&['true','false'].includes(value)){S.reconstruct=value==='true';return true;}
  return false;
 }
-window.AirWarV75AircraftView={state:S,render,change};
+window.AirWarV75AircraftView={state:S,render,change,registerChart,enhanceAll};
 })();
