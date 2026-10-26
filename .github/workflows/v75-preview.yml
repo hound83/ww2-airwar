@@ -1,7 +1,7 @@
 name: V75 preview validation
 on:
   push:
-    branches: [v7.5-preview]
+    branches: [v7.5-preview, v7.5-integration]
   workflow_dispatch:
 jobs:
   test:
@@ -18,7 +18,7 @@ jobs:
       - name: Verify historical data and v7.4 regression baseline
         run: |
           set -e
-          for file in tests/data.cjs tests/v6.cjs tests/v7.cjs tests/v71.cjs tests/v72.cjs tests/v73.cjs tests/v74.cjs tests/render.cjs tests/tooltips.cjs tests/v75.cjs; do
+          for file in tests/data.cjs tests/v6.cjs tests/v7.cjs tests/v71.cjs tests/v72.cjs tests/v73.cjs tests/v74.cjs tests/render.cjs tests/tooltips.cjs tests/v75.cjs tests/v75-model.cjs; do
             echo "RUN $file"
             node "$file"
           done

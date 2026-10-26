@@ -950,7 +950,8 @@
     const openDetails=new Set([...document.querySelectorAll('#v4-body details[open]')].map(el=>el.querySelector('summary')?.textContent));
     if(ui.detailMonth!=null&&(ui.detailMonth<a||ui.detailMonth>b))ui.detailMonth=null;
     ui.focus=ui.detailMonth??b;
-    const v4view=!['pilot','equipment'].includes(ui.view);
+    const isV75Preview=String(window.location?.search||'').includes('preview=7.5');
+    const v4view=isV75Preview||!['pilot','equipment'].includes(ui.view);
     document.body.classList.toggle('v4-on',v4view);
     document.body.classList.toggle('v73-on',true);
     document.body.classList.toggle('v73-static',['about','sources','home'].includes(ui.view));
@@ -963,7 +964,7 @@
       el.setAttribute('aria-current',el.dataset.v4Tab===ui.view?'page':'false');
     });
     $('v4-tools').hidden=['about','sources','home'].includes(ui.view);
-    $('v73-simulator-note').hidden=v4view;
+    $('v73-simulator-note').hidden=v4view||isV75Preview;
     document.querySelectorAll('[data-v73-theater]').forEach(el=>{
       const selected=el.dataset.v73Theater===ui.theater;el.classList.toggle('active',selected);el.setAttribute('aria-pressed',String(selected));
     });
@@ -972,7 +973,6 @@
     if(!v4view)return;
     $('v4-head').innerHTML='<div class="v4-eyebrow">'+D.label(a)+' → '+D.label(b)+
       '<span> · '+(b-a+1)+' selected months'+(ui.detailMonth!=null?' · detail '+D.label(ui.detailMonth):' · period end '+D.label(b))+'</span></div>';
-    const isV75Preview=String(window.location?.search||'').includes('preview=7.5');
     document.body.classList.toggle('v75-preview',isV75Preview);
     const v75Body=isV75Preview?window.AirWarV75Views?.render(ui.view,{ui,D,V,X,Y,Z,H,W,QA,period:months(),allSnapshot,germanTheater,chart,fmt,tag,cite}):null;
     if(v75Body!=null){$('v4-body').innerHTML=v75Body;}
@@ -1000,7 +1000,7 @@
   }
   function setView(view){
     ui.view=view;
-    if(view==='pilot'||view==='equipment'){$('view-'+view).click();}
+    if(!String(window.location?.search||'').includes('preview=7.5')&&(view==='pilot'||view==='equipment')){$('view-'+view).click();}
     render();
     if(typeof window.scrollTo==='function')window.scrollTo(0,0);
   }
@@ -1058,6 +1058,7 @@
     const open=e.target.closest('[data-v74-open]');if(open){setView(open.dataset.v74Open);return;}
     const month=e.target.closest('[data-v72-month]');if(month){ui.detailMonth=+month.dataset.v72Month;render();}});
   extra.addEventListener('change',e=>{
+    if(window.AirWarV75Lab?.change(e.target.id,e.target.value)){render();return;}
     if(e.target.id==='v75-aircraft-select'&&window.AirWarV75Views){window.AirWarV75Views.state.aircraft=e.target.value;render();return;}
     if(e.target.matches('[data-v75-source-search]')&&window.AirWarV75Views){window.AirWarV75Views.state.sourceQuery=e.target.value;render();return;}
     if(e.target.id==='v7-archive-theater'){ui.archiveTheater=e.target.value;render();}});

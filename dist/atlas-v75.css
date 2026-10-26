@@ -80,3 +80,37 @@
 @media(max-width:700px){.v75-home-grid,.v75-statrow,.v75-bottlenecks,.v75-before-after,.v75-roadmap,.v75-research-tiles{grid-template-columns:1fr}
  .v75-panel{padding:15px}.v75-home-hero h2{font-size:34px}.v75-home-hero p{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.v75-photo-card{transition:none}}
+
+/* v7.5: pilot population and aircraft performance labs, source coverage and weekly series. */
+.v75-lab-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:16px 0;padding:14px;background:#304234;border:1px solid #63755f;border-radius:10px}
+.v75-lab-label{display:grid;gap:10px;color:#e4e9d9;font-size:14px;line-height:1.3}
+.v75-lab-label>span{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.v75-lab-label b{color:#f7d9a2;white-space:nowrap;font-variant-numeric:tabular-nums}
+.v75-lab-label select{width:100%;padding:9px 10px;min-height:42px;color:#f1e8d7;background:#203329;border:1px solid #71846f;border-radius:8px}
+.v75-lab-label input[type=range]{width:100%;accent-color:#dcc083;min-height:24px}
+.v75-composition{display:grid;gap:11px}
+.v75-composition>div{display:grid;grid-template-columns:minmax(145px,1.5fr) minmax(80px,4fr) 90px;gap:10px;align-items:center}
+.v75-composition>div>div{height:18px;border-radius:7px;background:#1c2c24;overflow:hidden}
+.v75-composition i{display:block;height:100%;border-radius:7px}
+.v75-composition b{text-align:right;font-variant-numeric:tabular-nums}
+.v75-air-twins{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+.v75-air-spec{border:1px solid #758775;background:#2c4133;padding:16px;border-radius:10px;display:grid;gap:8px}
+.v75-air-spec strong{font:650 23px/1.05 'Barlow Condensed',sans-serif;color:#f4e6c8}
+.v75-air-spec small{color:#bbcbbb}
+.v75-air-spec>div{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #566d5c;padding:8px 0 0;font-size:14px}
+.v75-air-spec b{white-space:nowrap;color:#f8e4ae;font-variant-numeric:tabular-nums}
+.v75-data-table{max-height:370px;overflow:auto;border:1px solid #536b55;border-radius:9px;margin:12px 0}
+.v75-data-table table{border-collapse:collapse;width:100%;min-width:520px}
+.v75-data-table th{position:sticky;top:0;background:#304735;color:#f0e6d3;text-align:left;z-index:1}
+.v75-data-table td,.v75-data-table th{padding:9px 12px;border-bottom:1px solid #647461;font-size:14px}
+.v75-data-table td[data-missing]{color:#c2b18a}
+.v75-evidence-legend{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.v75-evidence-legend span{display:inline-block;border:1px solid #7c947f;border-radius:100px;padding:5px 11px;background:#344b3b;color:#ede8d1;font-size:13px}
+.v75-coverage table td:nth-child(n+2){text-align:center}
+.v75-coverage a{color:#f2d39b}
+.v75-source-entry .v75-source-tier{font-size:12px;background:#314e3c;padding:3px 8px;border:1px solid #7e9b83;border-radius:50px;display:inline-block;width:max-content}
+.v75-section-links{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.v75-section-links button{background:#3c543d;color:#f6e8c8;border:1px solid #93a085;padding:9px 12px;border-radius:8px;cursor:pointer}
+.v75-section-links button:hover{border-color:#e8cb8d}
+.v75-bow-chart h3{margin-top:4px}
+@media(max-width:720px){.v75-air-twins{grid-template-columns:1fr}.v75-composition>div{grid-template-columns:1fr 45px;gap:4px}.v75-composition>div>span{grid-column:1/-1}.v75-lab-controls{grid-template-columns:1fr}.v75-air-spec>div{font-size:13px}}

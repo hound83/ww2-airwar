@@ -6,7 +6,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const source=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
-const assets=['atlas.css','atlas-v75.css','model-v3-data.js','model-v3.js','model-v4-data.js','atlas-v6-data.js','atlas-v7-data.js','atlas-v71-data.js','atlas-v72-data.js','atlas-v73-data.js','atlas-v74-data.js','atlas-v75-production.js','atlas-v75.js','model-v4.js','atlas-v5.js','atlas-v6.js'];
+const assets=['atlas.css','atlas-v75.css','model-v3-data.js','model-v3.js','model-v4-data.js','atlas-v6-data.js','atlas-v7-data.js','atlas-v71-data.js','atlas-v72-data.js','atlas-v73-data.js','atlas-v74-data.js','atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-lab.js','atlas-v75-evidence-views.js','atlas-v75.js','model-v4.js','atlas-v5.js','atlas-v6.js'];
 let html=source;
 for(const asset of assets){
   const attr=asset.endsWith('.css')?'href':'src';
