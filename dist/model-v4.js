@@ -1058,6 +1058,7 @@
     const open=e.target.closest('[data-v74-open]');if(open){setView(open.dataset.v74Open);return;}
     const month=e.target.closest('[data-v72-month]');if(month){ui.detailMonth=+month.dataset.v72Month;render();}});
   extra.addEventListener('change',e=>{
+    if(window.AirWarV75AircraftView?.change(e.target.id,e.target.value)){render();return;}
     if(window.AirWarV75Lab?.change(e.target.id,e.target.value)){render();return;}
     if(e.target.id==='v75-aircraft-select'&&window.AirWarV75Views){window.AirWarV75Views.state.aircraft=e.target.value;render();return;}
     if(e.target.matches('[data-v75-source-search]')&&window.AirWarV75Views){window.AirWarV75Views.state.sourceQuery=e.target.value;render();return;}

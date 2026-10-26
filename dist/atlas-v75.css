@@ -116,6 +116,20 @@
 @media(max-width:720px){.v75-air-twins{grid-template-columns:1fr}.v75-composition>div{grid-template-columns:1fr 45px;gap:4px}.v75-composition>div>span{grid-column:1/-1}.v75-lab-controls{grid-template-columns:1fr}.v75-air-spec>div{font-size:13px}}
 
 /* Source-grounded geographical locator: Natural Earth coastline, no historical boundaries. */
+.v75-lab-label{min-width:0}
+.v75-lab-label select,.v75-lab-label input{max-width:100%;box-sizing:border-box;min-width:0}
+.v75-test-card{min-width:0;overflow-wrap:anywhere}
+.v75-test-card h4{margin:0 0 10px}
+.v75-test-plot svg{width:100%;height:auto;display:block}
+.v75-test-plot text{fill:#e1e8d7;font:13px 'Source Sans 3',sans-serif}
+.v75-evidence-badge{padding:8px 12px;border:1px solid #9dbba2;border-radius:6px;background:#283e30}
+.v75-evidence-badge[data-status="placeholder"]{border-color:#b2a384;background:#3b382e}
+.v75-altitude-readout{padding:14px;background:#21382d;border-radius:8px;margin:14px 0}
+.v75-result[data-status="reconstructed"]{color:#f2cc88}
+.v75-test-card .v75-table-scroll{max-height:330px;overflow:auto}
+.v75-test-card table{width:100%;border-collapse:collapse;font-size:14px}
+.v75-test-card th,.v75-test-card td{padding:7px;text-align:left;border-bottom:1px solid #5a705b}
+.v75-test-card caption{padding:10px;text-align:left}
 .v75-map-view{position:relative;width:100%;aspect-ratio:940/410;overflow:hidden;border:1px solid #718374;border-radius:10px;background:#20313b}
 .v75-map-view svg{width:100%;height:100%;display:block}
 .v75-map-pin{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;background:#334b43;color:#fff8da;border:2px solid #d2bf91;border-radius:50%;width:26px;height:26px;font-size:16px;line-height:1;cursor:pointer;box-shadow:0 2px 6px #131c1ce6;padding:0}

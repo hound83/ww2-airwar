@@ -2,6 +2,10 @@
 
 **Status:** candidate evidence inventory and implemented source rows for the opt-in UI preview, not a claim that the entire atlas is complete.
 
+## Aircraft performance increment · 26 October 2026
+
+See [the performance evidence ledger](v75-aircraft-performance.md) and `research/transcriptions/aircraft-performance.json`: 55 reported speed/climb observations for two RAF Spitfire IX test configurations and USAAF P-51B-5 / P-47D-10 tests. Primary-report HTML transcriptions were checked; original-scan reconciliation remains outstanding. Three summary/detail conflicts are preserved. The registry distinguishes measured, reconstructed, placeholder and illustrative data; 89 variant research placeholders never inherit generic physics. Two engineering references remain explicitly uncalibrated. Full-aircraft coverage is an ongoing objective, not claimed complete.
+
 ## New directly extracted model-by-month production series
 
 * **Source:** US Army Air Forces, *Statistical Digest: World War II*, Table 76: *Factory Acceptances of Army Cognizance Airplanes, by Type and Model of Airplane*.

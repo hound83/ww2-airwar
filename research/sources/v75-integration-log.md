@@ -1,5 +1,9 @@
 # v7.5 research and implementation verification log (integration stage)
 
+## 26 October 2026 · aircraft registry increment
+
+Built from `90f27f5` on `v7.5-integration`. Added a 95-entry registry (4 measured test configurations, 89 placeholders, 2 illustrative references) with 55 report points and an optional, separately labeled reconstruction readout. Source provenance and scan-audit gaps remain visible. New browser coverage checks both sides of the selector, placeholders, interpolation, source discovery, mobile overflow and v7.4 fallback. New physics checks independently verify power balance; density-scaled airspeed is now correctly named EAS. See [full audit and extension rules](v75-aircraft-performance.md). This completes an incremental preview update, not all v7.5 historical research or aircraft-model calibration. Image curation remains deferred.
+
 ## Newly preserved evidence (secondary transcriptions with exact original-source references)
 
 Published historical tables in *The Battle of Britain: Myth and Reality*, reproduced at:

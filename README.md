@@ -1,5 +1,17 @@
 # European Air War Atlas · 1936–May 1945
 
+## v7.5 preview: aircraft registry and flight-test evidence
+
+[Open the opt-in v7.5 preview](https://hound83.github.io/ww2-airwar/?preview=7.5), then choose **Aircraft simulator**. The default page remains the v7.4 fallback.
+
+The Performance Lab now separates historical test evidence from its illustrative engineering sandbox. Its extensible registry contains **four documented test configurations, 89 research placeholders and two generic references**. RAF, USAAF, Luftwaffe, VVS, Italian and French research queues cover individual variants, including fighters, bombers and other roles; this is a starting inventory, not completed coverage of every aircraft or operator.
+
+The four imported configurations are Spitfire LF IX BS.543 / Merlin 66, Spitfire HF IX BS.551 / Merlin 70, P-51B-5-NA 43-6883 and P-47D-10 43-75035 (serial as transcribed). **55 reported speed/climb points** preserve source units, test conditions, correction notes and links. These are checked HTML transcriptions of original reports; independent original-scan reconciliation is still outstanding. They do not validate a physics model.
+
+Choose an aircraft on either side, inspect exact reported points, or explicitly enable labeled interpolation within the same test and supercharger gear. Unsupported altitudes and placeholder aircraft stay empty. The Research Centre indexes the new reports. See the [performance evidence ledger and extension contract](research/sources/v75-aircraft-performance.md).
+
+Validation: all earlier data/render/tooltip tests remain; `node tests/v75-aircraft.cjs` adds registry, source-control, interpolation-boundary and power-balance checks. `node tests/v75-browser.cjs` covers aircraft selection, missing data, reconstruction, source discovery, mobile layout, both simulators and the default fallback. Rebuild with `node scripts/build-web.cjs`; this generates both performance data and the root entrypoint.
+
 **Version 7.4** · A historical-photo home page, five-level readable typography, early Soviet VVS returns, 68 monthly U.S. factory-acceptance observations, front-aware views and preserved research leads. The full v7.3 work, original 30 German command-month returns, simulations and source distinctions remain available.
 
 An interactive, source-led historical dashboard for the European air war: fighter-pilot attrition and experience, German and Allied equipment, aircraft production, theater strength, casualties, victory claims and hypothetical cohort simulations.

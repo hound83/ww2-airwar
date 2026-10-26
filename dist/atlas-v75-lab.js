@@ -50,13 +50,14 @@ function pilotModel({initial=1000,months=12,tempo=22,replacements=110,lossPerTho
   }
   return outputs;
 }
-const presetAircraft={
-  single:{name:'Single-stage supercharged reference',kind:'Single-speed / illustrative',powerHP:1280,criticalM:4800,emptyKg:2500,fuelKg:360,ammunitionKg:180,wingM2:22.5,cd0:.027,k:.052,propEff:.79,clMax:1.48,structureG:6.5,mapInHg:46},
-  turbo:{name:'Turbocharged reference',kind:'Turbo / illustrative',powerHP:2000,criticalM:7500,emptyKg:3900,fuelKg:600,ammunitionKg:300,wingM2:27.8,cd0:.027,k:.050,propEff:.81,clMax:1.58,structureG:6.0,mapInHg:49}
-};
+const registry=window.AirWarV75Aircraft;
+const presetAircraft=Object.freeze({single:registry.modelFor('reference-single'),turbo:registry.modelFor('reference-turbo')});
 function density(h){h=clamp(h,0,11000);return rho0*Math.pow(1-2.25577e-5*h,4.2559);}
 const modeRatio={continuous:.82,military:1,emergency:1.10};
 function aircraftAt(plane,h,mode='military',fuel=60,pilotG=6,tas=135){
+ if(!plane||registry.modelFor(plane.id)!==plane)throw Error('Physics requires an explicit illustrative registry configuration');
+ if(!Object.hasOwn(modeRatio,mode)||![h,fuel,pilotG,tas].every(Number.isFinite))throw Error('Invalid physics inputs');
+ h=clamp(h,0,11000);
  const rho=density(h),critical=clamp(plane.criticalM-(modeRatio[mode]-1)*2300,3000,9500);
  const compressor=h<=critical?1:Math.pow(density(h)/density(critical),.92);
  const pressure=plane.mapInHg*modeRatio[mode]*compressor;
@@ -72,14 +73,14 @@ function aircraftAt(plane,h,mode='military',fuel=60,pilotG=6,tas=135){
  const nPowerSq=Math.max(0,(dAllowed-dragPar)*rho*v*v*S/(2*plane.k*massN*massN));
  const nSust=Math.min(nInst,Math.sqrt(nPowerSq));
  const degreesPerS=n=>n>=1?(180/Math.PI)*g*Math.sqrt(n*n-1)/v:0;
- return {h,rho,shaftHP,pressure,critical,weightKg,pAvail,pRequired:(dragPar+induced)*v,dragPar,dragInduced:induced,ps,nInst:nInst>=1?nInst:0,nSust:nSust>=1?nSust:0,instant:degreesPerS(nInst),sustained:degreesPerS(nSust),ias:v*Math.sqrt(rho/rho0)*3.6,tas:v*3.6,valid:nInst>=1};
+ return {h,rho,shaftHP,pressure,critical,weightKg,pAvail,pRequired:(dragPar+induced)*v,dragPar,dragInduced:induced,ps,nInst:nInst>=1?nInst:0,nSust:nSust>=1?nSust:0,instant:degreesPerS(nInst),sustained:degreesPerS(nSust),eas:v*Math.sqrt(rho/rho0)*3.6,tas:v*3.6,valid:nInst>=1};
 }
 function envelope(plane,h,mode,fuel,gcap){
  const samples=[];for(let v=42;v<=275;v+=2)samples.push(aircraftAt(plane,h,mode,fuel,gcap,v));
  const flying=samples.filter(x=>x.valid&&x.ps>=0);
  const fastest=flying.at(-1)||null;const best=flying.reduce((b,x)=>!b||x.ps>b.ps?x:b,null);
  const sustained=samples.reduce((b,x)=>!b||x.sustained>b.sustained?x:b,null);
- return {fast:fastest?.tas??null,climb:Math.max(0,best?.ps??0),sustain:sustained?.sustained??null,hp:aircraftAt(plane,h,mode,fuel,gcap,135).shaftHP};
+ return {fast:fastest?.tas??null,climb:best?.ps??null,sustain:sustained?.sustained??null,hp:aircraftAt(plane,h,mode,fuel,gcap,135).shaftHP};
 }
 const select=(id,label,options,value)=>'<label class="v75-lab-label">'+esc(label)+'<select id="'+id+'">'+options.map(([v,t])=>'<option value="'+esc(v)+'"'+(String(v)===String(value)?' selected':'')+'>'+esc(t)+'</option>').join('')+'</select></label>';
 const slider=(id,label,min,max,step,value,suffix='')=>'<label class="v75-lab-label"><span>'+esc(label)+' <b>'+pretty(value,1)+esc(suffix)+'</b></span><input id="'+id+'" type="range" min="'+min+'" max="'+max+'" step="'+step+'" value="'+value+'"></label>';
@@ -150,7 +151,7 @@ function aircraftView(ctx){
  const math='<p><code>ρ(h) = ISA troposphere density</code></p><p><code>P_available = shaft power(h, boost) × assumed propeller efficiency</code></p>'+
   '<p><code>D = ½ρV²SCd₀ + 2k(nW)²/(ρV²S)</code></p>'+
   '<p><code>P_s = (P_available − D×V) / W</code></p>'+
-  '<p>Level sustained turn requires P_s ≥ 0; instantaneous turn is separately capped by assumed CLmax, airframe structural and pilot limits. IAS and TAS are kept distinct.</p>';
+  '<p>Level sustained turn requires P_s ≥ 0; instantaneous turn is separately capped by assumed CLmax, airframe structural and pilot limits. Density scaling gives equivalent airspeed (EAS), not instrument-indicated IAS; compressibility and instrument errors are not modeled.</p>';
  const compact=(p,x)=>'<div class="v75-air-spec"><strong>'+esc(p.name)+'</strong><small>'+esc(p.kind)+'</small><div><span>Effective boost (inHg)</span><b>'+pretty(x.pressure,1)+'</b></div><div><span>Shaft power at altitude</span><b>'+pretty(x.shaftHP)+' hp</b></div><div><span>Mass at combat entry</span><b>'+pretty(x.weightKg)+' kg</b></div><div><span>Critical altitude (model)</span><b>'+pretty(x.critical)+' m</b></div></div>';
  return intro('Aircraft Simulator · performance laboratory','How altitude, boost and combat-entry mass jointly affect drag, excess power, climbing and turns. Two explicit engineering reference configurations are shown; they are NOT validated P-47 or Bf 109 predictions.')+
   '<div class="v75-lab-controls">'+slider('v75-altitude','Altitude',0,9000,250,h,' m')+
@@ -170,7 +171,7 @@ function aircraftView(ctx){
   signedEnergyPlot(turns)+'<p class="v75-caption">Ps = 0 marks constant specific energy; positive permits acceleration/climb while negative means energy must be lost to sustain the maneuver. This graph explicitly accommodates negative values.</p>'+
   math+'<p>Historical flight tests have different test weights, ratings, boost pressures and temperatures. No 95/5 parasite/induced drag split is assumed. Each intended historical aircraft needs its own fitted drag polar and propeller/engine data, checked against an INDEPENDENT flight-test curve.</p>'+
   '<p><a target="_blank" rel="noopener noreferrer" href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/00-80T-80.pdf">FAA Aerodynamics for Naval Aviators</a> · <a target="_blank" rel="noopener noreferrer" href="https://ntrs.nasa.gov/citations/19930094435">NACA altitude supercharging report</a></p></div></details>'+
-  pane('Historical performance reference · not model calibration','<p><strong>Spitfire Mk I</strong>: the historical secondary reference <i>The Narrow Margin</i> gives 355 mph at 19,000 ft and a loaded mass of 6,409 lb, with Merlin II/III nominal 1,030 hp near 16,250 ft. That is a documented published test-performance claim, NOT a calibration or validation of the generic curves above.</p><p><a href="https://erenow.org/ww/narrow-margin-battle-britain-rise-air-power-1930-1940/21.php" rel="noopener noreferrer" target="_blank">Inspect the published technical appendix</a></p>');
+  pane('Historical performance evidence','<p>Choose Historical aircraft & test evidence above to inspect variant-specific reports, original units, corrections and missing coverage. The reference curves here are not fitted to those observations. Numerical consistency tests do not establish aircraft accuracy.</p>');
 }
 const mappings={'v75-force':['force','text'],'v75-compare':['compare','text'],'v75-initial':['startPilots','number'],'v75-tempo':['tempo','number'],'v75-arrivals':['replacements','number'],'v75-risk':['lossPerThousand','number'],'v75-rookie':['rookieMultiplier','number'],'v75-recovery':['recovery','number'],'v75-comparison-risk':['comparisonRisk','number'],'v75-altitude':['altitude','number'],'v75-engine':['engineMode','text'],'v75-fuel':['fuelPercent','number'],'v75-gcap':['pilotG','number']};
 function change(id,value){const m=mappings[id];if(!m)return false;S[m[0]]=m[1]==='number'?Number(value):value;if(id==='v75-force'&&S.force===S.compare)S.compare='none';return true;}

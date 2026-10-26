@@ -153,6 +153,7 @@ function campaignsView(ctx){
 }
 function research(ctx){
  const sources=Object.entries(ctx.V.SOURCES??{}).map(([id,x])=>({id,short:x.short||id,title:x.title||x.short||id,url:x.url,note:x.note||''}));
+ for(const [id,x] of Object.entries(window.AirWarV75Aircraft?.sources||{}))sources.push({id,short:'Aircraft flight tests',title:x.title,url:x.url,note:x.locator+' · '+x.verification+' · '+x.note});
  const matches=sources.filter(s=>(s.title+' '+s.note+' '+s.id).toLowerCase().includes(state.sourceQuery.toLowerCase()));
  return desc('Research Centre','Original records, secondary studies, uncertainty, competing values and reusable source leads.')+
   '<div class="v75-research-tiles"><div><b>Source Explorer</b><p>Search historical publications and indexed reports.</p></div><div><b>Data Coverage</b><p>Recorded observations must be counted separately from reconstructed points.</p></div><div><b>Research Backlog</b><p>Unused but useful source leads are preserved for later work.</p></div><div><b>Methodology</b><p>Metric populations, scope, period and evidence method.</p></div></div>'+
@@ -177,7 +178,7 @@ function render(view,ctx){
  if(view==='comparison')return industry(ctx)+(E?.production(ctx)||'')+(G?.industry(ctx)||'');
  if(view==='campaigns')return campaignsView(ctx)+(window.AirWarV75Map?.render(ctx,campaigns)||'')+(E?.campaigns(ctx)||'');
  if(view==='pilot')return L?.pilotView(ctx)||'<p>Pilot simulator module not loaded.</p>';
- if(view==='equipment')return L?.aircraftView(ctx)||'<p>Aircraft simulation module not loaded.</p>';
+ if(view==='equipment')return window.AirWarV75AircraftView?.render(ctx)||'<p>Aircraft registry module not loaded.</p>';
  if(view==='sources')return research(ctx)+(E?.research(ctx)||'')+(G?.research(ctx)||'');
  if(view==='about')return about(ctx);
  return null;

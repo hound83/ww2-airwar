@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const ctx=vm.createContext({window:{}}),root=path.resolve(__dirname,'../dist');
-for(const file of ['atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-lab.js','atlas-v75-evidence-views.js','atlas-v75-german-production.js','atlas-v75-german-views.js','atlas-v75-map.js'])
+for(const file of ['atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-performance-data.js','atlas-v75-aircraft.js','atlas-v75-lab.js','atlas-v75-evidence-views.js','atlas-v75-german-production.js','atlas-v75-german-views.js','atlas-v75-map.js'])
  vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
 const E=ctx.window.AirWarV75Evidence,L=ctx.window.AirWarV75Lab;
 const G=ctx.window.AirWarV75GermanProduction;
@@ -41,11 +41,11 @@ for(const plane of [a,b]){
  for(const h of [0,1000,3000,4500,6500,9000]){
   for(const mode of ['continuous','military','emergency']){
    const x=L.aircraftAt(plane,h,mode,60,6,130);
-   for(const n of [x.rho,x.shaftHP,x.pressure,x.weightKg,x.ps,x.pAvail,x.pRequired,x.ias,x.tas,x.instant,x.sustained])assert.ok(Number.isFinite(n),'finite');
+   for(const n of [x.rho,x.shaftHP,x.pressure,x.weightKg,x.ps,x.pAvail,x.pRequired,x.eas,x.tas,x.instant,x.sustained])assert.ok(Number.isFinite(n),'finite');
    assert.ok(x.rho>0&&x.shaftHP>0&&x.pressure>0&&x.weightKg>0,'positive physical quantities');
    assert.ok(x.sustained<=x.instant+1e-9,'sustained turn never exceeds instantaneous lift and G caps');
    assert.ok(x.nSust<=x.nInst+1e-9,'sustained load <= instantaneous load');
-   assert.ok(x.ias<=x.tas+1e-9,'IAS<=TAS in ISA model at altitude');
+   assert.ok(x.eas<=x.tas+1e-9,'EAS<=TAS in ISA model at altitude');
   }
  }
 }
