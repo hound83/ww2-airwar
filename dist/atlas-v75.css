@@ -114,3 +114,20 @@
 .v75-section-links button:hover{border-color:#e8cb8d}
 .v75-bow-chart h3{margin-top:4px}
 @media(max-width:720px){.v75-air-twins{grid-template-columns:1fr}.v75-composition>div{grid-template-columns:1fr 45px;gap:4px}.v75-composition>div>span{grid-column:1/-1}.v75-lab-controls{grid-template-columns:1fr}.v75-air-spec>div{font-size:13px}}
+
+/* Source-grounded geographical locator: Natural Earth coastline, no historical boundaries. */
+.v75-map-view{position:relative;width:100%;aspect-ratio:940/410;overflow:hidden;border:1px solid #718374;border-radius:10px;background:#20313b}
+.v75-map-view svg{width:100%;height:100%;display:block}
+.v75-map-pin{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;background:#334b43;color:#fff8da;border:2px solid #d2bf91;border-radius:50%;width:26px;height:26px;font-size:16px;line-height:1;cursor:pointer;box-shadow:0 2px 6px #131c1ce6;padding:0}
+.v75-map-pin.active{background:#ac8549;border-color:#ffe6b6;color:#fffdf1;box-shadow:0 0 0 4px #a2884788,0 2px 8px #101a1690}
+.v75-map-pin:hover,.v75-map-pin:focus-visible{background:#d5a769;outline:2px solid #f8e8b6;outline-offset:2px;z-index:2}
+.v75-map-timeline{margin:18px 0 0;display:grid;gap:7px}
+.v75-map-timeline h4{margin:0 0 8px;font:650 21px 'Barlow Condensed',sans-serif}
+.v75-campaign-timeline{display:grid;grid-template-columns:minmax(130px,1.4fr) minmax(100px,3fr) 90px;align-items:center;gap:10px;min-height:32px;background:#314738;border:1px solid #526952;color:#dce9d6;padding:7px 11px;border-radius:7px;cursor:pointer;text-align:left;font:500 14px 'Source Sans 3',sans-serif}
+.v75-campaign-timeline span{overflow-wrap:anywhere}
+.v75-campaign-timeline i{height:9px;border-radius:10px;background:#1c3026;position:relative;display:block}
+.v75-campaign-timeline b{display:block;position:absolute;top:0;height:100%;background:#83a598;border-radius:10px}
+.v75-campaign-timeline.active b{background:#e4bf7e}
+.v75-campaign-timeline small{font-size:12px;text-align:right}
+.v75-campaign-timeline:hover,.v75-campaign-timeline:focus-visible{border-color:#e2c895;outline:1px solid #e2c895}
+@media(max-width:670px){.v75-map-pin{width:23px;height:23px;font-size:14px}.v75-campaign-timeline{grid-template-columns:minmax(95px,1fr) minmax(95px,2fr);gap:6px}.v75-campaign-timeline small{grid-column:1/-1;text-align:left}.v75-map-view{aspect-ratio:4/3}.v75-map-view svg{object-fit:cover}}

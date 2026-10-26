@@ -175,7 +175,7 @@ function render(view,ctx){
  if(view==='pilothistory')return pilots(ctx)+(E?.pilots(ctx)||'');
  if(view==='losses')return losses(ctx)+(E?.loss(ctx)||'');
  if(view==='comparison')return industry(ctx)+(E?.production(ctx)||'')+(G?.industry(ctx)||'');
- if(view==='campaigns')return campaignsView(ctx)+(E?.campaigns(ctx)||'');
+ if(view==='campaigns')return campaignsView(ctx)+(window.AirWarV75Map?.render(ctx,campaigns)||'')+(E?.campaigns(ctx)||'');
  if(view==='pilot')return L?.pilotView(ctx)||'<p>Pilot simulator module not loaded.</p>';
  if(view==='equipment')return L?.aircraftView(ctx)||'<p>Aircraft simulation module not loaded.</p>';
  if(view==='sources')return research(ctx)+(E?.research(ctx)||'')+(G?.research(ctx)||'');

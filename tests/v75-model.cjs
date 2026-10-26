@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const ctx=vm.createContext({window:{}}),root=path.resolve(__dirname,'../dist');
-for(const file of ['atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-lab.js','atlas-v75-evidence-views.js','atlas-v75-german-production.js','atlas-v75-german-views.js'])
+for(const file of ['atlas-v75-production.js','atlas-v75-evidence.js','atlas-v75-lab.js','atlas-v75-evidence-views.js','atlas-v75-german-production.js','atlas-v75-german-views.js','atlas-v75-map.js'])
  vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
 const E=ctx.window.AirWarV75Evidence,L=ctx.window.AirWarV75Lab;
 const G=ctx.window.AirWarV75GermanProduction;
@@ -55,4 +55,6 @@ assert.ok(L.aircraftAt(a,4000,'military',85).weightKg>L.aircraftAt(a,4000,'milit
 assert.ok(L.envelope(a,4000,'military',85,6).climb<L.envelope(a,4000,'military',45,6).climb,'more fuel decreases climb potential for this model');
 const before=L.state.altitude;assert.ok(L.change('v75-altitude','6500'));assert.equal(L.state.altitude,6500);L.state.altitude=before;
 assert.equal(L.change('legacy-unrelated-slider',30),false);
+const map=ctx.window.AirWarV75Map.render({ui:{theater:'west'},D:{idx:(y,m)=>(y-1936)*12+m-6},period:{a:48,b:50}},[{id:'britain',name:'Battle of Britain',theater:'west',start:[1940,6],end:[1940,9]}]);
+assert.ok(map.includes('Natural Earth')&&map.includes('data-v75-preset="britain"'),'map renders offline with accessible campaign selection');
 console.log('PASS v7.5 evidence: RAF/GER pilots, factory/loss weekly controls, simulator conservation, altitude/boost and energy-model invariants');

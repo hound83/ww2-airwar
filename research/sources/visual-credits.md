@@ -17,3 +17,9 @@ U.S. federal work or UK Crown copyright expiration, preserve that attribution.
 Fonts: self-hosted **Barlow Condensed** and **Source Sans 3**, distributed with
 their respective SIL Open Font License texts in `dist/assets/`. Standard WWII
 industrial design is an aesthetic choice; no dubious display fonts are used.
+
+## v7.5 campaign locator cartography
+
+- **Map geometry:** [Natural Earth 1:110m land GeoJSON](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson), © public domain, [official terms](https://www.naturalearthdata.com/about/terms-of-use/). It is a simplified *present-day physical coastline*, not a 1939–1945 boundary or wartime deployment map.
+- **Rendering:** Geography is locally preprojected as an SVG coastline path; no runtime external image is requested. Campaign markers are representative sites only, not battle footprints; any marker supplied from the historical scenario catalogue remains approximate until source-specific operations mapping exists.
+- **Historical photography:** No changes to the nine home-card assets in this integration; selected photographs will receive a separate curation and credit audit.
