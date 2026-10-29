@@ -993,6 +993,17 @@
       '<p class="v73-front-warning">'+safe(theaterLabels())+': this page also contains all-front, nationwide or differently scoped reference figures. Those sections are background, <strong>not</strong> automatically assigned to the selected front.</p>':'')+
       (ui.view==='home'?'':easternFrontLens()+(ui.view==='losses'?theaterLossInsight():''));
     $('v73-detail-banner').innerHTML=v75Body!=null?'':ui.detailMonth!=null&&!['home','about','sources'].includes(ui.view)?'<div class="v73-detail-note">Inspecting '+D.label(ui.detailMonth)+' within '+D.label(a)+'–'+D.label(b)+' <button type="button" data-v73-clear-month>Return to period end</button></div>':'';
+    // Research flight-physics v2.4 is the primary equipment simulator, not the old generic reference curves.
+    // Keep the main Atlas navigation/history untouched; the dedicated document owns the numerical research engine.
+    if(ui.view==='equipment'){
+      $('v4-body').innerHTML='<section class="v75-panel" style="padding:18px;margin:12px 0">'+
+        '<div class="kicker">RESEARCH AIRCRAFT PHYSICS · v2.4</div>'+
+        '<h2>Four aircraft. One shared calculation engine.</h2>'+
+        '<p>Bf 109 F-4, P-47B, P-51B-15 and Spitfire LF Mk IX. Speed, climb, excess power and turn envelopes use the current research model. Actual test evidence and experimental assumptions remain distinguishable.</p>'+
+        '<p><a class="btn primary" href="./physics/research-model-v2.4.html" target="_blank" rel="noopener">Open full research simulator</a> <span class="small">The hosted page omits embedded scanned figures; originals remain in the research handover.</span></p>'+
+        '<iframe title="European Air War four-aircraft research physics v2.4" src="./physics/research-model-v2.4.html" loading="lazy" style="display:block;width:100%;height:1400px;max-width:100%;border:1px solid #486575;border-radius:12px;background:#0d1720"></iframe>'+
+        '</section>';
+    }
     renderNotes();
     window.AirWarAtlasV5?.enhanceAll();
     window.AirWarV75AircraftView?.enhanceAll();
