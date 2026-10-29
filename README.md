@@ -4,6 +4,9 @@
 
 [Open the opt-in v7.5 preview](https://hound83.github.io/ww2-airwar/?preview=7.5), then choose **Aircraft simulator**. The default page remains the v7.4 fallback.
 
+**Research flight physics (2026-10-29):** The **Aircraft simulator** view in both the live 7.4 dashboard and 7.5 preview now embeds the [four-aircraft research engine v2.4](https://hound83.github.io/ww2-airwar/physics/research-model-v2.4.html). It uses source-labeled Bf 109F-4, P-47B, P-51B-15 and Spitfire LF Mk IX physics, not the two generic aircraft. The same page opens independently. The hosted copy excludes giant inline historical scan images; the full offline handover retains them. Turn calculations and propeller assumptions remain experimental and should not be described as historically validated.
+
+
 The Performance Lab now separates historical test evidence from its illustrative engineering sandbox. Its extensible registry contains **four documented test configurations, 89 research placeholders and two generic references**. RAF, USAAF, Luftwaffe, VVS, Italian and French research queues cover individual variants, including fighters, bombers and other roles; this is a starting inventory, not completed coverage of every aircraft or operator.
 
 The four imported configurations are Spitfire LF IX BS.543 / Merlin 66, Spitfire HF IX BS.551 / Merlin 70, P-51B-5-NA 43-6883 and P-47D-10 43-75035 (serial as transcribed). **55 reported speed/climb points** preserve source units, test conditions, correction notes and links. These are checked HTML transcriptions of original reports; independent original-scan reconciliation is still outstanding. They do not validate a physics model.
