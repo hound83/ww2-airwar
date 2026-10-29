@@ -1,0 +1,38 @@
+name: Atlas core checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm generated GitHub Pages assets are current
+        run: |
+          node scripts/build-web.cjs
+          git diff --exit-code -- index.html dist/atlas-v75-performance-data.js
+      - name: Dependency-free Atlas regression suites
+        run: |
+          set -eu
+          for file in \
+            tests/build.cjs \
+            tests/data.cjs tests/v6.cjs tests/v7.cjs \
+            tests/v71.cjs tests/v72.cjs tests/v73.cjs tests/v74.cjs \
+            tests/render.cjs tests/tooltips.cjs \
+            tests/v75.cjs tests/v75-model.cjs tests/v75-aircraft.cjs; do
+            echo "RUN $file"
+            node "$file"
+          done
+      - name: Distinguish browser tests from core checks
+        run: echo "Full Playwright/Chromium browser tests are covered separately by the v7.5 preview workflow or an explicit local run."
