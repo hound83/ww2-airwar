@@ -1,0 +1,4430 @@
+{
+  "id": "RKKA-VVS-02-14",
+  "topic": "Long Range Aviation ADD/DA, unit and strength snapshots",
+  "formationOrForce": "soviet_add",
+  "dateScopeIndex": "1941-1945",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_14.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Denominacion y lugar de emplazamiento de las agrupaciones aereas",
+          "colspan": 3,
+          "rowspan": 3
+        },
+        {
+          "value": "Cantidad de agrupaciones y unidades",
+          "colspan": 4
+        },
+        {
+          "value": "Cantidad de aviones de combate {2}",
+          "colspan": 2,
+          "rowspan": 3
+        },
+        {
+          "value": "Cantidad de tripulaciones preparadas para el combate",
+          "colspan": 2,
+          "rowspan": 3
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "Divisiones",
+          "rowspan": 2
+        },
+        {
+          "value": "Regimientos",
+          "colspan": 3
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "DBAP"
+        },
+        {
+          "value": "TBAP"
+        },
+        {
+          "value": "Total"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "1",
+          "colspan": 3
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6",
+          "colspan": 2
+        },
+        {
+          "value": "7",
+          "colspan": 2
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "18 ad"
+        },
+        {
+          "value": "Skomorohi"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "168"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "132"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 ak"
+        },
+        {
+          "value": "Novgorod"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "275"
+        },
+        {
+          "value": "139"
+        },
+        {
+          "value": "190"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 ak"
+        },
+        {
+          "value": "Smolensk"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "295"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "250"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 ak"
+        },
+        {
+          "value": "Kursk"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "252"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "106"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 ak"
+        },
+        {
+          "value": "Zaporozh'e"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "349"
+        },
+        {
+          "value": "77"
+        },
+        {
+          "value": "253"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "1339"
+        },
+        {
+          "value": "321"
+        },
+        {
+          "value": "931"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 ak"
+        },
+        {
+          "value": "Valday"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "173"
+        },
+        {
+          "value": "51"
+        },
+        {
+          "value": "231"
+        },
+        {
+          "value": "73"
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 ak"
+        },
+        {
+          "value": "Bryansk"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "133"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "183"
+        },
+        {
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 ak"
+        },
+        {
+          "value": "Kursk"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "128"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "101"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "18 ad"
+        },
+        {
+          "value": "Uman'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "72"
+        },
+        {
+          "value": "38"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 ak"
+        },
+        {
+          "value": "Zaporozh'e"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "182"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "137"
+        },
+        {
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "688"
+        },
+        {
+          "value": "173"
+        },
+        {
+          "value": "722"
+        },
+        {
+          "value": "164"
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "cells": [
+        {
+          "value": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "40 ad"
+        },
+        {
+          "value": "Rybinsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": "29"
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "51 ad"
+        },
+        {
+          "value": "Yaroslavl'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "95"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "81 ad"
+        },
+        {
+          "value": "Monino"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "77"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "79"
+        },
+        {
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "52 ad"
+        },
+        {
+          "value": "Kursk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "71"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "59"
+        },
+        {
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "42 ad y grupo de Bitskiy"
+        },
+        {
+          "value": "Elets"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "22 ad"
+        },
+        {
+          "value": "Donetsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "50 ad"
+        },
+        {
+          "value": "Mariupol'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "69"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "81"
+        },
+        {
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "472"
+        },
+        {
+          "value": "197"
+        },
+        {
+          "value": "498"
+        },
+        {
+          "value": "255"
+        }
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "26 ad"
+        },
+        {
+          "value": "Rybinsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "13{3}"
+        }
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "133 ad"
+        },
+        {
+          "value": "Yaroslavl'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "40 ad"
+        },
+        {
+          "value": "Murom"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "51 ad"
+        },
+        {
+          "value": "Sasovo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "73"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "42 ad"
+        },
+        {
+          "value": "Rasskazovo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "52 ad"
+        },
+        {
+          "value": "Kirsanov"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "22 y 50 ad"
+        },
+        {
+          "value": "Stalingrado"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "86"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": "135"
+        },
+        {
+          "value": "88"
+        }
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "273"
+        },
+        {
+          "value": "154"
+        },
+        {
+          "value": "371"
+        },
+        {
+          "value": "156"
+        }
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "cells": [
+        {
+          "value": "A fecha de 18 de marzo de 1942 {8}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "26 ad"
+        },
+        {
+          "value": "Rybinsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "36 ad"
+        },
+        {
+          "value": "Yaroslavl'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "53 ad"
+        },
+        {
+          "value": "Noginsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "49"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "61"
+        }
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 ad"
+        },
+        {
+          "value": "Monino"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "57"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "747 y 746 ap especial"
+        },
+        {
+          "value": "Ramenskoe"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "17 ad"
+        },
+        {
+          "value": "Serpuhov"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "46"
+        }
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "51 ad"
+        },
+        {
+          "value": "Tula"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "sourceRow": 45,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "62 ad"
+        },
+        {
+          "value": "Ryazan'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "38"
+        },
+        {
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "sourceRow": 46,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "42 ad"
+        },
+        {
+          "value": "Elets"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "sourceRow": 47,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "24 ad"
+        },
+        {
+          "value": "Lipetsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "37"
+        }
+      ]
+    },
+    {
+      "sourceRow": 48,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "50 ad"
+        },
+        {
+          "value": "Novocherkassk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "66"
+        },
+        {
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "sourceRow": 49,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "402"
+        },
+        {
+          "value": "171"
+        },
+        {
+          "value": "517"
+        },
+        {
+          "value": "322"
+        }
+      ]
+    },
+    {
+      "sourceRow": 50,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 y 53 ad"
+        },
+        {
+          "value": "Monino"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "96"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "119"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 52,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "17 y 45 ad"
+        },
+        {
+          "value": "Ramenskoe"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "79"
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 53,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "36 ad"
+        },
+        {
+          "value": "Yaroslavl'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 54,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "24 ad"
+        },
+        {
+          "value": "Voronezh"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 55,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "62 ad"
+        },
+        {
+          "value": "Michurinsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 56,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "50 ad"
+        },
+        {
+          "value": "Evstratievskaya"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 57,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "329"
+        },
+        {
+          "value": "145"
+        },
+        {
+          "value": "417"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 58,
+      "cells": [
+        {
+          "value": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 59,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 y 222 ad"
+        },
+        {
+          "value": "Monino"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "89"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 60,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "53 ad"
+        },
+        {
+          "value": "Noginsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "57"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 61,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "45 ad"
+        },
+        {
+          "value": "Ramenskoe"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 62,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "36 ad"
+        },
+        {
+          "value": "Yaroslavl'"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 63,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "17 ad"
+        },
+        {
+          "value": "Serpuhov"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "48"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 64,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "24 ad"
+        },
+        {
+          "value": "Lipetsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "62"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 65,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "62 ad"
+        },
+        {
+          "value": "Michurinsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "51"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "57"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 66,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "50 ad"
+        },
+        {
+          "value": "Tacinskaya"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 67,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "113 ad"
+        },
+        {
+          "value": "Dyagilevo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 68,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "377"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "429"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 69,
+      "cells": [
+        {
+          "value": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 70,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 y 222 ad"
+        },
+        {
+          "value": "Monino"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "94"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 71,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "53 ad"
+        },
+        {
+          "value": "Noginsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "66"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "77"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 72,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "45 ad"
+        },
+        {
+          "value": "Ramenskoe"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 73,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "17 ad"
+        },
+        {
+          "value": "Serpuhov"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "72"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "72"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 74,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "62 ad"
+        },
+        {
+          "value": "Michurinsk"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "57"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 75,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "24 ad"
+        },
+        {
+          "value": "Kirsanov"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "48"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 76,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "36 ad"
+        },
+        {
+          "value": "Yakushevo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "42"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 77,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "113 ad"
+        },
+        {
+          "value": "Dyagilevo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 78,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "50 ad"
+        },
+        {
+          "value": "Mahach-Kala"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 79,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "479"
+        },
+        {
+          "value": "160"
+        },
+        {
+          "value": "438"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 80,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 81,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 gv. y 7 ak"
+        },
+        {
+          "value": "Monino"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "165"
+        },
+        {
+          "value": "54"
+        },
+        {
+          "value": "165"
+        },
+        {
+          "value": "144"
+        }
+      ]
+    },
+    {
+      "sourceRow": 82,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 gv.ak y 45 ad"
+        },
+        {
+          "value": "Ramenskoe"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "112"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "94"
+        },
+        {
+          "value": "87"
+        }
+      ]
+    },
+    {
+      "sourceRow": 83,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 gv.ak"
+        },
+        {
+          "value": "Serpuhov"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "98"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "71"
+        },
+        {
+          "value": "59"
+        }
+      ]
+    },
+    {
+      "sourceRow": 84,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 gv.ak"
+        },
+        {
+          "value": "Lipetsk"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "117"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "111"
+        },
+        {
+          "value": "103"
+        }
+      ]
+    },
+    {
+      "sourceRow": 85,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "5 ak"
+        },
+        {
+          "value": "Michurinsk"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "101"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "94"
+        },
+        {
+          "value": "87"
+        }
+      ]
+    },
+    {
+      "sourceRow": 86,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "8 ak"
+        },
+        {
+          "value": "Yaroslavl'"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": "56"
+        }
+      ]
+    },
+    {
+      "sourceRow": 87,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "6 ak"
+        },
+        {
+          "value": "Morozovskij"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "89"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "99"
+        },
+        {
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "sourceRow": 88,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "740"
+        },
+        {
+          "value": "228"
+        },
+        {
+          "value": "690"
+        },
+        {
+          "value": "626"
+        }
+      ]
+    },
+    {
+      "sourceRow": 89,
+      "cells": [
+        {
+          "value": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 90,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "5 ak"
+        },
+        {
+          "value": "Uglovo"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "116"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "100{3}"
+        }
+      ]
+    },
+    {
+      "sourceRow": 91,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "7 ak"
+        },
+        {
+          "value": "Levashovo"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "97"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "94"
+        },
+        {
+          "value": "85"
+        }
+      ]
+    },
+    {
+      "sourceRow": 92,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 gv.ak"
+        },
+        {
+          "value": "Vypolzovo"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "109"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "98"
+        },
+        {
+          "value": "73"
+        }
+      ]
+    },
+    {
+      "sourceRow": 93,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 gv.ak"
+        },
+        {
+          "value": "Lugi"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "118"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "103"
+        },
+        {
+          "value": "67"
+        }
+      ]
+    },
+    {
+      "sourceRow": 94,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 gv.ak"
+        },
+        {
+          "value": "Andreapol'"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "160"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "124"
+        },
+        {
+          "value": "102"
+        }
+      ]
+    },
+    {
+      "sourceRow": 95,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 gv.ak"
+        },
+        {
+          "value": "N.Dugino"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "102"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "102"
+        },
+        {
+          "value": "85"
+        }
+      ]
+    },
+    {
+      "sourceRow": 96,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "6 ak"
+        },
+        {
+          "value": "Yanino Hotilovo"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "120"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "102"
+        },
+        {
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "sourceRow": 97,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "8 ak"
+        },
+        {
+          "value": "Torzhok"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "124"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "86"
+        },
+        {
+          "value": "71"
+        }
+      ]
+    },
+    {
+      "sourceRow": 98,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "45 ad"
+        },
+        {
+          "value": "Ramenskoe"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "22"
+        }
+      ]
+    },
+    {
+      "sourceRow": 99,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "56 iad"
+        },
+        {
+          "value": "Ryazhsk{16}"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "sourceRow": 100,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "1003"
+        },
+        {
+          "value": "226"
+        },
+        {
+          "value": "865"
+        },
+        {
+          "value": "732"
+        }
+      ]
+    },
+    {
+      "sourceRow": 101,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 102,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "7 ak"
+        },
+        {
+          "value": "Kaluga"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "167"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "201"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 103,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "8 ak"
+        },
+        {
+          "value": "Migalovo"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "126"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "131"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 104,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "45 ad"
+        },
+        {
+          "value": "Olsuf'evo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 105,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "56 iad"
+        },
+        {
+          "value": "Bryansk{16}"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 106,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 gv.ak"
+        },
+        {
+          "value": "Chernigov"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "124"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 107,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 gv.ak"
+        },
+        {
+          "value": "Borispol'"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "120"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "143"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 108,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 gv.ak"
+        },
+        {
+          "value": "Belaya Cerkov'"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "125"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "143"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 109,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "5 ak"
+        },
+        {
+          "value": "Zhitomir"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "161"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "184"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 110,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "6 ak"
+        },
+        {
+          "value": "Vinnitsa"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "175"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 111,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 gv.ak"
+        },
+        {
+          "value": "Uman'"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "174"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "181"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 112,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "1266"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1414"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 113,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 114,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 gv.bak"
+        },
+        {
+          "value": "Vil'nyus"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "347"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "324"
+        },
+        {
+          "value": "282"
+        }
+      ]
+    },
+    {
+      "sourceRow": 115,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 gv.bak"
+        },
+        {
+          "value": "Lida"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "318"
+        },
+        {
+          "value": "78"
+        },
+        {
+          "value": "406"
+        },
+        {
+          "value": "301"
+        }
+      ]
+    },
+    {
+      "sourceRow": 116,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "45 bad"
+        },
+        {
+          "value": "Balbasovo"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "48"
+        }
+      ]
+    },
+    {
+      "sourceRow": 117,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 gv.bak"
+        },
+        {
+          "value": "Luck"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "258"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "348"
+        },
+        {
+          "value": "240"
+        }
+      ]
+    },
+    {
+      "sourceRow": 118,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 gv.bak"
+        },
+        {
+          "value": "L'vov"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "369"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "399"
+        },
+        {
+          "value": "321"
+        }
+      ]
+    },
+    {
+      "sourceRow": 119,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "1355"
+        },
+        {
+          "value": "173"
+        },
+        {
+          "value": "1527"
+        },
+        {
+          "value": "1192"
+        }
+      ]
+    },
+    {
+      "sourceRow": 120,
+      "cells": [
+        {
+          "value": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+          "colspan": 11
+        }
+      ]
+    },
+    {
+      "sourceRow": 121,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "1 gv.bak"
+        },
+        {
+          "value": "Belostok"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "290"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": "356"
+        }
+      ]
+    },
+    {
+      "sourceRow": 122,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "3 gv.bak"
+        },
+        {
+          "value": "Minsk-Mazovetskiy"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "387"
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": "357"
+        },
+        {
+          "value": "292"
+        }
+      ]
+    },
+    {
+      "sourceRow": 123,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "45 bad"
+        },
+        {
+          "value": "Baranovichi"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "80"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "53"
+        }
+      ]
+    },
+    {
+      "sourceRow": 124,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "9 gv.bak"
+        },
+        {
+          "value": "Mogilev"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "127"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "147"
+        },
+        {
+          "value": "68"
+        }
+      ]
+    },
+    {
+      "sourceRow": 125,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "4 gv.bak"
+        },
+        {
+          "value": "Zheshuv"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "430"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "370"
+        },
+        {
+          "value": "313"
+        }
+      ]
+    },
+    {
+      "sourceRow": 126,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "2 gv.bak"
+        },
+        {
+          "value": "Zamost'e"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "337"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "451"
+        },
+        {
+          "value": "286"
+        }
+      ]
+    },
+    {
+      "sourceRow": 127,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "742 rap{20}"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 128,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "1675"
+        },
+        {
+          "value": "221"
+        },
+        {
+          "value": "1800"
+        },
+        {
+          "value": "1368"
+        }
+      ]
+    }
+  ]
+}

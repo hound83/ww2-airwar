@@ -1,0 +1,42 @@
+{
+  "dataset_id": "ga-raf-coastal-casualties-air15-162-table1",
+  "status": "research_transcription_secondary_reproduction_of_archival_original",
+  "original_archive_reference": "The National Archives AIR 15/162, Table I",
+  "reproduced_in": "Andrew W. A. Hendrie, Coastal Command 1939–1945: The Cinderella Service (University of Kent PhD thesis, 2004), Appendix 21",
+  "source_url": "https://kar.kent.ac.uk/86293/1/404542.pdf",
+  "original_date_range_inclusive": ["1939-09-03", "1945-05-08"],
+  "amendments_included_through": "1947-05-31",
+  "force": "RAF Coastal Command, including Commonwealth/Dominion and Allied personnel in RAF posting/disposal",
+  "geographic_scope_warning": "Coastal Command command-wide, not exclusively European mainland; global maritime air operations and units, potentially allied posted personnel",
+  "not_pilot_specific": true,
+  "rows": [
+    {"cause":"flying_battle","personnel":"aircrew","killed":5863,"missing":128,"missing_later_reported_safe":125,"prisoner_of_war":478,"pow_later_reported_safe":477,"wounded":986},
+    {"cause":"flying_battle","personnel":"groundcrew","killed":159,"missing":3,"missing_later_reported_safe":3,"prisoner_of_war":5,"pow_later_reported_safe":5,"wounded":49},
+    {"cause":"flying_accident","personnel":"aircrew","killed":2261,"missing":10,"missing_later_reported_safe":8,"prisoner_of_war":17,"pow_later_reported_safe":17,"wounded":1049},
+    {"cause":"flying_accident","personnel":"groundcrew","killed":182,"missing":0,"missing_later_reported_safe":0,"prisoner_of_war":3,"pow_later_reported_safe":3,"wounded":120},
+    {"cause":"ground_battle","personnel":"aircrew","killed":18,"missing":0,"missing_later_reported_safe":0,"prisoner_of_war":3,"pow_later_reported_safe":3,"wounded":20},
+    {"cause":"ground_battle","personnel":"groundcrew","killed":135,"missing":0,"missing_later_reported_safe":0,"prisoner_of_war":10,"pow_later_reported_safe":10,"wounded":172},
+    {"cause":"ground_other","personnel":"aircrew","killed":38,"missing":0,"missing_later_reported_safe":0,"prisoner_of_war":0,"pow_later_reported_safe":0,"wounded":31},
+    {"cause":"ground_other","personnel":"groundcrew","killed":218,"missing":0,"missing_later_reported_safe":0,"prisoner_of_war":0,"pow_later_reported_safe":0,"wounded":174}
+  ],
+  "printed_totals": {
+    "killed":8874,
+    "missing":141,
+    "missing_later_reported_safe":136,
+    "prisoner_of_war":516,
+    "pow_later_reported_safe":515,
+    "wounded":2601,
+    "killed_aircrew":8180,
+    "killed_groundcrew":694,
+    "natural_cause_deaths_aircrew_excluded_from_table":23,
+    "natural_cause_deaths_groundcrew_excluded_from_table":224
+  },
+  "critical_cautions": [
+    "Original Table I casualties were subsequently amended through 31 May 1947; individuals initially missing or captured and later killed are entered in the killed column, not double-counted as missing or prisoner.",
+    "Parentheses are persons reported safe later but still INCLUDED in the adjacent missing or POW totals: not separate additional cases or casualties.",
+    "8,180 aircrew killed includes navigators, observers, air gunners, wireless operators and other aircrew, not 8,180 pilot deaths.",
+    "The natural-cause death row of 23+224=247 is separate from the table of 8,874 killed and must be labelled distinctly.",
+    "The reproduced British government archival table is retained in eight normalized derived factual rows, not a copy of the large copyrighted dissertation.",
+    "Host RAF/CW/Allied personnel may overlap national casualty counts. No directly comparable theater-filtered personnel total or monthly unit series is provided here."
+  ]
+}

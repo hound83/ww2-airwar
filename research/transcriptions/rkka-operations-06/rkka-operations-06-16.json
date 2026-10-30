@@ -1,0 +1,565 @@
+{
+  "id": "RKKA-VVS-06-16",
+  "topic": "Civil air fleet transport tonnage and persons",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_16.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 14,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Años",
+              "rowspan": 2
+            },
+            {
+              "value": "Total personas transportadas {2}",
+              "rowspan": 2
+            },
+            {
+              "value": "De las cuales {3}",
+              "colspan": 2
+            },
+            {
+              "value": "Total cargamentos transportados (en toneladas) {4}",
+              "rowspan": 2
+            },
+            {
+              "value": "De los cuales",
+              "colspan": 6
+            },
+            {
+              "value": "Aviones trasladados"
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "en la zona de la linea del frente"
+            },
+            {
+              "value": "a la retaguardia enemiga y viceversa"
+            },
+            {
+              "value": "municiones"
+            },
+            {
+              "value": "armas, provisiones y otros bienes"
+            },
+            {
+              "value": "medica mentos"
+            },
+            {
+              "value": "sangre conservada"
+            },
+            {
+              "value": "octavillas"
+            },
+            {
+              "value": "correo y prensa"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1941 (desde 22 junio)",
+              "rowspan": 2
+            },
+            {
+              "value": "232 782"
+            },
+            {
+              "value": "231 211"
+            },
+            {
+              "value": "1 571"
+            },
+            {
+              "value": "20 326"
+            },
+            {
+              "value": "6 127"
+            },
+            {
+              "value": "11 367"
+            },
+            {
+              "value": "330"
+            },
+            {
+              "value": "153"
+            },
+            {
+              "value": "393"
+            },
+            {
+              "value": "1 956"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "69 324"
+            },
+            {
+              "value": "6 614"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "68"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "1942",
+              "rowspan": 2
+            },
+            {
+              "value": "350 743"
+            },
+            {
+              "value": "314 966"
+            },
+            {
+              "value": "35 777"
+            },
+            {
+              "value": "25 702"
+            },
+            {
+              "value": "4 636"
+            },
+            {
+              "value": "15 932"
+            },
+            {
+              "value": "557"
+            },
+            {
+              "value": "1 069"
+            },
+            {
+              "value": "238"
+            },
+            {
+              "value": "3 270"
+            },
+            {
+              "value": "114"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "89 393"
+            },
+            {
+              "value": "19 447"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5 735"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "1943",
+              "rowspan": 2
+            },
+            {
+              "value": "367 147"
+            },
+            {
+              "value": "351 674"
+            },
+            {
+              "value": "15 473"
+            },
+            {
+              "value": "27 532"
+            },
+            {
+              "value": "5 513"
+            },
+            {
+              "value": "16 649"
+            },
+            {
+              "value": "521"
+            },
+            {
+              "value": "418"
+            },
+            {
+              "value": "67"
+            },
+            {
+              "value": "4 364"
+            },
+            {
+              "value": "2 465"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "78 841"
+            },
+            {
+              "value": "13 827"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3 022"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "1944",
+              "rowspan": 2
+            },
+            {
+              "value": "448 720"
+            },
+            {
+              "value": "435 180"
+            },
+            {
+              "value": "13 540"
+            },
+            {
+              "value": "38 388"
+            },
+            {
+              "value": "7 243"
+            },
+            {
+              "value": "25 366"
+            },
+            {
+              "value": "208"
+            },
+            {
+              "value": "277"
+            },
+            {
+              "value": "115"
+            },
+            {
+              "value": "5 179"
+            },
+            {
+              "value": "3 029"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "73 337"
+            },
+            {
+              "value": "4 700"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 136"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "1945",
+              "rowspan": 2
+            },
+            {
+              "value": "139 590"
+            },
+            {
+              "value": "139 278"
+            },
+            {
+              "value": "312"
+            },
+            {
+              "value": "10 079"
+            },
+            {
+              "value": "1 479"
+            },
+            {
+              "value": "7 345"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "127"
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": "1 013"
+            },
+            {
+              "value": "2 300"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "35 771"
+            },
+            {
+              "value": "228"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "119"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Total durante 1941-1945"
+            },
+            {
+              "value": "1 538 982"
+            },
+            {
+              "value": "1 472 309"
+            },
+            {
+              "value": "66 673"
+            },
+            {
+              "value": "122 027"
+            },
+            {
+              "value": "24 998"
+            },
+            {
+              "value": "76 659"
+            },
+            {
+              "value": "1 679"
+            },
+            {
+              "value": "2 044"
+            },
+            {
+              "value": "865"
+            },
+            {
+              "value": "15 782"
+            },
+            {
+              "value": "7 908"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

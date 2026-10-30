@@ -1,0 +1,132 @@
+{
+  "researchOnly": true,
+  "sourceUrl": "https://www.rkka.es/Estadisticas/Bajas_del_personal_VVS/000_Bajas_del_personal.htm",
+  "sourceClass": "Secondary Spanish transcription of declassified Russian wartime personnel-loss archive/Krivosheev commission",
+  "period": "Great Patriotic War 1941–1945, original source's inclusion and force boundaries apply",
+  "commandStaffKilledMissingAllCauses": {
+    "metricDescription": "Command, officer and specialist categories: killed (including noncombat and on-ground causes), and missing",
+    "personnelCategories": [
+      {
+        "categoryTranslation": "air_corps_division_regiment_commanders_and_deputies",
+        "diedAllCauses": 464,
+        "missing": 294,
+        "publishedCategoryTotal": 758
+      },
+      {
+        "categoryTranslation": "air_squadron_commanders_and_deputies",
+        "diedAllCauses": 1946,
+        "missing": 2110,
+        "publishedCategoryTotal": 4056
+      },
+      {
+        "categoryTranslation": "flight_group_zveno_commanders",
+        "diedAllCauses": 2792,
+        "missing": 2587,
+        "publishedCategoryTotal": 5379
+      },
+      {
+        "categoryTranslation": "aircraft_commanders_and_pilots",
+        "diedAllCauses": 7855,
+        "missing": 10609,
+        "publishedCategoryTotal": 18464
+      },
+      {
+        "categoryTranslation": "aerial_gunnery_service_leaders",
+        "diedAllCauses": 154,
+        "missing": 181,
+        "publishedCategoryTotal": 335
+      },
+      {
+        "categoryTranslation": "division_and_regiment_navigators",
+        "diedAllCauses": 51,
+        "missing": 118,
+        "publishedCategoryTotal": 169
+      },
+      {
+        "categoryTranslation": "squadron_navigators_and_political_deputies",
+        "diedAllCauses": 258,
+        "missing": 320,
+        "publishedCategoryTotal": 578
+      },
+      {
+        "categoryTranslation": "zveno_navigators",
+        "diedAllCauses": 729,
+        "missing": 878,
+        "publishedCategoryTotal": 1607
+      },
+      {
+        "categoryTranslation": "gunnery_and_squadron_communications_leaders",
+        "diedAllCauses": 44,
+        "missing": 74,
+        "publishedCategoryTotal": 118
+      },
+      {
+        "categoryTranslation": "observer_pilots_gunners_and_bombardiers",
+        "diedAllCauses": 1715,
+        "missing": 2659,
+        "publishedCategoryTotal": 4374
+      },
+      {
+        "categoryTranslation": "headquarters_chiefs_and_deputies",
+        "diedAllCauses": 58,
+        "missing": 17,
+        "publishedCategoryTotal": 75
+      },
+      {
+        "categoryTranslation": "operations_and_reconnaissance_staff_leaders",
+        "diedAllCauses": 60,
+        "missing": 17,
+        "publishedCategoryTotal": 77
+      },
+      {
+        "categoryTranslation": "communications_chemical_service_staff_leaders",
+        "diedAllCauses": 73,
+        "missing": 57,
+        "publishedCategoryTotal": 130
+      },
+      {
+        "categoryTranslation": "adjutants",
+        "diedAllCauses": 32,
+        "missing": 14,
+        "publishedCategoryTotal": 46
+      }
+    ],
+    "publishedKilledAllCauses": 16231,
+    "publishedMissing": 19935,
+    "publishedKilledPlusMissing": 36166,
+    "warning": "These are selected command/staff specialties, NOT necessarily every VVS serviceman or all flying personnel; missing does not mean proven dead. Source footnote includes deaths in air and on ground from all causes."
+  },
+  "separatelyReportedCombatAviatorLosses": {
+    "metricDescription": "The source separately reports '27,600 combat losses' partitioned by type of air operations",
+    "categories": [
+      {
+        "role": "ground_attack_il2",
+        "reportedCombatCasualties": 7837
+      },
+      {
+        "role": "fighter",
+        "reportedCombatCasualties": 11874
+      },
+      {
+        "role": "bomber",
+        "reportedCombatCasualties": 6613
+      },
+      {
+        "role": "reconnaissance",
+        "reportedCombatCasualties": 587
+      },
+      {
+        "role": "auxiliary_aviation",
+        "reportedCombatCasualties": 689
+      }
+    ],
+    "publishedTotal": 27600,
+    "warning": "Cannot reconcile persons and service coverage to the 36,166 command-staff killed/missing table. 'Pilots' may be used loosely for multi-crew airmen. Do not add tables together."
+  },
+  "dataQualityNotes": [
+    "Do not infer killed-versus-missing for the separate 27,600 aviation-role statistic; the source does not split them.",
+    "The 36,166 category table is killed/missing from all causes, while 27,600 is combat-only, so their scopes are different.",
+    "No annual, unit, front, or aircraft-model detail is supplied by this source; such breakdowns must remain unknown.",
+    "Needs checking against the full Russian Krivosheev source for unit definitions and whether separate air forces are included."
+  ]
+}

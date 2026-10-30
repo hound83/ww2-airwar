@@ -1,0 +1,782 @@
+{
+  "id": "SPECIALIST-RAFSUMMARY",
+  "force": "raf",
+  "dataDescription": "RAF sorties, losses and tonnage by command and year",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=rafsummary",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "Jane's Fighting Aircraft of World War II",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Sorties"
+            },
+            {
+              "text": "Tonnage1"
+            },
+            {
+              "text": "Losses"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "Bomber Command2"
+            },
+            {
+              "text": "392,137",
+              "count": 392137
+            },
+            {
+              "text": "988,307",
+              "count": 988307
+            },
+            {
+              "text": "9,163",
+              "count": 9163
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "1939",
+              "count": 1939
+            },
+            {
+              "text": "591",
+              "count": 591
+            },
+            {
+              "text": "31",
+              "count": 31
+            },
+            {
+              "text": "40",
+              "count": 40
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "1940",
+              "count": 1940
+            },
+            {
+              "text": "22,473",
+              "count": 22473
+            },
+            {
+              "text": "13,543",
+              "count": 13543
+            },
+            {
+              "text": "509",
+              "count": 509
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "1941",
+              "count": 1941
+            },
+            {
+              "text": "32,012",
+              "count": 32012
+            },
+            {
+              "text": "32,411",
+              "count": 32411
+            },
+            {
+              "text": "985",
+              "count": 985
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": "36,426",
+              "count": 36426
+            },
+            {
+              "text": "51,928",
+              "count": 51928
+            },
+            {
+              "text": "1,543",
+              "count": 1543
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": "66,308",
+              "count": 66308
+            },
+            {
+              "text": "166,593",
+              "count": 166593
+            },
+            {
+              "text": "2,474",
+              "count": 2474
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": "166,844",
+              "count": 166844
+            },
+            {
+              "text": "538,688",
+              "count": 538688
+            },
+            {
+              "text": "2,904",
+              "count": 2904
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": "67,483",
+              "count": 67483
+            },
+            {
+              "text": "185,113",
+              "count": 185113
+            },
+            {
+              "text": "708",
+              "count": 708
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighter Command"
+            },
+            {
+              "text": "700,226",
+              "count": 700226
+            },
+            {
+              "text": "3,481",
+              "count": 3481
+            },
+            {
+              "text": "3,558",
+              "count": 3558
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "1939",
+              "count": 1939
+            },
+            {
+              "text": "3,217",
+              "count": 3217
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "3",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "1940",
+              "count": 1940
+            },
+            {
+              "text": "121,079",
+              "count": 121079
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1,186",
+              "count": 1186
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "1941",
+              "count": 1941
+            },
+            {
+              "text": "150,828",
+              "count": 150828
+            },
+            {
+              "text": "129",
+              "count": 129
+            },
+            {
+              "text": "651",
+              "count": 651
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": "147,087",
+              "count": 147087
+            },
+            {
+              "text": "207",
+              "count": 207
+            },
+            {
+              "text": "688",
+              "count": 688
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": "136,167",
+              "count": 136167
+            },
+            {
+              "text": "986",
+              "count": 986
+            },
+            {
+              "text": "569",
+              "count": 569
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": "122,136",
+              "count": 122136
+            },
+            {
+              "text": "1,232",
+              "count": 1232
+            },
+            {
+              "text": "397",
+              "count": 397
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": "19,712",
+              "count": 19712
+            },
+            {
+              "text": "926",
+              "count": 926
+            },
+            {
+              "text": "64",
+              "count": 64
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cells": [
+            {
+              "text": "2nd Tactical Air Force"
+            },
+            {
+              "text": "327,713",
+              "count": 327713
+            },
+            {
+              "text": "61,838",
+              "count": 61838
+            },
+            {
+              "text": "2,115",
+              "count": 2115
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": "23,695",
+              "count": 23695
+            },
+            {
+              "text": "3,627",
+              "count": 3627
+            },
+            {
+              "text": "177",
+              "count": 177
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": "214,592",
+              "count": 214592
+            },
+            {
+              "text": "38,729",
+              "count": 38729
+            },
+            {
+              "text": "1,305",
+              "count": 1305
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": "89,426",
+              "count": 89426
+            },
+            {
+              "text": "19,482",
+              "count": 19482
+            },
+            {
+              "text": "633",
+              "count": 633
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "cells": [
+            {
+              "text": "Coastal Command"
+            },
+            {
+              "text": "235,749",
+              "count": 235749
+            },
+            {
+              "text": "5,380",
+              "count": 5380
+            },
+            {
+              "text": "1,579",
+              "count": 1579
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "cells": [
+            {
+              "text": "1939-40"
+            },
+            {
+              "text": "41,001",
+              "count": 41001
+            },
+            {
+              "text": "1,158",
+              "count": 1158
+            },
+            {
+              "text": "288",
+              "count": 288
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "cells": [
+            {
+              "text": "1941",
+              "count": 1941
+            },
+            {
+              "text": "30,544",
+              "count": 30544
+            },
+            {
+              "text": "1,006",
+              "count": 1006
+            },
+            {
+              "text": "233",
+              "count": 233
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": "31,676",
+              "count": 31676
+            },
+            {
+              "text": "629",
+              "count": 629
+            },
+            {
+              "text": "302",
+              "count": 302
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": "43,231",
+              "count": 43231
+            },
+            {
+              "text": "515",
+              "count": 515
+            },
+            {
+              "text": "279",
+              "count": 279
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": "66,362",
+              "count": 66362
+            },
+            {
+              "text": "1,411",
+              "count": 1411
+            },
+            {
+              "text": "305",
+              "count": 305
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": "22,935",
+              "count": 22935
+            },
+            {
+              "text": "611",
+              "count": 611
+            },
+            {
+              "text": "132",
+              "count": 132
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "cells": [
+            {
+              "text": "Mediterrranean and Middle East3"
+            },
+            {
+              "text": "676,004",
+              "count": 676004
+            },
+            {
+              "text": "160,840",
+              "count": 160840
+            },
+            {
+              "text": "5,735",
+              "count": 5735
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "cells": [
+            {
+              "text": "1940",
+              "count": 1940
+            },
+            {
+              "text": "17,711",
+              "count": 17711
+            },
+            {
+              "text": "2,525",
+              "count": 2525
+            },
+            {
+              "text": "133",
+              "count": 133
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "cells": [
+            {
+              "text": "1941",
+              "count": 1941
+            },
+            {
+              "text": "57,028",
+              "count": 57028
+            },
+            {
+              "text": "12,782",
+              "count": 12782
+            },
+            {
+              "text": "671",
+              "count": 671
+            }
+          ]
+        },
+        {
+          "row": 32,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": "114,735",
+              "count": 114735
+            },
+            {
+              "text": "22,551",
+              "count": 22551
+            },
+            {
+              "text": "1,189",
+              "count": 1189
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": "164,595",
+              "count": 164595
+            },
+            {
+              "text": "32,735",
+              "count": 32735
+            },
+            {
+              "text": "1,349",
+              "count": 1349
+            }
+          ]
+        },
+        {
+          "row": 34,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": "243,686",
+              "count": 243686
+            },
+            {
+              "text": "60,442",
+              "count": 60442
+            },
+            {
+              "text": "1,853",
+              "count": 1853
+            }
+          ]
+        },
+        {
+          "row": 35,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": "78,249",
+              "count": 78249
+            },
+            {
+              "text": "29,805",
+              "count": 29805
+            },
+            {
+              "text": "540",
+              "count": 540
+            }
+          ]
+        },
+        {
+          "row": 36,
+          "cells": [
+            {
+              "text": "Army Co-Operation Command"
+            },
+            {
+              "text": "4,474",
+              "count": 4474
+            },
+            {
+              "text": "63",
+              "count": 63
+            },
+            {
+              "text": "70",
+              "count": 70
+            }
+          ]
+        },
+        {
+          "row": 37,
+          "cells": [
+            {
+              "text": "TOTAL RAF"
+            },
+            {
+              "text": "2,336,303",
+              "count": 2336303
+            },
+            {
+              "text": "1,219,909",
+              "count": 1219909
+            },
+            {
+              "text": "22,220",
+              "count": 22220
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8708 @@
+{
+  "id": "RKKA-VVS-06-34",
+  "topic": "VVS KA honored unit titles and geographic names",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_34.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 198,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "№№ p.p.",
+              "rowspan": 2
+            },
+            {
+              "value": "Lista de los nombres propios",
+              "rowspan": 2
+            },
+            {
+              "value": "II periodo de la guerra (19.11.1942 - 31.12.1943)",
+              "colspan": 4
+            },
+            {
+              "value": "III periodo de la guerra (1.1.1944 - 9.5.1945)",
+              "colspan": 5
+            },
+            {
+              "value": "Campaña del Lejano Oriente 9.8 - 2.9.1945",
+              "rowspan": 2
+            },
+            {
+              "value": "Total",
+              "rowspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "Cuerpos aereos"
+            },
+            {
+              "value": "Divisiones aereas"
+            },
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "Cuerpos aereos"
+            },
+            {
+              "value": "Divisiones aereas"
+            },
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": "Escuadrones aereos"
+            },
+            {
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "Aleksandriyskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "Allenshtaynskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "Altuhovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "4"
+            },
+            {
+              "value": "Amurskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "5"
+            },
+            {
+              "value": "Baranovichskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "Bahmachskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "Bezhickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "Berdichevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "Belorusskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "Belostokskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "11"
+            },
+            {
+              "value": "Belgorodskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "12"
+            },
+            {
+              "value": "Berlinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "42"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "13"
+            },
+            {
+              "value": "Bobruyskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "14"
+            },
+            {
+              "value": "Borisovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "15"
+            },
+            {
+              "value": "Brailovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "16"
+            },
+            {
+              "value": "Brandenburgskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "17"
+            },
+            {
+              "value": "Bratislavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "18"
+            },
+            {
+              "value": "Brestskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "19"
+            },
+            {
+              "value": "Bryanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "20"
+            },
+            {
+              "value": "Budapeshtskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "27"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "21"
+            },
+            {
+              "value": "Buharestskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "22"
+            },
+            {
+              "value": "Valdayskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "23"
+            },
+            {
+              "value": "Varshavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "24"
+            },
+            {
+              "value": "Venskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "25"
+            },
+            {
+              "value": "Vilenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "26"
+            },
+            {
+              "value": "Vil'nyusskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "27"
+            },
+            {
+              "value": "Vinnickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "28"
+            },
+            {
+              "value": "Vislenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": "29"
+            },
+            {
+              "value": "Vitebskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "14"
+            }
+          ]
+        },
+        {
+          "sourceRow": 33,
+          "cells": [
+            {
+              "value": "30"
+            },
+            {
+              "value": "Vladimir-Volynskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 34,
+          "cells": [
+            {
+              "value": "31"
+            },
+            {
+              "value": "Volzhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 35,
+          "cells": [
+            {
+              "value": "32"
+            },
+            {
+              "value": "Volkovyskskiy"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 36,
+          "cells": [
+            {
+              "value": "33"
+            },
+            {
+              "value": "Volhovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 37,
+          "cells": [
+            {
+              "value": "34"
+            },
+            {
+              "value": "Voronezhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 38,
+          "cells": [
+            {
+              "value": "35"
+            },
+            {
+              "value": "Vyborgskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 39,
+          "cells": [
+            {
+              "value": "36"
+            },
+            {
+              "value": "Galackiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 40,
+          "cells": [
+            {
+              "value": "37"
+            },
+            {
+              "value": "Gatchinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 41,
+          "cells": [
+            {
+              "value": "38"
+            },
+            {
+              "value": "Gdan'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 42,
+          "cells": [
+            {
+              "value": "39"
+            },
+            {
+              "value": "Gdyn'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 43,
+          "cells": [
+            {
+              "value": "40"
+            },
+            {
+              "value": "Gomel'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "sourceRow": 44,
+          "cells": [
+            {
+              "value": "41"
+            },
+            {
+              "value": "Gorodiwe-Stalingradskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 45,
+          "cells": [
+            {
+              "value": "42"
+            },
+            {
+              "value": "Gorodokskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 46,
+          "cells": [
+            {
+              "value": "43"
+            },
+            {
+              "value": "Grodnenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 47,
+          "cells": [
+            {
+              "value": "44"
+            },
+            {
+              "value": "Dvinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 48,
+          "cells": [
+            {
+              "value": "45"
+            },
+            {
+              "value": "Debrecenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 49,
+          "cells": [
+            {
+              "value": "46"
+            },
+            {
+              "value": "Demblinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 50,
+          "cells": [
+            {
+              "value": "47"
+            },
+            {
+              "value": "Dembickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 51,
+          "cells": [
+            {
+              "value": "48"
+            },
+            {
+              "value": "Dnepropetrovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 52,
+          "cells": [
+            {
+              "value": "49"
+            },
+            {
+              "value": "Donbasskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 53,
+          "cells": [
+            {
+              "value": "50"
+            },
+            {
+              "value": "Donskoy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 54,
+          "cells": [
+            {
+              "value": "51"
+            },
+            {
+              "value": "Dunayskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 55,
+          "cells": [
+            {
+              "value": "52"
+            },
+            {
+              "value": "Zhlobinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 56,
+          "cells": [
+            {
+              "value": "53"
+            },
+            {
+              "value": "Zhmerinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 57,
+          "cells": [
+            {
+              "value": "54"
+            },
+            {
+              "value": "Zabaykal'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 58,
+          "cells": [
+            {
+              "value": "55"
+            },
+            {
+              "value": "Zaporozhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 59,
+          "cells": [
+            {
+              "value": "56"
+            },
+            {
+              "value": "Znamenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 60,
+          "cells": [
+            {
+              "value": "57"
+            },
+            {
+              "value": "Izmail'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 61,
+          "cells": [
+            {
+              "value": "58"
+            },
+            {
+              "value": "Instenburgskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 62,
+          "cells": [
+            {
+              "value": "59"
+            },
+            {
+              "value": "Kalinkovichskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 63,
+          "cells": [
+            {
+              "value": "60"
+            },
+            {
+              "value": "Kalininskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 64,
+          "cells": [
+            {
+              "value": "61"
+            },
+            {
+              "value": "Kamyshinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 65,
+          "cells": [
+            {
+              "value": "62"
+            },
+            {
+              "value": "Kamenec-Polo'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 66,
+          "cells": [
+            {
+              "value": "63"
+            },
+            {
+              "value": "Karpatskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 67,
+          "cells": [
+            {
+              "value": "64"
+            },
+            {
+              "value": "Katovickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 68,
+          "cells": [
+            {
+              "value": "65"
+            },
+            {
+              "value": "Kenigsberskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "sourceRow": 69,
+          "cells": [
+            {
+              "value": "66"
+            },
+            {
+              "value": "Kerchenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 70,
+          "cells": [
+            {
+              "value": "67"
+            },
+            {
+              "value": "Kievskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "sourceRow": 71,
+          "cells": [
+            {
+              "value": "68"
+            },
+            {
+              "value": "Kirkenesskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 72,
+          "cells": [
+            {
+              "value": "69"
+            },
+            {
+              "value": "Kirovogradskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 73,
+          "cells": [
+            {
+              "value": "70"
+            },
+            {
+              "value": "Kishenevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 74,
+          "cells": [
+            {
+              "value": "71"
+            },
+            {
+              "value": "Klaypedskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 75,
+          "cells": [
+            {
+              "value": "72"
+            },
+            {
+              "value": "Klinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 76,
+          "cells": [
+            {
+              "value": "73"
+            },
+            {
+              "value": "Kovel'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 77,
+          "cells": [
+            {
+              "value": "74"
+            },
+            {
+              "value": "Kovenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 78,
+          "cells": [
+            {
+              "value": "75"
+            },
+            {
+              "value": "Kastornenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 79,
+          "cells": [
+            {
+              "value": "76"
+            },
+            {
+              "value": "Krakovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "sourceRow": 80,
+          "cells": [
+            {
+              "value": "77"
+            },
+            {
+              "value": "Krasnoyarskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 81,
+          "cells": [
+            {
+              "value": "78"
+            },
+            {
+              "value": "Krasnogvardeyskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 82,
+          "cells": [
+            {
+              "value": "79"
+            },
+            {
+              "value": "Krasnogradskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 83,
+          "cells": [
+            {
+              "value": "80"
+            },
+            {
+              "value": "Krasnosel'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 84,
+          "cells": [
+            {
+              "value": "81"
+            },
+            {
+              "value": "Kremeneckiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 85,
+          "cells": [
+            {
+              "value": "82"
+            },
+            {
+              "value": "Krivorozhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 86,
+          "cells": [
+            {
+              "value": "83"
+            },
+            {
+              "value": "Krymskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 87,
+          "cells": [
+            {
+              "value": "84"
+            },
+            {
+              "value": "Kubanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 88,
+          "cells": [
+            {
+              "value": "85"
+            },
+            {
+              "value": "Kuril'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 89,
+          "cells": [
+            {
+              "value": "86"
+            },
+            {
+              "value": "Kurskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 90,
+          "cells": [
+            {
+              "value": "87"
+            },
+            {
+              "value": "Lazovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 91,
+          "cells": [
+            {
+              "value": "88"
+            },
+            {
+              "value": "Leningradskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "sourceRow": 92,
+          "cells": [
+            {
+              "value": "89"
+            },
+            {
+              "value": "Lidskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 93,
+          "cells": [
+            {
+              "value": "90"
+            },
+            {
+              "value": "Lodzinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 94,
+          "cells": [
+            {
+              "value": "91"
+            },
+            {
+              "value": "Lomzhanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 95,
+          "cells": [
+            {
+              "value": "92"
+            },
+            {
+              "value": "L'vovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 96,
+          "cells": [
+            {
+              "value": "93"
+            },
+            {
+              "value": "Lyublinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 97,
+          "cells": [
+            {
+              "value": "94"
+            },
+            {
+              "value": "Mariupol'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 98,
+          "cells": [
+            {
+              "value": "95"
+            },
+            {
+              "value": "Mginskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 99,
+          "cells": [
+            {
+              "value": "96"
+            },
+            {
+              "value": "Melitopol'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 100,
+          "cells": [
+            {
+              "value": "97"
+            },
+            {
+              "value": "Minskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 101,
+          "cells": [
+            {
+              "value": "98"
+            },
+            {
+              "value": "Mitavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 102,
+          "cells": [
+            {
+              "value": "99"
+            },
+            {
+              "value": "Mlavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            }
+          ]
+        },
+        {
+          "sourceRow": 103,
+          "cells": [
+            {
+              "value": "100"
+            },
+            {
+              "value": "Mozyrskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 104,
+          "cells": [
+            {
+              "value": "101"
+            },
+            {
+              "value": "Molodechnenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 105,
+          "cells": [
+            {
+              "value": "102"
+            },
+            {
+              "value": "Moskovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 106,
+          "cells": [
+            {
+              "value": "103"
+            },
+            {
+              "value": "Mukachevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 107,
+          "cells": [
+            {
+              "value": "104"
+            },
+            {
+              "value": "Mukdenskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 108,
+          "cells": [
+            {
+              "value": "105"
+            },
+            {
+              "value": "Narvskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 109,
+          "cells": [
+            {
+              "value": "106"
+            },
+            {
+              "value": "Nevel'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 110,
+          "cells": [
+            {
+              "value": "107"
+            },
+            {
+              "value": "Nevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 111,
+          "cells": [
+            {
+              "value": "108"
+            },
+            {
+              "value": "Nezhinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 112,
+          "cells": [
+            {
+              "value": "109"
+            },
+            {
+              "value": "Nemanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 113,
+          "cells": [
+            {
+              "value": "110"
+            },
+            {
+              "value": "Nizhnednestrovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 114,
+          "cells": [
+            {
+              "value": "111"
+            },
+            {
+              "value": "Nizhnedneprovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 115,
+          "cells": [
+            {
+              "value": "112"
+            },
+            {
+              "value": "Nikolaevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 116,
+          "cells": [
+            {
+              "value": "113"
+            },
+            {
+              "value": "Nikopol'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 117,
+          "cells": [
+            {
+              "value": "114"
+            },
+            {
+              "value": "Novogradskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 118,
+          "cells": [
+            {
+              "value": "115"
+            },
+            {
+              "value": "Novomoskovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 119,
+          "cells": [
+            {
+              "value": "116"
+            },
+            {
+              "value": "Novogeorgievskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 120,
+          "cells": [
+            {
+              "value": "117"
+            },
+            {
+              "value": "Novorossiyskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 121,
+          "cells": [
+            {
+              "value": "118"
+            },
+            {
+              "value": "Novosokol'nicheskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 122,
+          "cells": [
+            {
+              "value": "119"
+            },
+            {
+              "value": "Oderskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 123,
+          "cells": [
+            {
+              "value": "120"
+            },
+            {
+              "value": "Odesskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 124,
+          "cells": [
+            {
+              "value": "121"
+            },
+            {
+              "value": "Orlovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 125,
+          "cells": [
+            {
+              "value": "122"
+            },
+            {
+              "value": "Orshanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 126,
+          "cells": [
+            {
+              "value": "123"
+            },
+            {
+              "value": "Osoveckiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 127,
+          "cells": [
+            {
+              "value": "124"
+            },
+            {
+              "value": "Ostropol'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 128,
+          "cells": [
+            {
+              "value": "125"
+            },
+            {
+              "value": "Ostrovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 129,
+          "cells": [
+            {
+              "value": "126"
+            },
+            {
+              "value": "Pavlogradskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 130,
+          "cells": [
+            {
+              "value": "127"
+            },
+            {
+              "value": "Panevezhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 131,
+          "cells": [
+            {
+              "value": "128"
+            },
+            {
+              "value": "Petrozavodskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 132,
+          "cells": [
+            {
+              "value": "129"
+            },
+            {
+              "value": "Peremyshl'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 133,
+          "cells": [
+            {
+              "value": "130"
+            },
+            {
+              "value": "Polockiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 134,
+          "cells": [
+            {
+              "value": "131"
+            },
+            {
+              "value": "Pomeranskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 135,
+          "cells": [
+            {
+              "value": "132"
+            },
+            {
+              "value": "Poltavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 136,
+          "cells": [
+            {
+              "value": "133"
+            },
+            {
+              "value": "Port-Arturskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 137,
+          "cells": [
+            {
+              "value": "134"
+            },
+            {
+              "value": "Prazhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 138,
+          "cells": [
+            {
+              "value": "135"
+            },
+            {
+              "value": "Prikarpatskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 139,
+          "cells": [
+            {
+              "value": "136"
+            },
+            {
+              "value": "Proskurovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 140,
+          "cells": [
+            {
+              "value": "137"
+            },
+            {
+              "value": "Pushkinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 141,
+          "cells": [
+            {
+              "value": "138"
+            },
+            {
+              "value": "Rava-Russkiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 142,
+          "cells": [
+            {
+              "value": "139"
+            },
+            {
+              "value": "Radomskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 143,
+          "cells": [
+            {
+              "value": "140"
+            },
+            {
+              "value": "Rezhickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 144,
+          "cells": [
+            {
+              "value": "141"
+            },
+            {
+              "value": "Rechickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 145,
+          "cells": [
+            {
+              "value": "142"
+            },
+            {
+              "value": "Rzhevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 146,
+          "cells": [
+            {
+              "value": "143"
+            },
+            {
+              "value": "Rizhskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "17"
+            }
+          ]
+        },
+        {
+          "sourceRow": 147,
+          "cells": [
+            {
+              "value": "144"
+            },
+            {
+              "value": "Ropshinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 148,
+          "cells": [
+            {
+              "value": "145"
+            },
+            {
+              "value": "Roslavl'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 149,
+          "cells": [
+            {
+              "value": "146"
+            },
+            {
+              "value": "Rostov-Donskoy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 150,
+          "cells": [
+            {
+              "value": "147"
+            },
+            {
+              "value": "Ruwukskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 151,
+          "cells": [
+            {
+              "value": "148"
+            },
+            {
+              "value": "Sandomirskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 152,
+          "cells": [
+            {
+              "value": "149"
+            },
+            {
+              "value": "Sahalinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 153,
+          "cells": [
+            {
+              "value": "150"
+            },
+            {
+              "value": "Svirskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 154,
+          "cells": [
+            {
+              "value": "151"
+            },
+            {
+              "value": "Sevastopol'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "26"
+            }
+          ]
+        },
+        {
+          "sourceRow": 155,
+          "cells": [
+            {
+              "value": "152"
+            },
+            {
+              "value": "Sedleckiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 156,
+          "cells": [
+            {
+              "value": "153"
+            },
+            {
+              "value": "Segedskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 157,
+          "cells": [
+            {
+              "value": "154"
+            },
+            {
+              "value": "Sibirsko-Stalinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 158,
+          "cells": [
+            {
+              "value": "155"
+            },
+            {
+              "value": "Slonimskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 159,
+          "cells": [
+            {
+              "value": "156"
+            },
+            {
+              "value": "Sluckiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 160,
+          "cells": [
+            {
+              "value": "157"
+            },
+            {
+              "value": "Smolenskiy (aya)"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "sourceRow": 161,
+          "cells": [
+            {
+              "value": "158"
+            },
+            {
+              "value": "Solnechnogorskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 162,
+          "cells": [
+            {
+              "value": "159"
+            },
+            {
+              "value": "Sredne-Donskoy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 163,
+          "cells": [
+            {
+              "value": "160"
+            },
+            {
+              "value": "Stalingradskiy (aya)"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "29"
+            }
+          ]
+        },
+        {
+          "sourceRow": 164,
+          "cells": [
+            {
+              "value": "161"
+            },
+            {
+              "value": "Stanislavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 165,
+          "cells": [
+            {
+              "value": "162"
+            },
+            {
+              "value": "Stalinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 166,
+          "cells": [
+            {
+              "value": "163"
+            },
+            {
+              "value": "Starokonstantinovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 167,
+          "cells": [
+            {
+              "value": "164"
+            },
+            {
+              "value": "Starorusskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 168,
+          "cells": [
+            {
+              "value": "165"
+            },
+            {
+              "value": "Taganrogskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 169,
+          "cells": [
+            {
+              "value": "166"
+            },
+            {
+              "value": "Tamanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 170,
+          "cells": [
+            {
+              "value": "167"
+            },
+            {
+              "value": "Tomashevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 171,
+          "cells": [
+            {
+              "value": "168"
+            },
+            {
+              "value": "Tallinskie (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 172,
+          "cells": [
+            {
+              "value": "169"
+            },
+            {
+              "value": "Tannenbergskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 173,
+          "cells": [
+            {
+              "value": "170"
+            },
+            {
+              "value": "Tarnopol'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 174,
+          "cells": [
+            {
+              "value": "171"
+            },
+            {
+              "value": "Tashkentskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 175,
+          "cells": [
+            {
+              "value": "172"
+            },
+            {
+              "value": "Til'zitskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 176,
+          "cells": [
+            {
+              "value": "173"
+            },
+            {
+              "value": "Tihvinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 177,
+          "cells": [
+            {
+              "value": "174"
+            },
+            {
+              "value": "Transil'vanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 178,
+          "cells": [
+            {
+              "value": "175"
+            },
+            {
+              "value": "Tul'skiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 179,
+          "cells": [
+            {
+              "value": "176"
+            },
+            {
+              "value": "Uzhgorodskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 180,
+          "cells": [
+            {
+              "value": "177"
+            },
+            {
+              "value": "Umanskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 181,
+          "cells": [
+            {
+              "value": "178"
+            },
+            {
+              "value": "Feodosiyskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 182,
+          "cells": [
+            {
+              "value": "179"
+            },
+            {
+              "value": "Harbinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 183,
+          "cells": [
+            {
+              "value": "180"
+            },
+            {
+              "value": "Har'kovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 184,
+          "cells": [
+            {
+              "value": "181"
+            },
+            {
+              "value": "Hersonskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 185,
+          "cells": [
+            {
+              "value": "182"
+            },
+            {
+              "value": "Hinganskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 186,
+          "cells": [
+            {
+              "value": "183"
+            },
+            {
+              "value": "Chenstohovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 187,
+          "cells": [
+            {
+              "value": "184"
+            },
+            {
+              "value": "Cherkasskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 188,
+          "cells": [
+            {
+              "value": "185"
+            },
+            {
+              "value": "Chernigovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 189,
+          "cells": [
+            {
+              "value": "186"
+            },
+            {
+              "value": "Chernovickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 190,
+          "cells": [
+            {
+              "value": "187"
+            },
+            {
+              "value": "Shtettinskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 191,
+          "cells": [
+            {
+              "value": "188"
+            },
+            {
+              "value": "Shumskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 192,
+          "cells": [
+            {
+              "value": "189"
+            },
+            {
+              "value": "El'bingskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 193,
+          "cells": [
+            {
+              "value": "190"
+            },
+            {
+              "value": "Yuhnovskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 194,
+          "cells": [
+            {
+              "value": "191"
+            },
+            {
+              "value": "Yampol'sko-Kreminickiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 195,
+          "cells": [
+            {
+              "value": "192"
+            },
+            {
+              "value": "Yaroslavskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 196,
+          "cells": [
+            {
+              "value": "193"
+            },
+            {
+              "value": "Yarcevskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 197,
+          "cells": [
+            {
+              "value": "194"
+            },
+            {
+              "value": "Yasskiy (aya)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 198,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "69"
+            },
+            {
+              "value": "77"
+            },
+            {
+              "value": "148"
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "106"
+            },
+            {
+              "value": "380"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "535"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "699"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

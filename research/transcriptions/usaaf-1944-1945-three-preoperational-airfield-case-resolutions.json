@@ -1,0 +1,246 @@
+{
+  "id": "USAAF-ALGS-A44-Y44-Y47-TARGETED-2026-10-31",
+  "date": "2026-10-31",
+  "status": "RESEARCH_ONLY_NO_MAP_PUBLICATION",
+  "purpose": "Targeted follow-up of three USAAF 1988 source-line cases where unit arrival or liaison activity predates declared airfield operational date. Distinguish dated official unit station from a field code, a temporary landing area, and an operational strip.",
+  "cutoffEuropeanWar": "1945-05-09",
+  "sourceData": "research/transcriptions/usaaf-1988-priority-75-source-text-review-1944-1945.json",
+  "evidenceRules": [
+    "1988 USAF Johnson Part I and II reflect one study; two pages are not two independent sources.",
+    "Official USAF Maurer 1982 squadron histories are retrospective lineage compilations, not contemporary squadron operation-record books.",
+    "Do not assign an individual aircraft, airfield code, runway coordinate or group-wide strength from a reconnaissance/advance detachment.",
+    "Separate district-level unit stationing from exact physical airfield occupancy and from the airfield operational declaration.",
+    "Where a historical airfield began in March 1945, do not render its 1944 regional unit records as pins on the later runway.",
+    "Do not infer actual operational aircraft strength, sorties, kills or losses from presence-only records."
+  ],
+  "audit": {
+    "targetedSourceRows": 3,
+    "verifiedOfficialUSAAFUnitRegionOrFlightAssociations": 2,
+    "preoperationalDetachmentCandidateOnly": 1,
+    "sourceSupported1944ExclusionsFromLaterFieldFootprint": 1,
+    "temporarilyUsedAirfieldBeforeDeclaredOperational": 1,
+    "contemporaryEngineerReportsOrUnitORBsDirectlyRead": 0,
+    "sourceConflictsRequiringContemporaryRecordForDayAndPinAccuracy": 3,
+    "readyForExactPreoperationalPin": 0
+  },
+  "cases": [
+    {
+      "sourceRowId": "usaf1988-p17-l26",
+      "code": "A-44",
+      "site": "Peray / Saint-Aignan–Courcival, France",
+      "unit": "365th Fighter Group (detachment)",
+      "originalSourceUnitPeriod": "August 1944",
+      "officialInitialOperationalDate": "1944-09-02",
+      "originalSourceRowScope": "detachment, not full group",
+      "researchConclusion": "The August report refers to a scouting/reconnaissance detachment, not evidence that the 365th Fighter Group was operationally based at A-44. Construction began only in the second half of August; 367th FG began operating there in September. Exact August physical position, arrival day and aircraft use remain unconfirmed.",
+      "sourceSupportLevel": "official_1988_listing_plus_specialist_research_with_shared_source_lineage",
+      "eventCandidates": [
+        {
+          "period": "1944-08",
+          "type": "advance_reconnaissance_or_survey_presence",
+          "unit": "365th Fighter Group detachment",
+          "precision": "month_only",
+          "placeScope": "Peray local area, NOT proven runway station",
+          "status": "supported_candidate_not_primary_ORB_verified"
+        },
+        {
+          "date": "1944-09-02",
+          "type": "declared_airfield_operational",
+          "precision": "day",
+          "placeScope": "ALG A-44 Peray",
+          "status": "official_USAF_1988_retrospective"
+        }
+      ],
+      "cartographicDecision": {
+        "preOperationalUnitPin": "SUPPRESS",
+        "regionalResearchAnnotation": "ALLOWED_AS_NONOPERATIONAL_SURVEY_CANDIDATE_WITH_CAVEAT",
+        "fromOperationalDate": "1944-09-02",
+        "unitBasedAircraftStrength": "PROHIBITED"
+      },
+      "originalArchivalNextStep": "Obtain 846th/819th Engineer Aviation Battalion field reports, September 1944 A-44 plan (reported Kew archive), and 365th FG monthly operations/intelligence diary or reconnaissance-party orders. Independent actual deployment cannot be claimed from web research alone.",
+      "sources": [
+        {
+          "url": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+          "locator": "Johnson 1988 Part I printed page 17 (A-44); Part II alphabetical Peray",
+          "class": "USAF_official_retrospective",
+          "supports": "Det 365th FG Aug 1944; field initial operation 2 Sep 1944; 367th FG Sep"
+        },
+        {
+          "url": "https://www.anciens-aerodromes.com/?p=140666",
+          "locator": "Peray A-44 airfield history (4 Nov 2025), plan attributed to UK National Archives, 846th/819th EAB",
+          "class": "specialist_secondary",
+          "supports": "Site constructed second half of August, 365th FG reconnaissance detachment during Aug, operational 2 Sep",
+          "limitations": "Cites Johnson and Maurer: may not constitute independent confirmation of reconnaissance line"
+        },
+        {
+          "url": "https://www.armyaircorpsmuseum.org/367th_Fighter_Group.cfm",
+          "locator": "367th FG stations (Maurer reproduction)",
+          "class": "USAF_retrospective_republication",
+          "supports": "367th Fighter Group moved to Peray 4 Sep 1944, two days after initial declared op date"
+        }
+      ]
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "code": "Y-44",
+      "site": "Maastricht region vs Beek airfield (Netherlands)",
+      "unit": "125th Liaison Squadron",
+      "originalSourceUnitPeriod": "October 1944–March 1945",
+      "officialInitialOperationalDate": "1945-03-23",
+      "independentInstitutionalHistoryOperationalDate": "1945-03-28",
+      "researchConclusion": "A USAF official squadron history confirms the 125th Liaison Squadron was stationed in the Maastricht area from 21 Oct 1944, followed by Mönchengladbach from 9 Mar 1945. NIMH says airfield Y-44 near Beek was newly constructed in early 1945 and operational from 28 Mar 1945. The Johnson unit date is a regional/lineage association, NOT proof of operation from the not-yet-built Beek runway in 1944. Local accounts report separate facilities at Geusseltpark and Sint-Pietersberg and possible March 1945 liaison aircraft on the new field; latter needs dated unit-specific corroboration.",
+      "sourceSupportLevel": "official_USAF_unit_stations_plus_Dutch_defence_military_airfield_history; local site detail secondary",
+      "eventCandidates": [
+        {
+          "date": "1944-10-21",
+          "type": "squadron_stationed_in_Maastricht_area",
+          "precision": "day_from_official_lineage",
+          "placeScope": "Maastricht area; field/strip unspecified",
+          "status": "official_USAF_retrospective"
+        },
+        {
+          "date": "1945-03-09",
+          "type": "next_reported_squadron_station",
+          "precision": "day_from_official_lineage",
+          "placeScope": "Mönchengladbach, Germany",
+          "status": "official_USAF_retrospective_not_proof_all_detachments_departed"
+        },
+        {
+          "date": "1945-03-23",
+          "type": "first_field_op_date_in_Johnson",
+          "precision": "day",
+          "placeScope": "Y-44 Beek",
+          "status": "USAF_1988_conflicts_with_Dutch_NIMH_28_March"
+        },
+        {
+          "date": "1945-03-28",
+          "type": "declared_field_use_in_NIMH",
+          "precision": "day",
+          "placeScope": "Y-44 Beek",
+          "status": "Dutch_official_historical_site_report"
+        }
+      ],
+      "candidateEarlierLocalLandingPlaces": [
+        {
+          "name": "Sint-Pietersberg plateau / Fort Sint Pieter",
+          "period": "September 1944–early 1945?",
+          "precision": "not_verified",
+          "source": "local historical journal; starts 14 Sep 1944 conflicting with official 21 Oct unit station listing",
+          "fieldIdentity": "separate_from_Y44"
+        },
+        {
+          "name": "Geusseltpark Maastricht",
+          "period": "before March 1945",
+          "precision": "not_verified",
+          "source": "local Beek retrospective study",
+          "fieldIdentity": "separate_from_Y44"
+        }
+      ],
+      "cartographicDecision": {
+        "Y44FromOctober1944ToFebruary1945": "EXCLUDE_FROM_Y44_BEek_RUNWAY_PIN",
+        "regionalMaastrichtUnitEvent": "ALLOWED_WITH_NO_RUNWAY_POINT",
+        "postMarch1945Y44LiaisonVisit": "UNVERIFIED_UNIT_SPECIFIC_PRESENCE",
+        "useStartDate": "official_USAAF_1945_03_23_vs_Dutch_NIMH_1945_03_28_show_conflict",
+        "unitBasedAircraftStrength": "PROHIBITED"
+      },
+      "originalArchivalNextStep": "Compare original 125th Liaison Squadron station/ORB records and IX Engineer Command Y-44 construction returns for 23 vs 28 Mar; independently locate early Sint-Pietersberg and Geusseltpark strips from 1944 maps and aerial photos. A local report of March use does not override official squadron HQ movement dated 9 Mar.",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo126017/pdf/GOVPUB-D301-PURL-gpo126017.pdf",
+          "locator": "Maurer, Combat Squadrons (1982 reprint), printed page 350, 125th Liaison entry",
+          "class": "USAF_official_retrospective",
+          "supports": "Maastricht stationed 21 Oct 1944; moved to Mönchengladbach 9 Mar 1945"
+        },
+        {
+          "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/beek",
+          "locator": "NIMH Beek page, operational 28 Mar 1945",
+          "class": "Dutch_official_military_historical",
+          "supports": "Y-44 newly built early 1945; operational 28 Mar, not in Oct 1944"
+        },
+        {
+          "url": "https://www.dodenherdenking-beek.nl/documents/PDF/BeekseHistorie/Vliegveld%20Beek%20in%20oorlogstijd%20Y-44.pdf",
+          "locator": "Göttgens 2016, sections 1 and 4",
+          "class": "local_secondary_historical_compilation",
+          "supports": "Earlier Geusseltpark and Sint-Pietersberg stations; local claim of mid-Mar reconnaissance arrivals",
+          "limitations": "Some local dates conflict with official squadron histories and NIMH. Not contemporary flight records."
+        },
+        {
+          "url": "https://nhgl.nl/nas/download/bestanden/tijdschriften?file=SOK-info+177+%5Bnov+2017%5D.pdf&map=sokinfo%2F2017",
+          "locator": "SOK-Info 177 (Nov 2017), printed page 12, item 3",
+          "class": "local_historical_anecdotal",
+          "supports": "Reported temporary Saint-Pietersberg plateau strip and liaison airplanes",
+          "limitations": "Says unit near 14 Sep, earlier than official USAF 21 Oct; use only as a lead, not exact dated fact."
+        }
+      ]
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "code": "Y-47",
+      "site": "Namur / Temploux–Suarlée, Belgium",
+      "unit": "112th Liaison Squadron, flight detachment",
+      "originalSourceUnitPeriod": "October 1944–February 1945",
+      "officialInitialOperationalDate": "1945-02-22",
+      "researchConclusion": "The 112th Liaison Squadron official USAF history dates a FLIGHT at Namur from 26 Oct 1944 to approximately 11 Feb 1945, while its parent squadron remained stationed at Buc, France. Belgian veteran aviation history states construction at Temploux–Suarlée started September 1944 and the undeclared landing strip was already used in October, before the formal 22 Feb 1945 airfield declaration. These dates describe distinct operations; no reason to change either date. The precise pre-hardened landing point relative to the eventual runway remains unverified.",
+      "sourceSupportLevel": "official_USAF_flight_dates_plus_Belgian_aviation_veterans_secondary_field_history",
+      "eventCandidates": [
+        {
+          "date": "1944-10-26",
+          "type": "subunit_flight_operated_in_Namur_area",
+          "precision": "day",
+          "placeScope": "Temploux–Suarlée/ Namur region, precise WWII strip unknown",
+          "status": "USAF_official_retrospective"
+        },
+        {
+          "date": "1945-02-11",
+          "type": "approximate_end_of_112th_flight",
+          "precision": "approximate_day",
+          "placeScope": "Namur",
+          "status": "USAF_official_retrospective"
+        },
+        {
+          "date": "1945-02-22",
+          "type": "declared_airfield_operational",
+          "precision": "day",
+          "placeScope": "Y-47 Namur",
+          "status": "USAF_1988_and_Belgian_veterans_history"
+        }
+      ],
+      "cartographicDecision": {
+        "pre1945MarchLiaisonFlight": "ALLOW_NAMUR_AREA_REGIONAL_EVENT_ONLY",
+        "actualY47RunwayPinBeforeDeclaredOp": "SUPPRESS_UNTIL_ENGINEERING_PLAN_OR_ORB",
+        "airfieldDeclaredOperational": "1945-02-22",
+        "unitBaseAtBucShouldRemain": "YES_PARENT_SQUADRON",
+        "unitBasedAircraftStrength": "PROHIBITED"
+      },
+      "originalArchivalNextStep": "Obtain IX Engineer Command Y-47 Namur/Temploux construction, occupancy and runway plans and 112th liaison flight station/operations diaries to verify grass landing strip footprint and the 21-vs-26 Oct variance (Belgian retrospective vs official USAF).",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo126017/pdf/GOVPUB-D301-PURL-gpo126017.pdf",
+          "locator": "Maurer, Combat Squadrons (1982 reprint), printed page 342, 112th Liaison stationing",
+          "class": "USAF_official_retrospective",
+          "supports": "112th flight Namur 26 Oct 1944–about 11 Feb 1945, parent stationed Buc"
+        },
+        {
+          "url": "https://www.vieillestiges.be/files/vtb-magazines/4-2017.pdf",
+          "locator": "Vieilles Tiges Aviation Belge Magazine No. 4/2017, printed pages 43–44, Temploux section",
+          "class": "Belgian_veterans_aviation_historical_secondary",
+          "supports": "September 1944 construction, October use while work ongoing, formal op declaration 22 Feb 1945",
+          "limitations": "Says 112th detachment 21 Oct vs official USAF 26 Oct, keep date discrepancy."
+        },
+        {
+          "url": "https://suarlee.be/aerodrome/",
+          "locator": "Suarlée village history, local aviation history",
+          "class": "local_historical_secondary",
+          "supports": "Piper-Cub-type aircraft landed at a meadow by Nivelles road in September 1944, before airfield completion",
+          "limitations": "Does not prove this is the exact area occupied by 112th flight later in October."
+        },
+        {
+          "url": "https://gateway.forgottenairfields.com/airfield-namur-suarleee-238.html",
+          "locator": "Namur/Suarlée specialist field entry",
+          "class": "specialist_secondary",
+          "supports": "Early grass liaison field before February 1945 PSP surface"
+        }
+      ]
+    }
+  ]
+}

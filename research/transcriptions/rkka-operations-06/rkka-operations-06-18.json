@@ -1,0 +1,752 @@
+{
+  "id": "RKKA-VVS-06-18",
+  "topic": "German sorties on Eastern Front by task 1944-1945",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_18.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 23,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Año y mes",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad total de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "De los cuales",
+              "colspan": 8
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "para atacar las tropas terrestres en el campo de batalla y en lugares de concentracion"
+            },
+            {
+              "value": "ataques a objetivos ferroviarios"
+            },
+            {
+              "value": "ataques a pasos de rio"
+            },
+            {
+              "value": "ataques a aerodromos"
+            },
+            {
+              "value": "ataques a las ciudades"
+            },
+            {
+              "value": "misiones de reconcimiento"
+            },
+            {
+              "value": "prestacion de apoyo a la aviacion, la defensa de las tropas y objetivos de la retaguardia"
+            },
+            {
+              "value": "para transportar cargamentos a las tropas cercadas"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "1944",
+              "colspan": 10
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "enero"
+            },
+            {
+              "value": "17 900"
+            },
+            {
+              "value": "7 390"
+            },
+            {
+              "value": "214"
+            },
+            {
+              "value": "276"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "576"
+            },
+            {
+              "value": "5 930"
+            },
+            {
+              "value": "3 511"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "febrero"
+            },
+            {
+              "value": "17 334"
+            },
+            {
+              "value": "7 081"
+            },
+            {
+              "value": "204"
+            },
+            {
+              "value": "680"
+            },
+            {
+              "value": "53"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "5 668"
+            },
+            {
+              "value": "2 779"
+            },
+            {
+              "value": "838"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "marzo"
+            },
+            {
+              "value": "22 333"
+            },
+            {
+              "value": "9 159"
+            },
+            {
+              "value": "392"
+            },
+            {
+              "value": "1 008"
+            },
+            {
+              "value": "132"
+            },
+            {
+              "value": "132"
+            },
+            {
+              "value": "7 456"
+            },
+            {
+              "value": "3 741"
+            },
+            {
+              "value": "313"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "abril"
+            },
+            {
+              "value": "39 747"
+            },
+            {
+              "value": "19 423"
+            },
+            {
+              "value": "1 007"
+            },
+            {
+              "value": "1 417"
+            },
+            {
+              "value": "317"
+            },
+            {
+              "value": "543"
+            },
+            {
+              "value": "9 471"
+            },
+            {
+              "value": "7 264"
+            },
+            {
+              "value": "305"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "mayo"
+            },
+            {
+              "value": "39 104"
+            },
+            {
+              "value": "16 947"
+            },
+            {
+              "value": "2 616"
+            },
+            {
+              "value": "1 162"
+            },
+            {
+              "value": "337"
+            },
+            {
+              "value": "421"
+            },
+            {
+              "value": "11 172"
+            },
+            {
+              "value": "6 449"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "junio"
+            },
+            {
+              "value": "22 027"
+            },
+            {
+              "value": "6 295"
+            },
+            {
+              "value": "1 691"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "227"
+            },
+            {
+              "value": "49"
+            },
+            {
+              "value": "10 080"
+            },
+            {
+              "value": "3 644"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "julio"
+            },
+            {
+              "value": "29 015"
+            },
+            {
+              "value": "9 884"
+            },
+            {
+              "value": "1 853"
+            },
+            {
+              "value": "1 568"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "754"
+            },
+            {
+              "value": "9 739"
+            },
+            {
+              "value": "5 051"
+            },
+            {
+              "value": "131"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "agosto"
+            },
+            {
+              "value": "28 248"
+            },
+            {
+              "value": "7 776"
+            },
+            {
+              "value": "454"
+            },
+            {
+              "value": "869"
+            },
+            {
+              "value": "68"
+            },
+            {
+              "value": "460"
+            },
+            {
+              "value": "12 291"
+            },
+            {
+              "value": "6 330"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "septiembre"
+            },
+            {
+              "value": "16 677"
+            },
+            {
+              "value": "3 230"
+            },
+            {
+              "value": "133"
+            },
+            {
+              "value": "87"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "897"
+            },
+            {
+              "value": "7 965"
+            },
+            {
+              "value": "4 365"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "octubre"
+            },
+            {
+              "value": "11 831"
+            },
+            {
+              "value": "3 051"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "162"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "4 956"
+            },
+            {
+              "value": "3 630"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "noviembre"
+            },
+            {
+              "value": "5 237"
+            },
+            {
+              "value": "1 255"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "119"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "2 463"
+            },
+            {
+              "value": "1 316"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "diciembre"
+            },
+            {
+              "value": "8 293"
+            },
+            {
+              "value": "1 860"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "68"
+            },
+            {
+              "value": "161"
+            },
+            {
+              "value": "3 868"
+            },
+            {
+              "value": "2 101"
+            },
+            {
+              "value": "184"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "257 746"
+            },
+            {
+              "value": "93 351"
+            },
+            {
+              "value": "8 581"
+            },
+            {
+              "value": "7 287"
+            },
+            {
+              "value": "1 416"
+            },
+            {
+              "value": "4 100"
+            },
+            {
+              "value": "91 059"
+            },
+            {
+              "value": "50 181"
+            },
+            {
+              "value": "1 771"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "1945",
+              "colspan": 10
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "enero"
+            },
+            {
+              "value": "12 439"
+            },
+            {
+              "value": "3 878"
+            },
+            {
+              "value": "83"
+            },
+            {
+              "value": "290"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "116"
+            },
+            {
+              "value": "4 079"
+            },
+            {
+              "value": "2 547"
+            },
+            {
+              "value": "1 446"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "febrero"
+            },
+            {
+              "value": "29 267"
+            },
+            {
+              "value": "11 614"
+            },
+            {
+              "value": "146"
+            },
+            {
+              "value": "3 488"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "77"
+            },
+            {
+              "value": "6 610"
+            },
+            {
+              "value": "6 545"
+            },
+            {
+              "value": "764"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "marzo"
+            },
+            {
+              "value": "16 166"
+            },
+            {
+              "value": "3 027"
+            },
+            {
+              "value": "110"
+            },
+            {
+              "value": "1 048"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "5 838"
+            },
+            {
+              "value": "5 445"
+            },
+            {
+              "value": "675"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "abril"
+            },
+            {
+              "value": "18 239"
+            },
+            {
+              "value": "4 599"
+            },
+            {
+              "value": "273"
+            },
+            {
+              "value": "803"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "129"
+            },
+            {
+              "value": "5 513"
+            },
+            {
+              "value": "6 454"
+            },
+            {
+              "value": "430"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "mayo"
+            },
+            {
+              "value": "642"
+            },
+            {
+              "value": "92"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "482"
+            },
+            {
+              "value": "60"
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "76 753"
+            },
+            {
+              "value": "23 210"
+            },
+            {
+              "value": "612"
+            },
+            {
+              "value": "5 629"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": "345"
+            },
+            {
+              "value": "22 522"
+            },
+            {
+              "value": "21 051"
+            },
+            {
+              "value": "3 323"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ITALIAN-REGIA-AERONAUTICA-GENERAL-STAFF-1940-1942",
+  "title": "Regia Aeronautica original General Staff comparison of air strength, aircraft losses, personnel losses, and frontline unit commitment, June 1940 to September 1942",
+  "sourceUrl": "https://www.nam-sism.org/Articoli/Articoli%202025/Nam%2024%20articoli/NAM24_art20_Insight_DiMartino_AirForce_Disillusion_WarMoment.pdf",
+  "sourceAuthor": "Basilio Di Martino, The Regia Aeronautica in September 1942, Nuova Antologia Militare 6(24), 2025, pp. 701 onwards",
+  "originalArchivalCitation": "Italian Air Force Central Library / AUSMA, Monographs, b. 27, f. 18; original confidential Chief of Staff study circa August-September 1942, associated with Gen. Rino Corso Fougier",
+  "sourceClass": "original_1942_general_staff_statistical_report_as_transcribed_and_analyzed_by_historical_scholar_in_2025_secondary_publication",
+  "sourcePdfPagesZeroBased": [6, 7, 8, 9, 10, 11, 12],
+  "forceScope": "Italian Regia Aeronautica core Armata Aerea; generally EXCLUDES attached Army/Navy auxiliary aviation (ESERCITAVIA/MARINAVIA), and 1940-41 Italian East African air force. Loss classes and front-line aircraft denominators are not necessarily identical.",
+  "reportedFrontLineAircraftSnapshots": [
+    { "monthOrDate": "1940-06-10", "datePrecision": "exact_for_war_entry", "bombersAvailable": 759, "bombersAtDepot": 204, "frontlineFightersCombatReadyAsWording": 632, "fightersAtDepot": 263, "sourcePdfPageZeroBased": [9, 10] },
+    { "monthOrDate": "1941-06", "datePrecision": "month_start_second_war_year", "bombersAvailable": 423, "bombersAtDepot": 167, "frontlineFightersCombatReadyAsWording": 719, "fightersAtDepot": 249, "sourcePdfPageZeroBased": [9, 10] },
+    { "monthOrDate": "1942-06", "datePrecision": "month_start_third_war_year", "bombersAvailable": 422, "bombersAtDepot": 169, "frontlineFightersCombatReadyAsWording": 880, "fightersAtDepot": 375, "sourcePdfPageZeroBased": [9, 10] },
+    { "monthOrDate": "1942-09-15", "datePrecision": "exact", "bombersAvailable": 398, "ofWhichTorpedoBombers": 210, "bombersAtDepot": 121, "frontlineFightersCombatReadyAsWording": 901, "fightersAtDepot": 300, "sourcePdfPageZeroBased": [9, 10] }
+  ],
+  "unitFormationOperationalCommitment": [
+    { "dateOrMonth": "1940-06", "role": "bomber_squadriglie", "unitTotal": 104, "frontlineCommitted": 56, "commitmentFronts": "multiple including Libya, Mediterranean and Italian metropolitan fronts" },
+    { "dateOrMonth": "1940-06", "role": "fighter_squadriglie", "unitTotal": 73, "frontlineCommitted": 31 },
+    { "dateOrMonth": "1941-06", "role": "bomber_squadriglie", "unitTotal": 88, "frontlineCommitted": 34, "commandLimit": "Sardinian, Sicilian, Libyan and Aegean commands counted in deployed numerator; denominator includes full force" },
+    { "dateOrMonth": "1941-06", "role": "fighter_squadriglie", "unitTotal": 75, "frontlineCommitted": 39, "otherFrontlineFighterSections": 11, "allFighterSections": 21 },
+    { "dateOrMonth": "1942-06", "role": "bomber_squadriglie", "unitTotal": 55, "frontlineCommitted": 32, "note": "26 in Sardinia/Sicily/Libya/Aegean and 6 in Slovenia-Dalmatia" },
+    { "dateOrMonth": "1942-06", "role": "fighter_squadriglie", "unitTotal": 93, "frontlineCommitted": 54, "otherFrontlineFighterSections": 12, "allFighterSections": 19 },
+    { "dateOrMonth": "1942-09-15", "role": "bomber_squadriglie", "unitTotal": 49, "frontlineCommittedNarrowCommandDefinition": 28, "frontlineCommittedIncludingAlbaniaAndFourthAirFleet": 43 },
+    { "dateOrMonth": "1942-09-15", "role": "fighter_squadriglie", "unitTotal": 96, "frontlineCommittedNarrowCommandDefinition": 56, "frontlineCommittedIncludingGreeceAlbaniaAndFourthAirFleet": 81, "frontlineFighterSectionsNarrow": 16, "frontlineFighterSectionsWide": 20, "allFighterSections": 26 },
+    { "dateOrMonth": "1942-09-15", "role": "torpedo_bomber_squadriglie", "unitTotal": 20, "frontlineCommitted": 20, "note": "Includes 4 attached to 4th Air Fleet" }
+  ],
+  "ownAircraftLossesThrough1942August21": {
+    "start": "1940-06-10", "end": "1942-08-21", "reportedTotalWriteoffsByCause": 3395,
+    "combatLossesAsLabelled": 715,
+    "destroyedOnGroundOrIrreparableOrMissingUnknownCause": 1409,
+    "flightAccidentWriteoffs": 1271,
+    "separatelyEstimatedDecommissionedOrTransferredAwayFromCombatApproximately": 1000,
+    "reportedApproximateCombinedFleetReduction": 4400,
+    "sourcePdfPageZeroBased": [10, 11],
+    "warning": "1,409 is a combined ground, irreparable damage and unknown/missing category; 715 is not all enemy-caused aircraft losses. About 1,000 transferred or decommissioned must not be counted again as crashes/destroyed; original rounds about 4,400."
+  },
+  "cumulativePilotAndFlyingTechnicianCasualtyCategoriesToSeptember1942": {
+    "start": "1940-06-10", "end": "1942-09", "endDatePrecision": "month_from_general_staff_study",
+    "pilotOfficersKilledMissingOrPrisonerCombined": 706,
+    "pilotNcosKilledMissingOrPrisonerCombined": 537,
+    "allPilotsKilledMissingOrPrisonerCombined": 1243,
+    "flyingTechniciansKilledMissingOrPrisonerCombined": 1664,
+    "combinedFlyingPeopleReportedMissingKilledOrCaptured": 2907,
+    "sourcePdfPageZeroBased": [11],
+    "warning": "Died/KIA, missing and prisoner categories are combined in the original historical statement; not 1,243 pilot deaths and not 2,907 deaths. Excludes wounded, sick and other nonfatal removals. Date is approximate."
+  },
+  "pilotsInFlyingUnitsSnapshots": [
+    { "dateOrMonth": "1940-06-10", "fighterAndAssaultPilotCount": 1089, "fighterAndAssaultSquadriglie": 73, "bomberAndTorpedoPilotCount": 1914, "bomberAndTorpedoSquadriglie": 104 },
+    { "dateOrMonth": "1942-09-20", "fighterAndAssaultPilotCount": 1016, "fighterAndAssaultSquadriglie": 98, "bomberAndTorpedoPilotCount": 1402, "bomberAndTorpedoSquadriglie": 73, "note": "The text separately refers to 103 fighter-equivalent squadriglie if 15 interceptor/night-fighter sections are included. The Sept15 aircraft/formation comparison and Sept20 pilot-squadron comparison are NOT the same exact date." }
+  ],
+  "broaderOfficialAirForceComparison": {
+    "sourceUrl": "https://www.aeronautica.difesa.it/en/2022/11/09/timeline-storica-la-ii-guerra-mondiale/",
+    "at1940June10NationalAllAircraftApproximate": 3000,
+    "approximatelyTwoThirdsOperationalReady": true,
+    "warning": "Modern service-level rounded all-aircraft summary, not the same restricted frontline bomber/fighter count or operational-readiness definition as the 1942 original report."
+  }
+}

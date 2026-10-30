@@ -1,0 +1,97 @@
+{
+  "id": "USAAF-STATISTICAL-DIGEST-1945-ETO-MTO-COMBAT-LOSSES-AND-CLAIMS",
+  "title": "USAAF aircraft losses on combat missions versus reported enemy aircraft destroyed, European and Mediterranean theaters",
+  "originalCreator": "Office of Statistical Control, Headquarters Army Air Forces",
+  "sourceClass": "primary_official_1945_statistical_compilation_scanned_original",
+  "originalPublication": "Army Air Forces Statistical Digest: World War II (December 1945)",
+  "originalScannedPdf": "https://archive.org/download/ArmyAirForcesStatisticalDigestWorldWarII/ArmyAirForcesStatisticalDigestWorldWarII.pdf",
+  "tablesAndOriginalPrintedPages": {
+    "ownLossesETO": { "table": 159, "printedPage": 255, "pdfPage": 276 },
+    "ownLossesMTO": { "table": 160, "printedPage": 256, "pdfPage": 277 },
+    "allTheaterEnemyAircraftDestroyed": { "table": 166, "printedPage": 262, "pdfPage": 283 },
+    "enemyAircraftDestroyedETO": { "table": 167, "printedPage": 263, "pdfPage": 284 },
+    "enemyAircraftDestroyedMTO": { "table": 168, "printedPage": 264, "pdfPage": 285 }
+  },
+  "definitions": {
+    "ownLosses": "USAAF aircraft lost on combat missions, not all aircraft inventory losses and not personnel/pilot casualties. Split by attributed enemy aircraft, antiaircraft fire, or other causes.",
+    "enemyAircraftDestroyed": "American wartime reported/credited enemy aircraft destroyed, in air versus on ground, by claiming USAAF aircraft role. NOT independently established enemy actual losses; cross-check enemy return records separately.",
+    "theaterBoundaries": "ETO includes Eighth Air Force and Ninth Air Force from October 1943; MTO includes Twelfth and Fifteenth Air Forces and Ninth Air Force before October 1943 (1945 digest preface).",
+    "units": "individual aircraft, except victory-credit awards to individual pilots which are a different source/denominator"
+  },
+  "ownAircraftCombatMissionLosses": {
+    "ETO": {
+      "period": "1942-08 through 1945-05",
+      "totalByCause": { "all": 11687, "enemyAircraft": 4274, "antiAircraftFire": 5380, "otherCauses": 2033 },
+      "byAircraftRole": {
+        "heavyBombers": { "all": 5548, "enemyAircraft": 2452, "antiAircraftFire": 2439, "otherCauses": 657 },
+        "mediumLightBombers": { "all": 815, "enemyAircraft": 131, "antiAircraftFire": 492, "otherCauses": 192 },
+        "fighters": { "all": 5324, "enemyAircraft": 1691, "antiAircraftFire": 2449, "otherCauses": 1184 }
+      },
+      "annualByCause": [
+        { "year": 1942, "all": 55, "enemyAircraft": 49, "antiAircraftFire": 0, "otherCauses": 6 },
+        { "year": 1943, "all": 1261, "enemyAircraft": 877, "antiAircraftFire": 252, "otherCauses": 132 },
+        { "year": 1944, "all": 7749, "enemyAircraft": 2902, "antiAircraftFire": 3501, "otherCauses": 1346 },
+        { "year": 1945, "all": 2622, "enemyAircraft": 446, "antiAircraftFire": 1627, "otherCauses": 549 }
+      ]
+    },
+    "MTO": {
+      "period": "1942-06 through 1945-05",
+      "totalByCause": { "all": 6731, "enemyAircraft": 2526, "antiAircraftFire": 2441, "otherCauses": 1764 },
+      "byAircraftRole": {
+        "heavyBombers": { "all": 2766, "enemyAircraft": 847, "antiAircraftFire": 1313, "otherCauses": 606 },
+        "mediumLightBombers": { "all": 808, "enemyAircraft": 352, "antiAircraftFire": 306, "otherCauses": 150 },
+        "fighters": { "all": 3157, "enemyAircraft": 1327, "antiAircraftFire": 822, "otherCauses": 1008 }
+      },
+      "annualByCause": [
+        { "year": 1942, "all": 86, "enemyAircraft": 67, "antiAircraftFire": 17, "otherCauses": 2 },
+        { "year": 1943, "all": 1767, "enemyAircraft": 1264, "antiAircraftFire": 250, "otherCauses": 253 },
+        { "year": 1944, "all": 3869, "enemyAircraft": 1161, "antiAircraftFire": 1589, "otherCauses": 1119 },
+        { "year": 1945, "all": 1009, "enemyAircraft": 34, "antiAircraftFire": 585, "otherCauses": 390 }
+      ]
+    }
+  },
+  "reportedEnemyAircraftDestroyed": {
+    "ETO": {
+      "period": "1942-08 through 1945-05",
+      "grandTotal": { "all": 20419, "inAir": 13623, "onGround": 6796 },
+      "grandTotalByUSAAFAircraftRole": {
+        "heavyBombers": { "all": 6098, "inAir": 6098, "onGround": 0 },
+        "mediumLightBombers": { "all": 103, "inAir": 103, "onGround": 0 },
+        "fighters": { "all": 14218, "inAir": 7422, "onGround": 6796 }
+      },
+      "annual": [
+        { "year": 1942, "all": 169, "inAir": 169, "onGround": 0, "heavyBombers": 162, "mediumLightBombers": 0, "fighters": 7 },
+        { "year": 1943, "all": 3865, "inAir": 3865, "onGround": 0, "heavyBombers": 3381, "mediumLightBombers": 33, "fighters": 451 },
+        { "year": 1944, "all": 10425, "inAir": 8050, "onGround": 2375, "heavyBombers": 2398, "mediumLightBombers": 50, "fighters": 7977 },
+        { "year": 1945, "all": 5960, "inAir": 1539, "onGround": 4421, "heavyBombers": 157, "mediumLightBombers": 20, "fighters": 5783 }
+      ]
+    },
+    "MTO": {
+      "period": "1942-07 through 1945-05",
+      "grandTotal": { "all": 9497, "inAir": 7003, "onGround": 2494 },
+      "unidentifiedClaimingUSAAFAircraftFootnote": { "all": 69, "inAir": 15, "onGround": 54 },
+      "grandTotalByIdentifiedUSAAFAircraftRole": {
+        "heavyBombers": { "all": 3948, "inAir": 3178, "onGround": 770 },
+        "mediumLightBombers": { "all": 816, "inAir": 510, "onGround": 306 },
+        "fighters": { "all": 4664, "inAir": 3300, "onGround": 1364 }
+      },
+      "annual": [
+        { "year": 1942, "all": 158, "inAir": 123, "onGround": 35, "heavyBombers": 42, "mediumLightBombers": 24, "fighters": 92 },
+        { "year": 1943, "all": 3740, "inAir": 2968, "onGround": 772, "heavyBombers": 1549, "mediumLightBombers": 732, "fighters": 1459 },
+        { "year": 1944, "all": 5239, "inAir": 3693, "onGround": 1546, "heavyBombers": 2340, "mediumLightBombers": 54, "fighters": 2845 },
+        { "year": 1945, "all": 291, "inAir": 204, "onGround": 87, "heavyBombers": 17, "mediumLightBombers": 6, "fighters": 268 }
+      ]
+    }
+  },
+  "crossTheaterPublishedTotals": {
+    "ownAircraftCombatMissionLossesETOplusMTO": 18418,
+    "reportedEnemyAircraftDestroyedETOplusMTO": 29916,
+    "enemyAircraftDestroyedWorldwideTable166": 40259
+  },
+  "knownLimitations": [
+    "MTO Table 168 prints 9,497 including 69 enemy aircraft attributed to unidentified USAAF aircraft; named role columns and annual role rows add to 9,428, not to the grand total. This is source footnote accounting, not a transcription error.",
+    "The claims table cannot be divided by the aircraft loss table to imply a verified combat exchange ratio; the enemy-loss source is independent and denominators are different.",
+    "The date period ending May 1945 can contain dates after the Atlas cutoff on May 9; monthly/yearly aggregate cannot be truncated exactly from this source alone.",
+    "All values manually checked against original printed pages and against arithmetic; monthly rows of these five tables are not yet transcribed."
+  ]
+}

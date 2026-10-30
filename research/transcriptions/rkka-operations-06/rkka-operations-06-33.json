@@ -1,0 +1,1067 @@
+{
+  "id": "RKKA-VVS-06-33",
+  "topic": "VVS KA and ADD Guards formation titles",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_33.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 32,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de las agrupaciones, unidades y destacamentos de la Aviacion de Largo Alcance y Aviacion del Frente",
+              "rowspan": 5
+            },
+            {
+              "value": "Periodo de la guerra",
+              "colspan": 11
+            },
+            {
+              "value": "Total",
+              "rowspan": 5
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "I periodo de la guerra (22 de junio 1941 - 18 noviemrbe 1942)",
+              "colspan": 4
+            },
+            {
+              "value": "II periodo de la guerra (19 noviembre 1942 - 30 diciembre 1943)",
+              "colspan": 3
+            },
+            {
+              "value": "III periodo de la guerra (1 enero 1944 - 9 mayo 1945)",
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Campañas",
+              "colspan": 3
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "Campañas",
+              "colspan": 2
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "Campañas",
+              "colspan": 3
+            },
+            {
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "22.06.41 - 05.12.41"
+            },
+            {
+              "value": "06.12.41 - 01.04.42"
+            },
+            {
+              "value": "01.05.42 - 18.11.42"
+            },
+            {
+              "value": "22.06.41 - 18.11.42"
+            },
+            {
+              "value": "19.11.42 - 01.04.43"
+            },
+            {
+              "value": "05.07.43 - 30.12.43"
+            },
+            {
+              "value": "19.11.42 - 30.12.43"
+            },
+            {
+              "value": "01.01.44 - 01.06.44"
+            },
+            {
+              "value": "01.06.44 - 30.12.44"
+            },
+            {
+              "value": "12.01.45 - 09.05.45"
+            },
+            {
+              "value": "01.01.44 - 09.05.45"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "I. AVIACION DE LARGO ALCANCE",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Cuerpos aereos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Divisiones aereas"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "31"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Tota Aviacion de Largo Alcance"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "44"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "II. AVIACION DEL FRENTE",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "1) Aviacion de bombardeo",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Cuerpos aereos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "Divisiones aereas"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "40"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "2) Aviacion de asalto",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "Cuerpos aereos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "Divisiones aereas"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "47"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "3) Aviacion de caza",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "Cuerpos aereos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "Divisiones aereas"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "18"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "74"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "4) Aviacion de reconocimiento y correccion de artilleria",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "Regimientos aereos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "5) Aviacion auxiliar",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "Escuadrones especiales de comunicaciones"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "III. UNIDADES DE MANTENIMIENTO",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "Pelotones especiales de comunicaciones de VVS"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "Total en VVS"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "119"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "87"
+            },
+            {
+              "value": "244"
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": "Total en toda la Gran Guerra Patriotica"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "109"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "150"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": "288"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

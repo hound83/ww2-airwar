@@ -1,0 +1,134 @@
+{
+  "status": "research_only_not_published_to_atlas",
+  "purpose": "Small source-backed records with explicit populations and non-comparable metrics; they are leads for independently verifiable display-series, not a harmonized cross-force dataset",
+  "metricRules": [
+    "Each observation inherits its source, subject, and time window; records from different groups must not be added without a known disjoint population",
+    "Personnel losses or deaths of all roles must not be reported as pilot deaths",
+    "Claimed enemy destroyed aircraft must not be treated as independently verified enemy losses",
+    "Serviceable counts, aircraft on hand, and aircraft deployed in a sub-formation are separate metrics"
+  ],
+  "groups": [
+    {
+      "id": "ROM-ARCH-1941-1945",
+      "subject": "Romanian military aviation / Romanian Air Corps",
+      "sourceUrl": "https://amnr.defense.ro/news/28",
+      "sourceTitle": "Romanian National Military Archives, Romanian Air Force Day historical summary",
+      "sourceClass": "official_archival_institution_retrospective_summary",
+      "sourceStatus": "web_page_checked_original_operational_returns_not_yet_verified",
+      "observations": [
+        {"period": "1941-06-22", "formation": "Romanian military aviation", "metric": "aircraft_in_service", "value": 621},
+        {"period": "1941-06-22", "formation": "Romanian Air Combat Group / Eastern Front", "metric": "aircraft_committed", "value": 253, "note": "Subset of 621, not additional aircraft"},
+        {"period": "1941-1944", "formation": "Romanian military aviation", "metric": "credited_aerial_victories", "value": 2000, "note": "Round retrospective claim, not independently matched opposing losses"},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps, against Axis", "metric": "combat_missions", "value": 4200},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps, against Axis", "metric": "aircraft_sorties", "value": 8300},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps, against Axis", "metric": "flight_hours", "value": 11000},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps, against Axis", "metric": "bombs_dropped_tonnes", "value": 1360},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps, against Axis", "metric": "enemy_aircraft_reported_destroyed", "value": 126, "note": "Official retrospective claim; opposition loss evidence unverified"},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps, against Axis", "metric": "enemy_aircraft_captured", "value": 228, "note": "Captures, not aerial victories"},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian aviation, Western Front", "metric": "aircraft_used", "value": 415},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian aviation, Western Front", "metric": "aircraft_lost_all_causes_unspecified", "value": 176},
+        {"period": "1944-08-23/1945-05-12", "formation": "Romanian Air Corps and support formations", "metric": "personnel_losses_unspecified_fate", "value": 729, "note": "Do not label all killed or all pilots"},
+        {"period": "1941-1945", "formation": "Romanian aviation including auxiliary/support formations", "metric": "personnel_losses_unspecified_fate", "value": 2000, "note": "All aircrew, mechanics, support personnel; broad retrospective approximate and overlaps the shorter-window count"}
+      ]
+    },
+    {
+      "id": "ITA-DOD-1943-09-08",
+      "subject": "Regia Aeronautica",
+      "sourceUrl": "https://musei.difesa.it/allegati/La%20Resistenza%20dei%20Militari%20Italiani/files/basic-html/page144.html",
+      "sourceTitle": "Italian Defence Ministry digital official military history; credits Ufficio Storico 1975",
+      "sourceClass": "official_military_historical_secondary_compilation",
+      "sourceStatus": "excerpt_checked_underlying_1975_table_not_yet_directly_verified",
+      "observations": [
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, total", "metric": "aircraft_on_strength", "value": 1477},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, warplanes", "metric": "aircraft_on_strength", "value": 1255},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, transports", "metric": "aircraft_on_strength", "value": 222},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, total", "metric": "aircraft_serviceable", "value": 553},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, warplanes", "metric": "aircraft_serviceable", "value": 420},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, transports", "metric": "aircraft_serviceable", "value": 133},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, fighters", "metric": "aircraft_serviceable", "value": 266},
+        {"period": "1943-09-08", "formation": "Regia Aeronautica, bombers", "metric": "aircraft_serviceable", "value": 154}
+      ]
+    },
+    {
+      "id": "GRC-HAF-1940-1945",
+      "subject": "Royal Hellenic Air Force / Hellenic squadrons",
+      "sourceUrl": "https://musei.difesa.it/allegati/Airpower_in_20th_Century%20-%20Doctrines%20and%20Employment/files/basic-html/page129.html",
+      "otherSourceUrl": "https://www.haf.gr/wp-content/uploads/2026/04/tiger_meet_2026_l.pdf",
+      "sourceTitle": "Royal Hellenic Air Force WWII by HAF history museum scholar; HAF official 335 Squadron history",
+      "sourceClass": "official_military_history_and_air_force_official_unit_history",
+      "sourceStatus": "printed_essay_and_unit_history_excerpts_checked_original_HAF_squadron_operation_books_not_yet_verified",
+      "observations": [
+        {"period": "1941-01", "formation": "Royal Hellenic Air Force, frontline", "metric": "fighters_on_hand", "value": 28, "note": "7 Gladiator, 2 MB.151, 19 PZL P.24"},
+        {"period": "1941-01", "formation": "Royal Hellenic Air Force, frontline", "metric": "bombers_on_hand", "value": 7, "note": "4 Blenheim IV, 3 Fairey Battle"},
+        {"period": "1941-01", "formation": "Royal Hellenic Air Force, army cooperation", "metric": "aircraft_on_hand", "value": 14, "note": "4 Hs 126, 10 Do 22; not fighter/bomber"},
+        {"period": "1941-1945", "formation": "335 (Hellenic) Fighter Squadron", "metric": "aircraft_sorties", "value": 5555, "source": "otherSourceUrl", "note": "HAF official history says during World War II; exact beginning/end date of tally not established"},
+        {"period": "1941-1945", "formation": "335 (Hellenic) Fighter Squadron", "metric": "combat_flight_hours", "value": 8500, "source": "otherSourceUrl"},
+        {"period": "1941-1945", "formation": "335 (Hellenic) Fighter Squadron", "metric": "training_flight_hours", "value": 12000, "source": "otherSourceUrl", "note": "Not combat flight hours"},
+        {"period": "1941-1945", "formation": "335 (Hellenic) Fighter Squadron", "metric": "pilots_lost_fate_unspecified", "value": 18, "source": "otherSourceUrl", "note": "Unit history says 'lost 18 pilots'; do not automatically interpret as killed in action"}
+      ]
+    },
+    {
+      "id": "POL-AU-SEP-1939",
+      "subject": "Polish Air Force, September 1939",
+      "sourceUrl": "https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+      "sourceTitle": "U.S. Defense-hosted Air Warfare & Air Base Defense, Table 2, citing Sikorski Institute and A. Kurowski",
+      "sourceClass": "secondary_table_in_official_us_military_publication",
+      "sourceStatus": "web_pdf_table_excerpt_checked_underlying_polish_source_not_yet_verified",
+      "observations": [
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "aircraft_in_operational_units", "value": 397},
+        {"period": "1939-09", "formation": "Polish Air Force, training schools and reserves", "metric": "aircraft_in_reserve_and_training", "value": 348},
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "fighters_P11c", "value": 129},
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "fighters_P7", "value": 30},
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "light_bombers_P23", "value": 118},
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "bombers_P37", "value": 36},
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "recon_R_XIII", "value": 49},
+        {"period": "1939-09", "formation": "Polish Air Force, operational units", "metric": "recon_RWD_14", "value": 35},
+        {"period": "1939-09", "formation": "Polish Air Force", "metric": "aircraft_lost_on_operations", "value": 333, "note": "Period September campaign; includes 82 bomber brigade losses per source"},
+        {"period": "1939-09-17", "formation": "Polish Air Force", "metric": "serviceable_aircraft_interned_in_romania", "value": 116, "note": "Internment not aircraft destroyed"}
+      ]
+    },
+    {
+      "id": "USAAF-SD-ETO-MTO-PERSONNEL",
+      "subject": "US Army Air Forces, European and Mediterranean theaters",
+      "sourceUrl": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/aafsd-2.html",
+      "sourceTitle": "Official USAAF Statistical Digest, December 1945, Tables 36 and 37",
+      "sourceClass": "official_original_wartime_statistical_compilation",
+      "sourceStatus": "digitized_official_table_checked_original_page_facsimile_not_yet_checked",
+      "observations": [
+        {"period": "1941-12/1945-08", "formation": "USAAF European Theater of Operations", "metric": "all_personnel_battle_casualties", "value": 63410},
+        {"period": "1941-12/1945-08", "formation": "USAAF European Theater of Operations", "metric": "all_personnel_battle_dead", "value": 19876},
+        {"period": "1941-12/1945-08", "formation": "USAAF European Theater of Operations", "metric": "all_personnel_battle_wounded_and_evacuated", "value": 8413},
+        {"period": "1941-12/1945-08", "formation": "USAAF European Theater of Operations", "metric": "all_personnel_battle_missing_interned_captured", "value": 35121},
+        {"period": "1941-12/1945-08", "formation": "USAAF Mediterranean Theater of Operations", "metric": "all_personnel_battle_casualties", "value": 31155},
+        {"period": "1941-12/1945-08", "formation": "USAAF Mediterranean Theater of Operations", "metric": "all_personnel_battle_dead", "value": 10223}
+      ]
+    },
+    {
+      "id": "BGR-MUSEUM-SOFIA-AIR-DEFENCE",
+      "subject": "Royal Bulgarian Air Force; Sofia air defence",
+      "sourceUrl": "https://militarymuseum.bg/voenna-istoria/voenen-kalendar/noemvri/",
+      "sourceTitle": "Bulgarian National Museum of Military History, November wartime chronology",
+      "sourceClass": "official_military_museum_retrospective_summary",
+      "sourceStatus": "official_historical_narrative_checked_original_squadron_reports_not_checked",
+      "observations": [
+        {"period": "1943-11/1944-04-17", "formation": "6th Bulgarian Fighter Regiment", "metric": "interception_sorties_or_scrambles", "value": 273, "note": "The historical summary says launches/departures; precise sortie definition and start date to verify"},
+        {"period": "1943-11/1944-04-17", "formation": "6th Bulgarian Fighter Regiment", "metric": "enemy_aircraft_claimed_destroyed", "value": 30, "note": "Museum retrospective claims; must reconcile with USAAF actual losses"},
+        {"period": "1943-11/1944-04-17", "formation": "Bulgarian pilots defending Sofia", "metric": "airmen_killed", "value": 16, "note": "Museum historical summary; not necessarily 6th Regiment exclusively; time window inferred from museum paragraph"}
+      ]
+    },
+    {
+      "id": "FRA-FAFL-1940-1943",
+      "subject": "Forces aériennes françaises libres (Free French Air Forces)",
+      "sourceUrl": "https://www.memoiredeshommes.defense.gouv.fr/actualites-culturelles-2/actualites-archivees/actualites-archivees-2020/une-nouvelle-base-de-donnees-les-forces-aeriennes-francaises-libres",
+      "otherSourceUrl": "https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/resister/france-libre/forces-0",
+      "sourceTitle": "French Ministry of Defence person-index announcement and official FAFL historical summary",
+      "sourceClass": "official_government_retrospective_and_archival_personnel_index",
+      "sourceStatus": "official_web_search_excerpts_checked_original_unit_reports_and_1940_1943_summary_definitions_pending",
+      "observations": [
+        {"period": "1940-07/1943-08", "formation": "Free French Air Forces (FAFL)", "metric": "indexed_personnel_cards_air_and_ground_not_complete", "value": 2769, "note": "Source explicitly warns non-exhaustive personnel file index. Not military strength or deaths."},
+        {"period": "wartime_summary_exact_endpoints_not_verified", "formation": "Free French Air Forces (FAFL)", "metric": "missions_reported_retrospectively", "value": 30000, "source": "otherSourceUrl", "note": "Could cover forces beyond the official FAFL dissolution in August 1943; do not combine with RAF sortie total until scope audited"},
+        {"period": "wartime_summary_exact_endpoints_not_verified", "formation": "Free French Air Forces (FAFL)", "metric": "claimed_enemy_aircraft_destroyed", "value": 353, "source": "otherSourceUrl", "note": "Claimed victories, not German verified losses; reporting window unresolved"}
+      ]
+    }
+  ]
+}

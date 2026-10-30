@@ -1,0 +1,106 @@
+{
+  "id": "RAF-JANES-SECONDARY-ALL-COMMAND-SORTIES-LOSSES-1939-1945",
+  "title": "Royal Air Force annual sorties and aircraft losses by command and theater, 1939–1945",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=rafsummary",
+  "secondaryCompiler": "Rodrigo Aguilera, The World Wars statistical summaries (2022 update)",
+  "compilerCitedOriginal": "Jane's Fighting Aircraft of World War II",
+  "sourceClass": "secondary_compilation_not_yet_audited_against_raf_air_ministry_original",
+  "timeWindowCaution": "Source annual 1945 rows are not date-resolved to 9 May 1945. Coastal 1939–1940 is a combined row. Not every service and Commonwealth nationality is independently enumerated here.",
+  "measurement": "Reported aircraft sorties, bombs dropped in tons, aircraft losses; this is not crews or personnel lost. Do not add to nationality-specific Commonwealth contribution.",
+  "sourcePrintedGrandTotal": { "sorties": 2336303, "bombTonnageIncludingMines": 1219909, "aircraftLost": 22220 },
+  "commands": [
+    {
+      "name": "RAF Bomber Command",
+      "reportedTotals": { "sorties": 392137, "bombTonnageIncludingMines": 988307, "aircraftLost": 9163 },
+      "annual": [
+        { "year": 1939, "sorties": 591, "bombTonnage": 31, "aircraftLost": 40 },
+        { "year": 1940, "sorties": 22473, "bombTonnage": 13543, "aircraftLost": 509 },
+        { "year": 1941, "sorties": 32012, "bombTonnage": 32411, "aircraftLost": 985 },
+        { "year": 1942, "sorties": 36426, "bombTonnage": 51928, "aircraftLost": 1543 },
+        { "year": 1943, "sorties": 66308, "bombTonnage": 166593, "aircraftLost": 2474 },
+        { "year": 1944, "sorties": 166844, "bombTonnage": 538688, "aircraftLost": 2904 },
+        { "year": 1945, "sorties": 67483, "bombTonnage": 185113, "aircraftLost": 708 }
+      ]
+    },
+    {
+      "name": "RAF Fighter Command",
+      "reportedTotals": { "sorties": 700226, "bombTonnageIncludingMines": 3481, "aircraftLost": 3558 },
+      "annual": [
+        { "year": 1939, "sorties": 3217, "bombTonnage": null, "aircraftLost": 3 },
+        { "year": 1940, "sorties": 121079, "bombTonnage": 1, "aircraftLost": 1186 },
+        { "year": 1941, "sorties": 150828, "bombTonnage": 129, "aircraftLost": 651 },
+        { "year": 1942, "sorties": 147087, "bombTonnage": 207, "aircraftLost": 688 },
+        { "year": 1943, "sorties": 136167, "bombTonnage": 986, "aircraftLost": 569 },
+        { "year": 1944, "sorties": 122136, "bombTonnage": 1232, "aircraftLost": 397 },
+        { "year": 1945, "sorties": 19712, "bombTonnage": 926, "aircraftLost": 64 }
+      ]
+    },
+    {
+      "name": "RAF Second Tactical Air Force",
+      "reportedTotals": { "sorties": 327713, "bombTonnageIncludingMines": 61838, "aircraftLost": 2115 },
+      "annual": [
+        { "year": 1943, "sorties": 23695, "bombTonnage": 3627, "aircraftLost": 177 },
+        { "year": 1944, "sorties": 214592, "bombTonnage": 38729, "aircraftLost": 1305 },
+        { "year": 1945, "sorties": 89426, "bombTonnage": 19482, "aircraftLost": 633 }
+      ]
+    },
+    {
+      "name": "RAF Coastal Command",
+      "reportedTotals": { "sorties": 235749, "bombTonnageIncludingMines": 5380, "aircraftLost": 1579 },
+      "annual": [
+        { "years": "1939-1940", "sorties": 41001, "bombTonnage": 1158, "aircraftLost": 288 },
+        { "year": 1941, "sorties": 30544, "bombTonnage": 1006, "aircraftLost": 233 },
+        { "year": 1942, "sorties": 31676, "bombTonnage": 629, "aircraftLost": 302 },
+        { "year": 1943, "sorties": 43231, "bombTonnage": 515, "aircraftLost": 279 },
+        { "year": 1944, "sorties": 66362, "bombTonnage": 1411, "aircraftLost": 305 },
+        { "year": 1945, "sorties": 22935, "bombTonnage": 611, "aircraftLost": 132 }
+      ]
+    },
+    {
+      "name": "RAF Mediterranean and Middle East",
+      "reportedTotals": { "sorties": 676004, "bombTonnageIncludingMines": 160840, "aircraftLost": 5735 },
+      "annual": [
+        { "year": 1940, "sorties": 17711, "bombTonnage": 2525, "aircraftLost": 133 },
+        { "year": 1941, "sorties": 57028, "bombTonnage": 12782, "aircraftLost": 671 },
+        { "year": 1942, "sorties": 114735, "bombTonnage": 22551, "aircraftLost": 1189 },
+        { "year": 1943, "sorties": 164595, "bombTonnage": 32735, "aircraftLost": 1349 },
+        { "year": 1944, "sorties": 243686, "bombTonnage": 60442, "aircraftLost": 1853 },
+        { "year": 1945, "sorties": 78249, "bombTonnage": 29805, "aircraftLost": 540 }
+      ]
+    },
+    {
+      "name": "RAF Army Cooperation Command",
+      "reportedTotals": { "sorties": 4474, "bombTonnageIncludingMines": 63, "aircraftLost": 70 },
+      "annual": [],
+      "note": "Compiler gives period total only, no calendar annual breakdown."
+    }
+  ],
+  "explicitCompilerNotes": [
+    "Bomb tonnage includes weight of mines laid.",
+    "Bomber Command totals include aircraft operating under Coastal Command; apparent operational/administrative overlap needs a detailed check before composing national totals.",
+    "Mediterranean and Middle East sortie mix: bomber 108,452; fighter 453,781; coastal 46,576; tactical/recon/army cooperation 27,467; miscellaneous 39,728."
+  ],
+  "sourceAnnualArithmeticExceptions": [
+    {
+      "command": "RAF Coastal Command",
+      "metric": "aircraftLost",
+      "printedTotal": 1579,
+      "sumOfPrintedAnnualRows": 1539,
+      "printedMinusAnnual": 40,
+      "warning": "The online secondary source's own six printed annual rows total 1,539, not the 1,579 displayed at its command header; do not silently substitute 1,579 for the annual sum or invent the missing 40."
+    },
+    {
+      "command": "RAF Army Cooperation Command",
+      "metric": "annual_breakdown",
+      "warning": "Only an overall 4,474 sorties/70 aircraft losses is given, so no annual observations exist for reconciliation."
+    }
+  ],
+  "comparisonWithDifferentRAFOriginal": {
+    "sourceUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/coastal-cmd-rev-vol4-no6-jun1945/",
+    "originalRAFCoastalSortiesThrough1945May08": 238313,
+    "originalRAFCoastalAircraftLostEnemyActionOrMissing": 1511,
+    "secondaryCoastalSortieDifference": -2564,
+    "secondaryLossDifference": 68,
+    "warning": "Different reporting denominators, operational reporting cutoffs and loss definitions; preserve both, do not silently average or sum."
+  }
+}

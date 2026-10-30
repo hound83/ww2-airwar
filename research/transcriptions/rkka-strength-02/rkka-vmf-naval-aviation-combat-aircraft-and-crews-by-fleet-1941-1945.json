@@ -1,0 +1,1325 @@
+{
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_17.htm",
+  "sourceClass": "Soviet_postwar_statistics_republished_in_Spanish_secondary_transcription",
+  "dateScope": "1941-06-22 to 1945-05-10, twelve European campaign snapshots; additional Pacific block excluded",
+  "population": "Soviet naval aviation VMF fleets, aircraft by combat role and combat-ready aircrews; not VVS KA/PVO/ADD",
+  "cautions": [
+    "The source distinguishes combat aircraft and combat-ready crews, not deaths. These are separate strength measures.",
+    "The last May 1945 block is explicitly Pacific Fleet / North Pacific Flotilla and is excluded from European visualizations.",
+    "The table provides Soviet naval fleet returns, which must not be added to Soviet VVS KA or PVO charts unless the published population explicitly excludes VMF.",
+    "Fleet total rows and component fleets are overlapping parent/child data; never add both.",
+    "Spanish/Russian archival-derived source is not independently verified against the original naval documents.",
+    "Blank, slash and missing values stay null, not inferred zero."
+  ],
+  "europeanFleetSnapshots": [
+    {
+      "sourceRow": 5,
+      "date": "1941-06-22",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": null,
+        "bomber": 11,
+        "ground_attack": null,
+        "fighter": 49,
+        "reconnaissance": 54,
+        "artillery_spotter": null,
+        "total": 114
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": null,
+        "bomber": 12,
+        "ground_attack": null,
+        "fighter": 69,
+        "reconnaissance": 39,
+        "artillery_spotter": null,
+        "total": 120
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 6,
+      "date": "1941-06-22",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 57,
+        "bomber": 131,
+        "ground_attack": null,
+        "fighter": 368,
+        "reconnaissance": 151,
+        "artillery_spotter": null,
+        "total": 707
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 59,
+        "bomber": 140,
+        "ground_attack": null,
+        "fighter": 370,
+        "reconnaissance": 158,
+        "artillery_spotter": null,
+        "total": 727
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 7,
+      "date": "1941-06-22",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 63,
+        "bomber": 75,
+        "ground_attack": null,
+        "fighter": 346,
+        "reconnaissance": 140,
+        "artillery_spotter": null,
+        "total": 624
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 57,
+        "bomber": 48,
+        "ground_attack": null,
+        "fighter": 285,
+        "reconnaissance": 162,
+        "artillery_spotter": null,
+        "total": 552
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 8,
+      "date": "1941-06-22",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 120,
+        "bomber": 217,
+        "ground_attack": 0,
+        "fighter": 763,
+        "reconnaissance": 345,
+        "artillery_spotter": 0,
+        "total": 1445
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 116,
+        "bomber": 200,
+        "ground_attack": null,
+        "fighter": 724,
+        "reconnaissance": 359,
+        "artillery_spotter": null,
+        "total": 1399
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 10,
+      "date": "1941-07-10",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 4,
+        "bomber": 15,
+        "ground_attack": null,
+        "fighter": 56,
+        "reconnaissance": 46,
+        "artillery_spotter": null,
+        "total": 121
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 4,
+        "bomber": 12,
+        "ground_attack": null,
+        "fighter": 52,
+        "reconnaissance": 48,
+        "artillery_spotter": null,
+        "total": 116
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 11,
+      "date": "1941-07-10",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 65,
+        "bomber": 56,
+        "ground_attack": 7,
+        "fighter": 282,
+        "reconnaissance": 111,
+        "artillery_spotter": null,
+        "total": 521
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 87,
+        "bomber": 74,
+        "ground_attack": 7,
+        "fighter": 316,
+        "reconnaissance": 138,
+        "artillery_spotter": null,
+        "total": 622
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 12,
+      "date": "1941-07-10",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 55,
+        "bomber": 79,
+        "ground_attack": null,
+        "fighter": 269,
+        "reconnaissance": 150,
+        "artillery_spotter": null,
+        "total": 553
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 47,
+        "bomber": 59,
+        "ground_attack": null,
+        "fighter": 258,
+        "reconnaissance": 128,
+        "artillery_spotter": null,
+        "total": 492
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 13,
+      "date": "1941-07-10",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 124,
+        "bomber": 150,
+        "ground_attack": 7,
+        "fighter": 607,
+        "reconnaissance": 307,
+        "artillery_spotter": 0,
+        "total": 1195
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 138,
+        "bomber": 145,
+        "ground_attack": 7,
+        "fighter": 626,
+        "reconnaissance": 314,
+        "artillery_spotter": null,
+        "total": 1230
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 15,
+      "date": "1941-10-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 3,
+        "bomber": 15,
+        "ground_attack": null,
+        "fighter": 89,
+        "reconnaissance": 38,
+        "artillery_spotter": null,
+        "total": 145
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 3,
+        "bomber": 29,
+        "ground_attack": null,
+        "fighter": 106,
+        "reconnaissance": 46,
+        "artillery_spotter": null,
+        "total": 184
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 16,
+      "date": "1941-10-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 18,
+        "bomber": 11,
+        "ground_attack": 8,
+        "fighter": 78,
+        "reconnaissance": 39,
+        "artillery_spotter": null,
+        "total": 154
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 22,
+        "bomber": 15,
+        "ground_attack": 14,
+        "fighter": 79,
+        "reconnaissance": 56,
+        "artillery_spotter": null,
+        "total": 186
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 17,
+      "date": "1941-10-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 31,
+        "bomber": 49,
+        "ground_attack": 9,
+        "fighter": 234,
+        "reconnaissance": 142,
+        "artillery_spotter": null,
+        "total": 465
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 31,
+        "bomber": 65,
+        "ground_attack": 9,
+        "fighter": 268,
+        "reconnaissance": 136,
+        "artillery_spotter": 9,
+        "total": 518
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 18,
+      "date": "1941-10-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 52,
+        "bomber": 75,
+        "ground_attack": 17,
+        "fighter": 401,
+        "reconnaissance": 219,
+        "artillery_spotter": 0,
+        "total": 764
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 56,
+        "bomber": 109,
+        "ground_attack": 23,
+        "fighter": 453,
+        "reconnaissance": 238,
+        "artillery_spotter": 9,
+        "total": 888
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 20,
+      "date": "1941-12-05",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 4,
+        "bomber": 14,
+        "ground_attack": null,
+        "fighter": 77,
+        "reconnaissance": 37,
+        "artillery_spotter": null,
+        "total": 132
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 4,
+        "bomber": 28,
+        "ground_attack": null,
+        "fighter": 76,
+        "reconnaissance": 44,
+        "artillery_spotter": null,
+        "total": 152
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 21,
+      "date": "1941-12-05",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 17,
+        "bomber": 24,
+        "ground_attack": 9,
+        "fighter": 87,
+        "reconnaissance": 9,
+        "artillery_spotter": null,
+        "total": 146
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 20,
+        "bomber": 34,
+        "ground_attack": 12,
+        "fighter": 166,
+        "reconnaissance": 15,
+        "artillery_spotter": null,
+        "total": 247
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 22,
+      "date": "1941-12-05",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 37,
+        "bomber": 96,
+        "ground_attack": 16,
+        "fighter": 127,
+        "reconnaissance": 69,
+        "artillery_spotter": null,
+        "total": 345
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 42,
+        "bomber": 111,
+        "ground_attack": 18,
+        "fighter": 223,
+        "reconnaissance": 62,
+        "artillery_spotter": 9,
+        "total": 465
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 23,
+      "date": "1941-12-05",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 58,
+        "bomber": 134,
+        "ground_attack": 25,
+        "fighter": 291,
+        "reconnaissance": 115,
+        "artillery_spotter": 0,
+        "total": 623
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 66,
+        "bomber": 173,
+        "ground_attack": 30,
+        "fighter": 465,
+        "reconnaissance": 121,
+        "artillery_spotter": 9,
+        "total": 864
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 25,
+      "date": "1942-05-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 9,
+        "bomber": 37,
+        "ground_attack": null,
+        "fighter": 110,
+        "reconnaissance": 20,
+        "artillery_spotter": null,
+        "total": 176
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 9,
+        "bomber": 47,
+        "ground_attack": null,
+        "fighter": 111,
+        "reconnaissance": 31,
+        "artillery_spotter": null,
+        "total": 198
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 26,
+      "date": "1942-05-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 18,
+        "bomber": 26,
+        "ground_attack": 5,
+        "fighter": 118,
+        "reconnaissance": 3,
+        "artillery_spotter": null,
+        "total": 170
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 23,
+        "bomber": 44,
+        "ground_attack": 9,
+        "fighter": 142,
+        "reconnaissance": 6,
+        "artillery_spotter": null,
+        "total": 224
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 27,
+      "date": "1942-05-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 30,
+        "bomber": 84,
+        "ground_attack": 13,
+        "fighter": 117,
+        "reconnaissance": 34,
+        "artillery_spotter": null,
+        "total": 278
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 31,
+        "bomber": 125,
+        "ground_attack": 10,
+        "fighter": 141,
+        "reconnaissance": 51,
+        "artillery_spotter": 9,
+        "total": 367
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 28,
+      "date": "1942-05-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 57,
+        "bomber": 147,
+        "ground_attack": 18,
+        "fighter": 345,
+        "reconnaissance": 57,
+        "artillery_spotter": 0,
+        "total": 624
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 63,
+        "bomber": 216,
+        "ground_attack": 19,
+        "fighter": 394,
+        "reconnaissance": 88,
+        "artillery_spotter": 9,
+        "total": 789
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 30,
+      "date": "1942-07-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 8,
+        "bomber": 34,
+        "ground_attack": null,
+        "fighter": 113,
+        "reconnaissance": 17,
+        "artillery_spotter": null,
+        "total": 172
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 8,
+        "bomber": 44,
+        "ground_attack": null,
+        "fighter": 83,
+        "reconnaissance": 42,
+        "artillery_spotter": null,
+        "total": 177
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 31,
+      "date": "1942-07-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 24,
+        "bomber": 58,
+        "ground_attack": 24,
+        "fighter": 94,
+        "reconnaissance": 1,
+        "artillery_spotter": 1,
+        "total": 202
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 27,
+        "bomber": 73,
+        "ground_attack": 14,
+        "fighter": 146,
+        "reconnaissance": 1,
+        "artillery_spotter": 1,
+        "total": 262
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 32,
+      "date": "1942-07-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 30,
+        "bomber": 45,
+        "ground_attack": 27,
+        "fighter": 109,
+        "reconnaissance": 29,
+        "artillery_spotter": null,
+        "total": 240
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 30,
+        "bomber": 88,
+        "ground_attack": 27,
+        "fighter": 132,
+        "reconnaissance": 55,
+        "artillery_spotter": 8,
+        "total": 340
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 33,
+      "date": "1942-07-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 62,
+        "bomber": 137,
+        "ground_attack": 51,
+        "fighter": 316,
+        "reconnaissance": 47,
+        "artillery_spotter": 1,
+        "total": 614
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 65,
+        "bomber": 205,
+        "ground_attack": 41,
+        "fighter": 361,
+        "reconnaissance": 98,
+        "artillery_spotter": 9,
+        "total": 779
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 35,
+      "date": "1942-11-18",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 10,
+        "bomber": 92,
+        "ground_attack": null,
+        "fighter": 159,
+        "reconnaissance": 23,
+        "artillery_spotter": null,
+        "total": 284
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 14,
+        "bomber": 74,
+        "ground_attack": null,
+        "fighter": 113,
+        "reconnaissance": 16,
+        "artillery_spotter": null,
+        "total": 217
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 36,
+      "date": "1942-11-18",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 11,
+        "bomber": 49,
+        "ground_attack": 32,
+        "fighter": 109,
+        "reconnaissance": 6,
+        "artillery_spotter": 1,
+        "total": 208
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 17,
+        "bomber": 86,
+        "ground_attack": 34,
+        "fighter": 139,
+        "reconnaissance": 20,
+        "artillery_spotter": 4,
+        "total": 300
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 37,
+      "date": "1942-11-18",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 16,
+        "bomber": 63,
+        "ground_attack": 24,
+        "fighter": 114,
+        "reconnaissance": 14,
+        "artillery_spotter": null,
+        "total": 231
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 20,
+        "bomber": 82,
+        "ground_attack": 28,
+        "fighter": 175,
+        "reconnaissance": 33,
+        "artillery_spotter": null,
+        "total": 338
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 38,
+      "date": "1942-11-18",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 37,
+        "bomber": 204,
+        "ground_attack": 56,
+        "fighter": 382,
+        "reconnaissance": 43,
+        "artillery_spotter": 1,
+        "total": 723
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 51,
+        "bomber": 242,
+        "ground_attack": 62,
+        "fighter": 427,
+        "reconnaissance": 69,
+        "artillery_spotter": 4,
+        "total": 855
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 40,
+      "date": "1943-07-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 14,
+        "bomber": 64,
+        "ground_attack": 28,
+        "fighter": 155,
+        "reconnaissance": 27,
+        "artillery_spotter": null,
+        "total": 288
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 17,
+        "bomber": 52,
+        "ground_attack": 34,
+        "fighter": 106,
+        "reconnaissance": 28,
+        "artillery_spotter": null,
+        "total": 237
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 41,
+      "date": "1943-07-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 9,
+        "bomber": 31,
+        "ground_attack": 61,
+        "fighter": 121,
+        "reconnaissance": 3,
+        "artillery_spotter": 4,
+        "total": 229
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 16,
+        "bomber": 26,
+        "ground_attack": 65,
+        "fighter": 131,
+        "reconnaissance": 12,
+        "artillery_spotter": 7,
+        "total": 257
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 42,
+      "date": "1943-07-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 37,
+        "bomber": 39,
+        "ground_attack": 75,
+        "fighter": 176,
+        "reconnaissance": 27,
+        "artillery_spotter": null,
+        "total": 354
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 51,
+        "bomber": 50,
+        "ground_attack": 102,
+        "fighter": 162,
+        "reconnaissance": 53,
+        "artillery_spotter": null,
+        "total": 418
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 43,
+      "date": "1943-07-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 60,
+        "bomber": 134,
+        "ground_attack": 164,
+        "fighter": 452,
+        "reconnaissance": 57,
+        "artillery_spotter": 4,
+        "total": 871
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 84,
+        "bomber": 128,
+        "ground_attack": 201,
+        "fighter": 399,
+        "reconnaissance": 93,
+        "artillery_spotter": 7,
+        "total": 912
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 45,
+      "date": "1944-01-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 39,
+        "bomber": 60,
+        "ground_attack": 49,
+        "fighter": 121,
+        "reconnaissance": 26,
+        "artillery_spotter": 3,
+        "total": 298
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 21,
+        "bomber": 60,
+        "ground_attack": 24,
+        "fighter": 86,
+        "reconnaissance": 30,
+        "artillery_spotter": 5,
+        "total": 226
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 46,
+      "date": "1944-01-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 24,
+        "bomber": 36,
+        "ground_attack": 68,
+        "fighter": 163,
+        "reconnaissance": 14,
+        "artillery_spotter": 8,
+        "total": 313
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 12,
+        "bomber": 32,
+        "ground_attack": 66,
+        "fighter": 144,
+        "reconnaissance": 19,
+        "artillery_spotter": 4,
+        "total": 277
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 47,
+      "date": "1944-01-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 60,
+        "bomber": 46,
+        "ground_attack": 81,
+        "fighter": 226,
+        "reconnaissance": 16,
+        "artillery_spotter": null,
+        "total": 429
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 55,
+        "bomber": 50,
+        "ground_attack": 117,
+        "fighter": 154,
+        "reconnaissance": 23,
+        "artillery_spotter": null,
+        "total": 399
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 48,
+      "date": "1944-01-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 123,
+        "bomber": 142,
+        "ground_attack": 198,
+        "fighter": 510,
+        "reconnaissance": 56,
+        "artillery_spotter": 11,
+        "total": 1040
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 88,
+        "bomber": 142,
+        "ground_attack": 207,
+        "fighter": 384,
+        "reconnaissance": 72,
+        "artillery_spotter": 9,
+        "total": 902
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 50,
+      "date": "1944-06-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 44,
+        "bomber": 38,
+        "ground_attack": 59,
+        "fighter": 284,
+        "reconnaissance": 29,
+        "artillery_spotter": 4,
+        "total": 458
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 42,
+        "bomber": 40,
+        "ground_attack": 29,
+        "fighter": 121,
+        "reconnaissance": 22,
+        "artillery_spotter": 5,
+        "total": 259
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 51,
+      "date": "1944-06-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 27,
+        "bomber": 26,
+        "ground_attack": 124,
+        "fighter": 270,
+        "reconnaissance": 28,
+        "artillery_spotter": 19,
+        "total": 494
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 16,
+        "bomber": 14,
+        "ground_attack": 76,
+        "fighter": 299,
+        "reconnaissance": 18,
+        "artillery_spotter": 10,
+        "total": 433
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 52,
+      "date": "1944-06-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 83,
+        "bomber": 88,
+        "ground_attack": 75,
+        "fighter": 364,
+        "reconnaissance": 46,
+        "artillery_spotter": 34,
+        "total": 690
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 34,
+        "bomber": 87,
+        "ground_attack": 74,
+        "fighter": 266,
+        "reconnaissance": 61,
+        "artillery_spotter": 13,
+        "total": 535
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 53,
+      "date": "1944-06-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 154,
+        "bomber": 152,
+        "ground_attack": 258,
+        "fighter": 918,
+        "reconnaissance": 103,
+        "artillery_spotter": 57,
+        "total": 1642
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 92,
+        "bomber": 141,
+        "ground_attack": 179,
+        "fighter": 686,
+        "reconnaissance": 101,
+        "artillery_spotter": 28,
+        "total": 1227
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 55,
+      "date": "1945-01-01",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 63,
+        "bomber": 67,
+        "ground_attack": 98,
+        "fighter": 291,
+        "reconnaissance": 14,
+        "artillery_spotter": 3,
+        "total": 536
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 46,
+        "bomber": 64,
+        "ground_attack": 52,
+        "fighter": 222,
+        "reconnaissance": 20,
+        "artillery_spotter": 8,
+        "total": 412
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 56,
+      "date": "1945-01-01",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 64,
+        "bomber": 40,
+        "ground_attack": 151,
+        "fighter": 312,
+        "reconnaissance": 43,
+        "artillery_spotter": 15,
+        "total": 625
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 46,
+        "bomber": 26,
+        "ground_attack": 108,
+        "fighter": 332,
+        "reconnaissance": 39,
+        "artillery_spotter": 10,
+        "total": 561
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 57,
+      "date": "1945-01-01",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 25,
+        "bomber": 102,
+        "ground_attack": 51,
+        "fighter": 314,
+        "reconnaissance": 52,
+        "artillery_spotter": 31,
+        "total": 575
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 25,
+        "bomber": 102,
+        "ground_attack": 51,
+        "fighter": 314,
+        "reconnaissance": 71,
+        "artillery_spotter": 37,
+        "total": 600
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 58,
+      "date": "1945-01-01",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 152,
+        "bomber": 209,
+        "ground_attack": 300,
+        "fighter": 917,
+        "reconnaissance": 109,
+        "artillery_spotter": 49,
+        "total": 1736
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 117,
+        "bomber": 192,
+        "ground_attack": 211,
+        "fighter": 868,
+        "reconnaissance": 130,
+        "artillery_spotter": 55,
+        "total": 1573
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 60,
+      "date": "1945-05-10",
+      "fleetNameAsPrinted": "VVS Flota del Norte",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 59,
+        "bomber": 52,
+        "ground_attack": 38,
+        "fighter": 282,
+        "reconnaissance": 11,
+        "artillery_spotter": 5,
+        "total": 447
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 49,
+        "bomber": 52,
+        "ground_attack": 38,
+        "fighter": 215,
+        "reconnaissance": 22,
+        "artillery_spotter": 10,
+        "total": 386
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 61,
+      "date": "1945-05-10",
+      "fleetNameAsPrinted": "VVS Flota del Baltico de la Bandera Roja",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 53,
+        "bomber": 55,
+        "ground_attack": 148,
+        "fighter": 334,
+        "reconnaissance": 42,
+        "artillery_spotter": null,
+        "total": 632
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 46,
+        "bomber": 39,
+        "ground_attack": 121,
+        "fighter": 340,
+        "reconnaissance": 42,
+        "artillery_spotter": null,
+        "total": 588
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 62,
+      "date": "1945-05-10",
+      "fleetNameAsPrinted": "VVS Flota del Mar Negro",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 22,
+        "bomber": 93,
+        "ground_attack": 23,
+        "fighter": 306,
+        "reconnaissance": 33,
+        "artillery_spotter": 22,
+        "total": 499
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 22,
+        "bomber": 93,
+        "ground_attack": 23,
+        "fighter": 306,
+        "reconnaissance": 61,
+        "artillery_spotter": 27,
+        "total": 532
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 63,
+      "date": "1945-05-10",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 134,
+        "bomber": 200,
+        "ground_attack": 209,
+        "fighter": 922,
+        "reconnaissance": 86,
+        "artillery_spotter": 27,
+        "total": 1578
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 117,
+        "bomber": 184,
+        "ground_attack": 182,
+        "fighter": 861,
+        "reconnaissance": 125,
+        "artillery_spotter": 37,
+        "total": 1506
+      },
+      "excludedFromEuropeanAtlas": false,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    }
+  ],
+  "excludedPacificFleetSnapshots": [
+    {
+      "sourceRow": 65,
+      "date": "1945-05-10",
+      "fleetNameAsPrinted": "VVS Flota del Pacifico",
+      "fleetCategory": "named_fleet_or_flotilla",
+      "combatAircraft": {
+        "torpedo_bomber": 179,
+        "bomber": 197,
+        "ground_attack": 204,
+        "fighter": 541,
+        "reconnaissance": 117,
+        "artillery_spotter": 12,
+        "total": 1250
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 134,
+        "bomber": 117,
+        "ground_attack": 136,
+        "fighter": 361,
+        "reconnaissance": 149,
+        "artillery_spotter": 23,
+        "total": 920
+      },
+      "excludedFromEuropeanAtlas": true,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    },
+    {
+      "sourceRow": 67,
+      "date": "1945-05-10",
+      "fleetNameAsPrinted": "Итого",
+      "fleetCategory": "all_fleets_subtotal",
+      "combatAircraft": {
+        "torpedo_bomber": 179,
+        "bomber": 235,
+        "ground_attack": 250,
+        "fighter": 722,
+        "reconnaissance": 151,
+        "artillery_spotter": 12,
+        "total": 1549
+      },
+      "combatReadyCrews": {
+        "torpedo_bomber": 134,
+        "bomber": 156,
+        "ground_attack": 178,
+        "fighter": 556,
+        "reconnaissance": 188,
+        "artillery_spotter": 23,
+        "total": 1235
+      },
+      "excludedFromEuropeanAtlas": true,
+      "sourceTripletWarning": "Original table uses 3 source cells per role; only first contains the published role total, other two preserved in original 02_17 JSON."
+    }
+  ],
+  "numericOrStructuralExceptions": [
+    {
+      "sourceRow": 66,
+      "issue": "unexpected_column_count",
+      "count": 41
+    }
+  ]
+}

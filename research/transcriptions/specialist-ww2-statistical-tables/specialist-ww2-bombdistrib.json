@@ -1,0 +1,471 @@
+{
+  "id": "SPECIALIST-BOMBDISTRIB",
+  "force": "raf_and_usaaf",
+  "dataDescription": "Strategic bombing tonnage by target category",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=bombdistrib",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "U.S. Strategic Bombing Survey .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "U.S.A.A.F."
+            },
+            {
+              "text": "R.A.F."
+            },
+            {
+              "text": "Total"
+            },
+            {
+              "text": "Percent"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "Germany"
+            },
+            {
+              "text": "664,073",
+              "count": 664073
+            },
+            {
+              "text": "755,531",
+              "count": 755531
+            },
+            {
+              "text": "1,419,604",
+              "count": 1419604
+            },
+            {
+              "text": "51.1",
+              "decimal": 51.1
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "France"
+            },
+            {
+              "text": "263,620",
+              "count": 263620
+            },
+            {
+              "text": "305,873",
+              "count": 305873
+            },
+            {
+              "text": "569,493",
+              "count": 569493
+            },
+            {
+              "text": "20.6",
+              "decimal": 20.6
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "Italy and Sicily"
+            },
+            {
+              "text": "269,106",
+              "count": 269106
+            },
+            {
+              "text": "109,785",
+              "count": 109785
+            },
+            {
+              "text": "378,891",
+              "count": 378891
+            },
+            {
+              "text": "13.7",
+              "decimal": 13.7
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "Austria, Hungary, and Balkans"
+            },
+            {
+              "text": "162,107",
+              "count": 162107
+            },
+            {
+              "text": "22,094",
+              "count": 22094
+            },
+            {
+              "text": "184,201",
+              "count": 184201
+            },
+            {
+              "text": "6.7",
+              "decimal": 6.7
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Other countries"
+            },
+            {
+              "text": "104,517",
+              "count": 104517
+            },
+            {
+              "text": "113,834",
+              "count": 113834
+            },
+            {
+              "text": "218,351",
+              "count": 218351
+            },
+            {
+              "text": "7.9",
+              "decimal": 7.9
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "Totals"
+            },
+            {
+              "text": "1,463,423",
+              "count": 1463423
+            },
+            {
+              "text": "1,307,117",
+              "count": 1307117
+            },
+            {
+              "text": "2,770,540",
+              "count": 2770540
+            },
+            {
+              "text": "100.0",
+              "decimal": 100.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 2,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "U.S.A.A.F."
+            },
+            {
+              "text": "R.A.F."
+            },
+            {
+              "text": "Total"
+            },
+            {
+              "text": "Percent"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "Land transportation"
+            },
+            {
+              "text": "603,464",
+              "count": 603464
+            },
+            {
+              "text": "272,355",
+              "count": 272355
+            },
+            {
+              "text": "875,819",
+              "count": 875819
+            },
+            {
+              "text": "31.7",
+              "decimal": 31.7
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "Industrial areas"
+            },
+            {
+              "text": "87,736",
+              "count": 87736
+            },
+            {
+              "text": "610,679",
+              "count": 610679
+            },
+            {
+              "text": "698,415",
+              "count": 698415
+            },
+            {
+              "text": "25.3",
+              "decimal": 25.3
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "Military"
+            },
+            {
+              "text": "151,274",
+              "count": 151274
+            },
+            {
+              "text": "157,239",
+              "count": 157239
+            },
+            {
+              "text": "308,513",
+              "count": 308513
+            },
+            {
+              "text": "11.1",
+              "decimal": 11.1
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "Oil, chemical, and rubber"
+            },
+            {
+              "text": "150,556",
+              "count": 150556
+            },
+            {
+              "text": "113,676",
+              "count": 113676
+            },
+            {
+              "text": "264,232",
+              "count": 264232
+            },
+            {
+              "text": "9.5",
+              "decimal": 9.5
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Airfields and airdromes"
+            },
+            {
+              "text": "148,942",
+              "count": 148942
+            },
+            {
+              "text": "40,473",
+              "count": 40473
+            },
+            {
+              "text": "189,415",
+              "count": 189415
+            },
+            {
+              "text": "6.8",
+              "decimal": 6.8
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "Naval and water transportation"
+            },
+            {
+              "text": "55,201",
+              "count": 55201
+            },
+            {
+              "text": "56,620",
+              "count": 56620
+            },
+            {
+              "text": "111,821",
+              "count": 111821
+            },
+            {
+              "text": "4.0",
+              "decimal": 4.0
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "V-Weapon launching sites"
+            },
+            {
+              "text": "28,818",
+              "count": 28818
+            },
+            {
+              "text": "21,298",
+              "count": 21298
+            },
+            {
+              "text": "50,116",
+              "count": 50116
+            },
+            {
+              "text": "1.8",
+              "decimal": 1.8
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Aircraft factories"
+            },
+            {
+              "text": "51,017",
+              "count": 51017
+            },
+            {
+              "text": "6,024",
+              "count": 6024
+            },
+            {
+              "text": "57,041",
+              "count": 57041
+            },
+            {
+              "text": "2.1",
+              "decimal": 2.1
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Miscellaneous manufacturing"
+            },
+            {
+              "text": "55,332",
+              "count": 55332
+            },
+            {
+              "text": "14,618",
+              "count": 14618
+            },
+            {
+              "text": "69,950",
+              "count": 69950
+            },
+            {
+              "text": "2.5",
+              "decimal": 2.5
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "All other"
+            },
+            {
+              "text": "131,083",
+              "count": 131083
+            },
+            {
+              "text": "14,135",
+              "count": 14135
+            },
+            {
+              "text": "145,218",
+              "count": 145218
+            },
+            {
+              "text": "5.2",
+              "decimal": 5.2
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "Total"
+            },
+            {
+              "text": "1,463,423",
+              "count": 1463423
+            },
+            {
+              "text": "1,307,117",
+              "count": 1307117
+            },
+            {
+              "text": "2,770,540",
+              "count": 2770540
+            },
+            {
+              "text": "100.0",
+              "decimal": 100.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

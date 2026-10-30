@@ -1,0 +1,178 @@
+{
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=battlebritain",
+  "historicalBook": "Winston Churchill, The Second World War .",
+  "campaign": "Battle of Britain",
+  "dateScope": "1940-07-10/1940-10-31",
+  "cautions": [
+    "RAF claimed enemy aircraft are contemporary victory claims, not Luftwaffe actual losses.",
+    "German and British reported aircraft losses here are from a retrospective Churchill-derived secondary table, not independently reconciled individual incidents.",
+    "Weekly and monthly sections are two aggregations of the SAME campaign and must not be added.",
+    "Weeks are source's reporting windows; their printed periods are preserved to avoid inventing dates."
+  ],
+  "weekly": [
+    {
+      "periodAsPrinted": "Jul 10-13",
+      "sourceRow": 2,
+      "rafAircraftLostAsReported": 15,
+      "luftwaffeAircraftLostAsReported": 45,
+      "rafClaimsAgainstLuftwaffe": 63
+    },
+    {
+      "periodAsPrinted": "Week to Jul 20",
+      "sourceRow": 3,
+      "rafAircraftLostAsReported": 22,
+      "luftwaffeAircraftLostAsReported": 31,
+      "rafClaimsAgainstLuftwaffe": 49
+    },
+    {
+      "periodAsPrinted": "Week to Jul 27",
+      "sourceRow": 4,
+      "rafAircraftLostAsReported": 14,
+      "luftwaffeAircraftLostAsReported": 51,
+      "rafClaimsAgainstLuftwaffe": 58
+    },
+    {
+      "periodAsPrinted": "Week to Aug 3",
+      "sourceRow": 5,
+      "rafAircraftLostAsReported": 8,
+      "luftwaffeAircraftLostAsReported": 56,
+      "rafClaimsAgainstLuftwaffe": 39
+    },
+    {
+      "periodAsPrinted": "Week to Aug 10",
+      "sourceRow": 6,
+      "rafAircraftLostAsReported": 25,
+      "luftwaffeAircraftLostAsReported": 44,
+      "rafClaimsAgainstLuftwaffe": 64
+    },
+    {
+      "periodAsPrinted": "Week to Aug 17",
+      "sourceRow": 7,
+      "rafAircraftLostAsReported": 134,
+      "luftwaffeAircraftLostAsReported": 261,
+      "rafClaimsAgainstLuftwaffe": 496
+    },
+    {
+      "periodAsPrinted": "Week to Aug 24",
+      "sourceRow": 8,
+      "rafAircraftLostAsReported": 59,
+      "luftwaffeAircraftLostAsReported": 145,
+      "rafClaimsAgainstLuftwaffe": 251
+    },
+    {
+      "periodAsPrinted": "Week to Aug 31",
+      "sourceRow": 9,
+      "rafAircraftLostAsReported": 141,
+      "luftwaffeAircraftLostAsReported": 193,
+      "rafClaimsAgainstLuftwaffe": 316
+    },
+    {
+      "periodAsPrinted": "Week to Sep 7",
+      "sourceRow": 10,
+      "rafAircraftLostAsReported": 144,
+      "luftwaffeAircraftLostAsReported": 187,
+      "rafClaimsAgainstLuftwaffe": 375
+    },
+    {
+      "periodAsPrinted": "Week to Sep 14",
+      "sourceRow": 11,
+      "rafAircraftLostAsReported": 67,
+      "luftwaffeAircraftLostAsReported": 102,
+      "rafClaimsAgainstLuftwaffe": 182
+    },
+    {
+      "periodAsPrinted": "Week to Sep 21",
+      "sourceRow": 12,
+      "rafAircraftLostAsReported": 52,
+      "luftwaffeAircraftLostAsReported": 120,
+      "rafClaimsAgainstLuftwaffe": 268
+    },
+    {
+      "periodAsPrinted": "Week to Sep 28",
+      "sourceRow": 13,
+      "rafAircraftLostAsReported": 72,
+      "luftwaffeAircraftLostAsReported": 118,
+      "rafClaimsAgainstLuftwaffe": 230
+    },
+    {
+      "periodAsPrinted": "Week to Oct 5",
+      "sourceRow": 14,
+      "rafAircraftLostAsReported": 44,
+      "luftwaffeAircraftLostAsReported": 112,
+      "rafClaimsAgainstLuftwaffe": 100
+    },
+    {
+      "periodAsPrinted": "Week to Oct 12",
+      "sourceRow": 15,
+      "rafAircraftLostAsReported": 47,
+      "luftwaffeAircraftLostAsReported": 73,
+      "rafClaimsAgainstLuftwaffe": 66
+    },
+    {
+      "periodAsPrinted": "Week to Oct 19",
+      "sourceRow": 16,
+      "rafAircraftLostAsReported": 29,
+      "luftwaffeAircraftLostAsReported": 67,
+      "rafClaimsAgainstLuftwaffe": 38
+    },
+    {
+      "periodAsPrinted": "Week to Oct 26",
+      "sourceRow": 17,
+      "rafAircraftLostAsReported": 21,
+      "luftwaffeAircraftLostAsReported": 72,
+      "rafClaimsAgainstLuftwaffe": 43
+    },
+    {
+      "periodAsPrinted": "Oct 27-31",
+      "sourceRow": 18,
+      "rafAircraftLostAsReported": 21,
+      "luftwaffeAircraftLostAsReported": 56,
+      "rafClaimsAgainstLuftwaffe": 60
+    },
+    {
+      "periodAsPrinted": "Total",
+      "sourceRow": 19,
+      "rafAircraftLostAsReported": 915,
+      "luftwaffeAircraftLostAsReported": 1733,
+      "rafClaimsAgainstLuftwaffe": 2698
+    }
+  ],
+  "monthly": [
+    {
+      "periodAsPrinted": "July (from July 10)",
+      "sourceRow": 2,
+      "rafAircraftLostAsReported": 58,
+      "luftwaffeAircraftLostAsReported": 164,
+      "rafClaimsAgainstLuftwaffe": 203
+    },
+    {
+      "periodAsPrinted": "August",
+      "sourceRow": 3,
+      "rafAircraftLostAsReported": 360,
+      "luftwaffeAircraftLostAsReported": 662,
+      "rafClaimsAgainstLuftwaffe": 1133
+    },
+    {
+      "periodAsPrinted": "September",
+      "sourceRow": 4,
+      "rafAircraftLostAsReported": 361,
+      "luftwaffeAircraftLostAsReported": 582,
+      "rafClaimsAgainstLuftwaffe": 1108
+    },
+    {
+      "periodAsPrinted": "October",
+      "sourceRow": 5,
+      "rafAircraftLostAsReported": 136,
+      "luftwaffeAircraftLostAsReported": 325,
+      "rafClaimsAgainstLuftwaffe": 254
+    },
+    {
+      "periodAsPrinted": "Total",
+      "sourceRow": 6,
+      "rafAircraftLostAsReported": 915,
+      "luftwaffeAircraftLostAsReported": 1733,
+      "rafClaimsAgainstLuftwaffe": 2698
+    }
+  ],
+  "reconciliationIssues": []
+}

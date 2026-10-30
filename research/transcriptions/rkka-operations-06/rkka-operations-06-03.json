@@ -1,0 +1,713 @@
+{
+  "id": "RKKA-VVS-06-03",
+  "topic": "VVS KA sorties by mission and calendar year",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_03.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 16,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Misiones de combate",
+              "rowspan": 2
+            },
+            {
+              "value": "1941 (desde 22 junio)",
+              "colspan": 2
+            },
+            {
+              "value": "1942",
+              "colspan": 2
+            },
+            {
+              "value": "1943",
+              "colspan": 2
+            },
+            {
+              "value": "1944",
+              "colspan": 2
+            },
+            {
+              "value": "1945 (hasta 9 mayo)",
+              "colspan": 2
+            },
+            {
+              "value": "Total",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Ataques sobre tropas"
+            },
+            {
+              "value": "120 905"
+            },
+            {
+              "value": "44,85%"
+            },
+            {
+              "value": "291 689"
+            },
+            {
+              "value": "51,07%"
+            },
+            {
+              "value": "308 812"
+            },
+            {
+              "value": "45,56%"
+            },
+            {
+              "value": "326 565"
+            },
+            {
+              "value": "39,97%"
+            },
+            {
+              "value": "303 400"
+            },
+            {
+              "value": "53,31%"
+            },
+            {
+              "value": "1 351 371"
+            },
+            {
+              "value": "46,52%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Ataques sobre aerodromos"
+            },
+            {
+              "value": "6 695"
+            },
+            {
+              "value": "2,48%"
+            },
+            {
+              "value": "17 156"
+            },
+            {
+              "value": "3,00%"
+            },
+            {
+              "value": "13 767"
+            },
+            {
+              "value": "2,03%"
+            },
+            {
+              "value": "12 306"
+            },
+            {
+              "value": "1,51%"
+            },
+            {
+              "value": "8 522"
+            },
+            {
+              "value": "1,50%"
+            },
+            {
+              "value": "58 446"
+            },
+            {
+              "value": "2,01%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Ataques sobre objetivos ferroviarios"
+            },
+            {
+              "value": "2 508"
+            },
+            {
+              "value": "0,93%"
+            },
+            {
+              "value": "22 171"
+            },
+            {
+              "value": "3,88%"
+            },
+            {
+              "value": "36 844"
+            },
+            {
+              "value": "5,44%"
+            },
+            {
+              "value": "31 406"
+            },
+            {
+              "value": "3,84%"
+            },
+            {
+              "value": "7 866"
+            },
+            {
+              "value": "1,38%"
+            },
+            {
+              "value": "100 795"
+            },
+            {
+              "value": "3,47%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Ataques sobre almacenes"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 052"
+            },
+            {
+              "value": "0,13%"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0,00%"
+            },
+            {
+              "value": "1 052"
+            },
+            {
+              "value": "0,04%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Ataques sobre puertos, cruces de rio, puentes y embarcaciones"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0,00%"
+            },
+            {
+              "value": "8 214"
+            },
+            {
+              "value": "1,21%"
+            },
+            {
+              "value": "7 529"
+            },
+            {
+              "value": "0,92%"
+            },
+            {
+              "value": "5 735"
+            },
+            {
+              "value": "1,01%"
+            },
+            {
+              "value": "21 478"
+            },
+            {
+              "value": "0,74%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Defensa aerea de las tropas terrestres y objetivos de la retaguardia"
+            },
+            {
+              "value": "83 120"
+            },
+            {
+              "value": "30,83%"
+            },
+            {
+              "value": "110 536"
+            },
+            {
+              "value": "19,35%"
+            },
+            {
+              "value": "111 819"
+            },
+            {
+              "value": "16,50%"
+            },
+            {
+              "value": "118 981"
+            },
+            {
+              "value": "14,56%"
+            },
+            {
+              "value": "64 982"
+            },
+            {
+              "value": "11,42%"
+            },
+            {
+              "value": "489 438"
+            },
+            {
+              "value": "16,85%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Intercepcion de los aviones enemigos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0,00%"
+            },
+            {
+              "value": "9 590"
+            },
+            {
+              "value": "1,41%"
+            },
+            {
+              "value": "9 459"
+            },
+            {
+              "value": "1,16%"
+            },
+            {
+              "value": "1 824"
+            },
+            {
+              "value": "0,32%"
+            },
+            {
+              "value": "20 873"
+            },
+            {
+              "value": "0,72%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Caza libre sobre el territorio enemigo"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0,00%"
+            },
+            {
+              "value": "3 648"
+            },
+            {
+              "value": "0,54%"
+            },
+            {
+              "value": "14 738"
+            },
+            {
+              "value": "1,80%"
+            },
+            {
+              "value": "11 832"
+            },
+            {
+              "value": "2,08%"
+            },
+            {
+              "value": "30 218"
+            },
+            {
+              "value": "1,04%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Escolta de aviones de otras clases"
+            },
+            {
+              "value": "23 348"
+            },
+            {
+              "value": "8,66%"
+            },
+            {
+              "value": "49 501"
+            },
+            {
+              "value": "8,67%"
+            },
+            {
+              "value": "96 527"
+            },
+            {
+              "value": "14,24%"
+            },
+            {
+              "value": "147 296"
+            },
+            {
+              "value": "18,03%"
+            },
+            {
+              "value": "107 881"
+            },
+            {
+              "value": "18,95%"
+            },
+            {
+              "value": "424 553"
+            },
+            {
+              "value": "14,62%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Correccion de fuego de artilleria"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0,00%"
+            },
+            {
+              "value": "203"
+            },
+            {
+              "value": "0,03%"
+            },
+            {
+              "value": "1 205"
+            },
+            {
+              "value": "0,15%"
+            },
+            {
+              "value": "510"
+            },
+            {
+              "value": "0,09%"
+            },
+            {
+              "value": "1 918"
+            },
+            {
+              "value": "0,07%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "Realizacion de misiones especiales"
+            },
+            {
+              "value": "6 976"
+            },
+            {
+              "value": "2,59%"
+            },
+            {
+              "value": "25 717"
+            },
+            {
+              "value": "4,50%"
+            },
+            {
+              "value": "4 545"
+            },
+            {
+              "value": "0,67%"
+            },
+            {
+              "value": "9 282"
+            },
+            {
+              "value": "1,14%"
+            },
+            {
+              "value": "918"
+            },
+            {
+              "value": "0,16%"
+            },
+            {
+              "value": "47 438"
+            },
+            {
+              "value": "1,63%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Transporte de cargamentos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0,00%"
+            },
+            {
+              "value": "7 589"
+            },
+            {
+              "value": "1,12%"
+            },
+            {
+              "value": "21 192"
+            },
+            {
+              "value": "2,59%"
+            },
+            {
+              "value": "3 533"
+            },
+            {
+              "value": "0,62%"
+            },
+            {
+              "value": "32 314"
+            },
+            {
+              "value": "1,11%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "Misiones de reconocimiento aereo"
+            },
+            {
+              "value": "26 012"
+            },
+            {
+              "value": "9,65%"
+            },
+            {
+              "value": "54 360"
+            },
+            {
+              "value": "9,52%"
+            },
+            {
+              "value": "76 299"
+            },
+            {
+              "value": "11,26%"
+            },
+            {
+              "value": "116 053"
+            },
+            {
+              "value": "14,20%"
+            },
+            {
+              "value": "52 159"
+            },
+            {
+              "value": "9,16%"
+            },
+            {
+              "value": "324 883"
+            },
+            {
+              "value": "11,18%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "269 564"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": "571 130"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": "677 857"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": "817 064"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": "569 162"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": "2 904 777"
+            },
+            {
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

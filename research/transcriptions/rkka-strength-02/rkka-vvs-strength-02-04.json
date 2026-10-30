@@ -1,0 +1,2512 @@
+{
+  "id": "RKKA-VVS-02-04",
+  "topic": "Front air forces, 1941 winter campaign",
+  "formationOrForce": "soviet_vvs_ka",
+  "dateScopeIndex": null,
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_04.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Denominación de VVS de las circunscripciones militares",
+          "rowspan": 3
+        },
+        {
+          "value": "Cantidad de agrupaciones, unidades y destacamentos aereos",
+          "colspan": 14
+        },
+        {
+          "value": "Escuadrones Aereos Especiales",
+          "colspan": 3
+        },
+        {
+          "value": "Cantidad de aviones de combate 2)",
+          "colspan": 6
+        },
+        {
+          "value": "Cantidad de tripulaciones preparadas",
+          "colspan": 6
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "cuerpos aereos de cazas",
+          "rowspan": 2
+        },
+        {
+          "value": "divisiones",
+          "colspan": 6
+        },
+        {
+          "value": "regimientos {2}",
+          "colspan": 7
+        },
+        {
+          "value": "AE recono cimiento",
+          "rowspan": 2
+        },
+        {
+          "value": "correc tores de arti lleria",
+          "rowspan": 2
+        },
+        {
+          "value": "total",
+          "rowspan": 2
+        },
+        {
+          "value": "bomba rdero",
+          "rowspan": 2
+        },
+        {
+          "value": "shtur movik",
+          "rowspan": 2
+        },
+        {
+          "value": "caza",
+          "rowspan": 2
+        },
+        {
+          "value": "recono cimi ento",
+          "rowspan": 2
+        },
+        {
+          "value": "correc tores de arti lleria",
+          "rowspan": 2
+        },
+        {
+          "value": "total",
+          "rowspan": 2
+        },
+        {
+          "value": "bomba rdero",
+          "rowspan": 2
+        },
+        {
+          "value": "shtur movik",
+          "rowspan": 2
+        },
+        {
+          "value": "caza",
+          "rowspan": 2
+        },
+        {
+          "value": "recono cimi ento",
+          "rowspan": 2
+        },
+        {
+          "value": "correc tores de arti lleria",
+          "rowspan": 2
+        },
+        {
+          "value": "total tripulaciones preparadas",
+          "rowspan": 2
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "bomba rdero"
+        },
+        {
+          "value": "shtur movik"
+        },
+        {
+          "value": "caza"
+        },
+        {
+          "value": "mixto"
+        },
+        {
+          "value": "UAG y RAG"
+        },
+        {
+          "value": "total"
+        },
+        {
+          "value": "bomba rdero"
+        },
+        {
+          "value": "bomb. noctur nos"
+        },
+        {
+          "value": "mixto"
+        },
+        {
+          "value": "shtur movik"
+        },
+        {
+          "value": "caza"
+        },
+        {
+          "value": "recono cimi ento"
+        },
+        {
+          "value": "total"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "32"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "VVS del Frente de Karelia",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "80"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "111"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "39"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "39"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "43"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": "VVS del 7 Ejercito Especial",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "48"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": "VVS del Frente de Leningrado",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "169"
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "98"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "210"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": "VVS del 52 Ejercito Especial (a 10.12.41)",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": "VVS de Frente Kalinin",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "66"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "cells": [
+        {
+          "value": "VVS del Frente Nor-Oeste",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "51"
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "cells": [
+        {
+          "value": "VVS del Frente Oeste",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "146"
+        },
+        {
+          "value": "54"
+        },
+        {
+          "value": "156"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "360"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "102"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "262"
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "59"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "118"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "cells": [
+        {
+          "value": "VVS del Frente Sur-Oeste",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "106"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "217"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "348"
+        },
+        {
+          "value": "177"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "178"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "381"
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "73"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "cells": [
+        {
+          "value": "VVS del Frente del Sur",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "106"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "174"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "305"
+        },
+        {
+          "value": "119"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "248"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "404"
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "95"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "cells": [
+        {
+          "value": "VVS del 51 Ejercito Especial",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "69"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "72"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "31"
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "cells": [
+        {
+          "value": "Agrupaciones y unidades militares de reserva de VVS (a fecha 02.12.41)",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "142"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "51"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "231"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "48"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "77"
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "42"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "cells": [
+        {
+          "value": "Total en el frente y en reserva",
+          "rowspan": 2
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "81"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "167"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "590"
+        },
+        {
+          "value": "164"
+        },
+        {
+          "value": "1 010"
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1 829"
+        },
+        {
+          "value": "499"
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": "854"
+        },
+        {
+          "value": "77"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1 570"
+        }
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "52"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "89"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "162"
+        },
+        {
+          "value": "52"
+        },
+        {
+          "value": "347"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "588"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}
