@@ -323,4 +323,81 @@ assert.equal(finnishFrench.finnishWinterWar.datedCombatAircraftUnitReadiness.len
 assert.equal(finnishFrench.finnishWinterWar.reportedWinterWarCombatAircraftWrittenOffAllCauses,58);
 assert.equal(finnishFrench.finnishWinterWar.contradictingSecondaryReportedAllAircraftLosses,62);
 
+const usWartimeStations = load('usaaf-maurer-public-domain-european-group-station-candidates-1940-1945.json');
+assert.equal(usWartimeStations.counts.groupHeadingsDetectedInBothVolumes,292);
+assert.equal(usWartimeStations.counts.groupsWithEuropeanOrMediterraneanStationCandidates,144);
+assert.equal(usWartimeStations.counts.namedStationCandidates,741);
+assert.equal(usWartimeStations.counts.candidatesWithPotentiallyWartimeStart,544);
+assert.equal(usWartimeStations.groups.reduce((n,g)=>n+g.candidateStationCount,0),741);
+assert.equal(usWartimeStations.groups.some(g=>g.unitName==='317 Troop Carrier Group' &&
+  g.europeMediterraneanStationCandidates.every(r=>!r.withinAtlasDateScopeCandidate)),true);
+assert.equal(usWartimeStations.groups.flatMap(g=>g.europeMediterraneanStationCandidates)
+  .filter(r=>r.withinAtlasDateScopeCandidate).every(r=>r.startDateCandidate && r.startDateCandidate <= '1945-05-31'),true);
+
+const usaafClaimsVsLosses = load('usaaf-official-eto-mto-actual-combat-mission-aircraft-losses-and-reported-victories-1942-1945.json');
+const sumFields = (rows,k)=>rows.reduce((n,r)=>n+(r[k]||0),0);
+for(const theater of ['ETO','MTO']) {
+  const own=usaafClaimsVsLosses.ownAircraftCombatMissionLosses[theater];
+  const credited=usaafClaimsVsLosses.reportedEnemyAircraftDestroyed[theater];
+  for(const category of ['totalByCause', 'byAircraftRole']) {
+    if(category==='totalByCause') {
+      assert.equal(own.totalByCause.all,own.totalByCause.enemyAircraft+own.totalByCause.antiAircraftFire+own.totalByCause.otherCauses);
+    } else {
+      assert.equal(Object.values(own.byAircraftRole).reduce((n,r)=>n+r.all,0),own.totalByCause.all);
+      for(const reason of ['enemyAircraft','antiAircraftFire','otherCauses'])
+        assert.equal(Object.values(own.byAircraftRole).reduce((n,r)=>n+r[reason],0),own.totalByCause[reason]);
+    }
+  }
+  for(const metric of ['all','enemyAircraft','antiAircraftFire','otherCauses'])
+    assert.equal(sumFields(own.annualByCause,metric),own.totalByCause[metric]);
+  assert.equal(sumFields(credited.annual,'all')+(theater==='MTO'?69:0),credited.grandTotal.all);
+  assert.equal(sumFields(credited.annual,'inAir')+(theater==='MTO'?15:0),credited.grandTotal.inAir);
+  assert.equal(sumFields(credited.annual,'onGround')+(theater==='MTO'?54:0),credited.grandTotal.onGround);
+  for(const r of credited.annual) {
+    assert.equal(r.all,r.heavyBombers+r.mediumLightBombers+r.fighters);
+    assert.equal(r.all,r.inAir+r.onGround);
+  }
+}
+assert.equal(usaafClaimsVsLosses.crossTheaterPublishedTotals.ownAircraftCombatMissionLossesETOplusMTO,18418);
+assert.equal(usaafClaimsVsLosses.crossTheaterPublishedTotals.reportedEnemyAircraftDestroyedETOplusMTO,29916);
+
+const rafAnnual = load('raf-all-commands-secondary-annual-sorties-and-aircraft-losses-1939-1945.json');
+assert.equal(rafAnnual.sourcePrintedGrandTotal.sorties,2336303);
+assert.equal(rafAnnual.sourcePrintedGrandTotal.aircraftLost,22220);
+assert.equal(rafAnnual.commands.length,6);
+assert.equal(rafAnnual.commands.reduce((n,c)=>n+c.reportedTotals.sorties,0),2336303);
+assert.equal(rafAnnual.commands.reduce((n,c)=>n+c.reportedTotals.aircraftLost,0),22220);
+for(const command of rafAnnual.commands) {
+  if(!command.annual.length) continue;
+  assert.equal(command.annual.reduce((n,r)=>n+r.sorties,0),command.reportedTotals.sorties);
+  const printedAnnualLosses=command.annual.reduce((n,r)=>n+r.aircraftLost,0);
+  if(command.name==='RAF Coastal Command') {
+    assert.equal(printedAnnualLosses,1539);
+    assert.equal(command.reportedTotals.aircraftLost-printedAnnualLosses,40);
+  } else assert.equal(printedAnnualLosses,command.reportedTotals.aircraftLost);
+}
+assert.equal(rafAnnual.sourceAnnualArithmeticExceptions.length,2);
+
+const balkans = load('balkan-greek-finnish-yugoslav-bulgarian-air-forces-unit-research-1940-1945.json');
+assert.equal(balkans.forces.length,4);
+const greek=balkans.forces[0].observations[0];
+assert.equal(greek.fighter.types.reduce((n,r)=>n+r.count,0),greek.fighter.total);
+assert.equal(greek.bomber.types.reduce((n,r)=>n+r.count,0),greek.bomber.total);
+assert.equal(greek.fighter.total+greek.bomber.total,greek.aircraftTotal);
+const yugoslav=balkans.forces.find(f=>f.force.startsWith('Yugoslav Partisan'));
+assert.equal(yugoslav.observations.find(r=>r.unit?.startsWith('351 RAF')).combatAircraftSorties,978);
+assert.equal(yugoslav.observations.find(r=>r.unit?.startsWith('352 RAF')).combatAircraftSortiesApproximate,1208);
+assert.deepEqual(yugoslav.datedOrdersOfBattle.map(d=>d.records.length),[9,9]);
+
+const canadianClaims=load('rcaf-association-derived-annual-squadron-claims-entry-counts-1939-1945.json');
+assert.equal(canadianClaims.quality.all_dated_rows,4238);
+assert.equal(canadianClaims.quality.wartime_dated_claim_entry_rows,4211);
+assert.equal(canadianClaims.quality.outside_european_cutoff_or_wwii,27);
+assert.equal(canadianClaims.annualObservedClaimEntryRows.reduce((n,r)=>n+r.entries,0),4211);
+assert.equal(canadianClaims.quality.uniqueSquadronDesignationsWithResolvedEntries,131);
+const countResolved=canadianClaims.squadronAnnualObservedClaimEntryRows
+  .reduce((n,u)=>n+Object.values(u.entriesByYear).reduce((a,b)=>a+b,0),0);
+assert.equal(countResolved+canadianClaims.quality.unresolved_squadron,4211);
+assert.ok(canadianClaims.importantCautions.some(c=>c.includes('NOT an Atlas-ready European total')));
+
 console.log('Grand Air War research transcription integrity checks passed (new 1940 national, pilot and claims series included).');

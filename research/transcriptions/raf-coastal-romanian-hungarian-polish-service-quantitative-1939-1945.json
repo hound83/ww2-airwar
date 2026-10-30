@@ -57,11 +57,29 @@
       "flyingHours": 1324407,
       "aircraftLostEnemyActionOrMissing": 1511
     },
+    "contemporaryExtractedCommandOrderOfBattleStrengthSnapshots": [
+      {
+        "date": "1939-09-03",
+        "publishedSquadrons": 16,
+        "publishedAircraftStrength": 183
+      },
+      {
+        "date": "1942-11-08",
+        "publishedSquadrons": 53,
+        "publishedAircraftStrength": 840
+      },
+      {
+        "date": "1945-05-08",
+        "publishedSquadrons": 66,
+        "publishedAircraftStrength": 1117
+      }
+    ],
     "caveats": [
       "Provisional figures; RAF review explicitly says later White Paper totals were being finalized.",
       "Air/sea rescue sorties not recorded until August 1941; totals undercount earlier rescue operations.",
       "Aircraft lost by enemy action OR missing, not all accidents, scrappings, or every writeoff.",
-      "RAF Coastal Command sorties are one command subset, not all RAF, FAA or maritime aviation; may already be part of RAF global command totals."
+      "RAF Coastal Command sorties are one command subset, not all RAF, FAA or maritime aviation; may already be part of RAF global command totals.",
+      "Official Command OOB snapshots count units/aircraft serving under Coastal Command control, including occasional USN/USAAF/FAA aircraft and Flights not comparable to squadrons. These are not British-owned planes in an exclusive national inventory."
     ]
   },
   "royalRomanianAirForce": {
