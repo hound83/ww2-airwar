@@ -594,5 +594,21 @@ assert.equal(bCodeNL.records.find(r => r.britishAirfieldCode === 'B-91').candida
 assert.ok(bCodeNL.records.every(r => r.rceHistoricalPhaseIds.length > 0));
 const validRceIDs = new Set(rceNL.features.map(r => r.id));
 assert.ok(bCodeNL.records.every(r => r.rceHistoricalPhaseIds.every(id => validRceIDs.has(id))));
+const americanARY = load('usaaf-official-1988-american-a-y-r-code-continental-airfield-header-candidates-1944-1945.json');
+assert.equal(americanARY.records.length, 296);
+assert.equal(americanARY.audit.uniqueCodeCount, 296);
+assert.equal(americanARY.audit.missingExpectedCodes.length, 0);
+assert.equal(americanARY.audit.duplicateCodes.length, 0);
+assert.deepEqual(americanARY.audit.codesByPrefix, { A: 99, R: 98, Y: 99 });
+assert.equal(americanARY.audit.codesWithCountryCandidate, 279);
+assert.equal(americanARY.audit.codesWithUnambiguousInitialDate, 262);
+assert.equal(americanARY.audit.codesWithUnambiguousReleaseDate, 182);
+assert.equal(americanARY.audit.initialDateAfterAtlasEndAmongUnambiguous, 10);
+assert.equal(americanARY.records.find(r => r.code === 'A-1').initialOperationDateISOIfClear, '1944-06-13');
+assert.equal(americanARY.records.find(r => r.code === 'R-85').initialOperationDateISOIfClear, '1945-06-22');
+assert.equal(americanARY.records.find(r => r.code === 'Y-44').nameOCRCandidate, 'Maastricht');
+assert.deepEqual(bCodeNL.additionalAmericanContinentalDutchCodeCandidates.map(r => r.usafAmericanContinentalCode), ['Y-44', 'Y-55']);
+assert.equal(bCodeNL.additionalAmericanContinentalDutchCodeCandidates[0].candidateRceHistoricSiteName, 'Beek');
+assert.ok(bCodeNL.additionalAmericanContinentalDutchCodeCandidates.every(r => r.rceHistoricalPhaseIds.every(id => validRceIDs.has(id))));
 
-console.log('Grand Air War research transcription integrity checks passed (THOR, German unit-month source audit, RCE Dutch polygons, official British B-code index, and Dutch historical-name crosswalk).');
+console.log('Grand Air War research transcription integrity checks passed (THOR, German unit-month audit, RCE Dutch polygons, USAF 174 B-codes and 296 A/Y/R-codes, and 17 Dutch source crosswalks).');

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Crosswalk 15 1945 British B-airfield reference codes to RCE historic Dutch phases.
+"""Crosswalk 15 1945 British B-codes and optionally 2 USAAF Y-codes to Dutch phases.
 
 This is a *source identity/name* candidate crosswalk, not proof of an RAF base
 operating at an exact date, and not a station/unit/aircraft strength dataset.
 
-Usage: python scripts/crosswalk-usaf-1988-b-codes-to-rce-nl.py b-codes.json rce.geojson output.json
+Usage: python scripts/crosswalk-usaf-1988-b-codes-to-rce-nl.py b-codes.json rce.geojson output.json --american-index ayr-codes.json
 """
 
 import argparse
@@ -29,6 +29,7 @@ NAMES = {
     "B-97": "Schiphol",
     "B-106": "Twente",
 }
+AMERICAN_NL_CODES = {"Y-44": "Beek", "Y-55": "Venlo"}
 
 
 def main():
@@ -36,6 +37,7 @@ def main():
     p.add_argument("official_b_code_index", type=Path)
     p.add_argument("rce_historic_polygons", type=Path)
     p.add_argument("output", type=Path)
+    p.add_argument("--american-index", type=Path, help="Optional A/Y/R original-code index to include two extra Dutch crosswalk leads")
     args = p.parse_args()
     b = json.loads(args.official_b_code_index.read_text())
     rce = json.loads(args.rce_historic_polygons.read_text())
@@ -60,6 +62,23 @@ def main():
             "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period",
         })
 
+    american = []
+    if args.american_index:
+        original_american = json.loads(args.american_index.read_text())
+        originals = {r["code"]: r for r in original_american["records"]}
+        for code, rce_name in AMERICAN_NL_CODES.items():
+            source = originals[code]
+            if source["countryCandidate"] != "Netherlands" or not rce_by_name[rce_name]:
+                raise ValueError(f"American original source/RCE Dutch identity mismatch: {code}")
+            american.append({
+                "usafAmericanContinentalCode": code,
+                "usaf1988OriginalNameOCR": source["nameOCRCandidate"],
+                "sourceInitialOperationDateCandidate": source["initialOperationDateISOIfClear"],
+                "candidateRceHistoricSiteName": rce_name,
+                "rceHistoricalPhaseIds": [r["id"] for r in rce_by_name[rce_name]],
+                "locationValidationStatus": "USAAF_independent_station_name_candidate_dated_use_not_verified",
+            })
+
     output = {
         "status": "cross_source_map_research_candidate_not_operational_map_layer",
         "sourceOfficialAmerican1988": b["source"],
@@ -67,6 +86,7 @@ def main():
         "indexAsOf": "1945-07-01",
         "atlasEndDate": "1945-05-09",
         "count": len(output_rows),
+        "additionalAmericanContinentalDutchCodeCandidates": american,
         "criticalCaveats": [
             "The source B-code reference date is 1 July 1945, 53 days after the Atlas's 9 May 1945 cutoff; some B-code allocations/airfield uses can be postwar.",
             "Original 1988 scan contains variant spellings and OCR artifacts (Woensdrecht, Valkenberg, Amsterdam/Schipol); matched site names are distinct original RCE evidence, not copied corrections to the USAF source.",

@@ -22,6 +22,30 @@
   "indexAsOf": "1945-07-01",
   "atlasEndDate": "1945-05-09",
   "count": 15,
+  "additionalAmericanContinentalDutchCodeCandidates": [
+    {
+      "usafAmericanContinentalCode": "Y-44",
+      "usaf1988OriginalNameOCR": "Maastricht",
+      "sourceInitialOperationDateCandidate": "1945-03-23",
+      "candidateRceHistoricSiteName": "Beek",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.6"
+      ],
+      "locationValidationStatus": "USAAF_independent_station_name_candidate_dated_use_not_verified"
+    },
+    {
+      "usafAmericanContinentalCode": "Y-55",
+      "usaf1988OriginalNameOCR": "Venlo",
+      "sourceInitialOperationDateCandidate": "1945-03-12",
+      "candidateRceHistoricSiteName": "Venlo",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.158",
+        "vliegvelden.159",
+        "vliegvelden.160"
+      ],
+      "locationValidationStatus": "USAAF_independent_station_name_candidate_dated_use_not_verified"
+    }
+  ],
   "criticalCaveats": [
     "The source B-code reference date is 1 July 1945, 53 days after the Atlas's 9 May 1945 cutoff; some B-code allocations/airfield uses can be postwar.",
     "Original 1988 scan contains variant spellings and OCR artifacts (Woensdrecht, Valkenberg, Amsterdam/Schipol); matched site names are distinct original RCE evidence, not copied corrections to the USAF source.",
