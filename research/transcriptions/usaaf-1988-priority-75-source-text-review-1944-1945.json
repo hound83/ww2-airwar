@@ -15,6 +15,8 @@
     "The base OCR transcription and its first-pass 75 flags are kept immutable. This review is a derivative overlay; downstream readers must apply it rather than treating first-pass flags as current."
   ],
   "audit": {
+    "openCasesWithFurtherSourceLeads": 3,
+    "openCasesFullyIndependentlyReconciled": 0,
     "originalReviewPriorityLines": 75,
     "distinctAirfieldCodesReviewed": 44,
     "sourceLinesWithHeaderReparse": 51,
@@ -29,9 +31,7 @@
     "originalPriorityMonthRows": 155,
     "recoveredPriorityMonthRows": 217,
     "addedResearchMonthRows": 62,
-    "totalResearchMonthCandidatesAfterSubstitution": 826,
-    "openCasesWithFurtherSourceLeads": 3,
-    "openCasesFullyIndependentlyReconciled": 0
+    "totalResearchMonthCandidatesAfterSubstitution": 826
   },
   "reviewRows": [
     {
@@ -64,6 +64,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -99,6 +100,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -134,6 +136,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -172,6 +175,7 @@
         "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/434107/36-operations-group-pacaf/",
         "kind": "USAF_official_unit_fact_sheet"
       },
+      "openCaseEvidence": null,
       "remainingCautions": [
         "unit_reported_before_field_declared_operational"
       ],
@@ -212,6 +216,7 @@
         "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/434107/36-operations-group-pacaf/",
         "kind": "USAF_official_unit_fact_sheet"
       },
+      "openCaseEvidence": null,
       "remainingCautions": [
         "unit_reported_before_field_declared_operational"
       ],
@@ -248,6 +253,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -286,6 +292,7 @@
         "url": "https://www.uswarmemorials.org/html/monument_details.php?MemID=3374&SiteID=2580",
         "kind": "secondary_site_memorial_not_primary"
       },
+      "openCaseEvidence": null,
       "remainingCautions": [
         "unit_reported_before_field_declared_operational"
       ],
@@ -323,6 +330,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -360,17 +368,17 @@
       ],
       "reviewDecision": "historical_ambiguity_still_open",
       "externalEvidence": null,
+      "openCaseEvidence": {
+        "finding": "Historical site research distinguishes reconnaissance detachment presence in August from 2 September field operational declaration; not a proven OCR mistake. Still requires original engineer/diary record before declaring precise runway occupancy.",
+        "sourceUrl": "https://www.anciens-aerodromes.com/?p=140666",
+        "sourceClass": "secondary_detailed_airfield_history"
+      },
       "remainingCautions": [
         "unit_reported_before_field_declared_operational"
       ],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
-      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT",
-      "openCaseEvidence": {
-        "finding": "Historical site research distinguishes reconnaissance detachment presence in August from 2 September field operational declaration; not a proven OCR mistake. Still requires original engineer/diary record before declaring precise runway occupancy.",
-        "sourceUrl": "https://www.anciens-aerodromes.com/?p=140666",
-        "sourceClass": "secondary_detailed_airfield_history"
-      }
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
     },
     {
       "sourceRowId": "usaf1988-p17-l28",
@@ -401,6 +409,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -435,6 +444,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -469,6 +479,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -506,6 +517,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May"
       ],
@@ -543,6 +555,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -578,6 +591,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -614,6 +628,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -651,6 +666,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -689,6 +705,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -724,6 +741,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -759,6 +777,7 @@
       ],
       "reviewDecision": "postwar_only_scope_issue",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May",
@@ -798,6 +817,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -833,6 +853,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -868,6 +889,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -903,6 +925,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -938,6 +961,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -973,6 +997,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1009,6 +1034,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -1047,6 +1073,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1081,6 +1108,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1116,6 +1144,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1151,6 +1180,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1186,6 +1216,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1222,6 +1253,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -1261,6 +1293,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1295,6 +1328,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -1332,6 +1366,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May"
       ],
@@ -1369,6 +1404,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1403,6 +1439,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1437,6 +1474,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1471,6 +1509,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1506,6 +1545,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1540,6 +1580,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1575,6 +1616,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -1613,6 +1655,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1648,6 +1691,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1683,6 +1727,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1719,6 +1764,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -1757,6 +1803,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1792,6 +1839,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1827,6 +1875,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -1866,6 +1915,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1904,6 +1954,7 @@
         "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/432152/417-test-and-evaluations-squadron-acc/",
         "kind": "USAF_official_unit_fact_sheet"
       },
+      "openCaseEvidence": null,
       "remainingCautions": [
         "unit_period_extends_after_field_release_or_control_transfer"
       ],
@@ -1940,6 +1991,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -1974,6 +2026,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2009,6 +2062,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2043,6 +2097,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2077,6 +2132,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2111,6 +2167,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2146,6 +2203,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2180,18 +2238,18 @@
       ],
       "reviewDecision": "historical_ambiguity_still_open",
       "externalEvidence": null,
-      "remainingCautions": [
-        "unit_reported_before_field_declared_operational"
-      ],
-      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
-      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
-      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT",
       "openCaseEvidence": {
         "finding": "Y-44 Beek was constructed only in early 1945 (Netherlands Ministry of Defence NIMH dates operations 28 March 1945), so 125th Liaison Squadron's Oct 1944–Mar 1945 regional presence MUST NOT be assigned to the Y-44 runway for 1944. Secondary local history reports earlier alternate positions around Maastricht; independently map those sites if needed.",
         "sourceUrl": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/beek",
         "additionalSourceUrl": "https://www.dodenherdenking-beek.nl/documents/PDF/BeekseHistorie/Vliegveld%20Beek%20in%20oorlogstijd%20Y-44.pdf",
         "sourceClass": "Dutch_official_military_history_plus_local_secondary"
-      }
+      },
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
     },
     {
       "sourceRowId": "usaf1988-p30-l11",
@@ -2222,18 +2280,18 @@
       ],
       "reviewDecision": "historical_ambiguity_still_open",
       "externalEvidence": null,
-      "remainingCautions": [
-        "unit_reported_before_field_declared_operational"
-      ],
-      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
-      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
-      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT",
       "openCaseEvidence": {
         "finding": "Official US Government-published squadron lineage: flight of 112th Liaison Squadron operated at Namur 26 Oct 1944 to about 11 Feb 1945 while parent stationed Buc. 1988 field study gives Y-47 initial operation 22 Feb 1945. Separate date of temporary grass landing area from formal/PSP field declaration; do not erase original discrepancy until engineer construction record identified.",
         "sourceUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo126017/pdf/GOVPUB-D301-PURL-gpo126017.pdf",
         "additionalSourceUrl": "https://gateway.forgottenairfields.com/airfield-namur-suarleee-238.html",
         "sourceClass": "original_USAF_squadron_lineage_in_government_publication_plus_secondary_field_history"
-      }
+      },
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
     },
     {
       "sourceRowId": "usaf1988-p30-l32",
@@ -2265,6 +2323,7 @@
       ],
       "reviewDecision": "postwar_only_scope_issue",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May",
@@ -2304,6 +2363,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -2341,6 +2401,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May"
       ],
@@ -2377,6 +2438,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -2414,6 +2476,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -2451,6 +2514,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2486,6 +2550,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May"
       ],
@@ -2523,6 +2588,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -2561,6 +2627,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -2598,6 +2665,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
@@ -2632,6 +2700,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May"
       ],
@@ -2669,6 +2738,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May"
       ],
@@ -2706,6 +2776,7 @@
       ],
       "reviewDecision": "ocr_or_layout_recovered_from_source_text",
       "externalEvidence": null,
+      "openCaseEvidence": null,
       "remainingCautions": [
         "source_period_extends_beyond_european_war_cutoff",
         "May_1945_month_is_not_proof_of_presence_before_9_May"
@@ -2747,6 +2818,7 @@
         "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/433544/14-weapons-squadron-acc/",
         "kind": "USAF_official_unit_fact_sheet"
       },
+      "openCaseEvidence": null,
       "remainingCautions": [
         "May_1945_month_is_not_proof_of_presence_before_9_May",
         "initial_field_date_is_upper_bound_By_1945_08_14"
