@@ -66,3 +66,8 @@ node tests/grand-air-war-unit-crosswalk.cjs
 The base OCR and original crosswalk are intentionally **not overwritten**. The 75-row ledger is an explicit superseding *quality overlay*, so a dashboard import should apply corrections by `sourceRowId` and suppress any `dashboardPermission: RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT` items. Do not equate a review-completed source with an independently confirmed wartime physical unit placement.
 
 **Next focused archival work:** retrieve 365th FG reconnaissance detachment / A-44 engineer report, 125th Liaison / Y-44 Beek construction and separate temporary Maastricht landing spots, and IX Engineer Command/Y-47 Namur grass vs PSP operational declaration. These are now **three sharply defined primary-source tasks**, not 75 generic open flags.
+
+
+## Follow-up on the three geographically ambiguous cases (31 October 2026)
+
+Targeted official USAF unit histories, NIMH's Beek field chronology and a Belgian aviation-history article have clarified what the three disagreements actually concern: a scouting detachment at A-44, 125th Liaison Squadron's *regional Maastricht station* prior to Y-44's construction, and a detached 112th Liaison Squadron *flight at Namur* before Y-47 was formally operational. **None of this proves a pre-operational runway pin**. The 1944 Maastricht regional presence MUST NOT be plotted at Beek/Y-44. See [focused review and original sources](usaaf-a44-y44-y47-preoperational-landing-sites-review-2026-10-31.md) and [structured three-case map-safety overlay](../transcriptions/usaaf-1944-1945-three-preoperational-airfield-case-resolutions.json). The original 75-row flags are deliberately preserved for audit history; apply the newer three-case overlay for interpretation.
