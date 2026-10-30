@@ -440,4 +440,27 @@ assert.equal(fifteenth.units[1].escortGroupMissionsEncounteringEnemyAircraft,66)
 assert.equal(fifteenth.units[1].sourceProseEncounteredEnemyAircraftGroupMissionsAlternative,55);
 assert.ok(fifteenth.globalCautions.some(c=>c.includes('NOT mutually exclusive')));
 
+const belgium1940=load('belgian-air-force-squadron-order-of-battle-aircraft-and-conflicting-bases-1940-05-10.json');
+assert.equal(belgium1940.records.length,16);
+assert.equal(belgium1940.records.reduce((n,r)=>n+r.aircraft,0),182);
+for(const regiment of [1,2,3]){
+  const sourceRows=belgium1940.records.filter(r=>r.regiment===regiment);
+  assert.equal(sourceRows.length,belgium1940.derivedSourceCounts[`regiment${regiment}`].squadrons);
+  assert.equal(sourceRows.reduce((n,r)=>n+r.aircraft,0),belgium1940.derivedSourceCounts[`regiment${regiment}`].aircraft);
+}
+assert.equal(belgium1940.records.filter(r=>r.alternativeAircraft!==undefined).length,5);
+assert.ok(belgium1940.records.every(r=>r.basePrintedCGSC && r.alternativeReportedWartimeBase));
+
+const rafNational=load('polish-czechoslovak-raf-hosted-air-forces-squadrons-personnel-claims-1940-1945.json');
+assert.equal(rafNational.polishRAFHosted.museumObservations.polishDesignatedSquadronsAtWarEnd,15);
+assert.equal(rafNational.polishRAFHosted.polishInstituteAlternateObservations.polishFighterCombatMissionsAsLabelled,73524);
+assert.equal(rafNational.polishRAFHosted.museumVsInstituteCreditedDestroyedDifference,15);
+const czech=rafNational.czechoslovakRAFHosted;
+assert.equal(czech.units.length,5);
+assert.equal(czech.units.reduce((n,r)=>n+(r.combatSorties??r.combatSortiesAsMuseumAndCzechMOD??r.czechoslovakMembersCombatSorties),0),40488);
+assert.equal(czech.units.find(r=>r.unit.startsWith('312 ')).alternateCombatSortiesFromRajlichSecondary,17427);
+assert.equal(czech.units.find(r=>r.unit.startsWith('312 ')).creditedEnemyAircraftDamagedEnglishMuseumTranslation,1);
+assert.equal(czech.units.find(r=>r.unit.startsWith('312 ')).creditedEnemyAircraftDamagedCzechOriginalAndCzechMOD,16);
+assert.ok(czech.units.find(r=>r.unit.startsWith('68 ')).warning.includes('Czech participation'));
+
 console.log('Grand Air War research transcription integrity checks passed (original Italy, Commonwealth European units, Fifteenth AF cross-group overlap included).');
