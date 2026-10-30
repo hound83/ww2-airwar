@@ -1,0 +1,67 @@
+{
+  "id": "SCW-RGVA-KOWALSKY-TABLES-V4-V7",
+  "source": {
+    "compiler": "Daniel Kowalsky, Stalin and the Spanish Civil War (2004), Chapter 14, Tables V-4 through V-7, based on Soviet RGVA files and Rybalkin",
+    "referenceUrl": "https://www.gutenberg-e.org/kod01/print/kod20.pdf",
+    "publisherCatalogUrl": "https://www.fulcrum.org/concern/monographs/t722h981f.html",
+    "originalProvenance": "Russian State Military Archive (RGVA) wartime reporting; individual file references are in the source's numbered footnotes 48-51",
+    "type": "scholarly_secondary_transcription_of_contemporary_soviet_records",
+    "reliabilityCaution": "Soviet reports of Nationalist losses are NOT verified Nationalist aircraft incidents. Their reported 572 air-combat victories are considered inflated by later historians; treat them as Soviet-side claims/estimates, not actual enemy losses."
+  },
+  "crossSideReportedLossComparisonTableV4": {
+    "period": "1936-10-25/1938-07-01",
+    "meaning": "Counts in Soviet RGVA reports. Nationalist observations are Soviet assertions/claims, not independent actual losses; Republican observations are Soviet-side loss records, with scope uncertain.",
+    "categories": [
+      {"causeAsPrinted": "Aerial combat", "nationalistClaimedOrReported": 572, "republicanReported": 163},
+      {"causeAsPrinted": "Destroyed at airports", "nationalistClaimedOrReported": 147, "republicanReported": 39},
+      {"causeAsPrinted": "Anti-aircraft fire", "nationalistClaimedOrReported": 52, "republicanReported": 25},
+      {"causeAsPrinted": "Accidents, disasters or forced landings", "nationalistClaimedOrReported": 13, "republicanReported": 147},
+      {"causeAsPrinted": "Landings in enemy territory", "nationalistClaimedOrReported": 1, "republicanReported": 14}
+    ],
+    "printedTotals": {"nationalistClaimedOrReported": 785, "republicanReported": 388}
+  },
+  "republicanAircraftLossByTypeAndCauseTableV5": {
+    "period": "1936-10-25/1938-12-15",
+    "meaning": "Republican aircraft losses present in RGVA/Rybalkin compiled lists, not necessarily a census of all Republican-built or privately operated aircraft; includes Soviet-derived types and limited others.",
+    "aircraftTypeColumns": ["SB", "I-15", "I-16", "SSS", "R-Z", "Grumman", "Other"],
+    "causes": [
+      {"cause": "air_combat", "countsByType": [35, 91, 112, 4, 21, 3, 0], "printedTotal": 266},
+      {"cause": "destroyed_at_airfield", "countsByType": [3, 27, 11, 1, 1, 1, 0], "printedTotal": 44},
+      {"cause": "anti_aircraft_fire", "countsByType": [16, 9, 1, 5, 10, 1, 0], "printedTotal": 42},
+      {"cause": "accidents", "countsByType": [14, 87, 62, 11, 26, 0, 1], "printedTotal": 201},
+      {"cause": "landed_in_enemy_territory", "countsByType": [6, 6, 1, 1, 0, 0, 0], "printedTotal": 14}
+    ],
+    "printedTypeTotals": [74, 220, 187, 22, 58, 5, 1],
+    "printedGrandTotal": 567
+  },
+  "sovietPilotsByAircraftTypeAndYearTableV6": {
+    "period": "1936-1938",
+    "meaning": "Soviet pilots serving Republican aviation by aircraft type/year as described in the RGVA/Rybalkin material; NOT necessarily unique persons across years or a year-end staffing count.",
+    "records": [
+      {"aircraftClass": "SB", "byYear": {"1936": 84, "1937": 86, "1938": 93}, "printedTotal": 263},
+      {"aircraftClass": "I-15", "byYear": {"1936": 63, "1937": 41, "1938": null}, "printedTotal": 104},
+      {"aircraftClass": "I-16", "byYear": {"1936": 77, "1937": 125, "1938": 88}, "printedTotal": 290},
+      {"aircraftClass": "R-Z", "byYear": {"1936": 84, "1937": null, "1938": null}, "printedTotal": 84},
+      {"aircraftClass": "Spanish-made/other Republican aircraft", "byYear": {"1936": 3, "1937": 24, "1938": 2}, "printedTotal": 29}
+    ],
+    "printedYearTotals": {"1936": 311, "1937": 276, "1938": 183},
+    "printedGrandTotal": 770,
+    "dashSemantics": "Printed em dashes retained as null rather than asserted numerical zero."
+  },
+  "sovietPilotFatalitiesAndMissingTableV7": {
+    "periodYearColumns": [1936, 1937, 1938],
+    "printedHeadingSays": "1936-1939; source columns end 1938; do not infer 1939 zero",
+    "meaning": "Death and missing status among Soviet pilots serving Spain, not all Republican aircrew or Spanish nationals; missing should not automatically be recorded as died.",
+    "records": [
+      {"aircraftClass": "SB", "deathsByYear": [9, 6, 4], "missingByYear": [null, 4, 3], "fatalitiesTotal": 19, "missingTotal": 7, "combinedTotal": 26},
+      {"aircraftClass": "I-15", "deathsByYear": [3, 3, null], "missingByYear": [1, 2, null], "fatalitiesTotal": 6, "missingTotal": 3, "combinedTotal": 9},
+      {"aircraftClass": "I-16", "deathsByYear": [6, 19, 20], "missingByYear": [null, 8, 4], "fatalitiesTotal": 45, "missingTotal": 12, "combinedTotal": 57},
+      {"aircraftClass": "R-Z", "deathsByYear": [2, 4, null], "missingByYear": [null, null, null], "fatalitiesTotal": 6, "missingTotal": 0, "combinedTotal": 6},
+      {"aircraftClass": "Other Republican aircraft", "deathsByYear": [null, 1, null], "missingByYear": [null, null, null], "fatalitiesTotal": 1, "missingTotal": 0, "combinedTotal": 1}
+    ],
+    "printedDeathsByYear": [20, 33, 24],
+    "printedMissingByYear": [1, 14, 7],
+    "printedTotals": {"fatalities": 77, "missing": 22, "combined": 99}
+  },
+  "validationStatus": "Digitally retyped from an indexed scholarly PDF excerpt; cross-recheck original Table V-5/6/7 images before publication. All printed row/column arithmetic is testable."
+}
