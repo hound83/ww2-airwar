@@ -573,4 +573,26 @@ assert.equal(Object.values(germanUnitMonthLead.locationRowsByYear).reduce((n, co
 assert.equal(Object.values(germanUnitMonthLead.modelStrengthLossRowsByYear).reduce((n, count) => n + count, 0), 33028);
 assert.equal(germanUnitMonthLead.rights.includes('NOT published'), true);
 
-console.log('Grand Air War research transcription integrity checks passed (THOR, USAAF provisional stations, Dutch RCE historical polygons, and unlicensed German unit-month coverage audit).');
+const britishBCodes = load('usaaf-official-1988-british-b-code-continental-airfield-index-1945.json');
+assert.equal(britishBCodes.records.length, 174);
+assert.equal(britishBCodes.audit.uniqueCodes, 174);
+assert.equal(britishBCodes.audit.unmatchedCodes.length, 0);
+assert.equal(britishBCodes.audit.duplicateCodes.length, 0);
+assert.equal(britishBCodes.audit.statuses.historical_code_site_candidate, 127);
+assert.equal(britishBCodes.audit.statuses.unassigned, 40);
+assert.equal(britishBCodes.audit.statuses.renumbered_not_a_distinct_b_airfield, 5);
+assert.equal(britishBCodes.audit.statuses.construction_cancelled, 2);
+assert.equal(britishBCodes.audit.countriesForNamedCandidateRows.Netherlands, 15);
+assert.equal(britishBCodes.records.find(r => r.code === 'B-121').status, 'unassigned');
+assert.equal(britishBCodes.records.find(r => r.code === 'B-149').status, 'unassigned');
+const bCodeNL = load('usaaf-british-1945-b-codes-to-rce-dutch-airfield-historical-phases-crosswalk.json');
+assert.equal(bCodeNL.count, 15);
+assert.equal(bCodeNL.records.length, 15);
+assert.equal(bCodeNL.records.find(r => r.britishAirfieldCode === 'B-79').candidateRceHistoricSiteName, 'Woensdrecht');
+assert.equal(bCodeNL.records.find(r => r.britishAirfieldCode === 'B-82').candidateRceHistoricSiteName, 'Keent / Grave');
+assert.equal(bCodeNL.records.find(r => r.britishAirfieldCode === 'B-91').candidateRceHistoricSiteName, "Malden / 'De Kluis'");
+assert.ok(bCodeNL.records.every(r => r.rceHistoricalPhaseIds.length > 0));
+const validRceIDs = new Set(rceNL.features.map(r => r.id));
+assert.ok(bCodeNL.records.every(r => r.rceHistoricalPhaseIds.every(id => validRceIDs.has(id))));
+
+console.log('Grand Air War research transcription integrity checks passed (THOR, German unit-month source audit, RCE Dutch polygons, official British B-code index, and Dutch historical-name crosswalk).');
