@@ -562,4 +562,15 @@ for (const phase of rceNL.features) {
   assert.ok(['Polygon', 'MultiPolygon'].includes(phase.geometry.type));
 }
 
-console.log('Grand Air War research transcription integrity checks passed (THOR geospatial coverage, Maurer/OurAirports candidate stations, and RCE historic Netherlands polygon phases).');
+const germanUnitMonthLead = load('luftwaffe-secondary-unit-months-source-coverage-audit-1938-1945.json');
+assert.equal(germanUnitMonthLead.counts.allLocationRows, 13456);
+assert.equal(germanUnitMonthLead.counts.allModelStrengthLossRows, 33028);
+assert.equal(germanUnitMonthLead.counts.distinctLocationUnitMonthKeys, 13187);
+assert.equal(germanUnitMonthLead.counts.distinctStrengthUnitMonthKeys, 12246);
+assert.equal(germanUnitMonthLead.counts.strengthUnitMonthKeysFoundInLocationKeys, 5968);
+assert.equal(germanUnitMonthLead.counts.strengthRowsWithAtLeastOneMatchingLocationKey, 16957);
+assert.equal(Object.values(germanUnitMonthLead.locationRowsByYear).reduce((n, count) => n + count, 0), 13456);
+assert.equal(Object.values(germanUnitMonthLead.modelStrengthLossRowsByYear).reduce((n, count) => n + count, 0), 33028);
+assert.equal(germanUnitMonthLead.rights.includes('NOT published'), true);
+
+console.log('Grand Air War research transcription integrity checks passed (THOR, USAAF provisional stations, Dutch RCE historical polygons, and unlicensed German unit-month coverage audit).');
