@@ -541,4 +541,25 @@ assert.equal(maurerCoords.provisionalCandidates.length + maurerCoords.ambiguousN
 assert.equal(maurerCoords.ambiguousNamesOrCoordinates[0].stationNameAsPrinted[0], 'Chilbolton');
 assert.ok(maurerCoords.provisionalCandidates.every(r => r.status.includes('NOT_VERIFIED')));
 
-console.log('Grand Air War research transcription integrity checks passed (including original THOR bombing target and conservative Maurer/OurAirports station crosswalk).');
+const rceNL = JSON.parse(fs.readFileSync(path.join(__dirname, '../research/transcriptions/nl-rce-historic-airfield-footprint-phases-1936-1945.geojson'), 'utf8'));
+assert.equal(rceNL.type, 'FeatureCollection');
+assert.equal(rceNL.source.rawFeaturesAllEras, 191);
+assert.equal(rceNL.features.length, 101);
+assert.equal(rceNL.audit.historicalFootprintPhases, 101);
+assert.equal(rceNL.audit.distinctNamesAsPublished, 64);
+assert.deepEqual(rceNL.audit.geometryTypes, { MultiPolygon: 12, Polygon: 89 });
+assert.equal(rceNL.audit.nimhIndependentWartimeAirfieldList.listedSites, 33);
+assert.equal(rceNL.audit.nimhIndependentWartimeAirfieldList.exactOrExplicitAliasNameMatches.length, 33);
+assert.deepEqual(rceNL.audit.nimhIndependentWartimeAirfieldList.unmatchedListNames, []);
+for (const phase of rceNL.features) {
+  assert.ok(phase.properties.activeYearFromAsPublished <= 1945);
+  assert.ok(phase.properties.activeYearThroughAsPublished >= 1936);
+  assert.ok(phase.properties.activeYearFromAsPublished <= phase.properties.activeYearThroughAsPublished);
+  assert.equal(phase.properties.mapStatus, 'historical_footprint_phase_unvalidated_for_exact_dates_and_units');
+  const [lon, lat] = phase.properties.approximateBoundingBoxCenterLonLat;
+  assert.ok(lon >= 3 && lon <= 8);
+  assert.ok(lat >= 50 && lat <= 54);
+  assert.ok(['Polygon', 'MultiPolygon'].includes(phase.geometry.type));
+}
+
+console.log('Grand Air War research transcription integrity checks passed (THOR geospatial coverage, Maurer/OurAirports candidate stations, and RCE historic Netherlands polygon phases).');
