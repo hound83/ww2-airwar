@@ -29,7 +29,9 @@
     "originalPriorityMonthRows": 155,
     "recoveredPriorityMonthRows": 217,
     "addedResearchMonthRows": 62,
-    "totalResearchMonthCandidatesAfterSubstitution": 826
+    "totalResearchMonthCandidatesAfterSubstitution": 826,
+    "openCasesWithFurtherSourceLeads": 3,
+    "openCasesFullyIndependentlyReconciled": 0
   },
   "reviewRows": [
     {
@@ -363,7 +365,12 @@
       ],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
-      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT",
+      "openCaseEvidence": {
+        "finding": "Historical site research distinguishes reconnaissance detachment presence in August from 2 September field operational declaration; not a proven OCR mistake. Still requires original engineer/diary record before declaring precise runway occupancy.",
+        "sourceUrl": "https://www.anciens-aerodromes.com/?p=140666",
+        "sourceClass": "secondary_detailed_airfield_history"
+      }
     },
     {
       "sourceRowId": "usaf1988-p17-l28",
@@ -2178,7 +2185,13 @@
       ],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
-      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT",
+      "openCaseEvidence": {
+        "finding": "Y-44 Beek was constructed only in early 1945 (Netherlands Ministry of Defence NIMH dates operations 28 March 1945), so 125th Liaison Squadron's Oct 1944–Mar 1945 regional presence MUST NOT be assigned to the Y-44 runway for 1944. Secondary local history reports earlier alternate positions around Maastricht; independently map those sites if needed.",
+        "sourceUrl": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/beek",
+        "additionalSourceUrl": "https://www.dodenherdenking-beek.nl/documents/PDF/BeekseHistorie/Vliegveld%20Beek%20in%20oorlogstijd%20Y-44.pdf",
+        "sourceClass": "Dutch_official_military_history_plus_local_secondary"
+      }
     },
     {
       "sourceRowId": "usaf1988-p30-l11",
@@ -2214,7 +2227,13 @@
       ],
       "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
-      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT",
+      "openCaseEvidence": {
+        "finding": "Official US Government-published squadron lineage: flight of 112th Liaison Squadron operated at Namur 26 Oct 1944 to about 11 Feb 1945 while parent stationed Buc. 1988 field study gives Y-47 initial operation 22 Feb 1945. Separate date of temporary grass landing area from formal/PSP field declaration; do not erase original discrepancy until engineer construction record identified.",
+        "sourceUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo126017/pdf/GOVPUB-D301-PURL-gpo126017.pdf",
+        "additionalSourceUrl": "https://gateway.forgottenairfields.com/airfield-namur-suarleee-238.html",
+        "sourceClass": "original_USAF_squadron_lineage_in_government_publication_plus_secondary_field_history"
+      }
     },
     {
       "sourceRowId": "usaf1988-p30-l32",
