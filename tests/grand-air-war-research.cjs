@@ -152,6 +152,13 @@ for (const theater of usaafSortieCauses.theaters) {
     }
   }
 }
+const eighthAf = load('usaaf-eighth-air-force-combat-sortie-loss-rates-monthly-1942-1944.json');
+assert.equal(eighthAf.monthly.length, 29);
+assert.deepEqual(eighthAf.reported1943GrandHeavyBomber, {
+  creditSorties: 22099, missingAndCategoryEAircraft: 1128, printedLossRatePercent: 5.1,
+});
+assert.equal(eighthAf.monthly.filter(r => r.creditSortiesHeavyBomber !== null).length, 12);
+assert.equal(eighthAf.crossSourceRateDiscrepancies.length, 0);
 
 const usaafPlanes = load('usaaf-eto-aircraft-on-hand-type-snapshots-1942-1945.json');
 assert.equal(usaafPlanes.dateCount, 13);
@@ -244,4 +251,76 @@ assert.deepEqual(dday.counts, {
 assert.ok(dday.records.every(r => r.date === '1944-06-06'));
 assert.ok(dday.records.every(r => !('latitude' in r) && !('longitude' in r)));
 
-console.log('Grand Air War research transcription integrity checks passed (21 normalized groups plus source-table bundles).');
+const part06Dir = path.join(__dirname, '../research/transcriptions/rkka-operations-06');
+const part06Files = fs.readdirSync(part06Dir).filter(f => /^rkka-operations-06-\d{2}\.json$/.test(f));
+assert.equal(part06Files.length, 36);
+const part06Sources = part06Files.map(f => JSON.parse(fs.readFileSync(path.join(part06Dir, f), 'utf8')));
+assert.equal(part06Sources.reduce((n, x) => n + x.tables.length, 0), 39);
+assert.equal(part06Sources.reduce((n, x) => n + x.tables.reduce((m, t) => m + t.sourceRowCount, 0), 0), 1064);
+const sovietAllServices = load('rkka-combined-vmf-pvo-add-missions-losses-claims-1941-1945.json');
+assert.deepEqual(Object.fromEntries(Object.entries(sovietAllServices.vmfWideFleetTables).map(([k, v]) => [k, v.records.length])), {
+  '14': 9, '25': 33, '30': 11, '31': 20,
+});
+assert.ok(Object.values(sovietAllServices.vmfWideFleetTables).every(v => v.sourceArithmeticDiscrepancies.length === 0));
+const vmfRow = n => sovietAllServices.vmfWideFleetTables[n].records.at(-1);
+assert.deepEqual([vmfRow('14').printedAllWarTotalIncludingPacific, vmfRow('14').derivedEuropeanSubtotalExcludingPacific], [350759,346035]);
+assert.deepEqual([vmfRow('25').printedAllWarTotalIncludingPacific, vmfRow('25').derivedEuropeanSubtotalExcludingPacific], [4040,4006]);
+assert.deepEqual([vmfRow('30').printedAllWarTotalIncludingPacific, vmfRow('30').derivedEuropeanSubtotalExcludingPacific], [5521,5513]);
+assert.equal(sovietAllServices.pvoFighterOperationsByUnit.records.length, 29);
+assert.equal(sovietAllServices.pvoFighterOperationsByUnit.printedOverall.combatSorties, 269565);
+assert.equal(sovietAllServices.pvoFighterOperationsByUnit.printedOverall.claimedEnemyAircraftShotDown, 3930);
+assert.equal(sovietAllServices.pvoFighterOperationsByUnit.printedOverall.ownAircraftLost, 1588);
+assert.equal(sovietAllServices.pvoIndependentTableTotalDiscrepancy, 100);
+assert.equal(sovietAllServices.longRangeADDCombatSortiesByMissionAndYear.records.at(-1).publishedGrandTotal, 219788);
+assert.equal(sovietAllServices.longRangeADDCombatAircraftLossesByTypeAndYear.records.at(-1).publishedGrandTotal, 2776);
+const sovietAnnualSorties = load('rkka-vvs-ka-combat-sorties-by-year-period-and-mission-1941-1945.json');
+assert.equal(sovietAnnualSorties.calendarYearMissionRows.length, 14);
+assert.equal(sovietAnnualSorties.strategicPeriodMissionRows.length, 14);
+assert.equal(sovietAnnualSorties.independentOriginalSourceDiscrepancies.overallPart06_02Minus06_03, 1);
+assert.equal(sovietAnnualSorties.independentOriginalSourceDiscrepancies.calendar1944Part06_03MinusPart06_07AirArmy, 17);
+assert.equal(sovietAnnualSorties.ordinalAlignedMissionComparisonWarnings.length, 2);
+const germanResearchAudit = load('luftwaffe-third-party-unit-loss-station-data-audit-1942-1944.json');
+assert.equal(germanResearchAudit.inputCensus.lossSourceRows, 33028);
+assert.equal(germanResearchAudit.inputCensus.exactDuplicateLossRows, 788);
+assert.equal(germanResearchAudit.inputCensus.stationDistinctFreeTextLabels, 1616);
+assert.equal(germanResearchAudit.strictAuditedRows, 14154);
+assert.equal(germanResearchAudit.sourceRoleByMonthAggregate.length, 357);
+assert.equal(germanResearchAudit.unitGroupAggregateAcrossReportedMonths.length, 726);
+
+const sovietPeople = load('rkka-vvs-human-casualty-distinct-populations-1941-1945.json');
+assert.equal(sovietPeople.commandStaffKilledMissingAllCauses.personnelCategories.length, 14);
+assert.equal(sovietPeople.commandStaffKilledMissingAllCauses.publishedKilledPlusMissing, 36166);
+assert.equal(sovietPeople.separatelyReportedCombatAviatorLosses.categories.reduce((n,r)=>n+r.reportedCombatCasualties,0),27600);
+
+const boBritain = load('battle-of-britain-raf-luftwaffe-strength-pilot-losses-victory-claims-1938-1940.json');
+assert.equal(boBritain.rafFighterCommandWeeklyAircraftAvailability.records.length, 20);
+assert.equal(boBritain.rafFighterCommandPilotEstablishmentAndOnHand.records.length, 20);
+assert.equal(boBritain.rafFighterCommandMonthlyPilotCasualties.records.reduce((n,r)=>n+r.killedCapturedOrMissing,0),481);
+assert.equal(boBritain.germanBattleOfBritainAircraftLossesVersusRafClaims.publishedTotals.germanActuallyDestroyed,1733);
+assert.equal(boBritain.luftwaffeFourStrengthServiceabilitySnapshots['1938-09-19_all_flying_units'].printedTotalMinusCategorySum[1],66);
+assert.equal(boBritain.luftwaffeFourStrengthServiceabilitySnapshots['1940-08-10_operating_against_Britain_ONLY'].publishedTotal[2],2550);
+
+const france1940 = load('french-air-force-metropole-campaign-strength-replenishment-losses-1940.json');
+assert.equal(france1940.countsAt1940May10.inTheFieldWithFrenchArmiesMetropolitanFrance,2176);
+assert.equal(france1940.losses1940May10ToJune09.irreplaceableOwnFrenchAircraftLosses,852);
+assert.equal(france1940.frenchReportedGermanAircraftVictoryClaims.authorCombinedCredits,853);
+assert.equal(france1940.crewCasualties.pilotsOutOfActionByJune25Approximate,500);
+
+const widerForces = load('raf-coastal-romanian-hungarian-polish-service-quantitative-1939-1945.json');
+const coastalTotals = widerForces.rafCoastalCommand1939ToMay1945.publishedAllRoles;
+assert.equal(coastalTotals.sorties,238313);
+assert.equal(widerForces.rafCoastalCommand1939ToMay1945.byMissionRole.reduce((n,r)=>n+r.aircraftLostEnemyActionOrMissing,0),1511);
+assert.equal(widerForces.royalRomanianAirForce.campaign1941OfficialAirForce.aircraftSorties,12108);
+assert.equal(widerForces.royalRomanianAirForce.followingAug23_1944ChangeOfSides.reportWindow.through,'1945-05-12');
+assert.equal(widerForces.hungarian101PumaFighterGroupMayToOct1944.claimsOfEnemyAircraftDestroyed.derivedClaimsTotal,107);
+assert.equal(widerForces.polishAirForceSeptember1939.stockStartSeptember1939ByAircraftType.reduce((n,r)=>n+r.operationalUnits,0),397);
+
+const finnishFrench = load('free-french-units-and-finnish-winter-war-strength-losses-1939-1945.json');
+assert.equal(finnishFrench.freeFrenchFighterGroups.groupRecords.length,3);
+assert.equal(finnishFrench.freeFrenchFighterGroups.groupDerivedSumOfClaimedDestroyed,409);
+assert.equal(finnishFrench.freeFrenchFighterGroups.separateFAFLCollectiveSourceObservations.frenchMinistryOfDefenceFoundationNarrativeReportedClaims,353);
+assert.equal(finnishFrench.finnishWinterWar.datedCombatAircraftUnitReadiness.length,5);
+assert.equal(finnishFrench.finnishWinterWar.reportedWinterWarCombatAircraftWrittenOffAllCauses,58);
+assert.equal(finnishFrench.finnishWinterWar.contradictingSecondaryReportedAllAircraftLosses,62);
+
+console.log('Grand Air War research transcription integrity checks passed (new 1940 national, pilot and claims series included).');

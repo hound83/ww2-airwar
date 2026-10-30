@@ -1,0 +1,611 @@
+{
+  "id": "RKKA-VVS-06-04",
+  "topic": "VVS KA 1941 front aviation mission sorties by unit",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_04.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 16,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de VVS de los Frentes",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre tropas",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre aerodro mos",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre objetos ferrovi arios",
+              "rowspan": 2
+            },
+            {
+              "value": "Misiones de recono cimiento",
+              "rowspan": 2
+            },
+            {
+              "value": "Defensa antiaerea",
+              "rowspan": 2
+            },
+            {
+              "value": "Escolta",
+              "rowspan": 2
+            },
+            {
+              "value": "Misiones especiales",
+              "rowspan": 2
+            },
+            {
+              "value": "TOTAL",
+              "rowspan": 2
+            },
+            {
+              "value": "De las cuales",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "de dia"
+            },
+            {
+              "value": "de noche"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "VVS del Frente de Karelia"
+            },
+            {
+              "value": "6 512"
+            },
+            {
+              "value": "487"
+            },
+            {
+              "value": "157"
+            },
+            {
+              "value": "862"
+            },
+            {
+              "value": "4 961"
+            },
+            {
+              "value": "946"
+            },
+            {
+              "value": "554"
+            },
+            {
+              "value": "14 479"
+            },
+            {
+              "value": "13 938"
+            },
+            {
+              "value": "541"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "VVS del 7 Ejercito Especial"
+            },
+            {
+              "value": "4 788"
+            },
+            {
+              "value": "181"
+            },
+            {
+              "value": "171"
+            },
+            {
+              "value": "1 006"
+            },
+            {
+              "value": "2 296"
+            },
+            {
+              "value": "901"
+            },
+            {
+              "value": "1 682"
+            },
+            {
+              "value": "11 025"
+            },
+            {
+              "value": "11 025"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "VVS del Frente de Leningrado"
+            },
+            {
+              "value": "24 155"
+            },
+            {
+              "value": "2 075"
+            },
+            {
+              "value": "446"
+            },
+            {
+              "value": "3 694"
+            },
+            {
+              "value": "25 081"
+            },
+            {
+              "value": "5 391"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "60 842"
+            },
+            {
+              "value": "59 398"
+            },
+            {
+              "value": "1 444"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "VVS del Frente Nor-Oeste"
+            },
+            {
+              "value": "8 064"
+            },
+            {
+              "value": "654"
+            },
+            {
+              "value": "576"
+            },
+            {
+              "value": "1 993"
+            },
+            {
+              "value": "9 149"
+            },
+            {
+              "value": "2 068"
+            },
+            {
+              "value": "718"
+            },
+            {
+              "value": "23 222"
+            },
+            {
+              "value": "21 435"
+            },
+            {
+              "value": "1 787"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "VVS del Frente de Kalinin"
+            },
+            {
+              "value": "1 255"
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": "171"
+            },
+            {
+              "value": "1 575"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3 058"
+            },
+            {
+              "value": "2 961"
+            },
+            {
+              "value": "97"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "VVS del Grupo del general Petrov"
+            },
+            {
+              "value": "1 989"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "128"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "227"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 382"
+            },
+            {
+              "value": "1 895"
+            },
+            {
+              "value": "487"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "VVS del Frente Occidental"
+            },
+            {
+              "value": "17 485"
+            },
+            {
+              "value": "942"
+            },
+            {
+              "value": "73"
+            },
+            {
+              "value": "5 282"
+            },
+            {
+              "value": "10 469"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "34 294"
+            },
+            {
+              "value": "31 254"
+            },
+            {
+              "value": "3 040"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Grupo del general Sbytov"
+            },
+            {
+              "value": "2 522"
+            },
+            {
+              "value": "189"
+            },
+            {
+              "value": "124"
+            },
+            {
+              "value": "359"
+            },
+            {
+              "value": "1 223"
+            },
+            {
+              "value": "290"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4 707"
+            },
+            {
+              "value": "4 291"
+            },
+            {
+              "value": "416"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "VVS del Frente de Reserva"
+            },
+            {
+              "value": "3 493"
+            },
+            {
+              "value": "416"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "945"
+            },
+            {
+              "value": "2 039"
+            },
+            {
+              "value": "282"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7 175"
+            },
+            {
+              "value": "6 936"
+            },
+            {
+              "value": "239"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "VVS del Frente de Bryansk"
+            },
+            {
+              "value": "5 619"
+            },
+            {
+              "value": "120"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": "1 900"
+            },
+            {
+              "value": "2 200"
+            },
+            {
+              "value": "1 550"
+            },
+            {
+              "value": "3 928"
+            },
+            {
+              "value": "15 378"
+            },
+            {
+              "value": "14 786"
+            },
+            {
+              "value": "592"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "VVS del Frente Sur-Occidental"
+            },
+            {
+              "value": "22 771"
+            },
+            {
+              "value": "356"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": "4 811"
+            },
+            {
+              "value": "18 281"
+            },
+            {
+              "value": "6 328"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "52 582"
+            },
+            {
+              "value": "52 145"
+            },
+            {
+              "value": "437"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "VVS del Frente del Sur"
+            },
+            {
+              "value": "22 253"
+            },
+            {
+              "value": "1 205"
+            },
+            {
+              "value": "848"
+            },
+            {
+              "value": "4 861"
+            },
+            {
+              "value": "5 846"
+            },
+            {
+              "value": "5 365"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "40 421"
+            },
+            {
+              "value": "39 622"
+            },
+            {
+              "value": "799"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "120 906"
+            },
+            {
+              "value": "6 695"
+            },
+            {
+              "value": "2 508"
+            },
+            {
+              "value": "26 012"
+            },
+            {
+              "value": "83 120"
+            },
+            {
+              "value": "23 348"
+            },
+            {
+              "value": "6 976"
+            },
+            {
+              "value": "269 565"
+            },
+            {
+              "value": "259 686"
+            },
+            {
+              "value": "9 879"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "%"
+            },
+            {
+              "value": "44,90%"
+            },
+            {
+              "value": "2,48%"
+            },
+            {
+              "value": "0,93%"
+            },
+            {
+              "value": "9,65%"
+            },
+            {
+              "value": "30,83%"
+            },
+            {
+              "value": "8,66%"
+            },
+            {
+              "value": "2,59%"
+            },
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "96,30%"
+            },
+            {
+              "value": "3,70%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

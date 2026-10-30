@@ -1,0 +1,363 @@
+{
+  "id": "RKKA-VVS-06-10",
+  "topic": "Long-range DA/ADD target classes and bomb tonnage",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_10.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 8,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Tipo de misiones realizadas"
+            },
+            {
+              "value": "1941 (desde 22 junio)",
+              "colspan": 2
+            },
+            {
+              "value": "1942",
+              "colspan": 2
+            },
+            {
+              "value": "1943",
+              "colspan": 2
+            },
+            {
+              "value": "1944",
+              "colspan": 2
+            },
+            {
+              "value": "1945 (hasta 9 mayo)",
+              "colspan": 2
+            },
+            {
+              "value": "Total",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "Bombas lanzadas, toneladas"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "Bombas lanzadas, toneladas"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "Bombas lanzadas, toneladas"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "Bombas lanzadas, toneladas"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "Bombas lanzadas, toneladas"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "Bombas lanzadas, toneladas"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Objetivos administrativo-politicos y militares en la retaguardia profunda"
+            },
+            {
+              "value": "366"
+            },
+            {
+              "value": "225"
+            },
+            {
+              "value": "1 114"
+            },
+            {
+              "value": "763"
+            },
+            {
+              "value": "1 027"
+            },
+            {
+              "value": "826"
+            },
+            {
+              "value": "4 466"
+            },
+            {
+              "value": "4 813"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6 973"
+            },
+            {
+              "value": "6 627"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Objetivos ferroviarios"
+            },
+            {
+              "value": "985"
+            },
+            {
+              "value": "348"
+            },
+            {
+              "value": "8 585"
+            },
+            {
+              "value": "10 768"
+            },
+            {
+              "value": "27 437"
+            },
+            {
+              "value": "33 150"
+            },
+            {
+              "value": "24 134"
+            },
+            {
+              "value": "25 492"
+            },
+            {
+              "value": "5 251"
+            },
+            {
+              "value": "5 062"
+            },
+            {
+              "value": "66 392"
+            },
+            {
+              "value": "74 819"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Aerodromos"
+            },
+            {
+              "value": "1 438"
+            },
+            {
+              "value": "1 321"
+            },
+            {
+              "value": "6 248"
+            },
+            {
+              "value": "7 222"
+            },
+            {
+              "value": "8 674"
+            },
+            {
+              "value": "10 674"
+            },
+            {
+              "value": "3 275"
+            },
+            {
+              "value": "3 361"
+            },
+            {
+              "value": "70"
+            },
+            {
+              "value": "107"
+            },
+            {
+              "value": "19 705"
+            },
+            {
+              "value": "22 685"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Puertos"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4 564"
+            },
+            {
+              "value": "4 515"
+            },
+            {
+              "value": "1 731"
+            },
+            {
+              "value": "1 399"
+            },
+            {
+              "value": "6 295"
+            },
+            {
+              "value": "5 914"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Tropas sobre campo de batalla"
+            },
+            {
+              "value": "15 408"
+            },
+            {
+              "value": "8 360"
+            },
+            {
+              "value": "19 576"
+            },
+            {
+              "value": "23 343"
+            },
+            {
+              "value": "29 416"
+            },
+            {
+              "value": "34 966"
+            },
+            {
+              "value": "16 124"
+            },
+            {
+              "value": "17 015"
+            },
+            {
+              "value": "7 927"
+            },
+            {
+              "value": "8 399"
+            },
+            {
+              "value": "88 451"
+            },
+            {
+              "value": "92 082"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "18 197"
+            },
+            {
+              "value": "10 254"
+            },
+            {
+              "value": "35 523"
+            },
+            {
+              "value": "42 097"
+            },
+            {
+              "value": "66 554"
+            },
+            {
+              "value": "79 616"
+            },
+            {
+              "value": "52 563"
+            },
+            {
+              "value": "55 196"
+            },
+            {
+              "value": "14 979"
+            },
+            {
+              "value": "14 966"
+            },
+            {
+              "value": "187 816"
+            },
+            {
+              "value": "202 129"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

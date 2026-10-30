@@ -1,0 +1,235 @@
+{
+  "sources": [
+    {
+      "url": "https://ibiblio.org/hyperwar/AAF/AAF-Luftwaffe/AAF-Luftwaffe-App4.html",
+      "title": "Strategy for Defeat: The Luftwaffe 1933–1945, Appendix 4",
+      "provenance": "Official USAF historical analysis quoting Statistical Summary of Eighth Air Force Operations, 17 Aug 1942–8 May 1945; printed through December 1944"
+    },
+    {
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090522-058.pdf",
+      "title": "USAF Historical Study, 1943 Eighth AF Heavy Bomber Loss Rates on Combat Operations, Appendix 7",
+      "provenance": "Official retrospective 1943 source for actual credited sorties and missing/Category E lost aircraft; independent of later tabulation only as document, data are related"
+    }
+  ],
+  "theater": "Eighth Air Force only, based in England, operations over Europe",
+  "population": "Heavy bomber CREDIT sorties and losses (MIA or Cat E), with parallel fighter CREDIT-sortie loss percentage, August 1942–December 1944",
+  "measurementWarnings": [
+    "A percent of credit sorties is not percentage of a formation or of on-hand aircraft lost and cannot be multiplied by all-USAAF ETO sorties.",
+    "Actual 1943 bomber aircraft losses include missing in action and Category E damaged beyond economical repair; this is not a pilot/crew killed measure.",
+    "Fighter figures are independently printed loss percentages; without fighter credit sortie denominators, fighter aircraft counts cannot be inferred.",
+    "The original 1942 and 1944 table reports rounded percentages only; do not invent lost aircraft counts for those months.",
+    "This is the Eighth Air Force, not RAF, Ninth AF, or Mediterranean Fifteenth AF; do not use it as total American European losses.",
+    "Only 1942–44 months actually printed are transcribed; 1945 is absent rather than presumed zero."
+  ],
+  "monthly": [
+    {
+      "month": "1942-08",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 0.0,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.9,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1942-09",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 1.9,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.0,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1942-10",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 4.5,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.5,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1942-11",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 2.9,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.5,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1942-12",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 5.8,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.0,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1943-01",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 7.5,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.7,
+      "creditSortiesHeavyBomber": 279,
+      "aircraftLostMiaOrCategoryE": 21
+    },
+    {
+      "month": "1943-02",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 8.1,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.1,
+      "creditSortiesHeavyBomber": 298,
+      "aircraftLostMiaOrCategoryE": 24
+    },
+    {
+      "month": "1943-03",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.2,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.8,
+      "creditSortiesHeavyBomber": 716,
+      "aircraftLostMiaOrCategoryE": 23
+    },
+    {
+      "month": "1943-04",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 7.8,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.2,
+      "creditSortiesHeavyBomber": 373,
+      "aircraftLostMiaOrCategoryE": 29
+    },
+    {
+      "month": "1943-05",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 5.4,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.6,
+      "creditSortiesHeavyBomber": 1340,
+      "aircraftLostMiaOrCategoryE": 73
+    },
+    {
+      "month": "1943-06",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 6.4,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.5,
+      "creditSortiesHeavyBomber": 1447,
+      "aircraftLostMiaOrCategoryE": 93
+    },
+    {
+      "month": "1943-07",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 5.5,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.6,
+      "creditSortiesHeavyBomber": 2334,
+      "aircraftLostMiaOrCategoryE": 128
+    },
+    {
+      "month": "1943-08",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 6.0,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.5,
+      "creditSortiesHeavyBomber": 2058,
+      "aircraftLostMiaOrCategoryE": 124
+    },
+    {
+      "month": "1943-09",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.9,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.5,
+      "creditSortiesHeavyBomber": 2561,
+      "aircraftLostMiaOrCategoryE": 101
+    },
+    {
+      "month": "1943-10",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 9.2,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.5,
+      "creditSortiesHeavyBomber": 2159,
+      "aircraftLostMiaOrCategoryE": 198
+    },
+    {
+      "month": "1943-11",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.9,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.6,
+      "creditSortiesHeavyBomber": 2916,
+      "aircraftLostMiaOrCategoryE": 114
+    },
+    {
+      "month": "1943-12",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.6,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.8,
+      "creditSortiesHeavyBomber": 5618,
+      "aircraftLostMiaOrCategoryE": 200
+    },
+    {
+      "month": "1944-01",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.8,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.1,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-02",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.5,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.1,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-03",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.3,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.6,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-04",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 3.6,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.3,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-05",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 2.2,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.4,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-06",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 1.1,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.0,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-07",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 1.5,
+      "eighthAfFighterPercentOfCreditSortiesLost": 0.9,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-08",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 1.5,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.5,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-09",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 2.2,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.9,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-10",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 1.1,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.0,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-11",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 2.2,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.8,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    },
+    {
+      "month": "1944-12",
+      "eighthAfHeavyBomberPercentOfCreditSortiesLost": 1.2,
+      "eighthAfFighterPercentOfCreditSortiesLost": 1.2,
+      "creditSortiesHeavyBomber": null,
+      "aircraftLostMiaOrCategoryE": null
+    }
+  ],
+  "reported1943GrandHeavyBomber": {
+    "creditSorties": 22099,
+    "missingAndCategoryEAircraft": 1128,
+    "printedLossRatePercent": 5.1
+  },
+  "crossSourceRateDiscrepancies": []
+}
