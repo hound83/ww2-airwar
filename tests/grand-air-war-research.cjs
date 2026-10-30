@@ -512,4 +512,23 @@ assert.equal(fleetAirArm.strength_endpoints.length,2);
 assert.deepEqual(fleetAirArm.strength_endpoints.map(r=>r.aircraft??r.frontline_aircraft_available_for_operations),[232,1336]);
 assert.deepEqual(fleetAirArm.strength_endpoints.map(r=>r.pilots??r.pilots_available_for_operations),[406,3243]);
 
-console.log('Grand Air War research transcription integrity checks passed (RAF captured-German original strengths, original Italy, Commonwealth European units, Fifteenth AF overlap included).');
+const thor = load('thor-usaf-original-ww2-eto-mto-record-and-map-coverage-audit.json');
+assert.equal(thor.allOriginalRecords, 178742);
+assert.equal(thor.globalSourceCountsByTheater.ETO, 95827);
+assert.equal(thor.globalSourceCountsByTheater.MTO, 30870);
+assert.equal(thor.invalidDatesByTheater.ETO, 36);
+assert.equal(thor.invalidDatesByTheater.MTO, 338);
+assert.equal(thor.selectedRecordFieldCounts.ETO_MTO_1936_to_1945_05_09_records, 126322);
+assert.equal(thor.selectedETO_MTORecordsByYearAndTheater.reduce((n, r) => n + r.records, 0), 126322);
+assert.equal(thor.selectedRecordsByFlyingForce.reduce((n, r) => n + r.records, 0), 126322);
+assert.equal(thor.selectedTargetCountriesByTheater.reduce((n, r) => n + r.records, 0), 126322);
+assert.equal(thor.selectedRecordFieldCounts.ETO_MTO_validTargetLatLon_records, 120271);
+assert.equal(thor.targetLocationCandidates.length, 4903);
+assert.equal(thor.takeoffBaseCandidates.length, 66);
+assert.equal(thor.takeoffBaseCandidates.reduce((n, r) => n + r.sourceRecordCountNotSorties, 0), 1853);
+assert.equal(thor.targetLocationCandidates.reduce((n, r) => n + r.sourceRecordCountNotSorties, 0), 120271);
+assert.equal(thor.sortieDupeFlags.unmarked + thor.sortieDupeFlags['1'], 126322);
+assert.ok(thor.takeoffBaseCandidates.every(r => r.status === 'research_candidate_needs_station_identity_and_date_validation'));
+assert.ok(thor.criticalSemantics.some(s => s.includes('not necessarily a unique sortie')));
+
+console.log('Grand Air War research transcription integrity checks passed (including THOR original bombing target/airfield coordinate coverage audit).');
