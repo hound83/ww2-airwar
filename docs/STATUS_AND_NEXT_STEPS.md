@@ -13,6 +13,14 @@
 
 ## Suggested Atlas roadmap (proposals, not approved scope)
 
+### v7.5 compact navigation/layout — proposed review milestone (30 October 2026)
+
+- Preview-only compact history navigation keeps the seven primary topics readily accessible, with simulations and research in an expandable section.
+- Date slider and theater selections remain visible; period shortcuts and optional display controls use native expandable sections. The preview and its footer are labeled as development, not the public v7.4 release.
+- The v7.4 default layout, historical datasets and frozen physics v2.4 page are not intentionally changed. This milestone does not promote v7.5.
+- Local build, reproducible-build check and 12 dependency-free Node suites passed. The updated Playwright browser test includes desktop/mobile compact-layout assertions; its local execution remains blocked by an unavailable Chromium binary and must be confirmed on the preview browser workflow before merge.
+- Next independent milestone after review: historical chart readability and source-label clarity.
+
 ### Priority 1 — clean, usable site, independent of physics
 
 1. Evaluate v7.5 homepage/navigation usability against default v7.4; fix conspicuous mobile and desktop problems with screenshots and actual browser checks.
