@@ -1,0 +1,4695 @@
+{
+  "id": "USAAF-1988-PRIORITY-75-TEXTUAL-REVIEW-2026-10-30",
+  "status": "RESEARCH_ONLY_TEXT_EXTRACTION_REVIEW_NOT_HISTORICAL_MAP_VERIFICATION",
+  "cutoff": "1945-05-09",
+  "originalReviewDataset": "research/transcriptions/usaaf-1988-unit-airfield-month-crosschecked-1944-1945.json",
+  "originalOccupancyDataset": "research/transcriptions/usaaf-1988-eto-a-y-r-airfield-unit-occupancy-ocr-candidates-1944-1945.json",
+  "originalAirfieldHeaderDataset": "research/transcriptions/usaaf-official-1988-american-a-y-r-code-continental-airfield-header-candidates-1944-1945.json",
+  "limitations": [
+    "The 1988 USAF field study itself cites Maurer lineage histories, so matching both publications is NOT independent evidence.",
+    "A group may have arrived before the field was declared operational; initial operational date is not identical to arrival date.",
+    "An airfield transfer from USAAF control is not proof that all aircraft/units had left the physical runway.",
+    "1988 listing includes postwar stationing months despite the D-Day to VE-Day title; 1945-05 month is not guaranteed pre-9-May.",
+    "Corrected candidates are not definitive historical geolocations or precise unit arrival and departure dates.",
+    "The source PDF web text was inspected. Visual screenshot could not be retrieved in this environment; unconfirmed originals remain research-only.",
+    "The base OCR transcription and its first-pass 75 flags are kept immutable. This review is a derivative overlay; downstream readers must apply it rather than treating first-pass flags as current."
+  ],
+  "audit": {
+    "originalReviewPriorityLines": 75,
+    "distinctAirfieldCodesReviewed": 44,
+    "sourceLinesWithHeaderReparse": 51,
+    "distinctFieldHeadersReparsed": 24,
+    "sourceLinesWithUnitMonthRecovery": 20,
+    "reviewDecisionCounts": {
+      "ocr_or_layout_recovered_from_source_text": 65,
+      "historical_sequence_or_release_semantics_explained": 5,
+      "historical_ambiguity_still_open": 3,
+      "postwar_only_scope_issue": 2
+    },
+    "originalPriorityMonthRows": 155,
+    "recoveredPriorityMonthRows": 217,
+    "addedResearchMonthRows": 62,
+    "totalResearchMonthCandidatesAfterSubstitution": 826
+  },
+  "reviewRows": [
+    {
+      "sourceRowId": "usaf1988-p13-l18",
+      "airfieldCode": "A-4",
+      "unit": "48th Ftr Gp",
+      "sourcePrintedPage": 13,
+      "originalOCRUnitPeriod": "48th Ftr Gp Jun-Aug 44",
+      "originalFirstMonth": "1944-06",
+      "originalLastMonth": "1944-08",
+      "reviewedFirstMonth": "1944-06",
+      "reviewedLastMonth": "1944-08",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "30-6-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-06-30",
+        "releaseDate": "1944-09-15",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l19",
+      "airfieldCode": "A-4",
+      "unit": "107th Tac Rec Sq",
+      "sourcePrintedPage": 13,
+      "originalOCRUnitPeriod": "107th Tac Rec Sq Jun-Jul 44",
+      "originalFirstMonth": "1944-06",
+      "originalLastMonth": "1944-07",
+      "reviewedFirstMonth": "1944-06",
+      "reviewedLastMonth": "1944-07",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "30-6-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-06-30",
+        "releaseDate": "1944-09-15",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l20",
+      "airfieldCode": "A-4",
+      "unit": "485th Ftr Sq",
+      "sourcePrintedPage": 13,
+      "originalOCRUnitPeriod": "485th Ftr Sq Jul-Aug 44",
+      "originalFirstMonth": "1944-07",
+      "originalLastMonth": "1944-08",
+      "reviewedFirstMonth": "1944-07",
+      "reviewedLastMonth": "1944-08",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "30-6-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-06-30",
+        "releaseDate": "1944-09-15",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p14-l29",
+      "airfieldCode": "A-16",
+      "unit": "36th Ftr Gp",
+      "sourcePrintedPage": 14,
+      "originalOCRUnitPeriod": "36th Ftr Gp    Jul-Aug 44",
+      "originalFirstMonth": "1944-07",
+      "originalLastMonth": "1944-08",
+      "reviewedFirstMonth": "1944-07",
+      "reviewedLastMonth": "1944-08",
+      "originalHeaderDateTokens": {
+        "first": "2-8-44",
+        "release": "5-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-02",
+        "releaseDate": "1944-09-05",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_precedes_airfield_initial_operation_month"
+      ],
+      "reviewDecision": "historical_sequence_or_release_semantics_explained",
+      "externalEvidence": {
+        "interpretation": "Stationed from 4 July 1944 per USAF official group lineage, before 2 August operational declaration; not a demonstrated error in either date.",
+        "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/434107/36-operations-group-pacaf/",
+        "kind": "USAF_official_unit_fact_sheet"
+      },
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l23",
+      "airfieldCode": "A-35",
+      "unit": "36th Ftr Gp",
+      "sourcePrintedPage": 16,
+      "originalOCRUnitPeriod": "36th Ftr Gp Aug-sep 44",
+      "originalFirstMonth": "1944-08",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-08",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "3-9-44",
+        "release": "20-11-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-03",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_precedes_airfield_initial_operation_month"
+      ],
+      "reviewDecision": "historical_sequence_or_release_semantics_explained",
+      "externalEvidence": {
+        "interpretation": "Stationed from 25 August 1944 per USAF official group lineage, before 3 September operational declaration; early presence and operational readiness differ.",
+        "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/434107/36-operations-group-pacaf/",
+        "kind": "USAF_official_unit_fact_sheet"
+      },
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l24",
+      "airfieldCode": "A-35",
+      "unit": "440th Trp Carr Gp",
+      "sourcePrintedPage": 16,
+      "originalOCRUnitPeriod": "440th Trp Carr Gp Sep-Note 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "3-9-44",
+        "release": "20-11-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-03",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l28",
+      "airfieldCode": "A-37",
+      "unit": "405th Ftr Gp",
+      "sourcePrintedPage": 16,
+      "originalOCRUnitPeriod": "405th Ftr Gp    Aug-Sep 44",
+      "originalFirstMonth": "1944-08",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-08",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "3-9-44",
+        "release": "28-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-03",
+        "releaseDate": "1944-09-28",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_precedes_airfield_initial_operation_month"
+      ],
+      "reviewDecision": "historical_sequence_or_release_semantics_explained",
+      "externalEvidence": {
+        "interpretation": "Secondary local airfield memorial reports 405th Fighter Group advance parties before completion on 3 September; still needs original engineer/ORB evidence.",
+        "url": "https://www.uswarmemorials.org/html/monument_details.php?MemID=3374&SiteID=2580",
+        "kind": "secondary_site_memorial_not_primary"
+      },
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "sourcePrintedPage": 17,
+      "originalOCRUnitPeriod": "441st Trp Carr Gp Nor 44-Aug 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-11",
+      "reviewedLastMonth": "1945-08",
+      "originalHeaderDateTokens": {
+        "first": "26-8-44",
+        "release": "By 1-9-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-26",
+        "releaseDate": "1945-09-01",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "same_station_name_but_maurer_date_not_corroborated"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l26",
+      "airfieldCode": "A-44",
+      "unit": "365th Ftr Gp",
+      "sourcePrintedPage": 17,
+      "originalOCRUnitPeriod": "365th Ftr Gp Aug 44",
+      "originalFirstMonth": "1944-08",
+      "originalLastMonth": "1944-08",
+      "reviewedFirstMonth": "1944-08",
+      "reviewedLastMonth": "1944-08",
+      "originalHeaderDateTokens": {
+        "first": "2-9-44",
+        "release": "20-11-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-02",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_precedes_airfield_initial_operation_month"
+      ],
+      "reviewDecision": "historical_ambiguity_still_open",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l28",
+      "airfieldCode": "A-44",
+      "unit": "442nd Trp Carr Gp",
+      "sourcePrintedPage": 17,
+      "originalOCRUnitPeriod": "442nd Trp Carr Gp Oct-Note 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "2-9-44",
+        "release": "20-11-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-02",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l34",
+      "airfieldCode": "A-45",
+      "unit": "439th Trp Carr Gp",
+      "sourcePrintedPage": 17,
+      "originalOCRUnitPeriod": "439th Trp Carr Gp Sep-Note 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "3-9-44",
+        "release": "201144"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-03",
+        "releaseDate": null,
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "sourcePrintedPage": 18,
+      "originalOCRUnitPeriod": "440th Trp Carr Gp Nor 44-Oct 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-11",
+      "reviewedLastMonth": "1945-10",
+      "originalHeaderDateTokens": {
+        "first": "24-8-44",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-24",
+        "releaseDate": null,
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l7",
+      "airfieldCode": "A-55",
+      "unit": "3rd Trp Carr Path Sq",
+      "sourcePrintedPage": 19,
+      "originalOCRUnitPeriod": "3rd Trp Carr Path Sq (Prov)",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": "15-9-44",
+        "release": "8-8-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-15",
+        "releaseDate": "1945-08-08",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l15",
+      "airfieldCode": "A-58",
+      "unit": "425th N Ftr Sq",
+      "sourcePrintedPage": 19,
+      "originalOCRUnitPeriod": "425th N Ftr Sq Sep-Oct 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-10",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-10",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "8-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-08",
+        "releaseDate": "1945-08-08",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "sourcePrintedPage": 19,
+      "originalOCRUnitPeriod": "410th Bomb Gp Sep 44-Feb 45",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1945-02",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1945-02",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "8-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-08",
+        "releaseDate": "1945-08-08",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l17",
+      "airfieldCode": "A-58",
+      "unit": "437th Trp Carr Gp",
+      "sourcePrintedPage": 19,
+      "originalOCRUnitPeriod": "437th Trp Carr Gp Feb-Jul 45",
+      "originalFirstMonth": "1945-02",
+      "originalLastMonth": "1945-07",
+      "reviewedFirstMonth": "1945-02",
+      "reviewedLastMonth": "1945-07",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "8-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-08",
+        "releaseDate": "1945-08-08",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l23",
+      "airfieldCode": "A-60",
+      "unit": "410th Bomb Gp",
+      "sourcePrintedPage": 19,
+      "originalOCRUnitPeriod": "410th Bomb Gp    May-,Tun 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-05",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "26-9-44",
+        "release": "17-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-26",
+        "releaseDate": "1945-07-17",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p20-l19",
+      "airfieldCode": "A-66",
+      "unit": "354th Ftr Gp",
+      "sourcePrintedPage": 20,
+      "originalOCRUnitPeriod": "354th Ftr Gp   Sep-Dec 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-12",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-12",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "15-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-15",
+        "releaseDate": "1944-12-11",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l5",
+      "airfieldCode": "A-70",
+      "unit": "366th Ftr Gp",
+      "sourcePrintedPage": 21,
+      "originalOCRUnitPeriod": "366th Ftr Gp Sep-Nor 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "9-9-44",
+        "release": "23-5-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-09",
+        "releaseDate": "1945-05-23",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "same_station_name_but_maurer_date_not_corroborated"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l7",
+      "airfieldCode": "A-70",
+      "unit": "409th Bomb Gp",
+      "sourcePrintedPage": 21,
+      "originalOCRUnitPeriod": "409th Bomb Gp Feb-Jun 45",
+      "originalFirstMonth": "1945-02",
+      "originalLastMonth": "1945-06",
+      "reviewedFirstMonth": "1945-02",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "9-9-44",
+        "release": "23-5-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-09",
+        "releaseDate": "1945-05-23",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_exceeds_airfield_release_month",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "postwar_only_scope_issue",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May",
+        "original_postwar_period_extends_after_field_release"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "422nd N Ftr Sq Sep 44-Apr 45",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l6",
+      "airfieldCode": "A-78",
+      "unit": "370th Ftr Gp",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "370th Ftr Gp Sep 44-Jan 45",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1945-01",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1945-01",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "474th Ftr Gp Oct 44-Mar 45",
+      "originalFirstMonth": "1944-10",
+      "originalLastMonth": "1945-03",
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1945-03",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l8",
+      "airfieldCode": "A-78",
+      "unit": "30th Photo Rec Sq",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "30th Photo Rec Sq Dec 44",
+      "originalFirstMonth": "1944-12",
+      "originalLastMonth": "1944-12",
+      "reviewedFirstMonth": "1944-12",
+      "reviewedLastMonth": "1944-12",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l9",
+      "airfieldCode": "A-78",
+      "unit": "417th N Ftr Sq",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "417th N Ftr Sq Jan 45",
+      "originalFirstMonth": "1945-01",
+      "originalLastMonth": "1945-01",
+      "reviewedFirstMonth": "1945-01",
+      "reviewedLastMonth": "1945-01",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l10",
+      "airfieldCode": "A-78",
+      "unit": "414th N Ftr Sq",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "414th N Ftr Sq Jan-Apr 45",
+      "originalFirstMonth": "1945-01",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1945-01",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l11",
+      "airfieldCode": "A-78",
+      "unit": "344th Bomb Gp",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "344th Bomb Gp Apr-Sep 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-09",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-09",
+      "originalHeaderDateTokens": {
+        "first": "Belg",
+        "release": "11-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l13",
+      "airfieldCode": "A-79",
+      "unit": "362nd Ftr Gp",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "362nd Ftr Gp Sep-Name 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "21-9-44",
+        "release": "2-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-21",
+        "releaseDate": "1945-07-02",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "same_station_name_but_maurer_date_not_corroborated"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l14",
+      "airfieldCode": "A-79",
+      "unit": "425th N Ftr Sq",
+      "sourcePrintedPage": 22,
+      "originalOCRUnitPeriod": "425th N Ftr Sq Oct-Nor 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "21-9-44",
+        "release": "2-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-21",
+        "releaseDate": "1945-07-02",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "sourcePrintedPage": 23,
+      "originalOCRUnitPeriod": "373rd Ftr Gp Oct 44-Mar 45",
+      "originalFirstMonth": "1944-10",
+      "originalLastMonth": "1945-03",
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1945-03",
+      "originalHeaderDateTokens": {
+        "first": "BeIg",
+        "release": "28-10-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-10-28",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "sourcePrintedPage": 23,
+      "originalOCRUnitPeriod": "36th Ftr Gp Oct 44-Mar 45",
+      "originalFirstMonth": "1944-10",
+      "originalLastMonth": "1945-03",
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1945-03",
+      "originalHeaderDateTokens": {
+        "first": "BeIg",
+        "release": "28-10-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-10-28",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l25",
+      "airfieldCode": "A-89",
+      "unit": "155th Photo Rec Sq",
+      "sourcePrintedPage": 23,
+      "originalOCRUnitPeriod": "155th Photo Rec Sq Feb-Apr 45",
+      "originalFirstMonth": "1945-02",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1945-02",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": "BeIg",
+        "release": "28-10-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-10-28",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l26",
+      "airfieldCode": "A-89",
+      "unit": "322nd Bomb Gp",
+      "sourcePrintedPage": 23,
+      "originalOCRUnitPeriod": "322nd Bomb Gp Mar-Jun 45",
+      "originalFirstMonth": "1945-03",
+      "originalLastMonth": "1945-06",
+      "reviewedFirstMonth": "1945-03",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "BeIg",
+        "release": "28-10-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-10-28",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "sourcePrintedPage": 23,
+      "originalOCRUnitPeriod": "358th Ftr Gp   Note 44-Apr 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-11",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": "14-9-44",
+        "release": "22-5-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-14",
+        "releaseDate": "1945-05-22",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l35",
+      "airfieldCode": "A-92",
+      "unit": "9th Wea Rec Sq",
+      "sourcePrintedPage": 23,
+      "originalOCRUnitPeriod": "9th Wea Rec Sq (Proms) Apr~Tun 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "18-9-44",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-18",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l9",
+      "airfieldCode": "Y-2",
+      "unit": "324th Ftr Gp",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "324th Ftr Gp   Jan-May 45",
+      "originalFirstMonth": "1945-01",
+      "originalLastMonth": "1945-05",
+      "reviewedFirstMonth": "1945-01",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-12-25",
+        "releaseDate": "1945-05-29",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l17",
+      "airfieldCode": "Y-4",
+      "unit": "109th Tac Rec Sq",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "109th Tac Rec Sq Aug-Sep 44",
+      "originalFirstMonth": "1944-08",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-08",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "28-8-44",
+        "release": "Br, 12-5-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-28",
+        "releaseDate": "1945-05-12",
+        "country": "France",
+        "releaseContext": "British control handover"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l19",
+      "airfieldCode": "Y-4",
+      "unit": "47th Lia Sq",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "47th Lia Sq Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "28-8-44",
+        "release": "Br, 12-5-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-28",
+        "releaseDate": "1945-05-12",
+        "country": "France",
+        "releaseContext": "British control handover"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l20",
+      "airfieldCode": "Y-4",
+      "unit": "112th Lia Sq",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "112th Lia Sq Sep 44-Tun 45",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "28-8-44",
+        "release": "Br, 12-5-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-28",
+        "releaseDate": "1945-05-12",
+        "country": "France",
+        "releaseContext": "British control handover"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l22",
+      "airfieldCode": "Y-5",
+      "unit": "324th Ftr Gp",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "324th Ftr Gp   Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-06",
+        "releaseDate": "1945-05-29",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l30",
+      "airfieldCode": "Y-7",
+      "unit": "324th Ftr Gp",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "324th Ftr Gp Sep 44-.Tan 45",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "15-9-44",
+        "release": "17-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-15",
+        "releaseDate": "1945-07-17",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l32",
+      "airfieldCode": "Y-7",
+      "unit": "371st Ftr Gp",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "371st Ftr Gp Oct-Dec 44",
+      "originalFirstMonth": "1944-10",
+      "originalLastMonth": "1944-12",
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1944-12",
+      "originalHeaderDateTokens": {
+        "first": "15-9-44",
+        "release": "17-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-15",
+        "releaseDate": "1945-07-17",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l33",
+      "airfieldCode": "Y-7",
+      "unit": "320th Bomb Gp",
+      "sourcePrintedPage": 25,
+      "originalOCRUnitPeriod": "320th Bomb Gp Apr-Jun 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-06",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "15-9-44",
+        "release": "17-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-15",
+        "releaseDate": "1945-07-17",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l6",
+      "airfieldCode": "Y-9",
+      "unit": "415th N Ftr Sq",
+      "sourcePrintedPage": 26,
+      "originalOCRUnitPeriod": "415th N Ftr Sq Sep-Nov 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-11",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "16-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-16",
+        "releaseDate": "1945-07-01",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l7",
+      "airfieldCode": "Y-9",
+      "unit": "371st Ftr Gp",
+      "sourcePrintedPage": 26,
+      "originalOCRUnitPeriod": "371st Ftr Gp Nov-Dec 44",
+      "originalFirstMonth": "1944-11",
+      "originalLastMonth": "1944-12",
+      "reviewedFirstMonth": "1944-11",
+      "reviewedLastMonth": "1944-12",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "16-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-16",
+        "releaseDate": "1945-07-01",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "sourcePrintedPage": 26,
+      "originalOCRUnitPeriod": "320th Bomb Gp Nov 44-Apr 45",
+      "originalFirstMonth": "1944-11",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1944-11",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "16-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-16",
+        "releaseDate": "1945-07-01",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "sourcePrintedPage": 26,
+      "originalOCRUnitPeriod": "17th Bomb Gp Nov 44-Jun 45",
+      "originalFirstMonth": "1944-11",
+      "originalLastMonth": "1945-06",
+      "reviewedFirstMonth": "1944-11",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "Fr",
+        "release": "16-9-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-16",
+        "releaseDate": "1945-07-01",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "source_unit_month_exceeds_airfield_release_month",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l6",
+      "airfieldCode": "Y-17",
+      "unit": "324th Ftr Gp",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "324th Ftr Gp Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "27-8-44",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-27",
+        "releaseDate": null,
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l8",
+      "airfieldCode": "Y-17",
+      "unit": "64th Trp Carr Gp",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "64th Trp Carr Gp Sep-Note 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "27-8-44",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-27",
+        "releaseDate": null,
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l10",
+      "airfieldCode": "Y-17",
+      "unit": "1411th AAFBU",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "1411th AAFBU Feb-Oct 45",
+      "originalFirstMonth": "1945-02",
+      "originalLastMonth": "1945-10",
+      "reviewedFirstMonth": "1945-02",
+      "reviewedLastMonth": "1945-10",
+      "originalHeaderDateTokens": {
+        "first": "27-8-44",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-27",
+        "releaseDate": null,
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l13",
+      "airfieldCode": "Y-18",
+      "unit": "415th N Ftr Sq",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "415th N Ftr Sq Sep-Note 44",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-11",
+      "originalHeaderDateTokens": {
+        "first": "30-8-44",
+        "release": "Fr, 19-12-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-30",
+        "releaseDate": "1944-12-19",
+        "country": "France",
+        "releaseContext": "French control handover"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "417th N Ftr Sq Sep 44-Apr 45",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": "30-8-44",
+        "release": "Fr, 19-12-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-30",
+        "releaseDate": "1944-12-19",
+        "country": "France",
+        "releaseContext": "French control handover"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "historical_sequence_or_release_semantics_explained",
+      "externalEvidence": {
+        "interpretation": "USAF official lineage locates 417th Night Fighter Squadron at La Vallon from 12 September 1944 until 5 April 1945; Johnson records return of airfield to French control on 19 December 1944. Release from USAAF control is not proof the squadron left.",
+        "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/432152/417-test-and-evaluations-squadron-acc/",
+        "kind": "USAF_official_unit_fact_sheet"
+      },
+      "remainingCautions": [
+        "unit_period_extends_after_field_release_or_control_transfer"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l16",
+      "airfieldCode": "Y-18",
+      "unit": "79th Ftr Gp",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "79th Ftr Gp Sep-Oct 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-10",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-10",
+      "originalHeaderDateTokens": {
+        "first": "30-8-44",
+        "release": "Fr, 19-12-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-08-30",
+        "releaseDate": "1944-12-19",
+        "country": "France",
+        "releaseContext": "French control handover"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l31",
+      "airfieldCode": "Y-23",
+      "unit": "79th Ftr Gp",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "79th Ftr Gp Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-02",
+        "releaseDate": "1944-12-19",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l37",
+      "airfieldCode": "Y-24",
+      "unit": "23rd Photo Rec Sq",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "23rd Photo Rec Sq Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "7-9-44",
+        "release": "20-11-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-07",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l39",
+      "airfieldCode": "Y-24",
+      "unit": "111th Tac Rec Sq",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "111th Tac Rec Sq Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": "7-9-44",
+        "release": "20-11-44"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-07",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l41",
+      "airfieldCode": "Y-25",
+      "unit": "27th Ftr Gp",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "27th Ftr Gp   Sep-Oct 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-10",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-10",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-11",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l44",
+      "airfieldCode": "Y-26",
+      "unit": "72nd Lia Sq",
+      "sourcePrintedPage": 27,
+      "originalOCRUnitPeriod": "72nd Lia Sq   Sep 44",
+      "originalFirstMonth": "1944-09",
+      "originalLastMonth": "1944-09",
+      "reviewedFirstMonth": "1944-09",
+      "reviewedLastMonth": "1944-09",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-09-12",
+        "releaseDate": "1944-11-20",
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l21",
+      "airfieldCode": "Y-42",
+      "unit": "14th Lia Sq",
+      "sourcePrintedPage": 29,
+      "originalOCRUnitPeriod": "14th Lia Sq    Oct-Dec 44",
+      "originalFirstMonth": "1944-10",
+      "originalLastMonth": "1944-12",
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1944-12",
+      "originalHeaderDateTokens": {
+        "first": "15-10-44",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1944-10-15",
+        "releaseDate": null,
+        "country": "France",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "sourcePrintedPage": 29,
+      "originalOCRUnitPeriod": "125th Lia Sq Oct 44 .Mar 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1945-03",
+      "originalHeaderDateTokens": {
+        "first": "23-3-45",
+        "release": "Neth, by"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-03-23",
+        "releaseDate": null,
+        "country": "Netherlands",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "historical_ambiguity_still_open",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "airfieldCode": "Y-47",
+      "unit": "112th Lia Sq",
+      "sourcePrintedPage": 30,
+      "originalOCRUnitPeriod": "112th Lia Sq     Oct 44-Feb 45",
+      "originalFirstMonth": "1944-10",
+      "originalLastMonth": "1945-02",
+      "reviewedFirstMonth": "1944-10",
+      "reviewedLastMonth": "1945-02",
+      "originalHeaderDateTokens": {
+        "first": "22-2-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-02-22",
+        "releaseDate": null,
+        "country": "Belgium",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_precedes_airfield_initial_operation_month"
+      ],
+      "reviewDecision": "historical_ambiguity_still_open",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "unit_reported_before_field_declared_operational"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l32",
+      "airfieldCode": "Y-55",
+      "unit": "394th Bomb Gp",
+      "sourcePrintedPage": 30,
+      "originalOCRUnitPeriod": "394th Bomb Gp May-Sep 45",
+      "originalFirstMonth": "1945-05",
+      "originalLastMonth": "1945-09",
+      "reviewedFirstMonth": "1945-05",
+      "reviewedLastMonth": "1945-09",
+      "originalHeaderDateTokens": {
+        "first": "12-3-45",
+        "release": "15-8-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-03-12",
+        "releaseDate": "1945-08-15",
+        "country": "Netherlands",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_exceeds_airfield_release_month",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "postwar_only_scope_issue",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May",
+        "original_postwar_period_extends_after_field_release"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p33-l21",
+      "airfieldCode": "Y-86",
+      "unit": "365th Ftr Gp",
+      "sourcePrintedPage": 33,
+      "originalOCRUnitPeriod": "365th Ftr Gp   Apr~Tul 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-07",
+      "originalHeaderDateTokens": {
+        "first": "31-3-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-03-31",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "same_station_name_but_maurer_date_not_corroborated"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p34-l6",
+      "airfieldCode": "Y-90",
+      "unit": "417th N Ftr Sq",
+      "sourcePrintedPage": 34,
+      "originalOCRUnitPeriod": "417th N Ftr Sq AprMay 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": "5-4-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-05",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p34-l14",
+      "airfieldCode": "Y-94",
+      "unit": "366th Ftr Gp",
+      "sourcePrintedPage": 34,
+      "originalOCRUnitPeriod": "366th Ftr Gp   Apr-Tun 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "12-4-45",
+        "release": "By 15-12-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-12",
+        "releaseDate": "1945-12-15",
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p35-l7",
+      "airfieldCode": "R-2",
+      "unit": "474th Ftr Gp",
+      "sourcePrintedPage": 35,
+      "originalOCRUnitPeriod": "474th Ftr Gp Apr-7un 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-06",
+      "originalHeaderDateTokens": {
+        "first": "8-4-45",
+        "release": "5-7-45"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-08",
+        "releaseDate": "1945-07-05",
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l11",
+      "airfieldCode": "R-28",
+      "unit": "10th Photo Gp",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "10th Photo Gp (Rec)      Apr 45-Apr 47",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-19",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l17",
+      "airfieldCode": "R-30",
+      "unit": "362nd Ftr Gp",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "362nd Ftr Gp Apr-May 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-05",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": "22-4-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-22",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l19",
+      "airfieldCode": "R-30",
+      "unit": "425th N Ftr Sq",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "425th N Ftr Sq May~7ul 45",
+      "originalFirstMonth": null,
+      "originalLastMonth": null,
+      "reviewedFirstMonth": "1945-05",
+      "reviewedLastMonth": "1945-07",
+      "originalHeaderDateTokens": {
+        "first": "22-4-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-22",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": true
+      },
+      "previousReviewFlags": [
+        "unresolved_ocr_month_window",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l20",
+      "airfieldCode": "R-30",
+      "unit": "371st Ftr Gp",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "371st Ftr Gp may-Aug 45",
+      "originalFirstMonth": "1945-05",
+      "originalLastMonth": "1945-08",
+      "reviewedFirstMonth": "1945-05",
+      "reviewedLastMonth": "1945-08",
+      "originalHeaderDateTokens": {
+        "first": "22-4-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-22",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l34",
+      "airfieldCode": "R-35",
+      "unit": "125th Lia Sq",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "125th Lia Sq    Apr 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-04",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-04",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-18",
+        "releaseDate": "1945-05-15",
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l40",
+      "airfieldCode": "R-37",
+      "unit": "363rd Tac Rec Gp",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "363rd Tac Rec Gp     Apr-May 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-05",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-22",
+        "releaseDate": "1945-06-05",
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l43",
+      "airfieldCode": "R-38",
+      "unit": "125th Lia Sq",
+      "sourcePrintedPage": 37,
+      "originalOCRUnitPeriod": "125th Lia Sq    Apr-May 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-05",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": null,
+        "release": null
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-04-27",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": "By: upper-bound date only"
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_line_before_airfield_header",
+        "airfield_header_layout_or_country_unverified"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p40-l22",
+      "airfieldCode": "R-77",
+      "unit": "323rd Bomb Gp",
+      "sourcePrintedPage": 40,
+      "originalOCRUnitPeriod": "323rd Bomb Gp   May-Jul 45",
+      "originalFirstMonth": "1945-05",
+      "originalLastMonth": "1945-07",
+      "reviewedFirstMonth": "1945-05",
+      "reviewedLastMonth": "1945-07",
+      "originalHeaderDateTokens": {
+        "first": "2-5-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-05-02",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": true,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "airfield_header_layout_or_country_unverified",
+        "original_range_continues_after_1945_05_09"
+      ],
+      "reviewDecision": "ocr_or_layout_recovered_from_source_text",
+      "externalEvidence": null,
+      "remainingCautions": [
+        "source_period_extends_beyond_european_war_cutoff",
+        "May_1945_month_is_not_proof_of_presence_before_9_May"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    },
+    {
+      "sourceRowId": "usaf1988-p42-l7",
+      "airfieldCode": "R-96",
+      "unit": "14th Lia Sq",
+      "sourcePrintedPage": 42,
+      "originalOCRUnitPeriod": "14th Lia Sq   Apr-May 45",
+      "originalFirstMonth": "1945-04",
+      "originalLastMonth": "1945-05",
+      "reviewedFirstMonth": "1945-04",
+      "reviewedLastMonth": "1945-05",
+      "originalHeaderDateTokens": {
+        "first": "By 14-8-45",
+        "release": "-"
+      },
+      "reviewedHeader": {
+        "initialOperationalDate": "1945-08-14",
+        "releaseDate": null,
+        "country": "Germany",
+        "releaseContext": null
+      },
+      "sourceCorrectionKind": {
+        "headerDateOrLayout": false,
+        "unitPeriod": false
+      },
+      "previousReviewFlags": [
+        "source_unit_month_precedes_airfield_initial_operation_month"
+      ],
+      "reviewDecision": "historical_sequence_or_release_semantics_explained",
+      "externalEvidence": {
+        "interpretation": "Original header says 'By 14 August 1945' (upper bound, NOT first operational day); official USAF 14 Liaison Squadron stationed Erlangen 22 April 1945. No conflict with a 'by' date.",
+        "url": "https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/433544/14-weapons-squadron-acc/",
+        "kind": "USAF_official_unit_fact_sheet"
+      },
+      "remainingCautions": [
+        "May_1945_month_is_not_proof_of_presence_before_9_May",
+        "initial_field_date_is_upper_bound_By_1945_08_14"
+      ],
+      "sourceStudyUrl": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "sourceVerification": "Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",
+      "dashboardPermission": "RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"
+    }
+  ],
+  "recoveredMonthRowsForOriginallyFlagged": [
+    {
+      "sourceRowId": "usaf1988-p13-l18",
+      "month": "1944-06",
+      "airfieldCode": "A-4",
+      "unit": "48th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l18",
+      "month": "1944-07",
+      "airfieldCode": "A-4",
+      "unit": "48th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l18",
+      "month": "1944-08",
+      "airfieldCode": "A-4",
+      "unit": "48th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l19",
+      "month": "1944-06",
+      "airfieldCode": "A-4",
+      "unit": "107th Tac Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l19",
+      "month": "1944-07",
+      "airfieldCode": "A-4",
+      "unit": "107th Tac Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l20",
+      "month": "1944-07",
+      "airfieldCode": "A-4",
+      "unit": "485th Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p13-l20",
+      "month": "1944-08",
+      "airfieldCode": "A-4",
+      "unit": "485th Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p14-l29",
+      "month": "1944-07",
+      "airfieldCode": "A-16",
+      "unit": "36th Ftr Gp",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p14-l29",
+      "month": "1944-08",
+      "airfieldCode": "A-16",
+      "unit": "36th Ftr Gp",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l23",
+      "month": "1944-08",
+      "airfieldCode": "A-35",
+      "unit": "36th Ftr Gp",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l23",
+      "month": "1944-09",
+      "airfieldCode": "A-35",
+      "unit": "36th Ftr Gp",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l24",
+      "month": "1944-09",
+      "airfieldCode": "A-35",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l24",
+      "month": "1944-10",
+      "airfieldCode": "A-35",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l24",
+      "month": "1944-11",
+      "airfieldCode": "A-35",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l28",
+      "month": "1944-08",
+      "airfieldCode": "A-37",
+      "unit": "405th Ftr Gp",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p16-l28",
+      "month": "1944-09",
+      "airfieldCode": "A-37",
+      "unit": "405th Ftr Gp",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1944-11",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1944-12",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1945-01",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1945-02",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1945-03",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1945-04",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l18",
+      "month": "1945-05",
+      "airfieldCode": "A-41",
+      "unit": "441st Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l26",
+      "month": "1944-08",
+      "airfieldCode": "A-44",
+      "unit": "365th Ftr Gp",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l28",
+      "month": "1944-10",
+      "airfieldCode": "A-44",
+      "unit": "442nd Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l28",
+      "month": "1944-11",
+      "airfieldCode": "A-44",
+      "unit": "442nd Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l34",
+      "month": "1944-09",
+      "airfieldCode": "A-45",
+      "unit": "439th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l34",
+      "month": "1944-10",
+      "airfieldCode": "A-45",
+      "unit": "439th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p17-l34",
+      "month": "1944-11",
+      "airfieldCode": "A-45",
+      "unit": "439th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1944-11",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1944-12",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1945-01",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1945-02",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1945-03",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1945-04",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p18-l22",
+      "month": "1945-05",
+      "airfieldCode": "A-50",
+      "unit": "440th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l7",
+      "month": "1945-04",
+      "airfieldCode": "A-55",
+      "unit": "3rd Trp Carr Path Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l7",
+      "month": "1945-05",
+      "airfieldCode": "A-55",
+      "unit": "3rd Trp Carr Path Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l15",
+      "month": "1944-09",
+      "airfieldCode": "A-58",
+      "unit": "425th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l15",
+      "month": "1944-10",
+      "airfieldCode": "A-58",
+      "unit": "425th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "month": "1944-09",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "month": "1944-10",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "month": "1944-11",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "month": "1944-12",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "month": "1945-01",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l16",
+      "month": "1945-02",
+      "airfieldCode": "A-58",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l17",
+      "month": "1945-02",
+      "airfieldCode": "A-58",
+      "unit": "437th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l17",
+      "month": "1945-03",
+      "airfieldCode": "A-58",
+      "unit": "437th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l17",
+      "month": "1945-04",
+      "airfieldCode": "A-58",
+      "unit": "437th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l17",
+      "month": "1945-05",
+      "airfieldCode": "A-58",
+      "unit": "437th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p19-l23",
+      "month": "1945-05",
+      "airfieldCode": "A-60",
+      "unit": "410th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p20-l19",
+      "month": "1944-09",
+      "airfieldCode": "A-66",
+      "unit": "354th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p20-l19",
+      "month": "1944-10",
+      "airfieldCode": "A-66",
+      "unit": "354th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p20-l19",
+      "month": "1944-11",
+      "airfieldCode": "A-66",
+      "unit": "354th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p20-l19",
+      "month": "1944-12",
+      "airfieldCode": "A-66",
+      "unit": "354th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l5",
+      "month": "1944-09",
+      "airfieldCode": "A-70",
+      "unit": "366th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l5",
+      "month": "1944-10",
+      "airfieldCode": "A-70",
+      "unit": "366th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l5",
+      "month": "1944-11",
+      "airfieldCode": "A-70",
+      "unit": "366th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l7",
+      "month": "1945-02",
+      "airfieldCode": "A-70",
+      "unit": "409th Bomb Gp",
+      "status": "postwar_only_scope_issue",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l7",
+      "month": "1945-03",
+      "airfieldCode": "A-70",
+      "unit": "409th Bomb Gp",
+      "status": "postwar_only_scope_issue",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l7",
+      "month": "1945-04",
+      "airfieldCode": "A-70",
+      "unit": "409th Bomb Gp",
+      "status": "postwar_only_scope_issue",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p21-l7",
+      "month": "1945-05",
+      "airfieldCode": "A-70",
+      "unit": "409th Bomb Gp",
+      "status": "postwar_only_scope_issue",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1944-09",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1944-10",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1944-11",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1944-12",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1945-01",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1945-02",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1945-03",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l5",
+      "month": "1945-04",
+      "airfieldCode": "A-78",
+      "unit": "422nd N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l6",
+      "month": "1944-09",
+      "airfieldCode": "A-78",
+      "unit": "370th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l6",
+      "month": "1944-10",
+      "airfieldCode": "A-78",
+      "unit": "370th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l6",
+      "month": "1944-11",
+      "airfieldCode": "A-78",
+      "unit": "370th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l6",
+      "month": "1944-12",
+      "airfieldCode": "A-78",
+      "unit": "370th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l6",
+      "month": "1945-01",
+      "airfieldCode": "A-78",
+      "unit": "370th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "month": "1944-10",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "month": "1944-11",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "month": "1944-12",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "month": "1945-01",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "month": "1945-02",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l7",
+      "month": "1945-03",
+      "airfieldCode": "A-78",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l8",
+      "month": "1944-12",
+      "airfieldCode": "A-78",
+      "unit": "30th Photo Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l9",
+      "month": "1945-01",
+      "airfieldCode": "A-78",
+      "unit": "417th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l10",
+      "month": "1945-01",
+      "airfieldCode": "A-78",
+      "unit": "414th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l10",
+      "month": "1945-02",
+      "airfieldCode": "A-78",
+      "unit": "414th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l10",
+      "month": "1945-03",
+      "airfieldCode": "A-78",
+      "unit": "414th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l10",
+      "month": "1945-04",
+      "airfieldCode": "A-78",
+      "unit": "414th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l11",
+      "month": "1945-04",
+      "airfieldCode": "A-78",
+      "unit": "344th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l11",
+      "month": "1945-05",
+      "airfieldCode": "A-78",
+      "unit": "344th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l13",
+      "month": "1944-09",
+      "airfieldCode": "A-79",
+      "unit": "362nd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l13",
+      "month": "1944-10",
+      "airfieldCode": "A-79",
+      "unit": "362nd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l13",
+      "month": "1944-11",
+      "airfieldCode": "A-79",
+      "unit": "362nd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l14",
+      "month": "1944-10",
+      "airfieldCode": "A-79",
+      "unit": "425th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p22-l14",
+      "month": "1944-11",
+      "airfieldCode": "A-79",
+      "unit": "425th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "month": "1944-10",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "month": "1944-11",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "month": "1944-12",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "month": "1945-01",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "month": "1945-02",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l23",
+      "month": "1945-03",
+      "airfieldCode": "A-89",
+      "unit": "373rd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "month": "1944-10",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "month": "1944-11",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "month": "1944-12",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "month": "1945-01",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "month": "1945-02",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l24",
+      "month": "1945-03",
+      "airfieldCode": "A-89",
+      "unit": "36th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l25",
+      "month": "1945-02",
+      "airfieldCode": "A-89",
+      "unit": "155th Photo Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l25",
+      "month": "1945-03",
+      "airfieldCode": "A-89",
+      "unit": "155th Photo Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l25",
+      "month": "1945-04",
+      "airfieldCode": "A-89",
+      "unit": "155th Photo Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l26",
+      "month": "1945-03",
+      "airfieldCode": "A-89",
+      "unit": "322nd Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l26",
+      "month": "1945-04",
+      "airfieldCode": "A-89",
+      "unit": "322nd Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l26",
+      "month": "1945-05",
+      "airfieldCode": "A-89",
+      "unit": "322nd Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "month": "1944-11",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "month": "1944-12",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "month": "1945-01",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "month": "1945-02",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "month": "1945-03",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l28",
+      "month": "1945-04",
+      "airfieldCode": "A-90",
+      "unit": "358th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l35",
+      "month": "1945-04",
+      "airfieldCode": "A-92",
+      "unit": "9th Wea Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p23-l35",
+      "month": "1945-05",
+      "airfieldCode": "A-92",
+      "unit": "9th Wea Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l9",
+      "month": "1945-01",
+      "airfieldCode": "Y-2",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l9",
+      "month": "1945-02",
+      "airfieldCode": "Y-2",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l9",
+      "month": "1945-03",
+      "airfieldCode": "Y-2",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l9",
+      "month": "1945-04",
+      "airfieldCode": "Y-2",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l9",
+      "month": "1945-05",
+      "airfieldCode": "Y-2",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l17",
+      "month": "1944-08",
+      "airfieldCode": "Y-4",
+      "unit": "109th Tac Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l17",
+      "month": "1944-09",
+      "airfieldCode": "Y-4",
+      "unit": "109th Tac Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l19",
+      "month": "1944-09",
+      "airfieldCode": "Y-4",
+      "unit": "47th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l20",
+      "month": "1944-09",
+      "airfieldCode": "Y-4",
+      "unit": "112th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l22",
+      "month": "1944-09",
+      "airfieldCode": "Y-5",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l30",
+      "month": "1944-09",
+      "airfieldCode": "Y-7",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l32",
+      "month": "1944-10",
+      "airfieldCode": "Y-7",
+      "unit": "371st Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l32",
+      "month": "1944-11",
+      "airfieldCode": "Y-7",
+      "unit": "371st Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l32",
+      "month": "1944-12",
+      "airfieldCode": "Y-7",
+      "unit": "371st Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l33",
+      "month": "1945-04",
+      "airfieldCode": "Y-7",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p25-l33",
+      "month": "1945-05",
+      "airfieldCode": "Y-7",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l6",
+      "month": "1944-09",
+      "airfieldCode": "Y-9",
+      "unit": "415th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l6",
+      "month": "1944-10",
+      "airfieldCode": "Y-9",
+      "unit": "415th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l6",
+      "month": "1944-11",
+      "airfieldCode": "Y-9",
+      "unit": "415th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l7",
+      "month": "1944-11",
+      "airfieldCode": "Y-9",
+      "unit": "371st Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l7",
+      "month": "1944-12",
+      "airfieldCode": "Y-9",
+      "unit": "371st Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "month": "1944-11",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "month": "1944-12",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "month": "1945-01",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "month": "1945-02",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "month": "1945-03",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l8",
+      "month": "1945-04",
+      "airfieldCode": "Y-9",
+      "unit": "320th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1944-11",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1944-12",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1945-01",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1945-02",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1945-03",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1945-04",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p26-l9",
+      "month": "1945-05",
+      "airfieldCode": "Y-9",
+      "unit": "17th Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l6",
+      "month": "1944-09",
+      "airfieldCode": "Y-17",
+      "unit": "324th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l8",
+      "month": "1944-09",
+      "airfieldCode": "Y-17",
+      "unit": "64th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l8",
+      "month": "1944-10",
+      "airfieldCode": "Y-17",
+      "unit": "64th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l8",
+      "month": "1944-11",
+      "airfieldCode": "Y-17",
+      "unit": "64th Trp Carr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l10",
+      "month": "1945-02",
+      "airfieldCode": "Y-17",
+      "unit": "1411th AAFBU",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l10",
+      "month": "1945-03",
+      "airfieldCode": "Y-17",
+      "unit": "1411th AAFBU",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l10",
+      "month": "1945-04",
+      "airfieldCode": "Y-17",
+      "unit": "1411th AAFBU",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l10",
+      "month": "1945-05",
+      "airfieldCode": "Y-17",
+      "unit": "1411th AAFBU",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l13",
+      "month": "1944-09",
+      "airfieldCode": "Y-18",
+      "unit": "415th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l13",
+      "month": "1944-10",
+      "airfieldCode": "Y-18",
+      "unit": "415th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l13",
+      "month": "1944-11",
+      "airfieldCode": "Y-18",
+      "unit": "415th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1944-09",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1944-10",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1944-11",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1944-12",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1945-01",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1945-02",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1945-03",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l15",
+      "month": "1945-04",
+      "airfieldCode": "Y-18",
+      "unit": "417th N Ftr Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l16",
+      "month": "1944-09",
+      "airfieldCode": "Y-18",
+      "unit": "79th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l16",
+      "month": "1944-10",
+      "airfieldCode": "Y-18",
+      "unit": "79th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l31",
+      "month": "1944-09",
+      "airfieldCode": "Y-23",
+      "unit": "79th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l37",
+      "month": "1944-09",
+      "airfieldCode": "Y-24",
+      "unit": "23rd Photo Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l39",
+      "month": "1944-09",
+      "airfieldCode": "Y-24",
+      "unit": "111th Tac Rec Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l41",
+      "month": "1944-09",
+      "airfieldCode": "Y-25",
+      "unit": "27th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l41",
+      "month": "1944-10",
+      "airfieldCode": "Y-25",
+      "unit": "27th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p27-l44",
+      "month": "1944-09",
+      "airfieldCode": "Y-26",
+      "unit": "72nd Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l21",
+      "month": "1944-10",
+      "airfieldCode": "Y-42",
+      "unit": "14th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l21",
+      "month": "1944-11",
+      "airfieldCode": "Y-42",
+      "unit": "14th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l21",
+      "month": "1944-12",
+      "airfieldCode": "Y-42",
+      "unit": "14th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "month": "1944-10",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "month": "1944-11",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "month": "1944-12",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "month": "1945-01",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "month": "1945-02",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p29-l27",
+      "month": "1945-03",
+      "airfieldCode": "Y-44",
+      "unit": "125th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "month": "1944-10",
+      "airfieldCode": "Y-47",
+      "unit": "112th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "month": "1944-11",
+      "airfieldCode": "Y-47",
+      "unit": "112th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "month": "1944-12",
+      "airfieldCode": "Y-47",
+      "unit": "112th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "month": "1945-01",
+      "airfieldCode": "Y-47",
+      "unit": "112th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l11",
+      "month": "1945-02",
+      "airfieldCode": "Y-47",
+      "unit": "112th Lia Sq",
+      "status": "historical_ambiguity_still_open",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p30-l32",
+      "month": "1945-05",
+      "airfieldCode": "Y-55",
+      "unit": "394th Bomb Gp",
+      "status": "postwar_only_scope_issue",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p33-l21",
+      "month": "1945-04",
+      "airfieldCode": "Y-86",
+      "unit": "365th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p33-l21",
+      "month": "1945-05",
+      "airfieldCode": "Y-86",
+      "unit": "365th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p34-l6",
+      "month": "1945-04",
+      "airfieldCode": "Y-90",
+      "unit": "417th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p34-l6",
+      "month": "1945-05",
+      "airfieldCode": "Y-90",
+      "unit": "417th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p34-l14",
+      "month": "1945-04",
+      "airfieldCode": "Y-94",
+      "unit": "366th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p34-l14",
+      "month": "1945-05",
+      "airfieldCode": "Y-94",
+      "unit": "366th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p35-l7",
+      "month": "1945-04",
+      "airfieldCode": "R-2",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p35-l7",
+      "month": "1945-05",
+      "airfieldCode": "R-2",
+      "unit": "474th Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l11",
+      "month": "1945-04",
+      "airfieldCode": "R-28",
+      "unit": "10th Photo Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l17",
+      "month": "1945-04",
+      "airfieldCode": "R-30",
+      "unit": "362nd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l17",
+      "month": "1945-05",
+      "airfieldCode": "R-30",
+      "unit": "362nd Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l19",
+      "month": "1945-05",
+      "airfieldCode": "R-30",
+      "unit": "425th N Ftr Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l20",
+      "month": "1945-05",
+      "airfieldCode": "R-30",
+      "unit": "371st Ftr Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l34",
+      "month": "1945-04",
+      "airfieldCode": "R-35",
+      "unit": "125th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l40",
+      "month": "1945-04",
+      "airfieldCode": "R-37",
+      "unit": "363rd Tac Rec Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l40",
+      "month": "1945-05",
+      "airfieldCode": "R-37",
+      "unit": "363rd Tac Rec Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l43",
+      "month": "1945-04",
+      "airfieldCode": "R-38",
+      "unit": "125th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p37-l43",
+      "month": "1945-05",
+      "airfieldCode": "R-38",
+      "unit": "125th Lia Sq",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p40-l22",
+      "month": "1945-05",
+      "airfieldCode": "R-77",
+      "unit": "323rd Bomb Gp",
+      "status": "ocr_or_layout_recovered_from_source_text",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    },
+    {
+      "sourceRowId": "usaf1988-p42-l7",
+      "month": "1945-04",
+      "airfieldCode": "R-96",
+      "unit": "14th Lia Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": false,
+      "blockedFromOperationalMap": false
+    },
+    {
+      "sourceRowId": "usaf1988-p42-l7",
+      "month": "1945-05",
+      "airfieldCode": "R-96",
+      "unit": "14th Lia Sq",
+      "status": "historical_sequence_or_release_semantics_explained",
+      "mayNotBeBeforeVEDay": true,
+      "blockedFromOperationalMap": true
+    }
+  ]
+}
