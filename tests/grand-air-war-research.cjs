@@ -65,6 +65,27 @@ assert.equal(opposingAxis.alliedNationArithmeticIssues.length, 0);
 assert.equal(opposingAxis.geographicTheaterRows.find(x => x.sourceRow === 5).combatAircraftOnHandReported, 4942);
 assert.equal(opposingAxis.alliedNationSnapshotsFromTable0222[0].aircraftOnStrengthByNation.hungary, 90);
 assert.ok(opposingAxis.geographicTheaterRows.find(x => x.sourceRow === 83).sourceDateWarning.includes('15 Apr'));
+const sovietNavy = require(path.join(strength02Dir, 'rkka-vmf-naval-aviation-combat-aircraft-and-crews-by-fleet-1941-1945.json'));
+assert.equal(sovietNavy.europeanFleetSnapshots.length, 48);
+assert.equal(new Set(sovietNavy.europeanFleetSnapshots.map(r => r.date)).size, 12);
+assert.equal(sovietNavy.excludedPacificFleetSnapshots.length, 2);
+assert.equal(sovietNavy.numericOrStructuralExceptions.length, 1);
+const vmf1941 = sovietNavy.europeanFleetSnapshots.filter(r => r.date === '1941-06-22');
+const vmfTotal1941 = vmf1941.find(r => r.fleetCategory === 'all_fleets_subtotal');
+assert.equal(vmfTotal1941.combatAircraft.total, 1445);
+assert.equal(vmfTotal1941.combatReadyCrews.total, 1399);
+assert.equal(vmf1941.filter(r => r !== vmfTotal1941).reduce((n, r) => n + r.combatAircraft.total, 0), 1445);
+const sovietPvo = require(path.join(strength02Dir, 'rkka-pvo-fighter-defense-unit-aircraft-and-crews-1941-1945.json'));
+assert.equal(sovietPvo.records.length, 98);
+assert.equal(sovietPvo.structuralAndArithmeticExceptions.length, 0);
+assert.equal(sovietPvo.records.filter(r => r.category === 'source_total').length, 12);
+assert.equal(sovietPvo.records.filter(r => r.category === 'source_total' && r.date === '1945-01-01').length, 2);
+assert.equal(sovietPvo.records.find(r => r.date === '1942-05-10' && r.category === 'source_total').aircraftOnHand.total, 1561);
+const sovietLongRange = require(path.join(strength02Dir, 'rkka-long-range-bomber-units-aircraft-crews-and-stations-1941-1945.json'));
+assert.equal(sovietLongRange.records.length, 111);
+assert.equal(sovietLongRange.records.filter(r => r.category === 'source_total').length, 13);
+assert.equal(sovietLongRange.records.find(r => r.category === 'source_total' && r.date === '1945-05-10').combatAircraft.onHand, 1675);
+assert.deepEqual(sovietLongRange.structuralAndArithmeticExceptions.map(r => r.sourceRow), [112]);
 
 const german = load('luftwaffe-fighter-readiness-quarter-years-1938-1942.json');
 assert.equal(german.dateAndCategorySnapshots, 18);
@@ -90,6 +111,47 @@ assert.equal(usaafPerson.tables.ETO.battleCasualties.grandTotal.allPersonnelTota
 assert.equal(usaafPerson.tables.MTO.battleCasualties.grandTotal.allPersonnelTotal, 31155);
 assert.equal(usaafPerson.tables.ETO.monthlyOfficersBySpecialty[0].officerPersonnelOnStrengthBySpecialty.pilots, 22153);
 assert.ok(usaafPerson.tables.ETO.battleCasualties.monthlyToAnnualDiscrepancies.length > 0);
+const crewLosses = load('usaaf-eto-mto-crew-losses-combat-accident-by-role-monthly-1943-1945.json');
+assert.equal(Object.keys(crewLosses.aircraftCrewRoleTables).length, 7);
+assert.equal(crewLosses.dateKeys.length, 27);
+assert.equal(crewLosses.allTypeBaselineByTheater.ETO['Combat & Accident Losses'].total, 9439);
+assert.equal(crewLosses.allTypeBaselineByTheater.MTO['Combat & Accident Losses'].total, 4403);
+assert.equal(crewLosses.arithmeticDiscrepancies.length, 0);
+const crewsOnHand = load('usaaf-eto-mto-crews-on-hand-by-aircraft-type-monthly-1943-1945.json');
+assert.deepEqual(crewsOnHand.theaters.map(t => t.monthly.length), [27, 27]);
+assert.equal(crewsOnHand.theaters[0].monthly[0].reportedAllCrewsOnHand, 1069);
+assert.equal(crewsOnHand.theaters[1].monthly[0].reportedAllCrewsOnHand, 2887);
+assert.ok(crewsOnHand.theaters[0].auditIssues.some(x => x.originalText === '1,20'));
+assert.ok(crewsOnHand.theaters[1].auditIssues.some(x => x.originalText === '4.260'));
+const usaafSortiesAnnual = load('usaaf-official-airborne-effective-sorties-eto-mto-annual-1942-1945.json');
+assert.deepEqual(usaafSortiesAnnual.sourceTableNumbers, [119, 120]);
+for (const theater of usaafSortiesAnnual.theaters) {
+  for (const metric of ['airborne', 'effective']) {
+    for (const role of ['all', ...usaafSortiesAnnual.roleKeys]) {
+      assert.equal(theater.annual.reduce((sum, r) => sum + (r[role][metric] ?? 0), 0), theater.reportedGrandTotal[role][metric]);
+    }
+    for (const year of theater.annual) {
+      if (year.all[metric] === null) continue;
+      const roleSum = usaafSortiesAnnual.roleKeys.reduce((sum, role) => sum + (year[role][metric] ?? 0), 0);
+      assert.equal(roleSum, year.all[metric]);
+    }
+  }
+}
+assert.equal(usaafSortiesAnnual.theaters.find(x => x.theater === 'ETO').reportedGrandTotal.all.airborne, 1034052);
+assert.equal(usaafSortiesAnnual.theaters.find(x => x.theater === 'MTO').annual[0].all.effective, null);
+const usaafSortieCauses = load('usaaf-eto-mto-non-effective-sorties-by-role-and-cause-quarterly-1942-1945.json');
+assert.deepEqual(usaafSortieCauses.theaters.map(t => t.quarterly.all_types.length), [12, 10]);
+assert.equal(usaafSortieCauses.arithmeticExceptions.length, 0);
+assert.equal(usaafSortieCauses.theaters[0].printedGrandTotals.all_types.total, 135294);
+assert.equal(usaafSortieCauses.theaters[1].printedGrandTotals.all_types.total, 83848);
+assert.equal(usaafSortieCauses.theaters[0].quarterly.medium_light_bomber[0].total, null);
+for (const theater of usaafSortieCauses.theaters) {
+  for (const records of Object.values(theater.quarterly)) {
+    for (const r of records) {
+      if (r.total !== null) assert.equal(r.weather + r.mechanical + r.other, r.total);
+    }
+  }
+}
 
 const usaafPlanes = load('usaaf-eto-aircraft-on-hand-type-snapshots-1942-1945.json');
 assert.equal(usaafPlanes.dateCount, 13);
