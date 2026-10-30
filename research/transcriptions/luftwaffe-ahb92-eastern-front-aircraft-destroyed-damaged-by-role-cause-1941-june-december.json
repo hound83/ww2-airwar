@@ -1,0 +1,132 @@
+{
+  "dataset_id":"ga-luftwaffe-ahb-92-east-jun-dec-1941",
+  "status":"research_original_table_transcription_not_yet_reconciled_with_vierteljahr_reports",
+  "primary_source":"German Air Ministry Quartermaster General loss returns, translated and compiled RAF AHB Translation VII/92 (1950), with revisions recorded through end of 1942",
+  "source_url":"https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/german-aircraft-losses-january-1941-december-1941/",
+  "original_scope":"Luftwaffe EAST (Ostfront) and western Soviet invasion territory, not Soviet VVS casualties, not all European German losses",
+  "role_column_order":["close_reconnaissance","long_range_reconnaissance","single_engine_fighters","twin_engine_fighters","night_fighters","bombers","dive_bombers","ground_attack","transport","coastal","miscellaneous"],
+  "months":[
+    {
+      "period_start":"1941-06-22","period_end":"1941-06-30","reported_theater_label":"EAST","pdf_page":18,
+      "destroyed":{
+        "due_to_enemy_action":[35,11,61,18,0,109,18,1,4,1,6],
+        "on_operations_but_not_due_to_enemy_action":[8,5,45,7,0,30,6,6,0,1,2],
+        "printed_total_on_operations":[43,16,106,25,0,139,24,7,4,2,8],
+        "not_on_operations":[2,0,0,0,0,0,0,0,0,0,6]
+      },
+      "damaged":{
+        "due_to_enemy_action":[19,2,31,9,0,43,0,0,2,0,2],
+        "on_operations_but_not_due_to_enemy_action":[14,5,68,3,0,48,4,7,3,0,4],
+        "printed_total_on_operations":[33,7,99,12,0,91,4,7,5,0,6],
+        "not_on_operations":[5,0,0,1,0,0,0,1,0,0,5]
+      }
+    },
+    {
+      "period_start":"1941-07-01","period_end":"1941-07-31","reported_theater_label":"EAST","pdf_page":21,
+      "destroyed":{
+        "due_to_enemy_action":[52,26,120,43,0,144,45,2,8,2,9],
+        "on_operations_but_not_due_to_enemy_action":[21,11,77,9,0,40,15,3,1,1,4],
+        "printed_total_on_operations":[83,37,197,52,0,184,60,5,9,3,13],
+        "not_on_operations":[12,3,13,0,0,4,1,2,7,0,19]
+      },
+      "damaged":{
+        "due_to_enemy_action":[29,10,65,8,0,58,17,1,0,2,9],
+        "on_operations_but_not_due_to_enemy_action":[19,16,76,9,0,62,3,9,4,0,13],
+        "printed_total_on_operations":[48,26,141,17,0,120,20,10,4,2,22],
+        "not_on_operations":[17,3,12,3,0,16,2,8,7,0,49]
+      }
+    },
+    {
+      "period_start":"1941-08-01","period_end":"1941-08-31","reported_theater_label":"EAST","pdf_page":24,
+      "destroyed":{
+        "due_to_enemy_action":[28,16,80,24,0,70,19,6,3,2,6],
+        "on_operations_but_not_due_to_enemy_action":[6,5,31,11,0,27,8,1,0,3,1],
+        "printed_total_on_operations":[34,21,111,35,0,97,27,7,3,5,7],
+        "not_on_operations":[3,1,9,1,0,7,2,2,0,0,11]
+      },
+      "damaged":{
+        "due_to_enemy_action":[19,6,25,4,0,37,5,0,1,0,1],
+        "on_operations_but_not_due_to_enemy_action":[12,13,37,5,0,38,9,2,0,0,4],
+        "printed_total_on_operations":[31,19,62,9,0,75,14,2,1,0,5],
+        "not_on_operations":[20,4,17,8,0,19,5,0,5,0,29]
+      }
+    },
+    {
+      "period_start":"1941-09-01","period_end":"1941-09-30","reported_theater_label":"EAST","pdf_page":27,
+      "destroyed":{
+        "due_to_enemy_action":[26,18,54,6,1,79,21,0,7,3,11],
+        "on_operations_but_not_due_to_enemy_action":[5,2,30,0,2,20,3,3,2,0,2],
+        "printed_total_on_operations":[31,20,84,6,3,99,24,3,9,3,13],
+        "not_on_operations":[7,2,13,1,1,9,6,0,5,0,7]
+      },
+      "damaged":{
+        "due_to_enemy_action":[22,5,29,3,2,34,8,0,4,2,5],
+        "on_operations_but_not_due_to_enemy_action":[1,2,22,4,0,28,1,2,0,0,1],
+        "printed_total_on_operations":[23,7,51,7,2,62,9,2,4,2,6],
+        "not_on_operations":[9,4,14,0,0,11,0,3,1,0,17]
+      }
+    },
+    {
+      "period_start":"1941-10-01","period_end":"1941-10-31","reported_theater_label":"EAST","pdf_page":30,
+      "destroyed":{
+        "due_to_enemy_action":[17,11,37,6,0,103,23,1,15,1,4],
+        "on_operations_but_not_due_to_enemy_action":[6,4,15,3,0,16,6,3,0,0,3],
+        "printed_total_on_operations":[23,15,52,9,0,119,29,4,15,1,7],
+        "not_on_operations":[16,1,7,2,0,10,4,5,4,1,12]
+      },
+      "damaged":{
+        "due_to_enemy_action":[26,5,19,0,0,34,6,6,9,0,13],
+        "on_operations_but_not_due_to_enemy_action":[11,5,19,4,0,35,5,3,1,0,0],
+        "printed_total_on_operations":[37,10,38,4,0,69,11,9,10,0,13],
+        "not_on_operations":[16,3,5,2,0,18,2,2,7,0,25]
+      }
+    },
+    {
+      "period_start":"1941-11-01","period_end":"1941-11-30","reported_theater_label":"EAST","pdf_page":33,
+      "destroyed":{
+        "due_to_enemy_action":[10,2,29,4,0,74,7,1,4,0,1],
+        "on_operations_but_not_due_to_enemy_action":[3,1,8,1,0,13,2,0,4,0,0],
+        "printed_total_on_operations":[13,3,37,5,0,87,9,1,8,0,1],
+        "not_on_operations":[9,4,5,0,0,6,1,0,3,0,5]
+      },
+      "damaged":{
+        "due_to_enemy_action":[2,4,15,1,0,31,13,1,0,0,1],
+        "on_operations_but_not_due_to_enemy_action":[3,8,9,0,0,21,1,2,3,0,0],
+        "printed_total_on_operations":[5,12,24,1,0,52,14,3,3,0,1],
+        "not_on_operations":[12,4,4,0,0,14,0,1,6,0,2]
+      }
+    },
+    {
+      "period_start":"1941-12-01","period_end":"1941-12-31","reported_theater_label":"EAST","pdf_page":36,
+      "destroyed":{
+        "due_to_enemy_action":[5,6,22,2,0,38,9,4,0,0,0],
+        "on_operations_but_not_due_to_enemy_action":[2,1,6,2,0,13,2,2,0,1,0],
+        "printed_total_on_operations":[7,7,28,4,0,51,11,6,0,1,0],
+        "not_on_operations":[2,1,7,0,0,5,8,2,3,0,1]
+      },
+      "damaged":{
+        "due_to_enemy_action":[0,4,5,0,0,36,3,3,0,0,0],
+        "on_operations_but_not_due_to_enemy_action":[0,1,13,0,0,14,0,3,0,0,0],
+        "printed_total_on_operations":[0,5,18,0,0,50,3,6,0,0,0],
+        "not_on_operations":[6,3,5,0,0,11,0,4,1,0,1]
+      }
+    }
+  ],
+  "arithmetic_issues":[
+    {
+      "period":"1941-07","pdf_page":21,"loss_threshold":"destroyed","aircraft_role":"close_reconnaissance",
+      "source_enemy_action_destroyed":52,"source_on_operations_non_enemy_destroyed":21,
+      "sum_by_causes":73,"printed_on_operations_total":83,"printed_minus_sum":10,
+      "note":"Visible in original scanned table, NOT OCR. All other role columns in this month's destroyed on-operations row reconcile. Do not silently accept the printed close-reconnaissance total 83 or overwrite it with 73."
+    }
+  ],
+  "interpretation":[
+    "The 22–30 June 1941 EAST return is a nine-day interval, whereas July–December are full calendar months. They must not be compared as equally sized months without normalization.",
+    "Original German losses due to enemy action are destroyed German aircraft, not enemy aircraft claimed by German pilots.",
+    "Aircraft destroyed, aircraft damaged, aircraft lost on operations for reasons other than enemy action, and aircraft destroyed not on operations are four different populations.",
+    "The unit of observation is theater, month, role and damage threshold, NOT individual squadron or airfield. Source also has other monthly theaters, not yet transcribed.",
+    "The original AHB translation states reports might be delayed or retrospectively revised; avoid treating its compilation month as certain plane loss event month without reviewing the underlying German returns.",
+    "All numerical zeroes in these particular photographed table role cells are explicitly blank source cells interpreted as zero for that table only; never infer zero in months that have not been transcribed.",
+    "Destroyed and damaged totals can include cases later recategorized; cross-check German Bundesarchiv RL 2-III and other air-force incident reports before claims-versus-loss matching."
+  ]
+}

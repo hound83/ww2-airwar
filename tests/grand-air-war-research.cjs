@@ -463,4 +463,53 @@ assert.equal(czech.units.find(r=>r.unit.startsWith('312 ')).creditedEnemyAircraf
 assert.equal(czech.units.find(r=>r.unit.startsWith('312 ')).creditedEnemyAircraftDamagedCzechOriginalAndCzechMOD,16);
 assert.ok(czech.units.find(r=>r.unit.startsWith('68 ')).warning.includes('Czech participation'));
 
-console.log('Grand Air War research transcription integrity checks passed (original Italy, Commonwealth European units, Fifteenth AF cross-group overlap included).');
+const luftwaffeOriginal=load('luftwaffe-ahb-original-strength-serviceability-dated-snapshots-1938-1945.json');
+assert.equal(luftwaffeOriginal.rows.length,50);
+assert.deepEqual(luftwaffeOriginal.rows[0].slice(0,3),['1938-08-01',2928,1669]);
+assert.deepEqual(luftwaffeOriginal.rows.at(-1).slice(0,5),['1945-04-13',null,null,5072,3842]);
+assert.equal(new Set(luftwaffeOriginal.rows.map(r=>r[0])).size,50);
+for (const [date,total,serviceable,exTransport,exTransportServiceable,transport,transportServiceable] of luftwaffeOriginal.rows){
+  assert.ok(exTransport >= exTransportServiceable, date);
+  if (total === null){assert.equal(serviceable,null);assert.equal(transport,null);continue;}
+  assert.equal(total,exTransport+transport,`${date} whole aircraft total`);
+  assert.equal(serviceable,exTransportServiceable+transportServiceable,`${date} whole serviceability total`);
+  assert.ok(total>=serviceable,`${date} whole aircraft serviceability <= on hand`);
+}
+const novemberOriginalError=luftwaffeOriginal.quality_flags.find(f=>f.date==='1944-11-20');
+assert.equal(novemberOriginalError.reported_nontransport_on_hand-novemberOriginalError.role_level_calculated_nontransport_on_hand,900);
+assert.equal(novemberOriginalError.reported_whole_force_on_hand-novemberOriginalError.role_level_calculated_whole_force_on_hand,900);
+
+const eastGermanLosses=load('luftwaffe-ahb92-eastern-front-aircraft-destroyed-damaged-by-role-cause-1941-june-december.json');
+assert.equal(eastGermanLosses.months.length,7);
+assert.equal(eastGermanLosses.role_column_order.length,11);
+const eastSum=(threshold,metric)=>eastGermanLosses.months.reduce((s,m)=>s+m[threshold][metric].reduce((a,b)=>a+b,0),0);
+assert.equal(eastSum('destroyed','due_to_enemy_action'),1631);
+assert.equal(eastSum('destroyed','on_operations_but_not_due_to_enemy_action'),571);
+assert.equal(eastSum('damaged','due_to_enemy_action'),756);
+const eastLossTableIssues=[];
+for(const month of eastGermanLosses.months){
+  for(const [threshold,observations] of Object.entries({destroyed:month.destroyed,damaged:month.damaged})){
+    for(const values of Object.values(observations)) assert.equal(values.length,11);
+    for(let i=0;i<11;i++){
+      const difference=observations.printed_total_on_operations[i]-observations.due_to_enemy_action[i]-observations.on_operations_but_not_due_to_enemy_action[i];
+      if(difference) eastLossTableIssues.push({month:month.period_start,threshold,role:eastGermanLosses.role_column_order[i],difference});
+    }
+  }
+}
+assert.deepEqual(eastLossTableIssues,[{month:'1941-07-01',threshold:'destroyed',role:'close_reconnaissance',difference:10}]);
+assert.equal(eastLossTableIssues[0].difference,eastGermanLosses.arithmetic_issues[0].printed_minus_sum);
+
+const coastalOriginalCasualties=load('raf-coastal-command-aircrew-groundcrew-casualties-original-air15-162-1939-1945.json');
+assert.equal(coastalOriginalCasualties.rows.length,8);
+for(const metric of ['killed','missing','missing_later_reported_safe','prisoner_of_war','pow_later_reported_safe','wounded']){
+  assert.equal(coastalOriginalCasualties.rows.reduce((n,r)=>n+r[metric],0),coastalOriginalCasualties.printed_totals[metric]);
+}
+for(const personnel of ['aircrew','groundcrew']){
+  assert.equal(coastalOriginalCasualties.rows.filter(r=>r.personnel===personnel).reduce((n,r)=>n+r.killed,0),coastalOriginalCasualties.printed_totals[`killed_${personnel}`]);
+}
+const fleetAirArm=load('royal-navy-fleet-air-arm-1939-1945-strength-and-original-record-leads.json');
+assert.equal(fleetAirArm.strength_endpoints.length,2);
+assert.deepEqual(fleetAirArm.strength_endpoints.map(r=>r.aircraft??r.frontline_aircraft_available_for_operations),[232,1336]);
+assert.deepEqual(fleetAirArm.strength_endpoints.map(r=>r.pilots??r.pilots_available_for_operations),[406,3243]);
+
+console.log('Grand Air War research transcription integrity checks passed (RAF captured-German original strengths, original Italy, Commonwealth European units, Fifteenth AF overlap included).');
