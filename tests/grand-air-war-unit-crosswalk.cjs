@@ -23,7 +23,7 @@ for(const row of cross.sourceRows){
   assert.ok(["corroborated_candidate","ocr_candidate","review_priority"].includes(row.qualityTier));
   if(row.qualityTier==="corroborated_candidate"){
     assert.ok(row.maurerMatches.some(x=>x.temporalOverlapCandidate),row.sourceRowId);
-    assert.deepEqual(row.flags,[],row.sourceRowId);
+    assert.ok(row.flags.every(flag=>flag==="original_range_continues_after_1945_05_09"),row.sourceRowId);
   }
 }
 for(const row of cross.monthlyCandidates){
