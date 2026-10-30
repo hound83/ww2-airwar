@@ -1,0 +1,64 @@
+{
+  "id": "USAAF-FIFTEENTH-AF-ESCORT-COMPARISON-JUN1944-APR1945",
+  "title": "Four Fifteenth Air Force fighter groups, same eleven-month combat period: missions, claimed victories, escort losses and Italian stations",
+  "sourceUrl": "https://afhistory.org/wp-content/uploads/2022/11/Winter2022_Issue-AllRevised.pdf",
+  "sourceCitation": "Daniel L. Haulman, 'Measuring Up: A Comparison of the Mustang Fighter Escort Groups of the Fifteenth Air Force, June 1944-April 1945', Air & Space Power History 69(4), Winter 2022, printed p. 45 (PDF zero-based page 46), Table 1 and discussion pp. 45-48",
+  "sourceClass": "secondary_historical_study_using_wartime_unit_mission_records_and_postwar_war_department_aircraft_victory_credits",
+  "timeWindow": { "from": "1944-06-01", "through": "1945-04-30", "precision": "eleven_full_calendar_months" },
+  "formation": "United States Army Air Forces, Fifteenth Air Force, fighter groups based in Italy",
+  "units": [
+    {
+      "group": "31st Fighter Group", "nominalSquadrons": 3,
+      "aircraft": ["P-51 Mustang"], "italianStationsAsReportedInOrder": ["San Severo", "Mondolfo"],
+      "enemyAircraftAerialVictoryCredits": 278, "acesCreditedDuringPeriod": 10,
+      "enemyAircraftAerialVictoryCreditsPerOwnFighterLostInAerialCombatPrinted": 2.49,
+      "groupMissionsFlown": 379, "bomberEscortGroupMissionsFlown": 184,
+      "escortGroupMissionsEncounteringEnemyAircraft": 53,
+      "escortGroupMissionsInWhichEscortedBombersLostToEnemyAircraft": 16,
+      "bomberLossObservationsDuringThisGroupsEscorts": 49
+    },
+    {
+      "group": "52nd Fighter Group", "nominalSquadrons": 3,
+      "aircraft": ["P-51 Mustang"], "italianStationsAsReportedInOrder": ["Madna", "Piagiolino"],
+      "enemyAircraftAerialVictoryCredits": 224.5, "acesCreditedDuringPeriod": 10,
+      "enemyAircraftAerialVictoryCreditsPerOwnFighterLostInAerialCombatPrinted": 2.08,
+      "groupMissionsFlown": 349, "bomberEscortGroupMissionsFlown": 193,
+      "escortGroupMissionsEncounteringEnemyAircraft": 66,
+      "escortGroupMissionsInWhichEscortedBombersLostToEnemyAircraft": 18,
+      "bomberLossObservationsDuringThisGroupsEscorts": 88,
+      "sourceProseEncounteredEnemyAircraftGroupMissionsAlternative": 55,
+      "conflict": "Table 1 records 66 escort missions encountering enemy aircraft, but prose later states 55 for 52nd. Keep table and alternate value, do not silently choose a single authoritative number."
+    },
+    {
+      "group": "325th Fighter Group", "nominalSquadrons": 3,
+      "aircraft": ["P-51 Mustang"], "italianStationsAsReportedInOrder": ["Lesina", "Rimini", "Mondolfo"],
+      "enemyAircraftAerialVictoryCredits": 252, "acesCreditedDuringPeriod": 11,
+      "enemyAircraftAerialVictoryCreditsPerOwnFighterLostInAerialCombatPrinted": 2.22,
+      "groupMissionsFlown": 359, "bomberEscortGroupMissionsFlown": 192,
+      "escortGroupMissionsEncounteringEnemyAircraft": 53,
+      "escortGroupMissionsInWhichEscortedBombersLostToEnemyAircraft": 18,
+      "bomberLossObservationsDuringThisGroupsEscorts": 68
+    },
+    {
+      "group": "332nd Fighter Group", "nominalSquadrons": 4,
+      "squadronStrengthQualification": "four squadrons for nine of eleven months",
+      "aircraft": ["P-47 Thunderbolt", "P-51 Mustang"],
+      "aircraftTypeQualification": "P-51 for ten of eleven months",
+      "italianStationsAsReportedInOrder": ["Ramitelli"],
+      "enemyAircraftAerialVictoryCredits": 94, "acesCreditedDuringPeriod": 0,
+      "enemyAircraftAerialVictoryCreditsPerOwnFighterLostInAerialCombatPrinted": 0.66,
+      "groupMissionsFlown": 312, "bomberEscortGroupMissionsFlown": 179,
+      "escortGroupMissionsEncounteringEnemyAircraft": 35,
+      "escortGroupMissionsInWhichEscortedBombersLostToEnemyAircraft": 7,
+      "bomberLossObservationsDuringThisGroupsEscorts": 27
+    }
+  ],
+  "globalCautions": [
+    "A 'mission' here is a GROUP mission, not one individual aircraft sortie; do not compare these group mission counts directly with national sortie totals.",
+    "The enemy aircraft 'aerial victories' are recorded USAAF CLAIMED/CREDITED victories, not matching independently verified German aircraft losses.",
+    "The bomber losses attributed to escort groups are NOT mutually exclusive: one bomber loss could appear against two fighter groups protecting the same bomber formation at different times or altitudes. DO NOT sum the four rows to get a theater bomber loss figure.",
+    "Escort-group mission losses are BOMBERS lost while that group was part of escort, not losses of the fighter group; fighter-group own loss information is supplied only indirectly in the printed credits-to-own-combat-loss ratio.",
+    "Italian base strings in the article are station NAME candidates without relocation dates or coordinates; must geolocate and date-verify before Atlas mapping.",
+    "The source article's interpretation and race-related comparisons should not be silently converted into causal assertions. Display comparable raw observations and their definitions only."
+  ]
+}

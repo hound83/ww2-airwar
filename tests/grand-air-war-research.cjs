@@ -400,4 +400,44 @@ const countResolved=canadianClaims.squadronAnnualObservedClaimEntryRows
 assert.equal(countResolved+canadianClaims.quality.unresolved_squadron,4211);
 assert.ok(canadianClaims.importantCautions.some(c=>c.includes('NOT an Atlas-ready European total')));
 
-console.log('Grand Air War research transcription integrity checks passed (new 1940 national, pilot and claims series included).');
+const italianGeneralStaff=load('regia-aeronautica-1940-1942-original-general-staff-strength-losses-personnel.json');
+assert.equal(italianGeneralStaff.reportedFrontLineAircraftSnapshots.length,4);
+assert.deepEqual(italianGeneralStaff.reportedFrontLineAircraftSnapshots.map(r=>r.frontlineFightersCombatReadyAsWording),[632,719,880,901]);
+assert.deepEqual(italianGeneralStaff.reportedFrontLineAircraftSnapshots.map(r=>r.bombersAvailable),[759,423,422,398]);
+const italianAircraftLosses=italianGeneralStaff.ownAircraftLossesThrough1942August21;
+assert.equal(italianAircraftLosses.combatLossesAsLabelled+
+  italianAircraftLosses.destroyedOnGroundOrIrreparableOrMissingUnknownCause+
+  italianAircraftLosses.flightAccidentWriteoffs,italianAircraftLosses.reportedTotalWriteoffsByCause);
+assert.equal(italianAircraftLosses.reportedTotalWriteoffsByCause,3395);
+const italianPeople=italianGeneralStaff.cumulativePilotAndFlyingTechnicianCasualtyCategoriesToSeptember1942;
+assert.equal(italianPeople.pilotOfficersKilledMissingOrPrisonerCombined+
+  italianPeople.pilotNcosKilledMissingOrPrisonerCombined,italianPeople.allPilotsKilledMissingOrPrisonerCombined);
+assert.equal(italianPeople.allPilotsKilledMissingOrPrisonerCombined+
+  italianPeople.flyingTechniciansKilledMissingOrPrisonerCombined,
+  italianPeople.combinedFlyingPeopleReportedMissingKilledOrCaptured);
+
+const commonwealth=load('commonwealth-raaf-rnzaf-saaf-europe-unit-and-national-statistics-1939-1945.json');
+assert.equal(commonwealth.forces.length,3);
+const raaf=commonwealth.forces[0];
+assert.equal(raaf.observations[0].sortiesOfSquadronsBasedInUKAtWarEndCumulative,65341);
+assert.equal(raaf.observations[2].peopleDied,5397);
+const nz=commonwealth.forces[1];
+assert.equal(nz.personnelObservations[0].europeanRNZAFAndRAFAttachedPersonnelDied+
+  nz.personnelObservations[0].pacificDied,nz.personnelObservations[0].totalRNZAFDiedOnActiveService);
+assert.deepEqual(nz.rafHostedNationalSquadronLifetimeRecords.map(r=>r.combatSorties),[8150,10717,11019,3112,2899,2380,463]);
+assert.equal(nz.rafHostedNationalSquadronLifetimeRecords.at(-1).includeInEuropeanOperationsTotals,false);
+const saaf=commonwealth.forces[2];
+assert.equal(saaf.observations[0].aircraftSorties,181);
+assert.equal(saaf.observations[0].ownAircraftLost,11);
+assert.equal(saaf.observations[0].crewKilled,38);
+
+const fifteenth=load('usaaf-fifteenth-air-force-four-fighter-groups-missions-claims-escort-losses-1944-1945.json');
+assert.equal(fifteenth.units.length,4);
+assert.deepEqual(fifteenth.units.map(r=>r.groupMissionsFlown),[379,349,359,312]);
+assert.deepEqual(fifteenth.units.map(r=>r.bomberEscortGroupMissionsFlown),[184,193,192,179]);
+assert.deepEqual(fifteenth.units.map(r=>r.bomberLossObservationsDuringThisGroupsEscorts),[49,88,68,27]);
+assert.equal(fifteenth.units[1].escortGroupMissionsEncounteringEnemyAircraft,66);
+assert.equal(fifteenth.units[1].sourceProseEncounteredEnemyAircraftGroupMissionsAlternative,55);
+assert.ok(fifteenth.globalCautions.some(c=>c.includes('NOT mutually exclusive')));
+
+console.log('Grand Air War research transcription integrity checks passed (original Italy, Commonwealth European units, Fifteenth AF cross-group overlap included).');
