@@ -611,4 +611,20 @@ assert.deepEqual(bCodeNL.additionalAmericanContinentalDutchCodeCandidates.map(r 
 assert.equal(bCodeNL.additionalAmericanContinentalDutchCodeCandidates[0].candidateRceHistoricSiteName, 'Beek');
 assert.ok(bCodeNL.additionalAmericanContinentalDutchCodeCandidates.every(r => r.rceHistoricalPhaseIds.every(id => validRceIDs.has(id))));
 
-console.log('Grand Air War research transcription integrity checks passed (THOR, German unit-month audit, RCE Dutch polygons, USAF 174 B-codes and 296 A/Y/R-codes, and 17 Dutch source crosswalks).');
+const usaafContinentalUnits = load('usaaf-1988-eto-a-y-r-airfield-unit-occupancy-ocr-candidates-1944-1945.json');
+assert.equal(usaafContinentalUnits.records.length, 305);
+assert.equal(usaafContinentalUnits.audit.candidateSourcePhysicalLines, 305);
+assert.equal(usaafContinentalUnits.audit.distinctAirfieldCodeCandidatesWithUnits, 145);
+assert.equal(usaafContinentalUnits.audit.candidateLinesWithReadableMonthWindowOCR, 302);
+assert.equal(usaafContinentalUnits.audit.candidateLinesWithMachineReadableMonthSpan, 285);
+assert.equal(usaafContinentalUnits.audit.candidatesOnlyStartingAfterAtlasWarEnd, 0);
+assert.equal(usaafContinentalUnits.audit.preHeaderAssignmentsNeedingVisualReview.length, 17);
+assert.equal(usaafContinentalUnits.audit.unitLinesWithoutCodeAssociation.length, 0);
+const sourceAmericanCodes = new Set(americanARY.records.map(r => r.code));
+assert.ok(usaafContinentalUnits.records.every(r => sourceAmericanCodes.has(r.continentalAirfieldCodeCandidate)));
+assert.ok(usaafContinentalUnits.records.every(r => r.status.includes('not_verified')));
+assert.ok(usaafContinentalUnits.records.filter(r => r.continentalAirfieldCodeCandidate === 'Y-44').length >= 4);
+assert.ok(usaafContinentalUnits.records.filter(r => r.continentalAirfieldCodeCandidate === 'Y-55').length >= 5);
+assert.ok(usaafContinentalUnits.records.some(r => r.continentalAirfieldCodeCandidate === 'Y-2' && r.sourceRowAssociation === 'physical_line_precedes_code_needs_source_visual_review'));
+
+console.log('Grand Air War research transcription integrity checks passed (THOR, German unit-month audit, RCE Dutch polygons, 174 B-codes, 296 A/Y/R-codes, 305 USAAF station-unit OCR leads, 17 Dutch source crosswalks).');
