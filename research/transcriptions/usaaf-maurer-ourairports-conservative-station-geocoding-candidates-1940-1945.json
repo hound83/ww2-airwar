@@ -1,0 +1,7347 @@
+{
+  "title": "USAAF Maurer dated station names to modern open OurAirports coordinate candidates",
+  "sourceStationRegister": "research/transcriptions/usaaf-maurer-public-domain-european-group-station-candidates-1940-1945.json",
+  "publicDomainOurAirportsDownload": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+  "ourAirportsPublicDomainTerms": "https://ourairports.com/data/",
+  "originalHistoricUSAAFSource": "https://www.ibiblio.org/hyperwar/AAF/AAFHS/AAFHS-140.1.pdf",
+  "dateOfOurAirportsSnapshot": "2026-10-29",
+  "method": "Station source string normalization and modern ISO country restriction; exact normalized name match only; 1-to-1 matches included, ambiguous/missing separately retained. No point is map-publication-ready.",
+  "criticalCaveats": [
+    "An OurAirports match proves only a modern/closed named airport location candidate, not that the identified historic USAAF group operated at the same point on its printed date.",
+    "Modern country is a crosswalk heuristic, not wartime sovereign control; 1940s borders and battlefield geographies changed.",
+    "Original Maurer candidate list is OCR-derived, may have ambiguous/corrupt names/dates, and post-war station entries are excluded by its research-only filters.",
+    "Not matching is not proof that a WWII airfield never existed. Forgotten fields, Advanced Landing Grounds and wartime-only bases are especially likely to be absent from OurAirports.",
+    "One place name can represent multiple historical airfields; matched candidates require an independent period map or official unit ORB before promotion.",
+    "The source entry count here is number of group station references, NOT flights, operations or physical airfields."
+  ],
+  "counts": {
+    "OurAirportsRawWorldRows": 86311,
+    "MaurerCandidateSourceStationOccurrences": 544,
+    "MaurerUniqueNormalizedPlaceAndRegionKeys": 356,
+    "singleExactNameCountryCoordinateCandidates": 90,
+    "ambiguousOrZeroCoordinateMatches": 1,
+    "unmatchedHistoricSiteNames": 265
+  },
+  "provisionalCandidates": [
+    {
+      "stationNameAsPrinted": [
+        "Blida"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "64 Troop Carrier Group",
+        "68 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Dec 1942",
+        "c. Apr-15 Jun 1944. Hamilton Field, Calif, 9 Apr 1947-27 Jun 1949. Lake Charles AFB, La, 10 Oct 1951-16 Jun 1952"
+      ],
+      "sourceYears": [
+        1942,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "2047",
+        "ourAirportsIdent": "DAAB",
+        "currentName": "Blida Airport",
+        "currentType": "medium_airport",
+        "modernCountryCode": "DZ",
+        "latitudeCandidate": 36.503601,
+        "longitudeCandidate": 2.81417,
+        "municipalityModern": "Blida",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Blida_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Relizane"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "60 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "27 Nov 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "2059",
+        "ourAirportsIdent": "DAAZ",
+        "currentName": "Relizane Airport",
+        "currentType": "medium_airport",
+        "modernCountryCode": "DZ",
+        "latitudeCandidate": 35.752955,
+        "longitudeCandidate": 0.625877,
+        "municipalityModern": "Relizane",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Relizane_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chievres"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "361 Fighter Group",
+        "368 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "2 Oct 1944",
+        "I Feb-Apr 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "2158",
+        "ourAirportsIdent": "EBCV",
+        "currentName": "Chièvres Air Base",
+        "currentType": "medium_airport",
+        "modernCountryCode": "BE",
+        "latitudeCandidate": 50.575802,
+        "longitudeCandidate": 3.831,
+        "municipalityModern": "Chièvres",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Chievres_Air_Base"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Florennes"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "I Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "2160",
+        "ourAirportsIdent": "EBFS",
+        "currentName": "Florennes Air Base",
+        "currentType": "medium_airport",
+        "modernCountryCode": "BE",
+        "latitudeCandidate": 50.2433013916,
+        "longitudeCandidate": 4.64583015442,
+        "municipalityModern": "Florennes",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Florennes_Air_Base"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Alconbury"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "482 Bombardment Group",
+        "92 Bombardment Group",
+        "93 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "20 Aug 1943-21 May 1945",
+        "7 Sep 1942",
+        "Jan 1943"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "29652",
+        "ourAirportsIdent": "GB-1245",
+        "currentName": "RAF Alconbury",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.3744010925,
+        "longitudeCandidate": -0.219722002745,
+        "municipalityModern": "Huntingdon",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Alconbury"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Aldermaston"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "315 Troopcarrier Group",
+        "434 Troop Carrier Group",
+        "60 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "3 Mar 1944-12 Feb 1945",
+        "Aug 1942",
+        "c. I Dec 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307921",
+        "ourAirportsIdent": "GB-0090",
+        "currentName": "RAF Aldermaston",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.370253,
+        "longitudeCandidate": -1.141376,
+        "municipalityModern": "Reading, Berkshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Aldermaston"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ashford"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307931",
+        "ourAirportsIdent": "GB-0100",
+        "currentName": "RAF Ashford",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.125636,
+        "longitudeCandidate": 0.818719,
+        "municipalityModern": "Ashford, Kent",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Ashford"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Atcham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "14 Fighter Group",
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "11 Jun 1942",
+        "18 Aug-Nov 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "307932",
+        "ourAirportsIdent": "GB-0101",
+        "currentName": "RAF Atcham",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.689291,
+        "longitudeCandidate": -2.635489,
+        "municipalityModern": "Shrewsbury, Shropshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Atcham"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Attlebridge"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "466 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Mar 1944-6Jul1g45"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307934",
+        "ourAirportsIdent": "GB-0103",
+        "currentName": "RAF Attlebridge",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.692434,
+        "longitudeCandidate": 1.112795,
+        "municipalityModern": "Norwich, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Attlebridge"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Balderton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "437 Troopcarrier Group",
+        "439 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "21 Feb 1944",
+        "Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307938",
+        "ourAirportsIdent": "GB-0107",
+        "currentName": "RAF Balderton",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 53.036389,
+        "longitudeCandidate": -0.785833,
+        "municipalityModern": "Nottingham, Nottinghamshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Balderton"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Beaulieu"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "323 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "21 Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307945",
+        "ourAirportsIdent": "GB-0114",
+        "currentName": "RAF Beaulieu",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 50.806212,
+        "longitudeCandidate": -1.503659,
+        "municipalityModern": "Brockenhurst, Hampshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Beaulieu"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Birch"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "410 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 4 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307949",
+        "ourAirportsIdent": "GB-0118",
+        "currentName": "RAF Birch",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.8425,
+        "longitudeCandidate": 0.780556,
+        "municipalityModern": "Colchester, Essex",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Birch"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bisterne"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "371 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307952",
+        "ourAirportsIdent": "GB-0121",
+        "currentName": "RAF Bisterne",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 50.818333,
+        "longitudeCandidate": -1.780556,
+        "municipalityModern": "Ringwood, Hampshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Bisterne"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Boreham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "394 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 11 Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "533652",
+        "ourAirportsIdent": "GB-1117",
+        "currentName": "RAF Boreham",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.78116,
+        "longitudeCandidate": 0.52287,
+        "municipalityModern": "Chelmsford, Essex",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bottesford"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "436 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307635",
+        "ourAirportsIdent": "GB-0074",
+        "currentName": "RAF Bottesford",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.963904,
+        "longitudeCandidate": -0.779926,
+        "municipalityModern": "Nottingham, Leicestershire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Bottesford"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bottisham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "361 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Nov 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "307959",
+        "ourAirportsIdent": "GB-0128",
+        "currentName": "RAF Bottisham",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.2138,
+        "longitudeCandidate": 0.2571,
+        "municipalityModern": "Cambridge, Cambridgeshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Bottisham"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bovingdon"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "92 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Aug 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "307961",
+        "ourAirportsIdent": "GB-0130",
+        "currentName": "RAF Bovingdon",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.726804,
+        "longitudeCandidate": -0.545883,
+        "municipalityModern": "Hemel Hempstead, Hertfordshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Bovingdon"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Boxted"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "386 Bombardment Group",
+        "56 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "10 Jun 1943",
+        "c. 19 Apr 1944-0ct 1945"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "307962",
+        "ourAirportsIdent": "GB-0131",
+        "currentName": "RAF Boxted",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.934933,
+        "longitudeCandidate": 0.93071,
+        "municipalityModern": "Colchester, Essex",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Boxted"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chalgrove"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "7 Reconnaissance Group",
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Feb 1944",
+        "Mar 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "2432",
+        "ourAirportsIdent": "EGLJ",
+        "currentName": "Chalgrove Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.676102,
+        "longitudeCandidate": -1.08083,
+        "municipalityModern": "Oxford, Oxfordshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Chalgrove_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cottesmore"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "316 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 Feb 1g44-May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "2502",
+        "ourAirportsIdent": "GB-1224",
+        "currentName": "RAF Cottesmore",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.731772,
+        "longitudeCandidate": -0.654545,
+        "municipalityModern": "Oakham, Rutland",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Cottesmore"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Debden"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "4 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "533633",
+        "ourAirportsIdent": "GB-1110",
+        "currentName": "RAF Debden",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.99196,
+        "longitudeCandidate": 0.27474,
+        "municipalityModern": "Saffron Walden, Essex",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Deenethorpe"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "401 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Nov 1943-May 1945"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "317925",
+        "ourAirportsIdent": "GB-0280",
+        "currentName": "Deenethorpe Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.506271,
+        "longitudeCandidate": -0.589011,
+        "municipalityModern": "Corby, Northamptonshire",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Dunkeswell"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "479 Antisubmarine Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "2485",
+        "ourAirportsIdent": "EGTU",
+        "currentName": "Dunkeswell Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 50.860956,
+        "longitudeCandidate": -3.233929,
+        "municipalityModern": "Honiton, Devon",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Dunkeswell_Aerodrome"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Duxford"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "350 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Oct 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "2477",
+        "ourAirportsIdent": "EGSU",
+        "currentName": "Duxford Aerodrome",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.090801,
+        "longitudeCandidate": 0.131944,
+        "municipalityModern": "Duxford, Cambridgeshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Duxford_Aerodrome"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Earls Colne"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "323 Bombardment Group",
+        "94 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "14 Jun 1943",
+        "May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "29191",
+        "ourAirportsIdent": "EGSR",
+        "currentName": "Earls Colne Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.914398,
+        "longitudeCandidate": 0.6825,
+        "municipalityModern": "Colchester, Essex",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Earls_Colne_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Folkingham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "313 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "570154",
+        "ourAirportsIdent": "GB-1178",
+        "currentName": "RAF Folkingham",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.86158,
+        "longitudeCandidate": -0.44023,
+        "municipalityModern": "Sleaford, Lincolnshire",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Fulbeck"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "434 Troop Carrier Group",
+        "442 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "7 Oct 1943",
+        "e. 29 Mar 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "572152",
+        "ourAirportsIdent": "GB-1194",
+        "currentName": "RAF Fulbeck",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 53.04952,
+        "longitudeCandidate": -0.65842,
+        "municipalityModern": "Grantham, Lincolnshire",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gosfield"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "365 Fighter Group",
+        "397 Bombardment Group",
+        "410 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "22 Dec 1943",
+        "5 Apr 1944",
+        "c. 16 Apr 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "533641",
+        "ourAirportsIdent": "GB-1115",
+        "currentName": "RAF Gosfield",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.9473,
+        "longitudeCandidate": 0.58317,
+        "municipalityModern": "Halstead, Essex",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Goxhill"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "1 Fighter Group",
+        "356 Fighter Group",
+        "358 Fighter Group",
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "10 Jun 1942",
+        "20 Oct 1943",
+        "27 Aug 1943",
+        "c. 26 Aug-Oct 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "572150",
+        "ourAirportsIdent": "GB-1192",
+        "currentName": "RAF Goxhill",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 53.67986,
+        "longitudeCandidate": -0.31585,
+        "municipalityModern": "Barrow-upon-Humber, Lincolnshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Goxhill"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Great Dunmow"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "386 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "3 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "533648",
+        "ourAirportsIdent": "GB-1116",
+        "currentName": "RAF Great Dunmow",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.88417,
+        "longitudeCandidate": 0.31178,
+        "municipalityModern": "Little Easton, Essex",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Great_Dunmow"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Greenham Common"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "354 Fighter Group",
+        "368 Fighter Group",
+        "438 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "13 Jan 1944",
+        "Mar 1944",
+        "c. 4 Nov ground on 25 Aug 1944. Flew missions 1943"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "312885",
+        "ourAirportsIdent": "GB-1265",
+        "currentName": "RAF Greenham Common",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.379,
+        "longitudeCandidate": -1.281,
+        "municipalityModern": "Thatcham, Berkshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Greenham_Common"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Halesworth"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "489 Bombardment Group",
+        "56 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "c. 9 Jul 1943",
+        "c. I May-Nov 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "332687",
+        "ourAirportsIdent": "GB-0677",
+        "currentName": "RAF Halesworth",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.364097,
+        "longitudeCandidate": 1.531005,
+        "municipalityModern": "Halesworth, Suffolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Halesworth"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Harrington"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "492 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Aug 1944-8 Jul 1945"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "572513",
+        "ourAirportsIdent": "GB-1196",
+        "currentName": "RAF Harrington",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.39319,
+        "longitudeCandidate": -0.86157,
+        "municipalityModern": "Northampton, Northamptonshire",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Headcorn"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "362 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "13 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "29154",
+        "ourAirportsIdent": "EGKH",
+        "currentName": "Headcorn Aerodrome",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.156898,
+        "longitudeCandidate": 0.641667,
+        "municipalityModern": "Ashford, Kent",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Lashenden_%28Headcorn%29_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Hethel"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "320 Bombardment Group",
+        "389 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "11 Jun 1943-30 May 1945",
+        "12 Sep 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "29184",
+        "ourAirportsIdent": "GB-1239",
+        "currentName": "RAF Hethel",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.562801361084,
+        "longitudeCandidate": 1.173329949379,
+        "municipalityModern": "Hethel",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Hethel"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Keevil"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "363 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 23 Dec 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "320551",
+        "ourAirportsIdent": "GB-0415",
+        "currentName": "RAF Keevil",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.3129023,
+        "longitudeCandidate": -2.111585,
+        "municipalityModern": "Keevil",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Keevil"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Langar"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "441 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "17 Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "316993",
+        "ourAirportsIdent": "GB-0030",
+        "currentName": "Langar Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.89593,
+        "longitudeCandidate": -0.90101,
+        "municipalityModern": "Nottingham, Nottinghamshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Langar"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Leiston"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "357 Fighter Group",
+        "358 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "29 Nov 1943",
+        "31 Jan 1944-8 Jul 1945"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "332686",
+        "ourAirportsIdent": "GB-0676",
+        "currentName": "RAF Leiston",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.223329,
+        "longitudeCandidate": 1.55631,
+        "municipalityModern": "Leiston, Suffolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Leiston"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Membury"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "3 Reconnaissance Group",
+        "366 Fighter Group",
+        "436 Troopcarrier Group",
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "10 Jan 1944",
+        "3 Mar 1g44-Feb 1945",
+        "8 Sep 1942",
+        "Sep 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "320507",
+        "ourAirportsIdent": "GB-0412",
+        "currentName": "Membury Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.479812,
+        "longitudeCandidate": -1.560453,
+        "municipalityModern": "Hungerford, Berkshire",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Metfield"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "491 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "533668",
+        "ourAirportsIdent": "GB-1122",
+        "currentName": "RAF Metfield",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.36586,
+        "longitudeCandidate": 1.39126,
+        "municipalityModern": "Harleston, Suffolk",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Middle Wallop"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Dec 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "29205",
+        "ourAirportsIdent": "EGVP",
+        "currentName": "Middle Wallop Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.143876,
+        "longitudeCandidate": -1.568935,
+        "municipalityModern": "Middle Wallop, Hampshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/AAC_Middle_Wallop"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "North Pickenham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "491 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "332508",
+        "ourAirportsIdent": "GB-0659",
+        "currentName": "RAF North Pickenham",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.627378,
+        "longitudeCandidate": 0.732724,
+        "municipalityModern": "Swaffham, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_North_Pickenham"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Old Buckenham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "453 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "23 Dec 1943-9 May 1945"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "29193",
+        "ourAirportsIdent": "EGSV",
+        "currentName": "Old Buckenham Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.497501,
+        "longitudeCandidate": 1.05194,
+        "municipalityModern": "Old Buckenham, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Old_Buckenham_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rougham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "322 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Dec 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "307977",
+        "ourAirportsIdent": "GB-0146",
+        "currentName": "Rougham Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.246459,
+        "longitudeCandidate": 0.769472,
+        "municipalityModern": "Bury Saint Edmunds, Suffolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Bury_St_Edmunds"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Seething"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "448 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Dec 1943-c. Jul 1945"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "29183",
+        "ourAirportsIdent": "EGSJ",
+        "currentName": "Seething Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.510997,
+        "longitudeCandidate": 1.416864,
+        "municipalityModern": "Mundham, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Seething_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Shipdham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "319 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "12 Sep 1942"
+      ],
+      "sourceYears": [
+        1942
+      ],
+      "candidate": {
+        "ourAirportsId": "29179",
+        "ourAirportsIdent": "EGSA",
+        "currentName": "Shipdham Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.629398,
+        "longitudeCandidate": 0.928056,
+        "municipalityModern": "Thetford, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Shipdham"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "St Eval"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "479 Antisubmarine Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "8 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "332057",
+        "ourAirportsIdent": "GB-0641",
+        "currentName": "RAF St Eval",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 50.47822,
+        "longitudeCandidate": -4.99953,
+        "municipalityModern": "St Eval",
+        "sourceWikipediaLink": "https://en.m.wikipedia.org/wiki/RAF_St_Eval"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Thorpe Abbotts"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "100 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "9 Jun 1943-Dec 1945"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "331342",
+        "ourAirportsIdent": "GB-0612",
+        "currentName": "RAF Thorpe Abbotts",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.383357,
+        "longitudeCandidate": 1.211918,
+        "municipalityModern": "Diss, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Thorpe_Abbotts"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Thruxton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "366 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "I Mar-12 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "29146",
+        "ourAirportsIdent": "EGHO",
+        "currentName": "Thruxton Aerodrome",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.210602,
+        "longitudeCandidate": -1.6,
+        "municipalityModern": "Andover, Hampshire",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Thruxton_Aerodrome"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tibenham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "445 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Nov 1943-28 May 1945"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "320611",
+        "ourAirportsIdent": "GB-0420",
+        "currentName": "Tibenham Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.455906,
+        "longitudeCandidate": 1.156054,
+        "municipalityModern": "Tibenham, Norfolk",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Upottery"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "439 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "26 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "331169",
+        "ourAirportsIdent": "GB-0603",
+        "currentName": "RAF Upottery",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 50.885745,
+        "longitudeCandidate": -3.160606,
+        "municipalityModern": "Honiton, Devon",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Wattisham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "479 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 15 May 1944-c. 23 Nov 1945"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "2490",
+        "ourAirportsIdent": "EGUW",
+        "currentName": "Wattisham Airfield",
+        "currentType": "medium_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.127451,
+        "longitudeCandidate": 0.956189,
+        "municipalityModern": "Ipswich, Suffolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Wattisham"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Watton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "25 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "g Aug 1944-23 Jul 194.5"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "327472",
+        "ourAirportsIdent": "GB-0563",
+        "currentName": "RAF Watton",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 52.562189,
+        "longitudeCandidate": 0.865384,
+        "municipalityModern": "Thetford, Norfolk",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Watton"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Welford"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "315 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Nov 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "553615",
+        "ourAirportsIdent": "GB-1144",
+        "currentName": "RAF Welford",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.46666,
+        "longitudeCandidate": -1.39591,
+        "municipalityModern": "Newbury, Berkshire",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Wethersfield"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "416 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "32687",
+        "ourAirportsIdent": "GB-1272",
+        "currentName": "Wethersfield Air Base",
+        "currentType": "small_airport",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.971901,
+        "longitudeCandidate": 0.509444,
+        "municipalityModern": "Braintree, Essex",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Wethersfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Woodchurch"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "373 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Apr-4 Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "516416",
+        "ourAirportsIdent": "GB-1090",
+        "currentName": "RAF Woodchurch",
+        "currentType": "closed",
+        "modernCountryCode": "GB",
+        "latitudeCandidate": 51.09303,
+        "longitudeCandidate": 0.78087,
+        "municipalityModern": "Ashford, Kent",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cambrai/Niergnies"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "29021",
+        "ourAirportsIdent": "LFYG",
+        "currentName": "Cambrai Niergnies Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 50.140533,
+        "longitudeCandidate": 3.263226,
+        "municipalityModern": "Niergnies, Nord",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Cambrai-Niergnies_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chateaudun"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "387 Bombardment Group",
+        "439 Troop Carrier Group",
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "18 Sep 1944",
+        "4 Nov 1944-11 Jul 1945",
+        "c. 24 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "4170",
+        "ourAirportsIdent": "LFOC",
+        "currentName": "Châteaudun Airfield",
+        "currentType": "medium_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 48.057907,
+        "longitudeCandidate": 1.379309,
+        "municipalityModern": "Châteaudun, Eure-et-Loir",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Ch%C3%A2teaudun_Air_Base"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Dijon/Longvic"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "320 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "11 Nov 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "4228",
+        "ourAirportsIdent": "LFSD",
+        "currentName": "Dijon Longvic airport",
+        "currentType": "medium_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 47.268902,
+        "longitudeCandidate": 5.09,
+        "municipalityModern": "Dijon",
+        "sourceWikipediaLink": "https://fr.wikipedia.org/wiki/A%C3%A9roport_de_Dijon-Bourgogne"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Dole/Tavaux"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "320 Bombardment Group",
+        "371 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "I Apr 1945",
+        "I Oct 1944"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "4107",
+        "ourAirportsIdent": "LFGJ",
+        "currentName": "Dole Tavaux Airport",
+        "currentType": "medium_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 47.038955,
+        "longitudeCandidate": 5.427589,
+        "municipalityModern": "Dole",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Dole%E2%80%93Jura_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Laon/ Athies",
+        "Laon/Athies"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "323 Bombardment Group",
+        "416 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "13 Oct 1944",
+        "Feb 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "516454",
+        "ourAirportsIdent": "FR-0557",
+        "currentName": "Laon-Athies Air Base",
+        "currentType": "closed",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 49.59637,
+        "longitudeCandidate": 3.70885,
+        "municipalityModern": "Athies-sous-Laon, Aisne",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Laon/ Couvron"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "366 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "8 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "329135",
+        "ourAirportsIdent": "FR-0377",
+        "currentName": "Laon-Couvron Air Base",
+        "currentType": "closed",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 49.63048,
+        "longitudeCandidate": 3.54344,
+        "municipalityModern": "Vivaise, Aisne",
+        "sourceWikipediaLink": "https://fr.wikipedia.org/wiki/Base_a%C3%A9rienne_de_Laon-Couvron"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lessay"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "323 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "26 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "28962",
+        "ourAirportsIdent": "LFOM",
+        "currentName": "Lessay Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 49.202276,
+        "longitudeCandidate": -1.507983,
+        "municipalityModern": "Lessay, Basse-Normandie",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Lessay_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rouvres"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "362 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Nov 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "527234",
+        "ourAirportsIdent": "FR-0568",
+        "currentName": "Rouvres Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 49.02,
+        "longitudeCandidate": -0.198333,
+        "municipalityModern": "",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Toussus le Noble"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "4188",
+        "ourAirportsIdent": "LFPN",
+        "currentName": "Toussus-le-Noble Airport",
+        "currentType": "medium_airport",
+        "modernCountryCode": "FR",
+        "latitudeCandidate": 48.7519,
+        "longitudeCandidate": 2.10619,
+        "municipalityModern": "Toussus-le-Noble, Yvelines",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Toussus-le-Noble_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Giebelstadt"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "20 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "43125",
+        "ourAirportsIdent": "EDQG",
+        "currentName": "Giebelstadt Airport",
+        "currentType": "small_airport",
+        "modernCountryCode": "DE",
+        "latitudeCandidate": 49.6480560303,
+        "longitudeCandidate": 9.966388702390002,
+        "municipalityModern": "Giebelstadt",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Giebelstadt_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Kitzingen"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "405 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "2733",
+        "ourAirportsIdent": "ETIN",
+        "currentName": "Kitzingen Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "DE",
+        "latitudeCandidate": 49.744293,
+        "longitudeCandidate": 10.207313,
+        "municipalityModern": "Kitzingen",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Kitzingen_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Amendola"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "2 Bombardment Group",
+        "321 Bombardment Group",
+        "57 Fighter Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "16 Jan 1944",
+        "c. 20 Nov 1943",
+        "c. 27 Oct 1943",
+        "c. 9 Dec 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "4308",
+        "ourAirportsIdent": "LIBA",
+        "currentName": "Amendola Air Base",
+        "currentType": "medium_airport",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.538443,
+        "longitudeCandidate": 15.717181,
+        "municipalityModern": "San Giovanni Rotondo (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Amendola_Air_Base"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Brindisi"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "60 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "26 Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "4315",
+        "ourAirportsIdent": "LIBR",
+        "currentName": "Brindisi Airport",
+        "currentType": "large_airport",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 40.6576,
+        "longitudeCandidate": 17.947001,
+        "municipalityModern": "Brindisi",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Brindisi_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cerignola"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "301 Bombardment Group",
+        "456 Bombardment Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "Jan 1944",
+        "c. 20 Dec 1943",
+        "c. 7 Dec 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340346",
+        "ourAirportsIdent": "IT-0625",
+        "currentName": "Cerignola Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.242339,
+        "longitudeCandidate": 15.80525,
+        "municipalityModern": "Cerignola (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Cerignola_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Fano"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "309 Bombardment Group",
+        "79 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "7 Apr 1945",
+        "c. 5 Dec 1944"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "29418",
+        "ourAirportsIdent": "LIDF",
+        "currentName": "Fano Airfield",
+        "currentType": "small_airport",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 43.824032,
+        "longitudeCandidate": 13.02588,
+        "municipalityModern": "Fano (PU)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Fano_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lesina"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "325 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "29 Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340348",
+        "ourAirportsIdent": "IT-0627",
+        "currentName": "Lesina Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.863333,
+        "longitudeCandidate": 15.311389,
+        "municipalityModern": "Lesina (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Lesina_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lucera"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "301 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "I Feb 1944-1945"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340349",
+        "ourAirportsIdent": "IT-0628",
+        "currentName": "Lucera Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.497978,
+        "longitudeCandidate": 15.419444,
+        "municipalityModern": "Lucera (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Lucera_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Madna Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "52 Fighter Group",
+        "79 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "14 May 1944",
+        "19 Nov 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340350",
+        "ourAirportsIdent": "IT-0629",
+        "currentName": "Madna Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.922778,
+        "longitudeCandidate": 15.075278,
+        "municipalityModern": "Campomarino (CB)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Madna_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Manduria"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "450 Bombardment Group",
+        "68 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "20 Dec 1943-12 May 1945",
+        "Nov 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "554674",
+        "ourAirportsIdent": "IT-0778",
+        "currentName": "Manduria Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 40.444303,
+        "longitudeCandidate": 17.629851,
+        "municipalityModern": "Manduria (TA)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Manduria_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ramitelli Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "332 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "28 May 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340352",
+        "ourAirportsIdent": "IT-0631",
+        "currentName": "Ramitelli Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.908333,
+        "longitudeCandidate": 15.116667,
+        "municipalityModern": "Campomarino (CB)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Ramitelli_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Salsola Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "1 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "21 Feb 1945",
+        "8 Jan 1944"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "340353",
+        "ourAirportsIdent": "IT-0632",
+        "currentName": "Salsola Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.548333,
+        "longitudeCandidate": 15.4575,
+        "municipalityModern": "Lucera (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Salsola_Airfield_(Foggia_Satellite_#3)"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "San Giovanni"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "455 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "I j Jan 1944-g Sep 1945. Hensley Field, Tex, 25 Mar 194727 Jun 1949. Myrtle Beach AFB, SC, 25 Jul 1956"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340354",
+        "ourAirportsIdent": "IT-0633",
+        "currentName": "San Giovanni Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.239417,
+        "longitudeCandidate": 15.801825,
+        "municipalityModern": "Cerignola (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#San_Giovanni_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "San Pancrazio"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "451 Bombardment Group",
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "c. 3 Oct 1943",
+        "c. 5 Mar 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "321758",
+        "ourAirportsIdent": "IT-0523",
+        "currentName": "San Pancrazio Air Base",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 40.437947,
+        "longitudeCandidate": 17.857062,
+        "municipalityModern": "San Pancrazio Salentino (BR)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/San_Pancrazio_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "San Severo"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "3 Reconnaissance Group",
+        "31 Fighter Group",
+        "5 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "2 Apr 1944",
+        "8 Dec 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340355",
+        "ourAirportsIdent": "IT-0634",
+        "currentName": "San Severo Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.7125,
+        "longitudeCandidate": 15.43,
+        "municipalityModern": "San Severo (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#San_Severo_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sterparone Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "483 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340358",
+        "ourAirportsIdent": "IT-0637",
+        "currentName": "Sterparone Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.601744,
+        "longitudeCandidate": 15.306667,
+        "municipalityModern": "Torremaggiore (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Sterparone_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Stornara"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "456 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Jan 1944-JU1 1945"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340359",
+        "ourAirportsIdent": "IT-0638",
+        "currentName": "Stornara Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.290108,
+        "longitudeCandidate": 15.740617,
+        "municipalityModern": "Stornara (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Stornara_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tarquinia"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "350 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "8 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "605951",
+        "ourAirportsIdent": "IT-0815",
+        "currentName": "Tarquinia Airport",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 42.210809,
+        "longitudeCandidate": 11.733971,
+        "municipalityModern": "Tarquinia (VT)",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Torretto Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "484 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340360",
+        "ourAirportsIdent": "IT-0639",
+        "currentName": "Torretto Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.181944,
+        "longitudeCandidate": 15.763889,
+        "municipalityModern": "Cerignola (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Torretto_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tortorella",
+        "Tortorella Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "483 Bombardment Group",
+        "99 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "30 Mar 1944",
+        "c. 11 Dec 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ],
+      "candidate": {
+        "ourAirportsId": "340361",
+        "ourAirportsIdent": "IT-0640",
+        "currentName": "Tortorella Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.484722,
+        "longitudeCandidate": 15.652778,
+        "municipalityModern": "Foggia (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Tortorella_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Triolo Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "14 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "12 Dec 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "340362",
+        "ourAirportsIdent": "IT-0641",
+        "currentName": "Triolo Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.625,
+        "longitudeCandidate": 15.458333,
+        "municipalityModern": "San Severo (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Triolo_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Venosa"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "485 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Apr 1944-15 May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "340363",
+        "ourAirportsIdent": "IT-0642",
+        "currentName": "Venosa Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 40.997028,
+        "longitudeCandidate": 15.873611,
+        "municipalityModern": "Venosa (PZ)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Venosa_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Vincenzo Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "1 Fighter Group",
+        "321 Bombardment Group",
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "14 Jan 1944",
+        "8 Jan 1945",
+        "II Jan 1944"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ],
+      "candidate": {
+        "ourAirportsId": "340364",
+        "ourAirportsIdent": "IT-0643",
+        "currentName": "Vincenzo Airfield",
+        "currentType": "closed",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 41.411111,
+        "longitudeCandidate": 15.424444,
+        "municipalityModern": "Lucera (FG)",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Foggia_Airfield_Complex#Vincenzo_Airfield"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Comiso"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "340 Bombardment Group",
+        "64 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "29 Aug 1943",
+        "c. 2 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "298716",
+        "ourAirportsIdent": "LICB",
+        "currentName": "Comiso Airport",
+        "currentType": "medium_airport",
+        "modernCountryCode": "IT",
+        "latitudeCandidate": 36.99583,
+        "longitudeCandidate": 14.60889,
+        "municipalityModern": "Comiso",
+        "sourceWikipediaLink": "https://en.wikipedia.org/wiki/Comiso_Airport"
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    },
+    {
+      "stationNameAsPrinted": [
+        "Medenine"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "340 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "3 Apr 1943",
+        "Mar 1943"
+      ],
+      "sourceYears": [
+        1943
+      ],
+      "candidate": {
+        "ourAirportsId": "6401",
+        "ourAirportsIdent": "DT70",
+        "currentName": "Medenine Airport",
+        "currentType": "small_airport",
+        "modernCountryCode": "TN",
+        "latitudeCandidate": 33.350201,
+        "longitudeCandidate": 10.444,
+        "municipalityModern": "Medenine",
+        "sourceWikipediaLink": ""
+      },
+      "matchingRule": "exact normalized site name after removal of generic RAF/USAAF/airfield words + expected modern ISO country",
+      "status": "PROVISIONAL_wartime_station_location_NOT_VERIFIED"
+    }
+  ],
+  "ambiguousNamesOrCoordinates": [
+    {
+      "stationNameAsPrinted": [
+        "Chilbolton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "368 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ],
+      "candidateMatches": [
+        {
+          "ourAirportsId": "307990",
+          "ourAirportsIdent": "GB-0148",
+          "currentName": "RAF Chilbolton",
+          "currentType": "closed",
+          "modernCountryCode": "GB",
+          "latitudeCandidate": 51.140518,
+          "longitudeCandidate": -1.437989,
+          "municipalityModern": "Stockbridge, Hampshire",
+          "sourceWikipediaLink": "https://en.wikipedia.org/wiki/RAF_Chilbolton"
+        },
+        {
+          "ourAirportsId": "320407",
+          "ourAirportsIdent": "GB-0397",
+          "currentName": "Chilbolton Airfield",
+          "currentType": "small_airport",
+          "modernCountryCode": "GB",
+          "latitudeCandidate": 51.136852,
+          "longitudeCandidate": -1.419439,
+          "municipalityModern": "Stockbridge, Hampshire",
+          "sourceWikipediaLink": ""
+        }
+      ]
+    }
+  ],
+  "unmatchedHistoricSiteNames": [
+    {
+      "stationNameAsPrinted": [
+        "236 Lashenden"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "354 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Aachen"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "365 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "16 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Agrigento"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "21 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ain M'lila"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "321 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "12 Mar 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ain Mlila",
+        "Ain M’lila"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "2 Bombardment Group",
+        "301 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "17 Jun 1943",
+        "c. 1 7 Jan 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Algiers"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "3 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "25 Dec 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Amiens"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "315 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Apr-May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ansbach"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "354 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 30 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Assche"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "391 Bombardment Group",
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "16 Apr 1945",
+        "8 Feb 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Azeville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "363 Reconnaissance Group",
+        "365 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "28 Jun 1944",
+        "Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Barcelona"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "27 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bari"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "5 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "11 Oct 1944-Oct 1945"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Barkston"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "349 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Beek"
+      ],
+      "regionAsPrinted": "Holland",
+      "unitLabels": [
+        "387 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "29 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bengasi"
+      ],
+      "regionAsPrinted": "Libya",
+      "unitLabels": [
+        "376 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 6 Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Benina"
+      ],
+      "regionAsPrinted": "Libya",
+      "unitLabels": [
+        "98 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 9 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Berteaux"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "14 Fighter Group",
+        "309 Bombardment Group",
+        "33 Fighter Group",
+        "68 Reconnaissance Group",
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 5,
+      "originalDateTokens": [
+        "28 Mar 1943",
+        "5 Sep 1943",
+        "I Jan 1943",
+        "c. 2 Mar 1943",
+        "g Jan 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Beuzeville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "367 Fighter Group",
+        "371 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "22 Jul 1944",
+        "Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Biblis"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "27 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Biskra"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "1 Fighter Group",
+        "301 Bombardment Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "14 Dec 1942",
+        "c. 16 Dec 1942",
+        "c. 25 Dec 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bizerte"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "2 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "2 Dec 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Boccadifalco"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bonnetable"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "442 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Borizzo"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "316 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "18Oct 1943-12 Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Braunschardt"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 18 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bretigny"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "365 Fighter Group",
+        "404 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "29 Aug 1944",
+        "3 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bricy"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "394 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "18 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Brunswick"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "363 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 22 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Buchschwabach"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "368 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "13 May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bury St Edmunds"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "94 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 Jun 1943-c. 12 Dec 1945"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Bushey Hall"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "350 Fighter Group",
+        "4 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "12 Sep 1942",
+        "I Oct 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Canrobert"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Mar 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Capodichino"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "332 Fighter Group",
+        "47 Bombardment Group",
+        "79 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "15 Apr 1944",
+        "22 Mar 1944",
+        "Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cardonville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "368 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "20 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Carentan"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "25 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Castelvetrano"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "314 Troop Carrier Group",
+        "81 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "12 Oct 1943",
+        "24 Aug 1943-13 Feb 1944"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Catania"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "340 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "27 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cattolica"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "332 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 4 May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cercola"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "33 Fighter Group",
+        "57 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Mar 1944",
+        "c. I Jan-Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cesenatico"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "79 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 20 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chapelle"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "404 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chartres"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "323 Bombardment Group",
+        "368 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "21 Sep 1944",
+        "23 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chateaudun-du-Rhumel"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "2 Bombardment Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "27 Apr 1943",
+        "c. 8 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chateaudundu-Rhumel"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "1 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Chelveston"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "301 Bombardment Group",
+        "60 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "9 Aug 1942",
+        "Jun 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Christchurch"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "405 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Mar22 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ciampino"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "64 Troop Carrier Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "10 Jul 1944",
+        "c. 12 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Clastres"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "367 Fighter Group",
+        "387 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "30 Oct 1944",
+        "8 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Conflans"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "367 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "14 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Conflans/ Doncourt"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Nov 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cormeilles-en-Vexin"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "344 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Coulommiers"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "410 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Cretteville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "17 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Criqueville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "354 Fighter Group",
+        "367 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "14 Aug 1944",
+        "Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Dar el Koudia"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "309 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 6 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Denain/Prouvy"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "323 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "g Feb 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Depienne"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 15 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Deux Jumeaux"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "18 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Deversoir"
+      ],
+      "regionAsPrinted": "Egypt",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "316 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "23 Nov 1942",
+        "c. 31 Jul 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Djedeida"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "17 Bombardment Group",
+        "319 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "23 Jun 1943",
+        "26 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Djilma"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Dreux"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "397 Bombardment Group",
+        "441 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "3 Nov 1944",
+        "c. 11 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Dreux/ Vermouillet"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "366 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "24 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ebba Ksour"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "33 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 12 Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "El Adem"
+      ],
+      "regionAsPrinted": "Egypt",
+      "unitLabels": [
+        "316 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "10 Dec 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "El Bathan"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "14 Fighter Group",
+        "320 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "28 Jul 1943",
+        "3 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "El Djem"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "60 Troop Carrier Group",
+        "64 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "26 Jul 1943",
+        "Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "El Kabrit"
+      ],
+      "regionAsPrinted": "Egypt",
+      "unitLabels": [
+        "340 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Mar 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Elveden Hall"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "493 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "I Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Enfidaville"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "316 Troop Carrier Group",
+        "376 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "21 Jun 1943",
+        "26 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Exeter"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "440 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "18 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Falconara"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "321 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Fayid"
+      ],
+      "regionAsPrinted": "Egypt",
+      "unitLabels": [
+        "316 Troop Carrier Group",
+        "98 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Jan 1943",
+        "c. 11 Nov 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Flixton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "446 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 4 Nov 1943-c. Jul 1945"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Florennes/Juzaine"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "344 Bombardment Group",
+        "365 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "30 Jan 1945",
+        "5 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Foggia"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "325 Fighter Group",
+        "57 Fighter Group",
+        "79 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "11 Dec 1943",
+        "Oct 1943",
+        "c. 2 Nov 1943",
+        "c. 9 Oct 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Follonica"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "18 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Frankfurt/ Eschborn"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "371 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Fritzlar"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "365 Fighter Group",
+        "404 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "12 Apr 1945",
+        "13 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Furth"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "362 Fighter Group",
+        "371 Fighter Group",
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "30 Apr 1945",
+        "5 May 1945",
+        "c. 28 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gablingen"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "323 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gael"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "354 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gambut"
+      ],
+      "regionAsPrinted": "Libya",
+      "unitLabels": [
+        "376 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. Jan 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gaudo Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "321 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "19 Jan4 Feb 1944",
+        "Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gela"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "60 Troop Carrier Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "20 Jul 1943",
+        "c. 30 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gerbini"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "20 Aug 1943",
+        "c. 22 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gioia Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "57 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 25 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gioia del Colle"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "1 Fighter Group",
+        "451 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "c. 20 Jan 1944",
+        "c. 8 Dec 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Glatton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "457 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Jan 1944-1 Jun 1945"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gorges"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "397 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Gosselies"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Grafton Underwood"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "384 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Great Saling"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "322 Bombardment Group",
+        "96 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Jan 1943",
+        "May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Grombalia"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "3 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Grosseto"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "47 Bombardment Group",
+        "57 Fighter Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "11 Dec 1944",
+        "7 May 1945",
+        "c. 17 Sep 1944"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Grottaglie"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "321 Bombardment Group",
+        "449 Bombardment Group",
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "24 Sep 1943",
+        "3 Oct 1943",
+        "c. 4 Jan 194416 May 1945"
+      ],
+      "sourceYears": [
+        1943,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Handorf"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Hardwick"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "93 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Dec 1942-19 May 1945"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Hergla"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "340 Bombardment Group",
+        "98 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "2 Jun 1943",
+        "c. 21 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "High Halden"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "358 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "13 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Holmsley"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "394 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "24 Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Horham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "323 Bombardment Group",
+        "95 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "12 May 1943",
+        "15 Jun 1943-19 Jun 1945"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Horsham St Faith"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "319 Bombardment Group",
+        "56 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "c. 4 Oct 1942",
+        "c. 6 Apr 1943"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Hurn"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "397 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ibsley"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "1 Fighter Group",
+        "367 Fighter Group",
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "24 Aug 1942",
+        "29 Mar 1944",
+        "6 Jul 1944"
+      ],
+      "sourceYears": [
+        1942,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Iesi"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "79 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Illesheim"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "362 Fighter Group",
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "29 Apr 1945",
+        "3 May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Juvincourt"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "365 Fighter Group",
+        "367 Fighter Group",
+        "368 Fighter Group",
+        "410 Bombardment Group",
+        "439 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 5,
+      "originalDateTokens": [
+        "15 Sep 1944",
+        "27 Dec 1944",
+        "28 Oct 1944",
+        "8 Sep 1944",
+        "Feb 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Kairouan"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "314 Troop Carrier Group",
+        "64 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "26 Jun 1943",
+        "28 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Kalaa Djerda"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 25 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Keltz"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "404 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Kelz"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "26 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Kimbolton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "379 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "21 May 1943-12 Jun 1945"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Kings Cliffe"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "20 Fighter Group",
+        "56 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Jan 1943",
+        "c. 26 Aug 1943-c. 11 Oct 1945"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Korba"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "27 Fighter Group",
+        "31 Fighter Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "15 May 1943",
+        "30 Jun 1943",
+        "Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "La Marsa"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "3 Reconnaissance Group",
+        "5 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "13 Jun 1943",
+        "8 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "La Sebala"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "21 May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "La Senia"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "3 Reconnaissance Group",
+        "31 Fighter Group",
+        "320 Bombardment Group",
+        "52 Fighter Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 5,
+      "originalDateTokens": [
+        "10 ' Dec 1942",
+        "14 Nov 1942",
+        "c. 12 May 1943",
+        "c. 12 Nov 1942",
+        "c. 2 Dec 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Langensalza"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Langer"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "435 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "3 Nov 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Laon"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "368 Fighter Group",
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "11 Sep 1944",
+        "15 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lavenham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "487 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Apr 1944-c. 26 Aug 1945"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Le Culot"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "363 Reconnaissance Group",
+        "373 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "22 Oct 1944",
+        "c. 29 Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Le Kouif Airfield"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "81 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "17 Feb 1943",
+        "24 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Le Mans"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "363 Reconnaissance Group",
+        "406 Fighter Group",
+        "440 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "30 Sep 1944",
+        "4 Sep 1944",
+        "Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Le Molay"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Le Sers"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "31 Fighter Group",
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "12 Apr 1943",
+        "14 Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lecce"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "10 Oct 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Licata"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "33 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 18 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lignerolles"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "365 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "15 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Limburg an der Lahn"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 2 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lippstadt"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "373 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "20 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Luxembourg"
+      ],
+      "regionAsPrinted": "Luxembourg",
+      "unitLabels": [
+        "363 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lymington"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Lyons/Bron"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "28 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Maison Blanche"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "301 Bombardment Group",
+        "319 Bombardment Group",
+        "350 Fighter Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "5 Dec 1942",
+        "May 1943",
+        "c. 13 Nov 1942",
+        "q Nov 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Marcianise"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Martlesham"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "356 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Oct 1943-4 Nov 1945"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Massicault"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "2 Bombardment Group",
+        "320 Bombardment Group",
+        "68 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "29 Jun 1943",
+        "31 Jul 1943",
+        "Oct 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Mateur"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "1 Fighter Group",
+        "325 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "19 Jun 1943",
+        "29 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Maupertuis"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "363 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Mazzara"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "316 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "3 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Meautis"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "16 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Melun"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "416 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Menzel Temime"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "33 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "20 May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Merryfield"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "441 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "25 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Metz"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "365 Fighter Group",
+        "368 Fighter Group",
+        "371 Fighter Group",
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "15 Feb 1945",
+        "2 Feb 1945",
+        "27 Dec 1944",
+        "5 Jan 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Meurtheet-Moselle"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "354 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Dec 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Milazzo"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "2 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Molesworth"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "303 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "12 Sep 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Monastir"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "81 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 26 May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Mondolfo"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "31 Fighter Group",
+        "325 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "3 Mar 1945",
+        "Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Montecorvino",
+        "Montecorvino Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "31 Fighter Group",
+        "332 Fighter Group",
+        "81 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "20 Sep 1943",
+        "3 Feb 1944",
+        "c. Feb 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Montesquieu"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "320 Bombardment Group",
+        "325 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "5 Apr 1943",
+        "g Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Moreton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "12 Mar 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Mount Farm"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "7 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Mourmelon-le-Grand"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Nancy"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "69 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 22 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Navarin"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "2 Bombardment Group",
+        "99 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Apr 1943",
+        "c. 23 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Nettuno"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "3 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "16 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Neuilly"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "6 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Nouvion"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "1 Fighter Group",
+        "27 Fighter Group",
+        "316 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "20 Nov 1942",
+        "9 May 1943",
+        "Jan 1943"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Nuthampstead"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "398 Bombardment Group",
+        "55 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "14 Sep 1943",
+        "22 Apr 1944-26 May 1945"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ober Olm"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "354 Fighter Group",
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "c. 5 Apr 1945",
+        "c. 8 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ombrone Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "27 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ophoven"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "405 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "9 Feb 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Oran"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "350 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "14 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Orbetello"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 19 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Orconte"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "354 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Orleans"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "440 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "2 Nov 1944-18 Oct 1945. Wold-Chamberlain Field, Minn, 3 Sep 1947-4 May 1951. Ft Snelling, Minn, 15 Jun 1952"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Orleansville"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Jan 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Orly"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Oudna"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "301 Bombardment Group",
+        "99 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "4 Aug 1943",
+        "6 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Paestum"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "33 Fighter Group",
+        "340 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "13 Sep 1943",
+        "23 Mar 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Peray"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "367 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Peronne"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "397 Bombardment Group",
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "6 Oct 1944",
+        "6 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Perthes"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "371 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "18 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Philippeville"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "309 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "10 Nov 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Piagiolino Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "21 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Picauville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "405 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "30 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Pisa"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "350 Fighter Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "2 Dec 1944-14 Jul 1945",
+        "23 Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Podington"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "92 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Poix"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "314 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Feb 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Polebrook"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "351 Bombardment Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "c. 13 Tun-c. 9 Nov 1942",
+        "c. I May 1943-J~” 1945"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Pomigliano"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "3 Reconnaissance Group",
+        "31 Fighter Group",
+        "60 Troop Carrier Group",
+        "79 Fighter Group",
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 5,
+      "originalDateTokens": [
+        "14 Oct 1943",
+        "19 Nov 1943",
+        "4 Jan 1944",
+        "8 Oct 1g44-May 1945",
+        "I May 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Pompeii"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "340 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 2 Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Pont-du-Fahs"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. I Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ponte Galeria"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 10 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ponte O h o"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 13 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ponte Olivo"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "12 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 2 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Pontorson"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "358 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "14 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Prosnes"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "362 Fighter Group",
+        "438 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "19 Sep 1944",
+        "Feb 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ramsbury"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "64 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Aug-Nov 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Raydon"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "357 Fighter Group",
+        "358 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "30 Nov 1943",
+        "31 Jan 1944"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Reims"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "373 Fighter Group",
+        "440 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "11 Sep 1944",
+        "19 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rennes/StJacques"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 11 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rerhaia"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "350 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 17 Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rimini"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "325 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 5 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rivenhall"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "363 Reconnaissance Group",
+        "397 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "15 Apr 1944",
+        "Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rosia"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "3 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Rosignano Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "47 Bombardment Group",
+        "64 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "10 Jan-23 May 1945",
+        "Oct 1944"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Roye/Amy"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "391 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "19 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Salon"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Saltby"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "314 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sandhofen"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "358 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "2 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "SanPancrazio"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "376 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 17Nov 1943-19 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sciacca"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "313 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "23 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sedrata"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "17 Bombardment Group",
+        "319 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "I Jun 1943",
+        "c. 10 May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sele Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Sep 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "SerretellaAirfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "12 Oct 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sfax"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "12 Bombardment Group",
+        "340 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "Apr 1943",
+        "c. 15 Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Snetterton Heath"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "386 Bombardment Group",
+        "96 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "12 Jun 1943-12 Dec 1945",
+        "3 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Soliman"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "321 Bombardment Group",
+        "325 Fighter Group",
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "4 Nov 1943",
+        "8 Aug 1943",
+        "c. I Jul 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Soluch"
+      ],
+      "regionAsPrinted": "Libya",
+      "unitLabels": [
+        "376 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Souk-el-Arba"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "13 Apr 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Souk-elArba"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "13 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Soukel-Khemis"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "325 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "3 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Sousse"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "33 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "9 Jun 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St-Andrede-L'Eure"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "442 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Nov 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St-Dizier"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "27 Fighter Group",
+        "367 Fighter Group",
+        "405 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "14 Sep 1944",
+        "22 Feb 1945",
+        "I Feb 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St-Dizier/ Robinson"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St-James"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "373 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "19 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St Marceau"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "441 Troop Carrier Group",
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "2 Oct 1944",
+        "29 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St Pierre du Mont"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "366 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "17 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "St Trond",
+        "St-Trond"
+      ],
+      "regionAsPrinted": "Belgium",
+      "unitLabels": [
+        "404 Fighter Group",
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "30 Sep 1944",
+        "I Oct 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Stanhoe"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "315 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "7 Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Stansted"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "344 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "g Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Staplehurst"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "363 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Ste-Barbe-du-Tlelat"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "27 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "26 Dec 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Steeple Morden"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "3 Reconnaissance Group",
+        "355 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "26 Oct-22 Nov 1942",
+        "g Jul 1943"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "StLeu"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "319 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 11 Nov 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Stony Cross"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "367 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Strassfeld"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "474 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "22 Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tafaraoui"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "1 Fighter Group",
+        "14 Fighter Group",
+        "31 Fighter Group",
+        "319 Bombardment Group",
+        "320 Bombardment Group",
+        "325 Fighter Group",
+        "52 Fighter Group",
+        "60 Troop Carrier Group",
+        "86 Fighter Group",
+        "97 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 10,
+      "originalDateTokens": [
+        "11 Jun 1943",
+        "13 Nov 1942",
+        "15 Nov 1942",
+        "18 Nov 1942",
+        "28 Feb 1943",
+        "28 Jan 1943",
+        "8 Nov 1942",
+        "9 Nov 1942",
+        "c. 22 Nov 1942"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tantonville"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "86 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "c. 20 Feb 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tebessa"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "17 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Telergma"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "14 Fighter Group",
+        "17 Bombardment Group",
+        "309 Bombardment Group",
+        "319 Bombardment Group",
+        "33 Fighter Group",
+        "52 Fighter Group",
+        "82 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 8,
+      "originalDateTokens": [
+        "21 Dec 1942",
+        "24 Dec 1942",
+        "5 May 1943",
+        "Dec 1942",
+        "Jan 1943",
+        "c. 12 Dec 1942",
+        "c. 17 Jan 1943",
+        "c. 20 Feb 1943"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Termini"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "2 Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Thelepte"
+      ],
+      "regionAsPrinted": "Tunisia",
+      "unitLabels": [
+        "31 Fighter Group",
+        "33 Fighter Group",
+        "47 Bombardment Group",
+        "81 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 6,
+      "originalDateTokens": [
+        "11 Mar 1943",
+        "22 Jan 1943",
+        "30 Mar 1943",
+        "7 Jan 1943",
+        "c. 'Mar 1943",
+        "c. 7 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Thiersville"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "60 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "May 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Thurleigh"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "306 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Sep 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tohl"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "358 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "9 Nov 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Torrente Comunelli"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "g Aug 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Toul/ Ochey",
+        "Toul/Ochey"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "27 Fighter Group",
+        "50 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "3 Nov 1944",
+        "Mar 1945"
+      ],
+      "sourceYears": [
+        1944,
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tour-en-Bassin"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "406 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "5 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Tour-enBassin"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "394 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "25 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Touren-Bassin"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "373 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "19 Jul 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Trapani/Milo Airfield"
+      ],
+      "regionAsPrinted": "Sicily",
+      "unitLabels": [
+        "313 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "3 Oct 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Trier/Evren"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "9 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Venlo"
+      ],
+      "regionAsPrinted": "Holland",
+      "unitLabels": [
+        "363 Reconnaissance Group",
+        "373 Fighter Group",
+        "394 Bombardment Group",
+        "397 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 4,
+      "originalDateTokens": [
+        "1 1 Mar 1945",
+        "2 May 1945",
+        "25 Apr 1945",
+        "Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Vesuvius Airfield"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "47 Bombardment Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "25 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Villacoublay"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "48 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "29 Aug 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Villafranca di Verona"
+      ],
+      "regionAsPrinted": "Italy",
+      "unitLabels": [
+        "57 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "29 Apr 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Villeneuve/Vetrus"
+      ],
+      "regionAsPrinted": "France",
+      "unitLabels": [
+        "441 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "8 Sep 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Vogelsang"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "67 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Mar 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Welfard"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "438 Troopcarrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "Feb 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Welford Park"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "435 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "25 Jan 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Westhampnett"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "31 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "I Aug 1942"
+      ],
+      "sourceYears": [
+        1942
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Weston Zoyland"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "442 Troop Carrier Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "-GROUPS 317 Jun 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Wiesbaden"
+      ],
+      "regionAsPrinted": "Germany",
+      "unitLabels": [
+        "363 Reconnaissance Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "May 1945"
+      ],
+      "sourceYears": [
+        1945
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Winkton"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "404 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "4 Apr 1944"
+      ],
+      "sourceYears": [
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Wormingford"
+      ],
+      "regionAsPrinted": "England",
+      "unitLabels": [
+        "362 Fighter Group",
+        "55 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "16 Apr 1944",
+        "30 Nov 1943"
+      ],
+      "sourceYears": [
+        1943,
+        1944
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Youks-les-Bains"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "31 Fighter Group",
+        "52 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 2,
+      "originalDateTokens": [
+        "21 Feb 1943",
+        "c. 9 Mar 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Youks-les-Rains"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "33 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 1,
+      "originalDateTokens": [
+        "8 Feb 1943"
+      ],
+      "sourceYears": [
+        1943
+      ]
+    },
+    {
+      "stationNameAsPrinted": [
+        "Youks-lesBains"
+      ],
+      "regionAsPrinted": "Algeria",
+      "unitLabels": [
+        "14 Fighter Group",
+        "47 Bombardment Group",
+        "81 Fighter Group"
+      ],
+      "sourceStationEntryCountNotMissions": 3,
+      "originalDateTokens": [
+        "22 Feb 1943",
+        "22 Nov 1942",
+        "7 Jan 1943"
+      ],
+      "sourceYears": [
+        1942,
+        1943
+      ]
+    }
+  ]
+}

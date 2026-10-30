@@ -530,5 +530,15 @@ assert.equal(thor.targetLocationCandidates.reduce((n, r) => n + r.sourceRecordCo
 assert.equal(thor.sortieDupeFlags.unmarked + thor.sortieDupeFlags['1'], 126322);
 assert.ok(thor.takeoffBaseCandidates.every(r => r.status === 'research_candidate_needs_station_identity_and_date_validation'));
 assert.ok(thor.criticalSemantics.some(s => s.includes('not necessarily a unique sortie')));
+const maurerCoords = load('usaaf-maurer-ourairports-conservative-station-geocoding-candidates-1940-1945.json');
+assert.equal(maurerCoords.counts.OurAirportsRawWorldRows, 86311);
+assert.equal(maurerCoords.counts.MaurerCandidateSourceStationOccurrences, 544);
+assert.equal(maurerCoords.counts.MaurerUniqueNormalizedPlaceAndRegionKeys, 356);
+assert.equal(maurerCoords.provisionalCandidates.length, 90);
+assert.equal(maurerCoords.ambiguousNamesOrCoordinates.length, 1);
+assert.equal(maurerCoords.unmatchedHistoricSiteNames.length, 265);
+assert.equal(maurerCoords.provisionalCandidates.length + maurerCoords.ambiguousNamesOrCoordinates.length + maurerCoords.unmatchedHistoricSiteNames.length, 356);
+assert.equal(maurerCoords.ambiguousNamesOrCoordinates[0].stationNameAsPrinted[0], 'Chilbolton');
+assert.ok(maurerCoords.provisionalCandidates.every(r => r.status.includes('NOT_VERIFIED')));
 
-console.log('Grand Air War research transcription integrity checks passed (including THOR original bombing target/airfield coordinate coverage audit).');
+console.log('Grand Air War research transcription integrity checks passed (including original THOR bombing target and conservative Maurer/OurAirports station crosswalk).');
