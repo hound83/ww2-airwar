@@ -1,0 +1,307 @@
+{
+  "id": "SPECIALIST-AIRBALANCE",
+  "force": "cross_force",
+  "dataDescription": "National aircraft fleets at September 1939, Europe",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airbalance",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "Salamander Books, The Encyclopedia of Air Warfare .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Fighters"
+            },
+            {
+              "text": "Bombers"
+            },
+            {
+              "text": "Others"
+            },
+            {
+              "text": "Total"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "Belgium"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "210",
+              "count": 210
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "Britain"
+            },
+            {
+              "text": "620",
+              "count": 620
+            },
+            {
+              "text": "2,530",
+              "count": 2530
+            },
+            {
+              "text": "450",
+              "count": 450
+            },
+            {
+              "text": "3,600",
+              "count": 3600
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "Denmark"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "65",
+              "count": 65
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "France"
+            },
+            {
+              "text": "400",
+              "count": 400
+            },
+            {
+              "text": "1,450",
+              "count": 1450
+            },
+            {
+              "text": "650",
+              "count": 650
+            },
+            {
+              "text": "2,500",
+              "count": 2500
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Germany"
+            },
+            {
+              "text": "1,200",
+              "count": 1200
+            },
+            {
+              "text": "1,750",
+              "count": 1750
+            },
+            {
+              "text": "1,890",
+              "count": 1890
+            },
+            {
+              "text": "4,840",
+              "count": 4840
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "Italy"
+            },
+            {
+              "text": "900",
+              "count": 900
+            },
+            {
+              "text": "950",
+              "count": 950
+            },
+            {
+              "text": "750",
+              "count": 750
+            },
+            {
+              "text": "2,600",
+              "count": 2600
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "Netherlands"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "330",
+              "count": 330
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Norway"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "100",
+              "count": 100
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Poland"
+            },
+            {
+              "text": "277",
+              "count": 277
+            },
+            {
+              "text": "269",
+              "count": 269
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "546",
+              "count": 546
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Romania"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "840",
+              "count": 840
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "U.S.S.R."
+            },
+            {
+              "text": "1,400",
+              "count": 1400
+            },
+            {
+              "text": "1,650",
+              "count": 1650
+            },
+            {
+              "text": "250",
+              "count": 250
+            },
+            {
+              "text": "3,300",
+              "count": 3300
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "Yugoslavia"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "800",
+              "count": 800
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

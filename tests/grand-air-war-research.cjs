@@ -57,6 +57,14 @@ assert.equal(sovietRegiments.publishedAllFiveDistrictsReconciled.derivedOperatio
 assert.equal(sovietRegiments.districtReconciliation.length, 5);
 assert.ok(sovietRegiments.districtReconciliation.every(x => x.arithmeticMatchesSource));
 assert.equal(sovietRegiments.headquartersRecords.reduce((n, x) => n + (x.aircraftTotal ?? 0), 0), 46);
+const opposingAxis = require(path.join(strength02Dir, 'rkka-axis-german-aircraft-strength-by-theater-1941-1945.json'));
+assert.equal(opposingAxis.geographicTheaterRows.length, 142);
+assert.equal(opposingAxis.alliedNationSnapshotsFromTable0222.length, 9);
+assert.equal(opposingAxis.roleArithmeticIssues.length, 0);
+assert.equal(opposingAxis.alliedNationArithmeticIssues.length, 0);
+assert.equal(opposingAxis.geographicTheaterRows.find(x => x.sourceRow === 5).combatAircraftOnHandReported, 4942);
+assert.equal(opposingAxis.alliedNationSnapshotsFromTable0222[0].aircraftOnStrengthByNation.hungary, 90);
+assert.ok(opposingAxis.geographicTheaterRows.find(x => x.sourceRow === 83).sourceDateWarning.includes('15 Apr'));
 
 const german = load('luftwaffe-fighter-readiness-quarter-years-1938-1942.json');
 assert.equal(german.dateAndCategorySnapshots, 18);
@@ -116,4 +124,62 @@ for (const c of dutch.aircraftLosses.categories) {
   assert.equal(Object.values(c.types).reduce((a, b) => a + b, 0), c.count);
 }
 
-console.log('Grand Air War research transcription integrity checks passed (13 datasets plus 22-source Soviet series).');
+const specialistDir = path.join(__dirname, '../research/transcriptions/specialist-ww2-statistical-tables');
+const specialistFiles = fs.readdirSync(specialistDir).filter(name => name.endsWith('.json'));
+assert.equal(specialistFiles.length, 14);
+assert.equal(specialistFiles.reduce((sum, f) => {
+  const source = JSON.parse(fs.readFileSync(path.join(specialistDir, f), 'utf8'));
+  assert.ok(source.sourceUrl.startsWith('https://www.theworldwars.net/stats/'));
+  return sum + source.tables.reduce((n, tab) => n + tab.rows.length, 0);
+}, 0), 1145);
+
+const bomberMonthly = load('raf-bomber-command-sorties-missing-crashes-monthly-1939-1945.json');
+assert.equal(bomberMonthly.monthly.length, 69);
+assert.equal(bomberMonthly.reportedAnnual.length, 7);
+assert.equal(bomberMonthly.reportedGrandTotal.sortiesTotal, 373514);
+assert.equal(bomberMonthly.reportedGrandTotal.totalLost, 10121);
+assert.equal(bomberMonthly.arithmeticIssues.length, 0);
+for (const month of bomberMonthly.monthly) {
+  if (month.sortiesDay !== null && month.sortiesNight !== null) {
+    assert.equal(month.sortiesDay + month.sortiesNight, month.sortiesTotal);
+  }
+}
+
+const germanBroad = load('luftwaffe-available-serviceable-by-role-1939-1945.json');
+assert.equal(germanBroad.monthlySnapshots.length, 23);
+assert.equal(germanBroad.arithmeticIssues.length, 0);
+assert.equal(germanBroad.monthlySnapshots.find(x => x.month === '1940-06').onHand.singleEngineFighter, 1107);
+assert.equal(germanBroad.monthlySnapshots.find(x => x.month === '1940-06').serviceable.singleEngineFighter, 856);
+assert.ok(germanBroad.monthlySnapshots.find(x => x.month === '1945-04').sourceReportingException.includes('February'));
+
+const usaafMtoPlanes = load('usaaf-mediterranean-aircraft-on-hand-by-type-1942-1945.json');
+assert.equal(usaafMtoPlanes.dateKeys.length, 13);
+assert.equal(usaafMtoPlanes.typeOrCategoryRecords.length, 36);
+assert.equal(usaafMtoPlanes.typeOrCategoryRecords.find(r => r.aircraftTypeOrCategory === 'TOTAL').onHand['1945-04'], 4809);
+
+const rafCommand = load('raf-command-sorties-tonnage-losses-by-year-1939-1945.json');
+assert.equal(rafCommand.commands.length, 6);
+assert.equal(rafCommand.reportedGrandTotal.sorties, 2336303);
+assert.equal(rafCommand.parseIssues.length, 0);
+
+const claimsVsLosses = load('battle-of-britain-1940-raf-german-losses-vs-raf-claims-weekly.json');
+assert.equal(claimsVsLosses.weekly.length, 18);
+assert.equal(claimsVsLosses.monthly.length, 5);
+assert.equal(claimsVsLosses.weekly.at(-1).rafClaimsAgainstLuftwaffe, 2698);
+assert.equal(claimsVsLosses.weekly.at(-1).luftwaffeAircraftLostAsReported, 1733);
+assert.equal(claimsVsLosses.reconciliationIssues.length, 0);
+
+const engaged = load('usaaf-raf-allied-aircraft-engaged-europe-monthly-1942-1945.json');
+assert.equal(engaged.monthlyObservations.length, 34);
+assert.equal(engaged.arithmeticIssues.length, 0);
+
+const dday = load('allied-dday-1944-air-unit-types-and-historical-station-names.json');
+assert.equal(dday.records.length, 615);
+assert.deepEqual(dday.counts, {
+  printedRecords: 615, recordsWithStations: 422, recordsWithAircraftType: 413,
+  distinctReportedStationStrings: 261,
+});
+assert.ok(dday.records.every(r => r.date === '1944-06-06'));
+assert.ok(dday.records.every(r => !('latitude' in r) && !('longitude' in r)));
+
+console.log('Grand Air War research transcription integrity checks passed (21 normalized groups plus source-table bundles).');

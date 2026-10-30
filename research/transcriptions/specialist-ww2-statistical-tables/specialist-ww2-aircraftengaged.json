@@ -1,0 +1,1410 @@
+{
+  "id": "SPECIALIST-AIRCRAFTENGAGED",
+  "force": "raf_and_usaaf",
+  "dataDescription": "Allied aircraft engaged in Europe, 1942-45",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=aircraftengaged",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "U.S. Strategic Bombing Survey .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "U.S.A.A.F.",
+              "colspan": 3
+            },
+            {
+              "text": "R.A.F.",
+              "colspan": 3
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Bombers"
+            },
+            {
+              "text": "Fighters"
+            },
+            {
+              "text": "Total"
+            },
+            {
+              "text": "Bombers"
+            },
+            {
+              "text": "Fighters"
+            },
+            {
+              "text": "Total"
+            },
+            {
+              "text": "TOTAL"
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "August"
+            },
+            {
+              "text": "148",
+              "count": 148
+            },
+            {
+              "text": "323",
+              "count": 323
+            },
+            {
+              "text": "471",
+              "count": 471
+            },
+            {
+              "text": "4,128",
+              "count": 4128
+            },
+            {
+              "text": "5,196",
+              "count": 5196
+            },
+            {
+              "text": "9,324",
+              "count": 9324
+            },
+            {
+              "text": "9,795",
+              "count": 9795
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "269",
+              "count": 269
+            },
+            {
+              "text": "348",
+              "count": 348
+            },
+            {
+              "text": "617",
+              "count": 617
+            },
+            {
+              "text": "4,196",
+              "count": 4196
+            },
+            {
+              "text": "5,297",
+              "count": 5297
+            },
+            {
+              "text": "9,493",
+              "count": 9493
+            },
+            {
+              "text": "10,110",
+              "count": 10110
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "October"
+            },
+            {
+              "text": "377",
+              "count": 377
+            },
+            {
+              "text": "440",
+              "count": 440
+            },
+            {
+              "text": "817",
+              "count": 817
+            },
+            {
+              "text": "4,360",
+              "count": 4360
+            },
+            {
+              "text": "5,447",
+              "count": 5447
+            },
+            {
+              "text": "9,807",
+              "count": 9807
+            },
+            {
+              "text": "10,624",
+              "count": 10624
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "November"
+            },
+            {
+              "text": "525",
+              "count": 525
+            },
+            {
+              "text": "703",
+              "count": 703
+            },
+            {
+              "text": "1,228",
+              "count": 1228
+            },
+            {
+              "text": "4,566",
+              "count": 4566
+            },
+            {
+              "text": "5,801",
+              "count": 5801
+            },
+            {
+              "text": "10,367",
+              "count": 10367
+            },
+            {
+              "text": "11,595",
+              "count": 11595
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "559",
+              "count": 559
+            },
+            {
+              "text": "1,003",
+              "count": 1003
+            },
+            {
+              "text": "1,562",
+              "count": 1562
+            },
+            {
+              "text": "4,845",
+              "count": 4845
+            },
+            {
+              "text": "6,205",
+              "count": 6205
+            },
+            {
+              "text": "11,050",
+              "count": 11050
+            },
+            {
+              "text": "12,612",
+              "count": 12612
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "January"
+            },
+            {
+              "text": "622",
+              "count": 622
+            },
+            {
+              "text": "1,116",
+              "count": 1116
+            },
+            {
+              "text": "1,738",
+              "count": 1738
+            },
+            {
+              "text": "5,059",
+              "count": 5059
+            },
+            {
+              "text": "6,307",
+              "count": 6307
+            },
+            {
+              "text": "11,366",
+              "count": 11366
+            },
+            {
+              "text": "13,104",
+              "count": 13104
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "February"
+            },
+            {
+              "text": "652",
+              "count": 652
+            },
+            {
+              "text": "1,363",
+              "count": 1363
+            },
+            {
+              "text": "2,015",
+              "count": 2015
+            },
+            {
+              "text": "5,320",
+              "count": 5320
+            },
+            {
+              "text": "6,436",
+              "count": 6436
+            },
+            {
+              "text": "11,756",
+              "count": 11756
+            },
+            {
+              "text": "13,771",
+              "count": 13771
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "854",
+              "count": 854
+            },
+            {
+              "text": "1,700",
+              "count": 1700
+            },
+            {
+              "text": "2,554",
+              "count": 2554
+            },
+            {
+              "text": "5,712",
+              "count": 5712
+            },
+            {
+              "text": "6,595",
+              "count": 6595
+            },
+            {
+              "text": "12,307",
+              "count": 12307
+            },
+            {
+              "text": "14,861",
+              "count": 14861
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "April"
+            },
+            {
+              "text": "1,175",
+              "count": 1175
+            },
+            {
+              "text": "2,035",
+              "count": 2035
+            },
+            {
+              "text": "3,210",
+              "count": 3210
+            },
+            {
+              "text": "5,901",
+              "count": 5901
+            },
+            {
+              "text": "6,787",
+              "count": 6787
+            },
+            {
+              "text": "12,688",
+              "count": 12688
+            },
+            {
+              "text": "15,898",
+              "count": 15898
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "May"
+            },
+            {
+              "text": "1,642",
+              "count": 1642
+            },
+            {
+              "text": "2,520",
+              "count": 2520
+            },
+            {
+              "text": "4,162",
+              "count": 4162
+            },
+            {
+              "text": "5,962",
+              "count": 5962
+            },
+            {
+              "text": "6,945",
+              "count": 6945
+            },
+            {
+              "text": "12,907",
+              "count": 12907
+            },
+            {
+              "text": "17,069",
+              "count": 17069
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "2,273",
+              "count": 2273
+            },
+            {
+              "text": "2,621",
+              "count": 2621
+            },
+            {
+              "text": "4,894",
+              "count": 4894
+            },
+            {
+              "text": "5,995",
+              "count": 5995
+            },
+            {
+              "text": "6,990",
+              "count": 6990
+            },
+            {
+              "text": "12,985",
+              "count": 12985
+            },
+            {
+              "text": "17,879",
+              "count": 17879
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cells": [
+            {
+              "text": "July"
+            },
+            {
+              "text": "2,638",
+              "count": 2638
+            },
+            {
+              "text": "2,554",
+              "count": 2554
+            },
+            {
+              "text": "5,192",
+              "count": 5192
+            },
+            {
+              "text": "6,055",
+              "count": 6055
+            },
+            {
+              "text": "6,877",
+              "count": 6877
+            },
+            {
+              "text": "12,932",
+              "count": 12932
+            },
+            {
+              "text": "18,124",
+              "count": 18124
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cells": [
+            {
+              "text": "August"
+            },
+            {
+              "text": "2,723",
+              "count": 2723
+            },
+            {
+              "text": "2,773",
+              "count": 2773
+            },
+            {
+              "text": "5,496",
+              "count": 5496
+            },
+            {
+              "text": "5,936",
+              "count": 5936
+            },
+            {
+              "text": "6,756",
+              "count": 6756
+            },
+            {
+              "text": "12,692",
+              "count": 12692
+            },
+            {
+              "text": "18,188",
+              "count": 18188
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "2,630",
+              "count": 2630
+            },
+            {
+              "text": "2,606",
+              "count": 2606
+            },
+            {
+              "text": "5,236",
+              "count": 5236
+            },
+            {
+              "text": "5,249",
+              "count": 5249
+            },
+            {
+              "text": "6,648",
+              "count": 6648
+            },
+            {
+              "text": "11,897",
+              "count": 11897
+            },
+            {
+              "text": "17,133",
+              "count": 17133
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cells": [
+            {
+              "text": "October"
+            },
+            {
+              "text": "2,698",
+              "count": 2698
+            },
+            {
+              "text": "2,747",
+              "count": 2747
+            },
+            {
+              "text": "5,445",
+              "count": 5445
+            },
+            {
+              "text": "4,758",
+              "count": 4758
+            },
+            {
+              "text": "6,753",
+              "count": 6753
+            },
+            {
+              "text": "11,511",
+              "count": 11511
+            },
+            {
+              "text": "16,956",
+              "count": 16956
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "cells": [
+            {
+              "text": "November"
+            },
+            {
+              "text": "2,801",
+              "count": 2801
+            },
+            {
+              "text": "3,041",
+              "count": 3041
+            },
+            {
+              "text": "5,842",
+              "count": 5842
+            },
+            {
+              "text": "4,917",
+              "count": 4917
+            },
+            {
+              "text": "6,966",
+              "count": 6966
+            },
+            {
+              "text": "11,883",
+              "count": 11883
+            },
+            {
+              "text": "17,725",
+              "count": 17725
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "3,138",
+              "count": 3138
+            },
+            {
+              "text": "3,437",
+              "count": 3437
+            },
+            {
+              "text": "6,575",
+              "count": 6575
+            },
+            {
+              "text": "5,034",
+              "count": 5034
+            },
+            {
+              "text": "7,021",
+              "count": 7021
+            },
+            {
+              "text": "12,055",
+              "count": 12055
+            },
+            {
+              "text": "18,630",
+              "count": 18630
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "cells": [
+            {
+              "text": "January"
+            },
+            {
+              "text": "3,626",
+              "count": 3626
+            },
+            {
+              "text": "3,825",
+              "count": 3825
+            },
+            {
+              "text": "7,451",
+              "count": 7451
+            },
+            {
+              "text": "5,008",
+              "count": 5008
+            },
+            {
+              "text": "7,058",
+              "count": 7058
+            },
+            {
+              "text": "12,066",
+              "count": 12066
+            },
+            {
+              "text": "19,517",
+              "count": 19517
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "cells": [
+            {
+              "text": "February"
+            },
+            {
+              "text": "4,292",
+              "count": 4292
+            },
+            {
+              "text": "4,644",
+              "count": 4644
+            },
+            {
+              "text": "8,936",
+              "count": 8936
+            },
+            {
+              "text": "5,164",
+              "count": 5164
+            },
+            {
+              "text": "7,205",
+              "count": 7205
+            },
+            {
+              "text": "12,369",
+              "count": 12369
+            },
+            {
+              "text": "21,305",
+              "count": 21305
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "4,893",
+              "count": 4893
+            },
+            {
+              "text": "5,235",
+              "count": 5235
+            },
+            {
+              "text": "10,128",
+              "count": 10128
+            },
+            {
+              "text": "5,402",
+              "count": 5402
+            },
+            {
+              "text": "7,376",
+              "count": 7376
+            },
+            {
+              "text": "12,778",
+              "count": 12778
+            },
+            {
+              "text": "22,906",
+              "count": 22906
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "cells": [
+            {
+              "text": "April"
+            },
+            {
+              "text": "5,585",
+              "count": 5585
+            },
+            {
+              "text": "5,644",
+              "count": 5644
+            },
+            {
+              "text": "11,229",
+              "count": 11229
+            },
+            {
+              "text": "5,638",
+              "count": 5638
+            },
+            {
+              "text": "7,529",
+              "count": 7529
+            },
+            {
+              "text": "13,167",
+              "count": 13167
+            },
+            {
+              "text": "24,396",
+              "count": 24396
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "cells": [
+            {
+              "text": "May"
+            },
+            {
+              "text": "6,309",
+              "count": 6309
+            },
+            {
+              "text": "5,716",
+              "count": 5716
+            },
+            {
+              "text": "12,025",
+              "count": 12025
+            },
+            {
+              "text": "5,685",
+              "count": 5685
+            },
+            {
+              "text": "7,706",
+              "count": 7706
+            },
+            {
+              "text": "13,391",
+              "count": 13391
+            },
+            {
+              "text": "25,416",
+              "count": 25416
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "6,384",
+              "count": 6384
+            },
+            {
+              "text": "5,296",
+              "count": 5296
+            },
+            {
+              "text": "11,680",
+              "count": 11680
+            },
+            {
+              "text": "5,574",
+              "count": 5574
+            },
+            {
+              "text": "7,663",
+              "count": 7663
+            },
+            {
+              "text": "13,237",
+              "count": 13237
+            },
+            {
+              "text": "24,917",
+              "count": 24917
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "cells": [
+            {
+              "text": "July"
+            },
+            {
+              "text": "6,504",
+              "count": 6504
+            },
+            {
+              "text": "5,580",
+              "count": 5580
+            },
+            {
+              "text": "12,084",
+              "count": 12084
+            },
+            {
+              "text": "5,564",
+              "count": 5564
+            },
+            {
+              "text": "7,701",
+              "count": 7701
+            },
+            {
+              "text": "13,265",
+              "count": 13265
+            },
+            {
+              "text": "25,349",
+              "count": 25349
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "cells": [
+            {
+              "text": "August"
+            },
+            {
+              "text": "6,831",
+              "count": 6831
+            },
+            {
+              "text": "5,502",
+              "count": 5502
+            },
+            {
+              "text": "12,333",
+              "count": 12333
+            },
+            {
+              "text": "5,617",
+              "count": 5617
+            },
+            {
+              "text": "7,728",
+              "count": 7728
+            },
+            {
+              "text": "13,345",
+              "count": 13345
+            },
+            {
+              "text": "25,678",
+              "count": 25678
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "7,007",
+              "count": 7007
+            },
+            {
+              "text": "5,490",
+              "count": 5490
+            },
+            {
+              "text": "12,497",
+              "count": 12497
+            },
+            {
+              "text": "6,044",
+              "count": 6044
+            },
+            {
+              "text": "7,651",
+              "count": 7651
+            },
+            {
+              "text": "13,695",
+              "count": 13695
+            },
+            {
+              "text": "26,192",
+              "count": 26192
+            }
+          ]
+        },
+        {
+          "row": 32,
+          "cells": [
+            {
+              "text": "October"
+            },
+            {
+              "text": "7,085",
+              "count": 7085
+            },
+            {
+              "text": "5,651",
+              "count": 5651
+            },
+            {
+              "text": "12,736",
+              "count": 12736
+            },
+            {
+              "text": "6,533",
+              "count": 6533
+            },
+            {
+              "text": "7,623",
+              "count": 7623
+            },
+            {
+              "text": "14,156",
+              "count": 14156
+            },
+            {
+              "text": "26,892",
+              "count": 26892
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "cells": [
+            {
+              "text": "November"
+            },
+            {
+              "text": "7,138",
+              "count": 7138
+            },
+            {
+              "text": "5,891",
+              "count": 5891
+            },
+            {
+              "text": "13,029",
+              "count": 13029
+            },
+            {
+              "text": "6,738",
+              "count": 6738
+            },
+            {
+              "text": "7,660",
+              "count": 7660
+            },
+            {
+              "text": "14,398",
+              "count": 14398
+            },
+            {
+              "text": "27,427",
+              "count": 27427
+            }
+          ]
+        },
+        {
+          "row": 34,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "7,042",
+              "count": 7042
+            },
+            {
+              "text": "5,777",
+              "count": 5777
+            },
+            {
+              "text": "12,819",
+              "count": 12819
+            },
+            {
+              "text": "6,884",
+              "count": 6884
+            },
+            {
+              "text": "7,611",
+              "count": 7611
+            },
+            {
+              "text": "14,495",
+              "count": 14495
+            },
+            {
+              "text": "27,314",
+              "count": 27314
+            }
+          ]
+        },
+        {
+          "row": 35,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 36,
+          "cells": [
+            {
+              "text": "January"
+            },
+            {
+              "text": "6,955",
+              "count": 6955
+            },
+            {
+              "text": "5,588",
+              "count": 5588
+            },
+            {
+              "text": "12,543",
+              "count": 12543
+            },
+            {
+              "text": "6,894",
+              "count": 6894
+            },
+            {
+              "text": "7,176",
+              "count": 7176
+            },
+            {
+              "text": "14,070",
+              "count": 14070
+            },
+            {
+              "text": "26,613",
+              "count": 26613
+            }
+          ]
+        },
+        {
+          "row": 37,
+          "cells": [
+            {
+              "text": "February"
+            },
+            {
+              "text": "6,978",
+              "count": 6978
+            },
+            {
+              "text": "5,601",
+              "count": 5601
+            },
+            {
+              "text": "12,579",
+              "count": 12579
+            },
+            {
+              "text": "6,839",
+              "count": 6839
+            },
+            {
+              "text": "7,010",
+              "count": 7010
+            },
+            {
+              "text": "13,849",
+              "count": 13849
+            },
+            {
+              "text": "26,428",
+              "count": 26428
+            }
+          ]
+        },
+        {
+          "row": 38,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "7,177",
+              "count": 7177
+            },
+            {
+              "text": "5,748",
+              "count": 5748
+            },
+            {
+              "text": "12,925",
+              "count": 12925
+            },
+            {
+              "text": "6,908",
+              "count": 6908
+            },
+            {
+              "text": "7,211",
+              "count": 7211
+            },
+            {
+              "text": "14,119",
+              "count": 14119
+            },
+            {
+              "text": "27,044",
+              "count": 27044
+            }
+          ]
+        },
+        {
+          "row": 39,
+          "cells": [
+            {
+              "text": "April"
+            },
+            {
+              "text": "7,154",
+              "count": 7154
+            },
+            {
+              "text": "5,987",
+              "count": 5987
+            },
+            {
+              "text": "13,141",
+              "count": 13141
+            },
+            {
+              "text": "6,956",
+              "count": 6956
+            },
+            {
+              "text": "7,095",
+              "count": 7095
+            },
+            {
+              "text": "14,051",
+              "count": 14051
+            },
+            {
+              "text": "27,192",
+              "count": 27192
+            }
+          ]
+        },
+        {
+          "row": 40,
+          "cells": [
+            {
+              "text": "May"
+            },
+            {
+              "text": "7,108",
+              "count": 7108
+            },
+            {
+              "text": "6,203",
+              "count": 6203
+            },
+            {
+              "text": "13,311",
+              "count": 13311
+            },
+            {
+              "text": "6,950",
+              "count": 6950
+            },
+            {
+              "text": "7,100",
+              "count": 7100
+            },
+            {
+              "text": "14,050",
+              "count": 14050
+            },
+            {
+              "text": "27,361",
+              "count": 27361
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

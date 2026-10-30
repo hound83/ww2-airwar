@@ -1,0 +1,1347 @@
+{
+  "id": "SPECIALIST-BOMBSUMMARY",
+  "force": "cross_force",
+  "dataDescription": "Comparative strategic bombing effort",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=bombsummary",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "U.S. Strategic Bombing Survey .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "USAAF"
+            },
+            {
+              "text": "RAF"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "Tons of bombs dropped"
+            },
+            {
+              "text": "1,463,423",
+              "count": 1463423
+            },
+            {
+              "text": "1,307,117",
+              "count": 1307117
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "Bomber sorties"
+            },
+            {
+              "text": "754,818",
+              "count": 754818
+            },
+            {
+              "text": "687,462",
+              "count": 687462
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "Fighter sorties"
+            },
+            {
+              "text": "991,750",
+              "count": 991750
+            },
+            {
+              "text": "1,695,049",
+              "count": 1695049
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "Claimed enemy aircraft destroyed"
+            },
+            {
+              "text": "35,783",
+              "count": 35783
+            },
+            {
+              "text": "21,622",
+              "count": 21622
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Bombers lost"
+            },
+            {
+              "text": "9,949",
+              "count": 9949
+            },
+            {
+              "text": "11,968",
+              "count": 11968
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "Fighters lost"
+            },
+            {
+              "text": "8,420",
+              "count": 8420
+            },
+            {
+              "text": "10,061",
+              "count": 10061
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "Personnel lost in action"
+            },
+            {
+              "text": "79,265",
+              "count": 79265
+            },
+            {
+              "text": "79,281",
+              "count": 79281
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Bombers assigned to combat units (peak)"
+            },
+            {
+              "text": "7,177 (3/45)"
+            },
+            {
+              "text": "6,956 (4/45)"
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighters assigned to combat units (peak)"
+            },
+            {
+              "text": "6,203 (5/45)"
+            },
+            {
+              "text": "7,728 (8/44)"
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Personnel assigned to combat units (peak)"
+            },
+            {
+              "text": "619,020 (8/44)"
+            },
+            {
+              "text": "718,628 (7/44)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 2,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Tons"
+            },
+            {
+              "text": "Percent"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "USAAF"
+            },
+            {
+              "text": "1,463,423",
+              "count": 1463423
+            },
+            {
+              "text": "52.8",
+              "decimal": 52.8
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "8th Air Force"
+            },
+            {
+              "text": "692,918",
+              "count": 692918
+            },
+            {
+              "text": "25.0",
+              "decimal": 25.0
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "9th Air Force"
+            },
+            {
+              "text": "225,799",
+              "count": 225799
+            },
+            {
+              "text": "8.1",
+              "decimal": 8.1
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "12th Air Force"
+            },
+            {
+              "text": "207,367",
+              "count": 207367
+            },
+            {
+              "text": "7.5",
+              "decimal": 7.5
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "15th Air Force"
+            },
+            {
+              "text": "312,173",
+              "count": 312173
+            },
+            {
+              "text": "11.3",
+              "decimal": 11.3
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "1st Tactical Air Force"
+            },
+            {
+              "text": "25,166",
+              "count": 25166
+            },
+            {
+              "text": "0.9",
+              "decimal": 0.9
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "1,307,117",
+              "count": 1307117
+            },
+            {
+              "text": "47.2",
+              "decimal": 47.2
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Bomber Command"
+            },
+            {
+              "text": "1,066,141",
+              "count": 1066141
+            },
+            {
+              "text": "38.5",
+              "decimal": 38.5
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighter Command"
+            },
+            {
+              "text": "3,910",
+              "count": 3910
+            },
+            {
+              "text": "0.1",
+              "decimal": 0.1
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "2nd Tactical Air Force"
+            },
+            {
+              "text": "69,138",
+              "count": 69138
+            },
+            {
+              "text": "2.5",
+              "decimal": 2.5
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "Mediterranean Air Command"
+            },
+            {
+              "text": "167,928",
+              "count": 167928
+            },
+            {
+              "text": "6.1",
+              "decimal": 6.1
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "TOTAL"
+            },
+            {
+              "text": "2,770,540",
+              "count": 2770540
+            },
+            {
+              "text": "100.0",
+              "decimal": 100.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 3,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Bomber sorties"
+            },
+            {
+              "text": "Fighter sorties"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "USAAF"
+            },
+            {
+              "text": "754,818",
+              "count": 754818
+            },
+            {
+              "text": "991,750",
+              "count": 991750
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "8th Air Force"
+            },
+            {
+              "text": "348,994",
+              "count": 348994
+            },
+            {
+              "text": "270,364",
+              "count": 270364
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "9th Air Force"
+            },
+            {
+              "text": "119,146",
+              "count": 119146
+            },
+            {
+              "text": "298,685",
+              "count": 298685
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "12th Air Force"
+            },
+            {
+              "text": "127,092",
+              "count": 127092
+            },
+            {
+              "text": "280,458",
+              "count": 280458
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "15th Air Force"
+            },
+            {
+              "text": "152,542",
+              "count": 152542
+            },
+            {
+              "text": "89,835",
+              "count": 89835
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "1st Tactical Air Force"
+            },
+            {
+              "text": "7,044",
+              "count": 7044
+            },
+            {
+              "text": "52,408",
+              "count": 52408
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "687,462",
+              "count": 687462
+            },
+            {
+              "text": "1,695,049",
+              "count": 1695049
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Bomber Command"
+            },
+            {
+              "text": "391,801",
+              "count": 391801
+            },
+            {
+              "text": "336",
+              "count": 336
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighter Command"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "700,226",
+              "count": 700226
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Coastal Command"
+            },
+            {
+              "text": "134,414",
+              "count": 134414
+            },
+            {
+              "text": "81,282",
+              "count": 81282
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "2nd Tactical Air Force"
+            },
+            {
+              "text": "40,614",
+              "count": 40614
+            },
+            {
+              "text": "286,891",
+              "count": 286891
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "Mediterranean Air Command"
+            },
+            {
+              "text": "120,633",
+              "count": 120633
+            },
+            {
+              "text": "626,314",
+              "count": 626314
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "TOTAL"
+            },
+            {
+              "text": "1,442,280",
+              "count": 1442280
+            },
+            {
+              "text": "2,686,799",
+              "count": 2686799
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 4,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Destroyed"
+            },
+            {
+              "text": "Probable"
+            },
+            {
+              "text": "Total"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "USAAF"
+            },
+            {
+              "text": "31,340",
+              "count": 31340
+            },
+            {
+              "text": "4,443",
+              "count": 4443
+            },
+            {
+              "text": "35,783",
+              "count": 35783
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "8th Air Force"
+            },
+            {
+              "text": "18,810",
+              "count": 18810
+            },
+            {
+              "text": "2,208",
+              "count": 2208
+            },
+            {
+              "text": "21,018",
+              "count": 21018
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "9th Air Force"
+            },
+            {
+              "text": "2,400",
+              "count": 2400
+            },
+            {
+              "text": "319",
+              "count": 319
+            },
+            {
+              "text": "2,719",
+              "count": 2719
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "12th Air Force"
+            },
+            {
+              "text": "2,908",
+              "count": 2908
+            },
+            {
+              "text": "819",
+              "count": 819
+            },
+            {
+              "text": "3,727",
+              "count": 3727
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "15th Air Force"
+            },
+            {
+              "text": "6,258",
+              "count": 6258
+            },
+            {
+              "text": "1,008",
+              "count": 1008
+            },
+            {
+              "text": "7,266",
+              "count": 7266
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "1st Tactical Air Force"
+            },
+            {
+              "text": "964",
+              "count": 964
+            },
+            {
+              "text": "89",
+              "count": 89
+            },
+            {
+              "text": "1,053",
+              "count": 1053
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "17,364",
+              "count": 17364
+            },
+            {
+              "text": "4,258",
+              "count": 4258
+            },
+            {
+              "text": "21,622",
+              "count": 21622
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Bomber Command"
+            },
+            {
+              "text": "1,214",
+              "count": 1214
+            },
+            {
+              "text": "310",
+              "count": 310
+            },
+            {
+              "text": "1,524",
+              "count": 1524
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighter Command"
+            },
+            {
+              "text": "6,914",
+              "count": 6914
+            },
+            {
+              "text": "1,973",
+              "count": 1973
+            },
+            {
+              "text": "8,887",
+              "count": 8887
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Coastal Command"
+            },
+            {
+              "text": "254",
+              "count": 254
+            },
+            {
+              "text": "37",
+              "count": 37
+            },
+            {
+              "text": "291",
+              "count": 291
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "2nd Tactical Air Force"
+            },
+            {
+              "text": "1,894",
+              "count": 1894
+            },
+            {
+              "text": "130",
+              "count": 130
+            },
+            {
+              "text": "2,024",
+              "count": 2024
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "Mediterranean Air Command"
+            },
+            {
+              "text": "7,088",
+              "count": 7088
+            },
+            {
+              "text": "1,808",
+              "count": 1808
+            },
+            {
+              "text": "8,896",
+              "count": 8896
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "TOTAL"
+            },
+            {
+              "text": "48,704",
+              "count": 48704
+            },
+            {
+              "text": "8,701",
+              "count": 8701
+            },
+            {
+              "text": "57,405",
+              "count": 57405
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 5,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Bombers"
+            },
+            {
+              "text": "Fighters"
+            },
+            {
+              "text": "Total"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "USAAF"
+            },
+            {
+              "text": "9,949",
+              "count": 9949
+            },
+            {
+              "text": "8,420",
+              "count": 8420
+            },
+            {
+              "text": "18,369",
+              "count": 18369
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "8th Air Force"
+            },
+            {
+              "text": "5,945",
+              "count": 5945
+            },
+            {
+              "text": "3,112",
+              "count": 3112
+            },
+            {
+              "text": "9,057",
+              "count": 9057
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "9th Air Force"
+            },
+            {
+              "text": "814",
+              "count": 814
+            },
+            {
+              "text": "2,141",
+              "count": 2141
+            },
+            {
+              "text": "2,945",
+              "count": 2945
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "12th Air Force"
+            },
+            {
+              "text": "773",
+              "count": 773
+            },
+            {
+              "text": "1,824",
+              "count": 1824
+            },
+            {
+              "text": "2,597",
+              "count": 2597
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "15th Air Force"
+            },
+            {
+              "text": "2,380",
+              "count": 2380
+            },
+            {
+              "text": "1,030",
+              "count": 1030
+            },
+            {
+              "text": "3,410",
+              "count": 3410
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "1st Tactical Air Force"
+            },
+            {
+              "text": "47",
+              "count": 47
+            },
+            {
+              "text": "313",
+              "count": 313
+            },
+            {
+              "text": "360",
+              "count": 360
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "11,968",
+              "count": 11968
+            },
+            {
+              "text": "10,061",
+              "count": 10061
+            },
+            {
+              "text": "22,029",
+              "count": 22029
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Bomber Command"
+            },
+            {
+              "text": "9,163",
+              "count": 9163
+            },
+            {
+              "text": "16",
+              "count": 16
+            },
+            {
+              "text": "9,179",
+              "count": 9179
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighter Command"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "3,559",
+              "count": 3559
+            },
+            {
+              "text": "3,559",
+              "count": 3559
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Coastal Command"
+            },
+            {
+              "text": "841",
+              "count": 841
+            },
+            {
+              "text": "549",
+              "count": 549
+            },
+            {
+              "text": "1,390",
+              "count": 1390
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "2nd Tactical Air Force"
+            },
+            {
+              "text": "353",
+              "count": 353
+            },
+            {
+              "text": "1,762",
+              "count": 1762
+            },
+            {
+              "text": "2,115",
+              "count": 2115
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "Mediterranean Air Command"
+            },
+            {
+              "text": "1,611",
+              "count": 1611
+            },
+            {
+              "text": "4,175",
+              "count": 4175
+            },
+            {
+              "text": "5,786",
+              "count": 5786
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "TOTAL"
+            },
+            {
+              "text": "21,917",
+              "count": 21917
+            },
+            {
+              "text": "18,481",
+              "count": 18481
+            },
+            {
+              "text": "40,398",
+              "count": 40398
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 6,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Lost"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "USAAF"
+            },
+            {
+              "text": "79,265",
+              "count": 79265
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "8th Air Force"
+            },
+            {
+              "text": "44,472",
+              "count": 44472
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "9th Air Force"
+            },
+            {
+              "text": "4,168",
+              "count": 4168
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "12th Air Force"
+            },
+            {
+              "text": "7,203",
+              "count": 7203
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "15th Air Force"
+            },
+            {
+              "text": "23,174",
+              "count": 23174
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "1st Tactical Air Force"
+            },
+            {
+              "text": "248",
+              "count": 248
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "79,281",
+              "count": 79281
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Bomber Command"
+            },
+            {
+              "text": "70,408",
+              "rowspan": 4,
+              "count": 70408
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Fighter Command"
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Coastal Command"
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "2nd Tactical Air Force"
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "Mediterranean Air Command"
+            },
+            {
+              "text": "8,873",
+              "count": 8873
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "TOTAL"
+            },
+            {
+              "text": "158,546",
+              "count": 158546
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

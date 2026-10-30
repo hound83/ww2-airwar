@@ -1,0 +1,2122 @@
+{
+  "id": "SPECIALIST-AIRSTRUSAAFMED",
+  "force": "usaaf_mto",
+  "dataDescription": "Aircraft on hand by type in the Mediterranean, 1942-45",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airstrusaafmed",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "Personally compiled from Army Air Forces Statistical Survey; World War II.",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "1942",
+              "colspan": 3,
+              "count": 1942
+            },
+            {
+              "text": "1943",
+              "colspan": 4,
+              "count": 1943
+            },
+            {
+              "text": "1944",
+              "colspan": 4,
+              "count": 1944
+            },
+            {
+              "text": "1945",
+              "colspan": 2,
+              "count": 1945
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Jun"
+            },
+            {
+              "text": "Sep"
+            },
+            {
+              "text": "Dec"
+            },
+            {
+              "text": "Mar"
+            },
+            {
+              "text": "Jun"
+            },
+            {
+              "text": "Sep"
+            },
+            {
+              "text": "Dec"
+            },
+            {
+              "text": "Mar"
+            },
+            {
+              "text": "Jun"
+            },
+            {
+              "text": "Sep"
+            },
+            {
+              "text": "Dec"
+            },
+            {
+              "text": "Mar"
+            },
+            {
+              "text": "Apr"
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "Heavy Bombers"
+            },
+            {
+              "text": "17",
+              "count": 17
+            },
+            {
+              "text": "63",
+              "count": 63
+            },
+            {
+              "text": "149",
+              "count": 149
+            },
+            {
+              "text": "254",
+              "count": 254
+            },
+            {
+              "text": "461",
+              "count": 461
+            },
+            {
+              "text": "517",
+              "count": 517
+            },
+            {
+              "text": "557",
+              "count": 557
+            },
+            {
+              "text": "1,265",
+              "count": 1265
+            },
+            {
+              "text": "1,297",
+              "count": 1297
+            },
+            {
+              "text": "1,597",
+              "count": 1597
+            },
+            {
+              "text": "1,460",
+              "count": 1460
+            },
+            {
+              "text": "1,660",
+              "count": 1660
+            },
+            {
+              "text": "1,593",
+              "count": 1593
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "B-17"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "11",
+              "count": 11
+            },
+            {
+              "text": "68",
+              "count": 68
+            },
+            {
+              "text": "167",
+              "count": 167
+            },
+            {
+              "text": "269",
+              "count": 269
+            },
+            {
+              "text": "313",
+              "count": 313
+            },
+            {
+              "text": "289",
+              "count": 289
+            },
+            {
+              "text": "397",
+              "count": 397
+            },
+            {
+              "text": "315",
+              "count": 315
+            },
+            {
+              "text": "407",
+              "count": 407
+            },
+            {
+              "text": "509",
+              "count": 509
+            },
+            {
+              "text": "524",
+              "count": 524
+            },
+            {
+              "text": "497",
+              "count": 497
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "B-24"
+            },
+            {
+              "text": "17",
+              "count": 17
+            },
+            {
+              "text": "52",
+              "count": 52
+            },
+            {
+              "text": "81",
+              "count": 81
+            },
+            {
+              "text": "87",
+              "count": 87
+            },
+            {
+              "text": "192",
+              "count": 192
+            },
+            {
+              "text": "204",
+              "count": 204
+            },
+            {
+              "text": "268",
+              "count": 268
+            },
+            {
+              "text": "868",
+              "count": 868
+            },
+            {
+              "text": "982",
+              "count": 982
+            },
+            {
+              "text": "1,190",
+              "count": 1190
+            },
+            {
+              "text": "951",
+              "count": 951
+            },
+            {
+              "text": "1,136",
+              "count": 1136
+            },
+            {
+              "text": "1,096",
+              "count": 1096
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Medium Bombers"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "46",
+              "count": 46
+            },
+            {
+              "text": "150",
+              "count": 150
+            },
+            {
+              "text": "299",
+              "count": 299
+            },
+            {
+              "text": "715",
+              "count": 715
+            },
+            {
+              "text": "637",
+              "count": 637
+            },
+            {
+              "text": "631",
+              "count": 631
+            },
+            {
+              "text": "654",
+              "count": 654
+            },
+            {
+              "text": "667",
+              "count": 667
+            },
+            {
+              "text": "726",
+              "count": 726
+            },
+            {
+              "text": "397",
+              "count": 397
+            },
+            {
+              "text": "424",
+              "count": 424
+            },
+            {
+              "text": "399",
+              "count": 399
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "B-25"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "46",
+              "count": 46
+            },
+            {
+              "text": "81",
+              "count": 81
+            },
+            {
+              "text": "231",
+              "count": 231
+            },
+            {
+              "text": "437",
+              "count": 437
+            },
+            {
+              "text": "360",
+              "count": 360
+            },
+            {
+              "text": "378",
+              "count": 378
+            },
+            {
+              "text": "361",
+              "count": 361
+            },
+            {
+              "text": "395",
+              "count": 395
+            },
+            {
+              "text": "463",
+              "count": 463
+            },
+            {
+              "text": "375",
+              "count": 375
+            },
+            {
+              "text": "414",
+              "count": 414
+            },
+            {
+              "text": "393",
+              "count": 393
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "B-26"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "69",
+              "count": 69
+            },
+            {
+              "text": "68",
+              "count": 68
+            },
+            {
+              "text": "278",
+              "count": 278
+            },
+            {
+              "text": "277",
+              "count": 277
+            },
+            {
+              "text": "253",
+              "count": 253
+            },
+            {
+              "text": "293",
+              "count": 293
+            },
+            {
+              "text": "272",
+              "count": 272
+            },
+            {
+              "text": "263",
+              "count": 263
+            },
+            {
+              "text": "22",
+              "count": 22
+            },
+            {
+              "text": "10",
+              "count": 10
+            },
+            {
+              "text": "6",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Light Bombers"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "32",
+              "count": 32
+            },
+            {
+              "text": "99",
+              "count": 99
+            },
+            {
+              "text": "166",
+              "count": 166
+            },
+            {
+              "text": "126",
+              "count": 126
+            },
+            {
+              "text": "109",
+              "count": 109
+            },
+            {
+              "text": "121",
+              "count": 121
+            },
+            {
+              "text": "114",
+              "count": 114
+            },
+            {
+              "text": "109",
+              "count": 109
+            },
+            {
+              "text": "90",
+              "count": 90
+            },
+            {
+              "text": "171",
+              "count": 171
+            },
+            {
+              "text": "168",
+              "count": 168
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "A-20"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "32",
+              "count": 32
+            },
+            {
+              "text": "99",
+              "count": 99
+            },
+            {
+              "text": "166",
+              "count": 166
+            },
+            {
+              "text": "126",
+              "count": 126
+            },
+            {
+              "text": "109",
+              "count": 109
+            },
+            {
+              "text": "121",
+              "count": 121
+            },
+            {
+              "text": "114",
+              "count": 114
+            },
+            {
+              "text": "109",
+              "count": 109
+            },
+            {
+              "text": "88",
+              "count": 88
+            },
+            {
+              "text": "68",
+              "count": 68
+            },
+            {
+              "text": "38",
+              "count": 38
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "A-26"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "2",
+              "count": 2
+            },
+            {
+              "text": "103",
+              "count": 103
+            },
+            {
+              "text": "130",
+              "count": 130
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "Fighters"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "59",
+              "count": 59
+            },
+            {
+              "text": "542",
+              "count": 542
+            },
+            {
+              "text": "1,439",
+              "count": 1439
+            },
+            {
+              "text": "2,048",
+              "count": 2048
+            },
+            {
+              "text": "1,512",
+              "count": 1512
+            },
+            {
+              "text": "1,530",
+              "count": 1530
+            },
+            {
+              "text": "1,760",
+              "count": 1760
+            },
+            {
+              "text": "1,798",
+              "count": 1798
+            },
+            {
+              "text": "1,374",
+              "count": 1374
+            },
+            {
+              "text": "1,370",
+              "count": 1370
+            },
+            {
+              "text": "1,317",
+              "count": 1317
+            },
+            {
+              "text": "1,284",
+              "count": 1284
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "P-38"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "134",
+              "count": 134
+            },
+            {
+              "text": "416",
+              "count": 416
+            },
+            {
+              "text": "514",
+              "count": 514
+            },
+            {
+              "text": "296",
+              "count": 296
+            },
+            {
+              "text": "216",
+              "count": 216
+            },
+            {
+              "text": "341",
+              "count": 341
+            },
+            {
+              "text": "337",
+              "count": 337
+            },
+            {
+              "text": "299",
+              "count": 299
+            },
+            {
+              "text": "318",
+              "count": 318
+            },
+            {
+              "text": "375",
+              "count": 375
+            },
+            {
+              "text": "335",
+              "count": 335
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "P-39"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "33",
+              "count": 33
+            },
+            {
+              "text": "202",
+              "count": 202
+            },
+            {
+              "text": "347",
+              "count": 347
+            },
+            {
+              "text": "258",
+              "count": 258
+            },
+            {
+              "text": "240",
+              "count": 240
+            },
+            {
+              "text": "375",
+              "count": 375
+            },
+            {
+              "text": "244",
+              "count": 244
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "text": "P-40"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "59",
+              "count": 59
+            },
+            {
+              "text": "259",
+              "count": 259
+            },
+            {
+              "text": "634",
+              "count": 634
+            },
+            {
+              "text": "717",
+              "count": 717
+            },
+            {
+              "text": "579",
+              "count": 579
+            },
+            {
+              "text": "432",
+              "count": 432
+            },
+            {
+              "text": "298",
+              "count": 298
+            },
+            {
+              "text": "139",
+              "count": 139
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cells": [
+            {
+              "text": "P-47"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "299",
+              "count": 299
+            },
+            {
+              "text": "368",
+              "count": 368
+            },
+            {
+              "text": "544",
+              "count": 544
+            },
+            {
+              "text": "617",
+              "count": 617
+            },
+            {
+              "text": "509",
+              "count": 509
+            },
+            {
+              "text": "352",
+              "count": 352
+            },
+            {
+              "text": "298",
+              "count": 298
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cells": [
+            {
+              "text": "P-51"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "51",
+              "count": 51
+            },
+            {
+              "text": "290",
+              "count": 290
+            },
+            {
+              "text": "187",
+              "count": 187
+            },
+            {
+              "text": "133",
+              "count": 133
+            },
+            {
+              "text": "197",
+              "count": 197
+            },
+            {
+              "text": "481",
+              "count": 481
+            },
+            {
+              "text": "413",
+              "count": 413
+            },
+            {
+              "text": "491",
+              "count": 491
+            },
+            {
+              "text": "534",
+              "count": 534
+            },
+            {
+              "text": "588",
+              "count": 588
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cells": [
+            {
+              "text": "Night Fighters"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "43",
+              "count": 43
+            },
+            {
+              "text": "45",
+              "count": 45
+            },
+            {
+              "text": "47",
+              "count": 47
+            },
+            {
+              "text": "47",
+              "count": 47
+            },
+            {
+              "text": "45",
+              "count": 45
+            },
+            {
+              "text": "52",
+              "count": 52
+            },
+            {
+              "text": "56",
+              "count": 56
+            },
+            {
+              "text": "63",
+              "count": 63
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cells": [
+            {
+              "text": "Other"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "116",
+              "count": 116
+            },
+            {
+              "text": "136",
+              "count": 136
+            },
+            {
+              "text": "180",
+              "count": 180
+            },
+            {
+              "text": "149",
+              "count": 149
+            },
+            {
+              "text": "165",
+              "count": 165
+            },
+            {
+              "text": "134",
+              "count": 134
+            },
+            {
+              "text": "6",
+              "count": 6
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "cells": [
+            {
+              "text": "Reconnaissance"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "48",
+              "count": 48
+            },
+            {
+              "text": "79",
+              "count": 79
+            },
+            {
+              "text": "104",
+              "count": 104
+            },
+            {
+              "text": "94",
+              "count": 94
+            },
+            {
+              "text": "65",
+              "count": 65
+            },
+            {
+              "text": "75",
+              "count": 75
+            },
+            {
+              "text": "141",
+              "count": 141
+            },
+            {
+              "text": "151",
+              "count": 151
+            },
+            {
+              "text": "180",
+              "count": 180
+            },
+            {
+              "text": "145",
+              "count": 145
+            },
+            {
+              "text": "158",
+              "count": 158
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "cells": [
+            {
+              "text": "F-4/5"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "21",
+              "count": 21
+            },
+            {
+              "text": "34",
+              "count": 34
+            },
+            {
+              "text": "37",
+              "count": 37
+            },
+            {
+              "text": "52",
+              "count": 52
+            },
+            {
+              "text": "48",
+              "count": 48
+            },
+            {
+              "text": "42",
+              "count": 42
+            },
+            {
+              "text": "84",
+              "count": 84
+            },
+            {
+              "text": "104",
+              "count": 104
+            },
+            {
+              "text": "173",
+              "count": 173
+            },
+            {
+              "text": "136",
+              "count": 136
+            },
+            {
+              "text": "150",
+              "count": 150
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "cells": [
+            {
+              "text": "F-6"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "20",
+              "count": 20
+            },
+            {
+              "text": "27",
+              "count": 27
+            },
+            {
+              "text": "20",
+              "count": 20
+            },
+            {
+              "text": "16",
+              "count": 16
+            },
+            {
+              "text": "30",
+              "count": 30
+            },
+            {
+              "text": "54",
+              "count": 54
+            },
+            {
+              "text": "43",
+              "count": 43
+            },
+            {
+              "text": "4",
+              "count": 4
+            },
+            {
+              "text": "4",
+              "count": 4
+            },
+            {
+              "text": "5",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "cells": [
+            {
+              "text": "F-7"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "cells": [
+            {
+              "text": "F-8"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "cells": [
+            {
+              "text": "Other"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "27",
+              "count": 27
+            },
+            {
+              "text": "25",
+              "count": 25
+            },
+            {
+              "text": "40",
+              "count": 40
+            },
+            {
+              "text": "22",
+              "count": 22
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "2",
+              "count": 2
+            },
+            {
+              "text": "4",
+              "count": 4
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "5",
+              "count": 5
+            },
+            {
+              "text": "3",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "cells": [
+            {
+              "text": "TOTAL COMBAT"
+            },
+            {
+              "text": "17",
+              "count": 17
+            },
+            {
+              "text": "168",
+              "count": 168
+            },
+            {
+              "text": "921",
+              "count": 921
+            },
+            {
+              "text": "2,170",
+              "count": 2170
+            },
+            {
+              "text": "3,494",
+              "count": 3494
+            },
+            {
+              "text": "2,886",
+              "count": 2886
+            },
+            {
+              "text": "2,892",
+              "count": 2892
+            },
+            {
+              "text": "3,875",
+              "count": 3875
+            },
+            {
+              "text": "4,017",
+              "count": 4017
+            },
+            {
+              "text": "3,957",
+              "count": 3957
+            },
+            {
+              "text": "3,497",
+              "count": 3497
+            },
+            {
+              "text": "3,717",
+              "count": 3717
+            },
+            {
+              "text": "3,602",
+              "count": 3602
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "cells": [
+            {
+              "text": "Transports"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "5",
+              "count": 5
+            },
+            {
+              "text": "188",
+              "count": 188
+            },
+            {
+              "text": "214",
+              "count": 214
+            },
+            {
+              "text": "513",
+              "count": 513
+            },
+            {
+              "text": "587",
+              "count": 587
+            },
+            {
+              "text": "596",
+              "count": 596
+            },
+            {
+              "text": "341",
+              "count": 341
+            },
+            {
+              "text": "358",
+              "count": 358
+            },
+            {
+              "text": "356",
+              "count": 356
+            },
+            {
+              "text": "358",
+              "count": 358
+            },
+            {
+              "text": "340",
+              "count": 340
+            },
+            {
+              "text": "413",
+              "count": 413
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "cells": [
+            {
+              "text": "C-46"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "9",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "cells": [
+            {
+              "text": "C-47/53"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "186",
+              "count": 186
+            },
+            {
+              "text": "209",
+              "count": 209
+            },
+            {
+              "text": "476",
+              "count": 476
+            },
+            {
+              "text": "505",
+              "count": 505
+            },
+            {
+              "text": "524",
+              "count": 524
+            },
+            {
+              "text": "283",
+              "count": 283
+            },
+            {
+              "text": "297",
+              "count": 297
+            },
+            {
+              "text": "305",
+              "count": 305
+            },
+            {
+              "text": "301",
+              "count": 301
+            },
+            {
+              "text": "287",
+              "count": 287
+            },
+            {
+              "text": "346",
+              "count": 346
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "cells": [
+            {
+              "text": "Other Hvy./Med."
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "2",
+              "count": 2
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "cells": [
+            {
+              "text": "Light Transports"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "4",
+              "count": 4
+            },
+            {
+              "text": "36",
+              "count": 36
+            },
+            {
+              "text": "80",
+              "count": 80
+            },
+            {
+              "text": "71",
+              "count": 71
+            },
+            {
+              "text": "58",
+              "count": 58
+            },
+            {
+              "text": "61",
+              "count": 61
+            },
+            {
+              "text": "51",
+              "count": 51
+            },
+            {
+              "text": "57",
+              "count": 57
+            },
+            {
+              "text": "53",
+              "count": 53
+            },
+            {
+              "text": "58",
+              "count": 58
+            }
+          ]
+        },
+        {
+          "row": 32,
+          "cells": [
+            {
+              "text": "Trainers"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "15",
+              "count": 15
+            },
+            {
+              "text": "16",
+              "count": 16
+            },
+            {
+              "text": "19",
+              "count": 19
+            },
+            {
+              "text": "9",
+              "count": 9
+            },
+            {
+              "text": "10",
+              "count": 10
+            },
+            {
+              "text": "8",
+              "count": 8
+            },
+            {
+              "text": "8",
+              "count": 8
+            },
+            {
+              "text": "8",
+              "count": 8
+            },
+            {
+              "text": "7",
+              "count": 7
+            },
+            {
+              "text": "7",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "cells": [
+            {
+              "text": "Advanced"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "15",
+              "count": 15
+            },
+            {
+              "text": "15",
+              "count": 15
+            },
+            {
+              "text": "15",
+              "count": 15
+            },
+            {
+              "text": "5",
+              "count": 5
+            },
+            {
+              "text": "6",
+              "count": 6
+            },
+            {
+              "text": "5",
+              "count": 5
+            },
+            {
+              "text": "5",
+              "count": 5
+            },
+            {
+              "text": "5",
+              "count": 5
+            },
+            {
+              "text": "4",
+              "count": 4
+            },
+            {
+              "text": "4",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "row": 34,
+          "cells": [
+            {
+              "text": "Basic"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "row": 35,
+          "cells": [
+            {
+              "text": "Primary"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "3",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "row": 36,
+          "cells": [
+            {
+              "text": "Communications"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "17",
+              "count": 17
+            },
+            {
+              "text": "3",
+              "count": 3
+            },
+            {
+              "text": "18",
+              "count": 18
+            },
+            {
+              "text": "80",
+              "count": 80
+            },
+            {
+              "text": "37",
+              "count": 37
+            },
+            {
+              "text": "135",
+              "count": 135
+            },
+            {
+              "text": "104",
+              "count": 104
+            },
+            {
+              "text": "214",
+              "count": 214
+            },
+            {
+              "text": "217",
+              "count": 217
+            }
+          ]
+        },
+        {
+          "row": 37,
+          "cells": [
+            {
+              "text": "2nd Line & Misc."
+            },
+            {
+              "text": "17",
+              "count": 17
+            },
+            {
+              "text": "1",
+              "count": 1
+            },
+            {
+              "text": "12",
+              "count": 12
+            },
+            {
+              "text": "19",
+              "count": 19
+            },
+            {
+              "text": "47",
+              "count": 47
+            },
+            {
+              "text": "32",
+              "count": 32
+            },
+            {
+              "text": "104",
+              "count": 104
+            },
+            {
+              "text": "295",
+              "count": 295
+            },
+            {
+              "text": "447",
+              "count": 447
+            },
+            {
+              "text": "620",
+              "count": 620
+            },
+            {
+              "text": "694",
+              "count": 694
+            },
+            {
+              "text": "571",
+              "count": 571
+            },
+            {
+              "text": "570",
+              "count": 570
+            }
+          ]
+        },
+        {
+          "row": 38,
+          "cells": [
+            {
+              "text": "TOTAL"
+            },
+            {
+              "text": "17",
+              "count": 17
+            },
+            {
+              "text": "174",
+              "count": 174
+            },
+            {
+              "text": "1,121",
+              "count": 1121
+            },
+            {
+              "text": "2,418",
+              "count": 2418
+            },
+            {
+              "text": "4,087",
+              "count": 4087
+            },
+            {
+              "text": "3,527",
+              "count": 3527
+            },
+            {
+              "text": "3,619",
+              "count": 3619
+            },
+            {
+              "text": "4,601",
+              "count": 4601
+            },
+            {
+              "text": "4,867",
+              "count": 4867
+            },
+            {
+              "text": "5,076",
+              "count": 5076
+            },
+            {
+              "text": "4,661",
+              "count": 4661
+            },
+            {
+              "text": "4,849",
+              "count": 4849
+            },
+            {
+              "text": "4,809",
+              "count": 4809
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
