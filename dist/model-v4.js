@@ -34,9 +34,16 @@
   oldRoot.appendChild(extra);
   const tl=document.querySelector('.timeline-panel');
   const navRoot=document.createElement('div');navRoot.id='v4-navigation';
+  const previewRequested=String(window.location?.search||'').includes('preview=7.5');
   const navButton=([id,title])=>'<button type="button" class="v4-nav" data-v4-tab="'+id+'">'+title+'</button>';
   const navGroup=(title,ids)=>'<div class="v74-navgroup"><span class="v74-navlabel">'+title+'</span>'+nav.filter(p=>ids.includes(p[0])).map(navButton).join('')+'</div>';
-  navRoot.innerHTML='<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span>'+ 
+  navRoot.innerHTML=previewRequested?
+    '<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span><span class="v75-preview-badge">v7.5 preview · in development</span></div>'+
+    '<div class="v4-navrow v75-navline"><nav class="v75-nav-primary" aria-label="Atlas history sections">'+
+    nav.filter(p=>['home','balance','fleet','pilothistory','losses','comparison','campaigns'].includes(p[0])).map(navButton).join('')+
+    '</nav><details class="v75-nav-more"><summary>Simulations &amp; research</summary><div class="v75-nav-secondary">'+
+    nav.filter(p=>['pilot','equipment','sources','about'].includes(p[0])).map(navButton).join('')+'</div></details></div>':
+    '<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span>'+
     '<span class="tiny">Version 7.4 · visual archive · original returns and estimates kept distinct</span></div>'+ 
     '<div class="v4-navrow">'+navGroup('Home',['home'])+navGroup('EXPLORE HISTORY',['balance','fleet','pilothistory','losses','comparison','campaigns'])+
     navGroup('SIMULATIONS',['pilot','equipment'])+navGroup('RESEARCH',['sources','about'])+'</div>';
@@ -50,11 +57,26 @@
     '<label class="v4-check"><input type="checkbox" id="v4-sources-check"> Show source notes</label>'+ 
     '<button class="btn" id="v4-export">Export selected data CSV</button>';
   tl.appendChild(toolbar);
+  if(previewRequested){
+    // Keep the date slider and theater selection immediately available. Native
+    // details preserve all existing preset and option event handlers.
+    const presets=tl.querySelector('.stack');
+    if(presets){
+      const shortcuts=document.createElement('details');shortcuts.className='v75-shortcuts';
+      shortcuts.innerHTML='<summary>Quick period presets</summary>';
+      presets.parentNode.insertBefore(shortcuts,presets);shortcuts.appendChild(presets);
+    }
+    const options=document.createElement('details');options.className='v75-display-options';
+    options.innerHTML='<summary>Display options</summary><div class="v75-display-content"></div>';
+    const content=options.querySelector('.v75-display-content');
+    for(const checkbox of [...toolbar.querySelectorAll('.v4-check')])content.appendChild(checkbox);
+    toolbar.appendChild(options);
+  }
   document.title='European Air War Atlas · Pilots, Aircraft and Operations 1936–1945';
   document.querySelector('h1').innerHTML='European Air War <span>Atlas</span>';
   document.querySelector('.kicker').textContent='Source-led aviation history · interactive research laboratory';
   document.querySelector('.lead').textContent='From the Condor Legion to VE Day: inspect pilot attrition, inventories, production, loss returns, credited claims and Allied airpower. Original wartime figures, interpolation and hypothetical scenarios remain distinct.';
-  document.querySelector('footer').textContent='European Air War Atlas v7.4 · July 1936–8 May 1945 · archival photography, research-grade provenance, worldwide production, early Soviet returns · Browser-only website.';
+  document.querySelector('footer').textContent='European Air War Atlas '+(previewRequested?'v7.5 preview · not the public release':'v7.4')+' · July 1936–8 May 1945 · archival photography, research-grade provenance, worldwide production, early Soviet returns · Browser-only website.';
   // Update an obsolete legacy v3 narrative. Monthly Murray rates through May
   // 1944 have now been transcribed; months beyond that remain scenario inputs.
   for(const tile of document.querySelectorAll('.info-card')){
@@ -963,6 +985,13 @@
       el.classList.toggle('active',el.dataset.v4Tab===ui.view);
       el.setAttribute('aria-current',el.dataset.v4Tab===ui.view?'page':'false');
     });
+    if(previewRequested){
+      const summary=navRoot.querySelector('.v75-nav-more > summary');
+      if(summary){
+        const current=nav.find(([id])=>id===ui.view&&['pilot','equipment','sources','about'].includes(id));
+        summary.textContent='Simulations & research'+(current?' · '+current[1]:'');
+      }
+    }
     $('v4-tools').hidden=['about','sources','home'].includes(ui.view);
     $('v73-simulator-note').hidden=v4view||isV75Preview;
     document.querySelectorAll('[data-v73-theater]').forEach(el=>{
