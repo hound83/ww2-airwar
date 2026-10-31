@@ -117,6 +117,13 @@ function renderInspector(){
  }
  if(!obj){const x=context[state.month];date=labelMonth(state.month);title=x?.title||"Sources not yet connected";place=x?.place||"European theater";description=x?.detail||"This month is part of the full time machine, but v7.6 does not yet have source-audited, geography-compatible unit and campaign records for it. No missing month is treated as a zero.";status="Coverage gap, not a zero";caution="Return to May–August 1944 for the detailed Normandy demonstration.";sourceKeys=[];}
  set("inspect-date",date);set("inspect-title",title);set("inspect-place",place);set("inspect-summary",description);set("inspect-status",status);set("inspect-caution",caution);
+ const impact=state.selection?.type==="event"?obj?.dayMetric:null;
+ $("inspect-impact").hidden=!impact;
+ if(impact){
+  set("inspect-impact-value",impact.quantity.toLocaleString("en-US"));
+  set("inspect-impact-label",impact.unit+" · "+impact.date);
+  set("inspect-impact-sub",impact.RAFSorties.toLocaleString("en-US")+" RAF sorties · "+DATA.sources[impact.sourceKey].name.split(",")[0]);
+ }
  $("inspect-sources").innerHTML=sourceKeys.map(k=>DATA.sources[k]?'<a target="_blank" rel="noopener noreferrer" href="'+esc(DATA.sources[k].url)+'">'+esc(DATA.sources[k].name.split(",")[0])+' ↗</a>':"").join("");
 }
 function renderMetrics(){
