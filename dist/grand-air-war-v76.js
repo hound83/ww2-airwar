@@ -135,7 +135,7 @@ function renderMetrics(){
 function renderAirfields(){
  const fields=getAirfields(),container=$("airfield-list");
  if(!fields.length){container.innerHTML='<div class="empty">No reviewed Normandy ALG entries for this month in the v7.6 sample. This does not mean no airfields existed.</div>';return;}
- container.innerHTML=fields.map(f=>'<button type="button" class="airfield '+(state.selection?.id===f.code?"is-selected":"")+'" data-airfield="'+esc(f.code)+'"><span class="airfield__head"><b>'+esc(f.code)+'</b><span>'+esc(f.name)+'</span></span><small>First op. '+esc(f.opened)+'</small><em>'+esc(f.units.map(u=>u.name).join(" · "))+'</em></button>').join("");
+ container.innerHTML=fields.map(f=>'<button type="button" class="airfield '+(state.selection?.id===f.code?"is-selected":"")+'" data-airfield="'+esc(f.code)+'"><span class="airfield__head"><b>'+esc(f.code)+'</b><span>'+esc(f.name)+'</span></span><small>First op. '+esc(f.opened)+'</small><em>'+esc(f.units.filter(u=>u.first<=state.month&&u.last>=state.month).map(u=>u.name).join(" · ")||"No selected unit observed in this month")+'</em></button>').join("");
  container.querySelectorAll("[data-airfield]").forEach(b=>b.addEventListener("click",()=>{cancelPlay();selectField(b.dataset.airfield);}));
 }
 function renderBars(){
