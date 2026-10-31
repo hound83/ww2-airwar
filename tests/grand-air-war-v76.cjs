@@ -23,6 +23,12 @@ assert.equal(d.airfields[0].code,"A-1");
 assert.equal(d.airfields[0].opened,"1944-06-13");
 assert.equal(d.events.length,8);
 assert.ok(d.events.some(e=>e.id==="overlord"&&e.date==="6 Jun 1944"));
+assert.equal(d.events.find(e=>e.id==="overlord").dayMetric.quantity,14674);
+assert.equal(d.events.find(e=>e.id==="overlord").dayMetric.RAFSorties,5656);
+assert.equal(d.events.find(e=>e.id==="cherbourg").date,"27 Jun 1944");
+assert.ok(d.events.find(e=>e.id==="cobra").sourceKeys.includes("armyCobra"));
+assert.ok(d.events.find(e=>e.id==="falaise").sourceKeys.includes("armyCobra"));
+assert.ok(d.sources.rafmuseum.url.includes("rafmuseum.org.uk"));
 assert.ok(d.events.some(e=>e.id==="cobra"&&e.month==="1944-07"));
 assert.ok(d.events.some(e=>e.id==="falaise"&&e.month==="1944-08"));
 assert.ok(d.sources.johnson.url.startsWith("https:"));
@@ -52,6 +58,7 @@ for(const id of ["map-surface","time-range","inspector","metric-groups","metric-
  assert.ok(html.includes('id="'+id+'"'),"missing UI element "+id);
 }
 assert.ok(html.includes("not a complete"));
+assert.ok(html.includes('id="inspect-impact"'));
 assert.ok(css.includes("@media(max-width:560px)"),"missing mobile layout");
 new vm.Script(text("dist/grand-air-war-v76.js"),{filename:"grand-air-war-v76.js"});
 console.log("PASS Grand Air War v7.6: source-population boundaries, events, airfields, asset graph and JS parsing");
