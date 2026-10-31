@@ -50,3 +50,18 @@
 - **Work** for one bounded implementation task, e.g. "Improve v7.5 navigation/accessibility without modifying physics or the default site." End after tests, PR and a 5–10 line summary.
 - Start another **short Work task** for the next independently verifiable change. GitHub carries the knowledge; no giant handover ZIP after every task.
 - On each assignment: inspect latest `main`, PRs and docs. Avoid importing the 120 MB physics archive or dumping full source and test logs into the chat.
+
+
+## v7.6 Grand Air War experience — Normandy preview (31 Oct 2026)
+
+The first bounded map-first implementation is now proposed in **feature/grand-air-war-v76-normandy**, separate from the unmerged 185-file quantitative research PR #5. It does **not** alter the v7.4 default page or the existing v7.5 preview, and it does **not** touch the physics simulator.
+
+- Entry route **`grand-air-war-v76.html`** (it will appear on GitHub Pages **only if/when this PR is merged**).
+- A reusable static Natural Earth coastline from the existing v7.5 map, detail/Europe map switch, clickable events and region-only grouped airfield markers.
+- Month navigation and playback from **July 1936 to May 1945**; detailed linked source content only **May–August 1944**. Other months intentionally show **coverage gaps**, not invented statistics.
+- Normandy event narrative: Overlord, selected ALGs moving into use, Cherbourg, Cobra, Falaise. Eight code-study airfields and **nine candidate group-airfield unit intervals** are a curated subset, not a full order of battle or historically geocoded airfield footprint.
+- Quantitative panels: May–Aug 1944 USAAF ETO combat groups (102,102,103,103) and Luftflotte 3 Western Front all-cause aircraft destroyed (343,998,783,868). The two denominators have **different geographic reporting populations** and are **not** a loss-exchange ratio.
+- Selectable sources with scope annotations and visible warnings against front-line, runway-coordinate, casualty and sortie invention.
+- Assets: `dist/grand-air-war-v76-data.js`, `dist/grand-air-war-v76.js`, `dist/grand-air-war-v76.css`. Regression: `node tests/grand-air-war-v76.cjs`.
+
+**Acceptance/release gates:** Review the dedicated page in actual Chromium/Playwright (desktop/mobile, keyboard/touch, map click targets, time playback), run the existing tests and the v7.6 test, and review the code-study station candidate statuses before merging. This feature **does not yet satisfy** the grander multi-nation or whole-war map coverage ambitions. Next milestone after approval: improve Normandy's exact station positions and integrate trusted dated RAF and Luftwaffe unit-operation records without mixing historical populations.
