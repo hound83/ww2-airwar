@@ -41,6 +41,26 @@ window.GrandAirWarV76Data = {
       "name": "RAF AHB VII/136 — Luftflotte 3, June 1944",
       "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-june-1944/",
       "note": "June 1944 all-aircraft destroyed (all report causes)."
+    },
+    "rafmuseum": {
+      "name": "RAF Museum, British military aviation timeline — 6 June 1944",
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1944-2/",
+      "note": "RAF Museum reports 14,674 Allied sorties on D-Day, including 5,656 flown by RAF aircraft; sorties are flights, not aircraft strength or confirmed victories."
+    },
+    "usafmuseum": {
+      "name": "National Museum of the United States Air Force — Operation Overlord",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196668/operation-overlord-the-d-day-invasion/",
+      "note": "Official USAF museum historical summary of Ninth, Eighth USAAF and RAF support for the D-Day invasion and subsequent move to the continent."
+    },
+    "armyCherbourg": {
+      "name": "U.S. Army CMH, Utah Beach to Cherbourg, 6–27 June 1944",
+      "url": "https://history.army.mil/Publications/Publications-Catalog/Utah-Beach-to-Cherbourg/",
+      "note": "U.S. Army Center of Military History dates the capture of Cherbourg to 27 June 1944, not 26 June."
+    },
+    "armyCobra": {
+      "name": "U.S. Army V Corps — World War II campaign chronology",
+      "url": "https://www.vcorps.army.mil/History/World-War-II/",
+      "note": "Official U.S. Army V Corps retrospective: Operation Cobra 25 July 1944 and Falaise–Argentan encirclement mid–late August."
     }
   },
   "monthly": [
@@ -100,11 +120,21 @@ window.GrandAirWarV76Data = {
       "lat": 49.37,
       "lon": -0.72,
       "kind": "operation",
-      "summary": "Airborne and seaborne assaults opened the Normandy campaign. The source-backed ALG records trace the subsequent move of selected USAAF tactical groups onto the continent; they do not show all aircraft involved on 6 June.",
+      "summary": "The invasion opened on 6 June. The RAF Museum reports 14,674 Allied sorties on D-Day, including 5,656 RAF sorties. Those are flights, not aircraft or aerial victories. The later USAAF ALG records trace only a small, selected sample of units moving onto the continent.",
       "evidence": "dated-historical-event",
       "sourceKeys": [
+        "rafmuseum",
+        "usafmuseum",
         "johnson"
-      ]
+      ],
+      "dayMetric": {
+        "quantity": 14674,
+        "unit": "Allied sorties",
+        "date": "1944-06-06",
+        "RAFSorties": 5656,
+        "denominator": "D-Day air support; all participating Allied forces per RAF Museum",
+        "sourceKey": "rafmuseum"
+      }
     },
     {
       "id": "alg-a1",
@@ -145,16 +175,18 @@ window.GrandAirWarV76Data = {
     {
       "id": "cherbourg",
       "month": "1944-06",
-      "date": "26 Jun 1944",
-      "day": 26,
+      "date": "27 Jun 1944",
+      "day": 27,
       "title": "Cherbourg falls to Allied forces",
       "place": "Cherbourg, Cotentin",
       "lat": 49.64,
       "lon": -1.62,
       "kind": "operation",
-      "summary": "Control of the northern Cotentin changed during late June. This event provides campaign context; it is not an aircraft-loss observation or a claim of local airfield strength.",
+      "summary": "The capture of Cherbourg on 27 June expanded the Allied beachhead, although its port needed repairs. This is land-campaign context, not a sortie or fighter-strength observation.",
       "evidence": "dated-historical-event",
-      "sourceKeys": []
+      "sourceKeys": [
+        "armyCherbourg"
+      ]
     },
     {
       "id": "cobra",
@@ -166,9 +198,11 @@ window.GrandAirWarV76Data = {
       "lat": 49.11,
       "lon": -1.08,
       "kind": "operation",
-      "summary": "The breakout offensive began west of Saint-Lô, supported by concentrated Allied aviation. The plotted German Luftflotte 3 losses encompass the whole command, not just aircraft lost during Cobra.",
+      "summary": "Operation Cobra opened on 25 July west of Saint-Lô following concentrated air attacks. German monthly Luftflotte 3 losses in the chart are command-wide and do not isolate Cobra.",
       "evidence": "dated-historical-event",
-      "sourceKeys": []
+      "sourceKeys": [
+        "armyCobra"
+      ]
     },
     {
       "id": "brittany",
@@ -189,16 +223,18 @@ window.GrandAirWarV76Data = {
     {
       "id": "falaise",
       "month": "1944-08",
-      "date": "12–21 Aug 1944",
-      "day": 12,
+      "date": "17–21 Aug 1944",
+      "day": 17,
       "title": "Falaise pocket",
       "place": "Falaise, Normandy",
       "lat": 48.9,
       "lon": -0.2,
       "kind": "operation",
-      "summary": "Fighting around the Falaise pocket marked the closing phase of the Normandy campaign. Source coverage here remains partial; there is no defensible all-air-force loss total for the pocket in the present preview.",
+      "summary": "The Falaise–Argentan pocket fighting during mid-to-late August marked the closing phase of the Normandy campaign. The Atlas does not have a reliable all-air-force loss total for this pocket.",
       "evidence": "dated-historical-event",
-      "sourceKeys": []
+      "sourceKeys": [
+        "armyCobra"
+      ]
     }
   ],
   "airfields": [
@@ -328,6 +364,7 @@ window.GrandAirWarV76Data = {
     "German Luftflotte 3 monthly all-cause aircraft destructions are command-report totals, not enemy claims, RAF victories, or Normandy-only losses.",
     "Reported German losses and USAAF group totals have different denominators and must never be summed or presented as a matched loss-exchange ratio.",
     "This preview covers May–Aug 1944 in depth; all other dates remain navigable but deliberately show incomplete coverage.",
-    "Crosswalk station candidates originate in separate unmerged research PR #5, are not exact geo-verified airfield assignments."
+    "Crosswalk station candidates originate in separate unmerged research PR #5, are not exact geo-verified airfield assignments.",
+    "14,674 is a dated 6 June Allied SORTIE count (RAF Museum), and is not interchangeable with June monthly USAAF combat groups or German aircraft losses."
   ]
 };
