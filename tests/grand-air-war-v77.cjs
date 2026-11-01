@@ -12,12 +12,13 @@ for(const f of scripts){assert.ok(fs.existsSync(path.join(root,f)),"missing "+f)
 const D=w.GrandAirWarV77Campaigns,G=w.GrandAirWarV77Groups,app=w.GrandAirWarV77;
 assert.ok(D&&G&&app,"modules not loaded");
 assert.equal(D.version,"7.7");
-assert.equal(D.campaigns.length,19);
-assert.equal(new Set(D.campaigns.map(x=>x.id)).size,19);
+assert.equal(D.campaigns.length,20);
+assert.equal(new Set(D.campaigns.map(x=>x.id)).size,20);
 assert.ok(D.campaigns.some(c=>c.theater==="east"&&c.id==="bagration"));
 assert.ok(D.campaigns.some(c=>c.theater==="med"&&c.id==="malta"));
 assert.ok(D.campaigns.some(c=>c.theater==="north"&&c.id==="norway"));
 assert.ok(D.campaigns.some(c=>c.id==="reichdefense"));
+assert.ok(D.campaigns.some(c=>c.id==="spain"&&c.start==="1936-07"&&c.facts.some(f=>f.value===7350)));
 assert.ok(D.campaigns.every(x=>x.start<=x.end&&x.focus.lat&&Number.isFinite(x.focus.lng)));
 assert.ok(D.campaigns.some(c=>c.id==="britain"&&c.facts.some(f=>f.type==="claim")&&c.facts.some(f=>f.value===1733)));
 assert.ok(D.campaigns.some(c=>c.id==="malta"&&c.facts.some(f=>f.value===9599&&f.unit==="sorties")));
@@ -65,4 +66,4 @@ for(const id of ["campaign-map","campaign-list","moment-list","dossier-facts","l
 }
 assert.ok(!html.includes('metric-groups')&&!html.includes('metric-losses'),"misleading Normandy dashboard values returned");
 assert.ok(style.includes("@media(max-width:540px)"));
-console.log("PASS v7.7: 19 campaign dossiers and 20 sourced facts, 30 German command-loss rows, 80 ETO/MTO group records, 5 VVS snapshots, 68 production months; UI assets and controls.");
+console.log("PASS v7.7: 20 campaign dossiers and 21 sourced facts, 30 German command-loss rows, 80 ETO/MTO group records, 5 VVS snapshots, 68 production months; UI assets and controls.");
