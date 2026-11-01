@@ -37,12 +37,12 @@ window.GrandAirWarV77Groups=Object.freeze({
   "columns": [
     "month",
     "theater",
-    "allCombatGroups",
-    "heavyBomber",
-    "mediumLightBomber",
-    "fighter",
-    "troopCarrier",
-    "reconnaissance",
+    "totalCombatGroups",
+    "heavyBombardmentGroups",
+    "mediumAndLightBombardmentGroups",
+    "fighterGroups",
+    "troopCarrierGroups",
+    "reconnaissanceGroups",
     "reportedMinusRoleSum"
   ],
   "rows": [
