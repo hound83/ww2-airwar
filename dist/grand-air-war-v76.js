@@ -20,6 +20,13 @@ function chooseStep(i,fromUser=true){
  if(fromUser)stop();state.step=i;state.selection={type:"scene",id:STORY[i].id};
  if(state.mode==="europe"&&i>0)state.mode="normandy";
  render();
+ if(state.map&&fromUser){
+  const e=STORY[i];
+  // Bring the actual event's locality into view, including Falaise and Cherbourg.
+  // Keep zoom sufficiently regional to show neighbouring evidence and avoid false precision.
+  const zoom=Math.max(10,Math.min(12,state.map.getZoom()));
+  state.map.flyTo([e.lat,e.lon],zoom,{duration:.6});
+ }
 }
 function chooseField(code){
  const f=AIR.find(x=>x.code===code);if(!f)return;stop();
@@ -88,7 +95,7 @@ function drawMapMarkers(){
    state.layers.addLayer(mk);continue;
   }
   const it=g[0];
-  const selected=state.selection?.id===(it.kind==="field"?it.code:it.id);
+  const selected=state.selection?.id===(it.kind==="field"?it.code:it.id)||(it.kind==="field"&&state.selection?.type==="scene"&&STORY.find(e=>e.id===state.selection.id)?.airfieldCode===it.code);
   const mark=window.L.marker([it.lat,it.lon],{icon:iconFor(it,selected),keyboard:true,title:it.kind==="field"?it.code+" "+it.name:it.name,zIndexOffset:selected?900:0});
   mark.on("click",()=>{if(it.kind==="field")chooseField(it.code);else chooseStep(STORY.findIndex(e=>e.id===it.id));});
   mark.bindTooltip((it.kind==="field"?it.code+" · ":"")+esc(it.name),{direction:"top",offset:[0,-20]});
