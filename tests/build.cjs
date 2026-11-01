@@ -27,3 +27,6 @@ require('./grand-air-war-v77.cjs');
 
 // Verify v7.7 changes visible source data when the user actually operates controls.
 require('./grand-air-war-v77-interactions.cjs');
+
+// Grand Air War v8.0 German research and physical chart map regressions.
+require('./grand-air-war-v80.cjs');
