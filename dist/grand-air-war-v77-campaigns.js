@@ -81,9 +81,90 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "title": "VVS General Staff 1962 tables transcribed with archival references",
       "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_08.htm",
       "class": "secondary-transcription-of-official-returns"
+    },
+    "raf1936": {
+      "title": "RAF Museum: World Aviation in 1936, Spain",
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/world-aviation/1936-2/",
+      "class": "museum-timeline"
+    },
+    "bundesarchivSpain": {
+      "title": "Bundesarchiv: German military involvement in Spanish Civil War 1936–1939",
+      "url": "https://www.bundesarchiv.de/im-archiv-recherchieren/archivgut-recherchieren/nach-themen/das-deutsche-militaerische-engagement-im-spanischen-buergerkrieg-1936-1939/",
+      "class": "German-federal-archive"
+    },
+    "raf1937": {
+      "title": "RAF Museum: Luftwaffe and Spanish Civil War",
+      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-rise-of-the-luftwaffe/",
+      "class": "museum-analysis"
+    },
+    "raf1940chron": {
+      "title": "RAF Museum: British Military Aviation in 1940",
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1940-2/",
+      "class": "museum-timeline"
     }
   },
   "campaigns": [
+    {
+      "id": "spain",
+      "name": "Spanish Civil War · Condor Legion",
+      "theater": "west",
+      "start": "1936-07",
+      "end": "1939-04",
+      "focus": {
+        "lat": 40.4,
+        "lng": -3.7,
+        "radiusKm": 510
+      },
+      "participants": [
+        "Spanish Republican Air Force",
+        "Nationalist aviation",
+        "German Condor Legion",
+        "Italian Aviazione Legionaria",
+        "Soviet volunteer pilots"
+      ],
+      "objective": "Aerial transport, air superiority, bombing and close support became central to Spain's civil war; German and Italian air forces intervened for the Nationalists, while Soviet aircraft and personnel supported the Republic.",
+      "turningPoint": "From 1936 German Ju 52 transports ferried troops from Spanish Morocco; later opposing fighter and bomber units fought over Madrid, the Basque region and other fronts. The 26 April 1937 bombing of Gernika killed civilians and became an international symbol of attacks on towns.",
+      "consequence": "Wartime experience influenced later European air tactics and aircraft development, but one local raid cannot stand in for all 1936–39 operations. Sources disagree on aggregate casualties and rotation totals; no unsupported loss total is shown.",
+      "sources": [
+        "raf1936",
+        "raf1937",
+        "bundesarchivSpain"
+      ],
+      "facts": [
+        {
+          "label": "Nationalist troops moved by early German airlift",
+          "value": 7350,
+          "unit": "personnel",
+          "scope": "RAF Museum 1936 chronology: first six weeks after 20 July; not the entire 1936 airlift and not 1936–39 campaign personnel",
+          "sourceId": "raf1936",
+          "date": "1936-07 to 1936-09",
+          "type": "reported"
+        }
+      ],
+      "moments": [
+        {
+          "date": "1936-07-18",
+          "title": "Spanish Civil War begins",
+          "place": "Spain",
+          "lat": 40.4,
+          "lng": -3.7
+        },
+        {
+          "date": "1936-11-15",
+          "title": "German Condor Legion begins operations",
+          "place": "Madrid sector",
+          "lat": 40.42,
+          "lng": -3.7
+        },
+        {
+          "date": "1937-04-26",
+          "title": "Bombing of Gernika by German and Italian aircraft",
+          "place": "Gernika, Basque Country",
+          "lat": 43.32,
+          "lng": -2.68
+        }
+      ]
+    },
     {
       "id": "poland",
       "name": "Invasion of Poland",
@@ -137,7 +218,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Air transport, airfield capture and maritime reconnaissance influenced the speed of German reinforcement.",
       "consequence": "Air control depended on long distances and limited bases; original operational returns are a research gap.",
       "sources": [
-        "raf1940"
+        "raf1940chron"
       ],
       "facts": [],
       "moments": [
