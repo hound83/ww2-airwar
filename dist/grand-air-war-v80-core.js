@@ -140,6 +140,7 @@ function renderDossier(){
  $("dossier-research-context").textContent=evidence.text;
  $("dossier-analyze").disabled=!evidence.target;
  $("dossier-analyze").textContent=evidence.target==="loss"?"Inspect German command returns":evidence.target==="vvs"?"Inspect dated VVS strength":evidence.target==="mto"?"Inspect USAAF MTO groups":"No comparable series for this month";
+ $("dossier-german-analysis").disabled=!(state.month>="1943-09"&&state.month<="1945-03");
 
 }
 function relatedReport(c){
@@ -283,6 +284,13 @@ function init(){
  $("loss-command").addEventListener("change",e=>{state.lossCommand=e.target.value;state.lossMonth=state.month;renderLosses();drawMap();});
  $("loss-outcome").addEventListener("change",e=>{state.lossOutcome=e.target.value;renderLosses();});
  $("loss-window").addEventListener("change",e=>{state.lossWindow=e.target.value;renderLosses();});
+ $("dossier-german-analysis").addEventListener("click",()=>{
+  if(!window.GrandAirWarV80Lab)return;
+  const m=state.month;
+  const mode=m>="1944-06"&&m<="1944-07"?"readiness":m>="1944-08"?"fuel":"pilots";
+  window.GrandAirWarV80Lab.setMode(mode);
+  $("german-war-lab").scrollIntoView({behavior:"smooth",block:"start"});
+ });
  $("dossier-analyze").addEventListener("click",()=>{
   const c=D.campaigns.find(x=>x.id===state.selected),e=relatedReport(c);
   if(e.target==="loss"){state.lossCommand=e.command;state.lossMonth=state.month;state.lossWindow="all";renderLosses();$("loss-lab").scrollIntoView({behavior:"smooth",block:"start"});}
