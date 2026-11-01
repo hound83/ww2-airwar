@@ -21,3 +21,9 @@ try{
 // The standalone v7.6 page is not in build-web's generated root entrypoint.
 // Validate its independent source/asset graph alongside normal reproducibility checks.
 require('./grand-air-war-v76.cjs');
+
+// Historical Europe overview modules and data populations are tested in default CI.
+require('./grand-air-war-v77.cjs');
+
+// Verify v7.7 changes visible source data when the user actually operates controls.
+require('./grand-air-war-v77-interactions.cjs');
