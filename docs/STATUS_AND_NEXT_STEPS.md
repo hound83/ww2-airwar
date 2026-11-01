@@ -77,3 +77,34 @@
 - Site code: `dist/grand-air-war-v76.js`, `dist/grand-air-war-v76.css`, `dist/grand-air-war-v76-data.js`.
 - Principal current references: RAF Museum 1944 timeline; National Museum of the USAF Overlord; 1988 USAAF Johnson European Airfields; D-Day Overlord individual ALG pages; Anciens Aérodromes A-1; 366th Fighter Group combat history. Each scene and field holds its evidence links.
 - No changes to the aircraft physics repository or its embed. No verified airfield survey, historic 1944 borders or missing day-based sorties invented.
+
+
+## v7.7 European overview and evidence labs — 1 November 2026
+
+**Scope approved:** Turn v7.6's Normandy demonstration into a useful European air-war research experience rather than another generic dashboard. `feature/grand-air-war-v77-europe-analysis` is **stacked on v7.6's unmerged feature branch**, so it can be reviewed as a separate, focused draft PR. Do not merge/ship without user review; v7.4 default, v7.5 preview and physics remain untouched.
+
+### Functional features, not mock data
+
+- New `grand-air-war-v77.html`: Leaflet/OSM Europe map, zoom/pan, dates **July 1936–May 1945**, theatre filtering, campaign search, active/inactive selection, collision grouping, clickable dated events and map markers. Modern basemap is *not a 1944 front-line map*. Campaign centres represent broad areas, not combat aircraft positions.
+- **19 named campaigns and continuous operational areas** across Western Europe, Reich, Eastern Front, Northern Europe and Mediterranean, with documented purpose, what changed, outcome and participating air forces. **20 standalone historical quantity observations**, each with source, date, scope, observation type (including claim, lower bound, approximation), accessible from dossiers.
+- German *loss laboratory*: all **30 scan-checked Luftflotte Reich / Western Front original 1943–1944 monthly command returns** from existing Atlas v7.1 + v7.2, original sources and pages, destruction vs damage, enemy-action vs other operational vs non-operational, missing as included subset, actual observed gaps blank, selectable charts, CSV. West command changed organizational coverage in September 1944.
+- Historical *force laboratory*: **80 source-transcribed USAAF ETO/MTO combat group-month observations** promoted from quantitative research PR #5's Statistical Digest Table 2 (without importing the bulk 185-file research PR), with group roles and original arithmetic disagreements; **5 dated VVS front+reserve aircraft snapshots**, and **68 monthly USAAF worldwide factory acceptances**, both from existing v7.3/v7.4 source registers; different scopes intentionally never combined into a European aircraft total.
+- Detailed 1940/42/44/45 case evidence: Battle of Britain German archives vs RAF wartime claims; Malta 1942 raid sorties and aircraft losses; Dieppe, Big Week, D-Day, Market Garden, Bodenplatte. Where no localized loss count has been audited, the dossier says **no verified campaign total**, not zero.
+- Existing Normandy link from v7.7 dossier opens the richer dated `grand-air-war-v76.html` field notebook. Both routes are self-contained GitHub Pages static pages *once merged*.
+
+### Source and interpretation gates
+
+- Campaign metrics cannot be compared between opposed sides without matching dates and populations. RAF *claimed victories* in the Battle of Britain are NOT German recorded losses, nor are sortie counts an inventory of aircraft.
+- German Reich/West reports are source-defined **command** populations, not RAF/USAAF claims or battle-specific geographic map bins. Lost aircraft count only original non-overlapping cause classes. No unverified German Eastern Front or Italian monthly losses are generated.
+- VVS all-front/command-reserve figures do not represent the VVS aircraft over Bagration, Kursk or any one battle; Table 2 ETO/MTO groups are organizations, not planes; Table 74 is U.S. *worldwide factory production*, not stationed ETO strength.
+- All reports and dates remain traceable via `dist/grand-air-war-v77-campaigns.js`, `dist/grand-air-war-v77-groups.js` and existing v7.1–v7.4 sources. Original source rows and preserved nulls are not silently averaged.
+- Numerical overview is **not yet complete:** missing audited RAF daily/campaign aircraft losses, German Eastern Front monthly loss totals, most Mediterranean losses, actual unit/airfield deployments for each front and verified geographic strike intensity. Thus no Europe-wide casualty total or fabricated animated front line.
+- Need browser verification of map icons/filters/touch and charts on desktop and mobile before merging. CI test covers schema/algorithms/source boundaries but not visual browser success. OSM tiles and Leaflet assets require access to their external providers.
+
+### Next milestone
+
+1. Visually test and fix v7.7 on desktop and mobile; user review.
+2. Expand primary RAF/USAAF/VVS/Italian/Central European *campaign-localized* operation and loss data. Add only values with actual reporting area, loss category and source; preserve gaps, contradictions and claims.
+3. Integrate currently unmerged PR #5's remaining historical data only through explicit validation gates, not a bulk merge or invented precision.
+
+Run: `node tests/grand-air-war-v77.cjs` (integrated into `tests/build.cjs` CI).
