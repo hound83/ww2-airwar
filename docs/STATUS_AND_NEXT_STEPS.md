@@ -108,3 +108,33 @@
 3. Integrate currently unmerged PR #5's remaining historical data only through explicit validation gates, not a bulk merge or invented precision.
 
 Run: `node tests/grand-air-war-v77.cjs` (integrated into `tests/build.cjs` CI).
+
+
+## v8.0 integrated historical-airwar milestone (1 November 2026)
+
+The goal is a **noticeably larger leap per request**, not version-number churn. User approved building a single larger historical map and German air force/evidence experience.
+
+**Review route** `grand-air-war-v80.html`; draft PR is based on `feature/grand-air-war-v77-europe-analysis` (PR #7), which itself depends on Normandy PR #6. Existing v7.7 and older routes retain their own scripts; live main stays v7.4.
+
+### User-visible new functionality
+
+- No more present-day country borders, roads or giant overlapping country/campaign labels. A Leaflet **physical chart** loads 1:50m Natural Earth land-only polygons, graticule and small stable numbered campaign points. Selected campaign names live in side dossier/list. Crowded points cluster by pixel radius and open with zoom. No fake plotted Reich/West command-loss pins.
+- **German War Capacity study**: interactive pilot casualties (9 monthly observations Sep 1943–May 1944), Luftflotte Reich on-hand/serviceable fighters (3 dated observations, SE and TE separate), German all-aircraft factory output (27 monthly observations Jan 1943–Mar 1945), aviation fuel capacity (7 months), two individually sourced JG53 Gruppen reports.
+- Separate pilots/airframes/factory flows/percentages by source population; each panel has metric-specific y axis, observation detail, direct source links and CSV export. German command airframe-loss context shows nearby reported dates but is never a pilot-loss exchange ratio.
+- Four prominent **clickable** German wartime evidence highlights lead to exact observation/mode. Campaign dossiers can jump to the relevant German pilots/readiness/fuel module (where wartime evidence exists) as well as original German command loss reports.
+- Distinct Allied research lab retains USAAF ETO/MTO group organizations, VVS dated front+reserve snapshots and USAAF worldwide factory acceptance series, with no Germany–USA false head-to-head aircraft ratio. Hide controls irrelevant to currently selected Allied population.
+- Production transcription disagreement: Sep 1944 USSBS-derived series uses 4,103, which reconciles to postwar official 1944 annual 39,807; an alternative reproduced tabulation gives 4,130 and annual 39,834. Both values and outstanding primary-source audit are documented.
+
+### Important limits
+
+- The physical geography is present-day coastline **shape** rather than historically surveyed 1940s terrain. WWII political front lines and national boundaries are **not included** until dated scholarly geometry is checked. All campaign points are indicative geographic centres only.
+- 50m world-atlas topology is an external CDN fetch; unavailable topology should not silently substitute modern map borders. Source footnote is Natural Earth public domain/world-atlas.
+- Full pilot loss time series outside nine months, exact current command aircraft strength, localized RAF/USAAF/VVS opposition records and original USSBS monthly appendices remain research tasks. The 27 German production months are **USSBS-derived secondary**, not independently scanned original monthly pages.
+- One panel per historical denominator, no interpolations of missing pilot/aircraft dates, no compound "German strength" from factory output or Germany-wide fleet from three Reich observations.
+
+### Checkpoints
+
+`node tests/grand-air-war-v80.cjs` checks map source (land not countries), 27 production months/annual reconciliation, pilot/Galland conflict, readiness/JG53/fuel sources and interactive data mode selection.
+Normal `node tests/build.cjs` executes it with all earlier Atlas tests.
+**Visual browser and mobile smoke test with live third-party CDN assets is required before merge.**
+Original source audit and implementation reasoning: `research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md`.
