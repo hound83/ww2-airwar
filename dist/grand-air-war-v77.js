@@ -42,80 +42,50 @@ function selectMoment(cId,date,lat,lng){
  if(date&&date.slice(0,7)!==state.month)updateMonth(date.slice(0,7),true);
  if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
 }
-function makeIcon(text,kind,selected,inactive=false){
- return window.L.divIcon({
-  className:"gaw-icon",
-  html:'<span class="'+(kind==="cluster"?"war-cluster":"war-pin")+(selected?" selected":"")+(inactive?" inactive":"")+'">'+esc(text)+'</span>',
-  iconSize:kind==="cluster"?[37,37]:[29,29],
-  iconAnchor:kind==="cluster"?[18,18]:[14,14]
- });
+function makeIcon(text,mode,selected,inactive=false){
+ return window.L.divIcon({className:"gaw-icon",html:'<span class="map-marker '+esc(mode)+" "+(selected?"selected ":"")+(inactive?"inactive":"")+'">'+esc(text)+'</span>',iconSize:[mode==="report"?76:116,27],iconAnchor:[mode==="report"?38:58,14]});
 }
 function setupMap(){
  if(!window.L){$("map-fallback").hidden=false;return;}
  try{
-  const L=window.L;
-  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:true,worldCopyJump:false,attributionControl:false});
+  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,scrollWheelZoom:true,touchZoom:true,keyboard:true});
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',maxZoom:12,keepBuffer:2}).addTo(state.map);
   L.control.zoom({position:"topright"}).addTo(state.map);
-  L.control.attribution({prefix:false}).addAttribution('Natural Earth / world-atlas 1:50m, public domain').addTo(state.map);
-  const grid=L.layerGroup().addTo(state.map);
-  for(let lon=-20;lon<=60;lon+=10){L.polyline([[32,lon],[73,lon]],{color:"#c6bda0",weight:.55,opacity:.27,interactive:false,dashArray:"3 6"}).addTo(grid);}
-  for(let lat=35;lat<=70;lat+=5){L.polyline([[lat,-22],[lat,59]],{color:"#c6bda0",weight:.55,opacity:.22,interactive:false,dashArray:"3 6"}).addTo(grid);}
   state.mapMarkers=L.layerGroup().addTo(state.map);
   state.map.setView([52,13],5);
-  state.map.on("zoomend moveend",drawMap);
-  // 50m physical LAND TopoJSON. No modern administrative lines, cities or roads.
-  // External CORS download is required. Failure leaves campaign markers available.
-  if(window.fetch&&window.topojson){
-   window.fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-50m.json")
-    .then(resp=>{if(!resp.ok)throw Error("coastline dataset HTTP "+resp.status);return resp.json();})
-    .then(world=>{
-     if(!world.objects||!world.objects.land)throw Error("Unexpected land topology");
-     const geo=window.topojson.feature(world,world.objects.land);
-     state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.canvas()});
-     state.landLayer.addTo(state.map);
-     if(state.landLayer.bringToBack)state.landLayer.bringToBack();
-     grid.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
-     state.mapMarkers.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
-     $("map-fallback").hidden=true;
-    }).catch(err=>{$("map-fallback").textContent="Historical coastline unavailable: "+err.message+". Numbered campaigns and research dossiers still work; modern borders will not be shown.";$("map-fallback").hidden=false;});
-  }else{
-   $("map-fallback").textContent="Coastline library unavailable. Campaign pins still work, without modern political borders.";
-   $("map-fallback").hidden=false;
-  }
- }catch(err){$("map-fallback").textContent="Historical map unavailable: "+err.message;$("map-fallback").hidden=false;}
+  state.map.on("zoomend",drawMap);
+ }catch(e){$("map-fallback").hidden=false;}
 }
 function drawMap(){
- if(!state.mapMarkers||!state.map)return;
+ if(!state.mapMarkers)return;
  state.mapMarkers.clearLayers();
- const L=window.L,cs=visibleOnMap();
- // Only geographic CAMPAIGN centres here; German command losses are NOT map points.
- const pins=cs.map(c=>({c,lat:c.focus.lat,lng:c.focus.lng,index:D.campaigns.findIndex(x=>x.id===c.id)+1}));
- const threshold=state.map.getZoom()>=9?0:state.map.getZoom()>=7?28:43;
+ const cs=visibleOnMap();
+ const pins=cs.map(c=>({kind:"campaign",lat:c.focus.lat,lng:c.focus.lng,code:c.id,title:c.name,subtitle:c.start+" – "+c.end,active:active(c)}));
+ const present=lossRows.filter(x=>x.period===state.month);
+ for(const c of present){pins.push({kind:"report",lat:c.theater==="Reich"?52.0:49.8,lng:c.theater==="Reich"?10.2:2.0,code:c.theater,title:c.theater==="Reich"?"Luftflotte Reich":"Luftflotte 3 / West",subtitle:fmt(c.destroyed)+" aircraft destroyed in reporting command",active:true});}
  const groups=[];
- for(const p of pins){
-  const xy=state.map.latLngToContainerPoint([p.lat,p.lng]);
-  let chosen=null,closest=Infinity;
+ const threshold=state.map.getZoom()>=8?0:state.map.getZoom()>=6?34:56;
+ for(const pin of pins){
+  const pix=state.map.latLngToContainerPoint([pin.lat,pin.lng]);
+  let placed=false;
   if(threshold)for(const g of groups){
-   const centre=g.map(q=>state.map.latLngToContainerPoint([q.lat,q.lng])).reduce((sum,v)=>({x:sum.x+v.x,y:sum.y+v.y}),{x:0,y:0});
-   const dist=Math.hypot(xy.x-centre.x/g.length,xy.y-centre.y/g.length);
-   if(dist<threshold&&dist<closest){chosen=g;closest=dist;}
+   if(g.every(i=>i.kind!==pin.kind))continue;
+   const p=state.map.latLngToContainerPoint([g[0].lat,g[0].lng]);
+   if(Math.hypot(p.x-pix.x,p.y-pix.y)<threshold){g.push(pin);placed=true;break;}
   }
-  if(chosen)chosen.push(p);else groups.push([p]);
+  if(!placed)groups.push([pin]);
  }
  for(const group of groups){
-  const p=group[0],multi=group.length>1;
-  const lat=group.reduce((x,q)=>x+q.lat,0)/group.length,lng=group.reduce((x,q)=>x+q.lng,0)/group.length;
-  const selected=!multi&&state.selected===p.c.id;
-  const icon=makeIcon(multi?group.length:String(p.index),multi?"cluster":"campaign",selected,!multi&&!active(p.c));
-  const mk=L.marker([lat,lng],{icon,keyboard:true,title:multi?group.length+" campaigns nearby, zoom for details":p.c.name,zIndexOffset:selected?500:0});
-  if(multi){
-   mk.on("click",()=>{const bounds=L.latLngBounds(group.map(q=>[q.lat,q.lng]));state.map.flyToBounds(bounds.pad(1),{maxZoom:Math.min(11,state.map.getZoom()+2)});});
-   mk.bindTooltip(group.map(q=>q.index+" · "+q.c.name).join(" / "),{direction:"top",opacity:.95});
-  }else{
-   mk.on("click",()=>pickCampaign(p.c.id,true));
-   mk.bindTooltip(p.index+" · "+p.c.name+" · "+p.c.start+"–"+p.c.end,{direction:"top",opacity:.95});
-  }
-  state.mapMarkers.addLayer(mk);
+  const multi=group.length>1;
+  const first=group[0],lat=group.reduce((s,x)=>s+x.lat,0)/group.length,lng=group.reduce((s,x)=>s+x.lng,0)/group.length;
+  const text=multi?group.length+" campaigns":(first.kind==="report"?first.code==="Reich"?"REICH LOSS":"WEST LOSS":first.title);
+  const icon=makeIcon(text,multi?"campaign":first.kind,!multi&&first.code===state.selected,!first.active);
+  const marker=L.marker([lat,lng],{icon,keyboard:true,title:multi?group.length+" nearby records":first.title});
+  if(multi)marker.on("click",()=>state.map.flyTo([lat,lng],Math.min(10,state.map.getZoom()+2)));
+  else if(first.kind==="report")marker.on("click",()=>{state.lossCommand=first.code;state.lossMonth=state.month;renderLosses();document.getElementById("loss-lab").scrollIntoView({behavior:"smooth",block:"start"});});
+  else marker.on("click",()=>pickCampaign(first.code,true));
+  marker.bindTooltip(multi?group.map(x=>x.title).join(" · "):first.title+" · "+first.subtitle);
+  state.mapMarkers.addLayer(marker);
  }
 }
 function renderTime(){
@@ -262,7 +232,7 @@ function renderSources(){
  const unique=new Map(catalogue.map(x=>[x.url,x]));
  $("source-catalogue").innerHTML=[...unique.values()].map(x=>'<article><b>'+esc(x.name)+'</b><small>'+esc(x.detail)+'</small><a target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">Open original ↗</a></article>').join("");
 }
-function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();if(window.GrandAirWarV80Lab?.syncMonth)window.GrandAirWarV80Lab.syncMonth(state.month);}
+function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();}
 function init(){
  if(!$("campaign-map"))return;
  setupMap();renderCoverage();renderSources();
