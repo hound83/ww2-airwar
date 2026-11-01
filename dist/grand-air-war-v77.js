@@ -246,8 +246,8 @@ function init(){
   $("play-time").textContent="Ⅱ Pause";
   state.play=setInterval(()=>{if(monthIdx(state.month)>=LMAX-LMIN){cancelPlay();return;}updateMonth(atIdx(monthIdx(state.month)+1));},750);
  });
- $("theater-select").addEventListener("change",e=>{state.theater=e.target.value;state.search="";update();});
- $("campaign-search").addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();update();});
+ $("theater-select").addEventListener("change",e=>{state.theater=e.target.value;state.search="";const next=matching().find(active)||matching()[0];if(next)state.selected=next.id;update();});
+ $("campaign-search").addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();const next=matching().find(active)||matching()[0];if(next)state.selected=next.id;update();});
  $("all-campaigns").addEventListener("change",e=>{state.all=e.target.checked;update();});
  $("fit-map").addEventListener("click",()=>{if(!state.map)return;const cs=visibleOnMap();if(cs.length)state.map.flyToBounds(L.latLngBounds(cs.map(c=>[c.focus.lat,c.focus.lng])).pad(.3),{maxZoom:6,duration:.6});});
  $("loss-command").addEventListener("change",e=>{state.lossCommand=e.target.value;state.lossMonth=state.month;renderLosses();drawMap();});
