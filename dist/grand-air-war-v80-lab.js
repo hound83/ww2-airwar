@@ -90,6 +90,13 @@ function exportCSV(){
 function init(){
  if(!$("german-chart"))return;
  document.querySelectorAll("[data-german-mode]").forEach(b=>b.addEventListener("click",()=>switchMode(b.dataset.germanMode)));
+ document.querySelectorAll("[data-german-spotlight]").forEach(b=>b.addEventListener("click",()=>{
+  const mode=b.dataset.germanSpotlight,period=b.dataset.period;
+  switchMode(mode);
+  const target=rows().find(x=>x.key===period||x.period===period);
+  if(target){lab.selected=target.key;render();}
+  $("german-war-lab").scrollIntoView({behavior:"smooth",block:"start"});
+ }));
  $("german-export").addEventListener("click",exportCSV);
  render();
 }
