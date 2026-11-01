@@ -46,6 +46,7 @@ const html=read("grand-air-war-v80.html"),js=read("dist/grand-air-war-v80-core.j
 for(const f of files)assert.ok(html.includes("./"+f),"page missing "+f);
 assert.ok(html.includes("./dist/grand-air-war-v80.css"));
 assert.ok(html.includes("topojson-client@3.1.0"));
+assert.equal((html.match(/RESEARCH LABORATORY 03/g)||[]).length,1,"Allied laboratory must have exactly one heading");
 assert.ok(js.includes("land-50m.json")&&js.includes("world.objects.land")&&js.includes("window.topojson.feature"));
 assert.ok(!js.includes("tile.openstreetmap.org"),"no current-state border road tiles allowed");
 assert.ok(!js.includes("world.objects.countries"),"current national outlines prohibited");
