@@ -1,189 +1,195 @@
-/* Grand Air War v7.6 · interactive, source-scoped Normandy field notebook.
-   No new framework, external map API, invented operational positions or live Atlas mutation. */
+/* Grand Air War v7.6: dated Normandy research experience.
+   Map uses Leaflet 1.9.4 + normal viewport-only OpenStreetMap tiles.
+   Markers denote published approximate sites, not independently surveyed WW2 runway centres. */
 (function(){
 "use strict";
-const DATA=window.GrandAirWarV76Data;
-if(!DATA)return;
+const D=window.GrandAirWarV76Data;if(!D||!Array.isArray(D.story))return;
 const $=id=>document.getElementById(id);
-const NS="http://www.w3.org/2000/svg";
-const FIRST=1936*12+6, LAST=1945*12+4;
-const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
-const state={month:"1944-06",zoom:"normandy",selection:{type:"event",id:"overlord"},timer:null};
-const context={
- "1940-07":{title:"Battle of Britain",place:"Southern England and the Channel",detail:"The featured campaign catalogue includes the Battle of Britain, but this v7.6 prototype has not connected its unit-level event and map records. Select June 1944 for the detailed Normandy field notebook."},
- "1941-06":{title:"Operation Barbarossa",place:"Eastern Front",detail:"The invasion opened the Eastern air war in June 1941. This preview does not yet have a geography-matched, date-resolved Eastern Front unit map. Missing evidence is intentionally shown as unavailable."},
- "1944-02":{title:"Big Week",place:"Germany / Allied air bases",detail:"The February 1944 strategic-air campaign is a future detailed case. Its force and aircraft populations must be verified separately before being mapped."},
- "1945-01":{title:"Operation Bodenplatte",place:"Western Front airfields",detail:"The 1 January 1945 Luftwaffe attack is in the campaign catalogue. This prototype does not attribute unsourced airfield or aircraft-loss figures to it."}
-};
-const monthNo=s=>{const a=s.split("-").map(Number);return a[0]*12+(a[1]-1)-FIRST;};
-const monthAt=n=>{const t=FIRST+Math.max(0,Math.min(LAST-FIRST,n));return Math.floor(t/12)+"-"+String(t%12+1).padStart(2,"0");};
-const labelMonth=s=>{const[y,m]=s.split("-").map(Number);return months[m-1]+" "+y;};
-const toISODate=s=>s&&s.slice(0,7);
-const canShowNormandy=month=>month>="1944-05"&&month<="1944-08";
-const projection=(lat,lon)=>[(lon+16)*940/73,(71-lat)*410/38];
-const vbox=zoom=>zoom==="normandy"?{x:124,y:191,w:174,h:107}:{x:0,y:0,w:940,h:410};
-const s=(tag,attr={},text)=>{const el=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attr))el.setAttribute(k,v);if(text!==undefined)el.textContent=text;return el;};
-const set=(id,value)=>{const node=$(id);if(node)node.textContent=value;};
-const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const getMonthRow=()=>DATA.monthly.find(x=>x.month===state.month);
-const getAirfields=()=>canShowNormandy(state.month)?DATA.airfields.filter(x=>toISODate(x.opened)<=state.month):[];
-function cancelPlay(){if(state.timer){clearInterval(state.timer);state.timer=null;}$("time-play").textContent="▶ Play";$("time-play").setAttribute("aria-label","Play months");}
-function setMonth(month){if(monthNo(month)<0||monthNo(month)>LAST-FIRST)return;
- state.month=month;const thisMonth=DATA.events.filter(x=>x.month===month);
- state.selection=thisMonth.length?{type:"event",id:thisMonth.find(x=>x.id==="overlord")?.id||thisMonth[0].id}:null;
- if(!canShowNormandy(month))state.zoom="europe";
+const esc=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const dateLabel=d=>{const p=d.split("-");return Number(p[2])+" "+months[Number(p[1])-1]+" "+p[0];};
+const AIR=D.airfields,STORY=D.story;
+const state={step:0,selection:{type:"scene",id:STORY[0].id},map:null,layers:null,mode:"normandy",showAirfields:true,showEvents:true,timer:null,rendering:false};
+const current=()=>STORY[state.step],asOf=()=>current().date;
+const opened=f=>f.declaredOperational<=asOf();
+const sourceSet=keys=>(keys||[]).filter(k=>D.sources[k]);
+function linkSources(keys){return sourceSet(keys).map(k=>'<a href="'+esc(D.sources[k].url)+'" target="_blank" rel="noopener noreferrer">'+esc(D.sources[k].name)+" ↗</a>").join("");}
+function stop(){if(state.timer!==null){clearInterval(state.timer);state.timer=null;}$("scene-play").textContent="▶ Follow events";}
+function chooseStep(i,fromUser=true){
+ if(i<0||i>=STORY.length)return;
+ if(fromUser)stop();state.step=i;state.selection={type:"scene",id:STORY[i].id};
+ if(state.mode==="europe"&&i>0)state.mode="normandy";
  render();
 }
-function selectEvent(id){const event=DATA.events.find(x=>x.id===id);if(!event)return;
- if(state.month!==event.month)state.month=event.month;
- state.selection={type:"event",id};state.zoom="normandy";render();
+function chooseField(code){
+ const f=AIR.find(x=>x.code===code);if(!f)return;stop();
+ if(!opened(f)){const i=STORY.findIndex(e=>e.airfieldCode===code&&e.date>=f.declaredOperational);if(i>=0)state.step=i;}
+ state.selection={type:"field",id:code};state.mode="normandy";
+ render();if(state.map)state.map.flyTo([f.lat,f.lon],Math.max(12,state.map.getZoom()),{animate:true,duration:.5});
 }
-function selectField(code){const field=DATA.airfields.find(x=>x.code===code);if(!field)return;
- if(!canShowNormandy(state.month))state.month="1944-06";
- if(toISODate(field.opened)>state.month)state.month=toISODate(field.opened);
- state.selection={type:"field",id:code};state.zoom="normandy";render();
+function view(mode){
+ state.mode=mode;const m=state.map;
+ if(m){if(mode==="normandy")m.flyToBounds([[48.96,-1.74],[49.70,-.36]],{padding:[35,38],maxZoom:11,duration:.7});else m.flyTo([50.6,6.8],5,{duration:.7});}
+ renderControls();drawMapMarkers();
 }
-function svgClickGroup(svg,x,y,kind,label,callback,options={}){
- const wide=state.zoom!=="normandy";
- const g=s("g",{class:"pin "+(state.selection?.id===options.id?"is-selected":""),role:"button",tabindex:"0","aria-label":label,transform:"translate("+x.toFixed(2)+","+y.toFixed(2)+")"});
- const r=wide?5.2:1.35;
- if(!wide)g.appendChild(s("circle",{r:r*2.2,fill:kind==="airfield"?"#8bdfcf":"#f0c892",opacity:".16"}));
- g.appendChild(s("circle",{class:"pin-core",r,fill:kind==="airfield"?"#8bdfcf":"#efc28d",opacity:options.opacity??1}));
- if(options.text&&state.zoom==="normandy")g.appendChild(s("text",{x:2.1,y:-1.5,class:"pin-label"},options.text));
- const act=()=>{cancelPlay();callback();};g.addEventListener("click",act);
- g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();act();}});
- svg.appendChild(g);return g;
+function iconFor(it,active=false){
+ const field=it.kind==="field";const name=field?it.code:"●";
+ return window.L.divIcon({className:"gaw-icon",html:'<span class="gaw-pin '+(field?"":"operation ")+(active?"is-selected":"")+'">'+esc(name)+'</span>',iconSize:field?[42,31]:[28,29],iconAnchor:field?[21,35]:[14,28],popupAnchor:[0,-32]});
 }
-function showMap(){
- const mount=$("map-surface");mount.textContent="";
- if(!window.AirWarV75Map?.render){mount.textContent="Base map unavailable; source records are still accessible below.";return;}
- const tmp=document.createElement("div");
- tmp.innerHTML=window.AirWarV75Map.render({ui:{theater:"overall"},D:{idx:()=>0},period:{a:0,b:0}},[]);
- const svg=tmp.querySelector("svg");if(!svg){mount.textContent="Map layout unavailable.";return;}
- for(const t of svg.querySelectorAll("text"))t.remove();
- const v=vbox(state.zoom);svg.setAttribute("viewBox",[v.x,v.y,v.w,v.h].join(" "));
- svg.setAttribute("preserveAspectRatio","xMidYMid meet");
- svg.setAttribute("aria-label",state.zoom==="normandy"?"Normandy and southern English Channel; approximate regional markers":"European coastline with Normandy focus");
- svg.style.overflow="hidden";
- const land=svg.querySelector("path");
- if(land){land.classList.add("coast-land");if(state.zoom==="europe")land.classList.add("wide");}
- const wide=state.zoom==="europe";
- function label(lat,lon,text){const[x,y]=projection(lat,lon);svg.appendChild(s("text",{x,y,class:"geo-label"+(wide?" wide":"" )},text));}
- if(!wide){label(50.34,-2.67,"ENGLISH CHANNEL");label(48.54,-1.78,"NORMANDY");label(49.62,-1.40,"COTENTIN");}
- else{label(53.6,-3.4,"UNITED KINGDOM");label(47.9,2.1,"FRANCE");label(51.6,10,"GERMANY");}
- if(canShowNormandy(state.month)){
-  const events=DATA.events.filter(e=>e.month>="1944-05"&&e.month<=state.month);
-  // A month's plot includes all earlier dated events, but only the selected month's symbols are fully opaque.
-  for(const e of events){
-   const[x,y]=projection(e.lat,e.lon);
-   svgClickGroup(svg,x,y,e.kind,e.title+" · "+e.date,()=>selectEvent(e.id),{id:e.id,opacity:e.month===state.month?1:.37,text:e.id==="overlord"?"D-DAY":e.id==="cobra"?"COBRA":e.id==="falaise"?"FALAISE":""});
-  }
-  const fields=getAirfields();const cot=fields.filter(f=>f.sector==="Cotentin"),bessin=fields.filter(f=>f.sector==="Bessin");
-  for(const cluster of [{list:cot,lat:49.44,lon:-1.34,label:"Cotentin airfield records"},{list:bessin,lat:49.21,lon:-0.76,label:"Bessin airfield records"}]){
-   if(!cluster.list.length)continue;
-   const[x,y]=projection(cluster.lat,cluster.lon);
-   const g=s("g",{class:"cluster"+(wide?" wide":""),role:"button",tabindex:"0",transform:"translate("+x.toFixed(2)+","+y.toFixed(2)+")","aria-label":cluster.list.length+" "+cluster.label});
-   g.appendChild(s("circle",{r:wide?8:2.35}));g.appendChild(s("text",{},String(cluster.list.length)));
-   const click=()=>{cancelPlay();selectField(cluster.list[0].code);};
-   g.addEventListener("click",click);g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();click();}});
-   svg.appendChild(g);
-  }
- }else{
-  const title=context[state.month]?.title||"Europe, "+labelMonth(state.month);
-  const[xx,yy]=projection(49.18,-.37);
-  svgClickGroup(svg,xx,yy,"context","Return to Normandy June 1944",()=>setMonth("1944-06"),{text:wide?"":"NORMANDY"});
+function clusterIcon(count){
+ return window.L.divIcon({className:"gaw-icon",html:'<span class="gaw-cluster"><b>'+count+'</b><small>zoom in</small></span>',iconSize:[47,47],iconAnchor:[23,24]});
+}
+function markersForDate(){
+ const items=[];
+ if(state.showAirfields)for(const f of AIR.filter(opened)){
+  items.push({kind:"field",code:f.code,lat:f.lat,lon:f.lon,name:f.name,source:f.siteSourceKey});
  }
- mount.appendChild(svg);
- set("map-title",canShowNormandy(state.month)?"Normandy · "+labelMonth(state.month):"Europe · "+labelMonth(state.month));
- set("map-strap",wide?"EUROPEAN OVERVIEW · RESEARCH COVERAGE":"CAMPAIGN FIELD NOTEBOOK · REGIONAL MARKERS");
+ if(state.showEvents)for(const e of STORY.filter(x=>x.date<=asOf())){
+  // Do not duplicate marker at an airfield. Open an airfield from its code or select
+  // an exact event from the chronology instead.
+  if(e.airfieldCode)continue;
+  if(e.type!=="operation"&&e.id!==current().id)continue;
+  items.push({kind:"event",id:e.id,lat:e.lat,lon:e.lon,name:e.title});
+ }
+ if(state.showEvents&&state.selection?.type==="scene"){
+  const e=STORY.find(x=>x.id===state.selection.id);
+  if(e&&!e.airfieldCode&&!items.some(i=>i.id===e.id))
+   items.push({kind:"event",id:e.id,lat:e.lat,lon:e.lon,name:e.title});
+ }
+ return items;
+}
+function groupsInPixels(items){
+ const map=state.map, threshold=map.getZoom()>=13?0:(map.getZoom()>=11?38:61);
+ if(!threshold)return items.map(x=>[x]);
+ const groups=[];
+ // Regroup whenever the map pans or zooms; never permanently collapse geographic sites.
+ for(const it of items){
+  const a=map.latLngToContainerPoint([it.lat,it.lon]);
+  let best=null,bestDist=Infinity;
+  for(const g of groups){
+   const rep=g.reduce((acc,x)=>{const p=map.latLngToContainerPoint([x.lat,x.lon]);return {x:acc.x+p.x,y:acc.y+p.y}}, {x:0,y:0});
+   const dx=a.x-rep.x/g.length,dy=a.y-rep.y/g.length,dist=Math.hypot(dx,dy);
+   if(dist<threshold&&dist<bestDist){best=g;bestDist=dist;}
+  }
+  if(best)best.push(it);else groups.push([it]);
+ }
+ return groups;
+}
+function drawMapMarkers(){
+ if(!state.map||!state.layers)return;
+ state.layers.clearLayers();
+ const m=state.map;const items=markersForDate();const groups=groupsInPixels(items);
+ for(const g of groups){
+  if(g.length>1){
+   const lat=g.reduce((a,x)=>a+x.lat,0)/g.length,lon=g.reduce((a,x)=>a+x.lon,0)/g.length;
+   const mk=window.L.marker([lat,lon],{icon:clusterIcon(g.length),keyboard:true,title:g.length+" nearby records; zoom in"});
+   mk.on("click",()=>{const area=window.L.latLngBounds(g.map(x=>[x.lat,x.lon]));if(m.getZoom()>=13){m.flyTo([lat,lon],Math.min(17,m.getZoom()+2));}else m.flyToBounds(area.pad(.8),{maxZoom:Math.min(14,m.getZoom()+2)});});
+   mk.bindTooltip(g.length+" records nearby · zoom in",{direction:"top"});
+   state.layers.addLayer(mk);continue;
+  }
+  const it=g[0];
+  const selected=state.selection?.id===(it.kind==="field"?it.code:it.id);
+  const mark=window.L.marker([it.lat,it.lon],{icon:iconFor(it,selected),keyboard:true,title:it.kind==="field"?it.code+" "+it.name:it.name,zIndexOffset:selected?900:0});
+  mark.on("click",()=>{if(it.kind==="field")chooseField(it.code);else chooseStep(STORY.findIndex(e=>e.id===it.id));});
+  mark.bindTooltip((it.kind==="field"?it.code+" · ":"")+esc(it.name),{direction:"top",offset:[0,-20]});
+  state.layers.addLayer(mark);
+ }
+}
+function initMap(){
+ if(!window.L||!window.L.map){$("map-failure").hidden=false;return;}
+ try{
+  const L=window.L;
+  state.map=L.map("map-surface",{zoomControl:false,scrollWheelZoom:true,touchZoom:true,keyboard:true,minZoom:5,maxZoom:17,zoomSnap:1,preferCanvas:true});
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',maxZoom:17,keepBuffer:2,updateWhenIdle:true}).addTo(state.map);
+  L.control.zoom({position:"topright"}).addTo(state.map);
+  state.layers=L.layerGroup().addTo(state.map);
+  state.map.setView([49.33,-1.1],10);
+  state.map.on("zoomend moveend",drawMapMarkers);
+  state.map.on("tileerror",()=>{if(!state.map)return; /* Text chronology remains fully usable if tiles fail. */});
+ }catch(e){$("map-failure").hidden=false;}
+}
+function renderControls(){
+ const detail=state.mode==="normandy";
+ $("normandy-zoom").classList.toggle("is-active",detail);
+ $("europe-zoom").classList.toggle("is-active",!detail);
+ $("normandy-zoom").setAttribute("aria-pressed",String(detail));
+ $("europe-zoom").setAttribute("aria-pressed",String(!detail));
+ $("layer-airfields").checked=state.showAirfields;$("layer-events").checked=state.showEvents;
+ $("scene-range").value=String(state.step);$("scene-counter").textContent=(state.step+1)+" / "+STORY.length;
+ $("scene-prev").disabled=state.step===0;$("scene-next").disabled=state.step===STORY.length-1;
+ $("scene-phase").textContent=asOf()<"1944-06-27"?"From Britain to forward airfields":asOf()<"1944-07-25"?"Forward airpower supports the advance":"Breakout and pursuit";
+ $("map-title").textContent=state.mode==="normandy"?"Normandy · "+dateLabel(asOf()):"Europe · "+dateLabel(asOf());
+ $("coverage-label").textContent=dateLabel(asOf())+" · "+AIR.filter(opened).length+" / 8 researched US fields";
+ $("asof-date").textContent=dateLabel(asOf());
 }
 function renderInspector(){
- const root=$("inspector");root.dataset.mode=state.selection?.type||"gap";
- let obj=null,sourceKeys=[],status="",caution="",date="",title="",place="",description="";
- if(state.selection?.type==="event"){
-  obj=DATA.events.find(x=>x.id===state.selection.id);
-  if(obj){date=obj.date;title=obj.title;place=obj.place;description=obj.summary;sourceKeys=obj.sourceKeys;status=obj.evidence==="official-retrospective"?"Official USAF airfield source":obj.evidence==="dated-historical-event"?"Historical campaign milestone":"Historical campaign context";
-   caution=obj.kind==="airfield"?"Regional location only. The symbol is not the exact ALG coordinate.":"Campaign context; no implied Normandy-wide strength or loss count.";
-  }
- }
- if(state.selection?.type==="field"){
-  obj=DATA.airfields.find(x=>x.code===state.selection.id);
-  if(obj){date=obj.opened;title=obj.code+" · "+obj.name;place=obj.sector+" sector · Normandy";
-   description="First operational date recorded: "+obj.opened+". "+obj.units.map(u=>u.name+" ("+u.first+" to "+u.last+")").join("; ")+". These are monthly candidate station intervals in the USAF field register, not evidence for every day or aircraft strength.";
-   status="USAF 1988 source-code entry; unit station cross-check";
-   caution="Approximate sector only. Month intervals and field opening day are distinct. This selected source subset is not a complete Allied field inventory.";
-   sourceKeys=["johnson","maurer"];
-  }
- }
- if(!obj){const x=context[state.month];date=labelMonth(state.month);title=x?.title||"Sources not yet connected";place=x?.place||"European theater";description=x?.detail||"This month is part of the full time machine, but v7.6 does not yet have source-audited, geography-compatible unit and campaign records for it. No missing month is treated as a zero.";status="Coverage gap, not a zero";caution="Return to May–August 1944 for the detailed Normandy demonstration.";sourceKeys=[];}
- set("inspect-date",date);set("inspect-title",title);set("inspect-place",place);set("inspect-summary",description);set("inspect-status",status);set("inspect-caution",caution);
- const impact=state.selection?.type==="event"?obj?.dayMetric:null;
- $("inspect-impact").hidden=!impact;
- if(impact){
-  set("inspect-impact-value",impact.quantity.toLocaleString("en-US"));
-  set("inspect-impact-label",impact.unit+" · "+impact.date);
-  set("inspect-impact-sub",impact.RAFSorties.toLocaleString("en-US")+" RAF sorties · "+DATA.sources[impact.sourceKey].name.split(",")[0]);
- }
- $("inspect-sources").innerHTML=sourceKeys.map(k=>DATA.sources[k]?'<a target="_blank" rel="noopener noreferrer" href="'+esc(DATA.sources[k].url)+'">'+esc(DATA.sources[k].name.split(",")[0])+' ↗</a>':"").join("");
+ const choice=state.selection;const f=choice?.type==="field"?AIR.find(x=>x.code===choice.id):null;
+ const e=!f?STORY.find(x=>x.id===choice?.id)||current():null;
+ const date=f?dateLabel(f.declaredOperational):dateLabel(e.date);
+ const type=f?"AIRFIELD SOURCE RECORD":e.type.toUpperCase()+" · DATED RECORD";
+ const title=f?f.code+" · "+f.name:e.title;
+ const place=f?f.sector:e.place;
+ const headline=f?"Forward airfield · "+f.aircraft:e.headline;
+ const detail=f?f.story:e.detail;
+ const consequence=f?("Recorded in the USAAF code register as "+f.originalJohnsonFirstUse+"; site history declares fully usable "+f.declaredOperational+". Named unit: "+f.units.map(x=>x.name).join(", ")+"."):e.effect;
+ const caution=f?("First use, full readiness and the unit's arrival are different dates. Published site point, not verified WWII runway centre. Engineer: "+f.engineer+"."):(e.positionPrecision+"; sources are retrospective unless labeled otherwise.");
+ const keys=f?["johnson",f.siteSourceKey,"algCoords"]:(e.sourceKeys||[]);
+ for(const [id,v]of Object.entries({"inspect-type":type,"inspect-date":date,"inspect-title":title,"inspect-place":place,"inspect-headline":headline,"inspect-summary":detail,"inspect-consequence":consequence,"inspect-caution":caution}))$(id).textContent=v;
+ $("inspect-status").textContent=f?"FIELD AND UNIT CHRONOLOGY · RESEARCH":e.type==="operation"?"OPERATIONAL CONTEXT / SOURCE":e.type==="unit"?"UNIT ACTION / LOCATION":"ENGINEER / FIELD SOURCE";
+ $("inspect-sources").innerHTML=linkSources(keys);
+ const fact=e?.id==="overlord";
+ $("inspect-impact").hidden=!fact;
+ if(fact){$("inspect-impact-value").textContent="14,674";$("inspect-impact-label").textContent="Allied sorties · 6 June 1944";$("inspect-impact-sub").textContent="5,656 RAF sorties · RAF Museum";}
 }
-function renderMetrics(){
- const o=getMonthRow();
- set("metric-groups",o?o.etoCombatGroups.toLocaleString("en-US"):"—");
- set("metric-losses",o?o.germanWestDestroyed.toLocaleString("en-US"):"—");
- set("metric-fields",canShowNormandy(state.month)?getAirfields().length.toLocaleString("en-US"):"—");
- set("metrics-explainer",o?"USAAF ETO group counts and German Western Command losses are different populations. The ALG list is a curated source subset.":"These metrics have no source-checked series for the selected month in v7.6. Missing ≠ zero.");
- const items=[...document.querySelectorAll(".metric__note")];
- if(items.length===3){
-  items[0].textContent=o?"Combat groups across the entire USAAF European Theater, including "+o.etoFighterGroups+" fighter groups. Not aircraft or Normandy-only.":"No ETO group observation linked in this demonstration for "+labelMonth(state.month)+".";
-  items[1].textContent=o?"All-cause destroyed aircraft, Luftflotte 3 / West command-wide. Not just losses over Normandy.":"No geographically compatible Luftflotte 3 loss value linked for "+labelMonth(state.month)+".";
-  items[2].textContent=o?"Selected USAF code-study fields operational by the end of "+labelMonth(state.month)+"; not all fields.":"Local field sample only covers May–August 1944; unavailable for this month.";
- }
+function renderStory(){
+ $("story-list").innerHTML=STORY.map((e,i)=>{
+  const active=state.selection?.type==="scene"&&state.selection.id===e.id;
+  const future=i>state.step;
+  return '<button type="button" class="story-step '+(active?"is-active ":"")+(future?"is-future":"")+'" data-scene="'+i+'" aria-current="'+(active?"step":"false")+'"><span class="step-date">'+esc(dateLabel(e.date))+'<br><span class="step-kind">'+esc(e.type)+'</span></span><span><b>'+esc(e.title)+'</b><small>'+esc(e.headline)+'</small></span></button>';
+ }).join("");
+ $("story-list").querySelectorAll("[data-scene]").forEach(b=>b.addEventListener("click",()=>chooseStep(Number(b.dataset.scene))));
 }
-function renderAirfields(){
- const fields=getAirfields(),container=$("airfield-list");
- if(!fields.length){container.innerHTML='<div class="empty">No reviewed Normandy ALG entries for this month in the v7.6 sample. This does not mean no airfields existed.</div>';return;}
- container.innerHTML=fields.map(f=>'<button type="button" class="airfield '+(state.selection?.id===f.code?"is-selected":"")+'" data-airfield="'+esc(f.code)+'"><span class="airfield__head"><b>'+esc(f.code)+'</b><span>'+esc(f.name)+'</span></span><small>First op. '+esc(f.opened)+'</small><em>'+esc(f.units.filter(u=>u.first<=state.month&&u.last>=state.month).map(u=>u.name).join(" · ")||"No selected unit observed in this month")+'</em></button>').join("");
- container.querySelectorAll("[data-airfield]").forEach(b=>b.addEventListener("click",()=>{cancelPlay();selectField(b.dataset.airfield);}));
+function renderFields(){
+ const count=AIR.filter(opened).length;
+ $("field-progress-value").textContent=count+" / "+AIR.length;
+ $("airfield-list").innerHTML=AIR.map(f=>{
+  const ready=opened(f);const isSelected=state.selection?.type==="field"&&state.selection.id===f.code;
+  const groupName=f.units.map(u=>u.name).join(", ");
+  return '<button type="button" class="airfield '+(isSelected?"is-selected":"")+'" data-airfield="'+esc(f.code)+'"><span class="airfield__head"><b>'+esc(f.code)+'</b><span>'+esc(f.name)+'</span></span><small>'+(ready?"Ready by this date":"Later: "+esc(dateLabel(f.declaredOperational)))+' · '+esc(f.aircraft)+'</small><em>'+esc(groupName)+'</em></button>';
+ }).join("");
+ $("airfield-list").querySelectorAll("[data-airfield]").forEach(b=>b.addEventListener("click",()=>chooseField(b.dataset.airfield)));
 }
-function renderBars(){
- const max=Math.max(...DATA.monthly.map(x=>x.germanWestDestroyed));
- $("loss-bars").innerHTML=DATA.monthly.map(x=>'<button class="bar-col '+(state.month===x.month?"is-active":"")+'" type="button" data-bar-month="'+x.month+'" aria-label="Inspect '+labelMonth(x.month)+', '+x.germanWestDestroyed+' reported destroyed aircraft"><span class="bar-col__num">'+x.germanWestDestroyed.toLocaleString("en-US")+'</span><span class="bar-rail"><span class="bar-fill" style="height:'+(100*x.germanWestDestroyed/max).toFixed(1)+'%"></span></span><small>'+months[+x.month.slice(5)-1].slice(0,3)+'</small></button>').join("");
- $("loss-bars").querySelectorAll("[data-bar-month]").forEach(b=>b.addEventListener("click",()=>{cancelPlay();setMonth(b.dataset.barMonth);}));
-}
-function renderSources(){
- $("source-register").innerHTML=Object.entries(DATA.sources).filter(([k])=>k!=="maurer").map(([k,v])=>'<article class="source"><b>'+esc(v.name)+'</b><p>'+esc(v.note)+'</p><a href="'+esc(v.url)+'" target="_blank" rel="noopener noreferrer">Examine the source ↗</a></article>').join("");
+function sources(){
+ const keys=new Set([...STORY.flatMap(e=>e.sourceKeys||[]),...AIR.map(f=>f.siteSourceKey),"johnson","alg1b","algCoords"]);
+ $("source-register").innerHTML=[...keys].filter(k=>D.sources[k]).map(k=>{
+  const s=D.sources[k];return '<article class="source"><b>'+esc(s.name)+'</b><p>'+esc(s.note)+'</p><a target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">Original / compilation ↗</a></article>';
+ }).join("");
+ $("limitations-list").innerHTML=(D.reviewFlags||[]).map(x=>"<li>"+esc(x)+"</li>").join("");
 }
 function render(){
- $("time-range").value=String(monthNo(state.month));
- set("time-display",labelMonth(state.month));
- $("time-prev").disabled=monthNo(state.month)<=0;$("time-next").disabled=monthNo(state.month)>=LAST-FIRST;
- $("normandy-zoom").classList.toggle("is-active",state.zoom==="normandy");
- $("europe-zoom").classList.toggle("is-active",state.zoom==="europe");
- $("normandy-zoom").setAttribute("aria-pressed",state.zoom==="normandy"?"true":"false");
- $("europe-zoom").setAttribute("aria-pressed",state.zoom==="europe"?"true":"false");
- set("coverage-label",canShowNormandy(state.month)?"Featured campaign · Normandy 1944":"Source gap · outside featured Normandy interval");
- document.querySelectorAll("[data-month]").forEach(b=>b.classList.toggle("is-active",b.dataset.month===state.month));
- showMap();renderInspector();renderMetrics();renderAirfields();renderBars();
+ renderControls();renderInspector();renderStory();renderFields();drawMapMarkers();
 }
 function init(){
  if(!$("map-surface"))return;
- renderSources();
- $("time-range").addEventListener("input",e=>{cancelPlay();setMonth(monthAt(Number(e.target.value)));});
- $("time-prev").addEventListener("click",()=>{cancelPlay();setMonth(monthAt(monthNo(state.month)-1));});
- $("time-next").addEventListener("click",()=>{cancelPlay();setMonth(monthAt(monthNo(state.month)+1));});
- $("time-play").addEventListener("click",()=>{
-  if(state.timer){cancelPlay();return;}
-  if(monthNo(state.month)>=LAST-FIRST)setMonth(DATA.bounds.first);
-  $("time-play").textContent="Ⅱ Pause";$("time-play").setAttribute("aria-label","Pause months");
-  state.timer=setInterval(()=>{if(monthNo(state.month)>=LAST-FIRST){cancelPlay();return;}setMonth(monthAt(monthNo(state.month)+1));},850);
+ sources();initMap();
+ $("normandy-zoom").addEventListener("click",()=>view("normandy"));
+ $("europe-zoom").addEventListener("click",()=>view("europe"));
+ $("fit-points").addEventListener("click",()=>{if(!state.map)return;const items=markersForDate();if(items.length){state.map.flyToBounds(window.L.latLngBounds(items.map(x=>[x.lat,x.lon])).pad(.25),{maxZoom:12});}});
+ $("layer-airfields").addEventListener("change",e=>{state.showAirfields=e.target.checked;drawMapMarkers();});
+ $("layer-events").addEventListener("change",e=>{state.showEvents=e.target.checked;drawMapMarkers();});
+ $("scene-range").max=String(STORY.length-1);
+ $("scene-range").addEventListener("input",e=>chooseStep(Number(e.target.value)));
+ $("scene-prev").addEventListener("click",()=>chooseStep(state.step-1));
+ $("scene-next").addEventListener("click",()=>chooseStep(state.step+1));
+ $("scene-play").addEventListener("click",()=>{
+  if(state.timer!==null){stop();return;}
+  if(state.step===STORY.length-1)state.step=-1;
+  $("scene-play").textContent="Ⅱ Pause";
+  state.timer=setInterval(()=>{if(state.step>=STORY.length-1){stop();return;}state.step++;state.selection={type:"scene",id:STORY[state.step].id};render();},2500);
  });
- $("europe-zoom").addEventListener("click",()=>{cancelPlay();state.zoom="europe";render();});
- $("normandy-zoom").addEventListener("click",()=>{cancelPlay();state.zoom="normandy";render();});
- $("return-to-normandy").addEventListener("click",()=>{cancelPlay();setMonth("1944-06");});
- document.querySelectorAll("[data-month]").forEach(b=>b.addEventListener("click",()=>{cancelPlay();setMonth(b.dataset.month);}));
- document.addEventListener("visibilitychange",()=>{if(document.hidden)cancelPlay();});
+ document.addEventListener("visibilitychange",()=>{if(document.hidden)stop();});
  render();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-window.GrandAirWarV76={setMonth,selectEvent,selectField,monthAt,monthNo,getMonthRow};
+window.GrandAirWarV76={chooseStep,chooseField,markersForDate,getStory:()=>STORY.slice(),getState:()=>({step:state.step,date:asOf(),mode:state.mode})};
 })();
