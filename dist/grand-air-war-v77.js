@@ -74,8 +74,8 @@ function setupMap(){
      state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.canvas()});
      state.landLayer.addTo(state.map);
      if(state.landLayer.bringToBack)state.landLayer.bringToBack();
-     grid.bringToFront();
-     state.mapMarkers.bringToFront();
+     grid.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
+     state.mapMarkers.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
      $("map-fallback").hidden=true;
     }).catch(err=>{$("map-fallback").textContent="Historical coastline unavailable: "+err.message+". Numbered campaigns and research dossiers still work; modern borders will not be shown.";$("map-fallback").hidden=false;});
   }else{
