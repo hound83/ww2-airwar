@@ -264,49 +264,6 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       ]
     },
     {
-      "id": "barbarossa",
-      "name": "Operation Barbarossa",
-      "theater": "east",
-      "start": "1941-06",
-      "end": "1941-12",
-      "focus": {
-        "lat": 53.8,
-        "lng": 27.6,
-        "radiusKm": 800
-      },
-      "participants": [
-        "Luftwaffe",
-        "Soviet VVS",
-        "Romanian and Finnish aviation"
-      ],
-      "objective": "German surprise attacks sought to destroy Soviet aircraft on western airfields and support the three army-group offensives.",
-      "turningPoint": "On 22 June 1941 the VVS took enormous losses on the ground. Loss categories differ by historical record and German claims.",
-      "consequence": "Soviet aviation survived and rebuilt, eventually contesting German air power.",
-      "sources": [
-        "barbarossa"
-      ],
-      "facts": [
-        {
-          "label": "Soviet aircraft lost in initial German attack",
-          "value": 1200,
-          "unit": "aircraft · at least",
-          "scope": "Soviet historical estimate, initial attack on 22 June; not whole summer losses",
-          "sourceId": "barbarossa",
-          "date": "1941-06-22",
-          "type": "lower-bound"
-        }
-      ],
-      "moments": [
-        {
-          "date": "1941-06-22",
-          "title": "Invasion and airfield surprise attacks",
-          "place": "Belarus / western border",
-          "lat": 53.8,
-          "lng": 25.5
-        }
-      ]
-    },
-    {
       "id": "malta",
       "name": "Siege and air battle of Malta",
       "theater": "med",
@@ -364,6 +321,49 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "place": "Malta",
           "lat": 35.93,
           "lng": 14.4
+        }
+      ]
+    },
+    {
+      "id": "barbarossa",
+      "name": "Operation Barbarossa",
+      "theater": "east",
+      "start": "1941-06",
+      "end": "1941-12",
+      "focus": {
+        "lat": 53.8,
+        "lng": 27.6,
+        "radiusKm": 800
+      },
+      "participants": [
+        "Luftwaffe",
+        "Soviet VVS",
+        "Romanian and Finnish aviation"
+      ],
+      "objective": "German surprise attacks sought to destroy Soviet aircraft on western airfields and support the three army-group offensives.",
+      "turningPoint": "On 22 June 1941 the VVS took enormous losses on the ground. Loss categories differ by historical record and German claims.",
+      "consequence": "Soviet aviation survived and rebuilt, eventually contesting German air power.",
+      "sources": [
+        "barbarossa"
+      ],
+      "facts": [
+        {
+          "label": "Soviet aircraft lost in initial German attack",
+          "value": 1200,
+          "unit": "aircraft · at least",
+          "scope": "Soviet historical estimate, initial attack on 22 June; not whole summer losses",
+          "sourceId": "barbarossa",
+          "date": "1941-06-22",
+          "type": "lower-bound"
+        }
+      ],
+      "moments": [
+        {
+          "date": "1941-06-22",
+          "title": "Invasion and airfield surprise attacks",
+          "place": "Belarus / western border",
+          "lat": 53.8,
+          "lng": 25.5
         }
       ]
     },
@@ -448,6 +448,48 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "place": "Stalingrad",
           "lat": 48.72,
           "lng": 44.52
+        }
+      ]
+    },
+    {
+      "id": "reichdefense",
+      "name": "Defence of the Reich",
+      "theater": "reich",
+      "start": "1943-01",
+      "end": "1945-04",
+      "focus": {
+        "lat": 52,
+        "lng": 10.5,
+        "radiusKm": 480
+      },
+      "participants": [
+        "Luftwaffe Reich",
+        "RAF Bomber Command",
+        "USAAF Eighth Air Force",
+        "USAAF Fifteenth Air Force"
+      ],
+      "objective": "Germany's air defence attempted to intercept the growing Allied bombing offensive, defending cities, factories and fuel production.",
+      "turningPoint": "The arrival of longer-range escort fighters changed the attrition battle; monthly Luftflotte Reich aircraft-loss returns allow measured tracking of aircraft destroyed by cause in 1943–44.",
+      "consequence": "Air defences, fuel, aircraft production and pilot replacement came under increasing pressure. The original German figures are command returns and cannot be converted to Allied victory claims.",
+      "sources": [
+        "rafLosses",
+        "bigWeek"
+      ],
+      "facts": [],
+      "moments": [
+        {
+          "date": "1944-02-20",
+          "title": "Big Week attacks aircraft industry",
+          "place": "Germany",
+          "lat": 51,
+          "lng": 11.7
+        },
+        {
+          "date": "1944-06-01",
+          "title": "Allied raids continue across Reich",
+          "place": "German industrial region",
+          "lat": 52,
+          "lng": 10.5
         }
       ]
     },
@@ -556,6 +598,41 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "place": "Southern Germany",
           "lat": 49.99,
           "lng": 10.23
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italian campaign air operations",
+      "theater": "med",
+      "start": "1943-09",
+      "end": "1945-04",
+      "focus": {
+        "lat": 42.7,
+        "lng": 12.3,
+        "radiusKm": 430
+      },
+      "participants": [
+        "RAF Mediterranean",
+        "USAAF Twelfth / Fifteenth",
+        "Luftwaffe Italy",
+        "Regia Aeronautica / Aeronautica Nazionale Repubblicana"
+      ],
+      "objective": "Allied forces based in Italy and the Mediterranean supported ground offensives, shipping protection and increasingly strategic raids into Europe.",
+      "turningPoint": "Italian airfield capture changed the range of USAAF and RAF bombers; Fifteenth Air Force could attack southern and central European targets.",
+      "consequence": "Mediterranean-based Allied forces fought a geographically distinct air war, overlapping strategic attacks on the Reich; use MTO group counts as theater context rather than local sorties.",
+      "sources": [
+        "raf1943",
+        "bigWeek"
+      ],
+      "facts": [],
+      "moments": [
+        {
+          "date": "1943-09-09",
+          "title": "Allied landing in southern Italy",
+          "place": "Salerno sector",
+          "lat": 40.67,
+          "lng": 14.78
         }
       ]
     },
