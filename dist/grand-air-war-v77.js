@@ -106,7 +106,30 @@ function renderDossier(){
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
  $("dossier-link-detail").innerHTML=norm?'<div class="dossier-links"><a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a></div>':'';
+ const evidence=relatedReport(c);
+ $("dossier-research-context").textContent=evidence.text;
+ $("dossier-analyze").disabled=!evidence.target;
+ $("dossier-analyze").textContent=evidence.target==="loss"?"Inspect German command returns":evidence.target==="vvs"?"Inspect dated VVS strength":evidence.target==="mto"?"Inspect USAAF MTO groups":"No comparable series for this month";
+
 }
+function relatedReport(c){
+ if(c.theater==="west"||c.theater==="reich"){
+  const cmd=c.theater==="reich"?"Reich":"Western Front";
+  const report=lossRows.find(x=>x.period===state.month&&x.theater===cmd);
+  return report?{target:"loss",command:cmd,text:"Context, NOT battle casualties: "+report.destroyed+" German aircraft destroyed (all causes), whole "+cmd+" reporting command, "+state.month+". Do not attribute this total to "+c.name+"."}
+   :{target:null,text:"No audited "+cmd+" command report for "+state.month+". Do not treat the absent observation as zero."};
+ }
+ if(c.theater==="east"){
+  const dated=P.soviet.find(r=>{const x=Legacy.at(r.i);return x.y+"-"+String(x.m+1).padStart(2,"0")===state.month;});
+  return {target:"vvs",text:dated?"Context only: "+dated.total+" VVS aircraft in all listed fronts and reserves, "+dated.date+". Not aircraft assigned to "+c.name+".":"Only some VVS front+reserve observation dates are verified, and none is automatically a "+c.name+" campaign total."};
+ }
+ if(c.theater==="med"){
+  const m=groupRows.find(x=>x.theater==="MTO"&&x.month===state.month);
+  return {target:"mto",text:m&&m.totalCombatGroups!==null?"Context: "+m.totalCombatGroups+" USAAF combat groups across MTO in "+state.month+"; not aircraft or sorties in this battle.":"The MTO group series is an entire-theater measurement, not a campaign loss ledger."};
+ }
+ return {target:null,text:"No geography-matched quantitative series verified here. Research gap; not zero."};
+}
+
 function renderCampaignList(){
  const rows=matching().sort((a,b)=>{const n=Number(active(b))-Number(active(a));return n||b.start.localeCompare(a.start);});
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
@@ -230,6 +253,11 @@ function init(){
  $("loss-command").addEventListener("change",e=>{state.lossCommand=e.target.value;state.lossMonth=state.month;renderLosses();drawMap();});
  $("loss-outcome").addEventListener("change",e=>{state.lossOutcome=e.target.value;renderLosses();});
  $("loss-window").addEventListener("change",e=>{state.lossWindow=e.target.value;renderLosses();});
+ $("dossier-analyze").addEventListener("click",()=>{
+  const c=D.campaigns.find(x=>x.id===state.selected),e=relatedReport(c);
+  if(e.target==="loss"){state.lossCommand=e.command;state.lossMonth=state.month;state.lossWindow="all";renderLosses();$("loss-lab").scrollIntoView({behavior:"smooth",block:"start"});}
+  else if(e.target==="vvs"||e.target==="mto"){state.forceSeries=e.target==="vvs"?"vvs":"usaaf";state.forceArea=e.target==="vvs"?"ETO":"MTO";state.forceSelected=state.month;renderForces();$("air-forces").scrollIntoView({behavior:"smooth",block:"start"});}
+ });
  $("download-losses").addEventListener("click",()=>download(getLossData().map(x=>({period:x.period,command:x.theater,enemyDestroyed:x.enemyDestroyed,otherOperationalDestroyed:x.otherOperationalDestroyed,nonOperationalDestroyed:x.nonOperationalDestroyed,enemyDamaged:x.enemyDamaged,otherOperationalDamaged:x.otherOperationalDamaged,nonOperationalDamaged:x.nonOperationalDamaged,missingIncludedInEnemyDestroyed:x.missing,sourceId:x.sourceId,page:x.page??""})),"grand-air-war-german-command-losses.csv"));
  $("force-series").addEventListener("change",e=>{state.forceSeries=e.target.value;state.forceSelected=state.month;renderForces();});
  $("force-area").addEventListener("change",e=>{state.forceArea=e.target.value;state.forceSelected=state.month;renderForces();});
