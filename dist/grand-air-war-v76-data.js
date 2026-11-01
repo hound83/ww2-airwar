@@ -126,6 +126,11 @@ window.GrandAirWarV76Data = {
       "name": "366th Fighter Group historical summary",
       "url": "https://www.armyaircorpsmuseum.org/366th_Fighter_Group.cfm",
       "note": "Describes 11 July fighter-bomber ground-support action near Saint-Lô; not a battle-wide claim total."
+    },
+    "cmh": {
+      "name": "U.S. Army Center of Military History: Utah Beach to Cherbourg",
+      "url": "https://history.army.mil/Publications/Publications-Catalog/Utah-Beach-to-Cherbourg/",
+      "note": "Campaign chronology of the Cotentin ground campaign, not a historical sortie or aircraft strength table."
     }
   },
   "monthly": [
