@@ -52,16 +52,28 @@
 - On each assignment: inspect latest `main`, PRs and docs. Avoid importing the 120 MB physics archive or dumping full source and test logs into the chat.
 
 
-## v7.6 Grand Air War experience — Normandy preview (31 Oct 2026)
+## v7.6 Grand Air War experience — Normandy preview, revised 1 Nov 2026
 
-The first bounded map-first implementation is now proposed in **feature/grand-air-war-v76-normandy**, separate from the unmerged 185-file quantitative research PR #5. It does **not** alter the v7.4 default page or the existing v7.5 preview, and it does **not** touch the physics simulator.
+**Status:** draft PR #6, independent from quantitative research PR #5, not deployed. Main v7.4 and opt-in v7.5 are unchanged. User screenshot review of the first preview exposed coarse unzoomable 110m geography, overlapping icon clusters and overly generic, misleading ETO/West statistics beside Normandy.
 
-- Entry route **`grand-air-war-v76.html`** (it will appear on GitHub Pages **only if/when this PR is merged**).
-- A reusable static Natural Earth coastline from the existing v7.5 map, detail/Europe map switch, clickable events and region-only grouped airfield markers.
-- Month navigation and playback from **July 1936 to May 1945**; detailed linked source content only **May–August 1944**. Other months intentionally show **coverage gaps**, not invented statistics.
-- Normandy event narrative: Overlord, selected ALGs moving into use, Cherbourg, Cobra, Falaise. Eight code-study airfields and **nine candidate group-airfield unit intervals** are a curated subset, not a full order of battle or historically geocoded airfield footprint.
-- Quantitative panels: May–Aug 1944 USAAF ETO combat groups (102,102,103,103) and Luftflotte 3 Western Front all-cause aircraft destroyed (343,998,783,868). The two denominators have **different geographic reporting populations** and are **not** a loss-exchange ratio.
-- Selectable sources with scope annotations and visible warnings against front-line, runway-coordinate, casualty and sortie invention.
-- Assets: `dist/grand-air-war-v76-data.js`, `dist/grand-air-war-v76.js`, `dist/grand-air-war-v76.css`. Regression: `node tests/grand-air-war-v76.cjs`.
+### What changed after visual criticism
+- New **Leaflet 1.9.4** interactive map with real modern OpenStreetMap raster tiles, pan and zoom controls, keyboard and touch support, map style and map-provider attribution. CDN scripts/styles pinned by SRI hashes. OSM tiles are fetched for the on-screen viewport only, without bulk preloading. Needs live internet connection.
+- **Pixel-distance dynamic marker clustering** at overview zooms. Click cluster to zoom into individual airfield records. The map has independent airfield and operations layer toggles, Normandy/Europe jumps, fit-visible-records and a responsive layout. Clustering never implies precise WWII runway coordinates.
+- Replaced the *illusory whole-war data playback* with a **dated, 16-scene Normandy history** (6 June–17 August 1944), event stepper and actual changes to field availability, dated Ninth Air Force unit movement and a documented 11 July 366th Fighter Group action near Saint-Lô. Whole-war research remains the goal but only Normandy is presented as detailed.
+- **Corrected a serious map mistake:** USAAF ALG **A-1 Saint-Pierre-du-Mont is at the Omaha Beach / Pointe du Hoc sector in Calvados**, NOT Cotentin. Eight selected airfields now have source-linked approximate published historical site coordinates; flags document conflicts (especially A-6 and A-10 typo in source pages).
+- **Date status fixed:** A-2 Johnson 19 June initial use versus specialist 22 June full operation; A-7 initial-use 24 June vs readiness 2 July; A-10 initial landing/use 19 June vs 26 June completion. Values remain available as distinct fields, with dated construction and some unit-arrival observations; no invented exact group arrival date from a month-only record.
+- Includes RAF **B-1 Asnelles (7 June)**, the 366th FG's 17 June crossing to A-1, P-47/P-51/P-38 and A-9's reconnaissance/depot role. The current visible scene on page open is **11 July 1944**, with eight known USAAF sites and a specific ground-support action. One-click D-Day reset and chronological selection.
+- Removed prominent **USAAF entire-ETO combat group** and **Luftflotte 3 full-command all-cause destruction** numbers from the Normandy UI: these are **not campaign totals**. The 6 June **14,674 Allied sorties / 5,656 RAF** are retained from the RAF Museum with a dated denominator. Missing localized measures are not filled in.
+- Eight fields, nine originally transcribed source-row group/field candidates, 16 dated narrative scenes. This is **still not** the full order of battle, all RAF/USAAF/VVS units or a monthly series across Europe.
 
-**Acceptance/release gates:** Review the dedicated page in actual Chromium/Playwright (desktop/mobile, keyboard/touch, map click targets, time playback), run the existing tests and the v7.6 test, and review the code-study station candidate statuses before merging. This feature **does not yet satisfy** the grander multi-nation or whole-war map coverage ambitions. Next milestone after approval: improve Normandy's exact station positions and integrate trusted dated RAF and Luftwaffe unit-operation records without mixing historical populations.
+### Verification, guardrails and next step
+- GitHub Actions **Atlas core checks** and `tests/grand-air-war-v76.cjs` completed **successfully on 1 Nov** (run `41256575169`, prior to documentation-only edits).
+- Regression test asserts exact A-1 location sector, differences between initial use and completion, 16 chronological scenes, source keys, Leaflet controls, clustering behaviour hooks, CSS and linked assets, source denominators. Tests inspect API/code/data but **do not prove browser visual rendering**.
+- **Still required:** human browser visual review on PC and phone with live tile connections, pan, zoom, click on dense A-1/A-2/A-3 cluster, step to Falaise, and interaction/mobile checks. If OSM tile traffic grows, replace the nonprofit community tile service with an appropriate hosted or self-hosted OSM provider. Do not merge until verified.
+- Next substantive research target: historically verified RAF B-coded fields, dated unit stations/actual operations, and air-group moves beyond Normandy; only include sourced figures with matching geography and date.
+
+### Sources and implementation
+- Site entry: `grand-air-war-v76.html` on PR #6's branch; GitHub Pages route only after merge.
+- Site code: `dist/grand-air-war-v76.js`, `dist/grand-air-war-v76.css`, `dist/grand-air-war-v76-data.js`.
+- Principal current references: RAF Museum 1944 timeline; National Museum of the USAF Overlord; 1988 USAAF Johnson European Airfields; D-Day Overlord individual ALG pages; Anciens Aérodromes A-1; 366th Fighter Group combat history. Each scene and field holds its evidence links.
+- No changes to the aircraft physics repository or its embed. No verified airfield survey, historic 1944 borders or missing day-based sorties invented.
