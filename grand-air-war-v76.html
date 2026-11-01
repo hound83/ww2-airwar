@@ -1,64 +1,40 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09131b">
-<meta name="description" content="Grand Air War v7.6: explore a historical map and timeline of the Normandy air campaign with explicitly scoped USAAF and Luftwaffe records.">
-<title>Grand Air War · Normandy 1944 · v7.6 preview</title>
+<meta name="description" content="Grand Air War historical Normandy field notebook: detailed zoomable map, dates, fighter groups, airfield construction, sources.">
+<title>Grand Air War · Normandy air war · research preview</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/grand-air-war-v76.css">
-<script defer src="./dist/atlas-v75-map.js"></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="./dist/grand-air-war-v76-data.js"></script>
 <script defer src="./dist/grand-air-war-v76.js"></script>
-</head>
-<body>
-<header class="mast"><div class="wrap mast__inner">
- <div class="brand"><div class="brand__mark" aria-hidden="true">✦</div><div>Grand Air War<span class="brand__sub">European Air War Atlas · 1936–1945</span></div></div>
- <nav class="mast__links" aria-label="Project links"><a href="./">Current Atlas</a><a href="https://github.com/hound83/ww2-airwar" rel="noopener noreferrer" target="_blank">Research repository</a><span class="version">v7.6 preview</span></nav>
-</div></header>
+</head><body>
+<header class="mast"><div class="wrap mast__inner"><div class="brand"><div class="brand__mark" aria-hidden="true">✦</div><div>Grand Air War<span class="brand__sub">European Air War Atlas · 1936–1945</span></div></div><nav class="mast__links" aria-label="Project links"><a href="./">Current Atlas</a><a href="https://github.com/hound83/ww2-airwar/pull/6" rel="noopener noreferrer" target="_blank">Research PR #6</a><span class="version">v7.6 research</span></nav></div></header>
 <main class="wrap">
- <section class="intro" aria-labelledby="page-title">
-  <div><div class="eyebrow">Explore the war · theatre map · historical sources</div><h1 id="page-title">The air war <em>over Europe.</em></h1><p>Move through the years and examine a single campaign in depth. Our first field notebook follows Normandy, May–August 1944: landings, advancing airfields and the measurable cost of operations. Every number keeps its original reporting scope.</p></div>
-  <div class="intro__aside">A map is not a complete order of battle. Locations, month windows and operating strength carry different evidence standards.</div>
- </section>
- <div class="commandbar">
-  <div class="commandbar__left"><span class="kicker">Explore</span><button class="choice is-active" id="normandy-zoom" aria-pressed="true">Normandy detail</button><button class="choice" id="europe-zoom" aria-pressed="false">European overview</button></div>
-  <div class="commandbar__right"><span class="fieldnote" id="coverage-label">Featured campaign · Normandy 1944</span><button class="choice" id="return-to-normandy">↺ Return to Overlord</button></div>
- </div>
- <section class="stage" aria-label="Interactive campaign map and selected history">
-  <div class="mapbox" id="map-wrapper">
-   <div class="mapbox__header"><span id="map-strap">CAMPAIGN FIELD NOTEBOOK</span><strong id="map-title">Normandy · June 1944</strong></div>
-   <div id="map-surface" aria-label="Historical campaign area with navigable event points and regional airfield clusters"></div>
-   <div class="mapbox__footer"><div class="map-legend"><span><i class="swatch"></i>Historical event</span><span><i class="swatch airfield"></i>Airfield-code records (regional)</span><span><i class="swatch region"></i>Approximate localities, not runway coordinates</span></div><span class="mapbox__warning">Modern coastline · no inferred 1944 front line</span></div>
-  </div>
-  <aside class="inspector" id="inspector" aria-live="polite" aria-label="Selected historical event">
-    <div class="inspector__top"><span>Selected record</span><span class="inspector__date" id="inspect-date">6 Jun 1944</span></div>
-    <div><h2 id="inspect-title">Operation Overlord begins</h2><p class="place" id="inspect-place">Normandy coast</p></div>
-    <p class="summary" id="inspect-summary">Allied operations open across Normandy.</p>
-    <div class="inspect-impact" id="inspect-impact" hidden><strong id="inspect-impact-value"></strong><div><b id="inspect-impact-label"></b><small id="inspect-impact-sub"></small></div></div>
-    <div class="evidence"><strong id="inspect-status">Dated historical context</strong><p id="inspect-caution"></p></div>
-    <div class="source-links" id="inspect-sources"></div>
-    <p class="inspector__action">Select an event marker, a month or an airfield card to inspect the historical source record.</p>
-  </aside>
- </section>
- <section class="timeline" aria-label="Historical time machine">
-   <div class="timeline__head"><h2>EUROPEAN WAR CHRONOLOGY <span class="fieldnote">· 1936–1945</span></h2><div class="time-controls"><button class="time-btn" id="time-prev" aria-label="Previous month">‹</button><output class="time-label" id="time-display" for="time-range">June 1944</output><button class="time-btn" id="time-next" aria-label="Next month">›</button><button class="time-btn" id="time-play" aria-label="Play months">▶ Play</button></div></div>
-   <input id="time-range" class="time-slider" type="range" min="0" max="106" step="1" value="95" aria-label="Select a historical month">
-   <div class="time-ticks" aria-hidden="true"><span>1936</span><span>1939</span><span>1941</span><span>1943</span><span>1945</span></div>
-   <div class="time-presets" id="presets"><button class="preset" data-month="1940-07">Battle of Britain</button><button class="preset" data-month="1941-06">Barbarossa</button><button class="preset" data-month="1944-02">Big Week</button><button class="preset is-active" data-month="1944-06">D-Day</button><button class="preset" data-month="1944-07">Cobra</button><button class="preset" data-month="1944-08">Falaise</button><button class="preset" data-month="1945-01">Bodenplatte</button></div>
-   <div class="timeline__hint">The slider covers the whole European-war timeline. Detailed linked map, units and numerical series are currently verified for the Normandy example only. Other periods are shown as research gaps, never zeros.</div>
- </section>
- <div class="section-heading"><h2>What changed this month?</h2><p id="metrics-explainer">Two non-comparable source populations, plus a count of listed local airfield-code records.</p></div>
- <section class="metrics" id="metrics" aria-label="Month-specific historical observations">
-  <article class="metric"><div class="metric__label">USAAF groups · entire ETO</div><div class="metric__value" id="metric-groups">102</div><div class="metric__note">USAAF combat groups in the European theater, not aircraft and not Normandy-only.</div><div class="metric__source">USAAF Statistical Digest · Table 2</div></article>
-  <article class="metric"><div class="metric__label">Luftflotte 3 · aircraft destroyed</div><div class="metric__value" id="metric-losses">998</div><div class="metric__note">All causes, West command-wide monthly total. Not Allied victory claims.</div><div class="metric__source">RAF AHB · captured German returns</div></article>
-  <article class="metric"><div class="metric__label">Selected USAAF ALG codes</div><div class="metric__value" id="metric-fields">8</div><div class="metric__note">A research subset of airfield-code entries open by this month's end, not a complete Allied airfield count.</div><div class="metric__source">USAF 1988 code study · pp.13–14</div></article>
- </section>
- <section class="lower" aria-label="Airfield source records and report trend">
-  <div class="archive"><h3>From the coast to forward airfields</h3><p id="airfield-help">Select a source-backed airfield-code record to see its reported unit period. These are not exact surveyed map pins.</p><div class="airfield-list" id="airfield-list" aria-live="polite"></div></div>
-  <div class="flow-panel"><h3>The operational cost · Western German returns</h3><p>Monthly aircraft destroyed in Luftflotte 3, all reported causes, May–August 1944. Context for the campaign, <strong>not</strong> a Normandy-only loss total.</p><div class="bars" id="loss-bars" role="img" aria-label="May to August 1944 Luftflotte 3 reported monthly aircraft destructions"></div><p class="smallprint">Different record universes: German aircraft destroyed versus USAAF combat groups in the ETO. These numbers cannot form a loss ratio. Gaps elsewhere in the war are unavailable, not zero.</p></div>
- </section>
- <section class="sources" aria-labelledby="sources-title"><div class="section-heading"><h2 id="sources-title">Open the evidence</h2><p>Trace each displayed observation to the archival or official statistical source. The map is a curated research example, not a reconstruction of all wartime flight operations.</p></div><div class="sources__grid" id="source-register"></div></section>
- <footer class="foot">Grand Air War · v7.6 research preview. No fabricated fronts, airfield runway coordinates, sortie totals or missing-month observations. <a href="./">Back to the current Atlas</a>.</footer>
-</main>
-</body></html>
+<section class="intro"><div><div class="eyebrow">The air war, one documented operation at a time</div><h1>Normandy: <em>from Britain to the front.</em></h1><p>6 June – August 1944. Explore how Allied air operations moved onto temporary airfields, which units used them, and how the offensive changed. Map points come with dated evidence, uncertainty and original sources.</p></div><div class="intro__aside">First complete example of the Grand Air War approach. <strong>Not</strong> a full order of battle, all-air-force loss count or reconstructed 1944 front line.</div></section>
+<div class="commandbar"><div class="commandbar__left"><span class="kicker">Map view</span><button type="button" class="choice is-active" id="normandy-zoom">Normandy</button><button type="button" class="choice" id="europe-zoom">Europe</button><button type="button" class="choice" id="fit-points">Fit known places</button></div><div class="commandbar__right"><label class="layer-choice"><input id="layer-airfields" type="checkbox" checked>Airfields <span class="mini-key field">A</span></label><label class="layer-choice"><input id="layer-events" type="checkbox" checked>Operations <span class="mini-key operation">●</span></label><span class="fieldnote" id="coverage-label">Dated Normandy sequence</span></div></div>
+<section class="stage" aria-label="Detailed historical map and linked evidence">
+ <div class="mapbox" id="map-wrapper"><div class="mapbox__header"><span>Interactive modern base map · historic records</span><strong id="map-title">Normandy · June 1944</strong></div><div id="map-surface" role="region" aria-label="Interactive detailed Normandy map, zoom with plus and minus, drag to pan" tabindex="0"></div><div id="map-failure" class="map-failure" hidden>Detailed map tiles or the map library could not be loaded. The event chronology and airfield records below remain available. Try opening the preview in a regular browser tab.</div></div>
+ <aside class="inspector" id="inspector" aria-live="polite" aria-label="Selected historical record"><div class="inspector__top"><span id="inspect-type">DOCUMENTED EVENT</span><span class="inspector__date" id="inspect-date">6 June 1944</span></div>
+ <h2 id="inspect-title">Operation Overlord</h2><p class="place" id="inspect-place">Normandy</p>
+ <p class="inspector__lead" id="inspect-headline">Air power before airfields</p><p class="summary" id="inspect-summary"></p>
+ <div class="inspect-impact" id="inspect-impact" hidden><strong id="inspect-impact-value"></strong><div><b id="inspect-impact-label"></b><small id="inspect-impact-sub"></small></div></div>
+ <div class="consequence"><span>WHAT CHANGED?</span><p id="inspect-consequence"></p></div>
+ <div class="evidence"><strong id="inspect-status">Evidence and accuracy</strong><p id="inspect-caution"></p></div><div class="source-links" id="inspect-sources"></div>
+ </aside>
+</section>
+<div class="map-foot"><span>Map: © OpenStreetMap contributors · present-day roads and coastline, <strong>not</strong> a 1944 operational map. Field coordinates are approximate published historical positions.</span><span>Zoom, drag, or select a code below. Close markers group together until you zoom in.</span></div>
+<section class="timeline" aria-label="Dated Normandy air war chronology">
+<div class="timeline__head"><div><div class="eyebrow">Historical sequence · individual dated records</div><h2 id="scene-phase">The invasion and first airfields</h2></div><div class="time-controls"><button type="button" class="time-btn" id="scene-prev" aria-label="Previous event">‹</button><output id="scene-counter" class="time-label">1 / 16</output><button type="button" class="time-btn" id="scene-next" aria-label="Next event">›</button><button type="button" class="time-btn" id="scene-play">▶ Follow events</button></div></div>
+<input type="range" id="scene-range" class="time-slider" min="0" max="15" step="1" value="0" aria-label="Select dated Normandy campaign record">
+<div class="time-ticks"><span>6 June · Invasion</span><span>Late June · Forward bases</span><span>July · Tactical support</span><span>August · Breakout</span></div>
+<p class="timeline__hint">The map displays the situation <strong>as of this selected date</strong>. New field symbols appear when an opening/ready date is supported. A group station range reported only by month is not treated as an exact arrival date.</p>
+</section>
+<section class="story-layout" aria-label="Chronological narrative and airfield station register">
+<div class="story-panel"><div class="section-heading"><h2>The chronology, not random facts</h2><p>Select any record to update the map, inspect its actual historical consequences and read the supporting source.</p></div><div class="story-steps" id="story-list"></div></div>
+<div class="archive"><div class="section-heading"><h2>Forward airfields as of <span id="asof-date">6 Jun</span></h2><p id="airfield-help">8 selected USAAF airfield histories, plus the RAF B-1 example. This is a research subset, not a complete inventory.</p></div><div class="phase-progress"><span id="field-progress-value">0 / 8</span><span>selected USAAF sites usable or completed by the selected date</span></div><div class="airfield-list" id="airfield-list"></div></div>
+</section>
+<section class="limitations"><h3>What the evidence does and does not say</h3><p>The earlier preview showed whole-ETO USAAF group counts and command-wide German losses as prominent Normandy figures. Those populations are <strong>not Normandy-specific</strong>, so they have been removed from the campaign headline. Dated D-Day sorties, unit arrivals and researched landing-ground activity are shown only where a source supports them. Incomplete unit dates and conflicting field-opening conventions remain explicit.</p><details><summary>Remaining research questions and map precision</summary><ul id="limitations-list"></ul></details></section>
+<section class="sources"><div class="section-heading"><h2>Evidence library</h2><p>Open a record above for its specific sources. These are the main research references for this preview.</p></div><div id="source-register" class="sources__grid"></div></section>
+<footer class="foot">Grand Air War v7.6 · Normandy research preview. Existing v7.4/v7.5 and the flight-physics repository remain unchanged. Modern geographical map tiles need an internet connection.</footer>
+</main></body></html>
