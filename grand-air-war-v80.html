@@ -1,0 +1,84 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09131b"><meta name="description" content="Grand Air War v8.0: European WWII air campaigns, source-backed loss reports, force data and interactive map 1936–1945.">
+<title>Grand Air War v8.0 · European Air War Overview</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="./dist/grand-air-war-v77.css">
+<link rel="stylesheet" href="./dist/grand-air-war-v80.css">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="./dist/model-v3-data.js"></script><script defer src="./dist/atlas-v7-data.js"></script>
+<script defer src="./dist/atlas-v71-data.js"></script><script defer src="./dist/atlas-v72-data.js"></script>
+<script defer src="./dist/atlas-v73-data.js"></script><script defer src="./dist/atlas-v74-data.js"></script>
+<script defer src="./dist/grand-air-war-v77-groups.js"></script>
+<script defer src="./dist/grand-air-war-v77-campaigns.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script defer src="./dist/grand-air-war-v77.js"></script>
+<script defer src="./dist/grand-air-war-v80-german.js"></script>
+<script defer src="./dist/grand-air-war-v80-lab.js"></script>
+</head><body>
+<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./">Current Atlas</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>v8.0 Preview</b></nav></div></header>
+<main class="shell">
+<section class="intro"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Where were the major campaigns, why were they fought, what did they cost and how did air power change? Select a month, explore the map, follow the historical sequence and open the actual wartime reporting figures.</p></section>
+<section class="timebar" aria-label="Date and theatre controls">
+<div class="time-top"><div><span class="eyebrow">SELECT A HISTORICAL MONTH</span><output id="date-display" for="date-slider">June 1944</output></div><div class="time-actions"><button type="button" id="prev-month" aria-label="Previous month">‹</button><button type="button" id="next-month" aria-label="Next month">›</button><button type="button" id="play-time">▶ Play</button><button type="button" id="jump-today">June 1944</button></div></div>
+<input type="range" id="date-slider" min="0" max="106" step="1" value="95" aria-label="Historical month from July 1936 through May 1945">
+<div class="ticks"><span>1936</span><span>1939</span><span>1941</span><span>1943</span><span>1945</span></div>
+<div class="toolbar"><label>Front / reporting area <select id="theater-select"><option value="all">All European theatres</option><option value="west">Western Front</option><option value="reich">Defence of the Reich</option><option value="east">Eastern Front</option><option value="med">Italy & Mediterranean</option><option value="north">Northern Europe</option></select></label><label>Find a campaign <input type="search" id="campaign-search" placeholder="Battle, country, mission, air force…" autocomplete="off"></label><label class="tick-control"><input type="checkbox" id="all-campaigns">Show inactive campaigns</label><button type="button" class="subtle" id="fit-map">Fit map</button><span id="coverage-label" class="coverage-label">Campaigns & dated research</span></div>
+</section>
+<section class="mainstage" aria-label="Campaign geography and battle dossier">
+ <div class="map-panel"><div class="map-top"><div class="eyebrow">HISTORICAL THEATER CHART · COASTLINES ONLY</div><strong id="map-heading">Air campaigns active in June 1944</strong></div><div id="campaign-map" tabindex="0" role="region" aria-label="Interactive Europe map with clickable campaign centres and wartime reporting areas"></div><div id="map-fallback" hidden>Historical coastline geometry could not be loaded. The campaign locations remain accessible; the map intentionally does not fall back to modern political borders.</div><div class="map-bottom"><span><i class="marker-swatch campaign"></i> Numbered campaign centres · select to inspect</span><span>Detailed Natural Earth land outlines · no modern borders or labels</span></div></div>
+ <aside class="dossier" aria-live="polite" aria-label="Campaign historical analysis">
+  <div class="dossier-label" id="dossier-meta">BATTLE DOSSIER · WESTERN FRONT</div><h2 id="dossier-title">Normandy · Overlord</h2><p id="dossier-dates" class="period"></p>
+  <div class="label">WHY IT WAS FOUGHT</div><p id="dossier-aim"></p><div class="label">WHAT CHANGED / WHY</div><p id="dossier-turn"></p><div class="label">OUTCOME</div><p id="dossier-outcome"></p>
+  <div class="dossier-forces" id="dossier-forces"></div><h3>Documented findings</h3><div id="dossier-facts" class="fact-grid"></div>
+  <div class="dossier-links" id="dossier-sources"></div><div id="dossier-link-detail"></div><div class="dossier-research-jump"><p id="dossier-research-context"></p><button type="button" id="dossier-analyze">Examine related source reports</button></div>
+ </aside>
+</section>
+<section class="two-columns">
+ <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY</span><h2>Where and when did it happen?</h2></div><span id="campaign-count"></span></div><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
+ <article class="pane"><div class="pane-head"><div><span class="eyebrow">EVIDENCE TIMELINE</span><h2>Events, not just campaign names</h2></div><span id="moment-count"></span></div><div id="moment-list" class="record-list"></div></article>
+</section>
+<section class="section-head" id="loss-lab"><span class="eyebrow">RESEARCH LABORATORY 01</span><h2>German aircraft losses: how, where, when?</h2><p>These are captured German <strong>command-level reports</strong>, not aircraft shot down over an individual battle. Inspect the recorded destruction causes, damaged aircraft and reporting boundaries without inventing absent Eastern Front or Italian totals.</p></section>
+<section class="analysis-grid"><div class="pane wide"><div class="laboratory-toolbar"><label>Original reporting command<select id="loss-command"><option value="Western Front">Luftflotte 3 / West</option><option value="Reich">Luftflotte Reich</option></select></label><label>Outcome <select id="loss-outcome"><option value="destroyed">Aircraft destroyed</option><option value="damaged">Aircraft damaged</option></select></label><label>Timeline <select id="loss-window"><option value="all">All recorded months</option><option value="1943">1943</option><option value="1944">1944</option></select></label><button id="download-losses" type="button" class="subtle">Export CSV</button></div>
+<div id="loss-chart" class="loss-chart" role="region" aria-label="Source-recorded monthly German aircraft losses by cause"></div><p class="method">Chart bars are stacked into enemy action, other operational and non-operational. <strong>Missing aircraft are already contained in enemy-action destroyed</strong>; they are not added again. Gaps are blank, never zero.</p>
+<div id="loss-detail" class="month-detail"><p>Select a bar to inspect its original values.</p></div></div>
+<div class="pane thin"><div class="pane-head"><div><span class="eyebrow">GEOGRAPHIC COVERAGE</span><h2>What's actually measured?</h2></div></div><div id="coverage-matrix"></div><p class="method">September 1944 changes the West command designation and territory. Treat every entry as a source-defined population, not an identical geographical area through time.</p></div></section>
+<section class="section-head" id="german-war-lab">
+  <span class="eyebrow">RESEARCH LABORATORY 02 · GERMANY</span>
+  <h2>The Luftwaffe under pressure</h2>
+  <p>Production, experienced pilots and operational readiness tell three very different stories. Explore original recorded German fighter-pilot losses and the Reich's dated readiness reports, compare with aircraft output and fuel-production capacity. <strong>Different source populations are never silently combined.</strong></p>
+ </section>
+ <section class="german-workbench">
+ <div class="german-menu" role="group" aria-label="German air-force source series">
+  <button class="german-mode active" type="button" data-german-mode="pilots">Fighter pilots lost</button>
+  <button class="german-mode" type="button" data-german-mode="readiness">Fighters available</button>
+  <button class="german-mode" type="button" data-german-mode="production">Aircraft output</button>
+  <button class="german-mode" type="button" data-german-mode="fuel">Aviation fuel capacity</button>
+  <button class="german-mode" type="button" data-german-mode="unit">JG 53 case study</button>
+ </div>
+ <div class="german-main">
+  <article class="pane german-data">
+    <div class="pane-head"><div><span class="eyebrow" id="german-overline">German fighter losses</span><h2 id="german-series-title">Fighter-pilot attrition</h2></div><button id="german-export" class="subtle" type="button">Export German data</button></div>
+    <p class="german-subtitle" id="german-description">Monthly casualties reported for German single-engine fighter pilots. A lost pilot is not a destroyed aircraft.</p>
+    <div id="german-chart" class="loss-chart" role="region" aria-label="Source-recorded German pilot and aircraft data"></div>
+    <p id="german-caution" class="method"></p>
+  </article>
+  <aside class="pane german-findings" aria-live="polite">
+    <div class="eyebrow" id="german-observation-label">OBSERVED RECORD</div>
+    <h3 id="german-observation-date">May 1944</h3>
+    <div id="german-observation" class="german-observation"></div>
+    <div id="german-connection" class="german-connection"></div>
+    <div id="german-sources" class="dossier-links"></div>
+  </aside>
+ </div>
+ <div class="german-proof"><strong>April 1944 cross-check:</strong> Galland reported <b>489 fighter pilots lost</b> and <b>396 replacement pilots</b>. A separate scholarly casualty table reports <b>447 lost</b> for April. Both are retained with their own definitions. Neither is presented as the number of aircraft destroyed.</div>
+ </section>
+ <section class="section-head" id="air-forces">
+ <span class="eyebrow">RESEARCH LABORATORY 03 · ALLIED EVIDENCE</span>
+ <h2>Allied force records and production</h2>
+ <p>Independent observations of USAAF combat-group organizations, Soviet VVS front and reserve aircraft, and worldwide American production. Select one population at a time. They are not a combined Allied aircraft count.</p><span class="eyebrow">RESEARCH LABORATORY 03 · ALLIES</span><h2>Allied force evidence</h2><p>Move between <strong>USAAF combat groups in ETO/MTO</strong>, <strong>Soviet VVS front+reserve snapshots</strong> and <strong>US worldwide factory acceptances</strong>. These describe different populations and cannot be added into a fictional Europe-wide aircraft total.</p></section>
+<section class="pane force-pane"><div class="laboratory-toolbar"><label>Historical series <select id="force-series"><option value="usaaf">USAAF combat groups · ETO/MTO</option><option value="vvs">Soviet VVS · front and reserves</option><option value="production">USAAF factory acceptances · worldwide</option></select></label><label id="force-area-wrap">Reporting area <select id="force-area"><option value="ETO">European Theater (ETO)</option><option value="MTO">Mediterranean Theater (MTO)</option></select></label><label id="force-metric-wrap">Metric <select id="force-metric"><option value="totalCombatGroups">All combat groups</option><option value="fighterGroups">Fighter groups</option><option value="heavyBombardmentGroups">Heavy bomber groups</option><option value="mediumAndLightBombardmentGroups">Medium/light bomber groups</option><option value="troopCarrierGroups">Troop carrier groups</option><option value="reconnaissanceGroups">Reconnaissance groups</option></select></label><button type="button" id="download-force" class="subtle">Export selected data</button></div>
+<div class="force-grid"><div><div id="force-chart" class="loss-chart" role="region" aria-label="Historical air force source series graph"></div><p class="method" id="force-caveat"></p></div><div id="force-detail" class="month-detail"></div></div></section>
+<section class="sources-section"><div class="section-head"><span class="eyebrow">EVIDENCE & OPEN QUESTIONS</span><h2>Research is a feature, not a footnote.</h2><p>The record exists only where a named wartime or official postwar publication establishes that observation. Each claim can be opened and checked. The Atlas also shows where we cannot yet establish a loss denominator or a historical unit position.</p></div><div class="source-summary" id="dataset-summary"></div><p class="method">Historical borders are deliberately absent until a dated, source-validated 1936–1945 border series can be implemented. Terrain/coastlines are physical geography, not a wartime front-line reconstruction.</p><details><summary>Source catalogue, interpretation rules and coverage gaps</summary><div class="source-catalogue" id="source-catalogue"></div></details></section>
+<footer class="foot">Grand Air War v8.0 research preview · No fabricated borders, aircraft positions, kill totals or zero-filled gaps. <a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Inspect the dataset and implementation.</a></footer>
+</main></body></html>
