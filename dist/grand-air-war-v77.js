@@ -204,7 +204,7 @@ function download(rows,filename){
  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
 function renderSources(){
- $("dataset-summary").innerHTML=[["19", "Curated campaigns incl. continuous air-war areas"],[String(lossRows.length),"Original German command-month loss totals"],[String(groupRows.length),"ETO/MTO combat group-month records"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
+ $("dataset-summary").innerHTML=[[String(D.campaigns.length), "Curated campaigns incl. pre-war Spanish aviation"],[String(lossRows.length),"Original German command-month loss totals"],[String(groupRows.length),"ETO/MTO combat group-month records"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
  const catalogue=Object.entries(D.sources).map(([k,s])=>({name:s.title,url:s.url,detail:s.class})).concat(Object.values(sourceIndex).map(s=>({name:s.title,url:s.url,detail:"Captured German wartime loss returns"}))).filter(x=>x.url);
  const unique=new Map(catalogue.map(x=>[x.url,x]));
  $("source-catalogue").innerHTML=[...unique.values()].map(x=>'<article><b>'+esc(x.name)+'</b><small>'+esc(x.detail)+'</small><a target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">Open original ↗</a></article>').join("");
