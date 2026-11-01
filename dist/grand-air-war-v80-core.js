@@ -164,7 +164,7 @@ function relatedReport(c){
 function renderCampaignList(){
  const rows=matching().sort((a,b)=>{const n=Number(active(b))-Number(active(a));return n||b.start.localeCompare(a.start);});
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
- $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+esc(c.participants.slice(0,2).join(" vs "))+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+esc(c.participants.slice(0,2).join(" vs "))+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
 function renderMoments(){
