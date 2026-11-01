@@ -44,7 +44,7 @@ for(const e of D.story){
  assert.ok(e.headline&&e.detail&&e.effect,"non-substantive story event: "+e.id);
 }
 assert.ok(D.story.find(e=>e.id==="overlord").detail.includes("14,674"),"dated sortie evidence lost");
-assert.ok(D.reviewFlags.some(x=>x.includes("different")));
+assert.ok(D.reviewFlags.some(x=>x.includes("First aircraft use")&&x.includes("distinct")));
 assert.ok(D.reviewFlags.some(x=>x.includes("coordinates")||x.includes("Coordinates")));
 const html=read("grand-air-war-v76.html"),js=read("dist/grand-air-war-v76.js"),css=read("dist/grand-air-war-v76.css");
 for(const asset of ["./dist/grand-air-war-v76-data.js","./dist/grand-air-war-v76.js","./dist/grand-air-war-v76.css"]){
