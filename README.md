@@ -2,9 +2,12 @@
 
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
-**[Open Atlas](https://hound83.github.io/ww2-airwar/)** · **[Preview the developing v7.5 interface](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
+**[Open Atlas](https://hound83.github.io/ww2-airwar/)** · **[Preview the developing v7.5 interface](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[v7.6 Normandy feature route (after PR merge)](grand-air-war-v76.html)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
 
 > **Current status (30 October 2026):** The default site remains the v7.4 presentation; the opt-in v7.5 preview is a work in progress. The aircraft simulator view embeds an independently hosted-in-this-repository **frozen research physics v2.4 page**. This is not a validated final aircraft-performance model. No v3 physics results have been integrated.
+
+
+> **v7.6 branch preview (31 October 2026):** A proposed, standalone **map-first Grand Air War Normandy** experience exists at `grand-air-war-v76.html` on the feature branch. It is **not yet live** on GitHub Pages and does not replace the public v7.4 default or v7.5 preview. Month navigation spans 1936–45, but mapped historical evidence currently focuses May–August 1944; no missing data are manufactured. See [scope and limitations](docs/STATUS_AND_NEXT_STEPS.md).
 
 ## Start here (maintainers and new chats)
 

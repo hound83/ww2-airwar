@@ -18,3 +18,6 @@ try{
  if(path.dirname(path.resolve(tmp))!==parent||!path.basename(tmp).startsWith('airwar-build-'))throw Error('Unexpected temporary cleanup path');
  fs.rmSync(tmp,{recursive:true,force:true});
 }
+// The standalone v7.6 page is not in build-web's generated root entrypoint.
+// Validate its independent source/asset graph alongside normal reproducibility checks.
+require('./grand-air-war-v76.cjs');
