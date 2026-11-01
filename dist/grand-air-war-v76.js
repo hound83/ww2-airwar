@@ -9,7 +9,7 @@ const esc=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;
 const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const dateLabel=d=>{const p=d.split("-");return Number(p[2])+" "+months[Number(p[1])-1]+" "+p[0];};
 const AIR=D.airfields,STORY=D.story;
-const state={step:0,selection:{type:"scene",id:STORY[0].id},map:null,layers:null,mode:"normandy",showAirfields:true,showEvents:true,timer:null,rendering:false};
+const state={step:13,selection:{type:"scene",id:STORY[13].id},map:null,layers:null,mode:"normandy",showAirfields:true,showEvents:true,timer:null,rendering:false};
 const current=()=>STORY[state.step],asOf=()=>current().date;
 const opened=f=>f.declaredOperational<=asOf();
 const sourceSet=keys=>(keys||[]).filter(k=>D.sources[k]);
@@ -186,6 +186,7 @@ function init(){
  $("layer-events").addEventListener("change",e=>{state.showEvents=e.target.checked;drawMapMarkers();});
  $("scene-range").max=String(STORY.length-1);
  $("scene-range").addEventListener("input",e=>chooseStep(Number(e.target.value)));
+ $("scene-start").addEventListener("click",()=>chooseStep(0));
  $("scene-prev").addEventListener("click",()=>chooseStep(state.step-1));
  $("scene-next").addEventListener("click",()=>chooseStep(state.step+1));
  $("scene-play").addEventListener("click",()=>{
