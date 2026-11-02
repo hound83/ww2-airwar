@@ -66,4 +66,4 @@ for(const id of ["campaign-map","campaign-list","moment-list","dossier-facts","l
 }
 assert.ok(!html.includes('metric-groups')&&!html.includes('metric-losses'),"misleading Normandy dashboard values returned");
 assert.ok(style.includes("@media(max-width:540px)"));
-console.log("PASS v7.7: 20 campaign dossiers and 21 sourced facts, 30 German command-loss rows, 80 ETO/MTO group records, 5 VVS snapshots, 68 production months; UI assets and controls.");
+console.log("PASS v7.7: "+D.campaigns.length+" campaign dossiers and "+D.campaigns.reduce((n,c)=>n+c.facts.length,0)+" sourced facts, 30 German command-loss rows, 80 ETO/MTO group records, 5 VVS snapshots, 68 production months; UI assets and controls.");
