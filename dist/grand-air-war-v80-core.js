@@ -85,6 +85,32 @@ function clipRing(ring){
  if(first[0]!==last[0]||first[1]!==last[1])vertices.push([...first]);
  return vertices.length>=4?vertices:null;
 }
+function splitDateLine(ring){
+ // Natural Earth land includes rings crossing ±180° near the Bering Strait.
+ // In planar Leaflet coordinates a -180 to +180 edge becomes a line *through
+ // Europe*, and simple bbox clipping makes it a huge horizontal land stripe.
+ // Close each dateline-side portion at its OWN ±180 boundary first.
+ const points=ring.slice();
+ if(points.length>1&&points[0][0]===points[points.length-1][0]&&points[0][1]===points[points.length-1][1])points.pop();
+ const cuts=[];
+ for(let i=0;i<points.length;i++)if(Math.abs(points[i][0]-points[(i+points.length-1)%points.length][0])>180)cuts.push(i);
+ if(cuts.length<2)return [ring];
+ return cuts.map((start,index)=>{
+  const stop=cuts[(index+1)%cuts.length],part=[];
+  for(let i=start;i!==stop;i=(i+1)%points.length)part.push(points[i]);
+  const west=part[0][0]<0,edge=west?-180:180;
+  part.push([edge,part[part.length-1][1]],[edge,part[0][1]],[...part[0]]);
+  return part;
+ });
+}
+function insideRing(point,ring){
+ let contained=false;
+ for(let i=0,j=ring.length-1;i<ring.length;j=i++){
+  const a=ring[i],b=ring[j];
+  if((a[1]>point[1])!==(b[1]>point[1])&&point[0]<(b[0]-a[0])*(point[1]-a[1])/(b[1]-a[1])+a[0])contained=!contained;
+ }
+ return contained;
+}
 function europeanLand(geo){
  // topojson.feature() returns a FeatureCollection when the named TopoJSON
  // object is a GeometryCollection (world-atlas land-50m uses that form).
@@ -93,7 +119,18 @@ function europeanLand(geo){
   const geometry=feature.geometry||feature;
   return geometry.type==="Polygon"?[geometry.coordinates]:geometry.type==="MultiPolygon"?geometry.coordinates:[];
  });
- return {type:"Feature",properties:{},geometry:{type:"MultiPolygon",coordinates:polys.map(poly=>poly.map(clipRing).filter(Boolean)).filter(poly=>poly.length)}};
+ const local=polys.flatMap(poly=>{
+  const exterior=splitDateLine(poly[0]);
+  return exterior.map(segment=>{
+   const outer=clipRing(segment);
+   if(!outer)return null;
+   // Retain legitimate lake holes (e.g. the Caspian), assigned to the part
+   // of a once-dateline-spanning landmass that actually contains each hole.
+   const holes=poly.slice(1).filter(h=>insideRing(h[0],segment)).map(clipRing).filter(Boolean);
+   return [outer,...holes];
+  }).filter(Boolean);
+ });
+ return {type:"Feature",properties:{},geometry:{type:"MultiPolygon",coordinates:local}};
 }
 function setupMap(){
  if(!window.L){$("map-fallback").hidden=false;return;}

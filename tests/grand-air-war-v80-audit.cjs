@@ -61,13 +61,21 @@ A.choose("france1940");
 assert.ok(el("dossier-facts").innerHTML.includes("2,739")&&el("dossier-facts").innerHTML.includes("40"));
 assert.equal(el("dossier-analyze").hidden,true,"1940 source card must not route to 1943 West losses");
 const before=A.selected();A.setMonth("1944-06");assert.equal(A.selected(),before,"time scrub changed dossier without consent");
-const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-170,0],[170,0],[170,80],[-170,80],[-170,0]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
+const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-30,20],[70,20],[70,80],[-30,80],[-30,20]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
 const cropped=A.clipEuropeanLand(raw);
 assert.ok(cropped.geometry.coordinates.length);
 const collection=A.clipEuropeanLand({type:"FeatureCollection",features:[raw]});
 assert.equal(collection.geometry.coordinates.length,cropped.geometry.coordinates.length,"world-atlas GeometryCollection conversion");
 for(const poly of cropped.geometry.coordinates)for(const ring of poly)for(const [lon,lat] of ring){assert.ok(lon>=-24&&lon<=62&&lat>=30&&lat<=76,"world-land edge extends outside Europe chart");}
 assert.ok(cropped.geometry.coordinates.some(poly=>poly.some(r=>r.some(pt=>pt[0]===-24))),"global-ring boundary was not clipped");
+const seam={type:"Feature",geometry:{type:"Polygon",coordinates:[[
+ [-180,65],[179.8,65],[20,40],[-10,40],[20,50],[100,60],[179.8,69],[-180,69],[-180,65]
+]]}};
+const withoutStripe=A.clipEuropeanLand(seam);
+for(const poly of withoutStripe.geometry.coordinates)for(const ring of poly)for(let i=1;i<ring.length;i++){
+ const a=ring[i-1],b=ring[i];
+ assert.ok(!(Math.abs(a[0]-b[0])>80&&a[1]>60&&b[1]>60),"dateline creates a false cross-Europe land stripe");
+}
 const losses=A.lossRows;
 assert.equal(losses.length,30);
 assert.equal(new Set(losses.map(r=>r.theater+r.period)).size,30,"duplicate command-month");
