@@ -12,6 +12,7 @@ const LMIN=1936*12+6,LMAX=1945*12+4;
 const monthIdx=m=>Number(m.slice(0,4))*12+Number(m.slice(5,7))-1-LMIN;
 const atIdx=i=>{const t=LMIN+Math.max(0,Math.min(LMAX-LMIN,i));return Math.floor(t/12)+"-"+String(t%12+1).padStart(2,"0");};
 const mLabel=m=>MN[Number(m.slice(5,7))-1]+" "+m.slice(0,4);
+const countPhrase=(n,singular,plural)=>n+" "+(n===1?singular:plural);
 const sourceLink=(id,label)=>D.sources[id]?'<a target="_blank" rel="noopener noreferrer" href="'+esc(D.sources[id].url)+'">'+esc(label||D.sources[id].title)+" ↗</a>":"";
 const lossRows=[...A.monthlyReturns,...B.monthlyReturns].map(x=>({...x,period:(()=>{const z=Legacy.at(x.i);return z.y+"-"+String(z.m+1).padStart(2,"0");})()})).sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater));
 const sourceIndex={...A.sourceIndex,...B.sourceIndex};
@@ -226,7 +227,7 @@ function renderDossier(){
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
- $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Check observation")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+c.moments.length+' dated event(s) and '+c.sources.length+' linked research source(s).</div>';
+ $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Check observation")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>';
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
  $("dossier-link-detail").innerHTML=norm?'<div class="dossier-links"><a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a></div>':'';
@@ -241,7 +242,7 @@ function renderDossier(){
 
 }
 function relatedReport(c){
- if(state.month<"1943-09")return {target:null,text:"Campaign evidence: "+c.facts.length+" localized numeric observation(s), "+c.moments.length+" dated event(s), "+c.sources.length+" research source(s). The audited German command-loss series starts in September 1943; applying it to "+c.name+" would be historically incorrect."};
+ if(state.month<"1943-09")return {target:null,text:"Campaign evidence: "+countPhrase(c.facts.length,"localized numeric observation","localized numeric observations")+", "+countPhrase(c.moments.length,"dated event","dated events")+", "+countPhrase(c.sources.length,"research source","research sources")+". The audited German command-loss series starts in September 1943; applying it to "+c.name+" would be historically incorrect."};
  if(c.theater==="west"||c.theater==="reich"){
   const cmd=c.theater==="reich"?"Reich":"Western Front";
   const report=lossRows.find(x=>x.period===state.month&&x.theater===cmd);
@@ -262,7 +263,7 @@ function relatedReport(c){
 function renderCampaignList(){
  const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
- $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+c.facts.length+' sourced numerical fact(s) · '+c.moments.length+' dated event(s)</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+countPhrase(c.facts.length,"sourced fact","sourced facts")+' · '+countPhrase(c.moments.length,"dated event","dated events")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
 function renderMoments(){
@@ -270,7 +271,7 @@ function renderMoments(){
  const all=filter.flatMap(c=>c.moments.map(e=>({...e,cid:c.id,cname:c.name})));
  const current=all.filter(e=>e.date.slice(0,7)===state.month).sort((a,b)=>a.date.localeCompare(b.date));
  const near=current.length?current:all.filter(e=>Math.abs(monthIdx(e.date.slice(0,7))-monthIdx(state.month))<=2).sort((a,b)=>Math.abs(monthIdx(a.date.slice(0,7))-monthIdx(state.month))-Math.abs(monthIdx(b.date.slice(0,7))-monthIdx(state.month))).slice(0,10);
- $("moment-count").textContent=current.length?current.length+" dated events":"Nearest documented events";
+ $("moment-count").textContent=current.length?countPhrase(current.length,"dated event","dated events"):"Nearest documented events";
  $("moment-list").innerHTML=near.length?near.map(e=>'<button type="button" class="record" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.cname)+' · '+esc(e.place)+'</small></span><span class="date-tag">'+esc(e.date)+'</span></button>').join(""):'<div class="empty">No verified dated event is registered for this month and theater. This is a research gap, not proof that no air operations occurred.</div>';
  $("moment-list").querySelectorAll("[data-moment]").forEach(b=>b.addEventListener("click",()=>selectMoment(b.dataset.moment,b.dataset.date,Number(b.dataset.lat),Number(b.dataset.lng))));
 }
