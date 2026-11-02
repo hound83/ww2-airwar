@@ -63,11 +63,13 @@ function makeIcon(text,kind,selected,inactive=false){
 // enormous polygon edges through the viewport on zoom/pan in some browsers.
 function clipRing(ring){
  let vertices=ring.map(p=>[p[0],p[1]]);
+ // Generous geography margin keeps all clipping edges *outside* the displayed
+ // European theatre, even at the initial most-zoomed-out map view.
  const edges=[
-  {inside:p=>p[0]>=-24,intersect:(a,b)=>[-24,a[1]+(-24-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
-  {inside:p=>p[0]<=62,intersect:(a,b)=>[62,a[1]+(62-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
-  {inside:p=>p[1]>=30,intersect:(a,b)=>[a[0]+(30-a[1])*(b[0]-a[0])/(b[1]-a[1]),30]},
-  {inside:p=>p[1]<=76,intersect:(a,b)=>[a[0]+(76-a[1])*(b[0]-a[0])/(b[1]-a[1]),76]}
+  {inside:p=>p[0]>=-50,intersect:(a,b)=>[-50,a[1]+(-50-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[0]<=100,intersect:(a,b)=>[100,a[1]+(100-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[1]>=0,intersect:(a,b)=>[a[0]+(0-a[1])*(b[0]-a[0])/(b[1]-a[1]),0]},
+  {inside:p=>p[1]<=83,intersect:(a,b)=>[a[0]+(83-a[1])*(b[0]-a[0])/(b[1]-a[1]),83]}
  ];
  for(const edge of edges){
   if(!vertices.length)break;
@@ -136,7 +138,7 @@ function setupMap(){
  if(!window.L){$("map-fallback").hidden=false;return;}
  try{
   const L=window.L;
-  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:true,worldCopyJump:false,attributionControl:false});
+  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-50],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:true,worldCopyJump:false,attributionControl:false});
   L.control.zoom({position:"topright"}).addTo(state.map);
   L.control.attribution({prefix:false}).addAttribution('Natural Earth / world-atlas 1:50m, public domain').addTo(state.map);
   const grid=L.layerGroup().addTo(state.map);
