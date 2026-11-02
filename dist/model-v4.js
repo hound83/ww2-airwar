@@ -37,7 +37,7 @@
   const navButton=([id,title])=>'<button type="button" class="v4-nav" data-v4-tab="'+id+'">'+title+'</button>';
   const navGroup=(title,ids)=>'<div class="v74-navgroup"><span class="v74-navlabel">'+title+'</span>'+nav.filter(p=>ids.includes(p[0])).map(navButton).join('')+'</div>';
   navRoot.innerHTML='<div class="v4-navigation-title"><span class="kicker">EUROPEAN AIR WAR · 1936–1945</span>'+ 
-    '<span class="tiny">Version 7.4 · visual archive · original returns and estimates kept distinct</span></div>'+ 
+    '<span class="tiny">Version 7.4 · original returns and estimates kept distinct <a class="v74-atlas-link" href="./grand-air-war-v80.html">Explore European map &amp; research · v8 preview ↗</a></span></div>'+
     '<div class="v4-navrow">'+navGroup('Home',['home'])+navGroup('EXPLORE HISTORY',['balance','fleet','pilothistory','losses','comparison','campaigns'])+
     navGroup('SIMULATIONS',['pilot','equipment'])+navGroup('RESEARCH',['sources','about'])+'</div>';
   tl.insertBefore(navRoot,tl.firstChild);

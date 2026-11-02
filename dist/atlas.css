@@ -333,6 +333,8 @@ header h1{font-size:clamp(32px,3.5vw,var(--v74-display));line-height:1.05}
 .v74-navgroup .v4-nav{font-size:var(--v74-body);padding:8px 11px;line-height:1.2}
 .v74-navlabel{font-size:var(--v74-detail);color:#d1bb8b;letter-spacing:.09em;margin:0 4px 0 3px;white-space:nowrap}
 .v4-navigation-title{gap:9px}
+.v74-atlas-link{display:inline-flex;align-items:center;min-height:30px;padding:5px 11px;margin:2px 0 2px 10px;background:#365a50;color:#fff0c9;border:1px solid #a9ae82;border-radius:6px;font-size:12px;font-weight:750;text-decoration:none}
+.v74-atlas-link:hover,.v74-atlas-link:focus-visible{background:#4b7366;color:#fff}
 .v4-navigation-title .tiny{font-size:var(--v74-detail)}
 .v74-home-intro{max-width:820px;margin:12px auto 28px;text-align:center}
 .v74-home-intro .kicker{color:#d6c08f;letter-spacing:.15em;font-size:var(--v74-detail)}

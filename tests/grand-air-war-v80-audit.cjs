@@ -112,5 +112,5 @@ L.setMode("readiness");assert.ok(el("german-chart").innerHTML.includes("07-01")&
 const html=read("grand-air-war-v80.html"),css=read("dist/grand-air-war-v80.css");
 for(const id of ["overview","campaigns","loss-lab","german-war-lab","air-forces","research-sources"])assert.ok(html.includes('id="'+id+'"'));
 assert.ok(css.includes(".dossier-research-jump button[hidden]"),"source jumps should not overlap or show nonfunctional options");
-assert.ok(read("dist/index.html").includes('href="grand-air-war-v80.html"'),"Atlas review entrypoint not discoverable");
+assert.ok(read("dist/model-v4.js").includes('href="./grand-air-war-v80.html"'),"visible v7.4 navigation must link to optional v8 preview");
 console.log("PASS v8 data/display audit: 20 mapped dossiers, "+allFacts.length+" sourced facts, "+allEvents.length+" dated events, scoped losses, groups, fuel, readiness, production, labels and links");
