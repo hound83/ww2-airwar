@@ -1,0 +1,414 @@
+/* Grand Air War v7.7 — European campaigns, official-source datasets, and linked analysis.
+   This UI never estimates unsupported monthly force inventories or geographically locates command-wide losses as individual battle casualties. */
+(function(){
+"use strict";
+const D=window.GrandAirWarV77Campaigns,G=window.GrandAirWarV77Groups,V=window.AirWarV74Data,
+ P=window.AirWarV73Data,A=window.AirWarV71Data,B=window.AirWarV72Data,Legacy=window.LuftData;
+if(!D||!G||!V||!P||!A||!B||!Legacy)return;
+const $=id=>document.getElementById(id),esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=x=>x===null||x===undefined?"Unavailable":Number(x).toLocaleString("en-US");
+const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const LMIN=1936*12+6,LMAX=1945*12+4;
+const monthIdx=m=>Number(m.slice(0,4))*12+Number(m.slice(5,7))-1-LMIN;
+const atIdx=i=>{const t=LMIN+Math.max(0,Math.min(LMAX-LMIN,i));return Math.floor(t/12)+"-"+String(t%12+1).padStart(2,"0");};
+const mLabel=m=>MN[Number(m.slice(5,7))-1]+" "+m.slice(0,4);
+const countPhrase=(n,singular,plural)=>n+" "+(n===1?singular:plural);
+const sourceLink=(id,label)=>D.sources[id]?'<a target="_blank" rel="noopener noreferrer" href="'+esc(D.sources[id].url)+'">'+esc(label||D.sources[id].title)+" ↗</a>":"";
+const lossRows=[...A.monthlyReturns,...B.monthlyReturns].map(x=>({...x,period:(()=>{const z=Legacy.at(x.i);return z.y+"-"+String(z.m+1).padStart(2,"0");})()})).sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater));
+const sourceIndex={...A.sourceIndex,...B.sourceIndex};
+const groupRows=G.rows.map(r=>Object.fromEntries(G.columns.map((c,i)=>[c,r[i]])));
+const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
+const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Eastern Front",med:"Mediterranean / Italy",north:"Northern Europe"};
+const active=c=>c.start<=state.month&&c.end>=state.month;
+const matches=c=>(state.theater==="all"||c.theater===state.theater)&&(!state.search||(c.name+" "+c.objective+" "+c.participants.join(" ")+" "+c.consequence).toLowerCase().includes(state.search));
+const matching=()=>D.campaigns.filter(matches);
+const visibleOnMap=()=>matching().filter(c=>state.all||active(c));
+function cancelPlay(){if(state.play!==null){clearInterval(state.play);state.play=null;}$("play-time").textContent="▶ Play";}
+function updateMonth(month){
+ if(monthIdx(month)<0||monthIdx(month)>LMAX-LMIN)return;
+ state.month=month;
+ // Scrubbing and playback never silently replace the campaign a reader selected.
+ update();
+}
+function pickCampaign(id,fly=true){
+ const c=D.campaigns.find(x=>x.id===id);if(!c)return;cancelPlay();
+ state.selected=id;
+ if(!active(c))state.month=c.start;
+ if(state.theater!=="all"&&state.theater!==c.theater)state.theater="all";
+ update();
+ const list=$('campaign-list'),row=list.querySelector?.('[data-campaign="'+id+'"]');
+ // Only scroll the chronology's own viewport. Do not jump the entire page
+ // away from the map when a marker or dated event selects a campaign.
+ if(row?.getBoundingClientRect&&list.getBoundingClientRect){
+  const viewport=list.getBoundingClientRect(),target=row.getBoundingClientRect();
+  if(target.top<viewport.top)list.scrollTop-=viewport.top-target.top;
+  else if(target.bottom>viewport.bottom)list.scrollTop+=target.bottom-viewport.bottom;
+ }
+ if(fly&&state.map){const z=state.map.getZoom();state.map.flyTo([c.focus.lat,c.focus.lng],Math.max(6,Math.min(9,z)),{duration:.6});}
+}
+function selectMoment(cId,date,lat,lng){
+ pickCampaign(cId,false);
+ if(date&&date.slice(0,7)!==state.month)updateMonth(date.slice(0,7));
+ if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
+}
+function makeIcon(text,kind,selected,inactive=false){
+ return window.L.divIcon({
+  className:"gaw-icon",
+  html:'<span class="'+(kind==="cluster"?"war-cluster":"war-pin")+(selected?" selected":"")+(inactive?" inactive":"")+'">'+esc(text)+'</span>',
+  iconSize:kind==="cluster"?[37,37]:[29,29],
+  iconAnchor:kind==="cluster"?[18,18]:[14,14]
+ });
+}
+// Clip the *physical land polygons* to the European chart before passing them to
+// Leaflet. Rendering a whole-world land ring in a small projected chart draws
+// enormous polygon edges through the viewport on zoom/pan in some browsers.
+function clipRing(ring){
+ let vertices=ring.map(p=>[p[0],p[1]]);
+ // Generous geography margin keeps all clipping edges *outside* the displayed
+ // European theatre, even at the initial most-zoomed-out map view.
+ const edges=[
+  {inside:p=>p[0]>=-50,intersect:(a,b)=>[-50,a[1]+(-50-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[0]<=100,intersect:(a,b)=>[100,a[1]+(100-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[1]>=0,intersect:(a,b)=>[a[0]+(0-a[1])*(b[0]-a[0])/(b[1]-a[1]),0]},
+  {inside:p=>p[1]<=83,intersect:(a,b)=>[a[0]+(83-a[1])*(b[0]-a[0])/(b[1]-a[1]),83]}
+ ];
+ for(const edge of edges){
+  if(!vertices.length)break;
+  const output=[];let before=vertices[vertices.length-1];
+  for(const current of vertices){
+   const prevInside=edge.inside(before),currInside=edge.inside(current);
+   if(currInside!==prevInside)output.push(edge.intersect(before,current));
+   if(currInside)output.push(current);
+   before=current;
+  }
+  vertices=output;
+ }
+ if(vertices.length<3)return null;
+ const first=vertices[0],last=vertices[vertices.length-1];
+ if(first[0]!==last[0]||first[1]!==last[1])vertices.push([...first]);
+ return vertices.length>=4?vertices:null;
+}
+function splitDateLine(ring){
+ // Natural Earth land includes rings crossing ±180° near the Bering Strait.
+ // In planar Leaflet coordinates a -180 to +180 edge becomes a line *through
+ // Europe*, and simple bbox clipping makes it a huge horizontal land stripe.
+ // Close each dateline-side portion at its OWN ±180 boundary first.
+ const points=ring.slice();
+ if(points.length>1&&points[0][0]===points[points.length-1][0]&&points[0][1]===points[points.length-1][1])points.pop();
+ const cuts=[];
+ for(let i=0;i<points.length;i++)if(Math.abs(points[i][0]-points[(i+points.length-1)%points.length][0])>180)cuts.push(i);
+ if(cuts.length<2)return [ring];
+ return cuts.map((start,index)=>{
+  const stop=cuts[(index+1)%cuts.length],part=[];
+  for(let i=start;i!==stop;i=(i+1)%points.length)part.push(points[i]);
+  const west=part[0][0]<0,edge=west?-180:180;
+  part.push([edge,part[part.length-1][1]],[edge,part[0][1]],[...part[0]]);
+  return part;
+ });
+}
+function insideRing(point,ring){
+ let contained=false;
+ for(let i=0,j=ring.length-1;i<ring.length;j=i++){
+  const a=ring[i],b=ring[j];
+  if((a[1]>point[1])!==(b[1]>point[1])&&point[0]<(b[0]-a[0])*(point[1]-a[1])/(b[1]-a[1])+a[0])contained=!contained;
+ }
+ return contained;
+}
+function europeanLand(geo){
+ // topojson.feature() returns a FeatureCollection when the named TopoJSON
+ // object is a GeometryCollection (world-atlas land-50m uses that form).
+ const features=geo.type==="FeatureCollection"?geo.features:[geo];
+ const polys=features.flatMap(feature=>{
+  const geometry=feature.geometry||feature;
+  return geometry.type==="Polygon"?[geometry.coordinates]:geometry.type==="MultiPolygon"?geometry.coordinates:[];
+ });
+ const local=polys.flatMap(poly=>{
+  const exterior=splitDateLine(poly[0]);
+  return exterior.map(segment=>{
+   const outer=clipRing(segment);
+   if(!outer)return null;
+   // Retain legitimate lake holes (e.g. the Caspian), assigned to the part
+   // of a once-dateline-spanning landmass that actually contains each hole.
+   const holes=poly.slice(1).filter(h=>insideRing(h[0],segment)).map(clipRing).filter(Boolean);
+   return [outer,...holes];
+  }).filter(Boolean);
+ });
+ return {type:"Feature",properties:{},geometry:{type:"MultiPolygon",coordinates:local}};
+}
+function setupMap(){
+ if(!window.L){$("map-fallback").hidden=false;return;}
+ try{
+  const L=window.L;
+  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-50],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:true,worldCopyJump:false,attributionControl:false});
+  L.control.zoom({position:"topright"}).addTo(state.map);
+  L.control.attribution({prefix:false}).addAttribution('Natural Earth / world-atlas 1:50m, public domain').addTo(state.map);
+  const grid=L.layerGroup().addTo(state.map);
+  for(let lon=-20;lon<=60;lon+=10){L.polyline([[32,lon],[73,lon]],{color:"#c6bda0",weight:.55,opacity:.27,interactive:false,dashArray:"3 6"}).addTo(grid);}
+  for(let lat=35;lat<=70;lat+=5){L.polyline([[lat,-22],[lat,59]],{color:"#c6bda0",weight:.55,opacity:.22,interactive:false,dashArray:"3 6"}).addTo(grid);}
+  state.mapMarkers=L.layerGroup().addTo(state.map);
+  state.map.fitBounds(L.latLngBounds(D.campaigns.map(c=>[c.focus.lat,c.focus.lng])).pad(.23),{maxZoom:5,animate:false});
+  state.map.on("zoomend moveend",drawMap);
+  // 50m physical LAND TopoJSON. No modern administrative lines, cities or roads.
+  // External CORS download is required. Failure leaves campaign markers available.
+  if(window.fetch&&window.topojson){
+   window.fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-50m.json")
+    .then(resp=>{if(!resp.ok)throw Error("coastline dataset HTTP "+resp.status);return resp.json();})
+    .then(world=>{
+     if(!world.objects||!world.objects.land)throw Error("Unexpected land topology");
+     const geo=europeanLand(window.topojson.feature(world,world.objects.land));
+     if(!geo.geometry.coordinates.length)throw Error("European coastline geometry is empty");
+     state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.canvas()});
+     state.landLayer.addTo(state.map);
+     if(state.landLayer.bringToBack)state.landLayer.bringToBack();
+     grid.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
+     state.mapMarkers.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
+     $("map-fallback").hidden=true;
+    }).catch(err=>{$("map-fallback").textContent="Historical coastline unavailable: "+err.message+". Numbered campaigns and research dossiers still work; modern borders will not be shown.";$("map-fallback").hidden=false;});
+  }else{
+   $("map-fallback").textContent="Coastline library unavailable. Campaign pins still work, without modern political borders.";
+   $("map-fallback").hidden=false;
+  }
+ }catch(err){$("map-fallback").textContent="Historical map unavailable: "+err.message;$("map-fallback").hidden=false;}
+}
+function drawMap(){
+ if(!state.mapMarkers||!state.map)return;
+ state.mapMarkers.clearLayers();
+ const L=window.L,cs=visibleOnMap();
+ // Only geographic CAMPAIGN centres here; German command losses are NOT map points.
+ const pins=cs.map(c=>({c,lat:c.focus.lat,lng:c.focus.lng,index:D.campaigns.findIndex(x=>x.id===c.id)+1}));
+ const threshold=state.map.getZoom()>=9?0:state.map.getZoom()>=7?28:43;
+ const groups=[];
+ for(const p of pins){
+  const xy=state.map.latLngToContainerPoint([p.lat,p.lng]);
+  let chosen=null,closest=Infinity;
+  if(threshold)for(const g of groups){
+   const centre=g.map(q=>state.map.latLngToContainerPoint([q.lat,q.lng])).reduce((sum,v)=>({x:sum.x+v.x,y:sum.y+v.y}),{x:0,y:0});
+   const dist=Math.hypot(xy.x-centre.x/g.length,xy.y-centre.y/g.length);
+   if(dist<threshold&&dist<closest){chosen=g;closest=dist;}
+  }
+  if(chosen)chosen.push(p);else groups.push([p]);
+ }
+ for(const group of groups){
+  const p=group[0],multi=group.length>1;
+  const lat=group.reduce((x,q)=>x+q.lat,0)/group.length,lng=group.reduce((x,q)=>x+q.lng,0)/group.length;
+  const selected=!multi&&state.selected===p.c.id;
+  const icon=makeIcon(multi?group.length:String(p.index),multi?"cluster":"campaign",selected,!multi&&!active(p.c));
+  const mk=L.marker([lat,lng],{icon,keyboard:true,title:multi?group.length+" campaigns nearby, zoom for details":p.c.name,zIndexOffset:selected?500:0});
+  if(multi){
+   const items=group.map(q=>'<button type="button" data-map-campaign="'+esc(q.c.id)+'">'+q.index+' · '+esc(q.c.name)+'</button>').join("");
+   mk.bindPopup('<div class="cluster-choices"><strong>'+group.length+' campaigns here</strong><p>Choose one directly, or zoom in to separate the markers.</p>'+items+'<button type="button" data-map-zoom>Zoom into group</button></div>',{maxWidth:280});
+   mk.on("popupopen",e=>{
+    const root=e.popup.getElement();
+    root.querySelectorAll("[data-map-campaign]").forEach(b=>b.addEventListener("click",()=>{state.map.closePopup();pickCampaign(b.dataset.mapCampaign,true);}));
+    root.querySelector("[data-map-zoom]")?.addEventListener("click",()=>{
+     const bounds=L.latLngBounds(group.map(q=>[q.lat,q.lng]));
+     state.map.closePopup();state.map.flyToBounds(bounds.pad(1),{maxZoom:Math.min(11,state.map.getZoom()+2)});
+    });
+   });
+   mk.bindTooltip(group.map(q=>q.index+" · "+q.c.name).join(" / "),{direction:"top",opacity:.95});
+  }else{
+   mk.on("click",()=>pickCampaign(p.c.id,true));
+   mk.bindTooltip(p.index+" · "+p.c.name+" · "+p.c.start+"–"+p.c.end,{direction:"top",opacity:.95});
+  }
+  state.mapMarkers.addLayer(mk);
+ }
+}
+function renderTime(){
+ $("date-slider").value=String(monthIdx(state.month));$("date-display").textContent=mLabel(state.month);
+ $("prev-month").disabled=monthIdx(state.month)===0;$("next-month").disabled=monthIdx(state.month)===LMAX-LMIN;
+ $("theater-select").value=state.theater;$("campaign-search").value=state.search;$("all-campaigns").checked=state.all;
+ $("coverage-label").textContent=visibleOnMap().length+" shown of "+matching().length+" matching · "+matching().filter(active).length+" active";
+ $("map-heading").textContent=visibleOnMap().length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
+}
+function renderDossier(){
+ const c=D.campaigns.find(x=>x.id===state.selected)||D.campaigns[0];
+ $("dossier-meta").textContent="BATTLE DOSSIER · "+themes[c.theater]+(active(c)?" · ACTIVE":" · OTHER PERIOD");
+ $("dossier-title").textContent=c.name;
+ $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
+ $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
+ $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
+ $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Check observation")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>';
+ $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
+ const norm=c.id==="normandy";
+ $("dossier-link-detail").innerHTML=norm?'<div class="dossier-links"><a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a></div>':'';
+ const evidence=relatedReport(c);
+ $("dossier-research-context").textContent=evidence.text;
+ $("dossier-analyze").hidden=!evidence.target;
+ $("dossier-analyze").disabled=!evidence.target;
+ $("dossier-analyze").textContent=evidence.target==="loss"?"Inspect German command returns":evidence.target==="vvs"?"Inspect dated VVS strength":"Inspect USAAF MTO groups";
+ const relevantGerman=c.start<="1945-03"&&c.end>="1943-09"&&state.month>="1943-09"&&state.month<="1945-03";
+ $("dossier-german-analysis").hidden=!relevantGerman;
+ $("dossier-german-analysis").disabled=!relevantGerman;
+
+}
+function relatedReport(c){
+ if(state.month<"1943-09")return {target:null,text:"Campaign evidence: "+countPhrase(c.facts.length,"localized numeric observation","localized numeric observations")+", "+countPhrase(c.moments.length,"dated event","dated events")+", "+countPhrase(c.sources.length,"research source","research sources")+". The audited German command-loss series starts in September 1943; applying it to "+c.name+" would be historically incorrect."};
+ if(c.theater==="west"||c.theater==="reich"){
+  const cmd=c.theater==="reich"?"Reich":"Western Front";
+  const report=lossRows.find(x=>x.period===state.month&&x.theater===cmd);
+  return report?{target:"loss",command:cmd,text:"Context, NOT battle casualties: "+report.destroyed+" German aircraft destroyed (all causes), whole "+cmd+" reporting command, "+state.month+". Do not attribute this total to "+c.name+"."}
+   :{target:null,text:"No audited "+cmd+" command report for "+state.month+". Do not treat the absent observation as zero."};
+ }
+ if(c.theater==="east"){
+  const dated=P.soviet.find(r=>{const x=Legacy.at(r.i);return x.y+"-"+String(x.m+1).padStart(2,"0")===state.month;});
+  return {target:"vvs",text:dated?"Context only: "+dated.total+" VVS aircraft in all listed fronts and reserves, "+dated.date+". Not aircraft assigned to "+c.name+".":"Only some VVS front+reserve observation dates are verified, and none is automatically a "+c.name+" campaign total."};
+ }
+ if(c.theater==="med"){
+  const m=groupRows.find(x=>x.theater==="MTO"&&x.month===state.month);
+  return {target:"mto",text:m&&m.totalCombatGroups!==null?"Context: "+m.totalCombatGroups+" USAAF combat groups across MTO in "+state.month+"; not aircraft or sorties in this battle.":"The MTO group series is an entire-theater measurement, not a campaign loss ledger."};
+ }
+ return {target:null,text:"No geography-matched quantitative series verified here. Research gap; not zero."};
+}
+
+function renderCampaignList(){
+ const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
+ $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+countPhrase(c.facts.length,"sourced fact","sourced facts")+' · '+countPhrase(c.moments.length,"dated event","dated events")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
+}
+function renderMoments(){
+ const filter=matching();
+ const all=filter.flatMap(c=>c.moments.map(e=>({...e,cid:c.id,cname:c.name})));
+ const current=all.filter(e=>e.date.slice(0,7)===state.month).sort((a,b)=>a.date.localeCompare(b.date));
+ const near=current.length?current:all.filter(e=>Math.abs(monthIdx(e.date.slice(0,7))-monthIdx(state.month))<=2).sort((a,b)=>Math.abs(monthIdx(a.date.slice(0,7))-monthIdx(state.month))-Math.abs(monthIdx(b.date.slice(0,7))-monthIdx(state.month))).slice(0,10);
+ $("moment-count").textContent=current.length?countPhrase(current.length,"dated event","dated events"):"Nearest documented events";
+ $("moment-list").innerHTML=near.length?near.map(e=>'<button type="button" class="record" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.cname)+' · '+esc(e.place)+'</small></span><span class="date-tag">'+esc(e.date)+'</span></button>').join(""):'<div class="empty">No verified dated event is registered for this month and theater. This is a research gap, not proof that no air operations occurred.</div>';
+ $("moment-list").querySelectorAll("[data-moment]").forEach(b=>b.addEventListener("click",()=>selectMoment(b.dataset.moment,b.dataset.date,Number(b.dataset.lat),Number(b.dataset.lng))));
+}
+function lossSource(r){const s=sourceIndex[r.sourceId];return s?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">'+esc(s.short)+' · PDF page '+(r.page??"see source")+' ↗</a>':"";}
+function lossFields(){const k=state.lossOutcome==="destroyed"?"Destroyed":"Damaged";return ["enemy"+k,"otherOperational"+k,"nonOperational"+k];}
+function getLossData(){return lossRows.filter(x=>x.theater===state.lossCommand&&(state.lossWindow==="all"||x.period.startsWith(state.lossWindow))); }
+function plotStacked(rows,valueKeys,labels,palette,selected,onClick){
+ const n=rows.length,w=Math.max(700,n*50+100),h=305,pad={l:49,r:14,t:20,b:51};
+ const ymax=Math.max(1,...rows.map(r=>valueKeys.reduce((s,k)=>s+(Number.isFinite(r[k])?r[k]:0),0)))*1.12;
+ const bw=Math.min(31,(w-pad.l-pad.r)/Math.max(1,n)*.65),gap=(w-pad.l-pad.r)/Math.max(1,n);
+ let svg='<svg viewBox="0 0 '+w+' '+h+'" width="'+w+'" height="'+h+'" role="img" aria-label="Historical source observations, choose bars to inspect details">';
+ for(let j=0;j<=4;j++){const v=ymax*j/4,y=pad.t+(h-pad.t-pad.b)*(1-j/4);svg+='<line class="gridline" x1="'+pad.l+'" y1="'+y+'" x2="'+(w-pad.r)+'" y2="'+y+'"/><text x="'+(pad.l-5)+'" y="'+(y+3)+'" text-anchor="end">'+Math.round(v)+'</text>';}
+ for(let i=0;i<n;i++){
+  const r=rows[i],key=r.period||r.month,x=pad.l+gap*(i+.5),barx=x-bw/2;
+  let y=h-pad.b;
+  for(let j=0;j<valueKeys.length;j++){
+   const v=r[valueKeys[j]],height=Number.isFinite(v)?(h-pad.t-pad.b)*v/ymax:0;
+   if(Number.isFinite(v)&&height>0){
+    y-=height;svg+='<rect class="data-bar '+(key===selected?"selected":"")+'" role="button" tabindex="0" aria-label="'+esc(key+" · "+labels[j]+" "+fmt(v)+"; inspect observation")+'" data-chart-index="'+i+'" x="'+barx.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+height.toFixed(1)+'" fill="'+palette[j]+'"><title>'+esc(key+" · "+labels[j]+" "+fmt(v))+'</title></rect>';
+   }
+  }
+  const label=key?.length===7?key.slice(5)+"/"+key.slice(2,4):String(key??"");
+  svg+='<text x="'+x.toFixed(1)+'" y="'+(h-pad.b+17)+'" text-anchor="middle">'+esc(label)+'</text>';
+ }
+ svg+='</svg><div class="chart-legend">'+labels.map((x,i)=>'<span><i style="background:'+palette[i]+'"></i>'+esc(x)+'</span>').join("")+'</div>';
+ return svg;
+}
+function bindChartBars(root,selector,choose){
+ root.querySelectorAll(selector).forEach(e=>{
+  e.addEventListener("click",()=>choose(Number(e.dataset.chartIndex)));
+  e.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();choose(Number(e.dataset.chartIndex));}});
+ });
+}
+function renderLosses(){
+ const r=getLossData();$("loss-command").value=state.lossCommand;$("loss-outcome").value=state.lossOutcome;$("loss-window").value=state.lossWindow;
+ const keys=lossFields(),labels=["Enemy action","Other operational","Non-operational"],palette=["#dbab7d","#8fb4d4","#7ec5b0"];
+ const root=$("loss-chart");
+ root.innerHTML=r.length?plotStacked(r,keys,labels,palette,state.lossMonth):'<div class="empty">There are no original German monthly totals for this selected reporting command and year.</div>';
+ bindChartBars(root,"[data-chart-index]",i=>{state.lossMonth=r[i].period;renderLosses();});
+ const row=r.find(x=>x.period===state.lossMonth)||r[r.length-1];
+ if(row){state.lossMonth=row.period;
+  const total=state.lossOutcome==="destroyed"?row.destroyed:row.damaged;
+  $("loss-detail").innerHTML='<h3>'+esc(mLabel(row.period))+' · '+esc(state.lossCommand)+'</h3><p><strong>'+fmt(total)+' '+esc(state.lossOutcome)+'</strong> (all aircraft types, documented wartime command total). Cause categories:</p><div class="cause-grid">'+keys.map((k,i)=>'<div><b>'+fmt(row[k])+'</b><span>'+labels[i]+'</span></div>').join("")+'</div><p>Missing aircraft: '+fmt(row.missing)+' (subset of enemy destroyed, NOT another loss category). Damaged and destroyed are separate outcomes.</p>'+lossSource(row);
+ }else $("loss-detail").textContent="No corresponding observed month.";
+}
+function renderCoverage(){
+ const n=lossRows.length,group=groupRows.length,sov=P.soviet.length;
+ $("coverage-matrix").innerHTML=[
+ ["German command loss returns",n+" recorded month-commands","Reich & West, Sep 1943–Nov 1944","Present"],
+ ["USAAF combat group strength",groupRows.filter(r=>r.totalCombatGroups!==null).length+" reported totals / "+group+" theater-month rows","ETO & MTO, Feb 1942–May 1945; blanks are unavailable","Present"],
+ ["VVS front and reserve strength",sov+" dated snapshots","Jul 1943–May 1945, excludes PVO/naval","Present"],
+ ["USAAF factory acceptances",V.usaFactory.length+" months","Worldwide, not European airfield deployment","Present"],
+ ["Eastern German aircraft loss returns","Not transcribed here","Do not replace with Western returns","Missing"],
+ ["RAF/USAAF localized daily losses","Partial isolated campaign records","Not a complete all-front ledger","Partial"]
+ ].map(x=>'<div class="coverage-item '+(x[3]==="Missing"?"missing":"")+'"><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span><br><em>'+esc(x[2])+'</em></div>').join("");
+}
+function forcePoints(){
+ if(state.forceSeries==="usaaf")return groupRows.filter(r=>r.theater===state.forceArea).map(r=>({month:r.month,period:r.month,value:r[state.forceMetric],...r}));
+ if(state.forceSeries==="vvs")return P.soviet.map(r=>{const t=Legacy.at(r.i),m=t.y+"-"+String(t.m+1).padStart(2,"0");return {period:m,month:m,value:r.total,fighters:r.fighters,unserviceable:r.unserviceableFighters,source:r.source,date:r.date};});
+ return V.usaFactory.map(r=>({period:r.period,month:r.period,value:r.all,fighters:r.fighters,heavy:r.heavy,medium:r.medium,noncombat:r.noncombat}));
+}
+function forceTitle(){
+ if(state.forceSeries==="usaaf")return state.forceArea+" · "+state.forceMetric;
+ if(state.forceSeries==="vvs")return "VVS front air forces and command reserves · all aircraft";
+ return "USAAF worldwide monthly factory acceptances · all aircraft";
+}
+function renderForces(){
+ $("force-series").value=state.forceSeries;$("force-area").value=state.forceArea;$("force-metric").value=state.forceMetric;
+ $("force-area-wrap").hidden=state.forceSeries!=="usaaf";$("force-metric-wrap").hidden=state.forceSeries!=="usaaf";
+ const points=forcePoints();const index=points.findIndex(x=>x.period===state.forceSelected),selected=points[index]||points.find(x=>x.period<=state.month&&x.value!==null&&x.value!==undefined)||points.find(x=>x.value!==null&&x.value!==undefined);
+ const chartRows=points.map(x=>({period:x.period,value:x.value}));const root=$("force-chart");
+ root.innerHTML=plotStacked(chartRows,["value"],[forceTitle()],["#79cbbd"],selected?.period);
+ bindChartBars(root,"[data-chart-index]",i=>{state.forceSelected=points[i].period;renderForces();});
+ if(selected)state.forceSelected=selected.period;
+ const desc=state.forceSeries==="usaaf"?"A combat group is an organization, not an aircraft. ETO and MTO records are theater assignments from Table 2; group role subtotals can contain archival arithmetic discrepancies.":
+ state.forceSeries==="vvs"?"VVS original front air army + high-command reserve snapshots. Excludes the naval and PVO forces, other distant Soviet aviation. Snapshots are separate dates; no interpolation.":
+ "These are worldwide U.S. factory acceptances. They are a flow of newly accepted aircraft, NOT the number available in Europe or serviceable on a particular front.";
+ $("force-caveat").textContent=desc;
+ let detail="";
+ if(selected){
+  if(state.forceSeries==="usaaf"){detail='<h3>'+esc(selected.period)+" · "+esc(selected.theater)+'</h3><p><strong>'+fmt(selected.totalCombatGroups)+'</strong> all combat groups</p><div class="cause-grid"><div><b>'+fmt(selected.fighterGroups)+'</b><span>Fighter groups</span></div><div><b>'+fmt(selected.heavyBombardmentGroups)+'</b><span>Heavy bomber groups</span></div><div><b>'+fmt(selected.troopCarrierGroups)+'</b><span>Troop carrier groups</span></div></div><p>Medium/light bombers: '+fmt(selected.mediumAndLightBombardmentGroups)+'; reconnaissance: '+fmt(selected.reconnaissanceGroups)+'. Reported total minus role subtotal: '+fmt(selected.reportedMinusRoleSum)+'.</p><a href="'+esc(G.source)+'" target="_blank" rel="noopener noreferrer">USAAF Statistical Digest Table 2 ↗</a>';}
+  else if(state.forceSeries==="vvs"){detail='<h3>'+esc(selected.date)+'</h3><p><strong>'+fmt(selected.value)+'</strong> combat aircraft in source-defined front and reserve populations.</p><p>Fighters: '+fmt(selected.fighters)+'. Fighters listed unserviceable: '+fmt(selected.unserviceable)+'. Do not subtract from total combat aircraft (different measure).</p><a href="'+esc(P.sources[selected.source]?.url||D.sources.vvs.url)+'" target="_blank" rel="noopener noreferrer">Original VVS statistics transcription ↗</a>';}
+  else detail='<h3>'+esc(mLabel(selected.period))+'</h3><p><strong>'+fmt(selected.value)+'</strong> USAAF worldwide aircraft acceptances.</p><div class="cause-grid"><div><b>'+fmt(selected.fighters)+'</b><span>Fighters</span></div><div><b>'+fmt(selected.heavy)+'</b><span>Heavy bombers</span></div><div><b>'+fmt(selected.medium)+'</b><span>Medium</span></div></div><p>Non-combat acceptances: '+fmt(selected.noncombat)+'.</p><a href="'+esc(V.sources.aafsd74?.url||"https://www.ibiblio.org/hyperwar/AAF/StatDigest/")+'" target="_blank" rel="noopener noreferrer">USAAF Statistical Digest ↗</a>';
+ }
+ $("force-detail").innerHTML=detail;
+}
+function download(rows,filename){
+ const cols=Object.keys(rows[0]||{});const csv=[cols.join(","),...rows.map(x=>cols.map(k=>{const v=x[k];return '"'+String(v===null||v===undefined?"":v).replace(/"/g,'""')+'"';}).join(","))].join("\n");
+ const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
+function renderSources(){
+ $("dataset-summary").innerHTML=[[String(D.campaigns.length),"Curated campaigns · "+D.campaigns.reduce((n,c)=>n+c.facts.length,0)+" localized numeric facts"],[String(lossRows.length),"Original German command-month loss totals"],[groupRows.filter(x=>x.totalCombatGroups!==null).length+" / "+groupRows.length,"Reported USAAF ETO/MTO group totals / all dated rows"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
+ const catalogue=Object.entries(D.sources).map(([k,s])=>({name:s.title,url:s.url,detail:s.class})).concat(Object.values(sourceIndex).map(s=>({name:s.title,url:s.url,detail:"Captured German wartime loss returns"}))).filter(x=>x.url);
+ const unique=new Map(catalogue.map(x=>[x.url,x]));
+ $("source-catalogue").innerHTML=[...unique.values()].map(x=>'<article><b>'+esc(x.name)+'</b><small>'+esc(x.detail)+'</small><a target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">Open original ↗</a></article>').join("");
+}
+function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();if(window.GrandAirWarV80Lab?.syncMonth)window.GrandAirWarV80Lab.syncMonth(state.month);}
+function init(){
+ if(!$("campaign-map"))return;
+ setupMap();renderCoverage();renderSources();
+ $("date-slider").addEventListener("input",e=>{cancelPlay();updateMonth(atIdx(Number(e.target.value)));});
+ $("prev-month").addEventListener("click",()=>{cancelPlay();updateMonth(atIdx(monthIdx(state.month)-1));});
+ $("next-month").addEventListener("click",()=>{cancelPlay();updateMonth(atIdx(monthIdx(state.month)+1));});
+ $("jump-today").addEventListener("click",()=>{cancelPlay();updateMonth("1944-06");});
+ $("play-time").addEventListener("click",()=>{
+  if(state.play!==null){cancelPlay();return;}
+  if(monthIdx(state.month)>=LMAX-LMIN)state.month=atIdx(0);
+  $("play-time").textContent="Ⅱ Pause";
+  state.play=setInterval(()=>{if(monthIdx(state.month)>=LMAX-LMIN){cancelPlay();return;}updateMonth(atIdx(monthIdx(state.month)+1));},750);
+ });
+ $("theater-select").addEventListener("change",e=>{state.theater=e.target.value;state.search="";const next=matching().find(active)||matching()[0];if(next)state.selected=next.id;update();});
+ $("campaign-search").addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();const next=matching().find(active)||matching()[0];if(next)state.selected=next.id;update();});
+ $("all-campaigns").addEventListener("change",e=>{state.all=e.target.checked;update();});
+ $("fit-map").addEventListener("click",()=>{if(!state.map)return;const cs=visibleOnMap();if(cs.length)state.map.flyToBounds(L.latLngBounds(cs.map(c=>[c.focus.lat,c.focus.lng])).pad(.3),{maxZoom:6,duration:.6});});
+ $("loss-command").addEventListener("change",e=>{state.lossCommand=e.target.value;state.lossMonth=state.month;renderLosses();drawMap();});
+ $("loss-outcome").addEventListener("change",e=>{state.lossOutcome=e.target.value;renderLosses();});
+ $("loss-window").addEventListener("change",e=>{state.lossWindow=e.target.value;renderLosses();});
+ $("dossier-german-analysis").addEventListener("click",()=>{
+  if(!window.GrandAirWarV80Lab)return;
+  const m=state.month;
+  const mode=m>="1944-06"&&m<="1944-07"?"readiness":m>="1944-08"?"fuel":"pilots";
+  window.GrandAirWarV80Lab.setMode(mode);
+  $("german-war-lab").scrollIntoView({behavior:"smooth",block:"start"});
+ });
+ $("dossier-analyze").addEventListener("click",()=>{
+  const c=D.campaigns.find(x=>x.id===state.selected),e=relatedReport(c);
+  if(e.target==="loss"){state.lossCommand=e.command;state.lossMonth=state.month;state.lossWindow="all";renderLosses();$("loss-lab").scrollIntoView({behavior:"smooth",block:"start"});}
+  else if(e.target==="vvs"||e.target==="mto"){state.forceSeries=e.target==="vvs"?"vvs":"usaaf";state.forceArea=e.target==="vvs"?"ETO":"MTO";state.forceSelected=state.month;renderForces();$("air-forces").scrollIntoView({behavior:"smooth",block:"start"});}
+ });
+ $("download-losses").addEventListener("click",()=>download(getLossData().map(x=>({period:x.period,command:x.theater,enemyDestroyed:x.enemyDestroyed,otherOperationalDestroyed:x.otherOperationalDestroyed,nonOperationalDestroyed:x.nonOperationalDestroyed,enemyDamaged:x.enemyDamaged,otherOperationalDamaged:x.otherOperationalDamaged,nonOperationalDamaged:x.nonOperationalDamaged,missingIncludedInEnemyDestroyed:x.missing,sourceId:x.sourceId,page:x.page??""})),"grand-air-war-german-command-losses.csv"));
+ $("force-series").addEventListener("change",e=>{state.forceSeries=e.target.value;state.forceSelected=state.month;renderForces();});
+ $("force-area").addEventListener("change",e=>{state.forceArea=e.target.value;state.forceSelected=state.month;renderForces();});
+ $("force-metric").addEventListener("change",e=>{state.forceMetric=e.target.value;state.forceSelected=state.month;renderForces();});
+ $("download-force").addEventListener("click",()=>download(forcePoints(),"grand-air-war-"+state.forceSeries+"-observations.csv"));
+ document.addEventListener("visibilitychange",()=>{if(document.hidden)cancelPlay();});
+ update();renderLosses();renderForces();
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,active};
+})();

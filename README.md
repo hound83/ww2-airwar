@@ -2,12 +2,17 @@
 
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
-**[Open Atlas](https://hound83.github.io/ww2-airwar/)** · **[v7.7 Europe research page (feature branch only)](grand-air-war-v77.html)** · **[Preview the developing v7.5 interface](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[v7.6 Normandy feature route (after PR merge)](grand-air-war-v76.html)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
+**[Open Atlas](https://hound83.github.io/ww2-airwar/)** · **[v7.7 Europe research page (feature branch only)](grand-air-war-v77.html)** · **[v8.0 Historical Atlas + Luftwaffe lab (review branch)](grand-air-war-v80.html)** · **[Preview the developing v7.5 interface](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[v7.6 Normandy feature route (after PR merge)](grand-air-war-v76.html)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
 
 > **Current status (30 October 2026):** The default site remains the v7.4 presentation; the opt-in v7.5 preview is a work in progress. The aircraft simulator view embeds an independently hosted-in-this-repository **frozen research physics v2.4 page**. This is not a validated final aircraft-performance model. No v3 physics results have been integrated.
 
 
 > **v7.6 branch preview (31 October 2026):** A proposed, standalone **map-first Grand Air War Normandy** experience exists at `grand-air-war-v76.html` on the feature branch. It is **not yet live** on GitHub Pages and does not replace the public v7.4 default or v7.5 preview. Month navigation spans 1936–45, but mapped historical evidence currently focuses May–August 1944; no missing data are manufactured. See [scope and limitations](docs/STATUS_AND_NEXT_STEPS.md).
+
+
+> **v8.0 feature review (1 November 2026):** The next integrated research preview is `grand-air-war-v80.html` on `feature/grand-air-war-v80-historical-atlas`. It replaces the modern-border overview with a physical 50m coastline map and compact campaign markers, adds German pilot losses, Reich fighter availability, production, fuel and unit studies, and links dossiers to dated evidence. It is **not merged or deployed**. See [primary-source scope and caution notes](research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md).
+
+> **v8.0 coherence/QA revision (2 November 2026, draft):** The same review page now presents all 20 campaign centres by default, a stable chronological list and discoverable section navigation. Spain's documented metric is accessible without misleading 1943 command-report warnings; France 1940 adds four specifically bounded RAF observations. A wider audit checks map clipping, 25 localized facts, 28 events, German/Allied aggregation and missing-data semantics. Still **not live** or archival-proof of every secondary transcription.
 
 ## Start here (maintainers and new chats)
 

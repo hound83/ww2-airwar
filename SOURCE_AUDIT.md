@@ -1,5 +1,9 @@
 # WW2 European Air War Atlas v7.2 — historical source audit
 
+## France 1940 dossier comparison (v8 review, 2 November 2026)
+
+The RAF Museum's [Battle of France exhibit](https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-battle-of-france/) reports **71 RAF bombers dispatched on 14 May 1940 and 40 not returned**. A separate RAF-published [*Air Power Review* 14(3), pp. 48–49](https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/documents1/air-power-review-vol-14-no-3/) describes **44 losses among 72 bombers** in a Sedan operation (p. 48) and **2,739 RAF fighter sorties plus 651 RAF bomber sorties over Dunkirk** (p. 49). The two May 14 counts may differ in operational boundaries or definitions; **do not average them or describe 40/44 as an all-campaign loss figure**. The v8 France dossier displays the RAF Museum pair and Dunkirk sorties as four separate source-compiled observations, with the 44/72 discrepancy flagged in the loss card's scope. French, Belgian, Dutch and German losses over the whole campaign are still not audited into one local ledger.
+
 ## Version 7.2: 26 further original month-end totals, visually verified
 
 **Scope:** exactly eight additional RAF Air Historical Branch (AHB) volumes of captured German aircraft-loss returns, yielding **26 newly transcribed source-printed monthly totals** (plus the four earlier v7.1 totals = 30). Each figure below was read **from the original rendered scan image**, not accepted from OCR alone. The values are aircraft, not pilots or Allied fighter claims. Reported *enemy action*, *other operational* and *non-operational* losses are distinct; each has separate *destroyed/damaged* columns. The “Missing” column is **already part of enemy-action destroyed** and does not increase the total.
