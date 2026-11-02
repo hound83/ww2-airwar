@@ -53,6 +53,25 @@
 .german-spotlights strong{font:normal 28px Georgia,serif;color:#efd5aa}
 .german-spotlights span{font-size:12px;font-weight:800}
 .german-spotlights small{font-size:10px;color:#a7c4c2}
-#dossier-german-analysis{margin-left:6px}
+#dossier-german-analysis{margin:0}
 @media(max-width:1050px){.german-spotlights{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:540px){.german-spotlights{grid-template-columns:1fr}#dossier-german-analysis{margin:6px 0 0}}
+@media(max-width:540px){.german-spotlights{grid-template-columns:1fr}}
+.atlas-sections{display:flex;gap:7px;flex-wrap:wrap;margin:-5px 0 19px;padding-bottom:12px;border-bottom:1px solid #365560}
+.atlas-sections a{font-size:11px;font-weight:720;color:#c8e5df;background:#1c3540;border:1px solid #47616d;padding:7px 11px;border-radius:5px;text-decoration:none}
+.atlas-sections a:hover,.atlas-sections a:focus-visible{background:#365a62;color:#fff1d7}
+.dossier-research-jump{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.dossier-research-jump p{margin:0}
+.dossier-research-jump button{display:block;width:100%;max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:left;margin:0}
+.dossier-research-jump button[hidden]{display:none!important}
+.dossier .fact-grid{grid-template-columns:repeat(auto-fit,minmax(min(175px,100%),1fr))}
+.no-evidence{grid-column:1/-1}
+.war-pin.inactive{opacity:.82}
+.cluster-choices{display:grid;gap:5px;color:#e9eee6}
+.cluster-choices strong{font-size:13px;color:#f5d5a1}
+.cluster-choices p{font-size:11px;color:#b5cccb}
+.cluster-choices button{background:#244653;border:1px solid #6d9692;color:#f2f2e8;text-align:left;padding:7px 8px;border-radius:4px;white-space:normal}
+.cluster-choices button:hover,.cluster-choices button:focus-visible{background:#3b6866}
+.map-panel .leaflet-popup-content-wrapper{min-width:180px}
+.map-panel .leaflet-popup-content{max-height:350px;overflow-y:auto}
+#campaigns,#loss-lab,#german-war-lab,#air-forces,#research-sources{scroll-margin-top:16px}
+@media(max-width:600px){.atlas-sections{gap:5px}.atlas-sections a{padding:6px 8px}.cluster-choices button{min-height:36px}}

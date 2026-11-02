@@ -12,6 +12,8 @@ A source-led, interactive historical atlas of WWII European airpower: aircraft a
 
 > **v8.0 feature review (1 November 2026):** The next integrated research preview is `grand-air-war-v80.html` on `feature/grand-air-war-v80-historical-atlas`. It replaces the modern-border overview with a physical 50m coastline map and compact campaign markers, adds German pilot losses, Reich fighter availability, production, fuel and unit studies, and links dossiers to dated evidence. It is **not merged or deployed**. See [primary-source scope and caution notes](research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md).
 
+> **v8.0 coherence/QA revision (2 November 2026, draft):** The same review page now presents all 20 campaign centres by default, a stable chronological list and discoverable section navigation. Spain's documented metric is accessible without misleading 1943 command-report warnings; France 1940 adds four specifically bounded RAF observations. A wider audit checks map clipping, 25 localized facts, 28 events, German/Allied aggregation and missing-data semantics. Still **not live** or archival-proof of every secondary transcription.
+
 ## Start here (maintainers and new chats)
 
 - [**Project status, roadmap and outstanding work**](docs/STATUS_AND_NEXT_STEPS.md)

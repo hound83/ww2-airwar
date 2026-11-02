@@ -16,17 +16,17 @@ const sourceLink=(id,label)=>D.sources[id]?'<a target="_blank" rel="noopener nor
 const lossRows=[...A.monthlyReturns,...B.monthlyReturns].map(x=>({...x,period:(()=>{const z=Legacy.at(x.i);return z.y+"-"+String(z.m+1).padStart(2,"0");})()})).sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater));
 const sourceIndex={...A.sourceIndex,...B.sourceIndex};
 const groupRows=G.rows.map(r=>Object.fromEntries(G.columns.map((c,i)=>[c,r[i]])));
-const state={month:"1944-06",theater:"all",search:"",all:false,selected:"normandy",map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
+const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
 const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Eastern Front",med:"Mediterranean / Italy",north:"Northern Europe"};
 const active=c=>c.start<=state.month&&c.end>=state.month;
 const matches=c=>(state.theater==="all"||c.theater===state.theater)&&(!state.search||(c.name+" "+c.objective+" "+c.participants.join(" ")+" "+c.consequence).toLowerCase().includes(state.search));
 const matching=()=>D.campaigns.filter(matches);
 const visibleOnMap=()=>matching().filter(c=>state.all||active(c));
 function cancelPlay(){if(state.play!==null){clearInterval(state.play);state.play=null;}$("play-time").textContent="▶ Play";}
-function updateMonth(month,keep=false){
+function updateMonth(month){
  if(monthIdx(month)<0||monthIdx(month)>LMAX-LMIN)return;
  state.month=month;
- if(!keep&&!active(D.campaigns.find(c=>c.id===state.selected)||{})){const a=matching().find(active);if(a)state.selected=a.id;}
+ // Scrubbing and playback never silently replace the campaign a reader selected.
  update();
 }
 function pickCampaign(id,fly=true){
@@ -35,11 +35,19 @@ function pickCampaign(id,fly=true){
  if(!active(c))state.month=c.start;
  if(state.theater!=="all"&&state.theater!==c.theater)state.theater="all";
  update();
+ const list=$('campaign-list'),row=list.querySelector?.('[data-campaign="'+id+'"]');
+ // Only scroll the chronology's own viewport. Do not jump the entire page
+ // away from the map when a marker or dated event selects a campaign.
+ if(row?.getBoundingClientRect&&list.getBoundingClientRect){
+  const viewport=list.getBoundingClientRect(),target=row.getBoundingClientRect();
+  if(target.top<viewport.top)list.scrollTop-=viewport.top-target.top;
+  else if(target.bottom>viewport.bottom)list.scrollTop+=target.bottom-viewport.bottom;
+ }
  if(fly&&state.map){const z=state.map.getZoom();state.map.flyTo([c.focus.lat,c.focus.lng],Math.max(6,Math.min(9,z)),{duration:.6});}
 }
 function selectMoment(cId,date,lat,lng){
  pickCampaign(cId,false);
- if(date&&date.slice(0,7)!==state.month)updateMonth(date.slice(0,7),true);
+ if(date&&date.slice(0,7)!==state.month)updateMonth(date.slice(0,7));
  if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
 }
 function makeIcon(text,kind,selected,inactive=false){
@@ -49,6 +57,38 @@ function makeIcon(text,kind,selected,inactive=false){
   iconSize:kind==="cluster"?[37,37]:[29,29],
   iconAnchor:kind==="cluster"?[18,18]:[14,14]
  });
+}
+// Clip the *physical land polygons* to the European chart before passing them to
+// Leaflet. Rendering a whole-world land ring in a small projected chart draws
+// enormous polygon edges through the viewport on zoom/pan in some browsers.
+function clipRing(ring){
+ let vertices=ring.map(p=>[p[0],p[1]]);
+ const edges=[
+  {inside:p=>p[0]>=-24,intersect:(a,b)=>[-24,a[1]+(-24-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[0]<=62,intersect:(a,b)=>[62,a[1]+(62-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[1]>=30,intersect:(a,b)=>[a[0]+(30-a[1])*(b[0]-a[0])/(b[1]-a[1]),30]},
+  {inside:p=>p[1]<=76,intersect:(a,b)=>[a[0]+(76-a[1])*(b[0]-a[0])/(b[1]-a[1]),76]}
+ ];
+ for(const edge of edges){
+  if(!vertices.length)break;
+  const output=[];let before=vertices[vertices.length-1];
+  for(const current of vertices){
+   const prevInside=edge.inside(before),currInside=edge.inside(current);
+   if(currInside!==prevInside)output.push(edge.intersect(before,current));
+   if(currInside)output.push(current);
+   before=current;
+  }
+  vertices=output;
+ }
+ if(vertices.length<3)return null;
+ const first=vertices[0],last=vertices[vertices.length-1];
+ if(first[0]!==last[0]||first[1]!==last[1])vertices.push([...first]);
+ return vertices.length>=4?vertices:null;
+}
+function europeanLand(geo){
+ const geometry=geo.geometry||geo;
+ const polys=geometry.type==="Polygon"?[geometry.coordinates]:geometry.type==="MultiPolygon"?geometry.coordinates:[];
+ return {type:"Feature",properties:{},geometry:{type:"MultiPolygon",coordinates:polys.map(poly=>poly.map(clipRing).filter(Boolean)).filter(poly=>poly.length)}};
 }
 function setupMap(){
  if(!window.L){$("map-fallback").hidden=false;return;}
@@ -61,7 +101,7 @@ function setupMap(){
   for(let lon=-20;lon<=60;lon+=10){L.polyline([[32,lon],[73,lon]],{color:"#c6bda0",weight:.55,opacity:.27,interactive:false,dashArray:"3 6"}).addTo(grid);}
   for(let lat=35;lat<=70;lat+=5){L.polyline([[lat,-22],[lat,59]],{color:"#c6bda0",weight:.55,opacity:.22,interactive:false,dashArray:"3 6"}).addTo(grid);}
   state.mapMarkers=L.layerGroup().addTo(state.map);
-  state.map.setView([52,13],5);
+  state.map.fitBounds(L.latLngBounds(D.campaigns.map(c=>[c.focus.lat,c.focus.lng])).pad(.23),{maxZoom:5,animate:false});
   state.map.on("zoomend moveend",drawMap);
   // 50m physical LAND TopoJSON. No modern administrative lines, cities or roads.
   // External CORS download is required. Failure leaves campaign markers available.
@@ -70,7 +110,8 @@ function setupMap(){
     .then(resp=>{if(!resp.ok)throw Error("coastline dataset HTTP "+resp.status);return resp.json();})
     .then(world=>{
      if(!world.objects||!world.objects.land)throw Error("Unexpected land topology");
-     const geo=window.topojson.feature(world,world.objects.land);
+     const geo=europeanLand(window.topojson.feature(world,world.objects.land));
+     if(!geo.geometry.coordinates.length)throw Error("European coastline geometry is empty");
      state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.canvas()});
      state.landLayer.addTo(state.map);
      if(state.landLayer.bringToBack)state.landLayer.bringToBack();
@@ -109,7 +150,16 @@ function drawMap(){
   const icon=makeIcon(multi?group.length:String(p.index),multi?"cluster":"campaign",selected,!multi&&!active(p.c));
   const mk=L.marker([lat,lng],{icon,keyboard:true,title:multi?group.length+" campaigns nearby, zoom for details":p.c.name,zIndexOffset:selected?500:0});
   if(multi){
-   mk.on("click",()=>{const bounds=L.latLngBounds(group.map(q=>[q.lat,q.lng]));state.map.flyToBounds(bounds.pad(1),{maxZoom:Math.min(11,state.map.getZoom()+2)});});
+   const items=group.map(q=>'<button type="button" data-map-campaign="'+esc(q.c.id)+'">'+q.index+' · '+esc(q.c.name)+'</button>').join("");
+   mk.bindPopup('<div class="cluster-choices"><strong>'+group.length+' campaigns here</strong><p>Choose one directly, or zoom in to separate the markers.</p>'+items+'<button type="button" data-map-zoom>Zoom into group</button></div>',{maxWidth:280});
+   mk.on("popupopen",e=>{
+    const root=e.popup.getElement();
+    root.querySelectorAll("[data-map-campaign]").forEach(b=>b.addEventListener("click",()=>{state.map.closePopup();pickCampaign(b.dataset.mapCampaign,true);}));
+    root.querySelector("[data-map-zoom]")?.addEventListener("click",()=>{
+     const bounds=L.latLngBounds(group.map(q=>[q.lat,q.lng]));
+     state.map.closePopup();state.map.flyToBounds(bounds.pad(1),{maxZoom:Math.min(11,state.map.getZoom()+2)});
+    });
+   });
    mk.bindTooltip(group.map(q=>q.index+" · "+q.c.name).join(" / "),{direction:"top",opacity:.95});
   }else{
    mk.on("click",()=>pickCampaign(p.c.id,true));
@@ -122,8 +172,8 @@ function renderTime(){
  $("date-slider").value=String(monthIdx(state.month));$("date-display").textContent=mLabel(state.month);
  $("prev-month").disabled=monthIdx(state.month)===0;$("next-month").disabled=monthIdx(state.month)===LMAX-LMIN;
  $("theater-select").value=state.theater;$("campaign-search").value=state.search;$("all-campaigns").checked=state.all;
- $("coverage-label").textContent=matching().filter(active).length+" active · "+matching().length+" in selection";
- $("map-heading").textContent=matching().filter(active).length+" campaigns active · "+mLabel(state.month);
+ $("coverage-label").textContent=visibleOnMap().length+" shown of "+matching().length+" matching · "+matching().filter(active).length+" active";
+ $("map-heading").textContent=visibleOnMap().length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
 }
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected)||D.campaigns[0];
@@ -132,18 +182,22 @@ function renderDossier(){
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
- $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Check observation")+'</article>').join(""):'<div class="no-evidence">No battle-specific loss or sortie total has been verified for this campaign. A blank record is not zero. Use the linked command and force series below for separate reporting populations.</div>';
+ $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Check observation")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+c.moments.length+' dated event(s) and '+c.sources.length+' linked research source(s).</div>';
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
  $("dossier-link-detail").innerHTML=norm?'<div class="dossier-links"><a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a></div>':'';
  const evidence=relatedReport(c);
  $("dossier-research-context").textContent=evidence.text;
+ $("dossier-analyze").hidden=!evidence.target;
  $("dossier-analyze").disabled=!evidence.target;
- $("dossier-analyze").textContent=evidence.target==="loss"?"Inspect German command returns":evidence.target==="vvs"?"Inspect dated VVS strength":evidence.target==="mto"?"Inspect USAAF MTO groups":"No comparable series for this month";
- $("dossier-german-analysis").disabled=!(state.month>="1943-09"&&state.month<="1945-03");
+ $("dossier-analyze").textContent=evidence.target==="loss"?"Inspect German command returns":evidence.target==="vvs"?"Inspect dated VVS strength":"Inspect USAAF MTO groups";
+ const relevantGerman=c.start<="1945-03"&&c.end>="1943-09"&&state.month>="1943-09"&&state.month<="1945-03";
+ $("dossier-german-analysis").hidden=!relevantGerman;
+ $("dossier-german-analysis").disabled=!relevantGerman;
 
 }
 function relatedReport(c){
+ if(state.month<"1943-09")return {target:null,text:"Campaign evidence: "+c.facts.length+" localized numeric observation(s), "+c.moments.length+" dated event(s), "+c.sources.length+" research source(s). The audited German command-loss series starts in September 1943; applying it to "+c.name+" would be historically incorrect."};
  if(c.theater==="west"||c.theater==="reich"){
   const cmd=c.theater==="reich"?"Reich":"Western Front";
   const report=lossRows.find(x=>x.period===state.month&&x.theater===cmd);
@@ -162,9 +216,9 @@ function relatedReport(c){
 }
 
 function renderCampaignList(){
- const rows=matching().sort((a,b)=>{const n=Number(active(b))-Number(active(a));return n||b.start.localeCompare(a.start);});
+ const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
- $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+esc(c.participants.slice(0,2).join(" vs "))+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+'</strong><small>'+esc(themes[c.theater])+' · '+c.facts.length+' sourced numerical fact(s) · '+c.moments.length+' dated event(s)</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
 function renderMoments(){
@@ -191,7 +245,7 @@ function plotStacked(rows,valueKeys,labels,palette,selected,onClick){
   for(let j=0;j<valueKeys.length;j++){
    const v=r[valueKeys[j]],height=Number.isFinite(v)?(h-pad.t-pad.b)*v/ymax:0;
    if(Number.isFinite(v)&&height>0){
-    y-=height;svg+='<rect class="data-bar '+(key===selected?"selected":"")+'" data-chart-index="'+i+'" x="'+barx.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+height.toFixed(1)+'" fill="'+palette[j]+'"><title>'+esc(key+" · "+labels[j]+" "+fmt(v))+'</title></rect>';
+    y-=height;svg+='<rect class="data-bar '+(key===selected?"selected":"")+'" role="button" tabindex="0" aria-label="'+esc(key+" · "+labels[j]+" "+fmt(v)+"; inspect observation")+'" data-chart-index="'+i+'" x="'+barx.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+height.toFixed(1)+'" fill="'+palette[j]+'"><title>'+esc(key+" · "+labels[j]+" "+fmt(v))+'</title></rect>';
    }
   }
   const label=key?.length===7?key.slice(5)+"/"+key.slice(2,4):String(key??"");
@@ -200,12 +254,18 @@ function plotStacked(rows,valueKeys,labels,palette,selected,onClick){
  svg+='</svg><div class="chart-legend">'+labels.map((x,i)=>'<span><i style="background:'+palette[i]+'"></i>'+esc(x)+'</span>').join("")+'</div>';
  return svg;
 }
+function bindChartBars(root,selector,choose){
+ root.querySelectorAll(selector).forEach(e=>{
+  e.addEventListener("click",()=>choose(Number(e.dataset.chartIndex)));
+  e.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();choose(Number(e.dataset.chartIndex));}});
+ });
+}
 function renderLosses(){
  const r=getLossData();$("loss-command").value=state.lossCommand;$("loss-outcome").value=state.lossOutcome;$("loss-window").value=state.lossWindow;
  const keys=lossFields(),labels=["Enemy action","Other operational","Non-operational"],palette=["#dbab7d","#8fb4d4","#7ec5b0"];
  const root=$("loss-chart");
  root.innerHTML=r.length?plotStacked(r,keys,labels,palette,state.lossMonth):'<div class="empty">There are no original German monthly totals for this selected reporting command and year.</div>';
- root.querySelectorAll("[data-chart-index]").forEach(e=>e.addEventListener("click",()=>{const row=r[Number(e.dataset.chartIndex)];state.lossMonth=row.period;renderLosses();}));
+ bindChartBars(root,"[data-chart-index]",i=>{state.lossMonth=r[i].period;renderLosses();});
  const row=r.find(x=>x.period===state.lossMonth)||r[r.length-1];
  if(row){state.lossMonth=row.period;
   const total=state.lossOutcome==="destroyed"?row.destroyed:row.damaged;
@@ -216,7 +276,7 @@ function renderCoverage(){
  const n=lossRows.length,group=groupRows.length,sov=P.soviet.length;
  $("coverage-matrix").innerHTML=[
  ["German command loss returns",n+" recorded month-commands","Reich & West, Sep 1943–Nov 1944","Present"],
- ["USAAF combat group strength",group+" theater-months","ETO & MTO, Feb 1942–May 1945","Present"],
+ ["USAAF combat group strength",groupRows.filter(r=>r.totalCombatGroups!==null).length+" reported totals / "+group+" theater-month rows","ETO & MTO, Feb 1942–May 1945; blanks are unavailable","Present"],
  ["VVS front and reserve strength",sov+" dated snapshots","Jul 1943–May 1945, excludes PVO/naval","Present"],
  ["USAAF factory acceptances",V.usaFactory.length+" months","Worldwide, not European airfield deployment","Present"],
  ["Eastern German aircraft loss returns","Not transcribed here","Do not replace with Western returns","Missing"],
@@ -239,7 +299,7 @@ function renderForces(){
  const points=forcePoints();const index=points.findIndex(x=>x.period===state.forceSelected),selected=points[index]||points.find(x=>x.period<=state.month&&x.value!==null&&x.value!==undefined)||points.find(x=>x.value!==null&&x.value!==undefined);
  const chartRows=points.map(x=>({period:x.period,value:x.value}));const root=$("force-chart");
  root.innerHTML=plotStacked(chartRows,["value"],[forceTitle()],["#79cbbd"],selected?.period);
- root.querySelectorAll("[data-chart-index]").forEach(e=>e.addEventListener("click",()=>{state.forceSelected=points[Number(e.dataset.chartIndex)].period;renderForces();}));
+ bindChartBars(root,"[data-chart-index]",i=>{state.forceSelected=points[i].period;renderForces();});
  if(selected)state.forceSelected=selected.period;
  const desc=state.forceSeries==="usaaf"?"A combat group is an organization, not an aircraft. ETO and MTO records are theater assignments from Table 2; group role subtotals can contain archival arithmetic discrepancies.":
  state.forceSeries==="vvs"?"VVS original front air army + high-command reserve snapshots. Excludes the naval and PVO forces, other distant Soviet aviation. Snapshots are separate dates; no interpolation.":
@@ -258,7 +318,7 @@ function download(rows,filename){
  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
 function renderSources(){
- $("dataset-summary").innerHTML=[[String(D.campaigns.length), "Curated campaigns incl. pre-war Spanish aviation"],[String(lossRows.length),"Original German command-month loss totals"],[String(groupRows.length),"ETO/MTO combat group-month records"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
+ $("dataset-summary").innerHTML=[[String(D.campaigns.length),"Curated campaigns · "+D.campaigns.reduce((n,c)=>n+c.facts.length,0)+" localized numeric facts"],[String(lossRows.length),"Original German command-month loss totals"],[groupRows.filter(x=>x.totalCombatGroups!==null).length+" / "+groupRows.length,"Reported USAAF ETO/MTO group totals / all dated rows"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
  const catalogue=Object.entries(D.sources).map(([k,s])=>({name:s.title,url:s.url,detail:s.class})).concat(Object.values(sourceIndex).map(s=>({name:s.title,url:s.url,detail:"Captured German wartime loss returns"}))).filter(x=>x.url);
  const unique=new Map(catalogue.map(x=>[x.url,x]));
  $("source-catalogue").innerHTML=[...unique.values()].map(x=>'<article><b>'+esc(x.name)+'</b><small>'+esc(x.detail)+'</small><a target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">Open original ↗</a></article>').join("");
@@ -305,5 +365,5 @@ function init(){
  update();renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,choose:pickCampaign,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,active};
+window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,active};
 })();

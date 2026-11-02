@@ -55,13 +55,17 @@ function drawChart(all,key){
  for(let tick=0;tick<=4;tick++){const y=17+plot*(1-tick/4);svg+='<line class="gridline" x1="'+left+'" y1="'+y+'" x2="'+(w-14)+'" y2="'+y+'"/><text x="'+(left-6)+'" y="'+(y+3)+'" text-anchor="end">'+Math.round(max*tick/4)+'</text>';}
  for(let i=0;i<n;i++){
   const r=all[i],x=left+gap*(i+.5),height=plot*r.v/max,other=plot*r.b/max,cls=r.key===key?" selected":"";
-  svg+='<rect class="data-bar'+cls+'" data-german-index="'+i+'" x="'+(x-bw/2)+'" y="'+(222-height)+'" width="'+bw+'" height="'+height+'" fill="#a5d1c3"><title>'+esc(r.key)+': '+fmt(r.v)+'</title></rect>';
-  if(other>0)svg+='<rect class="data-bar'+cls+'" data-german-index="'+i+'" x="'+(x-bw/2)+'" y="'+(222-height-other)+'" width="'+bw+'" height="'+other+'" fill="#537686"><title>Not serviceable: '+fmt(r.b)+'</title></rect>';
-  if(n<15||i%3===0)svg+='<text x="'+x+'" y="242" text-anchor="middle">'+esc(n>=15?r.period.slice(2):r.key==="II./JG 53"?"II/JG53":r.key==="III./JG 53"?"III/JG53":label(r.period))+'</text>';
+  svg+='<rect class="data-bar'+cls+'" role="button" tabindex="0" aria-label="'+esc(r.key+': '+fmt(r.v)+'; inspect source row')+'" data-german-index="'+i+'" x="'+(x-bw/2)+'" y="'+(222-height)+'" width="'+bw+'" height="'+height+'" fill="#a5d1c3"><title>'+esc(r.key)+': '+fmt(r.v)+'</title></rect>';
+  if(other>0)svg+='<rect class="data-bar'+cls+'" role="button" tabindex="0" aria-label="'+esc(r.key+': '+fmt(r.b)+' not serviceable; inspect source row')+'" data-german-index="'+i+'" x="'+(x-bw/2)+'" y="'+(222-height-other)+'" width="'+bw+'" height="'+other+'" fill="#537686"><title>Not serviceable: '+fmt(r.b)+'</title></rect>';
+  if(n<15||i%3===0)svg+='<text x="'+x+'" y="242" text-anchor="middle">'+esc(n>=15?r.period.slice(2):lab.mode==="readiness"?r.key.slice(5):r.key==="II./JG 53"?"II/JG53":r.key==="III./JG 53"?"III/JG53":label(r.period))+'</text>';
  }
  svg+='</svg><div class="chart-legend"><span><i style="background:#a5d1c3"></i>'+esc(lab.mode==="pilots"?"Pilots lost":lab.mode==="production"?"All aircraft produced":lab.mode==="fuel"?"Aviation fuel capacity %":"Serviceable aircraft")+'</span>'+(lab.mode==="unit"||lab.mode==="readiness"?'<span><i style="background:#537686"></i>Non-serviceable aircraft</span>':"")+'</div>';
  host.innerHTML=svg;
- host.querySelectorAll("[data-german-index]").forEach(el=>el.addEventListener("click",()=>{lab.selected=all[Number(el.dataset.germanIndex)].key;render();}));
+ host.querySelectorAll("[data-german-index]").forEach(el=>{
+  const choose=()=>{lab.selected=all[Number(el.dataset.germanIndex)].key;render();};
+  el.addEventListener("click",choose);
+  el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();choose();}});
+ });
 }
 function connection(chosen){
  const ar=window.GrandAirWarV77?.lossRows||[];
@@ -82,8 +86,11 @@ function render(){
  drawChart(a,chosen.key);
 }
 function exportCSV(){
- const series=rows(),lines=["period,metric,value,nonserviceable,source"];
- for(const r of series)lines.push([r.period,lab.mode,r.v,r.b,sources()[0]].join(","));
+ // Full source fields travel with the numbers: a readiness observation includes
+ // its exact day and both fighter types; pilot rates aren't lost on export.
+ const records=rows().map(r=>({...r.raw,mode:lab.mode,sourceUrl:D.sources[r.raw.source||sources()[0]]?.url||""}));
+ const columns=[...new Set(records.flatMap(Object.keys))];
+ const lines=[columns.join(","),...records.map(r=>columns.map(k=>'"'+String(r[k]??"").replace(/"/g,'""')+'"').join(","))];
  const blob=new Blob([lines.join("\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="grand-air-war-germany-"+lab.mode+".csv";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 }

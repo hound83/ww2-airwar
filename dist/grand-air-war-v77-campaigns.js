@@ -101,6 +101,16 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "title": "RAF Museum: British Military Aviation in 1940",
       "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1940-2/",
       "class": "museum-timeline"
+    },
+    "rafFrance": {
+      "title": "RAF Museum: The Battle of France, 14 May 1940 bomber operation",
+      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-battle-of-france/",
+      "class": "museum-historical-summary"
+    },
+    "rafAirPowerFrance": {
+      "title": "RAF Air Power Review 14(3), pp. 48–49: France 1940 and Dunkirk RAF sorties",
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/documents1/air-power-review-vol-14-no-3/",
+      "class": "RAF-published-secondary-research-with-footnotes"
     }
   },
   "campaigns": [
@@ -250,11 +260,50 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       ],
       "objective": "German tactical air support and attacks on airfields helped the land offensive; Allied air forces defended and attacked communications.",
       "turningPoint": "The campaign rapidly displaced Allied aircraft and support infrastructure as German ground forces advanced.",
-      "consequence": "The air war moved from France toward the defence of Britain; detailed French, Belgian, Dutch and RAF unit returns remain priorities.",
+      "consequence": "The air war moved from France toward the defence of Britain. The figures below cover particular RAF actions only, not all Allied or German aircraft lost in France; detailed French, Belgian, Dutch and RAF unit returns remain priorities.",
       "sources": [
-        "rafSealion"
+        "rafSealion",
+        "rafFrance",
+        "rafAirPowerFrance"
       ],
-      "facts": [],
+      "facts": [
+        {
+          "label": "RAF bombers departing on 14 May; one particular operation, not the campaign total",
+          "value": 71,
+          "unit": "bombers dispatched",
+          "scope": "RAF Museum account of the 14 May 1940 attack; excludes other RAF and Allied operations",
+          "sourceId": "rafFrance",
+          "date": "1940-05-14",
+          "type": "museum-reported"
+        },
+        {
+          "label": "Of those 71 bombers, aircraft that did not return",
+          "value": 40,
+          "unit": "aircraft not returned",
+          "scope": "RAF Museum 14 May 1940 account; narrower than whole-campaign losses. A different RAF research article reports 44/72 for a Sedan action: definitions/coverage require reconciliation",
+          "sourceId": "rafFrance",
+          "date": "1940-05-14",
+          "type": "museum-reported-disputed-scope"
+        },
+        {
+          "label": "RAF fighter sorties flown in the Dunkirk evacuation air battle",
+          "value": 2739,
+          "unit": "fighter sorties",
+          "scope": "RAF Air Power Review 14(3), p.49, cumulative RAF fighter sorties over Dunkirk during Operation Dynamo; not aircraft or the six-week France campaign total",
+          "sourceId": "rafAirPowerFrance",
+          "date": "1940-05-26 to 1940-06-04",
+          "type": "official-RAF-published-secondary"
+        },
+        {
+          "label": "RAF bomber sorties in the same Dunkirk reporting window",
+          "value": 651,
+          "unit": "bomber sorties",
+          "scope": "RAF Air Power Review 14(3), p.49, RAF bomber sorties over Dunkirk during Operation Dynamo; not a loss count or fighter sortie count",
+          "sourceId": "rafAirPowerFrance",
+          "date": "1940-05-26 to 1940-06-04",
+          "type": "official-RAF-published-secondary"
+        }
+      ],
       "moments": [
         {
           "date": "1940-05-10",
@@ -262,6 +311,27 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "place": "Benelux",
           "lat": 50.8,
           "lng": 4.4
+        },
+        {
+          "date": "1940-05-14",
+          "title": "RAF bombers suffer severe losses over Sedan",
+          "place": "Sedan, France",
+          "lat": 49.7,
+          "lng": 4.94
+        },
+        {
+          "date": "1940-05-26",
+          "title": "Operation Dynamo evacuation begins; RAF flies fighter and bomber cover",
+          "place": "Dunkirk, France",
+          "lat": 51.04,
+          "lng": 2.38
+        },
+        {
+          "date": "1940-06-14",
+          "title": "German forces occupy Paris",
+          "place": "Paris, France",
+          "lat": 48.86,
+          "lng": 2.35
         }
       ]
     },
