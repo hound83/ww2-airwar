@@ -86,8 +86,13 @@ function clipRing(ring){
  return vertices.length>=4?vertices:null;
 }
 function europeanLand(geo){
- const geometry=geo.geometry||geo;
- const polys=geometry.type==="Polygon"?[geometry.coordinates]:geometry.type==="MultiPolygon"?geometry.coordinates:[];
+ // topojson.feature() returns a FeatureCollection when the named TopoJSON
+ // object is a GeometryCollection (world-atlas land-50m uses that form).
+ const features=geo.type==="FeatureCollection"?geo.features:[geo];
+ const polys=features.flatMap(feature=>{
+  const geometry=feature.geometry||feature;
+  return geometry.type==="Polygon"?[geometry.coordinates]:geometry.type==="MultiPolygon"?geometry.coordinates:[];
+ });
  return {type:"Feature",properties:{},geometry:{type:"MultiPolygon",coordinates:polys.map(poly=>poly.map(clipRing).filter(Boolean)).filter(poly=>poly.length)}};
 }
 function setupMap(){

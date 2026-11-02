@@ -64,6 +64,8 @@ const before=A.selected();A.setMonth("1944-06");assert.equal(A.selected(),before
 const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-170,0],[170,0],[170,80],[-170,80],[-170,0]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
 const cropped=A.clipEuropeanLand(raw);
 assert.ok(cropped.geometry.coordinates.length);
+const collection=A.clipEuropeanLand({type:"FeatureCollection",features:[raw]});
+assert.equal(collection.geometry.coordinates.length,cropped.geometry.coordinates.length,"world-atlas GeometryCollection conversion");
 for(const poly of cropped.geometry.coordinates)for(const ring of poly)for(const [lon,lat] of ring){assert.ok(lon>=-24&&lon<=62&&lat>=30&&lat<=76,"world-land edge extends outside Europe chart");}
 assert.ok(cropped.geometry.coordinates.some(poly=>poly.some(r=>r.some(pt=>pt[0]===-24))),"global-ring boundary was not clipped");
 const losses=A.lossRows;
