@@ -37,6 +37,26 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1939-2/",
       "class": "museum-chronology"
     },
+    "rafPoland1939": {
+      "title": "RAF Museum: Polish and Czechoslovak airmen, including the September 1939 campaign",
+      "url": "https://www.rafmuseum.org.uk/blog/poles-and-czechoslovaks-in-the-battle-of-britain/",
+      "class": "RAF-museum-retrospective; not original opposing loss returns"
+    },
+    "polishMuseumGnyś": {
+      "title": "Polish Aviation Museum: Władysław Gnyś and 121st Fighter Squadron, 1 September 1939",
+      "url": "https://muzeumlotnictwa.pl/en/pilots-2nd-aviation-regiment/",
+      "class": "national-aviation-museum-biographical-research"
+    },
+    "polishMuseumOrawka": {
+      "title": "Polish Aviation Museum: 24th Reconnaissance Squadron PZL.23 raid, 3 September 1939",
+      "url": "https://muzeumlotnictwa.pl/en/aviation-traces/aviation-disasters/g-39-orawka/",
+      "class": "national-aviation-museum-operational-account"
+    },
+    "ushmmPoland": {
+      "title": "United States Holocaust Memorial Museum: Invasion and partition of Poland, September–October 1939",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/invasion-of-poland-fall-1939",
+      "class": "official-museum-historical-synthesis"
+    },
     "rafSealion": {
       "title": "RAF Museum: Operation Sealion and the Battle of Britain",
       "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/operation-sealion/",
@@ -180,7 +200,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "name": "Invasion of Poland",
       "theater": "east",
       "start": "1939-09",
-      "end": "1939-09",
+      "end": "1939-10",
       "focus": {
         "lat": 52.1,
         "lng": 20.9,
@@ -188,22 +208,129 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       },
       "participants": [
         "Luftwaffe",
-        "Polish Air Force"
+        "Polish Air Force (including 121st Fighter Squadron and 24th Reconnaissance Squadron)",
+        "Soviet forces from 17 September (no localized VVS aircraft ledger)"
       ],
-      "objective": "German air attacks supported the invasion and targeted Polish airfields and communications.",
-      "turningPoint": "On 1 September the German campaign began; Polish aviation fought both in the air and from dispersed fields.",
-      "consequence": "Poland was overrun; the scale and disposition of air losses need separate Polish/German source registers.",
+      "objective": "The German invasion used massed fighters and bombers to support ground advances, disrupt Polish communications and attack military targets. Polish aviation sought to intercept attacks and support its ground forces despite a large numerical and technological disadvantage.",
+      "turningPoint": "Polish squadrons dispersed to field airstrips before the attack; they continued to fly interceptions and strikes. Germany invaded on 1 September; the Soviet invasion on 17 September opened another front. Warsaw surrendered on 28 September.",
+      "consequence": "Poland's remaining organized resistance ended on 6 October, but surviving Polish aircrews continued the war from abroad. The RAF Museum reports aircraft losses for the 1939 campaign, not a complete, independently audited day-by-day German/Polish loss ledger.",
+      "uncertaintyNote": "Source disagreement: the RAF Museum says Polish squadrons were NOT destroyed on their airfields in the first days, having dispersed. The US Holocaust Memorial Museum's campaign summary says most Polish aircraft were destroyed in those first days. Different categories and evidence behind these summaries have not yet been reconciled. Neither interpretation is presented as a confirmed aircraft-on-ground loss count.",
       "sources": [
-        "raf1939"
+        "rafPoland1939",
+        "polishMuseumGnyś",
+        "polishMuseumOrawka",
+        "ushmmPoland"
       ],
-      "facts": [],
+      "facts": [
+        {
+          "label": "Polish Air Force aircraft facing the invasion, mostly obsolete",
+          "value": 300,
+          "unit": "aircraft · approximate",
+          "scope": "Polish Air Force, opening of September 1939; rounded museum estimate, not an exact serviceability or fighter-only inventory",
+          "sourceId": "rafPoland1939",
+          "date": "1939-09-01",
+          "type": "approximate retrospective estimate"
+        },
+        {
+          "label": "German modern fighters and bombers opposing Poland",
+          "value": 1300,
+          "unit": "aircraft · more than",
+          "scope": "RAF Museum campaign-scale description of German fighters and bombers; lower bound, not all Luftwaffe aircraft and not same airframe-type population as the Polish estimate",
+          "sourceId": "rafPoland1939",
+          "date": "1939-09-01",
+          "type": "reported lower bound"
+        },
+        {
+          "label": "German aircraft shot down by Polish pilots, per RAF Museum retrospective",
+          "value": 126,
+          "unit": "aircraft · retrospective tally",
+          "scope": "Entire Polish 1939 campaign; RAF Museum retrospective assertion, not independently reconciled with original German loss returns; not a day-level or aircraft-type table",
+          "sourceId": "rafPoland1939",
+          "date": "1939-09 to 1939-10",
+          "type": "museum retrospective; original-loss audit outstanding"
+        },
+        {
+          "label": "Polish aircraft lost, per RAF Museum retrospective",
+          "value": 114,
+          "unit": "aircraft · retrospective tally",
+          "scope": "Entire Polish 1939 campaign; museum summary; loss definitions and ground/air cause breakdown are not independently audited",
+          "sourceId": "rafPoland1939",
+          "date": "1939-09 to 1939-10",
+          "type": "museum retrospective; cause breakdown unresolved"
+        }
+      ],
       "moments": [
         {
           "date": "1939-09-01",
-          "title": "German invasion begins",
-          "place": "Poland",
+          "title": "German invasion begins; Polish aircraft operate from dispersed fields",
+          "place": "Poland · campaign-wide (symbolic map point)",
           "lat": 52.2,
-          "lng": 21
+          "lng": 21,
+          "summary": "German bombers and fighters supported the invasion. Polish units had dispersed from many permanent airfields before the attack, so the popular image of the Polish air force being wiped out immediately on the ground is disputed by the RAF Museum.",
+          "units": "Luftwaffe versus Polish Air Force; nationwide operations, no individual formation implied by map point",
+          "outcome": "Air operations continued beyond the opening day. The detailed ground-destruction narrative conflicts across the linked museum syntheses.",
+          "sourceIds": ["rafPoland1939", "ushmmPoland"],
+          "confidence": "Conflicting retrospective summaries; no reconciled daily aircraft-loss ledger"
+        },
+        {
+          "date": "1939-09-01",
+          "title": "121st Fighter Squadron intercepts Dornier Do 17 bombers",
+          "place": "Kraków / Balice airfield area",
+          "lat": 50.077,
+          "lng": 19.785,
+          "summary": "The Polish Aviation Museum records Władysław Gnyś taking off from a field strip at Balice and engaging German Dornier Do 17 bombers over the Kraków region.",
+          "units": "Polish 121st Fighter Squadron, 2nd Aviation Regiment; German Do 17 formation (specific unit unidentified)",
+          "outcome": "The museum credits Gnyś with two German bombers downed. This is a specific biographical account, not an independently cross-checked German unit loss return.",
+          "sourceIds": ["polishMuseumGnyś"],
+          "confidence": "National aviation museum biographical attribution; opposing record not checked"
+        },
+        {
+          "date": "1939-09-03",
+          "title": "Polish PZL.23 aircraft strike a German armoured column",
+          "place": "Orawka / Jabłonka area, southern Poland",
+          "lat": 49.553,
+          "lng": 19.697,
+          "summary": "PZL.23B Karaś aircraft departed the temporary Klimontów airstrip and attacked a German armoured column near Orawka. The museum preserves an operational account of the raid, route, bombing runs and anti-aircraft fire.",
+          "units": "Polish 24th Reconnaissance Squadron; German armoured column (unit not established)",
+          "outcome": "The mission is documented; enemy vehicles destroyed and precise aircraft-loss totals cannot be inferred from this account.",
+          "sourceIds": ["polishMuseumOrawka"],
+          "confidence": "Specific museum operational account; damage totals unverified"
+        },
+        {
+          "date": "1939-09-17",
+          "title": "Soviet forces invade eastern Poland",
+          "place": "Eastern Poland · broad regional location",
+          "lat": 52.32,
+          "lng": 23.8,
+          "summary": "The Soviet invasion turned the campaign into a war on two fronts. This is essential campaign context, not a quantified local Soviet air operation.",
+          "units": "Soviet armed forces and Polish defenders; no air unit attribution asserted",
+          "outcome": "Poland's strategic situation deteriorated; no campaign-local VVS airframe or loss statistic has been verified here.",
+          "sourceIds": ["ushmmPoland"],
+          "confidence": "Official historical chronology; symbolic approximate map point"
+        },
+        {
+          "date": "1939-09-28",
+          "title": "Warsaw surrenders following bombardment and siege",
+          "place": "Warsaw",
+          "lat": 52.23,
+          "lng": 21.01,
+          "summary": "Warsaw surrendered after sustained German assault, including aerial bombing and artillery shelling. These causes must not be collapsed into one invented air-loss or air-raid casualty figure.",
+          "units": "German siege and Polish defenders; exact involved air units not established in this dossier",
+          "outcome": "Capital surrendered. City damage is documented, but no separate local aircraft, sortie or civilian airstrike casualty total is asserted.",
+          "sourceIds": ["ushmmPoland"],
+          "confidence": "Official museum historical synthesis; no air-specific damage denominator"
+        },
+        {
+          "date": "1939-10-06",
+          "title": "Last organized Polish units cease resistance",
+          "place": "Poland · campaign-wide conclusion (symbolic map point)",
+          "lat": 52.1,
+          "lng": 20.9,
+          "summary": "The US Holocaust Memorial Museum dates the final resistance of Polish units to 6 October, so the campaign does not end on 30 September just because the Atlas uses monthly controls.",
+          "units": "Remaining Polish armed forces; no specific air-unit engagement claimed",
+          "outcome": "Conventional campaign ended; Polish airmen continued serving abroad.",
+          "sourceIds": ["ushmmPoland", "rafPoland1939"],
+          "confidence": "Official museum historical chronology; map point is deliberately non-tactical"
         }
       ]
     },

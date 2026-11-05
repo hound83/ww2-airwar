@@ -1,5 +1,17 @@
 # Atlas status and next work
 
+## 5 November 2026 — v8 QA and Poland source pilot, separate review branch
+
+**Work branch:** `feature/atlas-v80-quality-poland`, based on unmerged v8 draft PR #8; default v7.4 and frozen physics unchanged. No deployment, merge or release authorized.
+
+- Relevance fix: selecting a campaign now displays **its own** events and event-level evidence/source details. The German, Soviet and American data laboratories are a separately labeled, default-collapsed research library; they no longer follow the campaign month or supply misleading automatic campaign actions.
+- Poland pilot: four retrospective RAF Museum campaign-wide observations, six dated events (including 121st Fighter Squadron and 24th Reconnaissance Squadron), unit and source trails, uncertainty statements, and October 6 endpoint. Conflicting RAF Museum/USHMM ground-destruction narratives are acknowledged, not merged into an invented ground-loss total. See `research/sources/poland-1939-campaign-pilot-2026-11-05.md`.
+- UI fixes: map Fit control uses the correct Leaflet scope; clustered selected campaign remains highlighted and visible in the picker, as does selected chronology row; theatre/search combinations with zero matches show no stale battle dossier; unreported USAAF group months render explicit `n/a` markers.
+- Internal reproducible tests: `node tests/build.cjs` passed, including all prior suites; new exhaustive controller matrix passed **240** theatre/search/month/visibility combinations, **9** map zoom levels, **12** German command/outcome/year combinations, **36** Allied population/area/metric combinations, plus evidence click-through and absence semantics.
+- **Pending real-browser gate:** `tests/grand-air-war-v80-browser.cjs` and dedicated PR Chromium workflow check at 1440px and 390px, CDN coastline loading, event links, filter intersection, map pin presence and viewport overflow. Local environment has Playwright code but no installed Chromium binary; do not report this as passed until workflow evidence exists.
+- Remaining uncertainty: the other **19** campaigns are still uneven; prior 25 campaign facts become 29, and 28 events become 33. Nine campaigns had no local numerical observation before this work; Poland is now populated but the remaining eight still need a verified research program. The 30 German command-month return totals, 80 USAAF group-month rows (4 unavailable), 5 VVS snapshots and 68 US production months were **not independently retranscribed** as part of this UI QA.
+
+
 **Review date:** 30 October 2026. This document is a website work queue, not the physics research roadmap. Refresh it whenever an Atlas milestone is accepted. Read `README.md` first.
 
 ## Verified repository baseline

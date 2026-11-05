@@ -55,7 +55,7 @@ window.GrandAirWarV77Groups=Object.freeze({
       null,
       null,
       null,
-      0
+      null
     ],
     [
       "1942-02",
@@ -77,7 +77,7 @@ window.GrandAirWarV77Groups=Object.freeze({
       null,
       null,
       null,
-      0
+      null
     ],
     [
       "1942-03",
@@ -99,7 +99,7 @@ window.GrandAirWarV77Groups=Object.freeze({
       null,
       null,
       null,
-      0
+      null
     ],
     [
       "1942-04",
@@ -121,7 +121,7 @@ window.GrandAirWarV77Groups=Object.freeze({
       null,
       null,
       null,
-      0
+      null
     ],
     [
       "1942-05",
