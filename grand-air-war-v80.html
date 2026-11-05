@@ -19,7 +19,7 @@
 <header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./">Current Atlas</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>v8.0 Preview</b></nav></div></header>
 <main class="shell">
 <section class="intro" id="overview"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Where were the major campaigns, why were they fought, what did they cost and how did air power change? Explore all 20 campaign centres, then use the month to highlight activity. Campaign-local facts and broader command statistics are labelled separately.</p></section>
-<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; event dossiers</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./">Aircraft &amp; physics ↗</a></nav>
+<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./">Aircraft &amp; physics ↗</a></nav>
 <section class="timebar" aria-label="Date and theatre controls">
 <div class="time-top"><div><span class="eyebrow">SELECT A HISTORICAL MONTH</span><output id="date-display" for="date-slider">June 1944</output></div><div class="time-actions"><button type="button" id="prev-month" aria-label="Previous month">‹</button><button type="button" id="next-month" aria-label="Next month">›</button><button type="button" id="play-time">▶ Play</button><button type="button" id="jump-today">June 1944</button></div></div>
 <input type="range" id="date-slider" min="0" max="106" step="1" value="95" aria-label="Historical month from July 1936 through May 1945">
@@ -38,8 +38,16 @@
  </aside>
 </section>
 <section class="two-columns" id="campaigns">
- <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY</span><h2>Where and when did it happen?</h2></div><span id="campaign-count"></span></div><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
- <article class="pane"><div class="pane-head"><div><span class="eyebrow">SELECTED CAMPAIGN</span><h2>Event dossiers &amp; source trail</h2></div><span id="moment-count"></span></div><p class="event-intro">Choose an event to inspect what happened, which units are supported by evidence, the result and the source. Dates outside the selected month remain available within this campaign.</p><div id="moment-list" class="record-list"></div><article id="moment-detail" class="moment-detail" aria-live="polite"></article></article>
+ <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY · STEP 1</span><h2>Choose a campaign</h2></div><span id="campaign-count"></span></div><p class="event-intro">Choose a campaign to see its operational progression on the right. Dimmed campaigns are outside the map's selected month, but remain available for research.</p><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
+ <article class="pane campaign-guide"><div class="pane-head"><div><span class="eyebrow">CAMPAIGN GUIDE · STEP 2</span><h2>How the campaign unfolded</h2></div><span id="moment-count"></span></div>
+  <p class="event-intro">First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.</p>
+  <div class="guide-heading"><span class="eyebrow">2 · Operational phases</span><small id="chapter-coverage"></small></div>
+  <div id="chapter-list" class="chapter-list" role="group" aria-label="Choose an operational campaign phase"></div>
+  <article id="chapter-detail" class="chapter-detail" aria-live="polite"></article>
+  <div class="guide-heading evidence-step"><span class="eyebrow">3 · Dated evidence within this phase</span><small id="moment-scope"></small></div>
+  <div id="moment-list" class="record-list" aria-label="Dated evidence for the selected phase"></div>
+  <article id="moment-detail" class="moment-detail" aria-live="polite" hidden></article>
+ </article>
 </section>
 <details class="research-library" id="research-library"><summary><span class="eyebrow">INDEPENDENT RESEARCH LIBRARY · DIFFERENT DATES AND POPULATIONS</span><strong>Explore German command reports, fighter readiness and Allied strength</strong><small>These are separate historical datasets, never automatically assigned to the campaign above. Expand to explore their own dated observations.</small></summary><div class="research-library-content">
 <section class="section-head" id="loss-lab"><span class="eyebrow">RESEARCH LABORATORY 01</span><h2>German aircraft losses: how, where, when?</h2><p>These are captured German <strong>command-level reports</strong>, not aircraft shot down over an individual battle. Inspect the recorded destruction causes, damaged aircraft and reporting boundaries without inventing absent Eastern Front or Italian totals.</p></section>

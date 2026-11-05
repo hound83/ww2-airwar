@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,29,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,33,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,30,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,36,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -31,10 +31,24 @@ for(const c of D.campaigns){
  assert.ok(c.objective&&c.turningPoint&&c.consequence&&c.participants.length,c.id+" incomplete dossier");
  assert.ok(c.sources.length,c.id+" lacks source links");
  for(const id of c.sources)assert.match(D.sources[id]?.url||"",/^https?:\/\/|^\.\//,c.id+" unavailable research link");
+ const chapters=c.chapters||[];
+ assert.equal(new Set(chapters.map(ch=>ch.id)).size,chapters.length,c.id+" duplicated chapter IDs");
+ for(let i=0;i<chapters.length;i++){
+  const ch=chapters[i];
+  assert.match(ch.start,/^\d{4}-\d\d-\d\d$/,c.id+" invalid chapter start");
+  assert.match(ch.end,/^\d{4}-\d\d-\d\d$/,c.id+" invalid chapter end");
+  assert.ok(ch.start<=ch.end&&ch.start.slice(0,7)>=c.start&&ch.end.slice(0,7)<=c.end,c.id+" chapter outside campaign");
+  if(i)assert.ok(chapters[i-1].end<ch.start,c.id+" overlapping/out-of-order chapters");
+  for(const key of ["title","location","situation","airRole","change","limits"])assert.ok(ch[key]?.length>=20||key==="title"&&ch[key]?.length>=8,c.id+" missing historical chapter field "+key);
+  assert.ok(ch.sourceIds?.length,c.id+" unsourced chapter");
+  for(const id of ch.sourceIds)assert.match(D.sources[id]?.url||"",/^https:\/\/|^\.\//,c.id+" missing chapter source: "+id);
+  assert.ok(ch.sourceIds.some(id=>D.sources[id]?.url?.startsWith("https://")),c.id+" chapter relies only on internal links");
+ }
  for(const e of c.moments){
   assert.match(e.date,/^\d{4}-\d\d-\d\d$/,c.id+" invalid event day");
   assert.ok(e.date.slice(0,7)>=c.start&&e.date.slice(0,7)<=c.end,c.id+" out-of-period event: "+e.date);
   assert.ok(Number.isFinite(e.lat)&&Number.isFinite(e.lng)&&e.title&&e.place);
+  if(chapters.length)assert.equal(chapters.filter(ch=>ch.start<=e.date&&e.date<=ch.end).length,1,c.id+" dated evidence not in exactly one phase: "+e.date);
   if(e.summary){
    assert.ok(e.units&&e.outcome&&e.confidence,c.id+" event needs evidence, units, outcome and confidence");
    assert.ok(e.sourceIds?.length,c.id+" detailed event without specific sources");
@@ -50,6 +64,7 @@ for(const c of D.campaigns){
 }
 assert.equal(new Set(allEvents.map(e=>e.campaign+e.date+e.title)).size,allEvents.length,"duplicated dated event");
 assert.equal(D.campaigns.find(c=>c.id==="spain").facts[0].value,7350);
+assert.equal(D.campaigns.find(c=>c.id==="spain").facts[1].value,19000);
 const france=D.campaigns.find(c=>c.id==="france1940");
 assert.deepEqual([...france.facts.map(f=>f.value)],[71,40,2739,651],"France observations from two distinct source populations");
 assert.ok(france.facts.every(f=>f.scope.includes("RAF")),"France cannot imply all-belligerent returns");
@@ -70,16 +85,29 @@ assert.ok(el("dossier-facts-heading").textContent.includes("4 sourced figures"))
 const poland=D.campaigns.find(c=>c.id==="poland");
 assert.equal(poland.end,"1939-10","campaign end must include October resistance");
 assert.equal(poland.facts.length,4);
-assert.equal(poland.moments.length,6);
+assert.equal(poland.moments.length,7);
+assert.equal(poland.chapters.length,3);
+assert.deepEqual([...poland.chapters.map(c=>c.start)],["1939-09-01","1939-09-07","1939-09-17"]);
+assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["france1940",3],["britain",5],["normandy",3] ]);
 assert.ok(el("dossier-facts").innerHTML.includes("≈ 300")&&el("dossier-facts").innerHTML.includes("&gt; 1,300"));
 assert.ok(el("dossier-facts").innerHTML.includes("126")&&el("dossier-facts").innerHTML.includes("114"));
 assert.ok(el("dossier-uncertainty").textContent.includes("Source disagreement"));
-assert.ok(el("moment-list").innerHTML.includes("PZL.23")&&el("moment-detail").innerHTML.includes("dispersed"));
+assert.ok(el("chapter-list").innerHTML.includes("Retreat, interior defence"));
+assert.ok(el("chapter-detail").innerHTML.includes("Fighter interception")&&el("chapter-detail").innerHTML.includes("polishHistoryPhases")===false);
+assert.ok(el("moment-list").innerHTML.includes("PZL.23")&&!el("moment-list").innerHTML.includes("Kielce"));
+assert.equal(el("moment-detail").innerHTML,"","date-level narrative should not be auto-selected");
+assert.equal(el("moment-detail").hidden,true);
+ A.chooseChapter("interior");
+ assert.ok(el("moment-list").innerHTML.includes("Kielce")&&!el("moment-list").innerHTML.includes("PZL.23"));
+ assert.ok(el("chapter-detail").innerHTML.includes("9 September"));
+ A.chooseChapter("collapse");
+ assert.ok(el("moment-list").innerHTML.includes("1939-10-06"),"late resistance must be in final phase");
 assert.ok(!el("moment-list").innerHTML.includes("D-Day"),"events must belong only to the selected campaign");
 const sortie=poland.moments.find(e=>e.date==="1939-09-03");
 A.chooseMoment("poland",sortie.date,sortie.lat,sortie.lng,sortie.title);
 assert.ok(el("moment-detail").innerHTML.includes("24th Reconnaissance Squadron"));
 assert.ok(el("moment-detail").innerHTML.includes("muzeumlotnictwa.pl"),"specific event must open original source");
+assert.equal(A.selectedChapter(),"border","selecting a dated event should restore its parent phase");
 assert.equal(el("date-display").textContent,"September 1939");
 const before=A.selected();A.setMonth("1944-06");assert.equal(A.selected(),before,"time scrub changed dossier without consent");
 const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-55,-5],[105,-5],[105,90],[-55,90],[-55,-5]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
@@ -141,7 +169,7 @@ L.setMode("readiness");assert.ok(el("german-chart").innerHTML.includes("07-01")&
 const html=read("grand-air-war-v80.html"),css=read("dist/grand-air-war-v80.css");
 for(const id of ["overview","campaigns","loss-lab","german-war-lab","air-forces","research-sources"])assert.ok(html.includes('id="'+id+'"'));
 assert.ok(css.includes(".research-library")&&css.includes(".moment-detail"),"research and events must have visually distinct layouts");
-assert.ok(html.includes('id="research-library"')&&html.includes('id="moment-detail"'));
+assert.ok(html.includes('id="research-library"')&&html.includes('id="moment-detail"')&&html.includes('id="chapter-list"')&&html.includes('id="chapter-detail"'));
 assert.ok(!html.includes('id="dossier-analyze"'),"obsolete misleading campaign-to-report button must be removed");
 assert.ok(read("dist/model-v4.js").includes('href="./grand-air-war-v80.html"'),"visible v7.4 navigation must link to optional v8 preview");
-console.log("PASS v8 data/display audit: 20 mapped dossiers, "+allFacts.length+" sourced facts, "+allEvents.length+" dated events, scoped losses, groups, fuel, readiness, production, labels and links");
+console.log("PASS v8 data/display audit: 20 mapped dossiers, "+D.campaigns.reduce((s,c)=>s+(c.chapters?.length||0),0)+" sourced phases, "+allFacts.length+" sourced facts, "+allEvents.length+" dated events, scoped losses, groups, fuel, readiness, production, labels and links");
