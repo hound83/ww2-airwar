@@ -57,6 +57,26 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://encyclopedia.ushmm.org/content/en/article/invasion-of-poland-fall-1939",
       "class": "official-museum-historical-synthesis"
     },
+    "polishHistoryPhases": {
+      "title": "Museum of Polish History: three phases of the September 1939 campaign",
+      "url": "https://muzhp.pl/wiedza-on-line/polska-w-ii-wojnie-swiatowej%20%E2%80%8B",
+      "class": "national-history-museum-campaign-periodization"
+    },
+    "polishAviationMuseumKrakow": {
+      "title": "Polish Aviation Museum: 2nd Aviation Regiment and 1939 field-airstrip dispersal",
+      "url": "https://muzeumlotnictwa.pl/en/about-the-museum/museum-history/",
+      "class": "national-aviation-museum-operational-history"
+    },
+    "rafBritainPhases": {
+      "title": "RAF Museum: five operational phases of the Battle of Britain",
+      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/introduction-to-the-phases-of-the-battle-of-britain/",
+      "class": "museum-operational-periodization"
+    },
+    "rafNormandyOperations": {
+      "title": "RAF Museum: Operation Overlord air superiority, forward airfields and breakout",
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-1/",
+      "class": "museum-published-research; author's interpretation distinguished from archival totals"
+    },
     "rafSealion": {
       "title": "RAF Museum: Operation Sealion and the Battle of Britain",
       "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/operation-sealion/",
@@ -160,6 +180,35 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "raf1937",
         "bundesarchivSpain"
       ],
+      "chapters": [
+        {
+          "id": "airlift", "title": "The uprising and the emergency airlift",
+          "start": "1936-07-18", "end": "1936-11-14", "location": "Spanish Morocco and southern Spain",
+          "situation": "The military uprising left Nationalist forces in Spanish Morocco unable to cross by sea because much of the navy remained loyal to the Republic. German support was requested in late July and transport aircraft helped move troops to mainland Spain.",
+          "airRole": "The airlift was an immediate operational use of German transport aviation, before the German expeditionary air formation's later combat role. The RAF Museum describes 7,350 personnel transported in the first six weeks after 20 July.",
+          "change": "Air transport helped the insurgents overcome a decisive early logistical problem; aircraft were later adapted for combat missions.",
+          "limits": "The early airlift figure measures personnel transported, not Legion strength, casualties or aircraft sorties. These three chapters are an editorial narrative division, not a formal archival periodization.",
+          "sourceIds": ["bundesarchivSpain", "raf1936"]
+        },
+        {
+          "id": "intervention", "title": "The Condor Legion becomes a combat force",
+          "start": "1936-11-15", "end": "1937-04-25", "location": "Madrid and other Spanish air fronts",
+          "situation": "Germany organized a more extensive expeditionary force while Italy backed the Nationalists and Soviet materiel and personnel supported the Republican government. Air combat developed alongside the prolonged land war.",
+          "airRole": "The RAF Museum dates the Condor Legion's first operation to 15 November 1936. Fighter and bomber missions provided combat experience, including the use of types later seen in the wider European war.",
+          "change": "The role expanded from emergency transport into sustained fighter, bomber and ground-support operations with foreign intervention on both sides.",
+          "limits": "No original daily Condor Legion aircraft-loss ledger is available here. The three analytical chapters are not claims of exclusive or sharply bounded military phases.",
+          "sourceIds": ["raf1937", "bundesarchivSpain"]
+        },
+        {
+          "id": "protracted", "title": "Bombing, prolonged war and the Nationalist victory",
+          "start": "1937-04-26", "end": "1939-04-01", "location": "Basque Country and multiple Spanish fronts",
+          "situation": "The bombing of Gernika on 26 April 1937 became a prominent example of the suffering inflicted on civilians. Fighting continued across Spain until Franco declared victory on 1 April 1939.",
+          "airRole": "German and Italian bombers attacked Gernika; the Bundesarchiv describes the Legion's wider operation as both a demanding combat deployment and a testing ground for weapons and tactics. Its involvement also included war crimes.",
+          "change": "The German expedition supplied military experience and propaganda value, but air operations alone did not determine the final result of the civil war.",
+          "limits": "The Bundesarchiv states that most of the Condor Legion's archive was destroyed in 1945. A complete opposing-side air-loss series cannot be reconstructed from these summaries, and Gernika must not stand in for every campaign air raid.",
+          "sourceIds": ["bundesarchivSpain", "raf1937"]
+        }
+      ],
       "facts": [
         {
           "label": "Nationalist troops moved by early German airlift",
@@ -169,6 +218,15 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "raf1936",
           "date": "1936-07 to 1936-09",
           "type": "reported"
+        },
+        {
+          "label": "Personnel who served in the Condor Legion during its entire deployment",
+          "value": 19000,
+          "unit": "people · approximate cumulative rotations",
+          "scope": "German Bundesarchiv estimate of about 19,000 personnel serving through successive rotations during the Spanish Civil War; not simultaneous aircrew strength or a loss total",
+          "sourceId": "bundesarchivSpain",
+          "date": "1936-07 to 1939-04",
+          "type": "archive retrospective approximate total"
         }
       ],
       "moments": [
@@ -177,7 +235,24 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Spanish Civil War begins",
           "place": "Spain",
           "lat": 40.4,
-          "lng": -3.7
+          "lng": -3.7,
+          "summary": "Following the military uprising, the insurgent forces in Spanish Morocco lacked ships to bring their troops to the peninsula. German authorities agreed to arrange transport aviation assistance in late July.",
+          "units": "Spanish Nationalist insurgents; German air transport support began later in July. No Condor Legion combat squadron is claimed on 18 July.",
+          "outcome": "The rebellion developed into a prolonged civil war; the immediate airpower problem was transporting insurgent troops across the Strait of Gibraltar.",
+          "sourceIds": ["bundesarchivSpain"],
+          "confidence": "Federal archive historical overview; country-wide symbolic chart point"
+        },
+        {
+          "date": "1936-07-26",
+          "title": "German leaders agree to supply aircraft for the insurgent airlift",
+          "place": "Spanish Morocco / Strait of Gibraltar · broad region",
+          "lat": 35.89,
+          "lng": -5.31,
+          "summary": "The Bundesarchiv dates Hitler's agreement to support the uprising to 25–26 July 1936. Initially the priority was to provide transport aircraft so Nationalist forces in Morocco could reach mainland Spain.",
+          "units": "German transport organization and Spanish Nationalist troops; individual crews and daily aircraft rosters not given in this summary",
+          "outcome": "German air transport helped overcome the rebels' inability to cross by sea. This is the decision window, not a claimed single-day troop flight or loss record.",
+          "sourceIds": ["bundesarchivSpain", "raf1936"],
+          "confidence": "German federal archive dated decision window, mapped to 26 July for navigation"
         },
         {
           "date": "1936-11-15",
@@ -191,7 +266,24 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Bombing of Gernika by German and Italian aircraft",
           "place": "Gernika, Basque Country",
           "lat": 43.32,
-          "lng": -2.68
+          "lng": -2.68,
+          "summary": "Aircraft from the Condor Legion and Italian Aviazione Legionaria attacked Gernika on 26 April 1937. The Bundesarchiv identifies the destruction as a war crime, and the town became an international symbol of aerial attacks on civilians.",
+          "units": "German Condor Legion and Italian Aviazione Legionaria; this source overview does not specify individual crews or an aircraft inventory for the raid",
+          "outcome": "The town was devastated and civilians suffered; the linked summaries do not provide a reconciled air-raid casualty count or exact unit-level loss series.",
+          "sourceIds": ["bundesarchivSpain", "raf1937"],
+          "confidence": "Federal archive and aviation museum historical syntheses; civilian and operational quantities unverified"
+        },
+        {
+          "date": "1939-04-01",
+          "title": "Franco declares Nationalist victory; civil war ends",
+          "place": "Spain · national conclusion (symbolic map point)",
+          "lat": 40.4,
+          "lng": -3.7,
+          "summary": "The Bundesarchiv dates Franco's declaration of victory to 1 April 1939. Condor Legion personnel returned to Germany afterward, following several years of foreign military intervention.",
+          "units": "Spanish Nationalist forces and remaining foreign contingents; not a dated aircraft engagement",
+          "outcome": "War ended in Nationalist victory and dictatorship. This campaign conclusion does not imply an air-to-air or bombing loss count for 1 April.",
+          "sourceIds": ["bundesarchivSpain"],
+          "confidence": "Federal archive historical chronology; non-tactical symbolic location"
         }
       ]
     },
@@ -219,7 +311,44 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "rafPoland1939",
         "polishMuseumGnyś",
         "polishMuseumOrawka",
-        "ushmmPoland"
+        "ushmmPoland",
+        "polishHistoryPhases",
+        "polishAviationMuseumKrakow"
+      ],
+      "chapters": [
+        {
+          "id": "border",
+          "title": "The border battles and the opening air war",
+          "start": "1939-09-01", "end": "1939-09-06",
+          "location": "Across Poland's western, northern and southern approaches",
+          "situation": "Germany attacked on 1 September from multiple directions. Polish forces resisted along the borders, but the advancing German armies and the risk of encirclement forced a retreat. German air operations supported the ground thrusts and attacked Polish targets; Polish squadrons had already moved away from some permanent bases.",
+          "airRole": "Fighter interception, reconnaissance, attacks on German columns and Luftwaffe support of the land offensive. The 121st Fighter Squadron and 24th Reconnaissance Squadron provide identifiable Polish examples instead of an invented total for all sorties.",
+          "change": "The opening attacks did not instantly end Polish flying operations. Early battlefield losses, dispersal and competing historical descriptions of aircraft destroyed on the ground must be considered separately.",
+          "limits": "The campaign-wide RAF Museum aircraft counts cannot be distributed across these first six days. This is an operational phase, not a daily aircraft-loss series.",
+          "sourceIds": ["polishHistoryPhases", "polishAviationMuseumKrakow", "polishMuseumGnyś", "polishMuseumOrawka", "rafPoland1939"]
+        },
+        {
+          "id": "interior",
+          "title": "Retreat, interior defence and continued air combat",
+          "start": "1939-09-07", "end": "1939-09-16",
+          "location": "Central Poland, including the Kielce and Warsaw sectors",
+          "situation": "Polish forces fought inside the country and attempted to reorganize a defensive line farther east. German advances increasingly displaced airfields, headquarters and communications. The campaign was not over after the first week's fighting.",
+          "airRole": "Surviving Polish fighter elements continued to engage Luftwaffe formations while reconnaissance and ground-support flying became harder to sustain. The Polish Aviation Museum records a 121st Squadron combat in the Kielce area on 9 September, an individual action rather than a national victory count.",
+          "change": "The operational problem moved from defending the border to sustaining scattered forces during a mobile retreat, with reduced freedom to base, repair and coordinate aircraft.",
+          "limits": "The identified 9 September combat is a museum biographical attribution; it does not establish total air victories or aircraft available throughout the phase.",
+          "sourceIds": ["polishHistoryPhases", "polishMuseumGnyś", "ushmmPoland"]
+        },
+        {
+          "id": "collapse",
+          "title": "Two-front invasion, sieges and final resistance",
+          "start": "1939-09-17", "end": "1939-10-06",
+          "location": "Eastern Poland, Warsaw and remaining pockets of resistance",
+          "situation": "Soviet forces invaded from the east on 17 September, closing off strategic options. Warsaw remained under siege and surrendered on 28 September. The final organized Polish units did not cease resistance until 6 October.",
+          "airRole": "German aerial bombardment was one element of the assault on Warsaw, alongside artillery and ground combat. The linked record does not support a separate Soviet air-operation total for this phase; surviving Polish personnel subsequently escaped abroad and continued the war.",
+          "change": "The military campaign ended in defeat and partition, not on a single September calendar day. The continued service of Polish aviators in Allied forces is a separate later history.",
+          "limits": "Soviet force totals and Warsaw's civilian casualties cannot be attributed to air strikes from these sources. The 1939 campaign-wide aircraft figures remain unassigned to individual phases.",
+          "sourceIds": ["polishHistoryPhases", "ushmmPoland", "rafPoland1939"]
+        }
       ],
       "facts": [
         {
@@ -295,6 +424,18 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "outcome": "The mission is documented; enemy vehicles destroyed and precise aircraft-loss totals cannot be inferred from this account.",
           "sourceIds": ["polishMuseumOrawka"],
           "confidence": "Specific museum operational account; damage totals unverified"
+        },
+        {
+          "date": "1939-09-09",
+          "title": "121st Fighter Squadron pilots engage a Heinkel He 111 near Kielce",
+          "place": "Kielce area, central Poland",
+          "lat": 50.87,
+          "lng": 20.63,
+          "summary": "The Polish Aviation Museum identifies Tadeusz Arabski, Władysław Gnyś and Leopold Flanek as participants in an engagement credited with bringing down a German Heinkel He 111 on 9 September, during Poland's fighting retreat.",
+          "units": "Polish 121st Fighter Squadron, 2nd Aviation Regiment; German He 111 (German parent unit not established)",
+          "outcome": "The museum attributes one bomber to this combat. It is an individual museum attribution and cannot be treated as independently matched to a German loss-return entry.",
+          "sourceIds": ["polishMuseumGnyś"],
+          "confidence": "Polish Aviation Museum pilot biographies; German unit-loss reconciliation outstanding"
         },
         {
           "date": "1939-09-17",
@@ -393,6 +534,38 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "rafFrance",
         "rafAirPowerFrance"
       ],
+      "chapters": [
+        {
+          "id": "breakthrough", "title": "Invasion and the Meuse breakthrough",
+          "start": "1940-05-10", "end": "1940-05-20",
+          "location": "Low Countries, Sedan and the Meuse",
+          "situation": "Germany invaded the Low Countries while the decisive armoured thrust crossed the Meuse around Sedan. Allied armies moved north, but the German advance cut behind them towards the Channel.",
+          "airRole": "Luftwaffe aircraft helped the ground offensive; RAF bomber attacks tried to stop German bridgeheads and columns. The RAF Museum reports 71 British bombers sent on 14 May, 40 of which did not return, for that operation only.",
+          "change": "The Meuse breakthrough endangered the Allied front and changed the campaign from defence of the border into a struggle to preserve escape routes.",
+          "limits": "The 14 May RAF operation is a specific formation and mission, not all Allied aircraft lost in the initial offensive.",
+          "sourceIds": ["rafFrance"]
+        },
+        {
+          "id": "dunkirk", "title": "Encirclement and the Dunkirk evacuation",
+          "start": "1940-05-21", "end": "1940-06-04",
+          "location": "Northern France, Dunkirk and the Channel",
+          "situation": "German forces reached the coast, isolating major Allied formations in the north. Operation Dynamo evacuated troops from Dunkirk between 26 May and 4 June, while the battle continued around the port.",
+          "airRole": "RAF fighters contested attacks over the evacuation and bombers struck targets affecting the withdrawal. A separate RAF research publication reports 2,739 fighter and 651 bomber sorties in its Dynamo reporting window.",
+          "change": "Allied personnel escaped, but much heavy equipment was lost; Dunkirk was a withdrawal under pressure, not a victory in the land campaign.",
+          "limits": "The 2,739 and 651 figures are sortie counts in one RAF reporting window, not aircraft strength, casualties or all-nation totals.",
+          "sourceIds": ["rafFrance", "rafAirPowerFrance"]
+        },
+        {
+          "id": "fall", "title": "Renewed offensive and the fall of France",
+          "start": "1940-06-05", "end": "1940-06-25",
+          "location": "Somme, Paris and remaining French fronts",
+          "situation": "The German advance resumed south on 5 June. Paris was declared an open city on 10 June and occupied on 14 June; French resistance continued elsewhere as defeat approached.",
+          "airRole": "The air campaign continued alongside the southward ground offensive, but the linked research does not give a defensible operation-by-operation air-loss table for these weeks.",
+          "change": "The campaign ended in French defeat; the air-war focus shifted to the defence of Britain and its approaches.",
+          "limits": "Do not project the single 14 May RAF bomber loss figure or Dunkirk sortie counts into this phase.",
+          "sourceIds": ["rafFrance", "raf1940chron"]
+        }
+      ],
       "facts": [
         {
           "label": "RAF bombers departing on 14 May; one particular operation, not the campaign total",
@@ -483,8 +656,55 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "raf1940",
         "rafSealion",
-        "raf1940",
+        "rafBritainPhases",
         "hansard1947"
+      ],
+      "chapters": [
+        {
+          "id": "coastal-start", "title": "Opening attacks against the Channel approaches",
+          "start": "1940-07-10", "end": "1940-07-16", "location": "Channel shipping, ports and coastal targets",
+          "situation": "The RAF Museum's first operational phase actually begins on 26 June, before the officially recognized 10 July start of the Battle of Britain. The Atlas starts this chapter on 10 July to keep its official campaign boundary explicit.",
+          "airRole": "Scattered attacks on ships, ports and aircraft-production towns, with mine-laying and night operations.",
+          "change": "The Luftwaffe was testing and extending air attacks from its bases after the defeat of France.",
+          "limits": "The 26 June–9 July part of the museum's broader phase is historical context, not silently counted as Battle of Britain losses.",
+          "sourceIds": ["rafBritainPhases"]
+        },
+        {
+          "id": "channel", "title": "Intensifying attacks on shipping and coastal airfields",
+          "start": "1940-07-17", "end": "1940-08-12", "location": "English Channel and southern/eastern coasts",
+          "situation": "The Luftwaffe expanded daylight operations against Channel shipping, ports and some coastal airfields, alongside night attacks farther inland.",
+          "airRole": "Fighter Command protected shipping and intercepted attacks while German aircraft probed defences and routes across the coast.",
+          "change": "Pressure and sortie intensity increased before the decisive attacks on RAF fighter bases.",
+          "limits": "Operational phase dates come from the RAF Museum; the campaign-wide German loss figures below are not split into this interval.",
+          "sourceIds": ["rafBritainPhases"]
+        },
+        {
+          "id": "airfields", "title": "Sustained attacks on Fighter Command airfields",
+          "start": "1940-08-13", "end": "1940-09-06", "location": "South-east England and RAF airfields",
+          "situation": "German daylight strikes concentrated on RAF sector airfields and their supporting network, attempting to exhaust Britain's defensive capacity.",
+          "airRole": "Fighter Command's interception, warning and control system had to protect its own operating bases while maintaining continuous defence.",
+          "change": "This was an effort to disable the defending air force directly; its eventual shift in focus altered the operational pressure.",
+          "limits": "No phase-level tally of German aircraft losses is inferred from the retrospective all-campaign Hansard record.",
+          "sourceIds": ["rafBritainPhases", "rafSealion"]
+        },
+        {
+          "id": "london", "title": "The shift to major raids on London",
+          "start": "1940-09-07", "end": "1940-10-02", "location": "London and south-east England",
+          "situation": "Large-scale daylight and night attacks shifted towards London; the RAF continued to oppose bomber formations and their escorts.",
+          "airRole": "Fighter interception against major raids remained central. The 15 September combat and its incompatible wartime claims versus post-war German archival losses provide one dated evidence point.",
+          "change": "The change of targets reduced the direct concentration on RAF airfields and turned major raids on the capital into the principal operational story.",
+          "limits": "For 15 September Hansard records 56 German aircraft destroyed, but this is one day, not the phase total; RAF claims were higher.",
+          "sourceIds": ["rafBritainPhases", "hansard1947"]
+        },
+        {
+          "id": "night", "title": "Smaller daytime attacks, sustained night bombing",
+          "start": "1940-10-03", "end": "1940-10-31", "location": "London and other British cities",
+          "situation": "The scale of daylight fighter-bomber attacks decreased, while night attacks continued. The RAF Museum marks 31 October as the end of the officially recognized battle, though the Blitz continued after it.",
+          "airRole": "Fighter defence adapted to a changing pattern of smaller daylight raids and continued night bombing.",
+          "change": "The invasion threat receded without the Luftwaffe securing the air superiority it had sought.",
+          "limits": "The later Blitz extends beyond the campaign's formal dates; it is not presented as part of a 10 July–31 October loss ledger.",
+          "sourceIds": ["rafBritainPhases", "rafSealion"]
+        }
       ],
       "facts": [
         {
@@ -1000,7 +1220,37 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "consequence": "The Allied breakthrough moved the combat area eastward; whole-West Luftflotte 3 returns are NOT Normandy-only losses.",
       "sources": [
         "raf1944",
-        "normandyDetail"
+        "normandyDetail",
+        "rafNormandyOperations"
+      ],
+      "chapters": [
+        {
+          "id": "landings", "title": "Landings, air superiority and new forward airstrips",
+          "start": "1944-06-06", "end": "1944-06-30", "location": "Normandy beaches, Caen and the bridgehead",
+          "situation": "On 6 June Allied troops landed in Normandy while airborne forces secured positions inland. The bridgehead was contested and the planned rapid advance around Caen did not materialize.",
+          "airRole": "Allied fighters protected the landings and ships; bombers struck coastal and inland defences; transports towed gliders and carried airborne troops. Engineers began opening Advanced Landing Grounds from 7 June so tactical aircraft could move closer to the front.",
+          "change": "Overwhelming Allied air power enabled the landings, but did not remove ground opposition or the need for airfields, logistics and close support.",
+          "limits": "The 14,674 Allied sorties recorded for 6 June include the 5,656 RAF sorties; these are not additive and cannot be generalized across June.",
+          "sourceIds": ["raf1944", "rafNormandyOperations", "normandyDetail"]
+        },
+        {
+          "id": "breakout", "title": "Fighting around Caen and the western breakout",
+          "start": "1944-07-01", "end": "1944-07-31", "location": "Caen, Saint-Lô and the Cotentin approaches",
+          "situation": "The Normandy front remained costly and contested around Caen. The American breakout effort, Operation Cobra, began on 25 July after prolonged fighting around Saint-Lô.",
+          "airRole": "Tactical air forces moved forward onto temporary strips and supported armies with reconnaissance, interdiction and attacks coordinated with ground controllers; heavy bombers were also used against tactical targets.",
+          "change": "The western breakout began changing the campaign from a confined bridgehead into a mobile advance.",
+          "limits": "Individual Cobra bombing results and German losses require operation-specific source audits, not Luftflotte 3's total Western Front returns.",
+          "sourceIds": ["rafNormandyOperations", "normandyDetail"]
+        },
+        {
+          "id": "falaise", "title": "Falaise and the German retreat from Normandy",
+          "start": "1944-08-01", "end": "1944-08-31", "location": "Falaise pocket and the approaches east of Normandy",
+          "situation": "After the breakthrough, Allied armies pressed towards the Falaise pocket, which collapsed around 19 August. German forces withdrew eastward as the Allied offensive expanded beyond Normandy.",
+          "airRole": "Allied tactical aviation attacked transport and moving formations while forward strips had to keep pace with the front. Results varied with target identification, weather and the situation on the ground.",
+          "change": "The fighting transitioned into a rapid pursuit, with aircraft basing and supplies becoming increasingly important.",
+          "limits": "This chapter has a researched campaign narrative but no phase-local, opposing-side aircraft-loss ledger. The absence of a dated event dossier is not absence of combat.",
+          "sourceIds": ["rafNormandyOperations"]
+        }
       ],
       "facts": [
         {

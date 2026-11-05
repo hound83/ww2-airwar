@@ -82,6 +82,32 @@
 #campaigns,#loss-lab,#german-war-lab,#air-forces,#research-sources{scroll-margin-top:16px}
 @media(max-width:600px){.atlas-sections{gap:5px}.atlas-sections a{padding:6px 8px}.cluster-choices button{min-height:36px}}
 .event-intro{font-size:11px;color:#b8d1ce;line-height:1.6;margin:0 0 12px}
+.campaign-guide{min-width:0}
+.guide-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:15px 0 9px}
+.guide-heading small{font-size:10px;color:#a9c5c5;text-align:right}
+.chapter-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(205px,100%),1fr));gap:8px}
+.chapter-card{display:flex;align-items:flex-start;gap:10px;width:100%;text-align:left;min-width:0;background:#1b3441;border:1px solid #4c6970;border-radius:6px;color:#eef2e9;padding:12px 11px;min-height:116px}
+.chapter-card:hover,.chapter-card:focus-visible{background:#2c4a51;border-color:#b1d4c0}
+.chapter-card.selected{background:#295153;border:1px solid #d9c08e;box-shadow:inset 0 0 0 1px #789f91}
+.chapter-index{flex:0 0 auto;font:normal 26px Georgia,serif;line-height:1;color:#ebcfa2;opacity:.92}
+.chapter-card-copy{min-width:0;display:flex;flex-direction:column;gap:5px}
+.chapter-card strong{font-size:12px;line-height:1.4}
+.chapter-card small{font-size:10px;color:#c4d9d3}
+.chapter-card em{font-size:10px;color:#9ecdc5;font-style:normal}
+.chapter-unresearched{background:#293d3e;border-left:3px solid #bca782;padding:12px 13px;color:#e3d7bd;font-size:11px;line-height:1.6}
+.chapter-detail{margin-top:12px;background:#1c3640;border:1px solid #4b6b72;border-radius:7px;padding:16px;overflow-wrap:anywhere}
+.chapter-detail-top{border-bottom:1px solid #41616a;padding-bottom:10px;margin-bottom:9px}
+.chapter-detail h3{font:normal 23px/1.25 Georgia,serif;color:#f0d6aa;margin:6px 0 0}
+.chapter-detail .eyebrow{line-height:1.6;font-size:9px}
+.chapter-field{margin:10px 0}
+.chapter-field h4{color:#9de4d1;font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 4px}
+.chapter-field p{font-size:12px;line-height:1.7;color:#d5e5dd}
+.chapter-limit{background:#343b36;border-left:3px solid #d7bd8b;padding:10px 12px;border-radius:4px;font-size:11px;color:#ead8b7;line-height:1.65;margin-top:12px}
+.chapter-detail .dossier-links{margin-top:10px}
+.evidence-step{border-top:1px solid #41616a;margin-top:19px;padding-top:12px}
+#moment-list{max-height:260px}
+#moment-list .record{min-height:66px}
+#moment-list .record .date-tag{white-space:nowrap}
 .moment-detail{border:1px solid #577877;background:linear-gradient(145deg,#244248,#1a343d);border-radius:7px;padding:15px;margin-top:12px;min-height:160px;overflow-wrap:anywhere}
 .moment-detail h3{font-family:Georgia,serif;font-weight:400;font-size:21px;line-height:1.25;color:#f1d7a8;margin:6px 0 12px}
 .moment-detail h4{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#9ce7d6;margin:12px 0 4px}
@@ -101,4 +127,4 @@
 .research-library-content .section-head{scroll-margin-top:14px}
 .missing-observation{cursor:pointer;stroke:#96acb1;stroke-dasharray:2 3}
 .missing-observation:hover{opacity:.9}
-@media(max-width:600px){.research-library>summary{padding:13px}.research-library-content{padding:0 10px 12px}.moment-detail{padding:11px}}
+@media(max-width:600px){.research-library>summary{padding:13px}.research-library-content{padding:0 10px 12px}.moment-detail{padding:11px}.chapter-detail{padding:12px}.chapter-list{grid-template-columns:1fr}.chapter-card{min-height:75px}.guide-heading{flex-wrap:wrap}.guide-heading small{text-align:left}#moment-list .record{align-items:flex-start;flex-direction:column;gap:3px}#moment-list .record .date-tag{align-self:flex-end}}

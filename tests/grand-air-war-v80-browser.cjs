@@ -38,11 +38,46 @@ const check=async()=>{
    assert.ok(separated,"claim source links overlap their scope notes");
    const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
    assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
+   assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
+   assert.match(await page.locator("#chapter-detail").innerText(),/What aircraft actually did/);
+   assert.equal(await page.locator("#moment-detail").isVisible(),false,"campaign selection must not automatically display an arbitrary Wednesday event");
    assert.match(await page.locator("#moment-list").innerText(),/24th Reconnaissance|PZL\.23/);
    assert.match(await page.locator("#dossier-uncertainty").innerText(),/Source disagreement/);
+   await page.locator('#chapter-list [data-chapter="interior"]').click();
+   assert.match(await page.locator("#chapter-detail").innerText(),/Kielce/);
+   assert.match(await page.locator("#moment-list").innerText(),/9 September|Heinkel He 111/);
+   assert.doesNotMatch(await page.locator("#moment-list").innerText(),/Orawka/);
+   await page.locator('#moment-list [data-date="1939-09-09"]').click();
+   assert.match(await page.locator("#moment-detail").innerText(),/Tadeusz Arabski/);
+   await page.locator('#chapter-list [data-chapter="collapse"]').click();
+   assert.match(await page.locator("#moment-list").innerText(),/1939-10-06/);
+   assert.equal(await page.locator("#moment-detail").isVisible(),false,"phase switch must dismiss the prior event");
+   await page.locator('#chapter-list [data-chapter="border"]').click();
    await page.locator('#moment-list [data-date="1939-09-03"]').click();
    assert.match(await page.locator("#moment-detail").innerText(),/24th Reconnaissance Squadron/);
    assert.equal(await page.locator('#moment-detail a[href*="muzeumlotnictwa.pl"]').count(),1);
+   await page.locator("#campaigns").screenshot({path:path.join(root,"v80-qa-campaign-guide-"+viewport.width+".png")});
+   // Walk all 20 campaigns through the real controller and verify both
+   // source-backed chapters and honestly incomplete phase coverage render.
+   const overview=await page.evaluate(()=>{
+    const app=window.GrandAirWarV77;
+    const failures=[];
+    for(const c of app.campaigns){
+     app.choose(c.id,false);
+     const detail=document.getElementById("chapter-detail").textContent;
+     const list=document.getElementById("chapter-list");
+     const count=list.querySelectorAll(".chapter-card").length;
+     if(!detail||count!==(c.chapters?.length||0)||document.getElementById("moment-detail").innerHTML||document.getElementById("chapter-detail").innerHTML.includes("undefined"))failures.push(c.id);
+    }
+    return {failures,reviewed:app.campaigns.length};
+   });
+   assert.deepEqual(overview.failures,[],"campaign guide incomplete or broken for: "+overview.failures.join(", "));
+   assert.equal(overview.reviewed,20);
+   await page.evaluate(()=>window.GrandAirWarV77.choose("poland",false));
+   await page.locator('#chapter-list [data-chapter="interior"]').click();
+   await page.evaluate(()=>window.GrandAirWarV77.setMonth("1939-10"));
+   assert.equal(await page.locator('#chapter-list [data-chapter="interior"]').getAttribute("aria-pressed"),"true","month slider must not reset the selected chapter");
+   await page.locator('#chapter-list [data-chapter="border"]').click();
    await page.locator("#campaign-search").fill("");
    await page.waitForFunction(()=>["loaded","unavailable"].includes(document.getElementById("campaign-map").dataset.landStatus));
    assert.equal(await page.locator("#campaign-map").getAttribute("data-land-status"),"loaded","historical coastline failed to load in connected browser QA");

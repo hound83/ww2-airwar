@@ -38,8 +38,16 @@
  </aside>
 </section>
 <section class="two-columns" id="campaigns">
- <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY</span><h2>Where and when did it happen?</h2></div><span id="campaign-count"></span></div><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
- <article class="pane"><div class="pane-head"><div><span class="eyebrow">SELECTED CAMPAIGN</span><h2>Event dossiers &amp; source trail</h2></div><span id="moment-count"></span></div><p class="event-intro">Choose an event to inspect what happened, which units are supported by evidence, the result and the source. Dates outside the selected month remain available within this campaign.</p><div id="moment-list" class="record-list"></div><article id="moment-detail" class="moment-detail" aria-live="polite"></article></article>
+ <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY · STEP 1</span><h2>Choose a campaign</h2></div><span id="campaign-count"></span></div><p class="event-intro">Choose a campaign to see its operational progression on the right. Dimmed campaigns are outside the map's selected month, but remain available for research.</p><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
+ <article class="pane campaign-guide"><div class="pane-head"><div><span class="eyebrow">CAMPAIGN GUIDE · STEP 2</span><h2>How the campaign unfolded</h2></div><span id="moment-count"></span></div>
+  <p class="event-intro">First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.</p>
+  <div class="guide-heading"><span class="eyebrow">2 · Operational phases</span><small id="chapter-coverage"></small></div>
+  <div id="chapter-list" class="chapter-list" role="group" aria-label="Choose an operational campaign phase"></div>
+  <article id="chapter-detail" class="chapter-detail" aria-live="polite"></article>
+  <div class="guide-heading evidence-step"><span class="eyebrow">3 · Dated evidence within this phase</span><small id="moment-scope"></small></div>
+  <div id="moment-list" class="record-list" aria-label="Dated evidence for the selected phase"></div>
+  <article id="moment-detail" class="moment-detail" aria-live="polite" hidden></article>
+ </article>
 </section>
 <details class="research-library" id="research-library"><summary><span class="eyebrow">INDEPENDENT RESEARCH LIBRARY · DIFFERENT DATES AND POPULATIONS</span><strong>Explore German command reports, fighter readiness and Allied strength</strong><small>These are separate historical datasets, never automatically assigned to the campaign above. Expand to explore their own dated observations.</small></summary><div class="research-library-content">
 <section class="section-head" id="loss-lab"><span class="eyebrow">RESEARCH LABORATORY 01</span><h2>German aircraft losses: how, where, when?</h2><p>These are captured German <strong>command-level reports</strong>, not aircraft shot down over an individual battle. Inspect the recorded destruction causes, damaged aircraft and reporting boundaries without inventing absent Eastern Front or Italian totals.</p></section>
