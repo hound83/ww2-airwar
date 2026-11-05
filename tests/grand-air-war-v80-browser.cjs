@@ -34,6 +34,8 @@ const check=async()=>{
    assert.equal(await page.locator("#campaign-dossier").evaluate(el=>el.scrollTop),0,"new campaign kept previous dossier scroll and hid the facts");
    assert.match(await page.locator("#dossier-facts").innerText(),/300/);
    assert.match(await page.locator("#dossier-facts").innerText(),/1,300/);
+   const separated=await page.locator("#dossier-facts .fact").evaluateAll(nodes=>nodes.every(node=>node.querySelector("small").getBoundingClientRect().bottom<=node.querySelector("a").getBoundingClientRect().top+1));
+   assert.ok(separated,"claim source links overlap their scope notes");
    const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
    assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
    assert.match(await page.locator("#moment-list").innerText(),/24th Reconnaissance|PZL\.23/);
