@@ -17,8 +17,10 @@ const sourceLink=(id,label)=>D.sources[id]?'<a target="_blank" rel="noopener nor
 const lossRows=[...A.monthlyReturns,...B.monthlyReturns].map(x=>({...x,period:(()=>{const z=Legacy.at(x.i);return z.y+"-"+String(z.m+1).padStart(2,"0");})()})).sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater));
 const sourceIndex={...A.sourceIndex,...B.sourceIndex};
 const groupRows=G.rows.map(r=>Object.fromEntries(G.columns.map((c,i)=>[c,r[i]])));
-const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",selectedMoment:null,map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
+const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",lastDossierId:null,selectedMoment:null,map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
 const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Eastern Front",med:"Mediterranean / Italy",north:"Northern Europe"};
+// Spain is grouped with the West for filtering, but it is not the WWII Western Front.
+const campaignRegion=c=>c.id==="spain"?"Spanish Civil War / Spain":themes[c.theater];
 const active=c=>c.start<=state.month&&c.end>=state.month;
 const matches=c=>(state.theater==="all"||c.theater===state.theater)&&(!state.search||(c.name+" "+c.objective+" "+c.participants.join(" ")+" "+c.consequence).toLowerCase().includes(state.search.toLowerCase()));
 const matching=()=>D.campaigns.filter(matches);
@@ -164,7 +166,14 @@ function setupMap(){
      if(!world.objects||!world.objects.land)throw Error("Unexpected land topology");
      const geo=europeanLand(window.topojson.feature(world,world.objects.land));
      if(!geo.geometry.coordinates.length)throw Error("European coastline geometry is empty");
-     state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.svg()});
+     // A single MultiPolygon Feature produces ONE Leaflet Path, even when it
+     // contains hundreds of independent islands. Canvas/SVG then paint the
+     // entire set as one complex object, making visibility checks misleading
+     // and redraws unreliable. Give each clipped land polygon its own Path.
+     const landFeatures={type:"FeatureCollection",features:geo.geometry.coordinates.map(coordinates=>({
+      type:"Feature",properties:{},geometry:{type:"Polygon",coordinates}
+     }))};
+     state.landLayer=L.geoJSON(landFeatures,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.svg()});
      state.landLayer.addTo(state.map);
      if(state.landLayer.bringToBack)state.landLayer.bringToBack();
      grid.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
@@ -231,16 +240,19 @@ function renderTime(){
 }
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
+ if(state.lastDossierId!==state.selected){$("campaign-dossier").scrollTop=0;state.lastDossierId=state.selected;}
  if(!c){
   $("dossier-meta").textContent="NO CAMPAIGN MATCHES THE FILTERS";
   $("dossier-title").textContent="Adjust your search or region";
+  $("dossier-facts-heading").textContent="No matching campaign evidence";
   ["dossier-dates","dossier-aim","dossier-turn","dossier-outcome","dossier-uncertainty"].forEach(id=>$(id).textContent="");
   ["dossier-forces","dossier-facts","dossier-sources","dossier-link-detail"].forEach(id=>$(id).innerHTML="");
   $("dossier-research-context").textContent="No historical observations are assigned to an empty selection.";
   return;
  }
- $("dossier-meta").textContent="BATTLE DOSSIER · "+themes[c.theater]+(active(c)?" · ACTIVE":" · OTHER PERIOD");
+ $("dossier-meta").textContent="BATTLE DOSSIER · "+campaignRegion(c)+(active(c)?" · ACTIVE":" · OTHER PERIOD");
  $("dossier-title").textContent=c.name;
+ $("dossier-facts-heading").textContent=c.facts.length?"Campaign evidence · "+countPhrase(c.facts.length,"sourced figure","sourced figures"):"Numerical evidence · not yet audited";
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
@@ -256,7 +268,7 @@ function renderDossier(){
 function renderCampaignList(){
  const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
- $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(themes[c.theater])+' · '+countPhrase(c.facts.length,"sourced fact","sourced facts")+' · '+countPhrase(c.moments.length,"dated event","dated events")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase(c.facts.length,"sourced fact","sourced facts")+' · '+countPhrase(c.moments.length,"dated event","dated events")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
 function renderMoments(){

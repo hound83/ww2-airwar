@@ -60,11 +60,13 @@ assert.ok(chronology.indexOf('data-campaign="spain"')<chronology.indexOf('data-c
 assert.ok(chronology.indexOf('data-campaign="france1940"')<chronology.indexOf('data-campaign="normandy"'));
 A.choose("spain");
 assert.ok(el("dossier-facts").innerHTML.includes("7,350"),"Condor Legion source metric is visible");
+assert.ok(el("dossier-meta").textContent.includes("Spanish Civil War / Spain"),"Spain should not be labelled WWII Western Front");
 assert.ok(el("dossier-research-context").textContent.includes("independent research"),"1936 source must not imply 1943 Western reporting");
 A.choose("france1940");
 assert.ok(el("dossier-facts").innerHTML.includes("2,739")&&el("dossier-facts").innerHTML.includes("40"));
 assert.ok(!el("dossier-research-context").textContent.includes("1943"),"1940 source card must not offer 1943 West losses");
 A.choose("poland");
+assert.ok(el("dossier-facts-heading").textContent.includes("4 sourced figures"));
 const poland=D.campaigns.find(c=>c.id==="poland");
 assert.equal(poland.end,"1939-10","campaign end must include October resistance");
 assert.equal(poland.facts.length,4);

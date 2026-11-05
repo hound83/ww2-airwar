@@ -28,8 +28,10 @@ const check=async()=>{
    await page.locator("#dossier-title").waitFor();
    assert.equal(await page.locator("#dossier-title").innerText(),"Normandy: Operation Overlord");
    assert.equal(await page.locator("#research-library").evaluate(e=>e.open),false,"unrelated source library should start closed");
+   await page.locator("#campaign-dossier").evaluate(el=>{el.scrollTop=350;});
    await page.locator("#campaign-search").fill("Poland");
    assert.equal(await page.locator("#dossier-title").innerText(),"Invasion of Poland");
+   assert.equal(await page.locator("#campaign-dossier").evaluate(el=>el.scrollTop),0,"new campaign kept previous dossier scroll and hid the facts");
    assert.match(await page.locator("#dossier-facts").innerText(),/300/);
    assert.match(await page.locator("#dossier-facts").innerText(),/1,300/);
    const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
@@ -45,14 +47,17 @@ const check=async()=>{
    await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-initial-"+viewport.width+".png")});
    await page.locator("#fit-map").click();
    await page.waitForTimeout(700); // fitBounds animation must complete before inspecting SVG paths
+   await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-fitted-"+viewport.width+".png")});
    const painted=await page.evaluate(()=>{
     const bounds=document.getElementById("campaign-map").getBoundingClientRect();
     return [...document.querySelectorAll('.leaflet-overlay-pane svg path[fill="#aaa991"]')]
      .filter(path=>{const r=path.getBoundingClientRect();return r.width>=4&&r.height>=4&&r.right>bounds.left&&r.left<bounds.right&&r.bottom>bounds.top&&r.top<bounds.bottom;}).length;
    });
    assert.ok(painted>=6,"fewer than six geographically distinct visible land polygons at "+viewport.width+"px; coastlines may be blank: "+painted);
-   await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-fitted-"+viewport.width+".png")});
    assert.ok(await page.locator(".leaflet-marker-icon").count()>0,"campaign pins vanished");
+   await page.locator(".leaflet-control-zoom-in").click();
+   await page.locator(".leaflet-control-zoom-out").click();
+   assert.ok(await page.locator(".leaflet-marker-icon").count()>0,"physical zoom controls removed campaign markers");
    await page.locator("#theater-select").selectOption("east");
    await page.locator("#campaign-search").fill("Normandy");
    assert.match(await page.locator("#dossier-title").innerText(),/Adjust your search/);
