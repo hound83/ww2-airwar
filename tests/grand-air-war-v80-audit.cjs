@@ -9,7 +9,7 @@ const read=f=>fs.readFileSync(path.join(root,f),"utf8");
 const elements=new Map();
 function el(id){
  if(!elements.has(id))elements.set(id,{
-  id,innerHTML:"",textContent:"",value:"",checked:false,disabled:false,hidden:false,
+  id,innerHTML:"",textContent:"",value:"",checked:false,disabled:false,hidden:false,dataset:{},
   addEventListener(){},querySelectorAll(){return[]},setAttribute(){},scrollIntoView(){}
  });
  return elements.get(id);
@@ -22,7 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,25,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,29,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,33,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -34,6 +35,11 @@ for(const c of D.campaigns){
   assert.match(e.date,/^\d{4}-\d\d-\d\d$/,c.id+" invalid event day");
   assert.ok(e.date.slice(0,7)>=c.start&&e.date.slice(0,7)<=c.end,c.id+" out-of-period event: "+e.date);
   assert.ok(Number.isFinite(e.lat)&&Number.isFinite(e.lng)&&e.title&&e.place);
+  if(e.summary){
+   assert.ok(e.units&&e.outcome&&e.confidence,c.id+" event needs evidence, units, outcome and confidence");
+   assert.ok(e.sourceIds?.length,c.id+" detailed event without specific sources");
+   for(const id of e.sourceIds)assert.ok(D.sources[id]?.url?.startsWith("https://"),c.id+" event with missing source "+id);
+  }
  }
  for(const f of c.facts){
   assert.ok(Number.isFinite(f.value)&&f.value>=0,c.id+" invalid historical number");
@@ -54,12 +60,27 @@ assert.ok(chronology.indexOf('data-campaign="spain"')<chronology.indexOf('data-c
 assert.ok(chronology.indexOf('data-campaign="france1940"')<chronology.indexOf('data-campaign="normandy"'));
 A.choose("spain");
 assert.ok(el("dossier-facts").innerHTML.includes("7,350"),"Condor Legion source metric is visible");
-assert.ok(el("dossier-research-context").textContent.includes("September 1943"),"avoid false 1936 Western command report");
-assert.equal(el("dossier-analyze").hidden,true,"no useless disabled actions over Spain");
-assert.equal(el("dossier-german-analysis").hidden,true);
+assert.ok(el("dossier-meta").textContent.includes("Spanish Civil War / Spain"),"Spain should not be labelled WWII Western Front");
+assert.ok(el("dossier-research-context").textContent.includes("independent research"),"1936 source must not imply 1943 Western reporting");
 A.choose("france1940");
 assert.ok(el("dossier-facts").innerHTML.includes("2,739")&&el("dossier-facts").innerHTML.includes("40"));
-assert.equal(el("dossier-analyze").hidden,true,"1940 source card must not route to 1943 West losses");
+assert.ok(!el("dossier-research-context").textContent.includes("1943"),"1940 source card must not offer 1943 West losses");
+A.choose("poland");
+assert.ok(el("dossier-facts-heading").textContent.includes("4 sourced figures"));
+const poland=D.campaigns.find(c=>c.id==="poland");
+assert.equal(poland.end,"1939-10","campaign end must include October resistance");
+assert.equal(poland.facts.length,4);
+assert.equal(poland.moments.length,6);
+assert.ok(el("dossier-facts").innerHTML.includes("≈ 300")&&el("dossier-facts").innerHTML.includes("&gt; 1,300"));
+assert.ok(el("dossier-facts").innerHTML.includes("126")&&el("dossier-facts").innerHTML.includes("114"));
+assert.ok(el("dossier-uncertainty").textContent.includes("Source disagreement"));
+assert.ok(el("moment-list").innerHTML.includes("PZL.23")&&el("moment-detail").innerHTML.includes("dispersed"));
+assert.ok(!el("moment-list").innerHTML.includes("D-Day"),"events must belong only to the selected campaign");
+const sortie=poland.moments.find(e=>e.date==="1939-09-03");
+A.chooseMoment("poland",sortie.date,sortie.lat,sortie.lng,sortie.title);
+assert.ok(el("moment-detail").innerHTML.includes("24th Reconnaissance Squadron"));
+assert.ok(el("moment-detail").innerHTML.includes("muzeumlotnictwa.pl"),"specific event must open original source");
+assert.equal(el("date-display").textContent,"September 1939");
 const before=A.selected();A.setMonth("1944-06");assert.equal(A.selected(),before,"time scrub changed dossier without consent");
 const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-55,-5],[105,-5],[105,90],[-55,90],[-55,-5]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
 const cropped=A.clipEuropeanLand(raw);
@@ -89,7 +110,11 @@ const groups=A.groupRows;
 assert.equal(groups.length,80);
 assert.equal(groups.filter(r=>r.totalCombatGroups===null).length,4,"unreported theater-months should remain null");
 for(const r of groups){
- if(r.totalCombatGroups===null)continue;
+ if(r.totalCombatGroups===null){
+  assert.equal(r.reportedMinusRoleSum,null,"missing group month cannot have a computed zero discrepancy");
+  for(const key of ["heavyBombardmentGroups","mediumAndLightBombardmentGroups","fighterGroups","troopCarrierGroups","reconnaissanceGroups"])assert.equal(r[key],null,"missing group months cannot imply zero role observations");
+  continue;
+ }
  const keys=["heavyBombardmentGroups","mediumAndLightBombardmentGroups","fighterGroups","troopCarrierGroups","reconnaissanceGroups"];
  const sum=keys.reduce((s,k)=>s+(r[k]??0),0);
  assert.ok(Math.abs(r.totalCombatGroups-sum-r.reportedMinusRoleSum)<1e-9,"reported organization subtotal disagreement must remain visible: "+r.month+" "+r.theater);
@@ -97,7 +122,11 @@ for(const r of groups){
 assert.equal(window.AirWarV73Data.soviet.length,5);
 for(const r of window.AirWarV73Data.soviet)assert.ok(r.fighters>=r.unserviceableFighters&&r.total>=r.fighters);
 assert.equal(window.AirWarV74Data.usaFactory.length,68);
-for(const r of window.AirWarV74Data.usaFactory)assert.ok(isMonth(r.period)&&r.all>=0&&r.fighters<=r.all);
+assert.equal(new Set(window.AirWarV74Data.usaFactory.map(r=>r.period)).size,68,"duplicate U.S. acceptance month");
+for(const r of window.AirWarV74Data.usaFactory){
+ assert.ok(isMonth(r.period)&&r.all>=0&&r.fighters<=r.all);
+ assert.equal(r.all,r.fighters+r.heavy+r.medium+r.noncombat,"U.S. world factory types do not reconcile for "+r.period);
+}
 assert.equal(G.pilotCasualties.length,9);assert.equal(G.reichFighters.length,3);
 assert.equal(G.production.length,27);assert.equal(G.fuelCapacity.length,7);assert.equal(G.unitStudies.length,2);
 assert.equal(new Set(G.reichFighters.map(r=>r.date)).size,3,"27 July and 1 July are distinct observations");
@@ -111,6 +140,8 @@ assert.equal(G.productionConflict.alternate-G.productionConflict.selected,27,"Se
 L.setMode("readiness");assert.ok(el("german-chart").innerHTML.includes("07-01")&&el("german-chart").innerHTML.includes("07-27"),"both July readiness dates must be identifiable");
 const html=read("grand-air-war-v80.html"),css=read("dist/grand-air-war-v80.css");
 for(const id of ["overview","campaigns","loss-lab","german-war-lab","air-forces","research-sources"])assert.ok(html.includes('id="'+id+'"'));
-assert.ok(css.includes(".dossier-research-jump button[hidden]"),"source jumps should not overlap or show nonfunctional options");
+assert.ok(css.includes(".research-library")&&css.includes(".moment-detail"),"research and events must have visually distinct layouts");
+assert.ok(html.includes('id="research-library"')&&html.includes('id="moment-detail"'));
+assert.ok(!html.includes('id="dossier-analyze"'),"obsolete misleading campaign-to-report button must be removed");
 assert.ok(read("dist/model-v4.js").includes('href="./grand-air-war-v80.html"'),"visible v7.4 navigation must link to optional v8 preview");
 console.log("PASS v8 data/display audit: 20 mapped dossiers, "+allFacts.length+" sourced facts, "+allEvents.length+" dated events, scoped losses, groups, fuel, readiness, production, labels and links");

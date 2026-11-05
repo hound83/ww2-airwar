@@ -63,7 +63,7 @@ L.selectRow("1944-09");assert.ok(el("german-observation").innerHTML.includes("tr
 L.setMode("fuel");assert.ok(el("german-observation").innerHTML.includes("5%"));
 L.setMode("unit");assert.ok(el("german-observation").innerHTML.includes("lost or damaged")||el("german-observation").innerHTML.includes("Lost or damaged"));
 L.setMode("pilots");
-A.setMonth("1944-05");assert.equal(L.current().month,"1944-05");
+A.setMonth("1944-05");assert.equal(L.current().month,"1944-06","independent laboratory date must not silently follow a campaign selection");
 assert.ok(el("german-observation").innerHTML.includes("578"));
 A.choose("reichdefense");assert.ok(el("dossier-title").textContent.includes("Defence of the Reich"));
 console.log("PASS v8.0: 48 German series observations, physical no-border map, five working German study modes, campaign links and historical source constraints");

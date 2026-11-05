@@ -33,3 +33,6 @@ require('./grand-air-war-v80.cjs');
 
 // Cross-check every rendered campaign, date, scope, aggregation and missing value.
 require('./grand-air-war-v80-audit.cjs');
+
+// Full campaign filter/zoom and separated research-population interaction matrix.
+require('./grand-air-war-v80-interactions.cjs');

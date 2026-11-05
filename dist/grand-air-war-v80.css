@@ -16,6 +16,7 @@
 .war-pin.selected{background:#e8c68b;color:#183338;border-color:#fff7d9;box-shadow:0 0 0 4px #18363f,0 2px 12px #0008}
 .war-pin.inactive{background:#657577;color:#e8ddc6;border-color:#b3c2ba;opacity:.64}
 .war-cluster{display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:#263d42;border:3px double #eed2a0;color:#f5e8c9;font-weight:900;font-size:13px;box-shadow:0 2px 14px #0009}
+.war-cluster.selected{background:#e8c68b;color:#183338;box-shadow:0 0 0 4px #18363f,0 2px 12px #0009}
 .map-panel .leaflet-tooltip{background:#152832;color:#f0e5ce;border:1px solid #bca984;box-shadow:0 2px 11px #0007;font-size:11px;max-width:300px;white-space:normal}
 .map-panel .leaflet-tooltip-top:before{border-top-color:#bca984}
 #map-fallback{position:absolute;z-index:700;left:16px;right:16px;bottom:50px;border:1px solid #e3c08d;border-radius:6px;padding:9px 13px;background:#29383ae3;color:#f8e7c7;font-size:11px}
@@ -64,6 +65,10 @@
 .dossier-research-jump button{display:block;width:100%;max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:left;margin:0}
 .dossier-research-jump button[hidden]{display:none!important}
 .dossier .fact-grid{grid-template-columns:repeat(auto-fit,minmax(min(175px,100%),1fr))}
+.dossier .fact small{display:block}
+.dossier .fact a{margin-top:7px}
+.dossier .dossier-key-findings{margin-top:0;padding-top:0;border-top:0;color:#f0dab2;font-size:19px}
+.dossier .dossier-key-findings+.fact-grid{margin-bottom:18px}
 .no-evidence{grid-column:1/-1}
 .war-pin.inactive{opacity:.82}
 .cluster-choices{display:grid;gap:5px;color:#e9eee6}
@@ -71,7 +76,29 @@
 .cluster-choices p{font-size:11px;color:#b5cccb}
 .cluster-choices button{background:#244653;border:1px solid #6d9692;color:#f2f2e8;text-align:left;padding:7px 8px;border-radius:4px;white-space:normal}
 .cluster-choices button:hover,.cluster-choices button:focus-visible{background:#3b6866}
+.cluster-choices button[aria-current=true]{border-color:#edd2a0;background:#4d5650;color:#fff3d6}
 .map-panel .leaflet-popup-content-wrapper{min-width:180px}
 .map-panel .leaflet-popup-content{max-height:350px;overflow-y:auto}
 #campaigns,#loss-lab,#german-war-lab,#air-forces,#research-sources{scroll-margin-top:16px}
 @media(max-width:600px){.atlas-sections{gap:5px}.atlas-sections a{padding:6px 8px}.cluster-choices button{min-height:36px}}
+.event-intro{font-size:11px;color:#b8d1ce;line-height:1.6;margin:0 0 12px}
+.moment-detail{border:1px solid #577877;background:linear-gradient(145deg,#244248,#1a343d);border-radius:7px;padding:15px;margin-top:12px;min-height:160px;overflow-wrap:anywhere}
+.moment-detail h3{font-family:Georgia,serif;font-weight:400;font-size:21px;line-height:1.25;color:#f1d7a8;margin:6px 0 12px}
+.moment-detail h4{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#9ce7d6;margin:12px 0 4px}
+.moment-detail p{font-size:12px;color:#d3e2dc;line-height:1.65}
+.evidence-confidence{background:#36392f;border-left:3px solid #d5b57f;border-radius:3px;padding:10px 11px;color:#f0ddb8!important;font-size:11px!important;line-height:1.65}
+.moment-detail .evidence-confidence{margin-top:12px}
+.moment-detail .dossier-links{margin-top:10px}
+.dossier #dossier-uncertainty{margin:6px 0 12px}
+.research-open{display:inline-block;background:#2a5054;color:#c5f1e2;border:1px solid #6fa79c;border-radius:5px;padding:8px 10px;font-size:11px;text-decoration:none}
+.research-library{margin-top:24px;border:1px solid #597c7c;background:#122935;border-radius:9px;scroll-margin-top:16px}
+.research-library>summary{display:grid;gap:4px;cursor:pointer;padding:18px 22px;list-style:revert}
+.research-library>summary strong{font-family:Georgia,serif;color:#f1d8ae;font-weight:400;font-size:23px}
+.research-library>summary small{color:#b8cecd;font-size:11px;line-height:1.55}
+.research-library[open]>summary{border-bottom:1px solid #48666b;background:#193441}
+.research-library-content{padding:0 18px 18px;min-width:0}
+.research-library-content>.section-head:first-child{padding-top:23px}
+.research-library-content .section-head{scroll-margin-top:14px}
+.missing-observation{cursor:pointer;stroke:#96acb1;stroke-dasharray:2 3}
+.missing-observation:hover{opacity:.9}
+@media(max-width:600px){.research-library>summary{padding:13px}.research-library-content{padding:0 10px 12px}.moment-detail{padding:11px}}
