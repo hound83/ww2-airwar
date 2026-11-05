@@ -39,7 +39,7 @@ const check=async()=>{
    const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
    assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
    assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
-   assert.match(await page.locator("#chapter-detail").innerText(),/What aircraft actually did/);
+   assert.match(await page.locator("#chapter-detail").innerText(),/What aircraft actually did/i);
    assert.equal(await page.locator("#moment-detail").isVisible(),false,"campaign selection must not automatically display an arbitrary Wednesday event");
    assert.match(await page.locator("#moment-list").innerText(),/24th Reconnaissance|PZL\.23/);
    assert.match(await page.locator("#dossier-uncertainty").innerText(),/Source disagreement/);
