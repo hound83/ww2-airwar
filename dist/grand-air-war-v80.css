@@ -65,6 +65,8 @@
 .dossier-research-jump button{display:block;width:100%;max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:left;margin:0}
 .dossier-research-jump button[hidden]{display:none!important}
 .dossier .fact-grid{grid-template-columns:repeat(auto-fit,minmax(min(175px,100%),1fr))}
+.dossier .dossier-key-findings{margin-top:0;padding-top:0;border-top:0;color:#f0dab2;font-size:19px}
+.dossier .dossier-key-findings+.fact-grid{margin-bottom:18px}
 .no-evidence{grid-column:1/-1}
 .war-pin.inactive{opacity:.82}
 .cluster-choices{display:grid;gap:5px;color:#e9eee6}

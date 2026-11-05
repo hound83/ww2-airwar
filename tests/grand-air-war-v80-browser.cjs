@@ -32,15 +32,26 @@ const check=async()=>{
    assert.equal(await page.locator("#dossier-title").innerText(),"Invasion of Poland");
    assert.match(await page.locator("#dossier-facts").innerText(),/300/);
    assert.match(await page.locator("#dossier-facts").innerText(),/1,300/);
+   const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
+   assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
    assert.match(await page.locator("#moment-list").innerText(),/24th Reconnaissance|PZL\.23/);
    assert.match(await page.locator("#dossier-uncertainty").innerText(),/Source disagreement/);
    await page.locator('#moment-list [data-date="1939-09-03"]').click();
    assert.match(await page.locator("#moment-detail").innerText(),/24th Reconnaissance Squadron/);
    assert.equal(await page.locator('#moment-detail a[href*="muzeumlotnictwa.pl"]').count(),1);
    await page.locator("#campaign-search").fill("");
-   await page.locator("#fit-map").click();
    await page.waitForFunction(()=>["loaded","unavailable"].includes(document.getElementById("campaign-map").dataset.landStatus));
    assert.equal(await page.locator("#campaign-map").getAttribute("data-land-status"),"loaded","historical coastline failed to load in connected browser QA");
+   await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-initial-"+viewport.width+".png")});
+   await page.locator("#fit-map").click();
+   await page.waitForTimeout(700); // fitBounds animation must complete before inspecting SVG paths
+   const painted=await page.evaluate(()=>{
+    const bounds=document.getElementById("campaign-map").getBoundingClientRect();
+    return [...document.querySelectorAll('.leaflet-overlay-pane svg path[fill="#aaa991"]')]
+     .filter(path=>{const r=path.getBoundingClientRect();return r.width>=4&&r.height>=4&&r.right>bounds.left&&r.left<bounds.right&&r.bottom>bounds.top&&r.top<bounds.bottom;}).length;
+   });
+   assert.ok(painted>=6,"fewer than six geographically distinct visible land polygons at "+viewport.width+"px; coastlines may be blank: "+painted);
+   await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-fitted-"+viewport.width+".png")});
    assert.ok(await page.locator(".leaflet-marker-icon").count()>0,"campaign pins vanished");
    await page.locator("#theater-select").selectOption("east");
    await page.locator("#campaign-search").fill("Normandy");

@@ -143,7 +143,10 @@ function setupMap(){
  if(!window.L){$("map-fallback").hidden=false;$("campaign-map").dataset.landStatus="unavailable";return;}
  try{
   const L=window.L;
-  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-50],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:true,worldCopyJump:false,attributionControl:false});
+  // The coastline has thousands of vertices across 357 clipped polygons.
+  // Keep it on the SVG renderer: Canvas silently rendered only a tiny land
+  // fragment after map moves on some Chromium/Leaflet combinations.
+  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-50],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:false,worldCopyJump:false,attributionControl:false});
   L.control.zoom({position:"topright"}).addTo(state.map);
   L.control.attribution({prefix:false}).addAttribution('Natural Earth / world-atlas 1:50m, public domain').addTo(state.map);
   const grid=L.layerGroup().addTo(state.map);
@@ -161,7 +164,7 @@ function setupMap(){
      if(!world.objects||!world.objects.land)throw Error("Unexpected land topology");
      const geo=europeanLand(window.topojson.feature(world,world.objects.land));
      if(!geo.geometry.coordinates.length)throw Error("European coastline geometry is empty");
-     state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.canvas()});
+     state.landLayer=L.geoJSON(geo,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.svg()});
      state.landLayer.addTo(state.map);
      if(state.landLayer.bringToBack)state.landLayer.bringToBack();
      grid.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
