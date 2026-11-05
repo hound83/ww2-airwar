@@ -39,11 +39,18 @@ const check=async()=>{
    const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
    assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
    assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
+   const phaseCardsOverlap=await page.locator("#chapter-list .chapter-card").evaluateAll(cards=>cards.some((card,i)=>cards.some((other,j)=>{
+    if(i>=j)return false;const a=card.getBoundingClientRect(),b=other.getBoundingClientRect();
+    return Math.min(a.right,b.right)-Math.max(a.left,b.left)>1&&Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top)>1;
+   })));
+   assert.equal(phaseCardsOverlap,false,"phase buttons overlap in actual viewport");
    assert.match(await page.locator("#chapter-detail").innerText(),/What aircraft actually did/i);
    assert.equal(await page.locator("#moment-detail").isVisible(),false,"campaign selection must not automatically display an arbitrary Wednesday event");
    assert.match(await page.locator("#moment-list").innerText(),/24th Reconnaissance|PZL\.23/);
    assert.match(await page.locator("#dossier-uncertainty").innerText(),/Source disagreement/);
+   await page.locator("#moment-list").evaluate(el=>{el.scrollTop=999;});
    await page.locator('#chapter-list [data-chapter="interior"]').click();
+   assert.equal(await page.locator("#moment-list").evaluate(el=>el.scrollTop),0,"switching phases kept stale event scroll position");
    assert.match(await page.locator("#chapter-detail").innerText(),/Kielce/);
    assert.match(await page.locator("#moment-list").innerText(),/9 September|Heinkel He 111/);
    assert.doesNotMatch(await page.locator("#moment-list").innerText(),/Orawka/);

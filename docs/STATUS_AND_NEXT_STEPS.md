@@ -7,7 +7,7 @@
 - Campaign navigation now follows **campaign selection → operational phase selection → ground/air/interpretive context → optional dated evidence**, without auto-opening the first arbitrary day event.
 - Reviewed **17 phases in 5 campaigns**: Poland 1939 (3), Condor Legion/Spain (3), France 1940 (3), Battle of Britain (5 RAF Museum phases), Normandy (3). The other 15 remain unphased with a prominent warning; no synthetic historical phases.
 - Explicit numerical boundaries: **30** source-specific campaign facts, **36** dated records, including the distinct 1936 airlift vs approximately 19,000 rotated Condor Legion personnel, and Polish 121st Squadron combat on **9 September 1939**. No campaign-wide totals apportioned to individual days/phases.
-- Controller/data checks passed: `node tests/build.cjs`, **240** filter intersections, **9** zoom levels, **12** German loss filter modes and **36** Allied force combinations, phase/source/event checks and year-boundary checks. Chromium desktop/mobile PR workflow is required before release.
+- Controller/data checks passed: `node tests/build.cjs`, **240** filter intersections, **9** zoom levels, **12** German loss filter modes and **36** Allied force combinations, phase/source/event checks and year-boundary checks. **Chromium desktop and mobile workflow run 42048245427 passed**, and screenshots were inspected; rerun after the final scroll-reset adjustment before release.
 - Review records: `docs/ATLAS_V80_END_TO_END_QA_2026-11-05.md` and `research/sources/poland-1939-campaign-pilot-2026-11-05.md`. Full original opposing-force air-loss reconciliation, 15 phase histories, and testing outside Chromium remain research gaps.
 
 ## 5 November 2026 — v8 QA and Poland source pilot, separate review branch

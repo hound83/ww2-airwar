@@ -34,6 +34,7 @@ function updateMonth(month){
 }
 function pickCampaign(id,fly=true){
  const c=D.campaigns.find(x=>x.id===id);if(!c)return;cancelPlay();
+ const changed=state.selected!==id;
  if(state.search&&!matches(c))state.search="";
  state.selected=id;
  state.selectedChapter=null;
@@ -41,6 +42,7 @@ function pickCampaign(id,fly=true){
  if(!active(c))state.month=c.start;
  if(state.theater!=="all"&&state.theater!==c.theater)state.theater="all";
  update();
+ if(changed)$("moment-list").scrollTop=0;
  const list=$('campaign-list'),row=list.querySelector?.('[data-campaign="'+id+'"]');
  // Only scroll the chronology's own viewport. Do not jump the entire page
  // away from the map when a marker or dated event selects a campaign.
@@ -64,6 +66,7 @@ function selectChapter(id){
  state.selectedChapter=id;
  state.selectedMoment=null;
  renderMoments();
+ $("moment-list").scrollTop=0;
 }
 function makeIcon(text,kind,selected,inactive=false){
  return window.L.divIcon({
