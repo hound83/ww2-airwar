@@ -1,63 +1,48 @@
-# Atlas development guidance for ChatGPT Work and coding agents
+# Coding-agent instructions — European Air War Atlas
 
-This file applies to **hound83/ww2-airwar (website)**, not to the separate physics solver.
+These instructions apply to `hound83/ww2-airwar`, the **historical website**. The aircraft physics solver is a different repository and must not be modified unless explicitly requested.
 
-## First minute in every assignment
+## Mission and autonomous milestones
 
-1. Check the GitHub repository, branch and latest commits/PRs. Do not assume that an earlier chat's snapshot is current.
-2. Read `README.md`, `docs/STATUS_AND_NEXT_STEPS.md`, `docs/ATLAS_PHYSICS_INTEGRATION.md` and, for historical data tasks, `DATA_NOTES.md`, `SOURCE_AUDIT.md` and applicable `research/sources/` files.
-3. Identify the smallest coherent website deliverable. Avoid taking on the parallel physics v3.0 research program.
-4. Create an appropriate feature branch, preserve local uncommitted work and keep `main` runnable.
+- Work toward a historically informative, coherent and genuinely usable Atlas. For substantial implementation requests, own **one substantial end-to-end website milestone**: investigate, fix or build, integrate, test user journeys, repair problems, and document what changed. Keep explicitly small fixes narrow.
+- Define the user-facing outcome, pre-change baseline, reasonable acceptance checks and non-goals. A milestone can contain several related corrections and UX/data improvements. Do not stop after a minor patch or propose obvious next steps that are already within the assigned outcome.
+- Prioritize actual information value and correctness above extra controls, decorative features, version bumps or superficial event listings. If the request concerns a campaign, make the campaign understandable from context through key events, chronology, locations, participants, losses and sources, rather than merely displaying that something happened.
+- Stay inside the authorized website milestone. Put unrelated findings into `docs/STATUS_AND_NEXT_STEPS.md` or the appropriate research ledger. Ask the user only for material product direction, missing authority or a true blocker.
+- For standalone historical research requests, follow promising source leads, preserve their provenance and contradictions, and return to the original question. This is not authorization for unrelated code changes.
 
-## Development boundary
+## Orientation and source-of-truth files
 
-- **May modify:** website/UX/CSS/navigation, historical datasets and source metadata, pilot scenarios, maps/timelines, front-aware analysis, responsive charts, accessibility and website tests.
-- **Must not modify without explicit request:** `hound83/WW2-Aircraft-Physics-Simulator` source, its scientific assumptions or its experimental results.
-- The Atlas `physics/research-model-v2.4.html` is an existing **frozen research snapshot**; do not present it as a validated v3 engine or swap it based on unreviewed physics branch changes.
-- For actual integration read `docs/ATLAS_PHYSICS_INTEGRATION.md`. Version pinning, source labels and rollback are mandatory.
+- Inspect current git/PR state and `README.md`. Use `docs/STATUS_AND_NEXT_STEPS.md` for active priorities, `docs/ATLAS_PHYSICS_INTEGRATION.md` for the physics boundary, and `DATA_NOTES.md`, `SOURCE_AUDIT.md` and the applicable `research/sources/` records for historical-data work. Read **relevant sections**, not every archive on every task.
+- Treat release versions, preview routes and current datasets as **current repository facts**, not fixed values copied from an old chat. Check the actual deployed state when a task concerns public behavior.
+- Preserve the existing static HTML/CSS/JS architecture unless a tested, compelling reason justifies changing it.
 
-## Source integrity
+## Historical integrity
 
-- Recorded, derived, interpolated, estimated, modeled and missing values have distinct meanings. Retain them throughout display, aggregations, CSV and APIs.
-- Do not fill missing months with zero, or mix fighter-only with all-aircraft, strength with serviceability, pilot with airframe losses, worldwide with theater-specific data, or credited claims with verified losses.
-- For external research preserve original URLs, reporting population, coverage, dated source and verification status. Consult relevant original scans where the task requires verification.
-- Do not remove historical evidence, archives, photo credits or font license documents as “clutter.” The old full README is archived under `docs/`.
+- Keep recorded, derived, interpolated, estimated, modeled and missing values distinct in data, charts, aggregates and exports. Never fill unknown months with zero or turn a source disagreement into false certainty.
+- Do not mix fighter-only with all-aircraft counts, strength with serviceability, aircraft with pilot losses, country/global with theater, claims with verified losses, or data from unrelated dates and formations.
+- For historical figures retain date, theater, population, exact source/page/URL and confidence. Preserve original source audits, archival records, credits and licenses. New features should improve provenance visibility, not hide difficult data.
+- A battle/campaign page must answer useful historical questions and connect relevant events to evidence; do not surface isolated trivia or unrelated units/timeframes just because they exist in the database.
 
-## Site engineering
+## Build and verification
 
-- Keep the current static HTML/CSS/JS architecture unless there is a compelling, tested reason to change.
-- Edit `dist/index.html` or individual `dist/` modules, **then run** `node scripts/build-web.cjs`. The root `index.html` is generated.
-- Run `node tests/build.cjs` and the dependency-free tests under `tests/` listed in the README. Browser/interaction changes also need Playwright + Chromium validation where available.
-- Review all generated changes and do not include screenshots, test-output files or huge archives in normal commits.
-- The default published route is v7.4 and `?preview=7.5` is opt-in. Do not promote preview without explicit user instruction.
-- Preserve mobile, pointer, touch and keyboard interactions, responsive chart viewports and direct source readouts.
+1. Reproduce important existing user journeys and data outcomes before changes; capture concrete broken cases and expected behavior.
+2. Edit maintained files in `dist/` and rebuild the generated root entry with `node scripts/build-web.cjs`; do not hand-edit the generated root `index.html`.
+3. Run `node tests/build.cjs` and the applicable test scripts documented in the current repository. For interaction/UI changes, run its browser smoke tests where available.
+4. Test actual user journeys through geography → theater/campaign → timeline/events → supporting details and source views. Exercise representative filters, dates, units, aggregation levels, map zoom, pointer/touch/keyboard and mobile widths. Check both non-empty and genuinely missing-data scenarios.
+5. Inspect before/after screenshots and outputs where visual or data changes warrant it. Repair in-scope problems, rerun affected tests and report untested limitations honestly. A green build alone is not historical or UX verification.
 
-## GitHub-first, Plus-efficient execution
+## Physics integration boundary
 
-- Prefer **one short, bounded Work run per implementation milestone**. Long Work conversations have caused chat-size errors after only a few assignments; continuing them indefinitely is not a requirement.
-- Use ordinary Chat for planning/decision making and Work for code execution, repository edits and browser QA. Always finish with tested commits and a reviewable PR.
-- At the end provide at most: summary of user-visible changes, test pass/fail, GitHub PR/commit URL, remaining blockers, next milestone. Do not paste complete logs, full source files or large data tables into the chat.
-- Store ongoing decisions, test status and next work in `docs/STATUS_AND_NEXT_STEPS.md`, and scientific/provenance detail in existing research docs. These Git files replace repeated 100+ MB handover ZIPs.
-- Reasoning default: use an economical supported model/Medium effort for routine work. Recommend High only if deeper analysis is likely to resolve a material blocker. The user changes settings, not the agent.
-- Never claim a CI, browser test or deployment succeeded without the corresponding evidence. Do not force-push or merge risky work automatically.
+- `hound83/WW2-Aircraft-Physics-Simulator` owns new physical equations and validation. The Atlas's embedded physics asset is a separately pinned research snapshot, not proof of a validated solver.
+- Never silently substitute experimental physics. Integration requires an explicit request, a reviewed/versioned solver artifact, documented provenance and limitations, compatibility tests and rollback as described in `docs/ATLAS_PHYSICS_INTEGRATION.md`.
 
-## Standing scope and subscription rules for every Work run
+## Git, autonomous publication and delivery
 
-These rules apply to **every future Work assignment and generated handover/export**, not just the current milestone. The user's objective is a meaningful, tested result within their standard approximately €20/month ChatGPT Plus allowance.
+- Use a feature branch and reviewable PR for substantial website work; preserve `main`, any current preview and uncommitted changes. Do not force-push. Do not promote a preview to public default unless the authorized milestone explicitly covers that promotion.
+- **Standing owner authorization:** for an authorized website implementation milestone, **merge the tested PR and publish through the existing GitHub Pages process** once all applicable release gates are met. No separate GO is required for this ordinary completion. A preview-to-default promotion or cross-repository physics integration still requires the milestone to **explicitly target** that product change; do not infer promotion from a generic UX request.
+- **Required gates:** the complete intended historical/user journey passes; source/provenance and temporal/geographical/formation consistency are verified; generated root is rebuilt; relevant Node and browser interaction checks pass; major viewports, map/filter/data states and accessibility inputs are checked; required GitHub CI checks pass on the exact revision; no unapproved source changes, blocked data integrity issues or high-severity regressions remain. Inspect the diff and know the prior deployable revision.
+- Respect branch protection, required reviews, permissions and deployment approvals. If any mandatory check cannot be performed or verified, leave the PR open and report the exact blocker; never bypass the gate.
+- After merge, inspect the **live public route**, including the affected campaign/chart/filter journey. Distinguish the verified default experience from any opt-in preview. If deployment or the live route fails, repair safely or explicitly report incomplete publication.
+- Prefer one *substantial but bounded* milestone per execution assignment. Avoid dragging huge research archives into chat; continue via committed GitHub documentation and checkpoints if the session reaches limits. This is not an instruction to stop after the first small fix.
+- Short final report: completed user-visible outcome; measured/observed before/after; tests and browser scenarios actually run; PR/merge/live links; open risks or a precise interruption checkpoint. Do not create micro-releases merely to show activity.
 
-1. **Agree and obey the scope:** state the one assigned deliverable, explicit out-of-scope work, acceptance tests and stop condition at the start. Deliver the assignment instead of starting open-ended research, extra features, additional aircraft, architectural rewrites or another project's work. Log tangent discoveries for later; do not act on them now.
-2. **Budget-aware execution:** default to an economical available model at Medium reasoning; read only relevant sources and files. Prefer existing source indexes, tests and earlier research over large repeated searches. Do not load or paste huge archives, entire repositories, all screenshots or lengthy test output into the chat. The agent may not know the user's remaining allowance and must not promise a precise cost.
-3. **Escalate only if it matters:** recommend High reasoning in one or two sentences only when a specific difficult scientific, historical or technical blocker warrants it. The user must select a different effort level; never auto-escalate or recommend Extra High for routine work.
-4. **Keep Work sessions short:** long sessions caused size errors after roughly two assignments. Use a fresh Work run for each next substantial milestone; use current GitHub commits, PRs and documented next steps for continuity rather than a growing conversation transcript.
-5. **Stop with a deliverable:** record what actually changed, before/after impact, tests actually run, PR/commit link, unresolved issues and exactly one suggested next milestone. Do not claim unrun tests passed or an unmerged branch is deployed. Stop after completing the task.
-6. **Handover filenames:** use descriptive, human-readable names like `Project_Component_Milestone_Handover_YYYY-MM-DD.md`, **not `ZZZ_` prefixes** (those were a temporary file-finding trick). Future handovers should be short Markdown links to GitHub and the shared Hobby research Library, not duplicate multi-gigabyte ZIP exports unless explicitly requested.
-
-## Chat-based research and source discovery (deliberate exception)
-
-The strict scope, stop-condition and Plus-usage rules above govern **Work execution**, not normal **Chat** discussions or deliberately assigned document/source research in Chat. Do not transfer the Work budgeting constraints into Chat handovers.
-
-- In Chat, when asked to research historical evidence, **actively follow relevant new leads**: footnotes, bibliographies, archival catalog references, scanned reports, citations to other original documents and meaningful contradictions. Continue expanding the search while the newly found material remains relevant and has a reasonable prospect of improving the answer or source coverage. Do not impose an arbitrary document count, search-depth cap, or requirement to stop at the first answer.
-- A research trail may reveal a better primary source or a necessary related question; investigate it, explain why it matters and keep the provenance clear. Preserve original dates, variants/configurations, archival identifiers, exact report pages and evidence levels where available; distinguish verified scans from secondary transcriptions or speculation.
-- **Relevant cross-aircraft branching and return:** for example, while researching Bf 109 stall speeds, if a historical report references stall speeds of other relevant fighters, follow and verify those leads too. Save *all* useful original figures, test configurations, citations/page numbers, correction status, reliability and unresolved conflicts in a durable research register and/or the shared Hobby research Library. Label side discoveries so they can be reused later. Then explicitly return to the original Bf 109 investigation and complete its findings. Do not silently import other variants' values into the Bf 109 model. For the Atlas, use `research/` source ledgers; for Physics, use `references/` registers and relevant `docs/` notes. If you cannot persist a finding, report that limitation and provide a copyable, sourced register instead.
-- Chat exploration need **not** produce a GitHub code change or a Work-style milestone. Its natural stopping point is when relevant leads are reasonably exhausted, no longer productive or the user redirects the inquiry.
-- Keep Work different: if source research is necessary to implement an agreed Work milestone, research only what is needed for that deliverable. Record additional promising sources and return to implementation rather than expanding into a new unassigned investigation.
