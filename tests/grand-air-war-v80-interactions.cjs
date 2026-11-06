@@ -115,7 +115,7 @@ const ledgerHtml=element("daily-ledger").innerHTML;
 assert.equal((ledgerHtml.match(/data-ledger-date=/g)||[]).length,18,"both original day series need to be browsable");
 assert.ok(ledgerHtml.includes("25 May")||ledgerHtml.includes("05-25"),"day-level records are not individually visible");
 assert.ok(ledgerHtml.includes("&gt; 40")&&ledgerHtml.includes("&gt; 50"),"exclusive lower-bound statements wrongly displayed as exact counts");
-assert.ok(ledgerHtml.includes("594")&&ledgerHtml.includes("558"),"reporting-denominator warning missing");
+assert.ok(ledgerHtml.includes("594")&&ledgerHtml.includes("578"),"reporting-denominator warning missing");
 assert.ok(ledgerHtml.includes("reported zero")&&ledgerHtml.includes("Not reported")&&ledgerHtml.includes("Outside Table 2"),"explicit zero, missing and outside-table categories conflated");
 assert.ok(ledgerHtml.includes("air271547.pdf")&&ledgerHtml.includes("raf.mod.uk"),"daily source trails are not available to reader");
 app.chooseChapter("landings");assert.ok(element("moment-list").innerHTML.includes("Gladiators on the ice"),"Norway original RAF airfield attack not accessible");

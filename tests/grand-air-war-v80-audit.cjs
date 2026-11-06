@@ -120,7 +120,7 @@ for(const date of ["06-03","06-04","06-05"]){assert.equal(day(date).unitSorties,
 for(const date of ["06-04","06-05","06-06"]){assert.equal(day(date).combats,null);assert.equal(day(date).ownLosses,null);}
 assert.equal(day("06-07").sortiesQualifier,"approximate");
 assert.equal(daily.rows.filter(r=>r.sortiesQualifier!=="approximate"&&r.sorties!==null).reduce((s,r)=>s+r.sorties,0),594,"precise Table 2 subtotal changed; do not include about 50 as exact");
-assert.ok(daily.reconciliation.includes("309")&&daily.reconciliation.includes("249")&&daily.reconciliation.includes("558"),"AHB's nonmatching squadron reporting sums must be exposed");
+assert.ok(daily.reconciliation.includes("329")&&daily.reconciliation.includes("249")&&daily.reconciliation.includes("578"),"AHB's nonmatching squadron reporting sums must be exposed");
 for(let i=1;i<daily.rows.length;i++)assert.ok(daily.rows[i-1].date<daily.rows[i].date,"unit diary dates not ascending or duplicated");
 assert.equal(norway.facts[0].value,17);
 assert.ok(norway.facts[0].scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");

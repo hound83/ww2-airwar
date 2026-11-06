@@ -100,7 +100,7 @@ const check=async()=>{
    assert.ok(sources.some(link=>link.includes('air271547.pdf'))&&sources.some(link=>link.includes('raf.mod.uk')),"daily original-source links inaccessible");
    const fullWidth=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
    assert.ok(fullWidth<=2,"daily operations table causes page-wide overflow: "+fullWidth);
-   await page.locator('#daily-ledger').screenshot({path:path.join(root,'v84-qa-narvik-daily-'+viewport.width+'.png')});
+   await page.locator('#daily-ledger').screenshot({path:path.join(root,'v80-qa-narvik-daily-'+viewport.width+'.png')});
    await page.evaluate(()=>window.GrandAirWarV77.choose("malta",false));
    assert.equal(await page.locator("#daily-ledger").isVisible(),false,"Norway daily data leaked into Malta");
    await page.evaluate(()=>window.GrandAirWarV77.choose("norway",false));
