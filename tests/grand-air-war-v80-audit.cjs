@@ -102,8 +102,8 @@ for(const id of ["spain","poland","norway","france1940","britain","malta","barba
  }
 }
 const norway=D.campaigns.find(c=>c.id==="norway");
-assert.equal(norway.facts[0].value,17);
-assert.ok(norway.facts[0].scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");
+assert.ok(norway.facts.some(f=>f.value===17&&f.date==="1940-06-08"),"embarked fighters must remain an independent 8 June observation");
+assert.ok(norway.facts.find(f=>f.value===17).scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");
 assert.deepEqual([...norway.facts.map(f=>f.value)],[42,53,75,24,329,249,17,49,37,6,13]);
 assert.ok(norway.facts.find(f=>f.value===6).type.includes("claims")&&norway.facts.find(f=>f.value===13).type.includes("primary"),"Norway claims and airfield losses must be distinguished");
 assert.ok(norway.facts.find(f=>f.value===49).period.includes("not a single-day"),"multi-day Norway sorties must not appear as one-day figure");
