@@ -22,7 +22,7 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,75,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,108,"campaign quantities need an updated source-count explanation");
 assert.equal(allEvents.length,80,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
@@ -120,16 +120,57 @@ assert.ok(norway.facts.find(f=>f.value===249).scope.includes("No. 46 Squadron ON
 assert.ok(D.sources.rafNorwayDailyCampaignOriginal.url.includes("raf.mod.uk"),"official RAF primary unit-report trail is required");
 
 const barbarossa=D.campaigns.find(c=>c.id==="barbarossa");
-assert.deepEqual([...barbarossa.facts.map(f=>f.value)],[1200,800]);
-assert.ok(barbarossa.facts[1].scope.includes("not another 800"),"Barbarossa on-ground losses are included in total, not added");
+assert.deepEqual([...barbarossa.facts.map(f=>f.value)],[2000,1270,5700,330,4614,1200,800]);
+assert.ok(barbarossa.facts.find(f=>f.value===800).scope.includes("not another 800"),"Barbarossa on-ground losses are included in total, not added");
 const sicily=D.campaigns.find(c=>c.id==="sicily");
-assert.deepEqual([...sicily.facts.map(f=>f.value)],[25070,177,293,16243,69,440,200]);
+assert.deepEqual([...sicily.facts.map(f=>f.value)],[59,32,44,12,25070,177,293,16243,69,440,200]);
 assert.ok(sicily.facts.find(f=>f.value===177).scope.includes("Allied loss total"),"Sicily Allied aircraft losses must not become Axis losses");
 assert.ok(sicily.facts.find(f=>f.value===293).type.includes("claims"),"Sicily 293 Allied claims are not verified opponent losses");
 assert.ok(sicily.facts.find(f=>f.value===25070).period.includes("NOT single-day"),"full-campaign sorties must not be mapped onto a single day");
 assert.ok(sicily.facts.find(f=>f.value===16243).unit.includes("tons"),"bomb tonnage must not be conflated with sortie counts");
 assert.ok(sicily.facts.find(f=>f.value===440).unit.includes("per day")&&sicily.facts.find(f=>f.value===440).scope.includes("not 440 aircraft"),"Husky patrol sortie rate must not become force inventory");
 assert.ok(sicily.facts.find(f=>f.value===200).scope.includes("NOT confirmed hostile aircraft shot down"),"US Navy plotted tracks are not verified German/Italian losses");
+
+/* Cross-belligerent evidence matrix: serviceability, claims, separate dates, original sources. */
+const britain=D.campaigns.find(c=>c.id==="britain"),normandy=D.campaigns.find(c=>c.id==="normandy");
+const findById=(campaign,id)=>campaign.facts.find(f=>f.id===id);
+assert.equal(findById(britain,"raf-hurricanes-serviceable-11aug").value+findById(britain,"raf-spitfires-serviceable-11aug").value,990,"RAF serviceable Hurricane/Spitfire subtotals must reconcile");
+assert.equal(findById(britain,"raf-fc-serviceable-11aug").value,990,"RAF August serviceability absent");
+assert.equal(findById(britain,"lw-se-serviceable-10aug").value,805,"Luftwaffe fighter serviceability absent");
+assert.ok(findById(britain,"lw-se-strength-10aug").value>findById(britain,"lw-se-serviceable-10aug").value,"aircraft on strength cannot be silently equated with serviceable");
+assert.ok(findById(britain,"raf-fighter-ops-loss-juloct").type.includes("lower-bound"),"greater-than-900 RAF fighter losses must not become exactly 900");
+assert.equal(findById(britain,"lw-bf109-ops-loss-juloct").value,600,"Bf 109 category cannot be conflated with all German aircraft");
+assert.ok(findById(britain,"raf-fc-serviceable-11aug").date!==findById(britain,"lw-se-serviceable-10aug").date,"adjacent-date strength snapshots must remain labeled");
+assert.equal(findById(normandy,"lw-lf3-jun-jul-fighterloss").value+findById(normandy,"lw-lf3-jun-jul-bomberloss").value+findById(normandy,"lw-lf3-jun-jul-transportloss").value+findById(normandy,"lw-lf3-jun-jul-groundloss").value,826,"German Luftflotte 3 destroyed categories must reconcile exactly");
+assert.equal(findById(normandy,"lw-lf3-jun-jul-losses").value,826,"German command loss total missing");
+assert.equal(findById(normandy,"allied-dday-aircraft").value,11590,"Allied air commitment not visible");
+assert.equal(findById(normandy,"allied-dday-aircraft-lost").value,127,"all-cause Allied D-Day air loss statistic missing");
+assert.equal(findById(normandy,"shaef-dday-strategic-sorties").value+findById(normandy,"shaef-dday-tactical-sorties").value,10585,"SHAEF strategic+tactical sorties must reconcile");
+assert.ok(findById(normandy,"lw-lf3-operational-6jun").value<findById(normandy,"lw-lf3-onstrength-5jun").value,"German air availability and on-strength categories inverted");
+assert.ok(findById(normandy,"lw-lf3-first-week-loss").value+findById(normandy,"lw-lf3-second-week-loss").value<=826,"first two weeks are already contained in the longer German loss window");
+assert.ok(findById(barbarossa,"soviet-barbarossa-german-estimate").type.includes("estimate")&&findById(barbarossa,"soviet-barbarossa-german-estimate").scope.includes("NOT independently"),"Soviet German-intelligence guesses must not masquerade as actual operational strength");
+assert.ok(findById(barbarossa,"vvs-barbarossa-German-claims-9days").type.includes("claims"),"German victory claims cannot represent Soviet recorded losses");
+for(const campaign of [britain,normandy,barbarossa,sicily]){
+ const newFacts=campaign.facts.filter(f=>f.id);
+ assert.ok(newFacts.every(f=>f.side&&f.measure&&f.date&&D.sources[f.sourceId]?.url?.startsWith("https://")),"side-specific facts must preserve population, time, and direct source links: "+campaign.id);
+ for(const group of campaign.comparisons||[]){
+  assert.ok(group.caution.length>60&&group.quality,"cross-side comparison missing clear denominators");
+  for(const row of group.rows){
+   const fact=row.factId?findById(campaign,row.factId):campaign.facts.find(f=>f.label===row.factLabel);
+   assert.ok(fact&&D.sources[fact.sourceId],"comparison duplicates or invents a source figure: "+campaign.id);
+  }
+ }
+}
+const axisRows=sicily.operationalSeries.rows;
+assert.equal(axisRows.length,5,"Sicily German/Italian operational activity must show five dated returns");
+assert.deepEqual([...axisRows.map(r=>[r.date,r.german,r.italian])],[["1943-07-11",283,198],["1943-07-12",202,171],["1943-07-13",164,197],["1943-07-14",156,88],["1943-07-15",85,76]]);
+assert.equal(axisRows[0].german+axisRows[0].italian,481,"Sicily initial Axis fighter operating count does not reconcile");
+assert.equal(axisRows[4].german+axisRows[4].italian,161,"Sicily later Axis flying count does not reconcile");
+assert.ok(sicily.operationalSeries.description.includes("NOT missions/sorties"),"Sicily operating aircraft are not flight sorties");
+assert.equal(findById(sicily,"sicily-german-day-losses-11-16").value,59);
+assert.equal(findById(sicily,"sicily-italian-day-losses-11-16").value,32);
+assert.ok(findById(sicily,"sicily-german-night-losses-10-17").period.includes("Nights"),"day/night losses require separate windows");
+
 const malta=D.campaigns.find(c=>c.id==="malta");
 assert.ok(malta.chapters.find(c=>c.id==="crisis").limits.includes("HMS Eagle"),"documented RAF/IWM carrier disagreement must remain visible");
 assert.equal(malta.facts.find(f=>f.date==="1942-03-07").value,15);
