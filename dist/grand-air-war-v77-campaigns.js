@@ -2,6 +2,7 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "ukOfficialMedSicilyV5": {"title":"UK Official History: The Mediterranean and Middle East, Vol. V, Sicily 1943, p. 98 and footnote: Axis operational aircraft and confirmed air losses","url":"https://www.generalstaff.org/WW2/Hist_UK/MedMiddleEastVol5.pdf","class":"postwar-official-British-history-with-access-to-enemy-German-Italian-records; individual-day-employed-aircraft-not-sorties; retrospective-certain-losses-day-and-night-windows"},
     "rafBoBLogistics": {"title":"RAF Air Power Review 3(4), Air Commodore Peter Dye, Logistics and the Battle of Britain, pp.24–27, published 2000","url":"https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss4-2-pdf/","class":"RAF-published-retrospective-analysis-reproducing-German-quartermaster-and-Fighter-Command-order-of-battle-returns; original-series-scans-not-directly-retranscribed"},
     "navyGermanNormandy": {"title":"U.S. Navy NHHC, The GAF and the Invasion of Normandy; based on wartime German sources and Luftflotte 3 returns","url":"https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/gaf-invasion-normandy.html","class":"official-US-Navy-digitized-German-source-postwar-study; cannot treat German shootdown claims as verified Allied losses"},
     "eisenhowerOverlord": {"title":"Gen. Dwight D. Eisenhower, Report to the Combined Chiefs of Staff on Operations in Europe, official reprint, p.20","url":"https://history.army.mil/portals/143/Images/Publications/catalog/70-58.pdf","class":"primary-Allied-Supreme-Commander-post-operation-report; strategic-vs-tactical-sortie-subsets"},
@@ -1756,7 +1757,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Poor weather and navigation led to severe failures of the night glider and parachute landings.",
       "consequence": "Mediterranean airpower supported the campaign and then operations on mainland Italy. Theater-wide MTO group counts are separate context.",
       "sources": [
-        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction", "maafMediterranean1945"
+        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction", "maafMediterranean1945", "ukOfficialMedSicilyV5"
       ],
       "chapters": [
         {
@@ -1787,7 +1788,45 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds": ["usArmySicily", "usArmyMediterranean", "raf1943"]
         }
       ],
+      "comparisons": [{"title":"Sicily air losses: different windows and source populations","measure":"aircraft lost by air force","quality":"not-directly-comparable","rows":[{"side":"Allied (entire campaign)","factId":null,"label":"HQ MAAF Sicily-campaign Allied aircraft losses","value":177},{"side":"German (11–16 July, day)","factId":"sicily-german-day-losses-11-16"},{"side":"Italian (11–16 July, day)","factId":"sicily-italian-day-losses-11-16"}],"caution":"The Allied 177 covers 10 July–17 August and all causes under HQ MAAF rules. German 59 and Italian 32 cover only daytime air combat on 11–16 July, excluding night and antiaircraft losses. The figures cannot be used for a head-to-head loss ratio."}],
+      "operationalSeries": {
+              "title": "German and Italian aircraft committed to operations over Sicily",
+              "description": "Original British official history reconstruction for 11–15 July 1943. Counts are aircraft committed to action over Sicily each day by German and Italian air forces, NOT missions/sorties, not serviceable theater inventory, and the same aircraft may appear on several days. No summation across days.",
+              "sourceId": "ukOfficialMedSicilyV5",
+              "metric": "aircraft committed to action (not sorties)",
+              "rows": [
+                      {
+                              "date": "1943-07-11",
+                              "german": 283,
+                              "italian": 198
+                      },
+                      {
+                              "date": "1943-07-12",
+                              "german": 202,
+                              "italian": 171
+                      },
+                      {
+                              "date": "1943-07-13",
+                              "german": 164,
+                              "italian": 197
+                      },
+                      {
+                              "date": "1943-07-14",
+                              "german": 156,
+                              "italian": 88
+                      },
+                      {
+                              "date": "1943-07-15",
+                              "german": 85,
+                              "italian": 76
+                      }
+              ]
+      },
       "facts": [
+        {"id":"sicily-german-day-losses-11-16","side":"Germany","measure":"losses","label":"German aircraft certainly destroyed in air by day over Sicily, 11–16 July","value":59,"unit":"German aircraft destroyed · daytime aerial combat","date":"1943-07-16","period":"11–16 July 1943, daytime only","scope":"UK official history based on Italian and German records: 59 CERTAIN German aircraft destroyed in the AIR by day, 11–16 July 1943; NOT all Axis losses, not full campaign, and does not include four separately reported German aircraft shot down by AA.","sourceId":"ukOfficialMedSicilyV5","type":"official-history-confirmed-axis-day-air-loss"},
+        {"id":"sicily-italian-day-losses-11-16","side":"Italy","measure":"losses","label":"Italian aircraft certainly destroyed in air by day over Sicily, 11–16 July","value":32,"unit":"Italian aircraft destroyed · daytime aerial combat","date":"1943-07-16","period":"11–16 July 1943, daytime only","scope":"Same official historical operational window as German 59: 32 CERTAIN Italian aircraft lost in the AIR by day, not total Italian losses, not an Allied claim and not entire Sicily campaign.","sourceId":"ukOfficialMedSicilyV5","type":"official-history-confirmed-axis-day-air-loss"},
+        {"id":"sicily-german-night-losses-10-17","side":"Germany","measure":"losses","label":"German aircraft certainly destroyed by night over Sicily, 10/11–16/17 July","value":44,"unit":"German aircraft destroyed · night air operations","date":"1943-07-17","period":"Nights 10/11–16/17 July 1943","scope":"German aircraft CERTAINLY destroyed at night over Sicily in official British campaign history, separate from 59 daylight German aircraft; five additional certain German antiaircraft losses are not included.","sourceId":"ukOfficialMedSicilyV5","type":"official-history-confirmed-axis-night-air-loss"},
+        {"id":"sicily-italian-night-losses-10-17","side":"Italy","measure":"losses","label":"Italian aircraft certainly destroyed by night over Sicily, 10/11–16/17 July","value":12,"unit":"Italian aircraft destroyed · night air operations","date":"1943-07-17","period":"Nights 10/11–16/17 July 1943","scope":"12 CERTAIN Italian aircraft destroyed in night flying over Sicily, separate from 32 Italian daylight losses. Not all Axis aircraft lost on ground or across whole campaign.","sourceId":"ukOfficialMedSicilyV5","type":"official-history-confirmed-axis-night-air-loss"},
         {"label":"HQ MAAF Sicily-campaign Allied operational flights","value":25070,"unit":"effective operational sorties","scope":"HQ Mediterranean Allied Air Forces original February 1945 campaign table; Sicily 10 July–17 August, combined Allied operation. NOT separate from daily Western naval-cover sorties; do not sum with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-sorties"},
         {"label":"HQ MAAF Sicily-campaign Allied aircraft losses","value":177,"unit":"Allied aircraft losses","scope":"HQ MAAF historical campaign table, Sicily 10 July–17 August 1943; Allied loss total in HQ reporting classification, NOT 177 enemy aircraft lost, not daily.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-losses"},
         {"label":"HQ MAAF Sicily-campaign aerial victory claims","value":293,"unit":"claimed enemy aircraft","scope":"HQ MAAF campaign historical table, 10 July–17 August 1943. Allied claims of enemy aircraft; NOT separately verified German/Italian actual loss records.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"claims-not-verified-axis-losses"},
