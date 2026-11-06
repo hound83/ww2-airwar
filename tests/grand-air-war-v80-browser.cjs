@@ -120,7 +120,7 @@ const check=async()=>{
    }
    await page.evaluate(()=>window.GrandAirWarV77.choose("malta",false));
    await page.locator('#chapter-list [data-chapter="crisis"]').click();
-   await page.locator(".campaign-guide").screenshot({path:path.join(root,"v81-qa-malta-guide-"+viewport.width+".png")});
+   await page.locator(".campaign-guide").screenshot({path:path.join(root,"v80-qa-malta-guide-"+viewport.width+".png")});
    await page.evaluate(()=>window.GrandAirWarV77.choose("poland",false));
    await page.locator('#chapter-list [data-chapter="interior"]').click();
    await page.evaluate(()=>window.GrandAirWarV77.setMonth("1939-10"));

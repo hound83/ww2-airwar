@@ -217,6 +217,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519661/black-thursday-schweinfurt-october-14-1943/",
       "class": "official-USAF-museum-day-specific-operational-account"
     },
+    "usafSchweinfurtOctober251": {
+      "title": "National Museum USAF: Black Thursday alternate account, 251 B-17s 'on the mission'",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196143/black-thursday/",
+      "class": "official-USAF-museum-different-dispatched-versus-on-mission-denominator; reconciliation-pending"
+    },
     "ninhEindhoven1945": {
       "title": "Netherlands Institute for Military History: Eindhoven airfield and Operation Bodenplatte",
       "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/eindhoven",
@@ -1545,7 +1550,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "High bomber losses accelerated pressure for long-range escort and changing fighter employment.",
       "consequence": "Two high-loss missions two months apart helped drive USAAF planning toward adequate long-range escort. These are not continuous August–October daily operations, and the August/October counts must retain separate missions.",
       "sources": [
-        "usafSchweinfurt1943", "usafSchweinfurtOctober", "raf1943"
+        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943"
       ],
       "chapters": [
         {
@@ -1563,14 +1568,14 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "situation": "USAAF planners attacked the ball-bearing plants again after a two-month interval. The long escort gap remained a fundamental tactical vulnerability.",
           "airRole": "Of 291 B-17s dispatched on 14 October, 60 were shot down; among the returning bombers 17 later crashed or were scrapped and 121 required repairs according to the National Museum USAF.",
           "change": "The loss rate drove a pause in attacks beyond available fighter escort range. This differs in timing, participating aircraft and outcomes from the earlier August raid.",
-          "limits": "The 60 shot down are a subset of 291 dispatched on 14 October only. Returned damaged or subsequently scrapped aircraft are not added as if they were shot down over Germany.",
-          "sourceIds": ["usafSchweinfurtOctober"]
+          "limits": "An additional USAF Museum fact sheet gives 251 B-17s 'on the mission' against 291 dispatched in this museum account. The counting point or eligibility difference has not been reconciled against Eighth Air Force mission returns. Both give 60 shot down. Returned damaged or subsequently scrapped aircraft are not added as if shot down over Germany.",
+          "sourceIds": ["usafSchweinfurtOctober", "usafSchweinfurtOctober251"]
         }
       ],
       "facts": [
         {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
         {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
-        {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday mission only; different operation from 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
+        {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday; one USAF Museum account says 291 dispatched, another 251 'on the mission' (different counting population, unreconciled); not 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
         {"label":"Bombers shot down, 14 October Schweinfurt raid", "value":60, "unit":"USAAF B-17 bombers", "scope":"Subset of 291 dispatched 14 October; excludes returned aircraft that later crashed or required repair", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded-subset"}
       ],
       "moments": [
@@ -1590,10 +1595,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "date":"1943-10-14", "title":"Black Thursday: second Schweinfurt strike",
           "place":"Schweinfurt, Germany", "lat":50.05, "lng":10.22,
           "summary":"The Eighth Air Force returned to the ball-bearing plants. Out of 291 dispatched B-17s, 60 were shot down; a further 17 aircraft that returned crashed or were scrapped, while 121 returning aircraft required repairs in the USAF museum account.",
-          "units":"Eighth Air Force B-17 heavy bombers; dispatched, shot down, returned-damaged and subsequently scrapped are distinct statuses, not interchangeable aircraft loss buckets.",
+          "units":"Eighth Air Force B-17 heavy bombers; 291 dispatched in this account versus 251 'on the mission' in another USAF Museum account. Different counting points are unresolved, as are separate shot-down, returned-damaged and subsequently scrapped statuses.",
           "outcome":"The scale of losses contributed to suspending deep raids until longer-range escort could be provided.",
-          "sourceIds":["usafSchweinfurtOctober"],
-          "confidence":"Official USAF museum fact sheet; 14 October mission only, no inferred Luftwaffe write-offs"
+          "sourceIds":["usafSchweinfurtOctober", "usafSchweinfurtOctober251"],
+          "confidence":"Two official USAF Museum accounts with 291-dispatched versus 251-on-mission denominator; original Eighth Air Force mission list not yet reconciled, no inferred Luftwaffe write-offs"
         }
       ]
     },

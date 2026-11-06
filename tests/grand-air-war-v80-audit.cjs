@@ -118,6 +118,7 @@ assert.deepEqual([...schweinfurt.chapters.map(ch=>ch.start)],["1943-08-17","1943
 assert.ok(!schweinfurt.sources.includes("bigWeek"),"1944 Big Week is not a 1943 raid evidence source");
 assert.deepEqual([...schweinfurt.facts.map(f=>f.value)],[376,60,291,60],"August and October dispatch/loss populations must remain separate");
 assert.ok(schweinfurt.facts.filter(f=>f.value===60).every(f=>f.type==="recorded-subset"),"60 is a subset, not another dispatched total");
+assert.ok(schweinfurt.chapters.find(ch=>ch.id==="october").limits.includes("251 B-17s")&&schweinfurt.chapters.find(ch=>ch.id==="october").sourceIds.includes("usafSchweinfurtOctober251"),"official 251-on-mission versus 291-dispatched divergence must be visible and sourced");
 const bodenplatte=D.campaigns.find(c=>c.id==="bodenplatte");
 assert.ok(bodenplatte.facts.some(f=>f.value===45&&f.scope.includes("do not add")),"Eindhoven local loss must not be stacked with whole-raid values");
 assert.ok(bodenplatte.facts.some(f=>f.value===35&&f.scope.includes("not necessarily identical")),"local versus whole-raid damage definitions need disclosure");
