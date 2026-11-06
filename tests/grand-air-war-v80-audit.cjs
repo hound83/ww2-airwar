@@ -110,7 +110,7 @@ assert.ok(norway.facts.find(f=>f.value===49).period.includes("not a single-day")
 assert.equal(norway.moments.filter(e=>["1940-05-28","1940-06-02"].includes(e.date)).length,2,"new RAF daily event dates should be independently inspectable");
 for(const [date,expected] of [["1940-05-28",[42,53]],["1940-06-02",[75,24]]]){
  const rows=norway.facts.filter(f=>f.date===date);
- assert.deepEqual(rows.map(f=>f.value),expected,"daily ORB evidence is missing or incorrectly partitioned on "+date);
+ assert.deepEqual([...rows.map(f=>f.value)],expected,"daily ORB evidence is missing or incorrectly partitioned on "+date);
  assert.ok(rows.every(f=>f.sourceId==="rafNorwayDailyCampaignOriginal"),"daily numbers must link the original RAF report");
 }
 assert.ok(norway.facts.find(f=>f.value===75).scope.includes("TOGETHER"),"joint daily sorties cannot be assigned to a single squadron");
