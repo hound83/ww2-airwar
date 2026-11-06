@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,30,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,36,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,42,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,57,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -88,7 +88,40 @@ assert.equal(poland.facts.length,4);
 assert.equal(poland.moments.length,7);
 assert.equal(poland.chapters.length,3);
 assert.deepEqual([...poland.chapters.map(c=>c.start)],["1939-09-01","1939-09-07","1939-09-17"]);
-assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["france1940",3],["britain",5],["normandy",3] ]);
+assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["norway",3],["france1940",3],["britain",5],["malta",4],["barbarossa",3],["sicily",3],["schweinfurt",2],["bigweek",2],["normandy",3],["marketgarden",3] ]);
+// Every source-backed phase, including the older pilots, must offer at least
+// one inspectable detailed event. Calendar-only placeholders are not evidence.
+for(const id of ["spain","poland","norway","france1940","britain","malta","barbarossa","sicily","schweinfurt","bigweek","normandy","marketgarden"]){
+ const c=D.campaigns.find(c=>c.id===id);
+ assert.ok(c.chapters.length>=2,id+" missing a sequential research guide");
+ for(const ch of c.chapters){
+  assert.ok(c.moments.some(e=>e.summary&&e.date>=ch.start&&e.date<=ch.end),id+"/"+ch.id+" has no researched event to inspect");
+  assert.ok(ch.limits.length>=65,id+"/"+ch.id+" has no meaningful evidence-limitation explanation");
+ }
+}
+const norway=D.campaigns.find(c=>c.id==="norway");
+assert.equal(norway.facts[0].value,17);
+assert.ok(norway.facts[0].scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");
+const malta=D.campaigns.find(c=>c.id==="malta");
+assert.ok(malta.chapters.find(c=>c.id==="crisis").limits.includes("HMS Eagle"),"documented RAF/IWM carrier disagreement must remain visible");
+assert.equal(malta.facts.find(f=>f.date==="1942-03-07").value,15);
+assert.ok(malta.facts.find(f=>f.date.startsWith("1942-10")).scope.includes("separate population"),"October Axis sorties must not be pooled with April Luftwaffe sorties");
+const garden=D.campaigns.find(c=>c.id==="marketgarden");
+assert.equal(garden.facts.find(f=>f.value===152).type,"recorded-subset");
+assert.equal(garden.facts.find(f=>f.value===162).date,"1944-09-20");
+assert.ok(garden.moments.find(e=>e.date==="1944-09-20").outcome.includes("failed"),"destination success is not supplies reaching Allied troops");
+const bigweek=D.campaigns.find(c=>c.id==="bigweek");
+assert.equal(bigweek.facts.find(f=>f.value===200).type,"lower-bound");
+assert.ok(bigweek.chapters.every(ch=>ch.limits.includes("not")||ch.limits.includes("entire")),"campaign-wide loss estimates must not become 3-day numbers");
+const schweinfurt=D.campaigns.find(c=>c.id==="schweinfurt");
+assert.deepEqual([...schweinfurt.chapters.map(ch=>ch.start)],["1943-08-17","1943-10-14"]);
+assert.ok(!schweinfurt.sources.includes("bigWeek"),"1944 Big Week is not a 1943 raid evidence source");
+assert.deepEqual([...schweinfurt.facts.map(f=>f.value)],[376,60,291,60],"August and October dispatch/loss populations must remain separate");
+assert.ok(schweinfurt.facts.filter(f=>f.value===60).every(f=>f.type==="recorded-subset"),"60 is a subset, not another dispatched total");
+const bodenplatte=D.campaigns.find(c=>c.id==="bodenplatte");
+assert.ok(bodenplatte.facts.some(f=>f.value===45&&f.scope.includes("do not add")),"Eindhoven local loss must not be stacked with whole-raid values");
+assert.ok(bodenplatte.facts.some(f=>f.value===35&&f.scope.includes("not necessarily identical")),"local versus whole-raid damage definitions need disclosure");
+for(const id of ["dieppe","bodenplatte"])assert.ok(D.campaigns.find(c=>c.id===id).moments.every(e=>e.summary&&e.sourceIds.length),id+" single-day action needs researched event details");
 assert.ok(el("dossier-facts").innerHTML.includes("≈ 300")&&el("dossier-facts").innerHTML.includes("&gt; 1,300"));
 assert.ok(el("dossier-facts").innerHTML.includes("126")&&el("dossier-facts").innerHTML.includes("114"));
 assert.ok(el("dossier-uncertainty").textContent.includes("Source disagreement"));

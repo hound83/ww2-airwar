@@ -69,8 +69,33 @@ window.GrandAirWarV77Campaigns=Object.freeze({
     },
     "rafBritainPhases": {
       "title": "RAF Museum: five operational phases of the Battle of Britain",
-      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/introduction-to-the-phases-of-the-battle-of-britain/",
+      "url": "https://www.rafmuseum.org.uk/research/online-exhibitions/history-of-the-battle-of-britain/introduction-to-the-phases-of-the-battle-of-britain/",
       "class": "museum-operational-periodization"
+    },
+    "rafBritainChannel": {
+      "title": "RAF Museum: Battle of Britain Phase Two, 8 August convoy Peewit attacks",
+      "url": "https://www.rafmuseum.org.uk/research/online-exhibitions/history-of-the-battle-of-britain/the-battle-of-britain-phase-two/",
+      "class": "official-RAF-museum-operational-exhibition"
+    },
+    "rafBritainAirfields": {
+      "title": "RAF Museum: Battle of Britain Phase Three, Eagle Day and airfields",
+      "url": "https://www.rafmuseum.org.uk/research/online-exhibitions/history-of-the-battle-of-britain/the-battle-of-britain-phase-three",
+      "class": "official-RAF-museum-operational-exhibition"
+    },
+    "rafBritainBlitz": {
+      "title": "RAF Museum: The Blitz, opening attacks on London 7 September 1940",
+      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-blitz/",
+      "class": "official-RAF-museum-operational-exhibition"
+    },
+    "usafNormandyCobra": {
+      "title": "National Museum USAF: Tactical Support, Operation Cobra on 25 July 1944",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196159/tactical-support/",
+      "class": "official-USAF-museum-ground-air-operational-study"
+    },
+    "usArmyNormandyFalaise": {
+      "title": "U.S. Army Center of Military History: War against Germany, Normandy and Falaise",
+      "url": "https://history.army.mil/Portals/143/Images/Publications/Publication%20By%20Title%20Images/W%20PDF/CMH_Pub_12-3.pdf?ver=B9GWbKzpQR9pbOfUqARLPA%3D%3D",
+      "class": "official-US-Army-operational-history"
     },
     "rafNormandyOperations": {
       "title": "RAF Museum: Operation Overlord air superiority, forward airfields and breakout",
@@ -141,6 +166,91 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "title": "RAF Museum: British Military Aviation in 1940",
       "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1940-2/",
       "class": "museum-timeline"
+    },
+    "rafNorwayAHB": {
+      "title": "RAF Air Historical Branch: Campaign in Norway, April–June 1940 (original wartime narrative)",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/",
+      "class": "RAF-official-campaign-history; contemporary account with its own perspective"
+    },
+    "rafNorwayReview": {
+      "title": "RAF Air Power Review 13(3): False Start, the RAF campaign in Norway",
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol13-iss3-7-pdf/",
+      "class": "RAF-published-operational-analysis"
+    },
+    "usArmyBarbarossa": {
+      "title": "U.S. Army Center of Military History: The German Campaign in Russia, Planning and Operations 1940–42",
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/104-21.pdf",
+      "class": "official-US-Army-postwar-operational-study"
+    },
+    "usafGermanRussia1941": {
+      "title": "USAF Historical Study 153: The German Air Force versus Russia, 1941, chapter 6 (Kiev)",
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090515-102.pdf",
+      "class": "USAF-published-firsthand-German-officer-study; retrospective partisan viewpoint"
+    },
+    "usArmySicily": {
+      "title": "U.S. Army Center of Military History: Sicily, World War II campaign pamphlet",
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/72-16.pdf",
+      "class": "official-US-Army-campaign-study"
+    },
+    "usArmyChronology": {
+      "title": "U.S. Army Center of Military History: Chronology 1941–1945, 20–22 July 1943",
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/11-1.pdf",
+      "class": "official-US-Army-day-by-day-operational-chronology"
+    },
+    "usArmyMediterranean": {
+      "title": "U.S. Army Center of Military History: War against Germany and Italy, Mediterranean",
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/12-2.pdf",
+      "class": "official-US-Army-operational-photo-history"
+    },
+    "usafBigWeekIndustry": {
+      "title": "National Museum USAF: Industry Crippled, Big Week opening raid",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196168/industry-crippled/",
+      "class": "official-USAF-museum-operational-summary"
+    },
+    "usafSchweinfurt1943": {
+      "title": "National Museum USAF: Regensburg/Schweinfurt dual raid, 17 August 1943",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519655/regensburgschweinfurt-august-17-1943/",
+      "class": "official-USAF-museum-day-specific-operational-account"
+    },
+    "usafSchweinfurtOctober": {
+      "title": "National Museum USAF: Black Thursday, Schweinfurt, 14 October 1943",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519661/black-thursday-schweinfurt-october-14-1943/",
+      "class": "official-USAF-museum-day-specific-operational-account"
+    },
+    "ninhEindhoven1945": {
+      "title": "Netherlands Institute for Military History: Eindhoven airfield and Operation Bodenplatte",
+      "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/eindhoven",
+      "class": "Dutch-Defence-official-local-airfield-account"
+    },
+    "iwmMaltaSpotter": {
+      "title": "Imperial War Museums image A 7840: HMS Eagle and Operation Spotter, 7 March 1942",
+      "url": "https://www.iwmprints.org.uk/collections/armed-forces-weapons-ships/products/pod445981",
+      "class": "IWM-photographic-archive; caption gives 16 shipped, RAF Museum gives 15 arriving"
+    },
+    "raf1941chron": {
+      "title": "RAF Museum: British Military Aviation in 1941, air attacks on Malta",
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1941-2/",
+      "class": "museum-operational-chronology"
+    },
+    "marketPlanning": {
+      "title": "RAF Museum: Operation Market Garden, Chapter 2, planning and airlift constraints",
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-2/",
+      "class": "museum-published-analysis; interpretive author"
+    },
+    "marketAssault": {
+      "title": "RAF Museum: Operation Market Garden, Chapter 3, aerial assault of 17 September",
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-3/",
+      "class": "museum-published-research; archival references supplied"
+    },
+    "marketResupply": {
+      "title": "RAF Museum: Operation Market Garden, Chapter 4, resupply and weather 18–21 September",
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-4/",
+      "class": "museum-published-research; archival references supplied"
+    },
+    "marketWithdrawal": {
+      "title": "RAF Museum: Operation Market Garden, Chapter 5, bridgehead and withdrawal",
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-5/",
+      "class": "museum-published-research; archival references supplied"
     },
     "rafFrance": {
       "title": "RAF Museum: The Battle of France, 14 May 1940 bomber operation",
@@ -259,7 +369,12 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "German Condor Legion begins operations",
           "place": "Madrid sector",
           "lat": 40.42,
-          "lng": -3.7
+          "lng": -3.7,
+          "summary": "The RAF Museum dates the first operation by the organized German Condor Legion to 15 November 1936. Its role had expanded from assisting the earlier troop airlift to organized fighter, bomber and support operations during the struggle for Madrid.",
+          "units": "Condor Legion as an expeditionary formation; the museum date is a unit-level opening, not a list of every squadron or a precise Madrid aircraft position.",
+          "outcome": "Germany's intervention became a sustained combat deployment with broader air-war roles beyond emergency transport.",
+          "sourceIds": ["raf1937", "bundesarchivSpain"],
+          "confidence": "RAF Museum chronology and German Federal Archive synopsis; no independently audited sortie total"
         },
         {
           "date": "1937-04-26",
@@ -496,16 +611,70 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Air transport, airfield capture and maritime reconnaissance influenced the speed of German reinforcement.",
       "consequence": "Air control depended on long distances and limited bases; original operational returns are a research gap.",
       "sources": [
-        "raf1940chron"
+        "raf1940chron", "rafNorwayAHB", "rafNorwayReview"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id": "landings", "title": "Airborne seizure and the fight for southern bases",
+          "start": "1940-04-09", "end": "1940-04-30", "location": "Oslo, Stavanger, Bergen and central Norway",
+          "situation": "Germany invaded Denmark and Norway on 9 April, seizing transport hubs and airfields. Allied troops entered a fragmented Norwegian campaign while German forces could reinforce by air despite the country's difficult terrain.",
+          "airRole": "German airborne landings, transport and bomber operations exploited accessible airfields. British land forces struggled to establish air cover in central Norway and operated under the threat of Luftwaffe attack.",
+          "change": "The German ability to use captured bases and aircraft for supply reduced the value of Allied naval access alone.",
+          "limits": "Analytical division based on the RAF official campaign history, not an official set of phase dates. No comparable Luftwaffe/RAF airframe-loss return is attached.",
+          "sourceIds": ["rafNorwayAHB", "rafNorwayReview", "raf1940chron"]
+        },
+        {
+          "id": "narvik", "title": "Narvik: establishing fighter cover in the north",
+          "start": "1940-05-01", "end": "1940-05-31", "location": "Bardufoss, Skaanland and Narvik",
+          "situation": "The Allied expedition shifted attention toward the far north. Unlike the failed positions farther south, forces near Narvik temporarily benefited from a more sustained air presence.",
+          "airRole": "No. 263 Squadron's Gladiators arrived at Bardufoss on 21 May; No. 46 Squadron flew Hurricanes off HMS Glorious on 26 May and began local fighter operations. Limited fields, maintenance and long supply lines constrained sorties.",
+          "change": "Forward fighter basing made air defence and army support possible around Narvik, illustrating the importance of protected local airfields.",
+          "limits": "These squadron arrival dates do not give complete fighter establishment or loss figures for the whole Norway campaign.",
+          "sourceIds": ["raf1940chron", "rafNorwayReview", "rafNorwayAHB"]
+        },
+        {
+          "id": "withdrawal", "title": "Withdrawal, fighter embarkation and the loss of Glorious",
+          "start": "1940-06-01", "end": "1940-06-10", "location": "Narvik, Bardufoss and the Norwegian Sea",
+          "situation": "After the German offensive in France changed Allied priorities, British and Allied forces evacuated northern Norway and abandoned forward airfields.",
+          "airRole": "On 8 June the remaining Gladiators and Hurricanes of Nos. 263 and 46 Squadrons were recovered aboard HMS Glorious. That same day German warships sank the carrier, so the surviving fighter force was lost at sea.",
+          "change": "The final withdrawal ended the temporary Allied air presence. Securing a northern airfield had not overcome the strategic need to evacuate.",
+          "limits": "The 17 fighters embarked are a precise contingent at a withdrawal point, not all RAF losses in Norway. The RAF history is a wartime account; the loss of a ship is not an air-to-air engagement.",
+          "sourceIds": ["rafNorwayAHB", "raf1940chron"]
+        }
+      ],
+      "facts": [
+        {"label": "RAF fighters embarked on HMS Glorious during evacuation", "value": 17, "unit": "aircraft · 10 Gladiators and 7 Hurricanes", "scope": "8 June 1940, surviving aircraft of Nos. 263 and 46 Squadrons recovered from Norway; later lost with carrier, not a campaign-wide RAF loss total", "sourceId": "raf1940chron", "date": "1940-06-08", "type": "recorded"}
+      ],
       "moments": [
         {
           "date": "1940-04-09",
           "title": "German invasion of Norway and Denmark",
           "place": "Southern Norway",
           "lat": 59.9,
-          "lng": 10.7
+          "lng": 10.7,
+          "summary": "German forces launched combined sea, air and land operations. Paratroops and air transport helped capture airfields and communications sites around Oslo and Stavanger, giving the invasion vital reinforcement routes.",
+          "units": "German invasion force and Luftwaffe airborne/transport units; the chart pin is regional, not an exact drop-zone location.",
+          "outcome": "Airfields and communications hubs became key to reinforcing German forces and restricting Allied air intervention.",
+          "sourceIds": ["raf1940chron", "rafNorwayAHB"],
+          "confidence": "Official museum chronology and RAF post-action campaign history; no event-level aircraft-loss total"
+        },
+        {
+          "date": "1940-05-26", "title": "No. 46 Squadron Hurricanes fly off HMS Glorious to Norway",
+          "place": "Bardufoss and Skaanland, northern Norway", "lat": 69.06, "lng": 18.54,
+          "summary": "Twelve RAF No. 46 Squadron Hurricanes flew off HMS Glorious and landed at Bardufoss and Skaanland. The first operational sorties from Skaanland followed on 27 May, before the flight rejoined forces at Bardufoss.",
+          "units": "RAF No. 46 Squadron, Hurricane fighters; the arrival strength is not a running serviceability count.",
+          "outcome": "Fighter cover briefly strengthened Allied operations in the Narvik sector but remained dependent on a few exposed northern airfields.",
+          "sourceIds": ["raf1940chron", "rafNorwayAHB"],
+          "confidence": "RAF Museum dated unit chronology; RAF campaign narrative"
+        },
+        {
+          "date": "1940-06-08", "title": "Surviving RAF fighters embark; HMS Glorious is sunk",
+          "place": "Bardufoss and Norwegian Sea", "lat": 69.0, "lng": 17.4,
+          "summary": "Ten Gladiators and seven Hurricanes were flown aboard HMS Glorious during the final RAF evacuation. The carrier was sunk by German warships later that day as it returned to Britain.",
+          "units": "RAF Nos. 263 and 46 Squadrons; Royal Navy HMS Glorious. Fighter count means recovered aircraft aboard one ship, not total Norwegian-campaign aviation losses.",
+          "outcome": "Allied air operations in northern Norway ended and the evacuated fighter detachment was lost with the carrier.",
+          "sourceIds": ["raf1940chron", "rafNorwayAHB"],
+          "confidence": "RAF contemporary campaign narrative plus RAF Museum record; symbolic northern-sea map location"
         }
       ]
     },
@@ -532,7 +701,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "rafSealion",
         "rafFrance",
-        "rafAirPowerFrance"
+        "rafAirPowerFrance", "raf1940chron"
       ],
       "chapters": [
         {
@@ -610,28 +779,48 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "German invasion of the Low Countries",
           "place": "Benelux",
           "lat": 50.8,
-          "lng": 4.4
+          "lng": 4.4,
+          "summary": "German forces entered the Netherlands, Belgium and Luxembourg and attacked France, with airborne and ground thrusts supported by Luftwaffe aircraft. Allied air forces attempted to defend airfields, crossings and advancing ground troops.",
+          "units": "Luftwaffe versus Dutch, Belgian, French and RAF aviation; multi-country invasion point, not an individual base or a reconciled aircraft-loss total.",
+          "outcome": "The German advance forced the Allies into multiple simultaneous air and ground commitments and began displacing front-line flying operations.",
+          "sourceIds": ["raf1940chron", "rafFrance"],
+          "confidence": "RAF Museum operational summaries; multinational losses not transcribed into a common denominator"
         },
         {
           "date": "1940-05-14",
           "title": "RAF bombers suffer severe losses over Sedan",
           "place": "Sedan, France",
           "lat": 49.7,
-          "lng": 4.94
+          "lng": 4.94,
+          "summary": "RAF Museum reports 71 RAF bombers dispatched against German-held Meuse bridges and 40 failing to return. A separate RAF Air Power Review gives 72 sent and 44 lost for a Sedan operation, illustrating a genuine unresolved reporting-scope discrepancy.",
+          "units": "RAF light bombers attacking crossings, opposed by German fighters and flak; 40/71 and 44/72 are separate historical source statements, not additive losses.",
+          "outcome": "The RAF incurred catastrophic losses trying to disrupt German crossings, and the attempted air interdiction did not halt the breakthrough.",
+          "sourceIds": ["rafFrance", "rafAirPowerFrance"],
+          "confidence": "Two RAF-published accounts with unreconciled 14 May force/loss denominators"
         },
         {
           "date": "1940-05-26",
           "title": "Operation Dynamo evacuation begins; RAF flies fighter and bomber cover",
           "place": "Dunkirk, France",
           "lat": 51.04,
-          "lng": 2.38
+          "lng": 2.38,
+          "summary": "As Allied forces evacuated Dunkirk from 26 May to 4 June, RAF fighters defended approaches and RAF bombers attacked targets linked to the German advance. A RAF-published survey describes 2,739 fighter and 651 bomber sorties over the evacuation period.",
+          "units": "RAF Fighter Command and Bomber Command, supporting Royal Navy and Allied troops; mission totals are sorties across ten days, not aircraft on 26 May.",
+          "outcome": "Air cover contributed to the evacuation amid heavy air fighting, but neither side maintained permanent air superiority over the beaches.",
+          "sourceIds": ["rafAirPowerFrance", "raf1940chron"],
+          "confidence": "RAF historical review and museum chronology; period sums retained as periods"
         },
         {
           "date": "1940-06-14",
           "title": "German forces occupy Paris",
           "place": "Paris, France",
           "lat": 48.86,
-          "lng": 2.35
+          "lng": 2.35,
+          "summary": "German troops occupied Paris on 14 June as France's defence collapsed. The air campaign had already cost the RAF heavily, with French and other Allied forces displaced by the advancing front.",
+          "units": "German and French ground commands; this marker is a land-campaign turning point, not an asserted battle over central Paris.",
+          "outcome": "The fall of the capital intensified the political crisis leading to an armistice; it is not the date of the full French military collapse or a final aircraft-loss return.",
+          "sourceIds": ["rafFrance", "raf1940chron"],
+          "confidence": "RAF Museum chronology and campaign overview; no Paris-day aviation subtotal"
         }
       ]
     },
@@ -657,7 +846,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "raf1940",
         "rafSealion",
         "rafBritainPhases",
-        "hansard1947"
+        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz"
       ],
       "chapters": [
         {
@@ -750,14 +939,60 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Battle of Britain official period begins",
           "place": "Channel",
           "lat": 50.6,
-          "lng": -0.4
+          "lng": -0.4,
+          "summary": "The RAF Museum identifies 10 July as the official start of the Battle of Britain, although its broader first campaign phase includes attacks from 26 June. The opening operations targeted shipping, ports and coastal infrastructure.",
+          "units": "RAF Fighter Command and Luftwaffe operations over the Channel and southern England; the date marks the official period boundary, not a single defining dogfight.",
+          "outcome": "The air battle developed from shipping and coastal fighting toward an attempt to defeat Britain's fighter defence system.",
+          "sourceIds": ["rafBritainPhases"],
+          "confidence": "RAF Museum formal campaign dates; pre-10 July actions explicitly excluded from official period totals"
+        },
+        {
+          "date": "1940-08-08", "title": "Large Luftwaffe effort against Channel convoy Peewit",
+          "place": "English Channel south coast", "lat": 50.56, "lng": -1.2,
+          "summary": "The RAF Museum describes roughly 300 German aircraft committed to attacks on scattered convoy CW9, Peewit, on 8 August, in an effort to destroy shipping and draw RAF fighters into battle.",
+          "units": "Luftwaffe attacking aircraft, merchant convoy CW9 and RAF fighter defence; the approximate 300 figure concerns the convoy attack, not the number of aircraft destroyed.",
+          "outcome": "The action exemplified the Channel shipping campaign preceding the heavier attacks on RAF sector airfields.",
+          "sourceIds": ["rafBritainChannel"],
+          "confidence": "RAF Museum phase-two exhibition; local combat and shipping losses not reconstructed"
+        },
+        {
+          "date": "1940-08-13", "title": "Adler Tag begins the concentrated assault on Fighter Command",
+          "place": "South-east England RAF airfields", "lat": 51.5, "lng": 0.3,
+          "summary": "After postponement for poor weather, the Luftwaffe began its major effort against RAF Fighter Command on Eagle Day, 13 August. It attacked airfields and supporting infrastructure while RAF fighters used warning and sector control to intercept raids.",
+          "units": "Luftwaffe fighter and bomber formations versus RAF Fighter Command; broad south-east sector rather than a specific squadron sortie.",
+          "outcome": "Pressure on RAF airfields and personnel intensified, but the German offensive did not eliminate the defensive fighter organization.",
+          "sourceIds": ["rafBritainAirfields", "rafBritainPhases"],
+          "confidence": "RAF Museum phase-three exhibition; no all-side daily loss figures attached"
+        },
+        {
+          "date": "1940-09-07", "title": "Major daylight attack on London docks opens the Blitz",
+          "place": "London docks", "lat": 51.51, "lng": -0.03,
+          "summary": "The Luftwaffe shifted major bombing effort from RAF airfields toward London on 7 September, beginning the Blitz with attacks on the docks. Fighter Command still faced extensive raids, but their principal targets had changed.",
+          "units": "Luftwaffe bomber and escort formations, RAF fighter defenders and London's civilian population; no precise bomb or loss total inferred.",
+          "outcome": "The German target shift changed the operational demands on the RAF and exposed civilians to sustained bombing.",
+          "sourceIds": ["rafBritainBlitz", "rafBritainPhases"],
+          "confidence": "RAF Museum Blitz exhibition and official phase chronology"
         },
         {
           "date": "1940-09-15",
           "title": "Battle of Britain Day: 56 German aircraft lost; RAF claim 185",
           "place": "London sector",
           "lat": 51.5,
-          "lng": -0.1
+          "lng": -0.1,
+          "summary": "The RAF resisted large German raids on 15 September. A postwar parliamentary comparison cites 56 German aircraft destroyed from German archival records against 185 contemporary RAF claims: these are different evidence categories.",
+          "units": "RAF Fighter Command versus attacking Luftwaffe formations; RAF credited claims are not verified individual German losses and must never be added to the 56.",
+          "outcome": "The failure to win air superiority became increasingly clear. The contemporary RAF victory estimate was much higher than recorded German losses.",
+          "sourceIds": ["hansard1947", "rafBritainPhases"],
+          "confidence": "UK Parliament retrospective archival comparison; claimed-vs-recorded outcomes intentionally separate"
+        },
+        {
+          "date": "1940-10-31", "title": "Official Battle of Britain period ends; bombing continues",
+          "place": "Great Britain, national period end", "lat": 52.4, "lng": -1.5,
+          "summary": "The RAF Museum's recognized Battle of Britain window ends on 31 October. German air activity continued, with smaller daylight attacks and major night bombing, so the formal endpoint must not be interpreted as the end of the Blitz or air war.",
+          "units": "RAF Fighter Command and Luftwaffe; this date is a retrospective campaign boundary, not a single battle with its own loss figure.",
+          "outcome": "Germany did not secure the air superiority required for an invasion; the character of attacks on Britain changed but bombing did not cease.",
+          "sourceIds": ["rafBritainPhases", "rafBritainBlitz"],
+          "confidence": "RAF Museum official campaign period with explicit distinction from the ongoing Blitz"
         }
       ]
     },
@@ -781,7 +1016,45 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "In April 1942 German offensive intensity reached a peak, striking airfields as well as fighters in the air.",
       "consequence": "The defence held, making Malta a continuing threat to Axis supply lines; aircraft and pilot losses must retain cause and side.",
       "sources": [
-        "raf1942"
+        "raf1941chron", "raf1942", "iwmMaltaSpotter"
+      ],
+      "chapters": [
+        {
+          "id": "early-siege", "title": "The first German offensive and Malta's exposed airfields",
+          "start": "1941-01-16", "end": "1941-12-31", "location": "Luqa, Ta' Qali and the central Mediterranean",
+          "situation": "Malta was a British naval and air base astride Axis supply routes to North Africa. From January 1941 German bomber units intensified attacks on harbour installations and RAF aircraft; fighting fluctuated through the year.",
+          "airRole": "Luftwaffe bombers attacked HMS Illustrious and RAF fields; Malta-based reconnaissance and strike aircraft continued to threaten Axis shipping. Defensive Hurricanes had to protect a small number of vulnerable airfields.",
+          "change": "Airfield survivability, fighters and convoy reinforcement became central to keeping Malta operational instead of simply possessing the island.",
+          "limits": "This is a long analytical opening chapter, not a claim of uninterrupted German raid intensity or a complete loss sequence for 1941.",
+          "sourceIds": ["raf1941chron", "raf1942"]
+        },
+        {
+          "id": "crisis", "title": "The 1942 air assault and fighter reinforcement crisis",
+          "start": "1942-01-01", "end": "1942-04-30", "location": "Malta's fighter bases and harbours",
+          "situation": "Renewed Axis bombing subjected Malta's runway system, shipping and civilians to sustained pressure. Maintaining usable fighters and fuel mattered as much as replacing aircraft on paper.",
+          "airRole": "Spitfire reinforcements first reached Malta on 7 March, but heavy raids continued, including attacks on Ta' Qali. The RAF Museum records a particularly intense April with distinct figures for German sorties and aircraft losses.",
+          "change": "The RAF shifted toward Spitfires as the island struggled to keep aircraft dispersed, fueled and repairable under bombardment.",
+          "limits": "April's German sorties, German losses and RAF ground losses are differently defined observations. The RAF Museum names USS Wasp for 7 March; IWM's contemporary-image catalogue identifies HMS Eagle instead. The carrier identity is treated as disputed in that timeline entry.",
+          "sourceIds": ["raf1942", "iwmMaltaSpotter"]
+        },
+        {
+          "id": "reinforce", "title": "Further carrier deliveries and the August supply lifeline",
+          "start": "1942-05-01", "end": "1942-08-15", "location": "Malta and western Mediterranean convoy routes",
+          "situation": "Fighter deliveries and convoy efforts kept the isolated base in the war. Supplies, especially fuel and ammunition, were essential for ongoing offensive and defensive flights.",
+          "airRole": "Aircraft were repeatedly flown off carriers to reinforce the fighter defence. The Pedestal convoy endured heavy Axis air and sea attack before vital shipping reached Malta in mid-August.",
+          "change": "An airfield with aircraft but without fuel and supplies could not sustain sortie generation. The August deliveries helped preserve Malta's operational role.",
+          "limits": "Carrier-delivered aircraft and convoy ships are different units; this phase does not convert supply deliveries into a specific count of combat sorties or Axis losses.",
+          "sourceIds": ["raf1942"]
+        },
+        {
+          "id": "october", "title": "Renewed October assault and a defence that remains operational",
+          "start": "1942-08-16", "end": "1942-10-31", "location": "Malta's airfields and the central Mediterranean",
+          "situation": "Malta continued to threaten Axis routes while both sides fought for control of Mediterranean air and sea movement. Heavy Axis attacks returned in October.",
+          "airRole": "During 11–19 October Axis forces flew an estimated 2,400 sorties against Malta, yet the RAF Museum says no airfield was inoperative for more than 30 minutes in that period.",
+          "change": "The October attacks failed to suppress Malta's airfields for long, unlike the island's precarious condition in spring.",
+          "limits": "The 2,400 October figure covers Axis forces in nine days; April's 9,599 covers Luftwaffe sorties in a full month. Never sum or directly compare as like-for-like rates.",
+          "sourceIds": ["raf1942"]
+        }
       ],
       "facts": [
         {
@@ -810,15 +1083,74 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "raf1942",
           "date": "1942-04",
           "type": "recorded"
+        },
+        {
+          "label": "First Spitfires flown to Malta, 7 March 1942",
+          "value": 15,
+          "unit": "Spitfire fighters",
+          "scope": "RAF Museum March 7 chronology says 15 arrived. Its USS Wasp carrier identification conflicts with Imperial War Museums' HMS Eagle photographic caption, which cites 16 delivered; not an airfield serviceability report",
+          "sourceId": "raf1942",
+          "date": "1942-03-07",
+          "type": "source-contested"
+        },
+        {
+          "label": "Axis sorties during renewed Malta assault, 11–19 October",
+          "value": 2400,
+          "unit": "sorties",
+          "scope": "RAF Museum, both Axis air forces during 11–19 October 1942; separate population and shorter period than April's German-only sorties",
+          "sourceId": "raf1942",
+          "date": "1942-10-11 to 1942-10-19",
+          "type": "recorded"
         }
       ],
       "moments": [
+        {
+          "date": "1941-01-16", "title": "Luftwaffe attacks the carrier Illustrious in Grand Harbour",
+          "place": "Grand Harbour, Malta", "lat": 35.9, "lng": 14.52,
+          "summary": "German aircraft mounted an intensive attack on the damaged aircraft carrier HMS Illustrious while it was at Malta. Despite sustained air attack, the carrier later escaped for Alexandria.",
+          "units": "Luftwaffe bombers and Royal Navy HMS Illustrious; no complete fighter or airfield-loss count derived from this ship attack.",
+          "outcome": "The attacks demonstrated Malta's exposed harbour and the importance of anti-aircraft defence without eliminating the island as a base.",
+          "sourceIds": ["raf1941chron"],
+          "confidence": "RAF Museum dated 1941 chronology"
+        },
+        {
+          "date": "1942-03-07", "title": "First Spitfires reinforce Malta; source disagreement over carrier",
+          "place": "Malta's airfields (regional)", "lat": 35.87, "lng": 14.43,
+          "summary": "The RAF Museum chronology reports fifteen Spitfires reached Malta on 7 March; IWM's Operation Spotter photo identifies HMS Eagle as the carrier, whereas the RAF Museum text names USS Wasp, which was involved in later May reinforcement. Both original linked descriptions are exposed instead of silently choosing one.",
+          "units": "RAF No. 249 Squadron and transferred Spitfires; 15 is the RAF Museum's arriving-aircraft figure, not fighters serviceable during later raids.",
+          "outcome": "Malta received its first Spitfire fighters, while continuing to depend on further carrier reinforcement to resist the offensive.",
+          "sourceIds": ["raf1942", "iwmMaltaSpotter"],
+          "confidence": "Day confirmed in museum histories; carrier attribution and 15-versus-16 count require original ship and squadron records"
+        },
         {
           "date": "1942-04-01",
           "title": "Peak air assault on Malta in April 1942",
           "place": "Malta",
           "lat": 35.93,
-          "lng": 14.4
+          "lng": 14.4,
+          "summary": "The RAF Museum's April summary describes thousands of German sorties and extensive attack on Malta's fighter bases. The 1 April pin represents the full April reporting month, not one day's 9,599 sorties.",
+          "units": "Luftwaffe attacking the island and RAF defending it; all April observations retain their separate source definitions.",
+          "outcome": "RAF aircraft and facilities suffered severely, but the island's defence continued. German sortie counts must not be read as individual aircraft numbers.",
+          "sourceIds": ["raf1942"],
+          "confidence": "RAF Museum monthly chronology placed at 1 April solely as a period marker"
+        },
+        {
+          "date": "1942-08-15", "title": "Surviving Pedestal merchant ships reach Malta",
+          "place": "Grand Harbour and approaches", "lat": 35.9, "lng": 14.5,
+          "summary": "After sustained German and Italian air and naval attacks on Convoy Pedestal, essential supplies reached Malta. The convoy's survival mattered to the air campaign because fighters required fuel, ammunition and functioning airfields.",
+          "units": "Royal Navy and merchant shipping, RAF fighters, German and Italian attacking units; this is a supply event rather than an aircraft loss observation.",
+          "outcome": "The arrival preserved Malta's ability to continue air operations despite the blockade and attacks.",
+          "sourceIds": ["raf1942"],
+          "confidence": "RAF Museum chronology, event place approximate"
+        },
+        {
+          "date": "1942-10-11", "title": "Renewed Axis attacks begin; airfields stay usable",
+          "place": "Malta island airfield system", "lat": 35.93, "lng": 14.4,
+          "summary": "RAF Museum summarizes the 11–19 October assault as approximately 2,400 Axis sorties with no Malta airfield closed for longer than thirty minutes; the marker opens a nine-day reporting window, not a daily count.",
+          "units": "Combined Axis air forces versus Malta-based RAF defences; not German-only April loss accounting.",
+          "outcome": "Intense attacks inflicted losses but failed to stop Malta's airfields from operating for sustained periods.",
+          "sourceIds": ["raf1942"],
+          "confidence": "RAF Museum period account, mapped to opening date to make its range explicit"
         }
       ]
     },
@@ -842,7 +1174,36 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "On 22 June 1941 the VVS took enormous losses on the ground. Loss categories differ by historical record and German claims.",
       "consequence": "Soviet aviation survived and rebuilt, eventually contesting German air power.",
       "sources": [
-        "barbarossa"
+        "barbarossa", "usArmyBarbarossa", "usafGermanRussia1941"
+      ],
+      "chapters": [
+        {
+          "id": "surprise", "title": "Border airfield attacks and the initial German advance",
+          "start": "1941-06-22", "end": "1941-07-15", "location": "Soviet western borderlands, Baltics and Belarus",
+          "situation": "The German invasion crossed a vast front on 22 June. Soviet command, movement and forward formations were disrupted while German army groups advanced in different directions.",
+          "airRole": "Luftwaffe strikes on western Soviet airfields attempted to suppress VVS fighters and bombers before they could fly; reconnaissance, close support and transport then accompanied the advancing armies. Soviet flying activity did not cease across the entire front.",
+          "change": "A surprise strike against dispersed administrative and operating systems produced early German advantage, but the opening estimate is neither a daily reconciliation nor evidence that every VVS aircraft was destroyed.",
+          "limits": "The source's 1,200-aircraft lower bound refers to the opening attack, not every Soviet loss through July. Regional aircraft locations are not reconstructable from the catalogue map centre.",
+          "sourceIds": ["barbarossa", "usArmyBarbarossa", "usafGermanRussia1941"]
+        },
+        {
+          "id": "extension", "title": "Extending the advance and the supply problem",
+          "start": "1941-07-16", "end": "1941-10-01", "location": "Smolensk, Ukraine and approaches to Leningrad",
+          "situation": "The German campaign spread over enormous distances, with fighting around Smolensk, toward Leningrad and in Ukraine. Resistance and logistics challenged an expectation of quick Soviet collapse.",
+          "airRole": "Air units supported separate army groups over long ranges while maintenance, fuel and captured airfield availability constrained sortie generation. Soviet aircraft and crews were being replaced and repositioned.",
+          "change": "Air supremacy was no longer just about the first day's airfield strikes; the endurance of ground logistics, mobile aircraft units and Soviet recovery grew decisive.",
+          "limits": "The mid-July division is interpretive, not an original campaign order boundary. Neither German sortie volumes nor Soviet losses are numerically allocated to this phase.",
+          "sourceIds": ["barbarossa", "usArmyBarbarossa"]
+        },
+        {
+          "id": "moscow", "title": "The Moscow offensive and Soviet counteroffensive",
+          "start": "1941-10-02", "end": "1941-12-31", "location": "Vyazma, Mozhaisk and Moscow approaches",
+          "situation": "Germany launched the drive toward Moscow in October, but resistance, deteriorating roads and weather prevented a quick success. The Soviet counteroffensive began in early December.",
+          "airRole": "German air support operated farther from established bases and faced weather and serviceability challenges. Soviet aviation was still capable of contributing to the defence and counteroffensive near Moscow.",
+          "change": "The failed attempt to take Moscow demonstrated the limits of initial Luftwaffe success and the continuing operational presence of the Soviet air arm.",
+          "limits": "No original daily Soviet and German aircraft-loss register is available for this phase. Air-force performance cannot be inferred solely from the ground campaign's outcome.",
+          "sourceIds": ["usArmyBarbarossa", "barbarossa"]
+        }
       ],
       "facts": [
         {
@@ -861,7 +1222,39 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Invasion and airfield surprise attacks",
           "place": "Belarus / western border",
           "lat": 53.8,
-          "lng": 25.5
+          "lng": 25.5,
+          "summary": "The Luftwaffe attacked Soviet western airfields as German forces entered the USSR. Soviet air units faced surprise, disrupted communications and ground losses, but the campaign-wide Soviet aviation establishment was not annihilated on this date.",
+          "units": "Luftwaffe and VVS across multiple western districts, not a single Belarus airfield or a complete order of battle.",
+          "outcome": "Germany gained an opening advantage; the source's at-least-1,200 Soviet aircraft figure covers this initial attack, not the subsequent six months.",
+          "sourceIds": ["barbarossa", "usArmyBarbarossa"],
+          "confidence": "USAAF historical analysis and US Army campaign study; opening-day estimate not independently re-transcribed"
+        },
+        {
+          "date": "1941-09-19", "title": "Kiev falls after the German armoured encirclement",
+          "place": "Kiev, Ukraine", "lat": 50.45, "lng": 30.52,
+          "summary": "The German advance from north and south closed a large encirclement east of Kiev in mid-September. A German officer's retrospective USAF-published study dates the capture of the city to 19 September, describing Luftwaffe support of the converging German land operations.",
+          "units": "German Army Groups South and Centre with Luftwaffe support, opposed by Soviet formations and aviation; the source is a German participant's postwar narrative, not a paired air-loss register.",
+          "outcome": "Kiev was captured, but the fighting and German movement further east extended supply lines and did not end Soviet resistance across the front.",
+          "sourceIds": ["usafGermanRussia1941", "usArmyBarbarossa"],
+          "confidence": "USAF 1965 historical study 153, printed p. 124; German officer viewpoint requires independent corroboration for operational-loss numbers"
+        },
+        {
+          "date": "1941-10-02", "title": "German autumn offensive approaches Moscow",
+          "place": "Vyazma–Moscow approaches, broad sector", "lat": 55.2, "lng": 34.3,
+          "summary": "The German drive on Moscow followed the failure to bring the Soviet Union down in the first summer. Air support still mattered, but range, maintenance, fuel and weather compounded the advance's logistical difficulties.",
+          "units": "German Army Group Centre with supporting Luftwaffe formations; Soviet defenders and VVS, broad campaign-scale location.",
+          "outcome": "German forces advanced but could not take Moscow. This point marks an offensive opening, not a tally of aircraft engaged or lost on 2 October.",
+          "sourceIds": ["usArmyBarbarossa"],
+          "confidence": "US Army postwar operational study; editorial air/ground synthesis"
+        },
+        {
+          "date": "1941-12-05", "title": "Soviet counteroffensive outside Moscow",
+          "place": "Moscow front, regional", "lat": 55.75, "lng": 37.62,
+          "summary": "As German operations stalled, Soviet forces launched major winter counterattacks on the Moscow front. Soviet aircraft continued to operate despite the losses suffered in June and the summer campaigns.",
+          "units": "Soviet ground formations and VVS, German Army Group Centre and Luftwaffe; no verified air unit roster at this mapped city coordinate.",
+          "outcome": "The offensive signaled a strategic failure of the anticipated rapid German victory and a change in the air-war's operational environment.",
+          "sourceIds": ["usArmyBarbarossa", "barbarossa"],
+          "confidence": "Official US Army historical synthesis; 5 December is the commonly used opening date for a multi-day front offensive"
         }
       ]
     },
@@ -913,7 +1306,12 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Operation Jubilee air battle",
           "place": "Dieppe",
           "lat": 49.93,
-          "lng": 1.08
+          "lng": 1.08,
+          "summary": "Canadian, British and US troops raided Dieppe under cover from RAF Fighter, Bomber and Coastal Commands, coordinated by No. 11 Group. The RAF Museum records 2,614 Allied sorties and 106 RAF aircraft lost on the day.",
+          "units": "RAF Fighter, Bomber and Coastal Commands, Allied amphibious forces and Luftwaffe defenders; sorties are mission counts, not a unique aircraft inventory.",
+          "outcome": "The assault failed with heavy losses. Lessons about combined amphibious and air support informed later landings, but that hindsight does not turn all sorties into effective ground support.",
+          "sourceIds": ["raf1942"],
+          "confidence": "RAF Museum single-day chronology, RAF losses and total Allied sorties retain distinct reporting scopes"
         }
       ]
     },
@@ -1012,7 +1410,36 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Poor weather and navigation led to severe failures of the night glider and parachute landings.",
       "consequence": "Mediterranean airpower supported the campaign and then operations on mainland Italy. Theater-wide MTO group counts are separate context.",
       "sources": [
-        "raf1943"
+        "raf1943", "usArmySicily", "usArmyMediterranean"
+      ],
+      "chapters": [
+        {
+          "id": "airborne", "title": "Airborne approaches and the amphibious landings",
+          "start": "1943-07-09", "end": "1943-07-12", "location": "South-eastern Sicily, Syracuse and Gela",
+          "situation": "Allied airborne landings opened the operation on the night of 9–10 July, followed by the main British and American seaborne invasion. Wind, route-finding and navigation problems scattered gliders and parachutists.",
+          "airRole": "Glider tugs, troop-carrier aircraft and tactical air forces supported the amphibious landings after earlier air attacks against Sicily. RAF Museum records 69 of 137 British gliders released into the sea in the initial phase.",
+          "change": "Sicily showed that nominal air superiority did not guarantee accurate night troop delivery: transport navigation and coordination could fail catastrophically.",
+          "limits": "69/137 is a British glider-operation count, not all Allied airborne casualties. This campaign was multinational; do not extrapolate it to every troop-carrier mission.",
+          "sourceIds": ["raf1943", "usArmySicily", "usArmyMediterranean"]
+        },
+        {
+          "id": "inland", "title": "Consolidating the bridgeheads and advancing inland",
+          "start": "1943-07-13", "end": "1943-07-24", "location": "Catania plain, central Sicily and western advance",
+          "situation": "The Allies expanded their foothold as British and American forces met unequal resistance across Sicily. Coastal airfields and ports became important to sustaining the advance.",
+          "airRole": "Allied tactical aviation supported advancing armies and interdicted movement, while Axis aviation operated under pressure from bases in and beyond Sicily. Airfield capture altered operational reach.",
+          "change": "The campaign moved from hazardous insertion to a land campaign sustained by transport capacity, captured fields and continued air support.",
+          "limits": "These are editorial campaign phases, not discrete independent air loss populations. No all-side daily air engagement or serviceability table is claimed.",
+          "sourceIds": ["usArmySicily", "usArmyMediterranean", "usArmyChronology"]
+        },
+        {
+          "id": "messina", "title": "The Messina withdrawal and Allied occupation",
+          "start": "1943-07-25", "end": "1943-08-17", "location": "Eastern Sicily and Strait of Messina",
+          "situation": "Italy's political crisis coincided with continued fighting. German forces began withdrawing across the Strait of Messina while Allied columns pressed toward the eastern tip of the island.",
+          "airRole": "Air attacks sought to disrupt Axis withdrawal and shipping across the strait, but an air campaign does not by itself prove how many personnel escaped or that the withdrawal could be sealed.",
+          "change": "By 17 August organized Axis resistance on Sicily ended; Allied airfields there supported subsequent operations on the Italian mainland.",
+          "limits": "The collapse of Italy's government on 25 July is context, not a dated aircraft action. Operation Husky losses and later Italian campaign losses must remain separate.",
+          "sourceIds": ["usArmySicily", "usArmyMediterranean", "raf1943"]
+        }
       ],
       "facts": [
         {
@@ -1031,7 +1458,39 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Airborne landings open Operation Husky",
           "place": "Sicily",
           "lat": 37.3,
-          "lng": 14.2
+          "lng": 14.2,
+          "summary": "The airborne component began on the night of 9–10 July. Many British gliders were released over water or scattered; RAF Museum records 69 of 137 gliders released into the sea.",
+          "units": "British glider and troop-carrier forces; US airborne operations are additional and not included in the 69/137 British subset.",
+          "outcome": "Airborne delivery was severely disrupted, despite extensive Allied air support for the invasion.",
+          "sourceIds": ["raf1943", "usArmySicily"],
+          "confidence": "RAF Museum dated report and official US Army campaign study; plotted regional point"
+        },
+        {
+          "date": "1943-07-10", "title": "Allied assault armies establish Sicilian beachheads",
+          "place": "Gela and Syracuse landings", "lat": 37.1, "lng": 15.1,
+          "summary": "British and US forces landed in southern and south-eastern Sicily after the disrupted airborne approach. By 12 July Allied armies had captured Syracuse and several airfields according to the US Army historical account.",
+          "units": "British Eighth Army, US Seventh Army and supporting Allied air commands; point denotes the broad landing region.",
+          "outcome": "The invasion established bridgeheads and bases that could support subsequent tactical air operations inland.",
+          "sourceIds": ["usArmySicily", "usArmyMediterranean"],
+          "confidence": "US Army official history and campaign chronology; airfield totals not converted to operational aircraft counts"
+        },
+        {
+          "date": "1943-07-22", "title": "Palermo captured as the campaign shifts toward eastern Sicily",
+          "place": "Palermo, north-west Sicily", "lat": 38.12, "lng": 13.36,
+          "summary": "The US Seventh Army took Palermo on 22 July; the US Army chronology also records the capture of Castelvetrano airfield on 21 July. These gains improved access to ports and forward bases while fighting continued around eastern Sicily.",
+          "units": "US Seventh Army ground formations; Allied tactical air commands used the wider base network. This date has no audited fighter-sortie or airfield inventory count.",
+          "outcome": "The Allied operational position widened; Axis formations continued to contest eastern Sicily and later evacuated across Messina.",
+          "sourceIds": ["usArmyChronology", "usArmySicily"],
+          "confidence": "US Army official 20–22 July chronology; no unique local air-loss measurement"
+        },
+        {
+          "date": "1943-08-17", "title": "Axis withdrawal across Messina ends the Sicily campaign",
+          "place": "Messina Strait", "lat": 38.18, "lng": 15.56,
+          "summary": "German and remaining Italian forces withdrew across the strait as Allied armies completed the capture of Sicily. Air power supported the pursuit but did not halt all cross-strait evacuations.",
+          "units": "Allied ground and air forces, German and Italian withdrawal columns; no verified day-specific aircraft loss denominator.",
+          "outcome": "Organized resistance on Sicily ended, enabling operations against mainland Italy and providing additional Allied airfields.",
+          "sourceIds": ["usArmySicily", "usArmyMediterranean"],
+          "confidence": "Official US Army campaign endpoint with geographical interpretation"
         }
       ]
     },
@@ -1084,18 +1543,57 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       ],
       "objective": "Unescorted or insufficiently escorted heavy bombers attacked German industry deep inside Germany.",
       "turningPoint": "High bomber losses accelerated pressure for long-range escort and changing fighter employment.",
-      "consequence": "These operations helped shape the later Big Week campaign, but this preview does not substitute claims for actual loss totals.",
+      "consequence": "Two high-loss missions two months apart helped drive USAAF planning toward adequate long-range escort. These are not continuous August–October daily operations, and the August/October counts must retain separate missions.",
       "sources": [
-        "bigWeek"
+        "usafSchweinfurt1943", "usafSchweinfurtOctober", "raf1943"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id": "august", "title": "First deep raids: Regensburg and Schweinfurt",
+          "start": "1943-08-17", "end": "1943-08-17", "location": "Regensburg and Schweinfurt, Germany",
+          "situation": "The Eighth Air Force planned simultaneous strikes to split German air defence, including aircraft production at Regensburg and ball-bearing plants at Schweinfurt.",
+          "airRole": "Fog delayed one bomber force; German fighters could attack the first mission, land and rearm before intercepting the second. USAAF Museum counts 376 dispatched bombers, 60 shot down across both targets.",
+          "change": "Unescorted segments deep in Germany proved extremely dangerous, exposing the limits of short-range fighter escort.",
+          "limits": "60/376 are combined 17 August Regensburg-and-Schweinfurt mission figures, not Schweinfurt target-only losses or claims of German losses.",
+          "sourceIds": ["usafSchweinfurt1943", "raf1943"]
+        },
+        {
+          "id": "october", "title": "Black Thursday: the return strike on Schweinfurt",
+          "start": "1943-10-14", "end": "1943-10-14", "location": "Schweinfurt and interception routes",
+          "situation": "USAAF planners attacked the ball-bearing plants again after a two-month interval. The long escort gap remained a fundamental tactical vulnerability.",
+          "airRole": "Of 291 B-17s dispatched on 14 October, 60 were shot down; among the returning bombers 17 later crashed or were scrapped and 121 required repairs according to the National Museum USAF.",
+          "change": "The loss rate drove a pause in attacks beyond available fighter escort range. This differs in timing, participating aircraft and outcomes from the earlier August raid.",
+          "limits": "The 60 shot down are a subset of 291 dispatched on 14 October only. Returned damaged or subsequently scrapped aircraft are not added as if they were shot down over Germany.",
+          "sourceIds": ["usafSchweinfurtOctober"]
+        }
+      ],
+      "facts": [
+        {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
+        {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
+        {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday mission only; different operation from 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
+        {"label":"Bombers shot down, 14 October Schweinfurt raid", "value":60, "unit":"USAAF B-17 bombers", "scope":"Subset of 291 dispatched 14 October; excludes returned aircraft that later crashed or required repair", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded-subset"}
+      ],
       "moments": [
         {
           "date": "1943-08-17",
           "title": "Dual Schweinfurt–Regensburg raid",
           "place": "Southern Germany",
           "lat": 49.99,
-          "lng": 10.23
+          "lng": 10.23,
+          "summary": "The Eighth Air Force attacked Messerschmitt aircraft production at Regensburg and ball-bearing works at Schweinfurt. Fog staggered the intended simultaneous strikes, allowing German interceptors to regroup between them.",
+          "units": "USAAF Eighth Air Force heavy bombers; 376 dispatched and 60 shot down are combined two-target totals, not the number directly above Schweinfurt.",
+          "outcome": "Heavy losses highlighted the inability of short-range Allied fighter escorts to protect deep daylight bombing missions.",
+          "sourceIds": ["usafSchweinfurt1943", "raf1943"],
+          "confidence": "Official USAF museum account; original Eighth Air Force sortie and loss sheets not re-audited"
+        },
+        {
+          "date":"1943-10-14", "title":"Black Thursday: second Schweinfurt strike",
+          "place":"Schweinfurt, Germany", "lat":50.05, "lng":10.22,
+          "summary":"The Eighth Air Force returned to the ball-bearing plants. Out of 291 dispatched B-17s, 60 were shot down; a further 17 aircraft that returned crashed or were scrapped, while 121 returning aircraft required repairs in the USAF museum account.",
+          "units":"Eighth Air Force B-17 heavy bombers; dispatched, shot down, returned-damaged and subsequently scrapped are distinct statuses, not interchangeable aircraft loss buckets.",
+          "outcome":"The scale of losses contributed to suspending deep raids until longer-range escort could be provided.",
+          "sourceIds":["usafSchweinfurtOctober"],
+          "confidence":"Official USAF museum fact sheet; 14 October mission only, no inferred Luftwaffe write-offs"
         }
       ]
     },
@@ -1155,8 +1653,27 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Long-range escorts could now accompany deep daylight bomber formations, confronting the Luftwaffe directly.",
       "consequence": "The Luftwaffe suffered damaging fighter and pilot attrition; published summaries differ in their precise denominators.",
       "sources": [
-        "bigWeek",
-        "bigWeekReport"
+        "bigWeek", "bigWeekReport", "usafBigWeekIndustry"
+      ],
+      "chapters": [
+        {
+          "id": "opening", "title": "Opening strikes on aircraft production",
+          "start": "1944-02-20", "end": "1944-02-22", "location": "Aircraft factories and German air-defence approaches",
+          "situation": "Operation Argument concentrated Allied day and night bombing against German aviation industry. The Allies also intended to draw defending Luftwaffe fighters into combat.",
+          "airRole": "On 20 February more than a thousand USAAF heavy bombers, supported by hundreds of escorts, attacked a network of aircraft plants. Eighth and Fifteenth Air Forces operated by day; RAF bombers contributed night attacks.",
+          "change": "Escorted long-range bomber missions made German fighter interception itself a strategic objective alongside factory damage.",
+          "limits": "The source's first-day strike size is not a fixed strength or aircraft-loss count for the entire week. These two editorial phases are not distinct official reporting periods.",
+          "sourceIds": ["usafBigWeekIndustry", "bigWeek", "bigWeekReport"]
+        },
+        {
+          "id": "sustained", "title": "Sustained strikes and cumulative attrition",
+          "start": "1944-02-23", "end": "1944-02-25", "location": "Germany-wide production targets and escort routes",
+          "situation": "The multi-day campaign continued despite bad weather, defensive opposition and losses. Bombing aimed to weaken German production while reducing the Luftwaffe's ability to intercept later raids.",
+          "airRole": "Heavy-bomber formations and their escorts repeatedly entered German airspace. The combined 20–25 February USAAF totals reflect sorties, aircraft losses and personnel casualties with different units and denominator rules.",
+          "change": "The result was part of a broader contest for air superiority before the invasion of France, not an instant destruction of all German fighter strength.",
+          "limits": "The displayed nearly 4,000 bomber sorties and >200 bomber losses are six-day source summaries, not measured figures for 23–25 February alone. German command-month losses cannot be converted to Big Week losses.",
+          "sourceIds": ["bigWeek", "bigWeekReport", "usafBigWeekIndustry"]
+        }
       ],
       "facts": [
         {
@@ -1193,7 +1710,21 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Coordinated strikes on German aviation factories begin",
           "place": "Reich",
           "lat": 51,
-          "lng": 11.7
+          "lng": 11.7,
+          "summary": "More than 1,000 USAAF heavy bombers, supported by hundreds of escort fighters, attacked aircraft-related plants in Germany as the concentrated campaign began. RAF night bombing and attacks from Italy were part of the wider effort.",
+          "units": "USAAF Eighth and Fifteenth Air Forces, RAF Bomber Command and defending Luftwaffe; map location represents Germany-wide targets rather than a single factory.",
+          "outcome": "The opening attacks established a sustained effort to damage aircraft production and force German fighters into battle.",
+          "sourceIds": ["usafBigWeekIndustry", "bigWeek"],
+          "confidence": "USAF museum first-day summary; later six-day statistics must not be attributed to 20 February alone"
+        },
+        {
+          "date": "1944-02-25", "title": "Big Week concludes after six days of major operations",
+          "place": "German production and air-defence regions", "lat": 51, "lng": 11.7,
+          "summary": "The 20–25 February campaign concluded after repeated day and night strikes. USAF museum summaries describe nearly 4,000 USAAF heavy-bomber sorties for the entire operation, more than 200 bombers lost and about 2,600 aircrew casualties.",
+          "units": "USAAF heavy-bomber formations and RAF night bombers, with separate source accounting; attrition figures quoted here refer to the full six-day window.",
+          "outcome": "German fighter operations and aviation industry were placed under sustained pressure, but the week cannot be treated as a complete all-front Luftwaffe destruction ledger.",
+          "sourceIds": ["bigWeek", "bigWeekReport"],
+          "confidence": "Official USAF historical synthesis; six-day aggregated reporting population, not a 25 February daily return"
         }
       ]
     },
@@ -1221,7 +1752,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "raf1944",
         "normandyDetail",
-        "rafNormandyOperations"
+        "rafNormandyOperations", "usafNormandyCobra", "usArmyNormandyFalaise"
       ],
       "chapters": [
         {
@@ -1240,7 +1771,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "airRole": "Tactical air forces moved forward onto temporary strips and supported armies with reconnaissance, interdiction and attacks coordinated with ground controllers; heavy bombers were also used against tactical targets.",
           "change": "The western breakout began changing the campaign from a confined bridgehead into a mobile advance.",
           "limits": "Individual Cobra bombing results and German losses require operation-specific source audits, not Luftflotte 3's total Western Front returns.",
-          "sourceIds": ["rafNormandyOperations", "normandyDetail"]
+          "sourceIds": ["rafNormandyOperations", "normandyDetail", "usafNormandyCobra"]
         },
         {
           "id": "falaise", "title": "Falaise and the German retreat from Normandy",
@@ -1248,8 +1779,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "situation": "After the breakthrough, Allied armies pressed towards the Falaise pocket, which collapsed around 19 August. German forces withdrew eastward as the Allied offensive expanded beyond Normandy.",
           "airRole": "Allied tactical aviation attacked transport and moving formations while forward strips had to keep pace with the front. Results varied with target identification, weather and the situation on the ground.",
           "change": "The fighting transitioned into a rapid pursuit, with aircraft basing and supplies becoming increasingly important.",
-          "limits": "This chapter has a researched campaign narrative but no phase-local, opposing-side aircraft-loss ledger. The absence of a dated event dossier is not absence of combat.",
-          "sourceIds": ["rafNormandyOperations"]
+          "limits": "This chapter has a researched campaign narrative but no phase-local, opposing-side aircraft-loss ledger. One Falaise event cannot stand in for every August operation.",
+          "sourceIds": ["rafNormandyOperations", "usArmyNormandyFalaise"]
         }
       ],
       "facts": [
@@ -1278,14 +1809,33 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Normandy landings",
           "place": "Normandy beaches",
           "lat": 49.35,
-          "lng": -0.7
+          "lng": -0.7,
+          "summary": "The Allied invasion began with airborne drops, amphibious landings and aircraft protecting beaches and shipping. The RAF Museum counts 14,674 Allied sorties on 6 June, of which 5,656 were RAF sorties, not an additional category.",
+          "units": "RAF, USAAF and other Allied aircraft supporting invasion forces; sortie numbers are individual missions flown, not simultaneously available aircraft.",
+          "outcome": "Allied forces established an invasion bridgehead, while continuing ground resistance and airfield construction required ongoing air support.",
+          "sourceIds": ["raf1944", "rafNormandyOperations"],
+          "confidence": "RAF Museum day-level aggregate with explicit RAF subset; point represents several invasion beaches"
         },
         {
           "date": "1944-07-25",
           "title": "Operation Cobra",
           "place": "Saint-Lô",
           "lat": 49.11,
-          "lng": -1.08
+          "lng": -1.08,
+          "summary": "US forces began the breakout west of Saint-Lô after concentrated Allied heavy and tactical bombing. USAF museum accounts describe both air-strike pressure on German defences and subsequent fighter-bomber attacks on retreating traffic.",
+          "units": "US First Army with USAAF tactical and strategic formations, alongside Allied air support; this event does not imply every Normandy bomber was under Ninth Air Force.",
+          "outcome": "The front moved from a relatively confined beachhead toward a mobile advance, changing air support and basing requirements.",
+          "sourceIds": ["usafNormandyCobra", "raf1944"],
+          "confidence": "USAF official museum summary; no Operation Cobra-specific German aircraft-loss figure ingested"
+        },
+        {
+          "date": "1944-08-19", "title": "Falaise pocket contracts as German forces attempt withdrawal",
+          "place": "Falaise–Argentan corridor", "lat": 48.9, "lng": -0.2,
+          "summary": "Allied armies closed in on German troops around Falaise during August, with air attacks on roads and transport as German formations attempted to escape eastward. The approximate 19 August date is a campaign turning point, not the whole pocket battle on one day.",
+          "units": "Allied ground armies and tactical aviation; German retreating columns. Ground casualties and destroyed vehicles are not German aircraft-loss records.",
+          "outcome": "German formations suffered a major defeat and Allied armies moved into a pursuit beyond Normandy.",
+          "sourceIds": ["usArmyNormandyFalaise", "rafNormandyOperations"],
+          "confidence": "US Army operational-history synthesis; approximate campaign milestone, not a dated sortie return"
         }
       ]
     },
@@ -1343,7 +1893,36 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "consequence": "The Arnhem bridge objective failed despite successful early air landings; unit-specific aircraft losses need mission reports.",
       "sources": [
         "raf1944",
-        "marketDetail"
+        "marketDetail", "marketPlanning", "marketAssault", "marketResupply", "marketWithdrawal"
+      ],
+      "chapters": [
+        {
+          "id": "landings", "title": "Air preparation, airborne landings and the bridge race",
+          "start": "1944-09-16", "end": "1944-09-18", "location": "Eindhoven, Nijmegen and Arnhem corridor",
+          "situation": "The Allies aimed to seize a chain of bridges while XXX Corps advanced from Belgium. Airborne units landed at widely separated points and had to hold routes and landing zones for follow-on echelons.",
+          "airRole": "Bomber Command attacked airfields and flak positions before the 17 September airborne assault. Troop carriers, glider tugs and escorts then flew from British bases; weather delayed some 18 September flights and restricted close support.",
+          "change": "The first arrivals got men and equipment into the corridor but failed to secure every essential bridge immediately. Radio failures and distances impaired Typhoon ground-air cooperation.",
+          "limits": "No all-side synchronized loss/strength comparison exists here. The RAF Museum chapter reproduces detailed operational figures, but not one universally additive transport-aircraft total.",
+          "sourceIds": ["marketPlanning", "marketAssault", "marketResupply"]
+        },
+        {
+          "id": "resupply", "title": "The resupply breakdown as landing zones change hands",
+          "start": "1944-09-19", "end": "1944-09-21", "location": "Oosterbeek, Nijmegen and Arnhem drop zones",
+          "situation": "German units blocked approaches to Arnhem and encircled British troops at the road bridge and Oosterbeek. Captured or contested landing zones made follow-on lifts increasingly dangerous.",
+          "airRole": "Troop carriers attempted vital supply drops through weather and flak. On 20 September the RAF Museum records 162 aircraft attempting drops; 152 delivered at assigned zones that had already fallen to German forces.",
+          "change": "A successful drop at a designated coordinate was not necessarily delivery to Allied troops. This is a crucial distinction between flight execution and battlefield effect.",
+          "limits": "The 162 attempted and 152 at designated zones refer to 20 September resupply aircraft, not all transports on 17–26 September. The museum article distinguishes planned sorties, launched aircraft and actual outcomes.",
+          "sourceIds": ["marketResupply"]
+        },
+        {
+          "id": "withdrawal", "title": "Isolation, failed relief and withdrawal across the Rhine",
+          "start": "1944-09-22", "end": "1944-09-26", "location": "Arnhem bridgehead and south bank of the Rhine",
+          "situation": "The British airborne enclave became increasingly isolated despite the Allied advance to Nijmegen. By the night of 25–26 September the survivors were withdrawn across the river.",
+          "airRole": "RAF resupply and supporting aviation continued under heavy losses and uncertain ground contact, but could not replace control of roads, bridges and secure supply landing zones.",
+          "change": "The Arnhem objective failed. Aerial transport, supply delivery, ground contact and combat support had to work together; success in one element did not ensure success of the operation.",
+          "limits": "The RAF 57 transport-aircraft loss figure covers its specified 17–25 September campaign reporting window. Do not add it to 20 September damaged aircraft or assume it includes every USAAF unit.",
+          "sourceIds": ["marketWithdrawal", "marketDetail", "raf1944"]
+        }
       ],
       "facts": [
         {
@@ -1354,6 +1933,24 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "raf1944",
           "date": "1944-09-17 to 1944-09-25",
           "type": "recorded"
+        },
+        {
+          "label": "Resupply aircraft attempting drops on 20 September",
+          "value": 162,
+          "unit": "aircraft attempting resupply",
+          "scope": "RAF Museum Chapter 4, 20 September only; attempted resupply missions, not entire Market Garden aircraft strength",
+          "sourceId": "marketResupply",
+          "date": "1944-09-20",
+          "type": "recorded"
+        },
+        {
+          "label": "Resupply aircraft dropping on assigned German-held zones",
+          "value": 152,
+          "unit": "aircraft making designated drops",
+          "scope": "Subset of 162 attempted on 20 September; assigned zones had been captured by German forces, so designated drop does not imply Allied supplies received",
+          "sourceId": "marketResupply",
+          "date": "1944-09-20",
+          "type": "recorded-subset"
         }
       ],
       "moments": [
@@ -1362,7 +1959,30 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "Airborne drops and glider landings",
           "place": "Eindhoven–Nijmegen–Arnhem",
           "lat": 51.98,
-          "lng": 5.91
+          "lng": 5.91,
+          "summary": "Following bombing of German airfields and flak sites on 16–17 September, airborne transports and glider tugs carried British, American and Polish Allied elements toward a chain of Dutch bridges. Landing and radio failures began immediately.",
+          "units": "RAF 38 and 46 Groups, USAAF Ninth Troop Carrier Command and Allied airborne formations; different air commands have different mission totals.",
+          "outcome": "Many airborne troops landed but their ground objectives remained contested; this is not proof that every bridge or landing zone was secured.",
+          "sourceIds": ["marketAssault", "raf1944"],
+          "confidence": "RAF Museum chapter drawing on archival operations records; position is a broad three-city corridor"
+        },
+        {
+          "date": "1944-09-20", "title": "Aircraft reach supply zones already held by German forces",
+          "place": "Arnhem and Oosterbeek resupply area", "lat": 51.99, "lng": 5.83,
+          "summary": "Of 162 aircraft attempting resupply on 20 September, 152 dropped at designated zones. Those zones had been overrun in the eighteen-hour delay since their location information was sent to England.",
+          "units": "RAF airborne resupply crews and besieged troops; both values describe aircraft outcomes on one day, not cargo received by Allied ground units.",
+          "outcome": "Much of the supply effort failed to reach the intended troops even where aircraft correctly reached their assigned ground coordinates.",
+          "sourceIds": ["marketResupply"],
+          "confidence": "RAF Museum linked archived operational table; 152 is a subset of 162, not an additional flight count"
+        },
+        {
+          "date": "1944-09-25", "title": "Arnhem withdrawal follows failed attempt to relieve the enclave",
+          "place": "Oosterbeek and south bank of Rhine", "lat": 51.97, "lng": 5.83,
+          "summary": "With relief blocked and the airborne position isolated, Allied commanders ordered the remaining defenders withdrawn across the Rhine on the night of 25–26 September. Air deliveries alone could not reopen a secure land supply route.",
+          "units": "British 1st Airborne Division, Allied supporting air groups and ground relief forces; this is a withdrawal decision rather than an individual air sortie.",
+          "outcome": "The Arnhem crossing failed as an operational objective, despite other bridges and sections of the corridor being held.",
+          "sourceIds": ["marketWithdrawal", "raf1944"],
+          "confidence": "RAF Museum campaign analysis and 1944 chronology; multi-day overnight withdrawal represented by 25 September"
         }
       ]
     },
@@ -1387,7 +2007,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "consequence": "The Luftwaffe could not replace veteran pilots as rapidly as Allied aircraft; reported loss totals vary across museums and definitions.",
       "sources": [
         "raf1945",
-        "ninh"
+        "ninh", "ninhEindhoven1945"
       ],
       "facts": [
         {
@@ -1416,6 +2036,33 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "raf1945",
           "date": "1945-01-01",
           "type": "approximate"
+        },
+        {
+          "label": "Aircraft present at Eindhoven before the Bodenplatte attack",
+          "value": 175,
+          "unit": "Allied aircraft · approximate",
+          "scope": "NIMH Eindhoven airfield local inventory, around 175 aircraft before 1 January attack; not all Allied airfields and not a serviceability return",
+          "sourceId": "ninhEindhoven1945",
+          "date": "1945-01-01",
+          "type": "approximate"
+        },
+        {
+          "label": "Allied aircraft destroyed at Eindhoven",
+          "value": 45,
+          "unit": "aircraft",
+          "scope": "NIMH Eindhoven local ground damage on 1 January, distinct geographic subset; do not add to RAF Museum's whole-raid Allied destroyed count of 224",
+          "sourceId": "ninhEindhoven1945",
+          "date": "1945-01-01",
+          "type": "recorded-local-subset"
+        },
+        {
+          "label": "Allied aircraft damaged at Eindhoven",
+          "value": 35,
+          "unit": "aircraft",
+          "scope": "NIMH local airfield damaged category, not necessarily identical to RAF Museum's 84 aircraft damaged beyond unit repair across all targets",
+          "sourceId": "ninhEindhoven1945",
+          "date": "1945-01-01",
+          "type": "recorded-local-distinct-damage-definition"
         }
       ],
       "moments": [
@@ -1424,7 +2071,12 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "title": "New Year attack on Allied airfields",
           "place": "Belgium / Netherlands",
           "lat": 51.1,
-          "lng": 5.6
+          "lng": 5.6,
+          "summary": "The Luftwaffe launched a surprise attack on multiple Allied airfields. NIMH follows units from Twente and describes friendly German flak hitting attacking aircraft because secrecy had prevented warning the anti-aircraft batteries. At Eindhoven, NIMH reports 45 aircraft destroyed and 35 damaged out of roughly 175 present.",
+          "units": "Multiple Luftwaffe Jagdgeschwader and Allied airfield units. Eindhoven is a localized example, not the entire Bodenplatte operation; RAF Museum's whole-raid 224 destroyed and 84 damaged-beyond-unit-repair use different coverage.",
+          "outcome": "Allied aircraft were hit on the ground, but German losses in aircraft and experienced pilots undercut the operation's strategic value. Local Eindhoven figures must not be added to the whole-raid counts.",
+          "sourceIds": ["raf1945", "ninh", "ninhEindhoven1945"],
+          "confidence": "RAF Museum campaign totals plus Dutch Defence official airfield study; definitions and local-versus-overall scope retained"
         }
       ]
     },

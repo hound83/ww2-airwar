@@ -51,15 +51,17 @@ function inspectMap(expected){
 }
 inspectMap(20);
 let matrix=0;
+const searchIndex=c=>[c.name,c.objective,c.turningPoint,c.consequence,c.participants.join(" "),...(c.chapters||[]).flatMap(ch=>[ch.title,ch.location,ch.situation,ch.airRole,ch.change,ch.limits]),...c.moments.flatMap(e=>[e.title,e.place,e.summary||"",e.units||"",e.outcome||""])].join(" ").toLowerCase();
+const queryMatch=(c,q)=>!q.trim()||(q.trim().length<=3?searchIndex(c).split(/[^a-z0-9]+/).includes(q.trim().toLowerCase()):searchIndex(c).includes(q.trim().toLowerCase()));
 for(const region of ["all","west","east","reich","med","north"]){
- for(const query of ["","poland","RAF","no-campaign-exists-xyz"]){
+ for(const query of ["","poland","RAF","Cobra","Peewit","Glorious","HMS Eagle","   ","no-campaign-exists-xyz"]){
   for(const month of ["1936-07","1939-09","1940-05","1944-06","1945-05"]){
    for(const all of [true,false]){
     element("theater-select").dispatch("change",region);
     element("campaign-search").dispatch("input",query);
     app.setMonth(month);
     element("all-campaigns").dispatch("change",all);
-    const matching=app.campaigns.filter(c=>(region==="all"||c.theater===region)&&(!query||(c.name+" "+c.objective+" "+c.participants.join(" ")+" "+c.consequence).toLowerCase().includes(query.toLowerCase())));
+    const matching=app.campaigns.filter(c=>(region==="all"||c.theater===region)&&queryMatch(c,query));
     const expected=matching.filter(c=>all||c.start<=month&&c.end>=month).length;
     assert.equal(app.visibleOnMap().length,expected,"wrong map-filter intersection: "+[region,query,month,all]);
     inspectMap(expected);
@@ -72,6 +74,13 @@ for(const region of ["all","west","east","reich","med","north"]){
  }
 }
 element("theater-select").dispatch("change","all");element("campaign-search").dispatch("input","");element("all-campaigns").dispatch("change",true);
+for(const [query,expected] of [["Cobra","normandy"],["Peewit","britain"],["Glorious","norway"],["HMS Eagle","malta"],["Palermo","sicily"]]){
+ element("campaign-search").dispatch("input",query);
+ assert.deepEqual([...app.visibleOnMap()].map(c=>c.id),[expected],"search should find campaign through researched operation: "+query);
+}
+element("campaign-search").dispatch("input","RAF");
+assert.ok(!app.visibleOnMap().some(c=>c.id==="barbarossa"),"short RAF search must not match the trailing letters in 'aircraft'");
+element("campaign-search").dispatch("input","");
 for(const zoom of [3,4,5,6,7,8,9,10,12]){map.setZoom(zoom);inspectMap(20);if(zoom>=9)assert.equal(visibleMarkers().length,20,"high zoom must expose all 20 markers");}
 element("fit-map").dispatch("click");assert.ok(map.fitCount>=1,"Fit map control is broken");
 app.choose("poland",false);
@@ -93,9 +102,20 @@ assert.ok(element("moment-list").innerHTML.includes("1939-10-06"),"October event
 app.choose("britain",false);assert.equal(app.campaigns.find(c=>c.id==="britain").chapters.length,5);
 app.chooseChapter("airfields");assert.ok(element("chapter-detail").innerHTML.includes("sector airfields"));
 app.choose("france1940",false);app.chooseChapter("dunkirk");assert.ok(element("chapter-detail").innerHTML.includes("2,739"));
-app.choose("normandy",false);app.chooseChapter("falaise");assert.equal(element("moment-list").innerHTML.includes("No individual dated event"),true);
-app.choose("norway",false);assert.ok(element("dossier-facts").innerHTML.includes("No campaign-local"),"unverified must remain missing rather than zero");
-assert.ok(element("chapter-list").innerHTML.includes("No reliable multi-stage history"),"unresearched campaigns must not invent phase dates");
+app.choose("normandy",false);app.chooseChapter("falaise");assert.ok(element("moment-list").innerHTML.includes("1944-08-19"),"Falaise phase must have a researched event");
+app.choose("norway",false);assert.ok(element("dossier-facts").innerHTML.includes("17"),"Norway's source-scoped withdrawal fighters are not visible");
+assert.ok(element("chapter-list").innerHTML.includes("Narvik"),"Norway research chapters are not reachable");
+app.chooseChapter("withdrawal");assert.ok(element("moment-list").innerHTML.includes("HMS Glorious"),"Norwegian withdrawal has no dated evidence");
+app.choose("malta",false);assert.equal(element("chapter-list").innerHTML.match(/data-chapter="/g).length,4);
+app.chooseChapter("crisis");assert.ok(element("chapter-detail").innerHTML.includes("HMS Eagle"),"contradictory source attribution hidden");
+assert.ok(element("moment-list").innerHTML.includes("1942-03-07"),"first Spitfire event not linked to phase");
+app.choose("barbarossa",false);app.chooseChapter("moscow");assert.ok(element("moment-list").innerHTML.includes("1941-12-05"),"Moscow counteroffensive not accessible");
+app.choose("sicily",false);app.chooseChapter("inland");assert.ok(element("moment-list").innerHTML.includes("1943-07-22"),"Sicily inland phase has no sourced timeline");
+app.choose("bigweek",false);assert.ok(element("dossier-facts").innerHTML.includes("&gt; 200"),"hyphenated lower-bound value was displayed as exact 200");
+app.chooseChapter("sustained");assert.ok(element("moment-list").innerHTML.includes("1944-02-25"),"Big Week conclusion missing");
+app.choose("marketgarden",false);app.chooseChapter("resupply");
+assert.ok(element("chapter-detail").innerHTML.includes("152")&&element("moment-list").innerHTML.includes("1944-09-20"),"Market Garden subset/day not usable");
+app.choose("stalingrad",false);assert.ok(element("dossier-facts").innerHTML.includes("No campaign-local")&&element("chapter-list").innerHTML.includes("No reliable multi-stage history"),"unresearched campaigns must still disclose genuine gaps");
 const before=element("german-observation-date").textContent;
 app.setMonth("1939-09");assert.equal(element("german-observation-date").textContent,before,"unrelated analysis changed on date scrub");
 let lossCases=0;

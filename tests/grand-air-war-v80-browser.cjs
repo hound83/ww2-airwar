@@ -80,6 +80,47 @@ const check=async()=>{
    });
    assert.deepEqual(overview.failures,[],"campaign guide incomplete or broken for: "+overview.failures.join(", "));
    assert.equal(overview.reviewed,20);
+   await page.locator("#campaign-search").fill("");
+   for(const [term,id] of [["Cobra","normandy"],["Peewit","britain"],["HMS Eagle","malta"],["Black Thursday","schweinfurt"]]){
+    await page.locator("#campaign-search").fill(term);
+    assert.equal(await page.locator("#campaign-list [data-campaign]").count(),1,term+" should resolve to one campaign");
+    assert.equal(await page.locator("#campaign-list [data-campaign]").first().getAttribute("data-campaign"),id,term+" wrong campaign");
+   }
+   await page.locator("#campaign-search").fill("RAF");
+   assert.equal(await page.locator('#campaign-list [data-campaign="barbarossa"]').count(),0,"RAF search matches incidental 'aircraft' substring");
+   await page.locator("#campaign-search").fill("");
+   // Test new research chapters as a visitor, including the documented Malta
+   // disagreement and Market Garden's failed-at-destination supply drops.
+   for(const [id,count,phase,eventDate,expected] of [
+    ["norway",3,"withdrawal","1940-06-08","Glorious"],
+    ["malta",4,"crisis","1942-03-07","HMS Eagle"],
+    ["barbarossa",3,"moscow","1941-12-05","Moscow"],
+    ["france1940",3,"dunkirk","1940-05-26","2,739"],
+    ["britain",5,"channel","1940-08-08","Peewit"],
+    ["sicily",3,"inland","1943-07-22","Palermo"],
+    ["schweinfurt",2,"october","1943-10-14","291"],
+    ["bigweek",2,"sustained","1944-02-25","4,000"],
+    ["normandy",3,"falaise","1944-08-19","Falaise"],
+    ["marketgarden",3,"resupply","1944-09-20","152"]
+   ]){
+    await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
+    assert.equal(await page.locator("#chapter-list .chapter-card").count(),count,id+" chapter count");
+    await page.locator('#chapter-list [data-chapter="'+phase+'"]').click();
+    assert.ok((await page.locator("#chapter-detail").innerText()).length>500,id+" phase is a thin placeholder");
+    await page.locator('#moment-list [data-date="'+eventDate+'"]').click();
+    assert.match(await page.locator("#moment-detail").innerText(),new RegExp(expected),id+" detailed evidence inaccessible");
+    assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>0,id+" lacks clickable original research source");
+    assert.equal(await page.locator("#moment-detail").isVisible(),true);
+   }
+   for(const [id,expectText] of [["dieppe","2,614"],["bodenplatte","Eindhoven"]]){
+    await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
+    assert.equal(await page.locator("#chapter-list .chapter-card").count(),0,id+" is a single-day action, not several invented dates");
+    await page.locator("#moment-list [data-moment]").first().click();
+    assert.match(await page.locator("#moment-detail").innerText(),new RegExp(expectText),id+" needs actionable single-day context");
+   }
+   await page.evaluate(()=>window.GrandAirWarV77.choose("malta",false));
+   await page.locator('#chapter-list [data-chapter="crisis"]').click();
+   await page.locator(".campaign-guide").screenshot({path:path.join(root,"v81-qa-malta-guide-"+viewport.width+".png")});
    await page.evaluate(()=>window.GrandAirWarV77.choose("poland",false));
    await page.locator('#chapter-list [data-chapter="interior"]').click();
    await page.evaluate(()=>window.GrandAirWarV77.setMonth("1939-10"));
