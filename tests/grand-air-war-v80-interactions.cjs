@@ -74,7 +74,7 @@ for(const region of ["all","west","east","reich","med","north"]){
  }
 }
 element("theater-select").dispatch("change","all");element("campaign-search").dispatch("input","");element("all-campaigns").dispatch("change",true);
-for(const [query,expected] of [["Cobra","normandy"],["Peewit","britain"],["Glorious","norway"],["HMS Eagle","malta"],["Palermo","sicily"]]){
+for(const [query,expected] of [["Cobra","normandy"],["Peewit","britain"],["Glorious","norway"],["HMS Eagle","malta"],["Palermo","sicily"],["Pitomnik","stalingrad"],["Prokhorovka","kursk"],["Cassino","italy"],["Vitebsk","bagration"],["Seelow","berlin"]]){
  element("campaign-search").dispatch("input",query);
  assert.deepEqual([...app.visibleOnMap()].map(c=>c.id),[expected],"search should find campaign through researched operation: "+query);
 }
@@ -115,7 +115,24 @@ app.choose("bigweek",false);assert.ok(element("dossier-facts").innerHTML.include
 app.chooseChapter("sustained");assert.ok(element("moment-list").innerHTML.includes("1944-02-25"),"Big Week conclusion missing");
 app.choose("marketgarden",false);app.chooseChapter("resupply");
 assert.ok(element("chapter-detail").innerHTML.includes("152")&&element("moment-list").innerHTML.includes("1944-09-20"),"Market Garden subset/day not usable");
-app.choose("stalingrad",false);assert.ok(element("dossier-facts").innerHTML.includes("No campaign-local")&&element("chapter-list").innerHTML.includes("No reliable multi-stage history"),"unresearched campaigns must still disclose genuine gaps");
+for(const [id,chapter,date,number] of [
+ ["stalingrad","collapse","1943-01-16","117.6"],
+ ["reichdefense","escort","1944-04-30","840"],
+ ["kursk","counterblow","1943-07-12","3,000"],
+ ["italy","cassino","1944-03-15","435"],
+ ["bagration","breakthrough","1944-07-03","5,300"],
+ ["berlin","encirclement","1945-04-25","7,500"]
+]){
+ app.choose(id,false);
+ assert.ok(element("dossier-facts").innerHTML.includes(number),id+" source-specific numerical observation not displayed");
+ assert.equal(app.campaigns.find(c=>c.id===id).chapters.length,3,id+" stage count");
+ app.chooseChapter(chapter);
+ assert.ok(element("moment-list").innerHTML.includes(date),id+" dated event missing in selected phase");
+ assert.ok(!/undefined|NaN/.test(element("chapter-detail").innerHTML),id+" invalid phase rendering");
+ const event=app.campaigns.find(c=>c.id===id).moments.find(e=>e.date===date);
+ app.chooseMoment(id,event.date,event.lat,event.lng,event.title);
+ assert.ok(element("moment-detail").innerHTML.includes("https://")&&element("moment-detail").innerHTML.includes(event.title),id+" source link or event detail is inaccessible");
+}
 const before=element("german-observation-date").textContent;
 app.setMonth("1939-09");assert.equal(element("german-observation-date").textContent,before,"unrelated analysis changed on date scrub");
 let lossCases=0;

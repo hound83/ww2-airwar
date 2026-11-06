@@ -142,6 +142,91 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-german-translations/",
       "class": "primary-translations"
     },
+    "usArmyStalingradAirlift": {
+      "title": "US Army historical study: German air supply to encircled Sixth Army, chapter VII",
+      "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/wwii/milimprov/ch07.htm",
+      "class": "US-Army-published-German-operational-analysis; requirement is not achieved delivery"
+    },
+    "usafStalingradAirlift": {
+      "title": "Air & Space Forces: Turning Point at Stalingrad, seven-week airlift reconstruction",
+      "url": "https://www.airandspaceforces.com/article/turning-point-at-stalingrad/",
+      "class": "secondary-historical-synthesis; period and numerator differ from other studies"
+    },
+    "usafStalingradStudy": {
+      "title": "US Air University: Lifeline from the Sky, Sixth Army air-supply operational study",
+      "url": "https://www.airuniversity.af.edu/Portals/10/AUPress/Papers/T_0002_BRUNHAVER_LIFELINE_FROM_THE_SKY.PDF",
+      "class": "USAF-academic-operational-analysis"
+    },
+    "rafReich1944Returns": {
+      "title": "RAF Air Historical Branch VII/138: Luftflotte Reich losses January–April 1944, original scans pp. 61, 87",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-january-april-1944/",
+      "class": "primary-captured-German-command-return; March pp61 and April pp87 visually audited"
+    },
+    "usafReichAirDefence": {
+      "title": "USAF historical study: German Air Force home air defense, 1943–44",
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-010.pdf",
+      "class": "official-USAF-published-postwar-German-air-defence-study"
+    },
+    "usafStrategicWarEnd": {
+      "title": "USAAF official history, The Army Air Forces in WWII III, chapter 20: Spaatz directive of 16 April 1945",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-20.html",
+      "class": "official-USAAF-postwar-history-transcribing-dated-command-order; strategic versus tactical mission distinction"
+    },
+    "usafKurskAircraft": {
+      "title": "USAF Air University: Air Power and Warfare, Kursk VVS air-army concentrations",
+      "url": "https://media.defense.gov/2010/Sep/22/2001330054/-1/-1/0/AFD-100922-028.pdf",
+      "class": "official-USAF-historical-analysis; approximately 3000 assigned aircraft in listed Soviet air armies/PVO"
+    },
+    "smithsonianKursk": {
+      "title": "Smithsonian Air & Space Magazine: Kursk air-battle operational reconstruction",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/kursk-180954670/",
+      "class": "secondary-aviation-historical-analysis; national claims not equivalent to reconciled losses"
+    },
+    "usArmyCassino": {
+      "title": "US Army official history Salerno to Cassino, chapter 25, 15 March 1944 air assault",
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-MTO-Salerno/USA-MTO-Salerno-25.html",
+      "class": "official-US-Army-operations-history; 08:30–12:00 bomber window, not all-day air total"
+    },
+    "usArmyItalyCampaign": {
+      "title": "US Army Center of Military History: Rome–Arno campaign 1944",
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/72-20.pdf",
+      "class": "official-US-Army-campaign-study"
+    },
+    "usArmyPoValley": {
+      "title": "US Army Center of Military History: Po Valley campaign, April–May 1945",
+      "url": "https://history.army.mil/Portals/143/Images/Publications/Publication%20By%20Title%20Images/C%20Img/campaigns-wwii/pdf/31.pdf",
+      "class": "official-US-Army-campaign-study"
+    },
+    "usArmyBagration": {
+      "title": "US Army CGSC: Analysis of Deep Attack Operations, Operation Bagration 22 June–29 August 1944",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D110-PURL-LPS68395/pdf/GOVPUB-D110-PURL-LPS68395.pdf",
+      "class": "official-US-military-operational-research; not a verified aircraft-loss register"
+    },
+    "italianDefenceBagration": {
+      "title": "Italian Defence Ministry military-history conference: comparative Bagration air forces, table p.449",
+      "url": "https://musei.difesa.it/allegati/Atti%202013%20Le%20Operazioni%20Interforze%20e%20Multinazionali%20nella%20Storia%20Militare%20-%20Torino%20tomo%20I/files/basic-html/page449.html",
+      "class": "secondary-scholarly-table-on-government-host; order-of-battle estimates not losses"
+    },
+    "usafBerlinSixteenth": {
+      "title": "USAF historical monograph: Transformation of Soviet air forces, 16th Air Army strength at Berlin",
+      "url": "https://media.defense.gov/2010/Oct/28/2001330228/-1/-1/0/AFD-101028-004.pdf",
+      "class": "USAF-published-research; single-air-army subset, not total attacking air force"
+    },
+    "ericksonBerlinBibliography": {
+      "title": "John Erickson, The Road to Berlin, annotated Soviet 16th Air Army wartime organizational study reference",
+      "url": "https://doi.org/10.4324/9780429314353",
+      "class": "secondary-academic-bibliography-citing-Soviet-unit-history; 3033 aircraft versus 2738 experienced crews"
+    },
+    "ospreyBerlin1945": {
+      "title": "Osprey Publishing, Eastern Front 1945: three Soviet air armies in the Berlin assault",
+      "url": "https://www.ospreypublishing.com/us/eastern-front-1945-9781472857842/",
+      "class": "secondary-publisher-historical-book-summary; rounded force estimate"
+    },
+    "sovietBerlinAirReport": {
+      "title": "Russian Historical Documents portal: 16th Air Army Berlin air-control report, 15 May 1945",
+      "url": "https://docs.historyrussia.org/ru/nodes/221504-iz-otcheta-o-rabote-armeyskogo-uzla-navedeniya-16-y-vozdushnoy-armii-v-berlinskoy-operatsii-sostavlennogo-shtabom-etoy-armii-15-maya-1945-g",
+      "class": "indexed-primary-Soviet-air-army-report; full figures not independently transcribed"
+    },
     "vvs": {
       "title": "VVS General Staff 1962 tables transcribed with archival references",
       "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_08.htm",
@@ -1339,16 +1424,82 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Long-range transport and weather constrained German resupply while Soviet ground/air forces narrowed the pocket.",
       "consequence": "Air transport could not sustain the trapped force; precise monthly transports and losses need their own reports.",
       "sources": [
-        "barbarossa"
+        "usArmyStalingradAirlift", "usafStalingradAirlift", "usafStalingradStudy"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id": "approach", "title": "Bombing, city fighting and the Volga front",
+          "start": "1942-08-23", "end": "1942-11-18", "location": "Stalingrad and the Volga approaches",
+          "situation": "German forces reached the Volga and fought into Stalingrad while the Soviet defence relied on reinforcement across the river. The battle was still an attack and defence of the city, not yet an encircled German force being supplied by air.",
+          "airRole": "German air formations bombed the urban area and supported the assault; Soviet aviation defended river crossings and the surrounding approaches amid severe attrition.",
+          "change": "Heavy air attack did not force a quick conclusion. By November the German army was concentrated inside an increasingly vulnerable salient.",
+          "limits": "The 23 August opening represents a major bombing and advance date, not the start of the subsequent German airlift. No matched German/Soviet local aircraft-loss series is included for this phase.",
+          "sourceIds": ["usafStalingradStudy", "usafStalingradAirlift"]
+        },
+        {
+          "id": "encirclement", "title": "Operation Uranus and the decision to supply by air",
+          "start": "1942-11-19", "end": "1942-12-30", "location": "Don bend, Stalingrad pocket and approach airfields",
+          "situation": "The Soviet counteroffensive broke through the flanks and enclosed German Sixth Army. The Luftwaffe was ordered to sustain the pocket while Soviet forces pressured transport routes and airfields.",
+          "airRole": "Ju 52 transports and adapted He 111 bombers attempted airlift missions through winter weather and enemy air opposition. German staff requirements were much greater than the practical daily delivery rate.",
+          "change": "An advancing land battle became a logistics contest whose air capacity was insufficient to maintain the encircled army.",
+          "limits": "The 300 tons/day is a retrospective minimum supply estimate; 500 tons/day is a higher operational target, not observed cargo. These are not two delivered quantities or additive figures.",
+          "sourceIds": ["usArmyStalingradAirlift", "usafStalingradAirlift", "usafStalingradStudy"]
+        },
+        {
+          "id": "collapse", "title": "Airfield losses, dwindling deliveries and surrender",
+          "start": "1942-12-31", "end": "1943-02-02", "location": "Pitomnik, Gumrak and the contracting Stalingrad pocket",
+          "situation": "Soviet advances and the loss of landing areas narrowed the airlift into an increasingly small pocket, with much of the remaining cargo delivered by drop rather than landing.",
+          "airRole": "Transport and bomber crews operated on hazardous routes with shrinking delivery possibilities; Soviet air and ground forces restricted the usable fields and the remaining German position.",
+          "change": "Loss of reliable landings made already inadequate supply even less effective; the final organized German pocket surrendered in early February.",
+          "limits": "The 117.6 tons/day figure is a secondary reconstruction averaged over its stated seven-week reporting window, not this phase's observed daily rate or a specific date's load. Other histories average different date ranges and obtain different means.",
+          "sourceIds": ["usafStalingradAirlift", "usafStalingradStudy"]
+        }
+      ],
+      "facts": [
+        {"label":"Sixth Army supply need, estimated minimum", "value":300, "unit":"tons/day", "scope":"Retrospective minimum daily supply requirement for encircled Sixth Army, late 1942; target/need, not transported cargo", "sourceId":"usafStalingradAirlift", "date":"1942-11-23", "type":"source-estimate"},
+        {"label":"Air-supply planning rate on suitable flying days", "value":500, "unit":"tons/day", "scope":"German airlift planning requirement/target to compensate for weather-grounded days after encirclement; not an actual delivered average", "sourceId":"usArmyStalingradAirlift", "date":"1942-11-23", "type":"requirement"},
+        {"label":"Actual cargo delivered, seven-week average", "value":117.6, "unit":"tons/day", "scope":"Air & Space Forces secondary reconstruction of German supplies reaching the pocket averaged across seven weeks of the Stalingrad airlift; different period from other published averages", "sourceId":"usafStalingradAirlift", "date":"1943-01-15", "type":"secondary-average"}
+      ],
       "moments": [
         {
-          "date": "1942-11-19",
-          "title": "Soviet counteroffensive and air-supply crisis",
-          "place": "Stalingrad",
-          "lat": 48.72,
-          "lng": 44.52
+          "date":"1942-08-23", "title":"German air bombardment accompanies the assault on Stalingrad",
+          "place":"Stalingrad, Volga front", "lat":48.72,"lng":44.52,
+          "summary":"Large Luftwaffe attacks accompanied the German approach to the city. The air campaign at this stage was primarily tactical bombing and support for the advance, not the later Sixth Army air-supply operation.",
+          "units":"German operational air forces supporting Army Group B; Soviet VVS defenders. There is no source-verified all-type aircraft loss count for 23 August here.",
+          "outcome":"The city battle intensified while Soviet defence and river traffic continued.",
+          "sourceIds":["usafStalingradStudy","usafStalingradAirlift"],"confidence":"USAF academic historical reconstruction; day represents the beginning of intensified attacks, not total sortie accounting"
+        },
+        {
+          "date":"1942-11-19", "title":"Soviet Operation Uranus breaks through Axis flanks",
+          "place":"Don–Stalingrad front", "lat":49.1,"lng":43.2,
+          "summary":"Soviet armies opened their counteroffensive north and south of Stalingrad; the collapse of flanking positions soon made German Sixth Army dependent on an emergency air-supply plan.",
+          "units":"Soviet ground fronts and VVS against German and allied ground formations; broad front rather than a point battle.",
+          "outcome":"Operational initiative passed to the Soviets and the geography of air operations changed from assault support to threatened supply routes.",
+          "sourceIds":["usafStalingradStudy","usArmyStalingradAirlift"],"confidence":"USAF and US Army studies; date is offensive opening rather than completion of encirclement"
+        },
+        {
+          "date":"1942-11-23", "title":"Encirclement closes and Luftwaffe airlift becomes critical",
+          "place":"Stalingrad pocket, regional", "lat":48.85,"lng":44.2,
+          "summary":"The Soviet ring enclosed Sixth Army. An emergency transport effort now faced demands of hundreds of tons per day, but loading capacity, aircraft availability, distance, weather and Soviet resistance made the plan unrealistic.",
+          "units":"German Sixth Army with Luftwaffe transport and converted bomber crews; 300 tons/day minimum and higher 500-ton planning target are supply requirements, not actual deliveries.",
+          "outcome":"The survival of the pocket became dependent on an inadequate air bridge and on ground relief attempts.",
+          "sourceIds":["usArmyStalingradAirlift","usafStalingradAirlift"],"confidence":"Official and secondary historical reconstructions; target rates are not observed cargo"
+        },
+        {
+          "date":"1943-01-16", "title":"Loss of Pitomnik sharply reduces usable landing capacity",
+          "place":"Pitomnik airfield, Stalingrad pocket", "lat":48.69,"lng":43.9,
+          "summary":"Soviet forces took Pitomnik, one of the last major usable airfields inside the pocket. The remaining landing and air-drop options could not replace its handling capacity.",
+          "units":"Soviet advancing forces and German air-transport formations; the map is a local airfield reference, not a count of aircraft destroyed there that day.",
+          "outcome":"Air deliveries deteriorated further at the moment when the encircled army's need remained acute.",
+          "sourceIds":["usafStalingradStudy","usafStalingradAirlift"],"confidence":"USAF operational synthesis; day of Pitomnik airfield loss"
+        },
+        {
+          "date":"1943-02-02", "title":"Final German resistance at Stalingrad ends",
+          "place":"Stalingrad, southern USSR", "lat":48.72,"lng":44.52,
+          "summary":"The final organized German forces in the northern pocket surrendered after the southern grouping had already capitulated. The Luftwaffe airlift had never sustained the encircled force's needs.",
+          "units":"German Sixth Army remnants, Soviet forces and their associated air commands; no single reconciled campaign-wide aircraft loss total supplied.",
+          "outcome":"Stalingrad ended in a major Axis defeat and demonstrated limits of transport aviation as a substitute for accessible land supply.",
+          "sourceIds":["usafStalingradStudy","usafStalingradAirlift"],"confidence":"Widely established campaign endpoint in USAF academic and secondary history"
         }
       ]
     },
@@ -1373,24 +1524,73 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "The arrival of longer-range escort fighters changed the attrition battle; monthly Luftflotte Reich aircraft-loss returns allow measured tracking of aircraft destroyed by cause in 1943–44.",
       "consequence": "Air defences, fuel, aircraft production and pilot replacement came under increasing pressure. The original German figures are command returns and cannot be converted to Allied victory claims.",
       "sources": [
-        "rafLosses",
-        "bigWeek"
+        "rafLosses", "rafReich1944Returns", "usafReichAirDefence", "usafStrategicWarEnd", "bigWeek", "usafBigWeekIndustry"
       ],
-      "facts": [],
-      "moments": [
+      "chapters": [
         {
-          "date": "1944-02-20",
-          "title": "Big Week attacks aircraft industry",
-          "place": "Germany",
-          "lat": 51,
-          "lng": 11.7
+          "id":"unescorted", "title":"Deep bombing and the defence network in 1943",
+          "start":"1943-01-01","end":"1943-12-31","location":"Germany: Ruhr, industrial cities and aircraft factories",
+          "situation":"American daylight bombing and RAF night attacks increasingly penetrated German airspace. German day and night fighter commands sought to defend factories, transport systems and cities with very different interception methods.",
+          "airRole":"Single- and twin-engined fighters, ground control, radar and flak formed interdependent air-defence systems. Unescorted USAAF bomber penetration exposed a severe Allied vulnerability in 1943.",
+          "change":"Combat on the routes to industrial targets created pressure on Allied escort doctrine and German fighter deployment. The August and October Schweinfurt missions are detailed separately as one-day operations.",
+          "limits":"Reich air-defence activity is not synonymous with every bomber operation over Europe, and other campaigns such as Schweinfurt must not be added to campaign totals. No all-year comparable Reich-specific aircraft-loss figure is asserted.",
+          "sourceIds":["usafReichAirDefence","usafSchweinfurt1943","usafSchweinfurtOctober"]
         },
         {
-          "date": "1944-06-01",
-          "title": "Allied raids continue across Reich",
-          "place": "German industrial region",
-          "lat": 52,
-          "lng": 10.5
+          "id":"escort", "title":"Long-range escorts and the 1944 fighter battle",
+          "start":"1944-01-01","end":"1944-06-30","location":"Industrial Reich and bomber approach corridors",
+          "situation":"Long-range American fighter escorts increasingly protected bomber streams and engaged German interceptors. The February aircraft-industry offensive and the continuing spring air battles strained Germany's defence.",
+          "airRole":"Luftflotte Reich day fighters contested USAAF formations while radar-led night fighters, flak and the bomber defence system continued to engage RAF raids. Captured German command returns distinguish enemy action from other flying and non-operational accidents.",
+          "change":"Escort reach and tactics changed the terms of battle. Monthly German write-offs could rise even though their category totals were not solely Allied shoot-downs.",
+          "limits":"March 662 and April 840 are separate monthly, all-aircraft-type destruction totals in the Luftflotte Reich reporting area, including operational and non-operational losses. They are not unique Allied victory claims, fighter-only losses, 1944 overall losses or additive to theatre charts showing the same German returns.",
+          "sourceIds":["rafReich1944Returns","bigWeek","usafReichAirDefence"]
+        },
+        {
+          "id":"degradation", "title":"Fuel, pilot and infrastructure exhaustion",
+          "start":"1944-07-01","end":"1945-04-30","location":"Germany: dispersed airfields, fuel works and major cities",
+          "situation":"Germany's aircraft production remained substantial for a period, but fuel infrastructure, trained aircrew, airfield availability and transport were increasingly constrained amid the widening Allied air offensive and ground advances.",
+          "airRole":"Air-defence fighters, jets in limited numbers, flak and night fighters continued to operate, but readiness and the ability to convert production into effective sorties deteriorated.",
+          "change":"By April 1945 strategic bombing had largely exhausted available strategic targets as the German military position disintegrated.",
+          "limits":"This phase reports no interpolated fighter inventory or campaign-wide aircraft-loss figure. A USAAF strategic bombing termination announcement in April does not mean Luftwaffe flights, tactical strikes or combat ended that day.",
+          "sourceIds":["usafStrategicWarEnd","usafReichAirDefence","rafLosses"]
+        }
+      ],
+      "facts": [
+        {"label":"Luftflotte Reich aircraft destroyed, March 1944", "value":662, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, March 1944, all types and causes; 389 enemy action + 95 other operational + 178 non-operational, captured German VII/138 p.61", "sourceId":"rafReich1944Returns", "date":"1944-03", "type":"primary-command-return"},
+        {"label":"Luftflotte Reich aircraft destroyed, April 1944", "value":840, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, April 1944, all types and causes; 580 enemy action + 83 other operational + 177 non-operational, captured German VII/138 p.87", "sourceId":"rafReich1944Returns", "date":"1944-04", "type":"primary-command-return"}
+      ],
+      "moments": [
+        {
+          "date":"1943-08-17","title":"Regensburg and Schweinfurt expose deep-escort limitations",
+          "place":"Southern and central Germany, regional", "lat":49.99,"lng":10.23,
+          "summary":"US Eighth Air Force bombers launched two long-range strikes against aircraft-production and ball-bearing targets. The deep penetration gave German fighter defences opportunities for repeated interception.",
+          "units":"USAAF Eighth Air Force and Reich day fighters; detailed dispatched/lost counts belong to the separate Schweinfurt–Regensburg campaign dossier, not to a 1943 Reich-wide tally.",
+          "outcome":"The raids highlighted the bomber force's exposure where escort could not follow throughout the route.",
+          "sourceIds":["usafSchweinfurt1943","usafReichAirDefence"],"confidence":"USAF museum mission history; broad air-defence context"
+        },
+        {
+          "date":"1944-02-20","title":"Big Week strikes German aircraft industry",
+          "place":"German industrial regions", "lat":51,"lng":11.7,
+          "summary":"Allied bombers opened Operation Argument against the German aviation industry. Increasingly capable escort fighters became central to attriting Luftwaffe interceptors, not just attacking factories.",
+          "units":"USAAF Eighth and Fifteenth Air Forces, RAF Bomber Command and German air defence; strike-specific strength and losses are separately recorded under Big Week.",
+          "outcome":"The escorted bomber offensive raised the cost of German fighter interception.",
+          "sourceIds":["bigWeek","usafBigWeekIndustry","usafReichAirDefence"],"confidence":"Official USAF/RAF operational synthesis; no cross-campaign double counting"
+        },
+        {
+          "date":"1944-04-30","title":"April German returns document heavy Reich-area aircraft write-offs",
+          "place":"Luftflotte Reich administrative area, symbolic map centre", "lat":52,"lng":10.5,
+          "summary":"The captured April 1944 German return records 840 aircraft destroyed in the Luftflotte Reich area: 580 from enemy action, 83 from other operational causes and 177 from non-operational causes. The same series records 662 destroyed in March.",
+          "units":"Luftflotte Reich monthly reporting command, all aircraft types; 30 April is the reporting-period endpoint, NOT the day when 840 aircraft were lost.",
+          "outcome":"Primary monthly accounting provides a bounded measure of German attrition, including causes unrelated to direct enemy action.",
+          "sourceIds":["rafReich1944Returns"],"confidence":"Captured German source VII/138 pp.61,87; totals and cause categories visually audited; monthly not day-specific"
+        },
+        {
+          "date":"1945-04-16","title":"Spaatz declares strategic air war over; tactical missions continue",
+          "place":"Reich air-defence network, symbolic centre", "lat":52,"lng":10.5,
+          "summary":"General Carl Spaatz issued a dated order stating that the Western strategic air war against Germany had been brought to a close by ground advances; strategic air formations were to support the final tactical phase. German aircraft and Allied tactical flying did not stop immediately.",
+          "units":"US Strategic Air Forces and RAF Bomber Command, shifting their mission alongside Allied tactical air forces; not a zero-aircraft or zero-sortie statement for 16 April.",
+          "outcome":"The Western strategic bombing campaign ended as a distinct mission, but fighting in Europe continued into May.",
+          "sourceIds":["usafStrategicWarEnd"],"confidence":"Dated Spaatz order transcribed in official USAAF postwar operational history, Volume III chapter 20"
         }
       ]
     },
@@ -1518,16 +1718,68 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Operational attrition and logistics mattered alongside the ground battle, but military-district totals cannot be mistaken for local campaign casualties.",
       "consequence": "The German offensive failed and Soviet advances increased the operational demands on both air forces.",
       "sources": [
-        "vvs"
+        "usafKurskAircraft", "smithsonianKursk"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id":"citadel", "title":"Operation Citadel: opposing air armies at the salient",
+          "start":"1943-07-05","end":"1943-07-11","location":"Northern and southern faces of the Kursk salient",
+          "situation":"German Army Groups Centre and South attacked the Soviet salient from opposite directions. Soviet forces had prepared layered defences and concentrated substantial aviation to defend and support the ground front.",
+          "airRole":"German tactical bombers, fighters and ground-attack aircraft attempted to suppress Soviet defences, while Soviet fighters and Il-2 attack aircraft opposed German advances and supported counterattacks.",
+          "change":"High operational tempo and losses increased pressure on both sides, while the German pincer failed to achieve a swift encirclement.",
+          "limits":"The USAF historical study estimates about 3,000 Soviet aircraft assigned to named air armies and PVO divisions, versus approximately 2,000 German aircraft committed to Citadel. These are rounded force estimates with different command structures, not serviceable on 5 July, not aircraft losses and not every aircraft across the Eastern Front.",
+          "sourceIds":["usafKurskAircraft","smithsonianKursk"]
+        },
+        {
+          "id":"counterblow", "title":"Prokhorovka and Soviet counter-offensives",
+          "start":"1943-07-12","end":"1943-07-23","location":"Prokhorovka, Orel approaches and Kursk region",
+          "situation":"Soviet counteroffensives developed north of the salient as the German southern thrust also reached its limit. Ground battles were shaped by the availability of close air support and German redeployments.",
+          "airRole":"Both air forces continued fighter interception, reconnaissance and attacks on armour, transport and assembly areas as operations shifted from German attack to Soviet counterattack.",
+          "change":"The German Citadel offensive ceased to pose a successful encirclement threat; Soviet attacks expanded beyond the initial salient.",
+          "limits":"Kursk is an extended land-air campaign: a 12 July battlefield event does not encompass all Soviet counteroffensive flying. Combat victory claims in secondary accounts have differing confirmation rules and are not imported as reconciled aircraft losses.",
+          "sourceIds":["usafKurskAircraft","smithsonianKursk"]
+        },
+        {
+          "id":"exploitation", "title":"Soviet advance toward Kharkov",
+          "start":"1943-07-24","end":"1943-08-23","location":"Orel–Belgorod–Kharkov operational region",
+          "situation":"Following the failure of Citadel, Soviet forces advanced in multiple operations beyond the original Kursk defensive line, including the advance toward Belgorod and Kharkov.",
+          "airRole":"Air armies supported Soviet operational exploitation, while German air formations tried to protect withdrawals and strike Soviet spearheads.",
+          "change":"The operational initiative on the central and southern Eastern Front increasingly passed to Soviet forces.",
+          "limits":"The 23 August capture of Kharkov is a later offensive endpoint and not a claim that every Soviet aircraft in the earlier July order of battle participated in that specific action. No combat-loss ledger is inferred from assigned strength.",
+          "sourceIds":["usafKurskAircraft","smithsonianKursk"]
+        }
+      ],
+      "facts": [
+        {"label":"Aircraft assigned to named Soviet air formations", "value":3000, "unit":"Soviet aircraft (approx.)", "scope":"USAF historical study estimates about 3,000 aircraft in the 2nd, 5th and 16th Soviet Air Armies and two PVO fighter divisions in Kursk sector at opening, not serviceable stock and not losses", "sourceId":"usafKurskAircraft", "date":"1943-07-05", "type":"approximate-assigned-strength"},
+        {"label":"German aircraft committed to Operation Citadel", "value":2000, "unit":"German aircraft (approx.)", "scope":"USAF historical study estimates some 2,000 Luftwaffe aircraft allocated to July 1943 Citadel from eastern front formations; rounded aircraft commitment, not one-day ready strength or campaign losses", "sourceId":"usafKurskAircraft", "date":"1943-07-05", "type":"approximate-assigned-strength"}
+      ],
       "moments": [
         {
           "date": "1943-07-05",
           "title": "Operation Citadel opens",
-          "place": "Kursk salient",
+          "place": "Kursk salient, regional",
           "lat": 51.7,
-          "lng": 36.2
+          "lng": 36.2,
+          "summary":"German forces attacked the northern and southern flanks of Kursk while the Soviets fielded several supporting air armies. The USAF historical study estimates roughly 3,000 Soviet and 2,000 German aircraft in the respective campaign force groupings, not sortie returns.",
+          "units":"Soviet 2nd, 5th and 16th Air Armies with two PVO fighter divisions versus German supporting air formations; counts include assigned aircraft across formations.",
+          "outcome":"German gains fell short of a rapid strategic breakthrough under intense land and air resistance.",
+          "sourceIds":["usafKurskAircraft","smithsonianKursk"],"confidence":"USAF scholarly assigned-strength estimate; distinct from ready aircraft and confirmed losses"
+        },
+        {
+          "date":"1943-07-12","title":"Soviet counterattack reshapes the Kursk air battle",
+          "place":"Prokhorovka and Orel region", "lat":51.02,"lng":36.75,
+          "summary":"Soviet formations attacked in the Orel sector while major fighting continued around Prokhorovka. Both air forces flew fighter, attack and interdiction missions; opposing claims for single-day aircraft losses vary sharply by method.",
+          "units":"Soviet and German tactical air forces in separate northern/southern sectors; this map point summarizes simultaneous operational areas, not one airfield or air battle.",
+          "outcome":"The main campaign shifted toward Soviet counteroffensive operations.",
+          "sourceIds":["smithsonianKursk","usafKurskAircraft"],"confidence":"Secondary aviation history interpreted alongside USAF operational study; no disputed claims promoted to factual aircraft losses"
+        },
+        {
+          "date":"1943-08-23","title":"Kharkov falls after the post-Citadel Soviet advance",
+          "place":"Kharkov, southern Eastern Front", "lat":49.99,"lng":36.23,
+          "summary":"The Soviet capture of Kharkov capped the late-summer offensive associated with the aftermath of Kursk. Operational support aviation had followed the expanding ground front rather than remaining confined to the original salient.",
+          "units":"Soviet ground and air formations with retreating German ground/air support; no local aviation casualty count is asserted on 23 August.",
+          "outcome":"The German offensive failed and the Soviets retained the initiative in the region.",
+          "sourceIds":["usafKurskAircraft","smithsonianKursk"],"confidence":"Historical chronology; later offensive stage is distinct from Citadel's July opening"
         }
       ]
     },
@@ -1607,7 +1859,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "name": "Italian campaign air operations",
       "theater": "med",
       "start": "1943-09",
-      "end": "1945-04",
+      "end": "1945-05",
       "focus": {
         "lat": 42.7,
         "lng": 12.3,
@@ -1623,17 +1875,94 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Italian airfield capture changed the range of USAAF and RAF bombers; Fifteenth Air Force could attack southern and central European targets.",
       "consequence": "Mediterranean-based Allied forces fought a geographically distinct air war, overlapping strategic attacks on the Reich; use MTO group counts as theater context rather than local sorties.",
       "sources": [
-        "raf1943",
-        "bigWeek"
+        "raf1943", "usArmyMediterranean", "usArmyCassino", "usArmyItalyCampaign", "usArmyPoValley"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id":"landings", "title":"Salerno, Naples and the Italian airfield network",
+          "start":"1943-09-03","end":"1944-01-21","location":"Southern Italy: Calabria, Salerno, Naples and Foggia",
+          "situation":"The Allies landed on mainland Italy as the Italian state surrendered and German forces continued fighting. The Salerno landing was contested, and Allied armies advanced toward Naples and the central mountains.",
+          "airRole":"Tactical air forces defended the beachheads and struck German positions and communications; the capture of airfields around Foggia enabled a separate growing strategic-bombing reach into southern and central Europe.",
+          "change":"The campaign developed from amphibious footholds into an attritional land war supported by Mediterranean-based aircraft and expanding Allied basing.",
+          "limits":"The USAAF Fifteenth Air Force's missions from Italian bases are not equivalent to sorties supporting a local Salerno or Cassino fight. No all-Italy force totals have been transferred from MTO theatre-wide group figures.",
+          "sourceIds":["usArmyMediterranean","raf1943","usArmyItalyCampaign"]
+        },
+        {
+          "id":"cassino", "title":"Anzio, Monte Cassino and the road to Rome",
+          "start":"1944-01-22","end":"1944-05-31","location":"Anzio, Cassino and Liri Valley",
+          "situation":"Allied troops landed at Anzio as attacks on the Gustav Line continued. The March effort to demolish the town of Cassino by bombing preceded a ground attack that still failed to break through.",
+          "airRole":"Allied heavy and medium bombers attacked Cassino on 15 March; fighter-bombers later supported the ground operation. Poor target concentration and rubble blocking tanks demonstrated the limits of bombing as direct ground support.",
+          "change":"The bombing destroyed much of Cassino but did not dislodge the defenders immediately. Later Allied attacks forced the German line and opened the route toward Rome.",
+          "limits":"435 bombers refers only to 08:30–12:00 on 15 March over the Cassino area. The approximate 300 tons falling inside the town is a SUBSET of the roughly 1,000 tons dropped across the wider area. Morning heavy and medium aircraft are subsets of 435; later afternoon aircraft and aborted missions are excluded.",
+          "sourceIds":["usArmyCassino","usArmyItalyCampaign"]
+        },
+        {
+          "id":"northward", "title":"Rome, the Gothic Line and the final Po Valley offensive",
+          "start":"1944-06-01","end":"1945-05-02","location":"Rome–Arno sector, northern Apennines and the Po Valley",
+          "situation":"Rome fell in June 1944, but German forces continued a difficult defence farther north through the winter. The final spring offensive broke through the Po Valley and led to the surrender of German forces in Italy.",
+          "airRole":"Allied tactical aviation targeted transport, movement and German defensive concentrations, while Italian bases also served Fifteenth Air Force strategic operations against distant European targets.",
+          "change":"The northern campaign ended with the collapse of organized German resistance in Italy on 2 May 1945.",
+          "limits":"Do not infer tactical aircraft losses over Rome or the Po from a Mediterranean whole-theatre group count. Strategic Fifteenth Air Force raids launched from Italy may have targeted Germany or the Balkans, not the Italian ground front itself.",
+          "sourceIds":["usArmyItalyCampaign","usArmyPoValley","usArmyMediterranean"]
+        }
+      ],
+      "facts": [
+        {"label":"Bombers over Cassino area, 15 March morning", "value":435, "unit":"Allied medium/heavy bombers", "scope":"15 March 1944 08:30–12:00 bombing of Cassino area ONLY: 72 B-25 + 101 B-26 + 262 B-17/B-24; excludes afternoon fighter-bomber strikes, later 260 heavy bombers that did not drop bombs", "sourceId":"usArmyCassino", "date":"1944-03-15", "type":"recorded"},
+        {"label":"Medium bombers, Cassino morning (included in 435)", "value":173, "unit":"Allied B-25/B-26", "scope":"Subtotal within 435 bomber total: 72 B-25 and 101 B-26, 15 March 1944 08:30–12:00; NOT additional sorties or aircraft to add to total", "sourceId":"usArmyCassino", "date":"1944-03-15", "type":"recorded-subset"},
+        {"label":"Heavy bombers, Cassino morning (included in 435)", "value":262, "unit":"Allied B-17/B-24", "scope":"Subtotal within 435 bomber total, 15 March 1944 08:30–12:00; not all heavy aircraft launched later in day, and not an independent amount to add to 435", "sourceId":"usArmyCassino", "date":"1944-03-15", "type":"recorded-subset"},
+        {"label":"Bomb tonnage falling in Cassino town (approx.)", "value":300, "unit":"tons of bombs", "scope":"US Army estimate of amount hitting Cassino town on 15 March 1944; SUBSET of almost 1,000 tons dropped in the wider area, not a sortie count or all-air-war tonnage", "sourceId":"usArmyCassino", "date":"1944-03-15", "type":"approximate-subset"}
+      ],
       "moments": [
         {
           "date": "1943-09-09",
-          "title": "Allied landing in southern Italy",
+          "title": "Salerno landing under contested skies",
           "place": "Salerno sector",
           "lat": 40.67,
-          "lng": 14.78
+          "lng": 14.78,
+          "summary":"Allied forces landed near Salerno while German formations tried to contain the bridgehead. Tactical aviation and naval air defence were integral to retaining the beachhead and sustaining the landing forces.",
+          "units":"Allied amphibious armies and Mediterranean tactical air forces versus German land and air formations; no verified localized aircraft-loss figure imported.",
+          "outcome":"The Allies retained the landing area and advanced toward Naples, opening airfields and logistical routes for future operations.",
+          "sourceIds":["usArmyMediterranean","raf1943"],"confidence":"Official US Army campaign account and RAF 1943 chronology"
+        },
+        {
+          "date":"1944-01-22","title":"Anzio amphibious landing opens another contested air-support front",
+          "place":"Anzio coast", "lat":41.45,"lng":12.63,
+          "summary":"Allied forces landed behind German defences near Anzio but became pinned inside a bridgehead. Air cover, supply and interdiction became essential alongside renewed attacks toward Cassino.",
+          "units":"Allied ground and tactical-air commands, German defending forces; not an observation about USAAF strategic-bomber strength.",
+          "outcome":"The attempted outflanking move did not produce an immediate breakthrough and prolonged the Italian campaign.",
+          "sourceIds":["usArmyCassino","usArmyItalyCampaign"],"confidence":"US Army operational history; phase-opening amphibious date"
+        },
+        {
+          "date":"1944-03-15","title":"435 bombers strike Cassino, but the ground breakthrough fails",
+          "place":"Cassino town and surrounding hill positions", "lat":41.49,"lng":13.83,
+          "summary":"Between 08:30 and 12:00, 72 B-25s, 101 B-26s and 262 heavy B-17/B-24 bombers attacked the Cassino area. Almost 1,000 tons fell over the broader area but only about 300 tons hit the town itself. Ruins then obstructed attacking armour and the defenders held out.",
+          "units":"435 morning Allied bombers = 173 medium + 262 heavy, inclusive subtotals; not all aircraft airborne all day and not the 260 additional heavy bombers that returned with bombs later in the afternoon.",
+          "outcome":"A spectacular air attack failed to produce the planned immediate ground victory and also caused deadly friendly-fire and civilian casualties from misdirected bombs.",
+          "sourceIds":["usArmyCassino"],"confidence":"US Army official chapter 25, operational flight-category breakouts and target-tonnage limitations"
+        },
+        {
+          "date":"1944-06-04","title":"Rome captured as the air-supported campaign moves north",
+          "place":"Rome", "lat":41.9,"lng":12.5,
+          "summary":"Allied forces entered Rome after the Gustav Line had been broken. Airfields farther north and transport corridors were vital to the pursuit, although the coming Apennines campaign remained difficult.",
+          "units":"Allied ground and tactical aviation, German retreating formations; strategic Fifteenth Air Force bombing elsewhere is not a Rome battle count.",
+          "outcome":"A major operational objective was taken, but German resistance continued north of the capital.",
+          "sourceIds":["usArmyItalyCampaign","usArmyMediterranean"],"confidence":"Official US Army Rome–Arno history; event date is capture of Rome"
+        },
+        {
+          "date":"1945-04-09","title":"Allied spring offensive begins toward the Po Valley",
+          "place":"Northern Apennines, Bologna approaches", "lat":44.25,"lng":11.3,
+          "summary":"Allied forces launched renewed attacks through the northern Apennines, supported by concentrated tactical air operations to cut communications and assist the advance into the Po Valley.",
+          "units":"Allied Fifth and Eighth Army forces with Mediterranean tactical air support; the operational launch lasted multiple days and had no single common aircraft-loss total.",
+          "outcome":"German positions were overwhelmed in the ensuing northern Italian offensive.",
+          "sourceIds":["usArmyPoValley"],"confidence":"Official US Army Po Valley campaign publication; early-April offensive opening, not whole-campaign day statistics"
+        },
+        {
+          "date":"1945-05-02","title":"German forces in Italy surrender",
+          "place":"Northern Italy, regional", "lat":45,"lng":10.2,
+          "summary":"The German surrender in Italy took effect after Allied forces drove across northern Italy. The Italian ground campaign ended before the general European surrender, while Italy-based strategic aviation had also served a wider theatre.",
+          "units":"German Army Group C and Allied Mediterranean forces; this regional conclusion is not a 2 May fighter engagement.",
+          "outcome":"Organized German resistance in Italy ceased; the separate European war ended days later.",
+          "sourceIds":["usArmyPoValley","usArmyItalyCampaign"],"confidence":"US Army official campaign conclusions, surrender effective 2 May 1945"
         }
       ]
     },
@@ -1863,16 +2192,73 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Aircraft concentrations and local air superiority affected supply and retreat, but Soviet all-front strength figures are not Bagration losses.",
       "consequence": "The German central front collapsed; precise VVS and Luftwaffe campaign-level loss returns remain a major archival gap.",
       "sources": [
-        "vvs"
+        "usArmyBagration", "italianDefenceBagration"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id":"breakthrough", "title":"Breakthroughs against Army Group Centre",
+          "start":"1944-06-23","end":"1944-07-04","location":"Vitebsk, Orsha, Mogilev, Bobruisk and Minsk",
+          "situation":"Four Soviet fronts attacked multiple German defensive sectors and quickly isolated forces around Vitebsk and Bobruisk. The collapse of German positions led to the capture of Minsk in early July.",
+          "airRole":"Concentrated Soviet air armies supported the penetrations, attacked German reserves and communications, and helped screen the rapid advance. German aviation was outnumbered within the operation's reported force grouping.",
+          "change":"The German central front lost its cohesion and large formations were encircled near Minsk.",
+          "limits":"A conference-history comparison gives 5,300 Soviet versus 1,400 German aircraft for the opening force groups. These are rounded assigned order-of-battle estimates, not combat-ready stocks, sorties or aircraft lost; regional boundaries and inclusion of supporting reserves remain uncertain.",
+          "sourceIds":["italianDefenceBagration","usArmyBagration"]
+        },
+        {
+          "id":"pursuit", "title":"Encirclement and westward operational exploitation",
+          "start":"1944-07-05","end":"1944-08-02","location":"Western Belarus, Brest and approaches to eastern Poland",
+          "situation":"After Minsk's capture, Soviet forces pursued retreating German units westward while simultaneously reducing surviving pockets and pressing toward Brest and eastern Poland.",
+          "airRole":"Soviet bombers, assault aircraft and fighters extended support into retreat corridors, while the Luftwaffe attempted to cover movement and isolate advancing spearheads.",
+          "change":"Operation Bagration advanced from defensive-line penetration to deep pursuit and attrition of isolated German formations.",
+          "limits":"The 5,300 versus 1,400 figures apply to the original force comparison, not a dated strength snapshot at Brest. No daily VVS/Luftwaffe loss register has been audited for this westward pursuit stage.",
+          "sourceIds":["usArmyBagration","italianDefenceBagration"]
+        },
+        {
+          "id":"culmination", "title":"Front reaches new lines and the operation concludes",
+          "start":"1944-08-03","end":"1944-08-29","location":"Vistula and Baltic approaches, broad operation front",
+          "situation":"Soviet formations consolidated widely expanded positions toward East Prussia and the Vistula. Their advance was constrained by lengthening supply lines, continued German defence and shifting operational priorities.",
+          "airRole":"Tactical air commands supported the forward army groups over a much larger area, using new forward airfields as the front moved away from Belarus.",
+          "change":"The campaign culminated in a devastating German defeat, but a widened front did not mean that all Soviet aircraft of the original opening count operated at every final location.",
+          "limits":"29 August is the study's chosen operational end date, not the date on which German aircraft losses can be summed. Some histories define Bagration's geographical or temporal scope differently; the Atlas does not assert a reconciled whole-campaign loss total.",
+          "sourceIds":["usArmyBagration","italianDefenceBagration"]
+        }
+      ],
+      "facts": [
+        {"label":"Soviet aircraft, Bagration opening force estimate", "value":5300, "unit":"aircraft", "scope":"Victor Gavrilov historical conference table, approximate Soviet operation-opening assigned force including supporting air armies; NOT serviceable inventory or losses; not all Soviet fronts", "sourceId":"italianDefenceBagration", "date":"1944-06-23", "type":"secondary-order-of-battle-estimate"},
+        {"label":"German aircraft, Bagration opening force estimate", "value":1400, "unit":"aircraft", "scope":"Same Victor Gavrilov comparison table, German forces in Bagration operation-opening grouping; NOT all Luftwaffe aircraft in the East or operation losses", "sourceId":"italianDefenceBagration", "date":"1944-06-23", "type":"secondary-order-of-battle-estimate"}
+      ],
       "moments": [
         {
-          "date": "1944-06-22",
-          "title": "Soviet offensive opens",
-          "place": "Belarus",
-          "lat": 53.9,
-          "lng": 27.57
+          "date":"1944-06-23","title":"Main Soviet attack begins against Army Group Centre",
+          "place":"Belarus, operation-wide schematic location", "lat":53.9,"lng":27.57,
+          "summary":"Four Soviet fronts opened the large-scale simultaneous offensive after reconnaissance/probing actions on 22 June. The reported opening aircraft grouping was approximately 5,300 Soviet and 1,400 German machines, figures for assigned forces rather than daily sorties.",
+          "units":"Soviet 1st Baltic and 1st, 2nd, 3rd Belorussian Fronts with supporting air armies against German Army Group Centre and Luftwaffe; table reflects broad force groupings.",
+          "outcome":"Breakthroughs quickly threatened both German flanks and the operational rear.",
+          "sourceIds":["usArmyBagration","italianDefenceBagration"],"confidence":"US Army CGSC study; Italian Defence-hosted Victor Gavrilov conference force-table, estimates not counts of losses"
+        },
+        {
+          "date":"1944-07-03","title":"Minsk captured and encirclement of German central forces deepens",
+          "place":"Minsk, Belarus", "lat":53.9,"lng":27.57,
+          "summary":"Soviet forces took Minsk and surrounded important retreating German elements after breaking through multiple front sectors. Aviation supported the converging advances and interdiction of withdrawal routes.",
+          "units":"Soviet operating fronts and tactical aviation; German Army Group Centre units and air cover. No Minsk-day verified aircraft losses are asserted.",
+          "outcome":"Army Group Centre sustained a catastrophic operational defeat and the offensive shifted to exploitation.",
+          "sourceIds":["usArmyBagration","italianDefenceBagration"],"confidence":"Official US military operational study and historical conference account"
+        },
+        {
+          "date":"1944-07-28","title":"Brest captured during the drive toward Poland",
+          "place":"Brest, western Belarus", "lat":52.1,"lng":23.7,
+          "summary":"The Soviet advance reached and captured Brest as German forces retreated toward the eastern Polish frontier. Forward movement stretched the operating radius and basing needs of the supporting air armies.",
+          "units":"Soviet advancing forces and supporting VVS air armies; German retreating formations and Luftwaffe; no Brest-specific strength or air-loss return imported.",
+          "outcome":"The operation moved beyond the original Belarusian salient toward new defensive lines.",
+          "sourceIds":["usArmyBagration"],"confidence":"US Army deep-operations reconstruction; regional event and air-support interpretation"
+        },
+        {
+          "date":"1944-08-29","title":"Bagration campaign concludes on a transformed eastern front",
+          "place":"Belarus–Poland–Baltic approaches, regional", "lat":53.6,"lng":25.1,
+          "summary":"By the US Army study's operational end date, Soviet forces had driven far beyond their starting positions and German Army Group Centre was shattered. Air units were operating on an expanded and changing geography.",
+          "units":"Soviet offensive fronts and supporting tactical aviation; not all original opening force-table aircraft remained at the same bases or strengths.",
+          "outcome":"The strategic Eastern Front shifted far west, with Luftwaffe and German ground forces under sustained pressure.",
+          "sourceIds":["usArmyBagration","italianDefenceBagration"],"confidence":"Periodization follows US military study and scholarly conference account; end date does not imply same-day battle"
         }
       ]
     },
@@ -2098,24 +2484,79 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       },
       "participants": [
         "Soviet VVS",
-        "Luftwaffe",
-        "RAF",
-        "USAAF"
+        "Luftwaffe"
       ],
       "objective": "Soviet offensive air operations supported the capture of Berlin as German fighter and fuel resources diminished.",
       "turningPoint": "The final stage of the German air-war is poorly represented by a single comparable strength or loss figure.",
       "consequence": "European war ended 8–9 May 1945. The site does not create postwar May 1945 force snapshots.",
       "sources": [
-        "vvs"
+        "ospreyBerlin1945", "usafBerlinSixteenth", "sovietBerlinAirReport"
       ],
-      "facts": [],
+      "chapters": [
+        {
+          "id":"oder", "title":"Oder crossings and the Seelow Heights air assault",
+          "start":"1945-04-16","end":"1945-04-20","location":"Oder front, Seelow Heights and eastern Berlin approaches",
+          "situation":"Soviet armies attacked across the Oder-Neisse front toward Berlin. German defensive positions, including the Seelow Heights, resisted the initial assaults despite a vast Soviet advantage in material and air support.",
+          "airRole":"The Soviet 16th Air Army and other air armies supported the assault with fighter cover, interdiction, bombing and immediate ground support. German jet and conventional aircraft continued limited resistance.",
+          "change":"Soviet penetration of the outer defence opened the road for the encirclement of the capital.",
+          "limits":"Osprey's roughly 7,500 aircraft across THREE Soviet air armies is a broad assembled-force estimate, not a single-day count of planes over Seelow. A USAF historical monograph separately gives 2,738 for the 16th Air Army, but secondary references disagree on whether that specific 2,738 labels aircraft or experienced crews; it is withheld from numeric facts pending original Soviet return reconciliation.",
+          "sourceIds":["ospreyBerlin1945","usafBerlinSixteenth","ericksonBerlinBibliography","sovietBerlinAirReport"]
+        },
+        {
+          "id":"encirclement", "title":"Encircling Berlin and fighting into the city",
+          "start":"1945-04-21","end":"1945-04-30","location":"Berlin metropolitan area and surrounding approaches",
+          "situation":"Soviet armies reached the urban outskirts and completed the encirclement as German resistance withdrew into Berlin and pockets outside the city.",
+          "airRole":"Air-ground coordination and target identification became particularly difficult in close urban combat; Soviet air-control arrangements directed support while German aircraft still undertook occasional missions.",
+          "change":"The air effort changed from supporting a broad field advance to highly localized support of encircling columns and fighting inside the city.",
+          "limits":"The May 1945 original 16th Air Army report concerns control and direction of aircraft: its archival presence does not by itself audit aircraft totals or validate every sortie described in later accounts. USAAF and RAF strategic operations elsewhere are not part of this Soviet campaign figure.",
+          "sourceIds":["sovietBerlinAirReport","ospreyBerlin1945"]
+        },
+        {
+          "id":"surrender", "title":"Berlin's surrender and the end of the European war",
+          "start":"1945-05-01","end":"1945-05-08","location":"Berlin and wider European theatre",
+          "situation":"The Berlin garrison capitulated on 2 May. The broader European war continued for several days as Germany's general surrender was signed and took effect.",
+          "airRole":"The Berlin-specific Soviet air-support mission ended as local fighting ceased. The Atlas does not assign an imaginary 8 May aircraft inventory to the already completed city battle.",
+          "change":"The final operational objective was achieved and the air conflict in Europe ended with the war.",
+          "limits":"A Berlin city surrender on 2 May and Europe-wide hostilities ending 8–9 May describe DIFFERENT events and geographic boundaries. Neither date provides a complete Soviet/German aircraft-loss total for the Berlin operation.",
+          "sourceIds":["ospreyBerlin1945","sovietBerlinAirReport"]
+        }
+      ],
+      "facts": [
+        {"label":"Soviet aircraft assembled for Berlin (rounded)", "value":7500, "unit":"aircraft", "scope":"Osprey historian William E. Hiestand secondary operational estimate across THREE Soviet VVS air armies assembled for Berlin assault; not 16th Air Army alone, not aircraft airborne on 16 April and not combat losses", "sourceId":"ospreyBerlin1945", "date":"1945-04-16", "type":"approximate-secondary-assembled-force-estimate"}
+      ],
       "moments": [
         {
           "date": "1945-04-16",
-          "title": "Berlin offensive begins",
-          "place": "Berlin sector",
-          "lat": 52.52,
-          "lng": 13.41
+          "title": "Soviet offensive opens from the Oder toward Berlin",
+          "place": "Seelow Heights and Oder approaches", "lat":52.54,"lng":14.38,
+          "summary":"Soviet armies opened their final offensive toward Berlin. Osprey's secondary historical synthesis estimates roughly 7,500 Soviet aircraft assembled across three air armies; these were not all overhead simultaneously.",
+          "units":"Soviet VVS air armies supporting multiple attacking fronts versus Luftwaffe and ground defenders; source estimate counts force assembly, not 16 April sorties or losses.",
+          "outcome":"Heavy resistance initially delayed the assault, but the strategic Soviet attack ultimately broke through.",
+          "sourceIds":["ospreyBerlin1945","usafBerlinSixteenth"],"confidence":"Publisher's secondary book synthesis for force-scale estimate; separate USAF report disputed on 16th Air Army denominator"
+        },
+        {
+          "date":"1945-04-25","title":"Soviet formations close the encirclement around Berlin",
+          "place":"Berlin encirclement region", "lat":52.52,"lng":13.41,
+          "summary":"Soviet advances linked around the capital, separating its defenders from wider German formations. Air support had to adapt to concentrated urban combat and complex control of friendly ground movements.",
+          "units":"Soviet ground formations, 16th and other supporting air armies; Luftwaffe tactical resistance. The map point is symbolic for a broad closing ring.",
+          "outcome":"The capital was surrounded and the remaining battle became an urban siege.",
+          "sourceIds":["ospreyBerlin1945","sovietBerlinAirReport"],"confidence":"Historian's operational narrative and primary Soviet 16th Air Army air-control report indexed after the battle"
+        },
+        {
+          "date":"1945-05-02","title":"Berlin garrison surrenders",
+          "place":"Berlin", "lat":52.52,"lng":13.41,
+          "summary":"German organized resistance in the city ended following the Soviet assault. This was the end of the local Berlin campaign, not yet the end of every air operation or battle in Europe.",
+          "units":"Soviet assault armies and their tactical air-support commands; German Berlin defenders. No Berlin-specific aircraft-loss return provided.",
+          "outcome":"Berlin was captured; German military collapse and final European surrender followed.",
+          "sourceIds":["ospreyBerlin1945","sovietBerlinAirReport"],"confidence":"Established urban-campaign surrender date, separate from Europe-wide 8–9 May"
+        },
+        {
+          "date":"1945-05-08","title":"German general surrender ends the war in Europe",
+          "place":"Berlin, Europe-wide milestone", "lat":52.52,"lng":13.41,
+          "summary":"Germany's general surrender closed the European war. The Berlin garrison had already surrendered on 2 May; the two events are intentionally separate in this timeline.",
+          "units":"Europe-wide belligerents; this political-military endpoint does not imply an air engagement over Berlin on 8 May.",
+          "outcome":"Hostilities in Europe ended, commemorated on 8 or 9 May according to timezone and national convention.",
+          "sourceIds":["ospreyBerlin1945"],"confidence":"General historical chronology, not a Soviet aircraft inventory or operation-specific outcome statistic"
         }
       ]
     }
