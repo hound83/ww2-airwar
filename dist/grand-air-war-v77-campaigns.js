@@ -262,6 +262,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1940-2/",
       "class": "museum-timeline"
     },
+    "rafNorwayDailyCampaignOriginal": {"title":"RAF Air Historical Branch, The Campaign in Norway April–June 1940, pp. 89, 97–99; citing Nos. 263 and 46 Squadron ORBs","url":"https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/","class":"official-RAF-AHB-narrative-based-on-original-squadron-operations-record-books"},
+    "maafMediterranean1945": {"title":"HQ Mediterranean Allied Air Forces, Air Power in the Mediterranean (18 February 1945), Major Campaigns table p. 13","url":"https://znaci.org/00002/315.pdf","class":"primary-contemporaneous-HQ-MAAF-historical-statistical-summary; Sicily 10 July to 17 August 1943; Allied claims not verified Axis losses"},
     "rafNorwayAHB": {
       "title": "RAF Air Historical Branch: Campaign in Norway, April–June 1940 (original wartime narrative)",
       "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/",
@@ -726,7 +728,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Air transport, airfield capture and maritime reconnaissance influenced the speed of German reinforcement.",
       "consequence": "Air control depended on long distances and limited bases; original operational returns are a research gap.",
       "sources": [
-        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft"
+        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft", "rafNorwayDailyCampaignOriginal"
       ],
       "chapters": [
         {
@@ -758,6 +760,12 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"label":"No. 263 Squadron sorties in Narvik assault support, 28 May","value":42,"unit":"daily operational sorties","scope":"28 May 1940, 263 Squadron Gladiators, Narvik sector. One squadron, one day, NOT number of distinct aircraft.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-05-28","type":"recorded-primary-unit-daily-sorties"},
+        {"label":"No. 46 Squadron sorties in Narvik assault support, 28 May","value":53,"unit":"daily operational sorties","scope":"28 May 1940, 46 Squadron Hurricanes, Narvik sector. Distinct same-day squadron return; NOT aircraft inventory.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-05-28","type":"recorded-primary-unit-daily-sorties"},
+        {"label":"Combined Nos. 263 and 46 Squadrons sorties, 2 June","value":75,"unit":"daily combined operational sorties","scope":"2 June 1940, Nos. 263 and 46 Squadrons TOGETHER in Narvik-Harstad sector; no reliable squadron breakdown of this number, not aircraft or losses.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-06-02","type":"recorded-primary-joint-unit-daily-sorties"},
+        {"label":"Combined Nos. 263 and 46 Squadrons combat actions, 2 June","value":24,"unit":"daily combined combat actions","scope":"2 June 1940, both squadrons TOGETHER; engagements, NOT confirmed German aircraft losses; distinct measure from sorties.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-06-02","type":"recorded-primary-joint-unit-daily-combats"},
+        {"label":"No. 263 Squadron northern Norway operational sorties","value":329,"unit":"sorties across 12 operating days","scope":"Northern Norway 21 May–8 June 1940; No. 263 Squadron ONLY, 12 operating days. This is not April Lesjaskog's 49 sorties, not a single-day count.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-06-08","period":"21 May–8 June 1940, 12 operational days; not daily","type":"recorded-primary-unit-period-sorties"},
+        {"label":"No. 46 Squadron northern Norway operational sorties","value":249,"unit":"sorties across 12 operating days","scope":"Northern Norway 21 May–8 June 1940; No. 46 Squadron ONLY, 12 operating days; not 249 aircraft or all RAF Norway operations.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-06-08","period":"21 May–8 June 1940, 12 operational days; not daily","type":"recorded-primary-unit-period-sorties"},
         {"label": "RAF fighters embarked on HMS Glorious during evacuation", "value": 17, "unit": "aircraft · 10 Gladiators and 7 Hurricanes", "scope": "8 June 1940, surviving aircraft of Nos. 263 and 46 Squadrons recovered from Norway; later lost with carrier, not a campaign-wide RAF loss total", "sourceId": "raf1940chron", "date": "1940-06-08", "type": "recorded"},
         {"label": "No. 263 Squadron flying activity over Lesjaskog", "value": 49, "unit": "sorties", "scope": "The initial approximately two-day Lesjaskog operations of RAF No. 263 Squadron, 24–26 April 1940; NOT whole RAF Norway sorties or 49 aircraft", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940, approximately two days of operations; reporting-period total, not a single-day count", "type": "recorded"},
         {"label": "No. 263 Squadron enemy aircraft engaged", "value": 37, "unit": "separate enemy aircraft engagements", "scope": "No. 263 Squadron Lesjaskog flying period, 24–26 April 1940, as summarized by RAF Museum; encounters, not enemy airframe losses", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940, RAF No. 263 Squadron's initial Lesjaskog operations", "type": "reported-engagements"},
@@ -795,6 +803,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds": ["raf1940chron", "rafNorwayAHB"],
           "confidence": "RAF Museum dated unit chronology; RAF campaign narrative"
         },
+        {"date":"1940-05-28","title":"Narvik assault: 42 Gladiator and 53 Hurricane sorties","place":"Narvik, northern Norway","lat":68.44,"lng":17.43,"summary":"The RAF Air Historical Branch's campaign narrative cites the original squadron Operations Record Books: No. 263 Squadron flew 42 operational sorties and No. 46 Squadron 53 on 28 May while the Allied assault took Narvik. These are flights, not aircraft inventories or claims.","units":"RAF No. 263 Squadron: 42 sorties; No. 46 Squadron: 53 sorties, separately counted on 28 May.","outcome":"Allied ground forces captured Narvik, supported by fighter patrols. These flight numbers alone establish no German aircraft-loss figure.","sourceIds":["rafNorwayDailyCampaignOriginal"],"confidence":"Official RAF AHB narrative drawing on original squadron ORBs; daily unit-specific sorties, geographic marker indicative"},
+        {"date":"1940-06-02","title":"Narvik defence: 75 fighter sorties and 24 combat actions","place":"Narvik and Harstad anchorages, Norway","lat":68.8,"lng":17.2,"summary":"Official RAF campaign narrative reports 75 sorties and 24 combat actions on 2 June by the TWO squadrons combined. The source does not divide this total by squadron. Combat actions are not confirmed German losses.","units":"RAF Nos. 263 and 46 Squadrons COMBINED, Gladiators and Hurricanes; attacking Luftwaffe forces.","outcome":"Continued RAF fighter defence helped blunt German attacks on the naval anchorages; the RAF study warns that claims are not confirmed opponent loss counts.","sourceIds":["rafNorwayDailyCampaignOriginal"],"confidence":"Official RAF AHB operational narrative, combined day-level total"},
         {
           "date": "1940-06-08", "title": "Surviving RAF fighters embark; HMS Glorious is sunk",
           "place": "Bardufoss and Norwegian Sea", "lat": 69.0, "lng": 17.4,
@@ -1654,7 +1664,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Poor weather and navigation led to severe failures of the night glider and parachute landings.",
       "consequence": "Mediterranean airpower supported the campaign and then operations on mainland Italy. Theater-wide MTO group counts are separate context.",
       "sources": [
-        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction"
+        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction", "maafMediterranean1945"
       ],
       "chapters": [
         {
@@ -1686,6 +1696,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"label":"HQ MAAF Sicily-campaign Allied operational flights","value":25070,"unit":"effective operational sorties","scope":"HQ Mediterranean Allied Air Forces original February 1945 campaign table; Sicily 10 July–17 August, combined Allied operation. NOT separate from daily Western naval-cover sorties; do not sum with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-sorties"},
+        {"label":"HQ MAAF Sicily-campaign Allied aircraft losses","value":177,"unit":"Allied aircraft losses","scope":"HQ MAAF historical campaign table, Sicily 10 July–17 August 1943; Allied loss total in HQ reporting classification, NOT 177 enemy aircraft lost, not daily.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-losses"},
+        {"label":"HQ MAAF Sicily-campaign aerial victory claims","value":293,"unit":"claimed enemy aircraft","scope":"HQ MAAF campaign historical table, 10 July–17 August 1943. Allied claims of enemy aircraft; NOT separately verified German/Italian actual loss records.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"claims-not-verified-axis-losses"},
+        {"label":"HQ MAAF Sicily-campaign bomb tonnage","value":16243,"unit":"tons of bombs","scope":"HQ MAAF campaign historical table, Sicily 10 July–17 August 1943. Bomb tonnage is a different measure from sorties/aircraft and must not be summed with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-bomb-tonnage"},
         {
           "label": "British gliders released into sea",
           "value": 69,
