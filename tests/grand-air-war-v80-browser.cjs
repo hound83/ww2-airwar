@@ -81,6 +81,30 @@ const check=async()=>{
    assert.deepEqual(overview.failures,[],"campaign guide incomplete or broken for: "+overview.failures.join(", "));
    assert.equal(overview.reviewed,20);
    await page.locator("#campaign-search").fill("");
+   // Source-level user journey: Narvik area daily table + original 263 Squadron
+   // diary transcription, distinct zeros/missing values and contradictory counts.
+   await page.evaluate(()=>window.GrandAirWarV77.choose("norway",false));
+   assert.equal(await page.locator("#daily-ledger").isVisible(),true,"Norway daily return section is hidden");
+   assert.equal(await page.locator("#daily-ledger [data-ledger-date]").count(),18,"daily return table must expose all 18 diary dates");
+   assert.match(await page.locator("#daily-ledger").innerText(),/13 \/ 16/);
+   await page.locator('#daily-ledger [data-ledger-date="1940-05-25"]').click();
+   assert.match(await page.locator("#daily-day-detail").innerText(),/SOURCE CONFLICT|Source discrepancy/);
+   assert.match(await page.locator("#daily-day-detail").innerText(),/OVER 40/);
+   assert.equal(await page.locator('#daily-ledger [data-ledger-date="1940-05-25"]').getAttribute("aria-pressed"),"true");
+   await page.locator('#daily-ledger [data-ledger-date="1940-06-02"]').click();
+   assert.match(await page.locator("#daily-day-detail").innerText(),/55 sorties/);
+   await page.locator('#daily-ledger [data-ledger-date="1940-06-04"]').click();
+   assert.match(await page.locator("#daily-day-detail").innerText(),/no flying/i);
+   assert.match(await page.locator('#daily-ledger [data-ledger-date="1940-06-04"]').locator('..').locator('..').innerText(),/Not reported/i);
+   const sources=await page.locator('#daily-ledger a[target="_blank"]').evaluateAll(links=>links.map(a=>a.href));
+   assert.ok(sources.some(link=>link.includes('air271547.pdf'))&&sources.some(link=>link.includes('raf.mod.uk')),"daily original-source links inaccessible");
+   const fullWidth=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+   assert.ok(fullWidth<=2,"daily operations table causes page-wide overflow: "+fullWidth);
+   await page.locator('#daily-ledger').screenshot({path:path.join(root,'v84-qa-narvik-daily-'+viewport.width+'.png')});
+   await page.evaluate(()=>window.GrandAirWarV77.choose("malta",false));
+   assert.equal(await page.locator("#daily-ledger").isVisible(),false,"Norway daily data leaked into Malta");
+   await page.evaluate(()=>window.GrandAirWarV77.choose("norway",false));
+   assert.match(await page.locator("#daily-day-detail").innerText(),/Choose a date/i,"stale unit-date selection survived switching campaigns");
    for(const [term,id] of [["Cobra","normandy"],["Peewit","britain"],["HMS Eagle","malta"],["Black Thursday","schweinfurt"],["Pitomnik","stalingrad"],["Prokhorovka","kursk"],["Cassino","italy"],["Vitebsk","bagration"],["Seelow","berlin"]]){
     await page.locator("#campaign-search").fill(term);
     assert.equal(await page.locator("#campaign-list [data-campaign]").count(),1,term+" should resolve to one campaign");

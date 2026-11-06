@@ -17,7 +17,7 @@ const sourceLink=(id,label)=>D.sources[id]?'<a target="_blank" rel="noopener nor
 const lossRows=[...A.monthlyReturns,...B.monthlyReturns].map(x=>({...x,period:(()=>{const z=Legacy.at(x.i);return z.y+"-"+String(z.m+1).padStart(2,"0");})()})).sort((a,b)=>a.i-b.i||a.theater.localeCompare(b.theater));
 const sourceIndex={...A.sourceIndex,...B.sourceIndex};
 const groupRows=G.rows.map(r=>Object.fromEntries(G.columns.map((c,i)=>[c,r[i]])));
-const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",selectedChapter:null,lastDossierId:null,selectedMoment:null,map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
+const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",selectedChapter:null,lastDossierId:null,selectedMoment:null,selectedDailyDate:null,map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
 const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Eastern Front",med:"Mediterranean / Italy",north:"Northern Europe"};
 // Spain is grouped with the West for filtering, but it is not the WWII Western Front.
 const campaignRegion=c=>c.id==="spain"?"Spanish Civil War / Spain":themes[c.theater];
@@ -46,6 +46,7 @@ function pickCampaign(id,fly=true){
  state.selected=id;
  state.selectedChapter=null;
  state.selectedMoment=null;
+ if(changed)state.selectedDailyDate=null;
  if(!active(c))state.month=c.start;
  if(state.theater!=="all"&&state.theater!==c.theater)state.theater="all";
  update();
@@ -289,6 +290,47 @@ function renderCampaignList(){
  $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase((c.chapters||[]).length,"phase","phases")+' · '+countPhrase(c.moments.filter(e=>e.summary).length,"researched event","researched events")+' · '+countPhrase(c.facts.length,"source-scoped figure","source-scoped figures")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
+// These are separate, cited source populations, NOT a synthetic combined
+// RAF squadron total. In particular, null is an unreported value, unlike zero.
+function dailyValue(n,qualifier,unreported){
+ if(n===null||n===undefined)return '<span class="daily-missing">'+(unreported?'Outside Table 2':'Not reported')+'</span>';
+ const mark=qualifier==='approximate'?'≈ ':qualifier==='lower-bound-exclusive'?'&gt; ':'';
+ return '<strong>'+mark+fmt(n)+'</strong>'+(n===0?'<small class="daily-zero">reported zero</small>':'');
+}
+function renderDailyLedger(c){
+ const host=$("daily-ledger"),ledger=c?.dailyOperations;
+ host.hidden=!ledger;
+ if(!ledger){host.innerHTML='';return;}
+ const rows=ledger.rows,tableDays=rows.filter(r=>r.tableStatus!=='outside-table');
+ const observed=tableDays.filter(r=>r.combats!==null&&r.ownLosses!==null).length;
+ const flagged=rows.filter(r=>r.conflict).length;
+ host.innerHTML='<div class="guide-heading evidence-step"><span class="eyebrow">4 · ORIGINAL DAILY OPERATIONAL RECORDS</span><small>'+countPhrase(tableDays.length,'AHB table date','AHB table dates')+' · '+countPhrase(rows.length,'unit-record day','unit-record days')+'</small></div>'+
+  '<h3>'+esc(ledger.title)+'</h3><p class="daily-context">'+esc(ledger.scope)+'</p>'+
+  '<div class="daily-coverage"><span><b>'+observed+' / '+tableDays.length+'</b> days with all three AHB values</span><span><b>'+flagged+'</b> conflicting source days</span><span><b>0 ≠ missing</b> explicit zeroes retained</span></div>'+
+  '<div class="daily-table-scroll"><table class="daily-table"><caption>Primary RAF area table compared against the transcribed original No. 263 Squadron unit diary. Choose a date for detailed outcomes and source boundaries.</caption><thead><tr><th scope="col">Date</th><th scope="col">AHB sorties</th><th scope="col">AHB combats</th><th scope="col">AHB own losses</th><th scope="col">263 Sqn sorties</th></tr></thead><tbody>'+rows.map(r=>{
+   const selected=state.selectedDailyDate===r.date;
+   return '<tr class="'+(selected?'daily-selected ':'')+(r.conflict?'daily-conflict':'')+'"><th scope="row"><button type="button" class="daily-day" data-ledger-date="'+esc(r.date)+'" aria-pressed="'+selected+'">'+esc(r.date.slice(5))+(r.conflict?' <span title="Conflicting source counts">⚠</span>':'')+'</button></th><td data-label="AHB sorties">'+dailyValue(r.sorties,r.sortiesQualifier,r.tableStatus==='outside-table')+'</td><td data-label="AHB combats">'+dailyValue(r.combats,null,r.tableStatus==='outside-table')+'</td><td data-label="AHB own losses">'+dailyValue(r.ownLosses,null,r.tableStatus==='outside-table')+'</td><td data-label="263 Sqn sorties">'+dailyValue(r.unitSorties,r.unitQualifier,false)+'</td></tr>';
+  }).join('')+'</tbody></table></div>'+
+  '<article id="daily-day-detail" class="daily-day-detail" aria-live="polite"></article>'+
+  '<p class="daily-caution"><strong>Reporting boundary:</strong> '+esc(ledger.reconciliation)+'</p>'+
+  '<div class="dossier-links">'+sourceLink(ledger.tableSourceId,'RAF AHB original Table 2 · printed pp. 95–96')+' · '+sourceLink(ledger.unitSourceId,'No. 263 Squadron AIR 27/1547, Form 540 transcript · PDF pp. 59–73')+'</div>';
+ host.querySelectorAll('[data-ledger-date]').forEach(b=>b.addEventListener('click',()=>{
+  state.selectedDailyDate=b.dataset.ledgerDate;
+  host.querySelectorAll('[data-ledger-date]').forEach(button=>{
+   const pressed=button.dataset.ledgerDate===state.selectedDailyDate;
+   button.setAttribute('aria-pressed',String(pressed));
+   button.closest?.('tr')?.classList?.toggle('daily-selected',pressed);
+  });
+  renderDailyDetail(ledger);
+ }));
+ renderDailyDetail(ledger);
+}
+function renderDailyDetail(ledger){
+ const box=$("daily-day-detail"),r=ledger.rows.find(d=>d.date===state.selectedDailyDate);
+ if(!r){box.innerHTML='<p>Choose a date above to compare the area table, No. 263 Squadron’s own return, observed operations and the two sources.</p>';return;}
+ box.innerHTML='<span class="eyebrow">'+esc(r.date)+(r.conflict?' · SOURCE CONFLICT':' · TWO REPORTING SCOPES')+'</span><h4>Area operations and German attacks</h4><p>'+esc(r.enemy)+'</p><h4>No. 263 Squadron Form 540 · unit account</h4><p>'+esc(r.unitNote)+'</p><p class="daily-detail-limits">The AHB “own losses” column is RAF area reporting, not No. 263-only write-offs; a claimed German victory is not a confirmed German loss. '+(r.conflict?'<strong>Contradictory sortie figures have deliberately not been reconciled.</strong>':'Daily sortie and combat figures should be compared by source and scope, not simply added.')+'</p>'+
+  '<div class="dossier-links">'+sourceLink(ledger.tableSourceId,'AHB area table')+' · '+sourceLink(ledger.unitSourceId,'263 Squadron unit diary')+'</div>';
+}
 function renderMoments(){
  const c=D.campaigns.find(x=>x.id===state.selected&&matches(x));
  const all=(c?.moments||[]).map(e=>({...e,cid:c.id})).sort((a,b)=>a.date.localeCompare(b.date));
@@ -317,6 +359,7 @@ function renderMoments(){
   return '<button type="button" class="record '+(selected?'selected':'')+'" aria-current="'+selected+'" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-title="'+esc(e.title)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.place)+(e.summary?' · Detailed research':' · Date marker, not yet an air-operation dossier')+'</small></span><span class="date-tag">'+esc(e.date)+(e.date.slice(0,7)===state.month?' · MAP MONTH':'')+'</span></button>';
  }).join(""):'<div class="empty">No individual dated event has been researched for this phase. The source-backed phase narrative above does not imply there were no aircraft or operations.</div>';
  $("moment-list").querySelectorAll("[data-moment]").forEach(b=>b.addEventListener("click",()=>selectMoment(b.dataset.moment,b.dataset.date,Number(b.dataset.lat),Number(b.dataset.lng),b.dataset.title)));
+ renderDailyLedger(c);
  const chosen=scoped.find(e=>e.date+"|"+e.title===state.selectedMoment);
  $("moment-detail").hidden=!chosen;
  if(!chosen){$("moment-detail").innerHTML='';return;}
