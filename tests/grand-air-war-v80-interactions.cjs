@@ -81,6 +81,11 @@ for(const [query,expected] of [["Cobra","normandy"],["Peewit","britain"],["Glori
 element("campaign-search").dispatch("input","RAF");
 assert.ok(!app.visibleOnMap().some(c=>c.id==="barbarossa"),"short RAF search must not match the trailing letters in 'aircraft'");
 element("campaign-search").dispatch("input","");
+for(const typed of ["P","Po","Pol","Pola","Polan","Poland"])element("campaign-search").dispatch("input",typed);
+assert.equal(app.selected(),"poland","incremental title search should not retain a campaign incidentally mentioning Poland in its phase text");
+element("campaign-search").dispatch("input","Berlin");
+assert.equal(app.selected(),"berlin","full campaign title match must outrank broad historical context hits");
+element("campaign-search").dispatch("input","");
 for(const zoom of [3,4,5,6,7,8,9,10,12]){map.setZoom(zoom);inspectMap(20);if(zoom>=9)assert.equal(visibleMarkers().length,20,"high zoom must expose all 20 markers");}
 element("fit-map").dispatch("click");assert.ok(map.fitCount>=1,"Fit map control is broken");
 app.choose("poland",false);

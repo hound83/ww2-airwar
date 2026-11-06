@@ -440,7 +440,17 @@ function init(){
   state.play=setInterval(()=>{if(monthIdx(state.month)>=LMAX-LMIN){cancelPlay();return;}updateMonth(atIdx(monthIdx(state.month)+1));},750);
  });
  $("theater-select").addEventListener("change",e=>{state.theater=e.target.value;const next=matching().find(x=>x.id===state.selected)||matching().find(active)||matching()[0];if(state.selected!==next?.id){state.selectedChapter=null;state.selectedMoment=null;}state.selected=next?.id||null;update();});
- $("campaign-search").addEventListener("input",e=>{state.search=e.target.value;const next=matching().find(x=>x.id===state.selected)||matching().find(active)||matching()[0];if(state.selected!==next?.id){state.selectedChapter=null;state.selectedMoment=null;}state.selected=next?.id||null;update();});
+ $("campaign-search").addEventListener("input",e=>{
+  state.search=e.target.value;
+  const results=matching(),term=state.search.trim().toLowerCase();
+  // Incremental typing may first select a broadly matching active campaign;
+  // a full campaign-title match must outrank incidental mentions in another
+  // campaign's phase text (e.g. searching Poland must open Poland, not Bagration).
+  const titled=term?results.find(c=>c.name.toLowerCase()===term)||results.find(c=>c.name.toLowerCase().startsWith(term))||results.find(c=>c.name.toLowerCase().includes(term)):null;
+  const next=titled||results.find(x=>x.id===state.selected)||results.find(active)||results[0];
+  if(state.selected!==next?.id){state.selectedChapter=null;state.selectedMoment=null;}
+  state.selected=next?.id||null;update();
+ });
  $("all-campaigns").addEventListener("change",e=>{state.all=e.target.checked;update();});
  $("fit-map").addEventListener("click",()=>{if(!state.map||!window.L)return;const cs=visibleOnMap();if(cs.length)state.map.flyToBounds(window.L.latLngBounds(cs.map(c=>[c.focus.lat,c.focus.lng])).pad(.3),{maxZoom:6,duration:.6});});
  document.querySelectorAll('a[href="#research-library"],a[href="#loss-lab"],a[href="#german-war-lab"],a[href="#air-forces"]').forEach(a=>a.addEventListener("click",()=>{$("research-library").open=true;}));
