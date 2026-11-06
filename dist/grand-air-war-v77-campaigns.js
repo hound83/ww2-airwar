@@ -263,6 +263,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "class": "museum-timeline"
     },
     "rafNorwayDailyCampaignOriginal": {"title":"RAF Air Historical Branch, The Campaign in Norway April–June 1940, pp. 89, 97–99; citing Nos. 263 and 46 Squadron ORBs","url":"https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/","class":"official-RAF-AHB-narrative-based-on-original-squadron-operations-record-books"},
+    "maafMediterranean1945": {"title":"HQ Mediterranean Allied Air Forces, Air Power in the Mediterranean (18 February 1945), Major Campaigns table p. 13","url":"https://znaci.org/00002/315.pdf","class":"primary-contemporaneous-HQ-MAAF-historical-statistical-summary; Sicily 10 July to 17 August 1943; Allied claims not verified Axis losses"},
     "rafNorwayAHB": {
       "title": "RAF Air Historical Branch: Campaign in Norway, April–June 1940 (original wartime narrative)",
       "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/",
@@ -1663,7 +1664,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Poor weather and navigation led to severe failures of the night glider and parachute landings.",
       "consequence": "Mediterranean airpower supported the campaign and then operations on mainland Italy. Theater-wide MTO group counts are separate context.",
       "sources": [
-        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction"
+        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction", "maafMediterranean1945"
       ],
       "chapters": [
         {
@@ -1695,6 +1696,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"label":"HQ MAAF Sicily-campaign Allied operational flights","value":25070,"unit":"effective operational sorties","scope":"HQ Mediterranean Allied Air Forces original February 1945 campaign table; Sicily 10 July–17 August, combined Allied operation. NOT separate from daily Western naval-cover sorties; do not sum with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-sorties"},
+        {"label":"HQ MAAF Sicily-campaign Allied aircraft losses","value":177,"unit":"Allied aircraft losses","scope":"HQ MAAF historical campaign table, Sicily 10 July–17 August 1943; Allied loss total in HQ reporting classification, NOT 177 enemy aircraft lost, not daily.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-losses"},
+        {"label":"HQ MAAF Sicily-campaign aerial victory claims","value":293,"unit":"claimed enemy aircraft","scope":"HQ MAAF campaign historical table, 10 July–17 August 1943. Allied claims of enemy aircraft; NOT separately verified German/Italian actual loss records.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"claims-not-verified-axis-losses"},
+        {"label":"HQ MAAF Sicily-campaign bomb tonnage","value":16243,"unit":"tons of bombs","scope":"HQ MAAF campaign historical table, Sicily 10 July–17 August 1943. Bomb tonnage is a different measure from sorties/aircraft and must not be summed with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-bomb-tonnage"},
         {
           "label": "British gliders released into sea",
           "value": 69,
