@@ -60,6 +60,7 @@ for(const c of D.campaigns){
   assert.ok(f.unit&&f.label&&f.scope&&f.date&&f.type,c.id+" missing comparison boundaries");
   assert.match(D.sources[f.sourceId]?.url||"",/^https?:\/\//,c.id+" fact without an external source");
   assert.ok(f.date.slice(0,7)>=c.start&&f.date.slice(0,7)<=c.end,c.id+" out-of-period fact: "+f.date);
+  if(f.period)assert.ok(f.period.length>=25,c.id+" requires an explicit meaningful reporting period");
  }
 }
 assert.equal(new Set(allEvents.map(e=>e.campaign+e.date+e.title)).size,allEvents.length,"duplicated dated event");
@@ -129,6 +130,7 @@ const stalingrad=D.campaigns.find(c=>c.id==="stalingrad");
 assert.deepEqual([...stalingrad.facts.map(f=>f.value)],[300,500,117.6],"Stalingrad target and actual seven-week delivery must stay distinct");
 assert.equal(stalingrad.facts.filter(f=>f.unit==="tons/day").length,3);
 assert.ok(stalingrad.facts[0].scope.includes("not transported")&&stalingrad.facts[2].scope.includes("seven weeks"));
+assert.ok(stalingrad.facts[2].period.includes("not a single-day")&&stalingrad.facts[2].date==="1942-11","multiweek airlift mean must not be labeled a fabricated Wednesday");
 assert.ok(stalingrad.chapters.at(-1).limits.includes("different date ranges"),"airlift secondary disagreement must be disclosed");
 const reich=D.campaigns.find(c=>c.id==="reichdefense");
 assert.deepEqual([...reich.facts.map(f=>f.value)],[662,840]);

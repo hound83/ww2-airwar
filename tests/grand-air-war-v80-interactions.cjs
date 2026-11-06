@@ -130,6 +130,7 @@ for(const [id,chapter,date,number] of [
 ]){
  app.choose(id,false);
  assert.ok(element("dossier-facts").innerHTML.includes(number),id+" source-specific numerical observation not displayed");
+ if(id==="stalingrad")assert.ok(element("dossier-facts").innerHTML.includes("not a single-day reading"),"multiweek airlift average rendered as a dated daily observation");
  assert.equal(app.campaigns.find(c=>c.id===id).chapters.length,3,id+" stage count");
  app.chooseChapter(chapter);
  assert.ok(element("moment-list").innerHTML.includes(date),id+" dated event missing in selected phase");

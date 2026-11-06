@@ -1458,7 +1458,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "facts": [
         {"label":"Sixth Army supply need, estimated minimum", "value":300, "unit":"tons/day", "scope":"Retrospective minimum daily supply requirement for encircled Sixth Army, late 1942; target/need, not transported cargo", "sourceId":"usafStalingradAirlift", "date":"1942-11-23", "type":"source-estimate"},
         {"label":"Air-supply planning rate on suitable flying days", "value":500, "unit":"tons/day", "scope":"German airlift planning requirement/target to compensate for weather-grounded days after encirclement; not an actual delivered average", "sourceId":"usArmyStalingradAirlift", "date":"1942-11-23", "type":"requirement"},
-        {"label":"Actual cargo delivered, seven-week average", "value":117.6, "unit":"tons/day", "scope":"Air & Space Forces secondary reconstruction of German supplies reaching the pocket averaged across seven weeks of the Stalingrad airlift; different period from other published averages", "sourceId":"usafStalingradAirlift", "date":"1943-01-15", "type":"secondary-average"}
+        {"label":"Actual cargo delivered, seven-week average", "value":117.6, "unit":"tons/day", "scope":"Air & Space Forces secondary reconstruction of German supplies reaching the pocket averaged across seven weeks of the Stalingrad airlift; different period from other published averages", "sourceId":"usafStalingradAirlift", "date":"1942-11", "period":"Seven-week airlift reporting window, late 1942–early 1943 (not a single-day reading)", "type":"secondary-average"}
       ],
       "moments": [
         {
