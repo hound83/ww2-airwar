@@ -2,6 +2,15 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "rafBoBLogistics": {"title":"RAF Air Power Review 3(4), Air Commodore Peter Dye, Logistics and the Battle of Britain, pp.24–27, published 2000","url":"https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss4-2-pdf/","class":"RAF-published-retrospective-analysis-reproducing-German-quartermaster-and-Fighter-Command-order-of-battle-returns; original-series-scans-not-directly-retranscribed"},
+    "navyGermanNormandy": {"title":"U.S. Navy NHHC, The GAF and the Invasion of Normandy; based on wartime German sources and Luftflotte 3 returns","url":"https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/gaf-invasion-normandy.html","class":"official-US-Navy-digitized-German-source-postwar-study; cannot treat German shootdown claims as verified Allied losses"},
+    "eisenhowerOverlord": {"title":"Gen. Dwight D. Eisenhower, Report to the Combined Chiefs of Staff on Operations in Europe, official reprint, p.20","url":"https://history.army.mil/portals/143/Images/Publications/catalog/70-58.pdf","class":"primary-Allied-Supreme-Commander-post-operation-report; strategic-vs-tactical-sortie-subsets"},
+    "eucomDday": {"title":"US European Command, Operation Overlord: D-Day figures for Allied aircraft supporting the landings","url":"https://www.eucom.mil/organization/history-of-useucom/operation-overlord-d-day","class":"official-US-military-retrospective-strength-total; aircraft involved-not-serviceable-inventory"},
+    "murrayNormandy": {"title":"Williamson Murray, Strategy for Defeat: The Luftwaffe 1933–1945, Air University Press, Normandy attrition chapter","url":"https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0012_MURRAY_STRATEGY_FOR_DEFEAT.pdf","class":"USAF-official-historical-secondary-analysis-based-on-Luftflotte-3-German-loss-returns"},
+    "royalPioneersDday": {"title":"Royal Pioneer Corps Association, October 2014 newsletter, D-Day historical aircraft-loss summary","url":"https://www.royalpioneercorps.co.uk/rpc/newsletters/2014_Oct_Newsletter.pdf","class":"veterans-association-secondary-D-Day-statistical-summary; 127-allied-aircraft-lost-all-causes"},
+    "usafBarbarossaCase": {"title":"USAF Office of Air Force History, Case Studies in the Achievement of Air Superiority: Barbarossa June 1941","url":"https://media.defense.gov/2010/Oct/12/2001330116/-1/-1/0/AFD-101012-038.pdf","class":"official-USAF-retrospective-operational-study; includes-German-intelligence-estimate-not-verified-Soviet-inventory"},
+    "barbarossaLossStudy": {"title":"Nigel Askey, Operation Barbarossa: 22 June–5 August 1941, citing Germany and Second World War Vol. IV and Soviet material","url":"https://www.operationbarbarossa.net/the-period-22nd-june-to-5th-august-1941/","class":"specialist-secondary-reconstruction; German-claimed-Soviet-losses-not-confirmed-by-Soviet-aircraft-registers"},
+    "usafSicilySecondary": {"title":"USAF Air and Space Power Journal Chronicles, Renner, Allied Airpower during the Italian Campaign","url":"https://www.airuniversity.af.edu/Portals/10/ASPJ/journals/Chronicles/renner.pdf","class":"USAF-published-secondary-operational-analysis; Axis sortie-rate-range-early-landing-days"},
     "raf1940": {
       "title": "RAF Museum Battle of Britain information",
       "url": "https://www.rafmuseum.org.uk/blog/citizen-airman-2-ray-holmes/",
@@ -984,7 +993,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "raf1940",
         "rafSealion",
         "rafBritainPhases",
-        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz"
+        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz", "rafBoBLogistics"
       ],
       "chapters": [
         {
@@ -1034,6 +1043,16 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"raf-fc-strength-11aug","side":"Allies","measure":"strength","label":"RAF Fighter Command single-engine fighters on strength, 11 August","value":1095,"unit":"Hurricanes and Spitfires on squadron strength","scope":"11 August 1940; Fighter Command only; not all RAF flying units, not a measure of aircraft ready to take off","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-retrospective-on-strength"},
+        {"id":"raf-fc-serviceable-11aug","side":"Allies","measure":"serviceable","label":"RAF Fighter Command serviceable single-engine fighters, 11 August","value":990,"unit":"serviceable Hurricanes and Spitfires","scope":"11 August 1940; Fighter Command order-of-battle serviceability column; does not equal aircraft airborne or pilot availability; other historians use narrower immediately-ready definitions","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-retrospective-serviceable"},
+        {"id":"raf-hurricanes-serviceable-11aug","side":"Allies","measure":"serviceable-subset","label":"RAF serviceable Hurricanes within 990, 11 August","value":656,"unit":"serviceable Hurricanes","scope":"Fighter Command 11 August 1940; SUBSET of 990 total serviceable Hurricanes and Spitfires; do not add to total","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-subset"},
+        {"id":"raf-spitfires-serviceable-11aug","side":"Allies","measure":"serviceable-subset","label":"RAF serviceable Spitfires within 990, 11 August","value":334,"unit":"serviceable Spitfires","scope":"Fighter Command 11 August 1940; SUBSET of 990; 656 Hurricanes plus 334 Spitfires equals 990; do not add them again to 990","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-subset"},
+        {"id":"lw-strength-10aug","side":"Axis","measure":"strength","label":"Luftwaffe participating air formations on strength, 10 August","value":3358,"unit":"aircraft on strength, all types","scope":"10 August 1940 German force-table selected for invasion air battle; bombers, fighters, reconnaissance, coastal and other types; NOT comparable to RAF Fighter Command fighter-only 1,095","sourceId":"rafBoBLogistics","date":"1940-08-10","type":"recorded-retrospective-on-strength"},
+        {"id":"lw-serviceable-10aug","side":"Axis","measure":"serviceable","label":"Luftwaffe serviceable aircraft of all types, 10 August","value":2550,"unit":"serviceable aircraft, all types","scope":"10 August 1940; SUBSET of Luftwaffe participating 3,358 on-strength total; not 2,550 serviceable Bf 109s, and not directly equivalent to Fighter Command-only total","sourceId":"rafBoBLogistics","date":"1940-08-10","type":"recorded-retrospective-serviceable"},
+        {"id":"lw-se-strength-10aug","side":"Axis","measure":"strength","label":"Luftwaffe single-engine fighter on-strength count, 10 August","value":934,"unit":"single-engine fighters on strength","scope":"10 August 1940; Bf 109-heavy category only, SUBSET of 3,358 total Luftwaffe aircraft on strength","sourceId":"rafBoBLogistics","date":"1940-08-10","type":"recorded-retrospective-fighter-subset"},
+        {"id":"lw-se-serviceable-10aug","side":"Axis","measure":"serviceable","label":"Luftwaffe serviceable single-engine fighters, 10 August","value":805,"unit":"serviceable single-engine fighters","scope":"10 August 1940; Bf 109-heavy force category; subset of 934 on strength; compare only as adjacent-date fighter-class snapshots with RAF 990, not a sortie or front-wide readiness ratio","sourceId":"rafBoBLogistics","date":"1940-08-10","type":"recorded-retrospective-fighter-subset"},
+        {"id":"raf-fighter-ops-loss-juloct","side":"Allies","measure":"losses","label":"RAF Fighter Command single-engine fighter operational losses, July–October","value":900,"unit":"aircraft destroyed on operations · over 900","scope":"July–October 1940; RAF Fighter Command Hurricanes and Spitfires only; the published research says OVER 900; 900 is a LOWER THRESHOLD, not an exact loss count","sourceId":"rafBoBLogistics","date":"1940-10-31","period":"July–October 1940; four months, not only 15 September","type":"lower-bound-operational-fighter-losses"},
+        {"id":"lw-bf109-ops-loss-juloct","side":"Axis","measure":"losses","label":"Luftwaffe Bf 109 operational losses in German returns, July–October","value":600,"unit":"Bf 109 aircraft lost on operations","scope":"July–October 1940; German Quartermaster Bf 109 fighter operational destruction series as reproduced in RAF analysis; NOT all 1,733 Luftwaffe destroyed of all aircraft types","sourceId":"rafBoBLogistics","date":"1940-10-31","period":"July–October 1940; four months","type":"recorded-retrospective-operational-fighter-losses"},
         {
           "label": "German aircraft destroyed",
           "value": 1733,
@@ -1070,6 +1089,40 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "date": "1940-09-15",
           "type": "recorded"
         }
+      ],
+      "comparisons": [
+              {
+                      "title": "Serviceable single-engine fighters, adjacent August 1940 snapshots",
+                      "measure": "serviceable fighter aircraft",
+                      "quality": "near-comparable",
+                      "rows": [
+                              {
+                                      "side": "RAF Fighter Command",
+                                      "factId": "raf-fc-serviceable-11aug"
+                              },
+                              {
+                                      "side": "Luftwaffe single-engine fighters",
+                                      "factId": "lw-se-serviceable-10aug"
+                              }
+                      ],
+                      "caution": "Both figures refer to single-engine fighter-class aircraft, but are from 11 and 10 August respectively and different reporting chains. 'Serviceable' is not airborne or pilots available. Do not automatically convert into sortie advantage."
+              },
+              {
+                      "title": "Operational fighter aircraft destroyed, July–October 1940",
+                      "measure": "operational single-engine fighter losses",
+                      "quality": "caution",
+                      "rows": [
+                              {
+                                      "side": "RAF Fighter Command",
+                                      "factId": "raf-fighter-ops-loss-juloct"
+                              },
+                              {
+                                      "side": "Luftwaffe Bf 109 units",
+                                      "factId": "lw-bf109-ops-loss-juloct"
+                              }
+                      ],
+                      "caution": "RAF figure is 'over 900' threshold, German 600 is the recorded Bf 109 number. These are fighter-category operational losses, not all RAF/Luftwaffe aircraft losses, and should not be summed with all-aircraft totals."
+              }
       ],
       "moments": [
         {
@@ -1312,7 +1365,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "On 22 June 1941 the VVS took enormous losses on the ground. Loss categories differ by historical record and German claims.",
       "consequence": "Soviet aviation survived and rebuilt, eventually contesting German air power.",
       "sources": [
-        "barbarossa", "usArmyBarbarossa", "usafGermanRussia1941", "usafBarbarossaOpening"
+        "barbarossa", "usArmyBarbarossa", "usafGermanRussia1941", "usafBarbarossaOpening", "usafBarbarossaCase", "barbarossaLossStudy"
       ],
       "chapters": [
         {
@@ -1344,6 +1397,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"lw-barbarossa-combat-aircraft","side":"Axis","measure":"strength","label":"German combat aircraft committed to Barbarossa","value":2000,"unit":"Luftwaffe combat aircraft","scope":"22 June 1941 German combat aircraft assigned to Eastern attack (including 60 with Army Command Norway), official USAF historical reconstruction; not all German aircraft of all types or immediately serviceable count","sourceId":"usafBarbarossaCase","date":"1941-06-22","type":"official-retrospective-committed-combat-aircraft"},
+        {"id":"lw-barbarossa-transport-liaison","side":"Axis","measure":"strength-other","label":"German transport and liaison aircraft supporting Barbarossa","value":1270,"unit":"Luftwaffe transport and liaison aircraft","scope":"22 June 1941, German supporting transport/liaison force; DIFFERENT aircraft class from 2,000 combat aircraft, never compare with Soviet fighter-only or German fighter-only numbers","sourceId":"usafBarbarossaCase","date":"1941-06-22","type":"official-retrospective-support-aircraft"},
+        {"id":"soviet-barbarossa-german-estimate","side":"Soviet","measure":"estimated-strength","label":"German intelligence pre-invasion estimate of Soviet aircraft facing invasion","value":5700,"unit":"Soviet aircraft estimated by German intelligence","scope":"Pre-22 June 1941 estimated Soviet border-region aircraft from German intelligence, NOT independently verified Soviet actual on-strength/serviceable total; original study explicitly says the estimate was too low","sourceId":"usafBarbarossaCase","date":"1941-06-21","type":"enemy-intelligence-estimate-not-verified-strength"},
+        {"id":"lw-barbarossa-first-nine-days-losses","side":"Axis","measure":"losses","label":"German Luftwaffe aircraft lost, 22–30 June, reconstructed","value":330,"unit":"German aircraft destroyed, nine-day report","scope":"22–30 June 1941, Eastern Front German total losses cited in secondary reconstruction of Luftwaffe returns; not an opening-day figure; needs independent original Quartermaster return audit","sourceId":"barbarossaLossStudy","date":"1941-06-30","period":"22–30 June 1941; secondary German-record reconstruction","type":"secondary-reconstructed-German-losses"},
+        {"id":"vvs-barbarossa-German-claims-9days","side":"Soviet","measure":"enemy-claims","label":"Soviet aircraft losses claimed in German reporting, 22–30 June","value":4614,"unit":"German-reported Soviet aircraft losses, claimed","scope":"22–30 June 1941, German wartime claimed Soviet destroyed aircraft; retrospective specialist summary. NOT independent Soviet recorded losses, do not compare this claimed number as confirmed against 330 German recorded losses","sourceId":"barbarossaLossStudy","date":"1941-06-30","period":"22–30 June 1941; German claims, not confirmed Soviet returns","type":"claims-not-verified-opponent-losses"},
         {
           "label": "Soviet aircraft lost in initial German attack",
           "value": 1200,
@@ -1354,6 +1412,40 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "type": "lower-bound"
         },
         {"label": "Opening Soviet aircraft destroyed on airfields", "value": 800, "unit": "aircraft · ground subset", "scope": "Opening German attack on 22 June 1941 as recounted in official USAF historical synthesis: approximately 800 ground-destroyed within at least 1,200 total Soviet opening-attack losses, not another 800 in addition", "sourceId": "usafBarbarossaOpening", "date": "1941-06-22", "type": "reported-subset-not-additive"}
+      ],
+      "comparisons": [
+              {
+                      "title": "Opening strength: German assignment versus intelligence guess",
+                      "measure": "aircraft counts, non-matching definitions",
+                      "quality": "not-directly-comparable",
+                      "rows": [
+                              {
+                                      "side": "Luftwaffe combat aircraft committed",
+                                      "factId": "lw-barbarossa-combat-aircraft"
+                              },
+                              {
+                                      "side": "Soviet aircraft, German intelligence estimate",
+                                      "factId": "soviet-barbarossa-german-estimate"
+                              }
+                      ],
+                      "caution": "German value is committed combat aircraft; Soviet value is an unverified German intelligence estimate (known to underestimate). Neither is independently verified 22 June serviceability. No operational superiority ratio is justified."
+              },
+              {
+                      "title": "22–30 June losses: own returns versus enemy claims",
+                      "measure": "lost aircraft versus claimed kills",
+                      "quality": "not-directly-comparable",
+                      "rows": [
+                              {
+                                      "side": "Luftwaffe reported losses",
+                                      "factId": "lw-barbarossa-first-nine-days-losses"
+                              },
+                              {
+                                      "side": "Soviet aircraft attributed by German claims",
+                                      "factId": "vvs-barbarossa-German-claims-9days"
+                              }
+                      ],
+                      "caution": "330 reflects secondary German return reconstruction, 4,614 German CLAIMS of Soviet losses. Claims must not be treated as independently documented VVS losses or used to compute an exchange ratio."
+              }
       ],
       "moments": [
         {
@@ -2141,7 +2233,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "raf1944",
         "normandyDetail",
-        "rafNormandyOperations", "usafNormandyCobra", "usArmyNormandyFalaise"
+        "rafNormandyOperations", "usafNormandyCobra", "usArmyNormandyFalaise", "navyGermanNormandy", "eisenhowerOverlord", "eucomDday", "murrayNormandy", "royalPioneersDday"
       ],
       "chapters": [
         {
@@ -2173,6 +2265,20 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"allied-dday-aircraft","side":"Allies","measure":"strength","label":"Allied aircraft supporting D-Day landings","value":11590,"unit":"aircraft of all types involved","scope":"6 June 1944 assault-air operations; total Allied air effort including US/RAF/other Allies; involved aircraft count, not an independently verified same-time serviceable inventory","sourceId":"eucomDday","date":"1944-06-06","type":"official-retrospective-committed-aircraft"},
+        {"id":"lw-lf3-onstrength-5jun","side":"Axis","measure":"strength","label":"Luftflotte 3 aircraft fighting strength on eve of landings","value":481,"unit":"aircraft in LF3 fighting strength","scope":"5 June 1944; German-source Luftflotte 3 formation strength, north-western Europe; not all Luftwaffe aircraft in Reich or other theaters and not a serviceable count","sourceId":"navyGermanNormandy","date":"1944-06-05","type":"German-report-strength"},
+        {"id":"lw-lf3-fighters-5jun","side":"Axis","measure":"strength-subset","label":"Luftflotte 3 fighters in 481 total, 5 June","value":100,"unit":"fighter aircraft within Luftflotte 3","scope":"5 June 1944; 100 fighters INCLUDED in Luftflotte 3 total 481; not equal to all German fighters outside this regional Luftflotte","sourceId":"navyGermanNormandy","date":"1944-06-05","type":"recorded-subset"},
+        {"id":"lw-lf3-operational-6jun","side":"Axis","measure":"serviceable","label":"Luftflotte 3 aircraft available for day and night operations","value":319,"unit":"aircraft operationally available","scope":"6 June 1944; German-source Luftflotte 3 for both day and night; not all German aviation, not 319 D-Day sorties, and different date/category from 5 June's 481 fighting strength","sourceId":"navyGermanNormandy","date":"1944-06-06","type":"German-report-operational-availability"},
+        {"id":"allied-dday-aircraft-lost","side":"Allies","measure":"losses","label":"Allied aircraft lost on D-Day, all causes (secondary summary)","value":127,"unit":"Allied aircraft lost, all types and causes","scope":"6 June 1944; all Allied D-Day aviation, secondary historical summary reproduced by Royal Pioneer Corps Association; not Normandy monthly losses or RAF-only losses","sourceId":"royalPioneersDday","date":"1944-06-06","type":"secondary-total-aircraft-losses"},
+        {"id":"shaef-dday-strategic-sorties","side":"Allies","measure":"sorties-subset","label":"SHAEF strategic-airforce sorties on D-Day","value":5309,"unit":"strategic-airforce sorties","scope":"6 June 1944, Strategic Air Forces only; Eisenhower original report; SUBSET of day's overall Allied activity, includes bombing support and not all transport and tactical operations","sourceId":"eisenhowerOverlord","date":"1944-06-06","type":"primary-commander-sorties-subset"},
+        {"id":"shaef-dday-tactical-sorties","side":"Allies","measure":"sorties-subset","label":"SHAEF tactical-airforce sorties on D-Day","value":5276,"unit":"tactical-airforce sorties","scope":"6 June 1944, tactical air forces only; original Eisenhower report; separate from strategic's 5,309; both subsets of larger Allied sortie accounting, not aircraft strength","sourceId":"eisenhowerOverlord","date":"1944-06-06","type":"primary-commander-sorties-subset"},
+        {"id":"lw-lf3-jun-jul-losses","side":"Axis","measure":"losses","label":"Luftflotte 3 aircraft destroyed over invasion-period German reporting window","value":826,"unit":"German aircraft destroyed, all causes","scope":"6 June–7 July 1944, Luftflotte 3 German-source loss return for western occupied territories, including aircraft destroyed on ground; NOT a D-Day-only loss or complete Eastern/Reich Luftwaffe total","sourceId":"navyGermanNormandy","date":"1944-07-07","period":"6 June–7 July 1944; German western reporting command","type":"German-report-aircraft-destroyed"},
+        {"id":"lw-lf3-jun-jul-fighterloss","side":"Axis","measure":"losses-subset","label":"Luftflotte 3 fighters, fighter-bombers and reconnaissance destroyed","value":458,"unit":"German aircraft destroyed · fighter/recon category","scope":"6 June–7 July 1944; 458 within Luftflotte 3 aggregate 826, NOT extra aircraft to add to total; source mixes fighters, fighter-bombers, reconnaissance in one reporting category","sourceId":"navyGermanNormandy","date":"1944-07-07","period":"6 June–7 July 1944","type":"recorded-subset"},
+        {"id":"lw-lf3-jun-jul-bomberloss","side":"Axis","measure":"losses-subset","label":"Luftflotte 3 bombers destroyed","value":224,"unit":"German bombers destroyed","scope":"6 June–7 July 1944; bomber SUBSET of German 826 total for Luftflotte 3 reporting period; not D-Day losses","sourceId":"navyGermanNormandy","date":"1944-07-07","period":"6 June–7 July 1944","type":"recorded-subset"},
+        {"id":"lw-lf3-jun-jul-transportloss","side":"Axis","measure":"losses-subset","label":"Luftflotte 3 supply planes destroyed","value":7,"unit":"German supply aircraft destroyed","scope":"6 June–7 July 1944; included in Luftflotte 3 826 aircraft destroyed; not additive to total","sourceId":"navyGermanNormandy","date":"1944-07-07","period":"6 June–7 July 1944","type":"recorded-subset"},
+        {"id":"lw-lf3-jun-jul-groundloss","side":"Axis","measure":"losses-subset","label":"Luftflotte 3 aircraft destroyed on the ground","value":137,"unit":"German aircraft destroyed on ground","scope":"6 June–7 July 1944, subset of German 826 total; this cause category is already contained within German total and does not equal RAF claims","sourceId":"navyGermanNormandy","date":"1944-07-07","period":"6 June–7 July 1944","type":"recorded-subset"},
+        {"id":"lw-lf3-first-week-loss","side":"Axis","measure":"losses-subset","label":"German Luftflotte 3 aircraft lost in first invasion week","value":362,"unit":"German aircraft lost in first week","scope":"First invasion week from 6 June 1944, USAF historian reconstruction; included within broader June–July Luftflotte 3 losses, not a second total to add","sourceId":"murrayNormandy","date":"1944-06-12","period":"6–12 June 1944; 7-day week, retrospective historian interpretation","type":"secondary-weekly-loss-subset"},
+        {"id":"lw-lf3-second-week-loss","side":"Axis","measure":"losses-subset","label":"German Luftflotte 3 aircraft lost in second invasion week","value":232,"unit":"German aircraft lost in second week","scope":"Second invasion week from 13 June 1944; USAF historian reconstruction; subset of longer LF3 German losses, distinct from first week, not additive to 826","sourceId":"murrayNormandy","date":"1944-06-19","period":"13–19 June 1944; 7-day week","type":"secondary-weekly-loss-subset"},
         {
           "label": "Allied sorties supporting invasion · 6 June",
           "value": 14674,
@@ -2191,6 +2297,40 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "date": "1944-06-06",
           "type": "recorded"
         }
+      ],
+      "comparisons": [
+              {
+                      "title": "D-Day air strength: different force populations, not a ratio",
+                      "measure": "all aircraft counts with unequal reporting populations",
+                      "quality": "not-directly-comparable",
+                      "rows": [
+                              {
+                                      "side": "Allied air forces supporting landings",
+                                      "factId": "allied-dday-aircraft"
+                              },
+                              {
+                                      "side": "Luftflotte 3 operationally available",
+                                      "factId": "lw-lf3-operational-6jun"
+                              }
+                      ],
+                      "caution": "Allied 11,590 covers the full air effort across multiple commands and types. German 319 is Luftflotte 3 day/night operationally available aircraft only. Excluded German formations and geographically wider Allied assets prevent a statistically clean ratio."
+              },
+              {
+                      "title": "Loss observations: different windows, not head-to-head",
+                      "measure": "aircraft lost, all causes",
+                      "quality": "not-directly-comparable",
+                      "rows": [
+                              {
+                                      "side": "Allies, D-Day only",
+                                      "factId": "allied-dday-aircraft-lost"
+                              },
+                              {
+                                      "side": "Luftflotte 3, June–early July",
+                                      "factId": "lw-lf3-jun-jul-losses"
+                              }
+                      ],
+                      "caution": "Allied loss count covers 6 June, German figure 6 June–7 July. They are NOT contemporaneous equivalent denominators, and must never generate a loss ratio."
+              }
       ],
       "moments": [
         {
