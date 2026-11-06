@@ -1,5 +1,14 @@
 # Atlas status and next work
 
+## 6 November 2026 — recovered operational quantities for four thin campaigns
+
+**Work branch:** `feature/atlas-v83-operational-evidence`, stacked on tested v8.2 PR #13. The public default and physics repository remain untouched.
+
+- Added source-bounded operational evidence to Norway, Barbarossa, Sicily and Berlin. Nine new numerical observations (**56 → 65**) and two documented dated events (**76 → 78**), while retaining the existing 55 campaign phases. Norway now distinguishes 49 RAF sorties, 37 engagements, six *claims* and 13 ground-destroyed Gladiators from the 17 fighters of the later evacuation; Barbarossa's 800 ground losses are explicitly part of at least 1,200; Sicilian navy fighter-cover sortie rates are separate from tracked Axis flights; Berlin's 16th Air Army daily sorties are a published secondary transcription, not three-army airframe losses.
+- Sources and unresolved archival issues: [`research/sources/atlas-thin-campaign-operations-2026-11-06.md`](../research/sources/atlas-thin-campaign-operations-2026-11-06.md). Reproducible test/report: [`docs/ATLAS_THIN_CAMPAIGN_OPERATIONS_QA_2026-11-06.md`](ATLAS_THIN_CAMPAIGN_OPERATIONS_QA_2026-11-06.md).
+- **Not claimed:** complete bilateral campaign losses or daily airfield serviceability. Berlin's 91,000-sortie headline and inconsistent 2,738 aircraft/crews remain excluded pending original Soviet reporting-denominator audit.
+- **Next high-value source milestone:** original day-by-day air-army and Luftwaffe unit returns for selected Soviet campaigns, with source-backed comparable operations and loss categories before any plot-level aggregation.
+
 ## 6 November 2026 — six gap campaigns now have researched phased dossiers
 
 **Work branch:** `feature/atlas-v82-gap-coverage`, stacked on `feature/atlas-v81-campaign-coverage`. Default v7.4, standalone historical laboratories, underlying physics and optional v8 route unchanged.

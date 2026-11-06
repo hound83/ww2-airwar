@@ -109,13 +109,17 @@ app.chooseChapter("airfields");assert.ok(element("chapter-detail").innerHTML.inc
 app.choose("france1940",false);app.chooseChapter("dunkirk");assert.ok(element("chapter-detail").innerHTML.includes("2,739"));
 app.choose("normandy",false);app.chooseChapter("falaise");assert.ok(element("moment-list").innerHTML.includes("1944-08-19"),"Falaise phase must have a researched event");
 app.choose("norway",false);assert.ok(element("dossier-facts").innerHTML.includes("17"),"Norway's source-scoped withdrawal fighters are not visible");
+assert.ok(element("dossier-facts").innerHTML.includes("49")&&element("dossier-facts").innerHTML.includes("13"),"RAF original squadron sorties and ground losses not displayed");
+app.chooseChapter("landings");assert.ok(element("moment-list").innerHTML.includes("Gladiators on the ice"),"Norway original RAF airfield attack not accessible");
 assert.ok(element("chapter-list").innerHTML.includes("Narvik"),"Norway research chapters are not reachable");
 app.chooseChapter("withdrawal");assert.ok(element("moment-list").innerHTML.includes("HMS Glorious"),"Norwegian withdrawal has no dated evidence");
 app.choose("malta",false);assert.equal(element("chapter-list").innerHTML.match(/data-chapter="/g).length,4);
 app.chooseChapter("crisis");assert.ok(element("chapter-detail").innerHTML.includes("HMS Eagle"),"contradictory source attribution hidden");
 assert.ok(element("moment-list").innerHTML.includes("1942-03-07"),"first Spitfire event not linked to phase");
 app.choose("barbarossa",false);app.chooseChapter("moscow");assert.ok(element("moment-list").innerHTML.includes("1941-12-05"),"Moscow counteroffensive not accessible");
+assert.ok(element("dossier-facts").innerHTML.includes("800"),"Soviet opening-airfield losses subset not displayed");
 app.choose("sicily",false);app.chooseChapter("inland");assert.ok(element("moment-list").innerHTML.includes("1943-07-22"),"Sicily inland phase has no sourced timeline");
+assert.ok(element("dossier-facts").innerHTML.includes("440")&&element("dossier-facts").innerHTML.includes("200"),"US Navy Sicily fighter-cover and plotted-flight observations not displayed");
 app.choose("bigweek",false);assert.ok(element("dossier-facts").innerHTML.includes("&gt; 200"),"hyphenated lower-bound value was displayed as exact 200");
 app.chooseChapter("sustained");assert.ok(element("moment-list").innerHTML.includes("1944-02-25"),"Big Week conclusion missing");
 app.choose("marketgarden",false);app.chooseChapter("resupply");

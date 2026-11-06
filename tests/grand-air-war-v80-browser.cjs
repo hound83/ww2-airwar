@@ -118,11 +118,18 @@ const check=async()=>{
     assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>0,id+" lacks clickable original research source");
     assert.equal(await page.locator("#moment-detail").isVisible(),true);
    }
-   for(const [id,figure] of [["stalingrad","117.6"],["reichdefense","840"],["kursk","3,000"],["italy","435"],["bagration","5,300"],["berlin","7,500"]]){
+   for(const [id,figure] of [["norway","49"],["barbarossa","800"],["sicily","440"],["stalingrad","117.6"],["reichdefense","840"],["kursk","3,000"],["italy","435"],["bagration","5,300"],["berlin","4,398"]]){
     await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
     assert.match(await page.locator("#dossier-facts").innerText(),new RegExp(figure.replace(".","\\.")),id+" fact missing in actual UI");
     const sources=await page.locator("#dossier-facts .fact a[href^='https://']").count();
     assert.ok(sources>0,id+" numerical provenance link is not actionable");
+   }
+   for(const [id,phase,eventDate,figure] of [["norway","landings","1940-04-25","Thirteen"],["berlin","oder","1945-04-19","4,398"]]){
+    await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
+    await page.locator('#chapter-list [data-chapter="'+phase+'"]').click();
+    await page.locator('#moment-list [data-date="'+eventDate+'"]').click();
+    assert.match(await page.locator('#moment-detail').innerText(),new RegExp(figure,"i"),id+" additional historical event inaccessible");
+    assert.ok(await page.locator('#moment-detail a[href^="https://"]').count()>0,id+" event lacks source link");
    }
    await page.evaluate(()=>window.GrandAirWarV77.choose("italy",false));
    await page.locator('#chapter-list [data-chapter="cassino"]').click();

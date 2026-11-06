@@ -122,6 +122,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.ibiblio.org/hyperwar/AAF/AAF-Luftwaffe/AAF-Luftwaffe-6.html",
       "class": "USAF-historical-study"
     },
+    "usafBarbarossaOpening": {
+      "title": "USAF-published Air Warfare and Air Base Air Defense, Eastern Front chapter VI: Soviet first-day aircraft losses",
+      "url": "https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+      "class": "official-USAF-historical-study; 800 aircraft destroyed on-ground is a subset of at least 1200 opening-day losses"
+    },
     "ninh": {
       "title": "Netherlands Institute for Military History: Operation Bodenplatte",
       "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/bevrijding-van-nederland-1944-1945/achtergronden/jagdgeschwader-1-twente/na-market-garden",
@@ -222,6 +227,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.ospreypublishing.com/us/eastern-front-1945-9781472857842/",
       "class": "secondary-publisher-historical-book-summary; rounded force estimate"
     },
+    "ospreyBerlinSorties": {
+      "title": "William E. Hiestand, Eastern Front 1945: Triumph of the Soviet Air Force, Osprey Air Campaign 42, Berlin daily sortie table p.87",
+      "url": "https://www.ospreypublishing.com/us/eastern-front-1945-9781472857842/",
+      "class": "secondary-published-campaign-study-daily-sortie-table; 16th Air Army only, not all VVS air armies; table totals differ from narrative rounding"
+    },
     "sovietBerlinAirReport": {
       "title": "Russian Historical Documents portal: 16th Air Army Berlin air-control report, 15 May 1945",
       "url": "https://docs.historyrussia.org/ru/nodes/221504-iz-otcheta-o-rabote-armeyskogo-uzla-navedeniya-16-y-vozdushnoy-armii-v-berlinskoy-operatsii-sostavlennogo-shtabom-etoy-armii-15-maya-1945-g",
@@ -262,6 +272,16 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol13-iss3-7-pdf/",
       "class": "RAF-published-operational-analysis"
     },
+    "raf263NorwayOriginal": {
+      "title": "RAF Air Historical Branch: Squadron Leader J. W. Donaldson, No. 263 Squadron Norway operations report, April 1940",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-on-operations-of-no-263-sqn-in-norway-by-sqn-ldr-j-w-donaldson-oc/",
+      "class": "primary-RAF-squadron-commanders-contemporaneous-report; RAF claims not confirmed enemy losses"
+    },
+    "raf263NorwayAircraft": {
+      "title": "RAF Museum original aircraft history file: Gladiator N5628, No. 263 Squadron Lesjaskog sortie and loss narrative",
+      "url": "https://www.rafmuseum.org.uk/documents/collections/72-A-472-Gladiator-II-N5628.pdf",
+      "class": "RAF-museum-archival-aircraft-history-summarizing-49-sortie-and-37-engagement-record"
+    },
     "usArmyBarbarossa": {
       "title": "U.S. Army Center of Military History: The German Campaign in Russia, Planning and Operations 1940–42",
       "url": "https://history.army.mil/portals/143/Images/Publications/catalog/104-21.pdf",
@@ -276,6 +296,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "title": "U.S. Army Center of Military History: Sicily, World War II campaign pamphlet",
       "url": "https://history.army.mil/portals/143/Images/Publications/catalog/72-16.pdf",
       "class": "official-US-Army-campaign-study"
+    },
+    "usNavySicilyAction": {
+      "title": "US Navy 1943 Western Naval Task Force action report: Operation Husky, fighter cover and enemy plotted flights",
+      "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/s/the-sicilian-campaign-operation-husky.html",
+      "class": "primary-US-Navy-operation-action-report; sector cover sorties and plotted flights are not whole-theater tallies"
     },
     "usArmyChronology": {
       "title": "U.S. Army Center of Military History: Chronology 1941–1945, 20–22 July 1943",
@@ -701,17 +726,17 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Air transport, airfield capture and maritime reconnaissance influenced the speed of German reinforcement.",
       "consequence": "Air control depended on long distances and limited bases; original operational returns are a research gap.",
       "sources": [
-        "raf1940chron", "rafNorwayAHB", "rafNorwayReview"
+        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft"
       ],
       "chapters": [
         {
           "id": "landings", "title": "Airborne seizure and the fight for southern bases",
           "start": "1940-04-09", "end": "1940-04-30", "location": "Oslo, Stavanger, Bergen and central Norway",
           "situation": "Germany invaded Denmark and Norway on 9 April, seizing transport hubs and airfields. Allied troops entered a fragmented Norwegian campaign while German forces could reinforce by air despite the country's difficult terrain.",
-          "airRole": "German airborne landings, transport and bomber operations exploited accessible airfields. British land forces struggled to establish air cover in central Norway and operated under the threat of Luftwaffe attack.",
+          "airRole": "German airborne landings, transport and bomber operations exploited accessible airfields. British land forces struggled to establish air cover in central Norway. No. 263 Squadron's original commander report records thirteen Gladiators destroyed by the 25 April bombardment of its frozen-airfield base, while the RAF Museum's aircraft history reports 49 sorties, 37 German aircraft engaged and six claims over the initial flying period.",
           "change": "The German ability to use captured bases and aircraft for supply reduced the value of Allied naval access alone.",
-          "limits": "Analytical division based on the RAF official campaign history, not an official set of phase dates. No comparable Luftwaffe/RAF airframe-loss return is attached.",
-          "sourceIds": ["rafNorwayAHB", "rafNorwayReview", "raf1940chron"]
+          "limits": "Analytical phase dates, not official air-unit accounting windows. Thirteen ground-destroyed Gladiators belong only to No. 263 Squadron at Lesjaskog on 25 April; 49 sorties and 37 contacts cover the initial approximately two-day deployment. Six German aircraft are RAF CLAIMS, not independently audited losses, and the 13 are not aircraft destroyed in air-to-air combat.",
+          "sourceIds": ["rafNorwayAHB", "rafNorwayReview", "raf1940chron", "raf263NorwayOriginal", "raf263NorwayAircraft"]
         },
         {
           "id": "narvik", "title": "Narvik: establishing fighter cover in the north",
@@ -733,7 +758,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
-        {"label": "RAF fighters embarked on HMS Glorious during evacuation", "value": 17, "unit": "aircraft · 10 Gladiators and 7 Hurricanes", "scope": "8 June 1940, surviving aircraft of Nos. 263 and 46 Squadrons recovered from Norway; later lost with carrier, not a campaign-wide RAF loss total", "sourceId": "raf1940chron", "date": "1940-06-08", "type": "recorded"}
+        {"label": "RAF fighters embarked on HMS Glorious during evacuation", "value": 17, "unit": "aircraft · 10 Gladiators and 7 Hurricanes", "scope": "8 June 1940, surviving aircraft of Nos. 263 and 46 Squadrons recovered from Norway; later lost with carrier, not a campaign-wide RAF loss total", "sourceId": "raf1940chron", "date": "1940-06-08", "type": "recorded"},
+        {"label": "No. 263 Squadron flying activity over Lesjaskog", "value": 49, "unit": "sorties", "scope": "The initial approximately two-day Lesjaskog operations of RAF No. 263 Squadron, 24–26 April 1940; NOT whole RAF Norway sorties or 49 aircraft", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940, approximately two days of operations; reporting-period total, not a single-day count", "type": "recorded"},
+        {"label": "No. 263 Squadron enemy aircraft engaged", "value": 37, "unit": "separate enemy aircraft engagements", "scope": "No. 263 Squadron Lesjaskog flying period, 24–26 April 1940, as summarized by RAF Museum; encounters, not enemy airframe losses", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940, RAF No. 263 Squadron's initial Lesjaskog operations", "type": "reported-engagements"},
+        {"label": "No. 263 Squadron enemy aircraft claimed destroyed", "value": 6, "unit": "claimed enemy aircraft", "scope": "No. 263 Squadron during its initial April Lesjaskog deployment; contemporary British claims, NOT independent German confirmed losses", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940; RAF claims within the same 49-sortie population", "type": "claims-not-verified-losses"},
+        {"label": "No. 263 Squadron Gladiators destroyed in 25 April lake-airfield attacks", "value": 13, "unit": "RAF aircraft destroyed at airfield", "scope": "25 April 1940, Lake Lesjaskog airfield under German bombing and strafing; original Squadron Leader Donaldson report, a subset of the initial detachment's losses, NOT fighter combat losses", "sourceId": "raf263NorwayOriginal", "date": "1940-04-25", "type": "recorded-primary-unit-loss"}
       ],
       "moments": [
         {
@@ -747,6 +776,15 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "outcome": "Airfields and communications hubs became key to reinforcing German forces and restricting Allied air intervention.",
           "sourceIds": ["raf1940chron", "rafNorwayAHB"],
           "confidence": "Official museum chronology and RAF post-action campaign history; no event-level aircraft-loss total"
+        },
+        {
+          "date": "1940-04-25", "title": "German attack destroys thirteen No. 263 Squadron Gladiators on the ice",
+          "place": "Lesjaskog lake, Norway", "lat": 62.22, "lng": 8.62,
+          "summary": "The original report by No. 263 Squadron's commanding officer records repeated bombing and machine-gunning of the frozen lake airfield. Thirteen Gladiators were destroyed on 25 April. The RAF Museum's aircraft file separately summarizes 49 squadron sorties and 37 enemy engagements across roughly two days, with six German aircraft claimed destroyed. These are different measures and must not be added together.",
+          "units": "RAF No. 263 Squadron, Gloster Gladiators; attacking Luftwaffe aircraft. Ground destruction of RAF airframes is not Luftwaffe combat loss.",
+          "outcome": "Ice runway damage, cold-start difficulties and fuel shortage ended the detachment's initial operations. Six claimed German aircraft remain unverified claims, not an audited enemy-loss total.",
+          "sourceIds": ["raf263NorwayOriginal", "raf263NorwayAircraft"],
+          "confidence": "Contemporaneous RAF squadron commander report for thirteen airfield losses; RAF Museum research file for sorties, engagement and claims with distinct denominators"
         },
         {
           "date": "1940-05-26", "title": "No. 46 Squadron Hurricanes fly off HMS Glorious to Norway",
@@ -1264,17 +1302,17 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "On 22 June 1941 the VVS took enormous losses on the ground. Loss categories differ by historical record and German claims.",
       "consequence": "Soviet aviation survived and rebuilt, eventually contesting German air power.",
       "sources": [
-        "barbarossa", "usArmyBarbarossa", "usafGermanRussia1941"
+        "barbarossa", "usArmyBarbarossa", "usafGermanRussia1941", "usafBarbarossaOpening"
       ],
       "chapters": [
         {
           "id": "surprise", "title": "Border airfield attacks and the initial German advance",
           "start": "1941-06-22", "end": "1941-07-15", "location": "Soviet western borderlands, Baltics and Belarus",
           "situation": "The German invasion crossed a vast front on 22 June. Soviet command, movement and forward formations were disrupted while German army groups advanced in different directions.",
-          "airRole": "Luftwaffe strikes on western Soviet airfields attempted to suppress VVS fighters and bombers before they could fly; reconnaissance, close support and transport then accompanied the advancing armies. Soviet flying activity did not cease across the entire front.",
+          "airRole": "Luftwaffe strikes on western Soviet airfields attempted to suppress VVS fighters and bombers before they could fly; reconnaissance, close support and transport then accompanied the advancing armies. A USAF historical synthesis lists approximately 800 on-ground Soviet aircraft among at least 1,200 aircraft lost in the opening strike. Soviet flying activity did not cease across the entire front.",
           "change": "A surprise strike against dispersed administrative and operating systems produced early German advantage, but the opening estimate is neither a daily reconciliation nor evidence that every VVS aircraft was destroyed.",
-          "limits": "The source's 1,200-aircraft lower bound refers to the opening attack, not every Soviet loss through July. Regional aircraft locations are not reconstructable from the catalogue map centre.",
-          "sourceIds": ["barbarossa", "usArmyBarbarossa", "usafGermanRussia1941"]
+          "limits": "The 800 Soviet aircraft destroyed on the ground are a SUBSET of at least 1,200 opening-attack aircraft losses; they must never be added to yield 2,000. This is a postwar historical synthesis, not a transcribed 1941 Soviet airfield-by-airfield loss ledger. Neither figure covers July or the full eastern front's later aircraft losses.",
+          "sourceIds": ["barbarossa", "usArmyBarbarossa", "usafGermanRussia1941", "usafBarbarossaOpening"]
         },
         {
           "id": "extension", "title": "Extending the advance and the supply problem",
@@ -1304,7 +1342,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "barbarossa",
           "date": "1941-06-22",
           "type": "lower-bound"
-        }
+        },
+        {"label": "Opening Soviet aircraft destroyed on airfields", "value": 800, "unit": "aircraft · ground subset", "scope": "Opening German attack on 22 June 1941 as recounted in official USAF historical synthesis: approximately 800 ground-destroyed within at least 1,200 total Soviet opening-attack losses, not another 800 in addition", "sourceId": "usafBarbarossaOpening", "date": "1941-06-22", "type": "reported-subset-not-additive"}
       ],
       "moments": [
         {
@@ -1313,10 +1352,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "place": "Belarus / western border",
           "lat": 53.8,
           "lng": 25.5,
-          "summary": "The Luftwaffe attacked Soviet western airfields as German forces entered the USSR. Soviet air units faced surprise, disrupted communications and ground losses, but the campaign-wide Soviet aviation establishment was not annihilated on this date.",
+          "summary": "The Luftwaffe attacked Soviet western airfields as German forces entered the USSR. A USAF historical synthesis reports at least 1,200 Soviet aircraft destroyed in the initial attack, including approximately 800 on the ground. The 800 is a subset of the 1,200, not a second loss population. Soviet aviation survived elsewhere and continued flying.",
           "units": "Luftwaffe and VVS across multiple western districts, not a single Belarus airfield or a complete order of battle.",
           "outcome": "Germany gained an opening advantage; the source's at-least-1,200 Soviet aircraft figure covers this initial attack, not the subsequent six months.",
-          "sourceIds": ["barbarossa", "usArmyBarbarossa"],
+          "sourceIds": ["barbarossa", "usArmyBarbarossa", "usafBarbarossaOpening"],
           "confidence": "USAAF historical analysis and US Army campaign study; opening-day estimate not independently re-transcribed"
         },
         {
@@ -1615,17 +1654,17 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Poor weather and navigation led to severe failures of the night glider and parachute landings.",
       "consequence": "Mediterranean airpower supported the campaign and then operations on mainland Italy. Theater-wide MTO group counts are separate context.",
       "sources": [
-        "raf1943", "usArmySicily", "usArmyMediterranean"
+        "raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction"
       ],
       "chapters": [
         {
           "id": "airborne", "title": "Airborne approaches and the amphibious landings",
           "start": "1943-07-09", "end": "1943-07-12", "location": "South-eastern Sicily, Syracuse and Gela",
           "situation": "Allied airborne landings opened the operation on the night of 9–10 July, followed by the main British and American seaborne invasion. Wind, route-finding and navigation problems scattered gliders and parachutists.",
-          "airRole": "Glider tugs, troop-carrier aircraft and tactical air forces supported the amphibious landings after earlier air attacks against Sicily. RAF Museum records 69 of 137 British gliders released into the sea in the initial phase.",
+          "airRole": "Glider tugs, troop-carrier aircraft and tactical air forces supported the amphibious landings after earlier air attacks against Sicily. RAF Museum records 69 of 137 British gliders released into the sea. The U.S. Navy's 1943 Western Task Force report describes approximately 440 landing-sector fighter-cover sorties per day and approximately 200 enemy flights plotted from 10–12 July.",
           "change": "Sicily showed that nominal air superiority did not guarantee accurate night troop delivery: transport navigation and coordination could fail catastrophically.",
-          "limits": "69/137 is a British glider-operation count, not all Allied airborne casualties. This campaign was multinational; do not extrapolate it to every troop-carrier mission.",
-          "sourceIds": ["raf1943", "usArmySicily", "usArmyMediterranean"]
+          "limits": "69/137 counts British gliders, not every Allied airborne formation. The U.S. Navy's 440 is an approximate DAILY fighter-cover sortie rate over Western Task Force landing sectors, not aircraft or all Allied sorties; the 200 are plotted enemy flights within a bounded observation window, NOT confirmed Axis aircraft losses. Do not merge these distinct groups.",
+          "sourceIds": ["raf1943", "usArmySicily", "usArmyMediterranean", "usNavySicilyAction"]
         },
         {
           "id": "inland", "title": "Consolidating the bridgeheads and advancing inland",
@@ -1655,7 +1694,9 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "raf1943",
           "date": "1943-07-09",
           "type": "recorded"
-        }
+        },
+        {"label": "Western Naval Task Force landing-cover fighter sorties", "value": 440, "unit": "approximate fighter sorties per day", "scope": "US Navy 1943 Western Task Force action report, approximately 440 daily fighter-cover sorties over its CENT/DIME/JOSS landing areas during initial Sicilian assault, about two-thirds from Malta and one-third Pantelleria; not whole Allied theater sorties and not 440 aircraft", "sourceId": "usNavySicilyAction", "date": "1943-07-10", "period": "Initial 10–12 July 1943 landing-cover period; daily approximate rate reported in action report, not a 10 July exact daily total", "type": "primary-approximate-rate"},
+        {"label": "Enemy flights plotted by Western Task Force", "value": 200, "unit": "approximately plotted enemy flights", "scope": "US Navy Western Task Force operations-board plots between 02:45 10 July and 18:15 12 July 1943; tracks/flights, NOT confirmed hostile aircraft shot down, unique aircraft or all Axis sorties", "sourceId": "usNavySicilyAction", "date": "1943-07-10", "period": "10 July 02:45 to 12 July 18:15, 1943, bounded naval radar/operations-board reporting interval", "type": "primary-approximate-tracks"}
       ],
       "moments": [
         {
@@ -1673,10 +1714,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {
           "date": "1943-07-10", "title": "Allied assault armies establish Sicilian beachheads",
           "place": "Gela and Syracuse landings", "lat": 37.1, "lng": 15.1,
-          "summary": "British and US forces landed in southern and south-eastern Sicily after the disrupted airborne approach. By 12 July Allied armies had captured Syracuse and several airfields according to the US Army historical account.",
+          "summary": "British and US forces landed in southern and south-eastern Sicily after the disrupted airborne approach. A contemporary US Navy action report describes approximately 440 fighter-cover sorties per day over the Western Task Force's landing sectors, while its operations board plotted about 200 enemy flights from 10–12 July. These are patrol sortie rates and plotted flight tracks, not 440 unique aircraft or 200 enemy losses. By 12 July Allied armies had captured Syracuse and several airfields.",
           "units": "British Eighth Army, US Seventh Army and supporting Allied air commands; point denotes the broad landing region.",
           "outcome": "The invasion established bridgeheads and bases that could support subsequent tactical air operations inland.",
-          "sourceIds": ["usArmySicily", "usArmyMediterranean"],
+          "sourceIds": ["usArmySicily", "usArmyMediterranean", "usNavySicilyAction"],
           "confidence": "US Army official history and campaign chronology; airfield totals not converted to operational aircraft counts"
         },
         {
@@ -2490,17 +2531,17 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "The final stage of the German air-war is poorly represented by a single comparable strength or loss figure.",
       "consequence": "European war ended 8–9 May 1945. The site does not create postwar May 1945 force snapshots.",
       "sources": [
-        "ospreyBerlin1945", "usafBerlinSixteenth", "sovietBerlinAirReport"
+        "ospreyBerlin1945", "usafBerlinSixteenth", "sovietBerlinAirReport", "ospreyBerlinSorties", "ericksonBerlinBibliography"
       ],
       "chapters": [
         {
           "id":"oder", "title":"Oder crossings and the Seelow Heights air assault",
           "start":"1945-04-16","end":"1945-04-20","location":"Oder front, Seelow Heights and eastern Berlin approaches",
           "situation":"Soviet armies attacked across the Oder-Neisse front toward Berlin. German defensive positions, including the Seelow Heights, resisted the initial assaults despite a vast Soviet advantage in material and air support.",
-          "airRole":"The Soviet 16th Air Army and other air armies supported the assault with fighter cover, interdiction, bombing and immediate ground support. German jet and conventional aircraft continued limited resistance.",
+          "airRole":"The Soviet 16th Air Army and other air armies supported the assault with fighter cover, interdiction, bombing and immediate ground support. Osprey's daily table reports 4,398 sorties by 16th Air Army on 19 April and 4,054 on 20 April. These are daily missions, not unique aircraft, and exclude other air armies. German jet and conventional aircraft continued limited resistance.",
           "change":"Soviet penetration of the outer defence opened the road for the encirclement of the capital.",
           "limits":"Osprey's roughly 7,500 aircraft across THREE Soviet air armies is a broad assembled-force estimate, not a single-day count of planes over Seelow. A USAF historical monograph separately gives 2,738 for the 16th Air Army, but secondary references disagree on whether that specific 2,738 labels aircraft or experienced crews; it is withheld from numeric facts pending original Soviet return reconciliation.",
-          "sourceIds":["ospreyBerlin1945","usafBerlinSixteenth","ericksonBerlinBibliography","sovietBerlinAirReport"]
+          "sourceIds":["ospreyBerlin1945","ospreyBerlinSorties","usafBerlinSixteenth","ericksonBerlinBibliography","sovietBerlinAirReport"]
         },
         {
           "id":"encirclement", "title":"Encircling Berlin and fighting into the city",
@@ -2522,7 +2563,9 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
-        {"label":"Soviet aircraft assembled for Berlin (rounded)", "value":7500, "unit":"aircraft", "scope":"Osprey historian William E. Hiestand secondary operational estimate across THREE Soviet VVS air armies assembled for Berlin assault; not 16th Air Army alone, not aircraft airborne on 16 April and not combat losses", "sourceId":"ospreyBerlin1945", "date":"1945-04-16", "type":"approximate-secondary-assembled-force-estimate"}
+        {"label":"Soviet aircraft assembled for Berlin (rounded)", "value":7500, "unit":"aircraft", "scope":"Osprey historian William E. Hiestand secondary operational estimate across THREE Soviet VVS air armies assembled for Berlin assault; not 16th Air Army alone, not aircraft airborne on 16 April and not combat losses", "sourceId":"ospreyBerlin1945", "date":"1945-04-16", "type":"approximate-secondary-assembled-force-estimate"},
+        {"label":"16th Air Army sorties during Seelow breakthrough, 19 April", "value":4398, "unit":"sorties · one day", "scope":"19 April 1945, Soviet 16th Air Army only, daily operations over Berlin offensive sector in Hiestand Osprey p.87; missions not unique aircraft, not all three frontal air armies or cumulative April totals", "sourceId":"ospreyBerlinSorties", "date":"1945-04-19", "type":"secondary-daily-sorties"},
+        {"label":"16th Air Army sorties during Seelow breakthrough, 20 April", "value":4054, "unit":"sorties · one day", "scope":"20 April 1945, Soviet 16th Air Army only in Hiestand Osprey p.87, a separate day's flown missions; not fighters alone, German losses or a three-air-army total", "sourceId":"ospreyBerlinSorties", "date":"1945-04-20", "type":"secondary-daily-sorties"}
       ],
       "moments": [
         {
@@ -2533,6 +2576,15 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "units":"Soviet VVS air armies supporting multiple attacking fronts versus Luftwaffe and ground defenders; source estimate counts force assembly, not 16 April sorties or losses.",
           "outcome":"Heavy resistance initially delayed the assault, but the strategic Soviet attack ultimately broke through.",
           "sourceIds":["ospreyBerlin1945","usafBerlinSixteenth"],"confidence":"Publisher's secondary book synthesis for force-scale estimate; separate USAF report disputed on 16th Air Army denominator"
+        },
+        {
+          "date":"1945-04-19", "title":"16th Air Army flies 4,398 sorties in Berlin breakthrough fighting",
+          "place":"Seelow Heights to Berlin approach, broad operating sector", "lat":52.54,"lng":14.15,
+          "summary":"William E. Hiestand's secondary operational table records 4,398 flown sorties by the Soviet 16th Air Army on 19 April and 4,054 on 20 April. These are missions flown, not aircraft present or shot down. The table records one air army, not the entire Soviet air offensive. Its printed total differs slightly from the book's rounded overall campaign narrative; no aggregate three-army sortie figure is imported here.",
+          "units":"Soviet 16th Air Army; eastern Berlin approach, with German defensive forces and Luftwaffe resistance. Map location is operationally broad.",
+          "outcome":"Soviet aviation provided intense day-by-day support as German front defences were penetrated; sortie counts alone do not establish German losses or air-to-ground effectiveness.",
+          "sourceIds":["ospreyBerlinSorties","ericksonBerlinBibliography"],
+          "confidence":"Osprey Air Campaign 42 secondary daily table p.87, with an academic annotated Soviet-air-army reference; original Soviet sortie registers not independently inspected"
         },
         {
           "date":"1945-04-25","title":"Soviet formations close the encirclement around Berlin",
