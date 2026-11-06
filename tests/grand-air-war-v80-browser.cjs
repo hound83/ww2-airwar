@@ -124,6 +124,25 @@ const check=async()=>{
     const sources=await page.locator("#dossier-facts .fact a[href^='https://']").count();
     assert.ok(sources>0,id+" numerical provenance link is not actionable");
    }
+
+   // Full real-browser review: bilateral serviceability/loss panels and Sicily daily national returns.
+   for(const [id,required] of [["britain",["990","805","> 900"]],["normandy",["11,590","319","826"]],["barbarossa",["2,000","5,700","4,614"]],["sicily",["283","198","59","32"]]]){
+    await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
+    const block=page.locator("#dossier-facts .campaign-comparisons");
+    assert.equal(await block.count(),1,id+" has no cross-population review section");
+    const rendered=await block.innerText();
+    for(const token of required)assert.ok(rendered.includes(token),id+" missing comparison number: "+token);
+    assert.ok(await block.locator('a[href^="https://"]').count()>0,id+" comparison has no direct reporting source");
+    const layout=await block.evaluate(el=>({scroll:el.scrollWidth,client:el.clientWidth}));
+    assert.ok(layout.scroll<=layout.client+2,id+" comparison causes horizontal overflow at "+viewport.width);
+   }
+   await page.evaluate(()=>window.GrandAirWarV77.choose("sicily",false));
+   const rows=page.locator("#dossier-facts .operational-series tbody tr");
+   assert.equal(await rows.count(),5,"Sicily Axis operating aircraft by nationality must show five actual days");
+   assert.ok((await rows.first().innerText()).includes("481")&&(await rows.last().innerText()).includes("161"),"Sicily daily German+Italian totals are not derived correctly");
+   const table=page.locator("#dossier-facts .operational-table-scroll");
+   assert.ok(await table.evaluate(el=>el.scrollWidth>=el.clientWidth),"Sicily report table must support smaller viewports");
+
    for(const [id,phase,eventDate,figure] of [["norway","landings","1940-04-25","Thirteen"],["norway","narvik","1940-05-28","42"],["norway","withdrawal","1940-06-02","75"],["berlin","oder","1945-04-19","4,398"]]){
     await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
     await page.locator('#chapter-list [data-chapter="'+phase+'"]').click();

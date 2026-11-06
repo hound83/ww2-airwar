@@ -1,5 +1,15 @@
 # Atlas status and next work
 
+## 6 November 2026 — bilateral air strength and aircraft-loss comparison milestone
+
+**Work PR:** https://github.com/hound83/ww2-airwar/pull/18, stacked on original daily RAF/MAAF research PR #16. No public merge or physics edits.
+
+- Four existing campaigns gained explicit evidence comparison, with **75 → 108** source-scoped numeric facts (**+33**), **7** comparability/exclusion panels and **10** separate German/Italian day-level Axis activity counts for Sicily. The 20 campaign map entries, 55 researched phases, 80 dated events and independent German/Allied analytics retain their existing scope. Britain now distinguishes on-strength/serviceable fighters (including RAF 990 vs Luftwaffe 805 in adjacent-date subsets) and July–October fighter-only losses; Normandy distinguishes Luftflotte 3 481 on strength, 319 available, 826 June–July destroyed, 127 single-day Allied losses and original SHAEF tactical/strategic sorties; Barbarossa separates committed Luftwaffe aircraft, unreliable German Soviet strength estimates, German recorded losses and German claims; Sicily documents separate German/Italian aircraft employed and daytime/nighttime losses.
+- Source review: `research/sources/atlas-bilateral-strength-losses-2026-11-06.md`. QA and detailed before/after: `docs/ATLAS_BILATERAL_STRENGTH_LOSSES_QA_2026-11-06.md`.
+- **PASS** core https://github.com/hound83/ww2-airwar/actions/runs/42231897729 and Chromium desktop/mobile https://github.com/hound83/ww2-airwar/actions/runs/42231897778 for code commit `f5ba3f293b98315971aff58bff1068b9cd8c6523`; any later documentation-only commits do not change generated site code, but GitHub may run CI again.
+- **Remaining:** independent original German, Soviet, Italian and Allied daily aircraft serviceability/loss book audit across more theaters; harmonize German Quartermaster write-off/damage thresholds with RAF definitions; no attempt to infer a ratio between a single D-Day and German month-long returns. Do not merge preview or change default v7.4 without review.
+
+
 ## 6 November 2026 — recovered operational quantities for four thin campaigns
 
 **Work branch:** `feature/atlas-v83-operational-evidence`, stacked on tested v8.2 PR #13. The public default and physics repository remain untouched.

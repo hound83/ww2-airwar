@@ -131,3 +131,25 @@
 .missing-observation:hover{opacity:.9}
 @media(max-width:600px){.research-library>summary{padding:13px}.research-library-content{padding:0 10px 12px}.moment-detail{padding:11px}.chapter-detail{padding:12px}.chapter-list{grid-template-columns:1fr}.chapter-card{min-height:75px}.guide-heading{flex-wrap:wrap}.guide-heading small{text-align:left}#moment-list .record{align-items:flex-start;flex-direction:column;gap:3px}#moment-list .record .date-tag{align-self:flex-end}}
 @media(max-width:900px){#campaigns{grid-template-columns:1fr}#campaigns>.pane:first-child{position:static}}
+
+/* Source-population review: explicit bilateral strength/loss context before raw dossier facts. */
+.campaign-comparisons{grid-column:1/-1;display:grid;gap:12px;border:1px solid #4c6c71;border-radius:9px;padding:15px;background:#172c35;margin-bottom:12px;min-width:0}
+.campaign-comparisons h3{font-family:Georgia,serif;font-size:21px;line-height:1.25;color:#efd4a3;margin:0}
+.campaign-comparisons h4{font-family:Georgia,serif;font-size:17px;line-height:1.3;color:#f0d9ae;margin:0}
+.campaign-comparisons p{margin:0}
+.comparison-intro,.comparison-metric{font-size:12px;color:#b7d2d0;line-height:1.6}
+.comparison-section,.operational-series{display:grid;gap:9px;padding:12px;border:1px solid #3e606b;border-radius:7px;min-width:0;background:#1c3540}
+.comparison-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:9px;min-width:0}
+.comparison-cell{display:flex;flex-direction:column;gap:5px;min-width:0;padding:11px;border:1px solid #51767e;border-radius:6px;background:#223f48}
+.comparison-cell strong{font-size:25px;color:#f5d1a0;line-height:1.1;font-variant-numeric:tabular-nums}
+.comparison-cell small{font-size:11px;color:#c0d5d5;overflow-wrap:anywhere;line-height:1.5}
+.comparison-cell a,.operational-series a{font-size:11px;overflow-wrap:anywhere}
+.comparison-side{font-weight:700;font-size:11px;color:#a2e0d5}
+.comparison-caution{font-size:11px;line-height:1.65;color:#f3d3a1;border-left:3px solid #ba9565;padding-left:9px}
+.operational-table-scroll{max-width:100%;overflow-x:auto}
+.operational-series table{width:100%;border-collapse:collapse;min-width:350px;font-variant-numeric:tabular-nums;font-size:12px}
+.operational-series th,.operational-series td{border-bottom:1px solid #48666d;padding:8px 9px;text-align:right}
+.operational-series th:first-child{text-align:left}
+.operational-series thead{color:#a1dacd}
+.operational-series tbody th{font-weight:500;color:#e5dfcd}
+@media(max-width:600px){.campaign-comparisons{padding:9px}.comparison-section,.operational-series{padding:9px}.comparison-grid{grid-template-columns:repeat(auto-fit,minmax(min(135px,100%),1fr))}}
