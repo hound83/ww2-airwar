@@ -1,5 +1,16 @@
 # Atlas status and next work
 
+## 6 November 2026 — operational campaign coverage and research discoverability
+
+**Work branch:** `feature/atlas-v81-campaign-coverage`, stacked on the unmerged `feature/atlas-v80-campaign-stages`; website v7.4 default and physics snapshot untouched. This is a review increment, not a published website.
+
+- A campaign now offers a researched operational narrative in **12/20** cases (previously 5/20), comprising **37** phases (previously 17) with at least one clickable evidence-detailed event in each. The original five phase guides have been made more informative too.
+- **50** detailed dated events (previously 11), **57** total dated records (36), **42** source-scoped historical quantities (30). No invented phase subdivisions for one-day Dieppe/Bodenplatte, and six campaigns remain explicitly without local numeric reports.
+- Search now finds *Cobra*, convoy *Peewit*, HMS *Glorious*, *Black Thursday* and other actual phase/event names, with short-token whole-word matching. The UI distinguishes researched events from simple calendar markers and shows `>200` rather than an exact 200 for a Big Week lower-bound figure.
+- Contradictions and denominators are documented: 7 March 1942 Malta HMS *Eagle* versus USS *Wasp* museum sources, 17 Aug versus 14 Oct 1943 Schweinfurt, Market Garden 152 as a subset of 162 resupply aircraft on 20 September, and Eindhoven local Bodenplatte losses versus whole-raid figures.
+- Exact source and test report: `research/sources/atlas-campaign-operational-coverage-2026-11-06.md` and `docs/ATLAS_CAMPAIGN_COVERAGE_QA_2026-11-06.md`. GitHub core **42194849014** and final Chromium desktop/mobile **42194848882** both passed following the source discrepancy fix. Screenshots were generated but not independently downloaded and inspected here.
+- **Next substantial milestone:** source-audit additional phase journeys and genuinely local operational counts in the eight thinner campaigns; verify contradictory mission claims against original operational returns where accessible.
+
 ## 5 November 2026 — source-backed campaign stages, new stacked review branch
 
 **Work branch:** `feature/atlas-v80-campaign-stages`, stacked on `feature/atlas-v80-quality-poland`, still an **opt-in, unmerged preview**; v7.4 default and physics unchanged.

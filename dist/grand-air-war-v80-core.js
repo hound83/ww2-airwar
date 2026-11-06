@@ -22,7 +22,14 @@ const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Easte
 // Spain is grouped with the West for filtering, but it is not the WWII Western Front.
 const campaignRegion=c=>c.id==="spain"?"Spanish Civil War / Spain":themes[c.theater];
 const active=c=>c.start<=state.month&&c.end>=state.month;
-const matches=c=>(state.theater==="all"||c.theater===state.theater)&&(!state.search||(c.name+" "+c.objective+" "+c.participants.join(" ")+" "+c.consequence).toLowerCase().includes(state.search.toLowerCase()));
+// The search field promises battles/missions, not only the 20 catalogue titles.
+// Include researched phase names and dated operations, without treating the
+// free-text search as a license to merge numerical reporting populations.
+const searchable=c=>[c.name,c.objective,c.turningPoint,c.consequence,c.participants.join(" "),
+ ...(c.chapters||[]).flatMap(ch=>[ch.title,ch.location,ch.situation,ch.airRole,ch.change,ch.limits]),
+ ...c.moments.flatMap(e=>[e.title,e.place,e.summary||"",e.units||"",e.outcome||""])].join(" ").toLowerCase();
+const textMatch=(haystack,term)=>term.length<=3?haystack.split(/[^a-z0-9]+/).includes(term):haystack.includes(term);
+const matches=c=>(state.theater==="all"||c.theater===state.theater)&&(!state.search.trim()||textMatch(searchable(c),state.search.toLowerCase().trim()));
 const matching=()=>D.campaigns.filter(matches);
 const visibleOnMap=()=>matching().filter(c=>state.all||active(c));
 function cancelPlay(){if(state.play!==null){clearInterval(state.play);state.play=null;}$("play-time").textContent="▶ Play";}
@@ -267,7 +274,7 @@ function renderDossier(){
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
- $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(f.type?.includes("lower bound")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>';
+ $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>';
  $("dossier-uncertainty").textContent=c.uncertaintyNote||"Campaign evidence coverage is incomplete. Reported counts are limited to the specific source populations and periods shown, not comparable totals for every belligerent.";
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
@@ -279,7 +286,7 @@ function renderDossier(){
 function renderCampaignList(){
  const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
- $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase(c.facts.length,"sourced fact","sourced facts")+' · '+countPhrase(c.moments.length,"dated event","dated events")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase((c.chapters||[]).length,"phase","phases")+' · '+countPhrase(c.moments.filter(e=>e.summary).length,"researched event","researched events")+' · '+countPhrase(c.facts.length,"source-scoped figure","source-scoped figures")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
 function renderMoments(){
@@ -289,11 +296,12 @@ function renderMoments(){
  if(!chapters.some(ch=>ch.id===state.selectedChapter))state.selectedChapter=chapters[0]?.id||null;
  const chosenChapter=chapters.find(ch=>ch.id===state.selectedChapter);
  const scoped=chosenChapter?all.filter(e=>chosenChapter.start<=e.date&&e.date<=chosenChapter.end):all;
- $("moment-count").textContent=c?(chapters.length?countPhrase(chapters.length,"phase","phases")+" · ":"")+countPhrase(all.length,"dated record","dated records"):"No campaign selected";
+ const researched=all.filter(e=>e.summary).length;
+ $("moment-count").textContent=c?(chapters.length?countPhrase(chapters.length,"phase","phases")+" · ":"")+countPhrase(researched,"researched event","researched events")+(all.length-researched?" · "+countPhrase(all.length-researched,"calendar marker","calendar markers"):""):"No campaign selected";
  $("chapter-coverage").textContent=chapters.length?"Source-backed historical progression":"Phase breakdown not yet source-audited";
  $("chapter-list").innerHTML=!c?'<div class="empty">Select a campaign above to read its progression.</div>':chapters.length?chapters.map((ch,i)=>{
-  const n=all.filter(e=>ch.start<=e.date&&e.date<=ch.end).length,selected=ch.id===state.selectedChapter;
-  return '<button type="button" class="chapter-card'+(selected?' selected':'')+'" aria-pressed="'+selected+'" data-chapter="'+esc(ch.id)+'"><span class="chapter-index">'+String(i+1).padStart(2,"0")+'</span><span class="chapter-card-copy"><strong>'+esc(ch.title)+'</strong><small>'+esc(ch.start)+' → '+esc(ch.end)+'</small><em>'+countPhrase(n,"dated evidence record","dated evidence records")+'</em></span></button>';
+  const inPhase=all.filter(e=>ch.start<=e.date&&e.date<=ch.end),n=inPhase.filter(e=>e.summary).length,markers=inPhase.length-n,selected=ch.id===state.selectedChapter;
+  return '<button type="button" class="chapter-card'+(selected?' selected':'')+'" aria-pressed="'+selected+'" data-chapter="'+esc(ch.id)+'"><span class="chapter-index">'+String(i+1).padStart(2,"0")+'</span><span class="chapter-card-copy"><strong>'+esc(ch.title)+'</strong><small>'+esc(ch.start)+' → '+esc(ch.end)+'</small><em>'+countPhrase(n,"researched event","researched events")+(markers?" · "+countPhrase(markers,"calendar marker","calendar markers"):"")+'</em></span></button>';
  }).join(""):'<div class="chapter-unresearched">No reliable multi-stage history has been reviewed for this campaign yet. The campaign overview and its dated source records remain available below; individual markers do not establish a complete chronology.</div>';
  $("chapter-list").querySelectorAll("[data-chapter]").forEach(b=>b.addEventListener("click",()=>selectChapter(b.dataset.chapter)));
  const field=(label,value)=>'<div class="chapter-field"><h4>'+label+'</h4><p>'+esc(value)+'</p></div>';
@@ -302,7 +310,8 @@ function renderMoments(){
  }else if(c){
   $("chapter-detail").innerHTML='<div class="chapter-detail-top"><span class="eyebrow">Campaign-level context · '+esc(mLabel(c.start))+' to '+esc(mLabel(c.end))+'</span><h3>What the available research establishes</h3></div>'+field('Military and air objectives',c.objective)+field('Main developments',c.turningPoint)+field('Result',c.consequence)+'<p class="chapter-limit"><strong>Coverage gap:</strong> These are campaign-wide statements. We have not established source-backed phase dates or unit-level aviation activity for each step.</p><div class="dossier-links">'+c.sources.map(id=>sourceLink(id)).join("")+'</div>';
  }else{$("chapter-detail").innerHTML='';}
- $("moment-scope").textContent=chosenChapter?countPhrase(scoped.length,"record","records")+" in phase":countPhrase(all.length,"record","records")+" · partial coverage";
+ const scopedResearch=scoped.filter(e=>e.summary).length;
+ $("moment-scope").textContent=chosenChapter?countPhrase(scopedResearch,"researched event","researched events")+(scoped.length-scopedResearch?" · "+countPhrase(scoped.length-scopedResearch,"marker","markers"):""):countPhrase(scopedResearch,"researched event","researched events")+" · partial coverage";
  $("moment-list").innerHTML=scoped.length?scoped.map(e=>{
   const selected=state.selectedMoment===e.date+"|"+e.title;
   return '<button type="button" class="record '+(selected?'selected':'')+'" aria-current="'+selected+'" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-title="'+esc(e.title)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.place)+(e.summary?' · Detailed research':' · Date marker, not yet an air-operation dossier')+'</small></span><span class="date-tag">'+esc(e.date)+(e.date.slice(0,7)===state.month?' · MAP MONTH':'')+'</span></button>';
