@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,65,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,78,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,71,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,80,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -104,9 +104,21 @@ for(const id of ["spain","poland","norway","france1940","britain","malta","barba
 const norway=D.campaigns.find(c=>c.id==="norway");
 assert.equal(norway.facts[0].value,17);
 assert.ok(norway.facts[0].scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");
-assert.deepEqual([...norway.facts.map(f=>f.value)],[17,49,37,6,13]);
+assert.deepEqual([...norway.facts.map(f=>f.value)],[42,53,75,24,329,249,17,49,37,6,13]);
 assert.ok(norway.facts.find(f=>f.value===6).type.includes("claims")&&norway.facts.find(f=>f.value===13).type.includes("primary"),"Norway claims and airfield losses must be distinguished");
 assert.ok(norway.facts.find(f=>f.value===49).period.includes("not a single-day"),"multi-day Norway sorties must not appear as one-day figure");
+assert.equal(norway.moments.filter(e=>["1940-05-28","1940-06-02"].includes(e.date)).length,2,"new RAF daily event dates should be independently inspectable");
+for(const [date,expected] of [["1940-05-28",[42,53]],["1940-06-02",[75,24]]]){
+ const rows=norway.facts.filter(f=>f.date===date);
+ assert.deepEqual(rows.map(f=>f.value),expected,"daily ORB evidence is missing or incorrectly partitioned on "+date);
+ assert.ok(rows.every(f=>f.sourceId==="rafNorwayDailyCampaignOriginal"),"daily numbers must link the original RAF report");
+}
+assert.ok(norway.facts.find(f=>f.value===75).scope.includes("TOGETHER"),"joint daily sorties cannot be assigned to a single squadron");
+assert.ok(norway.facts.find(f=>f.value===24).scope.includes("NOT confirmed"),"combat actions are not confirmed enemy aircraft losses");
+assert.ok(norway.facts.find(f=>f.value===329).period.includes("not daily"),"12-day total must not become a daily figure");
+assert.ok(norway.facts.find(f=>f.value===249).scope.includes("No. 46 Squadron ONLY"),"unit population must remain explicit");
+assert.ok(D.sources.rafNorwayDailyCampaignOriginal.url.includes("raf.mod.uk"),"official RAF primary unit-report trail is required");
+
 const barbarossa=D.campaigns.find(c=>c.id==="barbarossa");
 assert.deepEqual([...barbarossa.facts.map(f=>f.value)],[1200,800]);
 assert.ok(barbarossa.facts[1].scope.includes("not another 800"),"Barbarossa on-ground losses are included in total, not added");
