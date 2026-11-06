@@ -1,38 +1,20 @@
-# Start a fresh European Air War Atlas conversation
+# Start a new European Air War Atlas conversation
 
-This page is the small, always-current alternative to handing over a complete chat, a physics archive or hundreds of pasted files. **The website code and research records live in GitHub.** Read the repository at the start of each new chat.
+The repository and its current documents are the source of truth. Do not upload an old chat or assume that version numbers and previews from previous conversations remain current.
 
-## Preferred starting configuration
+## Planning prompt
 
-- **Chat:** discuss the next website features, priorities, historical data questions and design decisions. No giant handover upload.
-- **Work:** implement a single scoped GitHub task, execute tests, inspect the UI and create a PR. **Start a fresh Work conversation for the next milestone if session size/usage becomes a problem.**
-- Start with an economical supported model and Medium reasoning. Ask the user to raise effort to High only for genuinely difficult technical or historical conflicts; do not assume any specific named model is available.
-- Keep all substantive knowledge in GitHub README/AGENTS/docs and all code in Git commits. User prefers results within a standard Plus subscription.
+> Continue the European Air War Atlas website at https://github.com/hound83/ww2-airwar. Read the current README.md, AGENTS.md and relevant parts of docs/STATUS_AND_NEXT_STEPS.md. This is separate from the aircraft physics repository. Review the actual current website, historical evidence and priorities. Help me choose one meaningful, coherent outcome with measurable user-facing acceptance checks. Keep it concise and identify any genuine product decisions I must make.
 
-## Copy-paste prompt: website planning (Chat)
+## Implementation prompt
 
-> Continue the **European Air War Atlas website** from GitHub: https://github.com/hound83/ww2-airwar. This is **not** the aircraft physics development project, which is separately managed at https://github.com/hound83/WW2-Aircraft-Physics-Simulator. Read the **latest** README.md, AGENTS.md, docs/STATUS_AND_NEXT_STEPS.md and docs/ATLAS_PHYSICS_INTEGRATION.md; inspect current main/PRs and the public v7.4 plus opt-in v7.5 preview. Preserve historical sourcing and the existing v2.4 embedded physics snapshot. I want to improve the Atlas UI, historical analyses, navigation and data independently of physics v3.0. Help me choose a coherent next improvement, with specific scope and acceptance criteria. Keep the discussion focused and economical. Do not rewrite the physics engine.
+> Work in https://github.com/hound83/ww2-airwar using its latest branch, pull requests, README.md, AGENTS.md and task-relevant evidence. Deliver **[ONE COHERENT ATLAS MILESTONE]** end to end: investigate, implement, test the historical data and complete user journey, inspect the browser result, and repair in-scope problems. Preserve provenance and the separate physics boundary. Take routine technical decisions independently. Create a reviewable PR and, if every applicable release gate is verified and GitHub permits it, merge and verify the published website without asking for another GO. Otherwise leave a precise tested checkpoint and blocker. Report only real before/after evidence, tests, live status and unresolved limitations.
 
-## Copy-paste prompt: single implementation milestone (Work)
+## Boundaries and useful starting points
 
-> Work only in the Atlas repository https://github.com/hound83/ww2-airwar, using its **latest remote branch/PR state**. Read README.md, AGENTS.md, docs/STATUS_AND_NEXT_STEPS.md, docs/ATLAS_PHYSICS_INTEGRATION.md and relevant research documentation. Implement **[INSERT ONE COHERENT WEBSITE IMPROVEMENT]** on a feature branch. Preserve the public v7.4 default, the opt-in v7.5 preview, source confidence categories and the frozen v2.4 simulator. Do not edit the separate physics repository. Rebuild generated HTML, run the relevant Node tests and browser checks where available, open a reviewable PR and update status documentation. Deliver a concise summary of what changed, what was actually tested, the PR link and the next recommended step. Do not dump files or long logs into chat.
+- The Atlas website is independent of the [aircraft physics model](https://github.com/hound83/WW2-Aircraft-Physics-Simulator). Integrate a new physics model or promote an opt-in preview only when the assignment explicitly authorizes that product change and the documented gates pass.
+- Use [project status](STATUS_AND_NEXT_STEPS.md), [physics integration rules](ATLAS_PHYSICS_INTEGRATION.md), [historical source audit](../SOURCE_AUDIT.md) and relevant research records only as needed.
+- Check the actual default website and any active previews; never assume hardcoded version labels are still current.
+- Keep significant decisions and results in GitHub, not large handover archives. Start a fresh conversation when practical; continuation must work from repository state alone.
 
-## What the new chat must understand
-
-- **Two separate projects:** Atlas website vs independent physics model. The physics repo's v2.5 baseline and v3.0 scientific effort must not block Atlas UX or historical-data development.
-- **Current site:** v7.4 default; v7.5 preview via `?preview=7.5`; the four-aircraft research physics v2.4 currently appears in Atlas, but remains scientifically provisional.
-- **Site-specific development:** chart readability, source transparency, historical data coverage, pilot simulation, maps/campaigns, navigation, mobile/a11y, coherent user experience.
-- **Historical claims:** model assumptions and missing data must not be disguised as measured values; documentation contains unresolved contradictions and provenance.
-- **Versioning:** prefer feature branches, tested PRs and a stable main. Avoid handover ZIPs except occasional explicit archival backups.
-- **Work size:** the user has experienced "chat too large" errors after two Work assignments. Do not upload/re-read the 120MB physics handover and don't produce huge tool-output dumps. Fresh short tasks are preferable; GitHub preserves continuity.
-
-## Links
-
-- Site: https://hound83.github.io/ww2-airwar/
-- v7.5 preview: https://hound83.github.io/ww2-airwar/?preview=7.5
-- Atlas source: https://github.com/hound83/ww2-airwar
-- Physics source: https://github.com/hound83/WW2-Aircraft-Physics-Simulator
-- Historical source audit: `SOURCE_AUDIT.md`
-- Prior original release narrative: `docs/ARCHIVE_README_BEFORE_2026-10-30_CLEANUP.md`
-
-The new chat should derive the **current** status from GitHub, not rely on frozen dates/commits in this document.
+Website: https://hound83.github.io/ww2-airwar/
