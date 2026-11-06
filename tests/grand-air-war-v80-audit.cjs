@@ -102,6 +102,26 @@ for(const id of ["spain","poland","norway","france1940","britain","malta","barba
  }
 }
 const norway=D.campaigns.find(c=>c.id==="norway");
+const daily=norway.dailyOperations;
+assert.ok(daily&&D.sources[daily.tableSourceId]?.url.startsWith("https://www.raf.mod.uk/"),"original AHB daily return not linked");
+assert.ok(D.sources[daily.unitSourceId]?.url.endsWith("air271547.pdf"),"original squadron diary transcription missing");
+assert.ok(D.sources[daily.unitSourceId].class.includes("transcription"),"a modern transcription must never be described as an original scan");
+assert.equal(daily.rows.length,18,"May 21–June 7 unit record must retain dates not listed in Table 2");
+assert.equal(daily.rows.filter(r=>r.tableStatus!=="outside-table").length,16,"AHB Table 2 source-day coverage changed");
+assert.equal(daily.rows.filter(r=>r.tableStatus!=="outside-table"&&r.combats!==null&&r.ownLosses!==null).length,13,"unreported combat/loss cells must not be counted as zeros");
+assert.equal(daily.rows.filter(r=>r.conflict).length,2,"25/26 May original-source discrepancies must remain visible");
+assert.deepEqual([...daily.rows.filter(r=>r.tableStatus==="outside-table").map(r=>r.date)],["1940-05-21","1940-06-01"]);
+const day=date=>daily.rows.find(r=>r.date==="1940-"+date);
+assert.equal(day("05-25").sorties,36);assert.equal(day("05-25").unitSorties,40);assert.equal(day("05-25").unitQualifier,"lower-bound-exclusive");
+assert.equal(day("05-26").sorties,50);assert.equal(day("05-26").unitQualifier,"lower-bound-exclusive");
+assert.equal(day("06-02").sorties,75);assert.equal(day("06-02").unitSorties,55);
+assert.equal(day("05-28").ownLosses,0,"RAF's NIL loss observation is an actual documented zero");
+for(const date of ["06-03","06-04","06-05"]){assert.equal(day(date).unitSorties,0,"263 squadron's explicit no-flying period lost");assert.ok(day(date).sorties>0,"area sorties do not mean 263 was flying");}
+for(const date of ["06-04","06-05","06-06"]){assert.equal(day(date).combats,null);assert.equal(day(date).ownLosses,null);}
+assert.equal(day("06-07").sortiesQualifier,"approximate");
+assert.equal(daily.rows.filter(r=>r.sortiesQualifier!=="approximate"&&r.sorties!==null).reduce((s,r)=>s+r.sorties,0),594,"precise Table 2 subtotal changed; do not include about 50 as exact");
+assert.ok(daily.reconciliation.includes("329")&&daily.reconciliation.includes("249")&&daily.reconciliation.includes("578"),"AHB's nonmatching squadron reporting sums must be exposed");
+for(let i=1;i<daily.rows.length;i++)assert.ok(daily.rows[i-1].date<daily.rows[i].date,"unit diary dates not ascending or duplicated");
 assert.equal(norway.facts[0].value,17);
 assert.ok(norway.facts[0].scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");
 assert.deepEqual([...norway.facts.map(f=>f.value)],[17,49,37,6,13]);

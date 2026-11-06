@@ -117,6 +117,34 @@
 .evidence-confidence{background:#36392f;border-left:3px solid #d5b57f;border-radius:3px;padding:10px 11px;color:#f0ddb8!important;font-size:11px!important;line-height:1.65}
 .moment-detail .evidence-confidence{margin-top:12px}
 .moment-detail .dossier-links{margin-top:10px}
+.daily-ledger{margin-top:17px;border-top:1px solid #527178;padding-top:7px;min-width:0}
+.daily-ledger[hidden]{display:none}
+.daily-ledger h3{font:normal 23px/1.25 Georgia,serif;color:#f1d7a8;margin:7px 0 8px}
+.daily-context,.daily-caution{font-size:11px;color:#c7ded6;line-height:1.65;margin:8px 0 11px}
+.daily-coverage{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+.daily-coverage span{background:#264147;border:1px solid #52777b;border-radius:5px;padding:7px 9px;font-size:10px;color:#d5e4dc}
+.daily-coverage b{color:#a4e2cf}
+.daily-table-scroll{max-width:100%;overflow-x:auto;border:1px solid #52717a;border-radius:6px}
+.daily-table{width:100%;border-collapse:collapse;font-size:11px;color:#e4f1e9}
+.daily-table caption{caption-side:top;text-align:left;padding:9px 10px;color:#c4dcd5;font-size:10px;line-height:1.6}
+.daily-table th,.daily-table td{border-top:1px solid #355862;text-align:center;padding:8px 5px;white-space:nowrap}
+.daily-table thead th{font-size:9px;color:#a9e3d3;background:#2a434e;line-height:1.35}
+.daily-table tbody tr:nth-child(even){background:#18333e}
+.daily-table tbody tr.daily-conflict{box-shadow:inset 3px 0 #f3be72}
+.daily-table tbody tr.daily-selected{background:#2a5555}
+.daily-day{min-width:66px;border:1px solid #537b81;border-radius:4px;padding:6px;color:#f4d7a6;background:#25434c;font-size:11px;cursor:pointer}
+.daily-day:hover,.daily-day:focus-visible{border-color:#e5cd99;background:#385968;outline-offset:2px}
+.daily-day[aria-pressed=true]{border-color:#e5cd99;background:#476365}
+.daily-day span{color:#ffc27e}
+.daily-missing{font-size:9px;color:#b0bfc4;white-space:normal}
+.daily-zero{display:block;font-size:8px;color:#a0e1ce}
+.daily-day-detail{padding:12px 13px;margin-top:10px;background:#1d3b45;border:1px solid #5d827b;border-radius:6px;min-height:50px}
+.daily-day-detail h4{color:#9be5d1;text-transform:uppercase;letter-spacing:.07em;font-size:10px;margin:9px 0 3px}
+.daily-day-detail p{font-size:11px;line-height:1.65;color:#d1e3dc;margin:0 0 6px}
+.daily-day-detail .daily-detail-limits{margin-top:10px;color:#eed9b1}
+.daily-ledger .dossier-links{margin-top:10px;line-height:1.8}
+.daily-caution{background:#3b3c33;color:#ecd9b1;border-left:3px solid #d2af78;padding:10px 11px;border-radius:4px}
+@media(max-width:600px){.daily-table thead{display:none}.daily-table tbody{display:grid;gap:7px;padding:7px}.daily-table tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid #41616c;border-radius:5px;padding:5px 8px;gap:3px}.daily-table tr th{grid-column:1/-1;text-align:left;padding:3px}.daily-table tr td{border:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:4px;white-space:normal}.daily-table tr td::before{content:attr(data-label);font-size:9px;color:#9cdacb}.daily-table caption{padding:8px;font-size:10px}.daily-table .daily-zero{display:inline-block;margin-left:4px}}
 .dossier #dossier-uncertainty{margin:6px 0 12px}
 .research-open{display:inline-block;background:#2a5054;color:#c5f1e2;border:1px solid #6fa79c;border-radius:5px;padding:8px 10px;font-size:11px;text-decoration:none}
 .research-library{margin-top:24px;border:1px solid #597c7c;background:#122935;border-radius:9px;scroll-margin-top:16px}
