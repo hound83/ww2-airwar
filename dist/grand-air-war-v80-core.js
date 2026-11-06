@@ -256,6 +256,25 @@ function renderTime(){
  $("coverage-label").textContent=visibleOnMap().length+" shown of "+matching().length+" matching · "+matching().filter(active).length+" active";
  $("map-heading").textContent=visibleOnMap().length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
 }
+function renderCampaignComparisons(c){
+ const blocks=[];
+ const byId=new Map((c.facts||[]).filter(f=>f.id).map(f=>[f.id,f]));
+ for(const comp of c.comparisons||[]){
+  const entries=(comp.rows||[]).map(row=>{
+   const f=(row.factId&&byId.get(row.factId))||(row.factLabel&&c.facts.find(x=>x.label===row.factLabel));
+   if(!f)return '<div class="comparison-cell comparison-unknown">Source observation unavailable; no substitute zero.</div>';
+   const prefix=/lower[- ]bound/.test(f.type||"")? "&gt; ":f.type?.includes("approximate")?"≈ ":"";
+   return '<article class="comparison-cell" data-evidence-id="'+esc(f.id||f.label)+'"><span class="comparison-side">'+esc(row.side)+'</span><strong>'+prefix+fmt(f.value)+'</strong><small>'+esc(f.unit)+' · '+esc(f.date)+'</small>'+sourceLink(f.sourceId,"View original reporting source")+'</article>';
+  }).join("");
+  blocks.push('<section class="comparison-section" data-comparison-quality="'+esc(comp.quality||"caution")+'"><h4>'+esc(comp.title)+'</h4><p class="comparison-metric">'+esc(comp.measure)+'</p><div class="comparison-grid">'+entries+'</div><p class="comparison-caution">'+esc(comp.caution)+'</p></section>');
+ }
+ const series=c.operationalSeries;
+ if(series&&Array.isArray(series.rows)){
+  const lines=series.rows.map(row=>'<tr><th scope="row">'+esc(row.date)+'</th><td>'+fmt(row.german)+'</td><td>'+fmt(row.italian)+'</td><td>'+fmt(row.german+row.italian)+'</td></tr>').join("");
+  blocks.push('<section class="operational-series" data-series="german-italian-aircraft"><h4>'+esc(series.title)+'</h4><p class="comparison-metric">'+esc(series.metric)+'</p><div class="operational-table-scroll"><table><thead><tr><th scope="col">Date</th><th scope="col">German</th><th scope="col">Italian</th><th scope="col">Same-day total</th></tr></thead><tbody>'+lines+'</tbody></table></div><p class="comparison-caution">'+esc(series.description)+'</p>'+sourceLink(series.sourceId,"Inspect historical table")+'</section>');
+ }
+ return blocks.length?'<div class="campaign-comparisons"><h3>Operational strength & losses · inspect before comparing</h3><p class="comparison-intro">Only matching dates, units and accounting definitions may be compared directly. A snapshot is not a sortie; a claim is not a confirmed loss.</p>'+blocks.join("")+'</div>':"";
+}
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
  if(state.lastDossierId!==state.selected){$("campaign-dossier").scrollTop=0;state.lastDossierId=state.selected;}
@@ -274,7 +293,7 @@ function renderDossier(){
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
- $("dossier-facts").innerHTML=c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.period||f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>';
+ $("dossier-facts").innerHTML=renderCampaignComparisons(c)+(c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.period||f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>');
  $("dossier-uncertainty").textContent=c.uncertaintyNote||"Campaign evidence coverage is incomplete. Reported counts are limited to the specific source populations and periods shown, not comparable totals for every belligerent.";
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
