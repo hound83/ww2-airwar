@@ -64,8 +64,8 @@ const check=async()=>{
    assert.match(await page.locator("#moment-detail").innerText(),/24th Reconnaissance Squadron/);
    assert.equal(await page.locator('#moment-detail a[href*="muzeumlotnictwa.pl"]').count(),1);
    await page.locator("#campaigns").screenshot({path:path.join(root,"v80-qa-campaign-guide-"+viewport.width+".png")});
-   // Walk all 20 campaigns through the real controller and verify both
-   // source-backed chapters and honestly incomplete phase coverage render.
+   // Walk all 20 campaigns through the real controller and verify source-backed
+   // chapters, with intentionally unphased single-day Dieppe/Bodenplatte.
    const overview=await page.evaluate(()=>{
     const app=window.GrandAirWarV77;
     const failures=[];
@@ -81,7 +81,7 @@ const check=async()=>{
    assert.deepEqual(overview.failures,[],"campaign guide incomplete or broken for: "+overview.failures.join(", "));
    assert.equal(overview.reviewed,20);
    await page.locator("#campaign-search").fill("");
-   for(const [term,id] of [["Cobra","normandy"],["Peewit","britain"],["HMS Eagle","malta"],["Black Thursday","schweinfurt"]]){
+   for(const [term,id] of [["Cobra","normandy"],["Peewit","britain"],["HMS Eagle","malta"],["Black Thursday","schweinfurt"],["Pitomnik","stalingrad"],["Prokhorovka","kursk"],["Cassino","italy"],["Vitebsk","bagration"],["Seelow","berlin"]]){
     await page.locator("#campaign-search").fill(term);
     assert.equal(await page.locator("#campaign-list [data-campaign]").count(),1,term+" should resolve to one campaign");
     assert.equal(await page.locator("#campaign-list [data-campaign]").first().getAttribute("data-campaign"),id,term+" wrong campaign");
@@ -98,6 +98,12 @@ const check=async()=>{
     ["france1940",3,"dunkirk","1940-05-26","2,739"],
     ["britain",5,"channel","1940-08-08","Peewit"],
     ["sicily",3,"inland","1943-07-22","Palermo"],
+    ["stalingrad",3,"collapse","1943-01-16","Pitomnik"],
+    ["reichdefense",3,"escort","1944-04-30","840"],
+    ["kursk",3,"counterblow","1943-07-12","Prokhorovka"],
+    ["italy",3,"cassino","1944-03-15","435"],
+    ["bagration",3,"breakthrough","1944-07-03","Minsk"],
+    ["berlin",3,"encirclement","1945-04-25","Berlin"],
     ["schweinfurt",2,"october","1943-10-14","291"],
     ["bigweek",2,"sustained","1944-02-25","4,000"],
     ["normandy",3,"falaise","1944-08-19","Falaise"],
@@ -112,6 +118,15 @@ const check=async()=>{
     assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>0,id+" lacks clickable original research source");
     assert.equal(await page.locator("#moment-detail").isVisible(),true);
    }
+   for(const [id,figure] of [["stalingrad","117.6"],["reichdefense","840"],["kursk","3,000"],["italy","435"],["bagration","5,300"],["berlin","7,500"]]){
+    await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
+    assert.match(await page.locator("#dossier-facts").innerText(),new RegExp(figure.replace(".","\\.")),id+" fact missing in actual UI");
+    const sources=await page.locator("#dossier-facts .fact a[href^='https://']").count();
+    assert.ok(sources>0,id+" numerical provenance link is not actionable");
+   }
+   await page.evaluate(()=>window.GrandAirWarV77.choose("italy",false));
+   await page.locator('#chapter-list [data-chapter="cassino"]').click();
+   await page.locator(".campaign-guide").screenshot({path:path.join(root,"v80-qa-italy-guide-"+viewport.width+".png")});
    for(const [id,expectText] of [["dieppe","2,614"],["bodenplatte","Eindhoven"]]){
     await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
     assert.equal(await page.locator("#chapter-list .chapter-card").count(),0,id+" is a single-day action, not several invented dates");

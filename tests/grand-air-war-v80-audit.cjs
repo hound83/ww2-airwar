@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,42,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,57,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,56,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,76,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -60,6 +60,7 @@ for(const c of D.campaigns){
   assert.ok(f.unit&&f.label&&f.scope&&f.date&&f.type,c.id+" missing comparison boundaries");
   assert.match(D.sources[f.sourceId]?.url||"",/^https?:\/\//,c.id+" fact without an external source");
   assert.ok(f.date.slice(0,7)>=c.start&&f.date.slice(0,7)<=c.end,c.id+" out-of-period fact: "+f.date);
+  if(f.period)assert.ok(f.period.length>=25,c.id+" requires an explicit meaningful reporting period");
  }
 }
 assert.equal(new Set(allEvents.map(e=>e.campaign+e.date+e.title)).size,allEvents.length,"duplicated dated event");
@@ -88,10 +89,10 @@ assert.equal(poland.facts.length,4);
 assert.equal(poland.moments.length,7);
 assert.equal(poland.chapters.length,3);
 assert.deepEqual([...poland.chapters.map(c=>c.start)],["1939-09-01","1939-09-07","1939-09-17"]);
-assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["norway",3],["france1940",3],["britain",5],["malta",4],["barbarossa",3],["sicily",3],["schweinfurt",2],["bigweek",2],["normandy",3],["marketgarden",3] ]);
+assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["norway",3],["france1940",3],["britain",5],["malta",4],["barbarossa",3],["stalingrad",3],["reichdefense",3],["sicily",3],["kursk",3],["schweinfurt",2],["italy",3],["bigweek",2],["normandy",3],["bagration",3],["marketgarden",3],["berlin",3] ]);
 // Every source-backed phase, including the older pilots, must offer at least
 // one inspectable detailed event. Calendar-only placeholders are not evidence.
-for(const id of ["spain","poland","norway","france1940","britain","malta","barbarossa","sicily","schweinfurt","bigweek","normandy","marketgarden"]){
+for(const id of ["spain","poland","norway","france1940","britain","malta","barbarossa","stalingrad","reichdefense","sicily","kursk","schweinfurt","italy","bigweek","normandy","bagration","marketgarden","berlin"]){
  const c=D.campaigns.find(c=>c.id===id);
  assert.ok(c.chapters.length>=2,id+" missing a sequential research guide");
  for(const ch of c.chapters){
@@ -123,6 +124,39 @@ const bodenplatte=D.campaigns.find(c=>c.id==="bodenplatte");
 assert.ok(bodenplatte.facts.some(f=>f.value===45&&f.scope.includes("do not add")),"Eindhoven local loss must not be stacked with whole-raid values");
 assert.ok(bodenplatte.facts.some(f=>f.value===35&&f.scope.includes("not necessarily identical")),"local versus whole-raid damage definitions need disclosure");
 for(const id of ["dieppe","bodenplatte"])assert.ok(D.campaigns.find(c=>c.id===id).moments.every(e=>e.summary&&e.sourceIds.length),id+" single-day action needs researched event details");
+// Numbers here represent different kinds of evidence; no facts array may be
+// silently summed into a common "campaign aircraft losses" metric.
+const stalingrad=D.campaigns.find(c=>c.id==="stalingrad");
+assert.deepEqual([...stalingrad.facts.map(f=>f.value)],[300,500,117.6],"Stalingrad target and actual seven-week delivery must stay distinct");
+assert.equal(stalingrad.facts.filter(f=>f.unit==="tons/day").length,3);
+assert.ok(stalingrad.facts[0].scope.includes("not transported")&&stalingrad.facts[2].scope.includes("seven weeks"));
+assert.ok(stalingrad.facts[2].period.includes("not a single-day")&&stalingrad.facts[2].date==="1942-11","multiweek airlift mean must not be labeled a fabricated Wednesday");
+assert.ok(stalingrad.chapters.at(-1).limits.includes("different date ranges"),"airlift secondary disagreement must be disclosed");
+const reich=D.campaigns.find(c=>c.id==="reichdefense");
+assert.deepEqual([...reich.facts.map(f=>f.value)],[662,840]);
+assert.equal(389+95+178,662);assert.equal(580+83+177,840);
+assert.ok(reich.facts.every(f=>f.scope.includes("Luftflotte Reich reporting area ONLY")&&f.type==="primary-command-return"),"no campaign-wide losses from monthly German Reich returns");
+const kursk=D.campaigns.find(c=>c.id==="kursk");
+assert.deepEqual([...kursk.facts.map(f=>f.value)],[3000,2000]);
+assert.ok(kursk.facts.every(f=>f.type.includes("assigned-strength")&&!f.scope.includes("loss total")));
+const italy=D.campaigns.find(c=>c.id==="italy");
+assert.equal(italy.end,"1945-05","Italy May 2 surrender must be included, not truncated at April");
+assert.deepEqual([...italy.facts.map(f=>f.value)],[435,173,262,300]);
+assert.equal(173+262,435,"Cassino subsets must reconcile without double-counting");
+assert.ok(italy.facts.slice(1,3).every(f=>f.type==="recorded-subset")&&italy.facts[3].type==="approximate-subset");
+assert.ok(italy.facts[0].scope.includes("08:30–12:00")&&italy.chapters[1].limits.includes("SUBSET"));
+const bagration=D.campaigns.find(c=>c.id==="bagration");
+assert.deepEqual([...bagration.facts.map(f=>f.value)],[5300,1400]);
+assert.ok(bagration.facts.every(f=>f.type==="secondary-order-of-battle-estimate"&&f.scope.includes("NOT")));
+assert.ok(bagration.moments.some(e=>e.date==="1944-06-23")&&!bagration.moments.some(e=>e.date==="1944-06-22"),"main Bagration assault began 23 June, reconnaissance 22 June");
+const berlin=D.campaigns.find(c=>c.id==="berlin");
+assert.equal(berlin.facts.length,1,"conflicted 16th Air Army 2738 figure must not enter numeric facts");
+assert.equal(berlin.facts[0].value,7500);
+assert.ok(berlin.chapters[0].limits.includes("experienced crews")&&berlin.chapters[1].limits.includes("not by itself audit"));
+assert.deepEqual([...berlin.moments.filter(e=>e.date.startsWith("1945-05")).map(e=>e.date)],["1945-05-02","1945-05-08"]);
+assert.ok(!berlin.participants.includes("RAF")&&!berlin.participants.includes("USAAF"),"western strategic forces must not be listed as direct Berlin assault participants");
+for(const c of D.campaigns)assert.ok(c.facts.length,"all 20 campaigns should now have at least one provenance-scoped number: "+c.id);
+for(const c of D.campaigns.filter(c=>c.chapters?.length))assert.ok(c.moments.every(e=>e.summary&&e.sourceIds?.length),c.id+" still has undetailed calendar placeholder");
 assert.ok(el("dossier-facts").innerHTML.includes("≈ 300")&&el("dossier-facts").innerHTML.includes("&gt; 1,300"));
 assert.ok(el("dossier-facts").innerHTML.includes("126")&&el("dossier-facts").innerHTML.includes("114"));
 assert.ok(el("dossier-uncertainty").textContent.includes("Source disagreement"));

@@ -1,5 +1,15 @@
 # Atlas status and next work
 
+## 6 November 2026 — six gap campaigns now have researched phased dossiers
+
+**Work branch:** `feature/atlas-v82-gap-coverage`, stacked on `feature/atlas-v81-campaign-coverage`. Default v7.4, standalone historical laboratories, underlying physics and optional v8 route unchanged.
+
+- Researched and integrated multi-phase guide and source-linked events for **all six previously numerical-empty campaigns**: Stalingrad, defence of Reich, Kursk, Italy, Bagration and Berlin. **18/20 campaigns** have operational stage guides, **55 phases** (previously 37), **76 dated researched events** (previously 57), **56 scoped numeric facts** (previously 42). Dieppe and Bodenplatte correctly remain single-day operations without invented extra phases.
+- New quantitative distinctions include Stalingrad delivered daily cargo versus supply *requirements*; Luftflotte Reich all-cause monthly airframe write-offs; Soviet and German assigned/committed strength at Kursk and Bagration; 435 Cassino morning bombers partitioned into 173 medium plus 262 heavy; and approximate Soviet assembled strength at Berlin. **No implied aircraft-loss total** where original local loss registers are unavailable.
+- **Deliberately withheld:** a contradictory Berlin 16th Air Army **2,738 aircraft versus 2,738 experienced crews** historical report until primary source reconciliation. The Italian campaign now correctly reaches the **2 May 1945 surrender** rather than stopping in April.
+- Source-by-source research and limitations: [`research/sources/atlas-campaign-gap-research-2026-11-06.md`](../research/sources/atlas-campaign-gap-research-2026-11-06.md). Node/data/regression tests cover all 20 campaigns, the six new journeys, 540 search/time/theatre/visibility combinations, nine zoom levels and independently scoped analytic panels. **Both release-verification suites passed against the final code:** [core GitHub run 42212885013](https://github.com/hound83/ww2-airwar/actions/runs/42212885013), [Chromium desktop/mobile run 42212885231](https://github.com/hound83/ww2-airwar/actions/runs/42212885231). Screenshots of desktop/mobile Italy, Poland and map were independently inspected. Details and known limits: [`docs/ATLAS_CAMPAIGN_GAPS_QA_2026-11-06.md`](ATLAS_CAMPAIGN_GAPS_QA_2026-11-06.md).
+- **Remaining next major research need:** recover unit- and day-level RAF, Luftwaffe, VVS and USAAF original loss, readiness and sortie registers to replace scoped secondary estimate placeholders with comparable proven populations; do not fabricate them from opening inventories or worldwide production.
+
 ## 6 November 2026 — operational campaign coverage and research discoverability
 
 **Work branch:** `feature/atlas-v81-campaign-coverage`, stacked on the unmerged `feature/atlas-v80-campaign-stages`; website v7.4 default and physics snapshot untouched. This is a review increment, not a published website.
