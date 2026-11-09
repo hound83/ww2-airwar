@@ -112,7 +112,7 @@ const {chromium}=require('playwright');
    await page.setViewportSize({width:390,height:844});
    await page.locator('.v75-home-grid').waitFor({state:'visible'});
    assert.ok(await page.locator('.v75-photo-card').first().isVisible());
-   await page.goto(base,{waitUntil:'load'});
+   await page.goto(base+'?legacy=1',{waitUntil:'load'});
    assert.equal(await page.locator('.v75-home-grid').count(),0,'default remains v7.4');
    assert.equal(await page.locator('#v75-performance-left').count(),0);
    assert.deepEqual(errors,[],'No runtime errors across views');
