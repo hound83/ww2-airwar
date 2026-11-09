@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,127,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,82,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,141,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,83,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -65,6 +65,52 @@ for(const c of D.campaigns){
  }
 }
 assert.equal(new Set(allEvents.map(e=>e.campaign+e.date+e.title)).size,allEvents.length,"duplicated dated event");
+
+/* Bilateral facts and event coverage: every campaign and every event, no fabricated opposing zeros. */
+assert.equal(typeof A.evidenceSide,"function");
+assert.equal(typeof A.evidenceKind,"function");
+assert.equal(typeof A.campaignEvidenceStatus,"function");
+assert.equal(typeof A.eventEvidenceStatus,"function");
+let gaps=0,both=0,eventsCovered=0,eventsNoDaily=0;
+for(const campaign of D.campaigns){
+ const status=A.campaignEvidenceStatus(campaign);
+ assert.ok(["opposing-source-gap","non-comparable","same-period-loss-evidence"].includes(status.status),campaign.id+" has invalid comparability status");
+ assert.ok(status.a+status.b===campaign.facts.length,campaign.id+" had unattributed numerical observations");
+ assert.ok(campaign.facts.every(f=>["A","B"].includes(A.evidenceSide(campaign,f))),campaign.id+" facts cannot be assigned to reporting sides");
+ if(status.status==="opposing-source-gap")gaps++;else both++;
+ for(const event of campaign.moments){
+  const ev=A.eventEvidenceStatus(campaign,event);
+  assert.ok(["no-daily-evidence","one-side-same-date","both-sides-same-date"].includes(ev.status),campaign.id+" event missing coverage state");
+  assert.ok(ev.same.every(f=>f.date===event.date&&!f.period),campaign.id+" event falsely treated period totals as daily");
+  assert.ok(ev.around.every(f=>f.period||f.date!==event.date),campaign.id+" campaign total rendered as same-day record");
+  if(ev.same.length)eventsCovered++;else eventsNoDaily++;
+ }
+}
+assert.equal(both+gaps,20);
+assert.equal(eventsCovered+eventsNoDaily,83);
+assert.ok(gaps>0&&eventsNoDaily>0,"a full reciprocal archive was falsely claimed for all campaigns and dates");
+const dieppe=D.campaigns.find(c=>c.id==="dieppe");
+assert.equal(dieppe.facts.find(f=>f.id==="dieppe-german-48").value,48);
+assert.equal(dieppe.facts.find(f=>f.id==="dieppe-allied-106-canada").value,106);
+assert.equal(dieppe.facts.find(f=>f.id==="dieppe-allied-108-france").value,108);
+assert.equal(A.campaignEvidenceStatus(dieppe).status,"same-period-loss-evidence");
+assert.equal(A.eventEvidenceStatus(dieppe,dieppe.moments[0]).status,"both-sides-same-date");
+assert.ok(dieppe.facts.find(f=>f.id==="dieppe-allied-108-france").scope.includes("Preserve disagreement"),"official source disagreement 106 vs 108 must remain explicit");
+const brit=D.campaigns.find(c=>c.id==="britain");
+const eighteen=brit.moments.find(e=>e.date==="1940-08-18");
+assert.ok(eighteen&&eighteen.sourceIds.includes("rafHardestDayLosses"),"Hardest Day lacks unit/date source link");
+assert.equal(A.eventEvidenceStatus(brit,eighteen).status,"both-sides-same-date");
+assert.equal(brit.facts.find(f=>f.id==="brit-18aug-allied-aircombat").value,31);
+assert.ok(brit.facts.find(f=>f.id==="brit-18aug-allied-aircombat").scope.includes("SUBSET"),"31 air-to-air loss subset is not additive to 68");
+assert.equal(brit.facts.find(f=>f.id==="brit-26aug-sep6-german-lost").value,322);
+assert.equal(brit.facts.find(f=>f.id==="brit-26aug-sep6-raf-lost").value,248);
+const week=D.campaigns.find(c=>c.id==="bigweek");
+assert.equal(week.facts.find(f=>f.id==="bw-allied-bombers-357").value,357);
+assert.equal(week.facts.find(f=>f.id==="bw-allied-fighters-28").value,28);
+assert.equal(week.facts.find(f=>f.id==="bw-german-fighters-262").value,262);
+assert.equal(A.eventEvidenceStatus(week,week.moments.find(e=>e.date==="1944-02-25")).status,"no-daily-evidence","full-week losses may not be displayed as 25 February daily losses");
+assert.ok(week.facts.find(f=>f.id==="bw-german-pilots-100").scope.includes("included in 250"),"pilot subset must not be added again");
+
 assert.equal(D.campaigns.find(c=>c.id==="spain").facts[0].value,7350);
 assert.equal(D.campaigns.find(c=>c.id==="spain").facts[1].value,19000);
 const france=D.campaigns.find(c=>c.id==="france1940");
