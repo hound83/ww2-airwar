@@ -189,8 +189,8 @@ const check=async()=>{
    await page.locator('#chapter-list [data-chapter="airfields"]').click();
    await page.locator('#moment-list [data-date="1940-08-18"]').click();
    assert.equal(await page.locator("#moment-detail .bilateral-event").getAttribute("data-event-evidence-status"),"both-sides-same-date","Hardest Day source figures not accessible in event drilldown");
-   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
-   assert.ok(overflow<=2,"bilateral comparison unexpectedly adds horizontal page overflow");
+   const bilateralPageOverflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
+   assert.ok(bilateralPageOverflow<=2,"bilateral comparison unexpectedly adds horizontal page overflow");
 
    await page.evaluate(()=>window.GrandAirWarV77.choose("italy",false));
    await page.locator('#chapter-list [data-chapter="cassino"]').click();
