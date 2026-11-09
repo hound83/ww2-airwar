@@ -256,6 +256,123 @@ function renderTime(){
  $("coverage-label").textContent=visibleOnMap().length+" shown of "+matching().length+" matching · "+matching().filter(active).length+" active";
  $("map-heading").textContent=visibleOnMap().length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
 }
+
+/* Two-sided evidence coverage for EVERY campaign and event.
+   Never create missing opposite-side casualties, extrapolate daily counts,
+   or calculate ratios for unlike time windows and reporting definitions. */
+const evidenceSides={
+ spain:["Nationalist/Condor Legion","Republican air forces"],
+ poland:["Polish air forces","German air forces"],
+ norway:["Allied air forces","German air forces"],
+ france1940:["Allied air forces","German air forces"],
+ britain:["RAF and Allied air forces","Luftwaffe / Axis air forces"],
+ malta:["RAF and Allied air forces","German and Italian air forces"],
+ barbarossa:["Soviet air forces","German air forces"],
+ dieppe:["RAF and Allied air forces","German air forces"],
+ stalingrad:["Soviet air forces","German air forces"],
+ reichdefense:["USAAF and Allied air forces","German air forces"],
+ sicily:["Allied air forces","German and Italian air forces"],
+ kursk:["Soviet air forces","German air forces"],
+ schweinfurt:["USAAF and Allied air forces","German air forces"],
+ italy:["Allied air forces","German air forces"],
+ bigweek:["USAAF, RAF and Allied forces","German air forces"],
+ normandy:["Allied air forces","Luftwaffe air forces"],
+ bagration:["Soviet air forces","German air forces"],
+ marketgarden:["Allied air forces","German air forces"],
+ bodenplatte:["Allied air forces","German air forces"],
+ berlin:["Soviet air forces","German air forces"]
+};
+// These positions apply ONLY to the legacy records with no side metadata.
+// Their lengths are asserted during source QA; newly authored facts have explicit sides.
+const legacyFactSides={
+ spain:"AA",poland:"ABAA",norway:"AAAAAAAAAAA",france1940:"AAAA",
+ britain:"BBAB",malta:"BBAAB",barbarossa:"AA",dieppe:"AA",stalingrad:"BBB",
+ reichdefense:"BB",sicily:"AAAAAAB",kursk:"AB",schweinfurt:"AAAA",
+ italy:"AAAA",bigweek:"AAA",normandy:"AA",bagration:"AB",
+ marketgarden:"AAA",bodenplatte:"AABAAA",berlin:"AAA"
+};
+function evidenceSide(c,f){
+ if(f.side){
+  if(["Allies","Soviet","RAF","Poland"].includes(f.side))return "A";
+  if(["Axis","Germany","Italy","Luftwaffe"].includes(f.side))return "B";
+  return "?";
+ }
+ const original=c.facts.filter(x=>!x.side),i=original.indexOf(f);
+ return (legacyFactSides[c.id]||"")[i]||"?";
+}
+function evidenceKind(f){
+ const label=(f.label||"").toLowerCase(),type=(f.type||"").toLowerCase(),measure=(f.measure||"").toLowerCase(),unit=(f.unit||"").toLowerCase();
+ if(/claim/.test(type+" "+measure+" "+label)||/shot down by polish pilots/.test(label))return "claims";
+ if(/personnel|pilots|aircrew|crews|people|troops|soldiers/.test(unit+" "+measure)&&!/aircraft|sorties/.test(unit))return "personnel";
+ if(/loss|destroy|shot down|did not return|write.off|written.off/.test(measure+" "+label+" "+type))return "aircraft losses";
+ if(/serviceable|operationally available|ready/.test(measure+" "+label))return "serviceable strength";
+ if(/aircraft.*strength|on.strength|assigned|assembled|committed|aircraft present|aircraft facing|opposing/.test(measure+" "+label))return "aircraft strength";
+ if(/sortie|flight|engagement|combat action/.test(measure+" "+label+" "+unit))return "flying activity";
+ return "other evidence";
+}
+function isAircraftLoss(f){
+ return evidenceKind(f)==="aircraft losses"&&!/personnel|crew|pilot|tonnage/.test(f.unit||"")&&!/subset|conflict|estimate/.test(f.measure||"");
+}
+function evidenceTimeClass(f,date){
+ // End-dated campaign and multi-day totals are NOT single-day events.
+ if(f.date===date && /^\\d{4}-\\d\\d-\\d\\d$/.test(f.date) && !f.period)return "same-date";
+ if(f.date===date && f.period)return "period";
+ if(/^\\d{4}-\\d\\d$/.test(f.date)&&f.date===date.slice(0,7))return "month";
+ const range=(f.date||"").match(/(\\d{4}-\\d\\d(?:-\\d\\d)?)\\s+to\\s+(\\d{4}-\\d\\d(?:-\\d\\d)?)/);
+ if(range){
+  const lo=range[1].length===7?range[1]+"-01":range[1],hi=range[2].length===7?range[2]+"-31":range[2];
+  return date>=lo&&date<=hi?"period":null;
+ }
+ return null;
+}
+function campaignEvidenceStatus(c){
+ const a=c.facts.filter(f=>evidenceSide(c,f)==="A"),b=c.facts.filter(f=>evidenceSide(c,f)==="B");
+ const lossA=a.filter(isAircraftLoss),lossB=b.filter(isAircraftLoss);
+ const matched=lossA.some(f=>lossB.some(g=>f.date===g.date&&String(f.period||"")===String(g.period||"")));
+ return {a:a.length,b:b.length,lossA:lossA.length,lossB:lossB.length,matchingLossWindow:matched,
+   status:!a.length||!b.length?"opposing-source-gap":matched?"same-period-loss-evidence":"non-comparable"};
+}
+function eventEvidenceStatus(c,e){
+ const same=c.facts.filter(f=>evidenceTimeClass(f,e.date)==="same-date");
+ const around=c.facts.filter(f=>["period","month"].includes(evidenceTimeClass(f,e.date)));
+ const cited=same.filter(f=>(e.sourceIds||[]).includes(f.sourceId));
+ const a=same.filter(f=>evidenceSide(c,f)==="A"),b=same.filter(f=>evidenceSide(c,f)==="B");
+ return {same,around,cited,a,b,status:!same.length?"no-daily-evidence":a.length&&b.length?"both-sides-same-date":"one-side-same-date"};
+}
+function evidenceFactCard(c,f){
+ const marker=/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"";
+ return '<article class="bilateral-value" data-evidence-side="'+esc(evidenceSide(c,f))+'" data-evidence-kind="'+esc(evidenceKind(f))+'"><strong>'+marker+fmt(f.value)+'</strong><span>'+esc(f.label)+'</span><small>'+esc(f.unit)+' · '+esc(f.period||f.date)+' · '+esc(evidenceKind(f))+'</small>'+sourceLink(f.sourceId,"Source")+'</article>';
+}
+function renderBilateralCampaign(c){
+ const s=campaignEvidenceStatus(c);
+ const side=(id,n)=>{
+  const facts=c.facts.filter(f=>evidenceSide(c,f)===id);
+  const priority={"aircraft losses":0,"serviceable strength":1,"aircraft strength":2,"flying activity":3,"claims":4,"personnel":5,"other evidence":6};
+  const chosen=[...facts].sort((a,b)=>(priority[evidenceKind(a)]??7)-(priority[evidenceKind(b)]??7)).slice(0,3);
+  return '<section class="bilateral-side" data-side="'+id+'"><h4>'+esc(evidenceSides[c.id][n])+'</h4><small>'+countPhrase(facts.length,"source-scoped figure","source-scoped figures")+'</small>'+
+   (chosen.length?chosen.map(f=>evidenceFactCard(c,f)).join(""):'<p class="bilateral-missing">No verified local aircraft/operation count for this side in the current campaign evidence. Missing ≠ zero.</p>')+'</section>';
+ };
+ const caution=s.matchingLossWindow?
+ "Both parties have aircraft-loss observations with aligned stated periods. Their aircraft types, geographic populations and damage/write-off rules can still differ. No automatic exchange ratio is calculated.":
+ s.lossA&&s.lossB?
+ "Both sides have loss evidence, but no like-for-like aircraft-loss reporting window is established. Do not infer a loss ratio or add overlapping subsets.":
+ "A confirmed bilateral aircraft-loss comparison is not supported by the current records; claims, troop counts, estimates or aircraft strength are not substitute loss data.";
+ return '<section class="bilateral-campaign" data-campaign-evidence-status="'+s.status+'"><h3>Both sides · evidence coverage</h3><p>Named sources, separate dates and populations. This is a research comparison, not a modelled battle score.</p><div class="bilateral-grid">'+side("A",0)+side("B",1)+'</div><p class="bilateral-warning">'+esc(caution)+'</p></section>';
+}
+function renderBilateralEvent(c,e){
+ const k=eventEvidenceStatus(c,e);
+ const heading='<section class="bilateral-event" data-event-evidence-status="'+k.status+'"><h4>Evidence from both sides · '+esc(e.date)+'</h4>';
+ const note=k.same.length?
+ 'Same-date source observations are available. They may describe other units or the wider action that day; source agreement does not prove involvement in this particular incident.':
+ 'No campaign fact has been source-audited as a separate daily number for this date. Do not interpret the missing side as zero casualties or zero sorties.';
+ const perSide=(s,name)=>{
+  const rows=k.same.filter(f=>evidenceSide(c,f)===s);
+  return '<div class="bilateral-event-side"><strong>'+esc(name)+'</strong>'+(rows.length?rows.slice(0,4).map(f=>evidenceFactCard(c,f)).join(""):'<small>No verified same-date numeric observation for this side.</small>')+'</div>';
+ };
+ const broader=k.around.length?'<details class="bilateral-period-context"><summary>'+countPhrase(k.around.length,"wider-period observation","wider-period observations")+' (not this event)</summary><p>Monthly or campaign-period totals are not event losses, even when the reporting window overlaps this date.</p>'+k.around.slice(0,5).map(f=>evidenceFactCard(c,f)).join("")+'</details>':'';
+ return heading+'<p>'+esc(note)+'</p><div class="bilateral-grid">'+perSide("A",evidenceSides[c.id][0])+perSide("B",evidenceSides[c.id][1])+'</div>'+broader+'</section>';
+}
+
 function renderCampaignComparisons(c){
  const blocks=[];
  const byId=new Map((c.facts||[]).filter(f=>f.id).map(f=>[f.id,f]));
@@ -293,7 +410,7 @@ function renderDossier(){
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
- $("dossier-facts").innerHTML=renderCampaignComparisons(c)+(c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.period||f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>');
+ $("dossier-facts").innerHTML=renderBilateralCampaign(c)+renderCampaignComparisons(c)+(c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.period||f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>');
  $("dossier-uncertainty").textContent=c.uncertaintyNote||"Campaign evidence coverage is incomplete. Reported counts are limited to the specific source populations and periods shown, not comparable totals for every belligerent.";
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
@@ -341,7 +458,7 @@ function renderMoments(){
  if(!chosen){$("moment-detail").innerHTML='';return;}
  const detail=chosen.summary?'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p><h4>Outcome and interpretation</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
  const ids=chosen.sourceIds?.length?chosen.sourceIds:c.sources;
- $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
+ $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderBilateralEvent(c,chosen)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
 }
 function lossSource(r){const s=sourceIndex[r.sourceId];return s?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">'+esc(s.short)+' · PDF page '+(r.page??"see source")+' ↗</a>':"";}
 function lossFields(){const k=state.lossOutcome==="destroyed"?"Destroyed":"Damaged";return ["enemy"+k,"otherOperational"+k,"nonOperational"+k];}
@@ -485,5 +602,5 @@ function init(){
  update();renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active};
+window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,evidenceSide,evidenceKind,campaignEvidenceStatus,eventEvidenceStatus,active};
 })();
