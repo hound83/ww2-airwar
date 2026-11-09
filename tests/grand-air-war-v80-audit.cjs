@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,108,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,80,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,127,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,82,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -170,6 +170,28 @@ assert.ok(sicily.operationalSeries.description.includes("NOT missions/sorties"),
 assert.equal(findById(sicily,"sicily-german-day-losses-11-16").value,59);
 assert.equal(findById(sicily,"sicily-italian-day-losses-11-16").value,32);
 assert.ok(findById(sicily,"sicily-german-night-losses-10-17").period.includes("Nights"),"day/night losses require separate windows");
+
+
+const bag=D.campaigns.find(c=>c.id==="bagration");
+const bv=x=>bag.facts.find(f=>f.label===x)?.value;
+assert.equal(bv("16th Air Army serviceable combat aircraft before Bobruisk assault"),2319);
+assert.equal(331+149+661+1108+70,2319,"16th Air Army serviceable aircraft classes must reconcile to 2,319");
+assert.equal(bv("16th Air Army operationally ready crews"),1846);
+assert.equal(bv("6th Air Army serviceable aircraft on left flank, separately counted"),321);
+assert.equal(bv("16th Air Army combat sorties during opening day Bobruisk offensive"),3191);
+assert.equal(1846+860+264+102+99+20,3191,"24 June 16th Air Army mission breakdown must equal 3191");
+assert.equal(bv("16th Air Army combat sorties on 26 June"),2950);
+assert.equal(bv("16th Air Army aircraft lost on 26 June"),19);
+assert.ok(bag.facts.find(f=>f.value===13&&f.date==="1944-06-26")?.type.includes("claims"),"reported German defeats cannot be recorded as independently verified German losses");
+assert.equal(bag.moments.filter(e=>["1944-06-24","1944-06-26"].includes(e.date)).length,2,"Bobruisk daily operational event drilldowns missing");
+const nm=D.campaigns.find(c=>c.id==="normandy");
+const naval=nm.facts.filter(f=>f.sourceId==="navyNormandyGermanDaily");
+assert.equal(naval.length,6,"original German Normandy sortie populations not all recorded");
+assert.equal(naval.find(f=>f.value===2588)?.date,"1944-06-13");
+assert.equal(naval.find(f=>f.value===1683)?.date,"1944-06-13");
+assert.equal(3568+9151+1101+153,13973,"German published category arithmetic changed; verify the source's known 10-sortie discrepancy");
+assert.ok(naval.filter(f=>[3568,9151,1101,153].includes(f.value)).every(f=>f.scope.includes("discrepancy of 10")),"published German source headcount disagreement must stay visible");
+assert.ok(naval.every(f=>f.sourceId==="navyNormandyGermanDaily"&&f.unit.includes("sorties")),"sorties may not be described as aircraft strength");
 
 const malta=D.campaigns.find(c=>c.id==="malta");
 assert.ok(malta.chapters.find(c=>c.id==="crisis").limits.includes("HMS Eagle"),"documented RAF/IWM carrier disagreement must remain visible");
