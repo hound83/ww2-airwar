@@ -315,10 +315,10 @@ function isAircraftLoss(f){
 }
 function evidenceTimeClass(f,date){
  // End-dated campaign and multi-day totals are NOT single-day events.
- if(f.date===date && /^\\d{4}-\\d\\d-\\d\\d$/.test(f.date) && !f.period)return "same-date";
+ if(f.date===date && /^\d{4}-\d\d-\d\d$/.test(f.date) && !f.period)return "same-date";
  if(f.date===date && f.period)return "period";
- if(/^\\d{4}-\\d\\d$/.test(f.date)&&f.date===date.slice(0,7))return "month";
- const range=(f.date||"").match(/(\\d{4}-\\d\\d(?:-\\d\\d)?)\\s+to\\s+(\\d{4}-\\d\\d(?:-\\d\\d)?)/);
+ if(/^\d{4}-\d\d$/.test(f.date)&&f.date===date.slice(0,7))return "month";
+ const range=(f.date||"").match(/(\d{4}-\d\d(?:-\d\d)?)\s+to\s+(\d{4}-\d\d(?:-\d\d)?)/);
  if(range){
   const lo=range[1].length===7?range[1]+"-01":range[1],hi=range[2].length===7?range[2]+"-31":range[2];
   return date>=lo&&date<=hi?"period":null;
