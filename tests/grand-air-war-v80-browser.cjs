@@ -7,7 +7,7 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const server=http.createServer((request,response)=>{
  const pathname=decodeURIComponent(new URL(request.url,"http://127.0.0.1").pathname);
- const file=path.resolve(root,"."+pathname);
+ const file=path.resolve(root,"."+(pathname.endsWith("/")?pathname+"index.html":pathname));
  if(!file.startsWith(root+path.sep)){response.writeHead(403).end();return;}
  fs.readFile(file,(err,data)=>{
   if(err){response.writeHead(404).end();return;}
@@ -22,6 +22,15 @@ const check=async()=>{
  try{
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
    const page=await browser.newPage({viewport,deviceScaleFactor:1});
+   const routePage=await browser.newPage({viewport,deviceScaleFactor:1});
+   const rootUrl=base.slice(0,-"grand-air-war-v80.html".length);
+   await routePage.goto(rootUrl,{waitUntil:"domcontentloaded",timeout:45000});
+   await routePage.waitForURL(/grand-air-war-v80\.html/,{timeout:15000});
+   assert.match(await routePage.title(),/Grand Air War Atlas/,"public root must open the current campaign explorer");
+   await routePage.goto(rootUrl+"?legacy=1",{waitUntil:"domcontentloaded",timeout:45000});
+   assert.ok(!routePage.url().includes("grand-air-war-v80.html"),"legacy pilot/aircraft route must remain accessible");
+   await routePage.close();
+
    const errors=[];page.on("pageerror",e=>errors.push(e.message));
    await page.goto(base,{waitUntil:"domcontentloaded",timeout:45000});
    await page.waitForFunction(()=>!!window.GrandAirWarV77,{timeout:30000});
