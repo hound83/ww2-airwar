@@ -2,6 +2,13 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "usafPolandAfbHistory": {"title":"USAF Office of Air Force History, John F. Kreis, Air Warfare and Air Base Air Defense, 1914–1973 (1988), Poland tables pp. 60–61, citing German translation VII/33 and Polish Sikorski/Kurowski data","url":"https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo113228/pdf/GOVPUB-D301-PURL-gpo113228.pdf","class":"official-USAF-retrospective-tabulation-based-on-original-German-and-Polish-records; original-PDF-table-pixels-not-independently-verified-in-this-task"},
+    "dhmNorwayGerman": {"title":"Deutsches Historisches Museum LeMO, Occupation of Norway 1940; Luftwaffe 242 aircraft lost","url":"https://www.dhm.de/lemo/kapitel/der-zweite-weltkrieg/kriegsverlauf/besetzung-von-norwegen-1940","class":"German-national-history-museum-secondary-campaign-total; differs-from-Gray-2012-260-aircraft-total"},
+    "grayAirWarNorway": {"title":"Colin S. Gray, Airpower for Strategic Effect, USAF Air University Press (2012), p.128, 260 German vs 169 British aircraft in Norway","url":"https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0122_GRAY_AIRPOWER_STRATEGIC_EFFECT.PDF","class":"scholarly-secondary-USAF-published-history-conflicting-Luftwaffe-Norway-total-260-vs-DHM-242; underlying-German-ledger-not-reconciled"},
+    "usafFranceCase": {"title":"Benjamin F. Cooling ed., Case Studies in the Achievement of Air Superiority (1994), chapter 2, Table 2-1 on German May–June 1940 lost aircraft and RAF fighter losses","url":"https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47633/pdf/GOVPUB-D301-PURL-LPS47633.pdf","class":"official-USAF-postwar-history-quoting-German-Quartermaster-campaign-tables; German-all-types-vs-RAF-fighter-only"},
+    "airSpaceStalingrad": {"title":"Air & Space Forces Magazine, Turning Point at Stalingrad (2017); Luftwaffe transport-aircraft attrition and serviceability","url":"https://www.airandspaceforces.com/article/turning-point-at-stalingrad/","class":"secondary-professional-military-history; 266-Ju52-and-165-He111-reporting-denominators; total-other-aircraft-not-known"},
+    "rafMarketChapter4": {"title":"RAF Museum, The Royal Air Force and Operation Market Garden, Chapter 4 (2024), 20–21 Sep resupply losses","url":"https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-4/","class":"official-RAF-museum-retrospective-activity-counts-for-specific-days; subsets-of-campaign"},
+    "rafMarketChapter6": {"title":"RAF Museum, The Royal Air Force and Operation Market Garden, Chapter 6 (2024), 6172 sorties, 125 Allied losses and 160 claimed enemy aircraft","url":"https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-6/","class":"official-RAF-museum-retrospective-wider-campaign-Allied-losses-vs-claimed-opponent-losses"},
     "rafHardestDayLosses": {"title":"RAF Museum, The Hardest Day (18 August 1940): aircraft lost by the RAF/Fleet Air Arm and by the Luftwaffe","url":"https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-hardest-day/","class":"official-RAF-Museum-secondary-archival-history; RAF-FAA-aircraft-lost-vs-German-destroyed-or-damaged-beyond-repair"},
     "rafAirfieldLossPeriod": {"title":"RAF Museum, Battle of Britain phase three (13 August–6 September): RAF and Luftwaffe losses 26 August–6 September","url":"https://www.rafmuseum.org.uk/research/online-exhibitions/history-of-the-battle-of-britain/the-battle-of-britain-phase-three","class":"official-RAF-Museum-retrospective-RAF-and-Luftwaffe-aircraft-loss-pair-26Aug-6Sep"},
     "canadaDieppeBattle": {"title":"Royal Canadian Air Force, Major William March, In the Skies Above: Dieppe, 19 August 1942 (2019)","url":"https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/08/in-the-skies-above-dieppe-august-19-1942.html","class":"Canadian-Department-of-National-Defence-retrospective; 106-Allied-vs-48-German-losses-subject-to-historical-uncertainty"},
@@ -566,7 +573,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "polishMuseumOrawka",
         "ushmmPoland",
         "polishHistoryPhases",
-        "polishAviationMuseumKrakow"
+        "polishAviationMuseumKrakow", "usafPolandAfbHistory"
       ],
       "chapters": [
         {
@@ -604,6 +611,13 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"polish-operational-strength-397","side":"Allies","measure":"strength","label":"Polish operational-unit aircraft at beginning of 1939 invasion (USAF historical table)","value":397,"unit":"Polish aircraft in operational units","date":"1939-09-01","scope":"September 1939 Polish operational-unit aircraft by type per USAF source Table 2; 348 extra in training schools/reserves, NOT 397 immediately serviceable aircraft. RAF Museum circa-300 estimate may cover narrower first-line grouping.","sourceId":"usafPolandAfbHistory","type":"official-secondary-operational-unit-strength"},
+        {"id":"german-poland-serviceable-1500","side":"Axis","measure":"serviceable","label":"Luftflotten 1 and 4 serviceable aircraft for Polish campaign","value":1500,"unit":"German serviceable aircraft · sum of two Luftflotten","date":"1939-09-01","scope":"German Luftflotte 1 824 + Luftflotte 4 676 = 1,500 serviceable aircraft by USAF historical table; excludes some army aircraft and home defense. Do NOT add two subordinate formations again to aggregate.","sourceId":"usafPolandAfbHistory","type":"official-secondary-serviceable-aggregated"},
+        {"id":"german-poland-lf1-824","side":"Axis","measure":"serviceable-subset","label":"Luftflotte 1 serviceable aircraft within 1,500","value":824,"unit":"German aircraft · subset","date":"1939-09-01","scope":"September 1939 Luftflotte 1 eastern command subset of 1,500 serviceable German aircraft in historical airpower order of battle.","sourceId":"usafPolandAfbHistory","type":"recorded-subset"},
+        {"id":"german-poland-lf4-676","side":"Axis","measure":"serviceable-subset","label":"Luftflotte 4 serviceable aircraft within 1,500","value":676,"unit":"German aircraft · subset","date":"1939-09-01","scope":"September 1939 Luftflotte 4 southeastern command subset of 1,500 serviceable German aircraft. Do NOT add separately to total.","sourceId":"usafPolandAfbHistory","type":"recorded-subset"},
+        {"id":"german-poland-lost-285","side":"Axis","measure":"losses","label":"German aircraft lost in Polish campaign per Luftwaffe historical table","value":285,"unit":"German aircraft lost · all named types","date":"1939-09-28","scope":"1–28 September 1939 German Luftwaffe aircraft losses (recon 63 + fighters 67 single/12 twin + bombers 78 + dive bombers 31 + transport 12 + misc 22 = 285) based on translated German reports; not all to Polish fighter fire; compare Polish '333 operational losses' only with caveats.","sourceId":"usafPolandAfbHistory","type":"official-secondary-German-loss-table","period":"1–28 September 1939, German reporting period; not a single day"},
+        {"id":"german-poland-repairable-279","side":"Axis","measure":"damaged","label":"German aircraft damaged over 10% but repairable during Polish campaign","value":279,"unit":"German aircraft temporarily out of strength / repairable damage","date":"1939-09-28","scope":"1–28 September 1939: 279 damaged German aircraft temporarily lost to strength by greater-than-ten-percent damage; NOT 279 more destroyed, and not additive to 285 German aircraft lost as total destroyed.","sourceId":"usafPolandAfbHistory","type":"official-secondary-damaged-not-destroyed","period":"1–28 September 1939, repairable damage separate from destroyed"},
+        {"id":"polish-operations-lost-333","side":"Allies","measure":"losses-conflicting","label":"Polish aircraft lost on operations in campaign (USAF historical reconstruction)","value":333,"unit":"Polish aircraft lost on operations","date":"1939-10-06","scope":"Polish 1939 operational aircraft lost according to USAF historical study citing Polish sources: 333 (82 bomber brigade included); this conflicts with an earlier RAF Museum retrospective '114 Polish aircraft lost'. Different definitions or coverage may explain discrepancy; NOT independently reconciled.","sourceId":"usafPolandAfbHistory","type":"official-secondary-disputed-Polish-loss-total","period":"September–early October 1939, whole Polish campaign, not 6 October alone"},
         {
           "label": "Polish Air Force aircraft facing the invasion, mostly obsolete",
           "value": 300,
@@ -749,7 +763,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Air transport, airfield capture and maritime reconnaissance influenced the speed of German reinforcement.",
       "consequence": "Air control depended on long distances and limited bases; original operational returns are a research gap.",
       "sources": [
-        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft", "rafNorwayDailyCampaignOriginal"
+        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft", "rafNorwayDailyCampaignOriginal", "dhmNorwayGerman", "grayAirWarNorway"
       ],
       "chapters": [
         {
@@ -781,6 +795,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"norway-german-242","side":"Axis","measure":"losses","label":"Luftwaffe aircraft lost during occupation of Norway, German Historical Museum","value":242,"unit":"German aircraft lost · campaign total","date":"1940-06-10","scope":"1940 campaign Norway, Deutsches Historisches Museum official history gives 242 Luftwaffe machines lost (all aircraft types/causes not fully disaggregated). Colin Gray's official USAF-published 2012 book quotes 260, hence opposing source conflict unresolved.","sourceId":"dhmNorwayGerman","type":"official-museum-retrospective-German-losses","period":"April–June 1940 Norway campaign; not 10 June alone"},
+        {"id":"norway-german-260-alternative","side":"Axis","measure":"losses-conflicting","label":"Luftwaffe aircraft lost during Norway campaign, alternative 260 estimate","value":260,"unit":"German aircraft lost · alternate historical total","date":"1940-06-10","scope":"Colin S. Gray (2012) reports German 260 aircraft lost versus Deutsches Historisches Museum 242. Exact campaign bounds and inclusion of transport accidents/other causes may differ; preserve as alternative, do not add to 242 or infer confirmed German return.","sourceId":"grayAirWarNorway","type":"secondary-disputed-German-loss-total","period":"April–June 1940 campaign retrospective, not single day"},
         {"label":"No. 263 Squadron sorties in Narvik assault support, 28 May","value":42,"unit":"daily operational sorties","scope":"28 May 1940, 263 Squadron Gladiators, Narvik sector. One squadron, one day, NOT number of distinct aircraft.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-05-28","type":"recorded-primary-unit-daily-sorties"},
         {"label":"No. 46 Squadron sorties in Narvik assault support, 28 May","value":53,"unit":"daily operational sorties","scope":"28 May 1940, 46 Squadron Hurricanes, Narvik sector. Distinct same-day squadron return; NOT aircraft inventory.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-05-28","type":"recorded-primary-unit-daily-sorties"},
         {"label":"Combined Nos. 263 and 46 Squadrons sorties, 2 June","value":75,"unit":"daily combined operational sorties","scope":"2 June 1940, Nos. 263 and 46 Squadrons TOGETHER in Narvik-Harstad sector; no reliable squadron breakdown of this number, not aircraft or losses.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-06-02","type":"recorded-primary-joint-unit-daily-sorties"},
@@ -860,7 +876,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "rafSealion",
         "rafFrance",
-        "rafAirPowerFrance", "raf1940chron"
+        "rafAirPowerFrance", "raf1940chron", "usafFranceCase"
       ],
       "chapters": [
         {
@@ -895,6 +911,9 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"france-german-lost-1428","side":"Axis","measure":"losses","label":"Luftwaffe aircraft destroyed May–June 1940 (German-source USAF study)","value":1428,"unit":"German aircraft destroyed · all types","date":"1940-06-25","scope":"German Quartermaster May–June 1940 campaign totals in USAF 1994 study, across France/Low Countries; includes 1,345 destroyed on operations and 83 destroyed not on operations; NOT only Dunkirk or the 14 May RAF bomber mission.","sourceId":"usafFranceCase","type":"official-secondary-German-quartermaster-total","period":"May–June 1940, German France and Low Countries reporting; not a single day"},
+        {"id":"france-german-damaged-488","side":"Axis","measure":"damaged","label":"Luftwaffe aircraft damaged May–June 1940 (separate from destroyed)","value":488,"unit":"German aircraft damaged","date":"1940-06-25","scope":"German France/Low Countries campaign 1940 aircraft damaged, not 488 more German airframes destroyed; separate reporting status from 1,428 destroyed.","sourceId":"usafFranceCase","type":"official-secondary-German-repairable-airframes","period":"May–June 1940, German wider Western campaign"},
+        {"id":"france-raf-fighters-474","side":"Allies","measure":"losses","label":"RAF fighter aircraft lost during France campaign","value":474,"unit":"RAF fighter aircraft lost · fighter-only","date":"1940-06-25","scope":"RAF Fighter Command aircraft lost during entire 1940 France/Low Countries campaign as reported in USAF 1994 study; fighters only, NOT all French and British aircraft of all classes; cannot compare 474 directly with 1,428 all-types German.","sourceId":"usafFranceCase","type":"official-secondary-RAF-fighter-losses","period":"May–June 1940 RAF fighter losses only, not all French air force losses"},
         {
           "label": "RAF bombers departing on 14 May; one particular operation, not the campaign total",
           "value": 71,
@@ -1627,7 +1646,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Long-range transport and weather constrained German resupply while Soviet ground/air forces narrowed the pocket.",
       "consequence": "Air transport could not sustain the trapped force; precise monthly transports and losses need their own reports.",
       "sources": [
-        "usArmyStalingradAirlift", "usafStalingradAirlift", "usafStalingradStudy"
+        "usArmyStalingradAirlift", "usafStalingradAirlift", "usafStalingradStudy", "airSpaceStalingrad"
       ],
       "chapters": [
         {
@@ -1659,6 +1678,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"stal-airlift-ju52-lost","side":"Axis","measure":"losses-subset","label":"Ju 52 aircraft lost during Stalingrad supply airlift","value":266,"unit":"Luftwaffe Ju 52 transport aircraft lost","date":"1943-02-02","scope":"Stalingrad airlift November 1942–February 1943: Air & Space Forces secondary reconstruction records 266 Ju 52 transports lost to Soviet fighter/flak and other campaign losses; subset of total German transport losses, not Soviet losses.","sourceId":"airSpaceStalingrad","type":"secondary-German-transport-loss-subset","period":"November 1942–February 1943, whole Luftwaffe airlift"},
+        {"id":"stal-airlift-he111-lost","side":"Axis","measure":"losses-subset","label":"He 111 aircraft lost during Stalingrad supply airlift","value":165,"unit":"Luftwaffe He 111 bombers employed as transports lost","date":"1943-02-02","scope":"Same Stalingrad airlift reporting window as 266 Ju 52, another type within German own transport-aircraft losses; not 165 distinct Soviet aircraft or a daily count.","sourceId":"airSpaceStalingrad","type":"secondary-German-transport-loss-subset","period":"November 1942–February 1943, whole Luftwaffe airlift"},
         {"label":"Sixth Army supply need, estimated minimum", "value":300, "unit":"tons/day", "scope":"Retrospective minimum daily supply requirement for encircled Sixth Army, late 1942; target/need, not transported cargo", "sourceId":"usafStalingradAirlift", "date":"1942-11-23", "type":"source-estimate"},
         {"label":"Air-supply planning rate on suitable flying days", "value":500, "unit":"tons/day", "scope":"German airlift planning requirement/target to compensate for weather-grounded days after encirclement; not an actual delivered average", "sourceId":"usArmyStalingradAirlift", "date":"1942-11-23", "type":"requirement"},
         {"label":"Actual cargo delivered, seven-week average", "value":117.6, "unit":"tons/day", "scope":"Air & Space Forces secondary reconstruction of German supplies reaching the pocket averaged across seven weeks of the Stalingrad airlift; different period from other published averages", "sourceId":"usafStalingradAirlift", "date":"1942-11", "period":"Seven-week airlift reporting window, late 1942–early 1943 (not a single-day reading)", "type":"secondary-average"}
@@ -2660,7 +2681,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "consequence": "The Arnhem bridge objective failed despite successful early air landings; unit-specific aircraft losses need mission reports.",
       "sources": [
         "raf1944",
-        "marketDetail", "marketPlanning", "marketAssault", "marketResupply", "marketWithdrawal"
+        "marketDetail", "marketPlanning", "marketAssault", "marketResupply", "marketWithdrawal", "rafMarketChapter4", "rafMarketChapter6"
       ],
       "chapters": [
         {
@@ -2692,6 +2713,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"mg-allied-total-aircraft-lost-125","side":"Allies","measure":"losses","label":"Aircraft lost during Market Garden RAF Museum wider-support tally","value":125,"unit":"aircraft lost · whole support effort","date":"1944-09-25","scope":"RAF Museum wider Operation Market Garden air-support summary includes 125 aircraft lost; the earlier 57 RAF Transport Command losses are a SUBSET or differently scoped accounting, and must not be added; missing German actual aircraft losses.","sourceId":"rafMarketChapter6","type":"official-RAF-retrospective-all-support-loss-total","period":"17–25 September 1944, broader RAF support activities, not single day"},
+        {"id":"mg-enemy-aircraft-claimed-160","side":"Allies","measure":"claims","label":"Enemy aircraft claimed destroyed by Allied aircrews in Market Garden","value":160,"unit":"enemy aircraft claimed destroyed","date":"1944-09-25","scope":"RAF Museum reports 160 claimed enemy aircraft destroyed during Market Garden; Allied wartime claims, NOT German confirmed aircraft losses, and thus not evidence for a measured German-loss total.","sourceId":"rafMarketChapter6","type":"claims-not-verified-German-losses","period":"17–25 September 1944, Allied aircrew claims"},
+        {"id":"mg-resupply-20sep-losses-9","side":"Allies","measure":"losses-subset","label":"RAF resupply transport aircraft lost on 20 September","value":9,"unit":"RAF resupply aircraft lost · specific day","date":"1944-09-20","scope":"20 September 1944 RAF Museum Chapter 4: nine RAF aircraft lost during 162 resupply attempts (152 dropping on assigned now German-held zones). Within broader transport losses, NOT new losses to add.","sourceId":"rafMarketChapter4","type":"official-RAF-same-day-loss-subset"},
+        {"id":"mg-resupply-21sep-losses-23","side":"Allies","measure":"losses-subset","label":"RAF resupply transport aircraft lost on 21 September","value":23,"unit":"RAF resupply aircraft lost · specific day","date":"1944-09-21","scope":"21 September 1944 RAF Museum Chapter 4: 117 aircraft dispatched / 91 drop claims, 23 transports lost, including seven of ten No.190 Squadron aircraft. Within wider campaign total, not a standalone extra 23 beyond 125.","sourceId":"rafMarketChapter4","type":"official-RAF-same-day-loss-subset"},
         {
           "label": "RAF Transport Command aircraft lost",
           "value": 57,
