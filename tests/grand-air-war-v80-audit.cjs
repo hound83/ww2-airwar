@@ -141,7 +141,7 @@ assert.equal(readFact(sp,"spain-soviet-republic-aircraft-1500").value,1500);
 assert.equal(A.evidenceSide(sp,readFact(sp,"spain-soviet-republic-aircraft-1500")),"B","Republican side must not be attributed to the Condor Legion");
 assert.ok(readFact(sp,"spain-soviet-republic-aircraft-1500").period.includes("cumulative"),"Soviet aircraft supplies must never become active aircraft on one day");
 assert.equal(readFact(reich,"reich-8th-heavy-349-1944-03").value,349);
-assert.equal(A.campaignEvidenceStatus(reich).status,"same-period-loss-evidence","March 1944 Allied and Reich returns should share calendar month but retain different unit populations");
+assert.equal(A.campaignEvidenceStatus(reich).status,"non-comparable","USAAF Eighth and Luftflotte Reich monthly losses have differing reporting populations and scope; do not make a false exchange ratio");
 assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-31").value,31);
 assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-writeoff-12").value,12);
 assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-damaged-34").value,34);
