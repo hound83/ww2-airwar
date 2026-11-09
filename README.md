@@ -2,9 +2,13 @@
 
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
-**[Open Atlas](https://hound83.github.io/ww2-airwar/)** · **[Preview the developing v7.5 interface](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
+**[Open the current Campaign Atlas](https://hound83.github.io/ww2-airwar/)** · **[Pilot & Aircraft Lab (legacy)](https://hound83.github.io/ww2-airwar/?legacy=1)** · **[v7.5 experimental view](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
 
-> **Current status (30 October 2026):** The default site remains the v7.4 presentation; the opt-in v7.5 preview is a work in progress. The aircraft simulator view embeds an independently hosted-in-this-repository **frozen research physics v2.4 page**. This is not a validated final aircraft-performance model. No v3 physics results have been integrated.
+> **Release 10 November 2026:** The default URL opens the European Air War **Campaign Explorer**, integrating the former v7.6–v8 research previews. It contains 20 campaigns, 55 operational phases, 82 researched dated events and 127 source-scoped numerical observations. The old v7.4 pilot and aircraft labs remain accessible using `?legacy=1`; the v7.5 preview remains at `?preview=7.5`. The embedded aircraft physics research snapshot is still v2.4, **not** a validated newer flight solver.
+
+The research datasets distinguish operationally serviceable aircraft, assigned strength, sorties, observed losses, claims and missing figures. A link to the original source accompanies each new observation. The German Normandy published sortie category total differs by ten from its stated headline; this is documented rather than corrected without evidence. Earlier standalone research routes `grand-air-war-v76.html` and `grand-air-war-v77.html` remain available for historical comparison.
+
+**Release evidence:** [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md) · [Release QA and rollback](docs/ATLAS_RELEASE_ORIGINAL_OPERATIONAL_LEDGER_QA_2026-11-10.md).
 
 ## Start here (maintainers and new chats)
 

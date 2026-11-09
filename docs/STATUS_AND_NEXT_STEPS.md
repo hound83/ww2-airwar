@@ -1,5 +1,77 @@
 # Atlas status and next work
 
+## 10 November 2026 — main-route Campaign Explorer release and German/Soviet unit records
+
+**Release candidate:** PR #19 from `feature/atlas-v85-research-release` to `main`. This release intentionally promotes the new campaign-driven Atlas to the root route `/`; old pilot/aircraft lab remains `/?legacy=1`, experimental v7.5 remains `/?preview=7.5`. Never delete or silently upgrade the frozen flight-physics v2.4 snapshot.
+
+- 20 campaigns and 55 phases retained. 108 → **127** source-scoped observations (+19), 80 → **82** researched dated events (+2). Soviet 16th Air Army 24 June 1944: 2,319 serviceable combat aircraft, 1,846 combat-ready crews, 3,191 combat sorties; 26 June: 2,950 sorties, 19 own aircraft lost, 13 *claims* of German aircraft down. German LF3 Normandy: 6–13 June 2,588 fighter and 1,683 bomber/torpedo sorties, plus 6 June–1 July four operational categories. Published German category sum 13,973 disagrees with reported 13,983 headline (difference 10); unresolved source discrepancy deliberately visible.
+- RAF AHB original German quartermaster losses West June 1944 / East Sep–Dec 1943 / strengths and serviceability Aug 1938–Apr 1945 found and indexed; no unsafe OCR transcription of the unverified multipage table scans. Primary Soviet 16th Army June 1944 headquarters report identified, but numerical returns come from a secondary retrospective unit history. Research ledger: `research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md`.
+- **PASS** code-gate core GitHub run 42719067762 and real Chromium desktop/mobile QA run 42719067743 on implementation commit `a7d5338bf6b7ecc7cc125702487d81d9541433d9`; GitHub will recheck documentation-only release commits. Release QA/rollback note: `docs/ATLAS_RELEASE_ORIGINAL_OPERATIONAL_LEDGER_QA_2026-11-10.md`.
+- **Next meaningful research:** transcribe and validate each original German Quartermaster daily loss table and cross-check with Soviet original TsAMO unit/day forms, explicitly distinguishing strength, serviceability, sorties, confirmed own losses and opponent claims. Avoid fabricated all-Europe daily totals or mathematically invalid bilateral ratios.
+
+
+## 6 November 2026 — bilateral air strength and aircraft-loss comparison milestone
+
+**Work PR:** https://github.com/hound83/ww2-airwar/pull/18, stacked on original daily RAF/MAAF research PR #16. No public merge or physics edits.
+
+- Four existing campaigns gained explicit evidence comparison, with **75 → 108** source-scoped numeric facts (**+33**), **7** comparability/exclusion panels and **10** separate German/Italian day-level Axis activity counts for Sicily. The 20 campaign map entries, 55 researched phases, 80 dated events and independent German/Allied analytics retain their existing scope. Britain now distinguishes on-strength/serviceable fighters (including RAF 990 vs Luftwaffe 805 in adjacent-date subsets) and July–October fighter-only losses; Normandy distinguishes Luftflotte 3 481 on strength, 319 available, 826 June–July destroyed, 127 single-day Allied losses and original SHAEF tactical/strategic sorties; Barbarossa separates committed Luftwaffe aircraft, unreliable German Soviet strength estimates, German recorded losses and German claims; Sicily documents separate German/Italian aircraft employed and daytime/nighttime losses.
+- Source review: `research/sources/atlas-bilateral-strength-losses-2026-11-06.md`. QA and detailed before/after: `docs/ATLAS_BILATERAL_STRENGTH_LOSSES_QA_2026-11-06.md`.
+- **PASS** core https://github.com/hound83/ww2-airwar/actions/runs/42231897729 and Chromium desktop/mobile https://github.com/hound83/ww2-airwar/actions/runs/42231897778 for code commit `f5ba3f293b98315971aff58bff1068b9cd8c6523`; any later documentation-only commits do not change generated site code, but GitHub may run CI again.
+- **Remaining:** independent original German, Soviet, Italian and Allied daily aircraft serviceability/loss book audit across more theaters; harmonize German Quartermaster write-off/damage thresholds with RAF definitions; no attempt to infer a ratio between a single D-Day and German month-long returns. Do not merge preview or change default v7.4 without review.
+
+
+## 6 November 2026 — recovered operational quantities for four thin campaigns
+
+**Work branch:** `feature/atlas-v83-operational-evidence`, stacked on tested v8.2 PR #13. The public default and physics repository remain untouched.
+
+- Added source-bounded operational evidence to Norway, Barbarossa, Sicily and Berlin. Nine new numerical observations (**56 → 65**) and two documented dated events (**76 → 78**), while retaining the existing 55 campaign phases. Norway now distinguishes 49 RAF sorties, 37 engagements, six *claims* and 13 ground-destroyed Gladiators from the 17 fighters of the later evacuation; Barbarossa's 800 ground losses are explicitly part of at least 1,200; Sicilian navy fighter-cover sortie rates are separate from tracked Axis flights; Berlin's 16th Air Army daily sorties are a published secondary transcription, not three-army airframe losses.
+- Sources and unresolved archival issues: [`research/sources/atlas-thin-campaign-operations-2026-11-06.md`](../research/sources/atlas-thin-campaign-operations-2026-11-06.md). Reproducible test/report: [`docs/ATLAS_THIN_CAMPAIGN_OPERATIONS_QA_2026-11-06.md`](ATLAS_THIN_CAMPAIGN_OPERATIONS_QA_2026-11-06.md). Both [core run 42215620011](https://github.com/hound83/ww2-airwar/actions/runs/42215620011) and [real Chromium desktop/mobile run 42215619843](https://github.com/hound83/ww2-airwar/actions/runs/42215619843) **passed** against code commit `3ae8ee62de2cbc21a8742966ef71a1127854f241`.
+- **Not claimed:** complete bilateral campaign losses or daily airfield serviceability. Berlin's 91,000-sortie headline and inconsistent 2,738 aircraft/crews remain excluded pending original Soviet reporting-denominator audit.
+- **Next high-value source milestone:** original day-by-day air-army and Luftwaffe unit returns for selected Soviet campaigns, with source-backed comparable operations and loss categories before any plot-level aggregation.
+
+## 6 November 2026 — six gap campaigns now have researched phased dossiers
+
+**Work branch:** `feature/atlas-v82-gap-coverage`, stacked on `feature/atlas-v81-campaign-coverage`. Default v7.4, standalone historical laboratories, underlying physics and optional v8 route unchanged.
+
+- Researched and integrated multi-phase guide and source-linked events for **all six previously numerical-empty campaigns**: Stalingrad, defence of Reich, Kursk, Italy, Bagration and Berlin. **18/20 campaigns** have operational stage guides, **55 phases** (previously 37), **76 dated researched events** (previously 57), **56 scoped numeric facts** (previously 42). Dieppe and Bodenplatte correctly remain single-day operations without invented extra phases.
+- New quantitative distinctions include Stalingrad delivered daily cargo versus supply *requirements*; Luftflotte Reich all-cause monthly airframe write-offs; Soviet and German assigned/committed strength at Kursk and Bagration; 435 Cassino morning bombers partitioned into 173 medium plus 262 heavy; and approximate Soviet assembled strength at Berlin. **No implied aircraft-loss total** where original local loss registers are unavailable.
+- **Deliberately withheld:** a contradictory Berlin 16th Air Army **2,738 aircraft versus 2,738 experienced crews** historical report until primary source reconciliation. The Italian campaign now correctly reaches the **2 May 1945 surrender** rather than stopping in April.
+- Source-by-source research and limitations: [`research/sources/atlas-campaign-gap-research-2026-11-06.md`](../research/sources/atlas-campaign-gap-research-2026-11-06.md). Node/data/regression tests cover all 20 campaigns, the six new journeys, 540 search/time/theatre/visibility combinations, nine zoom levels and independently scoped analytic panels. **Both release-verification suites passed against the final code:** [core GitHub run 42212885013](https://github.com/hound83/ww2-airwar/actions/runs/42212885013), [Chromium desktop/mobile run 42212885231](https://github.com/hound83/ww2-airwar/actions/runs/42212885231). Screenshots of desktop/mobile Italy, Poland and map were independently inspected. Details and known limits: [`docs/ATLAS_CAMPAIGN_GAPS_QA_2026-11-06.md`](ATLAS_CAMPAIGN_GAPS_QA_2026-11-06.md).
+- **Remaining next major research need:** recover unit- and day-level RAF, Luftwaffe, VVS and USAAF original loss, readiness and sortie registers to replace scoped secondary estimate placeholders with comparable proven populations; do not fabricate them from opening inventories or worldwide production.
+
+## 6 November 2026 — operational campaign coverage and research discoverability
+
+**Work branch:** `feature/atlas-v81-campaign-coverage`, stacked on the unmerged `feature/atlas-v80-campaign-stages`; website v7.4 default and physics snapshot untouched. This is a review increment, not a published website.
+
+- A campaign now offers a researched operational narrative in **12/20** cases (previously 5/20), comprising **37** phases (previously 17) with at least one clickable evidence-detailed event in each. The original five phase guides have been made more informative too.
+- **50** detailed dated events (previously 11), **57** total dated records (36), **42** source-scoped historical quantities (30). No invented phase subdivisions for one-day Dieppe/Bodenplatte, and six campaigns remain explicitly without local numeric reports.
+- Search now finds *Cobra*, convoy *Peewit*, HMS *Glorious*, *Black Thursday* and other actual phase/event names, with short-token whole-word matching. The UI distinguishes researched events from simple calendar markers and shows `>200` rather than an exact 200 for a Big Week lower-bound figure.
+- Contradictions and denominators are documented: 7 March 1942 Malta HMS *Eagle* versus USS *Wasp* museum sources, 17 Aug versus 14 Oct 1943 Schweinfurt, Market Garden 152 as a subset of 162 resupply aircraft on 20 September, and Eindhoven local Bodenplatte losses versus whole-raid figures.
+- Exact source and test report: `research/sources/atlas-campaign-operational-coverage-2026-11-06.md` and `docs/ATLAS_CAMPAIGN_COVERAGE_QA_2026-11-06.md`. GitHub core **42194849014** and final Chromium desktop/mobile **42194848882** both passed following the source discrepancy fix. Screenshots were generated but not independently downloaded and inspected here.
+- **Next substantial milestone:** source-audit additional phase journeys and genuinely local operational counts in the eight thinner campaigns; verify contradictory mission claims against original operational returns where accessible.
+
+## 5 November 2026 — source-backed campaign stages, new stacked review branch
+
+**Work branch:** `feature/atlas-v80-campaign-stages`, stacked on `feature/atlas-v80-quality-poland`, still an **opt-in, unmerged preview**; v7.4 default and physics unchanged.
+
+- Campaign navigation now follows **campaign selection → operational phase selection → ground/air/interpretive context → optional dated evidence**, without auto-opening the first arbitrary day event.
+- Reviewed **17 phases in 5 campaigns**: Poland 1939 (3), Condor Legion/Spain (3), France 1940 (3), Battle of Britain (5 RAF Museum phases), Normandy (3). The other 15 remain unphased with a prominent warning; no synthetic historical phases.
+- Explicit numerical boundaries: **30** source-specific campaign facts, **36** dated records, including the distinct 1936 airlift vs approximately 19,000 rotated Condor Legion personnel, and Polish 121st Squadron combat on **9 September 1939**. No campaign-wide totals apportioned to individual days/phases.
+- Controller/data checks passed: `node tests/build.cjs`, **240** filter intersections, **9** zoom levels, **12** German loss filter modes and **36** Allied force combinations, phase/source/event checks and year-boundary checks. **Chromium desktop and mobile workflow run 42048245427 passed**, and screenshots were inspected; rerun after the final scroll-reset adjustment before release.
+- Review records: `docs/ATLAS_V80_END_TO_END_QA_2026-11-05.md` and `research/sources/poland-1939-campaign-pilot-2026-11-05.md`. Full original opposing-force air-loss reconciliation, 15 phase histories, and testing outside Chromium remain research gaps.
+
+## 5 November 2026 — v8 QA and Poland source pilot, separate review branch
+
+**Work branch:** `feature/atlas-v80-quality-poland`, based on unmerged v8 draft PR #8; default v7.4 and frozen physics unchanged. No deployment, merge or release authorized.
+
+- Relevance fix: selecting a campaign now displays **its own** events and event-level evidence/source details. The German, Soviet and American data laboratories are a separately labeled, default-collapsed research library; they no longer follow the campaign month or supply misleading automatic campaign actions.
+- Poland pilot: four retrospective RAF Museum campaign-wide observations, six dated events (including 121st Fighter Squadron and 24th Reconnaissance Squadron), unit and source trails, uncertainty statements, and October 6 endpoint. Conflicting RAF Museum/USHMM ground-destruction narratives are acknowledged, not merged into an invented ground-loss total. See `research/sources/poland-1939-campaign-pilot-2026-11-05.md`.
+- UI fixes: map Fit control uses the correct Leaflet scope; clustered selected campaign remains highlighted and visible in the picker, as does selected chronology row; theatre/search combinations with zero matches show no stale battle dossier; unreported USAAF group months render explicit `n/a` markers.
+- Internal reproducible tests: `node tests/build.cjs` passed, including all prior suites; new exhaustive controller matrix passed **240** theatre/search/month/visibility combinations, **9** map zoom levels, **12** German command/outcome/year combinations, **36** Allied population/area/metric combinations, plus evidence click-through and absence semantics.
+- **Pending real-browser gate:** `tests/grand-air-war-v80-browser.cjs` and dedicated PR Chromium workflow check at 1440px and 390px, CDN coastline loading, event links, filter intersection, map pin presence and viewport overflow. Local environment has Playwright code but no installed Chromium binary; do not report this as passed until workflow evidence exists.
+- Remaining uncertainty: the other **19** campaigns are still uneven; prior 25 campaign facts become 29, and 28 events become 33. Nine campaigns had no local numerical observation before this work; Poland is now populated but the remaining eight still need a verified research program. The 30 German command-month return totals, 80 USAAF group-month rows (4 unavailable), 5 VVS snapshots and 68 US production months were **not independently retranscribed** as part of this UI QA.
+
+
 **Review date:** 30 October 2026. This document is a website work queue, not the physics research roadmap. Refresh it whenever an Atlas milestone is accepted. Read `README.md` first.
 
 ## Verified repository baseline
@@ -50,3 +122,100 @@
 - **Work** for one bounded implementation task, e.g. "Improve v7.5 navigation/accessibility without modifying physics or the default site." End after tests, PR and a 5–10 line summary.
 - Start another **short Work task** for the next independently verifiable change. GitHub carries the knowledge; no giant handover ZIP after every task.
 - On each assignment: inspect latest `main`, PRs and docs. Avoid importing the 120 MB physics archive or dumping full source and test logs into the chat.
+
+
+## v7.6 Grand Air War experience — Normandy preview, revised 1 Nov 2026
+
+**Status:** draft PR #6, independent from quantitative research PR #5, not deployed. Main v7.4 and opt-in v7.5 are unchanged. User screenshot review of the first preview exposed coarse unzoomable 110m geography, overlapping icon clusters and overly generic, misleading ETO/West statistics beside Normandy.
+
+### What changed after visual criticism
+- New **Leaflet 1.9.4** interactive map with real modern OpenStreetMap raster tiles, pan and zoom controls, keyboard and touch support, map style and map-provider attribution. CDN scripts/styles pinned by SRI hashes. OSM tiles are fetched for the on-screen viewport only, without bulk preloading. Needs live internet connection.
+- **Pixel-distance dynamic marker clustering** at overview zooms. Click cluster to zoom into individual airfield records. The map has independent airfield and operations layer toggles, Normandy/Europe jumps, fit-visible-records and a responsive layout. Clustering never implies precise WWII runway coordinates.
+- Replaced the *illusory whole-war data playback* with a **dated, 16-scene Normandy history** (6 June–17 August 1944), event stepper and actual changes to field availability, dated Ninth Air Force unit movement and a documented 11 July 366th Fighter Group action near Saint-Lô. Whole-war research remains the goal but only Normandy is presented as detailed.
+- **Corrected a serious map mistake:** USAAF ALG **A-1 Saint-Pierre-du-Mont is at the Omaha Beach / Pointe du Hoc sector in Calvados**, NOT Cotentin. Eight selected airfields now have source-linked approximate published historical site coordinates; flags document conflicts (especially A-6 and A-10 typo in source pages).
+- **Date status fixed:** A-2 Johnson 19 June initial use versus specialist 22 June full operation; A-7 initial-use 24 June vs readiness 2 July; A-10 initial landing/use 19 June vs 26 June completion. Values remain available as distinct fields, with dated construction and some unit-arrival observations; no invented exact group arrival date from a month-only record.
+- Includes RAF **B-1 Asnelles (7 June)**, the 366th FG's 17 June crossing to A-1, P-47/P-51/P-38 and A-9's reconnaissance/depot role. The current visible scene on page open is **11 July 1944**, with eight known USAAF sites and a specific ground-support action. One-click D-Day reset and chronological selection.
+- Removed prominent **USAAF entire-ETO combat group** and **Luftflotte 3 full-command all-cause destruction** numbers from the Normandy UI: these are **not campaign totals**. The 6 June **14,674 Allied sorties / 5,656 RAF** are retained from the RAF Museum with a dated denominator. Missing localized measures are not filled in.
+- Eight fields, nine originally transcribed source-row group/field candidates, 16 dated narrative scenes. This is **still not** the full order of battle, all RAF/USAAF/VVS units or a monthly series across Europe.
+
+### Verification, guardrails and next step
+- GitHub Actions **Atlas core checks** and `tests/grand-air-war-v76.cjs` completed **successfully on 1 Nov** (run `41256575169`, prior to documentation-only edits).
+- Regression test asserts exact A-1 location sector, differences between initial use and completion, 16 chronological scenes, source keys, Leaflet controls, clustering behaviour hooks, CSS and linked assets, source denominators. Tests inspect API/code/data but **do not prove browser visual rendering**.
+- **Still required:** human browser visual review on PC and phone with live tile connections, pan, zoom, click on dense A-1/A-2/A-3 cluster, step to Falaise, and interaction/mobile checks. If OSM tile traffic grows, replace the nonprofit community tile service with an appropriate hosted or self-hosted OSM provider. Do not merge until verified.
+- Next substantive research target: historically verified RAF B-coded fields, dated unit stations/actual operations, and air-group moves beyond Normandy; only include sourced figures with matching geography and date.
+
+### Sources and implementation
+- Site entry: `grand-air-war-v76.html` on PR #6's branch; GitHub Pages route only after merge.
+- Site code: `dist/grand-air-war-v76.js`, `dist/grand-air-war-v76.css`, `dist/grand-air-war-v76-data.js`.
+- Principal current references: RAF Museum 1944 timeline; National Museum of the USAF Overlord; 1988 USAAF Johnson European Airfields; D-Day Overlord individual ALG pages; Anciens Aérodromes A-1; 366th Fighter Group combat history. Each scene and field holds its evidence links.
+- No changes to the aircraft physics repository or its embed. No verified airfield survey, historic 1944 borders or missing day-based sorties invented.
+
+
+## v7.7 European overview and evidence labs — 1 November 2026
+
+**Scope approved:** Turn v7.6's Normandy demonstration into a useful European air-war research experience rather than another generic dashboard. `feature/grand-air-war-v77-europe-analysis` is **stacked on v7.6's unmerged feature branch**, so it can be reviewed as a separate, focused draft PR. Do not merge/ship without user review; v7.4 default, v7.5 preview and physics remain untouched.
+
+### Functional features, not mock data
+
+- New `grand-air-war-v77.html`: Leaflet/OSM Europe map, zoom/pan, dates **July 1936–May 1945**, theatre filtering, campaign search, active/inactive selection, collision grouping, clickable dated events and map markers. Modern basemap is *not a 1944 front-line map*. Campaign centres represent broad areas, not combat aircraft positions.
+- **20 named campaigns and continuous operational areas** across Western Europe, Reich, Eastern Front, Northern Europe and Mediterranean, with documented purpose, what changed, outcome and participating air forces. **21 standalone historical quantity observations**, each with source, date, scope, observation type (including claim, lower bound, approximation), accessible from dossiers.
+- German *loss laboratory*: all **30 scan-checked Luftflotte Reich / Western Front original 1943–1944 monthly command returns** from existing Atlas v7.1 + v7.2, original sources and pages, destruction vs damage, enemy-action vs other operational vs non-operational, missing as included subset, actual observed gaps blank, selectable charts, CSV. West command changed organizational coverage in September 1944.
+- Historical *force laboratory*: **80 source-transcribed USAAF ETO/MTO combat group-month observations** promoted from quantitative research PR #5's Statistical Digest Table 2 (without importing the bulk 185-file research PR), with group roles and original arithmetic disagreements; **5 dated VVS front+reserve aircraft snapshots**, and **68 monthly USAAF worldwide factory acceptances**, both from existing v7.3/v7.4 source registers; different scopes intentionally never combined into a European aircraft total.
+- Detailed 1940/42/44/45 case evidence: Battle of Britain German archives vs RAF wartime claims; Malta 1942 raid sorties and aircraft losses; Dieppe, Big Week, D-Day, Market Garden, Bodenplatte. Where no localized loss count has been audited, the dossier says **no verified campaign total**, not zero.
+- Existing Normandy link from v7.7 dossier opens the richer dated `grand-air-war-v76.html` field notebook. Both routes are self-contained GitHub Pages static pages *once merged*.
+
+### Source and interpretation gates
+
+- Campaign metrics cannot be compared between opposed sides without matching dates and populations. RAF *claimed victories* in the Battle of Britain are NOT German recorded losses, nor are sortie counts an inventory of aircraft.
+- German Reich/West reports are source-defined **command** populations, not RAF/USAAF claims or battle-specific geographic map bins. Lost aircraft count only original non-overlapping cause classes. No unverified German Eastern Front or Italian monthly losses are generated.
+- VVS all-front/command-reserve figures do not represent the VVS aircraft over Bagration, Kursk or any one battle; Table 2 ETO/MTO groups are organizations, not planes; Table 74 is U.S. *worldwide factory production*, not stationed ETO strength.
+- All reports and dates remain traceable via `dist/grand-air-war-v77-campaigns.js`, `dist/grand-air-war-v77-groups.js` and existing v7.1–v7.4 sources. Original source rows and preserved nulls are not silently averaged.
+- Numerical overview is **not yet complete:** missing audited RAF daily/campaign aircraft losses, German Eastern Front monthly loss totals, most Mediterranean losses, actual unit/airfield deployments for each front and verified geographic strike intensity. Thus no Europe-wide casualty total or fabricated animated front line.
+- Need browser verification of map icons/filters/touch and charts on desktop and mobile before merging. CI test covers schema/algorithms/source boundaries but not visual browser success. OSM tiles and Leaflet assets require access to their external providers.
+
+### Next milestone
+
+1. Visually test and fix v7.7 on desktop and mobile; user review.
+2. Expand primary RAF/USAAF/VVS/Italian/Central European *campaign-localized* operation and loss data. Add only values with actual reporting area, loss category and source; preserve gaps, contradictions and claims.
+3. Integrate currently unmerged PR #5's remaining historical data only through explicit validation gates, not a bulk merge or invented precision.
+
+Run: `node tests/grand-air-war-v77.cjs` (integrated into `tests/build.cjs` CI).
+
+
+## v8.0 integrated historical-airwar milestone (1 November 2026)
+
+The goal is a **noticeably larger leap per request**, not version-number churn. User approved building a single larger historical map and German air force/evidence experience.
+
+**Review route** `grand-air-war-v80.html`; draft PR is based on `feature/grand-air-war-v77-europe-analysis` (PR #7), which itself depends on Normandy PR #6. Existing v7.7 and older routes retain their own scripts; live main stays v7.4.
+
+### User-visible new functionality
+
+- No more present-day country borders, roads or giant overlapping country/campaign labels. A Leaflet **physical chart** loads 1:50m Natural Earth land-only polygons, graticule and small stable numbered campaign points. Selected campaign names live in side dossier/list. Crowded points cluster by pixel radius and open with zoom. No fake plotted Reich/West command-loss pins.
+- **German War Capacity study**: interactive pilot casualties (9 monthly observations Sep 1943–May 1944), Luftflotte Reich on-hand/serviceable fighters (3 dated observations, SE and TE separate), German all-aircraft factory output (27 monthly observations Jan 1943–Mar 1945), aviation fuel capacity (7 months), two individually sourced JG53 Gruppen reports.
+- Separate pilots/airframes/factory flows/percentages by source population; each panel has metric-specific y axis, observation detail, direct source links and CSV export. German command airframe-loss context shows nearby reported dates but is never a pilot-loss exchange ratio.
+- Four prominent **clickable** German wartime evidence highlights lead to exact observation/mode. Campaign dossiers can jump to the relevant German pilots/readiness/fuel module (where wartime evidence exists) as well as original German command loss reports.
+- Distinct Allied research lab retains USAAF ETO/MTO group organizations, VVS dated front+reserve snapshots and USAAF worldwide factory acceptance series, with no Germany–USA false head-to-head aircraft ratio. Hide controls irrelevant to currently selected Allied population.
+- Production transcription disagreement: Sep 1944 USSBS-derived series uses 4,103, which reconciles to postwar official 1944 annual 39,807; an alternative reproduced tabulation gives 4,130 and annual 39,834. Both values and outstanding primary-source audit are documented.
+
+### Important limits
+
+- The physical geography is present-day coastline **shape** rather than historically surveyed 1940s terrain. WWII political front lines and national boundaries are **not included** until dated scholarly geometry is checked. All campaign points are indicative geographic centres only.
+- 50m world-atlas topology is an external CDN fetch; unavailable topology should not silently substitute modern map borders. Source footnote is Natural Earth public domain/world-atlas.
+- Full pilot loss time series outside nine months, exact current command aircraft strength, localized RAF/USAAF/VVS opposition records and original USSBS monthly appendices remain research tasks. The 27 German production months are **USSBS-derived secondary**, not independently scanned original monthly pages.
+- One panel per historical denominator, no interpolations of missing pilot/aircraft dates, no compound "German strength" from factory output or Germany-wide fleet from three Reich observations.
+
+### Checkpoints
+
+`node tests/grand-air-war-v80.cjs` checks map source (land not countries), 27 production months/annual reconciliation, pilot/Galland conflict, readiness/JG53/fuel sources and interactive data mode selection.
+Normal `node tests/build.cjs` executes it with all earlier Atlas tests.
+**Visual browser and mobile smoke test with live third-party CDN assets is required before merge.**
+Original source audit and implementation reasoning: `research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md`.
+
+## v8.0 coherence and cross-population audit — 2 November 2026, review pending
+
+**5 November follow-up:** Draft PR #9 adds a source-scoped Poland 1939 pilot, stronger distinction between campaign evidence and independent research, a full filter/aggregation matrix and desktop/mobile Chromium screenshot gating. The detailed QA matrix, eight campaigns lacking numerical observations, remaining archival uncertainties and pre-merge boundary are recorded in [`ATLAS_V80_END_TO_END_QA_2026-11-05.md`](ATLAS_V80_END_TO_END_QA_2026-11-05.md). Historical border geometry and source gaps remain explicitly unresolved.
+
+- **Navigation/map:** the v8 review page links Overview, Campaigns & Events, German/Allied/loss laboratories and sources; an opt-in link from the root Atlas makes the page discoverable after a future merge. The v7.4 default and frozen physics model are otherwise unchanged. All 20 campaign centres are shown by default (inactive periods are muted), so zooming out never reduces the atlas to the one month-active battle. Clusters offer a direct campaign picker plus zoom. Europe-only polygon clipping prevents out-of-range global land edges from crossing the chart.
+- **Timeline/dossier:** campaigns are sorted ascending by historical start date and selection stays stable as the user moves the month. The chronology scroll container tracks the selected row without scrolling the page. Irrelevant source actions are hidden, not overlapping disabled controls. Spain's sourced troop-airlift metric and dated events remain visible without an out-of-period 1943 West command-loss message. France/Low Countries gains four separately scoped RAF counts and four dated events; disagreement between studies is flagged, not averaged.
+- **Data/aggregations:** 20 campaigns, **25 campaign-localized numeric observations**, 28 dated events; **30 German command-month loss rows**, **80 USAAF ETO/MTO theater-month rows (76 reported totals, four missing)**, five Soviet VVS snapshots, 68 worldwide USAAF acceptance months; nine German fighter pilot casualty months, three dated Luftflotte Reich readiness observations, 27 German all-aircraft production months, seven fuel-capacity percentages and two JG 53 unit records. Command destroyed/damaged subtotals, missing-as-subset, USAAF group discrepancies, production 1944=39,807 and both July 1944 readiness dates are audited. CSV for German series now exports complete source fields.
+- **QA:** `node scripts/build-web.cjs`, `node tests/build.cjs` including new `tests/grand-air-war-v80-audit.cjs`, and all 12 historical tests listed in the README passed locally 2 November. **Browser verified, desktop Chromium:** full coastlines without dateline stripes/visible clipping edges; all 20 map candidates and direct cluster picker; Spain and France cards/chronology; selected row remains in the list viewport; no overlapping dossier buttons; month, theater and active-only filters; German/Allied mode switching, independent 1/27 July readiness labels, keyboard graph selection and German CSV download event; no horizontal page overflow or site-origin console error. The root v7.4 navigation link was clicked successfully to reach the v8 page. **Still required:** actual narrow-phone/touch-rendered QA (browser viewport resize unavailable here), and independent scan verification of secondary source transcriptions. Internal consistency does not establish every archival figure. No PR merge or default-route promotion authorized.
