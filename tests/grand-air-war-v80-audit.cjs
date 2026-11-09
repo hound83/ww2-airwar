@@ -22,7 +22,7 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,159,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,164,"campaign quantities need an updated source-count explanation");
 assert.equal(allEvents.length,83,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
@@ -135,7 +135,19 @@ assert.equal(readFact(gardenNew,"mg-resupply-20sep-losses-9").date,"1944-09-20")
 assert.equal(readFact(gardenNew,"mg-resupply-21sep-losses-23").date,"1944-09-21");
 assert.equal(A.campaignEvidenceStatus(gardenNew).status,"opposing-source-gap","Enemy claims cannot count as German-side aircraft losses");
 const allWithOpposing=D.campaigns.filter(c=>{const s=A.campaignEvidenceStatus(c);return s.a>0&&s.b>0;});
-assert.equal(allWithOpposing.length,13,"13 campaigns must display actual numeric evidence for both reporting parties");
+assert.equal(allWithOpposing.length,16,"16 campaigns must display actual numeric evidence for both reporting parties");
+const sp=D.campaigns.find(c=>c.id==="spain"),reich=D.campaigns.find(c=>c.id==="reichdefense"),sch=D.campaigns.find(c=>c.id==="schweinfurt");
+assert.equal(readFact(sp,"spain-soviet-republic-aircraft-1500").value,1500);
+assert.equal(A.evidenceSide(sp,readFact(sp,"spain-soviet-republic-aircraft-1500")),"B","Republican side must not be attributed to the Condor Legion");
+assert.ok(readFact(sp,"spain-soviet-republic-aircraft-1500").period.includes("cumulative"),"Soviet aircraft supplies must never become active aircraft on one day");
+assert.equal(readFact(reich,"reich-8th-heavy-349-1944-03").value,349);
+assert.equal(A.campaignEvidenceStatus(reich).status,"same-period-loss-evidence","March 1944 Allied and Reich returns should share calendar month but retain different unit populations");
+assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-31").value,31);
+assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-writeoff-12").value,12);
+assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-damaged-34").value,34);
+assert.ok(readFact(sch,"sch-1943-10-14-german-fighters-writeoff-12").scope.includes("DO NOT add"),"12 written off fighters cannot be silently double-counted");
+assert.equal(A.eventEvidenceStatus(sch,sch.moments.find(e=>e.date==="1943-10-14")).status,"both-sides-same-date","Black Thursday now has opposing loss records");
+
 
 assert.equal(A.eventEvidenceStatus(week,week.moments.find(e=>e.date==="1944-02-25")).status,"no-daily-evidence","full-week losses may not be displayed as 25 February daily losses");
 assert.ok(week.facts.find(f=>f.id==="bw-german-pilots-100").scope.includes("included in 250"),"pilot subset must not be added again");
