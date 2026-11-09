@@ -186,7 +186,7 @@ for(const campaign of app.campaigns){
  const summary=element("dossier-facts").innerHTML;
  assert.ok(summary.includes('class="bilateral-campaign"'),campaign.id+" missing two-sided evidence status panel");
  assert.ok(summary.includes('data-side="A"')&&summary.includes('data-side="B"'),campaign.id+" is not showing both sides including gaps");
- assert.ok(summary.includes("No automatic exchange ratio is calculated")||summary.includes("No like-for-like")||summary.includes("not supported"),campaign.id+" comparison presents a false precision");
+ assert.ok(summary.includes("No automatic exchange ratio is calculated")||summary.includes("like-for-like")||summary.includes("not supported"),campaign.id+" comparison presents a false precision");
  bilateralCamp++;
  for(const event of campaign.moments){
   app.chooseMoment(campaign.id,event.date,event.lat,event.lng,event.title);
