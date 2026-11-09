@@ -404,7 +404,7 @@ const legacyFactSidesByLabel={
 function evidenceSide(c,f){
  if(f.side){
   if(["Allies","Soviet","RAF","Poland"].includes(f.side))return "A";
-  if(["Axis","Germany","Italy","Luftwaffe"].includes(f.side))return "B";
+  if(["Axis","Germany","Italy","Luftwaffe","Republican"].includes(f.side))return "B";
   return "?";
  }
  return legacyFactSidesByLabel[c.id]?.[f.label]||"?";
