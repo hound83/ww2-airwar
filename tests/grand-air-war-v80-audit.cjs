@@ -22,7 +22,7 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,141,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,159,"campaign quantities need an updated source-count explanation");
 assert.equal(allEvents.length,83,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
@@ -108,6 +108,35 @@ const week=D.campaigns.find(c=>c.id==="bigweek");
 assert.equal(week.facts.find(f=>f.id==="bw-allied-bombers-357").value,357);
 assert.equal(week.facts.find(f=>f.id==="bw-allied-fighters-28").value,28);
 assert.equal(week.facts.find(f=>f.id==="bw-german-fighters-262").value,262);
+
+/* New opponent evidence and disputed archive populations. */
+const polandNew=D.campaigns.find(c=>c.id==="poland"),norwayNew=D.campaigns.find(c=>c.id==="norway"),franceNew=D.campaigns.find(c=>c.id==="france1940");
+const readFact=(c,id)=>c.facts.find(f=>f.id===id);
+assert.equal(readFact(polandNew,"german-poland-lf1-824").value+readFact(polandNew,"german-poland-lf4-676").value,1500,"German Poland serviceable fleet branch categories must sum exactly");
+assert.equal(readFact(polandNew,"german-poland-serviceable-1500").value,1500);
+assert.equal(63+67+12+78+31+12+22,285,"German all-aircraft categories must match Polish-campaign loss reconstruction");
+assert.ok(readFact(polandNew,"german-poland-repairable-279").measure==="damaged","279 repairable German planes cannot count as destroyed");
+assert.ok(readFact(polandNew,"polish-operations-lost-333").scope.includes("114 Polish aircraft"),"Polish original 114 vs secondary 333 source inconsistency must remain disclosed");
+assert.equal(readFact(norwayNew,"norway-german-242").value,242);
+assert.equal(readFact(norwayNew,"norway-german-260-alternative").value,260);
+assert.ok(readFact(norwayNew,"norway-german-260-alternative").scope.includes("alternative"),"Norwegian Luftwaffe discrepancy must be stated");
+assert.equal(readFact(franceNew,"france-german-lost-1428").value,1428);
+assert.ok(readFact(franceNew,"france-german-damaged-488").measure==="damaged","French airframe damage cannot count as confirmed destroyed");
+assert.ok(readFact(franceNew,"france-raf-fighters-474").scope.includes("fighters only"),"RAF fighter losses cannot be compared as all Allied aviation");
+const stalNew=D.campaigns.find(c=>c.id==="stalingrad");
+assert.equal(readFact(stalNew,"stal-airlift-ju52-lost").value,266);
+assert.equal(readFact(stalNew,"stal-airlift-he111-lost").value,165);
+assert.equal(A.campaignEvidenceStatus(stalNew).status,"opposing-source-gap","Stalingrad Soviet losses must remain unknown rather than reported as zero");
+const gardenNew=D.campaigns.find(c=>c.id==="marketgarden");
+assert.equal(readFact(gardenNew,"mg-allied-total-aircraft-lost-125").value,125);
+assert.ok(readFact(gardenNew,"mg-allied-total-aircraft-lost-125").scope.includes("57 RAF Transport Command"),"Market Garden wider losses must not double-count transport subset");
+assert.ok(readFact(gardenNew,"mg-enemy-aircraft-claimed-160").type.includes("claims"),"Allied claims are not verified German losses");
+assert.equal(readFact(gardenNew,"mg-resupply-20sep-losses-9").date,"1944-09-20");
+assert.equal(readFact(gardenNew,"mg-resupply-21sep-losses-23").date,"1944-09-21");
+assert.equal(A.campaignEvidenceStatus(gardenNew).status,"opposing-source-gap","Enemy claims cannot count as German-side aircraft losses");
+const allWithOpposing=D.campaigns.filter(c=>{const s=A.campaignEvidenceStatus(c);return s.a>0&&s.b>0;});
+assert.equal(allWithOpposing.length,13,"13 campaigns must display actual numeric evidence for both reporting parties");
+
 assert.equal(A.eventEvidenceStatus(week,week.moments.find(e=>e.date==="1944-02-25")).status,"no-daily-evidence","full-week losses may not be displayed as 25 February daily losses");
 assert.ok(week.facts.find(f=>f.id==="bw-german-pilots-100").scope.includes("included in 250"),"pilot subset must not be added again");
 
