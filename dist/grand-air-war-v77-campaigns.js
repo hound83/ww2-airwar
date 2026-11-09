@@ -2487,42 +2487,96 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"label":"German aircraft, Bagration opening force estimate", "value":1400, "unit":"aircraft", "scope":"Same Victor Gavrilov comparison table, German forces in Bagration operation-opening grouping; NOT all Luftwaffe aircraft in the East or operation losses", "sourceId":"italianDefenceBagration", "date":"1944-06-23", "type":"secondary-order-of-battle-estimate"}
       ],
       "moments": [
-        {"date":"1944-06-24","title":"Bobruisk assault: 16th Air Army's serviceable fleet and first-day sorties","place":"Bobruisk operational sector, Belarus","lat":53.14,"lng":29.22,"summary":"The Soviet 16th Air Army had 2,319 serviceable combat aircraft and 1,846 combat-ready crews on 24 June, according to the unit's published history. It reports 3,191 combat sorties on the offensive's first day; this is flight count, not 3,191 aircraft. The wartime June headquarters report is independently catalogued, but the full original ledger has not been re-transcribed.","units":"Soviet 16th Air Army of 1st Belorussian Front; 6th Air Army's additional 321 serviceable planes are separately attributed, not included in 16th Air Army 2,319.","outcome":"A large aerial concentration supported the breakout; the published source records missions and serviceability but not opponent losses independently verified by German returns.","sourceIds":["soviet16AirHistory1944","soviet16AirHeadquartersPrimary"],"confidence":"Secondary Soviet unit history based on wartime operations; original Soviet headquarters extract archived under Fund 368, inventory 207698s, file 10; map marker denotes operational sector"},
-        {"date":"1944-06-26","title":"16th Air Army: 2,950 sorties, 19 Soviet aircraft lost","place":"Bobruisk and Berezina crossings, Belarus","lat":53.15,"lng":29.2,"summary":"Unit history reports 2,950 combat sorties by 16th Air Army on 26 June and 19 Soviet aircraft lost; its assertion that 13 German aircraft were shot down is a Soviet wartime victory claim, not a reconciled German confirmed loss. The 19 is an own-return count, distinct from claimed German casualties.","units":"Soviet 16th Air Army; German aircraft encountered in 29 reported air engagements.","outcome":"Air support restricted German withdrawal along the Berezina; a validated bilateral aircraft-loss ratio is not available from these reports.","sourceIds":["soviet16AirHistory1944","soviet16AirHeadquartersPrimary"],"confidence":"Soviet unit-history retrospective, daily 16th Air Army missions and own losses; enemy kills are unverified claims"},
-        {
-          "date":"1944-06-23","title":"Main Soviet attack begins against Army Group Centre",
-          "place":"Belarus, operation-wide schematic location", "lat":53.9,"lng":27.57,
-          "summary":"Four Soviet fronts opened the large-scale simultaneous offensive after reconnaissance/probing actions on 22 June. The reported opening aircraft grouping was approximately 5,300 Soviet and 1,400 German machines, figures for assigned forces rather than daily sorties.",
-          "units":"Soviet 1st Baltic and 1st, 2nd, 3rd Belorussian Fronts with supporting air armies against German Army Group Centre and Luftwaffe; table reflects broad force groupings.",
-          "outcome":"Breakthroughs quickly threatened both German flanks and the operational rear.",
-          "sourceIds":["usArmyBagration","italianDefenceBagration"],"confidence":"US Army CGSC study; Italian Defence-hosted Victor Gavrilov conference force-table, estimates not counts of losses"
-        },
-        {
-          "date":"1944-07-03","title":"Minsk captured and encirclement of German central forces deepens",
-          "place":"Minsk, Belarus", "lat":53.9,"lng":27.57,
-          "summary":"Soviet forces took Minsk and surrounded important retreating German elements after breaking through multiple front sectors. Aviation supported the converging advances and interdiction of withdrawal routes.",
-          "units":"Soviet operating fronts and tactical aviation; German Army Group Centre units and air cover. No Minsk-day verified aircraft losses are asserted.",
-          "outcome":"Army Group Centre sustained a catastrophic operational defeat and the offensive shifted to exploitation.",
-          "sourceIds":["usArmyBagration","italianDefenceBagration"],"confidence":"Official US military operational study and historical conference account"
-        },
-        {
-          "date":"1944-07-28","title":"Brest captured during the drive toward Poland",
-          "place":"Brest, western Belarus", "lat":52.1,"lng":23.7,
-          "summary":"The Soviet advance reached and captured Brest as German forces retreated toward the eastern Polish frontier. Forward movement stretched the operating radius and basing needs of the supporting air armies.",
-          "units":"Soviet advancing forces and supporting VVS air armies; German retreating formations and Luftwaffe; no Brest-specific strength or air-loss return imported.",
-          "outcome":"The operation moved beyond the original Belarusian salient toward new defensive lines.",
-          "sourceIds":["usArmyBagration"],"confidence":"US Army deep-operations reconstruction; regional event and air-support interpretation"
-        },
-        {
-          "date":"1944-08-29","title":"Bagration campaign concludes on a transformed eastern front",
-          "place":"Belarus–Poland–Baltic approaches, regional", "lat":53.6,"lng":25.1,
-          "summary":"By the US Army study's operational end date, Soviet forces had driven far beyond their starting positions and German Army Group Centre was shattered. Air units were operating on an expanded and changing geography.",
-          "units":"Soviet offensive fronts and supporting tactical aviation; not all original opening force-table aircraft remained at the same bases or strengths.",
-          "outcome":"The strategic Eastern Front shifted far west, with Luftwaffe and German ground forces under sustained pressure.",
-          "sourceIds":["usArmyBagration","italianDefenceBagration"],"confidence":"Periodization follows US military study and scholarly conference account; end date does not imply same-day battle"
-        }
-      ]
-    },
+              {
+                      "date": "1944-06-23",
+                      "title": "Main Soviet attack begins against Army Group Centre",
+                      "place": "Belarus, operation-wide schematic location",
+                      "lat": 53.9,
+                      "lng": 27.57,
+                      "summary": "Four Soviet fronts opened the large-scale simultaneous offensive after reconnaissance/probing actions on 22 June. The reported opening aircraft grouping was approximately 5,300 Soviet and 1,400 German machines, figures for assigned forces rather than daily sorties.",
+                      "units": "Soviet 1st Baltic and 1st, 2nd, 3rd Belorussian Fronts with supporting air armies against German Army Group Centre and Luftwaffe; table reflects broad force groupings.",
+                      "outcome": "Breakthroughs quickly threatened both German flanks and the operational rear.",
+                      "sourceIds": [
+                              "usArmyBagration",
+                              "italianDefenceBagration"
+                      ],
+                      "confidence": "US Army CGSC study; Italian Defence-hosted Victor Gavrilov conference force-table, estimates not counts of losses"
+              },
+              {
+                      "date": "1944-06-24",
+                      "title": "Bobruisk assault: 16th Air Army's serviceable fleet and first-day sorties",
+                      "place": "Bobruisk operational sector, Belarus",
+                      "lat": 53.14,
+                      "lng": 29.22,
+                      "summary": "The Soviet 16th Air Army had 2,319 serviceable combat aircraft and 1,846 combat-ready crews on 24 June, according to the unit's published history. It reports 3,191 combat sorties on the offensive's first day; this is flight count, not 3,191 aircraft. The wartime June headquarters report is independently catalogued, but the full original ledger has not been re-transcribed.",
+                      "units": "Soviet 16th Air Army of 1st Belorussian Front; 6th Air Army's additional 321 serviceable planes are separately attributed, not included in 16th Air Army 2,319.",
+                      "outcome": "A large aerial concentration supported the breakout; the published source records missions and serviceability but not opponent losses independently verified by German returns.",
+                      "sourceIds": [
+                              "soviet16AirHistory1944",
+                              "soviet16AirHeadquartersPrimary"
+                      ],
+                      "confidence": "Secondary Soviet unit history based on wartime operations; original Soviet headquarters extract archived under Fund 368, inventory 207698s, file 10; map marker denotes operational sector"
+              },
+              {
+                      "date": "1944-06-26",
+                      "title": "16th Air Army: 2,950 sorties, 19 Soviet aircraft lost",
+                      "place": "Bobruisk and Berezina crossings, Belarus",
+                      "lat": 53.15,
+                      "lng": 29.2,
+                      "summary": "Unit history reports 2,950 combat sorties by 16th Air Army on 26 June and 19 Soviet aircraft lost; its assertion that 13 German aircraft were shot down is a Soviet wartime victory claim, not a reconciled German confirmed loss. The 19 is an own-return count, distinct from claimed German casualties.",
+                      "units": "Soviet 16th Air Army; German aircraft encountered in 29 reported air engagements.",
+                      "outcome": "Air support restricted German withdrawal along the Berezina; a validated bilateral aircraft-loss ratio is not available from these reports.",
+                      "sourceIds": [
+                              "soviet16AirHistory1944",
+                              "soviet16AirHeadquartersPrimary"
+                      ],
+                      "confidence": "Soviet unit-history retrospective, daily 16th Air Army missions and own losses; enemy kills are unverified claims"
+              },
+              {
+                      "date": "1944-07-03",
+                      "title": "Minsk captured and encirclement of German central forces deepens",
+                      "place": "Minsk, Belarus",
+                      "lat": 53.9,
+                      "lng": 27.57,
+                      "summary": "Soviet forces took Minsk and surrounded important retreating German elements after breaking through multiple front sectors. Aviation supported the converging advances and interdiction of withdrawal routes.",
+                      "units": "Soviet operating fronts and tactical aviation; German Army Group Centre units and air cover. No Minsk-day verified aircraft losses are asserted.",
+                      "outcome": "Army Group Centre sustained a catastrophic operational defeat and the offensive shifted to exploitation.",
+                      "sourceIds": [
+                              "usArmyBagration",
+                              "italianDefenceBagration"
+                      ],
+                      "confidence": "Official US military operational study and historical conference account"
+              },
+              {
+                      "date": "1944-07-28",
+                      "title": "Brest captured during the drive toward Poland",
+                      "place": "Brest, western Belarus",
+                      "lat": 52.1,
+                      "lng": 23.7,
+                      "summary": "The Soviet advance reached and captured Brest as German forces retreated toward the eastern Polish frontier. Forward movement stretched the operating radius and basing needs of the supporting air armies.",
+                      "units": "Soviet advancing forces and supporting VVS air armies; German retreating formations and Luftwaffe; no Brest-specific strength or air-loss return imported.",
+                      "outcome": "The operation moved beyond the original Belarusian salient toward new defensive lines.",
+                      "sourceIds": [
+                              "usArmyBagration"
+                      ],
+                      "confidence": "US Army deep-operations reconstruction; regional event and air-support interpretation"
+              },
+              {
+                      "date": "1944-08-29",
+                      "title": "Bagration campaign concludes on a transformed eastern front",
+                      "place": "Belarus–Poland–Baltic approaches, regional",
+                      "lat": 53.6,
+                      "lng": 25.1,
+                      "summary": "By the US Army study's operational end date, Soviet forces had driven far beyond their starting positions and German Army Group Centre was shattered. Air units were operating on an expanded and changing geography.",
+                      "units": "Soviet offensive fronts and supporting tactical aviation; not all original opening force-table aircraft remained at the same bases or strengths.",
+                      "outcome": "The strategic Eastern Front shifted far west, with Luftwaffe and German ground forces under sustained pressure.",
+                      "sourceIds": [
+                              "usArmyBagration",
+                              "italianDefenceBagration"
+                      ],
+                      "confidence": "Periodization follows US military study and scholarly conference account; end date does not imply same-day battle"
+              }
+      ]    },
     {
       "id": "marketgarden",
       "name": "Market Garden",
