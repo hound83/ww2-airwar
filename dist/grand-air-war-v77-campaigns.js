@@ -2,6 +2,9 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "usafSpanishRepublicAircraft": {"title":"USAF Office of Air Force History, Case Studies in the Achievement of Air Superiority (1994), Soviet-supplied Republican aircraft during Spanish Civil War, retrospective pp.191–192","url":"https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47633/pdf/GOVPUB-D301-PURL-LPS47633.pdf","class":"official-USAF-secondary-history-says-approximately-1500-aircraft-supplied-throughout-war-not-simultaneously-operational"},
+    "usafDefenceReichBomber349": {"title":"Richard G. Davis, Bombing the European Axis Powers: A Historical Digest of the Combined Bomber Offensive 1939–1945, March 1944 8th AF 349 heavy-bomber writeoffs","url":"https://media.defense.gov/2025/Jun/10/2003736234/-1/-1/0/DAVIS_BOMBING_EUROPEAN.PDF","class":"USAF-historical-analysis-of-Eighth-Air-Force-writeoffs-March-1944-all-destruction-causes; not all Allied aircraft or Luftflotte-Reich area"},
+    "ww2MuseumSchweinfurtLosses": {"title":"National WWII Museum, Black Thursday: The Second Schweinfurt Bombing Raid (14 October 1943); German fighter register 31 destroyed, 12 written off and 34 damaged","url":"https://www.nationalww2museum.org/war/articles/black-thursday-october-14-1943-second-schweinfurt-bombing-raid","class":"accredited-WWII-museum-secondary-interpretation-of-German-register; caution-12-written-off-may-be-separate-category-from-31-destroyed; not-verified-all-Luftwaffe"},
     "usafPolandAfbHistory": {"title":"USAF Office of Air Force History, John F. Kreis, Air Warfare and Air Base Air Defense, 1914–1973 (1988), Poland tables pp. 60–61, citing German translation VII/33 and Polish Sikorski/Kurowski data","url":"https://media.defense.gov/2010/Sep/22/2001330044/-1/-1/0/AFD-100922-032.pdf","class":"official-USAF-retrospective-tabulation-based-on-original-German-and-Polish-records; original-PDF-table-pixels-not-independently-verified-in-this-task"},
     "dhmNorwayGerman": {"title":"Deutsches Historisches Museum LeMO, Occupation of Norway 1940; Luftwaffe 242 aircraft lost","url":"https://www.dhm.de/lemo/kapitel/der-zweite-weltkrieg/kriegsverlauf/besetzung-von-norwegen-1940","class":"German-national-history-museum-secondary-campaign-total; differs-from-Gray-2012-260-aircraft-total"},
     "grayAirWarNorway": {"title":"Colin S. Gray, Airpower for Strategic Effect, USAF Air University Press (2012), p.128, 260 German vs 169 British aircraft in Norway","url":"https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0122_GRAY_AIRPOWER_STRATEGIC_EFFECT.PDF","class":"scholarly-secondary-USAF-published-history-conflicting-Luftwaffe-Norway-total-260-vs-DHM-242; underlying-German-ledger-not-reconciled"},
@@ -434,7 +437,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "raf1936",
         "raf1937",
-        "bundesarchivSpain"
+        "bundesarchivSpain", "usafSpanishRepublicAircraft"
       ],
       "chapters": [
         {
@@ -466,6 +469,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"spain-soviet-republic-aircraft-1500","side":"Republican","measure":"supplied-aircraft","label":"Soviet aircraft supplied to Spanish Republican air force, cumulative wartime estimate","value":1500,"unit":"aircraft supplied across war, approximately","date":"1939-04-01","scope":"1936–1939 Soviet aircraft deliveries to Republican Spain, approximately 1,500 across the entire war per USAF official history. These are NOT airplanes available on 1 April, not operational fighters, and not Republican aircraft losses.","sourceId":"usafSpanishRepublicAircraft","type":"official-retrospective-cumulative-aircraft-supplies","period":"1936–1939, cumulative deliveries over entire war"},
         {
           "label": "Nationalist troops moved by early German airlift",
           "value": 7350,
@@ -1749,7 +1753,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "The arrival of longer-range escort fighters changed the attrition battle; monthly Luftflotte Reich aircraft-loss returns allow measured tracking of aircraft destroyed by cause in 1943–44.",
       "consequence": "Air defences, fuel, aircraft production and pilot replacement came under increasing pressure. The original German figures are command returns and cannot be converted to Allied victory claims.",
       "sources": [
-        "rafLosses", "rafReich1944Returns", "usafReichAirDefence", "usafStrategicWarEnd", "bigWeek", "usafBigWeekIndustry"
+        "rafLosses", "rafReich1944Returns", "usafReichAirDefence", "usafStrategicWarEnd", "bigWeek", "usafBigWeekIndustry", "usafDefenceReichBomber349"
       ],
       "chapters": [
         {
@@ -1781,6 +1785,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"reich-8th-heavy-349-1944-03","side":"Allies","measure":"losses","label":"Eighth Air Force heavy bombers written off during March 1944","value":349,"unit":"USAAF heavy bombers written off","date":"1944-03","scope":"March 1944 entire Eighth Air Force operations over European target system, 349 heavy bombers written off, all causes. NOT equivalent to German Luftflotte Reich's 662 destroyed all aircraft types in its reporting territory in same calendar month.","sourceId":"usafDefenceReichBomber349","type":"official-USAF-8th-heavy-bomber-writeoffs","period":"1–31 March 1944, Eighth Air Force heavy bombers, European theater"},
         {"label":"Luftflotte Reich aircraft destroyed, March 1944", "value":662, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, March 1944, all types and causes; 389 enemy action + 95 other operational + 178 non-operational, captured German VII/138 p.61", "sourceId":"rafReich1944Returns", "date":"1944-03", "type":"primary-command-return"},
         {"label":"Luftflotte Reich aircraft destroyed, April 1944", "value":840, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, April 1944, all types and causes; 580 enemy action + 83 other operational + 177 non-operational, captured German VII/138 p.87", "sourceId":"rafReich1944Returns", "date":"1944-04", "type":"primary-command-return"}
       ],
@@ -2071,7 +2076,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "High bomber losses accelerated pressure for long-range escort and changing fighter employment.",
       "consequence": "Two high-loss missions two months apart helped drive USAAF planning toward adequate long-range escort. These are not continuous August–October daily operations, and the August/October counts must retain separate missions.",
       "sources": [
-        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943"
+        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943", "ww2MuseumSchweinfurtLosses"
       ],
       "chapters": [
         {
@@ -2094,6 +2099,9 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"sch-1943-10-14-german-fighters-31","side":"Axis","measure":"losses","label":"German fighter aircraft destroyed on 14 October Schweinfurt mission","value":31,"unit":"Luftwaffe fighters confirmed destroyed","date":"1943-10-14","scope":"14 October 1943, German fighter register cited by National WWII Museum, 31 German fighters destroyed versus 60 USAAF B-17s shot down. These are distinct aircraft classes, and a loss count does not establish individual bomber-gunner victories.","sourceId":"ww2MuseumSchweinfurtLosses","type":"official-museum-German-register-destroyed"},
+        {"id":"sch-1943-10-14-german-fighters-writeoff-12","side":"Axis","measure":"damaged-written-off","label":"German fighters separately described as written off, 14 October","value":12,"unit":"Luftwaffe fighters written off · reported separately","date":"1943-10-14","scope":"14 October 1943 National WWII Museum also mentions 12 fighters written off. Source does not fully establish whether this is mutually exclusive of 31 destroyed in the original German write-off taxonomy. DO NOT add to 31 without original unit-loss reconciliation.","sourceId":"ww2MuseumSchweinfurtLosses","type":"secondary-category-uncertainty"},
+        {"id":"sch-1943-10-14-german-fighters-damaged-34","side":"Axis","measure":"damaged","label":"German fighters damaged (not counted as destroyed) on 14 October","value":34,"unit":"Luftwaffe fighters damaged","date":"1943-10-14","scope":"14 October 1943, German fighter damage category in German record as reported by National WWII Museum. Repairability and the overlap with 12 written off require original register review; not 34 confirmed destroyed.","sourceId":"ww2MuseumSchweinfurtLosses","type":"official-museum-German-register-damaged"},
         {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
         {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
         {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday; one USAF Museum account says 291 dispatched, another 251 'on the mission' (different counting population, unreconciled); not 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
