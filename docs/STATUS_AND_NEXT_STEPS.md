@@ -1,5 +1,15 @@
 # Atlas status and next work
 
+## 10 November 2026 — main-route Campaign Explorer release and German/Soviet unit records
+
+**Release candidate:** PR #19 from `feature/atlas-v85-research-release` to `main`. This release intentionally promotes the new campaign-driven Atlas to the root route `/`; old pilot/aircraft lab remains `/?legacy=1`, experimental v7.5 remains `/?preview=7.5`. Never delete or silently upgrade the frozen flight-physics v2.4 snapshot.
+
+- 20 campaigns and 55 phases retained. 108 → **127** source-scoped observations (+19), 80 → **82** researched dated events (+2). Soviet 16th Air Army 24 June 1944: 2,319 serviceable combat aircraft, 1,846 combat-ready crews, 3,191 combat sorties; 26 June: 2,950 sorties, 19 own aircraft lost, 13 *claims* of German aircraft down. German LF3 Normandy: 6–13 June 2,588 fighter and 1,683 bomber/torpedo sorties, plus 6 June–1 July four operational categories. Published German category sum 13,973 disagrees with reported 13,983 headline (difference 10); unresolved source discrepancy deliberately visible.
+- RAF AHB original German quartermaster losses West June 1944 / East Sep–Dec 1943 / strengths and serviceability Aug 1938–Apr 1945 found and indexed; no unsafe OCR transcription of the unverified multipage table scans. Primary Soviet 16th Army June 1944 headquarters report identified, but numerical returns come from a secondary retrospective unit history. Research ledger: `research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md`.
+- **PASS** code-gate core GitHub run 42719067762 and real Chromium desktop/mobile QA run 42719067743 on implementation commit `a7d5338bf6b7ecc7cc125702487d81d9541433d9`; GitHub will recheck documentation-only release commits. Release QA/rollback note: `docs/ATLAS_RELEASE_ORIGINAL_OPERATIONAL_LEDGER_QA_2026-11-10.md`.
+- **Next meaningful research:** transcribe and validate each original German Quartermaster daily loss table and cross-check with Soviet original TsAMO unit/day forms, explicitly distinguishing strength, serviceability, sorties, confirmed own losses and opponent claims. Avoid fabricated all-Europe daily totals or mathematically invalid bilateral ratios.
+
+
 ## 6 November 2026 — bilateral air strength and aircraft-loss comparison milestone
 
 **Work PR:** https://github.com/hound83/ww2-airwar/pull/18, stacked on original daily RAF/MAAF research PR #16. No public merge or physics edits.
