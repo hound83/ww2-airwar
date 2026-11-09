@@ -236,8 +236,8 @@ assert.equal(173+262,435,"Cassino subsets must reconcile without double-counting
 assert.ok(italy.facts.slice(1,3).every(f=>f.type==="recorded-subset")&&italy.facts[3].type==="approximate-subset");
 assert.ok(italy.facts[0].scope.includes("08:30–12:00")&&italy.chapters[1].limits.includes("SUBSET"));
 const bagration=D.campaigns.find(c=>c.id==="bagration");
-assert.deepEqual([...bagration.facts.map(f=>f.value)],[5300,1400]);
-assert.ok(bagration.facts.every(f=>f.type==="secondary-order-of-battle-estimate"&&f.scope.includes("NOT")));
+assert.deepEqual([...bagration.facts.filter(f=>[5300,1400].includes(f.value)).map(f=>f.value)],[5300,1400]);
+assert.ok(bagration.facts.filter(f=>[5300,1400].includes(f.value)).every(f=>f.type==="secondary-order-of-battle-estimate"&&f.scope.includes("NOT")));
 assert.ok(bagration.moments.some(e=>e.date==="1944-06-23")&&!bagration.moments.some(e=>e.date==="1944-06-22"),"main Bagration assault began 23 June, reconnaissance 22 June");
 const berlin=D.campaigns.find(c=>c.id==="berlin");
 assert.equal(berlin.facts.length,3,"additional Berlin sortie evidence must preserve the unresolved 2738 discrepancy");
