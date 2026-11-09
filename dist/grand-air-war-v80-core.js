@@ -284,12 +284,122 @@ const evidenceSides={
 };
 // These positions apply ONLY to the legacy records with no side metadata.
 // Their lengths are asserted during source QA; newly authored facts have explicit sides.
-const legacyFactSides={
- spain:"AA",poland:"ABAA",norway:"AAAAAAAAAAA",france1940:"AAAA",
- britain:"BBAB",malta:"BBAAB",barbarossa:"AA",dieppe:"AA",stalingrad:"BBB",
- reichdefense:"BB",sicily:"AAAAAAB",kursk:"AB",schweinfurt:"AAAA",
- italy:"AAAA",bigweek:"AAA",normandy:"AA",bagration:"AB",
- marketgarden:"AAA",bodenplatte:"AABAAA",berlin:"AAA"
+const legacyFactSidesByLabel={
+ "spain": {
+  "Nationalist troops moved by early German airlift": "A",
+  "Personnel who served in the Condor Legion during its entire deployment": "A"
+ },
+ "poland": {
+  "Polish Air Force aircraft facing the invasion, mostly obsolete": "A",
+  "German modern fighters and bombers opposing Poland": "B",
+  "German aircraft shot down by Polish pilots, per RAF Museum retrospective": "A",
+  "Polish aircraft lost, per RAF Museum retrospective": "A"
+ },
+ "norway": {
+  "No. 263 Squadron sorties in Narvik assault support, 28 May": "A",
+  "No. 46 Squadron sorties in Narvik assault support, 28 May": "A",
+  "Combined Nos. 263 and 46 Squadrons sorties, 2 June": "A",
+  "Combined Nos. 263 and 46 Squadrons combat actions, 2 June": "A",
+  "No. 263 Squadron northern Norway operational sorties": "A",
+  "No. 46 Squadron northern Norway operational sorties": "A",
+  "RAF fighters embarked on HMS Glorious during evacuation": "A",
+  "No. 263 Squadron flying activity over Lesjaskog": "A",
+  "No. 263 Squadron enemy aircraft engaged": "A",
+  "No. 263 Squadron enemy aircraft claimed destroyed": "A",
+  "No. 263 Squadron Gladiators destroyed in 25 April lake-airfield attacks": "A"
+ },
+ "france1940": {
+  "RAF bombers departing on 14 May; one particular operation, not the campaign total": "A",
+  "Of those 71 bombers, aircraft that did not return": "A",
+  "RAF fighter sorties flown in the Dunkirk evacuation air battle": "A",
+  "RAF bomber sorties in the same Dunkirk reporting window": "A"
+ },
+ "britain": {
+  "German aircraft destroyed": "B",
+  "German aircraft damaged": "B",
+  "RAF wartime victory estimate": "A",
+  "German aircraft destroyed · 15 September": "B"
+ },
+ "malta": {
+  "Luftwaffe sorties against Malta · April 1942": "B",
+  "Luftwaffe aircraft lost · April 1942": "B",
+  "RAF aircraft destroyed on ground · April": "A",
+  "First Spitfires flown to Malta, 7 March 1942": "A",
+  "Axis sorties during renewed Malta assault, 11–19 October": "B"
+ },
+ "barbarossa": {
+  "Soviet aircraft lost in initial German attack": "A",
+  "Opening Soviet aircraft destroyed on airfields": "A"
+ },
+ "dieppe": {
+  "Allied sorties · 19 August": "A",
+  "RAF aircraft lost · 19 August": "A"
+ },
+ "stalingrad": {
+  "Sixth Army supply need, estimated minimum": "B",
+  "Air-supply planning rate on suitable flying days": "B",
+  "Actual cargo delivered, seven-week average": "B"
+ },
+ "reichdefense": {
+  "Luftflotte Reich aircraft destroyed, March 1944": "B",
+  "Luftflotte Reich aircraft destroyed, April 1944": "B"
+ },
+ "sicily": {
+  "HQ MAAF Sicily-campaign Allied operational flights": "A",
+  "HQ MAAF Sicily-campaign Allied aircraft losses": "A",
+  "HQ MAAF Sicily-campaign aerial victory claims": "A",
+  "HQ MAAF Sicily-campaign bomb tonnage": "A",
+  "British gliders released into sea": "A",
+  "Western Naval Task Force landing-cover fighter sorties": "A",
+  "Enemy flights plotted by Western Task Force": "B"
+ },
+ "kursk": {
+  "Aircraft assigned to named Soviet air formations": "A",
+  "German aircraft committed to Operation Citadel": "B"
+ },
+ "schweinfurt": {
+  "Bombers dispatched, 17 August dual raid": "A",
+  "Bombers shot down, 17 August dual raid": "A",
+  "Bombers dispatched, 14 October Schweinfurt raid": "A",
+  "Bombers shot down, 14 October Schweinfurt raid": "A"
+ },
+ "italy": {
+  "Bombers over Cassino area, 15 March morning": "A",
+  "Medium bombers, Cassino morning (included in 435)": "A",
+  "Heavy bombers, Cassino morning (included in 435)": "A",
+  "Bomb tonnage falling in Cassino town (approx.)": "A"
+ },
+ "bigweek": {
+  "USAAF heavy-bomber sorties": "A",
+  "USAAF heavy bombers lost": "A",
+  "USAAF aircrew casualties": "A"
+ },
+ "normandy": {
+  "Allied sorties supporting invasion · 6 June": "A",
+  "RAF component of D-Day sorties": "A"
+ },
+ "bagration": {
+  "Soviet aircraft, Bagration opening force estimate": "A",
+  "German aircraft, Bagration opening force estimate": "B"
+ },
+ "marketgarden": {
+  "RAF Transport Command aircraft lost": "A",
+  "Resupply aircraft attempting drops on 20 September": "A",
+  "Resupply aircraft dropping on assigned German-held zones": "A"
+ },
+ "bodenplatte": {
+  "Allied aircraft destroyed": "A",
+  "Allied aircraft damaged beyond unit repair": "A",
+  "Luftwaffe aircraft lost": "B",
+  "Aircraft present at Eindhoven before the Bodenplatte attack": "A",
+  "Allied aircraft destroyed at Eindhoven": "A",
+  "Allied aircraft damaged at Eindhoven": "A"
+ },
+ "berlin": {
+  "Soviet aircraft assembled for Berlin (rounded)": "A",
+  "16th Air Army sorties during Seelow breakthrough, 19 April": "A",
+  "16th Air Army sorties during Seelow breakthrough, 20 April": "A"
+ }
 };
 function evidenceSide(c,f){
  if(f.side){
@@ -297,8 +407,7 @@ function evidenceSide(c,f){
   if(["Axis","Germany","Italy","Luftwaffe"].includes(f.side))return "B";
   return "?";
  }
- const original=c.facts.filter(x=>!x.side),i=original.indexOf(f);
- return (legacyFactSides[c.id]||"")[i]||"?";
+ return legacyFactSidesByLabel[c.id]?.[f.label]||"?";
 }
 function evidenceKind(f){
  const label=(f.label||"").toLowerCase(),type=(f.type||"").toLowerCase(),measure=(f.measure||"").toLowerCase(),unit=(f.unit||"").toLowerCase();
