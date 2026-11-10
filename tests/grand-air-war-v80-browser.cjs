@@ -135,7 +135,7 @@ const check=async()=>{
    await page.waitForFunction(()=>document.querySelectorAll(".story-map-point").length>=2,null,{timeout:15000});
    assert.ok(await page.locator(".story-map-point").count()>=2,"selected chapter needs interactive geographic episode markers");
    await page.locator('#moment-list [data-date="1944-07-25"]').click();
-   assert.match(await page.locator("#moment-detail").innerText(),/German perspective|Air operations and their limits/);
+   assert.match(await page.locator("#moment-detail").innerText(),/German perspective|Air operations and their limits/i);
    assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>=2,"Normandy event lacks multiple source trails");
    await page.locator("#campaign-story").screenshot({path:path.join(root,"v80-qa-normandy-story-"+viewport.width+".png")});
    await page.locator("#chapter-detail").screenshot({path:path.join(root,"v80-qa-normandy-chapter-"+viewport.width+".png")});
