@@ -1642,7 +1642,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "RAF aircraft lost · 19 August",
-          "value": 106,
+          "side":"Allies","measure":"losses","value": 106,
           "unit": "aircraft",
           "scope": "RAF Museum: destroyed/lost that day (not German claims)",
           "sourceId": "raf1942",
@@ -2136,7 +2136,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
         {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
         {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday; one USAF Museum account says 291 dispatched, another 251 'on the mission' (different counting population, unreconciled); not 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
-        {"label":"Bombers shot down, 14 October Schweinfurt raid", "value":60, "unit":"USAAF B-17 bombers", "scope":"Subset of 291 dispatched 14 October; excludes returned aircraft that later crashed or required repair", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded-subset"}
+        {"label":"Bombers shot down, 14 October Schweinfurt raid", "side":"Allies","measure":"losses","value":60, "unit":"USAAF B-17 bombers", "scope":"Subset of 291 dispatched 14 October; excludes returned aircraft that later crashed or required repair", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded-subset"}
       ],
       "moments": [
         {
@@ -2834,7 +2834,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "facts": [
         {
           "label": "Allied aircraft destroyed",
-          "value": 224,
+          "side":"Allies","measure":"losses","value": 224,
           "unit": "aircraft",
           "scope": "RAF Museum British Military Aviation 1945, 1 January Bodenplatte; includes 144 RAF aircraft",
           "sourceId": "raf1945",
@@ -2852,7 +2852,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Luftwaffe aircraft lost",
-          "value": 300,
+          "side":"Axis","measure":"losses","value": 300,
           "unit": "aircraft · about",
           "scope": "RAF Museum British Military Aviation 1945; other RAF Museum summary gives more than 220, different definition",
           "sourceId": "raf1945",
