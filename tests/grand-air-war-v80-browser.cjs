@@ -137,6 +137,10 @@ const check=async()=>{
    await page.locator('#moment-list [data-date="1944-07-25"]').click();
    assert.match(await page.locator("#moment-detail").innerText(),/German perspective|Air operations and their limits/i);
    assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>=2,"Normandy event lacks multiple source trails");
+   // Let Leaflet finish the chapter-to-episode flight before recording the map.
+   // Earlier screenshots caught a partially animated pan and did not represent
+   // the actual geographic story view that the reader sees after the move.
+   await page.waitForTimeout(900);
    await page.locator("#campaign-story").screenshot({path:path.join(root,"v80-qa-normandy-story-"+viewport.width+".png")});
    await page.locator("#chapter-detail").screenshot({path:path.join(root,"v80-qa-normandy-chapter-"+viewport.width+".png")});
    await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-normandy-map-"+viewport.width+".png")});
