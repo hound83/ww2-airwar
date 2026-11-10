@@ -2,6 +2,22 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "usafSpanishRepublicAircraft": {"title":"USAF Office of Air Force History, Case Studies in the Achievement of Air Superiority (1994), Soviet-supplied Republican aircraft during Spanish Civil War, retrospective pp.191–192","url":"https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47633/pdf/GOVPUB-D301-PURL-LPS47633.pdf","class":"official-USAF-secondary-history-says-approximately-1500-aircraft-supplied-throughout-war-not-simultaneously-operational"},
+    "usafDefenceReichBomber349": {"title":"Richard G. Davis, Bombing the European Axis Powers: A Historical Digest of the Combined Bomber Offensive 1939–1945, March 1944 8th AF 349 heavy-bomber writeoffs","url":"https://media.defense.gov/2025/Jun/10/2003736234/-1/-1/0/DAVIS_BOMBING_EUROPEAN.PDF","class":"USAF-historical-analysis-of-Eighth-Air-Force-writeoffs-March-1944-all-destruction-causes; not all Allied aircraft or Luftflotte-Reich area"},
+    "ww2MuseumSchweinfurtLosses": {"title":"National WWII Museum, Black Thursday: The Second Schweinfurt Bombing Raid (14 October 1943); German fighter register 31 destroyed, 12 written off and 34 damaged","url":"https://www.nationalww2museum.org/war/articles/black-thursday-october-14-1943-second-schweinfurt-bombing-raid","class":"accredited-WWII-museum-secondary-interpretation-of-German-register; caution-12-written-off-may-be-separate-category-from-31-destroyed; not-verified-all-Luftwaffe"},
+    "usafPolandAfbHistory": {"title":"USAF Office of Air Force History, John F. Kreis, Air Warfare and Air Base Air Defense, 1914–1973 (1988), Poland tables pp. 60–61, citing German translation VII/33 and Polish Sikorski/Kurowski data","url":"https://media.defense.gov/2010/Sep/22/2001330044/-1/-1/0/AFD-100922-032.pdf","class":"official-USAF-retrospective-tabulation-based-on-original-German-and-Polish-records; original-PDF-table-pixels-not-independently-verified-in-this-task"},
+    "dhmNorwayGerman": {"title":"Deutsches Historisches Museum LeMO, Occupation of Norway 1940; Luftwaffe 242 aircraft lost","url":"https://www.dhm.de/lemo/kapitel/der-zweite-weltkrieg/kriegsverlauf/besetzung-von-norwegen-1940","class":"German-national-history-museum-secondary-campaign-total; differs-from-Gray-2012-260-aircraft-total"},
+    "grayAirWarNorway": {"title":"Colin S. Gray, Airpower for Strategic Effect, USAF Air University Press (2012), p.128, 260 German vs 169 British aircraft in Norway","url":"https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0122_GRAY_AIRPOWER_STRATEGIC_EFFECT.PDF","class":"scholarly-secondary-USAF-published-history-conflicting-Luftwaffe-Norway-total-260-vs-DHM-242; underlying-German-ledger-not-reconciled"},
+    "murrayFranceLosses": {"title":"Williamson Murray, Strategy for Defeat: The Luftwaffe 1933–1945, Table III, Luftwaffe aircraft damaged May–June 1940 (including 488 total)","url":"https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0012_MURRAY_STRATEGY_FOR_DEFEAT.pdf","class":"official-USAF-historical-study-German-quartermaster-compiled-damaged-vs-destroyed-table; printed subcategory sums imperfect in digitized reproduction"},
+    "usafFranceCase": {"title":"Benjamin F. Cooling ed., Case Studies in the Achievement of Air Superiority (1994), chapter 2, Table 2-1 on German May–June 1940 lost aircraft and RAF fighter losses","url":"https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47633/pdf/GOVPUB-D301-PURL-LPS47633.pdf","class":"official-USAF-postwar-history-quoting-German-Quartermaster-campaign-tables; German-all-types-vs-RAF-fighter-only"},
+    "airSpaceStalingrad": {"title":"Air & Space Forces Magazine, Turning Point at Stalingrad (2017); Luftwaffe transport-aircraft attrition and serviceability","url":"https://www.airandspaceforces.com/article/turning-point-at-stalingrad/","class":"secondary-professional-military-history; 266-Ju52-and-165-He111-reporting-denominators; total-other-aircraft-not-known"},
+    "rafMarketChapter4": {"title":"RAF Museum, The Royal Air Force and Operation Market Garden, Chapter 4 (2024), 20–21 Sep resupply losses","url":"https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-4/","class":"official-RAF-museum-retrospective-activity-counts-for-specific-days; subsets-of-campaign"},
+    "rafMarketChapter6": {"title":"RAF Museum, The Royal Air Force and Operation Market Garden, Chapter 6 (2024), 6172 sorties, 125 Allied losses and 160 claimed enemy aircraft","url":"https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-6/","class":"official-RAF-museum-retrospective-wider-campaign-Allied-losses-vs-claimed-opponent-losses"},
+    "rafHardestDayLosses": {"title":"RAF Museum, The Hardest Day (18 August 1940): aircraft lost by the RAF/Fleet Air Arm and by the Luftwaffe","url":"https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-hardest-day/","class":"official-RAF-Museum-secondary-archival-history; RAF-FAA-aircraft-lost-vs-German-destroyed-or-damaged-beyond-repair"},
+    "rafAirfieldLossPeriod": {"title":"RAF Museum, Battle of Britain phase three (13 August–6 September): RAF and Luftwaffe losses 26 August–6 September","url":"https://www.rafmuseum.org.uk/research/online-exhibitions/history-of-the-battle-of-britain/the-battle-of-britain-phase-three","class":"official-RAF-Museum-retrospective-RAF-and-Luftwaffe-aircraft-loss-pair-26Aug-6Sep"},
+    "canadaDieppeBattle": {"title":"Royal Canadian Air Force, Major William March, In the Skies Above: Dieppe, 19 August 1942 (2019)","url":"https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/08/in-the-skies-above-dieppe-august-19-1942.html","class":"Canadian-Department-of-National-Defence-retrospective; 106-Allied-vs-48-German-losses-subject-to-historical-uncertainty"},
+    "franceDieppeBattle": {"title":"French Ministry of the Armed Forces, Operation Jubilee/Dieppe, 19 August 1942; includes 108 Allied and 48 German aircraft losses","url":"https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/operations-militaires/1941-12","class":"French-official-secondary-campaign-summary; disputed-Allied-108-vs-RCAF-106"},
+    "usafBigWeekFull": {"title":"Air University History Office, Silvano Wueschner, Operation Argument / Big Week, published 11 February 2019","url":"https://www.airuniversity.af.edu/News/Display/Article/1754049/operation-argument-big-week-the-beginning-of-the-end-of-the-german-luftwaffe/","class":"USAF-official-retrospective-week-coalition-loss-totals-not-equivalent-to-USAAF-8th-Air-Force-only"},
     "soviet16AirHistory1944": {"title":"History of the Soviet 16th Air Army, chapter 3: Bobruisk–Warsaw operations, original battle-log-based narrative","url":"https://militera.lib.ru/h/16va/03.html","class":"secondary-Soviet-unit-history-published-numeric-operational-returns; claims-not-confirmed-German-losses"},
     "soviet16AirHeadquartersPrimary": {"title":"16th Air Army headquarters report to Red Army Air Forces: June 1944 operations, dated 22 July 1944, Fund 368 / inventory 207698s / file 10","url":"https://ru.wikisource.org/wiki/Сборник_боевых_документов/26/33","class":"original-1944-Soviet-headquarters-document-excerpt-1956-reprint; operational-context-not-full-numeric-loss-ledger"},
     "navyNormandyGermanDaily": {"title":"U.S. Navy NHHC, The GAF and the Invasion of Normandy, German-source operational totals 6 June–1 July and 6–13 June","url":"https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/gaf-invasion-normandy.html","class":"U.S.-Navy-official-postwar-German-source-translation; source-headline-disagrees-with-category-sum-by-ten-sorties"},
@@ -421,7 +437,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "raf1936",
         "raf1937",
-        "bundesarchivSpain"
+        "bundesarchivSpain", "usafSpanishRepublicAircraft"
       ],
       "chapters": [
         {
@@ -453,6 +469,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"spain-soviet-republic-aircraft-1500","side":"Republican","measure":"supplied-aircraft","label":"Soviet aircraft supplied to Spanish Republican air force, cumulative wartime estimate","value":1500,"unit":"aircraft supplied across war, approximately","date":"1939-04-01","scope":"1936–1939 Soviet aircraft deliveries to Republican Spain, approximately 1,500 across the entire war per USAF official history. These are NOT airplanes available on 1 April, not operational fighters, and not Republican aircraft losses.","sourceId":"usafSpanishRepublicAircraft","type":"official-retrospective-cumulative-aircraft-supplies","period":"1936–1939, cumulative deliveries over entire war"},
         {
           "label": "Nationalist troops moved by early German airlift",
           "value": 7350,
@@ -561,7 +578,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "polishMuseumOrawka",
         "ushmmPoland",
         "polishHistoryPhases",
-        "polishAviationMuseumKrakow"
+        "polishAviationMuseumKrakow", "usafPolandAfbHistory"
       ],
       "chapters": [
         {
@@ -599,6 +616,13 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"polish-operational-strength-397","side":"Allies","measure":"strength","label":"Polish operational-unit aircraft at beginning of 1939 invasion (USAF historical table)","value":397,"unit":"Polish aircraft in operational units","date":"1939-09-01","scope":"September 1939 Polish operational-unit aircraft by type per USAF source Table 2; 348 extra in training schools/reserves, NOT 397 immediately serviceable aircraft. RAF Museum circa-300 estimate may cover narrower first-line grouping.","sourceId":"usafPolandAfbHistory","type":"official-secondary-operational-unit-strength"},
+        {"id":"german-poland-serviceable-1500","side":"Axis","measure":"serviceable","label":"Luftflotten 1 and 4 serviceable aircraft for Polish campaign","value":1500,"unit":"German serviceable aircraft · sum of two Luftflotten","date":"1939-09-01","scope":"German Luftflotte 1 824 + Luftflotte 4 676 = 1,500 serviceable aircraft by USAF historical table; excludes some army aircraft and home defense. Do NOT add two subordinate formations again to aggregate.","sourceId":"usafPolandAfbHistory","type":"official-secondary-serviceable-aggregated"},
+        {"id":"german-poland-lf1-824","side":"Axis","measure":"serviceable-subset","label":"Luftflotte 1 serviceable aircraft within 1,500","value":824,"unit":"German aircraft · subset","date":"1939-09-01","scope":"September 1939 Luftflotte 1 eastern command subset of 1,500 serviceable German aircraft in historical airpower order of battle.","sourceId":"usafPolandAfbHistory","type":"recorded-subset"},
+        {"id":"german-poland-lf4-676","side":"Axis","measure":"serviceable-subset","label":"Luftflotte 4 serviceable aircraft within 1,500","value":676,"unit":"German aircraft · subset","date":"1939-09-01","scope":"September 1939 Luftflotte 4 southeastern command subset of 1,500 serviceable German aircraft. Do NOT add separately to total.","sourceId":"usafPolandAfbHistory","type":"recorded-subset"},
+        {"id":"german-poland-lost-285","side":"Axis","measure":"losses","label":"German aircraft lost in Polish campaign per Luftwaffe historical table","value":285,"unit":"German aircraft lost · all named types","date":"1939-09-28","scope":"1–28 September 1939 German Luftwaffe aircraft losses (recon 63 + fighters 67 single/12 twin + bombers 78 + dive bombers 31 + transport 12 + misc 22 = 285) based on translated German reports; not all to Polish fighter fire; compare Polish '333 operational losses' only with caveats.","sourceId":"usafPolandAfbHistory","type":"official-secondary-German-loss-table","period":"1–28 September 1939, German reporting period; not a single day"},
+        {"id":"german-poland-repairable-279","side":"Axis","measure":"damaged","label":"German aircraft damaged over 10% but repairable during Polish campaign","value":279,"unit":"German aircraft temporarily out of strength / repairable damage","date":"1939-09-28","scope":"1–28 September 1939: 279 damaged German aircraft temporarily lost to strength by greater-than-ten-percent damage; NOT 279 more destroyed, and not additive to 285 German aircraft lost as total destroyed.","sourceId":"usafPolandAfbHistory","type":"official-secondary-damaged-not-destroyed","period":"1–28 September 1939, repairable damage separate from destroyed"},
+        {"id":"polish-operations-lost-333","side":"Allies","measure":"losses-conflicting","label":"Polish aircraft lost on operations in campaign (USAF historical reconstruction)","value":333,"unit":"Polish aircraft lost on operations","date":"1939-10-06","scope":"Polish 1939 operational aircraft lost according to USAF historical study citing Polish sources: 333 (82 bomber brigade included); this conflicts with an earlier RAF Museum retrospective '114 Polish aircraft lost'. Different definitions or coverage may explain discrepancy; NOT independently reconciled.","sourceId":"usafPolandAfbHistory","type":"official-secondary-disputed-Polish-loss-total","period":"September–early October 1939, whole Polish campaign, not 6 October alone"},
         {
           "label": "Polish Air Force aircraft facing the invasion, mostly obsolete",
           "value": 300,
@@ -744,7 +768,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Air transport, airfield capture and maritime reconnaissance influenced the speed of German reinforcement.",
       "consequence": "Air control depended on long distances and limited bases; original operational returns are a research gap.",
       "sources": [
-        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft", "rafNorwayDailyCampaignOriginal"
+        "raf1940chron", "rafNorwayAHB", "rafNorwayReview", "raf263NorwayOriginal", "raf263NorwayAircraft", "rafNorwayDailyCampaignOriginal", "dhmNorwayGerman", "grayAirWarNorway"
       ],
       "chapters": [
         {
@@ -776,6 +800,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"norway-german-242","side":"Axis","measure":"losses","label":"Luftwaffe aircraft lost during occupation of Norway, German Historical Museum","value":242,"unit":"German aircraft lost · campaign total","date":"1940-06-10","scope":"1940 campaign Norway, Deutsches Historisches Museum official history gives 242 Luftwaffe machines lost (all aircraft types/causes not fully disaggregated). Colin Gray's official USAF-published 2012 book quotes 260, hence opposing source conflict unresolved.","sourceId":"dhmNorwayGerman","type":"official-museum-retrospective-German-losses","period":"April–June 1940 Norway campaign; not 10 June alone"},
+        {"id":"norway-german-260-alternative","side":"Axis","measure":"losses-conflicting","label":"Luftwaffe aircraft lost during Norway campaign, alternative 260 estimate","value":260,"unit":"German aircraft lost · alternate historical total","date":"1940-06-10","scope":"Colin S. Gray (2012) reports German 260 aircraft lost versus Deutsches Historisches Museum 242. Exact campaign bounds and inclusion of transport accidents/other causes may differ; preserve as alternative, do not add to 242 or infer confirmed German return.","sourceId":"grayAirWarNorway","type":"secondary-disputed-German-loss-total","period":"April–June 1940 campaign retrospective, not single day"},
         {"label":"No. 263 Squadron sorties in Narvik assault support, 28 May","value":42,"unit":"daily operational sorties","scope":"28 May 1940, 263 Squadron Gladiators, Narvik sector. One squadron, one day, NOT number of distinct aircraft.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-05-28","type":"recorded-primary-unit-daily-sorties"},
         {"label":"No. 46 Squadron sorties in Narvik assault support, 28 May","value":53,"unit":"daily operational sorties","scope":"28 May 1940, 46 Squadron Hurricanes, Narvik sector. Distinct same-day squadron return; NOT aircraft inventory.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-05-28","type":"recorded-primary-unit-daily-sorties"},
         {"label":"Combined Nos. 263 and 46 Squadrons sorties, 2 June","value":75,"unit":"daily combined operational sorties","scope":"2 June 1940, Nos. 263 and 46 Squadrons TOGETHER in Narvik-Harstad sector; no reliable squadron breakdown of this number, not aircraft or losses.","sourceId":"rafNorwayDailyCampaignOriginal","date":"1940-06-02","type":"recorded-primary-joint-unit-daily-sorties"},
@@ -855,7 +881,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "rafSealion",
         "rafFrance",
-        "rafAirPowerFrance", "raf1940chron"
+        "rafAirPowerFrance", "raf1940chron", "usafFranceCase" , "murrayFranceLosses"
       ],
       "chapters": [
         {
@@ -890,6 +916,9 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"france-german-lost-1428","side":"Axis","measure":"losses","label":"Luftwaffe aircraft destroyed May–June 1940 (German-source USAF study)","value":1428,"unit":"German aircraft destroyed · all types","date":"1940-06-25","scope":"German Quartermaster May–June 1940 campaign totals in USAF 1994 study, across France/Low Countries; includes 1,345 destroyed on operations and 83 destroyed not on operations; NOT only Dunkirk or the 14 May RAF bomber mission.","sourceId":"usafFranceCase","type":"official-secondary-German-quartermaster-total","period":"May–June 1940, German France and Low Countries reporting; not a single day"},
+        {"id":"france-german-damaged-488","side":"Axis","measure":"damaged","label":"Luftwaffe aircraft damaged May–June 1940 (separate from destroyed)","value":488,"unit":"German aircraft damaged","date":"1940-06-25","scope":"German France/Low Countries campaign 1940 aircraft damaged, not 488 more German airframes destroyed; separate reporting status from 1,428 destroyed.","sourceId":"murrayFranceLosses","type":"official-secondary-German-repairable-airframes","period":"May–June 1940, German wider Western campaign"},
+        {"id":"france-raf-fighters-474","side":"Allies","measure":"losses","label":"RAF fighter aircraft lost during France campaign","value":474,"unit":"RAF fighter aircraft lost · fighter-only","date":"1940-06-25","scope":"RAF Fighter Command aircraft lost during entire 1940 France/Low Countries campaign as reported in USAF 1994 study; fighters only, NOT all French and British aircraft of all classes; cannot compare 474 directly with 1,428 all-types German.","sourceId":"usafFranceCase","type":"official-secondary-RAF-fighter-losses","period":"May–June 1940 RAF fighter losses only, not all French air force losses"},
         {
           "label": "RAF bombers departing on 14 May; one particular operation, not the campaign total",
           "value": 71,
@@ -1000,7 +1029,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "raf1940",
         "rafSealion",
         "rafBritainPhases",
-        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz", "rafBoBLogistics"
+        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz", "rafBoBLogistics", "rafHardestDayLosses", "rafAirfieldLossPeriod"
       ],
       "chapters": [
         {
@@ -1050,6 +1079,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"brit-18aug-allied-lost","side":"Allies","measure":"losses","label":"RAF and Fleet Air Arm aircraft lost on 18 August","value":68,"unit":"RAF and FAA aircraft lost","date":"1940-08-18","scope":"18 August 1940 only; RAF and Fleet Air Arm combined, 31 of these in air-to-air combat. British aircraft lost, not pilot deaths or all Allied losses for August.","sourceId":"rafHardestDayLosses","type":"official-museum-aircraft-lost"},
+        {"id":"brit-18aug-allied-aircombat","side":"Allies","measure":"losses-subset","label":"RAF and Fleet Air Arm aircraft lost in air combat on 18 August (included)","value":31,"unit":"aircraft lost in air combat, included in 68","date":"1940-08-18","scope":"18 August 1940; RAF/FAA aircraft lost in aerial combat, SUBSET of the 68 overall lost that day. Do not add 31 to 68.","sourceId":"rafHardestDayLosses","type":"recorded-subset"},
+        {"id":"brit-18aug-german-writtenoff","side":"Axis","measure":"losses","label":"Luftwaffe aircraft destroyed or damaged beyond repair on 18 August","value":69,"unit":"German aircraft destroyed or damaged beyond repair","date":"1940-08-18","scope":"18 August 1940; German aircraft destroyed OR damaged beyond repair, a different definition from RAF/FAA 68 lost. These figures describe same day but not necessarily identical write-off criteria.","sourceId":"rafHardestDayLosses","type":"official-museum-aircraft-writtenoff"},
+        {"id":"brit-26aug-sep6-raf-lost","side":"Allies","measure":"losses","label":"RAF aircraft lost, 26 August–6 September","value":248,"unit":"RAF aircraft lost","date":"1940-09-06","scope":"26 August–6 September 1940 RAF air losses according to RAF Museum Battle of Britain phase three. Not only 6 September, not RAF whole-campaign losses.","sourceId":"rafAirfieldLossPeriod","type":"official-museum-period-losses","period":"26 August–6 September 1940; approximately 12-day campaign phase"},
+        {"id":"brit-26aug-sep6-german-lost","side":"Axis","measure":"losses","label":"Luftwaffe aircraft lost, 26 August–6 September","value":322,"unit":"German aircraft lost","date":"1940-09-06","scope":"26 August–6 September 1940 Luftwaffe loss count reported alongside RAF's 248; not all Battle of Britain losses and not six September alone.","sourceId":"rafAirfieldLossPeriod","type":"official-museum-period-losses","period":"26 August–6 September 1940; approximately 12-day campaign phase"},
         {"id":"raf-fc-strength-11aug","side":"Allies","measure":"strength","label":"RAF Fighter Command single-engine fighters on strength, 11 August","value":1095,"unit":"Hurricanes and Spitfires on squadron strength","scope":"11 August 1940; Fighter Command only; not all RAF flying units, not a measure of aircraft ready to take off","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-retrospective-on-strength"},
         {"id":"raf-fc-serviceable-11aug","side":"Allies","measure":"serviceable","label":"RAF Fighter Command serviceable single-engine fighters, 11 August","value":990,"unit":"serviceable Hurricanes and Spitfires","scope":"11 August 1940; Fighter Command order-of-battle serviceability column; does not equal aircraft airborne or pilot availability; other historians use narrower immediately-ready definitions","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-retrospective-serviceable"},
         {"id":"raf-hurricanes-serviceable-11aug","side":"Allies","measure":"serviceable-subset","label":"RAF serviceable Hurricanes within 990, 11 August","value":656,"unit":"serviceable Hurricanes","scope":"Fighter Command 11 August 1940; SUBSET of 990 total serviceable Hurricanes and Spitfires; do not add to total","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-subset"},
@@ -1132,66 +1166,108 @@ window.GrandAirWarV77Campaigns=Object.freeze({
               }
       ],
       "moments": [
-        {
-          "date": "1940-07-10",
-          "title": "Battle of Britain official period begins",
-          "place": "Channel",
-          "lat": 50.6,
-          "lng": -0.4,
-          "summary": "The RAF Museum identifies 10 July as the official start of the Battle of Britain, although its broader first campaign phase includes attacks from 26 June. The opening operations targeted shipping, ports and coastal infrastructure.",
-          "units": "RAF Fighter Command and Luftwaffe operations over the Channel and southern England; the date marks the official period boundary, not a single defining dogfight.",
-          "outcome": "The air battle developed from shipping and coastal fighting toward an attempt to defeat Britain's fighter defence system.",
-          "sourceIds": ["rafBritainPhases"],
-          "confidence": "RAF Museum formal campaign dates; pre-10 July actions explicitly excluded from official period totals"
-        },
-        {
-          "date": "1940-08-08", "title": "Large Luftwaffe effort against Channel convoy Peewit",
-          "place": "English Channel south coast", "lat": 50.56, "lng": -1.2,
-          "summary": "The RAF Museum describes roughly 300 German aircraft committed to attacks on scattered convoy CW9, Peewit, on 8 August, in an effort to destroy shipping and draw RAF fighters into battle.",
-          "units": "Luftwaffe attacking aircraft, merchant convoy CW9 and RAF fighter defence; the approximate 300 figure concerns the convoy attack, not the number of aircraft destroyed.",
-          "outcome": "The action exemplified the Channel shipping campaign preceding the heavier attacks on RAF sector airfields.",
-          "sourceIds": ["rafBritainChannel"],
-          "confidence": "RAF Museum phase-two exhibition; local combat and shipping losses not reconstructed"
-        },
-        {
-          "date": "1940-08-13", "title": "Adler Tag begins the concentrated assault on Fighter Command",
-          "place": "South-east England RAF airfields", "lat": 51.5, "lng": 0.3,
-          "summary": "After postponement for poor weather, the Luftwaffe began its major effort against RAF Fighter Command on Eagle Day, 13 August. It attacked airfields and supporting infrastructure while RAF fighters used warning and sector control to intercept raids.",
-          "units": "Luftwaffe fighter and bomber formations versus RAF Fighter Command; broad south-east sector rather than a specific squadron sortie.",
-          "outcome": "Pressure on RAF airfields and personnel intensified, but the German offensive did not eliminate the defensive fighter organization.",
-          "sourceIds": ["rafBritainAirfields", "rafBritainPhases"],
-          "confidence": "RAF Museum phase-three exhibition; no all-side daily loss figures attached"
-        },
-        {
-          "date": "1940-09-07", "title": "Major daylight attack on London docks opens the Blitz",
-          "place": "London docks", "lat": 51.51, "lng": -0.03,
-          "summary": "The Luftwaffe shifted major bombing effort from RAF airfields toward London on 7 September, beginning the Blitz with attacks on the docks. Fighter Command still faced extensive raids, but their principal targets had changed.",
-          "units": "Luftwaffe bomber and escort formations, RAF fighter defenders and London's civilian population; no precise bomb or loss total inferred.",
-          "outcome": "The German target shift changed the operational demands on the RAF and exposed civilians to sustained bombing.",
-          "sourceIds": ["rafBritainBlitz", "rafBritainPhases"],
-          "confidence": "RAF Museum Blitz exhibition and official phase chronology"
-        },
-        {
-          "date": "1940-09-15",
-          "title": "Battle of Britain Day: 56 German aircraft lost; RAF claim 185",
-          "place": "London sector",
-          "lat": 51.5,
-          "lng": -0.1,
-          "summary": "The RAF resisted large German raids on 15 September. A postwar parliamentary comparison cites 56 German aircraft destroyed from German archival records against 185 contemporary RAF claims: these are different evidence categories.",
-          "units": "RAF Fighter Command versus attacking Luftwaffe formations; RAF credited claims are not verified individual German losses and must never be added to the 56.",
-          "outcome": "The failure to win air superiority became increasingly clear. The contemporary RAF victory estimate was much higher than recorded German losses.",
-          "sourceIds": ["hansard1947", "rafBritainPhases"],
-          "confidence": "UK Parliament retrospective archival comparison; claimed-vs-recorded outcomes intentionally separate"
-        },
-        {
-          "date": "1940-10-31", "title": "Official Battle of Britain period ends; bombing continues",
-          "place": "Great Britain, national period end", "lat": 52.4, "lng": -1.5,
-          "summary": "The RAF Museum's recognized Battle of Britain window ends on 31 October. German air activity continued, with smaller daylight attacks and major night bombing, so the formal endpoint must not be interpreted as the end of the Blitz or air war.",
-          "units": "RAF Fighter Command and Luftwaffe; this date is a retrospective campaign boundary, not a single battle with its own loss figure.",
-          "outcome": "Germany did not secure the air superiority required for an invasion; the character of attacks on Britain changed but bombing did not cease.",
-          "sourceIds": ["rafBritainPhases", "rafBritainBlitz"],
-          "confidence": "RAF Museum official campaign period with explicit distinction from the ongoing Blitz"
-        }
+              {
+                      "date": "1940-07-10",
+                      "title": "Battle of Britain official period begins",
+                      "place": "Channel",
+                      "lat": 50.6,
+                      "lng": -0.4,
+                      "summary": "The RAF Museum identifies 10 July as the official start of the Battle of Britain, although its broader first campaign phase includes attacks from 26 June. The opening operations targeted shipping, ports and coastal infrastructure.",
+                      "units": "RAF Fighter Command and Luftwaffe operations over the Channel and southern England; the date marks the official period boundary, not a single defining dogfight.",
+                      "outcome": "The air battle developed from shipping and coastal fighting toward an attempt to defeat Britain's fighter defence system.",
+                      "sourceIds": [
+                              "rafBritainPhases"
+                      ],
+                      "confidence": "RAF Museum formal campaign dates; pre-10 July actions explicitly excluded from official period totals"
+              },
+              {
+                      "date": "1940-08-08",
+                      "title": "Large Luftwaffe effort against Channel convoy Peewit",
+                      "place": "English Channel south coast",
+                      "lat": 50.56,
+                      "lng": -1.2,
+                      "summary": "The RAF Museum describes roughly 300 German aircraft committed to attacks on scattered convoy CW9, Peewit, on 8 August, in an effort to destroy shipping and draw RAF fighters into battle.",
+                      "units": "Luftwaffe attacking aircraft, merchant convoy CW9 and RAF fighter defence; the approximate 300 figure concerns the convoy attack, not the number of aircraft destroyed.",
+                      "outcome": "The action exemplified the Channel shipping campaign preceding the heavier attacks on RAF sector airfields.",
+                      "sourceIds": [
+                              "rafBritainChannel"
+                      ],
+                      "confidence": "RAF Museum phase-two exhibition; local combat and shipping losses not reconstructed"
+              },
+              {
+                      "date": "1940-08-13",
+                      "title": "Adler Tag begins the concentrated assault on Fighter Command",
+                      "place": "South-east England RAF airfields",
+                      "lat": 51.5,
+                      "lng": 0.3,
+                      "summary": "After postponement for poor weather, the Luftwaffe began its major effort against RAF Fighter Command on Eagle Day, 13 August. It attacked airfields and supporting infrastructure while RAF fighters used warning and sector control to intercept raids.",
+                      "units": "Luftwaffe fighter and bomber formations versus RAF Fighter Command; broad south-east sector rather than a specific squadron sortie.",
+                      "outcome": "Pressure on RAF airfields and personnel intensified, but the German offensive did not eliminate the defensive fighter organization.",
+                      "sourceIds": [
+                              "rafBritainAirfields",
+                              "rafBritainPhases"
+                      ],
+                      "confidence": "RAF Museum phase-three exhibition; no all-side daily loss figures attached"
+              },
+              {
+                      "date": "1940-08-18",
+                      "title": "The Hardest Day: RAF/FAA and Luftwaffe suffer heavy airframe losses",
+                      "place": "Kent, Surrey and southern England",
+                      "lat": 51.15,
+                      "lng": 0.5,
+                      "summary": "The RAF Museum reports 68 RAF/Fleet Air Arm aircraft lost, including 31 in aerial combat, while 69 German aircraft were destroyed or damaged beyond repair. This is one calendar day but the British and German categories use different loss definitions. The numbers do not establish an exact fighter-versus-fighter loss ratio.",
+                      "units": "RAF Fighter Command and Fleet Air Arm versus Luftwaffe fighter and bomber units, chiefly operating across southern England; regional map coordinate not an exact fight location.",
+                      "outcome": "Intense pressure on RAF airfields and participating formations; both sides suffered substantial attrition, and German loss/write-off categories differ from the RAF's lost-aircraft population.",
+                      "sourceIds": [
+                              "rafHardestDayLosses"
+                      ],
+                      "confidence": "Official RAF Museum historical summary; daytime RAF/FAA 68 lost versus German 69 destroyed or damaged beyond repair; day-level evidence, but different accounting categories"
+              },
+              {
+                      "date": "1940-09-07",
+                      "title": "Major daylight attack on London docks opens the Blitz",
+                      "place": "London docks",
+                      "lat": 51.51,
+                      "lng": -0.03,
+                      "summary": "The Luftwaffe shifted major bombing effort from RAF airfields toward London on 7 September, beginning the Blitz with attacks on the docks. Fighter Command still faced extensive raids, but their principal targets had changed.",
+                      "units": "Luftwaffe bomber and escort formations, RAF fighter defenders and London's civilian population; no precise bomb or loss total inferred.",
+                      "outcome": "The German target shift changed the operational demands on the RAF and exposed civilians to sustained bombing.",
+                      "sourceIds": [
+                              "rafBritainBlitz",
+                              "rafBritainPhases"
+                      ],
+                      "confidence": "RAF Museum Blitz exhibition and official phase chronology"
+              },
+              {
+                      "date": "1940-09-15",
+                      "title": "Battle of Britain Day: 56 German aircraft lost; RAF claim 185",
+                      "place": "London sector",
+                      "lat": 51.5,
+                      "lng": -0.1,
+                      "summary": "The RAF resisted large German raids on 15 September. A postwar parliamentary comparison cites 56 German aircraft destroyed from German archival records against 185 contemporary RAF claims: these are different evidence categories.",
+                      "units": "RAF Fighter Command versus attacking Luftwaffe formations; RAF credited claims are not verified individual German losses and must never be added to the 56.",
+                      "outcome": "The failure to win air superiority became increasingly clear. The contemporary RAF victory estimate was much higher than recorded German losses.",
+                      "sourceIds": [
+                              "hansard1947",
+                              "rafBritainPhases"
+                      ],
+                      "confidence": "UK Parliament retrospective archival comparison; claimed-vs-recorded outcomes intentionally separate"
+              },
+              {
+                      "date": "1940-10-31",
+                      "title": "Official Battle of Britain period ends; bombing continues",
+                      "place": "Great Britain, national period end",
+                      "lat": 52.4,
+                      "lng": -1.5,
+                      "summary": "The RAF Museum's recognized Battle of Britain window ends on 31 October. German air activity continued, with smaller daylight attacks and major night bombing, so the formal endpoint must not be interpreted as the end of the Blitz or air war.",
+                      "units": "RAF Fighter Command and Luftwaffe; this date is a retrospective campaign boundary, not a single battle with its own loss figure.",
+                      "outcome": "Germany did not secure the air superiority required for an invasion; the character of attacks on Britain changed but bombing did not cease.",
+                      "sourceIds": [
+                              "rafBritainPhases",
+                              "rafBritainBlitz"
+                      ],
+                      "confidence": "RAF Museum official campaign period with explicit distinction from the ongoing Blitz"
+              }
       ]
     },
     {
@@ -1516,9 +1592,12 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "On 19 August RAF Fighter Command and other commands flew intensive missions over Dieppe.",
       "consequence": "The raid failed, but provided lessons for later amphibious operations; do not equate sorties with aircraft strength.",
       "sources": [
-        "raf1942"
+        "raf1942", "canadaDieppeBattle", "franceDieppeBattle"
       ],
       "facts": [
+        {"id":"dieppe-allied-106-canada","side":"Allies","measure":"losses","label":"Allied aircraft lost over Dieppe (Canadian military summary)","value":106,"unit":"Allied aircraft lost · retrospective","date":"1942-08-19","scope":"19 August 1942 (Operation Jubilee). Canadian Department of National Defence explicitly calls approximately 106 ALLIED aircraft lost. Existing 106 RAF-labelled figure may use a different population; this is duplicate alternative attribution, NOT +106 additional losses.","sourceId":"canadaDieppeBattle","type":"secondary-combined-allied-loss-with-population-ambiguity"},
+        {"id":"dieppe-german-48","side":"Axis","measure":"losses","label":"Luftwaffe aircraft lost over Dieppe (Canadian military summary)","value":48,"unit":"German aircraft lost · retrospective","date":"1942-08-19","scope":"19 August 1942 (Operation Jubilee). Approximately 48 Luftwaffe aircraft lost per Royal Canadian Air Force retrospective; French official military summary also gives 48. Different from claims, not 48 German pilots.","sourceId":"canadaDieppeBattle","type":"official-RCAF-retrospective-own-loss-confirmed"},
+        {"id":"dieppe-allied-108-france","side":"Allies","measure":"losses-conflicting","label":"Allied aircraft lost over Dieppe (French military summary, conflicting)","value":108,"unit":"Allied aircraft lost · alternative retrospective total","date":"1942-08-19","scope":"19 August 1942. French Ministry of the Armed Forces gives 108 Allied aircraft lost, while Canadian official account gives approximately 106. Preserve disagreement and do not add these totals or resolve difference without original aircraft-by-aircraft registers.","sourceId":"franceDieppeBattle","type":"official-retrospective-conflicting-allied-total"},
         {
           "label": "Allied sorties · 19 August",
           "value": 2614,
@@ -1572,7 +1651,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Long-range transport and weather constrained German resupply while Soviet ground/air forces narrowed the pocket.",
       "consequence": "Air transport could not sustain the trapped force; precise monthly transports and losses need their own reports.",
       "sources": [
-        "usArmyStalingradAirlift", "usafStalingradAirlift", "usafStalingradStudy"
+        "usArmyStalingradAirlift", "usafStalingradAirlift", "usafStalingradStudy", "airSpaceStalingrad"
       ],
       "chapters": [
         {
@@ -1604,6 +1683,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"stal-airlift-ju52-lost","side":"Axis","measure":"losses-subset","label":"Ju 52 aircraft lost during Stalingrad supply airlift","value":266,"unit":"Luftwaffe Ju 52 transport aircraft lost","date":"1943-02-02","scope":"Stalingrad airlift November 1942–February 1943: Air & Space Forces secondary reconstruction records 266 Ju 52 transports lost to Soviet fighter/flak and other campaign losses; subset of total German transport losses, not Soviet losses.","sourceId":"airSpaceStalingrad","type":"secondary-German-transport-loss-subset","period":"November 1942–February 1943, whole Luftwaffe airlift"},
+        {"id":"stal-airlift-he111-lost","side":"Axis","measure":"losses-subset","label":"He 111 aircraft lost during Stalingrad supply airlift","value":165,"unit":"Luftwaffe He 111 bombers employed as transports lost","date":"1943-02-02","scope":"Same Stalingrad airlift reporting window as 266 Ju 52, another type within German own transport-aircraft losses; not 165 distinct Soviet aircraft or a daily count.","sourceId":"airSpaceStalingrad","type":"secondary-German-transport-loss-subset","period":"November 1942–February 1943, whole Luftwaffe airlift"},
         {"label":"Sixth Army supply need, estimated minimum", "value":300, "unit":"tons/day", "scope":"Retrospective minimum daily supply requirement for encircled Sixth Army, late 1942; target/need, not transported cargo", "sourceId":"usafStalingradAirlift", "date":"1942-11-23", "type":"source-estimate"},
         {"label":"Air-supply planning rate on suitable flying days", "value":500, "unit":"tons/day", "scope":"German airlift planning requirement/target to compensate for weather-grounded days after encirclement; not an actual delivered average", "sourceId":"usArmyStalingradAirlift", "date":"1942-11-23", "type":"requirement"},
         {"label":"Actual cargo delivered, seven-week average", "value":117.6, "unit":"tons/day", "scope":"Air & Space Forces secondary reconstruction of German supplies reaching the pocket averaged across seven weeks of the Stalingrad airlift; different period from other published averages", "sourceId":"usafStalingradAirlift", "date":"1942-11", "period":"Seven-week airlift reporting window, late 1942–early 1943 (not a single-day reading)", "type":"secondary-average"}
@@ -1672,7 +1753,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "The arrival of longer-range escort fighters changed the attrition battle; monthly Luftflotte Reich aircraft-loss returns allow measured tracking of aircraft destroyed by cause in 1943–44.",
       "consequence": "Air defences, fuel, aircraft production and pilot replacement came under increasing pressure. The original German figures are command returns and cannot be converted to Allied victory claims.",
       "sources": [
-        "rafLosses", "rafReich1944Returns", "usafReichAirDefence", "usafStrategicWarEnd", "bigWeek", "usafBigWeekIndustry"
+        "rafLosses", "rafReich1944Returns", "usafReichAirDefence", "usafStrategicWarEnd", "bigWeek", "usafBigWeekIndustry", "usafDefenceReichBomber349"
       ],
       "chapters": [
         {
@@ -1704,6 +1785,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"reich-8th-heavy-349-1944-03","side":"Allies","measure":"losses","label":"Eighth Air Force heavy bombers written off during March 1944","value":349,"unit":"USAAF heavy bombers written off","date":"1944-03","scope":"March 1944 entire Eighth Air Force operations over European target system, 349 heavy bombers written off, all causes. NOT equivalent to German Luftflotte Reich's 662 destroyed all aircraft types in its reporting territory in same calendar month.","sourceId":"usafDefenceReichBomber349","type":"official-USAF-8th-heavy-bomber-writeoffs","period":"1–31 March 1944, Eighth Air Force heavy bombers, European theater"},
         {"label":"Luftflotte Reich aircraft destroyed, March 1944", "value":662, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, March 1944, all types and causes; 389 enemy action + 95 other operational + 178 non-operational, captured German VII/138 p.61", "sourceId":"rafReich1944Returns", "date":"1944-03", "type":"primary-command-return"},
         {"label":"Luftflotte Reich aircraft destroyed, April 1944", "value":840, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, April 1944, all types and causes; 580 enemy action + 83 other operational + 177 non-operational, captured German VII/138 p.87", "sourceId":"rafReich1944Returns", "date":"1944-04", "type":"primary-command-return"}
       ],
@@ -1994,7 +2076,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "High bomber losses accelerated pressure for long-range escort and changing fighter employment.",
       "consequence": "Two high-loss missions two months apart helped drive USAAF planning toward adequate long-range escort. These are not continuous August–October daily operations, and the August/October counts must retain separate missions.",
       "sources": [
-        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943"
+        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943", "ww2MuseumSchweinfurtLosses"
       ],
       "chapters": [
         {
@@ -2017,6 +2099,9 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"sch-1943-10-14-german-fighters-31","side":"Axis","measure":"losses","label":"German fighter aircraft destroyed on 14 October Schweinfurt mission","value":31,"unit":"Luftwaffe fighters confirmed destroyed","date":"1943-10-14","scope":"14 October 1943, German fighter register cited by National WWII Museum, 31 German fighters destroyed versus 60 USAAF B-17s shot down. These are distinct aircraft classes, and a loss count does not establish individual bomber-gunner victories.","sourceId":"ww2MuseumSchweinfurtLosses","type":"official-museum-German-register-destroyed"},
+        {"id":"sch-1943-10-14-german-fighters-writeoff-12","side":"Axis","measure":"damaged-written-off","label":"German fighters separately described as written off, 14 October","value":12,"unit":"Luftwaffe fighters written off · reported separately","date":"1943-10-14","scope":"14 October 1943 National WWII Museum also mentions 12 fighters written off. Source does not fully establish whether this is mutually exclusive of 31 destroyed in the original German write-off taxonomy. DO NOT add to 31 without original unit-loss reconciliation.","sourceId":"ww2MuseumSchweinfurtLosses","type":"secondary-category-uncertainty"},
+        {"id":"sch-1943-10-14-german-fighters-damaged-34","side":"Axis","measure":"damaged","label":"German fighters damaged (not counted as destroyed) on 14 October","value":34,"unit":"Luftwaffe fighters damaged","date":"1943-10-14","scope":"14 October 1943, German fighter damage category in German record as reported by National WWII Museum. Repairability and the overlap with 12 written off require original register review; not 34 confirmed destroyed.","sourceId":"ww2MuseumSchweinfurtLosses","type":"official-museum-German-register-damaged"},
         {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
         {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
         {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday; one USAF Museum account says 291 dispatched, another 251 'on the mission' (different counting population, unreconciled); not 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
@@ -2179,7 +2264,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "Long-range escorts could now accompany deep daylight bomber formations, confronting the Luftwaffe directly.",
       "consequence": "The Luftwaffe suffered damaging fighter and pilot attrition; published summaries differ in their precise denominators.",
       "sources": [
-        "bigWeek", "bigWeekReport", "usafBigWeekIndustry"
+        "bigWeek", "bigWeekReport", "usafBigWeekIndustry", "usafBigWeekFull"
       ],
       "chapters": [
         {
@@ -2202,6 +2287,12 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"bw-allied-sorties-6000","side":"Allies","measure":"sorties","label":"Combined Allied aircraft sorties over Big Week (broader coalition)","value":6000,"unit":"Allied sorties · approximately","date":"1944-02-25","scope":"20–25 February 1944; approximately 6,000 sorties by Eighth and Fifteenth USAAF and RAF coalition in USAF Air University history. Not directly additive to the existing ~4,000 USAAF heavy-bomber sorties (subset) and not 6,000 distinct airplanes.","sourceId":"usafBigWeekFull","type":"official-retrospective-approximate","period":"20–25 February 1944; entire multi-command Big Week"},
+        {"id":"bw-allied-bombers-357","side":"Allies","measure":"losses","label":"Allied bombers lost during Big Week (broader command coverage)","value":357,"unit":"Allied bombers lost","date":"1944-02-25","scope":"20–25 February 1944; broader Air University summary of Eighth/RAF/Fifteenth Allied bombing effort. Existing >200 USAAF heavy bombers from a narrower source cannot be added to these 357; not independently reconciled by separate air force.","sourceId":"usafBigWeekFull","type":"official-retrospective-coalition-losses","period":"20–25 February 1944; multi-command Big Week"},
+        {"id":"bw-allied-fighters-28","side":"Allies","measure":"losses","label":"Allied escort fighters lost during Big Week","value":28,"unit":"Allied escort fighters lost","date":"1944-02-25","scope":"20–25 February 1944; Allied fighter escorts lost, distinct aircraft class from 357 bombers; these do not by themselves establish all Allied combat aircraft losses.","sourceId":"usafBigWeekFull","type":"official-retrospective-coalition-losses","period":"20–25 February 1944; multi-command Big Week"},
+        {"id":"bw-german-fighters-262","side":"Axis","measure":"losses","label":"Luftwaffe fighter aircraft lost during Big Week","value":262,"unit":"German fighter aircraft lost","date":"1944-02-25","scope":"20–25 February 1944; Air University historical summary German fighters lost; not all Luftwaffe aircraft types or trained pilots; Allied bombers+escorts differ from German fighter-only class.","sourceId":"usafBigWeekFull","type":"official-retrospective-fighter-losses","period":"20–25 February 1944; German fighter units"},
+        {"id":"bw-german-aircrew-250","side":"Axis","measure":"personnel-losses","label":"German aircrew killed or wounded during Big Week","value":250,"unit":"German aircrew killed or wounded","date":"1944-02-25","scope":"20–25 February 1944; German aircrew losses approximately 250 including 100 pilots; not 250 aircraft, and 100 pilots is already included.","sourceId":"usafBigWeekFull","type":"official-retrospective-personnel-casualties","period":"20–25 February 1944; German aircrew casualties"},
+        {"id":"bw-german-pilots-100","side":"Axis","measure":"personnel-losses-subset","label":"German pilots among Big Week aircrew casualties (subset of 250)","value":100,"unit":"German pilots killed or wounded · included","date":"1944-02-25","scope":"20–25 February 1944; 100 pilots included in 250 German aircrew killed/wounded. Not additive to the aircrew total or an aircraft-loss figure.","sourceId":"usafBigWeekFull","type":"recorded-subset","period":"20–25 February 1944; German aircrew casualties"},
         {
           "label": "USAAF heavy-bomber sorties",
           "value": 4000,
@@ -2599,7 +2690,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "consequence": "The Arnhem bridge objective failed despite successful early air landings; unit-specific aircraft losses need mission reports.",
       "sources": [
         "raf1944",
-        "marketDetail", "marketPlanning", "marketAssault", "marketResupply", "marketWithdrawal"
+        "marketDetail", "marketPlanning", "marketAssault", "marketResupply", "marketWithdrawal", "rafMarketChapter4", "rafMarketChapter6"
       ],
       "chapters": [
         {
@@ -2631,6 +2722,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"id":"mg-allied-total-aircraft-lost-125","side":"Allies","measure":"losses","label":"Aircraft lost during Market Garden RAF Museum wider-support tally","value":125,"unit":"aircraft lost · whole support effort","date":"1944-09-25","scope":"RAF Museum wider Operation Market Garden air-support summary includes 125 aircraft lost; the earlier 57 RAF Transport Command losses are a SUBSET or differently scoped accounting, and must not be added; missing German actual aircraft losses.","sourceId":"rafMarketChapter6","type":"official-RAF-retrospective-all-support-loss-total","period":"17–25 September 1944, broader RAF support activities, not single day"},
+        {"id":"mg-enemy-aircraft-claimed-160","side":"Allies","measure":"claims","label":"Enemy aircraft claimed destroyed by Allied aircrews in Market Garden","value":160,"unit":"enemy aircraft claimed destroyed","date":"1944-09-25","scope":"RAF Museum reports 160 claimed enemy aircraft destroyed during Market Garden; Allied wartime claims, NOT German confirmed aircraft losses, and thus not evidence for a measured German-loss total.","sourceId":"rafMarketChapter6","type":"claims-not-verified-German-losses","period":"17–25 September 1944, Allied aircrew claims"},
+        {"id":"mg-resupply-20sep-losses-9","side":"Allies","measure":"losses-subset","label":"RAF resupply transport aircraft lost on 20 September","value":9,"unit":"RAF resupply aircraft lost · specific day","date":"1944-09-20","scope":"20 September 1944 RAF Museum Chapter 4: nine RAF aircraft lost during 162 resupply attempts (152 dropping on assigned now German-held zones). Within broader transport losses, NOT new losses to add.","sourceId":"rafMarketChapter4","type":"official-RAF-same-day-loss-subset"},
+        {"id":"mg-resupply-21sep-losses-23","side":"Allies","measure":"losses-subset","label":"RAF resupply transport aircraft lost on 21 September","value":23,"unit":"RAF resupply aircraft lost · specific day","date":"1944-09-21","scope":"21 September 1944 RAF Museum Chapter 4: 117 aircraft dispatched / 91 drop claims, 23 transports lost, including seven of ten No.190 Squadron aircraft. Within wider campaign total, not a standalone extra 23 beyond 125.","sourceId":"rafMarketChapter4","type":"official-RAF-same-day-loss-subset"},
         {
           "label": "RAF Transport Command aircraft lost",
           "value": 57,

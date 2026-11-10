@@ -45,8 +45,8 @@ const check=async()=>{
    assert.match(await page.locator("#dossier-facts").innerText(),/1,300/);
    const separated=await page.locator("#dossier-facts .fact").evaluateAll(nodes=>nodes.every(node=>node.querySelector("small").getBoundingClientRect().bottom<=node.querySelector("a").getBoundingClientRect().top+1));
    assert.ok(separated,"claim source links overlap their scope notes");
-   const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
-   assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
+   const dossier=await page.locator(".dossier").boundingBox(),bilateralHeader=await page.locator("#dossier-facts .bilateral-campaign").first().boundingBox();
+   assert.ok(bilateralHeader.y-dossier.y<250,"two-sided source coverage is buried below the first campaign screen");
    assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
    const phaseCardsOverlap=await page.locator("#chapter-list .chapter-card").evaluateAll(cards=>cards.some((card,i)=>cards.some((other,j)=>{
     if(i>=j)return false;const a=card.getBoundingClientRect(),b=other.getBoundingClientRect();
@@ -159,6 +159,39 @@ const check=async()=>{
     assert.match(await page.locator('#moment-detail').innerText(),new RegExp(figure,"i"),id+" additional historical event inaccessible");
     assert.ok(await page.locator('#moment-detail a[href^="https://"]').count()>0,id+" event lacks source link");
    }
+
+   // Complete visible bilateral journey across all campaign dossiers and dated events.
+   const catalogue=await page.evaluate(()=>window.GrandAirWarV77.campaigns.map(c=>({id:c.id,moments:c.moments.map(e=>({date:e.date,lat:e.lat,lng:e.lng,title:e.title}))})));
+   assert.equal(catalogue.length,20,"bilateral comparison coverage must include all campaigns");
+   let sampledEvents=0;
+   for(const entry of catalogue){
+    await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),entry.id);
+    const paired=page.locator('#dossier-facts .bilateral-campaign');
+    assert.equal(await paired.count(),1,entry.id+" missing bilateral summary");
+    assert.equal(await paired.locator('.bilateral-side').count(),2,entry.id+" missing opposing side or explicit gap");
+    for(const event of entry.moments){
+     await page.evaluate(q=>window.GrandAirWarV77.chooseMoment(q.id,q.date,q.lat,q.lng,q.title),{id:entry.id,...event});
+     const evidence=page.locator('#moment-detail .bilateral-event');
+     assert.equal(await evidence.count(),1,entry.id+"/"+event.date+" has no event comparison panel");
+     const status=await evidence.getAttribute('data-event-evidence-status');
+     assert.ok(['no-daily-evidence','one-side-same-date','both-sides-same-date'].includes(status),entry.id+"/"+event.date+" invalid event coverage");
+     assert.equal(await evidence.locator('.bilateral-event-side').count(),2,entry.id+"/"+event.date+" missing opposing air force entry");
+     sampledEvents++;
+    }
+   }
+   assert.equal(sampledEvents,83,"complete historical event coverage not tested");
+   await page.evaluate(()=>window.GrandAirWarV77.choose("dieppe",false));
+   assert.match(await page.locator("#dossier-facts .bilateral-campaign").innerText(),/48/,"Dieppe German original losses not shown");
+   assert.match(await page.locator("#dossier-facts .bilateral-campaign").innerText(),/106/,"Dieppe Allied daily loss observations not shown");
+   await page.evaluate(()=>window.GrandAirWarV77.choose("bigweek",false));
+   assert.match(await page.locator("#dossier-facts").innerText(),/262/,"German Big Week losses must be accessible");
+   await page.evaluate(()=>window.GrandAirWarV77.choose("britain",false));
+   await page.locator('#chapter-list [data-chapter="airfields"]').click();
+   await page.locator('#moment-list [data-date="1940-08-18"]').click();
+   assert.equal(await page.locator("#moment-detail .bilateral-event").getAttribute("data-event-evidence-status"),"both-sides-same-date","Hardest Day source figures not accessible in event drilldown");
+   const bilateralPageOverflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
+   assert.ok(bilateralPageOverflow<=2,"bilateral comparison unexpectedly adds horizontal page overflow");
+
    await page.evaluate(()=>window.GrandAirWarV77.choose("italy",false));
    await page.locator('#chapter-list [data-chapter="cassino"]').click();
    await page.locator(".campaign-guide").screenshot({path:path.join(root,"v80-qa-italy-guide-"+viewport.width+".png")});

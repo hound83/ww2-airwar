@@ -179,4 +179,38 @@ for(const mode of ["usaaf","vvs","production"]){
 }
 element("force-series").dispatch("change","usaaf");
 assert.ok(element("force-chart").innerHTML.includes("missing-observation"),"unreported group months should be labelled n/a, not zero-height ambiguous bars");
+
+let bilateralCamp=0,bilateralEvent=0;
+for(const campaign of app.campaigns){
+ app.choose(campaign.id,false);
+ const summary=element("dossier-facts").innerHTML;
+ assert.ok(summary.includes('class="bilateral-campaign"'),campaign.id+" missing two-sided evidence status panel");
+ assert.ok(summary.includes('data-side="A"')&&summary.includes('data-side="B"'),campaign.id+" is not showing both sides including gaps");
+ assert.ok(summary.includes("No automatic exchange ratio is calculated")||summary.includes("like-for-like")||summary.includes("not supported"),campaign.id+" comparison presents a false precision");
+ bilateralCamp++;
+ for(const event of campaign.moments){
+  app.chooseMoment(campaign.id,event.date,event.lat,event.lng,event.title);
+  const detail=element("moment-detail").innerHTML;
+  assert.ok(detail.includes("bilateral-event"),campaign.id+"/"+event.date+" missing two-sided event evidence");
+  assert.ok(detail.includes('data-event-evidence-status='),campaign.id+"/"+event.date+" missing event evidence status");
+  assert.ok(detail.includes("Missing")||detail.includes("same-date")||detail.includes("not been source-audited"),campaign.id+"/"+event.date+" event evidence semantics missing");
+  bilateralEvent++;
+ }
+}
+assert.equal(bilateralCamp,20);
+assert.equal(bilateralEvent,83);
+app.choose("dieppe",false);
+assert.ok(element("dossier-facts").innerHTML.includes("108")&&element("dossier-facts").innerHTML.includes("48"),"Dieppe conflicting allied figures and German losses must remain accessible");
+app.choose("bigweek",false);
+assert.ok(element("dossier-facts").innerHTML.includes("262")&&element("dossier-facts").innerHTML.includes("357"),"Big Week two-sided fighter and bomber losses not visible");
+app.chooseMoment("britain","1940-08-18",51.15,0.5,"The Hardest Day: RAF/FAA and Luftwaffe suffer heavy airframe losses");
+assert.ok(element("moment-detail").innerHTML.includes('data-event-evidence-status="both-sides-same-date"'),"18 August losses not tied to the researched day");
+assert.ok(element("dataset-summary").innerHTML.includes("16 / 20"),"Atlas overview must show honest paired campaign coverage");
+assert.ok(element("dataset-summary").innerHTML.includes("10 / 83"),"Atlas overview must show actual same-day two-sided evidence rather than 83 complete paired records");
+app.choose("norway",false);
+assert.ok(element("campaign-list").innerHTML.includes("BOTH SIDES: source figures"),"Campaign list does not distinguish bilateral coverage");
+app.choose("berlin",false);
+assert.ok(element("campaign-list").innerHTML.includes("OPPOSING DATA GAP"),"Campaign list does not explain missing counterpart data");
+console.log("PASS bilateral campaign/event user journeys: "+bilateralCamp+" campaign statuses and "+bilateralEvent+" event evidence dossiers");
+
 console.log("PASS v8 controller interaction matrix: "+matrix+" region/search/month/visibility combinations, 9 zoom levels, event/source drill-down, fit-map, "+lossCases+" German loss filters and "+forceCases+" Allied population filters");

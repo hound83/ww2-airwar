@@ -153,3 +153,28 @@
 .operational-series thead{color:#a1dacd}
 .operational-series tbody th{font-weight:500;color:#e5dfcd}
 @media(max-width:600px){.campaign-comparisons{padding:9px}.comparison-section,.operational-series{padding:9px}.comparison-grid{grid-template-columns:repeat(auto-fit,minmax(min(135px,100%),1fr))}}
+
+/* Bilateral evidence coverage for every campaign and dated event. Missing never means zero. */
+.bilateral-campaign,.bilateral-event{min-width:0;padding:12px;border:1px solid #547077;border-radius:8px;background:#172d38;display:grid;gap:10px}
+.bilateral-campaign{grid-column:1/-1;margin-bottom:8px}
+.bilateral-campaign h3,.bilateral-event h4{font-family:Georgia,serif;color:#f4daa8;font-size:19px;line-height:1.3;margin:0}
+.bilateral-campaign>p,.bilateral-event>p{font-size:12px;color:#c0d2d1;line-height:1.55;margin:0}
+.bilateral-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;min-width:0}
+.bilateral-side,.bilateral-event-side{min-width:0;background:#1d3943;border:1px solid #4a6872;border-radius:6px;padding:10px;display:flex;flex-direction:column;gap:7px}
+.bilateral-side h4{font-size:13px;color:#a8ded4;margin:0}
+.bilateral-side>small,.bilateral-event-side>small{font-size:11px;color:#c5d1d3}
+.bilateral-event-side>strong{font-size:12px;color:#a8ded4}
+.bilateral-value{padding:8px;background:#27434c;border:1px solid #496b70;border-radius:5px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.bilateral-value strong{font-size:19px;color:#ffdaaa;font-variant-numeric:tabular-nums;line-height:1.2}
+.bilateral-value span{font-size:11px;color:#f0f1e9;line-height:1.45;overflow-wrap:anywhere}
+.bilateral-value small{font-size:10px;color:#b8cfd1;line-height:1.45;overflow-wrap:anywhere}
+.bilateral-value a{font-size:11px;margin-top:3px;overflow-wrap:anywhere}
+.bilateral-missing{font-size:11px;line-height:1.55;color:#f1d1a3;margin:0}
+.bilateral-warning{font-size:11px!important;line-height:1.6;border-left:3px solid #b99864;background:#352f29;color:#f6d5ab!important;padding:7px 9px;margin:0}
+.bilateral-event{margin:13px 0 12px}
+.bilateral-event-side .bilateral-value strong{font-size:17px}
+.bilateral-period-context{padding:9px;background:#213941;border:1px solid #4e7471;border-radius:6px}
+.bilateral-period-context summary{cursor:pointer;color:#f1dbb8;font-size:12px}
+.bilateral-period-context>p{font-size:11px;color:#e5cd9c;line-height:1.5}
+.bilateral-period-context .bilateral-value{margin-top:7px}
+@media(max-width:600px){.bilateral-grid{grid-template-columns:1fr}.bilateral-campaign,.bilateral-event{padding:10px}.bilateral-value strong{font-size:18px}}
