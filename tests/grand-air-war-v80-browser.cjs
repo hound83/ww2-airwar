@@ -232,14 +232,14 @@ const check=async()=>{
     return {campaigns:app.campaigns.length,events:count,errors,states};
    });
    assert.equal(allCoverage.campaigns,20);
-   assert.equal(allCoverage.events,82);
+   assert.equal(allCoverage.events,83);
    assert.deepEqual(allCoverage.errors,[],"campaign/event bilateral audit coverage incomplete");
    assert.ok(allCoverage.states["no-matched-data"]>0,"the Atlas must label unsourced dates transparently");
-   for(const [id,expected] of [["dieppe","paired-own-losses"],["schweinfurt","paired-own-losses"],["bodenplatte","paired-own-losses"],["britain","claim-versus-record"]]){
-    const target=id==="schweinfurt"?"1943-10-14":id==="dieppe"?"1942-08-19":id==="bodenplatte"?"1945-01-01":"1940-09-15";
+   for(const [id,expected] of [["britain-hardest","paired-own-losses"],["dieppe","paired-own-losses"],["schweinfurt","paired-own-losses"],["bodenplatte","paired-own-losses"],["britain","claim-versus-record"]]){
+    const target=id==="britain-hardest"?"1940-08-18":id==="schweinfurt"?"1943-10-14":id==="dieppe"?"1942-08-19":id==="bodenplatte"?"1945-01-01":"1940-09-15";
     await page.evaluate(({id,target})=>{
-      const app=window.GrandAirWarV77,e=app.campaigns.find(x=>x.id===id).moments.find(x=>x.date===target);
-      app.chooseMoment(id,e.date,e.lat,e.lng,e.title);
+      const app=window.GrandAirWarV77,cid=id==="britain-hardest"?"britain":id,e=app.campaigns.find(x=>x.id===cid).moments.find(x=>x.date===target);
+      app.chooseMoment(cid,e.date,e.lat,e.lng,e.title);
     },{id,target});
     assert.equal(await page.locator("#moment-detail .event-bilateral").getAttribute("data-bilateral-status"),expected,id+" incorrect evidence type");
     assert.ok(await page.locator("#moment-detail .event-bilateral a[href^='https://']").count()>0,id+" has no exact-day source links");
