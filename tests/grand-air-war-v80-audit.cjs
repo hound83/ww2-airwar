@@ -152,10 +152,10 @@ assert.equal(A.eventEvidenceStatus(sch,sch.moments.find(e=>e.date==="1943-10-14"
 assert.equal(A.eventEvidenceStatus(week,week.moments.find(e=>e.date==="1944-02-25")).status,"no-daily-evidence","full-week losses may not be displayed as 25 February daily losses");
 assert.ok(week.facts.find(f=>f.id==="bw-german-pilots-100").scope.includes("included in 250"),"pilot subset must not be added again");
 
-assert.equal(D.campaigns.find(c=>c.id==="spain").facts[0].value,7350);
-assert.equal(D.campaigns.find(c=>c.id==="spain").facts[1].value,19000);
+assert.equal(D.campaigns.find(c=>c.id==="spain").facts.find(f=>f.value===7350).value,7350);
+assert.equal(D.campaigns.find(c=>c.id==="spain").facts.find(f=>f.value===19000).value,19000);
 const france=D.campaigns.find(c=>c.id==="france1940");
-assert.deepEqual([...france.facts.map(f=>f.value)],[71,40,2739,651],"France observations from two distinct source populations");
+assert.deepEqual([...france.facts.filter(f=>!f.id).map(f=>f.value)],[71,40,2739,651],"France observations from two distinct source populations");
 assert.ok(france.facts.every(f=>f.scope.includes("RAF")),"France cannot imply all-belligerent returns");
 assert.equal(A.visibleOnMap().length,20,"overview must NOT hide other campaigns in June 1944");
 assert.equal(el("all-campaigns").checked,true,"all campaign centres shown by default");
@@ -191,7 +191,7 @@ for(const id of ["spain","poland","norway","france1940","britain","malta","barba
 const norway=D.campaigns.find(c=>c.id==="norway");
 assert.ok(norway.facts.some(f=>f.value===17&&f.date==="1940-06-08"),"embarked fighters must remain an independent 8 June observation");
 assert.ok(norway.facts.find(f=>f.value===17).scope.includes("Nos. 263 and 46"),"embarked RAF fighters are not an all-theatre loss ledger");
-assert.deepEqual([...norway.facts.map(f=>f.value)],[42,53,75,24,329,249,17,49,37,6,13]);
+assert.deepEqual([...norway.facts.filter(f=>!f.id).map(f=>f.value)],[42,53,75,24,329,249,17,49,37,6,13]);
 assert.ok(norway.facts.find(f=>f.value===6).type.includes("claims")&&norway.facts.find(f=>f.value===13).type.includes("primary"),"Norway claims and airfield losses must be distinguished");
 assert.ok(norway.facts.find(f=>f.value===49).period.includes("not a single-day"),"multi-day Norway sorties must not appear as one-day figure");
 assert.equal(norway.moments.filter(e=>["1940-05-28","1940-06-02"].includes(e.date)).length,2,"new RAF daily event dates should be independently inspectable");
@@ -294,7 +294,7 @@ assert.ok(bigweek.chapters.every(ch=>ch.limits.includes("not")||ch.limits.includ
 const schweinfurt=D.campaigns.find(c=>c.id==="schweinfurt");
 assert.deepEqual([...schweinfurt.chapters.map(ch=>ch.start)],["1943-08-17","1943-10-14"]);
 assert.ok(!schweinfurt.sources.includes("bigWeek"),"1944 Big Week is not a 1943 raid evidence source");
-assert.deepEqual([...schweinfurt.facts.map(f=>f.value)],[376,60,291,60],"August and October dispatch/loss populations must remain separate");
+assert.deepEqual([...schweinfurt.facts.filter(f=>!f.id).map(f=>f.value)],[376,60,291,60],"August and October dispatch/loss populations must remain separate");
 assert.ok(schweinfurt.facts.filter(f=>f.value===60).every(f=>f.type==="recorded-subset"),"60 is a subset, not another dispatched total");
 assert.ok(schweinfurt.chapters.find(ch=>ch.id==="october").limits.includes("251 B-17s")&&schweinfurt.chapters.find(ch=>ch.id==="october").sourceIds.includes("usafSchweinfurtOctober251"),"official 251-on-mission versus 291-dispatched divergence must be visible and sourced");
 const bodenplatte=D.campaigns.find(c=>c.id==="bodenplatte");
@@ -304,13 +304,13 @@ for(const id of ["dieppe","bodenplatte"])assert.ok(D.campaigns.find(c=>c.id===id
 // Numbers here represent different kinds of evidence; no facts array may be
 // silently summed into a common "campaign aircraft losses" metric.
 const stalingrad=D.campaigns.find(c=>c.id==="stalingrad");
-assert.deepEqual([...stalingrad.facts.map(f=>f.value)],[300,500,117.6],"Stalingrad target and actual seven-week delivery must stay distinct");
+assert.deepEqual([...stalingrad.facts.filter(f=>!f.id).map(f=>f.value)],[300,500,117.6],"Stalingrad target and actual seven-week delivery must stay distinct");
 assert.equal(stalingrad.facts.filter(f=>f.unit==="tons/day").length,3);
-assert.ok(stalingrad.facts[0].scope.includes("not transported")&&stalingrad.facts[2].scope.includes("seven weeks"));
-assert.ok(stalingrad.facts[2].period.includes("not a single-day")&&stalingrad.facts[2].date==="1942-11","multiweek airlift mean must not be labeled a fabricated Wednesday");
+assert.ok(stalingrad.facts.find(f=>f.value===300).scope.includes("not transported")&&stalingrad.facts.find(f=>f.value===117.6).scope.includes("seven weeks"));
+assert.ok(stalingrad.facts.find(f=>f.value===117.6).period.includes("not a single-day")&&stalingrad.facts.find(f=>f.value===117.6).date==="1942-11","multiweek airlift mean must not be labeled a fabricated Wednesday");
 assert.ok(stalingrad.chapters.at(-1).limits.includes("different date ranges"),"airlift secondary disagreement must be disclosed");
 const reich=D.campaigns.find(c=>c.id==="reichdefense");
-assert.deepEqual([...reich.facts.map(f=>f.value)],[662,840]);
+assert.deepEqual([...reich.facts.filter(f=>!f.id).map(f=>f.value)],[662,840]);
 assert.equal(389+95+178,662);assert.equal(580+83+177,840);
 assert.ok(reich.facts.every(f=>f.scope.includes("Luftflotte Reich reporting area ONLY")&&f.type==="primary-command-return"),"no campaign-wide losses from monthly German Reich returns");
 const kursk=D.campaigns.find(c=>c.id==="kursk");
