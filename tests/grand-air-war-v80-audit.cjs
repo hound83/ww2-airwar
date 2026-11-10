@@ -22,8 +22,8 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,133,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,82,"campaign event count should be explicit and reviewed");
+assert.equal(allFacts.length,135,"campaign quantities need an updated source-count explanation");
+assert.equal(allEvents.length,83,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -229,6 +229,10 @@ for(const [day,claim,destroyed,damaged] of [
  const row=hansard.days.find(x=>x.date===day);
  assert.ok(row&&row.rafClaim===claim&&row.germanDestroyed===destroyed&&row.germanDamaged===damaged,"1947 Parliament wartime claim vs German official losses mismatch "+day);
 }
+const hardest=boB.facts.filter(f=>f.date==="1940-08-18"&&f.sourceId==="rafMuseumHardestDay");
+assert.deepEqual([...hardest.map(f=>f.value)],[68,69],"Hardest Day reciprocal reported airframe losses");
+assert.equal(boB.moments.find(e=>e.date==="1940-08-18").sourceIds.includes("hansard1947"),true,"same-day official German loss disagreement must remain sourced");
+assert.ok(hardest.find(f=>f.value===69).scope.includes("71 destroyed and 23 damaged"),"museum versus Hansard German-loss definition divergence cannot disappear");
 const dieppe=D.campaigns.find(x=>x.id==="dieppe");
 assert.equal(dieppe.facts.find(f=>f.side==="Axis"&&f.measure==="losses").value,48);
 assert.equal(dieppe.facts.find(f=>f.side==="Axis"&&f.measure==="damage").value,24);
