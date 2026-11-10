@@ -279,7 +279,7 @@ function renderCampaignComparisons(c){
 /* Bilateral source coverage is shown even where evidence for one participant is absent.
    A reporting-date match does not establish causal attribution to a chosen event. */
 function evidenceIsSingleDay(f,date){
- return f.date===date && /^\\d{4}-\\d{2}-\\d{2}$/.test(f.date) && !f.period;
+ return f.date===date && /^\d{4}-\d{2}-\d{2}$/.test(f.date) && !f.period;
 }
 function evidenceLabel(f){
  const prefix=/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"";
