@@ -172,3 +172,8 @@
 .event-evidence h4{font:700 18px/1.3 Georgia,serif;color:#e8d0a1;margin:0}
 .event-caution{font-size:12px;color:#dcd3b6;line-height:1.6;margin:0;border-left:3px solid #bca171;padding-left:9px}
 @media(max-width:600px){.bilateral-coverage,.event-evidence{padding:9px}.side-evidence-grid,.event-evidence-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr))}.side-evidence-card,.event-side{padding:9px}}
+
+.bilateral-coverage summary{display:list-item;cursor:pointer;font:700 15px/1.4 system-ui,sans-serif;color:#efdbb6;padding:3px 5px}
+.bilateral-coverage summary:hover,.bilateral-coverage summary:focus-visible{color:#fff3d3;outline-offset:3px}
+.bilateral-coverage:not([open]){padding:9px 13px}
+.bilateral-coverage[open]{gap:11px}
