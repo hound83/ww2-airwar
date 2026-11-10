@@ -214,6 +214,43 @@ const check=async()=>{
    await page.locator("#loss-command").selectOption("Reich");
    await page.locator("#loss-outcome").selectOption("damaged");
    assert.match(await page.locator("#loss-detail").innerText(),/damaged/);
+
+   // Audited comparisons must actually render in the browser for all 20 campaigns and 82 event dossiers.
+   const allCoverage=await page.evaluate(()=>{
+    const app=window.GrandAirWarV77, errors=[],states={};let count=0;
+    for(const campaign of app.campaigns){
+      app.choose(campaign.id,false);
+      if(!document.querySelector('#dossier-facts [data-bilateral-campaign="'+campaign.id+'"]'))errors.push(campaign.id+" missing campaign-level coverage");
+      for(const e of campaign.moments){
+        app.chooseMoment(campaign.id,e.date,e.lat,e.lng,e.title);
+        const block=document.querySelector("#moment-detail .event-bilateral");
+        const status=block?.getAttribute("data-bilateral-status");
+        if(!status)errors.push(campaign.id+" "+e.date+" missing event-level source audit");
+        states[status]=(states[status]||0)+1;count++;
+      }
+    }
+    return {campaigns:app.campaigns.length,events:count,errors,states};
+   });
+   assert.equal(allCoverage.campaigns,20);
+   assert.equal(allCoverage.events,83);
+   assert.deepEqual(allCoverage.errors,[],"campaign/event bilateral audit coverage incomplete");
+   assert.ok(allCoverage.states["no-matched-data"]>0,"the Atlas must label unsourced dates transparently");
+   for(const [id,expected] of [["britain-hardest","paired-own-losses"],["dieppe","paired-own-losses"],["schweinfurt","paired-own-losses"],["bodenplatte","paired-own-losses"],["britain","claim-versus-record"]]){
+    const target=id==="britain-hardest"?"1940-08-18":id==="schweinfurt"?"1943-10-14":id==="dieppe"?"1942-08-19":id==="bodenplatte"?"1945-01-01":"1940-09-15";
+    await page.evaluate(({id,target})=>{
+      const app=window.GrandAirWarV77,cid=id==="britain-hardest"?"britain":id,e=app.campaigns.find(x=>x.id===cid).moments.find(x=>x.date===target);
+      app.chooseMoment(cid,e.date,e.lat,e.lng,e.title);
+    },{id,target});
+    assert.equal(await page.locator("#moment-detail .event-bilateral").getAttribute("data-bilateral-status"),expected,id+" incorrect evidence type");
+    assert.ok(await page.locator("#moment-detail .event-bilateral a[href^='https://']").count()>0,id+" has no exact-day source links");
+   }
+   await page.evaluate(()=>window.GrandAirWarV77.choose("britain",false));
+   assert.equal(await page.locator("#dossier-facts .opponent-returns tbody").count(),2,"wartime claims vs German archival losses must have phases and day rows");
+   assert.equal(await page.locator("#dossier-facts .opponent-returns tbody").first().locator("tr").count(),5);
+   assert.equal(await page.locator("#dossier-facts .opponent-returns tbody").last().locator("tr").count(),7);
+   assert.match(await page.locator("#dossier-facts .opponent-returns").innerText(),/1,760.*1,733/s);
+   await page.locator(".campaign-guide").screenshot({path:path.join(root,"v80-qa-britain-bilateral-"+viewport.width+".png")});
+
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
    assert.ok(overflow<=2,"horizontal viewport overflow of "+overflow+"px at "+viewport.width);
    assert.deepEqual(errors,[],"JavaScript page errors: "+errors.join("; "));

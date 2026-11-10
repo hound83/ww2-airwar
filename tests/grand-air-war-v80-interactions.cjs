@@ -156,6 +156,41 @@ for(const [id,chapter,date,number] of [
  app.chooseMoment(id,event.date,event.lat,event.lng,event.title);
  assert.ok(element("moment-detail").innerHTML.includes("https://")&&element("moment-detail").innerHTML.includes(event.title),id+" source link or event detail is inaccessible");
 }
+
+let auditedEventCount=0;
+for(const campaign of app.campaigns){
+ app.choose(campaign.id,false);
+ const dossier=element("dossier-facts").innerHTML;
+ assert.ok(dossier.includes('data-bilateral-campaign="'+campaign.id+'"'),"opposing-loss coverage missing "+campaign.id);
+ assert.ok(dossier.includes("No aircraft exchange ratio is computed automatically"),"loss ratio disclaimers missing "+campaign.id);
+ for(const e of campaign.moments){
+  app.chooseMoment(campaign.id,e.date,e.lat,e.lng,e.title);
+  const review=element("moment-detail").innerHTML;
+  assert.ok(review.includes("event-bilateral")&&review.includes("data-bilateral-status="),campaign.id+" / "+e.date+" needs reciprocal research status");
+  assert.ok(!review.includes("NaN")&&!review.includes("undefined"),"invalid event bilateral data "+campaign.id+" / "+e.date);
+  auditedEventCount++;
+ }
+}
+assert.equal(auditedEventCount,83,"each dated event must have a visible reciprocal evidence assessment");
+app.choose("britain",false);
+assert.equal((element("dossier-facts").innerHTML.match(/data-opponent-returns="britain"/g)||[]).length,1,"British Parliament wartime claim-vs-loss ledger missing");
+assert.ok(element("dossier-facts").innerHTML.includes("1,760")&&element("dossier-facts").innerHTML.includes("1,733"),"historical source inconsistency must be explicit");
+const sep=app.campaigns.find(x=>x.id==="britain").moments.find(x=>x.date==="1940-09-15");
+app.chooseMoment("britain",sep.date,sep.lat,sep.lng,sep.title);
+assert.ok(element("moment-detail").innerHTML.includes('data-bilateral-status="claim-versus-record"'),"15 September RAF claims cannot be mislabeled as RAF loss");
+const hardest=app.campaigns.find(x=>x.id==="britain").moments.find(e=>e.date==="1940-08-18");
+app.chooseMoment("britain",hardest.date,hardest.lat,hardest.lng,hardest.title);
+assert.ok(element("moment-detail").innerHTML.includes('data-bilateral-status="paired-own-losses"'),"18 August matched own-loss definitions not accessible");
+const battleEnd=app.campaigns.find(x=>x.id==="britain").moments.find(e=>e.date==="1940-10-31");
+app.chooseMoment("britain",battleEnd.date,battleEnd.lat,battleEnd.lng,battleEnd.title);
+assert.ok(!element("moment-detail").innerHTML.includes('data-bilateral-status="paired-own-losses"'),"fighter losses covering July–October must NOT be misclassified as 31 October one-day reciprocal losses");
+assert.ok(!element("moment-detail").innerHTML.includes("over 900"),"a four-month cumulative fighter loss cannot appear as a dated event observation");
+for(const id of ["dieppe","schweinfurt","bodenplatte"]){
+ const event=app.campaigns.find(x=>x.id===id).moments.find(e=>e.date===(id==="schweinfurt"?"1943-10-14":id==="dieppe"?"1942-08-19":"1945-01-01"));
+ app.chooseMoment(id,event.date,event.lat,event.lng,event.title);
+ assert.ok(element("moment-detail").innerHTML.includes('data-bilateral-status="paired-own-losses"'),id+" paired own-loss reporting missing");
+}
+
 const before=element("german-observation-date").textContent;
 app.setMonth("1939-09");assert.equal(element("german-observation-date").textContent,before,"unrelated analysis changed on date scrub");
 let lossCases=0;
