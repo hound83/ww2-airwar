@@ -17,7 +17,7 @@ function el(id){
 const buttons=["pilots","readiness","production","fuel","unit"].map(x=>({dataset:{germanMode:x},classList:{toggle(){}},setAttribute(){},addEventListener(){}}));
 const document={readyState:"complete",hidden:false,getElementById:el,addEventListener(){},querySelectorAll(selector){return selector==="[data-german-mode]"?buttons:[]},createElement(){return el("dynamic")},body:{appendChild(){}}};
 const window={},context=vm.createContext({window,document,console,setInterval,clearInterval});
-const files=["dist/model-v3-data.js","dist/atlas-v7-data.js","dist/atlas-v71-data.js","dist/atlas-v72-data.js","dist/atlas-v73-data.js","dist/atlas-v74-data.js","dist/grand-air-war-v77-groups.js","dist/grand-air-war-v77-campaigns.js","dist/grand-air-war-v80-core.js","dist/grand-air-war-v80-german.js","dist/grand-air-war-v80-lab.js"];
+const files=["dist/model-v3-data.js","dist/atlas-v7-data.js","dist/atlas-v71-data.js","dist/atlas-v72-data.js","dist/atlas-v73-data.js","dist/atlas-v74-data.js","dist/grand-air-war-v77-groups.js","dist/grand-air-war-v77-campaigns.js","dist/normandy-1944-story.js","dist/grand-air-war-v80-core.js","dist/grand-air-war-v80-german.js","dist/grand-air-war-v80-lab.js"];
 for(const file of files){assert.ok(fs.existsSync(path.join(root,file)),"missing "+file);vm.runInContext(read(file),context,{filename:file,timeout:8000});}
 const G=window.GrandAirWarV80German,L=window.GrandAirWarV80Lab,A=window.GrandAirWarV77;
 assert.ok(G&&L&&A,"one or more research engines did not load");

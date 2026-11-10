@@ -16,14 +16,14 @@ function el(id){
 }
 const document={readyState:"complete",hidden:false,getElementById:el,addEventListener(){},querySelectorAll(){return[]},createElement(){return el("dynamic")},body:{appendChild(){}}};
 const window={},ctx=vm.createContext({window,document,console,setInterval,clearInterval});
-for(const f of ["dist/model-v3-data.js","dist/atlas-v7-data.js","dist/atlas-v71-data.js","dist/atlas-v72-data.js","dist/atlas-v73-data.js","dist/atlas-v74-data.js","dist/grand-air-war-v77-groups.js","dist/grand-air-war-v77-campaigns.js","dist/grand-air-war-v80-core.js","dist/grand-air-war-v80-german.js","dist/grand-air-war-v80-lab.js"]){vm.runInContext(read(f),ctx,{filename:f,timeout:10000});}
+for(const f of ["dist/model-v3-data.js","dist/atlas-v7-data.js","dist/atlas-v71-data.js","dist/atlas-v72-data.js","dist/atlas-v73-data.js","dist/atlas-v74-data.js","dist/grand-air-war-v77-groups.js","dist/grand-air-war-v77-campaigns.js","dist/normandy-1944-story.js","dist/grand-air-war-v80-core.js","dist/grand-air-war-v80-german.js","dist/grand-air-war-v80-lab.js"]){vm.runInContext(read(f),ctx,{filename:f,timeout:10000});}
 const D=window.GrandAirWarV77Campaigns,A=window.GrandAirWarV77,G=window.GrandAirWarV80German,L=window.GrandAirWarV80Lab;
 const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
 assert.equal(allFacts.length,135,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,83,"campaign event count should be explicit and reviewed");
+assert.equal(allEvents.length,119,"campaign event count should be explicit and reviewed (Normandy benchmark adds 36 episodes)");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -50,9 +50,10 @@ for(const c of D.campaigns){
   assert.ok(Number.isFinite(e.lat)&&Number.isFinite(e.lng)&&e.title&&e.place);
   if(chapters.length)assert.equal(chapters.filter(ch=>ch.start<=e.date&&e.date<=ch.end).length,1,c.id+" dated evidence not in exactly one phase: "+e.date);
   if(e.summary){
-   assert.ok(e.units&&e.outcome&&e.confidence,c.id+" event needs evidence, units, outcome and confidence");
+   assert.ok((e.units||e.airAction)&&e.outcome&&e.confidence,c.id+" event needs evidence, air/units, outcome and confidence");
    assert.ok(e.sourceIds?.length,c.id+" detailed event without specific sources");
-   for(const id of e.sourceIds)assert.ok(D.sources[id]?.url?.startsWith("https://"),c.id+" event with missing source "+id);
+   for(const id of e.sourceIds)assert.match(D.sources[id]?.url||"",/^https:\/\/|^\.\//,c.id+" event with missing source "+id);
+   assert.ok(e.sourceIds.some(id=>D.sources[id]?.url?.startsWith("https://")),c.id+" event cannot rely solely on an internal research link");
   }
  }
  for(let i=1;i<c.moments.length;i++)assert.ok(c.moments[i-1].date<=c.moments[i].date,c.id+" dated evidence appears out of chronological order");
@@ -90,7 +91,7 @@ assert.equal(poland.facts.length,4);
 assert.equal(poland.moments.length,7);
 assert.equal(poland.chapters.length,3);
 assert.deepEqual([...poland.chapters.map(c=>c.start)],["1939-09-01","1939-09-07","1939-09-17"]);
-assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["norway",3],["france1940",3],["britain",5],["malta",4],["barbarossa",3],["stalingrad",3],["reichdefense",3],["sicily",3],["kursk",3],["schweinfurt",2],["italy",3],["bigweek",2],["normandy",3],["bagration",3],["marketgarden",3],["berlin",3] ]);
+assert.deepEqual([...D.campaigns.filter(c=>c.chapters?.length).map(c=>[c.id,c.chapters.length])],[ ["spain",3],["poland",3],["norway",3],["france1940",3],["britain",5],["malta",4],["barbarossa",3],["stalingrad",3],["reichdefense",3],["sicily",3],["kursk",3],["schweinfurt",2],["italy",3],["bigweek",2],["normandy",9],["bagration",3],["marketgarden",3],["berlin",3] ]);
 // Every source-backed phase, including the older pilots, must offer at least
 // one inspectable detailed event. Calendar-only placeholders are not evidence.
 for(const id of ["spain","poland","norway","france1940","britain","malta","barbarossa","stalingrad","reichdefense","sicily","kursk","schweinfurt","italy","bigweek","normandy","bagration","marketgarden","berlin"]){
@@ -185,6 +186,17 @@ assert.equal(bv("16th Air Army aircraft lost on 26 June"),19);
 assert.ok(bag.facts.find(f=>f.value===13&&f.date==="1944-06-26")?.type.includes("claims"),"reported German defeats cannot be recorded as independently verified German losses");
 assert.equal(bag.moments.filter(e=>["1944-06-24","1944-06-26"].includes(e.date)).length,2,"Bobruisk daily operational event drilldowns missing");
 const nm=D.campaigns.find(c=>c.id==="normandy");
+assert.equal(nm.chapters.length,9,"Normandy must be a multi-chapter account, not three calendar summaries");
+assert.equal(nm.moments.length,39,"Normandy benchmark requires substantial documented historical density");
+assert.equal(nm.moments.filter(e=>e.dating==="period-anchor").length,8,"representative dates must be clearly distinguished from exact operational dates");
+assert.ok(nm.story.introduction.length>=3&&nm.story.question.includes("Allies"),"campaign-wide argument and context missing");
+assert.ok(nm.chapters.every(ch=>ch.story?.length>=2&&ch.axis?.length>=80&&ch.bridge?.length>=80),"chapter must link ground, air, opposing perspective and next chapter");
+assert.ok(nm.chapters.every(ch=>nm.moments.filter(e=>ch.start<=e.date&&e.date<=ch.end).length>=4),"thin Normandy chapter not accepted");
+assert.ok(nm.moments.every(e=>e.airAction?.length>=90&&e.opposingView?.length>=90&&e.outcome?.length>=65&&e.sourceIds.length>=2),"Normandy episode not a fully sourced two-sided analysis");
+assert.ok(nm.moments.some(e=>e.title.includes("friendly-fire"))&&nm.moments.some(e=>e.title.includes("Mortain")),"important operational contradictions omitted");
+A.choose("normandy");
+assert.ok(el("campaign-story").innerHTML.includes("Official Allied"),"Normandy story introduction is not in user journey");
+A.choose("poland");
 const naval=nm.facts.filter(f=>f.sourceId==="navyNormandyGermanDaily");
 assert.equal(naval.length,6,"original German Normandy sortie populations not all recorded");
 assert.equal(naval.find(f=>f.value===2588)?.date,"1944-06-13");

@@ -11,6 +11,7 @@
 <script defer src="./dist/atlas-v73-data.js"></script><script defer src="./dist/atlas-v74-data.js"></script>
 <script defer src="./dist/grand-air-war-v77-groups.js"></script>
 <script defer src="./dist/grand-air-war-v77-campaigns.js"></script>
+<script defer src="./dist/normandy-1944-story.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script defer src="./dist/grand-air-war-v80-core.js"></script>
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
@@ -27,7 +28,7 @@
 <div class="toolbar"><label>Campaign region <select id="theater-select"><option value="all">All European theatres</option><option value="west">Western Front &amp; Spain</option><option value="reich">Defence of the Reich</option><option value="east">Eastern Front</option><option value="med">Italy &amp; Mediterranean</option><option value="north">Northern Europe</option></select></label><label>Find a campaign <input type="search" id="campaign-search" placeholder="Battle, country, mission, air force…" autocomplete="off"></label><label class="tick-control"><input type="checkbox" id="all-campaigns" checked>Show campaigns from all dates</label><button type="button" class="subtle" id="fit-map">Fit map</button><span id="coverage-label" class="coverage-label">All campaigns · selected month highlighted</span></div>
 </section>
 <section class="mainstage" aria-label="Campaign geography and battle dossier">
- <div class="map-panel"><div class="map-top"><div class="eyebrow">HISTORICAL THEATER CHART · COASTLINES ONLY</div><strong id="map-heading">Air campaigns active in June 1944</strong></div><div id="campaign-map" tabindex="0" role="region" aria-label="Interactive Europe map with clickable campaign centres and wartime reporting areas"></div><div id="map-fallback" hidden>Historical coastline geometry could not be loaded. The campaign locations remain accessible; the map intentionally does not fall back to modern political borders.</div><div class="map-bottom"><span><i class="marker-swatch campaign"></i> Numbered pins = campaign IDs; larger circles = cluster counts (click to choose)</span><span>Gold = active month · muted = other periods · Natural Earth coastlines, no modern borders</span></div></div>
+ <div class="map-panel"><div class="map-top"><div class="eyebrow">HISTORICAL THEATER CHART · COASTLINES ONLY</div><strong id="map-heading">Air campaigns active in June 1944</strong></div><div id="campaign-map" tabindex="0" role="region" aria-label="Interactive Europe map with clickable campaign centres and wartime reporting areas"></div><div id="map-fallback" hidden>Historical coastline geometry could not be loaded. The campaign locations remain accessible; the map intentionally does not fall back to modern political borders.</div><div class="map-bottom"><span id="map-legend"><i class="marker-swatch campaign"></i> Numbered pins = campaign IDs; larger circles = cluster counts (click to choose)</span><span id="map-source-note">Gold = active month · muted = other periods · Natural Earth coastlines, no modern borders</span></div></div>
  <aside class="dossier" id="campaign-dossier" aria-live="polite" aria-label="Campaign historical analysis">
   <div class="dossier-label" id="dossier-meta">BATTLE DOSSIER · WESTERN FRONT</div><h2 id="dossier-title">Normandy · Overlord</h2><p id="dossier-dates" class="period"></p>
   <h3 class="dossier-key-findings" id="dossier-facts-heading">Campaign evidence · sourced figures</h3><div id="dossier-facts" class="fact-grid"></div>
@@ -40,7 +41,8 @@
 <section class="two-columns" id="campaigns">
  <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY · STEP 1</span><h2>Choose a campaign</h2></div><span id="campaign-count"></span></div><p class="event-intro">Choose a campaign to see its operational progression on the right. Dimmed campaigns are outside the map's selected month, but remain available for research.</p><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
  <article class="pane campaign-guide"><div class="pane-head"><div><span class="eyebrow">CAMPAIGN GUIDE · STEP 2</span><h2>How the campaign unfolded</h2></div><span id="moment-count"></span></div>
-  <p class="event-intro">First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.</p>
+  <p class="event-intro" id="guide-intro">First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.</p>
+  <section id="campaign-story" class="campaign-story" hidden aria-label="Campaign historical narrative introduction"></section>
   <div class="guide-heading"><span class="eyebrow">2 · Operational phases</span><small id="chapter-coverage"></small></div>
   <div id="chapter-list" class="chapter-list" role="group" aria-label="Choose an operational campaign phase"></div>
   <article id="chapter-detail" class="chapter-detail" aria-live="polite"></article>

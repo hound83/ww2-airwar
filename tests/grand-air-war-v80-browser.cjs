@@ -18,7 +18,7 @@ const server=http.createServer((request,response)=>{
 const check=async()=>{
  await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
  const base="http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
- const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
    const page=await browser.newPage({viewport,deviceScaleFactor:1});
@@ -115,7 +115,7 @@ const check=async()=>{
     ["berlin",3,"encirclement","1945-04-25","Berlin"],
     ["schweinfurt",2,"october","1943-10-14","291"],
     ["bigweek",2,"sustained","1944-02-25","4,000"],
-    ["normandy",3,"falaise","1944-08-19","Falaise"],
+    ["normandy",9,"falaise","1944-08-19","Falaise"],
     ["marketgarden",3,"resupply","1944-09-20","152"]
    ]){
     await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
@@ -127,6 +127,25 @@ const check=async()=>{
     assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>0,id+" lacks clickable original research source");
     assert.equal(await page.locator("#moment-detail").isVisible(),true);
    }
+   await page.evaluate(()=>window.GrandAirWarV77.choose("normandy",false));
+   assert.equal(await page.locator("#campaign-story").isVisible(),true,"Normandy historical introduction hidden");
+   assert.ok((await page.locator("#campaign-story").innerText()).length>900,"Normandy introduction is too thin");
+   await page.locator('#chapter-list [data-chapter="cobra"]').click();
+   assert.ok((await page.locator("#chapter-detail").innerText()).length>1700,"Cobra chapter lacks sustained narrative");
+   await page.waitForFunction(()=>document.querySelectorAll(".story-map-point").length>=2,null,{timeout:15000});
+   assert.ok(await page.locator(".story-map-point").count()>=2,"selected chapter needs interactive geographic episode markers");
+   await page.locator('#moment-list [data-date="1944-07-25"]').click();
+   assert.match(await page.locator("#moment-detail").innerText(),/German perspective|Air operations and their limits/i);
+   assert.ok(await page.locator("#moment-detail a[href^='https://']").count()>=2,"Normandy event lacks multiple source trails");
+   // Let Leaflet finish the chapter-to-episode flight before recording the map.
+   // Earlier screenshots caught a partially animated pan and did not represent
+   // the actual geographic story view that the reader sees after the move.
+   await page.waitForTimeout(900);
+   assert.equal(await page.locator(".war-cluster, .war-pin").count(),0,"European campaign clusters obscure the Normandy episode view");
+   assert.match(await page.locator("#map-heading").innerText(),/Normandy.*chapter episodes mapped/,"Normandy map context is missing");
+   await page.locator("#campaign-story").screenshot({path:path.join(root,"v80-qa-normandy-story-"+viewport.width+".png")});
+   await page.locator("#chapter-detail").screenshot({path:path.join(root,"v80-qa-normandy-chapter-"+viewport.width+".png")});
+   await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-normandy-map-"+viewport.width+".png")});
    for(const [id,figure] of [["norway","329"],["barbarossa","800"],["sicily","25,070"],["stalingrad","117.6"],["reichdefense","840"],["kursk","3,000"],["italy","435"],["bagration","2,319"],["berlin","4,398"]]){
     await page.evaluate(cid=>window.GrandAirWarV77.choose(cid,false),id);
     assert.match(await page.locator("#dossier-facts").innerText(),new RegExp(figure.replace(".","\\.")),id+" fact missing in actual UI");
@@ -215,7 +234,7 @@ const check=async()=>{
    await page.locator("#loss-outcome").selectOption("damaged");
    assert.match(await page.locator("#loss-detail").innerText(),/damaged/);
 
-   // Audited comparisons must actually render in the browser for all 20 campaigns and 82 event dossiers.
+   // Audited comparisons must actually render for all 20 campaigns and 119 dated episodes.
    const allCoverage=await page.evaluate(()=>{
     const app=window.GrandAirWarV77, errors=[],states={};let count=0;
     for(const campaign of app.campaigns){
@@ -232,7 +251,7 @@ const check=async()=>{
     return {campaigns:app.campaigns.length,events:count,errors,states};
    });
    assert.equal(allCoverage.campaigns,20);
-   assert.equal(allCoverage.events,83);
+   assert.equal(allCoverage.events,119);
    assert.deepEqual(allCoverage.errors,[],"campaign/event bilateral audit coverage incomplete");
    assert.ok(allCoverage.states["no-matched-data"]>0,"the Atlas must label unsourced dates transparently");
    for(const [id,expected] of [["britain-hardest","paired-own-losses"],["dieppe","paired-own-losses"],["schweinfurt","paired-own-losses"],["bodenplatte","paired-own-losses"],["britain","claim-versus-record"]]){

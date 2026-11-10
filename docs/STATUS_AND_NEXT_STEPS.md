@@ -1,5 +1,15 @@
 # Atlas status and next work
 
+## 10 November 2026 — Normandy non-fiction story benchmark (release candidate; NOT yet live)
+
+**Branch:** `feature/normandy-story-benchmark`, based on published `b7a38e1`. **Goal:** one substantial, coherent historical reading journey, not more detached event cards.
+
+- Normandy **3 → 9** linked chapters and **3 → 39** chronology episodes (31 dated actions + 8 labelled period-context anchors). Campaign-wide 55 → **61** phases and 83 → **119** chronology entries; 20 campaigns and 135 source-scoped historical quantities unchanged. Each Normandy chapter addresses cause, ground situation, air activity, German perspective, consequence, evidence boundary and transition. The introduction links the existing 16-scene v7.6 field notebook.
+- The v8 story reader now provides substantial introductory/context paragraphs, period/interpretation cues, next/previous chapter navigation and clickable approximate episode locations on the physical map for the selected chapter. Existing source-separated cross-side evidence remains accessible for all events; no historical gap is filled with invented numbers.
+- Research and historical limits: [`research/sources/normandy-1944-story-benchmark-2026-11-10.md`](../research/sources/normandy-1944-story-benchmark-2026-11-10.md). Implementation/QA gates and exact before/after: [`ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md`](ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md).
+- **Before public release:** verify GitHub PR core+Chromium desktop/mobile checks on final revision, inspect screenshots and the chapter/map interactions, then merge and check live Pages. Local code/data tests pass; local Chromium cannot launch under the current container's socket restrictions. Do not claim a live result until independently checked.
+- **After acceptance:** treat Normandy as the pattern for deeper Battle of Britain, Poland and Bagration campaigns. Separate archival program remains the original RAF/Luftwaffe/USAAF/VVS daily loss/serviceability reports; do not block narrative completeness on exact-day reciprocal figures.
+
 ## 10 November 2026 — source-audited reciprocal loss & strength comparisons for every entry point
 
 **PR:** https://github.com/hound83/ww2-airwar/pull/21, branch `feature/atlas-bilateral-loss-evidence-all-campaigns`, based on current published `main`.
