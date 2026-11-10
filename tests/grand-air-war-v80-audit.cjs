@@ -22,7 +22,7 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,127,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,133,"campaign quantities need an updated source-count explanation");
 assert.equal(allEvents.length,82,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
@@ -207,9 +207,46 @@ assert.ok(bigweek.chapters.every(ch=>ch.limits.includes("not")||ch.limits.includ
 const schweinfurt=D.campaigns.find(c=>c.id==="schweinfurt");
 assert.deepEqual([...schweinfurt.chapters.map(ch=>ch.start)],["1943-08-17","1943-10-14"]);
 assert.ok(!schweinfurt.sources.includes("bigWeek"),"1944 Big Week is not a 1943 raid evidence source");
-assert.deepEqual([...schweinfurt.facts.map(f=>f.value)],[376,60,291,60],"August and October dispatch/loss populations must remain separate");
+assert.deepEqual([...schweinfurt.facts.map(f=>f.value)],[31,12,34,186,376,60,291,60],"August and October dispatch/loss populations must remain separate");
 assert.ok(schweinfurt.facts.filter(f=>f.value===60).every(f=>f.type==="recorded-subset"),"60 is a subset, not another dispatched total");
 assert.ok(schweinfurt.chapters.find(ch=>ch.id==="october").limits.includes("251 B-17s")&&schweinfurt.chapters.find(ch=>ch.id==="october").sourceIds.includes("usafSchweinfurtOctober251"),"official 251-on-mission versus 291-dispatched divergence must be visible and sourced");
+
+const boB=D.campaigns.find(x=>x.id==="britain");
+const hansard=boB.opponentReturnSeries;
+assert.equal(hansard.periods.length,5);
+assert.equal(hansard.days.length,7);
+assert.equal(hansard.days.find(x=>x.date==="1940-09-15").rafClaim,185);
+assert.equal(hansard.days.find(x=>x.date==="1940-09-15").germanDestroyed,56);
+assert.equal(hansard.days.find(x=>x.date==="1940-09-15").germanDamaged,21);
+const sums=["rafClaim","germanDestroyed","germanDamaged"].map(k=>hansard.periods.reduce((a,x)=>a+x[k],0));
+assert.deepEqual(sums,[2692,1760,657],"Hansard printed period values changed: check source");
+assert.equal(sums[1]-1733,27,"period destroyed subtotal must not overwrite German official 1733");
+assert.equal(sums[2]-643,14,"period damaged subtotal must not overwrite German official 643");
+assert.ok(hansard.explanation.includes("1,760")&&hansard.explanation.includes("1,733"),"must disclose historic source discrepancy");
+for(const [day,claim,destroyed,damaged] of [
+["1940-08-15",183,76,9],["1940-08-18",155,71,23],["1940-08-31",94,39,14],
+["1940-09-02",66,34,12],["1940-09-07",100,40,13],["1940-09-15",185,56,21],["1940-09-27",153,55,12]]){
+ const row=hansard.days.find(x=>x.date===day);
+ assert.ok(row&&row.rafClaim===claim&&row.germanDestroyed===destroyed&&row.germanDamaged===damaged,"1947 Parliament wartime claim vs German official losses mismatch "+day);
+}
+const dieppe=D.campaigns.find(x=>x.id==="dieppe");
+assert.equal(dieppe.facts.find(f=>f.side==="Axis"&&f.measure==="losses").value,48);
+assert.equal(dieppe.facts.find(f=>f.side==="Axis"&&f.measure==="damage").value,24);
+assert.equal(dieppe.facts.find(f=>f.side==="Allies"&&f.measure==="losses").value,106);
+assert.ok(dieppe.facts.find(f=>f.value===24).scope.includes("not be presented as 72 destroyed"));
+assert.equal(schweinfurt.facts.find(f=>f.side==="Axis"&&f.measure==="losses").value,31);
+assert.equal(schweinfurt.facts.find(f=>f.side==="Allies"&&f.measure==="losses").value,60);
+assert.equal(schweinfurt.facts.find(f=>f.measure==="claims").value,186);
+assert.equal(schweinfurt.facts.find(f=>f.measure==="writeoffs").value,12);
+assert.equal(schweinfurt.facts.find(f=>f.measure==="damage").value,34);
+for(const x of D.campaigns){
+ assert.ok(x.moments.length,"campaign without a research event");
+ for(const e of x.moments){
+  const exact=x.facts.filter(f=>f.date===e.date);
+  assert.ok(exact.every(f=>D.sources[f.sourceId]?.url),"same-day source needs link");
+ }
+}
+
 const bodenplatte=D.campaigns.find(c=>c.id==="bodenplatte");
 assert.ok(bodenplatte.facts.some(f=>f.value===45&&f.scope.includes("do not add")),"Eindhoven local loss must not be stacked with whole-raid values");
 assert.ok(bodenplatte.facts.some(f=>f.value===35&&f.scope.includes("not necessarily identical")),"local versus whole-raid damage definitions need disclosure");
