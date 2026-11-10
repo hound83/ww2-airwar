@@ -301,7 +301,7 @@ function renderSideCoverage(c){
  const allLossSides=c.opposingSides.filter(s=>c.facts.some(f=>f.subjectSide===s.id&&f.metricClass==="losses")).length;
  const summary=populated===c.opposingSides.length?"All participating sides have at least one numeric observation.":"Only "+populated+" of "+c.opposingSides.length+" represented forces have attributable numeric observations.";
  const comparability=allLossSides>=2?"Loss-related records exist for multiple participants, but source dates, aircraft classes and loss definitions still require individual checking.":"No supported two-sided loss comparison exists at campaign level.";
- return '<section class="bilateral-coverage" data-campaign-coverage="'+esc(c.id)+'"><h3>Both sides · what the evidence actually covers</h3><p class="bilateral-coverage-notice">'+esc(summary)+' '+esc(comparability)+' Figures below are source populations, never automatically summed across commands, days or subtypes.</p><div class="side-evidence-grid">'+cols+'</div></section>';
+ return '<details class="bilateral-coverage" data-campaign-coverage="'+esc(c.id)+'"><summary>Compare opposing forces · '+populated+'/'+c.opposingSides.length+' have reported figures</summary><p class="bilateral-coverage-notice">'+esc(summary)+' '+esc(comparability)+' Figures below are source populations, never automatically summed across commands, days or subtypes.</p><div class="side-evidence-grid">'+cols+'</div></details>';
 }
 function renderEventEvidence(c,e){
  const sides=c.opposingSides||[];
