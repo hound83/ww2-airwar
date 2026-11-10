@@ -153,3 +153,26 @@
 .operational-series thead{color:#a1dacd}
 .operational-series tbody th{font-weight:500;color:#e5dfcd}
 @media(max-width:600px){.campaign-comparisons{padding:9px}.comparison-section,.operational-series{padding:9px}.comparison-grid{grid-template-columns:repeat(auto-fit,minmax(min(135px,100%),1fr))}}
+
+/* Every campaign / dated event now receives a separate cross-side source audit. */
+.bilateral-overview,.event-bilateral,.opponent-returns{min-width:0;border:1px solid #506970;border-radius:8px;background:#1d3540;padding:13px;color:#e2e9e1;line-height:1.55}
+.bilateral-overview{grid-column:1/-1;border-left:4px solid #d4ac72}
+.bilateral-overview h3,.event-bilateral h4,.opponent-returns h4{font-family:Georgia,serif;color:#f0d6a8;font-size:17px;line-height:1.35;margin:0 0 8px}
+.bilateral-overview p,.event-bilateral p,.opponent-returns p{font-size:12px;margin:7px 0}
+.bilateral-overview strong{color:#f1dcac;font-variant-numeric:tabular-nums}
+.event-bilateral{margin-top:15px;padding:14px;border-color:#6b7775}
+.event-bilateral[data-bilateral-status="paired-own-losses"]{border-left:4px solid #6fbba8}
+.event-bilateral[data-bilateral-status="claim-versus-record"]{border-left:4px solid #d4ad75}
+.event-bilateral[data-bilateral-status="no-matched-data"]{border-left:4px solid #8b9ba1}
+.event-bilateral ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.event-bilateral li{padding:8px 10px;border-radius:5px;background:#29434b;font-size:11px;overflow-wrap:anywhere}
+.event-bilateral li small{color:#bad5cf}
+.event-bilateral li a{display:inline-block;margin:4px}
+.event-review-claim{display:grid;gap:6px;padding:10px;background:#284854;border:1px solid #567882;border-radius:6px;font-size:12px}
+.opponent-returns{display:grid;gap:11px;padding:11px}
+.opponent-returns table{width:100%;min-width:460px;border-collapse:collapse;font-size:11px;font-variant-numeric:tabular-nums}
+.opponent-returns th,.opponent-returns td{padding:7px 8px;border-bottom:1px solid #47636a;text-align:right}
+.opponent-returns th:first-child{text-align:left}
+.opponent-returns th{white-space:normal}
+.opponent-returns a{overflow-wrap:anywhere}
+@media(max-width:600px){.bilateral-overview,.event-bilateral,.opponent-returns{padding:9px}.event-bilateral ul{gap:5px}}
