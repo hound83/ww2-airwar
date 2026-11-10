@@ -181,6 +181,10 @@ assert.ok(element("moment-detail").innerHTML.includes('data-bilateral-status="cl
 const hardest=app.campaigns.find(x=>x.id==="britain").moments.find(e=>e.date==="1940-08-18");
 app.chooseMoment("britain",hardest.date,hardest.lat,hardest.lng,hardest.title);
 assert.ok(element("moment-detail").innerHTML.includes('data-bilateral-status="paired-own-losses"'),"18 August matched own-loss definitions not accessible");
+const battleEnd=app.campaigns.find(x=>x.id==="britain").moments.find(e=>e.date==="1940-10-31");
+app.chooseMoment("britain",battleEnd.date,battleEnd.lat,battleEnd.lng,battleEnd.title);
+assert.ok(!element("moment-detail").innerHTML.includes('data-bilateral-status="paired-own-losses"'),"fighter losses covering July–October must NOT be misclassified as 31 October one-day reciprocal losses");
+assert.ok(!element("moment-detail").innerHTML.includes("over 900"),"a four-month cumulative fighter loss cannot appear as a dated event observation");
 for(const id of ["dieppe","schweinfurt","bodenplatte"]){
  const event=app.campaigns.find(x=>x.id===id).moments.find(e=>e.date===(id==="schweinfurt"?"1943-10-14":id==="dieppe"?"1942-08-19":"1945-01-01"));
  app.chooseMoment(id,event.date,event.lat,event.lng,event.title);
