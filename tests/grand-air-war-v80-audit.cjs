@@ -136,12 +136,12 @@ assert.equal(readFact(gardenNew,"mg-resupply-21sep-losses-23").date,"1944-09-21"
 assert.equal(A.campaignEvidenceStatus(gardenNew).status,"opposing-source-gap","Enemy claims cannot count as German-side aircraft losses");
 const allWithOpposing=D.campaigns.filter(c=>{const s=A.campaignEvidenceStatus(c);return s.a>0&&s.b>0;});
 assert.equal(allWithOpposing.length,16,"16 campaigns must display actual numeric evidence for both reporting parties");
-const sp=D.campaigns.find(c=>c.id==="spain"),reich=D.campaigns.find(c=>c.id==="reichdefense"),sch=D.campaigns.find(c=>c.id==="schweinfurt");
+const sp=D.campaigns.find(c=>c.id==="spain"),reichReview=D.campaigns.find(c=>c.id==="reichdefense"),sch=D.campaigns.find(c=>c.id==="schweinfurt");
 assert.equal(readFact(sp,"spain-soviet-republic-aircraft-1500").value,1500);
 assert.equal(A.evidenceSide(sp,readFact(sp,"spain-soviet-republic-aircraft-1500")),"B","Republican side must not be attributed to the Condor Legion");
 assert.ok(readFact(sp,"spain-soviet-republic-aircraft-1500").period.includes("cumulative"),"Soviet aircraft supplies must never become active aircraft on one day");
-assert.equal(readFact(reich,"reich-8th-heavy-349-1944-03").value,349);
-assert.equal(A.campaignEvidenceStatus(reich).status,"non-comparable","USAAF Eighth and Luftflotte Reich monthly losses have differing reporting populations and scope; do not make a false exchange ratio");
+assert.equal(readFact(reichReview,"reich-8th-heavy-349-1944-03").value,349);
+assert.equal(A.campaignEvidenceStatus(reichReview).status,"non-comparable","USAAF Eighth and Luftflotte Reich monthly losses have differing reporting populations and scope; do not make a false exchange ratio");
 assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-31").value,31);
 assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-writeoff-12").value,12);
 assert.equal(readFact(sch,"sch-1943-10-14-german-fighters-damaged-34").value,34);
