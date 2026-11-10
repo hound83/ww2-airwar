@@ -132,7 +132,7 @@ const check=async()=>{
    assert.ok((await page.locator("#campaign-story").innerText()).length>900,"Normandy introduction is too thin");
    await page.locator('#chapter-list [data-chapter="cobra"]').click();
    assert.ok((await page.locator("#chapter-detail").innerText()).length>1700,"Cobra chapter lacks sustained narrative");
-   await page.waitForFunction(()=>document.querySelectorAll(".story-map-point").length>0,null,{timeout:8000});
+   await page.waitForFunction(()=>document.querySelectorAll(".story-map-point").length>=2,null,{timeout:15000});
    assert.ok(await page.locator(".story-map-point").count()>=2,"selected chapter needs interactive geographic episode markers");
    await page.locator('#moment-list [data-date="1944-07-25"]').click();
    assert.match(await page.locator("#moment-detail").innerText(),/German perspective|Air operations and their limits/);
