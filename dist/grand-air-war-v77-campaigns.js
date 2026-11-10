@@ -2,6 +2,10 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "canadaDieppeOfficial": {"title":"Canadian Army official historical summary, Dieppe operation: German archival aircraft losses on 19 August 1942","url":"https://www.ibiblio.org/hyperwar/UN/Canada/CA/OpSumm/OpSumm-5.html","class":"official-Canadian-postwar-historical-summary-captured-German-loss-documents; aircraft-destroyed-versus-damaged-separated"},
+    "canadaRCAFDieppe": {"title":"Royal Canadian Air Force (Canada.ca), In the skies above: Dieppe 19 August 1942","url":"https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/08/in-the-skies-above-dieppe-august-19-1942.html","class":"official-Canadian-military-retrospective; aircraft-loss-records-acknowledged-debated"},
+    "nationalWWIISchweinfurt": {"title":"National WWII Museum, Black Thursday: 14 October 1943, using German archival fighter-loss records","url":"https://www.nationalww2museum.org/war/articles/black-thursday-october-14-1943-second-schweinfurt-bombing-raid","class":"secondary-museum-narrative-with-differing-German-categories-destroyed-written-off-and-damaged"},
+    "usafMuseumSchweinfurt": {"title":"USAF National Museum, Black Thursday: 291 dispatched and 60 lost, 14 October 1943","url":"https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519661/black-thursday-schweinfurt-october-14-1943/","class":"official-USAF-retrospective-mission-totals-not-a-German-loss-ledger"},
     "soviet16AirHistory1944": {"title":"History of the Soviet 16th Air Army, chapter 3: Bobruisk–Warsaw operations, original battle-log-based narrative","url":"https://militera.lib.ru/h/16va/03.html","class":"secondary-Soviet-unit-history-published-numeric-operational-returns; claims-not-confirmed-German-losses"},
     "soviet16AirHeadquartersPrimary": {"title":"16th Air Army headquarters report to Red Army Air Forces: June 1944 operations, dated 22 July 1944, Fund 368 / inventory 207698s / file 10","url":"https://ru.wikisource.org/wiki/Сборник_боевых_документов/26/33","class":"original-1944-Soviet-headquarters-document-excerpt-1956-reprint; operational-context-not-full-numeric-loss-ledger"},
     "navyNormandyGermanDaily": {"title":"U.S. Navy NHHC, The GAF and the Invasion of Normandy, German-source operational totals 6 June–1 July and 6–13 June","url":"https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/gaf-invasion-normandy.html","class":"U.S.-Navy-official-postwar-German-source-translation; source-headline-disagrees-with-category-sum-by-ten-sorties"},
@@ -1131,6 +1135,112 @@ window.GrandAirWarV77Campaigns=Object.freeze({
                       "caution": "RAF figure is 'over 900' threshold, German 600 is the recorded Bf 109 number. These are fighter-category operational losses, not all RAF/Luftwaffe aircraft losses, and should not be summed with all-aircraft totals."
               }
       ],
+      "opponentReturnSeries": {
+              "title": "1947 Parliamentary account: RAF claims vs German archival airframe losses",
+              "quality": "matched-claim-versus-actual-not-bilateral-own-losses",
+              "sourceId": "hansard1947",
+              "periods": [
+                      {
+                              "start": "1940-07-10",
+                              "end": "1940-08-07",
+                              "rafClaim": 188,
+                              "germanDestroyed": 192,
+                              "germanDamaged": 77,
+                              "sourceId": "hansard1947"
+                      },
+                      {
+                              "start": "1940-08-08",
+                              "end": "1940-08-23",
+                              "rafClaim": 755,
+                              "germanDestroyed": 430,
+                              "germanDamaged": 127,
+                              "sourceId": "hansard1947"
+                      },
+                      {
+                              "start": "1940-08-24",
+                              "end": "1940-09-06",
+                              "rafClaim": 643,
+                              "germanDestroyed": 378,
+                              "germanDamaged": 127,
+                              "sourceId": "hansard1947"
+                      },
+                      {
+                              "start": "1940-09-07",
+                              "end": "1940-09-30",
+                              "rafClaim": 846,
+                              "germanDestroyed": 435,
+                              "germanDamaged": 163,
+                              "sourceId": "hansard1947"
+                      },
+                      {
+                              "start": "1940-10-01",
+                              "end": "1940-10-31",
+                              "rafClaim": 260,
+                              "germanDestroyed": 325,
+                              "germanDamaged": 163,
+                              "sourceId": "hansard1947"
+                      }
+              ],
+              "days": [
+                      {
+                              "date": "1940-08-15",
+                              "rafClaim": 183,
+                              "germanDestroyed": 76,
+                              "germanDamaged": 9,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      },
+                      {
+                              "date": "1940-08-18",
+                              "rafClaim": 155,
+                              "germanDestroyed": 71,
+                              "germanDamaged": 23,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      },
+                      {
+                              "date": "1940-08-31",
+                              "rafClaim": 94,
+                              "germanDestroyed": 39,
+                              "germanDamaged": 14,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      },
+                      {
+                              "date": "1940-09-02",
+                              "rafClaim": 66,
+                              "germanDestroyed": 34,
+                              "germanDamaged": 12,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      },
+                      {
+                              "date": "1940-09-07",
+                              "rafClaim": 100,
+                              "germanDestroyed": 40,
+                              "germanDamaged": 13,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      },
+                      {
+                              "date": "1940-09-15",
+                              "rafClaim": 185,
+                              "germanDestroyed": 56,
+                              "germanDamaged": 21,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      },
+                      {
+                              "date": "1940-09-27",
+                              "rafClaim": 153,
+                              "germanDestroyed": 55,
+                              "germanDamaged": 12,
+                              "sourceId": "hansard1947",
+                              "scope": "Official 1947 UK Parliamentary comparison of RAF wartime aircraft destruction CLAIMS versus recorded German aircraft destroyed/damaged; these are NOT independent RAF actual aircraft losses."
+                      }
+              ],
+              "explanation": "RAF claims of German aircraft destroyed are NOT British own losses. The Hansard printed phase rows sum to 1,760 German destroyed and 657 damaged, whereas the OFFICIAL TOTAL row reports 1,733 destroyed and 643 damaged; discrepancies of +27/+14 remain unresolved and the Atlas does not silently force the rows to match the totals. RAF claims sum exactly to 2,692. Never add phase counts to same-day counts, which are subsets."
+      },
       "moments": [
         {
           "date": "1940-07-10",
@@ -1516,9 +1626,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "On 19 August RAF Fighter Command and other commands flew intensive missions over Dieppe.",
       "consequence": "The raid failed, but provided lessons for later amphibious operations; do not equate sorties with aircraft strength.",
       "sources": [
-        "raf1942"
+        "raf1942", "canadaDieppeOfficial", "canadaRCAFDieppe"
       ],
       "facts": [
+        {"label":"German aircraft confirmed destroyed, Dieppe air battle","value":48,"unit":"German aircraft destroyed","scope":"19 August 1942, same day as Operation Jubilee, German loss total determined from captured German records in Canada's official Army historical account. NOT RAF claims or 48 casualties.","sourceId":"canadaDieppeOfficial","date":"1942-08-19","type":"official-postwar-German-own-destroyed","side":"Axis","measure":"losses"},
+        {"label":"German aircraft damaged, Dieppe air battle","value":24,"unit":"German aircraft damaged","scope":"19 August 1942, separate category from 48 aircraft destroyed; same event and German archival-source population; must not be presented as 72 destroyed.","sourceId":"canadaDieppeOfficial","date":"1942-08-19","type":"official-postwar-German-own-damaged","side":"Axis","measure":"damage"},
         {
           "label": "Allied sorties · 19 August",
           "value": 2614,
@@ -2017,6 +2129,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"label":"German fighters destroyed according to German wartime records, 14 October","value":31,"unit":"Luftwaffe fighters destroyed","scope":"14 October 1943 Schweinfurt (Black Thursday); National WWII Museum's retrospective use of German loss records: 31 fighters destroyed, with 12 separately written off and 34 damaged. NOT 31 + 12 + 34 aircraft confirmed destroyed, and not the US bomber gunner claims.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"secondary-German-loss-destroyed","side":"Axis","measure":"losses"},
+        {"label":"Additional German fighters written off, 14 October","value":12,"unit":"Luftwaffe fighters written off","scope":"14 October 1943; 12 German aircraft separately described as written off by museum author. Different loss-status category from 31 destroyed and 34 damaged; original German serial list not independently audited.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"secondary-German-loss-written-off","side":"Axis","measure":"writeoffs"},
+        {"label":"German fighters damaged, 14 October","value":34,"unit":"Luftwaffe fighters damaged","scope":"14 October 1943, National WWII Museum reconstruction of German records, damage category, NOT destroyed; separate from 31 destroyed and 12 written off.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"secondary-German-loss-damaged","side":"Axis","measure":"damage"},
+        {"label":"USAAF bomber gunner claims of German fighters, 14 October","value":186,"unit":"claimed German fighters shot down","scope":"14 October 1943 USAAF bomber gunners' combat claims; not confirmed losses. German historical museum record lists 31 destroyed plus 12 written off, separate accounting definitions.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"claims-not-verified-opponent-losses","side":"Allies","measure":"claims"},
         {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
         {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
         {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday; one USAF Museum account says 291 dispatched, another 251 'on the mission' (different counting population, unreconciled); not 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
