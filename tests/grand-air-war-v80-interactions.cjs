@@ -205,6 +205,12 @@ app.choose("bigweek",false);
 assert.ok(element("dossier-facts").innerHTML.includes("262")&&element("dossier-facts").innerHTML.includes("357"),"Big Week two-sided fighter and bomber losses not visible");
 app.chooseMoment("britain","1940-08-18",51.15,0.5,"The Hardest Day: RAF/FAA and Luftwaffe suffer heavy airframe losses");
 assert.ok(element("moment-detail").innerHTML.includes('data-event-evidence-status="both-sides-same-date"'),"18 August losses not tied to the researched day");
+assert.ok(element("dataset-summary").innerHTML.includes("16 / 20"),"Atlas overview must show honest paired campaign coverage");
+assert.ok(element("dataset-summary").innerHTML.includes("10 / 83"),"Atlas overview must show actual same-day two-sided evidence rather than 83 complete paired records");
+app.choose("norway",false);
+assert.ok(element("campaign-list").innerHTML.includes("BOTH SIDES: source figures"),"Campaign list does not distinguish bilateral coverage");
+app.choose("berlin",false);
+assert.ok(element("campaign-list").innerHTML.includes("OPPOSING DATA GAP"),"Campaign list does not explain missing counterpart data");
 console.log("PASS bilateral campaign/event user journeys: "+bilateralCamp+" campaign statuses and "+bilateralEvent+" event evidence dossiers");
 
 console.log("PASS v8 controller interaction matrix: "+matrix+" region/search/month/visibility combinations, 9 zoom levels, event/source drill-down, fit-map, "+lossCases+" German loss filters and "+forceCases+" Allied population filters");
