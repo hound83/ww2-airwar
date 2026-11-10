@@ -22,7 +22,7 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,127,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,135,"campaign quantities need an updated source-count explanation");
 assert.equal(allEvents.length,82,"campaign event count should be explicit and reviewed");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
@@ -192,6 +192,57 @@ assert.equal(naval.find(f=>f.value===1683)?.date,"1944-06-13");
 assert.equal(3568+9151+1101+153,13973,"German published category arithmetic changed; verify the source's known 10-sortie discrepancy");
 assert.ok(naval.filter(f=>[3568,9151,1101,153].includes(f.value)).every(f=>f.scope.includes("discrepancy of 10")),"published German source headcount disagreement must stay visible");
 assert.ok(naval.every(f=>f.sourceId==="navyNormandyGermanDaily"&&f.unit.includes("sorties")),"sorties may not be described as aircraft strength");
+
+
+/* Reciprocal-evidence system: every campaign, every event, every source count. */
+const validMetrics=new Set(["strength","losses","operations","claims","other"]);
+assert.equal(D.campaigns.length,20);
+let missingSides=0,completeSideCoverage=0,eventCount=0,sameDateTwoSideLosses=0;
+for(const camp of D.campaigns){
+ assert.ok(Array.isArray(camp.opposingSides)&&camp.opposingSides.length>=2,camp.id+" must enumerate all named belligerent air forces");
+ const ids=new Set(camp.opposingSides.map(s=>s.id));
+ assert.equal(ids.size,camp.opposingSides.length,camp.id+" duplicated force populations");
+ const seen=new Set();
+ for(const f of camp.facts){
+  assert.ok(ids.has(f.subjectSide),camp.id+" unassigned/invalid belligerent for "+f.label);
+  assert.ok(validMetrics.has(f.metricClass),camp.id+" unknown evidence kind");
+  assert.ok(f.evidenceKey&&!seen.has(f.evidenceKey),camp.id+" duplicate evidence identifier "+f.evidenceKey);
+  seen.add(f.evidenceKey);
+  assert.ok(D.sources[f.sourceId]?.url?.startsWith("https://"),camp.id+" reciprocal observation lacks source");
+  if(f.metricClass==="claims")assert.ok(/claim|estimate/i.test(f.label+" "+f.type),camp.id+" claims wrongly assigned");
+ }
+ const populated=camp.opposingSides.filter(s=>camp.facts.some(f=>f.subjectSide===s.id)).length;
+ missingSides+=camp.opposingSides.length-populated;
+ if(populated===camp.opposingSides.length)completeSideCoverage++;
+ for(const e of camp.moments){
+  eventCount++;
+  assert.match(e.date,/^\\d{4}-\\d{2}-\\d{2}$/);
+  const exact=camp.facts.filter(f=>f.date===e.date && !f.period);
+  const two=camp.opposingSides.filter(s=>exact.some(f=>f.subjectSide===s.id&&f.metricClass==="losses")).length;
+  if(two>=2)sameDateTwoSideLosses++;
+  assert.ok(!exact.some(f=>f.period),camp.id+" period estimate was treated as event-day fact");
+ }
+}
+assert.equal(eventCount,82,"all events must receive an explicit source-coverage result");
+assert.ok(missingSides>0,"cannot claim every belligerent already has audited figures");
+assert.ok(completeSideCoverage>0,"at least some campaigns have evidence for multiple forces");
+const dieppe=D.campaigns.find(c=>c.id==="dieppe");
+assert.equal(dieppe.facts.find(f=>f.value===48).subjectSide,"german");
+assert.equal(dieppe.facts.find(f=>f.value===24).metricClass,"losses");
+assert.equal(dieppe.facts.find(f=>f.value===91).metricClass,"claims");
+assert.equal(dieppe.facts.find(f=>f.value===91).subjectSide,"german");
+assert.ok(dieppe.facts.find(f=>f.value===48).scope.includes("NOT include the additional 24"),"German destroyed and damaged must not be conflated");
+assert.ok(sameDateTwoSideLosses>=2,"Dieppe and Bodenplatte must expose same-day bilateral loss observations");
+const mg=D.campaigns.find(c=>c.id==="marketgarden");
+for(const num of [153,1265,87]){
+ const f=mg.facts.find(x=>x.value===num);
+ assert.ok(f&&f.subjectSide==="allied"&&f.period&&!f.date.startsWith("1944-09-20"),"Market Garden period aggregate improperly assigned to one day");
+}
+const bw=D.campaigns.find(c=>c.id==="bigweek");
+for(const num of [33.3,20]){
+ const f=bw.facts.find(x=>x.value===num);
+ assert.ok(f&&f.subjectSide==="german"&&f.unit.includes("%")&&f.type.includes("approximate"),"Big Week fighter/pilot fraction improperly treated as absolute aircraft count");
+}
 
 const malta=D.campaigns.find(c=>c.id==="malta");
 assert.ok(malta.chapters.find(c=>c.id==="crisis").limits.includes("HMS Eagle"),"documented RAF/IWM carrier disagreement must remain visible");
