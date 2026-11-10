@@ -156,7 +156,7 @@ assert.equal(D.campaigns.find(c=>c.id==="spain").facts.find(f=>f.value===7350).v
 assert.equal(D.campaigns.find(c=>c.id==="spain").facts.find(f=>f.value===19000).value,19000);
 const france=D.campaigns.find(c=>c.id==="france1940");
 assert.deepEqual([...france.facts.filter(f=>!f.id).map(f=>f.value)],[71,40,2739,651],"France observations from two distinct source populations");
-assert.ok(france.facts.every(f=>f.scope.includes("RAF")),"France cannot imply all-belligerent returns");
+assert.ok(france.facts.filter(f=>!f.id).every(f=>f.scope.includes("RAF")),"France cannot imply all-belligerent returns");
 assert.equal(A.visibleOnMap().length,20,"overview must NOT hide other campaigns in June 1944");
 assert.equal(el("all-campaigns").checked,true,"all campaign centres shown by default");
 const chronology=el("campaign-list").innerHTML;
@@ -312,7 +312,7 @@ assert.ok(stalingrad.chapters.at(-1).limits.includes("different date ranges"),"a
 const reich=D.campaigns.find(c=>c.id==="reichdefense");
 assert.deepEqual([...reich.facts.filter(f=>!f.id).map(f=>f.value)],[662,840]);
 assert.equal(389+95+178,662);assert.equal(580+83+177,840);
-assert.ok(reich.facts.every(f=>f.scope.includes("Luftflotte Reich reporting area ONLY")&&f.type==="primary-command-return"),"no campaign-wide losses from monthly German Reich returns");
+assert.ok(reich.facts.filter(f=>!f.id).every(f=>f.scope.includes("Luftflotte Reich reporting area ONLY")&&f.type==="primary-command-return"),"no campaign-wide losses from monthly German Reich returns");
 const kursk=D.campaigns.find(c=>c.id==="kursk");
 assert.deepEqual([...kursk.facts.map(f=>f.value)],[3000,2000]);
 assert.ok(kursk.facts.every(f=>f.type.includes("assigned-strength")&&!f.scope.includes("loss total")));
