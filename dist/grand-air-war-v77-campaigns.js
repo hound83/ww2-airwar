@@ -2114,7 +2114,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "High bomber losses accelerated pressure for long-range escort and changing fighter employment.",
       "consequence": "Two high-loss missions two months apart helped drive USAAF planning toward adequate long-range escort. These are not continuous August–October daily operations, and the August/October counts must retain separate missions.",
       "sources": [
-        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943"
+        "usafSchweinfurt1943", "usafSchweinfurtOctober", "usafSchweinfurtOctober251", "raf1943", "nationalWWIISchweinfurt", "usafMuseumSchweinfurt"
       ],
       "chapters": [
         {
