@@ -260,7 +260,7 @@ function renderTime(){
 /* A cross-side audit is visible for EVERY campaign and EVERY dated event.
    It never infers reciprocal aircraft losses from claims, differing windows or unknown unit coverage. */
 function directEventFacts(c,date){
- return (c.facts||[]).filter(f=>f.date===date && /^\d{4}-\d{2}-\d{2}$/.test(f.date));
+ return (c.facts||[]).filter(f=>f.date===date && /^\d{4}-\d{2}-\d{2}$/.test(f.date) && !f.period);
 }
 function bilateralEvidenceState(c,date){
  const own=directEventFacts(c,date).filter(f=>f.measure==="losses"&&f.side&&!(f.type||"").includes("claims"));
