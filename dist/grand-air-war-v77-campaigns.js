@@ -2,6 +2,7 @@
 window.GrandAirWarV77Campaigns=Object.freeze({
   "version": "7.7",
   "sources": {
+    "rafMuseumHardestDay": {"title":"RAF Museum, The Hardest Day: 18 August 1940, RAF and Fleet Air Arm 68 aircraft lost, 69 German destroyed or damaged beyond repair","url":"https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-hardest-day/","class":"official-RAF-museum-retrospective; German-aircraft-writeoff-definition-differs-from-1947-Parliament-source"},
     "canadaDieppeOfficial": {"title":"Canadian Army official historical summary, Dieppe operation: German archival aircraft losses on 19 August 1942","url":"https://www.ibiblio.org/hyperwar/UN/Canada/CA/OpSumm/OpSumm-5.html","class":"official-Canadian-postwar-historical-summary-captured-German-loss-documents; aircraft-destroyed-versus-damaged-separated"},
     "canadaRCAFDieppe": {"title":"Royal Canadian Air Force (Canada.ca), In the skies above: Dieppe 19 August 1942","url":"https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/08/in-the-skies-above-dieppe-august-19-1942.html","class":"official-Canadian-military-retrospective; aircraft-loss-records-acknowledged-debated"},
     "nationalWWIISchweinfurt": {"title":"National WWII Museum, Black Thursday: 14 October 1943, using German archival fighter-loss records","url":"https://www.nationalww2museum.org/war/articles/black-thursday-october-14-1943-second-schweinfurt-bombing-raid","class":"secondary-museum-narrative-with-differing-German-categories-destroyed-written-off-and-damaged"},
@@ -1004,7 +1005,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "raf1940",
         "rafSealion",
         "rafBritainPhases",
-        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz", "rafBoBLogistics"
+        "hansard1947", "rafBritainChannel", "rafBritainAirfields", "rafBritainBlitz", "rafBoBLogistics", "rafMuseumHardestDay"
       ],
       "chapters": [
         {
@@ -1054,6 +1055,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
+        {"label":"RAF and Fleet Air Arm aircraft lost on the Hardest Day","value":68,"unit":"aircraft","side":"Allies","measure":"losses","scope":"18 August 1940; RAF + Fleet Air Arm together; 31 of 68 were destroyed in air combat, a SUBSET; excludes aircraft merely damaged. This is not Fighter Command-only July–October losses.","sourceId":"rafMuseumHardestDay","date":"1940-08-18","type":"official-museum-retrospective-aircraft-lost"},
+        {"label":"German aircraft destroyed or damaged beyond repair on the Hardest Day","value":69,"unit":"aircraft","side":"Axis","measure":"losses","scope":"18 August 1940; Luftwaffe aircraft destroyed OR beyond-repair damaged under RAF Museum's retrospective write-off definition. The 1947 Hansard German return for the same day separately records 71 destroyed and 23 damaged: different reporting and categorization; never combine or silently choose a corrected single number.","sourceId":"rafMuseumHardestDay","date":"1940-08-18","type":"official-museum-retrospective-german-writeoffs"},
         {"id":"raf-fc-strength-11aug","side":"Allies","measure":"strength","label":"RAF Fighter Command single-engine fighters on strength, 11 August","value":1095,"unit":"Hurricanes and Spitfires on squadron strength","scope":"11 August 1940; Fighter Command only; not all RAF flying units, not a measure of aircraft ready to take off","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-retrospective-on-strength"},
         {"id":"raf-fc-serviceable-11aug","side":"Allies","measure":"serviceable","label":"RAF Fighter Command serviceable single-engine fighters, 11 August","value":990,"unit":"serviceable Hurricanes and Spitfires","scope":"11 August 1940; Fighter Command order-of-battle serviceability column; does not equal aircraft airborne or pilot availability; other historians use narrower immediately-ready definitions","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-retrospective-serviceable"},
         {"id":"raf-hurricanes-serviceable-11aug","side":"Allies","measure":"serviceable-subset","label":"RAF serviceable Hurricanes within 990, 11 August","value":656,"unit":"serviceable Hurricanes","scope":"Fighter Command 11 August 1940; SUBSET of 990 total serviceable Hurricanes and Spitfires; do not add to total","sourceId":"rafBoBLogistics","date":"1940-08-11","type":"recorded-subset"},
@@ -1272,6 +1275,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds": ["rafBritainAirfields", "rafBritainPhases"],
           "confidence": "RAF Museum phase-three exhibition; no all-side daily loss figures attached"
         },
+        {"date":"1940-08-18","title":"The Hardest Day: intense airfield attacks and reciprocal aircraft losses","place":"Southern England RAF fighter airfields","lat":51.3,"lng":0.12,"summary":"German attacks against RAF sector airfields and fierce British interceptions made 18 August one of the most costly days of the battle. RAF Museum records 68 RAF and Fleet Air Arm aircraft lost, of which 31 were in air combat, and 69 German aircraft destroyed or damaged beyond repair. The 1947 Parliament table gives 155 wartime RAF claims versus German returns of 71 destroyed and 23 damaged: different reporting categories, not additive totals.","units":"RAF Fighter Command, Fleet Air Arm where included in museum loss count; attacking Luftwaffe formations. The comparison spans different military-service and write-off definitions.","outcome":"The intensity of attack and defense demonstrated the immense aircraft and replacement pressure. Matching loss-population definitions still requires archival reconciliation.","sourceIds":["rafMuseumHardestDay","hansard1947"],"confidence":"Official RAF Museum retrospective and postwar Parliamentary statement; German loss definitions conflict and remain separately reported"},
         {
           "date": "1940-09-07", "title": "Major daylight attack on London docks opens the Blitz",
           "place": "London docks", "lat": 51.51, "lng": -0.03,
