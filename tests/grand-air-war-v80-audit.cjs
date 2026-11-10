@@ -211,6 +211,16 @@ assert.deepEqual([...schweinfurt.facts.map(f=>f.value)],[31,12,34,186,376,60,291
 assert.ok(schweinfurt.facts.filter(f=>f.value===60).every(f=>f.type==="recorded-subset"),"60 is a subset, not another dispatched total");
 assert.ok(schweinfurt.chapters.find(ch=>ch.id==="october").limits.includes("251 B-17s")&&schweinfurt.chapters.find(ch=>ch.id==="october").sourceIds.includes("usafSchweinfurtOctober251"),"official 251-on-mission versus 291-dispatched divergence must be visible and sourced");
 
+const pairedComparisonCampaigns=D.campaigns.filter(x=>x.comparisons?.length);
+assert.equal(pairedComparisonCampaigns.length,11,"11 campaigns now have source-linked cross-side quantitative comparisons");
+assert.equal(pairedComparisonCampaigns.reduce((s,x)=>s+x.comparisons.length,0),14,"14 comparison studies expected");
+for(const campaign of D.campaigns)for(const comparison of campaign.comparisons||[]){
+ assert.ok(comparison.caution.length>80&&comparison.quality&&comparison.measure,campaign.id+" study missing comparability warning");
+ for(const row of comparison.rows){
+  const found=row.factLabel?campaign.facts.find(f=>f.label===row.factLabel):campaign.facts.find(f=>f.id===row.factId);
+  assert.ok(found&&D.sources[found.sourceId]?.url?.startsWith("https://"),campaign.id+" comparison lost source");
+ }
+}
 const boB=D.campaigns.find(x=>x.id==="britain");
 const hansard=boB.opponentReturnSeries;
 assert.equal(hansard.periods.length,5);
