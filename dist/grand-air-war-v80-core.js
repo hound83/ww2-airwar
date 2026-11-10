@@ -26,8 +26,9 @@ const active=c=>c.start<=state.month&&c.end>=state.month;
 // Include researched phase names and dated operations, without treating the
 // free-text search as a license to merge numerical reporting populations.
 const searchable=c=>[c.name,c.objective,c.turningPoint,c.consequence,c.participants.join(" "),
- ...(c.chapters||[]).flatMap(ch=>[ch.title,ch.location,ch.situation,ch.airRole,ch.change,ch.limits]),
- ...c.moments.flatMap(e=>[e.title,e.place,e.summary||"",e.units||"",e.outcome||""])].join(" ").toLowerCase();
+ ...(c.story?.introduction||[]),c.story?.question||"",
+ ...(c.chapters||[]).flatMap(ch=>[ch.title,ch.location,ch.situation,ch.airRole,ch.change,ch.limits,...(ch.story||[]),ch.axis||""]),
+ ...c.moments.flatMap(e=>[e.title,e.place,e.summary||"",e.airAction||"",e.opposingView||"",e.units||"",e.outcome||""])].join(" ").toLowerCase();
 const textMatch=(haystack,term)=>term.length<=3?haystack.split(/[^a-z0-9]+/).includes(term):haystack.includes(term);
 const matches=c=>(state.theater==="all"||c.theater===state.theater)&&(!state.search.trim()||textMatch(searchable(c),state.search.toLowerCase().trim()));
 const matching=()=>D.campaigns.filter(matches);
@@ -70,10 +71,17 @@ function selectMoment(cId,date,lat,lng,title){
  if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
 }
 function selectChapter(id){
+ const c=D.campaigns.find(x=>x.id===state.selected),ch=c?.chapters?.find(x=>x.id===id);
+ if(c?.story&&ch){cancelPlay();state.month=ch.start.slice(0,7);renderTime();}
  state.selectedChapter=id;
  state.selectedMoment=null;
  renderMoments();
  $("moment-list").scrollTop=0;
+ const points=c?.moments.filter(e=>ch?.start<=e.date&&e.date<=ch?.end)||[];
+ if(c?.story&&points.length&&state.map?.flyToBounds&&window.L){
+  state.map.flyToBounds(window.L.latLngBounds(points.map(e=>[e.lat,e.lng])).pad(.6),{maxZoom:8,duration:.5});
+ }
+ drawMap();
 }
 function makeIcon(text,kind,selected,inactive=false){
  return window.L.divIcon({
@@ -248,6 +256,33 @@ function drawMap(){
   }
   state.mapMarkers.addLayer(mk);
  }
+ // At local zoom, Normandy's selected chapter becomes a map-readable story.
+ // Points denote approximate operational areas, not WWII fronts, sorties or loss sites.
+ const selectedCampaign=D.campaigns.find(c=>c.id===state.selected);
+ const chosenPhase=selectedCampaign?.chapters?.find(ch=>ch.id===state.selectedChapter);
+ if(selectedCampaign?.story&&chosenPhase&&state.map.getZoom()>=6){
+  const episodes=selectedCampaign.moments.filter(e=>chosenPhase.start<=e.date&&e.date<=chosenPhase.end);
+  const clusters=[];
+  for(const episode of episodes){
+   const xy=state.map.latLngToContainerPoint([episode.lat,episode.lng]);
+   const group=clusters.find(g=>{const p=state.map.latLngToContainerPoint([g[0].lat,g[0].lng]);return Math.hypot(xy.x-p.x,xy.y-p.y)<31;});
+   if(group)group.push(episode);else clusters.push([episode]);
+  }
+  for(const group of clusters){
+   const focused=group.some(e=>state.selectedMoment===e.date+"|"+e.title);
+   const icon=L.divIcon({className:"gaw-icon",html:'<span class="story-map-point'+(focused?' selected':'')+'">'+(group.length>1?group.length:'●')+'</span>',iconSize:[24,24],iconAnchor:[12,12]});
+   const mk=L.marker([group[0].lat,group[0].lng],{icon,keyboard:true,title:group.length>1?group.length+" campaign episodes":group[0].title,zIndexOffset:focused?1100:800});
+   if(group.length===1){const e=group[0];mk.on("click",()=>selectMoment(selectedCampaign.id,e.date,e.lat,e.lng,e.title));mk.bindTooltip(e.date+" · "+e.title);}
+   else{
+    mk.bindPopup('<div class="cluster-choices"><strong>'+group.length+' nearby historical episodes</strong>'+group.map(e=>'<button type="button" data-story-date="'+esc(e.date)+'" data-story-title="'+esc(e.title)+'">'+esc(e.date+' · '+e.title)+'</button>').join("")+'</div>',{maxWidth:310});
+    mk.on("popupopen",ev=>ev.popup.getElement().querySelectorAll("[data-story-date]").forEach(b=>b.addEventListener("click",()=>{
+     const e=group.find(x=>x.date===b.dataset.storyDate&&x.title===b.dataset.storyTitle);
+     if(e){state.map.closePopup();selectMoment(selectedCampaign.id,e.date,e.lat,e.lng,e.title);}
+    })));
+   }
+   state.mapMarkers.addLayer(mk);
+  }
+ }
 }
 function renderTime(){
  $("date-slider").value=String(monthIdx(state.month));$("date-display").textContent=mLabel(state.month);
@@ -354,7 +389,7 @@ function renderDossier(){
 function renderCampaignList(){
  const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
- $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase((c.chapters||[]).length,"phase","phases")+' · '+countPhrase(c.moments.filter(e=>e.summary).length,"researched event","researched events")+' · '+countPhrase(c.facts.length,"source-scoped figure","source-scoped figures")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
+ $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase((c.chapters||[]).length,"phase","phases")+' · '+countPhrase(c.moments.filter(e=>e.summary).length,c.story?"researched episode":"researched event",c.story?"researched episodes":"researched events")+' · '+countPhrase(c.facts.length,"source-scoped figure","source-scoped figures")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
  $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
 }
 function renderMoments(){
@@ -365,7 +400,14 @@ function renderMoments(){
  const chosenChapter=chapters.find(ch=>ch.id===state.selectedChapter);
  const scoped=chosenChapter?all.filter(e=>chosenChapter.start<=e.date&&e.date<=chosenChapter.end):all;
  const researched=all.filter(e=>e.summary).length;
- $("moment-count").textContent=c?(chapters.length?countPhrase(chapters.length,"phase","phases")+" · ":"")+countPhrase(researched,"researched event","researched events")+(all.length-researched?" · "+countPhrase(all.length-researched,"calendar marker","calendar markers"):""):"No campaign selected";
+ const storyHost=$("campaign-story");
+ const story=c?.story;
+ $("guide-intro").textContent=story?"Follow the connected chapters, then inspect the dated operations. Choosing a Normandy chapter aligns the map month and shows its approximate episode locations; the time slider remains available for independent exploration.":"First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.";
+ $("campaigns").classList?.toggle("benchmark-story-mode",Boolean(story));
+ storyHost.hidden=!story;
+ if(story){storyHost.innerHTML='<span class="eyebrow">NORMANDY 1944 · HISTORICAL STORY</span><h3>'+esc(story.question)+'</h3>'+story.introduction.map(p=>'<p>'+esc(p)+'</p>').join("")+'<div class="story-credentials"><strong>'+chapters.length+' chapters · '+researched+' researched episodes</strong><span>Official Allied, Canadian and German-source histories; uncertainty kept visible</span><a href="'+esc(story.notebook)+'">Explore the 16-scene forward-airfield notebook ↗</a></div>';}
+ else storyHost.innerHTML='';
+ $("moment-count").textContent=c?(chapters.length?countPhrase(chapters.length,story?"chapter":"phase",story?"chapters":"phases")+" · ":"")+countPhrase(researched,story?"episode":"researched event",story?"episodes":"researched events")+(story?" ("+all.filter(e=>e.dating==="period-anchor").length+" period anchors)":"")+(all.length-researched?" · "+countPhrase(all.length-researched,"calendar marker","calendar markers"):""):"No campaign selected";
  $("chapter-coverage").textContent=chapters.length?"Source-backed historical progression":"Phase breakdown not yet source-audited";
  $("chapter-list").innerHTML=!c?'<div class="empty">Select a campaign above to read its progression.</div>':chapters.length?chapters.map((ch,i)=>{
   const inPhase=all.filter(e=>ch.start<=e.date&&e.date<=ch.end),n=inPhase.filter(e=>e.summary).length,markers=inPhase.length-n,selected=ch.id===state.selectedChapter;
@@ -374,7 +416,11 @@ function renderMoments(){
  $("chapter-list").querySelectorAll("[data-chapter]").forEach(b=>b.addEventListener("click",()=>selectChapter(b.dataset.chapter)));
  const field=(label,value)=>'<div class="chapter-field"><h4>'+label+'</h4><p>'+esc(value)+'</p></div>';
  if(chosenChapter){
-  $("chapter-detail").innerHTML='<div class="chapter-detail-top"><span class="eyebrow">'+esc(chosenChapter.start)+' → '+esc(chosenChapter.end)+' · '+esc(chosenChapter.location)+'</span><h3>'+esc(chosenChapter.title)+'</h3></div>'+field('What was happening on the ground',chosenChapter.situation)+field('What aircraft actually did',chosenChapter.airRole)+field('Why this phase matters',chosenChapter.change)+'<p class="chapter-limit"><strong>Evidence boundary:</strong> '+esc(chosenChapter.limits)+'</p><div class="dossier-links">'+chosenChapter.sourceIds.map(id=>sourceLink(id)).join("")+'</div>';
+  const currentIndex=chapters.indexOf(chosenChapter),nextChapter=chapters[currentIndex+1],prevChapter=chapters[currentIndex-1];
+  const longform=chosenChapter.story?'<div class="chapter-longform"><span class="eyebrow">THE HISTORICAL NARRATIVE</span>'+chosenChapter.story.map(p=>'<p>'+esc(p)+'</p>').join("")+'</div>'+field('The German perspective',chosenChapter.axis)+field('How this leads to the next chapter',chosenChapter.bridge):'';
+  const navigation=story?'<div class="chapter-navigation">'+(prevChapter?'<button type="button" class="subtle" data-read-chapter="'+esc(prevChapter.id)+'">← Previous: '+esc(prevChapter.title)+'</button>':'<span>Start of the Normandy account</span>')+(nextChapter?'<button type="button" class="subtle" data-read-chapter="'+esc(nextChapter.id)+'">Next: '+esc(nextChapter.title)+' →</button>':'<span>End of the Normandy account</span>')+'</div>':'';
+  $("chapter-detail").innerHTML='<div class="chapter-detail-top"><span class="eyebrow">'+(story?'CHAPTER '+(currentIndex+1)+' OF '+chapters.length+' · ':'')+esc(chosenChapter.start)+' → '+esc(chosenChapter.end)+' · '+esc(chosenChapter.location)+'</span><h3>'+esc(chosenChapter.title)+'</h3></div>'+longform+field('What was happening on the ground',chosenChapter.situation)+field('What aircraft actually did',chosenChapter.airRole)+field('Why this phase matters',chosenChapter.change)+'<p class="chapter-limit"><strong>Evidence boundary:</strong> '+esc(chosenChapter.limits)+'</p><div class="dossier-links">'+chosenChapter.sourceIds.map(id=>sourceLink(id)).join("")+'</div>'+navigation;
+  $("chapter-detail").querySelectorAll("[data-read-chapter]").forEach(b=>b.addEventListener("click",()=>selectChapter(b.dataset.readChapter)));
  }else if(c){
   $("chapter-detail").innerHTML='<div class="chapter-detail-top"><span class="eyebrow">Campaign-level context · '+esc(mLabel(c.start))+' to '+esc(mLabel(c.end))+'</span><h3>What the available research establishes</h3></div>'+field('Military and air objectives',c.objective)+field('Main developments',c.turningPoint)+field('Result',c.consequence)+'<p class="chapter-limit"><strong>Coverage gap:</strong> These are campaign-wide statements. We have not established source-backed phase dates or unit-level aviation activity for each step.</p><div class="dossier-links">'+c.sources.map(id=>sourceLink(id)).join("")+'</div>';
  }else{$("chapter-detail").innerHTML='';}
@@ -382,15 +428,15 @@ function renderMoments(){
  $("moment-scope").textContent=chosenChapter?countPhrase(scopedResearch,"researched event","researched events")+(scoped.length-scopedResearch?" · "+countPhrase(scoped.length-scopedResearch,"marker","markers"):""):countPhrase(scopedResearch,"researched event","researched events")+" · partial coverage";
  $("moment-list").innerHTML=scoped.length?scoped.map(e=>{
   const selected=state.selectedMoment===e.date+"|"+e.title;
-  return '<button type="button" class="record '+(selected?'selected':'')+'" aria-current="'+selected+'" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-title="'+esc(e.title)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.place)+(e.summary?' · Detailed research':' · Date marker, not yet an air-operation dossier')+'</small></span><span class="date-tag">'+esc(e.date)+(e.date.slice(0,7)===state.month?' · MAP MONTH':'')+'</span></button>';
+  return '<button type="button" class="record '+(selected?'selected':'')+'" aria-current="'+selected+'" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-title="'+esc(e.title)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.place)+(e.dating==="period-anchor"?' · Period context (representative date)':e.summary?' · Detailed research':' · Date marker, not yet an air-operation dossier')+'</small></span><span class="date-tag">'+esc(e.date)+(e.date.slice(0,7)===state.month?' · MAP MONTH':'')+'</span></button>';
  }).join(""):'<div class="empty">No individual dated event has been researched for this phase. The source-backed phase narrative above does not imply there were no aircraft or operations.</div>';
  $("moment-list").querySelectorAll("[data-moment]").forEach(b=>b.addEventListener("click",()=>selectMoment(b.dataset.moment,b.dataset.date,Number(b.dataset.lat),Number(b.dataset.lng),b.dataset.title)));
  const chosen=scoped.find(e=>e.date+"|"+e.title===state.selectedMoment);
  $("moment-detail").hidden=!chosen;
  if(!chosen){$("moment-detail").innerHTML='';return;}
- const detail=chosen.summary?'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p><h4>Outcome and interpretation</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
+ const detail=chosen.summary?(chosen.airAction?'<h4>What happened and why</h4><p>'+esc(chosen.summary)+'</p><h4>Air operations and their limits</h4><p>'+esc(chosen.airAction)+'</p><h4>German perspective</h4><p>'+esc(chosen.opposingView)+'</p>':'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p>')+'<h4>What changed</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
  const ids=chosen.sourceIds?.length?chosen.sourceIds:c.sources;
- $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
+ $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
 }
 function lossSource(r){const s=sourceIndex[r.sourceId];return s?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">'+esc(s.short)+' · PDF page '+(r.page??"see source")+' ↗</a>':"";}
 function lossFields(){const k=state.lossOutcome==="destroyed"?"Destroyed":"Damaged";return ["enemy"+k,"otherOperational"+k,"nonOperational"+k];}

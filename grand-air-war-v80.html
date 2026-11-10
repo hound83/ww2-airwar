@@ -11,6 +11,7 @@
 <script defer src="./dist/atlas-v73-data.js"></script><script defer src="./dist/atlas-v74-data.js"></script>
 <script defer src="./dist/grand-air-war-v77-groups.js"></script>
 <script defer src="./dist/grand-air-war-v77-campaigns.js"></script>
+<script defer src="./dist/normandy-1944-story.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script defer src="./dist/grand-air-war-v80-core.js"></script>
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
@@ -40,7 +41,8 @@
 <section class="two-columns" id="campaigns">
  <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY · STEP 1</span><h2>Choose a campaign</h2></div><span id="campaign-count"></span></div><p class="event-intro">Choose a campaign to see its operational progression on the right. Dimmed campaigns are outside the map's selected month, but remain available for research.</p><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
  <article class="pane campaign-guide"><div class="pane-head"><div><span class="eyebrow">CAMPAIGN GUIDE · STEP 2</span><h2>How the campaign unfolded</h2></div><span id="moment-count"></span></div>
-  <p class="event-intro">First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.</p>
+  <p class="event-intro" id="guide-intro">First follow the operational phases. See how the ground situation and the air war changed, then open individual dated evidence. The monthly map controls are a separate time filter.</p>
+  <section id="campaign-story" class="campaign-story" hidden aria-label="Campaign historical narrative introduction"></section>
   <div class="guide-heading"><span class="eyebrow">2 · Operational phases</span><small id="chapter-coverage"></small></div>
   <div id="chapter-list" class="chapter-list" role="group" aria-label="Choose an operational campaign phase"></div>
   <article id="chapter-detail" class="chapter-detail" aria-live="polite"></article>

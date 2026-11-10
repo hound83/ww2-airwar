@@ -34,7 +34,7 @@ const L={
  marker:(location,options)=>{const m={location,options,events:{},on(k,fn){this.events[k]=fn;return this},bindPopup(){return this},bindTooltip(){return this}};markers.push(m);return m;}
 };
 const window={L},ctx=vm.createContext({window,document,console,setInterval,clearInterval});
-for(const f of ["dist/model-v3-data.js","dist/atlas-v7-data.js","dist/atlas-v71-data.js","dist/atlas-v72-data.js","dist/atlas-v73-data.js","dist/atlas-v74-data.js","dist/grand-air-war-v77-groups.js","dist/grand-air-war-v77-campaigns.js","dist/grand-air-war-v80-core.js"]){vm.runInContext(read(f),ctx,{filename:f,timeout:10000});}
+for(const f of ["dist/model-v3-data.js","dist/atlas-v7-data.js","dist/atlas-v71-data.js","dist/atlas-v72-data.js","dist/atlas-v73-data.js","dist/atlas-v74-data.js","dist/grand-air-war-v77-groups.js","dist/grand-air-war-v77-campaigns.js","dist/normandy-1944-story.js","dist/grand-air-war-v80-core.js"]){vm.runInContext(read(f),ctx,{filename:f,timeout:10000});}
 const app=window.GrandAirWarV77;
 assert.ok(app&&mapMarkerGroup,"real map and controller must initialize");
 const visibleMarkers=()=>mapMarkerGroup.layers;
@@ -112,6 +112,10 @@ assert.ok(element("dossier-facts").innerHTML.includes("over 900")&&element("doss
 app.chooseChapter("airfields");assert.ok(element("chapter-detail").innerHTML.includes("sector airfields"));
 app.choose("france1940",false);app.chooseChapter("dunkirk");assert.ok(element("chapter-detail").innerHTML.includes("2,739"));
 app.choose("normandy",false);
+assert.equal(app.campaigns.find(c=>c.id==="normandy").chapters.length,9,"Normandy benchmark chapter count");
+assert.ok(element("campaign-story").innerHTML.includes("How did the Allies"),"connected narrative not presented to reader");
+app.chooseChapter("cobra");assert.ok(element("chapter-detail").innerHTML.includes("THE HISTORICAL NARRATIVE")&&element("chapter-detail").innerHTML.includes("German perspective"),"Normandy chapter must tell a two-sided story");
+assert.ok(element("moment-list").innerHTML.includes("1944-07-25"),"Cobra bombing and breakout missing");
 assert.ok(element("dossier-facts").innerHTML.includes("11,590")&&element("dossier-facts").innerHTML.includes("319"),"Normandy Allied and Luftflotte 3 air strength evidence not both shown");
 assert.ok(element("dossier-facts").innerHTML.includes("NOT contemporaneous equivalent denominators"),"Normandy cross-period loss comparison must warn against false casualty ratios");
 app.chooseChapter("falaise");assert.ok(element("moment-list").innerHTML.includes("1944-08-19"),"Falaise phase must have a researched event");
@@ -171,7 +175,7 @@ for(const campaign of app.campaigns){
   auditedEventCount++;
  }
 }
-assert.equal(auditedEventCount,83,"each dated event must have a visible reciprocal evidence assessment");
+assert.equal(auditedEventCount,119,"each dated event must have a visible reciprocal evidence assessment");
 app.choose("britain",false);
 assert.equal((element("dossier-facts").innerHTML.match(/data-opponent-returns="britain"/g)||[]).length,1,"British Parliament wartime claim-vs-loss ledger missing");
 assert.ok(element("dossier-facts").innerHTML.includes("1,760")&&element("dossier-facts").innerHTML.includes("1,733"),"historical source inconsistency must be explicit");

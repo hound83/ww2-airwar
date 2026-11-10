@@ -176,3 +176,28 @@
 .opponent-returns th{white-space:normal}
 .opponent-returns a{overflow-wrap:anywhere}
 @media(max-width:600px){.bilateral-overview,.event-bilateral,.opponent-returns{padding:9px}.event-bilateral ul{gap:5px}}
+/* Normandy benchmark: sustained reading, not just a catalogue of observations. */
+#campaigns.benchmark-story-mode{grid-template-columns:minmax(260px,.47fr) minmax(0,1.53fr)}
+.campaign-story{position:relative;margin:18px 0 20px;padding:25px 26px 20px;border:1px solid #aa9975;border-radius:9px;background:linear-gradient(135deg,#273b3a,#15313c 58%,#192f3b);box-shadow:inset 4px 0 0 #d5bd89}
+.campaign-story[hidden]{display:none}
+.campaign-story h3{max-width:800px;font:normal clamp(23px,2.5vw,34px)/1.2 Georgia,serif;color:#f5dab0;margin:10px 0 16px}
+.campaign-story p{max-width:910px;font-size:14px;line-height:1.84;color:#e1e9df;margin:0 0 13px}
+.story-credentials{border-top:1px solid #60716b;margin-top:17px;padding-top:13px;display:flex;align-items:center;gap:9px 19px;flex-wrap:wrap;font-size:11px}
+.story-credentials strong{color:#f3d6a0}.story-credentials span{color:#bcd4d0}.story-credentials a{color:#b3eddf}
+.benchmark-story-mode .chapter-card{min-height:110px}
+.chapter-longform{padding:11px 0;border-bottom:1px solid #425f66;margin-bottom:15px}
+.chapter-longform p{font-size:14px;line-height:1.84;max-width:900px;color:#e5eae0;margin:12px 0}
+.benchmark-story-mode .chapter-field p{font-size:13px;line-height:1.82}
+.benchmark-story-mode .chapter-detail{padding:21px 23px;background:linear-gradient(160deg,#1f3d44,#172e3c)}
+.benchmark-story-mode .chapter-detail-top h3{font-size:clamp(24px,2.5vw,32px)}
+.chapter-navigation{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid #49656b;margin-top:20px;padding-top:17px}
+.chapter-navigation button{flex:1 1 180px;white-space:normal;text-align:center}
+.chapter-navigation span{color:#acc8c7;font-size:11px}
+.benchmark-story-mode #moment-list{max-height:390px}
+.benchmark-story-mode .moment-detail{padding:21px 23px}
+.benchmark-story-mode .moment-detail h3{font-size:26px}
+.benchmark-story-mode .moment-detail p{font-size:13px;line-height:1.84}
+.story-map-point{display:grid;place-items:center;width:24px;height:24px;background:#183f46;border:2px solid #edcf8f;border-radius:50%;color:#f7e4bd;font-size:13px;font-weight:800;box-shadow:0 1px 7px #0a1b20a6;cursor:pointer}
+.story-map-point.selected{background:#f0d49c;color:#132e34;border-color:#fff;box-shadow:0 0 0 3px #e2f5e4ad}
+@media(max-width:900px){#campaigns.benchmark-story-mode{grid-template-columns:1fr}.campaign-story{padding:18px}.benchmark-story-mode .chapter-detail{padding:17px}}
+@media(max-width:600px){.campaign-story h3{font-size:23px}.campaign-story p{font-size:13px}.chapter-longform p{font-size:13px}.benchmark-story-mode .moment-detail{padding:13px}.chapter-navigation{flex-direction:column}.chapter-navigation button{width:100%;flex:auto}}
