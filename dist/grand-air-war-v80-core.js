@@ -218,8 +218,22 @@ function drawMap(){
  if(!state.mapMarkers||!state.map)return;
  state.mapMarkers.clearLayers();
  const L=window.L,cs=visibleOnMap();
+ const selectedCampaign=D.campaigns.find(c=>c.id===state.selected);
+ const chosenPhase=selectedCampaign?.chapters?.find(ch=>ch.id===state.selectedChapter);
+ // At local scale, devote the chart to this chapter's historical episodes.
+ // A Europe-wide cluster placed over Normandy concealed those smaller points.
+ // Zooming out restores the normal twenty-campaign navigator.
+ const chapterMode=!!(selectedCampaign?.story&&chosenPhase&&state.map.getZoom()>=6);
+ const episodes=chapterMode?selectedCampaign.moments.filter(e=>chosenPhase.start<=e.date&&e.date<=chosenPhase.end):[];
+ if(chapterMode){
+  $("map-heading").textContent="Normandy · "+episodes.length+" chapter episodes mapped";
+  $("map-legend").textContent="Gold points = approximate episode locations; numbers group nearby events (click to choose). Zoom out to see other campaigns.";
+ }else{
+  $("map-heading").textContent=cs.length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
+  $("map-legend").innerHTML='<i class="marker-swatch campaign"></i> Numbered pins = campaign IDs; larger circles = cluster counts (click to choose)';
+ }
  // Only geographic CAMPAIGN centres here; German command losses are NOT map points.
- const pins=cs.map(c=>({c,lat:c.focus.lat,lng:c.focus.lng,index:D.campaigns.findIndex(x=>x.id===c.id)+1}));
+ const pins=chapterMode?[]:cs.map(c=>({c,lat:c.focus.lat,lng:c.focus.lng,index:D.campaigns.findIndex(x=>x.id===c.id)+1}));
  const threshold=state.map.getZoom()>=9?0:state.map.getZoom()>=7?28:43;
  const groups=[];
  for(const p of pins){
@@ -258,10 +272,7 @@ function drawMap(){
  }
  // At local zoom, Normandy's selected chapter becomes a map-readable story.
  // Points denote approximate operational areas, not WWII fronts, sorties or loss sites.
- const selectedCampaign=D.campaigns.find(c=>c.id===state.selected);
- const chosenPhase=selectedCampaign?.chapters?.find(ch=>ch.id===state.selectedChapter);
- if(selectedCampaign?.story&&chosenPhase&&state.map.getZoom()>=6){
-  const episodes=selectedCampaign.moments.filter(e=>chosenPhase.start<=e.date&&e.date<=chosenPhase.end);
+ if(chapterMode){
   const clusters=[];
   for(const episode of episodes){
    const xy=state.map.latLngToContainerPoint([episode.lat,episode.lng]);

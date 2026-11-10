@@ -141,6 +141,8 @@ const check=async()=>{
    // Earlier screenshots caught a partially animated pan and did not represent
    // the actual geographic story view that the reader sees after the move.
    await page.waitForTimeout(900);
+   assert.equal(await page.locator(".war-cluster, .war-pin").count(),0,"European campaign clusters obscure the Normandy episode view");
+   assert.match(await page.locator("#map-heading").innerText(),/Normandy.*chapter episodes mapped/,"Normandy map context is missing");
    await page.locator("#campaign-story").screenshot({path:path.join(root,"v80-qa-normandy-story-"+viewport.width+".png")});
    await page.locator("#chapter-detail").screenshot({path:path.join(root,"v80-qa-normandy-chapter-"+viewport.width+".png")});
    await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-normandy-map-"+viewport.width+".png")});
