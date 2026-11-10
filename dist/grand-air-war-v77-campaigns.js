@@ -603,6 +603,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds": ["polishHistoryPhases", "ushmmPoland", "rafPoland1939"]
         }
       ],
+      "comparisons": [{"title":"Opening air forces, 1 September 1939: not serviceability-matched","measure":"approximate aircraft facing the invasion, different classes","quality":"not-directly-comparable","rows":[{"side":"Polish Air Force, mixed/obsolete aircraft","factLabel":"Polish Air Force aircraft facing the invasion, mostly obsolete"},{"side":"Luftwaffe modern fighter/bomber subset","factLabel":"German modern fighters and bombers opposing Poland"}],"caution":"The 300 Polish aircraft and at least 1,300 German fighter/bomber aircraft are rounded, different-type opening estimates, not verified equal-scope operationally serviceable snapshots. Never infer a 4.3:1 combat advantage, losses or an actual sortie ratio."}],
       "facts": [
         {
           "label": "Polish Air Force aircraft facing the invasion, mostly obsolete",
@@ -1368,6 +1369,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds": ["raf1942"]
         }
       ],
+      "comparisons": [{"title":"April 1942: opposing aircraft lost under different cause definitions","measure":"monthly losses with different aircraft/cause populations","quality":"not-directly-comparable","rows":[{"side":"RAF aircraft destroyed on airfields","factLabel":"RAF aircraft destroyed on ground · April"},{"side":"Luftwaffe aircraft lost, all reported causes","factLabel":"Luftwaffe aircraft lost · April 1942"}],"caution":"Both 44 RAF aircraft destroyed on the ground and 45 Luftwaffe aircraft lost refer to April 1942, but the British figure is only a ground-loss category while the German figure is broader. These cannot be treated as complete reciprocal losses or a 44:45 exchange ratio; Regia Aeronautica losses are not included."}],
       "facts": [
         {
           "label": "Luftwaffe sorties against Malta · April 1942",
@@ -1632,6 +1634,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "sources": [
         "raf1942", "canadaDieppeOfficial", "canadaRCAFDieppe"
       ],
+      "comparisons": [{"title":"Dieppe, 19 August 1942: both air forces' losses","measure":"same-day own-aircraft destroyed/lost, damage shown separately","quality":"near-comparable","rows":[{"side":"RAF aircraft lost","factLabel":"RAF aircraft lost · 19 August"},{"side":"German aircraft destroyed in captured records","factLabel":"German aircraft confirmed destroyed, Dieppe air battle"},{"side":"German aircraft damaged, NOT destroyed","factLabel":"German aircraft damaged, Dieppe air battle"}],"caution":"The same-day 106 Allied aircraft lost versus 48 German aircraft destroyed is evidence from different national accounting systems. The additional 24 German aircraft damaged cannot be added as German destroyed. Some published postwar accounts question completeness of the losses."}],
       "facts": [
         {"label":"German aircraft confirmed destroyed, Dieppe air battle","value":48,"unit":"German aircraft destroyed","scope":"19 August 1942, same day as Operation Jubilee, German loss total determined from captured German records in Canada's official Army historical account. NOT RAF claims or 48 casualties.","sourceId":"canadaDieppeOfficial","date":"1942-08-19","type":"official-postwar-German-own-destroyed","side":"Axis","measure":"losses"},
         {"label":"German aircraft damaged, Dieppe air battle","value":24,"unit":"German aircraft damaged","scope":"19 August 1942, separate category from 48 aircraft destroyed; same event and German archival-source population; must not be presented as 72 destroyed.","sourceId":"canadaDieppeOfficial","date":"1942-08-19","type":"official-postwar-German-own-damaged","side":"Axis","measure":"damage"},
@@ -2057,6 +2060,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds":["usafKurskAircraft","smithsonianKursk"]
         }
       ],
+      "comparisons": [{"title":"Opening committed aircraft, July 1943: approximate formations","measure":"assigned aircraft estimates, not serviceable inventories","quality":"caution","rows":[{"side":"Named Soviet air armies","factLabel":"Aircraft assigned to named Soviet air formations"},{"side":"German Citadel attacking formations","factLabel":"German aircraft committed to Operation Citadel"}],"caution":"USAF retrospective figures of about 3,000 aircraft in the specified Soviet armies and about 2,000 German assigned for Citadel are approximations from named formations; this is not actual daily serviceability and says nothing about confirmed losses. The fighting dates and complete coverage may differ."}],
       "facts": [
         {"label":"Aircraft assigned to named Soviet air formations", "value":3000, "unit":"Soviet aircraft (approx.)", "scope":"USAF historical study estimates about 3,000 aircraft in the 2nd, 5th and 16th Soviet Air Armies and two PVO fighter divisions in Kursk sector at opening, not serviceable stock and not losses", "sourceId":"usafKurskAircraft", "date":"1943-07-05", "type":"approximate-assigned-strength"},
         {"label":"German aircraft committed to Operation Citadel", "value":2000, "unit":"German aircraft (approx.)", "scope":"USAF historical study estimates some 2,000 Luftwaffe aircraft allocated to July 1943 Citadel from eastern front formations; rounded aircraft commitment, not one-day ready strength or campaign losses", "sourceId":"usafKurskAircraft", "date":"1943-07-05", "type":"approximate-assigned-strength"}
@@ -2132,6 +2136,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds": ["usafSchweinfurtOctober", "usafSchweinfurtOctober251"]
         }
       ],
+      "comparisons": [{"title":"Black Thursday, 14 October 1943: US bomber losses vs German fighters","measure":"same-day heavy bombers versus defending fighters, with claims separate","quality":"caution","rows":[{"side":"USAAF B-17 bombers shot down","factLabel":"Bombers shot down, 14 October Schweinfurt raid"},{"side":"German fighters destroyed in German records","factLabel":"German fighters destroyed according to German wartime records, 14 October"},{"side":"USAAF gunners' fighter kills CLAIMED","factLabel":"USAAF bomber gunner claims of German fighters, 14 October"}],"caution":"60 US heavy bombers shot down and 31 German fighters destroyed cover different aircraft classes and separate source-accounting systems. Twelve more German fighters written off and 34 damaged must stay distinct. The 186 USAAF gunners' claims are not verified German losses; no exchange ratio is warranted."}],
       "facts": [
         {"label":"German fighters destroyed according to German wartime records, 14 October","value":31,"unit":"Luftwaffe fighters destroyed","scope":"14 October 1943 Schweinfurt (Black Thursday); National WWII Museum's retrospective use of German loss records: 31 fighters destroyed, with 12 separately written off and 34 damaged. NOT 31 + 12 + 34 aircraft confirmed destroyed, and not the US bomber gunner claims.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"secondary-German-loss-destroyed","side":"Axis","measure":"losses"},
         {"label":"Additional German fighters written off, 14 October","value":12,"unit":"Luftwaffe fighters written off","scope":"14 October 1943; 12 German aircraft separately described as written off by museum author. Different loss-status category from 31 destroyed and 34 damaged; original German serial list not independently audited.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"secondary-German-loss-written-off","side":"Axis","measure":"writeoffs"},
@@ -2589,6 +2594,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceIds":["usArmyBagration","italianDefenceBagration"]
         }
       ],
+      "comparisons": [{"title":"Bagration opening forces: Soviet and German assigned strength","measure":"approximate assigned aircraft at campaign opening","quality":"caution","rows":[{"side":"Soviet operation-level estimate","factLabel":"Soviet aircraft, Bagration opening force estimate"},{"side":"German operation-level estimate","factLabel":"German aircraft, Bagration opening force estimate"}],"caution":"The Soviet estimate of about 5,300 and German estimate of about 1,400 describe operation-opening assigned air forces, not proven serviceable aircraft or sorties. The Soviet 16th Air Army's 2,319 serviceable planes are a narrower unit and later date already included within wider force: never add to 5,300."}],
       "facts": [
         {"label":"16th Air Army serviceable combat aircraft before Bobruisk assault","value":2319,"unit":"serviceable combat aircraft, all listed types","scope":"24 June 1944 16th Soviet Air Army (1st Belorussian Front); total of 331 day bombers, 149 night bombers, 661 attack, 1,108 fighters, 70 reconnaissance/spotting; serviceable AIRFRAMES, not trained crews or flown sorties.","date":"1944-06-24","type":"secondary-unit-history-serviceable","side":"Soviet","measure":"serviceable","sourceId":"soviet16AirHistory1944"},
         {"label":"16th Air Army operationally ready crews","value":1846,"unit":"combat-ready crews","scope":"24 June 1944, 16th Soviet Air Army; trained/ready CREWS, not additional aircraft. 1,846 is NOT an aircraft count nor a subset necessarily identical to same-day airborne planes.","date":"1944-06-24","type":"secondary-unit-history-crew-readiness","side":"Soviet","measure":"crew-readiness","sourceId":"soviet16AirHistory1944"},
@@ -2835,6 +2841,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         "raf1945",
         "ninh", "ninhEindhoven1945"
       ],
+      "comparisons": [{"title":"Bodenplatte, 1 January 1945: aircraft destroyed/lost","measure":"same-day Allied and Luftwaffe airframe losses","quality":"caution","rows":[{"side":"Allied aircraft confirmed destroyed","factLabel":"Allied aircraft destroyed"},{"side":"Luftwaffe aircraft reported lost (approx.)","factLabel":"Luftwaffe aircraft lost"}],"caution":"Both observations refer to the same operation and day, but the Luftwaffe around-300 figure is a retrospective approximate total with disputed thresholds. Allied 84 damaged-beyond-unit-repair aircraft and Eindhoven local figures are distinct subsets/categories. Do not add them to 224 or automatically compute a kill ratio."}],
       "facts": [
         {
           "label": "Allied aircraft destroyed",
