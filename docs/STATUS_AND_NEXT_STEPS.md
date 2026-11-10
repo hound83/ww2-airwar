@@ -1,5 +1,18 @@
 # Atlas status and next work
 
+## 10 November 2026 — source-audited reciprocal loss & strength comparisons for every entry point
+
+**PR:** https://github.com/hound83/ww2-airwar/pull/21, branch `feature/atlas-bilateral-loss-evidence-all-campaigns`, based on current published `main`.
+
+- Comprehensive reciprocal-evidence UI across **all 20 historical campaigns and 83 dated events**, not a claim that all 83 now have usable opponent own-loss data. Event-level: **4 paired own-loss dates**, **2 RAF-claim-vs-German-record dates**, **21 partial** numeric day dossiers, **56 explicitly unsourced** opponent-date dossiers. All exact-day comparisons exclude numeric records with larger reporting periods even if they share the event date.
+- **14** source-scoped cross-side quantitative studies across **11 campaigns**, versus **7 studies across 4 campaigns** previously. Added studies for Poland, Malta, Kursk, Bagration, Dieppe, Schweinfurt and Bodenplatte; context and disjoint populations remain explicit, never auto-generate a kill ratio.
+- **127 → 135** source-scoped numerical facts (+8) and **82 → 83** dated events (+1). Newly sourced 18 Aug 1940 Hardest Day, German and RAF losses; captured-German Dieppe losses and Schweinfurt German destruction/write-offs/damage alongside USAAF own losses and gunners' claims.
+- **1947 Hansard** newly structured into **five campaign periods and seven dated battle returns**. Printed German per-period numbers sum to 1,760 destroyed and 657 damaged whereas Parliament also reports 1,733 destroyed and 643 damaged for full campaign. Source discrepancies are shown, not silently averaged or corrected.
+- Source-audit register: `research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md`; measured QA and remaining original-archive gaps: `docs/ATLAS_ALL_CAMPAIGN_BILATERAL_QA_2026-11-10.md`.
+- Browser QA identified and resolved a UX regression: reciprocal analysis originally displaced top campaign numeric findings out of the initial viewport. Existing facts now precede expanded comparison panels.
+- Important remaining data: 56 of 83 event dates have no confidently scoped numeric opponent evidence; access to original Luftwaffe Quartermaster, RAF AIR 27, VVS/TsAMO and Italian daily destruction/serviceability ledgers is necessary before reporting complete bilateral attrition.
+
+
 ## 10 November 2026 — main-route Campaign Explorer release and German/Soviet unit records
 
 **Release candidate:** PR #19 from `feature/atlas-v85-research-release` to `main`. This release intentionally promotes the new campaign-driven Atlas to the root route `/`; old pilot/aircraft lab remains `/?legacy=1`, experimental v7.5 remains `/?preview=7.5`. Never delete or silently upgrade the frozen flight-physics v2.4 snapshot.
