@@ -228,9 +228,11 @@ function drawMap(){
  if(chapterMode){
   $("map-heading").textContent="Normandy · "+episodes.length+" chapter episodes mapped";
   $("map-legend").textContent="Gold points = approximate episode locations; numbers group nearby events (click to choose). Zoom out to see other campaigns.";
+  $("map-source-note").textContent="Locations are indicative, not aircraft tracks · Natural Earth coastlines, no modern borders";
  }else{
   $("map-heading").textContent=cs.length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
   $("map-legend").innerHTML='<i class="marker-swatch campaign"></i> Numbered pins = campaign IDs; larger circles = cluster counts (click to choose)';
+  $("map-source-note").textContent="Gold = active month · muted = other periods · Natural Earth coastlines, no modern borders";
  }
  // Only geographic CAMPAIGN centres here; German command losses are NOT map points.
  const pins=chapterMode?[]:cs.map(c=>({c,lat:c.focus.lat,lng:c.focus.lng,index:D.campaigns.findIndex(x=>x.id===c.id)+1}));
