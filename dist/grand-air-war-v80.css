@@ -153,3 +153,22 @@
 .operational-series thead{color:#a1dacd}
 .operational-series tbody th{font-weight:500;color:#e5dfcd}
 @media(max-width:600px){.campaign-comparisons{padding:9px}.comparison-section,.operational-series{padding:9px}.comparison-grid{grid-template-columns:repeat(auto-fit,minmax(min(135px,100%),1fr))}}
+
+/* Reciprocal evidence audit: side coverage and strictly dated event observations. */
+.bilateral-coverage{grid-column:1/-1;display:grid;gap:11px;background:#142b35;border:1px solid #53767a;border-radius:9px;padding:13px;min-width:0}
+.bilateral-coverage h3{font:700 20px/1.24 Georgia,serif;color:#f1d7a5;margin:0}
+.bilateral-coverage-notice{font-size:12px;line-height:1.6;color:#c8d8d4;margin:0}
+.side-evidence-grid,.event-evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:9px;min-width:0}
+.side-evidence-card,.event-side{min-width:0;background:#1c3941;padding:11px;border:1px solid #436a70;border-radius:7px;overflow-wrap:anywhere}
+.side-evidence-card h4,.event-side h5{font:700 14px/1.35 system-ui,sans-serif;color:#f1daa8;margin:0 0 6px}
+.side-evidence-tally{color:#b9d6cf;font-size:11px;line-height:1.55;margin:0 0 9px}
+.side-evidence-examples,.event-side ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side-evidence-examples li,.event-side li{display:grid;gap:4px;font-size:12px;line-height:1.45;overflow-wrap:anywhere;border-top:1px solid #41626b;padding-top:7px}
+.side-evidence-examples li span,.event-side li strong{font-weight:750;color:#f4d3a2;font-variant-numeric:tabular-nums}
+.side-evidence-examples li small,.event-side li small{font-size:11px;line-height:1.5;color:#c4d6d3;overflow-wrap:anywhere}
+.side-evidence-examples a,.event-side a{font-size:11px;overflow-wrap:anywhere}
+.side-evidence-empty,.event-no-count{font-size:12px;line-height:1.5;color:#cfd8d6;margin:0}
+.event-evidence{display:grid;gap:9px;border:1px solid #60848a;background:#132d36;border-radius:8px;padding:13px;margin:14px 0;min-width:0}
+.event-evidence h4{font:700 18px/1.3 Georgia,serif;color:#e8d0a1;margin:0}
+.event-caution{font-size:12px;color:#dcd3b6;line-height:1.6;margin:0;border-left:3px solid #bca171;padding-left:9px}
+@media(max-width:600px){.bilateral-coverage,.event-evidence{padding:9px}.side-evidence-grid,.event-evidence-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr))}.side-evidence-card,.event-side{padding:9px}}
