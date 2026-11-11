@@ -14,6 +14,15 @@
 
 .operation-place.label-left b{left:auto;right:16px}.operation-label-leader{position:absolute;left:14px;top:5px;border-left:1px solid #eed5a8;opacity:.8;pointer-events:none}.operation-place.label-left .operation-label-leader{left:0}
 
+.dossier .dossier-key-findings:has(+ #dossier-facts .campaign-evidence-group){
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:0;
+  overflow:hidden;
+  clip-path:inset(50%);
+  white-space:nowrap;
+}
 .campaign-evidence-group{grid-column:1/-1;min-width:0;margin-bottom:8px}
 .campaign-evidence-group>h4,.operation-evidence-group>h4{color:#edd4aa;font-family:Georgia,serif;font-weight:400}
 .campaign-evidence-group>h4{margin:0 0 8px;font-size:16px}
