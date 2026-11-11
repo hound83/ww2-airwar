@@ -10,6 +10,10 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
+## v8.6 Normandy operations candidate
+
+Five source-linked operation journeys connect D-Day, Goodwood, Cobra, Mortain and Falaise to 16 dated battlefield snapshots, 24 additional scoped operational observations, formation profiles and forward-airfield chronology. See [release verification](docs/ATLAS_V86_RELEASE_QA.md) and [research audit](research/sources/normandy-v86-operational-evidence-2026-11-11.md). Publication is pending the exact-revision browser and release gates.
+
 ## Start here (maintainers and new chats)
 
 - [**Project status, roadmap and outstanding work**](docs/STATUS_AND_NEXT_STEPS.md)

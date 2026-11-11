@@ -35,12 +35,14 @@ const matching=()=>D.campaigns.filter(matches);
 const visibleOnMap=()=>matching().filter(c=>state.all||active(c));
 function cancelPlay(){if(state.play!==null){clearInterval(state.play);state.play=null;}$("play-time").textContent="▶ Play";}
 function updateMonth(month){
+ window.AtlasNormandyOperations?.onNavigate();
  if(monthIdx(month)<0||monthIdx(month)>LMAX-LMIN)return;
  state.month=month;
  // Scrubbing and playback never silently replace the campaign a reader selected.
  update();
 }
 function pickCampaign(id,fly=true){
+ window.AtlasNormandyOperations?.onNavigate();
  const c=D.campaigns.find(x=>x.id===id);if(!c)return;cancelPlay();
  const changed=state.selected!==id;
  if(state.search&&!matches(c))state.search="";
@@ -71,6 +73,7 @@ function selectMoment(cId,date,lat,lng,title){
  if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
 }
 function selectChapter(id){
+ window.AtlasNormandyOperations?.onNavigate();
  const c=D.campaigns.find(x=>x.id===state.selected),ch=c?.chapters?.find(x=>x.id===id);
  if(c?.story&&ch){cancelPlay();state.month=ch.start.slice(0,7);renderTime();}
  state.selectedChapter=id;
@@ -217,6 +220,7 @@ function setupMap(){
 function drawMap(){
  if(!state.mapMarkers||!state.map)return;
  state.mapMarkers.clearLayers();
+ if(window.AtlasNormandyOperations?.draw(state))return;
  const L=window.L,cs=visibleOnMap();
  const selectedCampaign=D.campaigns.find(c=>c.id===state.selected);
  const chosenPhase=selectedCampaign?.chapters?.find(ch=>ch.id===state.selectedChapter);
@@ -547,12 +551,12 @@ function download(rows,filename){
  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
 function renderSources(){
- $("dataset-summary").innerHTML=[[String(D.campaigns.length),"Curated campaigns · "+D.campaigns.reduce((n,c)=>n+c.facts.length,0)+" localized numeric facts"],[String(lossRows.length),"Original German command-month loss totals"],[groupRows.filter(x=>x.totalCombatGroups!==null).length+" / "+groupRows.length,"Reported USAAF ETO/MTO group totals / all dated rows"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
+ $("dataset-summary").innerHTML=[[String(D.campaigns.length),"Curated campaigns · "+D.campaigns.reduce((n,c)=>n+c.facts.length,0)+" overview facts"+(window.NormandyV86Data?" + "+window.NormandyV86Data.observations.length+" Normandy operation observations":"")],[String(lossRows.length),"Original German command-month loss totals"],[groupRows.filter(x=>x.totalCombatGroups!==null).length+" / "+groupRows.length,"Reported USAAF ETO/MTO group totals / all dated rows"],[String(P.soviet.length)+" + "+String(V.usaFactory.length),"Soviet dated snapshots + US production months"]].map(x=>'<div><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>').join("");
  const catalogue=Object.entries(D.sources).map(([k,s])=>({name:s.title,url:s.url,detail:s.class})).concat(Object.values(sourceIndex).map(s=>({name:s.title,url:s.url,detail:"Captured German wartime loss returns"}))).filter(x=>x.url);
  const unique=new Map(catalogue.map(x=>[x.url,x]));
  $("source-catalogue").innerHTML=[...unique.values()].map(x=>'<article><b>'+esc(x.name)+'</b><small>'+esc(x.detail)+'</small><a target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">Open original ↗</a></article>').join("");
 }
-function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();}
+function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();window.AtlasNormandyOperations?.sync();}
 function init(){
  if(!$("campaign-map"))return;
  setupMap();renderCoverage();renderSources();
@@ -593,5 +597,5 @@ function init(){
  update();renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active};
+window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active,map:()=>state.map,refreshMap:drawMap};
 })();

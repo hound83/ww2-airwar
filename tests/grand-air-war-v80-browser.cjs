@@ -17,11 +17,11 @@ const server=http.createServer((request,response)=>{
 });
 const check=async()=>{
  await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
- const base="http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
+ const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
-   const page=await browser.newPage({viewport,deviceScaleFactor:1});
+   const page=await browser.newPage({viewport,deviceScaleFactor:1,hasTouch:viewport.width<500,isMobile:viewport.width<500});
    const routePage=await browser.newPage({viewport,deviceScaleFactor:1});
    const rootUrl=base.slice(0,-"grand-air-war-v80.html".length);
    await routePage.goto(rootUrl,{waitUntil:"domcontentloaded",timeout:45000});
@@ -270,6 +270,53 @@ const check=async()=>{
    assert.match(await page.locator("#dossier-facts .opponent-returns").innerText(),/1,760.*1,733/s);
    await page.locator(".campaign-guide").screenshot({path:path.join(root,"v80-qa-britain-bilateral-"+viewport.width+".png")});
 
+
+   // v8.6: operate every showcase and every dated snapshot on both viewports.
+   await page.evaluate(()=>window.GrandAirWarV77.choose('normandy',false));
+   assert.equal(await page.locator('#operation-choices [data-operation]').count(),5);
+   for(const id of ['dday','goodwood','cobra','mortain','falaise']){
+    if(viewport.width<500)await page.locator('[data-operation="'+id+'"]').tap();else await page.locator('[data-operation="'+id+'"]').click();
+    assert.equal(await page.locator('#operation-dossier').isVisible(),true);
+    assert.equal(await page.locator('#campaign-dossier').isVisible(),false);
+    const count=await page.locator('[data-operation-step]').count();
+    for(let i=0;i<count;i++){
+     await page.locator('[data-operation-step="'+i+'"]').click();
+     await page.waitForTimeout(500);
+     const current=await page.evaluate(()=>window.AtlasNormandyOperations.current());
+     assert.equal(current.operation,id);assert.equal(current.step,i);
+     assert.match(await page.locator('#map-heading').innerText(),new RegExp(current.date));
+     assert.ok(await page.locator('.operation-place').count()>1);
+     const expectedPaths=await page.evaluate(()=>{const x=window.AtlasNormandyOperations;const c=x.current();return x.data.operations.find(o=>o.id===c.operation).snapshots[c.step].links.length;});
+     assert.equal(await page.locator('.operation-ground-path').count(),expectedPaths);
+     if(expectedPaths)assert.ok(await page.locator('.operation-ground-path').evaluateAll(nodes=>nodes.every(n=>Number(getComputedStyle(n.closest('.leaflet-pane')).zIndex)>=450)),'operation paths are behind physical land');
+     assert.ok(await page.locator('#operation-evidence [data-observation]').count()>=3);
+     assert.ok(await page.locator('#operation-evidence a[href^="https://"]').count()>=5);
+     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)<=2,'operation creates page overflow');
+    }
+    if(viewport.width<500)await page.locator('.operation-place').first().tap();else await page.locator('.operation-place').first().click();
+    assert.ok(await page.locator('#operation-map-detail a[href]').count()>0,'map place must reveal its historical source');
+    await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-v86-'+id+'-'+viewport.width+'.png')});
+   }
+   await page.locator('[data-operation="cobra"]').click();
+   await page.locator('#operation-next').focus();await page.keyboard.press('Enter');
+   assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
+   await page.waitForTimeout(900); // Leaflet's JS pan must settle before the screenshot.
+   await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-v86-cobra-bombardment-'+viewport.width+'.png')});
+   await page.locator('#operation-evidence').screenshot({path:path.join(root,'v80-qa-v86-evidence-'+viewport.width+'.png')});
+   const downloadPromise=page.waitForEvent('download');
+   await page.locator('#operation-export').click();
+   const exported=await downloadPromise;assert.match(exported.suggestedFilename(),/cobra.*evidence/);
+   await page.reload({waitUntil:'domcontentloaded'});
+   await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.operation==='cobra');
+   assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1,'operation permalink lost selected snapshot');
+   await page.locator('#operation-close').click();
+   assert.equal(await page.locator('#campaign-dossier').isVisible(),true);
+   await page.locator('[data-operation="mortain"]').click();
+   await page.locator('#campaign-search').fill('Poland');
+   assert.equal(await page.locator('#normandy-operations').isVisible(),false);
+   assert.equal(await page.locator('#operation-evidence').isVisible(),false);
+   await page.locator('#campaign-search').fill('');
+   await page.evaluate(()=>window.GrandAirWarV77.choose('britain',false));
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
    assert.ok(overflow<=2,"horizontal viewport overflow of "+overflow+"px at "+viewport.width);
    assert.deepEqual(errors,[],"JavaScript page errors: "+errors.join("; "));

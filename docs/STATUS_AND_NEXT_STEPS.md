@@ -1,5 +1,13 @@
 # Atlas status and next work
 
+## 11 November 2026 — v8.6 Normandy operational experience (candidate)
+
+Authorized milestone: implement the v8.6 scope proposed in the roadmap. Five operation journeys (D-Day, Goodwood, Cobra, Mortain, Falaise), 16 dated map snapshots, 24 new scoped quantitative observations, 14 formation/context profiles and four illustrative dated airfields. The existing nine Normandy chapters and 39 episodes remain connected.
+
+Research: [operational evidence audit](../research/sources/normandy-v86-operational-evidence-2026-11-11.md). Acceptance and publication state: [v8.6 release QA](ATLAS_V86_RELEASE_QA.md). Source data: `research/transcriptions/normandy-v86-operations.json`.
+
+The preceding Normandy narrative benchmark was merged in PR #22 at commit `13a9529`; its older candidate wording below is historical. v8.6 is not yet reported as live. Verify exact-revision CI, inspect browser artifacts and check the final live route before recording publication.
+
 ## 10 November 2026 — Normandy non-fiction story benchmark (release candidate; NOT yet live)
 
 **Branch:** `feature/normandy-story-benchmark`, based on published `b7a38e1`. **Goal:** one substantial, coherent historical reading journey, not more detached event cards.

@@ -1,0 +1,43 @@
+name: Atlas v8.6 live publication QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'grand-air-war-v80.html'
+      - 'dist/grand-air-war-v80-core.js'
+      - 'dist/grand-air-war-v86*'
+      - 'tests/grand-air-war-v80-browser.cjs'
+      - 'scripts/verify-v86-live.cjs'
+      - '.github/workflows/atlas-v86-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  published:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser verification dependencies
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Wait for the matching Pages publication
+        run: node scripts/verify-v86-live.cjs
+      - name: Verify actual public default, operations and legacy routes
+        env:
+          ATLAS_BASE_URL: https://hound83.github.io/ww2-airwar/grand-air-war-v80.html
+        run: node tests/grand-air-war-v80-browser.cjs
+      - name: Save live desktop and mobile evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-v86-live-browser-qa
+          path: v80-qa-*.png
+          if-no-files-found: ignore
