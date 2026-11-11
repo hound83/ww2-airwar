@@ -110,7 +110,10 @@
 #claim-loss-method summary{cursor:pointer;font-weight:650;color:#e4e8d9}
 #claim-loss-method a,.operation-source-trail a{overflow-wrap:anywhere}
 .claim-loss-table{overflow-x:auto}
-.claim-loss-table table{border-collapse:collapse;text-align:right;font-variant-numeric:tabular-nums}
+.claim-loss-table table{width:100%;border-collapse:collapse;text-align:right;font-variant-numeric:tabular-nums}
 .claim-loss-table th,.claim-loss-table td{padding:6px 9px;border-bottom:1px solid #526c64}
 .claim-loss-table th:first-child{text-align:left;white-space:nowrap}
 .operation-claim-jump{display:inline-block;margin-top:8px;font-size:12px}
+@media(max-width:600px){
+  .claim-loss-table th,.claim-loss-table td{padding:6px 4px;font-size:11px;line-height:1.4}
+}

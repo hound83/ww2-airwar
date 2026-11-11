@@ -103,6 +103,7 @@ function render() {
  const result=$('claim-loss-result'),method=$('claim-loss-method');
  const claims=input.value.trim()===''?NaN:Number(input.value);
  const value=calculate(scope,claims);
+ result.classList.toggle('claim-loss-estimated',scope==='cobra'&&!!value);
  if(!value){
   result.textContent='Enter a whole number of claims, zero or greater.';
   method.hidden=true;

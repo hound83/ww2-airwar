@@ -145,6 +145,7 @@ function render(){
  const focusSelector=active?.closest?.('#operation-dossier')?(active.id?'#'+active.id:active.dataset?.operationStep!==undefined?'[data-operation-step="'+active.dataset.operationStep+'"]':null):null;
  const s=operation.snapshots[step],op=operation;
  const facts=factsFor(op),groups=A.groupEvidence(facts),estimate=M?.historicalEstimate(op.id,facts);
+ const raidClaims=op.returnDate?facts.find(fact=>fact.id===op.id+'-claims'):null;
  const campaign=C.campaigns.find(c=>c.id===D.campaign);
  const stepper=op.snapshots.length>1?(
   '<nav class="operation-stepper" aria-label="Dated battlefield snapshots">'+op.snapshots.map((x,i)=>'<button type="button" data-operation-step="'+i+'" aria-current="'+(i===step?'step':'false')+'"><span>'+esc(x.date.slice(5))+'</span>'+esc(x.title)+'</button>').join('')+'</nav>'+
@@ -169,8 +170,8 @@ function render(){
  '<div class="operation-source-trail">'+op.sources.map(id=>source(id)).join('')+'</div>'+
  '<h3 class="operation-subheading">Operational evidence <span>'+facts.length+' observations</span></h3><p class="operation-scope-note">Dates, formations and reporting areas are shown with each figure.</p>'+
  renderEvidenceGroups(op,groups,estimate)+
- (op.returnDate?A.renderBritainClaimReview(campaign,op.returnDate)+
-  '<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="britain" data-claim-count="'+facts.find(fact=>fact.measure==='claims').value+'">Compare with the seven selected days</a>':'')+
+ (op.returnDate?A.renderBritainClaimReview(campaign,op.returnDate):'')+
+ (raidClaims?'<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="britain" data-claim-count="'+raidClaims.value+'">Compare with the seven selected days</a>':'')+
  (op.id==='dday'?'<p class="operation-interpretation"><strong>Read the allocation:</strong> 15 + 54 + 33 + 33 + 36 = 171 squadrons. The total is not a sixth additional task and cannot be added to its five components.</p>':'')+
  (op.id==='mortain'?'<p class="operation-interpretation"><strong>Three different scopes:</strong> 294 is local Typhoon activity on 7 August; 2,193 covers wider Typhoon operations over five days; 4,012 is IX TAC over seven days. These figures overlap in time and are not summed. Ground investigation found that air claims overstated tank destruction.</p>':'')+
  '<h3 class="operation-subheading">The formations behind the operation</h3><div class="operation-formations">'+op.formations.map(id=>{const f=D.formations[id];return '<article data-formation="'+esc(id)+'" class="'+(f.side==='German'?'axis':'')+'"><span>'+esc(f.side+' · '+f.level)+'</span><h4>'+esc(f.name)+'</h4><strong>'+esc(f.aircraft)+'</strong><p>'+esc(f.role)+'</p>'+source(f.source,f.page)+'</article>';}).join('')+'</div>'+

@@ -363,6 +363,7 @@ const check=async()=>{
    const claims=page.locator('#claim-loss-count'),result=page.locator('#claim-loss-result');
    assert.equal(await claims.inputValue(),'12');
    assert.match(await result.innerText(),/1–8.*low confidence/s);
+   assert.equal(await result.evaluate(element=>element.classList.contains('claim-loss-estimated')),true);
    await page.locator('#claim-loss-method summary').click();
    assert.match(await page.locator('#claim-loss-method').innerText(),/1\.2 aircraft.*7\.5 aircraft/s);
    assert.equal(await page.locator('#claim-loss-method details a[href^="https://"]').count(),5);
@@ -427,6 +428,7 @@ const check=async()=>{
    if(!await britainDetails.evaluate(details=>details.open))await britainDetails.locator('summary').click();
    assert.match(await britainDetails.innerText(),/included 5 of 7 recorded totals/);
    assert.equal(await britainDetails.locator('tbody tr').count(),7);
+   assert.ok(await britainDetails.locator('.claim-loss-table').evaluate(table=>table.scrollWidth<=table.clientWidth+1),'benchmark table columns must fit the supported viewport');
    assert.match(await britainDetails.locator('tbody tr').filter({hasText:'1940-09-15'}).innerText(),/185.*56.*30\.3.*66–96/s);
    await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-britain-calculator-'+viewport.width+'.png')});
    await page.reload({waitUntil:'domcontentloaded'});
