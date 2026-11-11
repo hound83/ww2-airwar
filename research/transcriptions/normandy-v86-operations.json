@@ -56,6 +56,21 @@
       "title": "U.S. Army CMH, Chronology 1941–1945",
       "url": "https://history.army.mil/portals/143/Images/Publications/catalog/11-1.pdf",
       "kind": "Official U.S. Army retrospective chronology"
+    },
+    "ibccGoodwood": {
+      "title": "IBCC Digital Archive, The Normandy campaign and the bombing of Caen",
+      "url": "https://ibccdigitalarchive.blogs.lincoln.ac.uk/2018/07/19/the-normandy-campaign-and-the-bombing-of-caen-1944/",
+      "kind": "Archive research summary"
+    },
+    "aafChronJuly": {
+      "title": "Kit C. Carter and Robert Mueller, U.S. Army Air Forces Combat Chronology, July 1944",
+      "url": "https://aircrewremembered.com/USAAFCombatOperations/Jul.44.html",
+      "kind": "Official Air Force chronology, online transcription"
+    },
+    "bomberDiaryTractable": {
+      "title": "RAF Bomber Command campaign diary, 14 August 1944, reproduced by Back to Normandy",
+      "url": "https://www.backtonormandy.org/Air-Force-Operations/Missions-and-crashes-by-airplane/Avro-Lancaster/the-300-sqdn-left-from-faldingworth-at-1944-08-14-at-13-31-loc-or-duty-falaise-88570.html",
+      "kind": "Published diary reproduction"
     }
   },
   "places": {
@@ -703,6 +718,171 @@
       "scope": "Bomber Command support for Tractable on 14 August; not a total for the whole Falaise battle.",
       "qualifier": "reported",
       "evidenceClass": "Official Canadian retrospective history"
+    },
+    {
+      "id": "goodwood-raf-lost",
+      "operation": "goodwood",
+      "label": "Bomber Command aircraft lost on Goodwood support",
+      "value": 7,
+      "unit": "aircraft",
+      "date": "1944-07-18",
+      "source": "ibccGoodwood",
+      "page": "18 July paragraph",
+      "measure": "losses",
+      "scope": "RAF Bomber Command support east of Caen. This is the archive summary’s command figure for the raid.",
+      "qualifier": "reported",
+      "evidenceClass": "Secondary archive summary",
+      "shortLabel": "Bomber Command aircraft lost"
+    },
+    {
+      "id": "goodwood-us-lost",
+      "operation": "goodwood",
+      "label": "Eighth Air Force B-24 lost on Caen support",
+      "value": 1,
+      "unit": "aircraft",
+      "date": "1944-07-18",
+      "source": "aafChronJuly",
+      "page": "18 July, Mission 481, item 1",
+      "measure": "losses",
+      "scope": "Caen-support B-24 task within the wider Mission 481. Two B-24s damaged beyond repair are reported separately.",
+      "qualifier": "reported",
+      "evidenceClass": "Official postwar chronology",
+      "shortLabel": "Eighth Air Force B-24 lost"
+    },
+    {
+      "id": "goodwood-raf-aircrew-killed",
+      "operation": "goodwood",
+      "label": "Bomber Command aircrew killed on Goodwood support",
+      "value": 24,
+      "unit": "personnel",
+      "date": "1944-07-18",
+      "source": "ibccGoodwood",
+      "page": "18 July paragraph",
+      "measure": "casualties",
+      "scope": "Bomber Command aircrew killed on the 18 July operation east of Caen.",
+      "qualifier": "reported",
+      "evidenceClass": "Secondary archive summary",
+      "shortLabel": "Bomber Command aircrew killed"
+    },
+    {
+      "id": "cobra-8af-bombers-lost",
+      "operation": "cobra",
+      "label": "Eighth Air Force bombers lost on Mission 494",
+      "value": 5,
+      "unit": "aircraft",
+      "date": "1944-07-25",
+      "source": "aafChronJuly",
+      "page": "25 July, Mission 494",
+      "measure": "losses",
+      "scope": "Eighth Air Force: one B-17 and four B-24s lost during the 25 July Cobra support mission. Two B-24s damaged beyond repair are separate.",
+      "qualifier": "reported",
+      "evidenceClass": "Official postwar chronology",
+      "shortLabel": "Eighth Air Force bombers lost"
+    },
+    {
+      "id": "cobra-8af-fighters-lost",
+      "operation": "cobra",
+      "label": "Eighth Air Force escort fighters lost on Mission 494",
+      "value": 2,
+      "unit": "aircraft",
+      "date": "1944-07-25",
+      "source": "aafChronJuly",
+      "page": "25 July, Mission 494",
+      "measure": "losses",
+      "scope": "Two Eighth Air Force P-51s lost. The escort force also covered Ninth Air Force B-26s.",
+      "qualifier": "reported",
+      "evidenceClass": "Official postwar chronology",
+      "shortLabel": "Eighth Air Force escort fighters lost"
+    },
+    {
+      "id": "cobra-8af-bombers-writeoffs",
+      "operation": "cobra",
+      "label": "B-24s damaged beyond repair on Mission 494",
+      "value": 2,
+      "unit": "aircraft",
+      "date": "1944-07-25",
+      "source": "aafChronJuly",
+      "page": "25 July, Mission 494",
+      "measure": "writeoffs",
+      "scope": "Two B-24s in the chronology’s separate damaged-beyond-repair category.",
+      "qualifier": "reported",
+      "evidenceClass": "Official postwar chronology",
+      "shortLabel": "B-24s damaged beyond repair"
+    },
+    {
+      "id": "cobra-8af-air-claims",
+      "operation": "cobra",
+      "label": "Eighth Air Force escorts claimed destroyed in the air",
+      "value": 12,
+      "unit": "aircraft claimed",
+      "date": "1944-07-25",
+      "source": "aafChronJuly",
+      "page": "25 July, Mission 494",
+      "measure": "claims",
+      "scope": "Eighth Air Force escort claims for Mission 494. The same return lists one probable and three damaged separately. Corresponding German own-loss coverage is missing.",
+      "qualifier": "reported",
+      "evidenceClass": "Wartime claims in official postwar chronology",
+      "shortLabel": "German aircraft claimed destroyed in air"
+    },
+    {
+      "id": "cobra-8af-ground-claims",
+      "operation": "cobra",
+      "label": "Eighth Air Force escorts claimed destroyed on the ground",
+      "value": 2,
+      "unit": "aircraft claimed",
+      "date": "1944-07-25",
+      "source": "aafChronJuly",
+      "page": "25 July, Mission 494",
+      "measure": "claims",
+      "scope": "Eighth Air Force Mission 494 escort claims against aircraft on the ground. Ground claims have their own reporting category.",
+      "qualifier": "reported",
+      "evidenceClass": "Wartime claims in official postwar chronology",
+      "shortLabel": "German aircraft claimed destroyed on ground"
+    },
+    {
+      "id": "mortain-typhoon-lost",
+      "operation": "mortain",
+      "label": "Aircraft lost in the Typhoon attack report",
+      "value": 5,
+      "unit": "aircraft",
+      "date": "1944-08-07",
+      "source": "gazette",
+      "page": "p.66, paras.290–291",
+      "measure": "losses",
+      "scope": "The AEAF report gives losses after describing 458 Typhoon sorties, including 294 in the Mortain area. It does not allocate each loss geographically.",
+      "qualifier": "reported",
+      "evidenceClass": "Wartime command despatch",
+      "shortLabel": "Aircraft lost in Typhoon attack report"
+    },
+    {
+      "id": "mortain-typhoon-damaged",
+      "operation": "mortain",
+      "label": "Aircraft damaged in the Typhoon attack report",
+      "value": 10,
+      "unit": "aircraft",
+      "date": "1944-08-07",
+      "source": "gazette",
+      "page": "p.66, paras.290–291",
+      "measure": "damage",
+      "scope": "Damage in the same Typhoon attack report. Losses and damage are separate categories.",
+      "qualifier": "reported",
+      "evidenceClass": "Wartime command despatch",
+      "shortLabel": "Aircraft damaged in Typhoon attack report"
+    },
+    {
+      "id": "falaise-bc-lost",
+      "operation": "falaise",
+      "label": "Bomber Command Lancasters lost on Tractable support",
+      "value": 2,
+      "unit": "aircraft",
+      "date": "1944-08-14",
+      "source": "bomberDiaryTractable",
+      "page": "14 August, Normandy battle area",
+      "measure": "losses",
+      "scope": "Bomber Command attack on positions facing the 3rd Canadian Division. Two other Lancasters lost on the Brest operation are outside this figure.",
+      "qualifier": "reported",
+      "evidenceClass": "Secondary diary reproduction",
+      "shortLabel": "Bomber Command Lancasters lost"
     }
   ],
   "operations": [
@@ -858,11 +1038,16 @@
       "facts": [
         "goodwood-heavy",
         "goodwood-medium",
-        "goodwood-bombs"
+        "goodwood-bombs",
+        "goodwood-raf-lost",
+        "goodwood-us-lost",
+        "goodwood-raf-aircrew-killed"
       ],
       "sources": [
         "goodwood",
-        "hallion"
+        "hallion",
+        "ibccGoodwood",
+        "aafChronJuly"
       ],
       "snapshots": [
         {
@@ -963,12 +1148,18 @@
         "cobra-medium-bombs",
         "cobra-fighter-bombs",
         "cobra-killed",
-        "cobra-wounded"
+        "cobra-wounded",
+        "cobra-8af-bombers-lost",
+        "cobra-8af-fighters-lost",
+        "cobra-8af-bombers-writeoffs",
+        "cobra-8af-air-claims",
+        "cobra-8af-ground-claims"
       ],
       "sources": [
         "cobra",
         "breakthrough",
-        "hallion"
+        "hallion",
+        "aafChronJuly"
       ],
       "snapshots": [
         {
@@ -1084,7 +1275,9 @@
       "facts": [
         "mortain-local",
         "mortain-five-days",
-        "mortain-ixtac"
+        "mortain-ixtac",
+        "mortain-typhoon-lost",
+        "mortain-typhoon-damaged"
       ],
       "sources": [
         "mortain",
@@ -1181,11 +1374,13 @@
         "falaise-lancasters",
         "falaise-halifaxes",
         "falaise-mosquitoes",
-        "falaise-bombs"
+        "falaise-bombs",
+        "falaise-bc-lost"
       ],
       "sources": [
         "victory",
-        "hallion"
+        "hallion",
+        "bomberDiaryTractable"
       ],
       "snapshots": [
         {

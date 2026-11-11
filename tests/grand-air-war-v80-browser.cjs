@@ -305,14 +305,14 @@ const check=async()=>{
      await page.locator(figures).screenshot({path:path.join(root,'v80-qa-dday-losses-'+viewport.width+'.png')});
     }
     if(id==='cobra'){
-     assert.deepEqual(order,['aircraft-losses','personnel-casualties','other']);
+     assert.deepEqual(order,['aircraft-losses','personnel-casualties','victory-claims','other']);
      const casualties=page.locator(figures+' [data-evidence-group="personnel-casualties"]');
      assert.deepEqual(await casualties.locator('[data-observation]').evaluateAll(cards=>cards.map(card=>card.dataset.observation)),['cobra-killed','cobra-wounded']);
      assert.match(await casualties.innerText(),/111.*490/s);
     }
     if(id==='mortain'){
-     assert.deepEqual(order,['aircraft-losses','sorties']);
-     assert.match(await page.locator(figures+' [data-evidence-group="aircraft-losses"]').innerText(),/unavailable in the Atlas/);
+     assert.deepEqual(order,['aircraft-losses','sorties','aircraft-damage']);
+     assert.match(await page.locator(figures+' [data-evidence-group="aircraft-losses"]').innerText(),/5.*Typhoon attack report/s);
     }
     const count=await page.locator('[data-operation-step]').count();
     for(let i=0;i<count;i++){
@@ -343,7 +343,9 @@ const check=async()=>{
    await page.locator('#operation-export').click();
    const exported=await downloadPromise;assert.match(exported.suggestedFilename(),/cobra.*evidence/);
    const exportedRecords=JSON.parse(fs.readFileSync(await exported.path(),'utf8')).observations;
-   assert.deepEqual(exportedRecords.slice(0,2).map(fact=>fact.id),['cobra-killed','cobra-wounded']);
+   assert.deepEqual(exportedRecords.slice(0,5).map(fact=>fact.id),[
+    'cobra-8af-bombers-lost','cobra-8af-fighters-lost','cobra-8af-bombers-writeoffs','cobra-killed','cobra-wounded'
+   ]);
    assert.ok(exportedRecords.every(fact=>fact.sourceUrl?.startsWith('https://')));
    await page.reload({waitUntil:'domcontentloaded'});
    await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.operation==='cobra');
@@ -356,6 +358,29 @@ const check=async()=>{
    assert.equal(await page.locator('#operation-evidence').isVisible(),false);
    await page.locator('#campaign-search').fill('');
    await page.evaluate(()=>window.GrandAirWarV77.choose('britain',false));
+   assert.equal(await page.locator('#operation-choices [data-operation]').count(),4);
+   for(const [id,date,loss] of [
+    ['britain-15-aug','1940-08-15',76],['britain-18-aug','1940-08-18',71],
+    ['britain-7-sep','1940-09-07',40],['britain-15-sep','1940-09-15',56]
+   ]){
+    const option=page.locator('[data-operation="'+id+'"]');
+    if(viewport.width<500)await option.tap();else await option.click();
+    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).date,date);
+    assert.ok(await page.locator('#campaign-map .operation-place').count()>=2);
+    const summary=page.locator('#operation-dossier [data-snapshot-date="'+date+'"]');
+    assert.match(await summary.innerText(),new RegExp(loss+'.*German aircraft recorded destroyed','s'));
+    assert.equal(await page.locator('#operation-prev').count(),0,'a single day has no previous snapshot');
+    assert.ok(await page.locator('#operation-evidence [data-evidence-group="victory-claims"] [data-observation]').count()===1);
+   }
+   assert.match(await page.locator('#operation-evidence .claim-estimate-check').innerText(),/66–74.*56/s);
+   const sharedUrl=page.url();
+   await page.locator('.operation-evidence-jump').click();
+   assert.equal(page.url(),sharedUrl,'opening evidence must preserve the selected operation link');
+   await page.locator('#operation-evidence .event-review-claim').screenshot({path:path.join(root,'v80-qa-claim-review-'+viewport.width+'.png')});
+   await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-britain-raid-'+viewport.width+'.png')});
+   await page.reload({waitUntil:'domcontentloaded'});
+   await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.operation==='britain-15-sep');
+   await page.locator('#operation-close').click();
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
    assert.ok(overflow<=2,"horizontal viewport overflow of "+overflow+"px at "+viewport.width);
    assert.deepEqual(errors,[],"JavaScript page errors: "+errors.join("; "));

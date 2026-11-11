@@ -1,5 +1,11 @@
 # Atlas status and next work
 
+## 11 November 2026 - v8.7 dated losses and Battle of Britain raids
+
+Four Battle of Britain raid dossiers connect the dated map, opposing forces, recorded losses and claims. Normandy's five operations now have sourced aircraft-loss figures for at least one reporting population. Goodwood, Cobra, Mortain and Tractable gained eleven scoped observations, including separate damage and claim categories. The map briefing highlights figures for the selected day and the evidence link preserves the operation URL.
+
+The RAF and German Parliamentary returns show losses per 100 claims by phase and selected day. The September held-out calculation gives 66–74 against 56 recorded on 15 September, so claim-only records retain their claim labels. The [research audit](../research/sources/atlas-v87-losses-and-claims-2026-11-11.md) preserves the source hierarchy, western and eastern scope checks, and the remaining German return gaps.
+
 ## 11 November 2026 - Losses before sorties
 
 Campaign and operation evidence leads with aircraft losses, followed by personnel casualties and sorties. Damage and victory claims have their own categories. Cobra's 25 July ground casualties precede the bombardment figures. D-Day links three existing 6 June campaign records for Allied aircraft lost and SHAEF strategic and tactical sorties. The four other operations show a gap in operation-level aircraft-loss coverage.

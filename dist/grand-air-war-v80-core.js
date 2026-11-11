@@ -378,7 +378,7 @@ function renderBilateralCoverage(c){
 }
 function renderEventBilateralEvidence(c,date){
  const {own,pair,claim,dayFacts}=bilateralEvidenceState(c,date);
- const claimRows=claim?'<div class="event-review-claim"><strong>RAF wartime claim: '+fmt(claim.rafClaim)+'</strong><span>German aircraft actually recorded destroyed: '+fmt(claim.germanDestroyed)+'; damaged: '+fmt(claim.germanDamaged)+'. Claims are NOT RAF own losses.</span>'+sourceLink(claim.sourceId,"1947 Parliament / German loss records")+'</div>':"";
+ const claimRows=claim?renderBritainClaimReview(c,date):"";
  const rows=groupEvidence(dayFacts).flatMap(group=>group.facts).map(f=>'<li data-evidence-side="'+esc(f.side||"unclassified")+'"><strong>'+fmt(f.value)+' '+esc(f.unit)+'</strong> · '+esc(f.label)+' <small>('+esc(f.side||"side not independently classified")+'; '+esc(f.type||"unspecified")+')</small> '+sourceLink(f.sourceId,"Source")+'</li>').join("");
  const intro=pair?"Both sides have a dated own-loss observation; definitions still need to be checked before comparison.":
  claim?"Wartime victory claims can be contrasted with German records; this is NOT a two-sided own-loss comparison.":
@@ -386,16 +386,50 @@ function renderEventBilateralEvidence(c,date){
  "No verified opposing-force aircraft losses or operational-strength figures are scoped to this EXACT event date. Campaign totals are not automatically assigned to this day.";
  return '<section class="event-bilateral" data-bilateral-status="'+(pair?"paired-own-losses":claim?"claim-versus-record":dayFacts.length?"partial":"no-matched-data")+'"><h4>Both sides: strength, losses and evidence gaps</h4><p>'+esc(intro)+'</p>'+ (rows?'<ul>'+rows+'</ul>':'')+claimRows+'</section>';
 }
+
+function destroyedPer100(claims,destroyed) {
+ return claims>0?String(Math.round(100*destroyed/claims)):"Unavailable";
+}
+
+function septemberEstimateCheck(series) {
+ const target=series.days.find(row=>row.date==="1940-09-15");
+ if(!target)return "";
+ const peers=series.days.filter(row=>
+  row.date>="1940-09-07"&&row.date<="1940-09-30"&&row.date!==target.date&&
+  row.sourceId===target.sourceId&&row.rafClaim>0
+ );
+ if(peers.length<2)return "";
+ const estimates=peers.map(row=>target.rafClaim*row.germanDestroyed/row.rafClaim);
+ const low=Math.floor(Math.min(...estimates)),high=Math.ceil(Math.max(...estimates));
+ const peerDates=peers.map(row=>row.date).join(" and ");
+ return '<p class="claim-estimate-check"><strong>Test estimate for 15 September: '+low+'–'+high+' aircraft destroyed.</strong> '+
+  'Applying the observed ratios on '+esc(peerDates)+' to the '+fmt(target.rafClaim)+' claims gives this range. '+
+  'The published return records '+fmt(target.germanDestroyed)+'. This held-out check tests the method on a known day. '+
+  'A reliable estimate for a missing day needs more comparable observations.</p>';
+}
+
+function renderBritainClaimReview(c,date) {
+ const series=c.opponentReturnSeries;
+ const row=series?.days.find(row=>row.date===date);
+ if(!row)return "";
+ return '<section class="event-review-claim" aria-label="Claims and recorded losses">'+
+  '<strong>'+destroyedPer100(row.rafClaim,row.germanDestroyed)+' German aircraft recorded destroyed per 100 RAF claims</strong>'+
+  '<span>The published comparison for '+esc(date)+' lists '+fmt(row.germanDestroyed)+' destroyed, '+fmt(row.germanDamaged)+' damaged and '+fmt(row.rafClaim)+' claims of destruction. The ratio compares the day’s totals.</span>'+
+  (date==="1940-09-15"?septemberEstimateCheck(series):"")+
+  sourceLink(row.sourceId,"1947 Parliamentary comparison")+'</section>';
+}
+
 function renderBritainOpponentReturns(c){
  const s=c.opponentReturnSeries;if(!s)return "";
- const head='<tr><th>Window</th><th>RAF claimed German destroyed</th><th>German destroyed</th><th>German damaged</th></tr>';
- const periods=s.periods.map(x=>'<tr><th>'+esc(x.start)+'–'+esc(x.end)+'</th><td>'+fmt(x.rafClaim)+'</td><td>'+fmt(x.germanDestroyed)+'</td><td>'+fmt(x.germanDamaged)+'</td></tr>').join("");
- const days=s.days.map(x=>'<tr><th>'+esc(x.date)+'</th><td>'+fmt(x.rafClaim)+'</td><td>'+fmt(x.germanDestroyed)+'</td><td>'+fmt(x.germanDamaged)+'</td></tr>').join("");
+ const head='<tr><th scope="col">Window</th><th scope="col">German destroyed</th><th scope="col">German damaged</th><th scope="col">RAF claims of destruction</th><th scope="col">Destroyed per 100 claims</th></tr>';
+ const cells=row=>'<td>'+fmt(row.germanDestroyed)+'</td><td>'+fmt(row.germanDamaged)+'</td><td>'+fmt(row.rafClaim)+'</td><td>'+destroyedPer100(row.rafClaim,row.germanDestroyed)+'</td>';
+ const periods=s.periods.map(x=>'<tr><th scope="row">'+esc(x.start)+'–'+esc(x.end)+'</th>'+cells(x)+'</tr>').join("");
+ const days=s.days.map(x=>'<tr><th scope="row">'+esc(x.date)+'</th>'+cells(x)+'</tr>').join("");
  return '<section class="opponent-returns" data-opponent-returns="britain"><h4>RAF claims versus original German loss returns · 1940</h4>'+
  '<p>Five reporting periods and seven selected days from a 1947 Parliamentary comparison. Days are INCLUDED in the periods, never additional losses.</p>'+
  '<div class="operational-table-scroll"><table><thead>'+head+'</thead><tbody>'+periods+'</tbody></table></div>'+
  '<h4>Seven separately documented battle days</h4><div class="operational-table-scroll"><table><thead>'+head+'</thead><tbody>'+days+'</tbody></table></div>'+
- '<p class="comparison-caution">'+esc(s.explanation)+'</p>'+sourceLink(s.sourceId,"Read full Hansard archival table")+'</section>';
+ '<p class="comparison-caution">'+esc(s.explanation)+'</p>'+septemberEstimateCheck(s)+sourceLink(s.sourceId,"Read full Hansard archival table")+'</section>';
 }
 
 function renderCampaignComparisons(c){
@@ -416,6 +450,13 @@ function renderCampaignComparisons(c){
   blocks.push('<section class="operational-series" data-series="german-italian-aircraft"><h4>'+esc(series.title)+'</h4><p class="comparison-metric">'+esc(series.metric)+'</p><div class="operational-table-scroll"><table><thead><tr><th scope="col">Date</th><th scope="col">German</th><th scope="col">Italian</th><th scope="col">Same-day total</th></tr></thead><tbody>'+lines+'</tbody></table></div><p class="comparison-caution">'+esc(series.description)+'</p>'+sourceLink(series.sourceId,"Inspect historical table")+'</section>');
  }
  if(c.opponentReturnSeries)blocks.push(renderBritainOpponentReturns(c));
+ if(c.id==="schweinfurt"){
+  const returnFacts=c.facts.filter(f=>f.date==="1943-10-14"&&f.sourceId==="nationalWWIISchweinfurt");
+  const loss=returnFacts.find(f=>f.measure==="losses"),claim=returnFacts.find(f=>f.measure==="claims");
+  if(loss&&claim)blocks.push('<section class="comparison-section"><h4>Claims and recorded losses on 14 October 1943</h4>'+
+   '<p>'+fmt(loss.value)+' German fighters destroyed per '+fmt(claim.value)+' U.S. bomber-gunner claims, or '+destroyedPer100(claim.value,loss.value)+' per 100 claims. This comparison uses the museum’s published totals for the Schweinfurt raid. The German records report write-offs and damage separately.</p>'+
+   sourceLink(loss.sourceId,"Read the museum’s source comparison")+'</section>');
+ }
  return blocks.length?'<div class="campaign-comparisons"><h3>Operational strength & losses · inspect before comparing</h3><p class="comparison-intro">Only matching dates, units and accounting definitions may be compared directly. A snapshot is not a sortie; a claim is not a confirmed loss.</p>'+blocks.join("")+'</div>':"";
 }
 function renderDossier(){
@@ -639,5 +680,5 @@ function init(){
  update();renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-window.GrandAirWarV77={campaigns:D.campaigns,groupEvidence,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active,map:()=>state.map,refreshMap:drawMap};
+window.GrandAirWarV77={campaigns:D.campaigns,groupEvidence,renderBritainClaimReview,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active,map:()=>state.map,refreshMap:drawMap};
 })();
