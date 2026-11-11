@@ -21,7 +21,7 @@ const check=async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
-   const page=await browser.newPage({viewport,deviceScaleFactor:1});
+   const page=await browser.newPage({viewport,deviceScaleFactor:1,hasTouch:viewport.width<500,isMobile:viewport.width<500});
    const routePage=await browser.newPage({viewport,deviceScaleFactor:1});
    const rootUrl=base.slice(0,-"grand-air-war-v80.html".length);
    await routePage.goto(rootUrl,{waitUntil:"domcontentloaded",timeout:45000});
@@ -275,7 +275,7 @@ const check=async()=>{
    await page.evaluate(()=>window.GrandAirWarV77.choose('normandy',false));
    assert.equal(await page.locator('#operation-choices [data-operation]').count(),5);
    for(const id of ['dday','goodwood','cobra','mortain','falaise']){
-    await page.locator('[data-operation="'+id+'"]').click();
+    if(viewport.width<500)await page.locator('[data-operation="'+id+'"]').tap();else await page.locator('[data-operation="'+id+'"]').click();
     assert.equal(await page.locator('#operation-dossier').isVisible(),true);
     assert.equal(await page.locator('#campaign-dossier').isVisible(),false);
     const count=await page.locator('[data-operation-step]').count();
@@ -293,11 +293,14 @@ const check=async()=>{
      assert.ok(await page.locator('#operation-evidence a[href^="https://"]').count()>=5);
      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)<=2,'operation creates page overflow');
     }
+    if(viewport.width<500)await page.locator('.operation-place').first().tap();else await page.locator('.operation-place').first().click();
+    assert.ok(await page.locator('#operation-map-detail a[href]').count()>0,'map place must reveal its historical source');
     await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-v86-'+id+'-'+viewport.width+'.png')});
    }
    await page.locator('[data-operation="cobra"]').click();
    await page.locator('#operation-next').focus();await page.keyboard.press('Enter');
    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
+   await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-v86-cobra-bombardment-'+viewport.width+'.png')});
    await page.locator('#operation-evidence').screenshot({path:path.join(root,'v80-qa-v86-evidence-'+viewport.width+'.png')});
    const downloadPromise=page.waitForEvent('download');
    await page.locator('#operation-export').click();
