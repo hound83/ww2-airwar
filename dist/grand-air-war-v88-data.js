@@ -435,7 +435,21 @@ window.AtlasClaimLossData = {
         "basing": "21–27 June",
         "source": "jg51Return",
         "basingSource": "jg51Basing",
-        "page": "June 1944, Bf 109G-6, enemy action"
+        "page": "June 1944, Bf 109G-6",
+        "inventory": [
+          {
+            "aircraft": "Bf 109G-6",
+            "opening": 40,
+            "newDeliveries": 0,
+            "repairReturns": 3,
+            "transfersIn": 0,
+            "closing": 24,
+            "enemyAction": 8,
+            "nonEnemy": 9,
+            "overhaul": 1,
+            "transfersOut": 1
+          }
+        ]
       },
       {
         "unit": "I./SG 10",
@@ -444,7 +458,57 @@ window.AtlasClaimLossData = {
         "basing": "23–27 June",
         "source": "sg10Return",
         "basingSource": "sg10Basing",
-        "page": "June 1944, enemy action: 2 F-8, 1 G-3, 1 G-8"
+        "page": "June 1944, four Fw 190 variants",
+        "inventory": [
+          {
+            "aircraft": "Fw 190F-3",
+            "opening": 2,
+            "newDeliveries": 2,
+            "repairReturns": 0,
+            "transfersIn": 0,
+            "closing": 4,
+            "enemyAction": 0,
+            "nonEnemy": 0,
+            "overhaul": 0,
+            "transfersOut": 0
+          },
+          {
+            "aircraft": "Fw 190F-8",
+            "opening": 26,
+            "newDeliveries": 5,
+            "repairReturns": 0,
+            "transfersIn": 0,
+            "closing": 29,
+            "enemyAction": 2,
+            "nonEnemy": 0,
+            "overhaul": 0,
+            "transfersOut": 0
+          },
+          {
+            "aircraft": "Fw 190G-3",
+            "opening": 3,
+            "newDeliveries": 0,
+            "repairReturns": 0,
+            "transfersIn": 0,
+            "closing": 0,
+            "enemyAction": 1,
+            "nonEnemy": 0,
+            "overhaul": 2,
+            "transfersOut": 0
+          },
+          {
+            "aircraft": "Fw 190G-8",
+            "opening": 1,
+            "newDeliveries": 0,
+            "repairReturns": 0,
+            "transfersIn": 0,
+            "closing": 0,
+            "enemyAction": 1,
+            "nonEnemy": 0,
+            "overhaul": 0,
+            "transfersOut": 0
+          }
+        ]
       }
     ],
     "references": [
@@ -452,7 +516,11 @@ window.AtlasClaimLossData = {
         "source": "soviet16AirHistory1944",
         "page": "Ch. 3, 26 June and Bobruisk operation summary"
       }
-    ]
+    ],
+    "inventoryPeriod": {
+      "start": "1944-06-01",
+      "end": "1944-06-30"
+    }
   },
   "sources": {
     "mission494": {
@@ -522,6 +590,10 @@ window.AtlasClaimLossData = {
     "normandyClaimsAudit": {
       "title": "Northern France claims and losses research audit",
       "url": "https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+    },
+    "sg10ReturnMirror": {
+      "title": "I./SG 10 return mirror",
+      "url": "https://asisbiz.com/Luftwaffe/bisg10.html"
     }
   }
 };

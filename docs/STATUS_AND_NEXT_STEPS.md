@@ -1,5 +1,9 @@
 # Atlas status and next work
 
+## 11 November 2026 - Aircraft inventory checks for loss estimates
+
+The Atlas now checks the two Bobruisk groups against their June movement returns. They opened with 72 aircraft, received 10 and closed with 57. Of 25 departures, 13 were outside enemy action. The remaining 12 are the ceiling for 26 June across those groups. The dated estimate and calculator show the scope and the calculation. A separate Mission 494 inventory ceiling requires complete German coverage of the escort engagements. [Return transcription, reconciliation and range rules](../research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md).
+
 ## 11 November 2026 - v8.9.1 Normandy claims and losses audit
 
 Three pre-Cobra US fighter comparisons give 23 reconstructed losses from 34 claims. The updated Cobra estimate is about 8 from 12. Omitting one date gives 7–9, and counting both uncertain landings gives 9. Two August Ninth Air Force engagements provide checks. The calculator and export carry the 18-day Normandy comparison and identify its broader cause and service coverage. The reverse view adds the Clastres and Le Bény-Bocage engagements.

@@ -105,6 +105,49 @@ function historicalEstimate(operationId,observations) {
  };
 }
 
+const isAircraftCount=value=>Number.isSafeInteger(value)&&value>=0;
+
+function inventoryLossCeiling({opening,received,closing,knownOtherDepartures=0}) {
+ if(![opening,received,closing,knownOtherDepartures].every(isAircraftCount))return null;
+ const ceiling=opening+received-closing-knownOtherDepartures;
+ return isAircraftCount(ceiling)?ceiling:null;
+}
+
+function selectLossRange({lower,upper},ceiling) {
+ const boundedUpper=ceiling===null?upper:Math.min(upper,ceiling);
+ const conflict=lower>boundedUpper;
+ return {
+  lower:conflict?null:lower,upper:boundedUpper,
+  expected:conflict?null:Math.round((lower+boundedUpper)/2),
+  ceiling,conflict
+ };
+}
+
+function reconcileUnitReturns(units,period) {
+ const totals={opening:0,received:0,closing:0,knownOtherDepartures:0};
+ for(const {inventory,losses} of units){
+  if(!inventory?.length)return null;
+  let recorded=0;
+  for(const row of inventory){
+   const {opening,newDeliveries,repairReturns,transfersIn,closing,enemyAction,nonEnemy,overhaul,transfersOut}=row;
+   if(![newDeliveries,repairReturns,transfersIn,nonEnemy,overhaul,transfersOut,enemyAction].every(isAircraftCount))return null;
+   const received=newDeliveries+repairReturns+transfersIn;
+   const knownOtherDepartures=nonEnemy+overhaul+transfersOut;
+   const ceiling=inventoryLossCeiling({opening,received,closing,knownOtherDepartures});
+   if(ceiling!==enemyAction)return null;
+   recorded+=enemyAction;
+   totals.opening+=opening;
+   totals.received+=received;
+   totals.closing+=closing;
+   totals.knownOtherDepartures+=knownOtherDepartures;
+  }
+  if(recorded!==losses)return null;
+ }
+ return {...totals,period,departures:totals.opening+totals.received-totals.closing,ceiling:inventoryLossCeiling(totals)};
+}
+
+const bobruiskInventory=bobruisk.inventoryPeriod&&reconcileUnitReturns(bobruisk.unitLosses,bobruisk.inventoryPeriod);
+
 function bobruiskEstimate(campaignId,date,observations) {
  if(campaignId!==bobruisk.campaign||date!==bobruisk.date||matchedLoss(observations,bobruisk.id,date))return null;
  const claim=observations.find(fact=>fact.date===date&&fact.measure==='claims'&&fact.side==='Soviet'&&
@@ -113,8 +156,10 @@ function bobruiskEstimate(campaignId,date,observations) {
  const monthlyLosses=bobruisk.unitLosses.reduce((sum,row)=>sum+row.losses,0);
  const dayShare=bobruisk.dateEngagements/bobruisk.periodEngagements;
  const [lower,upper]=bobruisk.eligibleShare.map(share=>monthlyLosses*share*dayShare);
- return {id:bobruisk.id,kind:'estimated',confidence:'low',date,expected:Math.round((lower+upper)/2),
-  lower,upper,monthlyLosses,claimCount:claim.value};
+ const inventory=bobruiskInventory&&bobruiskInventory.period.start<=date&&date<=bobruiskInventory.period.end?bobruiskInventory:null;
+ const range=selectLossRange({lower,upper},inventory?.ceiling??null);
+ return {id:bobruisk.id,kind:'estimated',confidence:'low',date,
+  ...range,inventory,monthlyLosses,claimCount:claim.value};
 }
 
 function renderBritain(result) {
@@ -160,7 +205,7 @@ function renderCobra(result,claims) {
   fmt(julyTotals.alliedLosses)+' total Allied losses. These wider figures cover several air forces, day and night activity, and losses from multiple causes. '+
   sourceLink(reference(julyContext.reference))+'</p>'+
   '<p>Mission 494 recorded '+cobraClaim.value+' air-to-air claims. The German calendar reports '+cobra.widerLosses+
-  ' aircraft lost across a wider area that day. US encounter reports include air combat away from St-Lô.</p>'+
+  ' aircraft lost across a wider area that day. US encounter reports include air combat away from St-Lô. An inventory ceiling for Mission 494 requires coverage of the German units in all those encounters.</p>'+
   '<p>'+referenceLinks(cobra.references)+' · '+sourceLink(reference({source:'normandyClaimsAudit'}))+'</p></details>';
 }
 
@@ -170,24 +215,38 @@ function renderReverse() {
   '<details><summary>Claim stages, loss definitions and sources</summary>'+caseNotes(D.germanClaims)+'</details>';
 }
 
+function bobruiskHeadline(result) {
+ const value=result.conflict?'Up to '+fmt(result.upper):'About '+fmt(result.expected);
+ const label=result.conflict?'Inventory ceiling · model conflicts with returns':'Working estimate · low confidence';
+ const range=result.conflict?'':'<small>Scenario range '+result.lower.toFixed(1)+'–'+result.upper.toFixed(1)+'</small>';
+ return '<strong>'+value+'</strong><span>German aircraft removed by enemy action<small>'+label+' · two Bobruisk-based groups</small>'+range+'</span>';
+}
+
 function renderBobruisk(result) {
  if(!result)return '<p>Use the Bobruisk event to review its dated loss evidence.</p>';
+ const inventory=result.inventory;
+ const inventoryText=inventory?
+  '<p><strong>June inventory check.</strong> The groups opened with '+fmt(inventory.opening)+' aircraft, received '+fmt(inventory.received)+' and closed with '+fmt(inventory.closing)+
+  '. Of the '+fmt(inventory.departures)+' that left, '+fmt(inventory.knownOtherDepartures)+' were non-enemy losses, overhaul or transfers. The remaining '+fmt(inventory.ceiling)+
+  ' enemy-action removals set the ceiling for 26 June across these groups. '+sourceLink(reference({source:'sg10ReturnMirror'}))+'</p>':'';
+ const allocation='<p>Assume half to all of the '+result.monthlyLosses+' June removals occurred during the opening battles. The date accounts for '+bobruisk.dateEngagements+
+  ' of '+bobruisk.periodEngagements+' reported air engagements from 24 June to 4 July. ';
+ const rangeText=result.conflict?'The modeled range exceeds the inventory ceiling. The returns support the upper bound shown.':
+  'The working estimate is the rounded midpoint of the scenario range. The units’ daily flight and loss counts remain uncertain.';
  return '<p>The 16th Air Army reported <strong>'+result.claimCount+' German aircraft shot down</strong> that day. The working estimate covers enemy-action aircraft removals from two Bobruisk-based German groups. The June returns group together several kinds of enemy action.</p>'+
-  '<details><summary>Monthly unit returns and calculation</summary>'+
+  '<details><summary>Monthly unit returns, inventory check and calculation</summary>'+
   '<ul>'+bobruisk.unitLosses.map(row=>'<li><strong>'+esc(row.unit)+' · '+row.losses+' '+esc(row.aircraft)+'</strong> removed by enemy action in June. Based at Bobruisk '+esc(row.basing)+
    '. '+referenceLinks([{source:row.source,page:row.page},{source:row.basingSource,page:'Base chronology'}])+'</li>').join('')+'</ul>'+
-  '<p>Assume half to all of the '+result.monthlyLosses+' June removals occurred during the opening battles. The date accounts for '+bobruisk.dateEngagements+
-  ' of '+bobruisk.periodEngagements+' reported air engagements in the 24 June to 4 July Bobruisk operation. Applying that activity share gives '+
-  result.lower.toFixed(1)+'–'+result.upper.toFixed(1)+' aircraft under those assumptions. The rounded midpoint gives the displayed estimate. The units’ daily flight and loss counts remain uncertain.</p>'+
-  '<p>'+referenceLinks(bobruisk.references)+'</p></details>';
+  inventoryText+allocation+rangeText+'</p><p>'+referenceLinks(bobruisk.references)+'</p></details>';
 }
 
 function renderEventEstimate(campaignId,date,observations) {
  const result=bobruiskEstimate(campaignId,date,observations);
  if(!result)return '';
  return '<div class="event-loss-estimate" data-event-estimate="'+esc(result.id)+'">'+
-  '<div class="claim-loss-result claim-loss-estimated"><strong>About '+fmt(result.expected)+'</strong><span>German aircraft removed by enemy action<small>Working estimate · two Bobruisk-based groups · low confidence</small></span></div>'+
-  '<p>III./JG 51 and I./SG 10. The calculation uses June unit returns and the 26 June share of reported air engagements.</p>'+
+  '<div class="claim-loss-result claim-loss-estimated">'+bobruiskHeadline(result)+'</div>'+
+  '<p>III./JG 51 and I./SG 10. The calculation uses June unit returns and the 26 June share of reported air engagements.'+
+  (result.inventory?' The June inventory gives a ceiling of '+fmt(result.ceiling)+' for these groups.':'')+'</p>'+
   '<a href="?loss-scope=bobruisk#claim-loss-calculator" data-claim-scope="bobruisk">Review the Bobruisk calculation</a></div>';
 }
 
@@ -219,7 +278,7 @@ function render() {
   result.innerHTML='<strong>'+rambouillet.claims+' claimed · '+rambouillet.losses+' lost</strong><span>Rambouillet · 15 August 1944<small>II./JG 26 against US 373rd Fighter Group P-47s</small></span>';
   method.innerHTML=renderReverse();
  }else{
-  result.innerHTML=eastern?'<strong>About '+fmt(eastern.expected)+'</strong><span>German aircraft removed by enemy action<small>Working estimate · two Bobruisk-based groups · low confidence</small></span>':'Bobruisk · 26 June 1944';
+  result.innerHTML=eastern?bobruiskHeadline(eastern):'Bobruisk · 26 June 1944';
   method.innerHTML=renderBobruisk(eastern);
  }
  if(wasOpen)method.querySelector('details')?.setAttribute('open','');
@@ -272,6 +331,6 @@ function init(){
  const requested=new URLSearchParams(window.location.search).get('loss-scope');
  selectScope(Object.hasOwn(scopes,requested)?requested:window.location.hash.startsWith('#operation=cobra')?'cobra':'britain');
 }
-window.AtlasClaimLosses={calculate,historicalEstimate,bobruiskEstimate,renderEventEstimate,openCalculator,britainChecks};
+window.AtlasClaimLosses={calculate,historicalEstimate,bobruiskEstimate,renderEventEstimate,openCalculator,britainChecks,inventoryLossCeiling,selectLossRange};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

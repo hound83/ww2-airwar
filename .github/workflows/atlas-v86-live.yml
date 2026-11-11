@@ -28,7 +28,8 @@ jobs:
       - name: Install browser verification dependencies
         run: |
           npm install --no-save playwright
-          npx playwright install --with-deps chromium
+          browser_path="$(command -v google-chrome)"
+          printf 'ATLAS_CHROMIUM_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
       - name: Wait for the matching Pages publication
         run: node scripts/verify-v86-live.cjs
       - name: Verify actual public default, operations and legacy routes
