@@ -121,3 +121,11 @@
 .claim-loss-engagements th:first-child{white-space:normal}
 .claim-loss-engagements time{display:block;font-weight:400;color:var(--muted)}
 .event-loss-estimate{margin-top:12px}
+
+.claim-campaign-table caption{text-align:left;padding:6px 0;font-weight:700;color:#e4e8d9}
+.claim-campaign-table th:first-child{white-space:normal}
+.claim-campaign-table small{display:block;color:var(--muted);font-weight:400}
+.claim-campaign-table .claim-range-miss small{color:#edd3a0}
+.claim-campaign-loss{background:linear-gradient(to left,#725e363b var(--share),transparent var(--share))}
+.claim-campaign-claims{background:linear-gradient(to left,#48786b4a var(--share),transparent var(--share))}
+.claim-campaign-score strong{color:#e4e8d9}

@@ -30,6 +30,16 @@ window.AtlasClaimLossData = {
         "source": "foyReport",
         "page": "25 July, 11:45, southeast of Paris",
         "detail": "The encounter report illustrates the wider air-combat geography of the day."
+      },
+      {
+        "source": "luftflotte3JulySituation",
+        "page": "25 July, pp. 31–33",
+        "detail": "The same day covers several Allied air forces and German night operations. The situation narrative does not identify German losses by US escort encounter."
+      },
+      {
+        "source": "luftflotte3LossTables",
+        "page": "25 July, PDF p. 22",
+        "detail": "Command-wide return with cause and aircraft-type columns. The scanned sheet is inverted and its OCR cannot establish the column counts. Airframe and claimant attribution require separate evidence."
       }
     ]
   },
@@ -594,6 +604,14 @@ window.AtlasClaimLossData = {
     "sg10ReturnMirror": {
       "title": "I./SG 10 return mirror",
       "url": "https://asisbiz.com/Luftwaffe/bisg10.html"
+    },
+    "luftflotte3JulySituation": {
+      "title": "Luftflotte 3 situation reports for July 1944 (RAF AHB translation 127)",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/situation-reports-issued-by-luftflotte-3-france-july-1944/"
+    },
+    "luftflotte3LossTables": {
+      "title": "Luftflotte 3 July–August aircraft losses (RAF AHB translation 144)",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-july-31st-august-1944/#page=22"
     }
   }
 };

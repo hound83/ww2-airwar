@@ -10,6 +10,10 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
+## v9.0 Campaign claims and losses
+
+[Compare the full Battle of Britain](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=britain-campaign#claim-loss-calculator) by week or phase, then open the held-out estimates and error ranges. The [Normandy comparison](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=normandy-campaign#claim-loss-calculator) uses the 18 daily Allied and German reports for 1–18 July 1944. [Sources, scope and validation](research/sources/atlas-v90-campaign-loss-validation-2026-11-12.md).
+
 ## v8.9.1 Normandy claims and losses audit
 
 Cobra’s 12 escort claims give a working estimate of about 8 German aircraft destroyed. The [calculator](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=cobra#claim-loss-calculator) shows three earlier US comparisons, two later checks, and the effect of omitting any one date. It also shows the wider 1–18 July campaign totals and six German-versus-Allied cases, including a Canadian reconnaissance patrol. [Sources, daily series and calculations](research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md).

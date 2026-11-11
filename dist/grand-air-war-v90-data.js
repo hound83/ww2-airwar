@@ -1,0 +1,374 @@
+/* Generated from research/transcriptions/battle-of-britain-campaign-claims-1940.json. */
+window.AtlasBritainCampaignLossData = {
+  "area": "British home air defence and German operations against Britain",
+  "period": {
+    "start": "1940-07-10",
+    "end": "1940-10-31"
+  },
+  "sources": {
+    "hansard": {
+      "title": "Battle of Britain (Enemy Losses), House of Commons",
+      "url": "https://api.parliament.uk/historic-hansard/commons/1947/may/14/battle-of-britain-enemy-losses",
+      "locator": "14 May 1947, vol. 437, cols. 1482–1485, phase and intensive-day tables"
+    },
+    "narrowMargin": {
+      "title": "Derek Wood and Derek Dempster, The Narrow Margin",
+      "url": "https://erenow.org/ww/narrow-margin-battle-britain-rise-air-power-1930-1940/21.php",
+      "locator": "Appendix 16, German losses during the Battle of Britain, claimed and definite"
+    },
+    "aero": {
+      "title": "AERO – Technika Lotnicza, issue 1/1993",
+      "url": "https://bc.pollub.pl/Content/14151/Aero%201%201993.pdf",
+      "locator": "Issue 1/1993, Straty niemieckich samolotów w bitwie o Wielką Brytanię table and its all-causes footnote"
+    },
+    "churchill": {
+      "title": "Winston S. Churchill, The Second World War, vol. II, Their Finest Hour",
+      "url": "https://www.fadedpage.com/books/20191054/html.php",
+      "locator": "Book II, ch. 1, Aircraft Losses table"
+    },
+    "richards": {
+      "title": "Denis Richards, Royal Air Force 1939–1945, vol. I, The Fight at Odds",
+      "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-I/UK-RAF-I-6.html",
+      "locator": "Ch. VI, p. 190 n. 4"
+    },
+    "cox": {
+      "title": "J. S. Cox, A Comparative Analysis of RAF and Luftwaffe Intelligence in the Battle of Britain, 1940",
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss3-3-pdf/",
+      "locator": "Air Power Review 3(3), dated claim table and n. 49. German situation reports (AHB R.353) and Ramsey p. 707."
+    }
+  },
+  "phaseSeries": {
+    "sourceIds": [
+      "hansard",
+      "narrowMargin",
+      "aero"
+    ],
+    "claimScope": "Contemporary RAF destruction estimates as reproduced in the postwar comparison.",
+    "lossScope": "German Quartermaster General aircraft destroyed and damaged, all causes as specified by the published AERO table. Aircraft shot down by British artillery are included in the parliamentary figures.",
+    "printedTotal": {
+      "britishClaims": 2692,
+      "germanDestroyed": 1733,
+      "germanDamaged": 643,
+      "germanPublicAdmissions": 896
+    },
+    "rows": [
+      {
+        "name": "Opening phase",
+        "start": "1940-07-10",
+        "end": "1940-08-07",
+        "britishClaims": 188,
+        "germanDestroyed": 192,
+        "germanDamaged": 77,
+        "germanPublicAdmissions": 63
+      },
+      {
+        "name": "Coastal targets",
+        "start": "1940-08-08",
+        "end": "1940-08-23",
+        "britishClaims": 755,
+        "germanDestroyed": 403,
+        "germanDamaged": 127,
+        "germanPublicAdmissions": 213,
+        "onlineHansardVariants": {
+          "germanDestroyed": 430
+        }
+      },
+      {
+        "name": "Fighter Command airfields",
+        "start": "1940-08-24",
+        "end": "1940-09-06",
+        "britishClaims": 643,
+        "germanDestroyed": 378,
+        "germanDamaged": 115,
+        "germanPublicAdmissions": 243,
+        "onlineHansardVariants": {
+          "germanDamaged": 127
+        }
+      },
+      {
+        "name": "London daylight bomber raids",
+        "start": "1940-09-07",
+        "end": "1940-09-30",
+        "britishClaims": 846,
+        "germanDestroyed": 435,
+        "germanDamaged": 161,
+        "germanPublicAdmissions": 243,
+        "onlineHansardVariants": {
+          "germanDamaged": 163,
+          "germanPublicAdmissions": 134
+        }
+      },
+      {
+        "name": "October fighter-bomber raids",
+        "start": "1940-10-01",
+        "end": "1940-10-31",
+        "britishClaims": 260,
+        "germanDestroyed": 325,
+        "germanDamaged": 163,
+        "germanPublicAdmissions": 134
+      }
+    ],
+    "detail": "Phase counts use the transcription in The Narrow Margin, which reconciles to the parliamentary totals. The AERO table corroborates the destruction and damage counts. Divergent cells from the digital Hansard table are recorded verbatim as variants."
+  },
+  "weekSeries": {
+    "sourceIds": [
+      "churchill"
+    ],
+    "claimScope": "British claims of aircraft destroyed, including Fighter Command, anti-aircraft guns and balloons.",
+    "lossScope": "German recorded destruction and British RAF fighter aircraft completely written off or missing.",
+    "rows": [
+      {
+        "start": "1940-07-10",
+        "end": "1940-07-13",
+        "britishClaims": 63,
+        "germanDestroyed": 45,
+        "britishFighterLosses": 15
+      },
+      {
+        "start": "1940-07-14",
+        "end": "1940-07-20",
+        "britishClaims": 49,
+        "germanDestroyed": 31,
+        "britishFighterLosses": 22
+      },
+      {
+        "start": "1940-07-21",
+        "end": "1940-07-27",
+        "britishClaims": 58,
+        "germanDestroyed": 51,
+        "britishFighterLosses": 14
+      },
+      {
+        "start": "1940-07-28",
+        "end": "1940-08-03",
+        "britishClaims": 39,
+        "germanDestroyed": 56,
+        "britishFighterLosses": 8
+      },
+      {
+        "start": "1940-08-04",
+        "end": "1940-08-10",
+        "britishClaims": 64,
+        "germanDestroyed": 44,
+        "britishFighterLosses": 25
+      },
+      {
+        "start": "1940-08-11",
+        "end": "1940-08-17",
+        "britishClaims": 496,
+        "germanDestroyed": 261,
+        "britishFighterLosses": 134
+      },
+      {
+        "start": "1940-08-18",
+        "end": "1940-08-24",
+        "britishClaims": 251,
+        "germanDestroyed": 145,
+        "britishFighterLosses": 59
+      },
+      {
+        "start": "1940-08-25",
+        "end": "1940-08-31",
+        "britishClaims": 316,
+        "germanDestroyed": 193,
+        "britishFighterLosses": 141
+      },
+      {
+        "start": "1940-09-01",
+        "end": "1940-09-07",
+        "britishClaims": 375,
+        "germanDestroyed": 187,
+        "britishFighterLosses": 144
+      },
+      {
+        "start": "1940-09-08",
+        "end": "1940-09-14",
+        "britishClaims": 182,
+        "germanDestroyed": 102,
+        "britishFighterLosses": 67
+      },
+      {
+        "start": "1940-09-15",
+        "end": "1940-09-21",
+        "britishClaims": 268,
+        "germanDestroyed": 120,
+        "britishFighterLosses": 52
+      },
+      {
+        "start": "1940-09-22",
+        "end": "1940-09-28",
+        "britishClaims": 230,
+        "germanDestroyed": 118,
+        "britishFighterLosses": 72
+      },
+      {
+        "start": "1940-09-29",
+        "end": "1940-10-05",
+        "britishClaims": 100,
+        "germanDestroyed": 112,
+        "britishFighterLosses": 44
+      },
+      {
+        "start": "1940-10-06",
+        "end": "1940-10-12",
+        "britishClaims": 66,
+        "germanDestroyed": 73,
+        "britishFighterLosses": 47
+      },
+      {
+        "start": "1940-10-13",
+        "end": "1940-10-19",
+        "britishClaims": 38,
+        "germanDestroyed": 67,
+        "britishFighterLosses": 29
+      },
+      {
+        "start": "1940-10-20",
+        "end": "1940-10-26",
+        "britishClaims": 43,
+        "germanDestroyed": 72,
+        "britishFighterLosses": 21
+      },
+      {
+        "start": "1940-10-27",
+        "end": "1940-10-31",
+        "britishClaims": 60,
+        "germanDestroyed": 56,
+        "britishFighterLosses": 21
+      }
+    ],
+    "monthlyRows": [
+      {
+        "start": "1940-07-10",
+        "end": "1940-07-31",
+        "britishClaims": 203,
+        "germanDestroyed": 164,
+        "britishFighterLosses": 58
+      },
+      {
+        "start": "1940-08-01",
+        "end": "1940-08-31",
+        "britishClaims": 1133,
+        "germanDestroyed": 662,
+        "britishFighterLosses": 360
+      },
+      {
+        "start": "1940-09-01",
+        "end": "1940-09-30",
+        "britishClaims": 1108,
+        "germanDestroyed": 582,
+        "britishFighterLosses": 361
+      },
+      {
+        "start": "1940-10-01",
+        "end": "1940-10-31",
+        "britishClaims": 254,
+        "germanDestroyed": 325,
+        "britishFighterLosses": 136
+      }
+    ]
+  },
+  "intensiveDays": {
+    "sourceIds": [
+      "hansard"
+    ],
+    "detail": "Seven dates selected in the parliamentary reply for intense combat, nested within the 8 August to 30 September phases.",
+    "rows": [
+      {
+        "date": "1940-08-15",
+        "britishClaims": 183,
+        "germanDestroyed": 76,
+        "germanDamaged": 9
+      },
+      {
+        "date": "1940-08-18",
+        "britishClaims": 155,
+        "germanDestroyed": 71,
+        "germanDamaged": 23
+      },
+      {
+        "date": "1940-08-31",
+        "britishClaims": 94,
+        "germanDestroyed": 39,
+        "germanDamaged": 14
+      },
+      {
+        "date": "1940-09-02",
+        "britishClaims": 66,
+        "germanDestroyed": 34,
+        "germanDamaged": 12
+      },
+      {
+        "date": "1940-09-07",
+        "britishClaims": 100,
+        "germanDestroyed": 40,
+        "germanDamaged": 13
+      },
+      {
+        "date": "1940-09-15",
+        "britishClaims": 185,
+        "germanDestroyed": 56,
+        "germanDamaged": 21
+      },
+      {
+        "date": "1940-09-27",
+        "britishClaims": 153,
+        "germanDestroyed": 55,
+        "germanDamaged": 12
+      }
+    ]
+  },
+  "germanClaims": {
+    "campaign": {
+      "sourceIds": [
+        "richards"
+      ],
+      "claims": 3058,
+      "britishFighterLosses": 915,
+      "detail": "Published campaign comparison. The footnote gives aggregate figures without a cause-by-cause or claim-by-claim reconciliation."
+    },
+    "selectedDates": {
+      "sourceIds": [
+        "cox"
+      ],
+      "detail": "German situation-report claims and RAF losses as paired by Cox. Seven dates from 24 August through 15 September. No complete German claim series by phase has been established for this audit.",
+      "rows": [
+        {
+          "date": "1940-08-24",
+          "claims": 57,
+          "rafLosses": 20
+        },
+        {
+          "date": "1940-08-26",
+          "claims": 63,
+          "rafLosses": 29
+        },
+        {
+          "date": "1940-08-28",
+          "claims": 40,
+          "rafLosses": 14
+        },
+        {
+          "date": "1940-09-01",
+          "claims": 52,
+          "rafLosses": 13
+        },
+        {
+          "date": "1940-09-03",
+          "claims": 61,
+          "rafLosses": 14
+        },
+        {
+          "date": "1940-09-07",
+          "claims": 93,
+          "rafLosses": 25
+        },
+        {
+          "date": "1940-09-15",
+          "claims": 78,
+          "rafLosses": 29
+        }
+      ]
+    }
+  }
+};

@@ -3,6 +3,7 @@
 'use strict';
 const D=window.AtlasClaimLossData,C=window.GrandAirWarV77Campaigns,N=window.NormandyV86Data;
 if(!D||!C||!N)return;
+const campaignReports=window.AtlasCampaignLosses?.series;
 const $=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=x=>x.toLocaleString('en-US');
@@ -20,6 +21,8 @@ const france=D.france;
 const bobruisk=D.bobruisk;
 const easternCampaign=C.campaigns.find(campaign=>campaign.id===bobruisk.campaign);
 const scopes={
+ 'britain-campaign':{series:['britain-weeks','britain-phases','britain-german']},
+ 'normandy-campaign':{series:['normandy-allied','normandy-german']},
  britain:{claimCount:september.rafClaim,operation:'britain-15-sep',step:0},
  cobra:{claimCount:cobraClaim.value,operation:cobra.operation,step:1},
  reverse:{},
@@ -205,7 +208,7 @@ function renderCobra(result,claims) {
   fmt(julyTotals.alliedLosses)+' total Allied losses. These wider figures cover several air forces, day and night activity, and losses from multiple causes. '+
   sourceLink(reference(julyContext.reference))+'</p>'+
   '<p>Mission 494 recorded '+cobraClaim.value+' air-to-air claims. The German calendar reports '+cobra.widerLosses+
-  ' aircraft lost across a wider area that day. US encounter reports include air combat away from St-Lô. An inventory ceiling for Mission 494 requires coverage of the German units in all those encounters.</p>'+
+  ' aircraft lost across a wider area that day. The Luftflotte 3 situation report also covers British attacks and German night operations. Its loss tables group aircraft by type and cause. A ceiling for Mission 494 needs coverage of the German units in the escort encounters.</p>'+
   '<p>'+referenceLinks(cobra.references)+' · '+sourceLink(reference({source:'normandyClaimsAudit'}))+'</p></details>';
 }
 
@@ -250,8 +253,61 @@ function renderEventEstimate(campaignId,date,observations) {
   '<a href="?loss-scope=bobruisk#claim-loss-calculator" data-claim-scope="bobruisk">Review the Bobruisk calculation</a></div>';
 }
 
+const dayLabel=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',timeZone:'UTC'});
+function campaignDate(row){
+ const start=dayLabel.format(new Date(row.start)),end=dayLabel.format(new Date(row.end));
+ const first=row.start.slice(0,7)===row.end.slice(0,7)?Number(row.start.slice(-2)):start;
+ return row.start===row.end?'<time datetime="'+esc(row.start)+'">'+end+'</time>':
+  '<time datetime="'+esc(row.start)+'">'+first+'</time>–<time datetime="'+esc(row.end)+'">'+end+'</time>';
+}
+
+function campaignPeriod(row){
+ return '<th scope="row">'+(row.name?esc(row.name)+'<small>'+campaignDate(row)+'</small>':campaignDate(row))+'</th>';
+}
+
+function campaignTable(caption,headings,rows,attributes=''){
+ return '<div class="claim-loss-table claim-campaign-table" role="region" tabindex="0" aria-label="'+esc(caption)+'" '+attributes+'>'+
+  '<table><caption>'+esc(caption)+'</caption><thead><tr><th scope="col">Period</th>'+
+  headings.map(heading=>'<th scope="col">'+esc(heading)+'</th>').join('')+'</tr></thead><tbody>'+rows.join('')+'</tbody></table></div>';
+}
+
+function renderCampaignValidation(report){
+ const result=report.validation;
+ if(!result)return '<p>German claims by week and phase are the remaining source gap for the RAF loss model.</p>';
+ const periods=result.checks.length+' '+report.unit+'s';
+ const rows=result.checks.map(row=>'<tr data-held-out-period="'+esc(row.start)+'">'+campaignPeriod(row)+
+  '<td>'+fmt(row.losses)+'</td><td>'+fmt(row.expected)+'</td><td class="'+(row.covered?'':'claim-range-miss')+'">'+
+  band(row)+(row.covered?'':'<small>Missed</small>')+'</td></tr>');
+ return '<p class="claim-campaign-score"><strong>'+result.mae.toFixed(1)+' aircraft average miss</strong> across '+periods+
+  '. The claims-only ratio missed by '+result.baselineMae.toFixed(1)+'. The ranges covered '+result.covered+' of '+result.checks.length+' recorded totals.</p>'+
+  '<details><summary>Held-out estimates and ranges</summary>'+
+  '<p>Each estimate withholds one complete '+report.unit+'. The other periods choose between a claims-only ratio and a fit using claims and period length. Ranges scale the 80th percentile of the other periods’ errors per day to the length of the withheld period. The full series favors '+(result.preferredMethod==='claims'?'the claims-only ratio':'claims and period length')+'.</p>'+
+  campaignTable('Checks against withheld loss records',['Recorded losses','Estimate','Modeled range'],rows,'data-held-out-table')+
+  '<p><a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-v90-campaign-loss-validation-2026-11-12.md" target="_blank" rel="noopener noreferrer">Read the model and source audit</a></p></details>';
+}
+
+function renderCampaignReport(report){
+ const max=Math.max(1,...report.rows.map(row=>Math.max(row.claims,row.losses)));
+ const rows=report.rows.map(row=>'<tr data-campaign-period="'+esc(row.start)+'">'+campaignPeriod(row)+
+  '<td class="claim-campaign-loss" style="--share:'+100*row.losses/max+'%">'+fmt(row.losses)+'</td>'+
+  '<td class="claim-campaign-claims" style="--share:'+100*row.claims/max+'%">'+fmt(row.claims)+'</td>'+
+  '<td>'+(row.claims?per100(row.losses/row.claims):'—')+'</td></tr>');
+ const caption=report.unit?'Recorded comparison by '+report.unit:'Seven dated German reports';
+ return '<p>'+esc(report.detail)+'</p><p>'+report.references.map(sourceLink).join(' · ')+'</p>'+
+  renderCampaignValidation(report)+campaignTable(caption,['Recorded losses',report.claimant,'Losses per 100 claims'],rows,'data-recorded-campaign-table');
+}
+
 function render() {
  const scope=$('claim-loss-scope').value,input=$('claim-loss-count'),result=$('claim-loss-result'),method=$('claim-loss-method');
+ if(scopes[scope].series){
+  const report=campaignReports?.[$('claim-loss-series').value];
+  result.classList.remove('claim-loss-estimated');
+  method.hidden=!report;
+  result.innerHTML=report?'<strong>'+fmt(report.total.losses)+'</strong><span>'+esc(report.lossLabel)+
+   '<small>'+fmt(report.total.claims)+' '+esc(report.claimant)+' · '+esc(report.scope)+'</small></span>':'Campaign comparison could not load. Reload this page to retry.';
+  if(report)method.innerHTML=renderCampaignReport(report);
+  return;
+ }
  const wasOpen=method.querySelector('details')?.open;
  const editable=scopes[scope].claimCount!==undefined;
  const claims=input.value.trim()===''?NaN:Number(input.value);
@@ -312,6 +368,13 @@ function selectScope(scope,claims=scopes[scope]?.claimCount) {
  $('claim-loss-count-wrap').hidden=claims===undefined;
  $('claim-loss-count-label').textContent=scope==='cobra'?'Aircraft claimed destroyed in the air':'Aircraft claimed destroyed';
  $('claim-loss-count').value=claims??'';
+ const reporting=$('claim-loss-series'),series=scopes[scope].series;
+ $('claim-loss-series-wrap').hidden=!series;
+ if(series){
+  reporting.innerHTML=campaignReports?series.map(id=>'<option value="'+id+'">'+esc(campaignReports[id].label)+'</option>').join(''):'';
+  const requested=new URLSearchParams(window.location.search).get('loss-series');
+  if(series.includes(requested))reporting.value=requested;
+ }
  render();
  return true;
 }
@@ -328,8 +391,10 @@ function init(){
  if(!select)return;
  select.addEventListener('change',()=>selectScope(select.value));
  $('claim-loss-count').addEventListener('input',render);
- const requested=new URLSearchParams(window.location.search).get('loss-scope');
- selectScope(Object.hasOwn(scopes,requested)?requested:window.location.hash.startsWith('#operation=cobra')?'cobra':'britain');
+ $('claim-loss-series').addEventListener('change',render);
+ const requested=new URLSearchParams(window.location.search).get('loss-scope'),hash=window.location.hash;
+ const initial=hash.startsWith('#operation=cobra')?'cobra':hash.startsWith('#operation=britain-')?'britain':'britain-campaign';
+ selectScope(Object.hasOwn(scopes,requested)?requested:initial);
 }
 window.AtlasClaimLosses={calculate,historicalEstimate,bobruiskEstimate,renderEventEstimate,openCalculator,britainChecks,inventoryLossCeiling,selectLossRange};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();

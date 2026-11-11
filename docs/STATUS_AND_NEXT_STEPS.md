@@ -1,5 +1,9 @@
 # Atlas status and next work
 
+## 12 November 2026 - v9.0 campaign claims and loss validation
+
+The claims calculator covers the full Battle of Britain in 17 weeks and five phases, with a Luftwaffe-to-RAF campaign comparison and seven dated reverse cases. Normandy's 1–18 July reports have their own Allied and German directions. Whole-period checks cover 14 of 17 British weekly records, with an average miss of 16.5 aircraft against 30.0 for the claims-only ratio. The five phases and the two Normandy directions show their own measured errors and ranges. The Cobra source check identifies the correct Luftflotte 3 cause-of-loss return and documents the need for mission attribution. [Method, exact measures and remaining source coverage](../research/sources/atlas-v90-campaign-loss-validation-2026-11-12.md).
+
 ## 11 November 2026 - Aircraft inventory checks for loss estimates
 
 The Atlas now checks the two Bobruisk groups against their June movement returns. They opened with 72 aircraft, received 10 and closed with 57. Of 25 departures, 13 were outside enemy action. The remaining 12 are the ceiling for 26 June across those groups. The dated estimate and calculator show the scope and the calculation. A separate Mission 494 inventory ceiling requires complete German coverage of the escort engagements. [Return transcription, reconciliation and range rules](../research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md).
