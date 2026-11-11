@@ -28,4 +28,7 @@
 .campaign-evidence-group>h4{margin:0 0 8px;font-size:16px}
 .operation-evidence-group{margin-top:18px}
 .operation-evidence-group>h4{margin:0 0 7px;font-size:19px}
-.operation-evidence-group>.operation-facts{margin-top:8px}
+.operation-evidence-group>.operation-facts{
+  margin-top:8px;
+  grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr));
+}
