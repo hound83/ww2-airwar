@@ -27,3 +27,9 @@ Select D-Day, Goodwood, Cobra, Mortain or Falaise; step through 16 dated operati
 ## Release / rollback
 
 The default explorer route is explicitly in the v8.6 scope. Legacy pilot/aircraft routes and the pinned physics research snapshot are preserved. Merge only on the exact verified revision, with source checks and inspected desktop/mobile screenshots. After publication verify the live default and operation URL. Restore the previous deployable revision through a normal revert if a serious regression is found; no force-push.
+
+## First browser review and correction
+
+PR browser run 42933092547 and core run 42933092668 passed on f74acc1. Downloaded CI screenshots were inspected at desktop and mobile widths. This exposed ground-direction paths hidden beneath the separately rendered land SVG despite passing the initial interaction checks. Corrected with a dedicated higher SVG pane, added pane-order assertions, improved offset-label leaders and map-edge labels, and suppressed clipped field markers. Rerun the corrected exact revision before merge.
+
+The live publication workflow waits for the explorer plus four operation assets to match the checked-out source, then runs the actual desktop/mobile browser journeys against GitHub Pages, including default redirect and legacy access. Live results must still be inspected after merge.

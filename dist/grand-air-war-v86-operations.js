@@ -72,14 +72,16 @@ function draw(state){
  if(!operation||state.selected!=='normandy')return false;
  const L=window.L,map=state.map,layer=state.mapMarkers,s=operation.snapshots[step];
  layer.clearLayers();
+ if(!map.getPane?.('operation-paths')){const pane=map.createPane?.('operation-paths');if(pane)pane.style.zIndex='450';}
  $('map-heading').textContent=operation.name+' · '+s.date+' · '+s.title;
  $('map-legend').innerHTML='<span class="op-key allies"></span> Allied advance <span class="op-key axis"></span> German movement <span class="op-key plan"></span> Dashed = planned ground direction · squares = fields with first use by this date';
  $('map-source-note').textContent='Approximate localities and schematic ground directions; no aircraft tracks or continuous front lines. Snapshot source below.';
  for(const link of s.links){
   const from=D.places[link.from],to=D.places[link.to],enemy=link.kind.startsWith('enemy')||link.kind==='retreat',planned=link.kind.includes('plan'),color=enemy?'#e59582':'#83e2d0';
-  const line=L.polyline([from.slice(1),to.slice(1)],{color,weight:4,opacity:.9,dashArray:planned?'8 7':null});
+  const line=L.polyline([from.slice(1),to.slice(1)],{pane:'operation-paths',className:'operation-ground-path',color,weight:4,opacity:.95,dashArray:planned?'8 7':null});
   line.bindTooltip?.(link.label+' · schematic ground direction');line.on?.('click',()=>{$('operation-map-detail').innerHTML='<strong>'+esc(link.label)+'</strong><p>'+esc(from[0]+' → '+to[0])+'. '+(planned?'Intended direction, not proof of capture.':'Schematic connection between documented places, not a surveyed path.')+'</p>'+source(s.source,s.page);});layer.addLayer(line);
-  const angle=Math.atan2(to[2]-from[2],to[1]-from[1])*180/Math.PI;
+  const p1=map.latLngToContainerPoint(from.slice(1)),p2=map.latLngToContainerPoint(to.slice(1));
+  const angle=Math.atan2(p2.x-p1.x,p1.y-p2.y)*180/Math.PI;
   const arrow=L.marker([(from[1]+to[1])/2,(from[2]+to[2])/2],{interactive:false,icon:L.divIcon({className:'gaw-icon',html:'<span class="operation-arrow" style="color:'+color+';transform:rotate('+angle+'deg)">▲</span>',iconSize:[20,20],iconAnchor:[10,10]})});layer.addLayer(arrow);
  }
  // Locality labels at one coordinate can overlap at small viewport widths.
@@ -89,10 +91,12 @@ function draw(state){
   const p=D.places[key],xy=map.latLngToContainerPoint(p.slice(1));let offset=0;
   while(occupied.some(q=>Math.abs(q.x-xy.x)<140&&Math.abs(q.y-(xy.y+offset))<30))offset+=32;
   occupied.push({x:xy.x,y:xy.y+offset});
-  const label=L.divIcon({className:'gaw-icon',html:'<span class="operation-place'+(key===focusPlace?' focused':'')+'"><i></i><b style="transform:translateY('+offset+'px)">'+esc(p[0])+'</b></span>',iconSize:[16,16],iconAnchor:[8,8]});
+  const left=xy.x>(map.getSize?.().x||900)-150;
+  const label=L.divIcon({className:'gaw-icon',html:'<span class="operation-place'+(left?' label-left':'')+(key===focusPlace?' focused':'')+'"><i></i>'+(offset?'<em class="operation-label-leader" style="height:'+offset+'px"></em>':'')+'<b style="transform:translateY('+offset+'px)">'+esc(p[0])+'</b></span>',iconSize:[16,16],iconAnchor:[8,8]});
   const marker=L.marker(p.slice(1),{icon:label,keyboard:true,title:p[0]+' · inspect '+operation.name,zIndexOffset:1100});marker.on('click',()=>placeDetail(key));marker.bindTooltip?.(p[0]+' · '+s.date);layer.addLayer(marker);
  }
  for(const f of D.airfields.filter(f=>operation.fields.includes(f.id)&&f.firstUse<=s.date)){
+  const xy=map.latLngToContainerPoint([f.lat,f.lng]),size=map.getSize?.();if(size&&(xy.x<20||xy.x>size.x-20||xy.y<15||xy.y>size.y-15))continue;
   const marker=L.marker([f.lat,f.lng],{keyboard:true,title:f.id+' '+f.name+' · dated first use',icon:L.divIcon({className:'gaw-icon',html:'<span class="operation-base">'+esc(f.id)+'</span>',iconSize:[34,22],iconAnchor:[17,11]}),zIndexOffset:900});
   marker.on('click',()=>{$('operation-map-detail').innerHTML='<strong>'+esc(f.id+' · '+f.name)+'</strong><p>'+esc(f.dateMeaning)+'</p><p>'+esc(f.unit)+'. A base relationship is not a recovered mission departure record.</p>'+source(f.source,f.page);});marker.bindTooltip?.(f.name+' · first use '+f.firstUse);layer.addLayer(marker);
  }

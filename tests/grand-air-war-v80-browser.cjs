@@ -17,7 +17,7 @@ const server=http.createServer((request,response)=>{
 });
 const check=async()=>{
  await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
- const base="http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
+ const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
@@ -286,6 +286,9 @@ const check=async()=>{
      assert.equal(current.operation,id);assert.equal(current.step,i);
      assert.match(await page.locator('#map-heading').innerText(),new RegExp(current.date));
      assert.ok(await page.locator('.operation-place').count()>1);
+     const expectedPaths=await page.evaluate(()=>{const x=window.AtlasNormandyOperations;const c=x.current();return x.data.operations.find(o=>o.id===c.operation).snapshots[c.step].links.length;});
+     assert.equal(await page.locator('.operation-ground-path').count(),expectedPaths);
+     if(expectedPaths)assert.ok(await page.locator('.operation-ground-path').evaluateAll(nodes=>nodes.every(n=>Number(getComputedStyle(n.closest('.leaflet-pane')).zIndex)>=450)),'operation paths are behind physical land');
      assert.ok(await page.locator('#operation-evidence [data-observation]').count()>=3);
      assert.ok(await page.locator('#operation-evidence a[href^="https://"]').count()>=5);
      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)<=2,'operation creates page overflow');
