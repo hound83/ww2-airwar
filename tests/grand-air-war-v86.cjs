@@ -29,8 +29,14 @@ assert.ok(ops);assert.equal(ops.current(),null);assert.equal(el('normandy-operat
 assert.deepEqual(JSON.parse(JSON.stringify(window.NormandyV86Data)),data,'generated data must match maintained transcription');
 for(const op of data.operations)for(let i=0;i<op.snapshots.length;i++){
  assert.equal(ops.choose(op.id,i),true);const s=op.snapshots[i];assert.equal(ops.current().date,s.date);assert.equal(app.selected(),'normandy');assert.equal(el('campaign-dossier').hidden,true);assert.equal(el('operation-dossier').hidden,false);assert.ok(el('operation-dossier').innerHTML.includes(s.title));assert.ok(el('operation-evidence').innerHTML.includes(op.question)===false,'question belongs in the dated briefing');
- assert.ok(el('operation-evidence').innerHTML.includes(op.intent));assert.equal((el('operation-evidence').innerHTML.match(/data-observation=/g)||[]).length,op.facts.length);assert.ok(el('map-heading').textContent.includes(s.date));assert.equal(markers.layers.filter(m=>m.options?.icon?.html?.includes('operation-place')).length,s.points.length);
+ assert.ok(el('operation-evidence').innerHTML.includes(op.intent));assert.equal((el('operation-evidence').innerHTML.match(/data-observation=/g)||[]).length,op.facts.length+(op.campaignEvidence?.length||0));assert.ok(el('map-heading').textContent.includes(s.date));assert.equal(markers.layers.filter(m=>m.options?.icon?.html?.includes('operation-place')).length,s.points.length);
  const bases=markers.layers.filter(m=>m.options?.icon?.html?.includes('operation-base'));assert.equal(bases.length,data.airfields.filter(f=>op.fields.includes(f.id)&&f.firstUse<=s.date).length,'future airfields leaked into selected date');snapshots++;
+}
+const normandy=app.campaigns.find(c=>c.id==='normandy');
+for(const reference of data.operations.find(op=>op.id==='dday').campaignEvidence){
+ const fact=normandy.facts.find(f=>f.id===reference.factId);
+ assert.ok(fact&&fact.date==='1944-06-06'&&!fact.period,'D-Day links must resolve to single-day figures');
+ assert.ok(window.GrandAirWarV77Campaigns.sources[fact.sourceId]?.url.startsWith('https://'));
 }
 assert.equal(ops.choose('missing'),false);assert.equal(ops.choose('cobra',999),false);
 ops.choose('cobra',1);el('operation-next').click();assert.equal(ops.current().step,2);el('operation-prev').click();assert.equal(ops.current().step,1);

@@ -1,13 +1,54 @@
 /* Atlas v8.6: an operation, its dated geography and its evidence stay together. */
 (function(){
 'use strict';
-const D=window.NormandyV86Data,A=window.GrandAirWarV77;
-if(!D||!A||!document.getElementById('normandy-operations'))return;
+const D=window.NormandyV86Data,A=window.GrandAirWarV77,C=window.GrandAirWarV77Campaigns;
+if(!D||!A||!C||!document.getElementById('normandy-operations'))return;
 const $=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let operation=null,step=0,navigating=false,focusPlace=null;
-const source=(id,page)=>{const s=D.sources[id];return s?'<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+(page?' · '+esc(page):'')+' ↗</a>':'';};
-const factsFor=op=>D.observations.filter(f=>f.operation===op.id);
+const evidenceSource=id=>D.sources[id]||C.sources[id];
+const source=(id,page)=>{const s=evidenceSource(id);return s?'<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+(page?' · '+esc(page):'')+' ↗</a>':'';};
 const metric=f=>(f.qualifier==='more than'?'> ':'')+f.value.toLocaleString('en-US');
+
+function factsFor(op) {
+ const observations=D.observations.filter(fact=>fact.operation===op.id);
+ const campaign=C.campaigns.find(campaign=>campaign.id===D.campaign);
+ for(const reference of op.campaignEvidence||[]) {
+  const fact=campaign?.facts.find(fact=>fact.id===reference.factId);
+  if(fact)observations.push({
+   ...fact,
+   operation:op.id,
+   source:fact.sourceId,
+   evidenceClass:reference.evidenceClass
+  });
+ }
+ return observations;
+}
+
+function renderEvidenceFact(fact) {
+ const date=fact.period?fact.period.start+' to '+fact.period.end:fact.date;
+ return '<article class="operation-fact" data-observation="'+esc(fact.id)+'">'+
+  '<span class="operation-fact-date">'+esc(date)+'</span>'+
+  '<strong>'+esc(metric(fact))+'<small>'+esc(fact.unit)+'</small></strong>'+
+  '<h5>'+esc(fact.label)+'</h5><p>'+esc(fact.scope)+'</p>'+
+  '<span class="operation-evidence-class">'+esc(fact.evidenceClass)+'</span>'+
+  source(fact.source,fact.page)+'</article>';
+}
+
+function renderEvidenceGroups(op,groups) {
+ const lossGap=groups.some(group=>group.id==='aircraft-losses')?'':(
+  '<section class="operation-evidence-group" data-evidence-group="aircraft-losses">'+
+  '<h4>Aircraft losses</h4><p class="operation-scope-note">Aircraft-loss figures for this operation are unavailable in the Atlas.</p></section>'
+ );
+ const sections=groups.map(group=>{
+  const context=op.id==='cobra'&&group.id==='personnel-casualties'
+   ? '<p class="operation-interpretation">These ground casualties cover the 25 July short bombing. The 24 July incident has its own snapshot.</p>'
+   : '';
+  return '<section class="operation-evidence-group" data-evidence-group="'+group.id+'">'+
+   '<h4>'+group.title+'</h4><div class="operation-facts">'+
+   group.facts.map(renderEvidenceFact).join('')+'</div>'+context+'</section>';
+ });
+ return '<div class="operation-evidence-figures">'+lossGap+sections.join('')+'</div>';
+}
 function sync(){
  const visible=A.selected()==='normandy';
  document.querySelector?.('.mainstage')?.classList.toggle('operation-layout',visible&&!!operation);
@@ -47,6 +88,7 @@ function render(){
  const active=document.activeElement;
  const focusSelector=active?.closest?.('#operation-dossier')?(active.id?'#'+active.id:active.dataset?.operationStep!==undefined?'[data-operation-step="'+active.dataset.operationStep+'"]':null):null;
  const s=operation.snapshots[step],op=operation;
+ const facts=factsFor(op),groups=A.groupEvidence(facts);
  $('operation-dossier').innerHTML='<div class="eyebrow">NORMANDY · OPERATION '+(D.operations.indexOf(op)+1)+' OF 5</div><h2>'+esc(op.name)+'</h2><p class="operation-question">'+esc(op.question)+'</p>'+
  '<div class="operation-step-heading"><span>'+esc(s.date)+'</span><strong>'+esc(s.title)+'</strong></div><p class="operation-step-copy">'+esc(s.text)+'</p>'+
  '<nav class="operation-stepper" aria-label="Dated battlefield snapshots">'+op.snapshots.map((x,i)=>'<button type="button" data-operation-step="'+i+'" aria-current="'+(i===step?'step':'false')+'"><span>'+esc(x.date.slice(5))+'</span>'+esc(x.title)+'</button>').join('')+'</nav>'+
@@ -61,16 +103,18 @@ function render(){
  $('operation-evidence').innerHTML='<div class="operation-evidence-top"><div><span class="eyebrow">THE OPERATION IN CONTEXT</span><h2>'+esc(op.name)+' · '+esc(op.subtitle)+'</h2></div><span>'+esc(op.start)+' to '+esc(op.end)+'</span></div>'+
  '<div class="operation-narrative">'+[['The intention',op.intent],['What aircraft did',op.air],['The German response',op.opposition],['What changed',op.consequence]].map(([title,text])=>'<article><h3>'+title+'</h3><p>'+esc(text)+'</p></article>').join('')+'</div>'+
  '<div class="operation-source-trail">'+op.sources.map(id=>source(id)).join('')+'</div>'+
- '<h3 class="operation-subheading">Operational evidence <span>'+factsFor(op).length+' observations</span></h3><p class="operation-scope-note">Each figure keeps its own date, formation and reporting area. Aircraft, squadrons, sorties, personnel and bomb tonnage are different measures.</p>'+
- '<div class="operation-facts">'+factsFor(op).map(f=>'<article class="operation-fact" data-observation="'+esc(f.id)+'"><span class="operation-fact-date">'+esc(f.period?f.period.start+' to '+f.period.end:f.date)+'</span><strong>'+esc(metric(f))+'<small>'+esc(f.unit)+'</small></strong><h4>'+esc(f.label)+'</h4><p>'+esc(f.scope)+'</p><span class="operation-evidence-class">'+esc(f.evidenceClass)+'</span>'+source(f.source,f.page)+'</article>').join('')+'</div>'+
+ '<h3 class="operation-subheading">Operational evidence <span>'+facts.length+' observations</span></h3><p class="operation-scope-note">Dates, formations and reporting areas are shown with each figure.</p>'+
+ renderEvidenceGroups(op,groups)+
  (op.id==='dday'?'<p class="operation-interpretation"><strong>Read the allocation:</strong> 15 + 54 + 33 + 33 + 36 = 171 squadrons. The total is not a sixth additional task and cannot be added to its five components.</p>':'')+
- (op.id==='cobra'?'<p class="operation-interpretation"><strong>Friendly-fire losses:</strong> the 111 killed and 490 wounded refer to 25 July ground personnel. The separate 24 July incident is described in the first snapshot; neither count is an aircraft-loss figure.</p>':'')+
  (op.id==='mortain'?'<p class="operation-interpretation"><strong>Three different scopes:</strong> 294 is local Typhoon activity on 7 August; 2,193 covers wider Typhoon operations over five days; 4,012 is IX TAC over seven days. These figures overlap in time and are not summed. Ground investigation found that air claims overstated tank destruction.</p>':'')+
  '<h3 class="operation-subheading">The formations behind the operation</h3><div class="operation-formations">'+op.formations.map(id=>{const f=D.formations[id];return '<article data-formation="'+esc(id)+'" class="'+(f.side==='German'?'axis':'')+'"><span>'+esc(f.side+' · '+f.level)+'</span><h4>'+esc(f.name)+'</h4><strong>'+esc(f.aircraft)+'</strong><p>'+esc(f.role)+'</p>'+source(f.source,f.page)+'</article>';}).join('')+'</div>'+
  '<h3 class="operation-subheading">Forward airfields · what was ready, and when?</h3><p class="operation-scope-note">These are relevant basing examples. An opening date does not establish a unit’s presence on every later day, current serviceability, or the origin of a particular strike.</p><div class="operation-fields">'+fields.map(f=>'<article><span class="operation-field-status">'+(f.firstUse<=s.date?'Known first use by this snapshot':'First use after this snapshot')+'</span><h4>'+esc(f.id+' · '+f.name)+'</h4><strong>'+esc(f.firstUse)+'</strong><p>'+esc(f.dateMeaning)+'</p><p>'+esc(f.unit)+'</p>'+source(f.source,f.page)+'</article>').join('')+'</div>'+
  '<div class="operation-connections"><a href="#campaigns">Continue through the nine campaign chapters ↓</a><a href="./grand-air-war-v76.html">Open the detailed forward-airfield notebook ↗</a><button type="button" id="operation-export">Export these evidence records</button></div>';
  $('operation-export').addEventListener('click',()=>{
-  const records=factsFor(op).map(f=>({...f,sourceTitle:D.sources[f.source].title,sourceUrl:D.sources[f.source].url}));
+  const records=groups.flatMap(group=>group.facts).map(fact=>{
+   const reference=evidenceSource(fact.source);
+   return {...fact,sourceTitle:reference.title,sourceUrl:reference.url};
+  });
   const blob=new Blob([JSON.stringify({version:D.version,operation:op.id,observations:records},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='normandy-'+op.id+'-evidence-v86.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
  });
 }

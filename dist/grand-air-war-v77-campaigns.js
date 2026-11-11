@@ -625,6 +625,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "German aircraft shot down by Polish pilots, per RAF Museum retrospective",
+          "measure": "losses",
           "value": 126,
           "unit": "aircraft · retrospective tally",
           "scope": "Entire Polish 1939 campaign; RAF Museum retrospective assertion, not independently reconciled with original German loss returns; not a day-level or aircraft-type table",
@@ -634,6 +635,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Polish aircraft lost, per RAF Museum retrospective",
+          "measure": "losses",
           "value": 114,
           "unit": "aircraft · retrospective tally",
           "scope": "Entire Polish 1939 campaign; museum summary; loss definitions and ground/air cause breakdown are not independently audited",
@@ -791,8 +793,10 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"label": "RAF fighters embarked on HMS Glorious during evacuation", "value": 17, "unit": "aircraft · 10 Gladiators and 7 Hurricanes", "scope": "8 June 1940, surviving aircraft of Nos. 263 and 46 Squadrons recovered from Norway; later lost with carrier, not a campaign-wide RAF loss total", "sourceId": "raf1940chron", "date": "1940-06-08", "type": "recorded"},
         {"label": "No. 263 Squadron flying activity over Lesjaskog", "value": 49, "unit": "sorties", "scope": "The initial approximately two-day Lesjaskog operations of RAF No. 263 Squadron, 24–26 April 1940; NOT whole RAF Norway sorties or 49 aircraft", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940, approximately two days of operations; reporting-period total, not a single-day count", "type": "recorded"},
         {"label": "No. 263 Squadron enemy aircraft engaged", "value": 37, "unit": "separate enemy aircraft engagements", "scope": "No. 263 Squadron Lesjaskog flying period, 24–26 April 1940, as summarized by RAF Museum; encounters, not enemy airframe losses", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940, RAF No. 263 Squadron's initial Lesjaskog operations", "type": "reported-engagements"},
-        {"label": "No. 263 Squadron enemy aircraft claimed destroyed", "value": 6, "unit": "claimed enemy aircraft", "scope": "No. 263 Squadron during its initial April Lesjaskog deployment; contemporary British claims, NOT independent German confirmed losses", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940; RAF claims within the same 49-sortie population", "type": "claims-not-verified-losses"},
-        {"label": "No. 263 Squadron Gladiators destroyed in 25 April lake-airfield attacks", "value": 13, "unit": "RAF aircraft destroyed at airfield", "scope": "25 April 1940, Lake Lesjaskog airfield under German bombing and strafing; original Squadron Leader Donaldson report, a subset of the initial detachment's losses, NOT fighter combat losses", "sourceId": "raf263NorwayOriginal", "date": "1940-04-25", "type": "recorded-primary-unit-loss"}
+        {"label": "No. 263 Squadron enemy aircraft claimed destroyed",
+          "measure": "claims", "value": 6, "unit": "claimed enemy aircraft", "scope": "No. 263 Squadron during its initial April Lesjaskog deployment; contemporary British claims, NOT independent German confirmed losses", "sourceId": "raf263NorwayAircraft", "date": "1940-04-25", "period": "24–26 April 1940; RAF claims within the same 49-sortie population", "type": "claims-not-verified-losses"},
+        {"label": "No. 263 Squadron Gladiators destroyed in 25 April lake-airfield attacks",
+          "measure": "losses", "value": 13, "unit": "RAF aircraft destroyed at airfield", "scope": "25 April 1940, Lake Lesjaskog airfield under German bombing and strafing; original Squadron Leader Donaldson report, a subset of the initial detachment's losses, NOT fighter combat losses", "sourceId": "raf263NorwayOriginal", "date": "1940-04-25", "type": "recorded-primary-unit-loss"}
       ],
       "moments": [
         {
@@ -907,6 +911,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Of those 71 bombers, aircraft that did not return",
+          "measure": "losses",
           "value": 40,
           "unit": "aircraft not returned",
           "scope": "RAF Museum 14 May 1940 account; narrower than whole-campaign losses. A different RAF research article reports 44/72 for a Sedan action: definitions/coverage require reconciliation",
@@ -1070,6 +1075,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"id":"lw-bf109-ops-loss-juloct","side":"Axis","measure":"losses","label":"Luftwaffe Bf 109 operational losses in German returns, July–October","value":600,"unit":"Bf 109 aircraft lost on operations","scope":"July–October 1940; German Quartermaster Bf 109 fighter operational destruction series as reproduced in RAF analysis; NOT all 1,733 Luftwaffe destroyed of all aircraft types","sourceId":"rafBoBLogistics","date":"1940-10-31","period":"July–October 1940; four months","type":"recorded-retrospective-operational-fighter-losses"},
         {
           "label": "German aircraft destroyed",
+          "measure": "losses",
           "value": 1733,
           "unit": "aircraft",
           "scope": "German historical records, 10 Jul–31 Oct 1940, all participating Luftwaffe",
@@ -1079,6 +1085,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "German aircraft damaged",
+          "measure": "damage",
           "value": 643,
           "unit": "aircraft",
           "scope": "Same period; damaged not destroyed",
@@ -1088,6 +1095,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "RAF wartime victory estimate",
+          "measure": "claims",
           "value": 2692,
           "unit": "claimed aircraft",
           "scope": "RAF wartime estimate, not verified German losses",
@@ -1097,6 +1105,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "German aircraft destroyed · 15 September",
+          "measure": "losses",
           "value": 56,
           "unit": "aircraft",
           "scope": "German archival losses for the day, contrasted with RAF day claims of 185",
@@ -1382,6 +1391,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Luftwaffe aircraft lost · April 1942",
+          "measure": "losses",
           "value": 45,
           "unit": "aircraft",
           "scope": "RAF Museum account of same April Malta operations",
@@ -1391,6 +1401,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "RAF aircraft destroyed on ground · April",
+          "measure": "losses",
           "value": 44,
           "unit": "aircraft",
           "scope": "RAF aircraft destroyed on ground during April raids",
@@ -1527,6 +1538,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"id":"vvs-barbarossa-German-claims-9days","side":"Soviet","measure":"enemy-claims","label":"Soviet aircraft losses claimed in German reporting, 22–30 June","value":4614,"unit":"German-reported Soviet aircraft losses, claimed","scope":"22–30 June 1941, German wartime claimed Soviet destroyed aircraft; retrospective specialist summary. NOT independent Soviet recorded losses, do not compare this claimed number as confirmed against 330 German recorded losses","sourceId":"barbarossaLossStudy","date":"1941-06-30","period":"22–30 June 1941; German claims, not confirmed Soviet returns","type":"claims-not-verified-opponent-losses"},
         {
           "label": "Soviet aircraft lost in initial German attack",
+          "measure": "losses",
           "value": 1200,
           "unit": "aircraft · at least",
           "scope": "Soviet historical estimate, initial attack on 22 June; not whole summer losses",
@@ -1534,7 +1546,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "date": "1941-06-22",
           "type": "lower-bound"
         },
-        {"label": "Opening Soviet aircraft destroyed on airfields", "value": 800, "unit": "aircraft · ground subset", "scope": "Opening German attack on 22 June 1941 as recounted in official USAF historical synthesis: approximately 800 ground-destroyed within at least 1,200 total Soviet opening-attack losses, not another 800 in addition", "sourceId": "usafBarbarossaOpening", "date": "1941-06-22", "type": "reported-subset-not-additive"}
+        {"label": "Opening Soviet aircraft destroyed on airfields",
+          "measure": "losses-subset", "value": 800, "unit": "aircraft · ground subset", "scope": "Opening German attack on 22 June 1941 as recounted in official USAF historical synthesis: approximately 800 ground-destroyed within at least 1,200 total Soviet opening-attack losses, not another 800 in addition", "sourceId": "usafBarbarossaOpening", "date": "1941-06-22", "type": "reported-subset-not-additive"}
       ],
       "comparisons": [
               {
@@ -1823,8 +1836,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         }
       ],
       "facts": [
-        {"label":"Luftflotte Reich aircraft destroyed, March 1944", "value":662, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, March 1944, all types and causes; 389 enemy action + 95 other operational + 178 non-operational, captured German VII/138 p.61", "sourceId":"rafReich1944Returns", "date":"1944-03", "type":"primary-command-return"},
-        {"label":"Luftflotte Reich aircraft destroyed, April 1944", "value":840, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, April 1944, all types and causes; 580 enemy action + 83 other operational + 177 non-operational, captured German VII/138 p.87", "sourceId":"rafReich1944Returns", "date":"1944-04", "type":"primary-command-return"}
+        {"label":"Luftflotte Reich aircraft destroyed, March 1944","measure":"losses", "value":662, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, March 1944, all types and causes; 389 enemy action + 95 other operational + 178 non-operational, captured German VII/138 p.61", "sourceId":"rafReich1944Returns", "date":"1944-03", "type":"primary-command-return"},
+        {"label":"Luftflotte Reich aircraft destroyed, April 1944","measure":"losses", "value":840, "unit":"German aircraft", "scope":"Luftflotte Reich reporting area ONLY, April 1944, all types and causes; 580 enemy action + 83 other operational + 177 non-operational, captured German VII/138 p.87", "sourceId":"rafReich1944Returns", "date":"1944-04", "type":"primary-command-return"}
       ],
       "moments": [
         {
@@ -1953,8 +1966,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"id":"sicily-german-night-losses-10-17","side":"Germany","measure":"losses","label":"German aircraft certainly destroyed by night over Sicily, 10/11–16/17 July","value":44,"unit":"German aircraft destroyed · night air operations","date":"1943-07-17","period":"Nights 10/11–16/17 July 1943","scope":"German aircraft CERTAINLY destroyed at night over Sicily in official British campaign history, separate from 59 daylight German aircraft; five additional certain German antiaircraft losses are not included.","sourceId":"ukOfficialMedSicilyV5","type":"official-history-confirmed-axis-night-air-loss"},
         {"id":"sicily-italian-night-losses-10-17","side":"Italy","measure":"losses","label":"Italian aircraft certainly destroyed by night over Sicily, 10/11–16/17 July","value":12,"unit":"Italian aircraft destroyed · night air operations","date":"1943-07-17","period":"Nights 10/11–16/17 July 1943","scope":"12 CERTAIN Italian aircraft destroyed in night flying over Sicily, separate from 32 Italian daylight losses. Not all Axis aircraft lost on ground or across whole campaign.","sourceId":"ukOfficialMedSicilyV5","type":"official-history-confirmed-axis-night-air-loss"},
         {"label":"HQ MAAF Sicily-campaign Allied operational flights","value":25070,"unit":"effective operational sorties","scope":"HQ Mediterranean Allied Air Forces original February 1945 campaign table; Sicily 10 July–17 August, combined Allied operation. NOT separate from daily Western naval-cover sorties; do not sum with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-sorties"},
-        {"label":"HQ MAAF Sicily-campaign Allied aircraft losses","value":177,"unit":"Allied aircraft losses","scope":"HQ MAAF historical campaign table, Sicily 10 July–17 August 1943; Allied loss total in HQ reporting classification, NOT 177 enemy aircraft lost, not daily.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-losses"},
-        {"label":"HQ MAAF Sicily-campaign aerial victory claims","value":293,"unit":"claimed enemy aircraft","scope":"HQ MAAF campaign historical table, 10 July–17 August 1943. Allied claims of enemy aircraft; NOT separately verified German/Italian actual loss records.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"claims-not-verified-axis-losses"},
+        {"label":"HQ MAAF Sicily-campaign Allied aircraft losses","measure":"losses","value":177,"unit":"Allied aircraft losses","scope":"HQ MAAF historical campaign table, Sicily 10 July–17 August 1943; Allied loss total in HQ reporting classification, NOT 177 enemy aircraft lost, not daily.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-allied-campaign-losses"},
+        {"label":"HQ MAAF Sicily-campaign aerial victory claims","measure":"claims","value":293,"unit":"claimed enemy aircraft","scope":"HQ MAAF campaign historical table, 10 July–17 August 1943. Allied claims of enemy aircraft; NOT separately verified German/Italian actual loss records.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"claims-not-verified-axis-losses"},
         {"label":"HQ MAAF Sicily-campaign bomb tonnage","value":16243,"unit":"tons of bombs","scope":"HQ MAAF campaign historical table, Sicily 10 July–17 August 1943. Bomb tonnage is a different measure from sorties/aircraft and must not be summed with them.","sourceId":"maafMediterranean1945","date":"1943-08-17","period":"10 July–17 August 1943 inclusive; entire Sicily campaign, NOT single-day","type":"recorded-primary-bomb-tonnage"},
         {
           "label": "British gliders released into sea",
@@ -2143,7 +2156,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         {"label":"German fighters damaged, 14 October","value":34,"unit":"Luftwaffe fighters damaged","scope":"14 October 1943, National WWII Museum reconstruction of German records, damage category, NOT destroyed; separate from 31 destroyed and 12 written off.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"secondary-German-loss-damaged","side":"Axis","measure":"damage"},
         {"label":"USAAF bomber gunner claims of German fighters, 14 October","value":186,"unit":"claimed German fighters shot down","scope":"14 October 1943 USAAF bomber gunners' combat claims; not confirmed losses. German historical museum record lists 31 destroyed plus 12 written off, separate accounting definitions.","sourceId":"nationalWWIISchweinfurt","date":"1943-10-14","type":"claims-not-verified-opponent-losses","side":"Allies","measure":"claims"},
         {"label":"Bombers dispatched, 17 August dual raid", "value":376, "unit":"USAAF heavy bombers", "scope":"17 August 1943 two-target Regensburg AND Schweinfurt mission; dispatched, not reached targets; National Museum USAF", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded"},
-        {"label":"Bombers shot down, 17 August dual raid", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
+        {"label":"Bombers shot down, 17 August dual raid","measure":"losses", "value":60, "unit":"USAAF heavy bombers", "scope":"Subset of 376 dispatched across BOTH 17 August targets; not a Schweinfurt-only loss count", "sourceId":"usafSchweinfurt1943", "date":"1943-08-17", "type":"recorded-subset"},
         {"label":"Bombers dispatched, 14 October Schweinfurt raid", "value":291, "unit":"USAAF B-17 bombers", "scope":"14 October 1943 Black Thursday; one USAF Museum account says 291 dispatched, another 251 'on the mission' (different counting population, unreconciled); not 17 August", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded"},
         {"label":"Bombers shot down, 14 October Schweinfurt raid", "side":"Allies","measure":"losses","value":60, "unit":"USAAF B-17 bombers", "scope":"Subset of 291 dispatched 14 October; excludes returned aircraft that later crashed or required repair", "sourceId":"usafSchweinfurtOctober", "date":"1943-10-14", "type":"recorded-subset"}
       ],
@@ -2338,6 +2351,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "USAAF heavy bombers lost",
+          "measure": "losses",
           "value": 200,
           "unit": "aircraft · more than",
           "scope": "National Museum USAF narrative; different USAF historical summaries give alternative exact figures and force coverage",
@@ -2347,6 +2361,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "USAAF aircrew casualties",
+          "measure": "casualties",
           "value": 2600,
           "unit": "personnel · about",
           "scope": "National Museum USAF: casualties, not deaths alone",
@@ -2759,6 +2774,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "facts": [
         {
           "label": "RAF Transport Command aircraft lost",
+          "measure": "losses",
           "value": 57,
           "unit": "aircraft",
           "scope": "RAF Museum: RAF Transport Command aircraft shot down or crashed during Market Garden resupply",
@@ -2854,6 +2870,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Allied aircraft damaged beyond unit repair",
+          "measure": "damage",
           "value": 84,
           "unit": "aircraft",
           "scope": "Same RAF Museum account, distinct from destroyed",
@@ -2881,6 +2898,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Allied aircraft destroyed at Eindhoven",
+          "measure": "losses-subset",
           "value": 45,
           "unit": "aircraft",
           "scope": "NIMH Eindhoven local ground damage on 1 January, distinct geographic subset; do not add to RAF Museum's whole-raid Allied destroyed count of 224",
@@ -2890,6 +2908,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
         },
         {
           "label": "Allied aircraft damaged at Eindhoven",
+          "measure": "damage",
           "value": 35,
           "unit": "aircraft",
           "scope": "NIMH local airfield damaged category, not necessarily identical to RAF Museum's 84 aircraft damaged beyond unit repair across all targets",

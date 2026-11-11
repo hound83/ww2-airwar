@@ -317,6 +317,40 @@ function renderTime(){
  $("map-heading").textContent=visibleOnMap().length+" mapped · "+matching().filter(active).length+" active in "+mLabel(state.month);
 }
 
+const evidenceGroups = [
+ {id:"aircraft-losses", title:"Aircraft losses", measures:["losses","losses-subset","writeoffs"]},
+ {id:"personnel-casualties", title:"Personnel casualties", measures:["casualties"]},
+ {id:"sorties", title:"Sorties", measures:["sorties","sorties-subset"]},
+ {id:"aircraft-damage", title:"Aircraft damage", measures:["damage"]},
+ {id:"victory-claims", title:"Victory claims", measures:["claims","enemy-claims"]},
+ {id:"other", title:"Other operational figures", measures:[]}
+];
+
+function groupEvidence(facts) {
+ const groups = evidenceGroups.map(group => ({...group, facts:[]}));
+ for (const fact of facts) {
+  const measure = fact.measure || (/\bsorties\b/i.test(fact.unit) ? "sorties" : "");
+  const group = groups.find(candidate => candidate.measures.includes(measure)) || groups.at(-1);
+  group.facts.push(fact);
+ }
+ return groups.filter(group => group.facts.length);
+}
+
+function renderCampaignFact(fact) {
+ const prefix = /lower[- ]bound/.test(fact.type || "") ? "&gt; " : fact.type?.includes("approximate") ? "≈ " : "";
+ return '<article class="fact"><b>'+prefix+fmt(fact.value)+'</b>'+
+  '<span class="fact-unit">'+esc(fact.unit)+'</span><p>'+esc(fact.label)+'</p>'+
+  '<small>'+esc(fact.scope)+' · '+esc(fact.period || fact.date)+' · '+esc(fact.type)+'</small>'+
+  sourceLink(fact.sourceId,"Inspect this figure's source")+'</article>';
+}
+
+function renderCampaignEvidence(facts) {
+ return groupEvidence(facts).map(group =>
+  '<section class="campaign-evidence-group" data-evidence-group="'+group.id+'"><h4>'+group.title+'</h4><div class="fact-grid">'+
+  group.facts.map(renderCampaignFact).join("")+'</div></section>'
+ ).join("");
+}
+
 /* A cross-side audit is visible for EVERY campaign and EVERY dated event.
    It never infers reciprocal aircraft losses from claims, differing windows or unknown unit coverage. */
 function directEventFacts(c,date){
@@ -345,12 +379,12 @@ function renderBilateralCoverage(c){
 function renderEventBilateralEvidence(c,date){
  const {own,pair,claim,dayFacts}=bilateralEvidenceState(c,date);
  const claimRows=claim?'<div class="event-review-claim"><strong>RAF wartime claim: '+fmt(claim.rafClaim)+'</strong><span>German aircraft actually recorded destroyed: '+fmt(claim.germanDestroyed)+'; damaged: '+fmt(claim.germanDamaged)+'. Claims are NOT RAF own losses.</span>'+sourceLink(claim.sourceId,"1947 Parliament / German loss records")+'</div>':"";
- const rows=dayFacts.map(f=>'<li data-evidence-side="'+esc(f.side||"unclassified")+'"><strong>'+fmt(f.value)+' '+esc(f.unit)+'</strong> · '+esc(f.label)+' <small>('+esc(f.side||"side not independently classified")+'; '+esc(f.type||"unspecified")+')</small> '+sourceLink(f.sourceId,"Source")+'</li>').join("");
+ const rows=groupEvidence(dayFacts).flatMap(group=>group.facts).map(f=>'<li data-evidence-side="'+esc(f.side||"unclassified")+'"><strong>'+fmt(f.value)+' '+esc(f.unit)+'</strong> · '+esc(f.label)+' <small>('+esc(f.side||"side not independently classified")+'; '+esc(f.type||"unspecified")+')</small> '+sourceLink(f.sourceId,"Source")+'</li>').join("");
  const intro=pair?"Both sides have a dated own-loss observation; definitions still need to be checked before comparison.":
  claim?"Wartime victory claims can be contrasted with German records; this is NOT a two-sided own-loss comparison.":
  dayFacts.length?"Some same-date figures exist, but a matching, independently attributable opponent loss ledger is not available for this event.":
  "No verified opposing-force aircraft losses or operational-strength figures are scoped to this EXACT event date. Campaign totals are not automatically assigned to this day.";
- return '<section class="event-bilateral" data-bilateral-status="'+(pair?"paired-own-losses":claim?"claim-versus-record":dayFacts.length?"partial":"no-matched-data")+'"><h4>Both sides: strength, losses and evidence gaps</h4><p>'+esc(intro)+'</p>'+claimRows+(rows?'<ul>'+rows+'</ul>':'')+'</section>';
+ return '<section class="event-bilateral" data-bilateral-status="'+(pair?"paired-own-losses":claim?"claim-versus-record":dayFacts.length?"partial":"no-matched-data")+'"><h4>Both sides: strength, losses and evidence gaps</h4><p>'+esc(intro)+'</p>'+ (rows?'<ul>'+rows+'</ul>':'')+claimRows+'</section>';
 }
 function renderBritainOpponentReturns(c){
  const s=c.opponentReturnSeries;if(!s)return "";
@@ -402,7 +436,7 @@ function renderDossier(){
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
- $("dossier-facts").innerHTML=(c.facts.length?c.facts.map(f=>'<article class="fact"><b>'+(/lower[- ]bound/.test(f.type||"")?"&gt; ":f.type?.includes("approximate")?"≈ ":"")+fmt(f.value)+'</b><span class="fact-unit">'+esc(f.unit)+'</span><p>'+esc(f.label)+'</p><small>'+esc(f.scope)+' · '+esc(f.period||f.date)+' · '+esc(f.type)+'</small>'+sourceLink(f.sourceId,"Inspect this claim's source")+'</article>').join(""):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>')+renderBilateralCoverage(c)+renderCampaignComparisons(c);
+ $("dossier-facts").innerHTML=(c.facts.length?renderCampaignEvidence(c.facts):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>')+renderBilateralCoverage(c)+renderCampaignComparisons(c);
  $("dossier-uncertainty").textContent=c.uncertaintyNote||"Campaign evidence coverage is incomplete. Reported counts are limited to the specific source populations and periods shown, not comparable totals for every belligerent.";
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy";
@@ -605,5 +639,5 @@ function init(){
  update();renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
-window.GrandAirWarV77={campaigns:D.campaigns,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active,map:()=>state.map,refreshMap:drawMap};
+window.GrandAirWarV77={campaigns:D.campaigns,groupEvidence,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active,map:()=>state.map,refreshMap:drawMap};
 })();

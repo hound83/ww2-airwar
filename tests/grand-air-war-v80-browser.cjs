@@ -272,6 +272,20 @@ const check=async()=>{
    await page.locator(".campaign-guide").screenshot({path:path.join(root,"v80-qa-britain-bilateral-"+viewport.width+".png")});
 
 
+   const evidenceOrder=scope=>page.locator(scope+' > [data-evidence-group]').evaluateAll(
+    groups=>groups.map(group=>group.dataset.evidenceGroup)
+   );
+   await page.evaluate(()=>window.GrandAirWarV77.choose('bigweek',false));
+   assert.deepEqual(await evidenceOrder('#dossier-facts'),['aircraft-losses','personnel-casualties','sorties']);
+   await page.evaluate(()=>window.GrandAirWarV77.choose('dieppe',false));
+   assert.deepEqual(await evidenceOrder('#dossier-facts'),['aircraft-losses','sorties','aircraft-damage']);
+   const dieppeLosses=page.locator('#dossier-facts [data-evidence-group="aircraft-losses"] .fact');
+   assert.deepEqual(await dieppeLosses.locator('b').allTextContents(),['48','106']);
+   if(viewport.width>=1000){
+    const positions=await dieppeLosses.evaluateAll(cards=>cards.map(card=>card.getBoundingClientRect().top));
+    assert.ok(Math.abs(positions[0]-positions[1])<1,'Dieppe same-day loss figures should share a row on desktop');
+   }
+
    // v8.6: operate every showcase and every dated snapshot on both viewports.
    await page.evaluate(()=>window.GrandAirWarV77.choose('normandy',false));
    assert.equal(await page.locator('#operation-choices [data-operation]').count(),5);
@@ -279,6 +293,27 @@ const check=async()=>{
     if(viewport.width<500)await page.locator('[data-operation="'+id+'"]').tap();else await page.locator('[data-operation="'+id+'"]').click();
     assert.equal(await page.locator('#operation-dossier').isVisible(),true);
     assert.equal(await page.locator('#campaign-dossier').isVisible(),false);
+    const figures='#operation-evidence .operation-evidence-figures';
+    const order=await evidenceOrder(figures);
+    assert.equal(order[0],'aircraft-losses',id+' should lead with the loss evidence or its gap');
+    if(id==='dday'){
+     assert.deepEqual(order,['aircraft-losses','sorties','other']);
+     const loss=page.locator(figures+' [data-observation="allied-dday-aircraft-lost"]');
+     assert.match(await loss.innerText(),/1944-06-06.*127.*Secondary historical summary/s);
+     assert.equal(await loss.locator('a[href*="2014_Oct_Newsletter"]').count(),1);
+     assert.equal(await page.locator(figures+' [data-evidence-group="sorties"] [data-observation]').count(),2);
+     await page.locator(figures).screenshot({path:path.join(root,'v80-qa-dday-losses-'+viewport.width+'.png')});
+    }
+    if(id==='cobra'){
+     assert.deepEqual(order,['aircraft-losses','personnel-casualties','other']);
+     const casualties=page.locator(figures+' [data-evidence-group="personnel-casualties"]');
+     assert.deepEqual(await casualties.locator('[data-observation]').evaluateAll(cards=>cards.map(card=>card.dataset.observation)),['cobra-killed','cobra-wounded']);
+     assert.match(await casualties.innerText(),/111.*490/s);
+    }
+    if(id==='mortain'){
+     assert.deepEqual(order,['aircraft-losses','sorties']);
+     assert.match(await page.locator(figures+' [data-evidence-group="aircraft-losses"]').innerText(),/unavailable in the Atlas/);
+    }
     const count=await page.locator('[data-operation-step]').count();
     for(let i=0;i<count;i++){
      await page.locator('[data-operation-step="'+i+'"]').click();
@@ -307,6 +342,9 @@ const check=async()=>{
    const downloadPromise=page.waitForEvent('download');
    await page.locator('#operation-export').click();
    const exported=await downloadPromise;assert.match(exported.suggestedFilename(),/cobra.*evidence/);
+   const exportedRecords=JSON.parse(fs.readFileSync(await exported.path(),'utf8')).observations;
+   assert.deepEqual(exportedRecords.slice(0,2).map(fact=>fact.id),['cobra-killed','cobra-wounded']);
+   assert.ok(exportedRecords.every(fact=>fact.sourceUrl?.startsWith('https://')));
    await page.reload({waitUntil:'domcontentloaded'});
    await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.operation==='cobra');
    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1,'operation permalink lost selected snapshot');

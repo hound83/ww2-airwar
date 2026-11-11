@@ -2,12 +2,12 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),base='https://hound83.github.io/ww2-airwar/';
-const files=['grand-air-war-v80.html','dist/grand-air-war-v80-core.js','dist/grand-air-war-v86-data.js','dist/grand-air-war-v86-operations.js','dist/grand-air-war-v86.css'];
+const files=['grand-air-war-v80.html','dist/grand-air-war-v77-campaigns.js','dist/grand-air-war-v80-core.js','dist/grand-air-war-v86-data.js','dist/grand-air-war-v86-operations.js','dist/grand-air-war-v86.css'];
 const hash=s=>crypto.createHash('sha256').update(s.replace(/\r\n/g,'\n')).digest('hex');
 async function verify(){
  for(let attempt=1;attempt<=30;attempt++){
   const checks=await Promise.all(files.map(async file=>{try{const response=await fetch(base+file+'?verify='+encodeURIComponent(process.env.GITHUB_SHA||'v86'),{signal:AbortSignal.timeout(15000)});return response.ok&&hash(await response.text())===hash(fs.readFileSync(path.join(root,file),'utf8'));}catch{return false;}}));
-  if(checks.every(Boolean)){console.log('PASS live Pages: explorer and four operation assets match the verified source revision.');return;}
+  if(checks.every(Boolean)){console.log('PASS live Pages: explorer and evidence assets match the verified source revision.');return;}
   console.log('Pages publication pending ('+attempt+'/30): '+files.filter((_,i)=>!checks[i]).join(', '));
   if(attempt<30)await new Promise(resolve=>setTimeout(resolve,10000));
  }
