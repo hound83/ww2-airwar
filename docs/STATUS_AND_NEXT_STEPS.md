@@ -1,5 +1,11 @@
 # Atlas status and next work
 
+## 11 November 2026 - v8.8 claims and aircraft losses
+
+The calculator compares seven Battle of Britain dates and tests each date against the other six. Cobra's 25 July mission now has a low-confidence estimate of 1–8 German aircraft destroyed in air combat from 12 escort claims. The map and evidence use the same estimate and the JSON export includes its inputs. Recorded figures take precedence when their date and scope match.
+
+The v8.7 Cobra briefing presented US losses and claims with no estimate of attributable German losses. Acceptance for v8.8 covers dated map scope, separate export fields, source links, changing calculator inputs, operation navigation, mobile widths and the full existing browser journeys. [Research, formulas and archival leads](../research/sources/atlas-v88-claims-and-losses-2026-11-11.md). Next source work is comparable aircraft and formation records for Bobruisk and German claims against Allied aircraft.
+
 ## 11 November 2026 - v8.7 dated losses and Battle of Britain raids
 
 Four Battle of Britain raid dossiers connect the dated map, opposing forces, recorded losses and claims. Normandy's five operations now have sourced aircraft-loss figures for at least one reporting population. Goodwood, Cobra, Mortain and Tractable gained eleven scoped observations, including separate damage and claim categories. The map briefing highlights figures for the selected day and the evidence link preserves the operation URL.

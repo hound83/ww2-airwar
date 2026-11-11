@@ -1,0 +1,62 @@
+{
+  "version": "8.8.0",
+  "cobra": {
+    "id": "cobra-494-german-air-combat",
+    "operation": "cobra",
+    "date": "1944-07-25",
+    "claimId": "cobra-8af-air-claims",
+    "claimant": "Eighth Air Force escorts, Mission 494",
+    "opponent": "Luftwaffe",
+    "area": "Normandy, Cobra support mission in the St-Lô area",
+    "escortAircraft": 483,
+    "widerLosses": 10,
+    "widerUsFighterSorties": 2500,
+    "widerBritishFighterSorties": 1400,
+    "otherAirClaims": 4,
+    "references": [
+      {
+        "source": "aafChronJuly",
+        "page": "25 July, Mission 494",
+        "detail": "483 Eighth Air Force escorts; 12 claimed destroyed in the air. One probable, three damaged and two ground claims are separate."
+      },
+      {
+        "source": "mission494",
+        "page": "Missions 492 and 494",
+        "detail": "Original Eighth Air Force mission report, archival catalogue entry."
+      },
+      {
+        "source": "germanCalendarJuly",
+        "page": "25 July, pp. 44–45",
+        "detail": "German calendar reports 10 own aircraft lost in its wider area. The daily summary covers day and night activity and leaves the cause and Allied attribution of those losses open."
+      },
+      {
+        "source": "luftflotte3SituationJuly",
+        "page": "25 July, pp. 32–33",
+        "detail": "German situation report estimates about 2,500 US and 1,400 British fighter and fighter-bomber sorties, with attacks concentrated around Caen and St-Lô."
+      },
+      {
+        "source": "aafCobraHistory",
+        "page": "Vol. III, ch. 8, p. 237",
+        "detail": "The USAAF official history records four aircraft claimed destroyed by Ninth Air Force's 406th Group over Lisieux on the same day."
+      }
+    ]
+  },
+  "sources": {
+    "mission494": {
+      "title": "Eighth Air Force mission reports 492 and 494",
+      "url": "https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/4574"
+    },
+    "germanCalendarJuly": {
+      "title": "German calendar of operations in North-West Europe, July 1944 (RAF AHB translation)",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/calendar-of-operations-in-north-west-europe-july-1944/#page=46"
+    },
+    "luftflotte3SituationJuly": {
+      "title": "Luftflotte 3 situation reports, July 1944 (RAF AHB translation)",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/situation-reports-issued-by-luftflotte-3-france-july-1944/#page=33"
+    },
+    "aafCobraHistory": {
+      "title": "Craven and Cate, The Army Air Forces in World War II, Vol. III",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-8.html"
+    }
+  }
+}

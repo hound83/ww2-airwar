@@ -820,7 +820,7 @@ window.NormandyV86Data = {
       "source": "aafChronJuly",
       "page": "25 July, Mission 494",
       "measure": "claims",
-      "scope": "Eighth Air Force escort claims for Mission 494. The same return lists one probable and three damaged separately. Corresponding German own-loss coverage is missing.",
+      "scope": "Eighth Air Force escort claims for Mission 494. The same return lists one probable and three damaged separately. The German daily loss summary covers a wider area. A separate estimate addresses Mission 494 attribution.",
       "qualifier": "reported",
       "evidenceClass": "Wartime claims in official postwar chronology",
       "shortLabel": "German aircraft claimed destroyed in air"

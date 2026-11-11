@@ -1,11 +1,11 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09131b"><meta name="description" content="Grand Air War: European WWII air campaigns, source-backed loss reports, force data and interactive map 1936–1945.">
-<title>Grand Air War Atlas · v8.7 Battle of Britain</title>
+<title>Grand Air War Atlas · v8.8 Claims and Aircraft Losses</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/grand-air-war-v77.css">
 <link rel="stylesheet" href="./dist/grand-air-war-v80.css">
-<link rel="stylesheet" href="./dist/grand-air-war-v86.css?v=8.7.0">
+<link rel="stylesheet" href="./dist/grand-air-war-v86.css?v=8.8.0">
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="./dist/model-v3-data.js"></script><script defer src="./dist/atlas-v7-data.js"></script>
 <script defer src="./dist/atlas-v71-data.js"></script><script defer src="./dist/atlas-v72-data.js"></script>
@@ -17,14 +17,16 @@
 <script defer src="./dist/grand-air-war-v86-data.js?v=8.7.0"></script>
 <script defer src="./dist/grand-air-war-v87-data.js?v=8.7.0"></script>
 <script defer src="./dist/grand-air-war-v80-core.js?v=8.7.0"></script>
-<script defer src="./dist/grand-air-war-v86-operations.js?v=8.7.0"></script>
+<script defer src="./dist/grand-air-war-v88-data.js?v=8.8.0"></script>
+<script defer src="./dist/grand-air-war-v88-losses.js?v=8.8.0"></script>
+<script defer src="./dist/grand-air-war-v86-operations.js?v=8.8.0"></script>
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
 <script defer src="./dist/grand-air-war-v80-lab.js"></script>
 </head><body>
 <header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas · Campaign Explorer</b></nav></div></header>
 <main class="shell">
 <section class="intro" id="overview"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Where were the major campaigns, why were they fought, what did they cost and how did air power change? Explore all 20 campaign centres, then use the month to highlight activity. Campaign-local facts and broader command statistics are labelled separately.</p></section>
-<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
+<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="#claim-loss-calculator">Claims and losses</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
 <section class="timebar" aria-label="Date and theatre controls">
 <div class="time-top"><div><span class="eyebrow">SELECT A HISTORICAL MONTH</span><output id="date-display" for="date-slider">June 1944</output></div><div class="time-actions"><button type="button" id="prev-month" aria-label="Previous month">‹</button><button type="button" id="next-month" aria-label="Next month">›</button><button type="button" id="play-time">▶ Play</button><button type="button" id="jump-today">June 1944</button></div></div>
 <input type="range" id="date-slider" min="0" max="106" step="1" value="95" aria-label="Historical month from July 1936 through May 1945">
@@ -42,9 +44,9 @@
   <h3>Interpretation and open questions</h3><p class="evidence-confidence" id="dossier-uncertainty"></p>
   <div class="dossier-links" id="dossier-sources"></div><div id="dossier-link-detail"></div><div class="dossier-research-jump"><p id="dossier-research-context"></p><a class="research-open" href="#research-library">Browse independent research datasets (different periods and units)</a></div>
  </aside>
- <aside id="operation-dossier" aria-live="polite" aria-label="Selected operation and dated snapshot" hidden></aside>
+ <aside id="operation-dossier" tabindex="-1" aria-live="polite" aria-label="Selected operation and dated snapshot" hidden></aside>
 </section>
-<section id="operation-evidence" aria-label="Selected operation narrative, formations and sourced figures" hidden></section>
+<section id="operation-evidence" aria-label="Selected operation narrative, formations and evidence" hidden></section>
 <section class="two-columns" id="campaigns">
  <article class="pane"><div class="pane-head"><div><span class="eyebrow">CHRONOLOGY · STEP 1</span><h2>Choose a campaign</h2></div><span id="campaign-count"></span></div><p class="event-intro">Choose a campaign to see its operational progression on the right. Dimmed campaigns are outside the map's selected month, but remain available for research.</p><div class="record-list" id="campaign-list" aria-live="polite"></div></article>
  <article class="pane campaign-guide"><div class="pane-head"><div><span class="eyebrow">CAMPAIGN GUIDE · STEP 2</span><h2>How the campaign unfolded</h2></div><span id="moment-count"></span></div>
@@ -57,6 +59,18 @@
   <div id="moment-list" class="record-list" aria-label="Dated evidence for the selected phase"></div>
   <article id="moment-detail" class="moment-detail" aria-live="polite" hidden></article>
  </article>
+</section>
+<section class="pane claim-loss-calculator" id="claim-loss-calculator" aria-labelledby="claim-loss-title">
+ <div class="pane-head"><h2 id="claim-loss-title">Claims and aircraft losses</h2></div>
+ <div class="laboratory-toolbar">
+  <label>Historical scope <select id="claim-loss-scope">
+   <option value="britain">Battle of Britain · Aug–Sep 1940</option>
+   <option value="cobra">Cobra · 25 July 1944</option>
+  </select></label>
+  <label><span id="claim-loss-count-label">Aircraft claimed destroyed</span> <input id="claim-loss-count" type="number" min="0" step="1" value="185" inputmode="numeric"></label>
+ </div>
+ <div id="claim-loss-result" class="claim-loss-result" aria-live="polite"></div>
+ <div id="claim-loss-method"></div>
 </section>
 <details class="research-library" id="research-library"><summary><span class="eyebrow">INDEPENDENT RESEARCH LIBRARY · DIFFERENT DATES AND POPULATIONS</span><strong>Explore German command reports, fighter readiness and Allied strength</strong><small>These are separate historical datasets, never automatically assigned to the campaign above. Expand to explore their own dated observations.</small></summary><div class="research-library-content">
 <section class="section-head" id="loss-lab"><span class="eyebrow">RESEARCH LABORATORY 01</span><h2>German aircraft losses: how, where, when?</h2><p>These are captured German <strong>command-level reports</strong>, not aircraft shot down over an individual battle. Inspect the recorded destruction causes, damaged aircraft and reporting boundaries without inventing absent Eastern Front or Italian totals.</p></section>

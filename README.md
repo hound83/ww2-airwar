@@ -10,6 +10,10 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
+## v8.8 Claims and aircraft losses
+
+The [claims calculator](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html#claim-loss-calculator) compares seven dated RAF claim and German loss returns with whole-day holdouts. [Cobra on 25 July](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html#operation=cobra&step=1) uses local sortie and claim evidence to estimate 1–8 German aircraft destroyed in air combat from 12 Eighth Air Force escort claims. The working estimate, its sources and its assumptions are available in the operation evidence and JSON export. [Research and calculations](research/sources/atlas-v88-claims-and-losses-2026-11-11.md).
+
 ## v8.7 Battle of Britain and dated loss evidence
 
 Four raid dossiers cover 15 August, 18 August, 7 September and 15 September 1940. Normandy’s five operations now include sourced aircraft-loss observations. Dated map briefings highlight figures for the selected date. The Battle of Britain comparison shows recorded destruction per 100 claims and a labelled test estimate. [Research sources and reporting limits](research/sources/atlas-v87-losses-and-claims-2026-11-11.md).
