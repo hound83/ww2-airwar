@@ -589,7 +589,8 @@ window.NormandyV86Data = {
       "page": "p.235",
       "scope": "Friendly ground casualties on 25 July, excluding the separate 24 July incident.",
       "qualifier": "reported",
-      "evidenceClass": "Official U.S. Army retrospective history"
+      "evidenceClass": "Official U.S. Army retrospective history",
+      "measure": "casualties"
     },
     {
       "id": "cobra-wounded",
@@ -602,7 +603,8 @@ window.NormandyV86Data = {
       "page": "p.235",
       "scope": "Friendly ground casualties on 25 July; not aircraft or aircrew losses.",
       "qualifier": "reported",
-      "evidenceClass": "Official U.S. Army retrospective history"
+      "evidenceClass": "Official U.S. Army retrospective history",
+      "measure": "casualties"
     },
     {
       "id": "mortain-local",
@@ -814,6 +816,20 @@ window.NormandyV86Data = {
           ],
           "source": "chronology",
           "page": "12 June 1944 entry; Carentan"
+        }
+      ],
+      "campaignEvidence": [
+        {
+          "factId": "allied-dday-aircraft-lost",
+          "evidenceClass": "Secondary historical summary"
+        },
+        {
+          "factId": "shaef-dday-strategic-sorties",
+          "evidenceClass": "Wartime SHAEF command report"
+        },
+        {
+          "factId": "shaef-dday-tactical-sorties",
+          "evidenceClass": "Wartime SHAEF command report"
         }
       ]
     },

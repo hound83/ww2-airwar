@@ -1,5 +1,11 @@
 # Atlas status and next work
 
+## 11 November 2026 - Losses before sorties
+
+Campaign and operation evidence leads with aircraft losses, followed by personnel casualties and sorties. Damage and victory claims have their own categories. Cobra's 25 July ground casualties precede the bombardment figures. D-Day links three existing 6 June campaign records for Allied aircraft lost and SHAEF strategic and tactical sorties. The four other operations show a gap in operation-level aircraft-loss coverage.
+
+The next research priority is matched loss coverage by operation, beginning with the original 6 June Allied and Luftflotte 3 returns. The proposed v8.7 Battle of Britain release can apply the same evidence order to dated raids and their outcomes.
+
 ## 11 November 2026 - v8.6 map and briefing regression correction
 
 PR #26 addresses the reported Cobra coastline display and clipped right-hand controls. Snapshot selection now fits once without competing flights; the map observes container resizing and keeps land in an explicit lower pane. The briefing flows with the page, and repeated keyboard navigation retains focus. Acceptance covers painted land at town coordinates, wide/scaled/magnified desktop layouts, rapid switching, resizing and the existing mobile operation journeys. [Baseline, correction and verification gates](ATLAS_V86_MAP_LAYOUT_QA.md). Historical data and the release scope are unchanged.
