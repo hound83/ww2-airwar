@@ -20,6 +20,7 @@ const check=async()=>{
  const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
+  await require("./grand-air-war-v80-layout-browser.cjs")(browser,base,root);
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
    const page=await browser.newPage({viewport,deviceScaleFactor:1,hasTouch:viewport.width<500,isMobile:viewport.width<500});
    const routePage=await browser.newPage({viewport,deviceScaleFactor:1});
