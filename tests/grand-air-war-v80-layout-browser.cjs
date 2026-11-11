@@ -26,8 +26,8 @@ module.exports=async function layoutQA(browser,base,root){
  for(const profile of [{name:'wide',viewport:{width:2048,height:1090},deviceScaleFactor:1},{name:'scaled',viewport:{width:1280,height:681},deviceScaleFactor:1.6}]){
   const context=await browser.newContext(profile),page=await context.newPage();
   try{
-   await page.goto(base+'#operation=cobra&step=2',{waitUntil:'domcontentloaded',timeout:45000});
-   await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.step===2&&document.getElementById('campaign-map').dataset.landStatus==='loaded',{timeout:30000});
+   await page.goto(base+'#operation=cobra&step=3',{waitUntil:'domcontentloaded',timeout:45000});
+   await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.step===3&&document.getElementById('campaign-map').dataset.landStatus==='loaded',{timeout:30000});
    const inspect=async label=>{
     await page.waitForTimeout(900);
     const details=await page.evaluate(()=>{
@@ -42,11 +42,12 @@ module.exports=async function layoutQA(browser,base,root){
     for(const p of samples){const [r,g,b]=p.rgb;if(!(r>135&&g>130&&r-b>10))failures.push(profile.name+' '+label+': '+p.name+' painted '+p.rgb.join(',')+' instead of land');}
     if(details.panel.scrollHeight>details.panel.clientHeight+2)failures.push(profile.name+' '+label+': briefing still clips into an internal scroll viewport');
     report.push({profile:profile.name,label,...details,samples});
+    fs.writeFileSync(path.join(root,'v80-qa-layout-report.json'),JSON.stringify({report,failures},null,2));
     await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-layout-'+profile.name+'-'+label+'.png')});
    };
    await inspect('direct');
    // Exercise interrupted chapter/snapshot animation, then resize the map.
-   await page.evaluate(()=>{for(let i=0;i<12;i++){window.AtlasNormandyOperations.choose(i%2?'cobra':'dday',i%3);}window.AtlasNormandyOperations.choose('cobra',2);});
+   await page.evaluate(()=>{for(let i=0;i<12;i++){window.AtlasNormandyOperations.choose(i%2?'cobra':'dday',i%3);}window.AtlasNormandyOperations.choose('cobra',3);});
    await inspect('rapid');
    await page.setViewportSize({width:980,height:800});await page.setViewportSize({width:1360,height:900});
    await inspect('resized');
@@ -55,7 +56,7 @@ module.exports=async function layoutQA(browser,base,root){
    for(const button of await page.locator('[data-operation-step]').all()){await button.click();}
    assert.equal(await page.locator('#operation-next').isDisabled(),true,'last snapshot control unreachable');
    await page.locator('#operation-prev').focus();await page.keyboard.press('Enter');
-   assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
+   assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,2);
    await page.locator('#operation-close').click();assert.ok(await page.locator('#campaign-dossier').isVisible());
   }finally{await context.close();}
  }
