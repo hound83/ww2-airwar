@@ -300,6 +300,7 @@ const check=async()=>{
    await page.locator('[data-operation="cobra"]').click();
    await page.locator('#operation-next').focus();await page.keyboard.press('Enter');
    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
+   await page.waitForTimeout(900); // Leaflet's JS pan must settle before the screenshot.
    await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-v86-cobra-bombardment-'+viewport.width+'.png')});
    await page.locator('#operation-evidence').screenshot({path:path.join(root,'v80-qa-v86-evidence-'+viewport.width+'.png')});
    const downloadPromise=page.waitForEvent('download');
