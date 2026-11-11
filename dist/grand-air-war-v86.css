@@ -32,3 +32,30 @@
   margin-top:8px;
   grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr));
 }
+.operation-snapshot-figures{
+  margin:16px 0;
+  padding:12px 0 0;
+  border-top:1px solid #537068;
+}
+.operation-snapshot-figures h3{color:#efd4aa;font-size:13px}
+.operation-snapshot-figures ul{display:grid;gap:6px;list-style:none;padding:0;margin:8px 0 0}
+.operation-snapshot-figures li{
+  display:grid;
+  grid-template-columns:minmax(55px,max-content) minmax(0,1fr);
+  gap:10px;
+  align-items:baseline;
+  padding:7px 9px;
+  border-radius:4px;
+  background:#203d46;
+}
+.operation-snapshot-figures strong{font:18px Georgia,serif;color:#f2d2a0}
+.operation-snapshot-figures span{font-size:11px;color:#e0e9e2}
+.operation-snapshot-figures small{display:block;color:#abc2b9;font-size:10px}
+#operation-evidence>.event-review-claim{margin:18px 0}
+.claim-estimate-check{padding:10px 12px;background:#3c3e2e;color:#eee0be;border-left:3px solid #c4ae75;line-height:1.6}
+@media(min-width:901px){
+  #normandy-operations[data-campaign="britain"] #operation-choices{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:540px){
+  #normandy-operations[data-campaign="britain"] #operation-choices button:last-child{grid-column:auto}
+}
