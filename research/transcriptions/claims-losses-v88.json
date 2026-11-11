@@ -1,5 +1,5 @@
 {
-  "version": "8.8.0",
+  "version": "8.9.0",
   "cobra": {
     "id": "cobra-494-german-air-combat",
     "operation": "cobra",
@@ -7,12 +7,8 @@
     "claimId": "cobra-8af-air-claims",
     "claimant": "Eighth Air Force escorts, Mission 494",
     "opponent": "Luftwaffe",
-    "area": "Normandy, Cobra support mission in the St-Lô area",
-    "escortAircraft": 483,
+    "area": "Northern France, Cobra support and fighter cover",
     "widerLosses": 10,
-    "widerUsFighterSorties": 2500,
-    "widerBritishFighterSorties": 1400,
-    "otherAirClaims": 4,
     "references": [
       {
         "source": "aafChronJuly",
@@ -30,14 +26,195 @@
         "detail": "German calendar reports 10 own aircraft lost in its wider area. The daily summary covers day and night activity and leaves the cause and Allied attribution of those losses open."
       },
       {
-        "source": "luftflotte3SituationJuly",
-        "page": "25 July, pp. 32–33",
-        "detail": "German situation report estimates about 2,500 US and 1,400 British fighter and fighter-bomber sorties, with attacks concentrated around Caen and St-Lô."
+        "source": "foyReport",
+        "page": "25 July, 11:45, southeast of Paris",
+        "detail": "The encounter report illustrates the wider air-combat geography of the day."
+      }
+    ]
+  },
+  "france": {
+    "area": "Northern France",
+    "training": [
+      {
+        "id": "jg27-june27",
+        "date": "1944-06-27",
+        "place": "Esternay sector",
+        "claimant": "Eighth Air Force fighters",
+        "opponent": "I. and II./JG 27 Bf 109s",
+        "claims": 14,
+        "losses": 9,
+        "possibleLosses": 0,
+        "basis": "Reconstructed",
+        "detail": "Evening encounter. The Clark-based reconstruction matches 14 US claims to nine Bf 109 losses. Jure’s report corroborates 56th Fighter Group participation. The Eighth Air Force day summary covers additional missions.",
+        "references": [
+          {
+            "source": "june27Reconstruction",
+            "page": "Challenging the numerical superiority, citing Clark p. 94 and 27 June daily tables"
+          },
+          {
+            "source": "jureReport",
+            "page": "27 June, 20:30–20:45"
+          }
+        ]
       },
       {
-        "source": "aafCobraHistory",
-        "page": "Vol. III, ch. 8, p. 237",
-        "detail": "The USAAF official history records four aircraft claimed destroyed by Ninth Air Force's 406th Group over Lisieux on the same day."
+        "id": "evreux-july18",
+        "date": "1944-07-18",
+        "place": "Évreux–Mantes",
+        "claimant": "Ninth Air Force, 474th Fighter Group",
+        "opponent": "Luftwaffe day fighters",
+        "claims": 11,
+        "losses": 6,
+        "possibleLosses": 1,
+        "basis": "Reconstructed",
+        "detail": "Eleven distinct claims from the squadron breakdown. The shared Bf 109 is counted once. Blake identifies at least seven German losses. The baseline excludes Wimsche’s forced landing because its final aircraft disposition is unclear.",
+        "references": [
+          {
+            "source": "evreux",
+            "page": "18 July morning engagement, squadron reports and German loss reconstruction"
+          }
+        ]
+      }
+    ],
+    "check": {
+      "id": "rambouillet-august15",
+      "date": "1944-08-15",
+      "place": "Rambouillet",
+      "claimant": "Ninth Air Force, 373rd Fighter Group",
+      "opponent": "II./JG 26 Fw 190s",
+      "claims": 3,
+      "losses": 2,
+      "possibleLosses": 0,
+      "basis": "Reconstructed",
+      "detail": "The account reports two German pilots lost in the Fw 190 fight. The reconstruction counts their aircraft and excludes Stein’s damaged Fw 190, which was repaired. Dreux was a separate fight.",
+      "references": [
+        {
+          "source": "caldwell",
+          "page": "Ch. 11, Rambouillet and 16 August repair account"
+        }
+      ]
+    }
+  },
+  "germanClaims": [
+    {
+      "id": "normandy-june6",
+      "date": "1944-06-06",
+      "place": "Caen sector",
+      "claimant": "JG 2 fighters",
+      "opponent": "US 365th Fighter Group and RAF 183 Squadron",
+      "claims": 6,
+      "losses": 5,
+      "possibleLosses": 0,
+      "basis": "Filed claims",
+      "detail": "Noon engagement. The reconstruction identifies two US P-47s and three RAF Typhoons lost.",
+      "references": [
+        {
+          "source": "june6Mixed",
+          "page": "6 June noon engagement, citing Clark p. 42"
+        },
+        {
+          "source": "june27Reconstruction",
+          "page": "6 June noon engagement, Clark p. 42"
+        }
+      ]
+    },
+    {
+      "id": "beauvais-june11",
+      "date": "1944-06-11",
+      "place": "Beauvais–Compiègne",
+      "claimant": "JG 26 fighters",
+      "opponent": "US 55th Fighter Group P-38s",
+      "claims": 4,
+      "losses": 2,
+      "possibleLosses": 0,
+      "basis": "Awarded credits",
+      "detail": "Caldwell compares four German credits with two US P-38s lost in that engagement.",
+      "references": [
+        {
+          "source": "caldwell",
+          "page": "Ch. 11, Wiegand’s 11 June combat and cross-check"
+        }
+      ]
+    },
+    {
+      "id": "evreux-july18-reverse",
+      "date": "1944-07-18",
+      "place": "Évreux–Mantes",
+      "claimant": "Four Luftwaffe fighter groups",
+      "opponent": "US 474th Fighter Group P-38s",
+      "claims": 12,
+      "losses": 2,
+      "possibleLosses": 1,
+      "basis": "Reported claims",
+      "detail": "Two US P-38s were seen being shot down. A third, flown by Glenn Goodrich, was lost in the engagement after its engine caught fire. Blake counts three combat losses. The engine fire’s cause is less certain in the witness account.",
+      "references": [
+        {
+          "source": "evreux",
+          "page": "18 July, the three US loss accounts and German claims"
+        }
+      ]
+    },
+    {
+      "id": "rambouillet-august15-reverse",
+      "date": "1944-08-15",
+      "place": "Rambouillet",
+      "claimant": "II./JG 26 Fw 190s",
+      "opponent": "US 373rd Fighter Group P-47s",
+      "claims": 8,
+      "losses": 3,
+      "possibleLosses": 0,
+      "basis": "Filed claims",
+      "detail": "Caldwell matches the eight German claims to three P-47s shot down in the Rambouillet fight.",
+      "references": [
+        {
+          "source": "caldwell",
+          "page": "Ch. 11, 15 August, Rambouillet"
+        }
+      ]
+    }
+  ],
+  "bobruisk": {
+    "id": "bobruisk-two-german-groups-enemy-action",
+    "campaign": "bagration",
+    "date": "1944-06-26",
+    "area": "Bobruisk axis, Belarus",
+    "claimant": "Soviet 16th Air Army",
+    "opponent": "III./JG 51 and I./SG 10",
+    "dateEngagements": 29,
+    "periodEngagements": 141,
+    "periodClaims": 95,
+    "eligibleShare": [
+      0.5,
+      1
+    ],
+    "period": {
+      "start": "1944-06-24",
+      "end": "1944-07-04"
+    },
+    "unitLosses": [
+      {
+        "unit": "III./JG 51",
+        "aircraft": "Bf 109G-6",
+        "losses": 8,
+        "basing": "21–27 June",
+        "source": "jg51Return",
+        "basingSource": "jg51Basing",
+        "page": "June 1944, Bf 109G-6, enemy action"
+      },
+      {
+        "unit": "I./SG 10",
+        "aircraft": "Fw 190F/G",
+        "losses": 4,
+        "basing": "23–27 June",
+        "source": "sg10Return",
+        "basingSource": "sg10Basing",
+        "page": "June 1944, enemy action: 2 F-8, 1 G-3, 1 G-8"
+      }
+    ],
+    "references": [
+      {
+        "source": "soviet16AirHistory1944",
+        "page": "Ch. 3, 26 June and Bobruisk operation summary"
       }
     ]
   },
@@ -50,13 +227,45 @@
       "title": "German calendar of operations in North-West Europe, July 1944 (RAF AHB translation)",
       "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/calendar-of-operations-in-north-west-europe-july-1944/#page=46"
     },
-    "luftflotte3SituationJuly": {
-      "title": "Luftflotte 3 situation reports, July 1944 (RAF AHB translation)",
-      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/situation-reports-issued-by-luftflotte-3-france-july-1944/#page=33"
+    "june27Reconstruction": {
+      "title": "Air battle over Normandy, reconstruction citing David Clark",
+      "url": "https://forum.dcs.world/topic/144168-the-air-battle-over-normandy/"
     },
-    "aafCobraHistory": {
-      "title": "Craven and Cate, The Army Air Forces in World War II, Vol. III",
-      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-8.html"
+    "jureReport": {
+      "title": "James Jure, 56th Fighter Group encounter report",
+      "url": "https://www.8af.org/james-jure-56th-fighter-group-27-june-1944.cfm"
+    },
+    "evreux": {
+      "title": "Steve Blake, Anatomy of a Dogfight",
+      "url": "https://raf-warmwell.co.uk/anatomy-of-a-dogfight/"
+    },
+    "caldwell": {
+      "title": "Donald L. Caldwell, JG 26: Top Guns of the Luftwaffe",
+      "url": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf"
+    },
+    "june6Mixed": {
+      "title": "Jean-Bernard Frappé’s Normandy study and the D-Day engagement",
+      "url": "https://falkeeins.blogspot.com/2018/11/herbert-huppertz-jg-2-6-8-june-1944.html"
+    },
+    "jg51Basing": {
+      "title": "Jagdgeschwader 51 station chronology",
+      "url": "https://www.ww2.dk/air/jagd/jg51.htm"
+    },
+    "sg10Basing": {
+      "title": "Schlachtgeschwader 10 station chronology",
+      "url": "https://www.ww2.dk/air/attack/sg10.htm"
+    },
+    "jg51Return": {
+      "title": "III./JG 51 aircraft movement returns",
+      "url": "https://ww2.dk/oob/bestand/jagd/biiijg51.html"
+    },
+    "sg10Return": {
+      "title": "I./SG 10 aircraft movement returns",
+      "url": "https://www.ww2.dk/oob/bestand/schlacht/bisg10.html"
+    },
+    "foyReport": {
+      "title": "Robert Foy, 357th Fighter Group encounter report",
+      "url": "https://www.8af.org/robert-foy-357th-fighter-group-25-july-1944.cfm"
     }
   }
 }
