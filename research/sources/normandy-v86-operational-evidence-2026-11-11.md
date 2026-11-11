@@ -68,3 +68,9 @@ No historical photographs/scans or external copyrighted map images are copied. T
 ## Remaining research
 
 Recover local RAF/USAAF/German own-loss and serviceability returns for more of the five operation windows; validate finer ground front lines before drawing them; extend dated formation station records before claiming a full Normandy order of battle. These are specific follow-up research questions, not prerequisites for reading the documented operations.
+
+## Final map-direction review
+
+The Cobra planning arrow originally connected Saint-Gilles westwards to Marigny, which wrongly suggested an east-to-west penetration. Replaced it with a schematic southward exploitation from the La Chapelle-en-Juger area towards Marigny, supported by Blumenson Chapters XII–XIII (9th Division axis / capture of the crossroads and commitment of armour). Approximate locality coordinates 49.128 N, 1.215 W were cross-checked against https://www.cartesfrance.fr/carte-france-ville/50123_La-Chapelle-en-Juger.html and https://en.wikipedia.org/wiki/La_Chapelle-en-Juger ; these supply geographic reference, not a 1944 unit position. Local operation fits may now reach zoom 12, using source-labelled schematic places rather than implying finer coastline survey accuracy.
+
+Additional reusable findings from Stacey Chapter X: p.233 reports ground investigation of 78 armoured vehicles in the Mortain area: 21 attributed to air action, 29 to U.S. ground forces, 15 unknown, 9 abandoned intact and 4 destroyed by their own crews. These surveyed vehicles are not the complete German tank population and cannot be divided into the air forces’ claims to produce a theatre-wide accuracy score. At p.243, a provisional Canadian return prepared on 15 August for Tractable lists 65 killed, 241 wounded and 91 then missing; this is not the same definition as the secondary 391-casualty assertion. These useful findings are retained here without adding them to the 24 operational UI observations.

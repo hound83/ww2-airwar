@@ -199,6 +199,11 @@ window.NormandyV86Data = {
       "Vimoutiers",
       48.929,
       0.198
+    ],
+    "juger": [
+      "La Chapelle-en-Juger",
+      49.128,
+      -1.215
     ]
   },
   "formations": {
@@ -959,14 +964,15 @@ window.NormandyV86Data = {
           "points": [
             "stlo",
             "stgilles",
-            "marigny"
+            "marigny",
+            "juger"
           ],
           "links": [
             {
-              "from": "stgilles",
+              "from": "juger",
               "to": "marigny",
               "kind": "planned",
-              "label": "Cobra assault and exploitation direction"
+              "label": "Intended southward exploitation towards Marigny"
             }
           ],
           "source": "cobra",
@@ -980,14 +986,15 @@ window.NormandyV86Data = {
           "points": [
             "stlo",
             "stgilles",
-            "marigny"
+            "marigny",
+            "juger"
           ],
           "links": [
             {
-              "from": "stgilles",
+              "from": "juger",
               "to": "marigny",
               "kind": "planned",
-              "label": "Intended penetration; not the day-end front"
+              "label": "Intended southward exploitation towards Marigny"
             }
           ],
           "source": "cobra",

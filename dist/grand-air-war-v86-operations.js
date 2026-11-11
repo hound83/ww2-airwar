@@ -31,7 +31,7 @@ function choose(id,index=0){
  }finally{navigating=false;}
  render();A.refreshMap();
  const map=A.map(),L=window.L;
- if(map&&L){const s=operation.snapshots[step];const points=s.points.map(k=>D.places[k].slice(1));if(points.length)map.flyToBounds(L.latLngBounds(points).pad(.35),{maxZoom:operation.id==='dday'?9:10,duration:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?0:.4});}
+ if(map&&L){const s=operation.snapshots[step];const points=s.points.map(k=>D.places[k].slice(1));if(points.length)map.flyToBounds(L.latLngBounds(points).pad(.35),{maxZoom:operation.id==='dday'?10:12,duration:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?0:.4});}
  if(window.history?.replaceState&&window.location)window.history.replaceState(null,'','#operation='+operation.id+'&step='+step);
  return true;
 }
