@@ -79,7 +79,7 @@ function renderEstimate(estimate){
   '<h4>Estimated German aircraft losses</h4><div class="claim-loss-result claim-loss-estimated" data-loss-estimate="'+esc(estimate.id)+'">'+
   '<strong>About '+esc(estimate.expected)+'</strong><span>Aircraft destroyed in air combat<small>Working estimate · low confidence</small></span></div>'+
   '<p class="operation-scope-note">'+esc(estimate.date+' · '+estimate.claimant+' · '+estimate.area)+'.</p>'+
-  '<p class="operation-scope-note">'+estimate.claimCount+' US escort claims × '+Math.round(estimate.rate*100)+'% from the selected northern France engagements. The alternative is '+estimate.alternative+' if one uncertain comparison loss is included.</p>'+
+  '<p class="operation-scope-note">'+estimate.claimCount+' US escort claims × '+Math.round(estimate.rate*100)+'% from three earlier northern France comparisons. Omitting one date at a time gives '+estimate.leaveOneOut.low+'–'+estimate.leaveOneOut.high+' aircraft.</p>'+
   '<div class="operation-source-trail"><a href="'+esc(context.url)+'" target="_blank" rel="noopener noreferrer">'+esc(context.title+' · '+context.page)+'</a></div>'+
   '<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="cobra" data-claim-count="'+estimate.claimCount+'">Review the estimate and assumptions</a></section>';
 }

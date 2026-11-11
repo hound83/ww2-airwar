@@ -88,11 +88,22 @@ assert.equal(model.calculate('bagration',13),null,'Eastern claims need their own
 for(const invalid of [NaN,Infinity,-1,1.5,'12'])assert.equal(model.calculate('cobra',invalid),null);
 assert.deepEqual([model.calculate('cobra',0).expected,model.calculate('cobra',0).alternative],[0,0]);
 const estimate=model.historicalEstimate('cobra',data.observations);
-assert.deepEqual([estimate.expected,estimate.alternative,estimate.rate],[7,8,0.6]);
-assert.deepEqual([estimate.inputs.matchedClaims,estimate.inputs.matchedLosses],[25,15]);
+assert.deepEqual([estimate.expected,estimate.alternative,estimate.rate],[8,9,23/34]);
+assert.deepEqual([estimate.inputs.matchedClaims,estimate.inputs.matchedLosses],[34,23]);
 assert.deepEqual([estimate.validation.claims,estimate.validation.predicted,estimate.validation.losses],[3,2,2]);
 assert.ok(estimate.calibration.every(row=>row.date<estimate.date&&row.sources.every(ref=>ref.url?.startsWith('https://')&&ref.page)));
-assert.equal(estimate.calibration.some(row=>row.id===estimate.validation.id),false);
+assert.deepEqual([estimate.leaveOneOut.low,estimate.leaveOneOut.high],[7,9]);
+assert.deepEqual(Array.from(estimate.leaveOneOut.omissions,row=>[row.date,row.claims,row.losses,row.expected]),[
+ ['1944-06-22',25,15,7],['1944-06-27',20,14,8],['1944-07-18',23,17,9]
+]);
+assert.equal(new Set(estimate.calibration.map(row=>row.date)).size,estimate.calibration.length);
+assert.deepEqual(Array.from(estimate.validationCases,row=>[row.claims,row.predicted,row.losses,row.possibleLosses]),[[3,2,2,0],[23,16,16,2]]);
+assert.ok(estimate.validationCases.every(row=>row.date>estimate.date&&row.sources.every(ref=>ref.url?.startsWith('https://')&&ref.page)));
+const context=estimate.campaignContext;
+assert.equal(context.days.length,18);
+assert.deepEqual(Array.from(context.days,row=>row.date),Array.from({length:18},(_,i)=>'1944-07-'+String(i+1).padStart(2,'0')));
+assert.deepEqual([context.totals.germanLosses,context.totals.alliedClaims,context.totals.alliedLosses,context.totals.germanClaims],[355,329,312,314]);
+assert.equal(context.flakClaims.value,17);
 assert.equal(estimate.claimCount,12);
 assert.equal(estimate.kind,'estimated');
 assert.equal(estimate.confidence,'low');
@@ -105,7 +116,7 @@ assert.ok(model.historicalEstimate('cobra',[...data.observations,{...replacement
 ops.choose('cobra',0);
 assert.doesNotMatch(el('operation-dossier').innerHTML,/data-snapshot-estimate=/);
 ops.choose('cobra',1);
-assert.match(el('operation-dossier').innerHTML,/data-snapshot-estimate=.*≈7.*12 US escort claims/);
+assert.match(el('operation-dossier').innerHTML,/data-snapshot-estimate=.*≈8.*12 US escort claims/);
 assert.match(el('operation-evidence').innerHTML,/data-evidence-group="estimated-losses"/);
 ops.choose('cobra',2);
 assert.doesNotMatch(el('operation-dossier').innerHTML,/data-snapshot-estimate=/);
@@ -119,7 +130,9 @@ assert.equal(model.bobruiskEstimate(easternCampaign.id,eastern.date,[...easternC
 assert.equal(model.calculate('reverse',8),null,'historical comparisons keep their original reporting populations');
 assert.ok(calibration.germanClaims.some(row=>row.claims===8&&row.losses===3));
 assert.ok(calibration.germanClaims.some(row=>row.claims===6&&row.losses===5&&row.opponent.includes('RAF')));
+assert.ok(calibration.germanClaims.some(row=>row.claims===2&&row.losses===2&&row.opponent.includes('Canadian')));
+assert.ok(calibration.germanClaims.some(row=>row.claims===14&&row.alternateClaims===16&&row.losses===7));
 const day=easternCampaign.moments.find(moment=>moment.date===eastern.date);
 app.chooseMoment(easternCampaign.id,day.date,day.lat,day.lng,day.title);
 assert.match(el('moment-detail').innerHTML,/data-event-estimate=.*About 2.*two Bobruisk-based groups/);
-console.log('PASS v8.9: northern France fit and independent check, matched German and Allied cases, scoped Bobruisk estimate and recorded-loss precedence');
+console.log('PASS v8.9.1: three pre-Cobra comparisons, date omission, two August checks, 18-day context, reverse cases and scoped Bobruisk estimate');

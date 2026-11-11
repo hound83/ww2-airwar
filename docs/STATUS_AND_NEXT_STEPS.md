@@ -1,5 +1,11 @@
 # Atlas status and next work
 
+## 11 November 2026 - v8.9.1 Normandy claims and losses audit
+
+Three pre-Cobra US fighter comparisons give 23 reconstructed losses from 34 claims. The updated Cobra estimate is about 8 from 12. Omitting one date gives 7–9, and counting both uncertain landings gives 9. Two August Ninth Air Force engagements provide checks. The calculator and export carry the 18-day Normandy comparison and identify its broader cause and service coverage. The reverse view adds the Clastres and Le Bény-Bocage engagements.
+
+The [research audit](../research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md) records the 18-day series, the breakout week's wider German returns, named German losses on 25 July, alternative claim counts, and Bobruisk's sensitivity to its activity proxy. A source that attributes the 25 July losses to Mission 494 by airframe still takes priority.
+
 ## 11 November 2026 - v8.9 regional claims and losses
 
 Cobra moves from a wide 1–8 scenario range to a working estimate of about 7 using a 60-per-100 northern France comparison. A separately held August case gives two losses from three US claims. Four German-versus-Allied engagement comparisons are available, including one with combined US and RAF losses. Bobruisk’s 26 June event shows about two enemy-action removals from two locally based German units, using their June records and the day’s share of reported engagements.
