@@ -7,6 +7,7 @@ on:
       - 'grand-air-war-v80.html'
       - 'dist/grand-air-war-v80-core.js'
       - 'dist/grand-air-war-v86*'
+      - 'dist/grand-air-war-v88*'
       - 'tests/grand-air-war-v80-*.cjs'
       - 'scripts/verify-v86-live.cjs'
       - '.github/workflows/atlas-v86-live.yml'

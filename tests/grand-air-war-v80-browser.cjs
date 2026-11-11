@@ -305,7 +305,7 @@ const check=async()=>{
      await page.locator(figures).screenshot({path:path.join(root,'v80-qa-dday-losses-'+viewport.width+'.png')});
     }
     if(id==='cobra'){
-     assert.deepEqual(order,['aircraft-losses','personnel-casualties','victory-claims','other']);
+     assert.deepEqual(order,['aircraft-losses','estimated-losses','personnel-casualties','victory-claims','other']);
      const casualties=page.locator(figures+' [data-evidence-group="personnel-casualties"]');
      assert.deepEqual(await casualties.locator('[data-observation]').evaluateAll(cards=>cards.map(card=>card.dataset.observation)),['cobra-killed','cobra-wounded']);
      assert.match(await casualties.innerText(),/111.*490/s);
@@ -326,6 +326,9 @@ const check=async()=>{
      assert.equal(await page.locator('.operation-ground-path').count(),expectedPaths);
      if(expectedPaths)assert.ok(await page.locator('.operation-ground-path').evaluateAll(nodes=>nodes.every(n=>Number(getComputedStyle(n.closest('.leaflet-pane')).zIndex)>=450)),'operation paths are behind physical land');
      assert.ok(await page.locator('#operation-evidence [data-observation]').count()>=3);
+     const datedEstimate=page.locator('#operation-dossier [data-snapshot-estimate]');
+     assert.equal(await datedEstimate.count(),id==='cobra'&&i===1?1:0);
+     if(id==='cobra'&&i===1)assert.match(await datedEstimate.innerText(),/1–8.*12 US escort claims.*low confidence/s);
      assert.ok(await page.locator('#operation-evidence a[href^="https://"]').count()>=5);
      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)<=2,'operation creates page overflow');
     }
@@ -342,7 +345,46 @@ const check=async()=>{
    const downloadPromise=page.waitForEvent('download');
    await page.locator('#operation-export').click();
    const exported=await downloadPromise;assert.match(exported.suggestedFilename(),/cobra.*evidence/);
-   const exportedRecords=JSON.parse(fs.readFileSync(await exported.path(),'utf8')).observations;
+   const exportedPayload=JSON.parse(fs.readFileSync(await exported.path(),'utf8'));
+   const exportedRecords=exportedPayload.observations;
+   assert.equal(exportedPayload.estimates.length,1);
+   const [estimate]=exportedPayload.estimates;
+   assert.deepEqual([estimate.kind,estimate.date,estimate.claimCount,estimate.low,estimate.high],['estimated','1944-07-25',12,1,8]);
+   assert.equal(estimate.inputs.widerGermanLossReports,10);
+   assert.ok(estimate.sources.every(ref=>ref.url.startsWith('https://')&&ref.page));
+   assert.ok(exportedRecords.some(fact=>fact.id===estimate.claimId&&fact.value===12));
+   assert.ok(exportedRecords.some(fact=>fact.id==='cobra-8af-ground-claims'&&fact.value===2));
+   assert.equal(exportedRecords.some(fact=>fact.id===estimate.id),false);
+   await page.locator('#operation-next').click();
+   const cobraLink=page.url();
+   await page.locator('#operation-evidence [data-claim-scope="cobra"]').click();
+   assert.equal(page.url(),cobraLink,'opening the calculator must preserve the selected operation link');
+   assert.equal(await page.locator('#claim-loss-scope').inputValue(),'cobra');
+   const claims=page.locator('#claim-loss-count'),result=page.locator('#claim-loss-result');
+   assert.equal(await claims.inputValue(),'12');
+   assert.match(await result.innerText(),/1–8.*low confidence/s);
+   assert.equal(await result.evaluate(element=>element.classList.contains('claim-loss-estimated')),true);
+   await page.locator('#claim-loss-method summary').click();
+   assert.match(await page.locator('#claim-loss-method').innerText(),/1\.2 aircraft.*7\.5 aircraft/s);
+   assert.equal(await page.locator('#claim-loss-method details a[href^="https://"]').count(),5);
+   await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-cobra-calculator-'+viewport.width+'.png')});
+   await claims.fill('24');
+   assert.match(await result.innerText(),/1–9.*Hypothetical input/s);
+   await claims.fill('1.5');
+   assert.match(await result.innerText(),/Enter a whole number/);
+   assert.equal(await claims.getAttribute('aria-invalid'),'true');
+   assert.equal(await page.locator('#claim-loss-method').isVisible(),false);
+   await claims.fill('0');
+   assert.match(await result.innerText(),/^0/);
+   const scopeSelector=page.locator('#claim-loss-scope');
+   await scopeSelector.selectOption('britain');
+   assert.equal(await claims.inputValue(),'185');
+   assert.match(await result.innerText(),/56–96.*selected recorded days/s);
+   await scopeSelector.selectOption('cobra');
+   assert.equal(await claims.inputValue(),'12');
+   await page.locator('#claim-loss-method a[href^="#operation="]').click();
+   assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
+   assert.match(await page.locator('#operation-dossier [data-snapshot-estimate]').innerText(),/1–8/);
    assert.deepEqual(exportedRecords.slice(0,5).map(fact=>fact.id),[
     'cobra-8af-bombers-lost','cobra-8af-fighters-lost','cobra-8af-bombers-writeoffs','cobra-killed','cobra-wounded'
    ]);
@@ -378,6 +420,17 @@ const check=async()=>{
    assert.equal(page.url(),sharedUrl,'opening evidence must preserve the selected operation link');
    await page.locator('#operation-evidence .event-review-claim').screenshot({path:path.join(root,'v80-qa-claim-review-'+viewport.width+'.png')});
    await page.locator('.mainstage').screenshot({path:path.join(root,'v80-qa-britain-raid-'+viewport.width+'.png')});
+   await page.locator('#operation-evidence [data-claim-scope="britain"]').click();
+   assert.equal(await page.locator('#claim-loss-scope').inputValue(),'britain');
+   assert.equal(await claims.inputValue(),'185');
+   assert.match(await page.locator('#claim-loss-method').innerText(),/39\.6 destroyed per 100 RAF claims.*56 destroyed.*66–96/s);
+   const britainDetails=page.locator('#claim-loss-method details');
+   if(!await britainDetails.evaluate(details=>details.open))await britainDetails.locator('summary').click();
+   assert.match(await britainDetails.innerText(),/included 5 of 7 recorded totals/);
+   assert.equal(await britainDetails.locator('tbody tr').count(),7);
+   assert.ok(await britainDetails.locator('.claim-loss-table').evaluate(table=>table.scrollWidth<=table.clientWidth+1),'benchmark table columns must fit the supported viewport');
+   assert.match(await britainDetails.locator('tbody tr').filter({hasText:'1940-09-15'}).innerText(),/185.*56.*30\.3.*66–96/s);
+   await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-britain-calculator-'+viewport.width+'.png')});
    await page.reload({waitUntil:'domcontentloaded'});
    await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.operation==='britain-15-sep');
    await page.locator('#operation-close').click();

@@ -7,6 +7,8 @@ on:
       - 'dist/grand-air-war-v80-*'
       - 'dist/grand-air-war-v77-campaigns.js'
       - 'dist/grand-air-war-v86*'
+      - 'dist/grand-air-war-v88*'
+      - 'research/transcriptions/claims-losses-v88.json'
       - 'research/transcriptions/normandy-v86-operations.json'
       - 'tests/grand-air-war-v86.cjs'
       - 'dist/normandy-1944-story.js'

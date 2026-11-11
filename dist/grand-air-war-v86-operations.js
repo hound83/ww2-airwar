@@ -1,7 +1,7 @@
 /* Dated operations, maps and evidence for the Atlas campaign explorer. */
 (function(){
 'use strict';
-const A=window.GrandAirWarV77,C=window.GrandAirWarV77Campaigns;
+const A=window.GrandAirWarV77,C=window.GrandAirWarV77Campaigns,M=window.AtlasClaimLosses;
 const datasets=[window.NormandyV86Data,window.BritainV87Data].filter(Boolean);
 if(!datasets.length||!A||!C||!document.getElementById('normandy-operations'))return;
 const $=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -41,18 +41,25 @@ function factsFor(op) {
  return observations;
 }
 
-function renderSnapshotFigures(facts,snapshot) {
+function renderSnapshotFigures(facts,snapshot,estimate) {
  const groups=A.groupEvidence(facts.filter(fact=>fact.date===snapshot.date&&!fact.period));
  const keys=['aircraft-losses','personnel-casualties','sorties'];
  const important=groups.filter(group=>keys.includes(group.id));
  const rows=(important.length?important:groups.filter(group=>group.id==='victory-claims'))
   .flatMap(group=>group.facts.slice(0,2)).slice(0,4);
- if(!rows.length)return '';
+ const datedEstimate=estimate?.date===snapshot.date?estimate:null;
+ if(!rows.length&&!datedEstimate)return '';
+ const items=rows.map(fact=>
+  '<li data-snapshot-figure="'+esc(fact.id)+'"><strong>'+esc(metric(fact))+'</strong>'+
+  '<span>'+esc(fact.shortLabel||fact.label)+'<small>'+esc(fact.evidenceClass)+'</small></span></li>'
+ );
+ if(datedEstimate){
+  const lossRows=rows.filter(fact=>['losses','losses-subset','writeoffs'].includes(fact.measure)).length;
+  items.splice(lossRows,0,'<li class="claim-loss-estimated" data-snapshot-estimate="'+esc(datedEstimate.id)+'"><strong>'+esc(M.band(datedEstimate))+'</strong>'+
+   '<span>German aircraft destroyed in air combat<small>Working estimate from '+datedEstimate.claimCount+' US escort claims · low confidence</small></span></li>');
+ }
  return '<section class="operation-snapshot-figures" data-snapshot-date="'+esc(snapshot.date)+'">'+
-  '<h3>Reported figures for this date</h3><ul>'+rows.map(fact=>
-   '<li data-snapshot-figure="'+esc(fact.id)+'"><strong>'+esc(metric(fact))+'</strong>'+
-   '<span>'+esc(fact.shortLabel||fact.label)+'<small>'+esc(fact.evidenceClass)+'</small></span></li>'
-  ).join('')+'</ul></section>';
+  '<h3>'+(datedEstimate?'Figures for this date':'Reported figures for this date')+'</h3><ul>'+items.join('')+'</ul></section>';
 }
 
 function renderEvidenceFact(fact) {
@@ -65,7 +72,20 @@ function renderEvidenceFact(fact) {
   source(fact.source,fact.page)+'</article>';
 }
 
-function renderEvidenceGroups(op,groups) {
+function renderEstimate(estimate){
+ if(!estimate)return '';
+ const context=estimate.sources.find(ref=>ref.source==='germanCalendarJuly');
+ return '<section class="operation-evidence-group" data-evidence-group="estimated-losses">'+
+  '<h4>Estimated German aircraft losses</h4><div class="claim-loss-result claim-loss-estimated" data-loss-estimate="'+esc(estimate.id)+'">'+
+  '<strong>'+esc(M.band(estimate))+'</strong><span>Aircraft destroyed in air combat<small>Working estimate · low confidence</small></span></div>'+
+  '<p class="operation-scope-note">'+esc(estimate.date+' · '+estimate.claimant+' · '+estimate.area)+'.</p>'+
+  '<p class="operation-scope-note">Based on '+estimate.claimCount+' air-to-air destruction claims and a wider German report of '+
+  estimate.inputs.widerGermanLossReports+' aircraft lost. The scenarios allocate a share of the wider report to the Cobra escorts.</p>'+
+  '<div class="operation-source-trail"><a href="'+esc(context.url)+'" target="_blank" rel="noopener noreferrer">'+esc(context.title+' · '+context.page)+'</a></div>'+
+  '<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="cobra" data-claim-count="'+estimate.claimCount+'">Review the estimate and assumptions</a></section>';
+}
+
+function renderEvidenceGroups(op,groups,estimate) {
  const lossGap=groups.some(group=>group.id==='aircraft-losses')?'':(
   '<section class="operation-evidence-group" data-evidence-group="aircraft-losses">'+
   '<h4>Aircraft losses</h4><p class="operation-scope-note">Aircraft-loss figures for this operation are unavailable in the Atlas.</p></section>'
@@ -76,9 +96,10 @@ function renderEvidenceGroups(op,groups) {
    : '';
   return '<section class="operation-evidence-group" data-evidence-group="'+group.id+'">'+
    '<h4>'+group.title+'</h4><div class="operation-facts">'+
-   group.facts.map(renderEvidenceFact).join('')+'</div>'+context+'</section>';
+   group.facts.map(renderEvidenceFact).join('')+'</div>'+context+'</section>'+
+   (group.id==='aircraft-losses'?renderEstimate(estimate):'');
  });
- return '<div class="operation-evidence-figures">'+lossGap+sections.join('')+'</div>';
+ return '<div class="operation-evidence-figures">'+lossGap+(lossGap?renderEstimate(estimate):'')+sections.join('')+'</div>';
 }
 function sync(){
  const selected=datasets.find(dataset=>dataset.campaign===A.selected());
@@ -123,7 +144,8 @@ function render(){
  const active=document.activeElement;
  const focusSelector=active?.closest?.('#operation-dossier')?(active.id?'#'+active.id:active.dataset?.operationStep!==undefined?'[data-operation-step="'+active.dataset.operationStep+'"]':null):null;
  const s=operation.snapshots[step],op=operation;
- const facts=factsFor(op),groups=A.groupEvidence(facts);
+ const facts=factsFor(op),groups=A.groupEvidence(facts),estimate=M?.historicalEstimate(op.id,facts);
+ const raidClaims=op.returnDate?facts.find(fact=>fact.id===op.id+'-claims'):null;
  const campaign=C.campaigns.find(c=>c.id===D.campaign);
  const stepper=op.snapshots.length>1?(
   '<nav class="operation-stepper" aria-label="Dated battlefield snapshots">'+op.snapshots.map((x,i)=>'<button type="button" data-operation-step="'+i+'" aria-current="'+(i===step?'step':'false')+'"><span>'+esc(x.date.slice(5))+'</span>'+esc(x.title)+'</button>').join('')+'</nav>'+
@@ -131,7 +153,7 @@ function render(){
  ):'';
  $('operation-dossier').innerHTML='<div class="eyebrow">'+esc(D.name||'Normandy')+'</div><h2>'+esc(op.name)+'</h2><p class="operation-question">'+esc(op.question)+'</p>'+
  '<div class="operation-step-heading"><span>'+esc(s.date)+'</span><strong>'+esc(s.title)+'</strong></div><p class="operation-step-copy">'+esc(s.text)+'</p>'+
- stepper+renderSnapshotFigures(facts,s)+
+ stepper+renderSnapshotFigures(facts,s,estimate)+
  '<div class="operation-map-detail" id="operation-map-detail" aria-live="polite">Choose a labelled place or direction on the map to inspect its role.</div>'+
  '<div class="operation-snapshot-source">'+source(s.source,s.page)+'</div><a class="operation-evidence-jump" href="#operation-evidence">Read the operation, formations and evidence ↓</a><button type="button" id="operation-close" class="subtle">Return to campaign overview</button>';
  document.querySelectorAll('[data-operation-step]').forEach(b=>b.addEventListener('click',()=>choose(op.id,Number(b.dataset.operationStep))));
@@ -147,8 +169,9 @@ function render(){
  '<div class="operation-narrative">'+[['The intention',op.intent],['What aircraft did',op.air],[D.campaign==='britain'?'The British defence':'The German response',op.opposition],['What changed',op.consequence]].map(([title,text])=>'<article><h3>'+title+'</h3><p>'+esc(text)+'</p></article>').join('')+'</div>'+
  '<div class="operation-source-trail">'+op.sources.map(id=>source(id)).join('')+'</div>'+
  '<h3 class="operation-subheading">Operational evidence <span>'+facts.length+' observations</span></h3><p class="operation-scope-note">Dates, formations and reporting areas are shown with each figure.</p>'+
- renderEvidenceGroups(op,groups)+
+ renderEvidenceGroups(op,groups,estimate)+
  (op.returnDate?A.renderBritainClaimReview(campaign,op.returnDate):'')+
+ (raidClaims?'<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="britain" data-claim-count="'+raidClaims.value+'">Compare with the seven selected days</a>':'')+
  (op.id==='dday'?'<p class="operation-interpretation"><strong>Read the allocation:</strong> 15 + 54 + 33 + 33 + 36 = 171 squadrons. The total is not a sixth additional task and cannot be added to its five components.</p>':'')+
  (op.id==='mortain'?'<p class="operation-interpretation"><strong>Three different scopes:</strong> 294 is local Typhoon activity on 7 August; 2,193 covers wider Typhoon operations over five days; 4,012 is IX TAC over seven days. These figures overlap in time and are not summed. Ground investigation found that air claims overstated tank destruction.</p>':'')+
  '<h3 class="operation-subheading">The formations behind the operation</h3><div class="operation-formations">'+op.formations.map(id=>{const f=D.formations[id];return '<article data-formation="'+esc(id)+'" class="'+(f.side==='German'?'axis':'')+'"><span>'+esc(f.side+' · '+f.level)+'</span><h4>'+esc(f.name)+'</h4><strong>'+esc(f.aircraft)+'</strong><p>'+esc(f.role)+'</p>'+source(f.source,f.page)+'</article>';}).join('')+'</div>'+
@@ -156,12 +179,22 @@ function render(){
  '<div class="operation-connections"><a href="#campaigns">Continue through the campaign chapters ↓</a>'+
  (D.campaign==='normandy'?'<a href="./grand-air-war-v76.html">Open the detailed forward-airfield notebook ↗</a>':'')+
  '<button type="button" id="operation-export">Export these evidence records</button></div>';
+ $('operation-evidence').querySelector('[data-claim-scope]')?.addEventListener('click',event=>{
+  if(!M)return;
+  event.preventDefault();
+  const link=event.currentTarget;
+  M.selectScope(link.dataset.claimScope,Number(link.dataset.claimCount));
+  $('claim-loss-scope').focus({preventScroll:true});
+  $('claim-loss-calculator').scrollIntoView({block:'start'});
+ });
  $('operation-export').addEventListener('click',()=>{
   const records=groups.flatMap(group=>group.facts).map(fact=>{
    const reference=evidenceSource(fact.source);
    return {...fact,sourceTitle:reference.title,sourceUrl:reference.url};
   });
-  const blob=new Blob([JSON.stringify({version:D.version,operation:op.id,observations:records},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=D.campaign+'-'+op.id+'-evidence.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+  const payload={version:D.version,operation:op.id,observations:records};
+  if(estimate)payload.estimates=[estimate];
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=D.campaign+'-'+op.id+'-evidence.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
  });
 }
 function placeDetail(key){

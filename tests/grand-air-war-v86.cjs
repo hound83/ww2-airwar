@@ -15,7 +15,7 @@ assert.equal(data.observations.find(f=>f.id==='mortain-ixtac').period.end,'1944-
 assert.equal(data.observations.filter(f=>['falaise-lancasters','falaise-halifaxes','falaise-mosquitoes'].includes(f.id)).reduce((s,f)=>s+f.value,0),811);
 for(const p of Object.values(data.places))assert.ok(p[1]>48&&p[1]<50&&p[2]>-2&&p[2]<1,'Normandy locality outside regional geography');
 const elements=new Map();function el(id){if(!elements.has(id)){const handlers={};elements.set(id,{id,innerHTML:'',textContent:'',hidden:false,value:'',dataset:{},classList:{toggle(){}},setAttribute(){},querySelectorAll(){return[]},querySelector(){return null},addEventListener(k,fn){handlers[k]=fn},click(){handlers.click?.({target:this})}});}return elements.get(id);}
-const document={readyState:'complete',hidden:false,getElementById:el,querySelectorAll(){return[]},addEventListener(){},createElement(){return el('dynamic')},body:{appendChild(){}}};
+const document={readyState:'complete',hidden:false,getElementById:id=>id==='claim-loss-scope'?null:el(id),querySelectorAll(){return[]},addEventListener(){},createElement(){return el('dynamic')},body:{appendChild(){}}};
 const map={zoom:8,on(){},fitBounds(){return this},flyTo(){},flyToBounds(){return this},getZoom(){return this.zoom},latLngToContainerPoint([lat,lng]){return{x:lng*150,y:lat*150}}};
 let groupCount=0,markers;const L={map:()=>map,control:{zoom:()=>({addTo(){}}),attribution:()=>({addAttribution(){return this},addTo(){}})},latLngBounds:()=>({pad(){return this}}),divIcon:x=>x,
  layerGroup:()=>{const g={layers:[],addTo(){return this},addLayer(x){this.layers.push(x)},clearLayers(){this.layers=[]},eachLayer(fn){this.layers.forEach(fn)}};if(++groupCount===2)markers=g;return g},
@@ -23,7 +23,7 @@ let groupCount=0,markers;const L={map:()=>map,control:{zoom:()=>({addTo(){}}),at
  marker:(location,options)=>({location,options,on(){return this},bindPopup(){return this},bindTooltip(){return this}})};
 const window={L,location:{hash:'',pathname:'/grand-air-war-v80.html',search:''},history:{replaceState(){}}};
 const ctx=vm.createContext({window,document,console,setInterval,clearInterval,URLSearchParams});
-for(const f of ['dist/model-v3-data.js','dist/atlas-v7-data.js','dist/atlas-v71-data.js','dist/atlas-v72-data.js','dist/atlas-v73-data.js','dist/atlas-v74-data.js','dist/grand-air-war-v77-groups.js','dist/grand-air-war-v77-campaigns.js','dist/normandy-1944-story.js','dist/grand-air-war-v86-data.js','dist/grand-air-war-v87-data.js','dist/grand-air-war-v80-core.js','dist/grand-air-war-v86-operations.js'])vm.runInContext(read(f),ctx,{filename:f});
+for(const f of ['dist/model-v3-data.js','dist/atlas-v7-data.js','dist/atlas-v71-data.js','dist/atlas-v72-data.js','dist/atlas-v73-data.js','dist/atlas-v74-data.js','dist/grand-air-war-v77-groups.js','dist/grand-air-war-v77-campaigns.js','dist/normandy-1944-story.js','dist/grand-air-war-v86-data.js','dist/grand-air-war-v87-data.js','dist/grand-air-war-v80-core.js','dist/grand-air-war-v88-data.js','dist/grand-air-war-v88-losses.js','dist/grand-air-war-v86-operations.js'])vm.runInContext(read(f),ctx,{filename:f});
 const app=window.GrandAirWarV77,ops=window.AtlasNormandyOperations;let snapshots=0;
 assert.ok(ops);assert.equal(ops.current(),null);assert.equal(el('normandy-operations').hidden,false);
 assert.deepEqual(JSON.parse(JSON.stringify(window.NormandyV86Data)),data,'generated data must match maintained transcription');
@@ -71,3 +71,40 @@ assert.match(el('operation-dossier').innerHTML,/data-snapshot-figure="cobra-8af-
 ops.choose('mortain',0);
 assert.doesNotMatch(el('operation-dossier').innerHTML,/data-snapshot-figure="mortain-(five-days|ixtac)"/,'multi-day sortie totals cannot appear as snapshot figures');
 console.log('PASS v8.7: four raid dossiers, scope-preserving map figures and a labelled held-out estimate');
+
+const model=window.AtlasClaimLosses;
+const calibration=JSON.parse(read('research/transcriptions/claims-losses-v88.json'));
+assert.deepEqual(JSON.parse(JSON.stringify(window.AtlasClaimLossData)),calibration);
+const compare=model.calculate('britain',100);
+assert.equal(compare.totals.claims,936);
+assert.equal(compare.totals.destroyed,371);
+assert.equal(compare.expected,40);
+assert.equal(model.britainChecks.length,7);
+assert.equal(model.britainChecks.filter(day=>day.covered).length,5);
+const heldOut=model.britainChecks.find(day=>day.date==='1940-09-15');
+assert.equal(heldOut.totals.claims,751,'the held-out day must be removed from the fit');
+assert.deepEqual([heldOut.low,heldOut.high,heldOut.germanDestroyed],[66,96,56]);
+assert.equal(model.calculate('bagration',13),null,'Eastern claims need their own inputs');
+for(const invalid of [NaN,Infinity,-1,1.5,'12'])assert.equal(model.calculate('cobra',invalid),null);
+assert.deepEqual([model.calculate('cobra',0).low,model.calculate('cobra',0).high],[0,0]);
+const estimate=model.historicalEstimate('cobra',data.observations);
+assert.deepEqual([estimate.low,estimate.high],[1,8]);
+assert.equal(estimate.claimCount,12);
+assert.equal(estimate.kind,'estimated');
+assert.equal(estimate.confidence,'low');
+assert.ok(estimate.sources.every(ref=>ref.url?.startsWith('https://')&&ref.page&&ref.detail));
+assert.equal(model.historicalEstimate('cobra',data.observations.filter(fact=>fact.id!==estimate.claimId)),null);
+const replacement={measure:'losses',value:4,lossScopeId:estimate.id,date:estimate.date};
+assert.equal(model.historicalEstimate('cobra',[...data.observations,replacement]),null,'a fully matched source replaces the estimate');
+assert.ok(model.historicalEstimate('cobra',[...data.observations,{...replacement,measure:'losses-subset'}]));
+assert.ok(model.historicalEstimate('cobra',[...data.observations,{...replacement,date:'1944-07-24'}]));
+ops.choose('cobra',0);
+assert.doesNotMatch(el('operation-dossier').innerHTML,/data-snapshot-estimate=/);
+ops.choose('cobra',1);
+assert.match(el('operation-dossier').innerHTML,/data-snapshot-estimate=.*1–8.*12 US escort claims/);
+assert.match(el('operation-evidence').innerHTML,/data-evidence-group="estimated-losses"/);
+ops.choose('cobra',2);
+assert.doesNotMatch(el('operation-dossier').innerHTML,/data-snapshot-estimate=/);
+ops.choose('britain-15-sep',0);
+assert.doesNotMatch(el('operation-evidence').innerHTML,/data-evidence-group="estimated-losses"/);
+console.log('PASS v8.8: day-held-out comparisons, local allocation, estimate scoping and recorded-loss precedence');
