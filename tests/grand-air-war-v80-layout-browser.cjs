@@ -23,13 +23,14 @@ function pngPixels(buffer){
 }
 module.exports=async function layoutQA(browser,base,root){
  const failures=[],report=[];
- for(const profile of [{name:'wide',viewport:{width:2048,height:1090},deviceScaleFactor:1},{name:'scaled',viewport:{width:1280,height:681},deviceScaleFactor:1.6}]){
+ for(const profile of [{name:'wide',viewport:{width:2048,height:1090},deviceScaleFactor:1},{name:'scaled',viewport:{width:1280,height:681},deviceScaleFactor:1.6},{name:'zoomed',viewport:{width:2048,height:1090},deviceScaleFactor:1,cssZoom:1.6}]){
   const context=await browser.newContext(profile),page=await context.newPage();
   try{
    await page.goto(base+'#operation=cobra&step=3',{waitUntil:'domcontentloaded',timeout:45000});
    await page.waitForFunction(()=>window.AtlasNormandyOperations?.current()?.step===3&&document.getElementById('campaign-map').dataset.landStatus==='loaded',{timeout:30000});
-   const inspect=async label=>{
-    await page.waitForTimeout(900);
+   if(profile.cssZoom)await page.evaluate(zoom=>{document.documentElement.style.zoom=zoom;},profile.cssZoom);
+   const inspect=async(label,settle=true)=>{
+    if(settle)await page.waitForTimeout(900);
     const details=await page.evaluate(()=>{
      const map=window.GrandAirWarV77.map(),panel=document.getElementById('operation-dossier'),nav=panel.querySelector('nav'),rect=panel.getBoundingClientRect();
      return {zoom:map.getZoom(),size:{x:map.getSize().x,y:map.getSize().y},panel:{height:rect.height,clientHeight:panel.clientHeight,scrollHeight:panel.scrollHeight,overflow:getComputedStyle(panel).overflowY,navHeight:nav.getBoundingClientRect().height,buttons:nav.querySelectorAll('button').length},points:[['Avranches',48.684,-1.356],['Coutances',49.049,-1.444],['Mortain',48.647,-.94]].map(([name,lat,lng])=>({name,...map.latLngToContainerPoint([lat,lng])})),renderers:[...document.querySelectorAll('#campaign-map svg')].map(svg=>({viewBox:svg.getAttribute('viewBox'),width:svg.getAttribute('width'),height:svg.getAttribute('height'),transform:svg.style.transform}))};
@@ -38,7 +39,8 @@ module.exports=async function layoutQA(browser,base,root){
     const hide=await page.addStyleTag({content:'#campaign-map .leaflet-marker-pane,#campaign-map .leaflet-operation-paths-pane,#campaign-map .leaflet-tooltip-pane{visibility:hidden!important}'});
     const png=pngPixels(await page.locator('#campaign-map').screenshot({scale:'css',animations:'disabled'}));
     await hide.evaluate(el=>el.remove());
-    const samples=details.points.filter(p=>p.x>10&&p.x<png.width-10&&p.y>10&&p.y<png.height-10).map(p=>({...p,rgb:png.pixel(p.x,p.y)}));
+    const samples=details.points.filter(p=>p.x>10&&p.x<details.size.x-10&&p.y>10&&p.y<details.size.y-10).map(p=>({...p,rgb:png.pixel(p.x*png.width/details.size.x,p.y*png.height/details.size.y)}));
+    assert.ok(samples.length>=2,'town probes unexpectedly outside the chart');
     for(const p of samples){const [r,g,b]=p.rgb;if(!(r>135&&g>130&&r-b>10))failures.push(profile.name+' '+label+': '+p.name+' painted '+p.rgb.join(',')+' instead of land');}
     if(details.panel.scrollHeight>details.panel.clientHeight+2)failures.push(profile.name+' '+label+': briefing still clips into an internal scroll viewport');
     report.push({profile:profile.name,label,...details,samples});
@@ -48,7 +50,7 @@ module.exports=async function layoutQA(browser,base,root){
    await inspect('direct');
    // Exercise interrupted chapter/snapshot animation, then resize the map.
    await page.evaluate(()=>{for(let i=0;i<12;i++){window.AtlasNormandyOperations.choose(i%2?'cobra':'dday',i%3);}window.AtlasNormandyOperations.choose('cobra',3);});
-   await inspect('rapid');
+   await inspect('rapid',false);
    await page.setViewportSize({width:980,height:800});await page.setViewportSize({width:1360,height:900});
    await inspect('resized');
    await page.evaluate(()=>{const m=window.GrandAirWarV77.map();m.setView([48.84,-1.25],10,{animate:false});m.panBy([90,-55],{animate:false});});
@@ -57,6 +59,7 @@ module.exports=async function layoutQA(browser,base,root){
    assert.equal(await page.locator('#operation-next').isDisabled(),true,'last snapshot control unreachable');
    await page.locator('#operation-prev').focus();await page.keyboard.press('Enter');
    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,2);
+   await page.keyboard.press('Enter');assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1,'snapshot rerender lost keyboard focus');
    await page.locator('#operation-close').click();assert.ok(await page.locator('#campaign-dossier').isVisible());
   }finally{await context.close();}
  }

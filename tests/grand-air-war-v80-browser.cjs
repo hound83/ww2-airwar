@@ -205,7 +205,7 @@ const check=async()=>{
    await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-fitted-"+viewport.width+".png")});
    const painted=await page.evaluate(()=>{
     const bounds=document.getElementById("campaign-map").getBoundingClientRect();
-    return [...document.querySelectorAll('.leaflet-overlay-pane svg path[fill="#aaa991"]')]
+    return [...document.querySelectorAll('#campaign-map svg path[fill="#aaa991"]')]
      .filter(path=>{const r=path.getBoundingClientRect();return r.width>=4&&r.height>=4&&r.right>bounds.left&&r.left<bounds.right&&r.bottom>bounds.top&&r.top<bounds.bottom;}).length;
    });
    assert.ok(painted>=6,"fewer than six geographically distinct visible land polygons at "+viewport.width+"px; coastlines may be blank: "+painted);

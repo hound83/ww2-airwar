@@ -1,5 +1,9 @@
 # Atlas status and next work
 
+## 11 November 2026 - v8.6 map and briefing regression correction
+
+PR #26 addresses the reported Cobra coastline display and clipped right-hand controls. Snapshot selection now fits once without competing flights; the map observes container resizing and keeps land in an explicit lower pane. The briefing flows with the page, and repeated keyboard navigation retains focus. Acceptance covers painted land at town coordinates, wide/scaled/magnified desktop layouts, rapid switching, resizing and the existing mobile operation journeys. [Baseline, correction and verification gates](ATLAS_V86_MAP_LAYOUT_QA.md). Historical data and the release scope are unchanged.
+
 ## 11 November 2026 — v8.6 Normandy operational experience (released and live verified)
 
 Authorized milestone: implement the v8.6 scope proposed in the roadmap. Five operation journeys (D-Day, Goodwood, Cobra, Mortain, Falaise), 16 dated map snapshots, 24 new scoped quantitative observations, 14 formation/context profiles and four illustrative dated airfields. The existing nine Normandy chapters and 39 episodes remain connected.
