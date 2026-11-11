@@ -31,7 +31,8 @@ jobs:
       - name: Install browser smoke dependencies
         run: |
           npm install --no-save playwright
-          npx playwright install --with-deps chromium
+          browser_path="$(command -v google-chrome)"
+          printf 'ATLAS_CHROMIUM_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
       - name: Desktop and mobile campaign QA
         run: node tests/grand-air-war-v80-browser.cjs
       - name: Save screenshots for review
