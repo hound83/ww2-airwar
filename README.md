@@ -10,9 +10,9 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
-## v8.6 Normandy operations candidate
+## v8.6 Normandy operations · released 11 November 2026
 
-Five source-linked operation journeys connect D-Day, Goodwood, Cobra, Mortain and Falaise to 16 dated battlefield snapshots, 24 additional scoped operational observations, formation profiles and forward-airfield chronology. See [release verification](docs/ATLAS_V86_RELEASE_QA.md) and [research audit](research/sources/normandy-v86-operational-evidence-2026-11-11.md). Publication is pending the exact-revision browser and release gates.
+Five source-linked operation journeys connect D-Day, Goodwood, Cobra, Mortain and Falaise to 16 dated battlefield snapshots, 24 additional scoped operational observations, formation profiles and forward-airfield chronology. See [release verification](docs/ATLAS_V86_RELEASE_QA.md) and [research audit](research/sources/normandy-v86-operational-evidence-2026-11-11.md). Released in [PR #24](https://github.com/hound83/ww2-airwar/pull/24). [Live desktop/mobile verification passed](https://github.com/hound83/ww2-airwar/actions/runs/42934979368), including touch, operation links, source inspection, exports and legacy access. The Atlas now has 135 preserved overview observations plus 24 separately scoped operation observations.
 
 ## Start here (maintainers and new chats)
 
