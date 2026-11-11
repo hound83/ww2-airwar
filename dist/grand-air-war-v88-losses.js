@@ -45,13 +45,29 @@ const franceLosses=france.training.reduce((sum,row)=>sum+row.losses,0);
 const francePossible=france.training.reduce((sum,row)=>sum+row.possibleLosses,0);
 const franceRate=franceLosses/franceClaims;
 const franceAlternativeRate=(franceLosses+francePossible)/franceClaims;
+const franceOmissions=france.training.map(row=>({
+ date:row.date, claims:franceClaims-row.claims, losses:franceLosses-row.losses
+}));
+const franceChecks=france.checks.map(row=>({
+ ...row, predicted:Math.round(row.claims*franceRate), sources:row.references.map(reference)
+}));
+const julyContext=france.julyContext;
+const julyTotals=julyContext.days.reduce((sum,row)=>({
+ germanLosses:sum.germanLosses+row.germanLosses,
+ alliedClaims:sum.alliedClaims+row.alliedClaims,
+ alliedLosses:sum.alliedLosses+row.alliedLosses,
+ germanClaims:sum.germanClaims+row.germanClaims
+}),{germanLosses:0,alliedClaims:0,alliedLosses:0,germanClaims:0});
 
 function compareFrance(claims) {
+ const omissions=franceOmissions.map(row=>({...row,expected:Math.round(claims*(row.losses/row.claims))}));
+ const estimates=omissions.map(row=>row.expected);
  return {
   expected:Math.round(claims*franceRate),
   alternative:Math.round(claims*franceAlternativeRate),
   rate:franceRate,
-  alternativeRate:franceAlternativeRate
+  alternativeRate:franceAlternativeRate,
+  leaveOneOut:{low:Math.min(...estimates),high:Math.max(...estimates),omissions}
  };
 }
 
@@ -70,8 +86,6 @@ function historicalEstimate(operationId,observations) {
  if(operationId!==cobra.operation)return null;
  const claim=observations.find(fact=>fact.id===cobra.claimId&&fact.date===cobra.date&&fact.measure==='claims'&&!fact.period);
  if(!claim||matchedLoss(observations,cobra.id,cobra.date))return null;
- const validation={...france.check,predicted:compareFrance(france.check.claims).expected,
-  sources:france.check.references.map(reference)};
  return {
   id:cobra.id,kind:'estimated',confidence:'low',method:'Pooled northern France day-fighter comparison',modelVersion:D.version,
   operation:operationId,date:cobra.date,claimant:cobra.claimant,opponent:cobra.opponent,area:cobra.area,
@@ -79,11 +93,13 @@ function historicalEstimate(operationId,observations) {
   ...compareFrance(claim.value),
   inputs:{widerGermanLossReports:cobra.widerLosses,matchedClaims:franceClaims,matchedLosses:franceLosses,possibleAdditionalLosses:francePossible},
   calibration:france.training.map(row=>({...row,sources:row.references.map(reference)})),
-  validation,
+  validation:franceChecks[0],
+  validationCases:franceChecks,
+  campaignContext:{...julyContext,totals:julyTotals,source:reference(julyContext.reference)},
   assumptions:[
-   'Apply the pooled rate from the selected Eighth and Ninth Air Force daylight fighter engagements in northern France to the Mission 494 escorts.',
-   'The alternative includes one forced landing whose final disposition is unclear. The comparison covers selected fights and the day report covers a wider area.',
-   'Use the wider German loss report as context. Its geographic and cause coverage differs from the escort claims.'
+   'Apply the claims-weighted rate from three selected pre-Cobra Eighth and Ninth Air Force daylight fighter comparisons in northern France to the Mission 494 escorts.',
+   'The alternative includes both uncertain landings. The omission results show sensitivity to the choice of dates.',
+   'The two August checks cover Ninth Air Force tactical fighters. The German day report and the 18-day series provide wider campaign context.'
   ],
   sources:cobra.references.map(reference)
  };
@@ -119,7 +135,8 @@ function engagementTable(rows) {
  return '<div class="claim-loss-table claim-loss-engagements" role="region" tabindex="0" aria-label="Matched air combat engagements">'+
   '<table><thead><tr><th scope="col">Engagement</th><th scope="col">Claims</th><th scope="col">Losses</th></tr></thead><tbody>'+
   rows.map(row=>'<tr data-claim-case="'+esc(row.id)+'"><th scope="row"><time datetime="'+esc(row.date)+'">'+esc(row.date)+'</time>'+esc(row.place)+'</th>'+
-   '<td>'+fmt(row.claims)+'</td><td>'+fmt(row.losses)+(row.possibleLosses?' + '+row.possibleLosses+' uncertain':'')+'</td></tr>').join('')+
+   '<td>'+fmt(row.claims)+(row.alternateClaims?'–'+fmt(row.alternateClaims):'')+'</td><td>'+fmt(row.losses)+
+   (row.possibleLosses?' + '+row.possibleLosses+' uncertain':'')+'</td></tr>').join('')+
   '</tbody></table></div>';
 }
 
@@ -129,21 +146,26 @@ function caseNotes(rows) {
 }
 
 function renderCobra(result,claims) {
- const check=france.check,predicted=compareFrance(check.claims).expected;
- return '<p><strong>'+per100(result.rate)+' losses per 100 claims</strong> across two reconstructed US fighter engagements in northern France ('+
-  franceLosses+' losses from '+franceClaims+' claims). For '+fmt(claims)+' claims the alternative is <strong>'+fmt(result.alternative)+
-  '</strong> if the disputed forced landing is counted as a loss.</p>'+
-  '<details><summary>Matched engagements, check and sources</summary>'+engagementTable(france.training)+
-  '<p>Independent August check at '+esc(check.place)+'. The earlier rate predicts '+predicted+' German losses from '+check.claims+
-  ' US claims. The reconstruction gives '+check.losses+'. The small sample and the mix of escort and tactical fighters limit the confidence of the Cobra estimate.</p>'+
-  caseNotes([...france.training,check])+
+ const checkRows=franceChecks.map(row=>'<li><strong>'+esc(row.place)+'</strong> · '+fmt(row.predicted)+' predicted from '+
+  fmt(row.claims)+' claims. '+band({low:row.losses,high:row.losses+row.possibleLosses})+' reconstructed losses.</li>').join('');
+ return '<p><strong>'+Math.round(100*result.rate)+' losses per 100 claims</strong> across three earlier US fighter comparisons in northern France ('+
+  franceLosses+' losses from '+franceClaims+' claims). For '+fmt(claims)+' claims, omitting one date at a time gives <strong>'+
+  band(result.leaveOneOut)+'</strong>. Including both uncertain landings gives <strong>'+fmt(result.alternative)+'</strong>.</p>'+
+  '<details><summary>Matched engagements, checks and sources</summary>'+engagementTable(france.training)+
+  '<h3>Later engagement checks</h3><ul>'+checkRows+'</ul>'+
+  '<p>The August checks cover Ninth Air Force tactical fighters. The small selected sample limits confidence for Eighth Air Force escorts.</p>'+
+  caseNotes([...france.training,...franceChecks])+
+  '<h3>Normandy, 1–18 July 1944</h3><p>The RAF history compares '+fmt(julyTotals.alliedClaims)+' Allied destruction claims with '+
+  fmt(julyTotals.germanLosses)+' total German losses, and '+fmt(julyTotals.germanClaims)+' German destruction claims with '+
+  fmt(julyTotals.alliedLosses)+' total Allied losses. These wider figures cover several air forces, day and night activity, and losses from multiple causes. '+
+  sourceLink(reference(julyContext.reference))+'</p>'+
   '<p>Mission 494 recorded '+cobraClaim.value+' air-to-air claims. The German calendar reports '+cobra.widerLosses+
-  ' aircraft lost across a wider area that day. Individual US claims also describe combats away from St-Lô. The calendar is context for the estimate.</p>'+
-  '<p>'+referenceLinks(cobra.references)+'</p></details>';
+  ' aircraft lost across a wider area that day. US encounter reports include air combat away from St-Lô.</p>'+
+  '<p>'+referenceLinks(cobra.references)+' · '+sourceLink(reference({source:'normandyClaimsAudit'}))+'</p></details>';
 }
 
 function renderReverse() {
- return '<p>German fighter claims and Allied aircraft losses from the same encounters. The Caen entry includes US and RAF losses. The other three cover US fighters.</p>'+
+ return '<p>German fighter claims and Allied aircraft losses from the same engagements. The Caen entry includes US and RAF losses. Le Bény-Bocage covers Canadian reconnaissance aircraft. The other cases cover US fighters.</p>'+
   engagementTable(D.germanClaims)+
   '<details><summary>Claim stages, loss definitions and sources</summary>'+caseNotes(D.germanClaims)+'</details>';
 }

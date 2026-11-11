@@ -1,6 +1,6 @@
 /* Generated from research/transcriptions/claims-losses-v88.json. */
 window.AtlasClaimLossData = {
-  "version": "8.9.0",
+  "version": "8.9.1",
   "cobra": {
     "id": "cobra-494-german-air-combat",
     "operation": "cobra",
@@ -36,6 +36,24 @@ window.AtlasClaimLossData = {
   "france": {
     "area": "Northern France",
     "training": [
+      {
+        "id": "caen-vire-june22",
+        "date": "1944-06-22",
+        "place": "Caen–Vire",
+        "claimant": "Ninth Air Force, 365th and 368th Fighter Groups",
+        "opponent": "III./JG 26 Bf 109s",
+        "claims": 9,
+        "losses": 8,
+        "possibleLosses": 1,
+        "basis": "Reconstructed from two encounters",
+        "detail": "Four Bf 109 losses are described in the 365th Group encounters and four near Vire with the 368th. Reischer crash-landed a damaged Bf 109 and its final disposition is uncertain. The division diary’s 12 pilots missing by nightfall include emergency landings and bailouts.",
+        "references": [
+          {
+            "source": "caldwell",
+            "page": "Ch. 11, 22 June, Caen and Vire engagements and 5th Jagddivision diary"
+          }
+        ]
+      },
       {
         "id": "jg27-june27",
         "date": "1944-06-27",
@@ -77,21 +95,193 @@ window.AtlasClaimLossData = {
         ]
       }
     ],
-    "check": {
-      "id": "rambouillet-august15",
-      "date": "1944-08-15",
-      "place": "Rambouillet",
-      "claimant": "Ninth Air Force, 373rd Fighter Group",
-      "opponent": "II./JG 26 Fw 190s",
-      "claims": 3,
-      "losses": 2,
-      "possibleLosses": 0,
-      "basis": "Reconstructed",
-      "detail": "The account reports two German pilots lost in the Fw 190 fight. The reconstruction counts their aircraft and excludes Stein’s damaged Fw 190, which was repaired. Dreux was a separate fight.",
-      "references": [
+    "checks": [
+      {
+        "id": "rambouillet-august15",
+        "date": "1944-08-15",
+        "place": "Rambouillet",
+        "claimant": "Ninth Air Force, 373rd Fighter Group",
+        "opponent": "II./JG 26 Fw 190s",
+        "claims": 3,
+        "losses": 2,
+        "possibleLosses": 0,
+        "basis": "Reconstructed",
+        "detail": "The account reports two German pilots lost in the Fw 190 fight. The reconstruction counts their aircraft and excludes Stein’s damaged Fw 190, which was repaired. Dreux was a separate fight.",
+        "references": [
+          {
+            "source": "caldwell",
+            "page": "Ch. 11, Rambouillet and 16 August repair account"
+          }
+        ]
+      },
+      {
+        "id": "clastres-august25",
+        "date": "1944-08-25",
+        "place": "Clastres–La Fère",
+        "claimant": "Ninth Air Force, 367th Fighter Group",
+        "opponent": "II./JG 6 Fw 190s",
+        "claims": 23,
+        "losses": 16,
+        "possibleLosses": 2,
+        "basis": "Revised destruction claims and reconstructed losses",
+        "detail": "The group's 16 initial destruction claims rose to 23 after returning pilots submitted reports. A separate account gives 20 claims and 16 losses. The group history reconstructs 16–18 German airframe losses. The 474th Group’s fight and the later ground claims had separate reporting.",
+        "references": [
+          {
+            "source": "rosierClastres",
+            "page": "Issue 10, pp. 7–10, pilot and squadron breakdown"
+          },
+          {
+            "source": "clastresComparison",
+            "page": "25 August, II./JG 6 and 367th Fighter Group accounts"
+          }
+        ]
+      }
+    ],
+    "julyContext": {
+      "area": "Normandy campaign, Luftflotte 3 and Allied operations in its area",
+      "period": {
+        "start": "1944-07-01",
+        "end": "1944-07-18"
+      },
+      "detail": "The RAF narrative compares Allied and German reported destruction with broader actual loss totals. Its scope includes day and night operations, several Allied air forces and losses from multiple causes. Its figures provide campaign context for the selected daylight fighter engagements.",
+      "reference": {
+        "source": "ahbNormandy18",
+        "page": "Ch. 3, pp. 31–32, Air Activity in the Battle of Normandy, 1–18 July"
+      },
+      "flakClaims": {
+        "value": 17,
+        "period": {
+          "start": "1944-07-01",
+          "end": "1944-07-11"
+        },
+        "formation": "III Flakkorps"
+      },
+      "days": [
         {
-          "source": "caldwell",
-          "page": "Ch. 11, Rambouillet and 16 August repair account"
+          "date": "1944-07-01",
+          "germanLosses": 14,
+          "alliedClaims": 23,
+          "alliedLosses": 23,
+          "germanClaims": 20
+        },
+        {
+          "date": "1944-07-02",
+          "germanLosses": 25,
+          "alliedClaims": 14,
+          "alliedLosses": 8,
+          "germanClaims": 9
+        },
+        {
+          "date": "1944-07-03",
+          "germanLosses": 5,
+          "alliedClaims": 10,
+          "alliedLosses": 4,
+          "germanClaims": 1
+        },
+        {
+          "date": "1944-07-04",
+          "germanLosses": 34,
+          "alliedClaims": 26,
+          "alliedLosses": 20,
+          "germanClaims": 15
+        },
+        {
+          "date": "1944-07-05",
+          "germanLosses": 58,
+          "alliedClaims": 45,
+          "alliedLosses": 45,
+          "germanClaims": 58
+        },
+        {
+          "date": "1944-07-06",
+          "germanLosses": 39,
+          "alliedClaims": 32,
+          "alliedLosses": 29,
+          "germanClaims": 13
+        },
+        {
+          "date": "1944-07-07",
+          "germanLosses": 27,
+          "alliedClaims": 11,
+          "alliedLosses": 17,
+          "germanClaims": 16
+        },
+        {
+          "date": "1944-07-08",
+          "germanLosses": 35,
+          "alliedClaims": 26,
+          "alliedLosses": 23,
+          "germanClaims": 68
+        },
+        {
+          "date": "1944-07-09",
+          "germanLosses": 16,
+          "alliedClaims": 10,
+          "alliedLosses": 11,
+          "germanClaims": 5
+        },
+        {
+          "date": "1944-07-10",
+          "germanLosses": 4,
+          "alliedClaims": 1,
+          "alliedLosses": 8,
+          "germanClaims": 1
+        },
+        {
+          "date": "1944-07-11",
+          "germanLosses": 9,
+          "alliedClaims": 3,
+          "alliedLosses": 11,
+          "germanClaims": 2
+        },
+        {
+          "date": "1944-07-12",
+          "germanLosses": 28,
+          "alliedClaims": 12,
+          "alliedLosses": 8,
+          "germanClaims": 16
+        },
+        {
+          "date": "1944-07-13",
+          "germanLosses": 7,
+          "alliedClaims": 7,
+          "alliedLosses": 9,
+          "germanClaims": 16
+        },
+        {
+          "date": "1944-07-14",
+          "germanLosses": 12,
+          "alliedClaims": 35,
+          "alliedLosses": 14,
+          "germanClaims": 23
+        },
+        {
+          "date": "1944-07-15",
+          "germanLosses": 7,
+          "alliedClaims": 9,
+          "alliedLosses": 20,
+          "germanClaims": 10
+        },
+        {
+          "date": "1944-07-16",
+          "germanLosses": 8,
+          "alliedClaims": 9,
+          "alliedLosses": 6,
+          "germanClaims": 9
+        },
+        {
+          "date": "1944-07-17",
+          "germanLosses": 7,
+          "alliedClaims": 15,
+          "alliedLosses": 18,
+          "germanClaims": 10
+        },
+        {
+          "date": "1944-07-18",
+          "germanLosses": 20,
+          "alliedClaims": 41,
+          "alliedLosses": 38,
+          "germanClaims": 22
         }
       ]
     }
@@ -138,6 +328,28 @@ window.AtlasClaimLossData = {
       ]
     },
     {
+      "id": "beny-june18-reverse",
+      "date": "1944-06-18",
+      "place": "Le Bény-Bocage · RCAF",
+      "claimant": "II./JG 26, 7th Staffel",
+      "opponent": "Canadian No. 414 Squadron reconnaissance Mustangs",
+      "claims": 2,
+      "losses": 2,
+      "possibleLosses": 0,
+      "basis": "Reconstructed engagement",
+      "detail": "Caldwell matches the evening patrol to two Canadian reconnaissance Mustangs. The Canadian aircraft register identifies AM220 and AM251. Both pilots were killed.",
+      "references": [
+        {
+          "source": "caldwell",
+          "page": "Ch. 11, 18 June, Glunz and 7th Staffel evening patrol"
+        },
+        {
+          "source": "rcafBeny",
+          "page": "AM220 and AM251, 18 June 1944"
+        }
+      ]
+    },
+    {
       "id": "evreux-july18-reverse",
       "date": "1944-07-18",
       "place": "Évreux–Mantes",
@@ -170,6 +382,29 @@ window.AtlasClaimLossData = {
         {
           "source": "caldwell",
           "page": "Ch. 11, 15 August, Rambouillet"
+        }
+      ]
+    },
+    {
+      "id": "clastres-august25-reverse",
+      "date": "1944-08-25",
+      "place": "Clastres–La Fère · USAAF",
+      "claimant": "II./JG 6 Fw 190s",
+      "opponent": "US 367th Fighter Group P-38s",
+      "claims": 14,
+      "alternateClaims": 16,
+      "losses": 7,
+      "possibleLosses": 0,
+      "basis": "Two claim tallies",
+      "detail": "The gun-camera-based tally gives 14 claims and Frappé’s pilot list gives 16. The 367th Group lost seven P-38s in this fight.",
+      "references": [
+        {
+          "source": "rosierClastres",
+          "page": "Issue 10, pp. 7–9, German claims"
+        },
+        {
+          "source": "clastresComparison",
+          "page": "25 August, 367th Group P-38 losses"
         }
       ]
     }
@@ -267,6 +502,26 @@ window.AtlasClaimLossData = {
     "foyReport": {
       "title": "Robert Foy, 357th Fighter Group encounter report",
       "url": "https://www.8af.org/robert-foy-357th-fighter-group-25-july-1944.cfm"
+    },
+    "ahbNormandy18": {
+      "title": "RAF Air Historical Branch, Liberation of North-West Europe, vol. IV",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/liberation-of-north-west-europe-vol-iv-the-breakout-and-advance-to-the-lower-rhine-12-jun-30-sep-1944/"
+    },
+    "rosierClastres": {
+      "title": "367th Fighter Group newsletter, issue 10",
+      "url": "https://img1.wsimg.com/blobby/go/36836b51-c255-4987-81d0-d13854eca3cb/downloads/Newsletter%20367th%20Fighter%20Group%20issue%2010.pdf?ver=1735205332520"
+    },
+    "clastresComparison": {
+      "title": "Clastres airfield history and accounts of the 25 August engagement",
+      "url": "https://387bg.com/Stations/Clastres/Clastres.htm"
+    },
+    "rcafBeny": {
+      "title": "Canadian Warplane Heritage Museum, CASPIR Mustang records",
+      "url": "https://caspir.warplane.com/aircraft/serial-search/aircraft-no/200001102"
+    },
+    "normandyClaimsAudit": {
+      "title": "Northern France claims and losses research audit",
+      "url": "https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
     }
   }
 };

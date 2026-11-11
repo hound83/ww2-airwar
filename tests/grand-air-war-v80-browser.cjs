@@ -328,7 +328,7 @@ const check=async()=>{
      assert.ok(await page.locator('#operation-evidence [data-observation]').count()>=3);
      const datedEstimate=page.locator('#operation-dossier [data-snapshot-estimate]');
      assert.equal(await datedEstimate.count(),id==='cobra'&&i===1?1:0);
-     if(id==='cobra'&&i===1)assert.match(await datedEstimate.innerText(),/≈7.*12 US escort claims.*low confidence/s);
+     if(id==='cobra'&&i===1)assert.match(await datedEstimate.innerText(),/≈8.*12 US escort claims.*low confidence/s);
      assert.ok(await page.locator('#operation-evidence a[href^="https://"]').count()>=5);
      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)<=2,'operation creates page overflow');
     }
@@ -349,12 +349,16 @@ const check=async()=>{
    const exportedRecords=exportedPayload.observations;
    assert.equal(exportedPayload.estimates.length,1);
    const [estimate]=exportedPayload.estimates;
-   assert.deepEqual([estimate.kind,estimate.date,estimate.claimCount,estimate.expected,estimate.alternative],['estimated','1944-07-25',12,7,8]);
+   assert.deepEqual([estimate.kind,estimate.date,estimate.claimCount,estimate.expected,estimate.alternative],['estimated','1944-07-25',12,8,9]);
    assert.equal(estimate.inputs.widerGermanLossReports,10);
-   assert.equal(estimate.inputs.matchedClaims,25);
-   assert.equal(estimate.inputs.matchedLosses,15);
-   assert.equal(estimate.calibration.length,2);
+   assert.equal(estimate.inputs.matchedClaims,34);
+   assert.equal(estimate.inputs.matchedLosses,23);
+   assert.equal(estimate.calibration.length,3);
    assert.equal(estimate.validation.predicted,2);
+   assert.deepEqual(estimate.validationCases.map(row=>row.predicted),[2,16]);
+   assert.deepEqual([estimate.leaveOneOut.low,estimate.leaveOneOut.high],[7,9]);
+   assert.equal(estimate.campaignContext.days.length,18);
+   assert.equal(estimate.campaignContext.totals.germanLosses,355);
    assert.ok(estimate.calibration.every(row=>row.sources.every(ref=>ref.url.startsWith('https://'))));
    assert.ok(estimate.sources.every(ref=>ref.url.startsWith('https://')&&ref.page));
    assert.ok(exportedRecords.some(fact=>fact.id===estimate.claimId&&fact.value===12));
@@ -367,14 +371,19 @@ const check=async()=>{
    assert.equal(await page.locator('#claim-loss-scope').inputValue(),'cobra');
    const claims=page.locator('#claim-loss-count'),result=page.locator('#claim-loss-result');
    assert.equal(await claims.inputValue(),'12');
-   assert.match(await result.innerText(),/About 7.*low confidence/s);
+   assert.match(await result.innerText(),/About 8.*low confidence/s);
    assert.equal(await result.evaluate(element=>element.classList.contains('claim-loss-estimated')),true);
    await page.locator('#claim-loss-method summary').click();
-   assert.match(await page.locator('#claim-loss-method').innerText(),/60\.0 losses per 100 claims.*15 losses from 25 claims.*alternative is 8/s);
-   assert.equal(await page.locator('#claim-loss-method details a[href^="https://"]').count(),8);
+   const cobraMethod=page.locator('#claim-loss-method');
+   assert.match(await cobraMethod.innerText(),/68 losses per 100 claims.*23 losses from 34 claims.*7–9.*both uncertain landings gives 9/s);
+   assert.match(await cobraMethod.innerText(),/Clastres–La Fère.*16 predicted from 23 claims.*16–18 reconstructed losses/s);
+   assert.match(await cobraMethod.innerText(),/329 Allied destruction claims.*355 total German losses.*314 German destruction claims.*312 total Allied losses/s);
+   assert.equal(await cobraMethod.locator('tbody tr').count(),3);
+   assert.equal(await cobraMethod.locator('a[href$="atlas-v891-normandy-claims-audit-2026-11-11.md"]').count(),1);
+   assert.ok(await cobraMethod.locator('.claim-loss-engagements').evaluate(table=>table.scrollWidth<=table.clientWidth+1),'Cobra comparison overflows the viewport');
    await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-cobra-calculator-'+viewport.width+'.png')});
    await claims.fill('24');
-   assert.match(await result.innerText(),/About 14.*Hypothetical input/s);
+   assert.match(await result.innerText(),/About 16.*Hypothetical input/s);
    await claims.fill('1.5');
    assert.match(await result.innerText(),/Enter a whole number/);
    assert.equal(await claims.getAttribute('aria-invalid'),'true');
@@ -389,7 +398,7 @@ const check=async()=>{
    assert.equal(await claims.inputValue(),'12');
    await page.locator('#claim-loss-method a[href^="#operation="]').click();
    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
-   assert.match(await page.locator('#operation-dossier [data-snapshot-estimate]').innerText(),/≈7/);
+   assert.match(await page.locator('#operation-dossier [data-snapshot-estimate]').innerText(),/≈8/);
    assert.deepEqual(exportedRecords.slice(0,5).map(fact=>fact.id),[
     'cobra-8af-bombers-lost','cobra-8af-fighters-lost','cobra-8af-bombers-writeoffs','cobra-killed','cobra-wounded'
    ]);
@@ -443,9 +452,11 @@ const check=async()=>{
    assert.equal(await claims.isVisible(),false);
    assert.match(await result.innerText(),/8 claimed · 3 lost.*Rambouillet/s);
    const reverseTable=page.locator('#claim-loss-method .claim-loss-engagements');
-   assert.equal(await reverseTable.locator('tbody tr').count(),4);
+   assert.equal(await reverseTable.locator('tbody tr').count(),6);
    assert.match(await reverseTable.locator('[data-claim-case="normandy-june6"]').innerText(),/1944-06-06.*6.*5/s);
    assert.match(await reverseTable.locator('[data-claim-case="evreux-july18-reverse"]').innerText(),/12.*2 \+ 1 uncertain/s);
+   assert.match(await reverseTable.locator('[data-claim-case="beny-june18-reverse"]').innerText(),/RCAF.*2.*2/s);
+   assert.match(await reverseTable.locator('[data-claim-case="clastres-august25-reverse"]').innerText(),/14–16.*7/s);
    assert.ok(await reverseTable.evaluate(table=>table.scrollWidth<=table.clientWidth+1),'German claims table overflows the viewport');
    await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-german-claims-'+viewport.width+'.png')});
    await scopeSelector.selectOption('bobruisk');
@@ -464,7 +475,7 @@ const check=async()=>{
    assert.equal(await scopeSelector.inputValue(),'bobruisk');
    await page.locator('#moment-list [data-moment="bagration"][data-date="1944-06-24"]').click();
    assert.equal(await eastern.count(),0,'26 June estimate appeared on another day');
-   console.log('v8.9 '+viewport.width+'px: Cobra 7 from 12, reverse 4 cases, Bobruisk 2 from two groups, dated links and JSON provenance verified');
+   console.log('v8.9.1 '+viewport.width+'px: Cobra 8 from 12, date omission and campaign context, six reverse cases and scoped Bobruisk estimate verified');
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
    assert.ok(overflow<=2,"horizontal viewport overflow of "+overflow+"px at "+viewport.width);
    assert.deepEqual(errors,[],"JavaScript page errors: "+errors.join("; "));

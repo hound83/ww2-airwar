@@ -10,6 +10,10 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
+## v8.9.1 Normandy claims and losses audit
+
+Cobra’s 12 escort claims give a working estimate of about 8 German aircraft destroyed. The [calculator](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=cobra#claim-loss-calculator) shows three earlier US comparisons, two later checks, and the effect of omitting any one date. It also shows the wider 1–18 July campaign totals and six German-versus-Allied cases, including a Canadian reconnaissance patrol. [Sources, daily series and calculations](research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md).
+
 ## v8.9 Regional claims and losses
 
 Cobra’s 12 US escort claims give a working estimate of about 7 German aircraft destroyed, using two earlier northern France engagements. The [calculator](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html#claim-loss-calculator) shows the matched cases, the 15 August check and German claims against Allied aircraft. Bobruisk on 26 June has a low-confidence estimate for two German groups based there. [Source audit and calculations](research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md).
