@@ -20,6 +20,7 @@ const check=async()=>{
  const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
+  await require("./grand-air-war-v80-layout-browser.cjs")(browser,base,root);
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
    const page=await browser.newPage({viewport,deviceScaleFactor:1,hasTouch:viewport.width<500,isMobile:viewport.width<500});
    const routePage=await browser.newPage({viewport,deviceScaleFactor:1});
@@ -204,7 +205,7 @@ const check=async()=>{
    await page.locator(".map-panel").screenshot({path:path.join(root,"v80-qa-map-fitted-"+viewport.width+".png")});
    const painted=await page.evaluate(()=>{
     const bounds=document.getElementById("campaign-map").getBoundingClientRect();
-    return [...document.querySelectorAll('.leaflet-overlay-pane svg path[fill="#aaa991"]')]
+    return [...document.querySelectorAll('#campaign-map svg path[fill="#aaa991"]')]
      .filter(path=>{const r=path.getBoundingClientRect();return r.width>=4&&r.height>=4&&r.right>bounds.left&&r.left<bounds.right&&r.bottom>bounds.top&&r.top<bounds.bottom;}).length;
    });
    assert.ok(painted>=6,"fewer than six geographically distinct visible land polygons at "+viewport.width+"px; coastlines may be blank: "+painted);

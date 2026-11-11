@@ -7,7 +7,7 @@ on:
       - 'grand-air-war-v80.html'
       - 'dist/grand-air-war-v80-core.js'
       - 'dist/grand-air-war-v86*'
-      - 'tests/grand-air-war-v80-browser.cjs'
+      - 'tests/grand-air-war-v80-*.cjs'
       - 'scripts/verify-v86-live.cjs'
       - '.github/workflows/atlas-v86-live.yml'
   workflow_dispatch:
@@ -39,5 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: atlas-v86-live-browser-qa
-          path: v80-qa-*.png
+          path: |
+            v80-qa-*.png
+            v80-qa-layout-report.json
           if-no-files-found: ignore

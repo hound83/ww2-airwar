@@ -10,6 +10,7 @@ const factsFor=op=>D.observations.filter(f=>f.operation===op.id);
 const metric=f=>(f.qualifier==='more than'?'> ':'')+f.value.toLocaleString('en-US');
 function sync(){
  const visible=A.selected()==='normandy';
+ document.querySelector?.('.mainstage')?.classList.toggle('operation-layout',visible&&!!operation);
  $('normandy-operations').hidden=!visible;
  if(!visible){operation=null;focusPlace=null;}
  $('operation-dossier').hidden=!visible||!operation;
@@ -26,17 +27,25 @@ function choose(id,index=0){
   A.choose('normandy',false);
   const snapshot=operation.snapshots[step],campaign=A.campaigns.find(c=>c.id==='normandy');
   const chapter=campaign.chapters.find(ch=>ch.start<=snapshot.date&&snapshot.date<=ch.end);
-  if(chapter)A.chooseChapter(chapter.id);
+  if(chapter)A.chooseChapter(chapter.id,false);
   A.setMonth(snapshot.date.slice(0,7));
  }finally{navigating=false;}
  render();A.refreshMap();
  const map=A.map(),L=window.L;
- if(map&&L){const s=operation.snapshots[step];const points=s.points.map(k=>D.places[k].slice(1));if(points.length)map.flyToBounds(L.latLngBounds(points).pad(.35),{maxZoom:operation.id==='dday'?10:12,duration:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?0:.4});}
+ if(map&&L){
+  // One settled view per snapshot. The chapter fit used to start a competing
+  // flight, leaving coastlines and labels on different animation frames.
+  map.stop?.();map.invalidateSize?.({pan:false});
+  const s=operation.snapshots[step],points=s.points.map(k=>D.places[k].slice(1));
+  if(points.length)map.fitBounds(L.latLngBounds(points).pad(.35),{maxZoom:operation.id==='dday'?10:12,animate:false});
+ }
  if(window.history?.replaceState&&window.location)window.history.replaceState(null,'','#operation='+operation.id+'&step='+step);
  return true;
 }
 function render(){
  sync();if(!operation)return;
+ const active=document.activeElement;
+ const focusSelector=active?.closest?.('#operation-dossier')?(active.id?'#'+active.id:active.dataset?.operationStep!==undefined?'[data-operation-step="'+active.dataset.operationStep+'"]':null):null;
  const s=operation.snapshots[step],op=operation;
  $('operation-dossier').innerHTML='<div class="eyebrow">NORMANDY · OPERATION '+(D.operations.indexOf(op)+1)+' OF 5</div><h2>'+esc(op.name)+'</h2><p class="operation-question">'+esc(op.question)+'</p>'+
  '<div class="operation-step-heading"><span>'+esc(s.date)+'</span><strong>'+esc(s.title)+'</strong></div><p class="operation-step-copy">'+esc(s.text)+'</p>'+
@@ -46,6 +55,8 @@ function render(){
  '<div class="operation-snapshot-source">'+source(s.source,s.page)+'</div><a class="operation-evidence-jump" href="#operation-evidence">Read the operation, formations and evidence ↓</a><button type="button" id="operation-close" class="subtle">Return to campaign overview</button>';
  document.querySelectorAll('[data-operation-step]').forEach(b=>b.addEventListener('click',()=>choose(op.id,Number(b.dataset.operationStep))));
  $('operation-prev').addEventListener('click',()=>choose(op.id,step-1));$('operation-next').addEventListener('click',()=>choose(op.id,step+1));$('operation-close').addEventListener('click',clear);
+ // Keep repeated keyboard navigation on the replacement control.
+ if(focusSelector){const target=$('operation-dossier').querySelector(focusSelector);(target&&!target.disabled?target:$('operation-dossier').querySelector('[aria-current=step]'))?.focus({preventScroll:true});}
  const fields=D.airfields.filter(f=>op.fields.includes(f.id));
  $('operation-evidence').innerHTML='<div class="operation-evidence-top"><div><span class="eyebrow">THE OPERATION IN CONTEXT</span><h2>'+esc(op.name)+' · '+esc(op.subtitle)+'</h2></div><span>'+esc(op.start)+' to '+esc(op.end)+'</span></div>'+
  '<div class="operation-narrative">'+[['The intention',op.intent],['What aircraft did',op.air],['The German response',op.opposition],['What changed',op.consequence]].map(([title,text])=>'<article><h3>'+title+'</h3><p>'+esc(text)+'</p></article>').join('')+'</div>'+

@@ -72,7 +72,7 @@ function selectMoment(cId,date,lat,lng,title){
  renderMoments();
  if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
 }
-function selectChapter(id){
+function selectChapter(id,fit=true){
  window.AtlasNormandyOperations?.onNavigate();
  const c=D.campaigns.find(x=>x.id===state.selected),ch=c?.chapters?.find(x=>x.id===id);
  if(c?.story&&ch){cancelPlay();state.month=ch.start.slice(0,7);renderTime();}
@@ -81,7 +81,7 @@ function selectChapter(id){
  renderMoments();
  $("moment-list").scrollTop=0;
  const points=c?.moments.filter(e=>ch?.start<=e.date&&e.date<=ch?.end)||[];
- if(c?.story&&points.length&&state.map?.flyToBounds&&window.L){
+ if(fit&&c?.story&&points.length&&state.map?.flyToBounds&&window.L){
   state.map.flyToBounds(window.L.latLngBounds(points.map(e=>[e.lat,e.lng])).pad(.6),{maxZoom:8,duration:.5});
  }
  drawMap();
@@ -178,6 +178,9 @@ function setupMap(){
   // Keep it on the SVG renderer: Canvas silently rendered only a tiny land
   // fragment after map moves on some Chromium/Leaflet combinations.
   state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-50],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:false,worldCopyJump:false,attributionControl:false});
+  // Keep physical land below graticules and operational paths across renderers.
+  const landPane=state.map.createPane?.("historical-land");
+  if(landPane){landPane.style.zIndex="250";landPane.style.pointerEvents="none";}
   L.control.zoom({position:"topright"}).addTo(state.map);
   L.control.attribution({prefix:false}).addAttribution('Natural Earth / world-atlas 1:50m, public domain').addTo(state.map);
   const grid=L.layerGroup().addTo(state.map);
@@ -186,6 +189,11 @@ function setupMap(){
   state.mapMarkers=L.layerGroup().addTo(state.map);
   state.map.fitBounds(L.latLngBounds(D.campaigns.map(c=>[c.focus.lat,c.focus.lng])).pad(.23),{maxZoom:5,animate:false});
   state.map.on("zoomend moveend",drawMap);
+  // Window resize alone misses container changes caused by layout or scaling.
+  if(window.ResizeObserver){
+   const observer=new window.ResizeObserver(()=>state.map.invalidateSize({pan:false}));
+   observer.observe($("campaign-map"));
+  }
   // 50m physical LAND TopoJSON. No modern administrative lines, cities or roads.
   // External CORS download is required. Failure leaves campaign markers available.
   if(window.fetch&&window.topojson){
@@ -202,7 +210,7 @@ function setupMap(){
      const landFeatures={type:"FeatureCollection",features:geo.geometry.coordinates.map(coordinates=>({
       type:"Feature",properties:{},geometry:{type:"Polygon",coordinates}
      }))};
-     state.landLayer=L.geoJSON(landFeatures,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,renderer:L.svg()});
+     state.landLayer=L.geoJSON(landFeatures,{style:{color:"#586357",weight:.95,opacity:.96,fillColor:"#aaa991",fillOpacity:.97},interactive:false,pane:"historical-land",renderer:L.svg({pane:"historical-land"})});
      state.landLayer.addTo(state.map);
      if(state.landLayer.bringToBack)state.landLayer.bringToBack();
      grid.eachLayer(layer=>{if(layer.bringToFront)layer.bringToFront();});
