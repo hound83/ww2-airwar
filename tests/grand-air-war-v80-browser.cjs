@@ -30,6 +30,9 @@ const check=async()=>{
    assert.match(await routePage.title(),/Grand Air War Atlas/,"public root must open the current campaign explorer");
    await routePage.goto(rootUrl+"?legacy=1",{waitUntil:"domcontentloaded",timeout:45000});
    assert.ok(!routePage.url().includes("grand-air-war-v80.html"),"legacy pilot/aircraft route must remain accessible");
+   await routePage.goto(base+'?loss-scope=normandy-campaign&loss-series=normandy-german#claim-loss-calculator',{waitUntil:'domcontentloaded',timeout:45000});
+   assert.equal(await routePage.locator('#claim-loss-series').inputValue(),'normandy-german');
+   assert.match(await routePage.locator('#claim-loss-result').innerText(),/312.*Allied aircraft lost.*314 German claims/s);
    await routePage.close();
 
    const errors=[];page.on("pageerror",e=>errors.push(e.message));
@@ -37,6 +40,43 @@ const check=async()=>{
    await page.waitForFunction(()=>!!window.GrandAirWarV77,{timeout:30000});
    await page.locator("#dossier-title").waitFor();
    assert.equal(await page.locator("#dossier-title").innerText(),"Normandy: Operation Overlord");
+   const campaignScope=page.locator('#claim-loss-scope'),reportingSeries=page.locator('#claim-loss-series');
+   const campaignResult=page.locator('#claim-loss-result'),campaignMethod=page.locator('#claim-loss-method');
+   const recordedTable=campaignMethod.locator('[data-recorded-campaign-table]');
+   const heldOutTable=campaignMethod.locator('[data-held-out-table]');
+   assert.equal(await campaignScope.inputValue(),'britain-campaign');
+   assert.equal(await reportingSeries.inputValue(),'britain-weeks');
+   assert.equal(await page.locator('#claim-loss-count').isVisible(),false);
+   assert.match(await campaignResult.innerText(),/1,733.*German aircraft destroyed.*2,698 British claims/s);
+   assert.equal(await recordedTable.locator('tbody tr').count(),17);
+   assert.match(await campaignMethod.locator('.claim-campaign-score').innerText(),/16\.5.*30\.0.*14 of 17/);
+   await campaignMethod.getByText('Held-out estimates and ranges',{exact:true}).press('Enter');
+   assert.equal(await heldOutTable.locator('tbody tr').count(),17);
+   const septWeek=heldOutTable.locator('[data-held-out-period="1940-09-15"]');
+   assert.match(await septWeek.innerText(),/120.*153.*131–175.*Missed/s);
+   for(const table of [recordedTable,heldOutTable]){
+    assert.ok(await table.evaluate(el=>el.scrollWidth<=el.clientWidth+1),'campaign table exceeds viewport');
+   }
+   await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-campaign-losses-britain-'+viewport.width+'.png')});
+   await reportingSeries.selectOption('britain-phases');
+   assert.equal(await recordedTable.locator('tbody tr').count(),5);
+   assert.match(await campaignResult.innerText(),/1,733.*2,692 RAF claims/s);
+   assert.match(await recordedTable.locator('[data-campaign-period="1940-10-01"]').innerText(),/325.*260.*125\.0/s);
+   await reportingSeries.selectOption('britain-german');
+   assert.match(await campaignResult.innerText(),/915.*RAF fighters lost.*3,058 Luftwaffe claims/s);
+   assert.equal(await recordedTable.locator('tbody tr').count(),7);
+   assert.equal(await heldOutTable.count(),0);
+   await page.locator('#dossier-link-detail [data-claim-scope="normandy-campaign"]').click();
+   assert.equal(await campaignScope.inputValue(),'normandy-campaign');
+   assert.equal(await reportingSeries.inputValue(),'normandy-allied');
+   assert.match(await campaignResult.innerText(),/355.*German aircraft lost.*329 Allied claims/s);
+   assert.equal(await recordedTable.locator('tbody tr').count(),18);
+   assert.match(await campaignMethod.locator('.claim-campaign-score').innerText(),/9\.8.*14 of 18/);
+   await reportingSeries.selectOption('normandy-german');
+   assert.match(await campaignResult.innerText(),/312.*314 German claims/s);
+   assert.match(await campaignMethod.locator('.claim-campaign-score').innerText(),/8\.4.*10\.4.*14 of 18/);
+   await page.locator('#claim-loss-calculator').screenshot({path:path.join(root,'v80-qa-campaign-losses-normandy-'+viewport.width+'.png')});
+   console.log('v9 '+viewport.width+'px: Britain campaign reporting periods, holdouts and Normandy direction checks verified');
    assert.equal(await page.locator("#research-library").evaluate(e=>e.open),false,"unrelated source library should start closed");
    await page.locator("#campaign-dossier").evaluate(el=>{el.scrollTop=350;});
    await page.locator("#campaign-search").fill("Poland");
@@ -415,6 +455,8 @@ const check=async()=>{
    await page.locator('#campaign-search').fill('');
    await page.evaluate(()=>window.GrandAirWarV77.choose('britain',false));
    assert.equal(await page.locator('#operation-choices [data-operation]').count(),4);
+   await page.locator('#dossier-link-detail [data-claim-scope="britain-campaign"]').click();
+   assert.equal(await campaignScope.inputValue(),'britain-campaign');
    for(const [id,date,loss] of [
     ['britain-15-aug','1940-08-15',76],['britain-18-aug','1940-08-18',71],
     ['britain-7-sep','1940-09-07',40],['britain-15-sep','1940-09-15',56]

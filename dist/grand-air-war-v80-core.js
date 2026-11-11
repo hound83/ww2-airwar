@@ -486,8 +486,13 @@ function renderDossier(){
  $("dossier-facts").innerHTML=(c.facts.length?renderCampaignEvidence(c.facts):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>')+renderBilateralCoverage(c)+renderCampaignComparisons(c);
  $("dossier-uncertainty").textContent=c.uncertaintyNote||"Campaign evidence coverage is incomplete. Reported counts are limited to the specific source populations and periods shown, not comparable totals for every belligerent.";
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
- const norm=c.id==="normandy";
- $("dossier-link-detail").innerHTML=norm?'<div class="dossier-links"><a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a></div>':'';
+ const norm=c.id==="normandy",lossScope=norm?"normandy-campaign":c.id==="britain"?"britain-campaign":"";
+ const links=norm?['<a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a>']:[];
+ if(lossScope)links.push('<a href="?loss-scope='+lossScope+'#claim-loss-calculator" data-claim-scope="'+lossScope+'">Compare campaign claims and losses</a>');
+ $("dossier-link-detail").innerHTML=links.length?'<div class="dossier-links">'+links.join("")+'</div>':'';
+ $("dossier-link-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{
+  if(window.AtlasClaimLosses?.openCalculator(lossScope))event.preventDefault();
+ });
  // Never offer unverified theater- or command-wide numbers as a battle-specific action.
  $("dossier-research-context").textContent="Campaign dossier: "+countPhrase(c.facts.length,"source-scoped numeric observation","source-scoped numeric observations")+" and "+countPhrase(c.moments.length,"dated event","dated events")+". The independent research laboratory is not this battle's loss ledger.";
 }

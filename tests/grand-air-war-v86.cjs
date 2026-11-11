@@ -23,7 +23,7 @@ let groupCount=0,markers;const L={map:()=>map,control:{zoom:()=>({addTo(){}}),at
  marker:(location,options)=>({location,options,on(){return this},bindPopup(){return this},bindTooltip(){return this}})};
 const window={L,location:{hash:'',pathname:'/grand-air-war-v80.html',search:''},history:{replaceState(){}}};
 const ctx=vm.createContext({window,document,console,setInterval,clearInterval,URLSearchParams});
-for(const f of ['dist/model-v3-data.js','dist/atlas-v7-data.js','dist/atlas-v71-data.js','dist/atlas-v72-data.js','dist/atlas-v73-data.js','dist/atlas-v74-data.js','dist/grand-air-war-v77-groups.js','dist/grand-air-war-v77-campaigns.js','dist/normandy-1944-story.js','dist/grand-air-war-v86-data.js','dist/grand-air-war-v87-data.js','dist/grand-air-war-v80-core.js','dist/grand-air-war-v88-data.js','dist/grand-air-war-v88-losses.js','dist/grand-air-war-v86-operations.js'])vm.runInContext(read(f),ctx,{filename:f});
+for(const f of ['dist/model-v3-data.js','dist/atlas-v7-data.js','dist/atlas-v71-data.js','dist/atlas-v72-data.js','dist/atlas-v73-data.js','dist/atlas-v74-data.js','dist/grand-air-war-v77-groups.js','dist/grand-air-war-v77-campaigns.js','dist/normandy-1944-story.js','dist/grand-air-war-v86-data.js','dist/grand-air-war-v87-data.js','dist/grand-air-war-v80-core.js','dist/grand-air-war-v88-data.js','dist/grand-air-war-v90-data.js','dist/grand-air-war-v90-campaign-losses.js','dist/grand-air-war-v88-losses.js','dist/grand-air-war-v86-operations.js'])vm.runInContext(read(f),ctx,{filename:f});
 const app=window.GrandAirWarV77,ops=window.AtlasNormandyOperations;let snapshots=0;
 assert.ok(ops);assert.equal(ops.current(),null);assert.equal(el('normandy-operations').hidden,false);
 assert.deepEqual(JSON.parse(JSON.stringify(window.NormandyV86Data)),data,'generated data must match maintained transcription');
@@ -153,3 +153,40 @@ app.chooseMoment(easternCampaign.id,day.date,day.lat,day.lng,day.title);
 assert.match(el('moment-detail').innerHTML,/data-event-estimate=.*About 2.*two Bobruisk-based groups/);
 assert.match(el('moment-detail').innerHTML,/June inventory gives a ceiling of 12 for these groups/);
 console.log('PASS claims and losses: Cobra calibration, reverse cases, scoped Bobruisk inventory, range selection and conflict handling');
+
+const britainCampaign=JSON.parse(read('research/transcriptions/battle-of-britain-campaign-claims-1940.json'));
+assert.deepEqual(JSON.parse(JSON.stringify(window.AtlasBritainCampaignLossData)),britainCampaign);
+const campaignModel=window.AtlasCampaignLosses;
+const series=campaignModel.series;
+for(const [id,count,totalClaims,totalLosses,from,to,mae,covered,baseline] of [
+ ['britain-weeks',17,2698,1733,'1940-07-10','1940-10-31','16.5',14,'30.0'],
+ ['britain-phases',5,2692,1733,'1940-07-10','1940-10-31','59.2',3,'114.4'],
+ ['normandy-allied',18,329,355,'1944-07-01','1944-07-18','9.8',14,'9.8'],
+ ['normandy-german',18,314,312,'1944-07-01','1944-07-18','8.4',14,'10.4']
+]){
+ const {rows,total,validation,references}=series[id];
+ assert.deepEqual([rows.length,total.claims,total.losses,rows[0].start,rows.at(-1).end],[count,totalClaims,totalLosses,from,to]);
+ assert.equal(total.days,(Date.parse(to)-Date.parse(from))/86400000+1);
+ assert.ok(references.every(ref=>ref.url?.startsWith('https://')&&ref.page));
+ for(const [i,row] of rows.entries()){
+  assert.ok(Number.isSafeInteger(row.claims)&&Number.isSafeInteger(row.losses)&&row.claims>=0&&row.losses>=0&&row.days>=1);
+  if(i)assert.equal(Date.parse(row.start)-Date.parse(rows[i-1].end),86400000,'reporting periods must be continuous');
+ }
+ assert.deepEqual([validation.checks.length,validation.mae.toFixed(1),validation.covered,validation.baselineMae.toFixed(1)],[count,mae,covered,baseline]);
+ const heldOut=validation.checks[0];
+ const perturbed=campaignModel.validate(rows.map((row,i)=>i===0?{...row,losses:row.losses+500}:row)).checks[0];
+ assert.deepEqual([heldOut.expected,heldOut.low,heldOut.high],[perturbed.expected,perturbed.low,perturbed.high],
+  'a withheld outcome cannot affect its model or range');
+ assert.ok(validation.checks.every(row=>0<=row.low&&row.low<=row.expected&&row.expected<=row.high));
+}
+assert.deepEqual([series['britain-german'].total.claims,series['britain-german'].total.losses,series['britain-german'].rows.length],[3058,915,7]);
+assert.equal(series['britain-german'].validation,null);
+assert.equal(campaignModel.validate(series['britain-weeks'].rows.slice(0,3)),null);
+const zeroClaims=Array.from({length:4},()=>({claims:0,losses:3,days:1}));
+assert.ok(campaignModel.validate(zeroClaims).checks.every(row=>row.expected===3&&row.low===3&&row.high===3));
+app.choose('britain',false);
+assert.match(el('dossier-link-detail').innerHTML,/data-claim-scope="britain-campaign"/);
+app.choose('normandy',false);
+assert.match(el('dossier-link-detail').innerHTML,/data-claim-scope="normandy-campaign"/);
+assert.ok(estimate.sources.some(ref=>ref.url.includes('luftwaffe-losses-on-the-western-front')&&ref.page.includes('22')));
+console.log('PASS v9: full Britain coverage, independent Normandy directions, provenance, no holdout leakage and scoped dossier links');
