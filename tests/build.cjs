@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('nod
 const root=path.resolve(__dirname,'..'),parent=path.resolve(os.tmpdir()),tmp=fs.mkdtempSync(path.join(parent,'airwar-build-'));
 try{
  for(const folder of ['dist','scripts','research/transcriptions'])fs.mkdirSync(path.join(tmp,folder),{recursive:true});
- const files=['scripts/build-web.cjs','research/transcriptions/aircraft-performance.json',...fs.readdirSync(path.join(root,'dist')).filter(f=>/\.(js|css|html)$/.test(f)).map(f=>'dist/'+f)];
+ const files=['scripts/build-web.cjs','research/transcriptions/aircraft-performance.json','research/transcriptions/normandy-v86-operations.json',...fs.readdirSync(path.join(root,'dist')).filter(f=>/\.(js|css|html)$/.test(f)).map(f=>'dist/'+f)];
  const build=()=>cp.execFileSync(process.execPath,[path.join(tmp,'scripts/build-web.cjs')],{stdio:'pipe'});
  for(const file of files)fs.writeFileSync(path.join(tmp,file),fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n'));
  build();
@@ -36,3 +36,6 @@ require('./grand-air-war-v80-audit.cjs');
 
 // Full campaign filter/zoom and separated research-population interaction matrix.
 require('./grand-air-war-v80-interactions.cjs');
+
+// Normandy operation journeys and dated evidence integrity.
+require('./grand-air-war-v86.cjs');
