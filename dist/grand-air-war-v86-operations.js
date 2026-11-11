@@ -55,7 +55,7 @@ function renderSnapshotFigures(facts,snapshot,estimate) {
  );
  if(datedEstimate){
   const lossRows=rows.filter(fact=>['losses','losses-subset','writeoffs'].includes(fact.measure)).length;
-  items.splice(lossRows,0,'<li class="claim-loss-estimated" data-snapshot-estimate="'+esc(datedEstimate.id)+'"><strong>'+esc(M.band(datedEstimate))+'</strong>'+
+  items.splice(lossRows,0,'<li class="claim-loss-estimated" data-snapshot-estimate="'+esc(datedEstimate.id)+'"><strong>≈'+esc(datedEstimate.expected)+'</strong>'+
    '<span>German aircraft destroyed in air combat<small>Working estimate from '+datedEstimate.claimCount+' US escort claims · low confidence</small></span></li>');
  }
  return '<section class="operation-snapshot-figures" data-snapshot-date="'+esc(snapshot.date)+'">'+
@@ -77,10 +77,9 @@ function renderEstimate(estimate){
  const context=estimate.sources.find(ref=>ref.source==='germanCalendarJuly');
  return '<section class="operation-evidence-group" data-evidence-group="estimated-losses">'+
   '<h4>Estimated German aircraft losses</h4><div class="claim-loss-result claim-loss-estimated" data-loss-estimate="'+esc(estimate.id)+'">'+
-  '<strong>'+esc(M.band(estimate))+'</strong><span>Aircraft destroyed in air combat<small>Working estimate · low confidence</small></span></div>'+
+  '<strong>About '+esc(estimate.expected)+'</strong><span>Aircraft destroyed in air combat<small>Working estimate · low confidence</small></span></div>'+
   '<p class="operation-scope-note">'+esc(estimate.date+' · '+estimate.claimant+' · '+estimate.area)+'.</p>'+
-  '<p class="operation-scope-note">Based on '+estimate.claimCount+' air-to-air destruction claims and a wider German report of '+
-  estimate.inputs.widerGermanLossReports+' aircraft lost. The scenarios allocate a share of the wider report to the Cobra escorts.</p>'+
+  '<p class="operation-scope-note">'+estimate.claimCount+' US escort claims × '+Math.round(estimate.rate*100)+'% from the selected northern France engagements. The alternative is '+estimate.alternative+' if one uncertain comparison loss is included.</p>'+
   '<div class="operation-source-trail"><a href="'+esc(context.url)+'" target="_blank" rel="noopener noreferrer">'+esc(context.title+' · '+context.page)+'</a></div>'+
   '<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="cobra" data-claim-count="'+estimate.claimCount+'">Review the estimate and assumptions</a></section>';
 }
@@ -180,12 +179,8 @@ function render(){
  (D.campaign==='normandy'?'<a href="./grand-air-war-v76.html">Open the detailed forward-airfield notebook ↗</a>':'')+
  '<button type="button" id="operation-export">Export these evidence records</button></div>';
  $('operation-evidence').querySelector('[data-claim-scope]')?.addEventListener('click',event=>{
-  if(!M)return;
-  event.preventDefault();
   const link=event.currentTarget;
-  M.selectScope(link.dataset.claimScope,Number(link.dataset.claimCount));
-  $('claim-loss-scope').focus({preventScroll:true});
-  $('claim-loss-calculator').scrollIntoView({block:'start'});
+  if(M?.openCalculator(link.dataset.claimScope,Number(link.dataset.claimCount)))event.preventDefault();
  });
  $('operation-export').addEventListener('click',()=>{
   const records=groups.flatMap(group=>group.facts).map(fact=>{

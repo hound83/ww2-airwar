@@ -117,3 +117,7 @@
 @media(max-width:600px){
   .claim-loss-table th,.claim-loss-table td{padding:6px 4px;font-size:11px;line-height:1.4}
 }
+
+.claim-loss-engagements th:first-child{white-space:normal}
+.claim-loss-engagements time{display:block;font-weight:400;color:var(--muted)}
+.event-loss-estimate{margin-top:12px}

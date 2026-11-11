@@ -1,11 +1,11 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09131b"><meta name="description" content="Grand Air War: European WWII air campaigns, source-backed loss reports, force data and interactive map 1936–1945.">
-<title>Grand Air War Atlas · v8.8 Claims and Aircraft Losses</title>
+<title>Grand Air War Atlas · v8.9 Regional Claims and Losses</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/grand-air-war-v77.css">
 <link rel="stylesheet" href="./dist/grand-air-war-v80.css">
-<link rel="stylesheet" href="./dist/grand-air-war-v86.css?v=8.8.0">
+<link rel="stylesheet" href="./dist/grand-air-war-v86.css?v=8.9.0">
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="./dist/model-v3-data.js"></script><script defer src="./dist/atlas-v7-data.js"></script>
 <script defer src="./dist/atlas-v71-data.js"></script><script defer src="./dist/atlas-v72-data.js"></script>
@@ -16,10 +16,10 @@
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script defer src="./dist/grand-air-war-v86-data.js?v=8.7.0"></script>
 <script defer src="./dist/grand-air-war-v87-data.js?v=8.7.0"></script>
-<script defer src="./dist/grand-air-war-v80-core.js?v=8.7.0"></script>
-<script defer src="./dist/grand-air-war-v88-data.js?v=8.8.0"></script>
-<script defer src="./dist/grand-air-war-v88-losses.js?v=8.8.0"></script>
-<script defer src="./dist/grand-air-war-v86-operations.js?v=8.8.0"></script>
+<script defer src="./dist/grand-air-war-v80-core.js?v=8.9.0"></script>
+<script defer src="./dist/grand-air-war-v88-data.js?v=8.9.0"></script>
+<script defer src="./dist/grand-air-war-v88-losses.js?v=8.9.0"></script>
+<script defer src="./dist/grand-air-war-v86-operations.js?v=8.9.0"></script>
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
 <script defer src="./dist/grand-air-war-v80-lab.js"></script>
 </head><body>
@@ -57,7 +57,7 @@
   <article id="chapter-detail" class="chapter-detail" aria-live="polite"></article>
   <div class="guide-heading evidence-step"><span class="eyebrow">3 · Dated evidence within this phase</span><small id="moment-scope"></small></div>
   <div id="moment-list" class="record-list" aria-label="Dated evidence for the selected phase"></div>
-  <article id="moment-detail" class="moment-detail" aria-live="polite" hidden></article>
+  <article id="moment-detail" class="moment-detail" tabindex="-1" aria-live="polite" hidden></article>
  </article>
 </section>
 <section class="pane claim-loss-calculator" id="claim-loss-calculator" aria-labelledby="claim-loss-title">
@@ -65,9 +65,11 @@
  <div class="laboratory-toolbar">
   <label>Historical scope <select id="claim-loss-scope">
    <option value="britain">Battle of Britain · Aug–Sep 1940</option>
-   <option value="cobra">Cobra · 25 July 1944</option>
+   <option value="cobra">Cobra · US vs Germany</option>
+   <option value="reverse">Northern France · Germany vs Allies</option>
+   <option value="bobruisk">Bobruisk · German unit losses</option>
   </select></label>
-  <label><span id="claim-loss-count-label">Aircraft claimed destroyed</span> <input id="claim-loss-count" type="number" min="0" step="1" value="185" inputmode="numeric"></label>
+  <label id="claim-loss-count-wrap"><span id="claim-loss-count-label">Aircraft claimed destroyed</span> <input id="claim-loss-count" type="number" min="0" step="1" value="185" inputmode="numeric"></label>
  </div>
  <div id="claim-loss-result" class="claim-loss-result" aria-live="polite"></div>
  <div id="claim-loss-method"></div>

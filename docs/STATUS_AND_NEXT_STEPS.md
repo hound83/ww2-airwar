@@ -1,5 +1,11 @@
 # Atlas status and next work
 
+## 11 November 2026 - v8.9 regional claims and losses
+
+Cobra moves from a wide 1–8 scenario range to a working estimate of about 7 using a 60-per-100 northern France comparison. A separately held August case gives two losses from three US claims. Four German-versus-Allied engagement comparisons are available, including one with combined US and RAF losses. Bobruisk’s 26 June event shows about two enemy-action removals from two locally based German units, using their June records and the day’s share of reported engagements.
+
+[Data, assumptions and remaining coverage gaps](../research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md). Acceptance covers scoped date navigation, direct calculator links, the matching rows and alternate Cobra calculation in JSON, desktop and mobile layouts, and the published Pages assets.
+
 ## 11 November 2026 - v8.8 claims and aircraft losses
 
 The calculator compares seven Battle of Britain dates and tests each date against the other six. Cobra's 25 July mission now has a low-confidence estimate of 1–8 German aircraft destroyed in air combat from 12 escort claims. The map and evidence use the same estimate and the JSON export includes its inputs. Recorded figures take precedence when their date and scope match.

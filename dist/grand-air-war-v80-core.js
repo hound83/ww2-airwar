@@ -379,12 +379,18 @@ function renderBilateralCoverage(c){
 function renderEventBilateralEvidence(c,date){
  const {own,pair,claim,dayFacts}=bilateralEvidenceState(c,date);
  const claimRows=claim?renderBritainClaimReview(c,date):"";
- const rows=groupEvidence(dayFacts).flatMap(group=>group.facts).map(f=>'<li data-evidence-side="'+esc(f.side||"unclassified")+'"><strong>'+fmt(f.value)+' '+esc(f.unit)+'</strong> · '+esc(f.label)+' <small>('+esc(f.side||"side not independently classified")+'; '+esc(f.type||"unspecified")+')</small> '+sourceLink(f.sourceId,"Source")+'</li>').join("");
+ const estimate=window.AtlasClaimLosses?.renderEventEstimate(c.id,date,dayFacts)||"";
+ const groups=groupEvidence(dayFacts);
+ const rows=evidence=>evidence.flatMap(group=>group.facts).map(f=>'<li data-evidence-side="'+esc(f.side||"unclassified")+'"><strong>'+fmt(f.value)+' '+esc(f.unit)+'</strong> · '+esc(f.label)+' <small>('+esc(f.side||"side not independently classified")+'; '+esc(f.type||"unspecified")+')</small> '+sourceLink(f.sourceId,"Source")+'</li>').join("");
+ const list=evidence=>evidence.length?'<ul>'+rows(evidence)+'</ul>':"";
+ const recordedLosses=estimate?groups.filter(group=>group.id==="aircraft-losses"):groups;
+ const laterFigures=estimate?groups.filter(group=>group.id!=="aircraft-losses"):[];
  const intro=pair?"Both sides have a dated own-loss observation; definitions still need to be checked before comparison.":
  claim?"Wartime victory claims can be contrasted with German records; this is NOT a two-sided own-loss comparison.":
+ estimate?"The dated Soviet figures and a working estimate for two Bobruisk-based German groups cover different populations.":
  dayFacts.length?"Some same-date figures exist, but a matching, independently attributable opponent loss ledger is not available for this event.":
  "No verified opposing-force aircraft losses or operational-strength figures are scoped to this EXACT event date. Campaign totals are not automatically assigned to this day.";
- return '<section class="event-bilateral" data-bilateral-status="'+(pair?"paired-own-losses":claim?"claim-versus-record":dayFacts.length?"partial":"no-matched-data")+'"><h4>Both sides: strength, losses and evidence gaps</h4><p>'+esc(intro)+'</p>'+ (rows?'<ul>'+rows+'</ul>':'')+claimRows+'</section>';
+ return '<section class="event-bilateral" data-bilateral-status="'+(pair?"paired-own-losses":claim?"claim-versus-record":dayFacts.length?"partial":"no-matched-data")+'"><h4>Both sides: strength, losses and evidence gaps</h4><p>'+esc(intro)+'</p>'+list(recordedLosses)+estimate+list(laterFigures)+claimRows+'</section>';
 }
 
 function destroyedPer100(claims,destroyed) {
@@ -537,6 +543,9 @@ function renderMoments(){
  const detail=chosen.summary?(chosen.airAction?'<h4>What happened and why</h4><p>'+esc(chosen.summary)+'</p><h4>Air operations and their limits</h4><p>'+esc(chosen.airAction)+'</p><h4>German perspective</h4><p>'+esc(chosen.opposingView)+'</p>':'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p>')+'<h4>What changed</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
  const ids=chosen.sourceIds?.length?chosen.sourceIds:c.sources;
  $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
+ $("moment-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{
+  if(window.AtlasClaimLosses?.openCalculator(event.currentTarget.dataset.claimScope))event.preventDefault();
+ });
 }
 function lossSource(r){const s=sourceIndex[r.sourceId];return s?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.url)+'">'+esc(s.short)+' · PDF page '+(r.page??"see source")+' ↗</a>':"";}
 function lossFields(){const k=state.lossOutcome==="destroyed"?"Destroyed":"Damaged";return ["enemy"+k,"otherOperational"+k,"nonOperational"+k];}
