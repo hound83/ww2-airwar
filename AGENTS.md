@@ -12,9 +12,15 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 
 - **Pre-assignment WIP and latest-insights check:** Before starting a new implementation milestone, inspect open PRs, unmerged feature branches, and recent commits under `docs/`, `research/` and source registers for work that touches the same campaigns, data, or UI paths. Also read `docs/LATEST_INSIGHTS.md` if it exists. Record the scan result in the task log. If relevant in-progress material exists, either incorporate it or state why the milestone proceeds without it. Do not begin from a private chat history when committed or open work already covers the same ground.
 
+## Effort and collaboration
+
+- Use the research, tools, and verification needed to complete the assignment. Follow promising leads when they can improve the result, resolve an important uncertainty, or verify a requirement.
+- Build on relevant work already available, including Grok's findings and PRs. Verify what you rely on and repeat checks when independent verification adds value.
+- When searches keep turning up the same evidence or a line of inquiry is unlikely to affect the outcome, record the useful findings and any material gap, then return to the assignment.
+
 ## Mission and autonomous milestones
 
-- Work toward a historically informative, coherent and genuinely usable Atlas. For substantial implementation requests, own **one substantial end-to-end website milestone**: investigate, fix or build, integrate, test user journeys, repair problems, and document what changed. Keep explicitly small fixes narrow.
+- Work toward a historically informative, coherent and genuinely usable Atlas. For substantial implementation requests, own the requested **end-to-end website work**. Investigate, fix or build, integrate, test user journeys, repair problems, and document what changed. Keep explicitly small fixes narrow.
 - Define the user-facing outcome, pre-change baseline, reasonable acceptance checks and non-goals. A milestone can contain several related corrections and UX/data improvements. Do not stop after a minor patch or propose obvious next steps that are already within the assigned outcome.
 - Prioritize actual information value and correctness above extra controls, decorative features, version bumps or superficial event listings. If the request concerns a campaign, make the campaign understandable from context through key events, chronology, locations, participants, losses and sources, rather than merely displaying that something happened.
 - Stay inside the authorized website milestone. Put unrelated findings into `docs/STATUS_AND_NEXT_STEPS.md` or the appropriate research ledger. Ask the user only for material product direction, missing authority or a true blocker.
@@ -22,7 +28,7 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 
 ## Orientation and source-of-truth files
 
-- Inspect current git/PR state and `README.md`. Use `docs/STATUS_AND_NEXT_STEPS.md` for active priorities, `docs/ATLAS_PHYSICS_INTEGRATION.md` for the physics boundary, and `DATA_NOTES.md`, `SOURCE_AUDIT.md` and the applicable `research/sources/` records for historical-data work. Read **relevant sections**, not every archive on every task.
+- Inspect current git/PR state and `README.md`. Use `docs/STATUS_AND_NEXT_STEPS.md` for active priorities, `docs/ATLAS_PHYSICS_INTEGRATION.md` for the physics boundary, and `DATA_NOTES.md`, `SOURCE_AUDIT.md` and the applicable `research/sources/` records for historical-data work. Start with the relevant sections and follow supporting sources as needed.
 - Treat release versions, preview routes and current datasets as **current repository facts**, not fixed values copied from an old chat. Check the actual deployed state when a task concerns public behavior.
 - Preserve the existing static HTML/CSS/JS architecture unless a tested, compelling reason justifies changing it.
 
@@ -72,5 +78,5 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 - **Required gates:** the complete intended historical/user journey passes; source/provenance and temporal/geographical/formation consistency are verified; generated root is rebuilt; relevant Node and browser interaction checks pass; major viewports, map/filter/data states and accessibility inputs are checked; required GitHub CI checks pass on the exact revision; no unapproved source changes, blocked data integrity issues or high-severity regressions remain. Inspect the diff and know the prior deployable revision.
 - Respect branch protection, required reviews, permissions and deployment approvals. If any mandatory check cannot be performed or verified, leave the PR open and report the exact blocker; never bypass the gate.
 - After merge, inspect the **live public route**, including the affected campaign/chart/filter journey. Distinguish the verified default experience from any opt-in preview. If deployment or the live route fails, repair safely or explicitly report incomplete publication.
-- Prefer one *substantial but bounded* milestone per execution assignment. Avoid dragging huge research archives into chat; continue via committed GitHub documentation and checkpoints if the session reaches limits. This is not an instruction to stop after the first small fix.
+- If the session reaches its limits, leave a checkpoint and preserve reusable research in the repository.
 - Short final report: completed user-visible outcome; measured/observed before/after; tests and browser scenarios actually run; PR/merge/live links; open risks or a precise interruption checkpoint. Do not create micro-releases merely to show activity.
