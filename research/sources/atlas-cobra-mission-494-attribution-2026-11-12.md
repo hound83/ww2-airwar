@@ -16,7 +16,7 @@ Bounded research task to tighten the existing low-confidence Cobra estimate by l
 ## Fighter statistics extracted from secondary compilations of the same report
 From the American Air Museum mission page and the standard Eighth Air Force combat chronology (both drawing on the tactical mission reports):
 
-- 483 of 500 fighters (mix of P-47s, P-38s and P-51s) participated in the attack with strafing and bombing runs (in addition to escort).
+- 500 fighters were dispatched. The chronology identifies 483 P-38s, P-47s and P-51s as escorts for the Eighth’s heavy bombers and Ninth Air Force B-26s.
 - Claims: 12-1-3 Luftwaffe aircraft in the air and 2-0-0 on the ground.
 - Losses: 2 P-51s (pilots MIA); 5 fighters damaged.
 - No enemy fighters were encountered by at least one bomb group; flak was the main threat to the bombers.

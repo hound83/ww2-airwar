@@ -32,6 +32,7 @@
           <button type="button" data-range="full" aria-pressed="true">Full period</button>
           <button type="button" data-range="big-week" aria-pressed="false">Big Week · 19–26 Feb</button>
           <button type="button" data-range="d-day" aria-pressed="false">D-Day · 5–10 Jun</button>
+          <button type="button" data-range="june" aria-pressed="false">June 1944</button>
         </div>
         <form id="filters" role="search" aria-label="Filter mission records">
           <label>From <input type="date" name="from" min="1944-01-01" max="1944-06-30" value="1944-01-01"></label>
@@ -41,6 +42,7 @@
             <option value="">All records</option>
             <option value="both">Dates with both sides</option>
             <option value="linked">Matched or possible links</option>
+            <option value="returns">German loss evidence</option>
           </select></label>
           <label class="query">Location, unit or mission <input type="search" name="q" placeholder="e.g. Schweinfurt"></label>
         </form>
@@ -56,13 +58,14 @@
       <p class="muted">Daily records and published returns can cover different aircraft, dates and activities. Each comparison states its scope.</p>
       <label class="coverage-control"><span id="coverage-command-label">Command</span> <select id="coverage-force" aria-labelledby="coverage-command-label"></select></label>
       <div class="table-frame">
-        <table>
+        <table role="table">
           <caption class="sr-only">Published monthly figures and comparable captured records</caption>
-          <thead><tr><th scope="col">Month</th><th scope="col">Captured</th><th scope="col">Published</th><th scope="col">Scope and source</th></tr></thead>
-          <tbody id="coverage-rows"></tbody>
+          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Month</th><th scope="col" role="columnheader">Captured</th><th scope="col" role="columnheader">Published</th><th scope="col" role="columnheader">Scope and source</th></tr></thead>
+          <tbody id="coverage-rows" role="rowgroup"></tbody>
         </table>
       </div>
       <p class="definitions">Allied claims remain separate from German recorded losses. Two sides on one date means that records overlap on the calendar. The evidence links identify specific or possible connections.</p>
+      <p class="definitions">The June aircraft-type and role rows are included in their command’s all-aircraft total. The German enemy-action destruction column includes aircraft listed as missing.</p>
       <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/operations-january-june-1944.md">Read the source audit and counting rules</a>
     </section>
   </main>

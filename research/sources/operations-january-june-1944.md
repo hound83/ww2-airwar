@@ -6,13 +6,14 @@ The [mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html
 
 | Reporting population | Dated records | Method and limits |
 | --- | ---: | --- |
-| RAF Bomber Command | 1,246 | Air Historical Branch volumes V and VI, Appendix 10. Raid and support entries preserve the dispatch, attack and missing columns where legible. Overnight entries retain both dates. |
-| US Eighth Air Force | 261 | Numbered chronology entries and selected supporting reports. Separate waves retain a shared mission number. Escort can include Ninth Air Force aircraft. |
-| US Fifteenth Air Force | 125 | Dated association target register, chronology and formation reports. Individual totals can apply to one listed attack within a command day. |
-| Luftflotte Reich | 74 | 73 daily aircraft-loss rows from RAF AHB VII/138 and one separately marked Allied intelligence estimate for May. |
-| Luftflotte 3 and ZG 26 | 13 | Western Front reports, historical studies, estimates and ZG 26 diary evidence. A further 12 command-month returns cover the Reich and Western Front, separately from the daily ledger. |
+| RAF Bomber Command | 1,247 | Appendix 10 raid and support records, plus 115 Squadron’s Gelsenkirchen ORB evidence. Overnight entries retain both dates. |
+| US Eighth Air Force | 263 | Numbered chronology entries and selected unit and pilot reports, including D-Day and Esternay. |
+| US Fifteenth Air Force | 132 | Target register, chronology and formation reports, including seven Munich entries for the 55th Wing, 332d escort and two 459th Group aircraft. |
+| Luftflotte Reich | 194 | 73 daily rows from VII/138, one Allied May estimate and 120 June daily and type/role rows from VII/139. |
+| Luftflotte 3 and ZG 26 | 143 | Western Front reports and estimates, ZG 26 diary evidence, 129 June daily and type/role rows from VII/136 and one JG 27 loss record. |
+| Nachtjagdgeschwader 1 | 1 | One night-fighter claim with a possible Lancaster HK545 attribution. |
 
-These 1,719 ledger records describe different reporting levels and activities. A formation subset can overlap its command total. The source audit and data preserve those scopes for comparison.
+These 1,980 ledger records describe different reporting levels and activities. A formation subset can overlap its command total. The source audit and data preserve those scopes for comparison. [June source and mission audit](atlas-v91-june-loss-returns-and-missions-2026-11-12.md)
 
 ## Big Week validation
 
@@ -27,11 +28,11 @@ These 1,719 ledger records describe different reporting levels and activities. A
 
 - The RAF diaries contain both individual and stacked entries. Numeric fields were kept when their indexed cells aligned with the target or purpose. Implausible attacking counts, ambiguous cells and unknown figures are blank. One unresolved example is the 1/2 January Berlin entry, whose indexed attacking count exceeds its dispatch count. Numeric qualifiers such as approximately and at least remain explicit in the dataset and downloads.
 - US mission records list locations named in the operation entry. They can include planned, actual, alternate and diversion targets. A dispatch or loss subtotal applies only to the force described in the record. Claims reflect the original reporting population and classification.
-- Luftflotte Reich daily loss returns use the all-types row with six cause and outcome columns. Clearly aligned blank cells in those totals represent an empty category. For January–April, the daily sums are compared with the corresponding official command totals. West and May/June scan layouts require more image verification for comparable daily returns. Reported June operations and Allied intelligence estimates are labelled by source.
+- The German daily returns use the all-types row with six cause and outcome columns. June adds the missing-aircraft subcolumn and selected air-combat subcolumns. The two June commands now have daily coverage. The 2 June West non-operational damage subtotal is derived from three source rows. The Reich retains its daily-versus-monthly differences. The West January–May and Reich May daily returns remain in the research queue.
 - The RAF monthly figures are independent all-operations returns from volume V Appendix 20 and volume VI Appendix 12. The ledger assigns each overnight record to its start month. Diary capture and the published monthly totals differ in all six months, including a February overage. The comparison exposes the difference while the dates and transcription are checked further.
 - The Eighth's numbered bomber mission days are compared with published days of operation from Historical Study No. 122, Table 14. The Fifteenth's dated coverage uses the target register and chronology. A compatible monthly command-day denominator remains open for the Fifteenth.
 - The Davis January–June workbook remains an access gap. The Air University download returned 403, and the alternate hostname and archive index were unavailable through the retrieval route used. The indexed RAF Night Raid Reports remain a source for resolving Appendix 10 ambiguities. [Davis supplemental workbooks](https://www.airuniversity.af.edu/AUPress/Articles/Article/2181692/online-copies-of-supplemental-cd-rom-files-from-bombing-the-european-axis-powers/) · [Bomber Command Night Raid Reports](https://bombercommandmuseumarchives.ca/menu_sub_bombercommand_nightraidreports.html)
 
 ## Review
 
-Grok's coverage assessment flagged German raid attribution and the provisional June aircraft-type figures. The timeline supports the existing Big Week and Normandy dossiers with dated records, links at the supported confidence and explicit gaps in the command returns. The June type-level audit remains open. The July Cobra fighter annex is tracked in its own campaign research. [Coverage and challenge review](atlas-coverage-gap-review-2026-11-12.md) · [Milestone tracker and sweep review](https://github.com/hound83/ww2-airwar/issues/40)
+Grok’s coverage assessment flagged German raid attribution and the provisional June aircraft-type figures. The June image transcription and six mission decisions are now in the timeline and campaign evidence. The Mission 494 statistics and companion report remain archival leads for escort attribution. [Coverage and challenge review](atlas-coverage-gap-review-2026-11-12.md) · [June audit](atlas-v91-june-loss-returns-and-missions-2026-11-12.md) · [Reference sweep tracker](https://github.com/hound83/ww2-airwar/issues/40)

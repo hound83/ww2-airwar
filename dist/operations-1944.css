@@ -55,7 +55,16 @@ label :is(input, select) { width: 100%; font-weight: 400; }
 table { border-collapse: collapse; width: 100%; background: var(--panel); }
 th, td { padding: .5rem .65rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 td:first-child, td:nth-child(2), td:nth-child(3) { font-variant-numeric: tabular-nums; }
+#coverage summary { cursor: pointer; }
+#coverage details ul { padding-left: 1.25rem; margin-block: .45rem .6rem; }
 .definitions { max-width: 75ch; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @media (max-width: 720px) { #filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } .day-columns { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) {
+  #coverage table, #coverage thead, #coverage tbody { display: block; }
+  #coverage tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); border-bottom: 1px solid var(--line); }
+  #coverage :is(th, td) { border: 0; }
+  #coverage thead th:last-child { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); }
+  #coverage tbody td:last-child { grid-column: 1 / -1; padding-top: 0; }
+}
 @media (max-width: 420px) { th, td { padding: .4rem; font-size: .88rem; } }

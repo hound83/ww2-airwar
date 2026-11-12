@@ -56,7 +56,7 @@ The source references below link to the **original RAF PDF landing pages**. The 
 
 **Manual image check with material correction:** VII/138 PDF p61 shows the Reich March 1944 total under *non-operational damaged* with an old `304` overwritten by **`202`**. Plain OCR preferentially retained `304`; the dashboard uses the visibly amended `202` and records the edit in source metadata. The Western September 1943 report's month-end row appears on **PDF p20**, although an automated pass initially selected p21, already dated 1 October. Both corrections were confirmed visually before numerical import.
 
-**Deliberate limits:** No per-model 1943–44 counts are inferred from these all-aircraft month-end totals. None of these German command tables alone covers the Eastern Front, Italy or the entirety of the Luftwaffe. The RAF catalog contains further original reports not yet numerically transcribed. The website's coverage calendar and CSV distinguish every observed month from each unverified month. June 1944 Bf 109/Fw 190 type-level figures remain a *separate provisional line-by-line OCR transcript* (below), not a recorded monthly type subtotal.
+The command totals cover the named commands. The coverage calendar and CSV distinguish observed months and gaps. The June 1944 Bf 109 and Fw 190 results come from the dated aircraft-role rows and have their own source scope. [June image transcription and reconciliation](research/sources/atlas-v91-june-loss-returns-and-missions-2026-11-12.md)
 
 ## Version 7.1: original 1944 German aircraft-loss returns digitized
 
@@ -71,9 +71,11 @@ The following four numbers series were read from **printed month-end TOTAL rows*
 
 The enemy-action subtotal includes "missing" aircraft; this value **must not be added a second time**. A reported damaged aircraft does not count as a destroyed aircraft. The historical sources' geography is a specific Luftflotte, not a harmonized whole-front inventory. The West May source also has a possible **one-aircraft arithmetic disagreement**: the visibly legible subcauses appear to add to 229 enemy-action destructions, while its printed summary is 228. We preserve 228 as printed and do not silently repair the original.
 
-### June aircraft-model rows — transcription progress and remaining uncertainty
+### June aircraft-model rows
 
-The June Reich and Western PDFs list aircraft types day by day, including the Bf 109 (usually printed Me 109) and Fw 190 across fighter, ground-attack, bomber and reconnaissance units. `scripts/inspect-ahb-losses.py` parses OCR word positions into the three non-overlapping outcome columns, adjusts for page-specific shifts, and supplies individually reviewed corrections for five ambiguous cells and **the text-inverted page 15 of each original PDF**. Current source-line candidates:
+The image transcription covers 45 table pages and 60 daily totals. It supersedes the following OCR candidates. The source audit gives the corrected role totals and distinguishes daily and printed monthly values for both commands. [June image transcription and reconciliation](research/sources/atlas-v91-june-loss-returns-and-missions-2026-11-12.md)
+
+The June Reich and Western PDFs list aircraft types day by day, including the Bf 109 (usually printed Me 109) and Fw 190 across several roles. `scripts/inspect-ahb-losses.py` was used to generate the early candidates below. The figures retain their original scope as an OCR comparison.
 
 | June source · model | Enemy-action destroyed / damaged | Other operational destroyed / damaged | Non-operational destroyed / damaged | Working destroyed total |
 | --- | ---: | ---: | ---: | ---: |
@@ -82,7 +84,7 @@ The June Reich and Western PDFs list aircraft types day by day, including the Bf
 | Western Front · Bf 109 | 301 / 81 | 39 / 92 | 20 / 58 | **360** |
 | Western Front · Fw 190 | 173 / 45 | 16 / 46 | 12 / 24 | **201** |
 
-These aircraft-model sums are **provisional transcription candidates**, not fully independently reconciled month-end model totals. The source does *not* itself provide a printed "Bf 109 June total" suitable for a direct check, and OCR can omit entire faint rows. We therefore do **not** silently promote these values into the historical confirmed series, generalize them to other months, or calculate a claim-specific German kill share from them. Date- and type-complete independent audit is the next source-quality milestone.
+The published June type totals are derived from the dated rows. Month-end checks use the all-aircraft figures printed in each command return.
 
 ## Version 7.0: additional primary and source-compiled evidence
 

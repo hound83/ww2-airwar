@@ -2,12 +2,15 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const data=JSON.parse(read('research/transcriptions/normandy-v86-operations.json'));
-assert.equal(data.operations.length,5);assert.equal(data.observations.length,35);assert.equal(data.version,'8.6.0');
-assert.equal(new Set(data.observations.map(f=>f.id)).size,35);
+assert.equal(data.operations.length,5);assert.equal(data.observations.length,47);assert.equal(data.version,'8.6.0');
+assert.equal(new Set(data.observations.map(f=>f.id)).size,47);
 for(const f of data.observations){assert.ok(Number.isFinite(f.value)&&f.value>0);assert.ok(data.sources[f.source]?.url.startsWith('https://'));assert.ok(f.page&&f.scope&&f.unit&&f.evidenceClass);assert.ok(data.operations.some(o=>o.id===f.operation));if(f.period)assert.ok(f.period.start<=f.date&&f.date<=f.period.end);}
 for(const op of data.operations){assert.ok(op.snapshots.length>=3);assert.ok(op.facts.length>=3);assert.ok(op.formations.some(k=>data.formations[k].side==='German'));for(const id of op.facts)assert.ok(data.observations.some(f=>f.id===id&&f.operation===op.id));for(const s of op.snapshots){assert.ok(op.start<=s.date&&s.date<=op.end);assert.ok(data.sources[s.source]&&s.page);for(const k of s.points)assert.ok(data.places[k]);for(const l of s.links){assert.ok(data.places[l.from]&&data.places[l.to]);assert.ok(['planned','advance','enemy-plan','enemy-advance','retreat'].includes(l.kind));}}}
 assert.equal(data.observations.filter(f=>f.id.startsWith('dday-')&&f.id!=='dday-total').reduce((s,f)=>s+f.value,0),171);
-assert.equal(data.observations.find(f=>f.id==='cobra-heavy').qualifier,'more than');
+assert.equal(data.observations.find(f=>f.id==='cobra-heavy').value,1507);
+assert.equal(data.observations.find(f=>f.id==='cobra-8af-heavies-attacking').qualifier,'derived');
+assert.equal(data.observations.find(f=>f.id==='cobra-8af-escorts').value,483);
+assert.equal(data.observations.find(f=>f.id==='cobra-9af-406fg-claims').value,4);
 assert.equal(data.observations.find(f=>f.id==='cobra-killed').unit,'personnel');
 assert.equal(data.observations.find(f=>f.id==='mortain-local').value,294);
 assert.equal(data.observations.find(f=>f.id==='mortain-five-days').period.start,'1944-08-07');
@@ -47,7 +50,7 @@ ops.choose('dday',0);assert.equal(markers.layers.some(m=>m.options?.icon?.html?.
 el('operation-close').click();assert.equal(ops.current(),null);assert.equal(el('campaign-dossier').hidden,false);
 const html=read('grand-air-war-v80.html');for(const name of ['grand-air-war-v86-data.js','grand-air-war-v86-operations.js','grand-air-war-v86.css'])assert.ok(html.includes(name));
 assert.ok(html.indexOf('grand-air-war-v86-data.js')<html.indexOf('grand-air-war-v86-operations.js'));
-console.log('PASS v8.6: 5 connected operations, '+snapshots+' dated map journeys, 35 scoped observations, future-base exclusion, multi-day and casualty semantics, step navigation and campaign/filter recovery');
+console.log('PASS v8.6: 5 connected operations, '+snapshots+' dated map journeys, '+data.observations.length+' scoped observations, future-base exclusion, multi-day and casualty semantics, step navigation and campaign/filter recovery');
 
 const britain=JSON.parse(read('research/transcriptions/britain-v87-operations.json'));
 assert.deepEqual(JSON.parse(JSON.stringify(window.BritainV87Data)),britain);
@@ -105,6 +108,8 @@ assert.deepEqual(Array.from(context.days,row=>row.date),Array.from({length:18},(
 assert.deepEqual([context.totals.germanLosses,context.totals.alliedClaims,context.totals.alliedLosses,context.totals.germanClaims],[355,329,312,314]);
 assert.equal(context.flakClaims.value,17);
 assert.equal(estimate.claimCount,12);
+assert.deepEqual([estimate.commandReturn.enemyDestroyed,estimate.commandReturn.enemyMissing,estimate.commandReturn.airCombatDestroyed],[33,11,22]);
+assert.match(estimate.commandReturn.source.url, /july/);
 assert.equal(estimate.kind,'estimated');
 assert.equal(estimate.confidence,'low');
 assert.ok(estimate.sources.every(ref=>ref.url?.startsWith('https://')&&ref.page&&ref.detail));

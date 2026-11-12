@@ -346,10 +346,12 @@ const check=async()=>{
      await page.locator(figures).screenshot({path:path.join(root,'v80-qa-dday-losses-'+viewport.width+'.png')});
     }
     if(id==='cobra'){
-     assert.deepEqual(order,['aircraft-losses','estimated-losses','personnel-casualties','victory-claims','other']);
+     assert.deepEqual(order,['aircraft-losses','estimated-losses','personnel-casualties','sorties','aircraft-damage','victory-claims','other']);
      const casualties=page.locator(figures+' [data-evidence-group="personnel-casualties"]');
-     assert.deepEqual(await casualties.locator('[data-observation]').evaluateAll(cards=>cards.map(card=>card.dataset.observation)),['cobra-killed','cobra-wounded']);
+     assert.deepEqual(await casualties.locator('[data-observation]').evaluateAll(cards=>cards.map(card=>card.dataset.observation)),
+      ['cobra-killed','cobra-wounded','cobra-short-bombing-aaf-killed','cobra-short-bombing-aaf-wounded']);
      assert.match(await casualties.innerText(),/111.*490/s);
+     assert.match(await casualties.innerText(),/102.*380/s);
     }
     if(id==='mortain'){
      assert.deepEqual(order,['aircraft-losses','sorties','aircraft-damage']);
@@ -404,6 +406,9 @@ const check=async()=>{
    assert.ok(estimate.sources.every(ref=>ref.url.startsWith('https://')&&ref.page));
    assert.ok(exportedRecords.some(fact=>fact.id===estimate.claimId&&fact.value===12));
    assert.ok(exportedRecords.some(fact=>fact.id==='cobra-8af-ground-claims'&&fact.value===2));
+   assert.ok(exportedRecords.some(fact=>fact.id==='cobra-8af-escorts'&&fact.value===483));
+   assert.ok(exportedRecords.some(fact=>fact.id==='cobra-9af-406fg-claims'&&fact.value===4));
+   assert.equal(estimate.commandReturn.airCombatDestroyed,22);
    assert.equal(exportedRecords.some(fact=>fact.id===estimate.id),false);
    await page.locator('#operation-next').click();
    const cobraLink=page.url();
@@ -419,6 +424,7 @@ const check=async()=>{
    assert.match(await cobraMethod.innerText(),/68 losses per 100 claims.*23 losses from 34 claims.*7–9.*both uncertain landings gives 9/s);
    assert.match(await cobraMethod.innerText(),/Clastres–La Fère.*16 predicted from 23 claims.*16–18 reconstructed losses/s);
    assert.match(await cobraMethod.innerText(),/329 Allied destruction claims.*355 total German losses.*314 German destruction claims.*312 total Allied losses/s);
+   assert.match(await cobraMethod.innerText(),/33 aircraft destroyed by enemy action, including 11 missing.*22 destroyed in air combat/s);
    assert.equal(await cobraMethod.locator('tbody tr').count(),3);
    assert.equal(await cobraMethod.locator('a[href$="atlas-v891-normandy-claims-audit-2026-11-11.md"]').count(),1);
    assert.ok(await cobraMethod.locator('.claim-loss-engagements').evaluate(table=>table.scrollWidth<=table.clientWidth+1),'Cobra comparison overflows the viewport');
@@ -441,7 +447,7 @@ const check=async()=>{
    assert.equal((await page.evaluate(()=>window.AtlasNormandyOperations.current())).step,1);
    assert.match(await page.locator('#operation-dossier [data-snapshot-estimate]').innerText(),/≈8/);
    assert.deepEqual(exportedRecords.slice(0,5).map(fact=>fact.id),[
-    'cobra-8af-bombers-lost','cobra-8af-fighters-lost','cobra-8af-bombers-writeoffs','cobra-killed','cobra-wounded'
+    'cobra-8af-bombers-lost','cobra-8af-fighters-lost','cobra-8af-bombers-writeoffs','cobra-9af-406fg-missing','cobra-9af-medium-flak-loss'
    ]);
    assert.ok(exportedRecords.every(fact=>fact.sourceUrl?.startsWith('https://')));
    await page.reload({waitUntil:'domcontentloaded'});
