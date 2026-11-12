@@ -1,0 +1,40 @@
+name: June Atlas source verification
+on:
+  push:
+    branches: [codex/atlas-june-scan-verification-20261112]
+  pull_request:
+    paths: ['.github/workflows/atlas-june-scan-verification.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Retrieve and inspect the two official June loss returns
+        shell: bash
+        run: |
+          mkdir -p /tmp/ahb-june review
+          curl -fLsS --retry 1 --max-time 40 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-june-1944/' -o /tmp/ahb-june/west_jun.pdf
+          curl -fLsS --retry 1 --max-time 40 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-june-1944/' -o /tmp/ahb-june/reich_jun.pdf
+          if ! command -v pdftotext >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq poppler-utils
+          fi
+          sha256sum /tmp/ahb-june/*.pdf | tee review/source-sha256.txt
+          for command in west reich; do
+            source="/tmp/ahb-june/${command}_jun.pdf"
+            pdfinfo "$source" | grep -E 'Pages:|Page size:'
+            pdftotext -layout "$source" "review/${command}-layout.txt"
+            pdftotext -bbox-layout "$source" "review/${command}-positions.xhtml"
+            pdftoppm -r 100 -gray -png "$source" "review/${command}"
+          done
+      - name: Check the Mission 494 catalogue metadata
+        shell: bash
+        run: |
+          curl -fLsS --max-time 25 'https://cgsc.contentdm.oclc.org/digital/api/singleitem/collection/p4013coll8/id/4574' -o review/carl-4574.json || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: june-loss-page-review
+          path: review/
+          retention-days: 1
