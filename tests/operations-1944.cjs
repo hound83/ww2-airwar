@@ -114,7 +114,8 @@ for (const [key, published] of Object.entries(julySummary.publishedByCause)) {
   const sum = covered.reduce((total, row) => total + row.metrics[key], 0);
   assert.equal(sum, julySummary.capturedByCause[key], key);
   assert.equal(covered.length, julySummary.capturedDaysByCause[key], key);
-  assert.ok(sum <= published, key);
+  assert.equal(covered.length, 31, key);
+  assert.equal(sum - published, {airCombatDestroyed: 1, airCombatDamaged: -1}[key] ?? 0, key);
 }
 for (const [force, page, published] of [["west", 15, 228], ["reich", 22, 556]]) {
   const may = data.reconciliation.find(row => row.force === force && row.month === "1944-05");
@@ -132,9 +133,11 @@ for (const row of july) {
     assert.ok(subsets.reduce((sum, subset) => sum + (subset.metrics[key] ?? 0), 0) <= row.metrics[key], row.id + " " + key);
   }
 }
-assert.deepEqual(byId.get("west-1944-07-10-ahb").derivedMetrics, ["enemyDestroyed"]);
+assert.deepEqual(byId.get("west-1944-07-10-ahb").derivedMetrics, ["opsDamaged"]);
+assert.equal(byId.get("west-1944-07-10-ahb").metrics.opsDamaged, 7);
 assert.equal(byId.get("west-1944-07-24-ahb").metrics.enemyDestroyed, 29);
-assert.ok(!Object.hasOwn(byId.get("west-1944-07-24-ahb").metrics, "airCombatDestroyed"));
+assert.equal(byId.get("west-1944-07-24-ahb").metrics.airCombatDestroyed, 7);
+assert.equal(byId.get("west-1944-07-24-ahb-s109").metrics.airCombatDestroyed, 7);
 assert.equal(byId.get("west-1944-07-25-ahb").metrics.airCombatDestroyed, 22);
 assert.equal(byId.get("raf2taf-1944-07-17-night").endDate, "1944-07-18");
 assert.deepEqual(byId.get("raf2taf-1944-07-17-night").metrics, {assigned: 50});
@@ -142,14 +145,20 @@ assert.equal(byId.get("us9-416bg-104").metrics.dispatched, 37);
 assert.equal(byId.get("us9-416bg-105").metrics.dispatched, 36);
 assert.equal(byId.get("us9-416bg-106").metrics.attacked, 0);
 assert.deepEqual(byId.get("us9-1944-07-25-cobra-medium").qualifiers, {attacked: ">"});
+assert.equal(byId.get("us9-1944-07-25-cobra-fighter-bombers").metrics.lost, 0);
+assert.deepEqual(byId.get("us9-1944-07-25-406fg-lisieux").metrics, {claimed: 4, missing: 1});
+assert.equal(byId.get("us9-1944-07-25-cobra-ninth-study").metrics.lost, 1);
 
 const targetFile = path.join(__dirname, "../research/transcriptions/davis-western-targets-may-july-1944.csv");
 const targetLines = fs.readFileSync(targetFile, "utf8").trimEnd().split("\n");
 const targetRows = targetLines.slice(1).map(line => [...line.matchAll(/"((?:[^"]|"")*)"(?:,|$)/g)]
   .map(match => match[1].replaceAll('""', '"')));
-assert.equal(targetRows.length, 497);
+assert.equal(targetRows.length, 635);
 assert.equal(new Set(targetRows.map(row => row[0] + "/" + row[1])).size, targetRows.length);
-assert.equal(targetRows.filter(row => row[5].startsWith("1944-05")).length, 116);
+const mayTargets = targetRows.filter(row => row[5].startsWith("1944-05"));
+assert.equal(mayTargets.length, 254);
+assert.equal(mayTargets.filter(row => row[2] === "Ge").length, 132);
+assert.equal(mayTargets.filter(row => row[2] === "NL").length, 6);
 assert.equal(targetRows.filter(row => row[5].startsWith("1944-07")).length, 381);
 const targetGroups = new Map();
 for (const row of targetRows) {
@@ -168,6 +177,9 @@ for (const [key, rows] of targetGroups) {
     targetAttacks: sum(8), targetLosses: sum(9), shortTons: Math.round(sum(13) * 10) / 10
   });
 }
+assert.deepEqual(byId.get("us8-1944-05-12-davis-353").metrics, {
+  targetAttacks: 660, targetLosses: 37, shortTons: 1407.4
+});
 assert.equal(byId.get("us8-1944-07-25-davis-494").metrics.targetAttacks, 1495);
 console.log("PASS January–July 1944 ledger: " + data.records.length +
-  " dated records, 497 workbook targets, overnight dates, mission scopes and monthly returns.");
+  " dated records, 635 workbook targets, overnight dates, mission scopes and monthly returns.");

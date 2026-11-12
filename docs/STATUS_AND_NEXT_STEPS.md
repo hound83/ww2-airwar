@@ -1,8 +1,8 @@
 # Atlas status and next work
 
-## 12 November 2026 · v9.3 May and July Western air war
+## 12 November 2026 · v9.3.1 May and July Western air war
 
-The timeline adds 113 dated records, including 31 July Luftflotte 3 daily loss returns and operation checks for Normandy night work, Goodwood, Évreux and Cobra. The separate worksheet export adds 497 target rows. The July enemy-action destruction figures reconcile across all 31 days. The May daily rows and remaining July cause cells need legible source scans. The roadmap retains the Bodenplatte field and unit ledger as the next campaign milestone. [July timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [Audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)
+The January–July timeline now has 2,103 dated records and 635 Davis target rows. The follow-up adds 138 May targets and completes nine loss measures for all 31 July dates. The printed and daily air-combat totals differ by one each. The two May daily German returns and Cobra fighter attribution remain open. The next campaign milestone is the Bodenplatte airfield and unit ledger. [July timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [Audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)
 
 ## 12 November 2026 · v9.2 German claims and British losses
 
