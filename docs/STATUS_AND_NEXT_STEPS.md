@@ -1,5 +1,9 @@
 # Atlas status and next work
 
+## 12 November 2026 - Source audit across all 20 campaigns
+
+The research dataset adds 343 period, formation and airframe rows across all 20 dossiers. The campaign rundown covers new source transcriptions, exact archival leads and reporting discrepancies. Cobra's alternate official US escort and flak figures are available in the research data. The fighter annex and German airframe matches remain open. [Campaign audit](../research/sources/atlas-campaign-source-audit-2026-11-12.md) · [Research dataset](../research/transcriptions/campaign-evidence-audit-2026-11-12.json) · [Reference check](../research/sources/campaign-reference-check-2026-11-12.csv).
+
 ## 12 November 2026 - v9.0 campaign claims and loss validation
 
 The claims calculator covers the full Battle of Britain in 17 weeks and five phases, with a Luftwaffe-to-RAF campaign comparison and seven dated reverse cases. Normandy's 1–18 July reports have their own Allied and German directions. Whole-period checks cover 14 of 17 British weekly records, with an average miss of 16.5 aircraft against 30.0 for the claims-only ratio. The five phases and the two Normandy directions show their own measured errors and ranges. The Cobra source check identifies the correct Luftflotte 3 cause-of-loss return and documents the need for mission attribution. [Method, exact measures and remaining source coverage](../research/sources/atlas-v90-campaign-loss-validation-2026-11-12.md).
