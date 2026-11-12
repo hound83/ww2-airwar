@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Bodenplatte airfield and unit losses
+
+The five airfield accounts follow Eindhoven, Asch, Evere, Melsbroek and Metz–Frescaty from the attack to the aircraft and formation records. At Metz the 365th Fighter Group’s 22 destroyed and 11 badly damaged Thunderbolts are distinct from the unquantified 368th Fighter Group losses. At Asch the 487th’s explicit zero airborne Mustang losses and JG 11’s route-wide 28 have different populations. The ledger links these records, the operation-wide reporting differences and three identified airframes. [Airfield explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Source audit](../research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md)
+
 ## Atlas v9.3.1
 
 The May and July milestone adds 123 timeline records and 635 downloadable Eighth Air Force target rows. The follow-up recovered 138 May targets in Germany and the Netherlands and completed nine daily Luftflotte 3 loss measures across July. Seven reconcile with the printed total. The two air-combat totals differ by one each. Ninth Air Force evidence adds detail for Goodwood, Cobra and the 406th Fighter Group encounter at Lisieux. [July timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [May and July audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md)
@@ -20,7 +24,7 @@ Grok’s follow-up supplied the Cobra figures, the specialist Bodenplatte breakd
 
 | Milestone | Scope | Completion evidence |
 | --- | --- | --- |
-| **Bodenplatte, airfield and unit losses** | Build a bilateral ledger for Eindhoven, Asch, Evere, Melsbroek and Metz-Frescaty. Use the existing 37 formation leads, specialist loss lists and Allied airfield or squadron reports. | Reconcile ground and air losses, damage and German friendly fire by unit and location. Link airframes where the evidence permits, then compare with the published operation totals and retain differences with their source scopes. |
+| **Bodenplatte, individual aircraft and casualty follow-up** | Reconcile the open airfield and formation discrepancies from squadron operation records and the Manrho and Pütz appendices. | Add matched serial and Werknummer records with locations and loss causes. Verify the scope of the two published 305/190 accounts. |
 
 Western air war source follow-up remains open for the daily May reports VII/133 and VII/134, the July Ninth Air Force command records and the Mission 494 fighter annex and German airframe matches. The source audit records the archival leads. [Open Western air war sources](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md#archive-follow-up)
 

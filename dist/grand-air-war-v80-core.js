@@ -490,6 +490,7 @@ function renderDossier(){
  const links=norm?['<a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a>']:[];
  if(norm)links.push('<a href="./operations-1944.html?preset=d-day">D-Day air operations timeline</a>');
  if(c.id==="bigweek")links.push('<a href="./operations-1944.html?preset=big-week">Big Week mission and loss records</a>');
+ if(c.id==="bodenplatte")links.push('<a href="./bodenplatte.html">Explore five airfields and unit losses</a>');
  if(lossScope)links.push('<a href="?loss-scope='+lossScope+'#claim-loss-calculator" data-claim-scope="'+lossScope+'">Compare campaign claims and losses</a>');
  $("dossier-link-detail").innerHTML=links.length?'<div class="dossier-links">'+links.join("")+'</div>':'';
  $("dossier-link-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{
@@ -693,7 +694,10 @@ function init(){
  $("force-metric").addEventListener("change",e=>{state.forceMetric=e.target.value;state.forceSelected=state.month;renderForces();});
  $("download-force").addEventListener("click",()=>download(forcePoints(),"grand-air-war-"+state.forceSeries+"-observations.csv"));
  document.addEventListener("visibilitychange",()=>{if(document.hidden)cancelPlay();});
- update();renderLosses();renderForces();
+ const campaign=window.location?.search?new URLSearchParams(window.location.search).get("campaign"):null;
+ if(D.campaigns.some(c=>c.id===campaign))pickCampaign(campaign,false);
+ else update();
+ renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 window.GrandAirWarV77={campaigns:D.campaigns,groupEvidence,renderBritainClaimReview,lossRows,groupRows,forcePoints,clipEuropeanLand:europeanLand,visibleOnMap,choose:pickCampaign,chooseMoment:selectMoment,chooseChapter:selectChapter,setMonth:updateMonth,monthIdx,atIdx,selected:()=>state.selected,selectedChapter:()=>state.selectedChapter,active,map:()=>state.map,refreshMap:drawMap};
