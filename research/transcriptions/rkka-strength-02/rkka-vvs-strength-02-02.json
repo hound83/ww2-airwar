@@ -1,0 +1,969 @@
+{
+  "id": "RKKA-VVS-02-02",
+  "topic": "VVS KA border military districts, June 1941",
+  "formationOrForce": "soviet_vvs_ka",
+  "dateScopeIndex": "1941-06",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_02.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Denominación de VVS de las circunspecciones militares",
+          "rowspan": 3
+        },
+        {
+          "value": "Cantidad de agrupaciones, unidades y destacamentos aereos",
+          "colspan": 9
+        },
+        {
+          "value": "Cantidad de aviones de combate {4}",
+          "colspan": 6
+        },
+        {
+          "value": "Cantidad de tripulaciones preparadas {5}",
+          "colspan": 6
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "divisiones",
+          "colspan": 4
+        },
+        {
+          "value": "regimientos {2}",
+          "colspan": 5
+        },
+        {
+          "value": "Bombar deros",
+          "rowspan": 2
+        },
+        {
+          "value": "Shturmo vik",
+          "rowspan": 2
+        },
+        {
+          "value": "Cazas",
+          "rowspan": 2
+        },
+        {
+          "value": "Reconoc imiento",
+          "rowspan": 2
+        },
+        {
+          "value": "Correc tores",
+          "rowspan": 2
+        },
+        {
+          "value": "Total",
+          "rowspan": 2
+        },
+        {
+          "value": "Bombar deros",
+          "rowspan": 2
+        },
+        {
+          "value": "Shturmo vik",
+          "rowspan": 2
+        },
+        {
+          "value": "Cazas",
+          "rowspan": 2
+        },
+        {
+          "value": "Reconoc imiento",
+          "rowspan": 2
+        },
+        {
+          "value": "Correc tores",
+          "rowspan": 2
+        },
+        {
+          "value": "Total tripulaciones preparadas",
+          "rowspan": 2
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "bad"
+        },
+        {
+          "value": "iad"
+        },
+        {
+          "value": "sad"
+        },
+        {
+          "value": "total"
+        },
+        {
+          "value": "bap"
+        },
+        {
+          "value": "shap"
+        },
+        {
+          "value": "iap"
+        },
+        {
+          "value": "rap"
+        },
+        {
+          "value": "total"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "VVS de cirunspeccion militar de Leningrado",
+          "rowspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "308"
+        },
+        {
+          "value": "74"
+        },
+        {
+          "value": "857{3}"
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1 270"
+        },
+        {
+          "value": "289"
+        },
+        {
+          "value": "62"
+        },
+        {
+          "value": "799"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "1 249"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "107"
+        },
+        {
+          "value": "171"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "143"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "314"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": "VVS de cirunspeccion militar del Baltico",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "425"
+        },
+        {
+          "value": "93"
+        },
+        {
+          "value": "621"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "66"
+        },
+        {
+          "value": "1 211"
+        },
+        {
+          "value": "381"
+        },
+        {
+          "value": "93"
+        },
+        {
+          "value": "418"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "957"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "45"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "92"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "162"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "126"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": "VVS de circunspeccion militar Occidental",
+          "rowspan": 2
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "695"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "870"
+        },
+        {
+          "value": "154"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1 789"
+        },
+        {
+          "value": "456"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "549"
+        },
+        {
+          "value": "159"
+        },
+        {
+          "value": "109"
+        },
+        {
+          "value": "1 343"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "69"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "132"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "224"
+        },
+        {
+          "value": "108"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "101"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "250"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": "VVS de la circunspeccion militar especial de Kiev (1 junio 1941)",
+          "rowspan": 2
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "516"
+        },
+        {
+          "value": "80"
+        },
+        {
+          "value": "1 238"
+        },
+        {
+          "value": "79"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "1 913"
+        },
+        {
+          "value": "449"
+        },
+        {
+          "value": "117"
+        },
+        {
+          "value": "895"
+        },
+        {
+          "value": "78"
+        },
+        {
+          "value": "144"
+        },
+        {
+          "value": "1 683"
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "74"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "138"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "243"
+        },
+        {
+          "value": "66"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "291"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "369"
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": "VVS de circunspeccion militar de Odessa (1 junio 1941)",
+          "rowspan": 2
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "268"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "640"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "950"
+        },
+        {
+          "value": "192"
+        },
+        {
+          "value": "–"
+        },
+        {
+          "value": "401"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": "705"
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "49"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "132"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "183"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "21"
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "cells": [
+        {
+          "value": "Total en las circunspecciones militares fronterizas",
+          "rowspan": 2
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "48"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "57"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "119"
+        },
+        {
+          "value": "2 212"
+        },
+        {
+          "value": "317"
+        },
+        {
+          "value": "4 226"
+        },
+        {
+          "value": "310"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "7 133"
+        },
+        {
+          "value": "1 767"
+        },
+        {
+          "value": "342"
+        },
+        {
+          "value": "3 062"
+        },
+        {
+          "value": "335"
+        },
+        {
+          "value": "431"
+        },
+        {
+          "value": "5 937"
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "273"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "562"
+        },
+        {
+          "value": "38"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "919"
+        },
+        {
+          "value": "413"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "614"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "1 080"
+        }
+      ]
+    }
+  ]
+}

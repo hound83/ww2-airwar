@@ -1,0 +1,856 @@
+{
+  "id": "RKKA-VVS-06-22",
+  "topic": "VVS KA combat aircraft losses by cause 1941-1945",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_22.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 31,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Causa de las bajas de combate de los aviones"
+            },
+            {
+              "value": "Año"
+            },
+            {
+              "value": "Bombarderos"
+            },
+            {
+              "value": "Shturmovik"
+            },
+            {
+              "value": "Cazas"
+            },
+            {
+              "value": "Otros aviones (R-5, CCC, R-zet, R-10, Po-2 y etc.)"
+            },
+            {
+              "value": "Total {2}",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "Derribados en combates aereos",
+              "rowspan": 5
+            },
+            {
+              "value": "1941"
+            },
+            {
+              "value": "1 240"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "1 380"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "2 698"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "1942"
+            },
+            {
+              "value": "265"
+            },
+            {
+              "value": "169"
+            },
+            {
+              "value": "1 134"
+            },
+            {
+              "value": "150"
+            },
+            {
+              "value": "1 718"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1943"
+            },
+            {
+              "value": "382"
+            },
+            {
+              "value": "1 090"
+            },
+            {
+              "value": "2 373"
+            },
+            {
+              "value": "60"
+            },
+            {
+              "value": "3 905"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "1944"
+            },
+            {
+              "value": "320"
+            },
+            {
+              "value": "882"
+            },
+            {
+              "value": "1 585"
+            },
+            {
+              "value": "115"
+            },
+            {
+              "value": "2 902"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "1945"
+            },
+            {
+              "value": "185"
+            },
+            {
+              "value": "369"
+            },
+            {
+              "value": "390"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "966"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Total aviones",
+              "colspan": 2
+            },
+            {
+              "value": "2 392"
+            },
+            {
+              "value": "2 557"
+            },
+            {
+              "value": "6 862"
+            },
+            {
+              "value": "378"
+            },
+            {
+              "value": "12 189"
+            },
+            {
+              "value": "31,70%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Porcentaje",
+              "colspan": 2
+            },
+            {
+              "value": "20%"
+            },
+            {
+              "value": "21%"
+            },
+            {
+              "value": "56%"
+            },
+            {
+              "value": "3%"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Derribados por la artilleria antiaerea",
+              "rowspan": 5
+            },
+            {
+              "value": "1941"
+            },
+            {
+              "value": "686"
+            },
+            {
+              "value": "101"
+            },
+            {
+              "value": "350"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "1 146"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "1942"
+            },
+            {
+              "value": "110"
+            },
+            {
+              "value": "203"
+            },
+            {
+              "value": "187"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "541"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "1943"
+            },
+            {
+              "value": "276"
+            },
+            {
+              "value": "1 468"
+            },
+            {
+              "value": "392"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": "2 234"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "1944"
+            },
+            {
+              "value": "252"
+            },
+            {
+              "value": "1 859"
+            },
+            {
+              "value": "620"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "2 810"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "1945"
+            },
+            {
+              "value": "238"
+            },
+            {
+              "value": "1 048"
+            },
+            {
+              "value": "431"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "1 748"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Total aviones",
+              "colspan": 2
+            },
+            {
+              "value": "1 562"
+            },
+            {
+              "value": "4 679"
+            },
+            {
+              "value": "1 980"
+            },
+            {
+              "value": "258"
+            },
+            {
+              "value": "8 479"
+            },
+            {
+              "value": "22,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "Porcentaje",
+              "colspan": 2
+            },
+            {
+              "value": "18,40%"
+            },
+            {
+              "value": "55,20%"
+            },
+            {
+              "value": "23,40%"
+            },
+            {
+              "value": "3,00%"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "Eliminados en los aerodromos",
+              "rowspan": 5
+            },
+            {
+              "value": "1941"
+            },
+            {
+              "value": "521"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "1 286"
+            },
+            {
+              "value": "69"
+            },
+            {
+              "value": "1 889"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "1942"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": "54"
+            },
+            {
+              "value": "204"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "1943"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "119"
+            },
+            {
+              "value": "62"
+            },
+            {
+              "value": "239"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "1944"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "68"
+            },
+            {
+              "value": "105"
+            },
+            {
+              "value": "210"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "1945"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "Total aviones",
+              "colspan": 2
+            },
+            {
+              "value": "583"
+            },
+            {
+              "value": "109"
+            },
+            {
+              "value": "1 584"
+            },
+            {
+              "value": "304"
+            },
+            {
+              "value": "2 580"
+            },
+            {
+              "value": "6,70%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "Porcentaje",
+              "colspan": 2
+            },
+            {
+              "value": "22,60%"
+            },
+            {
+              "value": "4,20%"
+            },
+            {
+              "value": "61,40%"
+            },
+            {
+              "value": "11,80%"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "No volvieron de la mision de combate",
+              "rowspan": 5
+            },
+            {
+              "value": "1941"
+            },
+            {
+              "value": "1 582"
+            },
+            {
+              "value": "372"
+            },
+            {
+              "value": "1 400"
+            },
+            {
+              "value": "146"
+            },
+            {
+              "value": "3 500"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "1942"
+            },
+            {
+              "value": "1 049"
+            },
+            {
+              "value": "1 290"
+            },
+            {
+              "value": "2 469"
+            },
+            {
+              "value": "988"
+            },
+            {
+              "value": "5 796"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "1943"
+            },
+            {
+              "value": "264"
+            },
+            {
+              "value": "917"
+            },
+            {
+              "value": "1 758"
+            },
+            {
+              "value": "183"
+            },
+            {
+              "value": "3 122"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "1944"
+            },
+            {
+              "value": "176"
+            },
+            {
+              "value": "569"
+            },
+            {
+              "value": "1 057"
+            },
+            {
+              "value": "124"
+            },
+            {
+              "value": "1 926"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "1945"
+            },
+            {
+              "value": "165"
+            },
+            {
+              "value": "266"
+            },
+            {
+              "value": "357"
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": "817"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "Total aviones",
+              "colspan": 2
+            },
+            {
+              "value": "3 236"
+            },
+            {
+              "value": "3 414"
+            },
+            {
+              "value": "7 041"
+            },
+            {
+              "value": "1 470"
+            },
+            {
+              "value": "15 161"
+            },
+            {
+              "value": "39,50%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "Porcentaje",
+              "colspan": 2
+            },
+            {
+              "value": "21,30%"
+            },
+            {
+              "value": "22,50%"
+            },
+            {
+              "value": "46,40%"
+            },
+            {
+              "value": "9,70%"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "Total en toda la guerra: aviones",
+              "colspan": 2
+            },
+            {
+              "value": "7 773"
+            },
+            {
+              "value": "10 759"
+            },
+            {
+              "value": "17 467"
+            },
+            {
+              "value": "2 410"
+            },
+            {
+              "value": "38 409"
+            },
+            {
+              "value": "100,00%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "Porcentaje",
+              "colspan": 2
+            },
+            {
+              "value": "20,20%"
+            },
+            {
+              "value": "28,00%"
+            },
+            {
+              "value": "45,50%"
+            },
+            {
+              "value": "6,30%"
+            },
+            {
+              "value": "100%"
+            },
+            {
+              "value": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

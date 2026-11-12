@@ -1,0 +1,455 @@
+{
+  "id": "RKKA-VVS-06-17",
+  "topic": "Civil air fleet wartime operations and campaigns",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_17.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 14,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Las operaciones y campañas de mayor importancia, el periodo de actuacion de la aviacion",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "Horas de vuelo realizadas",
+              "rowspan": 2
+            },
+            {
+              "value": "Total personas transportadas",
+              "rowspan": 2
+            },
+            {
+              "value": "De los cuales",
+              "colspan": 2
+            },
+            {
+              "value": "Total cargamentos transportados (en toneladas)",
+              "rowspan": 2
+            },
+            {
+              "value": "de los cuales",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "heridos"
+            },
+            {
+              "value": "a la retaguardia enemiga y viceversa"
+            },
+            {
+              "value": "municiones"
+            },
+            {
+              "value": "a la retaguardia enemiga y viceversa"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "La defensa de Odessa (agosto-septiembre de 1941)"
+            },
+            {
+              "value": "476"
+            },
+            {
+              "value": "1 659"
+            },
+            {
+              "value": "736"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "La Batalla de Moscu (octubre de 1941 - enero de 1942)"
+            },
+            {
+              "value": "32 730"
+            },
+            {
+              "value": "61 106"
+            },
+            {
+              "value": "49 822"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "716"
+            },
+            {
+              "value": "1 365"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "135"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "La defensa de Sevastopol (octubre de 1941 - junio de 1942)"
+            },
+            {
+              "value": "1 410"
+            },
+            {
+              "value": "3 595"
+            },
+            {
+              "value": "4 174"
+            },
+            {
+              "value": "2174{2}"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "348"
+            },
+            {
+              "value": "234{3}"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "La defensa de Leningrado (septiembre de 1941 - diciembre de 1943)"
+            },
+            {
+              "value": "127 313"
+            },
+            {
+              "value": "198 639"
+            },
+            {
+              "value": "207 355"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8 481"
+            },
+            {
+              "value": "15 864"
+            },
+            {
+              "value": "1 271"
+            },
+            {
+              "value": "1 962"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "La Batalla de Stalingrado (agosto de 1942 - febrero de 1943)"
+            },
+            {
+              "value": "4 604"
+            },
+            {
+              "value": "45 249"
+            },
+            {
+              "value": "30 992"
+            },
+            {
+              "value": "3 447"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 587"
+            },
+            {
+              "value": "369"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "La defensa de Caucaso (agosto de 1942 - abril de 1943)"
+            },
+            {
+              "value": "73 381"
+            },
+            {
+              "value": "99 906"
+            },
+            {
+              "value": "50 887"
+            },
+            {
+              "value": "3905{4}"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6 914"
+            },
+            {
+              "value": "780"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Batalla de Orel-Kursk y la liberacion de la Ucrania de la costa izquierda (julio - diciembre de 1943)"
+            },
+            {
+              "value": "80 181"
+            },
+            {
+              "value": "86 810"
+            },
+            {
+              "value": "62 331"
+            },
+            {
+              "value": "21 077"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3 728"
+            },
+            {
+              "value": "1 510"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Las operaciones ofensivas de 1944 (desde enero hasta diciembre)"
+            },
+            {
+              "value": "498 802"
+            },
+            {
+              "value": "488 905"
+            },
+            {
+              "value": "448 720"
+            },
+            {
+              "value": "73 337"
+            },
+            {
+              "value": "13 540"
+            },
+            {
+              "value": "39 420"
+            },
+            {
+              "value": "7 243"
+            },
+            {
+              "value": "2 524"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Las operaciones ofensivas de 1945 (desde enero hasta mayo)"
+            },
+            {
+              "value": "153 428"
+            },
+            {
+              "value": "136 037"
+            },
+            {
+              "value": "139 590"
+            },
+            {
+              "value": "35 771"
+            },
+            {
+              "value": "312"
+            },
+            {
+              "value": "10 079"
+            },
+            {
+              "value": "1 479"
+            },
+            {
+              "value": "306"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "La ayuda a los partisanos (1941 - 1945)",
+              "rowspan": 2
+            },
+            {
+              "value": "19592{5}"
+            },
+            {
+              "value": "52 255"
+            },
+            {
+              "value": "27 574"
+            },
+            {
+              "value": "16 115"
+            },
+            {
+              "value": "27 574"
+            },
+            {
+              "value": "4 649"
+            },
+            {
+              "value": "3 672"
+            },
+            {
+              "value": "4 649"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "10 372"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "991 917"
+            },
+            {
+              "value": "1 174 161"
+            },
+            {
+              "value": "1 022 181"
+            },
+            {
+              "value": "155 826"
+            },
+            {
+              "value": "50 623"
+            },
+            {
+              "value": "84 961"
+            },
+            {
+              "value": "16 558"
+            },
+            {
+              "value": "9 576"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

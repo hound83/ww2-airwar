@@ -1,0 +1,56 @@
+{
+  "id": "NETHERLANDS-ML-MAY1940-OPERATIONS-SECONDARY",
+  "sourceUrl": "https://www.bhummel.dds.nl/frame2.html",
+  "institutionalCorroborationUrl": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/de-meidagen-van-1940/de-strijd-op-nederlands-grondgebied/lucht--en-zeestrijdkrachten",
+  "otherSecondaryCrosscheckUrl": "https://waroverholland.nl/introduction/dutch-armament/military-airplanes",
+  "sourceType": "secondary_historical_compilation_not_verified_against_original_NIMH_operational_reports",
+  "force": "Dutch Army military aviation (Militaire Luchtvaart / LVA), EXCLUDING Marine Luchtvaartdienst (MLD)",
+  "period": "1940-05-10/1940-05-14",
+  "operationalFlights": {
+    "byDate": {"1940-05-10": 51, "1940-05-11": 31, "1940-05-12": 48, "1940-05-13": 23, "1940-05-14": 18},
+    "printedTotal": 171,
+    "unit": "individual operational flights (not one flight per mission package)"
+  },
+  "aircraftLosses": {
+    "categories": [
+      {
+        "cause": "destroyed_on_ground",
+        "count": 34,
+        "types": {"Fokker T.V": 2, "Fokker G.I-A": 12, "Fokker D.XXI": 5, "Douglas 8A-3N": 2, "Fokker C.V": 9, "Koolhoven FK.51": 4}
+      },
+      {
+        "cause": "lost_due_to_combat_operations",
+        "count": 43,
+        "types": {"Fokker T.V": 5, "Fokker C.X": 2, "Fokker G.I-A": 9, "Fokker D.XXI": 11, "Fokker C.V": 8, "Douglas 8A-3N": 8}
+      },
+      {
+        "cause": "other_loss_causes",
+        "count": 17,
+        "types": {"Fokker T.V": 2, "Fokker C.X": 1, "Fokker G.I-A": 1, "Fokker G.I-B": 1, "Fokker D.XXI": 4, "Fokker D.XVII": 5, "Douglas 8A-3N": 1, "Koolhoven FK.51": 2}
+      }
+    ],
+    "printedTotal": 94,
+    "additionalNote": "Source reports 45 survivors, most deliberately destroyed on capitulation/withdrawal. These are not included in the 94 operational-period loss total."
+  },
+  "reportedAvailableAircraft": {
+    "originallyReady": 125,
+    "laterAdded": 14,
+    "inCampaignTotal": 139,
+    "qualification": "Historical secondary estimates disagree: another researcher says 145 ever became operational, while a narrower source gives 75 modern ready aircraft on 10 May; not interchangeable quantities."
+  },
+  "personnelLosses": {
+    "allServiceDeathsReported": 75,
+    "flyingPersonnelDeathsApproximate": 39,
+    "notPilotDeaths": "Flying personnel may include other aircrew; 'as far as could be determined' in source.",
+    "recordMatchStatus": "needs_NIMH_casualty_roster_crosscheck"
+  },
+  "separateNavalForceFact": {
+    "sourceUrl": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/de-meidagen-van-1940/de-strijd-op-nederlands-grondgebied/lucht--en-zeestrijdkrachten",
+    "force": "Dutch Naval Aviation Service (MLD)",
+    "date": "1940-05-14",
+    "aircraftEvacuatedToAllies": 23,
+    "personnelEvacuatedApproximate": 75,
+    "notAircraftLosses": true
+  },
+  "publicationStatus": "research_only_pending_primary_NIMH_corroboration"
+}

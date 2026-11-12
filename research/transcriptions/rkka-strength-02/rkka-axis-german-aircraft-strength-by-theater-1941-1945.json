@@ -1,0 +1,3170 @@
+{
+  "sources": [
+    "https://www.rkka.es/Estadisticas/VVS_stat/02/02_21.htm",
+    "https://www.rkka.es/Estadisticas/VVS_stat/02/02_22.htm"
+  ],
+  "sourceClass": "secondary_RKKA_es_transcription_of_Soviet_staff_statistical_compilations",
+  "dateScope": "1941-06-22 to 1945-05-09; Soviet-German front and select other European theaters",
+  "cautions": [
+    "Soviet-side estimates of opposing combat aircraft strength, not original Luftwaffe unit ledgers or counts of serviceable aircraft.",
+    "Source Table 02-21 contains nested geographic subtotals. Do not sum a front total with its subregional rows.",
+    "German, Finnish, Romanian, Hungarian and Italian forces are mixed in some top-level rows. Population tags are cautious, not independently resolved.",
+    "The original 1943 April/May combined return has a 15-day date mismatch and is approximate.",
+    "The 1941 invasion border snapshot 02-21 includes Finland/Romania but does not itemize Hungary 90 reported separately in 02-22. These are not interchangeable source populations.",
+    "A dash/no habia/blank remains null: no silent zero imputation.",
+    "Other 1941-era strength series in the Atlas may use different geographic and combat categories: crosscheck before chart import."
+  ],
+  "geographicTheaterRows": [
+    {
+      "sourceRow": 5,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "En la frontera con la URSS (a fecha de 22 de junio de 1941).",
+      "contextLabels": [
+        "En la frontera con la URSS (a fecha de 22 de junio de 1941)."
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 4942,
+      "byRole": {
+        "bombers": 2591,
+        "fighters": 1574,
+        "reconnaissance": 777
+      },
+      "printedOriginalCounts": [
+        "4 942{2}",
+        "2591",
+        "1574",
+        "777"
+      ],
+      "sourceDateWarning": "Printed 4,942 includes Finland 506 and Romania 504; separate allied Table 02-22 also lists Hungary 90 not itemized here."
+    },
+    {
+      "sourceRow": 8,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "5 flota aerea",
+      "contextLabels": [
+        "5 flota aerea"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 400,
+      "byRole": {
+        "bombers": 159,
+        "fighters": 159,
+        "reconnaissance": 82
+      },
+      "printedOriginalCounts": [
+        "400",
+        "159",
+        "159",
+        "82"
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "fuerzas aereas de Finlandia",
+      "contextLabels": [
+        "fuerzas aereas de Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 506,
+      "byRole": {
+        "bombers": 236,
+        "fighters": 161,
+        "reconnaissance": 109
+      },
+      "printedOriginalCounts": [
+        "506",
+        "236",
+        "161",
+        "109"
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "1 flota aerea",
+      "contextLabels": [
+        "1 flota aerea"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1070,
+      "byRole": {
+        "bombers": 613,
+        "fighters": 304,
+        "reconnaissance": 153
+      },
+      "printedOriginalCounts": [
+        "1 070",
+        "613",
+        "304",
+        "153"
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "2 flota aerea",
+      "contextLabels": [
+        "2 flota aerea"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1677,
+      "byRole": {
+        "bombers": 980,
+        "fighters": 530,
+        "reconnaissance": 167
+      },
+      "printedOriginalCounts": [
+        "1 677",
+        "980",
+        "530",
+        "167"
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "4 flota aerea",
+      "contextLabels": [
+        "4 flota aerea"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 785,
+      "byRole": {
+        "bombers": 471,
+        "fighters": 216,
+        "reconnaissance": 98
+      },
+      "printedOriginalCounts": [
+        "785",
+        "471",
+        "216",
+        "98"
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "fuerzas aereas de Rumania",
+      "contextLabels": [
+        "fuerzas aereas de Rumania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 504,
+      "byRole": {
+        "bombers": 132,
+        "fighters": 204,
+        "reconnaissance": 168
+      },
+      "printedOriginalCounts": [
+        "504",
+        "132",
+        "204",
+        "168"
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "En otros teatros de operaciones",
+      "contextLabels": [
+        "En otros teatros de operaciones"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2500,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "2 500",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "en Francia",
+      "contextLabels": [
+        "en Francia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 400,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "400",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "en otros paises de la Europa Occidental",
+      "contextLabels": [
+        "en otros paises de la Europa Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "en Noruega",
+      "contextLabels": [
+        "en Noruega"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "en Africa",
+      "contextLabels": [
+        "en Africa"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 500,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "500",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "en Alemania",
+      "contextLabels": [
+        "en Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "1 200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "asOfDate": "1941-06-22",
+      "geographicRegionAsPrinted": "Total aviones de combate",
+      "contextLabels": [
+        "Total aviones de combate"
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 7442,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "7 442",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2040,
+      "byRole": {
+        "bombers": 1089,
+        "fighters": 659,
+        "reconnaissance": 292
+      },
+      "printedOriginalCounts": [
+        "2 040{4}",
+        "1089",
+        "659",
+        "292"
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en Finlandia",
+      "contextLabels": [
+        "en Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 313,
+      "byRole": {
+        "bombers": 198,
+        "fighters": 90,
+        "reconnaissance": 25
+      },
+      "printedOriginalCounts": [
+        "313",
+        "198",
+        "90",
+        "25"
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Norte",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 427,
+      "byRole": {
+        "bombers": 279,
+        "fighters": 90,
+        "reconnaissance": 58
+      },
+      "printedOriginalCounts": [
+        "427",
+        "279",
+        "90",
+        "58"
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Centro",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Centro"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 615,
+      "byRole": {
+        "bombers": 236,
+        "fighters": 284,
+        "reconnaissance": 95
+      },
+      "printedOriginalCounts": [
+        "615",
+        "236",
+        "284",
+        "95"
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Sur",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Sur"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 685,
+      "byRole": {
+        "bombers": 376,
+        "fighters": 195,
+        "reconnaissance": 114
+      },
+      "printedOriginalCounts": [
+        "685",
+        "376",
+        "195",
+        "114"
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2950,
+      "byRole": {
+        "bombers": 1616,
+        "fighters": 1168,
+        "reconnaissance": 166
+      },
+      "printedOriginalCounts": [
+        "2 950",
+        "1616",
+        "1168",
+        "166"
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en el Frente Occidental",
+      "contextLabels": [
+        "en el Frente Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 870,
+      "byRole": {
+        "bombers": 365,
+        "fighters": 462,
+        "reconnaissance": 43
+      },
+      "printedOriginalCounts": [
+        "870",
+        "365",
+        "462",
+        "43"
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en la zona del Mar Mediterraneo",
+      "contextLabels": [
+        "en la zona del Mar Mediterraneo"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 700,
+      "byRole": {
+        "bombers": 420,
+        "fighters": 238,
+        "reconnaissance": 42
+      },
+      "printedOriginalCounts": [
+        "700",
+        "420",
+        "238",
+        "42"
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en los Balcanes",
+      "contextLabels": [
+        "en los Balcanes"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 260,
+      "byRole": {
+        "bombers": 156,
+        "fighters": 88,
+        "reconnaissance": 16
+      },
+      "printedOriginalCounts": [
+        "260",
+        "156",
+        "88",
+        "16"
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "en Alemania",
+      "contextLabels": [
+        "en Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1120,
+      "byRole": {
+        "bombers": 675,
+        "fighters": 380,
+        "reconnaissance": 65
+      },
+      "printedOriginalCounts": [
+        "1 120",
+        "675",
+        "380",
+        "65"
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "asOfDate": "1942-01-01",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 4990,
+      "byRole": {
+        "bombers": 2705,
+        "fighters": 1827,
+        "reconnaissance": 458
+      },
+      "printedOriginalCounts": [
+        "4 990",
+        "2705",
+        "1827",
+        "458"
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2850,
+      "byRole": {
+        "bombers": 1610,
+        "fighters": 905,
+        "reconnaissance": 335
+      },
+      "printedOriginalCounts": [
+        "2 850{5}",
+        "1610",
+        "905",
+        "335"
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en Finlandia",
+      "contextLabels": [
+        "en Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 240,
+      "byRole": {
+        "bombers": 140,
+        "fighters": 75,
+        "reconnaissance": 25
+      },
+      "printedOriginalCounts": [
+        "240",
+        "140",
+        "75",
+        "25"
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Norte",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 335,
+      "byRole": {
+        "bombers": 225,
+        "fighters": 60,
+        "reconnaissance": 50
+      },
+      "printedOriginalCounts": [
+        "335",
+        "225",
+        "60",
+        "50"
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Centro",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Centro"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 635,
+      "byRole": {
+        "bombers": 275,
+        "fighters": 260,
+        "reconnaissance": 100
+      },
+      "printedOriginalCounts": [
+        "635",
+        "275",
+        "260",
+        "100"
+      ]
+    },
+    {
+      "sourceRow": 45,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Sur",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Sur"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1640,
+      "byRole": {
+        "bombers": 970,
+        "fighters": 510,
+        "reconnaissance": 160
+      },
+      "printedOriginalCounts": [
+        "1 640",
+        "970",
+        "510",
+        "160"
+      ]
+    },
+    {
+      "sourceRow": 46,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2550,
+      "byRole": {
+        "bombers": 1380,
+        "fighters": 1060,
+        "reconnaissance": 110
+      },
+      "printedOriginalCounts": [
+        "2 550",
+        "1380",
+        "1060",
+        "110"
+      ]
+    },
+    {
+      "sourceRow": 48,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en el Frente Occidental",
+      "contextLabels": [
+        "en el Frente Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1100,
+      "byRole": {
+        "bombers": 450,
+        "fighters": 650,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "1 100",
+        "450",
+        "650",
+        "-"
+      ]
+    },
+    {
+      "sourceRow": 49,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en la zona del Mar Mediterraneo",
+      "contextLabels": [
+        "en la zona del Mar Mediterraneo"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 600,
+      "byRole": {
+        "bombers": 350,
+        "fighters": 220,
+        "reconnaissance": 30
+      },
+      "printedOriginalCounts": [
+        "600",
+        "350",
+        "220",
+        "30"
+      ]
+    },
+    {
+      "sourceRow": 50,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en los Balcanes",
+      "contextLabels": [
+        "en los Balcanes"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": 180,
+        "fighters": 90,
+        "reconnaissance": 30
+      },
+      "printedOriginalCounts": [
+        "300",
+        "180",
+        "90",
+        "30"
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "en Alemania",
+      "contextLabels": [
+        "en Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 550,
+      "byRole": {
+        "bombers": 400,
+        "fighters": 100,
+        "reconnaissance": 50
+      },
+      "printedOriginalCounts": [
+        "550",
+        "400",
+        "100",
+        "50"
+      ]
+    },
+    {
+      "sourceRow": 52,
+      "asOfDate": "1942-07-01",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 5400,
+      "byRole": {
+        "bombers": 2990,
+        "fighters": 1965,
+        "reconnaissance": 445
+      },
+      "printedOriginalCounts": [
+        "5 400",
+        "2990",
+        "1965",
+        "445"
+      ]
+    },
+    {
+      "sourceRow": 54,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 3300,
+      "byRole": {
+        "bombers": 2062,
+        "fighters": 848,
+        "reconnaissance": 390
+      },
+      "printedOriginalCounts": [
+        "3 300{7}",
+        "2062",
+        "848",
+        "390"
+      ]
+    },
+    {
+      "sourceRow": 56,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en Finlandia",
+      "contextLabels": [
+        "en Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "300",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 57,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Norte",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 400,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "400",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 58,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Centro",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Centro"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "1 200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 59,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos A",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos A"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 800,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "800",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 60,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos B",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos B"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 600,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "600",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 61,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1980,
+      "byRole": {
+        "bombers": 608,
+        "fighters": 1192,
+        "reconnaissance": 180
+      },
+      "printedOriginalCounts": [
+        "1 980",
+        "608",
+        "1192",
+        "180"
+      ]
+    },
+    {
+      "sourceRow": 63,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en el Frente Occidental",
+      "contextLabels": [
+        "en el Frente Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 400,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "400",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 64,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en la zona del Mar Mediterraneo",
+      "contextLabels": [
+        "en la zona del Mar Mediterraneo"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 65,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en Noruega",
+      "contextLabels": [
+        "en Noruega"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "100",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 66,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en Africa",
+      "contextLabels": [
+        "en Africa"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "300",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 67,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "en Alemania",
+      "contextLabels": [
+        "en Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 980,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "980",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 68,
+      "asOfDate": "1942-11-15",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 5280,
+      "byRole": {
+        "bombers": 2670,
+        "fighters": 2040,
+        "reconnaissance": 570
+      },
+      "printedOriginalCounts": [
+        "5 280",
+        "2670",
+        "2040",
+        "570"
+      ]
+    },
+    {
+      "sourceRow": 70,
+      "asOfDate": "1943-04-15",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2620,
+      "byRole": {
+        "bombers": 1710,
+        "fighters": 555,
+        "reconnaissance": 355
+      },
+      "printedOriginalCounts": [
+        "2 620",
+        "1710",
+        "555",
+        "355"
+      ]
+    },
+    {
+      "sourceRow": 72,
+      "asOfDate": "1943-04-15",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas del Frente de Karelia",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas del Frente de Karelia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 230,
+      "byRole": {
+        "bombers": 80,
+        "fighters": 85,
+        "reconnaissance": 65
+      },
+      "printedOriginalCounts": [
+        "230",
+        "80",
+        "85",
+        "65"
+      ]
+    },
+    {
+      "sourceRow": 73,
+      "asOfDate": "1943-04-15",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas de los Frentes de Leningrado, Volhov, Noroeste, Kalinin y Central",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas de los Frentes de Leningrado, Volhov, Noroeste, Kalinin y Central"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 870,
+      "byRole": {
+        "bombers": 530,
+        "fighters": 220,
+        "reconnaissance": 120
+      },
+      "printedOriginalCounts": [
+        "870",
+        "530",
+        "220",
+        "120"
+      ]
+    },
+    {
+      "sourceRow": 74,
+      "asOfDate": "1943-04-15",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas de los Frentes de Voronezh, Surоeste, Sur y Caucaso Norte",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas de los Frentes de Voronezh, Surоeste, Sur y Caucaso Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1520,
+      "byRole": {
+        "bombers": 1100,
+        "fighters": 250,
+        "reconnaissance": 170
+      },
+      "printedOriginalCounts": [
+        "1 520",
+        "1100",
+        "250",
+        "170"
+      ]
+    },
+    {
+      "sourceRow": 77,
+      "asOfDate": "1943-05-01",
+      "geographicRegionAsPrinted": "En el tramo nor-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En el tramo nor-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 165,
+      "byRole": {
+        "bombers": 30,
+        "fighters": 65,
+        "reconnaissance": 70
+      },
+      "printedOriginalCounts": [
+        "165",
+        "30",
+        "65",
+        "70"
+      ]
+    },
+    {
+      "sourceRow": 79,
+      "asOfDate": "1943-05-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": 30,
+        "fighters": 40,
+        "reconnaissance": 30
+      },
+      "printedOriginalCounts": [
+        "100",
+        "30",
+        "40",
+        "30"
+      ]
+    },
+    {
+      "sourceRow": 81,
+      "asOfDate": "1943-05-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 70,
+      "byRole": {
+        "bombers": null,
+        "fighters": 34,
+        "reconnaissance": 36
+      },
+      "printedOriginalCounts": [
+        "70",
+        "",
+        "34",
+        "36"
+      ]
+    },
+    {
+      "sourceRow": 82,
+      "asOfDate": "1943-05-01",
+      "geographicRegionAsPrinted": "Total",
+      "contextLabels": [
+        "Total"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 335,
+      "byRole": {
+        "bombers": 60,
+        "fighters": 139,
+        "reconnaissance": 136
+      },
+      "printedOriginalCounts": [
+        "335",
+        "60",
+        "139",
+        "136"
+      ]
+    },
+    {
+      "sourceRow": 83,
+      "asOfDate": "1943-05-01",
+      "geographicRegionAsPrinted": "Total en el F. sovietico-aleman (sin considerar otros frentes) (aprox pq sumamos 15 dias)",
+      "contextLabels": [
+        "Total en el F. sovietico-aleman (sin considerar otros frentes) (aprox pq sumamos 15 dias)"
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 2955,
+      "byRole": {
+        "bombers": 1770,
+        "fighters": 694,
+        "reconnaissance": 491
+      },
+      "printedOriginalCounts": [
+        "2 955",
+        "1 770",
+        "694",
+        "491"
+      ],
+      "sourceDateWarning": "Approximate sum of 15 Apr German and 1 May allied snapshots (15-day mismatch explicitly acknowledged by secondary editor)."
+    },
+    {
+      "sourceRow": 86,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2700,
+      "byRole": {
+        "bombers": 1915,
+        "fighters": 525,
+        "reconnaissance": 260
+      },
+      "printedOriginalCounts": [
+        "2 700",
+        "1915",
+        "525",
+        "260"
+      ]
+    },
+    {
+      "sourceRow": 88,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas del Frente de Karelia",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas del Frente de Karelia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 140,
+      "byRole": {
+        "bombers": 110,
+        "fighters": 20,
+        "reconnaissance": 10
+      },
+      "printedOriginalCounts": [
+        "140",
+        "110",
+        "20",
+        "10"
+      ]
+    },
+    {
+      "sourceRow": 89,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas de los Frentes de Leningrado, Volhov y Nororeste",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas de los Frentes de Leningrado, Volhov y Nororeste"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 280,
+      "byRole": {
+        "bombers": 190,
+        "fighters": 75,
+        "reconnaissance": 15
+      },
+      "printedOriginalCounts": [
+        "280",
+        "190",
+        "75",
+        "15"
+      ]
+    },
+    {
+      "sourceRow": 90,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas de los Frentes de Kalinin, Occidental, Bryansk y Central",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas de los Frentes de Kalinin, Occidental, Bryansk y Central"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 980,
+      "byRole": {
+        "bombers": 705,
+        "fighters": 180,
+        "reconnaissance": 95
+      },
+      "printedOriginalCounts": [
+        "980",
+        "705",
+        "180",
+        "95"
+      ]
+    },
+    {
+      "sourceRow": 91,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas de los Frentes de Voronezh, Suroeste y Sur",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas de los Frentes de Voronezh, Suroeste y Sur"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1025,
+      "byRole": {
+        "bombers": 795,
+        "fighters": 125,
+        "reconnaissance": 105
+      },
+      "printedOriginalCounts": [
+        "1 025",
+        "795",
+        "125",
+        "105"
+      ]
+    },
+    {
+      "sourceRow": 92,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en la banda de actuacion de las tropas de los Frentes de Caucaso Norte",
+      "contextLabels": [
+        "en la banda de actuacion de las tropas de los Frentes de Caucaso Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 275,
+      "byRole": {
+        "bombers": 115,
+        "fighters": 125,
+        "reconnaissance": 35
+      },
+      "printedOriginalCounts": [
+        "275",
+        "115",
+        "125",
+        "35"
+      ]
+    },
+    {
+      "sourceRow": 93,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2200,
+      "byRole": {
+        "bombers": 503,
+        "fighters": 1475,
+        "reconnaissance": 222
+      },
+      "printedOriginalCounts": [
+        "2 200",
+        "503",
+        "1475",
+        "222"
+      ]
+    },
+    {
+      "sourceRow": 95,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en Francia",
+      "contextLabels": [
+        "en Francia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 800,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "800",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 96,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en otros paises de la Europa Occidental",
+      "contextLabels": [
+        "en otros paises de la Europa Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 97,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en Noruega",
+      "contextLabels": [
+        "en Noruega"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 98,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "en Alemania",
+      "contextLabels": [
+        "en Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1000,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "1 000",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 99,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 4900,
+      "byRole": {
+        "bombers": 2418,
+        "fighters": 2000,
+        "reconnaissance": 482
+      },
+      "printedOriginalCounts": [
+        "4 900",
+        "2418",
+        "2000",
+        "482"
+      ]
+    },
+    {
+      "sourceRow": 102,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "En el tramo nor-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En el tramo nor-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": 50,
+        "fighters": 25,
+        "reconnaissance": 25
+      },
+      "printedOriginalCounts": [
+        "100",
+        "50",
+        "25",
+        "25"
+      ]
+    },
+    {
+      "sourceRow": 105,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 140,
+      "byRole": {
+        "bombers": 60,
+        "fighters": 20,
+        "reconnaissance": 60
+      },
+      "printedOriginalCounts": [
+        "140",
+        "60",
+        "20",
+        "60"
+      ]
+    },
+    {
+      "sourceRow": 107,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 40,
+      "byRole": {
+        "bombers": 16,
+        "fighters": 16,
+        "reconnaissance": 8
+      },
+      "printedOriginalCounts": [
+        "40",
+        "16",
+        "16",
+        "8"
+      ]
+    },
+    {
+      "sourceRow": 108,
+      "asOfDate": "1943-07-01",
+      "geographicRegionAsPrinted": "Total",
+      "contextLabels": [
+        "Total"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 280,
+      "byRole": {
+        "bombers": 126,
+        "fighters": 61,
+        "reconnaissance": 93
+      },
+      "printedOriginalCounts": [
+        "280",
+        "126",
+        "61",
+        "93"
+      ]
+    },
+    {
+      "sourceRow": 110,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2355,
+      "byRole": {
+        "bombers": 1662,
+        "fighters": 543,
+        "reconnaissance": 150
+      },
+      "printedOriginalCounts": [
+        "2 355",
+        "1662",
+        "543",
+        "150"
+      ]
+    },
+    {
+      "sourceRow": 112,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "en Finlandia",
+      "contextLabels": [
+        "en Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 150,
+      "byRole": {
+        "bombers": 82,
+        "fighters": 58,
+        "reconnaissance": 10
+      },
+      "printedOriginalCounts": [
+        "150",
+        "82",
+        "58",
+        "10"
+      ]
+    },
+    {
+      "sourceRow": 113,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Norte",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 205,
+      "byRole": {
+        "bombers": 115,
+        "fighters": 75,
+        "reconnaissance": 15
+      },
+      "printedOriginalCounts": [
+        "205",
+        "115",
+        "75",
+        "15"
+      ]
+    },
+    {
+      "sourceRow": 114,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Centro",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Centro"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 850,
+      "byRole": {
+        "bombers": 625,
+        "fighters": 185,
+        "reconnaissance": 40
+      },
+      "printedOriginalCounts": [
+        "850",
+        "625",
+        "185",
+        "40"
+      ]
+    },
+    {
+      "sourceRow": 115,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Sur",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Sur"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1150,
+      "byRole": {
+        "bombers": 840,
+        "fighters": 225,
+        "reconnaissance": 85
+      },
+      "printedOriginalCounts": [
+        "1 150",
+        "840",
+        "225",
+        "85"
+      ]
+    },
+    {
+      "sourceRow": 118,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "En el tramo nor-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En el tramo nor-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": 50,
+        "fighters": 25,
+        "reconnaissance": 25
+      },
+      "printedOriginalCounts": [
+        "100",
+        "50",
+        "25",
+        "25"
+      ]
+    },
+    {
+      "sourceRow": 120,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 105,
+      "byRole": {
+        "bombers": 55,
+        "fighters": 15,
+        "reconnaissance": 35
+      },
+      "printedOriginalCounts": [
+        "105",
+        "55",
+        "15",
+        "35"
+      ]
+    },
+    {
+      "sourceRow": 122,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 15,
+      "byRole": {
+        "bombers": 10,
+        "fighters": null,
+        "reconnaissance": 5
+      },
+      "printedOriginalCounts": [
+        "15",
+        "10",
+        "",
+        "5"
+      ]
+    },
+    {
+      "sourceRow": 123,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "Total",
+      "contextLabels": [
+        "Total"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 220,
+      "byRole": {
+        "bombers": 115,
+        "fighters": 40,
+        "reconnaissance": 65
+      },
+      "printedOriginalCounts": [
+        "220",
+        "115",
+        "40",
+        "65"
+      ]
+    },
+    {
+      "sourceRow": 124,
+      "asOfDate": "1943-09-01",
+      "geographicRegionAsPrinted": "Total en el frente sovietico-aleman (sin considerar otros frentes)",
+      "contextLabels": [
+        "Total en el frente sovietico-aleman (sin considerar otros frentes)"
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 2575,
+      "byRole": {
+        "bombers": 1777,
+        "fighters": 583,
+        "reconnaissance": 215
+      },
+      "printedOriginalCounts": [
+        "2 575",
+        "1 777",
+        "583",
+        "215"
+      ]
+    },
+    {
+      "sourceRow": 126,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2320,
+      "byRole": {
+        "bombers": 1635,
+        "fighters": 545,
+        "reconnaissance": 140
+      },
+      "printedOriginalCounts": [
+        "2 320",
+        "1635",
+        "545",
+        "140"
+      ]
+    },
+    {
+      "sourceRow": 128,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "en Finlandia",
+      "contextLabels": [
+        "en Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 150,
+      "byRole": {
+        "bombers": 90,
+        "fighters": 55,
+        "reconnaissance": 5
+      },
+      "printedOriginalCounts": [
+        "150",
+        "90",
+        "55",
+        "5"
+      ]
+    },
+    {
+      "sourceRow": 129,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "en la banda del Frente de Karelia",
+      "contextLabels": [
+        "en la banda del Frente de Karelia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 180,
+      "byRole": {
+        "bombers": 90,
+        "fighters": 75,
+        "reconnaissance": 15
+      },
+      "printedOriginalCounts": [
+        "180",
+        "90",
+        "75",
+        "15"
+      ]
+    },
+    {
+      "sourceRow": 130,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "en la banda entre el Frente de Kalinin y Frente Central",
+      "contextLabels": [
+        "en la banda entre el Frente de Kalinin y Frente Central"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 750,
+      "byRole": {
+        "bombers": 525,
+        "fighters": 185,
+        "reconnaissance": 40
+      },
+      "printedOriginalCounts": [
+        "750",
+        "525",
+        "185",
+        "40"
+      ]
+    },
+    {
+      "sourceRow": 131,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "en la banda desde Frente de Voronezh hasta Frente del Caucaso Norte",
+      "contextLabels": [
+        "en la banda desde Frente de Voronezh hasta Frente del Caucaso Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1240,
+      "byRole": {
+        "bombers": 930,
+        "fighters": 230,
+        "reconnaissance": 80
+      },
+      "printedOriginalCounts": [
+        "1 240",
+        "930",
+        "230",
+        "80"
+      ]
+    },
+    {
+      "sourceRow": 134,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "En el tramo nor-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En el tramo nor-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": 50,
+        "fighters": 25,
+        "reconnaissance": 25
+      },
+      "printedOriginalCounts": [
+        "100",
+        "50",
+        "25",
+        "25"
+      ]
+    },
+    {
+      "sourceRow": 136,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 105,
+      "byRole": {
+        "bombers": 55,
+        "fighters": 35,
+        "reconnaissance": 15
+      },
+      "printedOriginalCounts": [
+        "105",
+        "55",
+        "35",
+        "15"
+      ]
+    },
+    {
+      "sourceRow": 138,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "En la direccion sur-oeste del frente sovietico-aleman",
+      "contextLabels": [
+        "En la direccion sur-oeste del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 15,
+      "byRole": {
+        "bombers": 10,
+        "fighters": null,
+        "reconnaissance": 5
+      },
+      "printedOriginalCounts": [
+        "15",
+        "10",
+        "",
+        "5"
+      ]
+    },
+    {
+      "sourceRow": 139,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "Total",
+      "contextLabels": [
+        "Total"
+      ],
+      "reportedPopulation": "axis_allies_only",
+      "combatAircraftOnHandReported": 220,
+      "byRole": {
+        "bombers": 115,
+        "fighters": 60,
+        "reconnaissance": 45
+      },
+      "printedOriginalCounts": [
+        "220",
+        "115",
+        "60",
+        "45"
+      ]
+    },
+    {
+      "sourceRow": 140,
+      "asOfDate": "1943-10-01",
+      "geographicRegionAsPrinted": "Total en el frente sovietico-aleman (sin considerar otros frentes)",
+      "contextLabels": [
+        "Total en el frente sovietico-aleman (sin considerar otros frentes)"
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 2540,
+      "byRole": {
+        "bombers": 1750,
+        "fighters": 605,
+        "reconnaissance": 185
+      },
+      "printedOriginalCounts": [
+        "2 540",
+        "1 750",
+        "605",
+        "185"
+      ]
+    },
+    {
+      "sourceRow": 142,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2800,
+      "byRole": {
+        "bombers": 1596,
+        "fighters": 728,
+        "reconnaissance": 476
+      },
+      "printedOriginalCounts": [
+        "2 800{11}",
+        "1596",
+        "728",
+        "476"
+      ]
+    },
+    {
+      "sourceRow": 144,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en Finlandia",
+      "contextLabels": [
+        "en Finlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 145,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Norte",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Norte"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 400,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "400",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 146,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Centro",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Centro"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 700,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "700",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 147,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Sur",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Sur"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "1 200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 148,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos A",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos A"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "300",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 149,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2700,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "2 700",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 151,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en Francia",
+      "contextLabels": [
+        "en Francia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1400,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "1 400",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 152,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en otros paises de la Europa Occidental",
+      "contextLabels": [
+        "en otros paises de la Europa Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "300",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 153,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en Noruega",
+      "contextLabels": [
+        "en Noruega"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "100",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 154,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "en Alemania",
+      "contextLabels": [
+        "en Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 900,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "900",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 155,
+      "asOfDate": "1944-01-01",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 5500,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "5 500",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "sourceRow": 157,
+      "asOfDate": "1944-06-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2805,
+      "byRole": {
+        "bombers": 1330,
+        "fighters": 830,
+        "reconnaissance": 645
+      },
+      "printedOriginalCounts": [
+        "2 805{13}",
+        "1330",
+        "830",
+        "645"
+      ]
+    },
+    {
+      "sourceRow": 159,
+      "asOfDate": "1944-06-01",
+      "geographicRegionAsPrinted": "en la banda del Frente de Karelia",
+      "contextLabels": [
+        "en la banda del Frente de Karelia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 280,
+      "byRole": {
+        "bombers": 110,
+        "fighters": 85,
+        "reconnaissance": 85
+      },
+      "printedOriginalCounts": [
+        "280",
+        "110",
+        "85",
+        "85"
+      ]
+    },
+    {
+      "sourceRow": 160,
+      "asOfDate": "1944-06-01",
+      "geographicRegionAsPrinted": "en la banda de los Frentes de Leningrado, 2 y 3 Frente Baltico",
+      "contextLabels": [
+        "en la banda de los Frentes de Leningrado, 2 y 3 Frente Baltico"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 350,
+      "byRole": {
+        "bombers": 160,
+        "fighters": 120,
+        "reconnaissance": 70
+      },
+      "printedOriginalCounts": [
+        "350",
+        "160",
+        "120",
+        "70"
+      ]
+    },
+    {
+      "sourceRow": 161,
+      "asOfDate": "1944-06-01",
+      "geographicRegionAsPrinted": "en la banda de los Frentes: 1 Baltico, 1, 2 y 3 Bielorruso",
+      "contextLabels": [
+        "en la banda de los Frentes: 1 Baltico, 1, 2 y 3 Bielorruso"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 810,
+      "byRole": {
+        "bombers": 465,
+        "fighters": 180,
+        "reconnaissance": 165
+      },
+      "printedOriginalCounts": [
+        "810",
+        "465",
+        "180",
+        "165"
+      ]
+    },
+    {
+      "sourceRow": 162,
+      "asOfDate": "1944-06-01",
+      "geographicRegionAsPrinted": "en la banda del 1, 2, 3 y 4 Frente Ucraniano",
+      "contextLabels": [
+        "en la banda del 1, 2, 3 y 4 Frente Ucraniano"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1365,
+      "byRole": {
+        "bombers": 595,
+        "fighters": 445,
+        "reconnaissance": 325
+      },
+      "printedOriginalCounts": [
+        "1 365",
+        "595",
+        "445",
+        "325"
+      ]
+    },
+    {
+      "sourceRow": 164,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2832,
+      "byRole": {
+        "bombers": 1328,
+        "fighters": 866,
+        "reconnaissance": 638
+      },
+      "printedOriginalCounts": [
+        "2 832",
+        "1328",
+        "866",
+        "638"
+      ]
+    },
+    {
+      "sourceRow": 166,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "finlandeses",
+      "contextLabels": [
+        "finlandeses"
+      ],
+      "reportedPopulation": "specific_axis_ally",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": 50,
+        "fighters": 35,
+        "reconnaissance": 15
+      },
+      "printedOriginalCounts": [
+        "100",
+        "50",
+        "35",
+        "15"
+      ]
+    },
+    {
+      "sourceRow": 167,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "rumanos",
+      "contextLabels": [
+        "rumanos"
+      ],
+      "reportedPopulation": "specific_axis_ally",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": 123,
+        "fighters": 130,
+        "reconnaissance": 47
+      },
+      "printedOriginalCounts": [
+        "300",
+        "123",
+        "130",
+        "47"
+      ]
+    },
+    {
+      "sourceRow": 168,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "hungaros",
+      "contextLabels": [
+        "hungaros"
+      ],
+      "reportedPopulation": "specific_axis_ally",
+      "combatAircraftOnHandReported": 15,
+      "byRole": {
+        "bombers": 10,
+        "fighters": null,
+        "reconnaissance": 5
+      },
+      "printedOriginalCounts": [
+        "15",
+        "10",
+        "",
+        "5"
+      ]
+    },
+    {
+      "sourceRow": 170,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en la banda del Frente de Karelia",
+      "contextLabels": [
+        "en la banda del Frente de Karelia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 270,
+      "byRole": {
+        "bombers": 110,
+        "fighters": 85,
+        "reconnaissance": 75
+      },
+      "printedOriginalCounts": [
+        "270",
+        "110",
+        "85",
+        "75"
+      ]
+    },
+    {
+      "sourceRow": 171,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en la banda de los Frente de Leningrado, 2 y 3 Frente Baltico",
+      "contextLabels": [
+        "en la banda de los Frente de Leningrado, 2 y 3 Frente Baltico"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 350,
+      "byRole": {
+        "bombers": 160,
+        "fighters": 120,
+        "reconnaissance": 70
+      },
+      "printedOriginalCounts": [
+        "350",
+        "160",
+        "120",
+        "70"
+      ]
+    },
+    {
+      "sourceRow": 172,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en la banda de 1 Frente Baltico, 1, 2 y 3 Frente Bielorruso",
+      "contextLabels": [
+        "en la banda de 1 Frente Baltico, 1, 2 y 3 Frente Bielorruso"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 810,
+      "byRole": {
+        "bombers": 465,
+        "fighters": 180,
+        "reconnaissance": 165
+      },
+      "printedOriginalCounts": [
+        "810",
+        "465",
+        "180",
+        "165"
+      ]
+    },
+    {
+      "sourceRow": 173,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en la banda de 1, 2, 3 y 4 Frente Ucraniano",
+      "contextLabels": [
+        "en la banda de 1, 2, 3 y 4 Frente Ucraniano"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1402,
+      "byRole": {
+        "bombers": 593,
+        "fighters": 481,
+        "reconnaissance": 328
+      },
+      "printedOriginalCounts": [
+        "1 402",
+        "593",
+        "481",
+        "328"
+      ]
+    },
+    {
+      "sourceRow": 174,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "Total en el frente sovietico-aleman (sin considerar otros frentes)",
+      "contextLabels": [
+        "Total en el frente sovietico-aleman (sin considerar otros frentes)"
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 3247,
+      "byRole": {
+        "bombers": 1511,
+        "fighters": 1031,
+        "reconnaissance": 705
+      },
+      "printedOriginalCounts": [
+        "3 247",
+        "1 511",
+        "1 031",
+        "705"
+      ]
+    },
+    {
+      "sourceRow": 175,
+      "asOfDate": "1944-06-10",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman (datos a fecha de 10 de junio de 1944) {3}",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman (datos a fecha de 10 de junio de 1944) {3}"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2800,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "2 800",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 177,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en Francia",
+      "contextLabels": [
+        "en Francia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2400,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "2 400",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "sourceRow": 178,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en Noruega y Dinamarca",
+      "contextLabels": [
+        "en Noruega y Dinamarca"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "sourceRow": 179,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "en otros paises de la Europa Occidental",
+      "contextLabels": [
+        "en otros paises de la Europa Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "sourceRow": 180,
+      "asOfDate": "1944-06-15",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "mixed_axis_and_german_or_unresolved",
+      "combatAircraftOnHandReported": 6047,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "6 047",
+        "-",
+        "-",
+        "-"
+      ],
+      "sourceDateWarning": "Printed as Germany's total although its 3,247 Eastern-front subtotal includes 415 Axis allied aircraft; examine footnote and separate before using national total."
+    },
+    {
+      "sourceRow": 182,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1680,
+      "byRole": {
+        "bombers": 700,
+        "fighters": 610,
+        "reconnaissance": 370
+      },
+      "printedOriginalCounts": [
+        "1 680",
+        "700",
+        "610",
+        "370"
+      ]
+    },
+    {
+      "sourceRow": 184,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en la banda del Frente de Karelia",
+      "contextLabels": [
+        "en la banda del Frente de Karelia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 40,
+      "byRole": {
+        "bombers": null,
+        "fighters": 30,
+        "reconnaissance": 10
+      },
+      "printedOriginalCounts": [
+        "40",
+        "",
+        "30",
+        "10"
+      ]
+    },
+    {
+      "sourceRow": 185,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en la direccion Noroeste (1 y 2 Frente Baltico, 2 y 3 Frente Bielorruso)",
+      "contextLabels": [
+        "en la direccion Noroeste (1 y 2 Frente Baltico, 2 y 3 Frente Bielorruso)"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 775,
+      "byRole": {
+        "bombers": 245,
+        "fighters": 370,
+        "reconnaissance": 160
+      },
+      "printedOriginalCounts": [
+        "775",
+        "245",
+        "370",
+        "160"
+      ]
+    },
+    {
+      "sourceRow": 186,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en la direccion central (1 Frente Bielorruso y 1 Frente Ucraniano)",
+      "contextLabels": [
+        "en la direccion central (1 Frente Bielorruso y 1 Frente Ucraniano)"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 270,
+      "byRole": {
+        "bombers": 120,
+        "fighters": 60,
+        "reconnaissance": 90
+      },
+      "printedOriginalCounts": [
+        "270",
+        "120",
+        "60",
+        "90"
+      ]
+    },
+    {
+      "sourceRow": 187,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en direccion Suroeste (2, 3 y 4 Frente Ucraniano)",
+      "contextLabels": [
+        "en direccion Suroeste (2, 3 y 4 Frente Ucraniano)"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 595,
+      "byRole": {
+        "bombers": 335,
+        "fighters": 150,
+        "reconnaissance": 110
+      },
+      "printedOriginalCounts": [
+        "595",
+        "335",
+        "150",
+        "110"
+      ]
+    },
+    {
+      "sourceRow": 188,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2780,
+      "byRole": {
+        "bombers": 280,
+        "fighters": 2240,
+        "reconnaissance": 260
+      },
+      "printedOriginalCounts": [
+        "2 780",
+        "280",
+        "2240",
+        "260"
+      ]
+    },
+    {
+      "sourceRow": 190,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en Noruega",
+      "contextLabels": [
+        "en Noruega"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 250,
+      "byRole": {
+        "bombers": 50,
+        "fighters": 100,
+        "reconnaissance": 100
+      },
+      "printedOriginalCounts": [
+        "250",
+        "50",
+        "100",
+        "100"
+      ]
+    },
+    {
+      "sourceRow": 191,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en Italia",
+      "contextLabels": [
+        "en Italia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": 100
+      },
+      "printedOriginalCounts": [
+        "100",
+        "",
+        "",
+        "100"
+      ]
+    },
+    {
+      "sourceRow": 192,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "en Alemania en el Frente Occidental",
+      "contextLabels": [
+        "en Alemania en el Frente Occidental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 2430,
+      "byRole": {
+        "bombers": 230,
+        "fighters": 2140,
+        "reconnaissance": 60
+      },
+      "printedOriginalCounts": [
+        "2 430",
+        "230",
+        "2140",
+        "60"
+      ]
+    },
+    {
+      "sourceRow": 193,
+      "asOfDate": "1945-01-01",
+      "geographicRegionAsPrinted": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+      "contextLabels": [
+        "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 4460,
+      "byRole": {
+        "bombers": 980,
+        "fighters": 2850,
+        "reconnaissance": 630
+      },
+      "printedOriginalCounts": [
+        "4 460",
+        "980",
+        "2850",
+        "630"
+      ]
+    },
+    {
+      "sourceRow": 195,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "En el frente sovietico-aleman",
+      "contextLabels": [
+        "En el frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 650,
+      "byRole": {
+        "bombers": 149,
+        "fighters": 459,
+        "reconnaissance": 42
+      },
+      "printedOriginalCounts": [
+        "650",
+        "149",
+        "459",
+        "42"
+      ]
+    },
+    {
+      "sourceRow": 197,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos de Kurlandia",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos de Kurlandia"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 100,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "100",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 198,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "en Prusia Oriental",
+      "contextLabels": [
+        "en Prusia Oriental"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 200,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "200",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 199,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Centro",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Centro"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 300,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "300",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 200,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "en la banda del grupo de ejercitos Sur, Austria",
+      "contextLabels": [
+        "en la banda del grupo de ejercitos Sur, Austria"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 50,
+      "byRole": {
+        "bombers": null,
+        "fighters": null,
+        "reconnaissance": null
+      },
+      "printedOriginalCounts": [
+        "50",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "sourceRow": 202,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "Fuera del frente sovietico-aleman",
+      "contextLabels": [
+        "Fuera del frente sovietico-aleman"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 350,
+      "byRole": {
+        "bombers": 76,
+        "fighters": 251,
+        "reconnaissance": 23
+      },
+      "printedOriginalCounts": [
+        "350",
+        "76",
+        "251",
+        "23"
+      ]
+    },
+    {
+      "sourceRow": 203,
+      "asOfDate": "1945-05-09",
+      "geographicRegionAsPrinted": "Total aviones de combate",
+      "contextLabels": [
+        "Total aviones de combate"
+      ],
+      "reportedPopulation": "german_or_unspecified",
+      "combatAircraftOnHandReported": 1000,
+      "byRole": {
+        "bombers": 225,
+        "fighters": 710,
+        "reconnaissance": 65
+      },
+      "printedOriginalCounts": [
+        "1 000",
+        "225",
+        "710",
+        "65"
+      ]
+    }
+  ],
+  "alliedNationSnapshotsFromTable0222": [
+    {
+      "sourceRow": 2,
+      "asOfDate": "1941-06-22",
+      "aircraftOnStrengthByNation": {
+        "finland": 506,
+        "romania": 504,
+        "hungary": 90,
+        "italy": null
+      },
+      "reportedAlliedCombatAircraftTotal": 1100,
+      "originalTextValues": [
+        "506",
+        "504",
+        "90",
+        "no habia",
+        "1 100"
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "asOfDate": "1942-01-01",
+      "aircraftOnStrengthByNation": {
+        "finland": 160,
+        "romania": 165,
+        "hungary": 50,
+        "italy": 50
+      },
+      "reportedAlliedCombatAircraftTotal": 425,
+      "originalTextValues": [
+        "160",
+        "165",
+        "50",
+        "50",
+        "425"
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "asOfDate": "1942-07-01",
+      "aircraftOnStrengthByNation": {
+        "finland": 295,
+        "romania": 165,
+        "hungary": 50,
+        "italy": 70
+      },
+      "reportedAlliedCombatAircraftTotal": 580,
+      "originalTextValues": [
+        "295",
+        "165",
+        "50",
+        "70",
+        "580"
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "asOfDate": "1942-11-18",
+      "aircraftOnStrengthByNation": {
+        "finland": 310,
+        "romania": 250,
+        "hungary": 150,
+        "italy": 70
+      },
+      "reportedAlliedCombatAircraftTotal": 780,
+      "originalTextValues": [
+        "310",
+        "250",
+        "150",
+        "70",
+        "780"
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "asOfDate": "1943-07-01",
+      "aircraftOnStrengthByNation": {
+        "finland": 100,
+        "romania": 140,
+        "hungary": 40,
+        "italy": null
+      },
+      "reportedAlliedCombatAircraftTotal": 280,
+      "originalTextValues": [
+        "100",
+        "140",
+        "40",
+        "",
+        "280"
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "asOfDate": "1944-01-01",
+      "aircraftOnStrengthByNation": {
+        "finland": 360,
+        "romania": 110,
+        "hungary": 70,
+        "italy": null
+      },
+      "reportedAlliedCombatAircraftTotal": 540,
+      "originalTextValues": [
+        "360",
+        "110",
+        "70",
+        "no habia",
+        "540"
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "asOfDate": "1944-06-01",
+      "aircraftOnStrengthByNation": {
+        "finland": 100,
+        "romania": 265,
+        "hungary": 16,
+        "italy": null
+      },
+      "reportedAlliedCombatAircraftTotal": 381,
+      "originalTextValues": [
+        "100",
+        "265",
+        "16",
+        "no habia",
+        "381"
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "asOfDate": "1945-01-01",
+      "aircraftOnStrengthByNation": {
+        "finland": null,
+        "romania": null,
+        "hungary": 250,
+        "italy": null
+      },
+      "reportedAlliedCombatAircraftTotal": 250,
+      "originalTextValues": [
+        "no habia",
+        "no habia",
+        "250",
+        "no habia",
+        "250"
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "asOfDate": "1945-04-01",
+      "aircraftOnStrengthByNation": {
+        "finland": null,
+        "romania": null,
+        "hungary": 80,
+        "italy": null
+      },
+      "reportedAlliedCombatAircraftTotal": 80,
+      "originalTextValues": [
+        "no habia",
+        "no habia",
+        "80",
+        "no habia",
+        "80"
+      ]
+    }
+  ],
+  "roleArithmeticIssues": [],
+  "alliedNationArithmeticIssues": []
+}

@@ -1,0 +1,319 @@
+{
+  "id": "RKKA-VVS-02-19",
+  "topic": "Luftwaffe organization by theater",
+  "formationOrForce": "german_luftwaffe",
+  "dateScopeIndex": "1941-1945",
+  "atlasEuropeanScope": "requires_theater_filter",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_19.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Fecha"
+        },
+        {
+          "value": "Cantidad de Flotas"
+        },
+        {
+          "value": "Grupos operativos"
+        },
+        {
+          "value": "Cuerpos aereos"
+        },
+        {
+          "value": "Divisiones y grupos aereos"
+        },
+        {
+          "value": "Escuadras"
+        },
+        {
+          "value": "Grupos aereos"
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "a) En todos los teatros de operaciones belicas",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "A fecha de 1 junio de 1941"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "138"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1942"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "52"
+        },
+        {
+          "value": "156"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1943"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "56"
+        },
+        {
+          "value": "196"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1944"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "239"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1945"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "210"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": "b) En el frente sovietico-aleman (incluido en a))",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1941"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1942"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1943"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "96"
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1944"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": "A fecha de 1 enero 1945"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "59"
+        }
+      ]
+    }
+  ]
+}

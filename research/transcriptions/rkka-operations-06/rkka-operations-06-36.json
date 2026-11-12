@@ -1,0 +1,605 @@
+{
+  "id": "RKKA-VVS-06-36",
+  "topic": "VVS Heroes of the Soviet Union award counts",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_36.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 54,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "a) Cantidad total de los titulos \"Heroe de la Union Sovietica\" concedidos al personal de VVS KA"
+            },
+            {
+              "value": "1996"
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "De los cuales fueron concedidos gurante la Gran Guerra Patriotica"
+            },
+            {
+              "value": "1857"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Antes del comienzo de la guerra"
+            },
+            {
+              "value": "139"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Condecorados con 3 medallas \"Estrella de Oro\""
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Condecorados con 2 medallas \"Estrella de Oro\""
+            },
+            {
+              "value": "61"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Mujeres condecoradas con titulo de Heroe de la Union Sovietica"
+            },
+            {
+              "value": "25"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Del total de Heroes de la Union Sovietica murieron en combate"
+            },
+            {
+              "value": "477"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Estaban prestando servicio hasta el dia final de la Guerra Patriotica"
+            },
+            {
+              "value": "1516"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Tres Veces Heroes de la Union Sovietica"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Dos Veces Heroes de la Union Sovietica"
+            },
+            {
+              "value": "53"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Se retiraron en reserva"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "b) Cantidad de condecorados en funcion de clase de aviacion",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "pilotos de aviacion de caza"
+            },
+            {
+              "value": "477"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "pilotos de aviacion de bombardeo"
+            },
+            {
+              "value": "383"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "pilotos de aviacion de asalto"
+            },
+            {
+              "value": "583"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "pilotos de aviacion de reconocimento aereo"
+            },
+            {
+              "value": "60"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "pilotos de otras clases de aviacion (correctores de artilleria, comuniaciones y etc)"
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "c) Según nacionalidad",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "rusos"
+            },
+            {
+              "value": "1216"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "ucranianos"
+            },
+            {
+              "value": "209"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "bielorrusos"
+            },
+            {
+              "value": "37"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "moldavos"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "georgianos"
+            },
+            {
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "armenios"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "judios"
+            },
+            {
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "tartaros"
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "osetios"
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "kabardinos"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "kareios"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "chuvashios"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "cazajos"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": "bashkirios"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 33,
+          "cells": [
+            {
+              "value": "azerbayanos"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 34,
+          "cells": [
+            {
+              "value": "polacos"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 35,
+          "cells": [
+            {
+              "value": "uzbecos"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 36,
+          "cells": [
+            {
+              "value": "otros"
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 37,
+          "cells": [
+            {
+              "value": "d) Preferencias politicas",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 38,
+          "cells": [
+            {
+              "value": "miembros del PCUS"
+            },
+            {
+              "value": "935"
+            }
+          ]
+        },
+        {
+          "sourceRow": 39,
+          "cells": [
+            {
+              "value": "candidatos para ser miembros del PCUS"
+            },
+            {
+              "value": "240"
+            }
+          ]
+        },
+        {
+          "sourceRow": 40,
+          "cells": [
+            {
+              "value": "miembros de VLKSM"
+            },
+            {
+              "value": "311"
+            }
+          ]
+        },
+        {
+          "sourceRow": 41,
+          "cells": [
+            {
+              "value": "apoliticos"
+            },
+            {
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "sourceRow": 42,
+          "cells": [
+            {
+              "value": "e) Por antigüedad de servicio en KA",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 43,
+          "cells": [
+            {
+              "value": "desde 1918 hasta 1924"
+            },
+            {
+              "value": "26"
+            }
+          ]
+        },
+        {
+          "sourceRow": 44,
+          "cells": [
+            {
+              "value": "desde 1925 hasta 1931"
+            },
+            {
+              "value": "95"
+            }
+          ]
+        },
+        {
+          "sourceRow": 45,
+          "cells": [
+            {
+              "value": "desde 1932 hasta 1940"
+            },
+            {
+              "value": "1167"
+            }
+          ]
+        },
+        {
+          "sourceRow": 46,
+          "cells": [
+            {
+              "value": "desde 1941"
+            },
+            {
+              "value": "228"
+            }
+          ]
+        },
+        {
+          "sourceRow": 47,
+          "cells": [
+            {
+              "value": "f) Por edades",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 48,
+          "cells": [
+            {
+              "value": "20-29 años"
+            },
+            {
+              "value": "1 022"
+            }
+          ]
+        },
+        {
+          "sourceRow": 49,
+          "cells": [
+            {
+              "value": "30-39 años"
+            },
+            {
+              "value": "438"
+            }
+          ]
+        },
+        {
+          "sourceRow": 50,
+          "cells": [
+            {
+              "value": "40 años y mas"
+            },
+            {
+              "value": "56"
+            }
+          ]
+        },
+        {
+          "sourceRow": 51,
+          "cells": [
+            {
+              "value": "g) Por titulacion",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 52,
+          "cells": [
+            {
+              "value": "graduados en las academias militares superiores"
+            },
+            {
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "sourceRow": 53,
+          "cells": [
+            {
+              "value": "graduados en KUNS"
+            },
+            {
+              "value": "22"
+            }
+          ]
+        },
+        {
+          "sourceRow": 54,
+          "cells": [
+            {
+              "value": "graduados en las academias militares"
+            },
+            {
+              "value": "1474"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

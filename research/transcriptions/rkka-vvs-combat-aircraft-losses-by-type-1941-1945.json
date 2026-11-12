@@ -1,0 +1,497 @@
+{
+  "id": "RKKA-VVS-06-21",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_21.htm",
+  "sourceType": "secondary_transcription_of_original_soviet_air_force_records",
+  "originalArchivalReferencesAsReported": [
+    "VVS KA General Staff Operational Department, inventory 77, folios 1-91",
+    "VVS Chief Engineer aircraft and engine registration, inventory 366, folios 1-98"
+  ],
+  "reportingUniverse": "VVS KA combat aircraft losses; not a sum of all Soviet air arms; excludes ordinary accident/wear writeoffs",
+  "period": "1941-1945",
+  "status": "research_only_source_transcription_not_independently_checked_against_original_archival_sheets",
+  "sourceBlanks": "null means blank in the published table; not a measured zero",
+  "sourceCaveat": "Fighters used for ground attack remain in the fighter category because mission-level losses are unavailable in this source",
+  "columns": [
+    "combatLossesTotal",
+    "combatLossesByYear"
+  ],
+  "records": [
+    {
+      "aircraftTypeAsReported": "Pe-2",
+      "roleClass": "bomber",
+      "combatLossesTotal": 2784,
+      "combatLossesByYear": {
+        "1941": 522,
+        "1942": 665,
+        "1943": 721,
+        "1944": 518,
+        "1945": 358
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Pe-3",
+      "roleClass": "bomber",
+      "combatLossesTotal": 77,
+      "combatLossesByYear": {
+        "1941": 50,
+        "1942": 27,
+        "1943": null,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Tu-2",
+      "roleClass": "bomber",
+      "combatLossesTotal": 62,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 6,
+        "1943": 10,
+        "1944": 44,
+        "1945": 2
+      }
+    },
+    {
+      "aircraftTypeAsReported": "SB",
+      "roleClass": "bomber",
+      "combatLossesTotal": 1934,
+      "combatLossesByYear": {
+        "1941": 1746,
+        "1942": 173,
+        "1943": 15,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Su-2",
+      "roleClass": "bomber",
+      "combatLossesTotal": 287,
+      "combatLossesByYear": {
+        "1941": 222,
+        "1942": 64,
+        "1943": 1,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Li-2",
+      "roleClass": "bomber",
+      "combatLossesTotal": 71,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 35,
+        "1943": null,
+        "1944": 17,
+        "1945": 19
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Ar-2",
+      "roleClass": "bomber",
+      "combatLossesTotal": 95,
+      "combatLossesByYear": {
+        "1941": 95,
+        "1942": null,
+        "1943": null,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Yak-4",
+      "roleClass": "bomber",
+      "combatLossesTotal": 24,
+      "combatLossesByYear": {
+        "1941": 24,
+        "1942": null,
+        "1943": null,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "DB-3 (IL-4)",
+      "roleClass": "bomber",
+      "combatLossesTotal": 124,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 35,
+        "1943": 6,
+        "1944": 29,
+        "1945": 54
+      }
+    },
+    {
+      "aircraftTypeAsReported": "A-20-B, G",
+      "roleClass": "bomber",
+      "combatLossesTotal": 223,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": 83,
+        "1944": 95,
+        "1945": 45
+      }
+    },
+    {
+      "aircraftTypeAsReported": "B-3",
+      "roleClass": "bomber",
+      "combatLossesTotal": 381,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 135,
+        "1943": 104,
+        "1944": 45,
+        "1945": 97
+      }
+    },
+    {
+      "aircraftTypeAsReported": "B-25",
+      "roleClass": "bomber",
+      "combatLossesTotal": 24,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 5,
+        "1943": null,
+        "1944": 3,
+        "1945": 16
+      }
+    },
+    {
+      "aircraftTypeAsReported": "IL-2, IL-10",
+      "roleClass": "ground_attack",
+      "combatLossesTotal": 10762,
+      "combatLossesByYear": {
+        "1941": 533,
+        "1942": 1676,
+        "1943": 3515,
+        "1944": 3347,
+        "1945": 1691
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Yak-1",
+      "roleClass": "fighter",
+      "combatLossesTotal": 3336,
+      "combatLossesByYear": {
+        "1941": 325,
+        "1942": 1301,
+        "1943": 1056,
+        "1944": 575,
+        "1945": 79
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Yak-3",
+      "roleClass": "fighter",
+      "combatLossesTotal": 210,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": null,
+        "1944": 60,
+        "1945": 150
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Yak-7",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1385,
+      "combatLossesByYear": {
+        "1941": 1,
+        "1942": 270,
+        "1943": 857,
+        "1944": 245,
+        "1945": 12
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Yak-9",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1821,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": 383,
+        "1944": 990,
+        "1945": 448
+      }
+    },
+    {
+      "aircraftTypeAsReported": "La-5",
+      "roleClass": "fighter",
+      "combatLossesTotal": 2591,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 73,
+        "1943": 1460,
+        "1944": 825,
+        "1945": 233
+      }
+    },
+    {
+      "aircraftTypeAsReported": "La-7",
+      "roleClass": "fighter",
+      "combatLossesTotal": 115,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": null,
+        "1944": 36,
+        "1945": 79
+      }
+    },
+    {
+      "aircraftTypeAsReported": "LaGG-3",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1852,
+      "combatLossesByYear": {
+        "1941": 349,
+        "1942": 1101,
+        "1943": 307,
+        "1944": 95,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "MiG-3",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1432,
+      "combatLossesByYear": {
+        "1941": 1214,
+        "1942": 218,
+        "1943": null,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "I-16",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1523,
+      "combatLossesByYear": {
+        "1941": 1207,
+        "1942": 255,
+        "1943": 61,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "I-153",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1190,
+      "combatLossesByYear": {
+        "1941": 973,
+        "1942": 177,
+        "1943": 40,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "I-15",
+      "roleClass": "fighter",
+      "combatLossesTotal": 375,
+      "combatLossesByYear": {
+        "1941": 332,
+        "1942": 43,
+        "1943": null,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "I-5",
+      "roleClass": "fighter",
+      "combatLossesTotal": 14,
+      "combatLossesByYear": {
+        "1941": 14,
+        "1942": null,
+        "1943": null,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Airacobra",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1030,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 49,
+        "1943": 305,
+        "1944": 486,
+        "1945": 190
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Hurricane",
+      "roleClass": "fighter",
+      "combatLossesTotal": 341,
+      "combatLossesByYear": {
+        "1941": 1,
+        "1942": 290,
+        "1943": 49,
+        "1944": 1,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Kittyhawk",
+      "roleClass": "fighter",
+      "combatLossesTotal": 219,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": 111,
+        "1943": 93,
+        "1944": 15,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Tomahawk",
+      "roleClass": "fighter",
+      "combatLossesTotal": 5,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": 3,
+        "1944": 2,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Curtiss",
+      "roleClass": "fighter",
+      "combatLossesTotal": 1,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": null,
+        "1944": 1,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Spitfire",
+      "roleClass": "fighter",
+      "combatLossesTotal": 28,
+      "combatLossesByYear": {
+        "1941": null,
+        "1942": null,
+        "1943": 28,
+        "1944": null,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "R-5, R-Zet, SSS, R-10",
+      "roleClass": "other",
+      "combatLossesTotal": 481,
+      "combatLossesByYear": {
+        "1941": 160,
+        "1942": 269,
+        "1943": 43,
+        "1944": 9,
+        "1945": null
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Po-2",
+      "roleClass": "other",
+      "combatLossesTotal": 2060,
+      "combatLossesByYear": {
+        "1941": 124,
+        "1942": 1038,
+        "1943": 389,
+        "1944": 413,
+        "1945": 96
+      }
+    },
+    {
+      "aircraftTypeAsReported": "Otros tipos de aviones",
+      "roleClass": "other",
+      "combatLossesTotal": 308,
+      "combatLossesByYear": {
+        "1941": 131,
+        "1942": 152,
+        "1943": 14,
+        "1944": 10,
+        "1945": 1
+      }
+    }
+  ],
+  "printedRoleTotals": {
+    "bomber": {
+      "total": 6086,
+      "1941": 2659,
+      "1942": 1145,
+      "1943": 940,
+      "1944": 751,
+      "1945": 591
+    },
+    "fighter": {
+      "total": 17468,
+      "1941": 4416,
+      "1942": 3888,
+      "1943": 4642,
+      "1944": 3331,
+      "1945": 1191
+    },
+    "other": {
+      "total": 2849,
+      "1941": 415,
+      "1942": 1459,
+      "1943": 446,
+      "1944": 432,
+      "1945": 97
+    }
+  },
+  "computedRoleTotals": {
+    "bomber": {
+      "total": 6086,
+      "1941": 2659,
+      "1942": 1145,
+      "1943": 940,
+      "1944": 751,
+      "1945": 591
+    },
+    "ground_attack": {
+      "total": 10762,
+      "1941": 533,
+      "1942": 1676,
+      "1943": 3515,
+      "1944": 3347,
+      "1945": 1691
+    },
+    "fighter": {
+      "total": 17468,
+      "1941": 4416,
+      "1942": 3888,
+      "1943": 4642,
+      "1944": 3331,
+      "1945": 1191
+    },
+    "other": {
+      "total": 2849,
+      "1941": 415,
+      "1942": 1459,
+      "1943": 446,
+      "1944": 432,
+      "1945": 97
+    }
+  },
+  "printedOverallTotal": {
+    "total": 37165,
+    "1941": 8023,
+    "1942": 8168,
+    "1943": 9543,
+    "1944": 7861,
+    "1945": 3570
+  },
+  "arithmeticDiscrepancies": []
+}

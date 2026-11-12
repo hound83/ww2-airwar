@@ -1,0 +1,359 @@
+{
+  "id": "RKKA-VVS-06-13",
+  "topic": "Soviet PVO fighter aviation sorties by interception method",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_13.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 14,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Metodos de actuacion de los cazas",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "colspan": 6
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "1941"
+            },
+            {
+              "value": "1942"
+            },
+            {
+              "value": "1943"
+            },
+            {
+              "value": "1944"
+            },
+            {
+              "value": "1945"
+            },
+            {
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Misiones de patrulla",
+              "rowspan": 2
+            },
+            {
+              "value": "59 145"
+            },
+            {
+              "value": "74 410"
+            },
+            {
+              "value": "25 671"
+            },
+            {
+              "value": "12 250"
+            },
+            {
+              "value": "1 213"
+            },
+            {
+              "value": "172 689"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "65,00%"
+            },
+            {
+              "value": "69,90%"
+            },
+            {
+              "value": "63,20%"
+            },
+            {
+              "value": "41,20%"
+            },
+            {
+              "value": "69,80%"
+            },
+            {
+              "value": "64,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Despegues para la intercepcion desde el estado de alerta \"Espera en el aeródromo\"",
+              "rowspan": 2
+            },
+            {
+              "value": "3 173"
+            },
+            {
+              "value": "17 220"
+            },
+            {
+              "value": "10 007"
+            },
+            {
+              "value": "7 626"
+            },
+            {
+              "value": "254"
+            },
+            {
+              "value": "38 280"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "3,50%"
+            },
+            {
+              "value": "16,20%"
+            },
+            {
+              "value": "24,60%"
+            },
+            {
+              "value": "25,70%"
+            },
+            {
+              "value": "14,60%"
+            },
+            {
+              "value": "14,20%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Escolta",
+              "rowspan": 2
+            },
+            {
+              "value": "1 127"
+            },
+            {
+              "value": "5 292"
+            },
+            {
+              "value": "1 213"
+            },
+            {
+              "value": "5 979"
+            },
+            {
+              "value": "44"
+            },
+            {
+              "value": "13 655"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "1,20%"
+            },
+            {
+              "value": "5,00%"
+            },
+            {
+              "value": "3,00%"
+            },
+            {
+              "value": "20,10%"
+            },
+            {
+              "value": "2,50%"
+            },
+            {
+              "value": "5,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Caza libre",
+              "rowspan": 2
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "358"
+            },
+            {
+              "value": "675"
+            },
+            {
+              "value": "60"
+            },
+            {
+              "value": "1 166"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "0,03%"
+            },
+            {
+              "value": "0,04%"
+            },
+            {
+              "value": "0,88%"
+            },
+            {
+              "value": "2,27%"
+            },
+            {
+              "value": "3,50%"
+            },
+            {
+              "value": "0,43%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Defensa de las tropas terrestres sobre el campo de batalla, ataques a los aerodromos y a las tropas enemigas, otros metodos de lucha",
+              "rowspan": 2
+            },
+            {
+              "value": "27 516"
+            },
+            {
+              "value": "9 452"
+            },
+            {
+              "value": "3 355"
+            },
+            {
+              "value": "3 185"
+            },
+            {
+              "value": "167"
+            },
+            {
+              "value": "43 675"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "30,20%"
+            },
+            {
+              "value": "8,90%"
+            },
+            {
+              "value": "8,30%"
+            },
+            {
+              "value": "10,70%"
+            },
+            {
+              "value": "9,60%"
+            },
+            {
+              "value": "16,20%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "Total",
+              "rowspan": 2
+            },
+            {
+              "value": "90 991"
+            },
+            {
+              "value": "106 417"
+            },
+            {
+              "value": "40 604"
+            },
+            {
+              "value": "29 715"
+            },
+            {
+              "value": "1 738"
+            },
+            {
+              "value": "269 465"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "100,00%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

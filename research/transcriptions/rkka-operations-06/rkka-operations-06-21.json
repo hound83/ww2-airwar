@@ -1,0 +1,1100 @@
+{
+  "id": "RKKA-VVS-06-21",
+  "topic": "VVS KA combat aircraft losses by type and year 1941-1945",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_21.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 45,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion del tipo de avion"
+            },
+            {
+              "value": "Bajas de combate",
+              "colspan": 6
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "por clases de aviacion"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "De los cuales",
+              "colspan": 5
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1941"
+            },
+            {
+              "value": "1942"
+            },
+            {
+              "value": "1943"
+            },
+            {
+              "value": "1944"
+            },
+            {
+              "value": "1945"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "BOMBARDEROS",
+              "colspan": 7
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Pe-2"
+            },
+            {
+              "value": "2 784"
+            },
+            {
+              "value": "522"
+            },
+            {
+              "value": "665"
+            },
+            {
+              "value": "721"
+            },
+            {
+              "value": "518"
+            },
+            {
+              "value": "358"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Pe-3"
+            },
+            {
+              "value": "77"
+            },
+            {
+              "value": "50"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Tu-2"
+            },
+            {
+              "value": "62"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "44"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "SB"
+            },
+            {
+              "value": "1 934"
+            },
+            {
+              "value": "1 746"
+            },
+            {
+              "value": "173"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Su-2"
+            },
+            {
+              "value": "287"
+            },
+            {
+              "value": "222"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Li-2"
+            },
+            {
+              "value": "71"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "19"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Ar-2"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Yak-4"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "DB-3 (IL-4)"
+            },
+            {
+              "value": "124"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": "54"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "A-20-B, G"
+            },
+            {
+              "value": "223"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "83"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": "45"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "B-3"
+            },
+            {
+              "value": "381"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "135"
+            },
+            {
+              "value": "104"
+            },
+            {
+              "value": "45"
+            },
+            {
+              "value": "97"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "B-25"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "16"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "6 086"
+            },
+            {
+              "value": "2 659"
+            },
+            {
+              "value": "1 145"
+            },
+            {
+              "value": "940"
+            },
+            {
+              "value": "751"
+            },
+            {
+              "value": "591"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "SHTURMOVIK",
+              "colspan": 7
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "IL-2, IL-10"
+            },
+            {
+              "value": "10 762"
+            },
+            {
+              "value": "533"
+            },
+            {
+              "value": "1 676"
+            },
+            {
+              "value": "3 515"
+            },
+            {
+              "value": "3 347"
+            },
+            {
+              "value": "1 691"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "CAZAS",
+              "colspan": 7
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "Yak-1"
+            },
+            {
+              "value": "3 336"
+            },
+            {
+              "value": "325"
+            },
+            {
+              "value": "1 301"
+            },
+            {
+              "value": "1 056"
+            },
+            {
+              "value": "575"
+            },
+            {
+              "value": "79"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "Yak-3"
+            },
+            {
+              "value": "210"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "60"
+            },
+            {
+              "value": "150"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "Yak-7"
+            },
+            {
+              "value": "1 385"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "270"
+            },
+            {
+              "value": "857"
+            },
+            {
+              "value": "245"
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "Yak-9"
+            },
+            {
+              "value": "1 821"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "383"
+            },
+            {
+              "value": "990"
+            },
+            {
+              "value": "448"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "La-5"
+            },
+            {
+              "value": "2 591"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "73"
+            },
+            {
+              "value": "1 460"
+            },
+            {
+              "value": "825"
+            },
+            {
+              "value": "233"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "La-7"
+            },
+            {
+              "value": "115"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "79"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "LaGG-3"
+            },
+            {
+              "value": "1 852"
+            },
+            {
+              "value": "349"
+            },
+            {
+              "value": "1 101"
+            },
+            {
+              "value": "307"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "MiG-3"
+            },
+            {
+              "value": "1 432"
+            },
+            {
+              "value": "1 214"
+            },
+            {
+              "value": "218"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "I-16"
+            },
+            {
+              "value": "1 523"
+            },
+            {
+              "value": "1 207"
+            },
+            {
+              "value": "255"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "I-153"
+            },
+            {
+              "value": "1 190"
+            },
+            {
+              "value": "973"
+            },
+            {
+              "value": "177"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "I-15"
+            },
+            {
+              "value": "375"
+            },
+            {
+              "value": "332"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": "I-5"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 33,
+          "cells": [
+            {
+              "value": "Airacobra"
+            },
+            {
+              "value": "1 030"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "49"
+            },
+            {
+              "value": "305"
+            },
+            {
+              "value": "486"
+            },
+            {
+              "value": "190"
+            }
+          ]
+        },
+        {
+          "sourceRow": 34,
+          "cells": [
+            {
+              "value": "Hurricane"
+            },
+            {
+              "value": "341"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "290"
+            },
+            {
+              "value": "49"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 35,
+          "cells": [
+            {
+              "value": "Kittyhawk"
+            },
+            {
+              "value": "219"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "111"
+            },
+            {
+              "value": "93"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 36,
+          "cells": [
+            {
+              "value": "Tomahawk"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 37,
+          "cells": [
+            {
+              "value": "Curtiss"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 38,
+          "cells": [
+            {
+              "value": "Spitfire"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 39,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "17 468"
+            },
+            {
+              "value": "4 416"
+            },
+            {
+              "value": "3 888"
+            },
+            {
+              "value": "4 642"
+            },
+            {
+              "value": "3 331"
+            },
+            {
+              "value": "1 191"
+            }
+          ]
+        },
+        {
+          "sourceRow": 40,
+          "cells": [
+            {
+              "value": "OTROS AVIONES",
+              "colspan": 7
+            }
+          ]
+        },
+        {
+          "sourceRow": 41,
+          "cells": [
+            {
+              "value": "R-5, R-Zet, SSS, R-10"
+            },
+            {
+              "value": "481"
+            },
+            {
+              "value": "160"
+            },
+            {
+              "value": "269"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 42,
+          "cells": [
+            {
+              "value": "Po-2"
+            },
+            {
+              "value": "2 060"
+            },
+            {
+              "value": "124"
+            },
+            {
+              "value": "1 038"
+            },
+            {
+              "value": "389"
+            },
+            {
+              "value": "413"
+            },
+            {
+              "value": "96"
+            }
+          ]
+        },
+        {
+          "sourceRow": 43,
+          "cells": [
+            {
+              "value": "Otros tipos de aviones"
+            },
+            {
+              "value": "308"
+            },
+            {
+              "value": "131"
+            },
+            {
+              "value": "152"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 44,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "2 849"
+            },
+            {
+              "value": "415"
+            },
+            {
+              "value": "1 459"
+            },
+            {
+              "value": "446"
+            },
+            {
+              "value": "432"
+            },
+            {
+              "value": "97"
+            }
+          ]
+        },
+        {
+          "sourceRow": 45,
+          "cells": [
+            {
+              "value": "Total en VVS:"
+            },
+            {
+              "value": "37 165"
+            },
+            {
+              "value": "8 023"
+            },
+            {
+              "value": "8 168"
+            },
+            {
+              "value": "9 543"
+            },
+            {
+              "value": "7 861"
+            },
+            {
+              "value": "3 570"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

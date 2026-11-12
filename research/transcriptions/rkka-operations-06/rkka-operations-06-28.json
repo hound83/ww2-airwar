@@ -1,0 +1,375 @@
+{
+  "id": "RKKA-VVS-06-28",
+  "topic": "German aircraft losses during named Soviet operations",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_28.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 21,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de la operacion (el periodo belico)",
+              "colspan": 3
+            },
+            {
+              "value": "Bajas en aviones"
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "Los combates en el Frente Occidental"
+            },
+            {
+              "value": "(desde de 22 junio hasta 10 de julio de 1941)"
+            },
+            {
+              "value": "737"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "Los combates en el Frente de Kalinin"
+            },
+            {
+              "value": "(desde 5 de febrero hasta 8 de marzo de 1943)"
+            },
+            {
+              "value": "277"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "3"
+            },
+            {
+              "value": "La batala de Sevastopol"
+            },
+            {
+              "value": "(desde 10 de junio hasta 4 de julio de 1942)"
+            },
+            {
+              "value": "306"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "4"
+            },
+            {
+              "value": "En la batalla de Stalingrado (contraofensiva)"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "- durante la ofensiva de las tropas de KA (Ejercito Rojo) al noroeste y al suroeste de Stalingrado"
+            },
+            {
+              "value": "(desde 19 de noviembre hasta 16 de diciembre de 1942)"
+            },
+            {
+              "value": "960"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "- durante la ofensiva en la zona de Don Mediano"
+            },
+            {
+              "value": "(desde 16 hasta 30 de diciembre de 1942)"
+            },
+            {
+              "value": "485"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "- durante la ofensiva al sur de Stalingrado"
+            },
+            {
+              "value": "(desde 12 hasta 30 de diciembre de 1942)"
+            },
+            {
+              "value": "346"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "- durante la liquidacion de la agrupacion de tropas cercadas en Stalingrado"
+            },
+            {
+              "value": "(desde 27 de enero hasta 4 de febrero de 1943)"
+            },
+            {
+              "value": "750"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "5"
+            },
+            {
+              "value": "La ofensiva de las tropas del Frente de Leningrado y Frente de Volhov"
+            },
+            {
+              "value": "(desde 14 de enero hasta 22 febrero de 1944)"
+            },
+            {
+              "value": "97"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "6"
+            },
+            {
+              "value": "Operación Korsun-Shevchenko"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "441"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "7"
+            },
+            {
+              "value": "La batalla de las tropas de KA en Crimea"
+            },
+            {
+              "value": "(desde 8 de abril hasta 12 de mayo de 1944)"
+            },
+            {
+              "value": "578"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "La derrota de la agrupacion de tropas alemanas en Vitebsk"
+            },
+            {
+              "value": "(desde 23 hasta 27 de junio de 1944)"
+            },
+            {
+              "value": "275"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "9"
+            },
+            {
+              "value": "La operación ofensiva de Bielorrusia"
+            },
+            {
+              "value": "(desde 23 de junio hasta 23 de julio de 1944)"
+            },
+            {
+              "value": "631"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "10"
+            },
+            {
+              "value": "La derrota de la agrupacion de tropas alemanas en Bobruysk"
+            },
+            {
+              "value": "(desde 23 hasta 29 de junio de 1944)"
+            },
+            {
+              "value": "265"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "11"
+            },
+            {
+              "value": "La operación ofensiva de Lvov-Sandomir"
+            },
+            {
+              "value": "(desde 13 julio hasta 12 de agosto de 1944)"
+            },
+            {
+              "value": "685"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "12"
+            },
+            {
+              "value": "La operación Yass-Kishinev"
+            },
+            {
+              "value": "(desde 20 de julio hasta 3 de septiembre de 1944)"
+            },
+            {
+              "value": "338"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "13"
+            },
+            {
+              "value": "La derrota de las tropas alemanas en Transcilvania"
+            },
+            {
+              "value": "(desde 10 de octubre hasta 6 de noviembre de 1944)"
+            },
+            {
+              "value": "802"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "14"
+            },
+            {
+              "value": "En los 40 dias de la ofensiva de las tropas sovieticas desde Visla hasta Oder"
+            },
+            {
+              "value": "(enero-febrero de 1945)"
+            },
+            {
+              "value": "3 000"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "15"
+            },
+            {
+              "value": "La liquidacion de la agrupacion de las tropas enemigas cercadas en Budapest"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "185"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11 158"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

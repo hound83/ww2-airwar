@@ -1,0 +1,71 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("node:fs"),path=require("node:path");
+const root=path.resolve(__dirname,"..");
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
+function review75({previous,raw,headers}) {
+ const H={
+ "A-4":["1944-06-30","1944-09-15","France"],"A-58":["1944-09-08","1945-08-08","France"],"A-66":["1944-09-15","1944-12-11","France"],"A-78":["1944-09-11",null,"Belgium"],"A-89":["1944-10-28",null,"Belgium"],"Y-9":["1944-09-16","1945-07-01","France"],"Y-2":["1944-12-25","1945-05-29","France"],"Y-5":["1944-09-06","1945-05-29","France"],"Y-23":["1944-09-02","1944-12-19","France"],"Y-25":["1944-09-11","1944-11-20","France"],"Y-26":["1944-09-12","1944-11-20","France"],"R-28":["1945-04-19",null,"Germany"],"R-35":["1945-04-18","1945-05-15","Germany"],"R-37":["1945-04-22","1945-06-05","Germany"],"R-38":["1945-04-27",null,"Germany"],"Y-4":["1944-08-28","1945-05-12","France"],"Y-7":["1944-09-15","1945-07-17","France"],"Y-17":["1944-08-27",null,"France"],"Y-18":["1944-08-30","1944-12-19","France"],"Y-24":["1944-09-07","1944-11-20","France"],"Y-42":["1944-10-15",null,"France"],"R-30":["1945-04-22",null,"Germany"],"R-77":["1945-05-02",null,"Germany"],"A-90":["1944-09-14","1945-05-22","France"]
+ };
+ const W={
+ "usaf1988-p16-l24":["1944-09","1944-11"],"usaf1988-p17-l18":["1944-11","1945-08"],"usaf1988-p17-l28":["1944-10","1944-11"],"usaf1988-p17-l34":["1944-09","1944-11"],"usaf1988-p18-l22":["1944-11","1945-10"],"usaf1988-p19-l7":["1945-04","1945-05"],"usaf1988-p19-l23":["1945-05","1945-06"],"usaf1988-p21-l5":["1944-09","1944-11"],"usaf1988-p22-l13":["1944-09","1944-11"],"usaf1988-p22-l14":["1944-10","1944-11"],"usaf1988-p23-l28":["1944-11","1945-04"],"usaf1988-p23-l35":["1945-04","1945-06"],"usaf1988-p27-l8":["1944-09","1944-11"],"usaf1988-p27-l13":["1944-09","1944-11"],"usaf1988-p29-l27":["1944-10","1945-03"],"usaf1988-p33-l21":["1945-04","1945-07"],"usaf1988-p34-l6":["1945-04","1945-05"],"usaf1988-p34-l14":["1945-04","1945-06"],"usaf1988-p35-l7":["1945-04","1945-06"],"usaf1988-p37-l19":["1945-05","1945-07"]
+ };
+ const E={
+ "usaf1988-p14-l29":{interpretation:"Stationed from 4 July 1944 per USAF official group lineage, before 2 August operational declaration; not a demonstrated error in either date.",url:"https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/434107/36-operations-group-pacaf/",kind:"USAF_official_unit_fact_sheet"},
+ "usaf1988-p16-l23":{interpretation:"Stationed from 25 August 1944 per USAF official group lineage, before 3 September operational declaration; early presence and operational readiness differ.",url:"https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/434107/36-operations-group-pacaf/",kind:"USAF_official_unit_fact_sheet"},
+ "usaf1988-p16-l28":{interpretation:"Secondary local airfield memorial reports 405th Fighter Group advance parties before completion on 3 September; still needs original engineer/ORB evidence.",url:"https://www.uswarmemorials.org/html/monument_details.php?MemID=3374&SiteID=2580",kind:"secondary_site_memorial_not_primary"},
+ "usaf1988-p27-l15":{interpretation:"USAF official lineage locates 417th Night Fighter Squadron at La Vallon from 12 September 1944 until 5 April 1945; Johnson records return of airfield to French control on 19 December 1944. Release from USAAF control is not proof the squadron left.",url:"https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/432152/417-test-and-evaluations-squadron-acc/",kind:"USAF_official_unit_fact_sheet"},
+ "usaf1988-p42-l7":{interpretation:"Original header says 'By 14 August 1945' (upper bound, NOT first operational day); official USAF 14 Liaison Squadron stationed Erlangen 22 April 1945. No conflict with a 'by' date.",url:"https://www.dafhistory.af.mil/Sandbox/Fact-Sheets/Display/Article/433544/14-weapons-squadron-acc/",kind:"USAF_official_unit_fact_sheet"}
+ };
+ const UNRESOLVED=new Set(["usaf1988-p17-l26","usaf1988-p29-l27","usaf1988-p30-l11"]);
+ const OPEN_LEADS={
+   "usaf1988-p17-l26": {
+     "finding": "Historical site research distinguishes reconnaissance detachment presence in August from 2 September field operational declaration; not a proven OCR mistake. Still requires original engineer/diary record before declaring precise runway occupancy.",
+     "sourceUrl": "https://www.anciens-aerodromes.com/?p=140666",
+     "sourceClass": "secondary_detailed_airfield_history"
+   },
+   "usaf1988-p29-l27": {
+     "finding": "Y-44 Beek was constructed only in early 1945 (Netherlands Ministry of Defence NIMH dates operations 28 March 1945), so 125th Liaison Squadron's Oct 1944–Mar 1945 regional presence MUST NOT be assigned to the Y-44 runway for 1944. Secondary local history reports earlier alternate positions around Maastricht; independently map those sites if needed.",
+     "sourceUrl": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/beek",
+     "additionalSourceUrl": "https://www.dodenherdenking-beek.nl/documents/PDF/BeekseHistorie/Vliegveld%20Beek%20in%20oorlogstijd%20Y-44.pdf",
+     "sourceClass": "Dutch_official_military_history_plus_local_secondary"
+   },
+   "usaf1988-p30-l11": {
+     "finding": "Official US Government-published squadron lineage: flight of 112th Liaison Squadron operated at Namur 26 Oct 1944 to about 11 Feb 1945 while parent stationed Buc. 1988 field study gives Y-47 initial operation 22 Feb 1945. Separate date of temporary grass landing area from formal/PSP field declaration; do not erase original discrepancy until engineer construction record identified.",
+     "sourceUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo126017/pdf/GOVPUB-D301-PURL-gpo126017.pdf",
+     "additionalSourceUrl": "https://gateway.forgottenairfields.com/airfield-namur-suarleee-238.html",
+     "sourceClass": "original_USAF_squadron_lineage_in_government_publication_plus_secondary_field_history"
+   }
+ };
+ const hdr=new Map(headers.records.map(x=>[x.code,x])),origin=new Map(raw.records.map(x=>[`usaf1988-p${x.printedOriginalPage}-l${x.physicalLineOnPrintedPage}`,x]));
+ const reviewRows=[],monthRows=[],decisionCounts={};
+ function addMonth(s){let[y,m]=s.split("-").map(Number);return `${m===12?y+1:y}-${String(m===12?1:m+1).padStart(2,"0")}`;}
+ const initiallyFlagged=previous.sourceRows.filter(x=>x.qualityTier==="review_priority");
+ for(const r of initiallyFlagged){
+   const p=H[r.airfieldCode],w=W[r.sourceRowId],h=hdr.get(r.airfieldCode),rawRow=origin.get(r.sourceRowId);
+   const first=w?.[0]??r.firstMonthCandidate,last=w?.[1]??r.lastMonthCandidate;
+   const op=p?p[0]:r.airfieldInitialOperationDateCandidate,rel=p?p[1]:r.airfieldReleaseDateCandidate;
+   let decision="ocr_or_layout_recovered_from_source_text";
+   if(E[r.sourceRowId])decision="historical_sequence_or_release_semantics_explained";
+   else if(UNRESOLVED.has(r.sourceRowId))decision="historical_ambiguity_still_open";
+   else if(!w&&!p&&r.flags.every(f=>f==="source_unit_month_exceeds_airfield_release_month"||f==="original_range_continues_after_1945_05_09"))decision="postwar_only_scope_issue";
+   decisionCounts[decision]=(decisionCounts[decision]||0)+1;
+   const cautions=[];
+   if(last&&last>"1945-05")cautions.push("source_period_extends_beyond_european_war_cutoff");
+   if(first&&last&&first<="1945-05"&&last>="1945-05")cautions.push("May_1945_month_is_not_proof_of_presence_before_9_May");
+   if(op&&first&&first<op.slice(0,7))cautions.push(r.airfieldCode==="R-96"?"initial_field_date_is_upper_bound_By_1945_08_14":"unit_reported_before_field_declared_operational");
+   if(rel&&last&&last>rel.slice(0,7))cautions.push(rel>"1945-05-09"&&last>"1945-05"?"original_postwar_period_extends_after_field_release":"unit_period_extends_after_field_release_or_control_transfer");
+   const entry={sourceRowId:r.sourceRowId,airfieldCode:r.airfieldCode,unit:r.unitAsPrinted,sourcePrintedPage:r.sourcePage,originalOCRUnitPeriod:rawRow?.unitAndPeriodOCR||null,originalFirstMonth:r.firstMonthCandidate,originalLastMonth:r.lastMonthCandidate,reviewedFirstMonth:first||null,reviewedLastMonth:last||null,originalHeaderDateTokens:{first:h?.initialOperationDateOCR||null,release:h?.releaseDateOCR||null},reviewedHeader:{initialOperationalDate:op||null,releaseDate:rel||null,country:p?p[2]:r.countryCandidate,releaseContext:r.airfieldCode==="Y-18"?"French control handover":r.airfieldCode==="Y-4"?"British control handover":r.airfieldCode==="R-38"?"By: upper-bound date only":null},sourceCorrectionKind:{headerDateOrLayout:!!p,unitPeriod:!!w},previousReviewFlags:r.flags,reviewDecision:decision,externalEvidence:E[r.sourceRowId]||null,openCaseEvidence:OPEN_LEADS[r.sourceRowId]||null,remainingCautions:cautions,sourceStudyUrl:"https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",sourceVerification:"Part I and where legible Part II text extraction; PDF visual screenshot unavailable; not an independent archival scan",dashboardPermission:"RESEARCH_ONLY_NOT_VERIFIED_MAP_PLACEMENT"};
+   reviewRows.push(entry);
+   if(first&&last&&first<=last){let month=first;for(let i=0;i<48&&month<=last&&month<="1945-05";i++,month=addMonth(month))monthRows.push({sourceRowId:r.sourceRowId,month,airfieldCode:r.airfieldCode,unit:r.unitAsPrinted,status:decision,mayNotBeBeforeVEDay:month==="1945-05",blockedFromOperationalMap:UNRESOLVED.has(r.sourceRowId)||month==="1945-05"});}
+ }
+ const audit={openCasesWithFurtherSourceLeads:Object.keys(OPEN_LEADS).length,openCasesFullyIndependentlyReconciled:0,originalReviewPriorityLines:initiallyFlagged.length,distinctAirfieldCodesReviewed:new Set(initiallyFlagged.map(r=>r.airfieldCode)).size,sourceLinesWithHeaderReparse:reviewRows.filter(r=>r.sourceCorrectionKind.headerDateOrLayout).length,distinctFieldHeadersReparsed:Object.keys(H).length,sourceLinesWithUnitMonthRecovery:reviewRows.filter(r=>r.sourceCorrectionKind.unitPeriod).length,reviewDecisionCounts:decisionCounts,originalPriorityMonthRows:previous.monthlyCandidates.filter(x=>initiallyFlagged.some(r=>r.sourceRowId===x.sourceRowId)).length,recoveredPriorityMonthRows:monthRows.length,addedResearchMonthRows:monthRows.length-previous.monthlyCandidates.filter(x=>initiallyFlagged.some(r=>r.sourceRowId===x.sourceRowId)).length,totalResearchMonthCandidatesAfterSubstitution:previous.monthlyCandidates.length+monthRows.length-previous.monthlyCandidates.filter(x=>initiallyFlagged.some(r=>r.sourceRowId===x.sourceRowId)).length};
+ return {id:"USAAF-1988-PRIORITY-75-TEXTUAL-REVIEW-2026-10-30",status:"RESEARCH_ONLY_TEXT_EXTRACTION_REVIEW_NOT_HISTORICAL_MAP_VERIFICATION",cutoff:"1945-05-09",originalReviewDataset:"research/transcriptions/usaaf-1988-unit-airfield-month-crosschecked-1944-1945.json",originalOccupancyDataset:"research/transcriptions/usaaf-1988-eto-a-y-r-airfield-unit-occupancy-ocr-candidates-1944-1945.json",originalAirfieldHeaderDataset:"research/transcriptions/usaaf-official-1988-american-a-y-r-code-continental-airfield-header-candidates-1944-1945.json",limitations:["The 1988 USAF field study itself cites Maurer lineage histories, so matching both publications is NOT independent evidence.","A group may have arrived before the field was declared operational; initial operational date is not identical to arrival date.","An airfield transfer from USAAF control is not proof that all aircraft/units had left the physical runway.","1988 listing includes postwar stationing months despite the D-Day to VE-Day title; 1945-05 month is not guaranteed pre-9-May.","Corrected candidates are not definitive historical geolocations or precise unit arrival and departure dates.","The source PDF web text was inspected. Visual screenshot could not be retrieved in this environment; unconfirmed originals remain research-only.","The base OCR transcription and its first-pass 75 flags are kept immutable. This review is a derivative overlay; downstream readers must apply it rather than treating first-pass flags as current."],audit,reviewRows,recoveredMonthRowsForOriginallyFlagged:monthRows};
+}
+const result=review75({
+ previous:read("research/transcriptions/usaaf-1988-unit-airfield-month-crosschecked-1944-1945.json"),
+ raw:read("research/transcriptions/usaaf-1988-eto-a-y-r-airfield-unit-occupancy-ocr-candidates-1944-1945.json"),
+ headers:read("research/transcriptions/usaaf-official-1988-american-a-y-r-code-continental-airfield-header-candidates-1944-1945.json")
+});
+fs.writeFileSync(path.join(root,"research/transcriptions/usaaf-1988-priority-75-source-text-review-1944-1945.json"),JSON.stringify(result,null,2)+"\n");
+console.log(JSON.stringify(result.audit,null,2));

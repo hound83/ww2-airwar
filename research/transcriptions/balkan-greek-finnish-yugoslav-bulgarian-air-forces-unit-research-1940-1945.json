@@ -1,0 +1,124 @@
+{
+  "id": "BALKAN-GREEK-FINNISH-YUGOSLAV-BULGARIAN-1940-1945",
+  "title": "Smaller European air forces: aircraft strength, dated units and bases, sorties, losses and claims",
+  "reviewStatus": "mixed_primary_and_secondary_research; not map ready; see source-specific cautions",
+  "forces": [
+    {
+      "force": "Royal Hellenic Air Force",
+      "observations": [
+        {
+          "datePrecision": "month", "date": "1941-01", "area": "Albanian/Greek campaign front line",
+          "metric": "front_line_aircraft_strength", "aircraftTotal": 35,
+          "fighter": { "total": 28, "types": [{ "type": "Gloster Gladiator Mk II", "count": 7 }, { "type": "Bloch MB.151", "count": 2 }, { "type": "PZL P.24", "count": 19 }] },
+          "bomber": { "total": 7, "types": [{ "type": "Bristol Blenheim Mk IV", "count": 4 }, { "type": "Fairey Battle Mk I", "count": 3 }] },
+          "sourceUrl": "https://musei.difesa.it/allegati/Airpower_in_20th_Century%20-%20Doctrines%20and%20Employment/files/basic-html/page129.html",
+          "sourceClass": "defence_ministry_historical_conference_paper_secondary_using_service_records",
+          "warning": "Front-line fighter+bomber aircraft only; excludes reconnaissance/army cooperation and all national airframes, and does not establish serviceability."
+        },
+        {
+          "period": "1940-10 to 1941-04", "metric": "published_air_victory_claims_vs_own_aircraft_combat_losses",
+          "confirmedClaims": 68, "probableClaims": 23, "reportedOwnAircraftLostToEnemyAction": 24,
+          "sourceUrl": "https://www.ww2wrecks.com/portfolio/the-truth-behind-the-myths-how-many-aircraft-were-shot-down-in-1940-41-during-the-italian-campaign-against-greece/1000/",
+          "sourceClass": "secondary_research_assessment_by_naval_lieutenant_Nikolaos_Christofilis",
+          "warning": "Enemy aircraft credits are not independently confirmed Italian/German losses; includes Greek campaign and German invasion claims under author's definitions."
+        }
+      ]
+    },
+    {
+      "force": "Bulgarian Air Force / Vŭzdushni Voĭski",
+      "changeOfAlignment": "1944-09; pre-switch opposition to Allied bomber raids, after switch combat against Germany",
+      "observations": [
+        {
+          "date": "1944-09-19", "metric": "combat_aircraft_on_armed_forces_strength_after_mobilization",
+          "aircraft": 270,
+          "sourceUrl": "https://militarymuseum.bg/voenna-istoria/voenen-kalendar/septemvri/",
+          "sourceClass": "Bulgarian National Museum of Military History official historical article",
+          "warning": "Combat aircraft available to Bulgarian armed forces, NOT aircraft serviceable or in combat at one airfield."
+        },
+        {
+          "period": "1943-11 through 1944-08", "metric": "bulgarian_air_defence_claims_and_own_losses",
+          "claimsOfAmericanAircraftShotDown": 56, "claimsOfAmericanAircraftDamaged": 83,
+          "ownAircraftLost": 27, "ownPilotsKilledOrLostReported": 23,
+          "sourceUrl": "https://armymedia.bg/2019/11/22/%D0%B1%D0%B5%D0%BB%D0%B5%D0%B7%D0%B8%D1%82%D0%B5-%D0%BD%D0%B0-%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0%D1%82%D0%B0-%D0%B2%D1%80%D1%8A%D1%89%D0%B0-%D0%B2-%D0%B4%D1%80%D0%B0%D0%BC%D0%B0%D1%82/",
+          "sourceClass": "Bulgarian military press retrospective based on historical museum collection",
+          "warning": "Fighter claims, not American self-recorded losses; do not equate 100 enemy wrecks on Bulgarian soil with 56 attributed fighter victories."
+        },
+        {
+          "period": "1943-11 through 1944-04", "unit": "6th Bulgarian Fighter Regiment", "area": "Sofia air defence",
+          "sortiesOrTakeOffs": 273, "claimedEnemyAircraftDestroyed": 30,
+          "sourceUrl": "https://militarymuseum.bg/virtualen-muzei/online-izlozhbi/moite-predtsi-na-vojna/bombardirovkite-nad-sofia/",
+          "sourceClass": "Bulgarian National Museum of Military History official online exhibition",
+          "warning": "Takeoffs for the defended Sofia attacks (museum wording), not all Bulgarian wartime sorties; 30 are subunit claims, not additive to national claims."
+        },
+        {
+          "period": "1944-09-09 through 1944-12-02", "alignment": "Allied against Nazi Germany",
+          "aircraftSortiesApproximate": 3014, "ownAircraftLost": 23, "pilotsLost": 18,
+          "sourceUrl": "https://www.nevingtonwarmuseum.com/bulgaria.html",
+          "sourceClass": "secondary_republication_not_yet_cross_checked_with_bulgarian_archive",
+          "warning": "Approximate missions, dated sub-period after September 1944 allegiance change; exact Bulgarian original source not found yet."
+        }
+      ]
+    },
+    {
+      "force": "Yugoslav Partisan Air Force / NOVJ (and Yugoslav-manned RAF Balkan Air Force units)",
+      "sourceOverview": "https://www.aeroflight.co.uk/waf/yugo/part/yugo-part-home.htm",
+      "sourceClass": "secondary_squadron_histories_and_orders_of_battle_compiled_by_John_Hayles",
+      "observations": [
+        { "date": "1944-12", "metric": "formation_strength", "formation": "Group of Air Divisions (11 Fighter Division / 42 Assault Division)", "aircraftAtFormation": 258, "subUnits": ["111 Fighter Regiment", "112 Fighter Regiment", "113 Fighter Regiment", "421 Assault Regiment", "422 Assault Regiment", "423 Assault Regiment"], "note": "Source says controlled 258 aircraft on formation; neither serviceability nor split by type/individual regiment is given." },
+        { "unit": "351 RAF Squadron / Second Yugoslav Fighter Squadron", "combatStart": "1944-10-13", "periodEnd": "1945-05", "combatAircraftSorties": 978, "ownAircraftLost": 9, "pilotsKilled": 3, "reportedTypes": ["Hurricane IIc", "Hurricane IV"], "sourceUrl": "https://www.aeroflight.co.uk/waf/yugo/part/units/351sqn.htm" },
+        { "unit": "352 RAF Squadron / First Yugoslav Fighter Squadron", "combatStart": "1944-08-18", "periodEnd": "1945-05", "combatMissions": 364, "combatAircraftSortiesApproximate": 1208, "ownAircraftLostToAntiAircraftFire": 9, "aircraftDamaged": 4, "pilotsKilled": 7, "pilotTrainingCohort": 21, "reportedTypes": ["Hurricane IIc", "Spitfire Vc", "Spitfire IX"], "sourceUrl": "https://www.aeroflight.co.uk/waf/yugo/part/units/352sqn.htm" },
+        { "unit": "5th Corps NOVJ partisan squadron", "periodStart": "1944-09-21", "combatAircraftSorties": 90, "sourceUrl": "https://www.aeroflight.co.uk/waf/yugo/part/yugo-part-home.htm" }
+      ],
+      "datedOrdersOfBattle": [
+        {
+          "date": "1944-12", "sourceUrl": "https://www.aeroflight.co.uk/waf/yugo/part/yugo-part-orbat7.htm",
+          "records": [
+            { "unit": "352 RAF / First Yugoslav Fighter Squadron", "type": "Spitfire Vc", "aircraft": 16, "printedStation": "Vis Island" },
+            { "unit": "351 RAF / Second Yugoslav Fighter Squadron", "type": "Hurricane IV", "aircraft": 16, "printedStation": "Vis Island" },
+            { "unit": "Group of Air Divisions headquarters", "type": "training/liaison mixed", "aircraft": 10, "printedStation": "Prigrevica Sv. Ivan (Apatin)" },
+            { "unit": "421 Assault Regiment", "type": "Il-2", "aircraft": null, "printedStation": "Lacarak" },
+            { "unit": "422 Assault Regiment", "type": "Il-2", "aircraft": null, "printedStation": "Novi Sad/Zemun" },
+            { "unit": "423 Assault Regiment", "type": "Il-2", "aircraft": null, "printedStation": "Novi Sad/Zemun" },
+            { "unit": "111 Fighter Regiment", "type": "Yak-1/3/9", "aircraft": null, "printedStation": "Novi Sad/Zemun" },
+            { "unit": "112 Fighter Regiment", "type": "Yak-1/3/9", "aircraft": null, "printedStation": "Veliki Radenci" },
+            { "unit": "113 Fighter Regiment", "type": "Yak-1/3/9", "aircraft": null, "printedStation": "Ruma" }
+          ]
+        },
+        {
+          "date": "1945-04-20", "sourceUrl": "https://www.aeroflight.co.uk/waf/yugo/part/yugo-part-orbat9.htm",
+          "records": [
+            { "unit": "352 RAF / First Yugoslav Fighter Squadron", "type": "Spitfire Vc", "aircraft": 16, "printedStation": "Prkos" },
+            { "unit": "351 RAF / Second Yugoslav Fighter Squadron", "type": "Hurricane IV", "aircraft": 16, "printedStation": "Prkos" },
+            { "unit": "Group of Air Divisions headquarters", "type": "training/liaison mixed", "aircraft": 10, "printedStation": "Prigrevica Sv. Ivan (Apatin)" },
+            { "unit": "421 Assault Regiment", "type": "Il-2", "aircraft": null, "printedStation": "Lacarak" },
+            { "unit": "422 Assault Regiment", "type": "Il-2", "aircraft": null, "printedStation": "Magyarmecske" },
+            { "unit": "423 Assault Regiment", "type": "Il-2", "aircraft": null, "printedStation": "Novi Sad/Zemun" },
+            { "unit": "111 Fighter Regiment", "type": "Yak-1/3/9", "aircraft": null, "printedStation": "Novi Sad/Zemun" },
+            { "unit": "112 Fighter Regiment", "type": "Yak-1/3/9", "aircraft": null, "printedStation": "Magyarmecske" },
+            { "unit": "113 Fighter Regiment", "type": "Yak-1/3/9", "aircraft": null, "printedStation": "Ruma" }
+          ]
+        }
+      ],
+      "warnings": [
+        "A Yugoslav-manned RAF squadron remains included in RAF command-wide strength/sortie/loss counts, so never add it again as an independent nation-wide aircraft loss.",
+        "The former Soviet 11th/42nd group formations may also overlap Soviet operational headquarters and must not double count before original allegiance/transfer dates are proven.",
+        "351 squadron secondary station chronology contains impossible date sequences (Canne Sept 1944-Feb 1944; Prkos detachment Mar 1944); source anomalies deliberately excluded from this structured dataset.",
+        "16 aircraft is an order-of-battle listed type strength, NOT 16 operationally ready airframes; regiment type given without aircraft count means unknown, not zero."
+      ]
+    },
+    {
+      "force": "Finnish Air Force / Ilmavoimat",
+      "observations": [
+        {
+          "period": "1941-06 at start of Continuation War", "metric": "front_line_operational_unit_aircraft_estimate",
+          "fightersApproximate": 120, "bombers": 21, "reconnaissanceAndLiaison": 58,
+          "subTotalOfThreeRolesApproximate": 199,
+          "sourceUrl": "https://www.mannerheim.fi/13_erity/ilmasota.htm",
+          "sourceAuthor": "General Heikki Nikunen, Finnish Air Force historical essay hosted by the Mannerheim site",
+          "sourceClass": "secondary_veteran_specialist_account",
+          "warning": "Approximate aircraft assigned to flying units, not every owned airframe nationally and not explicitly serviceable. Fighter class includes Brewster Buffalo, Fiat G.50, Morane-Saulnier, Curtiss Hawk, Hurricane."
+        }
+      ]
+    }
+  ]
+}

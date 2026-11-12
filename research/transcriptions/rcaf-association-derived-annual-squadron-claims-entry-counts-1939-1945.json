@@ -1,0 +1,1153 @@
+{
+  "id": "RCAF-ASSOCIATION-CLAIMS-DERIVED-ANNUAL-SQUADRON-ENTRY-COUNTS-1939-1945",
+  "sourceUrl": "https://www.rcafassociation.ca/wp-content/uploads/2026/06/RCAF-Combat-Claims.pdf",
+  "sourceClass": "2026 secondary compilation by Royal Canadian Air Force Association, drawing on pilot and unit claims; source PDF is retained as external reference only",
+  "scope": "Dated entries 1939-09-01 through 1945-05-09 inclusive. Aircrew affiliation may include RAF/FAA Canadians and RAAF, not all Canadian national service. SOURCE NOT THEATER FILTERED: Southeast Asian/Pacific entries can occur and must be excluded before any European aggregation.",
+  "metric": "number_of_combat_claim_listing_rows_not_unique_aircraft_destroyed",
+  "importantCautions": [
+    "An individual aircrew/claim can appear more than once. No duplicate resolution, shared claim fractions, confirmation, cause, claimed target, or whether one event was ground/air was inferred.",
+    "These are not actual enemy aircraft losses. Do not add to RAF national credited totals, aggregate as unique victories or compare directly to opposing loss reports.",
+    "Some source entries concern East Asia rather than Europe. This preparatory source-level census is deliberately NOT an Atlas-ready European total.",
+    "Missing/garbled squadron affiliations in PDF text are excluded from unit series but included in annual observed entries.",
+    "Some 1944–45 RCAF squadron headings are split across PDF lines and recovered only when structurally unambiguous.",
+    "The PDF has postwar claim sections even though each page header says '1939-40'. Postwar data excluded by numeric date validation.",
+    "This is a derived summary, not a reproduction of the original claims register. Refer to source pages to validate any future individual aircraft/pilot import."
+  ],
+  "quality": {
+    "all_dated_rows": 4238,
+    "wartime_dated_claim_entry_rows": 4211,
+    "unresolved_affiliation": 311,
+    "unresolved_squadron": 260,
+    "outside_european_cutoff_or_wwii": 27,
+    "uniqueSquadronDesignationsWithResolvedEntries": 131,
+    "squadronResolutionMethod": {
+      "same_line": 1693,
+      "adjacent_multiline": 2258,
+      "unresolved": 260
+    },
+    "unresolvedSquadronExamplePageAndDates": [
+      {
+        "page": 19,
+        "date": "1941-02-26"
+      },
+      {
+        "page": 22,
+        "date": "1941-06-25"
+      },
+      {
+        "page": 27,
+        "date": "1941-10-13"
+      },
+      {
+        "page": 27,
+        "date": "1941-11-01"
+      },
+      {
+        "page": 28,
+        "date": "1941-11-18"
+      },
+      {
+        "page": 28,
+        "date": "1941-11-22"
+      },
+      {
+        "page": 28,
+        "date": "1941-11-22"
+      },
+      {
+        "page": 28,
+        "date": "1941-11-22"
+      }
+    ]
+  },
+  "annualObservedClaimEntryRows": [
+    {
+      "year": 1939,
+      "entries": 2
+    },
+    {
+      "year": 1940,
+      "entries": 508
+    },
+    {
+      "year": 1941,
+      "entries": 265
+    },
+    {
+      "year": 1942,
+      "entries": 935
+    },
+    {
+      "year": 1943,
+      "entries": 760
+    },
+    {
+      "year": 1944,
+      "entries": 1315
+    },
+    {
+      "year": 1945,
+      "entries": 426
+    }
+  ],
+  "annualAffiliationTokenObservations": [
+    {
+      "year": 1939,
+      "affiliationToken": "RAFCAN",
+      "entries": 2
+    },
+    {
+      "year": 1940,
+      "affiliationToken": "FAACAN",
+      "entries": 9
+    },
+    {
+      "year": 1940,
+      "affiliationToken": "RAFCAN",
+      "entries": 408
+    },
+    {
+      "year": 1940,
+      "affiliationToken": "RCAF",
+      "entries": 84
+    },
+    {
+      "year": 1941,
+      "affiliationToken": "RAF",
+      "entries": 5
+    },
+    {
+      "year": 1941,
+      "affiliationToken": "RAFCAN",
+      "entries": 139
+    },
+    {
+      "year": 1941,
+      "affiliationToken": "RCAF",
+      "entries": 119
+    },
+    {
+      "year": 1942,
+      "affiliationToken": "FAACAN",
+      "entries": 2
+    },
+    {
+      "year": 1942,
+      "affiliationToken": "RAF",
+      "entries": 9
+    },
+    {
+      "year": 1942,
+      "affiliationToken": "RAFCAN",
+      "entries": 68
+    },
+    {
+      "year": 1942,
+      "affiliationToken": "RCAF",
+      "entries": 853
+    },
+    {
+      "year": 1943,
+      "affiliationToken": "RAF",
+      "entries": 21
+    },
+    {
+      "year": 1943,
+      "affiliationToken": "RAFCAN",
+      "entries": 29
+    },
+    {
+      "year": 1943,
+      "affiliationToken": "RCAF",
+      "entries": 663
+    },
+    {
+      "year": 1944,
+      "affiliationToken": "RAAF",
+      "entries": 20
+    },
+    {
+      "year": 1944,
+      "affiliationToken": "RAF",
+      "entries": 10
+    },
+    {
+      "year": 1944,
+      "affiliationToken": "RAFCAN",
+      "entries": 15
+    },
+    {
+      "year": 1944,
+      "affiliationToken": "RCAF",
+      "entries": 1137
+    },
+    {
+      "year": 1945,
+      "affiliationToken": "RAFCAN",
+      "entries": 2
+    },
+    {
+      "year": 1945,
+      "affiliationToken": "RCAF",
+      "entries": 299
+    },
+    {
+      "year": 1945,
+      "affiliationToken": "RCNVR",
+      "entries": 6
+    }
+  ],
+  "squadronAnnualObservedClaimEntryRows": [
+    {
+      "squadron": "1 Sqn",
+      "entriesByYear": {
+        "1939": 1,
+        "1940": 109
+      }
+    },
+    {
+      "squadron": "3 Sqn",
+      "entriesByYear": {
+        "1940": 4
+      }
+    },
+    {
+      "squadron": "10 Sqn",
+      "entriesByYear": {
+        "1943": 1
+      }
+    },
+    {
+      "squadron": "15 Sqn",
+      "entriesByYear": {
+        "1942": 1
+      }
+    },
+    {
+      "squadron": "17 Sqn",
+      "entriesByYear": {
+        "1940": 5,
+        "1942": 14
+      }
+    },
+    {
+      "squadron": "19 Sqn",
+      "entriesByYear": {
+        "1941": 1
+      }
+    },
+    {
+      "squadron": "30 Sqn",
+      "entriesByYear": {
+        "1940": 2,
+        "1941": 3,
+        "1942": 6
+      }
+    },
+    {
+      "squadron": "33 Sqn",
+      "entriesByYear": {
+        "1940": 22,
+        "1941": 20,
+        "1942": 14,
+        "1943": 3
+      }
+    },
+    {
+      "squadron": "41 Sqn",
+      "entriesByYear": {
+        "1939": 1,
+        "1940": 7,
+        "1941": 5,
+        "1942": 40,
+        "1944": 1,
+        "1945": 1
+      }
+    },
+    {
+      "squadron": "43 Sqn",
+      "entriesByYear": {
+        "1940": 2,
+        "1943": 5
+      }
+    },
+    {
+      "squadron": "46 Sqn",
+      "entriesByYear": {
+        "1940": 5,
+        "1941": 3,
+        "1943": 2
+      }
+    },
+    {
+      "squadron": "54 Sqn",
+      "entriesByYear": {
+        "1940": 2,
+        "1941": 16
+      }
+    },
+    {
+      "squadron": "56 Sqn",
+      "entriesByYear": {
+        "1944": 9,
+        "1945": 3
+      }
+    },
+    {
+      "squadron": "64 Sqn",
+      "entriesByYear": {
+        "1943": 1,
+        "1945": 2
+      }
+    },
+    {
+      "squadron": "65 Sqn",
+      "entriesByYear": {
+        "1944": 3,
+        "1945": 3
+      }
+    },
+    {
+      "squadron": "66 Sqn",
+      "entriesByYear": {
+        "1940": 13,
+        "1943": 1,
+        "1944": 3
+      }
+    },
+    {
+      "squadron": "67 Sqn",
+      "entriesByYear": {
+        "1945": 2
+      }
+    },
+    {
+      "squadron": "72 Sqn",
+      "entriesByYear": {
+        "1940": 3,
+        "1942": 6,
+        "1943": 6,
+        "1944": 9
+      }
+    },
+    {
+      "squadron": "73 Sqn",
+      "entriesByYear": {
+        "1940": 7,
+        "1941": 4,
+        "1942": 5,
+        "1943": 4,
+        "1945": 1
+      }
+    },
+    {
+      "squadron": "74 Sqn",
+      "entriesByYear": {
+        "1940": 7,
+        "1943": 5
+      }
+    },
+    {
+      "squadron": "80 Sqn",
+      "entriesByYear": {
+        "1941": 6,
+        "1942": 6,
+        "1943": 2,
+        "1944": 2,
+        "1945": 3
+      }
+    },
+    {
+      "squadron": "81 Sqn",
+      "entriesByYear": {
+        "1941": 2,
+        "1942": 27,
+        "1943": 16,
+        "1944": 6
+      }
+    },
+    {
+      "squadron": "85 Sqn",
+      "entriesByYear": {
+        "1940": 13
+      }
+    },
+    {
+      "squadron": "87 Sqn",
+      "entriesByYear": {
+        "1940": 8,
+        "1943": 1
+      }
+    },
+    {
+      "squadron": "89 Sqn",
+      "entriesByYear": {
+        "1942": 5
+      }
+    },
+    {
+      "squadron": "91 Sqn",
+      "entriesByYear": {
+        "1941": 1,
+        "1944": 22
+      }
+    },
+    {
+      "squadron": "92 Sqn",
+      "entriesByYear": {
+        "1940": 12,
+        "1941": 13,
+        "1942": 12,
+        "1943": 11,
+        "1944": 6
+      }
+    },
+    {
+      "squadron": "94 Sqn",
+      "entriesByYear": {
+        "1942": 2,
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "103 Sqn",
+      "entriesByYear": {
+        "1943": 1
+      }
+    },
+    {
+      "squadron": "111 Sqn",
+      "entriesByYear": {
+        "1940": 11,
+        "1941": 2,
+        "1942": 4,
+        "1943": 36
+      }
+    },
+    {
+      "squadron": "112 Sqn",
+      "entriesByYear": {
+        "1940": 8,
+        "1941": 24,
+        "1942": 64,
+        "1943": 9
+      }
+    },
+    {
+      "squadron": "118 Sqn",
+      "entriesByYear": {
+        "1942": 6
+      }
+    },
+    {
+      "squadron": "121 Sqn",
+      "entriesByYear": {
+        "1941": 1,
+        "1942": 5
+      }
+    },
+    {
+      "squadron": "122 Sqn",
+      "entriesByYear": {
+        "1944": 6
+      }
+    },
+    {
+      "squadron": "124 Sqn",
+      "entriesByYear": {
+        "1942": 1
+      }
+    },
+    {
+      "squadron": "125 Sqn",
+      "entriesByYear": {
+        "1942": 1,
+        "1945": 1
+      }
+    },
+    {
+      "squadron": "126 Sqn",
+      "entriesByYear": {
+        "1941": 1,
+        "1942": 56,
+        "1943": 3,
+        "1944": 5
+      }
+    },
+    {
+      "squadron": "127 Sqn",
+      "entriesByYear": {
+        "1942": 8,
+        "1943": 1,
+        "1944": 3,
+        "1945": 6
+      }
+    },
+    {
+      "squadron": "129 Sqn",
+      "entriesByYear": {
+        "1941": 4,
+        "1942": 1
+      }
+    },
+    {
+      "squadron": "130 Sqn",
+      "entriesByYear": {
+        "1945": 5
+      }
+    },
+    {
+      "squadron": "133 Sqn",
+      "entriesByYear": {
+        "1942": 10
+      }
+    },
+    {
+      "squadron": "135 Sqn",
+      "entriesByYear": {
+        "1943": 5
+      }
+    },
+    {
+      "squadron": "136 Sqn",
+      "entriesByYear": {
+        "1942": 1,
+        "1943": 3,
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "141 Sqn",
+      "entriesByYear": {
+        "1940": 1
+      }
+    },
+    {
+      "squadron": "144 Sqn",
+      "entriesByYear": {
+        "1944": 8
+      }
+    },
+    {
+      "squadron": "145 Sqn",
+      "entriesByYear": {
+        "1941": 9,
+        "1942": 9,
+        "1943": 12,
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "151 Sqn",
+      "entriesByYear": {
+        "1940": 2
+      }
+    },
+    {
+      "squadron": "152 Sqn",
+      "entriesByYear": {
+        "1940": 3,
+        "1943": 3
+      }
+    },
+    {
+      "squadron": "153 Sqn",
+      "entriesByYear": {
+        "1943": 1
+      }
+    },
+    {
+      "squadron": "154 Sqn",
+      "entriesByYear": {
+        "1942": 8,
+        "1943": 7
+      }
+    },
+    {
+      "squadron": "162 Sqn",
+      "entriesByYear": {
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "164 Sqn",
+      "entriesByYear": {
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "165 Sqn",
+      "entriesByYear": {
+        "1942": 2,
+        "1943": 4
+      }
+    },
+    {
+      "squadron": "183 Sqn",
+      "entriesByYear": {
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "185 Sqn",
+      "entriesByYear": {
+        "1942": 63,
+        "1943": 5
+      }
+    },
+    {
+      "squadron": "193 Sqn",
+      "entriesByYear": {
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "198 Sqn",
+      "entriesByYear": {
+        "1943": 4,
+        "1944": 11
+      }
+    },
+    {
+      "squadron": "207 Sqn",
+      "entriesByYear": {
+        "1943": 2,
+        "1944": 5
+      }
+    },
+    {
+      "squadron": "212 Sqn",
+      "entriesByYear": {
+        "1940": 1
+      }
+    },
+    {
+      "squadron": "213 Sqn",
+      "entriesByYear": {
+        "1940": 6,
+        "1941": 1,
+        "1942": 27
+      }
+    },
+    {
+      "squadron": "222 Sqn",
+      "entriesByYear": {
+        "1943": 1
+      }
+    },
+    {
+      "squadron": "227 Sqn",
+      "entriesByYear": {
+        "1942": 15,
+        "1943": 4,
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "229 Sqn",
+      "entriesByYear": {
+        "1940": 6,
+        "1942": 7,
+        "1943": 13
+      }
+    },
+    {
+      "squadron": "232 Sqn",
+      "entriesByYear": {
+        "1942": 7,
+        "1943": 6
+      }
+    },
+    {
+      "squadron": "235 Sqn",
+      "entriesByYear": {
+        "1940": 3
+      }
+    },
+    {
+      "squadron": "238 Sqn",
+      "entriesByYear": {
+        "1940": 16
+      }
+    },
+    {
+      "squadron": "239 Sqn",
+      "entriesByYear": {
+        "1942": 1
+      }
+    },
+    {
+      "squadron": "242 Sqn",
+      "entriesByYear": {
+        "1940": 102,
+        "1941": 13,
+        "1942": 11,
+        "1943": 1
+      }
+    },
+    {
+      "squadron": "243 Sqn",
+      "entriesByYear": {
+        "1943": 7
+      }
+    },
+    {
+      "squadron": "245 Sqn",
+      "entriesByYear": {
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "249 Sqn",
+      "entriesByYear": {
+        "1940": 24,
+        "1942": 93,
+        "1943": 3
+      }
+    },
+    {
+      "squadron": "250 Sqn",
+      "entriesByYear": {
+        "1941": 3,
+        "1942": 27,
+        "1943": 12,
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "252 Sqn",
+      "entriesByYear": {
+        "1942": 6,
+        "1944": 3
+      }
+    },
+    {
+      "squadron": "253 Sqn",
+      "entriesByYear": {
+        "1940": 3
+      }
+    },
+    {
+      "squadron": "257 Sqn",
+      "entriesByYear": {
+        "1940": 14,
+        "1941": 1
+      }
+    },
+    {
+      "squadron": "260 Sqn",
+      "entriesByYear": {
+        "1942": 52,
+        "1943": 21
+      }
+    },
+    {
+      "squadron": "261 Sqn",
+      "entriesByYear": {
+        "1942": 2
+      }
+    },
+    {
+      "squadron": "263 Sqn",
+      "entriesByYear": {
+        "1940": 11,
+        "1944": 7
+      }
+    },
+    {
+      "squadron": "272 Sqn",
+      "entriesByYear": {
+        "1941": 14,
+        "1942": 3,
+        "1943": 17
+      }
+    },
+    {
+      "squadron": "274 Sqn",
+      "entriesByYear": {
+        "1940": 6,
+        "1941": 4,
+        "1942": 11,
+        "1945": 4
+      }
+    },
+    {
+      "squadron": "303 Sqn",
+      "entriesByYear": {
+        "1940": 7
+      }
+    },
+    {
+      "squadron": "310 Sqn",
+      "entriesByYear": {
+        "1940": 4
+      }
+    },
+    {
+      "squadron": "400 Sqn",
+      "entriesByYear": {
+        "1942": 1,
+        "1943": 28
+      }
+    },
+    {
+      "squadron": "401 Sqn",
+      "entriesByYear": {
+        "1941": 24,
+        "1942": 74,
+        "1943": 22,
+        "1944": 136,
+        "1945": 85
+      }
+    },
+    {
+      "squadron": "402 Sqn",
+      "entriesByYear": {
+        "1941": 19,
+        "1942": 26,
+        "1943": 51,
+        "1944": 8,
+        "1945": 43
+      }
+    },
+    {
+      "squadron": "403 Sqn",
+      "entriesByYear": {
+        "1941": 27,
+        "1942": 19,
+        "1943": 85,
+        "1944": 80,
+        "1945": 38
+      }
+    },
+    {
+      "squadron": "404 Sqn",
+      "entriesByYear": {
+        "1941": 1,
+        "1943": 3,
+        "1945": 4
+      }
+    },
+    {
+      "squadron": "405 Sqn",
+      "entriesByYear": {
+        "1941": 3,
+        "1942": 1
+      }
+    },
+    {
+      "squadron": "406 Sqn",
+      "entriesByYear": {
+        "1941": 8,
+        "1942": 8,
+        "1944": 14,
+        "1945": 28
+      }
+    },
+    {
+      "squadron": "407 Sqn",
+      "entriesByYear": {
+        "1941": 2,
+        "1942": 1,
+        "1944": 3
+      }
+    },
+    {
+      "squadron": "409 Sqn",
+      "entriesByYear": {
+        "1941": 1,
+        "1942": 10,
+        "1943": 3,
+        "1944": 18,
+        "1945": 3
+      }
+    },
+    {
+      "squadron": "410 Sqn",
+      "entriesByYear": {
+        "1942": 1,
+        "1943": 6,
+        "1944": 9,
+        "1945": 1
+      }
+    },
+    {
+      "squadron": "411 Sqn",
+      "entriesByYear": {
+        "1941": 5,
+        "1942": 21,
+        "1943": 14,
+        "1944": 90,
+        "1945": 32
+      }
+    },
+    {
+      "squadron": "412 Sqn",
+      "entriesByYear": {
+        "1941": 2,
+        "1942": 23,
+        "1943": 18,
+        "1944": 109,
+        "1945": 31
+      }
+    },
+    {
+      "squadron": "414 Sqn",
+      "entriesByYear": {
+        "1942": 1,
+        "1943": 13,
+        "1944": 18,
+        "1945": 13
+      }
+    },
+    {
+      "squadron": "416 Sqn",
+      "entriesByYear": {
+        "1942": 17,
+        "1943": 42,
+        "1944": 62,
+        "1945": 7
+      }
+    },
+    {
+      "squadron": "417 Sqn",
+      "entriesByYear": {
+        "1942": 1,
+        "1943": 20,
+        "1944": 40
+      }
+    },
+    {
+      "squadron": "418 Sqn",
+      "entriesByYear": {
+        "1942": 4,
+        "1943": 28,
+        "1944": 143
+      }
+    },
+    {
+      "squadron": "419 Sqn",
+      "entriesByYear": {
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "420 Sqn",
+      "entriesByYear": {
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "421 Sqn",
+      "entriesByYear": {
+        "1942": 6,
+        "1943": 74,
+        "1944": 82,
+        "1945": 8
+      }
+    },
+    {
+      "squadron": "422 Sqn",
+      "entriesByYear": {
+        "1943": 1,
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "423 Sqn",
+      "entriesByYear": {
+        "1943": 2,
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "424 Sqn",
+      "entriesByYear": {
+        "1944": 5
+      }
+    },
+    {
+      "squadron": "425 Sqn",
+      "entriesByYear": {
+        "1943": 1,
+        "1944": 5
+      }
+    },
+    {
+      "squadron": "427 Sqn",
+      "entriesByYear": {
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "430 Sqn",
+      "entriesByYear": {
+        "1944": 3,
+        "1945": 1
+      }
+    },
+    {
+      "squadron": "438 Sqn",
+      "entriesByYear": {
+        "1944": 2,
+        "1945": 1
+      }
+    },
+    {
+      "squadron": "439 Sqn",
+      "entriesByYear": {
+        "1944": 4,
+        "1945": 9
+      }
+    },
+    {
+      "squadron": "440 Sqn",
+      "entriesByYear": {
+        "1944": 2
+      }
+    },
+    {
+      "squadron": "441 Sqn",
+      "entriesByYear": {
+        "1944": 82
+      }
+    },
+    {
+      "squadron": "442 Sqn",
+      "entriesByYear": {
+        "1944": 59,
+        "1945": 34
+      }
+    },
+    {
+      "squadron": "443 Sqn",
+      "entriesByYear": {
+        "1944": 54,
+        "1945": 30
+      }
+    },
+    {
+      "squadron": "450 Sqn",
+      "entriesByYear": {
+        "1942": 6,
+        "1943": 2
+      }
+    },
+    {
+      "squadron": "485 Sqn",
+      "entriesByYear": {
+        "1941": 1
+      }
+    },
+    {
+      "squadron": "501 Sqn",
+      "entriesByYear": {
+        "1940": 3
+      }
+    },
+    {
+      "squadron": "515 Sqn",
+      "entriesByYear": {
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "600 Sqn",
+      "entriesByYear": {
+        "1943": 11,
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "601 Sqn",
+      "entriesByYear": {
+        "1940": 9,
+        "1942": 15,
+        "1943": 14
+      }
+    },
+    {
+      "squadron": "602 Sqn",
+      "entriesByYear": {
+        "1940": 6,
+        "1943": 2
+      }
+    },
+    {
+      "squadron": "603 Sqn",
+      "entriesByYear": {
+        "1940": 9,
+        "1941": 7,
+        "1942": 18
+      }
+    },
+    {
+      "squadron": "605 Sqn",
+      "entriesByYear": {
+        "1940": 1,
+        "1942": 3
+      }
+    },
+    {
+      "squadron": "607 Sqn",
+      "entriesByYear": {
+        "1940": 6,
+        "1942": 5,
+        "1943": 3,
+        "1944": 1
+      }
+    },
+    {
+      "squadron": "609 Sqn",
+      "entriesByYear": {
+        "1940": 9,
+        "1941": 5,
+        "1943": 3
+      }
+    },
+    {
+      "squadron": "611 Sqn",
+      "entriesByYear": {
+        "1940": 2,
+        "1943": 11
+      }
+    },
+    {
+      "squadron": "615 Sqn",
+      "entriesByYear": {
+        "1940": 7
+      }
+    },
+    {
+      "squadron": "800 Sqn",
+      "entriesByYear": {
+        "1942": 2
+      }
+    },
+    {
+      "squadron": "801 Sqn",
+      "entriesByYear": {
+        "1940": 2
+      }
+    },
+    {
+      "squadron": "815 Sqn",
+      "entriesByYear": {
+        "1940": 5
+      }
+    },
+    {
+      "squadron": "1435 Sqn",
+      "entriesByYear": {
+        "1942": 17,
+        "1943": 2
+      }
+    },
+    {
+      "squadron": "1836 Sqn",
+      "entriesByYear": {
+        "1945": 6
+      }
+    }
+  ]
+}

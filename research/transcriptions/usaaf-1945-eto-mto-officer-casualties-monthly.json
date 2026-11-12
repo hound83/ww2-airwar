@@ -1,0 +1,2364 @@
+{
+  "id": "USAAF-1945-ETO-MTO-OFFICER-AND-CASUALTY-MONTHLY",
+  "sourceUrl": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/aafsd-2.html",
+  "originalUSAAFDocument": "Army Air Forces Statistical Digest: World War II, Office of Statistical Control, December 1945, Tables 24,25,36,37",
+  "primaryScan": "https://archive.org/details/ArmyAirForcesStatisticalDigestWorldWarII",
+  "researchStatus": "historical_official_statistics_secondary_html_transcription_not_checked_against_pdf",
+  "scope": "USAAF only. ETO and MTO as defined in original Dec1945 digest. Officer pilot count = headcount serving, not casualties.",
+  "battleCasualtiesDenominator": "All AAF personnel (officers and enlisted); includes statuses 'missing, interned and captured', not all fatalities and not necessarily pilots.",
+  "afterAtlasCutoff": "June-August 1945 in source records are preserved for audit but excluded from historical Atlas May1945 end.",
+  "tables": {
+    "ETO": {
+      "theater": "European Theater of Operations",
+      "officerSpecialtyTable": 24,
+      "battleCasualtyTable": 36,
+      "monthlyOfficersBySpecialty": [
+        {
+          "period": "1944-06",
+          "sourceLabel": "Jun",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 59073,
+            "pilots": 22153,
+            "bombardiers": 3813,
+            "navigators": 7398,
+            "otherAircrew": 21,
+            "administration": 4372,
+            "armamentOrdnance": 1854,
+            "communications": 2305,
+            "engineering": 2887,
+            "medical": 2077,
+            "operationsStaff": 2559,
+            "supply": 2219,
+            "otherSpecialty": 7415
+          }
+        },
+        {
+          "period": "1944-07",
+          "sourceLabel": "Jul",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 62114,
+            "pilots": 22526,
+            "bombardiers": 4134,
+            "navigators": 7430,
+            "otherAircrew": 22,
+            "administration": 4628,
+            "armamentOrdnance": 2084,
+            "communications": 2268,
+            "engineering": 2966,
+            "medical": 2056,
+            "operationsStaff": 2624,
+            "supply": 2717,
+            "otherSpecialty": 8659
+          }
+        },
+        {
+          "period": "1944-08",
+          "sourceLabel": "Aug",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 61991,
+            "pilots": 23269,
+            "bombardiers": 4015,
+            "navigators": 7257,
+            "otherAircrew": 18,
+            "administration": 4505,
+            "armamentOrdnance": 2062,
+            "communications": 2253,
+            "engineering": 2920,
+            "medical": 2047,
+            "operationsStaff": 2549,
+            "supply": 2746,
+            "otherSpecialty": 8340
+          }
+        },
+        {
+          "period": "1944-09",
+          "sourceLabel": "Sep",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 61611,
+            "pilots": 24113,
+            "bombardiers": 3642,
+            "navigators": 7431,
+            "otherAircrew": 18,
+            "administration": 4478,
+            "armamentOrdnance": 2062,
+            "communications": 2202,
+            "engineering": 2908,
+            "medical": 2020,
+            "operationsStaff": 2538,
+            "supply": 2771,
+            "otherSpecialty": 7428
+          }
+        },
+        {
+          "period": "1944-10",
+          "sourceLabel": "Oct",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 62450,
+            "pilots": 24056,
+            "bombardiers": 4331,
+            "navigators": 7043,
+            "otherAircrew": 20,
+            "administration": 4397,
+            "armamentOrdnance": 2028,
+            "communications": 2176,
+            "engineering": 2914,
+            "medical": 1988,
+            "operationsStaff": 2428,
+            "supply": 2750,
+            "otherSpecialty": 8319
+          }
+        },
+        {
+          "period": "1944-11",
+          "sourceLabel": "Nov",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 63900,
+            "pilots": 26647,
+            "bombardiers": 4373,
+            "navigators": 7227,
+            "otherAircrew": 24,
+            "administration": 4555,
+            "armamentOrdnance": 2065,
+            "communications": 2334,
+            "engineering": 2954,
+            "medical": 2022,
+            "operationsStaff": 2530,
+            "supply": 2734,
+            "otherSpecialty": 6435
+          }
+        },
+        {
+          "period": "1944-12",
+          "sourceLabel": "Dec",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 63757,
+            "pilots": 26246,
+            "bombardiers": 4009,
+            "navigators": 7071,
+            "otherAircrew": 17,
+            "administration": 4738,
+            "armamentOrdnance": 2018,
+            "communications": 2314,
+            "engineering": 2890,
+            "medical": 1969,
+            "operationsStaff": 2485,
+            "supply": 2891,
+            "otherSpecialty": 7109
+          }
+        },
+        {
+          "period": "1945-01",
+          "sourceLabel": "Jan",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 63077,
+            "pilots": 26434,
+            "bombardiers": 3724,
+            "navigators": 6973,
+            "otherAircrew": 102,
+            "administration": 4605,
+            "armamentOrdnance": 2002,
+            "communications": 2272,
+            "engineering": 2899,
+            "medical": 1914,
+            "operationsStaff": 2475,
+            "supply": 2781,
+            "otherSpecialty": 6896
+          }
+        },
+        {
+          "period": "1945-02",
+          "sourceLabel": "Feb",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 65272,
+            "pilots": 27378,
+            "bombardiers": 3669,
+            "navigators": 7512,
+            "otherAircrew": 119,
+            "administration": 4652,
+            "armamentOrdnance": 2038,
+            "communications": 2423,
+            "engineering": 2900,
+            "medical": 1920,
+            "operationsStaff": 2474,
+            "supply": 2756,
+            "otherSpecialty": 7431
+          }
+        },
+        {
+          "period": "1945-03",
+          "sourceLabel": "Mar",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 66462,
+            "pilots": 27697,
+            "bombardiers": 3751,
+            "navigators": 7258,
+            "otherAircrew": 307,
+            "administration": 4706,
+            "armamentOrdnance": 2018,
+            "communications": 2370,
+            "engineering": 2947,
+            "medical": 1904,
+            "operationsStaff": 2466,
+            "supply": 2716,
+            "otherSpecialty": 8322
+          }
+        },
+        {
+          "period": "1945-04",
+          "sourceLabel": "Apr",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 62904,
+            "pilots": 26900,
+            "bombardiers": 3438,
+            "navigators": 6745,
+            "otherAircrew": 138,
+            "administration": 4778,
+            "armamentOrdnance": 2022,
+            "communications": 2672,
+            "engineering": 2976,
+            "medical": 1834,
+            "operationsStaff": 2449,
+            "supply": 2694,
+            "otherSpecialty": 6258
+          }
+        },
+        {
+          "period": "1945-05",
+          "sourceLabel": "May",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 63633,
+            "pilots": 23487,
+            "bombardiers": 3167,
+            "navigators": 4827,
+            "otherAircrew": 423,
+            "administration": 4643,
+            "armamentOrdnance": 1912,
+            "communications": 2374,
+            "engineering": 2939,
+            "medical": 1807,
+            "operationsStaff": 2439,
+            "supply": 2519,
+            "otherSpecialty": 13096
+          }
+        },
+        {
+          "period": "1945-06",
+          "sourceLabel": "Jun",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 45311,
+            "pilots": 17341,
+            "bombardiers": 1914,
+            "navigators": 2812,
+            "otherAircrew": 508,
+            "administration": 4229,
+            "armamentOrdnance": 1607,
+            "communications": 2111,
+            "engineering": 2582,
+            "medical": 1506,
+            "operationsStaff": 1903,
+            "supply": 2413,
+            "otherSpecialty": 6385
+          }
+        },
+        {
+          "period": "1945-07",
+          "sourceLabel": "Jul",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 35197,
+            "pilots": 12192,
+            "bombardiers": 979,
+            "navigators": 1539,
+            "otherAircrew": 177,
+            "administration": 3805,
+            "armamentOrdnance": 1370,
+            "communications": 1901,
+            "engineering": 2412,
+            "medical": 1352,
+            "operationsStaff": 1662,
+            "supply": 2288,
+            "otherSpecialty": 5520
+          }
+        },
+        {
+          "period": "1945-08",
+          "sourceLabel": "Aug",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 28076,
+            "pilots": 9014,
+            "bombardiers": 746,
+            "navigators": 1043,
+            "otherAircrew": 157,
+            "administration": 3275,
+            "armamentOrdnance": 1064,
+            "communications": 1548,
+            "engineering": 1948,
+            "medical": 1111,
+            "operationsStaff": 1362,
+            "supply": 1814,
+            "otherSpecialty": 4994
+          }
+        }
+      ],
+      "battleCasualties": {
+        "monthly": [
+          {
+            "period": "1941-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": null,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 42,
+              "allPersonnelDied": 30,
+              "allPersonnelWoundedEvacuated": 9,
+              "allPersonnelMissingInternedCaptured": 3,
+              "officersTotal": 12,
+              "officersDied": 11,
+              "officersWoundedEvacuated": 1,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 30,
+              "enlistedDied": 19,
+              "enlistedWoundedEvacuated": 8,
+              "enlistedMissingInternedCaptured": 3
+            }
+          },
+          {
+            "period": "1942-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 43,
+              "allPersonnelDied": 26,
+              "allPersonnelWoundedEvacuated": 8,
+              "allPersonnelMissingInternedCaptured": 9,
+              "officersTotal": 12,
+              "officersDied": 7,
+              "officersWoundedEvacuated": 1,
+              "officersMissingInternedCaptured": 4,
+              "enlistedTotal": 31,
+              "enlistedDied": 19,
+              "enlistedWoundedEvacuated": 7,
+              "enlistedMissingInternedCaptured": 5
+            }
+          },
+          {
+            "period": "1942-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": 1,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 1,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": 1
+            }
+          },
+          {
+            "period": "1942-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 7,
+              "allPersonnelDied": 4,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": 2,
+              "officersTotal": 4,
+              "officersDied": 4,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 3,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": 2
+            }
+          },
+          {
+            "period": "1942-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 5,
+              "allPersonnelDied": 1,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": 4,
+              "officersTotal": 1,
+              "officersDied": 1,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 4,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": 4
+            }
+          },
+          {
+            "period": "1942-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 4,
+              "allPersonnelDied": 2,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": 1,
+              "officersTotal": 1,
+              "officersDied": 1,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 3,
+              "enlistedDied": 1,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": 1
+            }
+          },
+          {
+            "period": "1942-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 14,
+              "allPersonnelDied": 9,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": 4,
+              "officersTotal": 8,
+              "officersDied": 5,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": 3,
+              "enlistedTotal": 6,
+              "enlistedDied": 4,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": 1
+            }
+          },
+          {
+            "period": "1942-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 22,
+              "allPersonnelDied": 18,
+              "allPersonnelWoundedEvacuated": 2,
+              "allPersonnelMissingInternedCaptured": 2,
+              "officersTotal": 21,
+              "officersDied": 18,
+              "officersWoundedEvacuated": 1,
+              "officersMissingInternedCaptured": 2,
+              "enlistedTotal": 1,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-09",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 51,
+              "allPersonnelDied": 23,
+              "allPersonnelWoundedEvacuated": 11,
+              "allPersonnelMissingInternedCaptured": 17,
+              "officersTotal": 23,
+              "officersDied": 13,
+              "officersWoundedEvacuated": 3,
+              "officersMissingInternedCaptured": 7,
+              "enlistedTotal": 28,
+              "enlistedDied": 10,
+              "enlistedWoundedEvacuated": 8,
+              "enlistedMissingInternedCaptured": 10
+            }
+          },
+          {
+            "period": "1942-10",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 90,
+              "allPersonnelDied": 50,
+              "allPersonnelWoundedEvacuated": 21,
+              "allPersonnelMissingInternedCaptured": 19,
+              "officersTotal": 38,
+              "officersDied": 29,
+              "officersWoundedEvacuated": 1,
+              "officersMissingInternedCaptured": 8,
+              "enlistedTotal": 52,
+              "enlistedDied": 21,
+              "enlistedWoundedEvacuated": 20,
+              "enlistedMissingInternedCaptured": 11
+            }
+          },
+          {
+            "period": "1942-11",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 141,
+              "allPersonnelDied": 71,
+              "allPersonnelWoundedEvacuated": 42,
+              "allPersonnelMissingInternedCaptured": 28,
+              "officersTotal": 73,
+              "officersDied": 38,
+              "officersWoundedEvacuated": 17,
+              "officersMissingInternedCaptured": 18,
+              "enlistedTotal": 68,
+              "enlistedDied": 33,
+              "enlistedWoundedEvacuated": 25,
+              "enlistedMissingInternedCaptured": 10
+            }
+          },
+          {
+            "period": "1942-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 166,
+              "allPersonnelDied": 76,
+              "allPersonnelWoundedEvacuated": 40,
+              "allPersonnelMissingInternedCaptured": 50,
+              "officersTotal": 81,
+              "officersDied": 38,
+              "officersWoundedEvacuated": 17,
+              "officersMissingInternedCaptured": 26,
+              "enlistedTotal": 85,
+              "enlistedDied": 38,
+              "enlistedWoundedEvacuated": 23,
+              "enlistedMissingInternedCaptured": 24
+            }
+          },
+          {
+            "period": "1943-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 586,
+              "allPersonnelDied": 324,
+              "allPersonnelWoundedEvacuated": 140,
+              "allPersonnelMissingInternedCaptured": 122,
+              "officersTotal": 215,
+              "officersDied": 142,
+              "officersWoundedEvacuated": 33,
+              "officersMissingInternedCaptured": 40,
+              "enlistedTotal": 371,
+              "enlistedDied": 182,
+              "enlistedWoundedEvacuated": 107,
+              "enlistedMissingInternedCaptured": 82
+            }
+          },
+          {
+            "period": "1943-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 688,
+              "allPersonnelDied": 364,
+              "allPersonnelWoundedEvacuated": 136,
+              "allPersonnelMissingInternedCaptured": 188,
+              "officersTotal": 236,
+              "officersDied": 151,
+              "officersWoundedEvacuated": 29,
+              "officersMissingInternedCaptured": 56,
+              "enlistedTotal": 452,
+              "enlistedDied": 213,
+              "enlistedWoundedEvacuated": 107,
+              "enlistedMissingInternedCaptured": 132
+            }
+          },
+          {
+            "period": "1943-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 295,
+              "allPersonnelDied": 156,
+              "allPersonnelWoundedEvacuated": 77,
+              "allPersonnelMissingInternedCaptured": 62,
+              "officersTotal": 117,
+              "officersDied": 66,
+              "officersWoundedEvacuated": 23,
+              "officersMissingInternedCaptured": 28,
+              "enlistedTotal": 178,
+              "enlistedDied": 90,
+              "enlistedWoundedEvacuated": 54,
+              "enlistedMissingInternedCaptured": 34
+            }
+          },
+          {
+            "period": "1943-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 353,
+              "allPersonnelDied": 114,
+              "allPersonnelWoundedEvacuated": 33,
+              "allPersonnelMissingInternedCaptured": 206,
+              "officersTotal": 147,
+              "officersDied": 35,
+              "officersWoundedEvacuated": 7,
+              "officersMissingInternedCaptured": 105,
+              "enlistedTotal": 206,
+              "enlistedDied": 79,
+              "enlistedWoundedEvacuated": 26,
+              "enlistedMissingInternedCaptured": 101
+            }
+          },
+          {
+            "period": "1943-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 882,
+              "allPersonnelDied": 416,
+              "allPersonnelWoundedEvacuated": 137,
+              "allPersonnelMissingInternedCaptured": 329,
+              "officersTotal": 350,
+              "officersDied": 151,
+              "officersWoundedEvacuated": 47,
+              "officersMissingInternedCaptured": 152,
+              "enlistedTotal": 532,
+              "enlistedDied": 265,
+              "enlistedWoundedEvacuated": 90,
+              "enlistedMissingInternedCaptured": 177
+            }
+          },
+          {
+            "period": "1943-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 956,
+              "allPersonnelDied": 437,
+              "allPersonnelWoundedEvacuated": 116,
+              "allPersonnelMissingInternedCaptured": 403,
+              "officersTotal": 377,
+              "officersDied": 153,
+              "officersWoundedEvacuated": 33,
+              "officersMissingInternedCaptured": 191,
+              "enlistedTotal": 579,
+              "enlistedDied": 284,
+              "enlistedWoundedEvacuated": 83,
+              "enlistedMissingInternedCaptured": 212
+            }
+          },
+          {
+            "period": "1943-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1238,
+              "allPersonnelDied": 505,
+              "allPersonnelWoundedEvacuated": 163,
+              "allPersonnelMissingInternedCaptured": 570,
+              "officersTotal": 489,
+              "officersDied": 201,
+              "officersWoundedEvacuated": 49,
+              "officersMissingInternedCaptured": 239,
+              "enlistedTotal": 749,
+              "enlistedDied": 304,
+              "enlistedWoundedEvacuated": 114,
+              "enlistedMissingInternedCaptured": 331
+            }
+          },
+          {
+            "period": "1943-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1219,
+              "allPersonnelDied": 364,
+              "allPersonnelWoundedEvacuated": 131,
+              "allPersonnelMissingInternedCaptured": 724,
+              "officersTotal": 486,
+              "officersDied": 130,
+              "officersWoundedEvacuated": 39,
+              "officersMissingInternedCaptured": 317,
+              "enlistedTotal": 733,
+              "enlistedDied": 234,
+              "enlistedWoundedEvacuated": 92,
+              "enlistedMissingInternedCaptured": 407
+            }
+          },
+          {
+            "period": "1943-09",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 903,
+              "allPersonnelDied": 329,
+              "allPersonnelWoundedEvacuated": 112,
+              "allPersonnelMissingInternedCaptured": 462,
+              "officersTotal": 366,
+              "officersDied": 139,
+              "officersWoundedEvacuated": 45,
+              "officersMissingInternedCaptured": 182,
+              "enlistedTotal": 537,
+              "enlistedDied": 190,
+              "enlistedWoundedEvacuated": 67,
+              "enlistedMissingInternedCaptured": 280
+            }
+          },
+          {
+            "period": "1943-10",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2018,
+              "allPersonnelDied": 670,
+              "allPersonnelWoundedEvacuated": 163,
+              "allPersonnelMissingInternedCaptured": 1185,
+              "officersTotal": 781,
+              "officersDied": 256,
+              "officersWoundedEvacuated": 49,
+              "officersMissingInternedCaptured": 476,
+              "enlistedTotal": 1237,
+              "enlistedDied": 414,
+              "enlistedWoundedEvacuated": 114,
+              "enlistedMissingInternedCaptured": 709
+            }
+          },
+          {
+            "period": "1943-11",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1138,
+              "allPersonnelDied": 441,
+              "allPersonnelWoundedEvacuated": 163,
+              "allPersonnelMissingInternedCaptured": 534,
+              "officersTotal": 477,
+              "officersDied": 180,
+              "officersWoundedEvacuated": 51,
+              "officersMissingInternedCaptured": 246,
+              "enlistedTotal": 661,
+              "enlistedDied": 261,
+              "enlistedWoundedEvacuated": 112,
+              "enlistedMissingInternedCaptured": 288
+            }
+          },
+          {
+            "period": "1943-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1701,
+              "allPersonnelDied": 517,
+              "allPersonnelWoundedEvacuated": 233,
+              "allPersonnelMissingInternedCaptured": 951,
+              "officersTotal": 676,
+              "officersDied": 204,
+              "officersWoundedEvacuated": 52,
+              "officersMissingInternedCaptured": 420,
+              "enlistedTotal": 1025,
+              "enlistedDied": 313,
+              "enlistedWoundedEvacuated": 181,
+              "enlistedMissingInternedCaptured": 531
+            }
+          },
+          {
+            "period": "1944-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2254,
+              "allPersonnelDied": 796,
+              "allPersonnelWoundedEvacuated": 261,
+              "allPersonnelMissingInternedCaptured": 1197,
+              "officersTotal": 923,
+              "officersDied": 329,
+              "officersWoundedEvacuated": 72,
+              "officersMissingInternedCaptured": 522,
+              "enlistedTotal": 1331,
+              "enlistedDied": 467,
+              "enlistedWoundedEvacuated": 189,
+              "enlistedMissingInternedCaptured": 675
+            }
+          },
+          {
+            "period": "1944-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 3460,
+              "allPersonnelDied": 1055,
+              "allPersonnelWoundedEvacuated": 370,
+              "allPersonnelMissingInternedCaptured": 2035,
+              "officersTotal": 1382,
+              "officersDied": 468,
+              "officersWoundedEvacuated": 102,
+              "officersMissingInternedCaptured": 812,
+              "enlistedTotal": 2078,
+              "enlistedDied": 587,
+              "enlistedWoundedEvacuated": 268,
+              "enlistedMissingInternedCaptured": 1223
+            }
+          },
+          {
+            "period": "1944-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 3745,
+              "allPersonnelDied": 1028,
+              "allPersonnelWoundedEvacuated": 329,
+              "allPersonnelMissingInternedCaptured": 2388,
+              "officersTotal": 1563,
+              "officersDied": 452,
+              "officersWoundedEvacuated": 126,
+              "officersMissingInternedCaptured": 985,
+              "enlistedTotal": 2182,
+              "enlistedDied": 576,
+              "enlistedWoundedEvacuated": 203,
+              "enlistedMissingInternedCaptured": 143
+            }
+          },
+          {
+            "period": "1944-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 4828,
+              "allPersonnelDied": 1213,
+              "allPersonnelWoundedEvacuated": 519,
+              "allPersonnelMissingInternedCaptured": 3096,
+              "officersTotal": 2015,
+              "officersDied": 525,
+              "officersWoundedEvacuated": 187,
+              "officersMissingInternedCaptured": 1303,
+              "enlistedTotal": 2813,
+              "enlistedDied": 688,
+              "enlistedWoundedEvacuated": 332,
+              "enlistedMissingInternedCaptured": 1793
+            }
+          },
+          {
+            "period": "1944-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 4116,
+              "allPersonnelDied": 1335,
+              "allPersonnelWoundedEvacuated": 464,
+              "allPersonnelMissingInternedCaptured": 2317,
+              "officersTotal": 1748,
+              "officersDied": 540,
+              "officersWoundedEvacuated": 174,
+              "officersMissingInternedCaptured": 1034,
+              "enlistedTotal": 2368,
+              "enlistedDied": 795,
+              "enlistedWoundedEvacuated": 290,
+              "enlistedMissingInternedCaptured": 1283
+            }
+          },
+          {
+            "period": "1944-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 4543,
+              "allPersonnelDied": 1743,
+              "allPersonnelWoundedEvacuated": 780,
+              "allPersonnelMissingInternedCaptured": 2020,
+              "officersTotal": 2230,
+              "officersDied": 908,
+              "officersWoundedEvacuated": 379,
+              "officersMissingInternedCaptured": 943,
+              "enlistedTotal": 2313,
+              "enlistedDied": 835,
+              "enlistedWoundedEvacuated": 401,
+              "enlistedMissingInternedCaptured": 1077
+            }
+          },
+          {
+            "period": "1944-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 3837,
+              "allPersonnelDied": 1380,
+              "allPersonnelWoundedEvacuated": 524,
+              "allPersonnelMissingInternedCaptured": 1033,
+              "officersTotal": 1790,
+              "officersDied": 642,
+              "officersWoundedEvacuated": 228,
+              "officersMissingInternedCaptured": 920,
+              "enlistedTotal": 2047,
+              "enlistedDied": 738,
+              "enlistedWoundedEvacuated": 296,
+              "enlistedMissingInternedCaptured": 1013
+            }
+          },
+          {
+            "period": "1944-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 3610,
+              "allPersonnelDied": 1142,
+              "allPersonnelWoundedEvacuated": 509,
+              "allPersonnelMissingInternedCaptured": 1959,
+              "officersTotal": 1756,
+              "officersDied": 606,
+              "officersWoundedEvacuated": 225,
+              "officersMissingInternedCaptured": 925,
+              "enlistedTotal": 1854,
+              "enlistedDied": 536,
+              "enlistedWoundedEvacuated": 284,
+              "enlistedMissingInternedCaptured": 1034
+            }
+          },
+          {
+            "period": "1944-09",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 3788,
+              "allPersonnelDied": 1081,
+              "allPersonnelWoundedEvacuated": 553,
+              "allPersonnelMissingInternedCaptured": 2154,
+              "officersTotal": 1855,
+              "officersDied": 525,
+              "officersWoundedEvacuated": 250,
+              "officersMissingInternedCaptured": 1080,
+              "enlistedTotal": 1933,
+              "enlistedDied": 556,
+              "enlistedWoundedEvacuated": 303,
+              "enlistedMissingInternedCaptured": 1074
+            }
+          },
+          {
+            "period": "1944-10",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2017,
+              "allPersonnelDied": 579,
+              "allPersonnelWoundedEvacuated": 264,
+              "allPersonnelMissingInternedCaptured": 1174,
+              "officersTotal": 923,
+              "officersDied": 286,
+              "officersWoundedEvacuated": 102,
+              "officersMissingInternedCaptured": 535,
+              "enlistedTotal": 1094,
+              "enlistedDied": 293,
+              "enlistedWoundedEvacuated": 162,
+              "enlistedMissingInternedCaptured": 639
+            }
+          },
+          {
+            "period": "1944-11",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2725,
+              "allPersonnelDied": 795,
+              "allPersonnelWoundedEvacuated": 320,
+              "allPersonnelMissingInternedCaptured": 1610,
+              "officersTotal": 1284,
+              "officersDied": 410,
+              "officersWoundedEvacuated": 114,
+              "officersMissingInternedCaptured": 760,
+              "enlistedTotal": 1441,
+              "enlistedDied": 385,
+              "enlistedWoundedEvacuated": 206,
+              "enlistedMissingInternedCaptured": 850
+            }
+          },
+          {
+            "period": "1944-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2670,
+              "allPersonnelDied": 698,
+              "allPersonnelWoundedEvacuated": 374,
+              "allPersonnelMissingInternedCaptured": 1598,
+              "officersTotal": 1325,
+              "officersDied": 365,
+              "officersWoundedEvacuated": 150,
+              "officersMissingInternedCaptured": 810,
+              "enlistedTotal": 1345,
+              "enlistedDied": 333,
+              "enlistedWoundedEvacuated": 224,
+              "enlistedMissingInternedCaptured": 788
+            }
+          },
+          {
+            "period": "1945-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1932,
+              "allPersonnelDied": 533,
+              "allPersonnelWoundedEvacuated": 401,
+              "allPersonnelMissingInternedCaptured": 998,
+              "officersTotal": 887,
+              "officersDied": 263,
+              "officersWoundedEvacuated": 167,
+              "officersMissingInternedCaptured": 457,
+              "enlistedTotal": 1045,
+              "enlistedDied": 270,
+              "enlistedWoundedEvacuated": 234,
+              "enlistedMissingInternedCaptured": 541
+            }
+          },
+          {
+            "period": "1945-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2013,
+              "allPersonnelDied": 377,
+              "allPersonnelWoundedEvacuated": 259,
+              "allPersonnelMissingInternedCaptured": 1377,
+              "officersTotal": 930,
+              "officersDied": 180,
+              "officersWoundedEvacuated": 104,
+              "officersMissingInternedCaptured": 646,
+              "enlistedTotal": 1083,
+              "enlistedDied": 197,
+              "enlistedWoundedEvacuated": 155,
+              "enlistedMissingInternedCaptured": 731
+            }
+          },
+          {
+            "period": "1945-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2943,
+              "allPersonnelDied": 760,
+              "allPersonnelWoundedEvacuated": 480,
+              "allPersonnelMissingInternedCaptured": 1703,
+              "officersTotal": 1496,
+              "officersDied": 429,
+              "officersWoundedEvacuated": 256,
+              "officersMissingInternedCaptured": 811,
+              "enlistedTotal": 1447,
+              "enlistedDied": 331,
+              "enlistedWoundedEvacuated": 224,
+              "enlistedMissingInternedCaptured": 892
+            }
+          },
+          {
+            "period": "1945-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1766,
+              "allPersonnelDied": 362,
+              "allPersonnelWoundedEvacuated": 202,
+              "allPersonnelMissingInternedCaptured": 1202,
+              "officersTotal": 823,
+              "officersDied": 201,
+              "officersWoundedEvacuated": 75,
+              "officersMissingInternedCaptured": 547,
+              "enlistedTotal": 943,
+              "enlistedDied": 161,
+              "enlistedWoundedEvacuated": 127,
+              "enlistedMissingInternedCaptured": 655
+            }
+          },
+          {
+            "period": "1945-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 29,
+              "allPersonnelDied": 5,
+              "allPersonnelWoundedEvacuated": 4,
+              "allPersonnelMissingInternedCaptured": 20,
+              "officersTotal": 15,
+              "officersDied": 2,
+              "officersWoundedEvacuated": 3,
+              "officersMissingInternedCaptured": 10,
+              "enlistedTotal": 14,
+              "enlistedDied": 3,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": 10
+            }
+          },
+          {
+            "period": "1945-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 4,
+              "allPersonnelDied": 4,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": 3,
+              "officersDied": 3,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 1,
+              "enlistedDied": 1,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1945-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": null,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1945-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": null,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          }
+        ],
+        "annual": {
+          "1942": {
+            "allPersonnelTotal": 586,
+            "allPersonnelDied": 310,
+            "allPersonnelWoundedEvacuated": 136,
+            "allPersonnelMissingInternedCaptured": 140,
+            "officersTotal": 274,
+            "officersDied": 165,
+            "officersWoundedEvacuated": 41,
+            "officersMissingInternedCaptured": 68,
+            "enlistedTotal": 312,
+            "enlistedDied": 145,
+            "enlistedWoundedEvacuated": 95,
+            "enlistedMissingInternedCaptured": 72
+          },
+          "1943": {
+            "allPersonnelTotal": 11977,
+            "allPersonnelDied": 4637,
+            "allPersonnelWoundedEvacuated": 1604,
+            "allPersonnelMissingInternedCaptured": 5736,
+            "officersTotal": 4717,
+            "officersDied": 1808,
+            "officersWoundedEvacuated": 457,
+            "officersMissingInternedCaptured": 2452,
+            "enlistedTotal": 7260,
+            "enlistedDied": 2829,
+            "enlistedWoundedEvacuated": 1147,
+            "enlistedMissingInternedCaptured": 3284
+          },
+          "1944": {
+            "allPersonnelTotal": 41593,
+            "allPersonnelDied": 12845,
+            "allPersonnelWoundedEvacuated": 5267,
+            "allPersonnelMissingInternedCaptured": 23481,
+            "officersTotal": 18794,
+            "officersDied": 6056,
+            "officersWoundedEvacuated": 2109,
+            "officersMissingInternedCaptured": 10629,
+            "enlistedTotal": 22799,
+            "enlistedDied": 6789,
+            "enlistedWoundedEvacuated": 3158,
+            "enlistedMissingInternedCaptured": 12852
+          },
+          "1945": {
+            "allPersonnelTotal": 8687,
+            "allPersonnelDied": 2041,
+            "allPersonnelWoundedEvacuated": 1346,
+            "allPersonnelMissingInternedCaptured": 5300,
+            "officersTotal": 4154,
+            "officersDied": 1078,
+            "officersWoundedEvacuated": 605,
+            "officersMissingInternedCaptured": 2471,
+            "enlistedTotal": 4533,
+            "enlistedDied": 963,
+            "enlistedWoundedEvacuated": 741,
+            "enlistedMissingInternedCaptured": 2829
+          }
+        },
+        "dateUnknown": {
+          "allPersonnelTotal": 567,
+          "allPersonnelDied": 43,
+          "allPersonnelWoundedEvacuated": 60,
+          "allPersonnelMissingInternedCaptured": 464,
+          "officersTotal": 251,
+          "officersDied": 18,
+          "officersWoundedEvacuated": 24,
+          "officersMissingInternedCaptured": 209,
+          "enlistedTotal": 316,
+          "enlistedDied": 25,
+          "enlistedWoundedEvacuated": 36,
+          "enlistedMissingInternedCaptured": 255
+        },
+        "grandTotal": {
+          "allPersonnelTotal": 63410,
+          "allPersonnelDied": 19876,
+          "allPersonnelWoundedEvacuated": 8413,
+          "allPersonnelMissingInternedCaptured": 35121,
+          "officersTotal": 28190,
+          "officersDied": 9125,
+          "officersWoundedEvacuated": 3236,
+          "officersMissingInternedCaptured": 15829,
+          "enlistedTotal": 35220,
+          "enlistedDied": 10751,
+          "enlistedWoundedEvacuated": 5177,
+          "enlistedMissingInternedCaptured": 19292
+        },
+        "monthlyToAnnualDiscrepancies": [
+          {
+            "year": "1944",
+            "column": "allPersonnelMissingInternedCaptured",
+            "printed": 23481,
+            "sumOfMonths": 22581
+          },
+          {
+            "year": "1944",
+            "column": "enlistedMissingInternedCaptured",
+            "printed": 12852,
+            "sumOfMonths": 11592
+          }
+        ]
+      }
+    },
+    "MTO": {
+      "theater": "Mediterranean Theater of Operations",
+      "officerSpecialtyTable": 25,
+      "battleCasualtyTable": 37,
+      "monthlyOfficersBySpecialty": [
+        {
+          "period": "1944-06",
+          "sourceLabel": "Jun",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 21395,
+            "pilots": 8249,
+            "bombardiers": 2189,
+            "navigators": 2168,
+            "otherAircrew": 11,
+            "administration": 1346,
+            "armamentOrdnance": 829,
+            "communications": 1093,
+            "engineering": 985,
+            "medical": 816,
+            "operationsStaff": 758,
+            "supply": 893,
+            "otherSpecialty": 2058
+          }
+        },
+        {
+          "period": "1944-07",
+          "sourceLabel": "Jul",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 23567,
+            "pilots": 8399,
+            "bombardiers": 2052,
+            "navigators": 2304,
+            "otherAircrew": 6,
+            "administration": 1635,
+            "armamentOrdnance": 897,
+            "communications": 1144,
+            "engineering": 962,
+            "medical": 762,
+            "operationsStaff": 656,
+            "supply": 1095,
+            "otherSpecialty": 3655
+          }
+        },
+        {
+          "period": "1944-08",
+          "sourceLabel": "Aug",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 24196,
+            "pilots": 9124,
+            "bombardiers": 2188,
+            "navigators": 2645,
+            "otherAircrew": 10,
+            "administration": 1621,
+            "armamentOrdnance": 904,
+            "communications": 1132,
+            "engineering": 988,
+            "medical": 764,
+            "operationsStaff": 610,
+            "supply": 1050,
+            "otherSpecialty": 3160
+          }
+        },
+        {
+          "period": "1944-09",
+          "sourceLabel": "Sep",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 23486,
+            "pilots": 8864,
+            "bombardiers": 2264,
+            "navigators": 2821,
+            "otherAircrew": 10,
+            "administration": 1652,
+            "armamentOrdnance": 890,
+            "communications": 1138,
+            "engineering": 1003,
+            "medical": 780,
+            "operationsStaff": 705,
+            "supply": 1021,
+            "otherSpecialty": 2338
+          }
+        },
+        {
+          "period": "1944-10",
+          "sourceLabel": "Oct",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 24863,
+            "pilots": 9404,
+            "bombardiers": 2725,
+            "navigators": 2622,
+            "otherAircrew": 11,
+            "administration": 1606,
+            "armamentOrdnance": 864,
+            "communications": 1077,
+            "engineering": 1025,
+            "medical": 764,
+            "operationsStaff": 788,
+            "supply": 1024,
+            "otherSpecialty": 2953
+          }
+        },
+        {
+          "period": "1944-11",
+          "sourceLabel": "Nov",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 23681,
+            "pilots": 9069,
+            "bombardiers": 2553,
+            "navigators": 2573,
+            "otherAircrew": 9,
+            "administration": 1509,
+            "armamentOrdnance": 799,
+            "communications": 903,
+            "engineering": 961,
+            "medical": 709,
+            "operationsStaff": 696,
+            "supply": 965,
+            "otherSpecialty": 2935
+          }
+        },
+        {
+          "period": "1944-12",
+          "sourceLabel": "Dec",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 22752,
+            "pilots": 9717,
+            "bombardiers": 2482,
+            "navigators": 2640,
+            "otherAircrew": 11,
+            "administration": 1565,
+            "armamentOrdnance": 805,
+            "communications": 959,
+            "engineering": 973,
+            "medical": 661,
+            "operationsStaff": 688,
+            "supply": 991,
+            "otherSpecialty": 1260
+          }
+        },
+        {
+          "period": "1945-01",
+          "sourceLabel": "Jan",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 24338,
+            "pilots": 9987,
+            "bombardiers": 2569,
+            "navigators": 2902,
+            "otherAircrew": 129,
+            "administration": 1549,
+            "armamentOrdnance": 808,
+            "communications": 862,
+            "engineering": 972,
+            "medical": 651,
+            "operationsStaff": 664,
+            "supply": 993,
+            "otherSpecialty": 2252
+          }
+        },
+        {
+          "period": "1945-02",
+          "sourceLabel": "Feb",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 24120,
+            "pilots": 9907,
+            "bombardiers": 2572,
+            "navigators": 2958,
+            "otherAircrew": 212,
+            "administration": 1559,
+            "armamentOrdnance": 760,
+            "communications": 844,
+            "engineering": 986,
+            "medical": 642,
+            "operationsStaff": 659,
+            "supply": 960,
+            "otherSpecialty": 2061
+          }
+        },
+        {
+          "period": "1945-03",
+          "sourceLabel": "Mar",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 23809,
+            "pilots": 9870,
+            "bombardiers": 2431,
+            "navigators": 2915,
+            "otherAircrew": 182,
+            "administration": 1558,
+            "armamentOrdnance": 741,
+            "communications": 845,
+            "engineering": 986,
+            "medical": 637,
+            "operationsStaff": 652,
+            "supply": 964,
+            "otherSpecialty": 2028
+          }
+        },
+        {
+          "period": "1945-04",
+          "sourceLabel": "Apr",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 22403,
+            "pilots": 9567,
+            "bombardiers": 2235,
+            "navigators": 2679,
+            "otherAircrew": 215,
+            "administration": 1495,
+            "armamentOrdnance": 710,
+            "communications": 838,
+            "engineering": 968,
+            "medical": 631,
+            "operationsStaff": 688,
+            "supply": 944,
+            "otherSpecialty": 1433
+          }
+        },
+        {
+          "period": "1945-05",
+          "sourceLabel": "May",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 16578,
+            "pilots": 6477,
+            "bombardiers": 1310,
+            "navigators": 1301,
+            "otherAircrew": 270,
+            "administration": 1305,
+            "armamentOrdnance": 577,
+            "communications": 703,
+            "engineering": 598,
+            "medical": 517,
+            "operationsStaff": 579,
+            "supply": 772,
+            "otherSpecialty": 1969
+          }
+        },
+        {
+          "period": "1945-06",
+          "sourceLabel": "Jun",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 11479,
+            "pilots": 4485,
+            "bombardiers": 907,
+            "navigators": 901,
+            "otherAircrew": 187,
+            "administration": 904,
+            "armamentOrdnance": 400,
+            "communications": 487,
+            "engineering": 552,
+            "medical": 358,
+            "operationsStaff": 401,
+            "supply": 534,
+            "otherSpecialty": 1363
+          }
+        },
+        {
+          "period": "1945-07",
+          "sourceLabel": "Jul",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 9395,
+            "pilots": 3102,
+            "bombardiers": 287,
+            "navigators": 586,
+            "otherAircrew": 222,
+            "administration": 950,
+            "armamentOrdnance": 411,
+            "communications": 516,
+            "engineering": 609,
+            "medical": 385,
+            "operationsStaff": 353,
+            "supply": 571,
+            "otherSpecialty": 1403
+          }
+        },
+        {
+          "period": "1945-08",
+          "sourceLabel": "Aug",
+          "officerPersonnelOnStrengthBySpecialty": {
+            "totalOfficers": 6542,
+            "pilots": 2088,
+            "bombardiers": 218,
+            "navigators": 478,
+            "otherAircrew": 116,
+            "administration": 738,
+            "armamentOrdnance": 259,
+            "communications": 373,
+            "engineering": 478,
+            "medical": 277,
+            "operationsStaff": 226,
+            "supply": 398,
+            "otherSpecialty": 893
+          }
+        }
+      ],
+      "battleCasualties": {
+        "monthly": [
+          {
+            "period": "1941-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": 1,
+              "officersDied": null,
+              "officersWoundedEvacuated": 1,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 21,
+              "allPersonnelDied": 8,
+              "allPersonnelWoundedEvacuated": 13,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": 11,
+              "officersDied": 7,
+              "officersWoundedEvacuated": 4,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 10,
+              "enlistedDied": 1,
+              "enlistedWoundedEvacuated": 9,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 16,
+              "allPersonnelDied": 3,
+              "allPersonnelWoundedEvacuated": 8,
+              "allPersonnelMissingInternedCaptured": 5,
+              "officersTotal": 10,
+              "officersDied": 2,
+              "officersWoundedEvacuated": 3,
+              "officersMissingInternedCaptured": 5,
+              "enlistedTotal": 6,
+              "enlistedDied": 1,
+              "enlistedWoundedEvacuated": 5,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": null,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": null,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 4,
+              "allPersonnelDied": 2,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": 2,
+              "officersTotal": 2,
+              "officersDied": 1,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": 1,
+              "enlistedTotal": 2,
+              "enlistedDied": 1,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": 1
+            }
+          },
+          {
+            "period": "1942-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 8,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": 8,
+              "officersTotal": 5,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": 5,
+              "enlistedTotal": 3,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": 3
+            }
+          },
+          {
+            "period": "1942-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 27,
+              "allPersonnelDied": 26,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": 13,
+              "officersDied": 13,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 14,
+              "enlistedDied": 13,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 21,
+              "allPersonnelDied": 19,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": 2,
+              "officersTotal": 8,
+              "officersDied": 6,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": 2,
+              "enlistedTotal": 13,
+              "enlistedDied": 13,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1942-09",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 26,
+              "allPersonnelDied": 13,
+              "allPersonnelWoundedEvacuated": 4,
+              "allPersonnelMissingInternedCaptured": 9,
+              "officersTotal": 15,
+              "officersDied": 5,
+              "officersWoundedEvacuated": 3,
+              "officersMissingInternedCaptured": 7,
+              "enlistedTotal": 11,
+              "enlistedDied": 8,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": 2
+            }
+          },
+          {
+            "period": "1942-10",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 52,
+              "allPersonnelDied": 27,
+              "allPersonnelWoundedEvacuated": 18,
+              "allPersonnelMissingInternedCaptured": 7,
+              "officersTotal": 19,
+              "officersDied": 11,
+              "officersWoundedEvacuated": 5,
+              "officersMissingInternedCaptured": 3,
+              "enlistedTotal": 33,
+              "enlistedDied": 16,
+              "enlistedWoundedEvacuated": 13,
+              "enlistedMissingInternedCaptured": 4
+            }
+          },
+          {
+            "period": "1942-11",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 109,
+              "allPersonnelDied": 63,
+              "allPersonnelWoundedEvacuated": 29,
+              "allPersonnelMissingInternedCaptured": 17,
+              "officersTotal": 42,
+              "officersDied": 28,
+              "officersWoundedEvacuated": 5,
+              "officersMissingInternedCaptured": 9,
+              "enlistedTotal": 67,
+              "enlistedDied": 35,
+              "enlistedWoundedEvacuated": 24,
+              "enlistedMissingInternedCaptured": 8
+            }
+          },
+          {
+            "period": "1942-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 152,
+              "allPersonnelDied": 108,
+              "allPersonnelWoundedEvacuated": 24,
+              "allPersonnelMissingInternedCaptured": 20,
+              "officersTotal": 78,
+              "officersDied": 60,
+              "officersWoundedEvacuated": 10,
+              "officersMissingInternedCaptured": 8,
+              "enlistedTotal": 74,
+              "enlistedDied": 48,
+              "enlistedWoundedEvacuated": 14,
+              "enlistedMissingInternedCaptured": 12
+            }
+          },
+          {
+            "period": "1943-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 371,
+              "allPersonnelDied": 194,
+              "allPersonnelWoundedEvacuated": 116,
+              "allPersonnelMissingInternedCaptured": 61,
+              "officersTotal": 175,
+              "officersDied": 92,
+              "officersWoundedEvacuated": 45,
+              "officersMissingInternedCaptured": 33,
+              "enlistedTotal": 196,
+              "enlistedDied": 132,
+              "enlistedWoundedEvacuated": 71,
+              "enlistedMissingInternedCaptured": 23
+            }
+          },
+          {
+            "period": "1943-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 371,
+              "allPersonnelDied": 134,
+              "allPersonnelWoundedEvacuated": 95,
+              "allPersonnelMissingInternedCaptured": 142,
+              "officersTotal": 163,
+              "officersDied": 74,
+              "officersWoundedEvacuated": 22,
+              "officersMissingInternedCaptured": 66,
+              "enlistedTotal": 208,
+              "enlistedDied": 59,
+              "enlistedWoundedEvacuated": 73,
+              "enlistedMissingInternedCaptured": 76
+            }
+          },
+          {
+            "period": "1943-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 243,
+              "allPersonnelDied": 119,
+              "allPersonnelWoundedEvacuated": 67,
+              "allPersonnelMissingInternedCaptured": 57,
+              "officersTotal": 135,
+              "officersDied": 67,
+              "officersWoundedEvacuated": 33,
+              "officersMissingInternedCaptured": 35,
+              "enlistedTotal": 108,
+              "enlistedDied": 52,
+              "enlistedWoundedEvacuated": 34,
+              "enlistedMissingInternedCaptured": 22
+            }
+          },
+          {
+            "period": "1943-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 450,
+              "allPersonnelDied": 227,
+              "allPersonnelWoundedEvacuated": 136,
+              "allPersonnelMissingInternedCaptured": 87,
+              "officersTotal": 230,
+              "officersDied": 126,
+              "officersWoundedEvacuated": 52,
+              "officersMissingInternedCaptured": 52,
+              "enlistedTotal": 220,
+              "enlistedDied": 101,
+              "enlistedWoundedEvacuated": 84,
+              "enlistedMissingInternedCaptured": 35
+            }
+          },
+          {
+            "period": "1943-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 309,
+              "allPersonnelDied": 159,
+              "allPersonnelWoundedEvacuated": 117,
+              "allPersonnelMissingInternedCaptured": 33,
+              "officersTotal": 163,
+              "officersDied": 94,
+              "officersWoundedEvacuated": 51,
+              "officersMissingInternedCaptured": 18,
+              "enlistedTotal": 146,
+              "enlistedDied": 65,
+              "enlistedWoundedEvacuated": 66,
+              "enlistedMissingInternedCaptured": 15
+            }
+          },
+          {
+            "period": "1943-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 211,
+              "allPersonnelDied": 99,
+              "allPersonnelWoundedEvacuated": 83,
+              "allPersonnelMissingInternedCaptured": 29,
+              "officersTotal": 101,
+              "officersDied": 58,
+              "officersWoundedEvacuated": 23,
+              "officersMissingInternedCaptured": 20,
+              "enlistedTotal": 110,
+              "enlistedDied": 41,
+              "enlistedWoundedEvacuated": 60,
+              "enlistedMissingInternedCaptured": 9
+            }
+          },
+          {
+            "period": "1943-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 844,
+              "allPersonnelDied": 493,
+              "allPersonnelWoundedEvacuated": 220,
+              "allPersonnelMissingInternedCaptured": 131,
+              "officersTotal": 396,
+              "officersDied": 253,
+              "officersWoundedEvacuated": 78,
+              "officersMissingInternedCaptured": 65,
+              "enlistedTotal": 448,
+              "enlistedDied": 240,
+              "enlistedWoundedEvacuated": 142,
+              "enlistedMissingInternedCaptured": 66
+            }
+          },
+          {
+            "period": "1943-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1016,
+              "allPersonnelDied": 580,
+              "allPersonnelWoundedEvacuated": 118,
+              "allPersonnelMissingInternedCaptured": 318,
+              "officersTotal": 434,
+              "officersDied": 265,
+              "officersWoundedEvacuated": 34,
+              "officersMissingInternedCaptured": 135,
+              "enlistedTotal": 582,
+              "enlistedDied": 315,
+              "enlistedWoundedEvacuated": 84,
+              "enlistedMissingInternedCaptured": 183
+            }
+          },
+          {
+            "period": "1943-09",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 387,
+              "allPersonnelDied": 182,
+              "allPersonnelWoundedEvacuated": 98,
+              "allPersonnelMissingInternedCaptured": 107,
+              "officersTotal": 172,
+              "officersDied": 94,
+              "officersWoundedEvacuated": 29,
+              "officersMissingInternedCaptured": 49,
+              "enlistedTotal": 215,
+              "enlistedDied": 88,
+              "enlistedWoundedEvacuated": 69,
+              "enlistedMissingInternedCaptured": 58
+            }
+          },
+          {
+            "period": "1943-10",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 360,
+              "allPersonnelDied": 183,
+              "allPersonnelWoundedEvacuated": 76,
+              "allPersonnelMissingInternedCaptured": 101,
+              "officersTotal": 162,
+              "officersDied": 87,
+              "officersWoundedEvacuated": 24,
+              "officersMissingInternedCaptured": 51,
+              "enlistedTotal": 198,
+              "enlistedDied": 96,
+              "enlistedWoundedEvacuated": 52,
+              "enlistedMissingInternedCaptured": 50
+            }
+          },
+          {
+            "period": "1943-11",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1210,
+              "allPersonnelDied": 917,
+              "allPersonnelWoundedEvacuated": 177,
+              "allPersonnelMissingInternedCaptured": 116,
+              "officersTotal": 154,
+              "officersDied": 87,
+              "officersWoundedEvacuated": 20,
+              "officersMissingInternedCaptured": 47,
+              "enlistedTotal": 1056,
+              "enlistedDied": 830,
+              "enlistedWoundedEvacuated": 157,
+              "enlistedMissingInternedCaptured": 69
+            }
+          },
+          {
+            "period": "1943-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 421,
+              "allPersonnelDied": 173,
+              "allPersonnelWoundedEvacuated": 90,
+              "allPersonnelMissingInternedCaptured": 158,
+              "officersTotal": 176,
+              "officersDied": 73,
+              "officersWoundedEvacuated": 19,
+              "officersMissingInternedCaptured": 84,
+              "enlistedTotal": 245,
+              "enlistedDied": 100,
+              "enlistedWoundedEvacuated": 71,
+              "enlistedMissingInternedCaptured": 74
+            }
+          },
+          {
+            "period": "1944-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 730,
+              "allPersonnelDied": 311,
+              "allPersonnelWoundedEvacuated": 110,
+              "allPersonnelMissingInternedCaptured": 309,
+              "officersTotal": 320,
+              "officersDied": 145,
+              "officersWoundedEvacuated": 42,
+              "officersMissingInternedCaptured": 133,
+              "enlistedTotal": 410,
+              "enlistedDied": 166,
+              "enlistedWoundedEvacuated": 68,
+              "enlistedMissingInternedCaptured": 176
+            }
+          },
+          {
+            "period": "1944-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1193,
+              "allPersonnelDied": 363,
+              "allPersonnelWoundedEvacuated": 136,
+              "allPersonnelMissingInternedCaptured": 694,
+              "officersTotal": 491,
+              "officersDied": 158,
+              "officersWoundedEvacuated": 34,
+              "officersMissingInternedCaptured": 299,
+              "enlistedTotal": 702,
+              "enlistedDied": 205,
+              "enlistedWoundedEvacuated": 102,
+              "enlistedMissingInternedCaptured": 395
+            }
+          },
+          {
+            "period": "1944-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 999,
+              "allPersonnelDied": 485,
+              "allPersonnelWoundedEvacuated": 199,
+              "allPersonnelMissingInternedCaptured": 315,
+              "officersTotal": 369,
+              "officersDied": 187,
+              "officersWoundedEvacuated": 42,
+              "officersMissingInternedCaptured": 140,
+              "enlistedTotal": 630,
+              "enlistedDied": 298,
+              "enlistedWoundedEvacuated": 157,
+              "enlistedMissingInternedCaptured": 175
+            }
+          },
+          {
+            "period": "1944-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2391,
+              "allPersonnelDied": 1020,
+              "allPersonnelWoundedEvacuated": 205,
+              "allPersonnelMissingInternedCaptured": 1166,
+              "officersTotal": 817,
+              "officersDied": 267,
+              "officersWoundedEvacuated": 74,
+              "officersMissingInternedCaptured": 477,
+              "enlistedTotal": 1574,
+              "enlistedDied": 753,
+              "enlistedWoundedEvacuated": 132,
+              "enlistedMissingInternedCaptured": 689
+            }
+          },
+          {
+            "period": "1944-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1972,
+              "allPersonnelDied": 601,
+              "allPersonnelWoundedEvacuated": 403,
+              "allPersonnelMissingInternedCaptured": 968,
+              "officersTotal": 803,
+              "officersDied": 250,
+              "officersWoundedEvacuated": 132,
+              "officersMissingInternedCaptured": 421,
+              "enlistedTotal": 1169,
+              "enlistedDied": 351,
+              "enlistedWoundedEvacuated": 271,
+              "enlistedMissingInternedCaptured": 547
+            }
+          },
+          {
+            "period": "1944-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1968,
+              "allPersonnelDied": 603,
+              "allPersonnelWoundedEvacuated": 233,
+              "allPersonnelMissingInternedCaptured": 1132,
+              "officersTotal": 844,
+              "officersDied": 247,
+              "officersWoundedEvacuated": 106,
+              "officersMissingInternedCaptured": 491,
+              "enlistedTotal": 1124,
+              "enlistedDied": 356,
+              "enlistedWoundedEvacuated": 127,
+              "enlistedMissingInternedCaptured": 641
+            }
+          },
+          {
+            "period": "1944-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2812,
+              "allPersonnelDied": 822,
+              "allPersonnelWoundedEvacuated": 394,
+              "allPersonnelMissingInternedCaptured": 1596,
+              "officersTotal": 1096,
+              "officersDied": 354,
+              "officersWoundedEvacuated": 147,
+              "officersMissingInternedCaptured": 595,
+              "enlistedTotal": 1716,
+              "enlistedDied": 468,
+              "enlistedWoundedEvacuated": 247,
+              "enlistedMissingInternedCaptured": 1001
+            }
+          },
+          {
+            "period": "1944-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 2243,
+              "allPersonnelDied": 500,
+              "allPersonnelWoundedEvacuated": 324,
+              "allPersonnelMissingInternedCaptured": 1410,
+              "officersTotal": 953,
+              "officersDied": 245,
+              "officersWoundedEvacuated": 148,
+              "officersMissingInternedCaptured": 560,
+              "enlistedTotal": 1290,
+              "enlistedDied": 255,
+              "enlistedWoundedEvacuated": 176,
+              "enlistedMissingInternedCaptured": 859
+            }
+          },
+          {
+            "period": "1944-09",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1074,
+              "allPersonnelDied": 181,
+              "allPersonnelWoundedEvacuated": 183,
+              "allPersonnelMissingInternedCaptured": 710,
+              "officersTotal": 439,
+              "officersDied": 90,
+              "officersWoundedEvacuated": 64,
+              "officersMissingInternedCaptured": 285,
+              "enlistedTotal": 635,
+              "enlistedDied": 91,
+              "enlistedWoundedEvacuated": 119,
+              "enlistedMissingInternedCaptured": 425
+            }
+          },
+          {
+            "period": "1944-10",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1381,
+              "allPersonnelDied": 288,
+              "allPersonnelWoundedEvacuated": 187,
+              "allPersonnelMissingInternedCaptured": 906,
+              "officersTotal": 594,
+              "officersDied": 125,
+              "officersWoundedEvacuated": 81,
+              "officersMissingInternedCaptured": 388,
+              "enlistedTotal": 787,
+              "enlistedDied": 163,
+              "enlistedWoundedEvacuated": 106,
+              "enlistedMissingInternedCaptured": 518
+            }
+          },
+          {
+            "period": "1944-11",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1280,
+              "allPersonnelDied": 285,
+              "allPersonnelWoundedEvacuated": 185,
+              "allPersonnelMissingInternedCaptured": 810,
+              "officersTotal": 570,
+              "officersDied": 145,
+              "officersWoundedEvacuated": 69,
+              "officersMissingInternedCaptured": 356,
+              "enlistedTotal": 710,
+              "enlistedDied": 140,
+              "enlistedWoundedEvacuated": 116,
+              "enlistedMissingInternedCaptured": 454
+            }
+          },
+          {
+            "period": "1944-12",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1790,
+              "allPersonnelDied": 257,
+              "allPersonnelWoundedEvacuated": 243,
+              "allPersonnelMissingInternedCaptured": 1290,
+              "officersTotal": 740,
+              "officersDied": 111,
+              "officersWoundedEvacuated": 95,
+              "officersMissingInternedCaptured": 534,
+              "enlistedTotal": 1050,
+              "enlistedDied": 146,
+              "enlistedWoundedEvacuated": 148,
+              "enlistedMissingInternedCaptured": 756
+            }
+          },
+          {
+            "period": "1945-01",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 747,
+              "allPersonnelDied": 153,
+              "allPersonnelWoundedEvacuated": 127,
+              "allPersonnelMissingInternedCaptured": 467,
+              "officersTotal": 340,
+              "officersDied": 86,
+              "officersWoundedEvacuated": 52,
+              "officersMissingInternedCaptured": 202,
+              "enlistedTotal": 407,
+              "enlistedDied": 67,
+              "enlistedWoundedEvacuated": 75,
+              "enlistedMissingInternedCaptured": 265
+            }
+          },
+          {
+            "period": "1945-02",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1418,
+              "allPersonnelDied": 200,
+              "allPersonnelWoundedEvacuated": 188,
+              "allPersonnelMissingInternedCaptured": 1030,
+              "officersTotal": 623,
+              "officersDied": 98,
+              "officersWoundedEvacuated": 82,
+              "officersMissingInternedCaptured": 443,
+              "enlistedTotal": 795,
+              "enlistedDied": 102,
+              "enlistedWoundedEvacuated": 106,
+              "enlistedMissingInternedCaptured": 587
+            }
+          },
+          {
+            "period": "1945-03",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 1430,
+              "allPersonnelDied": 179,
+              "allPersonnelWoundedEvacuated": 146,
+              "allPersonnelMissingInternedCaptured": 1105,
+              "officersTotal": 608,
+              "officersDied": 93,
+              "officersWoundedEvacuated": 62,
+              "officersMissingInternedCaptured": 453,
+              "enlistedTotal": 822,
+              "enlistedDied": 86,
+              "enlistedWoundedEvacuated": 84,
+              "enlistedMissingInternedCaptured": 652
+            }
+          },
+          {
+            "period": "1945-04",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 815,
+              "allPersonnelDied": 179,
+              "allPersonnelWoundedEvacuated": 143,
+              "allPersonnelMissingInternedCaptured": 493,
+              "officersTotal": 370,
+              "officersDied": 88,
+              "officersWoundedEvacuated": 552,
+              "officersMissingInternedCaptured": 230,
+              "enlistedTotal": 445,
+              "enlistedDied": 91,
+              "enlistedWoundedEvacuated": 91,
+              "enlistedMissingInternedCaptured": 263
+            }
+          },
+          {
+            "period": "1945-05",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 16,
+              "allPersonnelDied": 1,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": 15,
+              "officersTotal": 9,
+              "officersDied": 1,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": 8,
+              "enlistedTotal": 7,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": 7
+            }
+          },
+          {
+            "period": "1945-06",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 5,
+              "allPersonnelDied": 1,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": 3,
+              "officersTotal": 5,
+              "officersDied": 1,
+              "officersWoundedEvacuated": 1,
+              "officersMissingInternedCaptured": 3,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1945-07",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": 3,
+              "allPersonnelDied": 2,
+              "allPersonnelWoundedEvacuated": 1,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": 1,
+              "officersDied": 1,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": 2,
+              "enlistedDied": 1,
+              "enlistedWoundedEvacuated": 1,
+              "enlistedMissingInternedCaptured": null
+            }
+          },
+          {
+            "period": "1945-08",
+            "reportedBattleCasualties": {
+              "allPersonnelTotal": null,
+              "allPersonnelDied": null,
+              "allPersonnelWoundedEvacuated": null,
+              "allPersonnelMissingInternedCaptured": null,
+              "officersTotal": null,
+              "officersDied": null,
+              "officersWoundedEvacuated": null,
+              "officersMissingInternedCaptured": null,
+              "enlistedTotal": null,
+              "enlistedDied": null,
+              "enlistedWoundedEvacuated": null,
+              "enlistedMissingInternedCaptured": null
+            }
+          }
+        ],
+        "annual": {
+          "1942": {
+            "allPersonnelTotal": 436,
+            "allPersonnelDied": 269,
+            "allPersonnelWoundedEvacuated": 97,
+            "allPersonnelMissingInternedCaptured": 70,
+            "officersTotal": 203,
+            "officersDied": 133,
+            "officersWoundedEvacuated": 30,
+            "officersMissingInternedCaptured": 40,
+            "enlistedTotal": 233,
+            "enlistedDied": 136,
+            "enlistedWoundedEvacuated": 67,
+            "enlistedMissingInternedCaptured": 30
+          },
+          "1943": {
+            "allPersonnelTotal": 6193,
+            "allPersonnelDied": 3640,
+            "allPersonnelWoundedEvacuated": 1393,
+            "allPersonnelMissingInternedCaptured": 1340,
+            "officersTotal": 2461,
+            "officersDied": 1371,
+            "officersWoundedEvacuated": 430,
+            "officersMissingInternedCaptured": 660,
+            "enlistedTotal": 3732,
+            "enlistedDied": 2089,
+            "enlistedWoundedEvacuated": 963,
+            "enlistedMissingInternedCaptured": 680
+          },
+          "1944": {
+            "allPersonnelTotal": 19833,
+            "allPersonnelDied": 5716,
+            "allPersonnelWoundedEvacuated": 2802,
+            "allPersonnelMissingInternedCaptured": 11315,
+            "officersTotal": 8036,
+            "officersDied": 2324,
+            "officersWoundedEvacuated": 1033,
+            "officersMissingInternedCaptured": 4679,
+            "enlistedTotal": 11797,
+            "enlistedDied": 3392,
+            "enlistedWoundedEvacuated": 1769,
+            "enlistedMissingInternedCaptured": 6636
+          },
+          "1945": {
+            "allPersonnelTotal": 4434,
+            "allPersonnelDied": 715,
+            "allPersonnelWoundedEvacuated": 606,
+            "allPersonnelMissingInternedCaptured": 3113,
+            "officersTotal": 1956,
+            "officersDied": 368,
+            "officersWoundedEvacuated": 249,
+            "officersMissingInternedCaptured": 1339,
+            "enlistedTotal": 2478,
+            "enlistedDied": 347,
+            "enlistedWoundedEvacuated": 357,
+            "enlistedMissingInternedCaptured": 1774
+          }
+        },
+        "dateUnknown": {
+          "allPersonnelTotal": 258,
+          "allPersonnelDied": 63,
+          "allPersonnelWoundedEvacuated": 48,
+          "allPersonnelMissingInternedCaptured": 147,
+          "officersTotal": 97,
+          "officersDied": 20,
+          "officersWoundedEvacuated": 9,
+          "officersMissingInternedCaptured": 68,
+          "enlistedTotal": 161,
+          "enlistedDied": 43,
+          "enlistedWoundedEvacuated": 39,
+          "enlistedMissingInternedCaptured": 79
+        },
+        "grandTotal": {
+          "allPersonnelTotal": 31155,
+          "allPersonnelDied": 10223,
+          "allPersonnelWoundedEvacuated": 4947,
+          "allPersonnelMissingInternedCaptured": 15985,
+          "officersTotal": 12754,
+          "officersDied": 4216,
+          "officersWoundedEvacuated": 1752,
+          "officersMissingInternedCaptured": 6786,
+          "enlistedTotal": 18401,
+          "enlistedDied": 6007,
+          "enlistedWoundedEvacuated": 3195,
+          "enlistedMissingInternedCaptured": 9199
+        },
+        "monthlyToAnnualDiscrepancies": [
+          {
+            "year": "1943",
+            "column": "allPersonnelDied",
+            "printed": 3640,
+            "sumOfMonths": 3460
+          },
+          {
+            "year": "1943",
+            "column": "officersDied",
+            "printed": 1371,
+            "sumOfMonths": 1370
+          },
+          {
+            "year": "1943",
+            "column": "officersMissingInternedCaptured",
+            "printed": 660,
+            "sumOfMonths": 655
+          },
+          {
+            "year": "1943",
+            "column": "enlistedDied",
+            "printed": 2089,
+            "sumOfMonths": 2119
+          },
+          {
+            "year": "1944",
+            "column": "allPersonnelMissingInternedCaptured",
+            "printed": 11315,
+            "sumOfMonths": 11306
+          },
+          {
+            "year": "1944",
+            "column": "officersWoundedEvacuated",
+            "printed": 1033,
+            "sumOfMonths": 1034
+          },
+          {
+            "year": "1945",
+            "column": "officersWoundedEvacuated",
+            "printed": 249,
+            "sumOfMonths": 749
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,830 @@
+{
+  "id": "RKKA-VVS-06-08",
+  "topic": "VVS KA Jan-May 1945 air-army mission sorties",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_08.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 13,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de VVS de los Frentes",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre tropas",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre objetos ferrovi arios",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre aerodro mos",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre puentes y cruces de rio",
+              "rowspan": 2
+            },
+            {
+              "value": "Misiones de recono cimiento",
+              "rowspan": 2
+            },
+            {
+              "value": "Escolta",
+              "rowspan": 2
+            },
+            {
+              "value": "Defensa antiaerea",
+              "rowspan": 2
+            },
+            {
+              "value": "Intercep cion",
+              "rowspan": 2
+            },
+            {
+              "value": "Caza libre",
+              "rowspan": 2
+            },
+            {
+              "value": "Transpor te de cargame ntos",
+              "rowspan": 2
+            },
+            {
+              "value": "Misiones especiales",
+              "rowspan": 2
+            },
+            {
+              "value": "Correccion de fuego de artilleria",
+              "rowspan": 2
+            },
+            {
+              "value": "Misiones de recono cimiento",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre puertos",
+              "rowspan": 2
+            },
+            {
+              "value": "Sobre embarca ciones",
+              "rowspan": 2
+            },
+            {
+              "value": "Misiones especiales",
+              "rowspan": 2
+            },
+            {
+              "value": "TOTAL",
+              "rowspan": 2
+            },
+            {
+              "value": "de los cuales",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "de dia"
+            },
+            {
+              "value": "de noche"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "15 EA del 2 Frente Baltico"
+            },
+            {
+              "value": "13 133"
+            },
+            {
+              "value": "3 112"
+            },
+            {
+              "value": "1 292"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "1 841"
+            },
+            {
+              "value": "2 990"
+            },
+            {
+              "value": "1 633"
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": "2 969"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "152"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "27 280"
+            },
+            {
+              "value": "16 917"
+            },
+            {
+              "value": "10 363"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "3 EA del 1 Frente Baltico (hasta abril), del 3 Frente Bielorruso (desde marzo)"
+            },
+            {
+              "value": "22 361"
+            },
+            {
+              "value": "206"
+            },
+            {
+              "value": "1 329"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 696"
+            },
+            {
+              "value": "8 538"
+            },
+            {
+              "value": "654"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "274"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "74"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "169"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "36 345"
+            },
+            {
+              "value": "26 311"
+            },
+            {
+              "value": "10 034"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "1 EA del 3 Frente Bielorruso"
+            },
+            {
+              "value": "62 518"
+            },
+            {
+              "value": "260"
+            },
+            {
+              "value": "1 459"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8 262"
+            },
+            {
+              "value": "15 365"
+            },
+            {
+              "value": "4 132"
+            },
+            {
+              "value": "160"
+            },
+            {
+              "value": "440"
+            },
+            {
+              "value": "69"
+            },
+            {
+              "value": "94"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 410"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "95 169"
+            },
+            {
+              "value": "69 440"
+            },
+            {
+              "value": "25 729"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "4 EA del 2 Frente Bielorruso"
+            },
+            {
+              "value": "45 127"
+            },
+            {
+              "value": "781"
+            },
+            {
+              "value": "736"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4 879"
+            },
+            {
+              "value": "16 341"
+            },
+            {
+              "value": "8 711"
+            },
+            {
+              "value": "176"
+            },
+            {
+              "value": "271"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 154"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "79 204"
+            },
+            {
+              "value": "61 946"
+            },
+            {
+              "value": "17 258"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "16 EA del 1 Frente Bielorruso"
+            },
+            {
+              "value": "40 106"
+            },
+            {
+              "value": "1 057"
+            },
+            {
+              "value": "484"
+            },
+            {
+              "value": "126"
+            },
+            {
+              "value": "9 851"
+            },
+            {
+              "value": "16 880"
+            },
+            {
+              "value": "16 613"
+            },
+            {
+              "value": "537"
+            },
+            {
+              "value": "3 303"
+            },
+            {
+              "value": "400"
+            },
+            {
+              "value": "147"
+            },
+            {
+              "value": "72"
+            },
+            {
+              "value": "347"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "89 923"
+            },
+            {
+              "value": "71 443"
+            },
+            {
+              "value": "18 480"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "2 EA del 1 Frente Ucraniano"
+            },
+            {
+              "value": "52 819"
+            },
+            {
+              "value": "1 256"
+            },
+            {
+              "value": "2 947"
+            },
+            {
+              "value": "130"
+            },
+            {
+              "value": "9 173"
+            },
+            {
+              "value": "22 123"
+            },
+            {
+              "value": "18 716"
+            },
+            {
+              "value": "702"
+            },
+            {
+              "value": "2 667"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "80"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "54"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "110 772"
+            },
+            {
+              "value": "92 287"
+            },
+            {
+              "value": "18 485"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "8 EA del 2 Frente Ucraniano"
+            },
+            {
+              "value": "12 248"
+            },
+            {
+              "value": "535"
+            },
+            {
+              "value": "39"
+            },
+            {
+              "value": "68"
+            },
+            {
+              "value": "3 448"
+            },
+            {
+              "value": "7 936"
+            },
+            {
+              "value": "454"
+            },
+            {
+              "value": "49"
+            },
+            {
+              "value": "354"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "200"
+            },
+            {
+              "value": "25 402"
+            },
+            {
+              "value": "23 926"
+            },
+            {
+              "value": "1 476"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "5 EA del 4 Frente Ucraniano"
+            },
+            {
+              "value": "21 955"
+            },
+            {
+              "value": "149"
+            },
+            {
+              "value": "148"
+            },
+            {
+              "value": "97"
+            },
+            {
+              "value": "3 561"
+            },
+            {
+              "value": "9 900"
+            },
+            {
+              "value": "7 267"
+            },
+            {
+              "value": "73"
+            },
+            {
+              "value": "631"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "114"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "43 943"
+            },
+            {
+              "value": "37 903"
+            },
+            {
+              "value": "6 040"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "17 EA del 3 Frente Ucraniano"
+            },
+            {
+              "value": "33 133"
+            },
+            {
+              "value": "510"
+            },
+            {
+              "value": "88"
+            },
+            {
+              "value": "482"
+            },
+            {
+              "value": "8 100"
+            },
+            {
+              "value": "7 809"
+            },
+            {
+              "value": "6 802"
+            },
+            {
+              "value": "78"
+            },
+            {
+              "value": "923"
+            },
+            {
+              "value": "3 035"
+            },
+            {
+              "value": "164"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "61 124"
+            },
+            {
+              "value": "48 682"
+            },
+            {
+              "value": "12 442"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "303 400"
+            },
+            {
+              "value": "7 866"
+            },
+            {
+              "value": "8 522"
+            },
+            {
+              "value": "934"
+            },
+            {
+              "value": "51 811"
+            },
+            {
+              "value": "107 882"
+            },
+            {
+              "value": "64 982"
+            },
+            {
+              "value": "1 824"
+            },
+            {
+              "value": "11 832"
+            },
+            {
+              "value": "3 533"
+            },
+            {
+              "value": "718"
+            },
+            {
+              "value": "510"
+            },
+            {
+              "value": "347"
+            },
+            {
+              "value": "183"
+            },
+            {
+              "value": "4 618"
+            },
+            {
+              "value": "200"
+            },
+            {
+              "value": "569 162"
+            },
+            {
+              "value": "448 855"
+            },
+            {
+              "value": "120 307"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "%"
+            },
+            {
+              "value": "53,31%"
+            },
+            {
+              "value": "1,38%"
+            },
+            {
+              "value": "1,50%"
+            },
+            {
+              "value": "0,16%"
+            },
+            {
+              "value": "9,10%"
+            },
+            {
+              "value": "18,95%"
+            },
+            {
+              "value": "11,42%"
+            },
+            {
+              "value": "0,32%"
+            },
+            {
+              "value": "2,08%"
+            },
+            {
+              "value": "0,62%"
+            },
+            {
+              "value": "0,13%"
+            },
+            {
+              "value": "0,09%"
+            },
+            {
+              "value": "0,06%"
+            },
+            {
+              "value": "0,03%"
+            },
+            {
+              "value": "0,81%"
+            },
+            {
+              "value": "0,04%"
+            },
+            {
+              "value": "100,00%"
+            },
+            {
+              "value": "78,90%"
+            },
+            {
+              "value": "21,10%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

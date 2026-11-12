@@ -1,0 +1,105 @@
+#!/usr/bin/env python3
+"""A modest facts-only extraction from four distinct military-institution sources.
+
+Avoid conflating campaign sorties with missions, aircraft and human casualties,
+fighter claims with actual enemy losses, or stocks with deployments.
+"""
+import json
+from pathlib import Path
+
+OUT=Path(__file__).resolve().parents[1]/"research/transcriptions/raf-coastal-romanian-hungarian-polish-service-quantitative-1939-1945.json"
+
+# ORIGINAL Royal Air Force Coastal Command Review, IV:6, June 1945, p.3,
+# rehosted by the RAF Air Historical Branch. These are official PROVISIONAL
+# numbers for September 3 1939–May 8 1945, not all RAF or FAA activity.
+coastal_rows=[
+ ("anti_submarine_and_convoy_escort",123372,904749,384),
+ ("anti_shipping_and_fighter",65382,244295,868),
+ ("photographic_reconnaissance",16137,49331,161),
+ ("meteorological",19870,71019,26),
+ ("air_sea_rescue",11610,48713,32),
+ ("minelaying",1192,3600,35),
+ ("miscellaneous",750,2700,5),
+]
+assert [sum(r[i] for r in coastal_rows) for i in (1,2,3)]==[238313,1324407,1511]
+
+polish_strength=[
+ ("PZL_P11c_fighter",129,43),("PZL_P7_fighter",30,75),
+ ("PZL_P23_light_bomber",118,85),("PZL_P37_bomber",36,30),
+ ("Lublin_R_XIII_recon",49,95),("RWD_14_Czapla_recon",35,20),
+]
+assert sum(r[1] for r in polish_strength)==397
+assert sum(r[2] for r in polish_strength)==348
+
+out={
+ "researchOnly":True,"dataQuality":"Facts are source-specific summaries with explicit national, date, role and fate definitions; not harmonized across forces.",
+ "rafCoastalCommand1939ToMay1945":{
+  "sourceUrl":"https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/coastal-cmd-rev-vol4-no6-jun1945/",
+  "sourceClass":"Original RAF Coastal Command Review IV no.6 June1945, printed p.3, via official RAF Air Historical Branch",
+  "period":{"from":"1939-09-03","through":"1945-05-08"},
+  "byMissionRole":[{"missionRole":r,"sorties":s,"flyingHours":h,"aircraftLostEnemyActionOrMissing":l} for r,s,h,l in coastal_rows],
+  "publishedAllRoles":{"sorties":238313,"flyingHours":1324407,"aircraftLostEnemyActionOrMissing":1511},
+  "contemporaryExtractedCommandOrderOfBattleStrengthSnapshots":[
+    {"date":"1939-09-03","publishedSquadrons":16,"publishedAircraftStrength":183},
+    {"date":"1942-11-08","publishedSquadrons":53,"publishedAircraftStrength":840},
+    {"date":"1945-05-08","publishedSquadrons":66,"publishedAircraftStrength":1117}
+  ],
+  "caveats":["Provisional figures; RAF review explicitly says later White Paper totals were being finalized.",
+   "Air/sea rescue sorties not recorded until August 1941; totals undercount earlier rescue operations.",
+   "Aircraft lost by enemy action OR missing, not all accidents, scrappings, or every writeoff.",
+   "RAF Coastal Command sorties are one command subset, not all RAF, FAA or maritime aviation; may already be part of RAF global command totals.",
+   "Official Command OOB snapshots count units/aircraft serving under Coastal Command control, including occasional USN/USAAF/FAA aircraft and Flights not comparable to squadrons. These are not British-owned planes in an exclusive national inventory."]
+ },
+ "royalRomanianAirForce":{
+  "sourceUrls":["https://roaf.ro/?cpt_services=inapoierea-fortelor-aeriene-romane-participante-la-lupte-in-bazele-lor-din-tara",
+    "https://amnr.defense.ro/news/28"],
+  "sourceClass":"Romanian Air Force official historical account and Ministry of Defence Romanian National Military Archives historical account",
+  "on1941June22":{"inServiceAircraftNationwide":621,"deployedEasternFrontCombatAirGroupAircraft":253},
+  "campaign1941OfficialAirForce":{"missions":6626,"aircraftSorties":12108,"flightHours":21077,
+   "bombMassKg":2354424,"aircraftGunAmmunitionKg":349000,
+   "aircraftClaimsConfirmed":219,"aircraftClaimsProbable":38,"totalFighterAndOtherAviationClaims":257,
+   "antiAircraftGunEnemyAirplaneClaimsSeparate":184},
+  "followingAug23_1944ChangeOfSides":{
+   "reportWindow":{"from":"1944-08-23","through":"1945-05-12"},
+   "campaignMissions":4200,"aircraftSorties":8300,"flyingHours":11000,"bombTonnage":1360,
+   "enemyAircraftClaimedDestroyed":126,"enemyAircraftCapturedOnGround":228,
+   "romanianAircraftCommittedOrUsedDuringCampaign":415,
+   "romanianOwnAircraftLostInCampaign":176,"personnelLostAcrossAirCorpsAndAuxiliaries":729,
+   "WARNING":"Source reporting through 12May1945 extends three days past European Atlas cutoff of 9May1945; no numerical split available; do not show as through-9May total."},
+  "allWarWW2RomanianAviationPersonnelLossApproximate":2000,
+  "caveats":["The 1941 219 definite/38 probable and 184 AA figures are Romanian claims, not matched Soviet actual loss returns.",
+   "All-war ~2,000 people includes mechanics and auxiliary troops; not 2,000 fighter pilots killed.",
+   "The 23 August 1944 change of allegiance is a mandatory event date for map and front-level aggregation.",
+   "253 deployed aircraft are part of nationwide 621, not an additive population; one combat mission may have several aircraft sorties."]
+ },
+ "hungarian101PumaFighterGroupMayToOct1944":{
+  "sourceUrl":"https://militaria.hu/digitalis-hadtortenelem-hadtorteneti-oktatasi-csomagok-iskolak-szamara/masodik-vilaghaboru-tortenete/masodik-vilaghaboru-tortenete-hadszervezet/101-puma-vadaszrepulosztaly",
+  "sourceClass":"Hungarian Ministry of Defence Hadtörténeti Intézet és Múzeum illustrated historical article, search-indexed; site now redirects and requires later archival recheck",
+  "formationDate":"1944-05-01","firstCombatSortie":"1944-05-24",
+  "initialSquadrons":["101/1 Zongora","101/2 Retek","101/3 Drótkefe"],
+  "initialBf109GPerSquadron":12,"initialHQBf109G":4,"derivedStartingBf109G":40,
+  "initialAssignedAirfieldName":"Veszprém-Jutas",
+  "reportedMayToOctober1944FighterSorties":649,
+  "claimsOfEnemyAircraftDestroyed":{"four_engineBombers":61,"two_engineBombers":32,"fighters":14,"derivedClaimsTotal":107},
+  "caveats":["All 107 aircraft are Hungarian *credited claims*, not independently verified Allied actual aircraft losses.",
+    "40 is the initial group organization (3x12+4), not confirmed operational/serviceable inventory, and not all Hungarian air-force strength.",
+    "No source-backed own aircraft losses or pilot deaths for this group provided by cited page."]
+ },
+ "polishAirForceSeptember1939":{
+  "sourceUrl":"https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+  "sourceClass":"U.S. Department of Defense hosted historical military air warfare study, Table 2; secondary synthesis citing Sikorski Institute and Adam Kurowski",
+  "stockStartSeptember1939ByAircraftType":[{"type":r,"operationalUnits":n,"trainingAndReserve":s} for r,n,s in polish_strength],
+  "printedStockTotals":{"operationalUnits":397,"trainingAndReserve":348,"combinedOnBooks":745},
+  "reportedAircraftLostOnOperationsSeptember1939":333,
+  "ofWhichBomberBrigadeOperationalLosses":82,
+  "serviceableAircraftFlownToInternmentInRomaniaBySept17":116,
+  "caveats":["333 represents Polish aircraft lost on operations, not killed pilots or claimed German aircraft destroyed.",
+   "116 serviceable aircraft interned in Romania were not destroyed and are not an additional operational-loss count.",
+   "The 348 training/reserve aircraft moved into operations as replacements; don't double count replacement movement as new airplanes.",
+   "The source is a secondary official-hosted military study, not first-party original Polish register; tables require corroboration with Polish IPN and Sikorski archival records."]
+ }
+}
+assert out["royalRomanianAirForce"]["campaign1941OfficialAirForce"]["aircraftClaimsConfirmed"]+out["royalRomanianAirForce"]["campaign1941OfficialAirForce"]["aircraftClaimsProbable"]==257
+assert out["hungarian101PumaFighterGroupMayToOct1944"]["claimsOfEnemyAircraftDestroyed"]["derivedClaimsTotal"]==61+32+14
+OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+"\n")
+print("RAF Coastal Command 7 mission types, official Romania both allegiances, Hungary Puma unit, and 6 Polish type strengths normalized")

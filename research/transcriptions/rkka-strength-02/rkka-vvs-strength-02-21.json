@@ -1,0 +1,4714 @@
+{
+  "id": "RKKA-VVS-02-21",
+  "topic": "Luftwaffe aircraft deployed on German-Soviet front",
+  "formationOrForce": "german_luftwaffe",
+  "dateScopeIndex": "1941-1945",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_21.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Denominacion del Teatro de las Operaciones Belicas o la region de emplazamiento (accion) de la aviacion.",
+          "colspan": 3,
+          "rowspan": 2
+        },
+        {
+          "value": "Cantidad total de los aviones de combate",
+          "rowspan": 2
+        },
+        {
+          "value": "De los cuales",
+          "colspan": 3
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "Bombarderos"
+        },
+        {
+          "value": "Cazas"
+        },
+        {
+          "value": "Reconocimiento"
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "1",
+          "colspan": 3
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "Al comienzo de la Gran Guerra Patriotica 1941-1945 {1}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "En la frontera con la URSS (a fecha de 22 de junio de 1941).",
+          "colspan": 3
+        },
+        {
+          "value": "4 942{2}"
+        },
+        {
+          "value": "2591"
+        },
+        {
+          "value": "1574"
+        },
+        {
+          "value": "777"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "De los cuales:",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del ejercito aleman Noruega y ejercitos finlandeses Sur-Este y Karelia",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5 flota aerea"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": "159"
+        },
+        {
+          "value": "159"
+        },
+        {
+          "value": "82"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "fuerzas aereas de Finlandia"
+        },
+        {
+          "value": "506"
+        },
+        {
+          "value": "236"
+        },
+        {
+          "value": "161"
+        },
+        {
+          "value": "109"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Norte",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1 flota aerea"
+        },
+        {
+          "value": "1 070"
+        },
+        {
+          "value": "613"
+        },
+        {
+          "value": "304"
+        },
+        {
+          "value": "153"
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2 flota aerea"
+        },
+        {
+          "value": "1 677"
+        },
+        {
+          "value": "980"
+        },
+        {
+          "value": "530"
+        },
+        {
+          "value": "167"
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sur",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4 flota aerea"
+        },
+        {
+          "value": "785"
+        },
+        {
+          "value": "471"
+        },
+        {
+          "value": "216"
+        },
+        {
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "fuerzas aereas de Rumania"
+        },
+        {
+          "value": "504"
+        },
+        {
+          "value": "132"
+        },
+        {
+          "value": "204"
+        },
+        {
+          "value": "168"
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "cells": [
+        {
+          "value": "En otros teatros de operaciones",
+          "colspan": 3
+        },
+        {
+          "value": "2 500"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "De los cuales:",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Francia"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en otros paises de la Europa Occidental"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Noruega"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Africa"
+        },
+        {
+          "value": "500"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania"
+        },
+        {
+          "value": "1 200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "cells": [
+        {
+          "value": "Total aviones de combate",
+          "colspan": 3
+        },
+        {
+          "value": "7 442"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "cells": [
+        {
+          "value": "A fecha de 1 de enero de 1942 {3}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 040{4}"
+        },
+        {
+          "value": "1089"
+        },
+        {
+          "value": "659"
+        },
+        {
+          "value": "292"
+        }
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Finlandia"
+        },
+        {
+          "value": "313"
+        },
+        {
+          "value": "198"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Norte"
+        },
+        {
+          "value": "427"
+        },
+        {
+          "value": "279"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro"
+        },
+        {
+          "value": "615"
+        },
+        {
+          "value": "236"
+        },
+        {
+          "value": "284"
+        },
+        {
+          "value": "95"
+        }
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sur"
+        },
+        {
+          "value": "685"
+        },
+        {
+          "value": "376"
+        },
+        {
+          "value": "195"
+        },
+        {
+          "value": "114"
+        }
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 950"
+        },
+        {
+          "value": "1616"
+        },
+        {
+          "value": "1168"
+        },
+        {
+          "value": "166"
+        }
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en el Frente Occidental"
+        },
+        {
+          "value": "870"
+        },
+        {
+          "value": "365"
+        },
+        {
+          "value": "462"
+        },
+        {
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la zona del Mar Mediterraneo"
+        },
+        {
+          "value": "700"
+        },
+        {
+          "value": "420"
+        },
+        {
+          "value": "238"
+        },
+        {
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en los Balcanes"
+        },
+        {
+          "value": "260"
+        },
+        {
+          "value": "156"
+        },
+        {
+          "value": "88"
+        },
+        {
+          "value": "16"
+        }
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania"
+        },
+        {
+          "value": "1 120"
+        },
+        {
+          "value": "675"
+        },
+        {
+          "value": "380"
+        },
+        {
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "4 990"
+        },
+        {
+          "value": "2705"
+        },
+        {
+          "value": "1827"
+        },
+        {
+          "value": "458"
+        }
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "cells": [
+        {
+          "value": "A fecha de 1 de julio de 1942 {3}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 850{5}"
+        },
+        {
+          "value": "1610"
+        },
+        {
+          "value": "905"
+        },
+        {
+          "value": "335"
+        }
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Finlandia"
+        },
+        {
+          "value": "240"
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": "75"
+        },
+        {
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Norte"
+        },
+        {
+          "value": "335"
+        },
+        {
+          "value": "225"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro"
+        },
+        {
+          "value": "635"
+        },
+        {
+          "value": "275"
+        },
+        {
+          "value": "260"
+        },
+        {
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "sourceRow": 45,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sur"
+        },
+        {
+          "value": "1 640"
+        },
+        {
+          "value": "970"
+        },
+        {
+          "value": "510"
+        },
+        {
+          "value": "160"
+        }
+      ]
+    },
+    {
+      "sourceRow": 46,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 550"
+        },
+        {
+          "value": "1380"
+        },
+        {
+          "value": "1060"
+        },
+        {
+          "value": "110"
+        }
+      ]
+    },
+    {
+      "sourceRow": 47,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 48,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en el Frente Occidental"
+        },
+        {
+          "value": "1 100"
+        },
+        {
+          "value": "450"
+        },
+        {
+          "value": "650"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "sourceRow": 49,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la zona del Mar Mediterraneo"
+        },
+        {
+          "value": "600"
+        },
+        {
+          "value": "350"
+        },
+        {
+          "value": "220"
+        },
+        {
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "sourceRow": 50,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en los Balcanes"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": "180"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania"
+        },
+        {
+          "value": "550"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "sourceRow": 52,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "5 400"
+        },
+        {
+          "value": "2990"
+        },
+        {
+          "value": "1965"
+        },
+        {
+          "value": "445"
+        }
+      ]
+    },
+    {
+      "sourceRow": 53,
+      "cells": [
+        {
+          "value": "A fecha de 15 de noviembre de 1942 {6}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 54,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "3 300{7}"
+        },
+        {
+          "value": "2062"
+        },
+        {
+          "value": "848"
+        },
+        {
+          "value": "390"
+        }
+      ]
+    },
+    {
+      "sourceRow": 55,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 56,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Finlandia"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 57,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Norte"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 58,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro"
+        },
+        {
+          "value": "1 200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 59,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos A"
+        },
+        {
+          "value": "800"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 60,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos B"
+        },
+        {
+          "value": "600"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 61,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "1 980"
+        },
+        {
+          "value": "608"
+        },
+        {
+          "value": "1192"
+        },
+        {
+          "value": "180"
+        }
+      ]
+    },
+    {
+      "sourceRow": 62,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 63,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en el Frente Occidental"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 64,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la zona del Mar Mediterraneo"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 65,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Noruega"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 66,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Africa"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 67,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania"
+        },
+        {
+          "value": "980"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 68,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "5 280"
+        },
+        {
+          "value": "2670"
+        },
+        {
+          "value": "2040"
+        },
+        {
+          "value": "570"
+        }
+      ]
+    },
+    {
+      "sourceRow": 69,
+      "cells": [
+        {
+          "value": "A fecha de 15 de abril de 1943 {8}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 70,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 620"
+        },
+        {
+          "value": "1710"
+        },
+        {
+          "value": "555"
+        },
+        {
+          "value": "355"
+        }
+      ]
+    },
+    {
+      "sourceRow": 71,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 72,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas del Frente de Karelia"
+        },
+        {
+          "value": "230"
+        },
+        {
+          "value": "80"
+        },
+        {
+          "value": "85"
+        },
+        {
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "sourceRow": 73,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas de los Frentes de Leningrado, Volhov, Noroeste, Kalinin y Central"
+        },
+        {
+          "value": "870"
+        },
+        {
+          "value": "530"
+        },
+        {
+          "value": "220"
+        },
+        {
+          "value": "120"
+        }
+      ]
+    },
+    {
+      "sourceRow": 74,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas de los Frentes de Voronezh, Surоeste, Sur y Caucaso Norte"
+        },
+        {
+          "value": "1 520"
+        },
+        {
+          "value": "1100"
+        },
+        {
+          "value": "250"
+        },
+        {
+          "value": "170"
+        }
+      ]
+    },
+    {
+      "sourceRow": 75,
+      "cells": [
+        {
+          "value": "A fecha de 1 de mayo de 1943 (Fuerzas Aereas de los aliados de Alemania)",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 76,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Finlandia"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 77,
+      "cells": [
+        {
+          "value": "En el tramo nor-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "165"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "65"
+        },
+        {
+          "value": "70"
+        }
+      ]
+    },
+    {
+      "sourceRow": 78,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "fuerzas aereas de Rumania"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 79,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "sourceRow": 80,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Hungria"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 81,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "36"
+        }
+      ]
+    },
+    {
+      "sourceRow": 82,
+      "cells": [
+        {
+          "value": "Total",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "335"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "139"
+        },
+        {
+          "value": "136"
+        }
+      ]
+    },
+    {
+      "sourceRow": 83,
+      "cells": [
+        {
+          "value": "Total en el F. sovietico-aleman (sin considerar otros frentes) (aprox pq sumamos 15 dias)",
+          "colspan": 3
+        },
+        {
+          "value": "2 955"
+        },
+        {
+          "value": "1 770"
+        },
+        {
+          "value": "694"
+        },
+        {
+          "value": "491"
+        }
+      ]
+    },
+    {
+      "sourceRow": 84,
+      "cells": [
+        {
+          "value": "A fecha de 1 de julio de 1943 {9}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 85,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 86,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 700"
+        },
+        {
+          "value": "1915"
+        },
+        {
+          "value": "525"
+        },
+        {
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "sourceRow": 87,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 88,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas del Frente de Karelia"
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": "110"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "sourceRow": 89,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas de los Frentes de Leningrado, Volhov y Nororeste"
+        },
+        {
+          "value": "280"
+        },
+        {
+          "value": "190"
+        },
+        {
+          "value": "75"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 90,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas de los Frentes de Kalinin, Occidental, Bryansk y Central"
+        },
+        {
+          "value": "980"
+        },
+        {
+          "value": "705"
+        },
+        {
+          "value": "180"
+        },
+        {
+          "value": "95"
+        }
+      ]
+    },
+    {
+      "sourceRow": 91,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas de los Frentes de Voronezh, Suroeste y Sur"
+        },
+        {
+          "value": "1 025"
+        },
+        {
+          "value": "795"
+        },
+        {
+          "value": "125"
+        },
+        {
+          "value": "105"
+        }
+      ]
+    },
+    {
+      "sourceRow": 92,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de actuacion de las tropas de los Frentes de Caucaso Norte"
+        },
+        {
+          "value": "275"
+        },
+        {
+          "value": "115"
+        },
+        {
+          "value": "125"
+        },
+        {
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "sourceRow": 93,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 200"
+        },
+        {
+          "value": "503"
+        },
+        {
+          "value": "1475"
+        },
+        {
+          "value": "222"
+        }
+      ]
+    },
+    {
+      "sourceRow": 94,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 95,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Francia"
+        },
+        {
+          "value": "800"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 96,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en otros paises de la Europa Occidental"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 97,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Noruega"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 98,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania"
+        },
+        {
+          "value": "1 000"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 99,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "4 900"
+        },
+        {
+          "value": "2418"
+        },
+        {
+          "value": "2000"
+        },
+        {
+          "value": "482"
+        }
+      ]
+    },
+    {
+      "sourceRow": 100,
+      "cells": [
+        {
+          "value": "A fecha de 1 de julio de 1943 (Fuerzas Aereas de los aliados de Alemania)",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 101,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Finlandia"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 102,
+      "cells": [
+        {
+          "value": "En el tramo nor-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "sourceRow": 103,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 104,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "fuerzas aereas de Rumania"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 105,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "sourceRow": 106,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Hungria"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 107,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "sourceRow": 108,
+      "cells": [
+        {
+          "value": "Total",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "280"
+        },
+        {
+          "value": "126"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "93"
+        }
+      ]
+    },
+    {
+      "sourceRow": 109,
+      "cells": [
+        {
+          "value": "A fecha de 1 de septiembre de 1943 {10}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 110,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 355"
+        },
+        {
+          "value": "1662"
+        },
+        {
+          "value": "543"
+        },
+        {
+          "value": "150"
+        }
+      ]
+    },
+    {
+      "sourceRow": 111,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 112,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Finlandia"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "82"
+        },
+        {
+          "value": "58"
+        },
+        {
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "sourceRow": 113,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Norte"
+        },
+        {
+          "value": "205"
+        },
+        {
+          "value": "115"
+        },
+        {
+          "value": "75"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 114,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro"
+        },
+        {
+          "value": "850"
+        },
+        {
+          "value": "625"
+        },
+        {
+          "value": "185"
+        },
+        {
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "sourceRow": 115,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sur"
+        },
+        {
+          "value": "1 150"
+        },
+        {
+          "value": "840"
+        },
+        {
+          "value": "225"
+        },
+        {
+          "value": "85"
+        }
+      ]
+    },
+    {
+      "sourceRow": 116,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "A fecha de 1 de septiembre de 1943 (Fuerzas Aereas de los aliados de Alemania)",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 117,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Finlandia"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 118,
+      "cells": [
+        {
+          "value": "En el tramo nor-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "sourceRow": 119,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "fuerzas aereas de Rumania"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 120,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "105"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "sourceRow": 121,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Hungria"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 122,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "sourceRow": 123,
+      "cells": [
+        {
+          "value": "Total",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "220"
+        },
+        {
+          "value": "115"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "sourceRow": 124,
+      "cells": [
+        {
+          "value": "Total en el frente sovietico-aleman (sin considerar otros frentes)",
+          "colspan": 3
+        },
+        {
+          "value": "2 575"
+        },
+        {
+          "value": "1 777"
+        },
+        {
+          "value": "583"
+        },
+        {
+          "value": "215"
+        }
+      ]
+    },
+    {
+      "sourceRow": 125,
+      "cells": [
+        {
+          "value": "A fecha de 1 de octubre de 1943 {10}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 126,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 320"
+        },
+        {
+          "value": "1635"
+        },
+        {
+          "value": "545"
+        },
+        {
+          "value": "140"
+        }
+      ]
+    },
+    {
+      "sourceRow": 127,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 128,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Finlandia"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "sourceRow": 129,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del Frente de Karelia"
+        },
+        {
+          "value": "180"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "75"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 130,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda entre el Frente de Kalinin y Frente Central"
+        },
+        {
+          "value": "750"
+        },
+        {
+          "value": "525"
+        },
+        {
+          "value": "185"
+        },
+        {
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "sourceRow": 131,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda desde Frente de Voronezh hasta Frente del Caucaso Norte"
+        },
+        {
+          "value": "1 240"
+        },
+        {
+          "value": "930"
+        },
+        {
+          "value": "230"
+        },
+        {
+          "value": "80"
+        }
+      ]
+    },
+    {
+      "sourceRow": 132,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "A fecha de 1 de octubre de 1943 (Fuerzas Aereas de los aliados de Alemania)",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 133,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Finlandia"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 134,
+      "cells": [
+        {
+          "value": "En el tramo nor-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "sourceRow": 135,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "fuerzas aereas de Rumania"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 136,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "105"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 137,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "Fuerzas Aereas de Hungria"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 138,
+      "cells": [
+        {
+          "value": "En la direccion sur-oeste del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "sourceRow": 139,
+      "cells": [
+        {
+          "value": "Total",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "220"
+        },
+        {
+          "value": "115"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "sourceRow": 140,
+      "cells": [
+        {
+          "value": "Total en el frente sovietico-aleman (sin considerar otros frentes)",
+          "colspan": 3
+        },
+        {
+          "value": "2 540"
+        },
+        {
+          "value": "1 750"
+        },
+        {
+          "value": "605"
+        },
+        {
+          "value": "185"
+        }
+      ]
+    },
+    {
+      "sourceRow": 141,
+      "cells": [
+        {
+          "value": "A fecha de 1 de enero de 1944 {6}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 142,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 800{11}"
+        },
+        {
+          "value": "1596"
+        },
+        {
+          "value": "728"
+        },
+        {
+          "value": "476"
+        }
+      ]
+    },
+    {
+      "sourceRow": 143,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 144,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Finlandia"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 145,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Norte"
+        },
+        {
+          "value": "400"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 146,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro"
+        },
+        {
+          "value": "700"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 147,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sur"
+        },
+        {
+          "value": "1 200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 148,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos A"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 149,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 700"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 150,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 151,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Francia"
+        },
+        {
+          "value": "1 400"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 152,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en otros paises de la Europa Occidental"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 153,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Noruega"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 154,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania"
+        },
+        {
+          "value": "900"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 155,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "5 500"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "sourceRow": 156,
+      "cells": [
+        {
+          "value": "A fecha de 1 de junio de 1944 {12}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 157,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 805{13}"
+        },
+        {
+          "value": "1330"
+        },
+        {
+          "value": "830"
+        },
+        {
+          "value": "645"
+        }
+      ]
+    },
+    {
+      "sourceRow": 158,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 159,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del Frente de Karelia"
+        },
+        {
+          "value": "280"
+        },
+        {
+          "value": "110"
+        },
+        {
+          "value": "85"
+        },
+        {
+          "value": "85"
+        }
+      ]
+    },
+    {
+      "sourceRow": 160,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de los Frentes de Leningrado, 2 y 3 Frente Baltico"
+        },
+        {
+          "value": "350"
+        },
+        {
+          "value": "160"
+        },
+        {
+          "value": "120"
+        },
+        {
+          "value": "70"
+        }
+      ]
+    },
+    {
+      "sourceRow": 161,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de los Frentes: 1 Baltico, 1, 2 y 3 Bielorruso"
+        },
+        {
+          "value": "810"
+        },
+        {
+          "value": "465"
+        },
+        {
+          "value": "180"
+        },
+        {
+          "value": "165"
+        }
+      ]
+    },
+    {
+      "sourceRow": 162,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del 1, 2, 3 y 4 Frente Ucraniano"
+        },
+        {
+          "value": "1 365"
+        },
+        {
+          "value": "595"
+        },
+        {
+          "value": "445"
+        },
+        {
+          "value": "325"
+        }
+      ]
+    },
+    {
+      "sourceRow": 163,
+      "cells": [
+        {
+          "value": "A fecha de 15 de junio de 1944 {14}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 164,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 832"
+        },
+        {
+          "value": "1328"
+        },
+        {
+          "value": "866"
+        },
+        {
+          "value": "638"
+        }
+      ]
+    },
+    {
+      "sourceRow": 165,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "De los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 166,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "finlandeses"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "sourceRow": 167,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "rumanos"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": "123"
+        },
+        {
+          "value": "130"
+        },
+        {
+          "value": "47"
+        }
+      ]
+    },
+    {
+      "sourceRow": 168,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "hungaros"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "sourceRow": 169,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 170,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del Frente de Karelia"
+        },
+        {
+          "value": "270"
+        },
+        {
+          "value": "110"
+        },
+        {
+          "value": "85"
+        },
+        {
+          "value": "75"
+        }
+      ]
+    },
+    {
+      "sourceRow": 171,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de los Frente de Leningrado, 2 y 3 Frente Baltico"
+        },
+        {
+          "value": "350"
+        },
+        {
+          "value": "160"
+        },
+        {
+          "value": "120"
+        },
+        {
+          "value": "70"
+        }
+      ]
+    },
+    {
+      "sourceRow": 172,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de 1 Frente Baltico, 1, 2 y 3 Frente Bielorruso"
+        },
+        {
+          "value": "810"
+        },
+        {
+          "value": "465"
+        },
+        {
+          "value": "180"
+        },
+        {
+          "value": "165"
+        }
+      ]
+    },
+    {
+      "sourceRow": 173,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda de 1, 2, 3 y 4 Frente Ucraniano"
+        },
+        {
+          "value": "1 402"
+        },
+        {
+          "value": "593"
+        },
+        {
+          "value": "481"
+        },
+        {
+          "value": "328"
+        }
+      ]
+    },
+    {
+      "sourceRow": 174,
+      "cells": [
+        {
+          "value": "Total en el frente sovietico-aleman (sin considerar otros frentes)",
+          "colspan": 3
+        },
+        {
+          "value": "3 247"
+        },
+        {
+          "value": "1 511"
+        },
+        {
+          "value": "1 031"
+        },
+        {
+          "value": "705"
+        }
+      ]
+    },
+    {
+      "sourceRow": 175,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman (datos a fecha de 10 de junio de 1944) {3}",
+          "colspan": 3
+        },
+        {
+          "value": "2 800"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 176,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 177,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Francia"
+        },
+        {
+          "value": "2 400"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "sourceRow": 178,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Noruega y Dinamarca"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "sourceRow": 179,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en otros paises de la Europa Occidental"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "sourceRow": 180,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "6 047"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "sourceRow": 181,
+      "cells": [
+        {
+          "value": "A fecha de 1 de enero de 1945 {15}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 182,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "1 680"
+        },
+        {
+          "value": "700"
+        },
+        {
+          "value": "610"
+        },
+        {
+          "value": "370"
+        }
+      ]
+    },
+    {
+      "sourceRow": 183,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 184,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del Frente de Karelia"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "sourceRow": 185,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la direccion Noroeste (1 y 2 Frente Baltico, 2 y 3 Frente Bielorruso)"
+        },
+        {
+          "value": "775"
+        },
+        {
+          "value": "245"
+        },
+        {
+          "value": "370"
+        },
+        {
+          "value": "160"
+        }
+      ]
+    },
+    {
+      "sourceRow": 186,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la direccion central (1 Frente Bielorruso y 1 Frente Ucraniano)"
+        },
+        {
+          "value": "270"
+        },
+        {
+          "value": "120"
+        },
+        {
+          "value": "60"
+        },
+        {
+          "value": "90"
+        }
+      ]
+    },
+    {
+      "sourceRow": 187,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en direccion Suroeste (2, 3 y 4 Frente Ucraniano)"
+        },
+        {
+          "value": "595"
+        },
+        {
+          "value": "335"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "110"
+        }
+      ]
+    },
+    {
+      "sourceRow": 188,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "2 780"
+        },
+        {
+          "value": "280"
+        },
+        {
+          "value": "2240"
+        },
+        {
+          "value": "260"
+        }
+      ]
+    },
+    {
+      "sourceRow": 189,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 190,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Noruega"
+        },
+        {
+          "value": "250"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "sourceRow": 191,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Italia"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "sourceRow": 192,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Alemania en el Frente Occidental"
+        },
+        {
+          "value": "2 430"
+        },
+        {
+          "value": "230"
+        },
+        {
+          "value": "2140"
+        },
+        {
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "sourceRow": 193,
+      "cells": [
+        {
+          "value": "Total aviones de combate formando parte de las Fuerzas Aereas de Alemania",
+          "colspan": 3
+        },
+        {
+          "value": "4 460"
+        },
+        {
+          "value": "980"
+        },
+        {
+          "value": "2850"
+        },
+        {
+          "value": "630"
+        }
+      ]
+    },
+    {
+      "sourceRow": 194,
+      "cells": [
+        {
+          "value": "A fecha de 9 de mayo de 1945 {15}",
+          "colspan": 7
+        }
+      ]
+    },
+    {
+      "sourceRow": 195,
+      "cells": [
+        {
+          "value": "En el frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "650"
+        },
+        {
+          "value": "149"
+        },
+        {
+          "value": "459"
+        },
+        {
+          "value": "42"
+        }
+      ]
+    },
+    {
+      "sourceRow": 196,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "de los cuales",
+          "colspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 197,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos de Kurlandia"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 198,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en Prusia Oriental"
+        },
+        {
+          "value": "200"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 199,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Centro"
+        },
+        {
+          "value": "300"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 200,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sur, Austria"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 201,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "en la banda del grupo de ejercitos Sureste"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 202,
+      "cells": [
+        {
+          "value": "Fuera del frente sovietico-aleman",
+          "colspan": 3
+        },
+        {
+          "value": "350"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": "251"
+        },
+        {
+          "value": "23"
+        }
+      ]
+    },
+    {
+      "sourceRow": 203,
+      "cells": [
+        {
+          "value": "Total aviones de combate",
+          "colspan": 3
+        },
+        {
+          "value": "1 000"
+        },
+        {
+          "value": "225"
+        },
+        {
+          "value": "710"
+        },
+        {
+          "value": "65"
+        }
+      ]
+    }
+  ]
+}

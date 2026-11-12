@@ -1,0 +1,2578 @@
+{
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_14.htm",
+  "sourceTable": "02-14",
+  "service": "Soviet long-range aviation (DA/ADD; later reorganized into 18th Air Army)",
+  "sourceClass": "Soviet archival citations in Spanish secondary transcription",
+  "sourceStructureNote": "The source pairs on-hand combat aircraft with unserviceable denominators, and total combat-ready crews with night-capable crew subsets.",
+  "cautions": [
+    "March 1942 ADD was constituted using VVS KA formations; historical reorganizations change population; do not add pre/post-organization totals as independent forces.",
+    "From December 1944 ADD was reorganized as Soviet 18th Air Army; preserve historical service identity.",
+    "Source notes some Far Eastern bombers excluded from 1941 front-line returns.",
+    "Some source headings mix temporal campaign labels with observation date; date derives from observation text.",
+    "Totals and their named subformations overlap; never sum both.",
+    "Aircraft losses, pilot casualties, and sortie counts are not provided in this strength table."
+  ],
+  "records": [
+    {
+      "sourceRow": 6,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-22",
+      "dateHeadingAsPrinted": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+      "formationAsPrinted": "18 ad",
+      "locationAsPrinted": "Skomorohi",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 168,
+        "unserviceable": 25
+      },
+      "combatReadyCrews": {
+        "allCrews": 132,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 7,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-22",
+      "dateHeadingAsPrinted": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+      "formationAsPrinted": "1 ak",
+      "locationAsPrinted": "Novgorod",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 5,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 6
+      },
+      "combatAircraft": {
+        "onHand": 275,
+        "unserviceable": 139
+      },
+      "combatReadyCrews": {
+        "allCrews": 190,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 8,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-22",
+      "dateHeadingAsPrinted": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+      "formationAsPrinted": "3 ak",
+      "locationAsPrinted": "Smolensk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 6
+      },
+      "combatAircraft": {
+        "onHand": 295,
+        "unserviceable": 61
+      },
+      "combatReadyCrews": {
+        "allCrews": 250,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 9,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-22",
+      "dateHeadingAsPrinted": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+      "formationAsPrinted": "2 ak",
+      "locationAsPrinted": "Kursk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 7,
+        "heavyBomberRegiments": null,
+        "allRegiments": 7
+      },
+      "combatAircraft": {
+        "onHand": 252,
+        "unserviceable": 19
+      },
+      "combatReadyCrews": {
+        "allCrews": 106,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 10,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-22",
+      "dateHeadingAsPrinted": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+      "formationAsPrinted": "4 ak",
+      "locationAsPrinted": "Zaporozh'e",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 7,
+        "heavyBomberRegiments": null,
+        "allRegiments": 7
+      },
+      "combatAircraft": {
+        "onHand": 349,
+        "unserviceable": 77
+      },
+      "combatReadyCrews": {
+        "allCrews": 253,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 11,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-22",
+      "dateHeadingAsPrinted": "Al comienzo de la Gran Guerra Patriotica (22 de junio de 1941) {1}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 9,
+        "longRangeBomberRegiments": 25,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 29
+      },
+      "combatAircraft": {
+        "onHand": 1339,
+        "unserviceable": 321
+      },
+      "combatReadyCrews": {
+        "allCrews": 931,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 13,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+      "formationAsPrinted": "1 ak",
+      "locationAsPrinted": "Valday",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 5,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 6
+      },
+      "combatAircraft": {
+        "onHand": 173,
+        "unserviceable": 51
+      },
+      "combatReadyCrews": {
+        "allCrews": 231,
+        "nightFlightReadyCrews": 73
+      }
+    },
+    {
+      "sourceRow": 14,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+      "formationAsPrinted": "3 ak",
+      "locationAsPrinted": "Bryansk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 5,
+        "heavyBomberRegiments": null,
+        "allRegiments": 5
+      },
+      "combatAircraft": {
+        "onHand": 133,
+        "unserviceable": 11
+      },
+      "combatReadyCrews": {
+        "allCrews": 183,
+        "nightFlightReadyCrews": 35
+      }
+    },
+    {
+      "sourceRow": 15,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+      "formationAsPrinted": "2 ak",
+      "locationAsPrinted": "Kursk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 6,
+        "heavyBomberRegiments": null,
+        "allRegiments": 6
+      },
+      "combatAircraft": {
+        "onHand": 128,
+        "unserviceable": 27
+      },
+      "combatReadyCrews": {
+        "allCrews": 101,
+        "nightFlightReadyCrews": 15
+      }
+    },
+    {
+      "sourceRow": 16,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+      "formationAsPrinted": "18 ad",
+      "locationAsPrinted": "Uman'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 72,
+        "unserviceable": 38
+      },
+      "combatReadyCrews": {
+        "allCrews": 70,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 17,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+      "formationAsPrinted": "4 ak",
+      "locationAsPrinted": "Zaporozh'e",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 7,
+        "heavyBomberRegiments": null,
+        "allRegiments": 7
+      },
+      "combatAircraft": {
+        "onHand": 182,
+        "unserviceable": 46
+      },
+      "combatReadyCrews": {
+        "allCrews": 137,
+        "nightFlightReadyCrews": 41
+      }
+    },
+    {
+      "sourceRow": 18,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {4}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 9,
+        "longRangeBomberRegiments": 25,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 26
+      },
+      "combatAircraft": {
+        "onHand": 688,
+        "unserviceable": 173
+      },
+      "combatReadyCrews": {
+        "allCrews": 722,
+        "nightFlightReadyCrews": 164
+      }
+    },
+    {
+      "sourceRow": 20,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "40 ad",
+      "locationAsPrinted": "Rybinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 70,
+        "unserviceable": 31
+      },
+      "combatReadyCrews": {
+        "allCrews": 56,
+        "nightFlightReadyCrews": 29
+      }
+    },
+    {
+      "sourceRow": 21,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "51 ad",
+      "locationAsPrinted": "Yaroslavl'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 3,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 95,
+        "unserviceable": 33
+      },
+      "combatReadyCrews": {
+        "allCrews": 100,
+        "nightFlightReadyCrews": 42
+      }
+    },
+    {
+      "sourceRow": 22,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "81 ad",
+      "locationAsPrinted": "Monino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 5
+      },
+      "combatAircraft": {
+        "onHand": 77,
+        "unserviceable": 37
+      },
+      "combatReadyCrews": {
+        "allCrews": 79,
+        "nightFlightReadyCrews": 40
+      }
+    },
+    {
+      "sourceRow": 23,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "52 ad",
+      "locationAsPrinted": "Kursk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 71,
+        "unserviceable": 23
+      },
+      "combatReadyCrews": {
+        "allCrews": 59,
+        "nightFlightReadyCrews": 22
+      }
+    },
+    {
+      "sourceRow": 24,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "42 ad y grupo de Bitskiy",
+      "locationAsPrinted": "Elets",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 55,
+        "unserviceable": 30
+      },
+      "combatReadyCrews": {
+        "allCrews": 60,
+        "nightFlightReadyCrews": 35
+      }
+    },
+    {
+      "sourceRow": 25,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "22 ad",
+      "locationAsPrinted": "Donetsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 35,
+        "unserviceable": 22
+      },
+      "combatReadyCrews": {
+        "allCrews": 63,
+        "nightFlightReadyCrews": 39
+      }
+    },
+    {
+      "sourceRow": 26,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": "50 ad",
+      "locationAsPrinted": "Mariupol'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 69,
+        "unserviceable": 21
+      },
+      "combatReadyCrews": {
+        "allCrews": 81,
+        "nightFlightReadyCrews": 48
+      }
+    },
+    {
+      "sourceRow": 27,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campaña de verano-otoño de 1941 (a fecha de 1 de octubre) {5}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 8,
+        "longRangeBomberRegiments": 17,
+        "heavyBomberRegiments": 7,
+        "allRegiments": 24
+      },
+      "combatAircraft": {
+        "onHand": 472,
+        "unserviceable": 197
+      },
+      "combatReadyCrews": {
+        "allCrews": 498,
+        "nightFlightReadyCrews": 255
+      }
+    },
+    {
+      "sourceRow": 29,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "26 ad",
+      "locationAsPrinted": "Rybinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 12,
+        "unserviceable": 11
+      },
+      "combatReadyCrews": {
+        "allCrews": 26,
+        "nightFlightReadyCrews": 13
+      }
+    },
+    {
+      "sourceRow": 30,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "133 ad",
+      "locationAsPrinted": "Yaroslavl'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 16,
+        "unserviceable": 9
+      },
+      "combatReadyCrews": {
+        "allCrews": 15,
+        "nightFlightReadyCrews": 9
+      }
+    },
+    {
+      "sourceRow": 31,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "40 ad",
+      "locationAsPrinted": "Murom",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 16,
+        "unserviceable": 12
+      },
+      "combatReadyCrews": {
+        "allCrews": 33,
+        "nightFlightReadyCrews": 11
+      }
+    },
+    {
+      "sourceRow": 32,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "51 ad",
+      "locationAsPrinted": "Sasovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 3,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 73,
+        "unserviceable": 41
+      },
+      "combatReadyCrews": {
+        "allCrews": 61,
+        "nightFlightReadyCrews": 24
+      }
+    },
+    {
+      "sourceRow": 33,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "42 ad",
+      "locationAsPrinted": "Rasskazovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 25,
+        "unserviceable": 14
+      },
+      "combatReadyCrews": {
+        "allCrews": 33,
+        "nightFlightReadyCrews": 1
+      }
+    },
+    {
+      "sourceRow": 34,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "52 ad",
+      "locationAsPrinted": "Kirsanov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 45,
+        "unserviceable": 20
+      },
+      "combatReadyCrews": {
+        "allCrews": 68,
+        "nightFlightReadyCrews": 10
+      }
+    },
+    {
+      "sourceRow": 35,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": "22 y 50 ad",
+      "locationAsPrinted": "Stalingrado",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 6
+      },
+      "combatAircraft": {
+        "onHand": 86,
+        "unserviceable": 47
+      },
+      "combatReadyCrews": {
+        "allCrews": 135,
+        "nightFlightReadyCrews": 88
+      }
+    },
+    {
+      "sourceRow": 36,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941 - 1942 (a fecha de 5 de diciembre) {7}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 8,
+        "longRangeBomberRegiments": 17,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 21
+      },
+      "combatAircraft": {
+        "onHand": 273,
+        "unserviceable": 154
+      },
+      "combatReadyCrews": {
+        "allCrews": 371,
+        "nightFlightReadyCrews": 156
+      }
+    },
+    {
+      "sourceRow": 38,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "26 ad",
+      "locationAsPrinted": "Rybinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 11,
+        "unserviceable": 7
+      },
+      "combatReadyCrews": {
+        "allCrews": 24,
+        "nightFlightReadyCrews": 14
+      }
+    },
+    {
+      "sourceRow": 39,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "36 ad",
+      "locationAsPrinted": "Yaroslavl'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 28,
+        "unserviceable": 8
+      },
+      "combatReadyCrews": {
+        "allCrews": 29,
+        "nightFlightReadyCrews": 15
+      }
+    },
+    {
+      "sourceRow": 40,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "53 ad",
+      "locationAsPrinted": "Noginsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 49,
+        "unserviceable": 12
+      },
+      "combatReadyCrews": {
+        "allCrews": 90,
+        "nightFlightReadyCrews": 61
+      }
+    },
+    {
+      "sourceRow": 41,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "3 ad",
+      "locationAsPrinted": "Monino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 57,
+        "unserviceable": 19
+      },
+      "combatReadyCrews": {
+        "allCrews": 26,
+        "nightFlightReadyCrews": 22
+      }
+    },
+    {
+      "sourceRow": 42,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "747 y 746 ap especial",
+      "locationAsPrinted": "Ramenskoe",
+      "category": "named_formation",
+      "organization": {
+        "divisions": null,
+        "longRangeBomberRegiments": 1,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 23,
+        "unserviceable": 14
+      },
+      "combatReadyCrews": {
+        "allCrews": 18,
+        "nightFlightReadyCrews": 17
+      }
+    },
+    {
+      "sourceRow": 43,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "17 ad",
+      "locationAsPrinted": "Serpuhov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 3,
+        "heavyBomberRegiments": null,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 58,
+        "unserviceable": 36
+      },
+      "combatReadyCrews": {
+        "allCrews": 68,
+        "nightFlightReadyCrews": 46
+      }
+    },
+    {
+      "sourceRow": 44,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "51 ad",
+      "locationAsPrinted": "Tula",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 26,
+        "unserviceable": 18
+      },
+      "combatReadyCrews": {
+        "allCrews": 61,
+        "nightFlightReadyCrews": 23
+      }
+    },
+    {
+      "sourceRow": 45,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "62 ad",
+      "locationAsPrinted": "Ryazan'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 25,
+        "unserviceable": 11
+      },
+      "combatReadyCrews": {
+        "allCrews": 38,
+        "nightFlightReadyCrews": 23
+      }
+    },
+    {
+      "sourceRow": 46,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "42 ad",
+      "locationAsPrinted": "Elets",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 14,
+        "unserviceable": 10
+      },
+      "combatReadyCrews": {
+        "allCrews": 53,
+        "nightFlightReadyCrews": 14
+      }
+    },
+    {
+      "sourceRow": 47,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "24 ad",
+      "locationAsPrinted": "Lipetsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 58,
+        "unserviceable": 24
+      },
+      "combatReadyCrews": {
+        "allCrews": 44,
+        "nightFlightReadyCrews": 37
+      }
+    },
+    {
+      "sourceRow": 48,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": "50 ad",
+      "locationAsPrinted": "Novocherkassk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 53,
+        "unserviceable": 12
+      },
+      "combatReadyCrews": {
+        "allCrews": 66,
+        "nightFlightReadyCrews": 50
+      }
+    },
+    {
+      "sourceRow": 49,
+      "sourceBlockIndex": 4,
+      "date": "1942-03-18",
+      "dateHeadingAsPrinted": "A fecha de 18 de marzo de 1942 {8}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 10,
+        "longRangeBomberRegiments": 18,
+        "heavyBomberRegiments": 9,
+        "allRegiments": 27
+      },
+      "combatAircraft": {
+        "onHand": 402,
+        "unserviceable": 171
+      },
+      "combatReadyCrews": {
+        "allCrews": 517,
+        "nightFlightReadyCrews": 322
+      }
+    },
+    {
+      "sourceRow": 51,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": "3 y 53 ad",
+      "locationAsPrinted": "Monino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 5
+      },
+      "combatAircraft": {
+        "onHand": 96,
+        "unserviceable": 36
+      },
+      "combatReadyCrews": {
+        "allCrews": 119,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 52,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": "17 y 45 ad",
+      "locationAsPrinted": "Ramenskoe",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 3,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 79,
+        "unserviceable": 45
+      },
+      "combatReadyCrews": {
+        "allCrews": 76,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 53,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": "36 ad",
+      "locationAsPrinted": "Yaroslavl'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 44,
+        "unserviceable": 21
+      },
+      "combatReadyCrews": {
+        "allCrews": 56,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 54,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": "24 ad",
+      "locationAsPrinted": "Voronezh",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 29,
+        "unserviceable": 18
+      },
+      "combatReadyCrews": {
+        "allCrews": 60,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 55,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": "62 ad",
+      "locationAsPrinted": "Michurinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 56,
+        "unserviceable": 11
+      },
+      "combatReadyCrews": {
+        "allCrews": 65,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 56,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": "50 ad",
+      "locationAsPrinted": "Evstratievskaya",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 25,
+        "unserviceable": 14
+      },
+      "combatReadyCrews": {
+        "allCrews": 41,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 57,
+      "sourceBlockIndex": 5,
+      "date": "1942-05-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942 (a fecha de 1 de mayo) {9}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 7,
+        "longRangeBomberRegiments": 11,
+        "heavyBomberRegiments": 7,
+        "allRegiments": 18
+      },
+      "combatAircraft": {
+        "onHand": 329,
+        "unserviceable": 145
+      },
+      "combatReadyCrews": {
+        "allCrews": 417,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 59,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "3 y 222 ad",
+      "locationAsPrinted": "Monino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 5,
+        "heavyBomberRegiments": null,
+        "allRegiments": 5
+      },
+      "combatAircraft": {
+        "onHand": 89,
+        "unserviceable": 34
+      },
+      "combatReadyCrews": {
+        "allCrews": 47,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 60,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "53 ad",
+      "locationAsPrinted": "Noginsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 29,
+        "unserviceable": 6
+      },
+      "combatReadyCrews": {
+        "allCrews": 57,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 61,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "45 ad",
+      "locationAsPrinted": "Ramenskoe",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 1,
+        "heavyBomberRegiments": 1,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 25,
+        "unserviceable": 15
+      },
+      "combatReadyCrews": {
+        "allCrews": 25,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 62,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "36 ad",
+      "locationAsPrinted": "Yaroslavl'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 23,
+        "unserviceable": 8
+      },
+      "combatReadyCrews": {
+        "allCrews": 44,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 63,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "17 ad",
+      "locationAsPrinted": "Serpuhov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 48,
+        "unserviceable": 21
+      },
+      "combatReadyCrews": {
+        "allCrews": 45,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 64,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "24 ad",
+      "locationAsPrinted": "Lipetsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 29,
+        "unserviceable": 8
+      },
+      "combatReadyCrews": {
+        "allCrews": 62,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 65,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "62 ad",
+      "locationAsPrinted": "Michurinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 51,
+        "unserviceable": 24
+      },
+      "combatReadyCrews": {
+        "allCrews": 57,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 66,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "50 ad",
+      "locationAsPrinted": "Tacinskaya",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 25,
+        "unserviceable": 13
+      },
+      "combatReadyCrews": {
+        "allCrews": 32,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 67,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": "113 ad",
+      "locationAsPrinted": "Dyagilevo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 58,
+        "unserviceable": 21
+      },
+      "combatReadyCrews": {
+        "allCrews": 60,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 68,
+      "sourceBlockIndex": 6,
+      "date": "1942-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la operación defensiva estrategica en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {10}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 10,
+        "longRangeBomberRegiments": 14,
+        "heavyBomberRegiments": 10,
+        "allRegiments": 24
+      },
+      "combatAircraft": {
+        "onHand": 377,
+        "unserviceable": 150
+      },
+      "combatReadyCrews": {
+        "allCrews": 429,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 70,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "3 y 222 ad",
+      "locationAsPrinted": "Monino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 5
+      },
+      "combatAircraft": {
+        "onHand": 94,
+        "unserviceable": 28
+      },
+      "combatReadyCrews": {
+        "allCrews": 31,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 71,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "53 ad",
+      "locationAsPrinted": "Noginsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 66,
+        "unserviceable": 19
+      },
+      "combatReadyCrews": {
+        "allCrews": 77,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 72,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "45 ad",
+      "locationAsPrinted": "Ramenskoe",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 1,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 22,
+        "unserviceable": 8
+      },
+      "combatReadyCrews": {
+        "allCrews": 31,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 73,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "17 ad",
+      "locationAsPrinted": "Serpuhov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 72,
+        "unserviceable": 16
+      },
+      "combatReadyCrews": {
+        "allCrews": 72,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 74,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "62 ad",
+      "locationAsPrinted": "Michurinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 57,
+        "unserviceable": 21
+      },
+      "combatReadyCrews": {
+        "allCrews": 53,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 75,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "24 ad",
+      "locationAsPrinted": "Kirsanov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 48,
+        "unserviceable": 15
+      },
+      "combatReadyCrews": {
+        "allCrews": 53,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 76,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "36 ad",
+      "locationAsPrinted": "Yakushevo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 42,
+        "unserviceable": 16
+      },
+      "combatReadyCrews": {
+        "allCrews": 56,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 77,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "113 ad",
+      "locationAsPrinted": "Dyagilevo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 34,
+        "unserviceable": 17
+      },
+      "combatReadyCrews": {
+        "allCrews": 33,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 78,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": "50 ad",
+      "locationAsPrinted": "Mahach-Kala",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 44,
+        "unserviceable": 20
+      },
+      "combatReadyCrews": {
+        "allCrews": 32,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 79,
+      "sourceBlockIndex": 7,
+      "date": "1942-11-18",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra, 1942 (a fecha de 18 de noviembre) {12}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 10,
+        "longRangeBomberRegiments": 13,
+        "heavyBomberRegiments": 11,
+        "allRegiments": 24
+      },
+      "combatAircraft": {
+        "onHand": 479,
+        "unserviceable": 160
+      },
+      "combatReadyCrews": {
+        "allCrews": 438,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 81,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "1 gv. y 7 ak",
+      "locationAsPrinted": "Monino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 8
+      },
+      "combatAircraft": {
+        "onHand": 165,
+        "unserviceable": 54
+      },
+      "combatReadyCrews": {
+        "allCrews": 165,
+        "nightFlightReadyCrews": 144
+      }
+    },
+    {
+      "sourceRow": 82,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "4 gv.ak y 45 ad",
+      "locationAsPrinted": "Ramenskoe",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 3,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 6,
+        "allRegiments": 6
+      },
+      "combatAircraft": {
+        "onHand": 112,
+        "unserviceable": 27
+      },
+      "combatReadyCrews": {
+        "allCrews": 94,
+        "nightFlightReadyCrews": 87
+      }
+    },
+    {
+      "sourceRow": 83,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "2 gv.ak",
+      "locationAsPrinted": "Serpuhov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 98,
+        "unserviceable": 37
+      },
+      "combatReadyCrews": {
+        "allCrews": 71,
+        "nightFlightReadyCrews": 59
+      }
+    },
+    {
+      "sourceRow": 84,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "3 gv.ak",
+      "locationAsPrinted": "Lipetsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 117,
+        "unserviceable": 33
+      },
+      "combatReadyCrews": {
+        "allCrews": 111,
+        "nightFlightReadyCrews": 103
+      }
+    },
+    {
+      "sourceRow": 85,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "5 ak",
+      "locationAsPrinted": "Michurinsk",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 101,
+        "unserviceable": 22
+      },
+      "combatReadyCrews": {
+        "allCrews": 94,
+        "nightFlightReadyCrews": 87
+      }
+    },
+    {
+      "sourceRow": 86,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "8 ak",
+      "locationAsPrinted": "Yaroslavl'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 58,
+        "unserviceable": 30
+      },
+      "combatReadyCrews": {
+        "allCrews": 56,
+        "nightFlightReadyCrews": 56
+      }
+    },
+    {
+      "sourceRow": 87,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": "6 ak",
+      "locationAsPrinted": "Morozovskij",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 89,
+        "unserviceable": 25
+      },
+      "combatReadyCrews": {
+        "allCrews": 99,
+        "nightFlightReadyCrews": 90
+      }
+    },
+    {
+      "sourceRow": 88,
+      "sourceBlockIndex": 8,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {14}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 17,
+        "longRangeBomberRegiments": 18,
+        "heavyBomberRegiments": 16,
+        "allRegiments": 34
+      },
+      "combatAircraft": {
+        "onHand": 740,
+        "unserviceable": 228
+      },
+      "combatReadyCrews": {
+        "allCrews": 690,
+        "nightFlightReadyCrews": 626
+      }
+    },
+    {
+      "sourceRow": 90,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "5 ak",
+      "locationAsPrinted": "Uglovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 116,
+        "unserviceable": 34
+      },
+      "combatReadyCrews": {
+        "allCrews": 100,
+        "nightFlightReadyCrews": 100
+      }
+    },
+    {
+      "sourceRow": 91,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "7 ak",
+      "locationAsPrinted": "Levashovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 97,
+        "unserviceable": 14
+      },
+      "combatReadyCrews": {
+        "allCrews": 94,
+        "nightFlightReadyCrews": 85
+      }
+    },
+    {
+      "sourceRow": 92,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "1 gv.ak",
+      "locationAsPrinted": "Vypolzovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 109,
+        "unserviceable": 15
+      },
+      "combatReadyCrews": {
+        "allCrews": 98,
+        "nightFlightReadyCrews": 73
+      }
+    },
+    {
+      "sourceRow": 93,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "2 gv.ak",
+      "locationAsPrinted": "Lugi",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 118,
+        "unserviceable": 20
+      },
+      "combatReadyCrews": {
+        "allCrews": 103,
+        "nightFlightReadyCrews": 67
+      }
+    },
+    {
+      "sourceRow": 94,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "3 gv.ak",
+      "locationAsPrinted": "Andreapol'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 160,
+        "unserviceable": 61
+      },
+      "combatReadyCrews": {
+        "allCrews": 124,
+        "nightFlightReadyCrews": 102
+      }
+    },
+    {
+      "sourceRow": 95,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "4 gv.ak",
+      "locationAsPrinted": "N.Dugino",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 102,
+        "unserviceable": 3
+      },
+      "combatReadyCrews": {
+        "allCrews": 102,
+        "nightFlightReadyCrews": 85
+      }
+    },
+    {
+      "sourceRow": 96,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "6 ak",
+      "locationAsPrinted": "Yanino Hotilovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 120,
+        "unserviceable": 34
+      },
+      "combatReadyCrews": {
+        "allCrews": 102,
+        "nightFlightReadyCrews": 96
+      }
+    },
+    {
+      "sourceRow": 97,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "8 ak",
+      "locationAsPrinted": "Torzhok",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 124,
+        "unserviceable": 41
+      },
+      "combatReadyCrews": {
+        "allCrews": 86,
+        "nightFlightReadyCrews": 71
+      }
+    },
+    {
+      "sourceRow": 98,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "45 ad",
+      "locationAsPrinted": "Ramenskoe",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 20,
+        "unserviceable": 1
+      },
+      "combatReadyCrews": {
+        "allCrews": 22,
+        "nightFlightReadyCrews": 22
+      }
+    },
+    {
+      "sourceRow": 99,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": "56 iad",
+      "locationAsPrinted": "Ryazhsk{16}",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": null,
+        "allRegiments": 0
+      },
+      "combatAircraft": {
+        "onHand": 37,
+        "unserviceable": 3
+      },
+      "combatReadyCrews": {
+        "allCrews": 34,
+        "nightFlightReadyCrews": 31
+      }
+    },
+    {
+      "sourceRow": 100,
+      "sourceBlockIndex": 9,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra (a fecha 1 de enero de 1944) {15}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 18,
+        "longRangeBomberRegiments": 22,
+        "heavyBomberRegiments": 12,
+        "allRegiments": 34
+      },
+      "combatAircraft": {
+        "onHand": 1003,
+        "unserviceable": 226
+      },
+      "combatReadyCrews": {
+        "allCrews": 865,
+        "nightFlightReadyCrews": 732
+      }
+    },
+    {
+      "sourceRow": 102,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "7 ak",
+      "locationAsPrinted": "Kaluga",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 167,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 201,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 103,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "8 ak",
+      "locationAsPrinted": "Migalovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 126,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 131,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 104,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "45 ad",
+      "locationAsPrinted": "Olsuf'evo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 53,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 41,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 105,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "56 iad",
+      "locationAsPrinted": "Bryansk{16}",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": null,
+        "allRegiments": 2
+      },
+      "combatAircraft": {
+        "onHand": 76,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 65,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 106,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "1 gv.ak",
+      "locationAsPrinted": "Chernigov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 124,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 150,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 107,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "2 gv.ak",
+      "locationAsPrinted": "Borispol'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 120,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 143,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 108,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "3 gv.ak",
+      "locationAsPrinted": "Belaya Cerkov'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 125,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 143,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 109,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "5 ak",
+      "locationAsPrinted": "Zhitomir",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 4,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 161,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 184,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 110,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "6 ak",
+      "locationAsPrinted": "Vinnitsa",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 2,
+        "heavyBomberRegiments": 2,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 140,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 175,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 111,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": "4 gv.ak",
+      "locationAsPrinted": "Uman'",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 4,
+        "heavyBomberRegiments": null,
+        "allRegiments": 4
+      },
+      "combatAircraft": {
+        "onHand": 174,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 181,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 112,
+      "sourceBlockIndex": 10,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {17}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 18,
+        "longRangeBomberRegiments": 22,
+        "heavyBomberRegiments": 12,
+        "allRegiments": 36
+      },
+      "combatAircraft": {
+        "onHand": 1266,
+        "unserviceable": null
+      },
+      "combatReadyCrews": {
+        "allCrews": 1414,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 114,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+      "formationAsPrinted": "3 gv.bak",
+      "locationAsPrinted": "Vil'nyus",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 12,
+        "allRegiments": 12
+      },
+      "combatAircraft": {
+        "onHand": 347,
+        "unserviceable": 37
+      },
+      "combatReadyCrews": {
+        "allCrews": 324,
+        "nightFlightReadyCrews": 282
+      }
+    },
+    {
+      "sourceRow": 115,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+      "formationAsPrinted": "1 gv.bak",
+      "locationAsPrinted": "Lida",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": 12,
+        "heavyBomberRegiments": null,
+        "allRegiments": 12
+      },
+      "combatAircraft": {
+        "onHand": 318,
+        "unserviceable": 78
+      },
+      "combatReadyCrews": {
+        "allCrews": 406,
+        "nightFlightReadyCrews": 301
+      }
+    },
+    {
+      "sourceRow": 116,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+      "formationAsPrinted": "45 bad",
+      "locationAsPrinted": "Balbasovo",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 63,
+        "unserviceable": 13
+      },
+      "combatReadyCrews": {
+        "allCrews": 50,
+        "nightFlightReadyCrews": 48
+      }
+    },
+    {
+      "sourceRow": 117,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+      "formationAsPrinted": "2 gv.bak",
+      "locationAsPrinted": "Luck",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": 12,
+        "heavyBomberRegiments": null,
+        "allRegiments": 12
+      },
+      "combatAircraft": {
+        "onHand": 258,
+        "unserviceable": 23
+      },
+      "combatReadyCrews": {
+        "allCrews": 348,
+        "nightFlightReadyCrews": 240
+      }
+    },
+    {
+      "sourceRow": 118,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+      "formationAsPrinted": "4 gv.bak",
+      "locationAsPrinted": "L'vov",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 14,
+        "allRegiments": 14
+      },
+      "combatAircraft": {
+        "onHand": 369,
+        "unserviceable": 22
+      },
+      "combatReadyCrews": {
+        "allCrews": 399,
+        "nightFlightReadyCrews": 321
+      }
+    },
+    {
+      "sourceRow": 119,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa (a fecha de 1 de enero) {18}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 17,
+        "longRangeBomberRegiments": 24,
+        "heavyBomberRegiments": 29,
+        "allRegiments": 53
+      },
+      "combatAircraft": {
+        "onHand": 1355,
+        "unserviceable": 173
+      },
+      "combatReadyCrews": {
+        "allCrews": 1527,
+        "nightFlightReadyCrews": 1192
+      }
+    },
+    {
+      "sourceRow": 121,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "1 gv.bak",
+      "locationAsPrinted": "Belostok",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": 12,
+        "heavyBomberRegiments": null,
+        "allRegiments": 12
+      },
+      "combatAircraft": {
+        "onHand": 290,
+        "unserviceable": 34
+      },
+      "combatReadyCrews": {
+        "allCrews": 400,
+        "nightFlightReadyCrews": 356
+      }
+    },
+    {
+      "sourceRow": 122,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "3 gv.bak",
+      "locationAsPrinted": "Minsk-Mazovetskiy",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 13,
+        "allRegiments": 13
+      },
+      "combatAircraft": {
+        "onHand": 387,
+        "unserviceable": 45
+      },
+      "combatReadyCrews": {
+        "allCrews": 357,
+        "nightFlightReadyCrews": 292
+      }
+    },
+    {
+      "sourceRow": 123,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "45 bad",
+      "locationAsPrinted": "Baranovichi",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 1,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 3,
+        "allRegiments": 3
+      },
+      "combatAircraft": {
+        "onHand": 80,
+        "unserviceable": 26
+      },
+      "combatReadyCrews": {
+        "allCrews": 53,
+        "nightFlightReadyCrews": 53
+      }
+    },
+    {
+      "sourceRow": 124,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "9 gv.bak",
+      "locationAsPrinted": "Mogilev",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 2,
+        "longRangeBomberRegiments": 8,
+        "heavyBomberRegiments": null,
+        "allRegiments": 8
+      },
+      "combatAircraft": {
+        "onHand": 127,
+        "unserviceable": 23
+      },
+      "combatReadyCrews": {
+        "allCrews": 147,
+        "nightFlightReadyCrews": 68
+      }
+    },
+    {
+      "sourceRow": 125,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "4 gv.bak",
+      "locationAsPrinted": "Zheshuv",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": 15,
+        "allRegiments": 15
+      },
+      "combatAircraft": {
+        "onHand": 430,
+        "unserviceable": 18
+      },
+      "combatReadyCrews": {
+        "allCrews": 370,
+        "nightFlightReadyCrews": 313
+      }
+    },
+    {
+      "sourceRow": 126,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "2 gv.bak",
+      "locationAsPrinted": "Zamost'e",
+      "category": "named_formation",
+      "organization": {
+        "divisions": 4,
+        "longRangeBomberRegiments": 12,
+        "heavyBomberRegiments": null,
+        "allRegiments": 12
+      },
+      "combatAircraft": {
+        "onHand": 337,
+        "unserviceable": 70
+      },
+      "combatReadyCrews": {
+        "allCrews": 451,
+        "nightFlightReadyCrews": 286
+      }
+    },
+    {
+      "sourceRow": 127,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": "742 rap{20}",
+      "locationAsPrinted": null,
+      "category": "named_formation",
+      "organization": {
+        "divisions": null,
+        "longRangeBomberRegiments": null,
+        "heavyBomberRegiments": null,
+        "allRegiments": 0
+      },
+      "combatAircraft": {
+        "onHand": 24,
+        "unserviceable": 5
+      },
+      "combatReadyCrews": {
+        "allCrews": 22,
+        "nightFlightReadyCrews": null
+      }
+    },
+    {
+      "sourceRow": 128,
+      "sourceBlockIndex": 12,
+      "date": "1945-05-10",
+      "dateHeadingAsPrinted": "Al final de la Gran Guerra Patriotica (a fecha de 10 de mayo de 1945) {19}",
+      "formationAsPrinted": null,
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "organization": {
+        "divisions": 19,
+        "longRangeBomberRegiments": 32,
+        "heavyBomberRegiments": 31,
+        "allRegiments": 63
+      },
+      "combatAircraft": {
+        "onHand": 1675,
+        "unserviceable": 221
+      },
+      "combatReadyCrews": {
+        "allCrews": 1800,
+        "nightFlightReadyCrews": 1368
+      }
+    }
+  ],
+  "structuralAndArithmeticExceptions": [
+    {
+      "sourceRow": 112,
+      "issue": "regiment_type_sum_mismatch",
+      "components": 34,
+      "total": 36
+    }
+  ]
+}

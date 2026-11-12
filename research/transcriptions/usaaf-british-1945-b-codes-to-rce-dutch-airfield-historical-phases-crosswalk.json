@@ -1,0 +1,367 @@
+{
+  "status": "cross_source_map_research_candidate_not_operational_map_layer",
+  "sourceOfficialAmerican1988": {
+    "title": "US Army Air Forces Continental Airfields (ETO), D-Day to V-E Day",
+    "author": "1st Lt David C. Johnson, USAF",
+    "publisher": "USAF Historical Research Center, Research Division, 1 December 1988",
+    "originalOfficialPDF": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+    "mirrorRead": "https://ww2gp.org/pdf/airfields/usaaf_european_airfields.pdf",
+    "section": "Part III: British Airfields, original printed pp.79–82",
+    "indexReferenceAsOf": "1945-07-01"
+  },
+  "sourceRcePublicDomain": {
+    "owner": "Rijksdienst voor het Cultureel Erfgoed (Netherlands)",
+    "dataset": "https://data.overheid.nl/dataset/81058-vliegvelden-in-nederland",
+    "service": "https://services.rce.geovoorziening.nl/landschapsatlas/wfs",
+    "typeName": "landschapsatlas:vliegvelden",
+    "license": "Publiek domein (public domain), as listed by Dutch government open data",
+    "geometryCoordinateOrder": "longitude, latitude (GeoJSON / EPSG:4326)",
+    "rawFeaturesAllEras": 191,
+    "filter": "actief_van <= 1945 and actief_tot >= 1936"
+  },
+  "indexAsOf": "1945-07-01",
+  "atlasEndDate": "1945-05-09",
+  "count": 15,
+  "additionalAmericanContinentalDutchCodeCandidates": [
+    {
+      "usafAmericanContinentalCode": "Y-44",
+      "usaf1988OriginalNameOCR": "Maastricht",
+      "sourceInitialOperationDateCandidate": "1945-03-23",
+      "candidateRceHistoricSiteName": "Beek",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.6"
+      ],
+      "locationValidationStatus": "USAAF_independent_station_name_candidate_dated_use_not_verified"
+    },
+    {
+      "usafAmericanContinentalCode": "Y-55",
+      "usaf1988OriginalNameOCR": "Venlo",
+      "sourceInitialOperationDateCandidate": "1945-03-12",
+      "candidateRceHistoricSiteName": "Venlo",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.158",
+        "vliegvelden.159",
+        "vliegvelden.160"
+      ],
+      "locationValidationStatus": "USAAF_independent_station_name_candidate_dated_use_not_verified"
+    }
+  ],
+  "criticalCaveats": [
+    "The source B-code reference date is 1 July 1945, 53 days after the Atlas's 9 May 1945 cutoff; some B-code allocations/airfield uses can be postwar.",
+    "Original 1988 scan contains variant spellings and OCR artifacts (Woensdrecht, Valkenberg, Amsterdam/Schipol); matched site names are distinct original RCE evidence, not copied corrections to the USAF source.",
+    "RCE historic polygons are phase-level infrastructure geometry, not coordinates proven to be the 1944–45 runway in use.",
+    "Do not infer date, flying-unit occupancy, operator, serviceability or aircraft losses from a B-code/site crosswalk."
+  ],
+  "records": [
+    {
+      "britishAirfieldCode": "B-77",
+      "usafOriginalTablePrintedPage": 80,
+      "usaf1988OCRSiteName": "Gilze/Rijen",
+      "candidateRceHistoricSiteName": "Gilze-Rijen",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.52",
+        "vliegvelden.53"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1940,
+          1944
+        ],
+        [
+          1944,
+          1946
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-78",
+      "usafOriginalTablePrintedPage": 80,
+      "usaf1988OCRSiteName": "Eindhoven",
+      "candidateRceHistoricSiteName": "Eindhoven",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.40",
+        "vliegvelden.41",
+        "vliegvelden.42"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1932,
+          1940
+        ],
+        [
+          1940,
+          1944
+        ],
+        [
+          1944,
+          1952
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-79",
+      "usafOriginalTablePrintedPage": 80,
+      "usaf1988OCRSiteName": "Wbensdrecht",
+      "candidateRceHistoricSiteName": "Woensdrecht",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.181",
+        "vliegvelden.182",
+        "vliegvelden.183"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1935,
+          1939
+        ],
+        [
+          1940,
+          1944
+        ],
+        [
+          1944,
+          1949
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-80",
+      "usafOriginalTablePrintedPage": 80,
+      "usaf1988OCRSiteName": "Volkel",
+      "candidateRceHistoricSiteName": "Volkel",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.164",
+        "vliegvelden.165",
+        "vliegvelden.166",
+        "vliegvelden.167"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1940,
+          1942
+        ],
+        [
+          1942,
+          1944
+        ],
+        [
+          1942,
+          1944
+        ],
+        [
+          1944,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-82",
+      "usafOriginalTablePrintedPage": 80,
+      "usaf1988OCRSiteName": "Grave",
+      "candidateRceHistoricSiteName": "Keent / Grave",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.75"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1944,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-84",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Rips",
+      "candidateRceHistoricSiteName": "De Rips",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.25",
+        "vliegvelden.26"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1944,
+          1944
+        ],
+        [
+          1944,
+          1944
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-85",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Schijndel",
+      "candidateRceHistoricSiteName": "Schijndel",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.121"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1945,
+          1946
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-86",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Helmond",
+      "candidateRceHistoricSiteName": "Helmond",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.68"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1944,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-88",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Heesch",
+      "candidateRceHistoricSiteName": "Heesch",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.66"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1944,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-89",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Mill",
+      "candidateRceHistoricSiteName": "Mill",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.100"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1945,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-91",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Kluis",
+      "candidateRceHistoricSiteName": "Malden / 'De Kluis'",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.95"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1945,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-93",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Valkenberg",
+      "candidateRceHistoricSiteName": "Valkenburg",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.150"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1945,
+          1959
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-95",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Teuge",
+      "candidateRceHistoricSiteName": "Teuge",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.138",
+        "vliegvelden.139",
+        "vliegvelden.140"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1935,
+          1940
+        ],
+        [
+          1940,
+          1945
+        ],
+        [
+          1945,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-97",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Amsterdam/Schipol",
+      "candidateRceHistoricSiteName": "Schiphol",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.123",
+        "vliegvelden.124",
+        "vliegvelden.125"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1916,
+          1945
+        ],
+        [
+          1938,
+          1940
+        ],
+        [
+          1940,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    },
+    {
+      "britishAirfieldCode": "B-106",
+      "usafOriginalTablePrintedPage": 81,
+      "usaf1988OCRSiteName": "Twente/Enschede",
+      "candidateRceHistoricSiteName": "Twente",
+      "rceHistoricalPhaseIds": [
+        "vliegvelden.145",
+        "vliegvelden.146"
+      ],
+      "rceHistoricalPhaseYearsFromTo": [
+        [
+          1931,
+          1939
+        ],
+        [
+          1940,
+          1945
+        ]
+      ],
+      "locationValidationStatus": "historical_airfield_name_candidate_only_NOT_verified_wartime_B_code_period"
+    }
+  ]
+}

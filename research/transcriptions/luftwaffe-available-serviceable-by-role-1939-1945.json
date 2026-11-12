@@ -1,0 +1,431 @@
+{
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airavailluft",
+  "historicalBook": "Vajda, F. A. &amp; Dancey, P., German Aircraft Industry and Production, 1933-1945 .",
+  "force": "Luftwaffe",
+  "datePrecision": "month_only_no_exact_day_in_secondary_table",
+  "population": "aircraft_available_by_role_and_serviceability_all_commands_as_reported",
+  "cautions": [
+    "Modern book-derived totals, not primary Bundesarchiv unit returns; reconcile before public aggregation.",
+    "Transport not included in serviceability table.",
+    "1945 April transport is February data per source note.",
+    "An n/a or blank remains null, not zero; source serviceability classes may differ from combat-ready unit-level data."
+  ],
+  "monthlySnapshots": [
+    {
+      "month": "1939-09",
+      "onHand": {
+        "singleEngineFighter": 1125,
+        "twinEngineFighter": 194,
+        "nightFighter": null,
+        "groundAttack": 384,
+        "bomber": 1213,
+        "transport": 552
+      },
+      "serviceable": {
+        "singleEngineFighter": 870,
+        "twinEngineFighter": 141,
+        "nightFighter": null,
+        "groundAttack": 267,
+        "bomber": 1014
+      }
+    },
+    {
+      "month": "1939-12",
+      "onHand": {
+        "singleEngineFighter": 1022,
+        "twinEngineFighter": 410,
+        "nightFighter": null,
+        "groundAttack": 459,
+        "bomber": 1367,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 769,
+        "twinEngineFighter": 299,
+        "nightFighter": null,
+        "groundAttack": 356,
+        "bomber": 1000
+      }
+    },
+    {
+      "month": "1940-03",
+      "onHand": {
+        "singleEngineFighter": 1258,
+        "twinEngineFighter": 325,
+        "nightFighter": null,
+        "groundAttack": 453,
+        "bomber": 1657,
+        "transport": 466
+      },
+      "serviceable": {
+        "singleEngineFighter": 817,
+        "twinEngineFighter": 222,
+        "nightFighter": null,
+        "groundAttack": 368,
+        "bomber": 1102
+      }
+    },
+    {
+      "month": "1940-06",
+      "onHand": {
+        "singleEngineFighter": 1107,
+        "twinEngineFighter": 357,
+        "nightFighter": null,
+        "groundAttack": 483,
+        "bomber": 1380,
+        "transport": 357
+      },
+      "serviceable": {
+        "singleEngineFighter": 856,
+        "twinEngineFighter": 261,
+        "nightFighter": null,
+        "groundAttack": 337,
+        "bomber": 841
+      }
+    },
+    {
+      "month": "1940-09",
+      "onHand": {
+        "singleEngineFighter": 932,
+        "twinEngineFighter": 181,
+        "nightFighter": null,
+        "groundAttack": 482,
+        "bomber": 1420,
+        "transport": 365
+      },
+      "serviceable": {
+        "singleEngineFighter": 721,
+        "twinEngineFighter": 114,
+        "nightFighter": null,
+        "groundAttack": 401,
+        "bomber": 818
+      }
+    },
+    {
+      "month": "1940-12",
+      "onHand": {
+        "singleEngineFighter": 832,
+        "twinEngineFighter": 241,
+        "nightFighter": 165,
+        "groundAttack": 482,
+        "bomber": 1330,
+        "transport": 415
+      },
+      "serviceable": {
+        "singleEngineFighter": 587,
+        "twinEngineFighter": 168,
+        "nightFighter": 104,
+        "groundAttack": 375,
+        "bomber": 722
+      }
+    },
+    {
+      "month": "1941-03",
+      "onHand": {
+        "singleEngineFighter": 1158,
+        "twinEngineFighter": 322,
+        "nightFighter": 199,
+        "groundAttack": 444,
+        "bomber": 1460,
+        "transport": 713
+      },
+      "serviceable": {
+        "singleEngineFighter": 846,
+        "twinEngineFighter": 224,
+        "nightFighter": 124,
+        "groundAttack": 353,
+        "bomber": 932
+      }
+    },
+    {
+      "month": "1941-06",
+      "onHand": {
+        "singleEngineFighter": 1266,
+        "twinEngineFighter": 210,
+        "nightFighter": 244,
+        "groundAttack": 410,
+        "bomber": 1321,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 885,
+        "twinEngineFighter": 131,
+        "nightFighter": 172,
+        "groundAttack": 278,
+        "bomber": 763
+      }
+    },
+    {
+      "month": "1941-09",
+      "onHand": {
+        "singleEngineFighter": 1116,
+        "twinEngineFighter": 155,
+        "nightFighter": 245,
+        "groundAttack": 397,
+        "bomber": 1538,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 774,
+        "twinEngineFighter": 83,
+        "nightFighter": 140,
+        "groundAttack": 280,
+        "bomber": 630
+      }
+    },
+    {
+      "month": "1941-12",
+      "onHand": {
+        "singleEngineFighter": 1129,
+        "twinEngineFighter": 48,
+        "nightFighter": 223,
+        "groundAttack": 256,
+        "bomber": 918,
+        "transport": 991
+      },
+      "serviceable": {
+        "singleEngineFighter": 670,
+        "twinEngineFighter": 21,
+        "nightFighter": 132,
+        "groundAttack": 132,
+        "bomber": 383
+      }
+    },
+    {
+      "month": "1942-03",
+      "onHand": {
+        "singleEngineFighter": 1129,
+        "twinEngineFighter": 112,
+        "nightFighter": 248,
+        "groundAttack": 405,
+        "bomber": 977,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 747,
+        "twinEngineFighter": 61,
+        "nightFighter": 134,
+        "groundAttack": 205,
+        "bomber": 480
+      }
+    },
+    {
+      "month": "1942-06",
+      "onHand": {
+        "singleEngineFighter": 1277,
+        "twinEngineFighter": 362,
+        "nightFighter": 244,
+        "groundAttack": 461,
+        "bomber": 1381,
+        "transport": 957
+      },
+      "serviceable": {
+        "singleEngineFighter": 901,
+        "twinEngineFighter": 210,
+        "nightFighter": 162,
+        "groundAttack": 300,
+        "bomber": 885
+      }
+    },
+    {
+      "month": "1942-09",
+      "onHand": {
+        "singleEngineFighter": 1491,
+        "twinEngineFighter": 297,
+        "nightFighter": 350,
+        "groundAttack": 413,
+        "bomber": 1416,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 1024,
+        "twinEngineFighter": 166,
+        "nightFighter": 245,
+        "groundAttack": 273,
+        "bomber": 741
+      }
+    },
+    {
+      "month": "1942-12",
+      "onHand": {
+        "singleEngineFighter": 1360,
+        "twinEngineFighter": 212,
+        "nightFighter": 389,
+        "groundAttack": 286,
+        "bomber": 1193,
+        "transport": 881
+      },
+      "serviceable": {
+        "singleEngineFighter": 908,
+        "twinEngineFighter": 111,
+        "nightFighter": 278,
+        "groundAttack": 160,
+        "bomber": 611
+      }
+    },
+    {
+      "month": "1943-03",
+      "onHand": {
+        "singleEngineFighter": 1535,
+        "twinEngineFighter": 401,
+        "nightFighter": 493,
+        "groundAttack": 469,
+        "bomber": 1522,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 1006,
+        "twinEngineFighter": 206,
+        "nightFighter": 360,
+        "groundAttack": 325,
+        "bomber": 844
+      }
+    },
+    {
+      "month": "1943-06",
+      "onHand": {
+        "singleEngineFighter": 1849,
+        "twinEngineFighter": 414,
+        "nightFighter": 554,
+        "groundAttack": 523,
+        "bomber": 1663,
+        "transport": 850
+      },
+      "serviceable": {
+        "singleEngineFighter": 1361,
+        "twinEngineFighter": 305,
+        "nightFighter": 371,
+        "groundAttack": 444,
+        "bomber": 1070
+      }
+    },
+    {
+      "month": "1943-09",
+      "onHand": {
+        "singleEngineFighter": 1646,
+        "twinEngineFighter": 392,
+        "nightFighter": 574,
+        "groundAttack": 562,
+        "bomber": 1080,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 1080,
+        "twinEngineFighter": 243,
+        "nightFighter": 248,
+        "groundAttack": 395,
+        "bomber": 639
+      }
+    },
+    {
+      "month": "1943-12",
+      "onHand": {
+        "singleEngineFighter": 1523,
+        "twinEngineFighter": 290,
+        "nightFighter": 611,
+        "groundAttack": 601,
+        "bomber": 1604,
+        "transport": 903
+      },
+      "serviceable": {
+        "singleEngineFighter": 1095,
+        "twinEngineFighter": 199,
+        "nightFighter": 405,
+        "groundAttack": 466,
+        "bomber": 1078
+      }
+    },
+    {
+      "month": "1944-03",
+      "onHand": {
+        "singleEngineFighter": 1696,
+        "twinEngineFighter": 251,
+        "nightFighter": 565,
+        "groundAttack": 776,
+        "bomber": 1331,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 1188,
+        "twinEngineFighter": 148,
+        "nightFighter": 361,
+        "groundAttack": 516,
+        "bomber": 825
+      }
+    },
+    {
+      "month": "1944-06",
+      "onHand": {
+        "singleEngineFighter": 1523,
+        "twinEngineFighter": 242,
+        "nightFighter": 778,
+        "groundAttack": 1005,
+        "bomber": 1089,
+        "transport": 944
+      },
+      "serviceable": {
+        "singleEngineFighter": 895,
+        "twinEngineFighter": 124,
+        "nightFighter": 528,
+        "groundAttack": 751,
+        "bomber": 694
+      }
+    },
+    {
+      "month": "1944-09",
+      "onHand": {
+        "singleEngineFighter": 1984,
+        "twinEngineFighter": 142,
+        "nightFighter": 1018,
+        "groundAttack": 816,
+        "bomber": 929,
+        "transport": null
+      },
+      "serviceable": {
+        "singleEngineFighter": 1413,
+        "twinEngineFighter": 122,
+        "nightFighter": 854,
+        "groundAttack": 606,
+        "bomber": 644
+      }
+    },
+    {
+      "month": "1944-12",
+      "onHand": {
+        "singleEngineFighter": 2260,
+        "twinEngineFighter": 105,
+        "nightFighter": 1256,
+        "groundAttack": 892,
+        "bomber": 528,
+        "transport": 500
+      },
+      "serviceable": {
+        "singleEngineFighter": 1521,
+        "twinEngineFighter": 85,
+        "nightFighter": 913,
+        "groundAttack": 637,
+        "bomber": 359
+      }
+    },
+    {
+      "month": "1945-04",
+      "onHand": {
+        "singleEngineFighter": 1637,
+        "twinEngineFighter": null,
+        "nightFighter": 498,
+        "groundAttack": null,
+        "bomber": null,
+        "transport": 505
+      },
+      "serviceable": {
+        "singleEngineFighter": null,
+        "twinEngineFighter": null,
+        "nightFighter": null,
+        "groundAttack": null,
+        "bomber": null
+      },
+      "sourceReportingException": "April 1945 transport count is actually from February 1945; no April serviceable returns available."
+    }
+  ],
+  "arithmeticIssues": []
+}

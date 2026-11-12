@@ -1,0 +1,2683 @@
+{
+  "id": "RKKA-VVS-06-12",
+  "topic": "Long-range DA/ADD special transport missions, loads, persons",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_12.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 52,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de las instituciones y frentes para los cuales se realizaron misiones especiales",
+              "rowspan": 3
+            },
+            {
+              "value": "1942",
+              "colspan": 3
+            },
+            {
+              "value": "1943",
+              "colspan": 3
+            },
+            {
+              "value": "1944",
+              "colspan": 3
+            },
+            {
+              "value": "1945",
+              "colspan": 3
+            },
+            {
+              "value": "Total",
+              "colspan": 3
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "Cantidad de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "Transportado",
+              "colspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "Transportado",
+              "colspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "Transportado",
+              "colspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "Transportado",
+              "colspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "rowspan": 2
+            },
+            {
+              "value": "Transportado",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Cargamentos, toneladas"
+            },
+            {
+              "value": "Personas"
+            },
+            {
+              "value": "Cargamentos, toneladas"
+            },
+            {
+              "value": "Personas"
+            },
+            {
+              "value": "Cargamentos, toneladas"
+            },
+            {
+              "value": "Personas"
+            },
+            {
+              "value": "Cargamentos, toneladas"
+            },
+            {
+              "value": "Personas"
+            },
+            {
+              "value": "Cargamentos, toneladas"
+            },
+            {
+              "value": "Personas"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "16"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "El Estado Mayor Central del movimiento de partisanos",
+              "rowspan": 2
+            },
+            {
+              "value": "529"
+            },
+            {
+              "value": "494"
+            },
+            {
+              "value": "1 895"
+            },
+            {
+              "value": "743"
+            },
+            {
+              "value": "484"
+            },
+            {
+              "value": "1 076"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 272"
+            },
+            {
+              "value": "978"
+            },
+            {
+              "value": "2 971"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 000"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "268"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 268"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "El Estado Mayor del movimiento de partisanos de Bielorrusia",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "573"
+            },
+            {
+              "value": "391"
+            },
+            {
+              "value": "1 500"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "581"
+            },
+            {
+              "value": "399"
+            },
+            {
+              "value": "1 536"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "942"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "942"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Direccion General de Inteligencia del Ejercito Rojo (GRU KA)",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "136"
+            },
+            {
+              "value": "82"
+            },
+            {
+              "value": "167"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "37"
+            },
+            {
+              "value": "241"
+            },
+            {
+              "value": "91"
+            },
+            {
+              "value": "227"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "16"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "NKVD y NKGB de la URSS",
+              "rowspan": 2
+            },
+            {
+              "value": "88"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "559"
+            },
+            {
+              "value": "67"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "179"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "166"
+            },
+            {
+              "value": "97"
+            },
+            {
+              "value": "755"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "66"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "Direccion Central Politica del Ejercito Rojo",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "El Estado Mayor del movimiento de partisanos de Ucrania",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "772"
+            },
+            {
+              "value": "619"
+            },
+            {
+              "value": "1 547"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "772"
+            },
+            {
+              "value": "619"
+            },
+            {
+              "value": "1 547"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "880"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "880"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "El Ejercito Popular de Liberacion de Yugoslavia",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 930"
+            },
+            {
+              "value": "1 758"
+            },
+            {
+              "value": "4 038"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 930"
+            },
+            {
+              "value": "1 758"
+            },
+            {
+              "value": "4 038"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 354"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 354"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "NKGB de la Republica de Ucrania",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "156"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "89"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "191"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "El Estado Mayor del movimiento de partisanos de Crimea",
+              "rowspan": 2
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "49"
+            },
+            {
+              "value": "68"
+            },
+            {
+              "value": "137"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "72"
+            },
+            {
+              "value": "77"
+            },
+            {
+              "value": "137"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "El Estado Mayor del movimiento de partisanos de Lituania y Estonia",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "16"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "El Estado Mayor del movimiento de partisanos de Latvia",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "65"
+            },
+            {
+              "value": "48"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "65"
+            },
+            {
+              "value": "48"
+            },
+            {
+              "value": "41"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "El Estado Mayor del movimiento de partisanos de Polonia",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "111"
+            },
+            {
+              "value": "67"
+            },
+            {
+              "value": "86"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "111"
+            },
+            {
+              "value": "67"
+            },
+            {
+              "value": "86"
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "Checoslovaquia",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 355"
+            },
+            {
+              "value": "852"
+            },
+            {
+              "value": "3 182"
+            },
+            {
+              "value": "37"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 392"
+            },
+            {
+              "value": "864"
+            },
+            {
+              "value": "3 182"
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "166"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "166"
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "El Estado Mayor del Frente Nor-Occidental",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "104"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "104"
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 33,
+          "cells": [
+            {
+              "value": "El Estado Mayor del Frente de Leningrado",
+              "rowspan": 2
+            },
+            {
+              "value": "58"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "73"
+            },
+            {
+              "value": "81"
+            },
+            {
+              "value": "186"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "131"
+            },
+            {
+              "value": "145"
+            },
+            {
+              "value": "247"
+            }
+          ]
+        },
+        {
+          "sourceRow": 34,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 35,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 1 Frente Baltico",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "130"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "130"
+            }
+          ]
+        },
+        {
+          "sourceRow": 36,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 37,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 2 Frente Baltico",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "129"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "129"
+            }
+          ]
+        },
+        {
+          "sourceRow": 38,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 39,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 1 Frente Bielorruso",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "46"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "99"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": "57"
+            },
+            {
+              "value": "99"
+            }
+          ]
+        },
+        {
+          "sourceRow": 40,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 41,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 2 Frente Bielorruso",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "18"
+            }
+          ]
+        },
+        {
+          "sourceRow": 42,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 43,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 3 Frente Bielorruso",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "51"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "74"
+            }
+          ]
+        },
+        {
+          "sourceRow": 44,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 45,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 1 Frente Ucraniano",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "99"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "433"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "145"
+            },
+            {
+              "value": "127"
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "578"
+            }
+          ]
+        },
+        {
+          "sourceRow": 46,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 47,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 3 Frente Ucraniano",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "84"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "84"
+            }
+          ]
+        },
+        {
+          "sourceRow": 48,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 49,
+          "cells": [
+            {
+              "value": "El Estado Mayor del 4 Frente Ucraniano",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "54"
+            },
+            {
+              "value": "89"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "152"
+            },
+            {
+              "value": "100"
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "206"
+            }
+          ]
+        },
+        {
+          "sourceRow": 50,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 51,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "698"
+            },
+            {
+              "value": "631"
+            },
+            {
+              "value": "2 515"
+            },
+            {
+              "value": "2 361"
+            },
+            {
+              "value": "1 696"
+            },
+            {
+              "value": "4 710"
+            },
+            {
+              "value": "3 957"
+            },
+            {
+              "value": "2 986"
+            },
+            {
+              "value": "8 578"
+            },
+            {
+              "value": "302"
+            },
+            {
+              "value": "66"
+            },
+            {
+              "value": "593"
+            },
+            {
+              "value": "7318 {2}"
+            },
+            {
+              "value": "5 379"
+            },
+            {
+              "value": "16 396"
+            }
+          ]
+        },
+        {
+          "sourceRow": 52,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 032"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2 140"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1 520"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4 692"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

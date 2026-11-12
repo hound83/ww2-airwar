@@ -1,0 +1,2761 @@
+{
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_15.htm",
+  "sourceTable": "02-15",
+  "service": "Soviet PVO fighter air defense, not all Soviet aviation",
+  "sourceClass": "Soviet archival citations in Spanish secondary transcription",
+  "sourceStructureNote": "The source combines on-hand aircraft with inoperative denominators; adjacent pairs are one metric plus its unserviceable subset.",
+  "cautions": [
+    "Do not add printed totals to their constituent named formations.",
+    "Two different source blocks both carry the reported date 1945-01-01; do not overwrite or silently merge them.",
+    "The 1942-05 heading combines observation dates of 19, 20 and 31 May, according to source footnote 8; not synchronized as-of 10 May.",
+    "The source itself covers some Far Eastern units in aggregates; do not claim PVO totals are European only.",
+    "Some nominal units are present with incomplete aircraft or crew metrics; null must not become zero."
+  ],
+  "records": [
+    {
+      "sourceRow": 4,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-01",
+      "dateHeadingAsPrinted": "1 de junio de 1941 {1}",
+      "formationAsPrinted": "Escuadrones aereos especiales de las circunscripciones militares de Leningrado, Kiev, Odessa, Moscu, Caucaso Norte y Volga.",
+      "locationAsPrinted": null,
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": null,
+        "fighter_squadrons": null,
+        "recon_squadrons": 7,
+        "total_units": 7
+      },
+      "aircraftOnHand": {
+        "fighters": null,
+        "reconnaissance": 42,
+        "total": 42
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": 1,
+        "total": 1
+      },
+      "combatReadyCrews": 17,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 5,
+      "sourceBlockIndex": 0,
+      "date": "1941-06-01",
+      "dateHeadingAsPrinted": "1 de junio de 1941 {1}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 0,
+        "fighter_squadrons": 0,
+        "recon_squadrons": 7,
+        "total_units": 7
+      },
+      "aircraftOnHand": {
+        "fighters": 0,
+        "reconnaissance": 42,
+        "total": 42
+      },
+      "aircraftUnserviceable": {
+        "fighters": 0,
+        "reconnaissance": 1,
+        "total": 1
+      },
+      "combatReadyCrews": 17,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 7,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941: a fecha de 10 de julio {2}",
+      "formationAsPrinted": "7 iak PVO",
+      "locationAsPrinted": "Leningrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 6,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 6
+      },
+      "aircraftOnHand": {
+        "fighters": 232,
+        "reconnaissance": null,
+        "total": 232
+      },
+      "aircraftUnserviceable": {
+        "fighters": 31,
+        "reconnaissance": null,
+        "total": 31
+      },
+      "combatReadyCrews": 202,
+      "combatReadyNightFlightCrews": 96,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 8,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941: a fecha de 10 de julio {2}",
+      "formationAsPrinted": "6 iak PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 18,
+        "fighter_squadrons": 1,
+        "recon_squadrons": 1,
+        "total_units": 20
+      },
+      "aircraftOnHand": {
+        "fighters": 777,
+        "reconnaissance": 6,
+        "total": 783
+      },
+      "aircraftUnserviceable": {
+        "fighters": 42,
+        "reconnaissance": null,
+        "total": 42
+      },
+      "combatReadyCrews": 652,
+      "combatReadyNightFlightCrews": 144,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 9,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941: a fecha de 10 de julio {2}",
+      "formationAsPrinted": "36 iad PVO",
+      "locationAsPrinted": "Kiev",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 112,
+        "reconnaissance": null,
+        "total": 112
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": 0
+      },
+      "combatReadyCrews": 113,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 10,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941: a fecha de 10 de julio {2}",
+      "formationAsPrinted": "Escuadrones especiales de МВО (Circunscripcion Militar de Moscu)",
+      "locationAsPrinted": null,
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": null,
+        "fighter_squadrons": 2,
+        "recon_squadrons": 2,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 49,
+        "reconnaissance": 3,
+        "total": 52
+      },
+      "aircraftUnserviceable": {
+        "fighters": 8,
+        "reconnaissance": null,
+        "total": 8
+      },
+      "combatReadyCrews": 32,
+      "combatReadyNightFlightCrews": 28,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 11,
+      "sourceBlockIndex": 1,
+      "date": "1941-07-10",
+      "dateHeadingAsPrinted": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941: a fecha de 10 de julio {2}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 28,
+        "fighter_squadrons": 3,
+        "recon_squadrons": 3,
+        "total_units": 34
+      },
+      "aircraftOnHand": {
+        "fighters": 1170,
+        "reconnaissance": 9,
+        "total": 1179
+      },
+      "aircraftUnserviceable": {
+        "fighters": 81,
+        "reconnaissance": null,
+        "total": 81
+      },
+      "combatReadyCrews": 999,
+      "combatReadyNightFlightCrews": 268,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 13,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campña de verano-otoño de 1941: a fecha de 1 de octubre {3}",
+      "formationAsPrinted": "7 iak PVO",
+      "locationAsPrinted": "Leningrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 103,
+        "reconnaissance": null,
+        "total": 103
+      },
+      "aircraftUnserviceable": {
+        "fighters": 53,
+        "reconnaissance": null,
+        "total": 53
+      },
+      "combatReadyCrews": 50,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 14,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campña de verano-otoño de 1941: a fecha de 1 de octubre {3}",
+      "formationAsPrinted": "6 iak PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 17,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 17
+      },
+      "aircraftOnHand": {
+        "fighters": 423,
+        "reconnaissance": 9,
+        "total": 432
+      },
+      "aircraftUnserviceable": {
+        "fighters": 87,
+        "reconnaissance": 2,
+        "total": 89
+      },
+      "combatReadyCrews": 416,
+      "combatReadyNightFlightCrews": 118,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 15,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campña de verano-otoño de 1941: a fecha de 1 de octubre {3}",
+      "formationAsPrinted": "Regimientos aereos especiales y escuadrones aereos de VVS de las circunscripciones militares de Moscu, Caucaso Norte, Caucaso, y del Frente del Lejano Oriente",
+      "locationAsPrinted": null,
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": 4,
+        "recon_squadrons": 2,
+        "total_units": 8
+      },
+      "aircraftOnHand": {
+        "fighters": 147,
+        "reconnaissance": 15,
+        "total": 162
+      },
+      "aircraftUnserviceable": {
+        "fighters": 18,
+        "reconnaissance": 2,
+        "total": 20
+      },
+      "combatReadyCrews": 160,
+      "combatReadyNightFlightCrews": 98,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 16,
+      "sourceBlockIndex": 2,
+      "date": "1941-10-01",
+      "dateHeadingAsPrinted": "Al comienzo de la tercera etapa de la campña de verano-otoño de 1941: a fecha de 1 de octubre {3}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 24,
+        "fighter_squadrons": 4,
+        "recon_squadrons": 2,
+        "total_units": 30
+      },
+      "aircraftOnHand": {
+        "fighters": 673,
+        "reconnaissance": 24,
+        "total": 697
+      },
+      "aircraftUnserviceable": {
+        "fighters": 158,
+        "reconnaissance": 4,
+        "total": 162
+      },
+      "combatReadyCrews": 626,
+      "combatReadyNightFlightCrews": 216,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 18,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941-1942: a fecha de 5 de diciembre de 1941 {5}",
+      "formationAsPrinted": "7 iak PVO",
+      "locationAsPrinted": "Leningrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 73,
+        "reconnaissance": null,
+        "total": 73
+      },
+      "aircraftUnserviceable": {
+        "fighters": 19,
+        "reconnaissance": null,
+        "total": 19
+      },
+      "combatReadyCrews": 71,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 19,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941-1942: a fecha de 5 de diciembre de 1941 {5}",
+      "formationAsPrinted": "6 iak PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 26,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 26
+      },
+      "aircraftOnHand": {
+        "fighters": 432,
+        "reconnaissance": 28,
+        "total": 460
+      },
+      "aircraftUnserviceable": {
+        "fighters": 101,
+        "reconnaissance": 5,
+        "total": 106
+      },
+      "combatReadyCrews": 438,
+      "combatReadyNightFlightCrews": 90,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 20,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941-1942: a fecha de 5 de diciembre de 1941 {5}",
+      "formationAsPrinted": "PVO VVS del Frente de Sur y Frente de Sur-Oeste",
+      "locationAsPrinted": null,
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 36,
+        "reconnaissance": null,
+        "total": 36
+      },
+      "aircraftUnserviceable": {
+        "fighters": 5,
+        "reconnaissance": null,
+        "total": 5
+      },
+      "combatReadyCrews": 21,
+      "combatReadyNightFlightCrews": 12,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 21,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941-1942: a fecha de 5 de diciembre de 1941 {5}",
+      "formationAsPrinted": "PVO VVS de las circunscripciones militares de Orel y Nor-Oeste {6}",
+      "locationAsPrinted": null,
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": 2,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 64,
+        "reconnaissance": null,
+        "total": 64
+      },
+      "aircraftUnserviceable": {
+        "fighters": 25,
+        "reconnaissance": null,
+        "total": 25
+      },
+      "combatReadyCrews": 86,
+      "combatReadyNightFlightCrews": 11,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 22,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941-1942: a fecha de 5 de diciembre de 1941 {5}",
+      "formationAsPrinted": "Agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {7}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 21,
+        "fighter_squadrons": 5,
+        "recon_squadrons": 2,
+        "total_units": 28
+      },
+      "aircraftOnHand": {
+        "fighters": 423,
+        "reconnaissance": 3,
+        "total": 426
+      },
+      "aircraftUnserviceable": {
+        "fighters": 47,
+        "reconnaissance": null,
+        "total": 47
+      },
+      "combatReadyCrews": 328,
+      "combatReadyNightFlightCrews": 10,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 23,
+      "sourceBlockIndex": 3,
+      "date": "1941-12-05",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de invierno 1941-1942: a fecha de 5 de diciembre de 1941 {5}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 57,
+        "fighter_squadrons": 7,
+        "recon_squadrons": 2,
+        "total_units": 66
+      },
+      "aircraftOnHand": {
+        "fighters": 1028,
+        "reconnaissance": 31,
+        "total": 1059
+      },
+      "aircraftUnserviceable": {
+        "fighters": 197,
+        "reconnaissance": 5,
+        "total": 202
+      },
+      "combatReadyCrews": 944,
+      "combatReadyNightFlightCrews": 123,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 25,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "7 iak PVO",
+      "locationAsPrinted": "Leningrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 108,
+        "reconnaissance": null,
+        "total": 108
+      },
+      "aircraftUnserviceable": {
+        "fighters": 26,
+        "reconnaissance": null,
+        "total": 26
+      },
+      "combatReadyCrews": 69,
+      "combatReadyNightFlightCrews": 5,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 26,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "6 iak PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 21,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 21
+      },
+      "aircraftOnHand": {
+        "fighters": 425,
+        "reconnaissance": null,
+        "total": 425
+      },
+      "aircraftUnserviceable": {
+        "fighters": 131,
+        "reconnaissance": null,
+        "total": 131
+      },
+      "combatReadyCrews": 352,
+      "combatReadyNightFlightCrews": 126,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 27,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "8 iak PVO",
+      "locationAsPrinted": "Baku",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 8,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 8
+      },
+      "aircraftOnHand": {
+        "fighters": 266,
+        "reconnaissance": null,
+        "total": 266
+      },
+      "aircraftUnserviceable": {
+        "fighters": 21,
+        "reconnaissance": null,
+        "total": 21
+      },
+      "combatReadyCrews": 163,
+      "combatReadyNightFlightCrews": 72,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 28,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "122 iad PVO",
+      "locationAsPrinted": "Murmansk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 56,
+        "reconnaissance": null,
+        "total": 56
+      },
+      "aircraftUnserviceable": {
+        "fighters": 31,
+        "reconnaissance": null,
+        "total": 31
+      },
+      "combatReadyCrews": 51,
+      "combatReadyNightFlightCrews": 2,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 29,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "104 iad PVO",
+      "locationAsPrinted": "Arhangel'sk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 61,
+        "reconnaissance": null,
+        "total": 61
+      },
+      "aircraftUnserviceable": {
+        "fighters": 18,
+        "reconnaissance": null,
+        "total": 18
+      },
+      "combatReadyCrews": 58,
+      "combatReadyNightFlightCrews": 18,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 30,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "148 iad PVO",
+      "locationAsPrinted": "Vologda",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 2
+      },
+      "aircraftOnHand": {
+        "fighters": 38,
+        "reconnaissance": null,
+        "total": 38
+      },
+      "aircraftUnserviceable": {
+        "fighters": 22,
+        "reconnaissance": null,
+        "total": 22
+      },
+      "combatReadyCrews": 12,
+      "combatReadyNightFlightCrews": 4,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 31,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Bologoe",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 63,
+        "reconnaissance": null,
+        "total": 63
+      },
+      "aircraftUnserviceable": {
+        "fighters": 32,
+        "reconnaissance": null,
+        "total": 32
+      },
+      "combatReadyCrews": 29,
+      "combatReadyNightFlightCrews": 2,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 32,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "125 iad PVO",
+      "locationAsPrinted": "Tula",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 43,
+        "reconnaissance": null,
+        "total": 43
+      },
+      "aircraftUnserviceable": {
+        "fighters": 13,
+        "reconnaissance": null,
+        "total": 13
+      },
+      "combatReadyCrews": 32,
+      "combatReadyNightFlightCrews": 4,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 33,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "101 iad PVO",
+      "locationAsPrinted": "Voronezh",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 44,
+        "reconnaissance": null,
+        "total": 44
+      },
+      "aircraftUnserviceable": {
+        "fighters": 14,
+        "reconnaissance": null,
+        "total": 14
+      },
+      "combatReadyCrews": 51,
+      "combatReadyNightFlightCrews": 28,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 34,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "102 iad PVO",
+      "locationAsPrinted": "Stalingrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 88,
+        "reconnaissance": null,
+        "total": 88
+      },
+      "aircraftUnserviceable": {
+        "fighters": 23,
+        "reconnaissance": null,
+        "total": 23
+      },
+      "combatReadyCrews": 104,
+      "combatReadyNightFlightCrews": 26,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 35,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "105 iad PVO",
+      "locationAsPrinted": "Rostov-na-Donu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 62,
+        "reconnaissance": null,
+        "total": 62
+      },
+      "aircraftUnserviceable": {
+        "fighters": 23,
+        "reconnaissance": null,
+        "total": 23
+      },
+      "combatReadyCrews": 54,
+      "combatReadyNightFlightCrews": 16,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 36,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "Agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {9}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 15,
+        "fighter_squadrons": 1,
+        "recon_squadrons": null,
+        "total_units": 16
+      },
+      "aircraftOnHand": {
+        "fighters": 307,
+        "reconnaissance": null,
+        "total": 307
+      },
+      "aircraftUnserviceable": {
+        "fighters": 55,
+        "reconnaissance": null,
+        "total": 55
+      },
+      "combatReadyCrews": 309,
+      "combatReadyNightFlightCrews": 101,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 37,
+      "sourceBlockIndex": 4,
+      "date": "1942-05-10",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1942: a fecha de 10 de mayo {8}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 75,
+        "fighter_squadrons": 1,
+        "recon_squadrons": 0,
+        "total_units": 76
+      },
+      "aircraftOnHand": {
+        "fighters": 1561,
+        "reconnaissance": 0,
+        "total": 1561
+      },
+      "aircraftUnserviceable": {
+        "fighters": 409,
+        "reconnaissance": 0,
+        "total": 409
+      },
+      "combatReadyCrews": 1284,
+      "combatReadyNightFlightCrews": 404,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 39,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "7 iak PVO",
+      "locationAsPrinted": "Leningrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 84,
+        "reconnaissance": null,
+        "total": 84
+      },
+      "aircraftUnserviceable": {
+        "fighters": 19,
+        "reconnaissance": null,
+        "total": 19
+      },
+      "combatReadyCrews": 104,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 40,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "6 iak PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 22,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 22
+      },
+      "aircraftOnHand": {
+        "fighters": 484,
+        "reconnaissance": null,
+        "total": 484
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 368,
+      "combatReadyNightFlightCrews": 150,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 41,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "8 iak PVO",
+      "locationAsPrinted": "Baku",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 7,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 7
+      },
+      "aircraftOnHand": {
+        "fighters": 246,
+        "reconnaissance": null,
+        "total": 246
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 185,
+      "combatReadyNightFlightCrews": 88,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 42,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "122 iad PVO",
+      "locationAsPrinted": "Murmansk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 83,
+        "reconnaissance": null,
+        "total": 83
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 53,
+      "combatReadyNightFlightCrews": 3,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 43,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "104 iad PVO",
+      "locationAsPrinted": "Arhangel'sk {11}",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 82,
+        "reconnaissance": null,
+        "total": 82
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 63,
+      "combatReadyNightFlightCrews": 22,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 44,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Bologoe",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 69,
+        "reconnaissance": null,
+        "total": 69
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 31,
+      "combatReadyNightFlightCrews": 2,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 45,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "125 iad PVO",
+      "locationAsPrinted": "Tula",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 64,
+        "reconnaissance": null,
+        "total": 64
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 33,
+      "combatReadyNightFlightCrews": 4,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 46,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "101 iad PVO",
+      "locationAsPrinted": "Voronezh",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 65,
+        "reconnaissance": null,
+        "total": 65
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 57,
+      "combatReadyNightFlightCrews": 30,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 47,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "102 iad PVO",
+      "locationAsPrinted": "Stalingrad",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 94,
+        "reconnaissance": null,
+        "total": 94
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 93,
+      "combatReadyNightFlightCrews": 34,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 48,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "105 iad PVO",
+      "locationAsPrinted": "Rostov-na-Donu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 84,
+        "reconnaissance": null,
+        "total": 84
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 63,
+      "combatReadyNightFlightCrews": 22,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 49,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "Agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {12}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 18,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 18
+      },
+      "aircraftOnHand": {
+        "fighters": 438,
+        "reconnaissance": null,
+        "total": 438
+      },
+      "aircraftUnserviceable": {
+        "fighters": null,
+        "reconnaissance": null,
+        "total": null
+      },
+      "combatReadyCrews": 368,
+      "combatReadyNightFlightCrews": 138,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 50,
+      "sourceBlockIndex": 5,
+      "date": "1942-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la ofensiva enemiga en direccion Sur-Oeste, 1942: a fecha de 1 de junio {10}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 76,
+        "fighter_squadrons": 0,
+        "recon_squadrons": 0,
+        "total_units": 76
+      },
+      "aircraftOnHand": {
+        "fighters": 1793,
+        "reconnaissance": 0,
+        "total": 1793
+      },
+      "aircraftUnserviceable": {
+        "fighters": 19,
+        "reconnaissance": 0,
+        "total": 19
+      },
+      "combatReadyCrews": 1418,
+      "combatReadyNightFlightCrews": 493,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 52,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "7 iak PVO",
+      "locationAsPrinted": "Leningrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 84,
+        "reconnaissance": null,
+        "total": 84
+      },
+      "aircraftUnserviceable": {
+        "fighters": 21,
+        "reconnaissance": null,
+        "total": 21
+      },
+      "combatReadyCrews": 64,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 53,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "6 iak PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 15,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 15
+      },
+      "aircraftOnHand": {
+        "fighters": 311,
+        "reconnaissance": null,
+        "total": 311
+      },
+      "aircraftUnserviceable": {
+        "fighters": 87,
+        "reconnaissance": null,
+        "total": 87
+      },
+      "combatReadyCrews": 381,
+      "combatReadyNightFlightCrews": 93,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 54,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "8 iak PVO",
+      "locationAsPrinted": "Baku",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 6,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 6
+      },
+      "aircraftOnHand": {
+        "fighters": 191,
+        "reconnaissance": 1,
+        "total": 192
+      },
+      "aircraftUnserviceable": {
+        "fighters": 63,
+        "reconnaissance": null,
+        "total": 63
+      },
+      "combatReadyCrews": 199,
+      "combatReadyNightFlightCrews": 74,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 55,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "122 iad PVO",
+      "locationAsPrinted": "Murmansk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 69,
+        "reconnaissance": null,
+        "total": 69
+      },
+      "aircraftUnserviceable": {
+        "fighters": 66,
+        "reconnaissance": null,
+        "total": 66
+      },
+      "combatReadyCrews": 73,
+      "combatReadyNightFlightCrews": 9,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 56,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "104 iad PVO",
+      "locationAsPrinted": "Arhangel'sk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 83,
+        "reconnaissance": null,
+        "total": 83
+      },
+      "aircraftUnserviceable": {
+        "fighters": 6,
+        "reconnaissance": null,
+        "total": 6
+      },
+      "combatReadyCrews": 158,
+      "combatReadyNightFlightCrews": 21,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 57,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Bologoe",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 54,
+        "reconnaissance": null,
+        "total": 54
+      },
+      "aircraftUnserviceable": {
+        "fighters": 19,
+        "reconnaissance": null,
+        "total": 19
+      },
+      "combatReadyCrews": 82,
+      "combatReadyNightFlightCrews": 19,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 58,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "102 iad PVO",
+      "locationAsPrinted": "Stalingrado",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 88,
+        "reconnaissance": null,
+        "total": 88
+      },
+      "aircraftUnserviceable": {
+        "fighters": 65,
+        "reconnaissance": null,
+        "total": 65
+      },
+      "combatReadyCrews": 97,
+      "combatReadyNightFlightCrews": 29,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 59,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "105 iad PVO",
+      "locationAsPrinted": "Grozniy",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 51,
+        "reconnaissance": null,
+        "total": 51
+      },
+      "aircraftUnserviceable": {
+        "fighters": 10,
+        "reconnaissance": null,
+        "total": 10
+      },
+      "combatReadyCrews": 67,
+      "combatReadyNightFlightCrews": 7,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 60,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "298 iad PVO",
+      "locationAsPrinted": "Tbilisi",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 57,
+        "reconnaissance": null,
+        "total": 57
+      },
+      "aircraftUnserviceable": {
+        "fighters": 12,
+        "reconnaissance": null,
+        "total": 12
+      },
+      "combatReadyCrews": 133,
+      "combatReadyNightFlightCrews": 27,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 61,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "Unidades, destacamentos y agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {14}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 34,
+        "fighter_squadrons": null,
+        "recon_squadrons": 1,
+        "total_units": 35
+      },
+      "aircraftOnHand": {
+        "fighters": 532,
+        "reconnaissance": 9,
+        "total": 541
+      },
+      "aircraftUnserviceable": {
+        "fighters": 123,
+        "reconnaissance": 2,
+        "total": 125
+      },
+      "combatReadyCrews": 858,
+      "combatReadyNightFlightCrews": 223,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 62,
+      "sourceBlockIndex": 6,
+      "date": "1942-11-20",
+      "dateHeadingAsPrinted": "Al comienzo del segundo periodo de la guerra: a fecha de 20 de noviembre de 1942 {13}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 85,
+        "fighter_squadrons": 0,
+        "recon_squadrons": 1,
+        "total_units": 86
+      },
+      "aircraftOnHand": {
+        "fighters": 1520,
+        "reconnaissance": 10,
+        "total": 1530
+      },
+      "aircraftUnserviceable": {
+        "fighters": 472,
+        "reconnaissance": 2,
+        "total": 474
+      },
+      "combatReadyCrews": 2112,
+      "combatReadyNightFlightCrews": 502,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 64,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "1 Ejercito del Aire de Cazas de PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 17,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 17
+      },
+      "aircraftOnHand": {
+        "fighters": 414,
+        "reconnaissance": null,
+        "total": 414
+      },
+      "aircraftUnserviceable": {
+        "fighters": 112,
+        "reconnaissance": null,
+        "total": 112
+      },
+      "combatReadyCrews": 278,
+      "combatReadyNightFlightCrews": 188,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 65,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "9 iak PVO",
+      "locationAsPrinted": "Voronezh",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 6,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 6
+      },
+      "aircraftOnHand": {
+        "fighters": 136,
+        "reconnaissance": null,
+        "total": 136
+      },
+      "aircraftUnserviceable": {
+        "fighters": 26,
+        "reconnaissance": null,
+        "total": 26
+      },
+      "combatReadyCrews": 129,
+      "combatReadyNightFlightCrews": 62,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 66,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "10 iak PVO",
+      "locationAsPrinted": "Rostov-na-Donu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 89,
+        "reconnaissance": null,
+        "total": 89
+      },
+      "aircraftUnserviceable": {
+        "fighters": 35,
+        "reconnaissance": null,
+        "total": 35
+      },
+      "combatReadyCrews": 56,
+      "combatReadyNightFlightCrews": 9,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 67,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "8 iak PVO",
+      "locationAsPrinted": "Baku",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 6,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 6
+      },
+      "aircraftOnHand": {
+        "fighters": 207,
+        "reconnaissance": 2,
+        "total": 209
+      },
+      "aircraftUnserviceable": {
+        "fighters": 55,
+        "reconnaissance": 2,
+        "total": 57
+      },
+      "combatReadyCrews": 148,
+      "combatReadyNightFlightCrews": 62,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 68,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "122 iad PVO",
+      "locationAsPrinted": "Murmansk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 59,
+        "reconnaissance": null,
+        "total": 59
+      },
+      "aircraftUnserviceable": {
+        "fighters": 27,
+        "reconnaissance": null,
+        "total": 27
+      },
+      "combatReadyCrews": 29,
+      "combatReadyNightFlightCrews": 10,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 69,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "104 iad PVO",
+      "locationAsPrinted": "Arhangel'sk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 97,
+        "reconnaissance": null,
+        "total": 97
+      },
+      "aircraftUnserviceable": {
+        "fighters": 40,
+        "reconnaissance": null,
+        "total": 40
+      },
+      "combatReadyCrews": 76,
+      "combatReadyNightFlightCrews": 28,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 70,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Bologoe",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 86,
+        "reconnaissance": null,
+        "total": 86
+      },
+      "aircraftUnserviceable": {
+        "fighters": 27,
+        "reconnaissance": null,
+        "total": 27
+      },
+      "combatReadyCrews": 55,
+      "combatReadyNightFlightCrews": 32,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 71,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "36 iad PVO",
+      "locationAsPrinted": "Eletsk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 102,
+        "reconnaissance": 1,
+        "total": 103
+      },
+      "aircraftUnserviceable": {
+        "fighters": 21,
+        "reconnaissance": null,
+        "total": 21
+      },
+      "combatReadyCrews": 92,
+      "combatReadyNightFlightCrews": 39,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 72,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "310 iad PVO",
+      "locationAsPrinted": "Valuyki",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 2
+      },
+      "aircraftOnHand": {
+        "fighters": 42,
+        "reconnaissance": null,
+        "total": 42
+      },
+      "aircraftUnserviceable": {
+        "fighters": 14,
+        "reconnaissance": null,
+        "total": 14
+      },
+      "combatReadyCrews": 38,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 73,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "Unidades y agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {16}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 32,
+        "fighter_squadrons": 1,
+        "recon_squadrons": null,
+        "total_units": 33
+      },
+      "aircraftOnHand": {
+        "fighters": 889,
+        "reconnaissance": null,
+        "total": 889
+      },
+      "aircraftUnserviceable": {
+        "fighters": 211,
+        "reconnaissance": null,
+        "total": 211
+      },
+      "combatReadyCrews": 792,
+      "combatReadyNightFlightCrews": 340,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 74,
+      "sourceBlockIndex": 7,
+      "date": "1943-07-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1943: a fecha de 1 de julio {15}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 84,
+        "fighter_squadrons": 1,
+        "recon_squadrons": 0,
+        "total_units": 85
+      },
+      "aircraftOnHand": {
+        "fighters": 2121,
+        "reconnaissance": 3,
+        "total": 2124
+      },
+      "aircraftUnserviceable": {
+        "fighters": 568,
+        "reconnaissance": 2,
+        "total": 570
+      },
+      "combatReadyCrews": 1693,
+      "combatReadyNightFlightCrews": 770,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 76,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "1 Ejercito del Aire de Cazas de PVO",
+      "locationAsPrinted": "Moscu {18}",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 17,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 17
+      },
+      "aircraftOnHand": {
+        "fighters": 386,
+        "reconnaissance": null,
+        "total": 386
+      },
+      "aircraftUnserviceable": {
+        "fighters": 23,
+        "reconnaissance": null,
+        "total": 23
+      },
+      "combatReadyCrews": 271,
+      "combatReadyNightFlightCrews": 209,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 77,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "9 iak PVO",
+      "locationAsPrinted": "Kiev",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 8,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 8
+      },
+      "aircraftOnHand": {
+        "fighters": 188,
+        "reconnaissance": null,
+        "total": 188
+      },
+      "aircraftUnserviceable": {
+        "fighters": 36,
+        "reconnaissance": null,
+        "total": 36
+      },
+      "combatReadyCrews": 123,
+      "combatReadyNightFlightCrews": 58,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 78,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "10 iak PVO",
+      "locationAsPrinted": "Dnepropetrovsk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 7,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 7
+      },
+      "aircraftOnHand": {
+        "fighters": 145,
+        "reconnaissance": null,
+        "total": 145
+      },
+      "aircraftUnserviceable": {
+        "fighters": 34,
+        "reconnaissance": null,
+        "total": 34
+      },
+      "combatReadyCrews": 92,
+      "combatReadyNightFlightCrews": 10,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 79,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "122 iad PVO",
+      "locationAsPrinted": "Murmansk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 101,
+        "reconnaissance": null,
+        "total": 101
+      },
+      "aircraftUnserviceable": {
+        "fighters": 26,
+        "reconnaissance": null,
+        "total": 26
+      },
+      "combatReadyCrews": 69,
+      "combatReadyNightFlightCrews": 19,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 80,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "104 iad PVO",
+      "locationAsPrinted": "Arhangel'sk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 2
+      },
+      "aircraftOnHand": {
+        "fighters": 116,
+        "reconnaissance": null,
+        "total": 116
+      },
+      "aircraftUnserviceable": {
+        "fighters": 51,
+        "reconnaissance": null,
+        "total": 51
+      },
+      "combatReadyCrews": 28,
+      "combatReadyNightFlightCrews": 14,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 81,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Velikie Luki",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 111,
+        "reconnaissance": null,
+        "total": 111
+      },
+      "aircraftUnserviceable": {
+        "fighters": 9,
+        "reconnaissance": null,
+        "total": 9
+      },
+      "combatReadyCrews": 88,
+      "combatReadyNightFlightCrews": 25,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 82,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "328 iad PVO",
+      "locationAsPrinted": "Smolensk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 2
+      },
+      "aircraftOnHand": {
+        "fighters": 55,
+        "reconnaissance": null,
+        "total": 55
+      },
+      "aircraftUnserviceable": {
+        "fighters": 11,
+        "reconnaissance": null,
+        "total": 11
+      },
+      "combatReadyCrews": 39,
+      "combatReadyNightFlightCrews": 8,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 83,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "Unidades y agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {19}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 41,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 41
+      },
+      "aircraftOnHand": {
+        "fighters": 1278,
+        "reconnaissance": null,
+        "total": 1278
+      },
+      "aircraftUnserviceable": {
+        "fighters": 188,
+        "reconnaissance": null,
+        "total": 188
+      },
+      "combatReadyCrews": 749,
+      "combatReadyNightFlightCrews": 354,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 84,
+      "sourceBlockIndex": 8,
+      "date": "1944-01-01",
+      "dateHeadingAsPrinted": "Al comienzo del tercer periodo de la guerra: a fecha de 1 de enero de 1944 {17}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 85,
+        "fighter_squadrons": 0,
+        "recon_squadrons": 0,
+        "total_units": 85
+      },
+      "aircraftOnHand": {
+        "fighters": 2380,
+        "reconnaissance": 0,
+        "total": 2380
+      },
+      "aircraftUnserviceable": {
+        "fighters": 378,
+        "reconnaissance": 0,
+        "total": 378
+      },
+      "combatReadyCrews": 1459,
+      "combatReadyNightFlightCrews": 697,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 86,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "1 Ejercito del Aire de Cazas de PVO",
+      "locationAsPrinted": "Moscu",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 17,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 17
+      },
+      "aircraftOnHand": {
+        "fighters": 452,
+        "reconnaissance": null,
+        "total": 452
+      },
+      "aircraftUnserviceable": {
+        "fighters": 50,
+        "reconnaissance": null,
+        "total": 50
+      },
+      "combatReadyCrews": 266,
+      "combatReadyNightFlightCrews": 169,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 87,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "9 iak PVO",
+      "locationAsPrinted": "Kiev",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 7,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 7
+      },
+      "aircraftOnHand": {
+        "fighters": 175,
+        "reconnaissance": null,
+        "total": 175
+      },
+      "aircraftUnserviceable": {
+        "fighters": 57,
+        "reconnaissance": null,
+        "total": 57
+      },
+      "combatReadyCrews": 82,
+      "combatReadyNightFlightCrews": 48,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 88,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "122 iad PVO",
+      "locationAsPrinted": "Murmansk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 103,
+        "reconnaissance": null,
+        "total": 103
+      },
+      "aircraftUnserviceable": {
+        "fighters": 14,
+        "reconnaissance": null,
+        "total": 14
+      },
+      "combatReadyCrews": 66,
+      "combatReadyNightFlightCrews": 41,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 89,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "104 iad PVO",
+      "locationAsPrinted": "Arhangel'sk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 150,
+        "reconnaissance": null,
+        "total": 150
+      },
+      "aircraftUnserviceable": {
+        "fighters": 18,
+        "reconnaissance": null,
+        "total": 18
+      },
+      "combatReadyCrews": 59,
+      "combatReadyNightFlightCrews": 29,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 90,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "124 iad PVO",
+      "locationAsPrinted": "Vypolzovo",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 61,
+        "reconnaissance": null,
+        "total": 61
+      },
+      "aircraftUnserviceable": {
+        "fighters": 11,
+        "reconnaissance": null,
+        "total": 11
+      },
+      "combatReadyCrews": 33,
+      "combatReadyNightFlightCrews": 9,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 91,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Velikie Luki",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 132,
+        "reconnaissance": null,
+        "total": 132
+      },
+      "aircraftUnserviceable": {
+        "fighters": 10,
+        "reconnaissance": null,
+        "total": 10
+      },
+      "combatReadyCrews": 69,
+      "combatReadyNightFlightCrews": 14,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 92,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "328 iad PVO",
+      "locationAsPrinted": "Smolensk",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 2
+      },
+      "aircraftOnHand": {
+        "fighters": 50,
+        "reconnaissance": null,
+        "total": 50
+      },
+      "aircraftUnserviceable": {
+        "fighters": 3,
+        "reconnaissance": null,
+        "total": 3
+      },
+      "combatReadyCrews": 42,
+      "combatReadyNightFlightCrews": 19,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 93,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "36 iad PVO",
+      "locationAsPrinted": "Gomel'",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 169,
+        "reconnaissance": null,
+        "total": 169
+      },
+      "aircraftUnserviceable": {
+        "fighters": 18,
+        "reconnaissance": null,
+        "total": 18
+      },
+      "combatReadyCrews": 187,
+      "combatReadyNightFlightCrews": 46,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 94,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "148 iad PVO",
+      "locationAsPrinted": "Korosten'",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 109,
+        "reconnaissance": null,
+        "total": 109
+      },
+      "aircraftUnserviceable": {
+        "fighters": 16,
+        "reconnaissance": null,
+        "total": 16
+      },
+      "combatReadyCrews": 84,
+      "combatReadyNightFlightCrews": 29,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 95,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "141 iad PVO",
+      "locationAsPrinted": "Zhitomir",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 2,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 2
+      },
+      "aircraftOnHand": {
+        "fighters": 54,
+        "reconnaissance": null,
+        "total": 54
+      },
+      "aircraftUnserviceable": {
+        "fighters": 6,
+        "reconnaissance": null,
+        "total": 6
+      },
+      "combatReadyCrews": 33,
+      "combatReadyNightFlightCrews": null,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 96,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "2 gv.iad PVO",
+      "locationAsPrinted": "Odessa",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 79,
+        "reconnaissance": null,
+        "total": 79
+      },
+      "aircraftUnserviceable": {
+        "fighters": 10,
+        "reconnaissance": null,
+        "total": 10
+      },
+      "combatReadyCrews": 55,
+      "combatReadyNightFlightCrews": 10,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 97,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "Agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {21}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 43,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 43
+      },
+      "aircraftOnHand": {
+        "fighters": 1509,
+        "reconnaissance": null,
+        "total": 1509
+      },
+      "aircraftUnserviceable": {
+        "fighters": 180,
+        "reconnaissance": null,
+        "total": 180
+      },
+      "combatReadyCrews": 809,
+      "combatReadyNightFlightCrews": 306,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 98,
+      "sourceBlockIndex": 9,
+      "date": "1944-06-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de verano-otoño de 1944: a fecha de 1 de junio {20}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 95,
+        "fighter_squadrons": 0,
+        "recon_squadrons": 0,
+        "total_units": 95
+      },
+      "aircraftOnHand": {
+        "fighters": 3043,
+        "reconnaissance": 0,
+        "total": 3043
+      },
+      "aircraftUnserviceable": {
+        "fighters": 393,
+        "reconnaissance": 0,
+        "total": 393
+      },
+      "combatReadyCrews": 1785,
+      "combatReadyNightFlightCrews": 720,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 100,
+      "sourceBlockIndex": 10,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa: a fecha de 1 de enero {22}",
+      "formationAsPrinted": "10 iak PVO",
+      "locationAsPrinted": "L'vov",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 6,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 6
+      },
+      "aircraftOnHand": {
+        "fighters": 202,
+        "reconnaissance": null,
+        "total": 202
+      },
+      "aircraftUnserviceable": {
+        "fighters": 27,
+        "reconnaissance": null,
+        "total": 27
+      },
+      "combatReadyCrews": 138,
+      "combatReadyNightFlightCrews": 49,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 101,
+      "sourceBlockIndex": 10,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa: a fecha de 1 de enero {22}",
+      "formationAsPrinted": "36 iad PVO",
+      "locationAsPrinted": "Ljublino",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 6,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 6
+      },
+      "aircraftOnHand": {
+        "fighters": 179,
+        "reconnaissance": null,
+        "total": 179
+      },
+      "aircraftUnserviceable": {
+        "fighters": 30,
+        "reconnaissance": null,
+        "total": 30
+      },
+      "combatReadyCrews": 123,
+      "combatReadyNightFlightCrews": 79,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 102,
+      "sourceBlockIndex": 10,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa: a fecha de 1 de enero {22}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Riga",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 155,
+        "reconnaissance": null,
+        "total": 155
+      },
+      "aircraftUnserviceable": {
+        "fighters": 12,
+        "reconnaissance": null,
+        "total": 12
+      },
+      "combatReadyCrews": 105,
+      "combatReadyNightFlightCrews": 57,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 103,
+      "sourceBlockIndex": 10,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa: a fecha de 1 de enero {22}",
+      "formationAsPrinted": "2 gv.iad PVO",
+      "locationAsPrinted": "Ploeshti",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 184,
+        "reconnaissance": null,
+        "total": 184
+      },
+      "aircraftUnserviceable": {
+        "fighters": 29,
+        "reconnaissance": null,
+        "total": 29
+      },
+      "combatReadyCrews": 150,
+      "combatReadyNightFlightCrews": 36,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 104,
+      "sourceBlockIndex": 10,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa: a fecha de 1 de enero {22}",
+      "formationAsPrinted": "Agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {23}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 71,
+        "fighter_squadrons": 2,
+        "recon_squadrons": null,
+        "total_units": 73
+      },
+      "aircraftOnHand": {
+        "fighters": 2419,
+        "reconnaissance": null,
+        "total": 2419
+      },
+      "aircraftUnserviceable": {
+        "fighters": 310,
+        "reconnaissance": null,
+        "total": 310
+      },
+      "combatReadyCrews": 1559,
+      "combatReadyNightFlightCrews": 730,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 105,
+      "sourceBlockIndex": 10,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Al comienzo de la campaña de 1945 en Europa: a fecha de 1 de enero {22}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 93,
+        "fighter_squadrons": 2,
+        "recon_squadrons": 0,
+        "total_units": 95
+      },
+      "aircraftOnHand": {
+        "fighters": 3139,
+        "reconnaissance": 0,
+        "total": 3139
+      },
+      "aircraftUnserviceable": {
+        "fighters": 408,
+        "reconnaissance": 0,
+        "total": 408
+      },
+      "combatReadyCrews": 2075,
+      "combatReadyNightFlightCrews": 951,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 107,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Ultima fase de la Gran Guerra Patriotica: a 1 de enero de 1945 {24}",
+      "formationAsPrinted": "106 iad PVO",
+      "locationAsPrinted": "Riga",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 5,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 5
+      },
+      "aircraftOnHand": {
+        "fighters": 145,
+        "reconnaissance": null,
+        "total": 145
+      },
+      "aircraftUnserviceable": {
+        "fighters": 13,
+        "reconnaissance": null,
+        "total": 13
+      },
+      "combatReadyCrews": 91,
+      "combatReadyNightFlightCrews": 53,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 108,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Ultima fase de la Gran Guerra Patriotica: a 1 de enero de 1945 {24}",
+      "formationAsPrinted": "148 iad PVO",
+      "locationAsPrinted": "Landsberg",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 4,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 4
+      },
+      "aircraftOnHand": {
+        "fighters": 110,
+        "reconnaissance": null,
+        "total": 110
+      },
+      "aircraftUnserviceable": {
+        "fighters": 15,
+        "reconnaissance": null,
+        "total": 15
+      },
+      "combatReadyCrews": 83,
+      "combatReadyNightFlightCrews": 57,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 109,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Ultima fase de la Gran Guerra Patriotica: a 1 de enero de 1945 {24}",
+      "formationAsPrinted": "320 iad PVO",
+      "locationAsPrinted": "Poznan'",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 80,
+        "reconnaissance": null,
+        "total": 80
+      },
+      "aircraftUnserviceable": {
+        "fighters": 1,
+        "reconnaissance": null,
+        "total": 1
+      },
+      "combatReadyCrews": 70,
+      "combatReadyNightFlightCrews": 42,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 110,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Ultima fase de la Gran Guerra Patriotica: a 1 de enero de 1945 {24}",
+      "formationAsPrinted": "126 iad PVO",
+      "locationAsPrinted": "Viena",
+      "category": "named_unit_or_group",
+      "unitCounts": {
+        "fighter_regiments": 3,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 3
+      },
+      "aircraftOnHand": {
+        "fighters": 94,
+        "reconnaissance": null,
+        "total": 94
+      },
+      "aircraftUnserviceable": {
+        "fighters": 6,
+        "reconnaissance": null,
+        "total": 6
+      },
+      "combatReadyCrews": 59,
+      "combatReadyNightFlightCrews": 36,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 111,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Ultima fase de la Gran Guerra Patriotica: a 1 de enero de 1945 {24}",
+      "formationAsPrinted": "Agrupaciones aereas especiales de PVO de los objetivos de la retaguardia {25}",
+      "locationAsPrinted": null,
+      "category": "aggregated_rear_area_units",
+      "unitCounts": {
+        "fighter_regiments": 82,
+        "fighter_squadrons": null,
+        "recon_squadrons": null,
+        "total_units": 82
+      },
+      "aircraftOnHand": {
+        "fighters": 2769,
+        "reconnaissance": null,
+        "total": 2769
+      },
+      "aircraftUnserviceable": {
+        "fighters": 258,
+        "reconnaissance": null,
+        "total": 258
+      },
+      "combatReadyCrews": 1704,
+      "combatReadyNightFlightCrews": 1055,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    },
+    {
+      "sourceRow": 112,
+      "sourceBlockIndex": 11,
+      "date": "1945-01-01",
+      "dateHeadingAsPrinted": "Ultima fase de la Gran Guerra Patriotica: a 1 de enero de 1945 {24}",
+      "formationAsPrinted": "",
+      "locationAsPrinted": "Total",
+      "category": "source_total",
+      "unitCounts": {
+        "fighter_regiments": 97,
+        "fighter_squadrons": 0,
+        "recon_squadrons": 0,
+        "total_units": 97
+      },
+      "aircraftOnHand": {
+        "fighters": 3198,
+        "reconnaissance": 0,
+        "total": 3198
+      },
+      "aircraftUnserviceable": {
+        "fighters": 293,
+        "reconnaissance": 0,
+        "total": 293
+      },
+      "combatReadyCrews": 2007,
+      "combatReadyNightFlightCrews": 1243,
+      "sourceScopeCaution": "Some source groupings explicitly include eastern/rear-area or military-district aviation; date is the reported table heading, not necessarily one simultaneous observation per unit."
+    }
+  ],
+  "structuralAndArithmeticExceptions": []
+}

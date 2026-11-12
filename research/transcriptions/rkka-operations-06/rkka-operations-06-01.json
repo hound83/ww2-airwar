@@ -1,0 +1,189 @@
+{
+  "id": "RKKA-VVS-06-01",
+  "topic": "VVS KA combat sorties by strategic war period",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_01.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 10,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Periodos de la guerra",
+              "rowspan": 3
+            },
+            {
+              "value": "Total avion-vuelos de combate realizados",
+              "rowspan": 3
+            },
+            {
+              "value": "De los cuales",
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "de dia",
+              "colspan": 2
+            },
+            {
+              "value": "de noche",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1 periodo",
+              "colspan": 6
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "de 22 de junio de 1941 hasta 18 de noviembre de 1942"
+            },
+            {
+              "value": "801 025"
+            },
+            {
+              "value": "586 983"
+            },
+            {
+              "value": "73,30%"
+            },
+            {
+              "value": "214 042"
+            },
+            {
+              "value": "26,70%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "2 periodo",
+              "colspan": 6
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "de 19 de noviembre de 1942 hasta 31 de diciembre de 1943"
+            },
+            {
+              "value": "717 527"
+            },
+            {
+              "value": "512 106"
+            },
+            {
+              "value": "71,40%"
+            },
+            {
+              "value": "205 421"
+            },
+            {
+              "value": "28,60%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "3 periodo",
+              "colspan": 6
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "de 1 de enero de 1944 hasta 9 de mayo de 1945"
+            },
+            {
+              "value": "1 386 226"
+            },
+            {
+              "value": "1 079 323"
+            },
+            {
+              "value": "77,90%"
+            },
+            {
+              "value": "306 903"
+            },
+            {
+              "value": "22,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "TOTAL"
+            },
+            {
+              "value": "2 904 778"
+            },
+            {
+              "value": "2 178 412"
+            },
+            {
+              "value": "75,00%"
+            },
+            {
+              "value": "726 366"
+            },
+            {
+              "value": "25,00%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

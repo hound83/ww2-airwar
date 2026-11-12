@@ -1,0 +1,1782 @@
+{
+  "id": "SPECIALIST-AIRAVAILLUFT",
+  "force": "luftwaffe",
+  "dataDescription": "Aircraft on strength vs serviceable, by role, 1939-45",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airavailluft",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "Vajda, F. A. &amp; Dancey, P., German Aircraft Industry and Production, 1933-1945 .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Single-Engine Fighters"
+            },
+            {
+              "text": "Twin- Engine Fighters"
+            },
+            {
+              "text": "Night-Fighters"
+            },
+            {
+              "text": "Ground Attack"
+            },
+            {
+              "text": "Bombers"
+            },
+            {
+              "text": "Transport"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "1939",
+              "count": 1939
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,125",
+              "count": 1125
+            },
+            {
+              "text": "194",
+              "count": 194
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "384",
+              "count": 384
+            },
+            {
+              "text": "1,213",
+              "count": 1213
+            },
+            {
+              "text": "552",
+              "count": 552
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "1,022",
+              "count": 1022
+            },
+            {
+              "text": "410",
+              "count": 410
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "459",
+              "count": 459
+            },
+            {
+              "text": "1,367",
+              "count": 1367
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "1940",
+              "count": 1940
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,258",
+              "count": 1258
+            },
+            {
+              "text": "325",
+              "count": 325
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "453",
+              "count": 453
+            },
+            {
+              "text": "1,657",
+              "count": 1657
+            },
+            {
+              "text": "466",
+              "count": 466
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "1,107",
+              "count": 1107
+            },
+            {
+              "text": "357",
+              "count": 357
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "483",
+              "count": 483
+            },
+            {
+              "text": "1,380",
+              "count": 1380
+            },
+            {
+              "text": "357",
+              "count": 357
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "932",
+              "count": 932
+            },
+            {
+              "text": "181",
+              "count": 181
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "482",
+              "count": 482
+            },
+            {
+              "text": "1,420",
+              "count": 1420
+            },
+            {
+              "text": "365",
+              "count": 365
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "832",
+              "count": 832
+            },
+            {
+              "text": "241",
+              "count": 241
+            },
+            {
+              "text": "165",
+              "count": 165
+            },
+            {
+              "text": "482",
+              "count": 482
+            },
+            {
+              "text": "1,330",
+              "count": 1330
+            },
+            {
+              "text": "415",
+              "count": 415
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "1941",
+              "count": 1941
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,158",
+              "count": 1158
+            },
+            {
+              "text": "322",
+              "count": 322
+            },
+            {
+              "text": "199",
+              "count": 199
+            },
+            {
+              "text": "444",
+              "count": 444
+            },
+            {
+              "text": "1,460",
+              "count": 1460
+            },
+            {
+              "text": "713",
+              "count": 713
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "1,266",
+              "count": 1266
+            },
+            {
+              "text": "210",
+              "count": 210
+            },
+            {
+              "text": "244",
+              "count": 244
+            },
+            {
+              "text": "410",
+              "count": 410
+            },
+            {
+              "text": "1,321",
+              "count": 1321
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,116",
+              "count": 1116
+            },
+            {
+              "text": "155",
+              "count": 155
+            },
+            {
+              "text": "245",
+              "count": 245
+            },
+            {
+              "text": "397",
+              "count": 397
+            },
+            {
+              "text": "1,538",
+              "count": 1538
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "1,129",
+              "count": 1129
+            },
+            {
+              "text": "48",
+              "count": 48
+            },
+            {
+              "text": "223",
+              "count": 223
+            },
+            {
+              "text": "256",
+              "count": 256
+            },
+            {
+              "text": "918",
+              "count": 918
+            },
+            {
+              "text": "991",
+              "count": 991
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,129",
+              "count": 1129
+            },
+            {
+              "text": "112",
+              "count": 112
+            },
+            {
+              "text": "248",
+              "count": 248
+            },
+            {
+              "text": "405",
+              "count": 405
+            },
+            {
+              "text": "977",
+              "count": 977
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "1,277",
+              "count": 1277
+            },
+            {
+              "text": "362",
+              "count": 362
+            },
+            {
+              "text": "244",
+              "count": 244
+            },
+            {
+              "text": "461",
+              "count": 461
+            },
+            {
+              "text": "1,381",
+              "count": 1381
+            },
+            {
+              "text": "957",
+              "count": 957
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,491",
+              "count": 1491
+            },
+            {
+              "text": "297",
+              "count": 297
+            },
+            {
+              "text": "350",
+              "count": 350
+            },
+            {
+              "text": "413",
+              "count": 413
+            },
+            {
+              "text": "1,416",
+              "count": 1416
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "1,360",
+              "count": 1360
+            },
+            {
+              "text": "212",
+              "count": 212
+            },
+            {
+              "text": "389",
+              "count": 389
+            },
+            {
+              "text": "286",
+              "count": 286
+            },
+            {
+              "text": "1,193",
+              "count": 1193
+            },
+            {
+              "text": "881",
+              "count": 881
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,535",
+              "count": 1535
+            },
+            {
+              "text": "401",
+              "count": 401
+            },
+            {
+              "text": "493",
+              "count": 493
+            },
+            {
+              "text": "469",
+              "count": 469
+            },
+            {
+              "text": "1,522",
+              "count": 1522
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "1,849",
+              "count": 1849
+            },
+            {
+              "text": "414",
+              "count": 414
+            },
+            {
+              "text": "554",
+              "count": 554
+            },
+            {
+              "text": "523",
+              "count": 523
+            },
+            {
+              "text": "1,663",
+              "count": 1663
+            },
+            {
+              "text": "850",
+              "count": 850
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,646",
+              "count": 1646
+            },
+            {
+              "text": "392",
+              "count": 392
+            },
+            {
+              "text": "574",
+              "count": 574
+            },
+            {
+              "text": "562",
+              "count": 562
+            },
+            {
+              "text": "1,080",
+              "count": 1080
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "1,523",
+              "count": 1523
+            },
+            {
+              "text": "290",
+              "count": 290
+            },
+            {
+              "text": "611",
+              "count": 611
+            },
+            {
+              "text": "601",
+              "count": 601
+            },
+            {
+              "text": "1,604",
+              "count": 1604
+            },
+            {
+              "text": "903",
+              "count": 903
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,696",
+              "count": 1696
+            },
+            {
+              "text": "251",
+              "count": 251
+            },
+            {
+              "text": "565",
+              "count": 565
+            },
+            {
+              "text": "776",
+              "count": 776
+            },
+            {
+              "text": "1,331",
+              "count": 1331
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "1,523",
+              "count": 1523
+            },
+            {
+              "text": "242",
+              "count": 242
+            },
+            {
+              "text": "778",
+              "count": 778
+            },
+            {
+              "text": "1,005",
+              "count": 1005
+            },
+            {
+              "text": "1,089",
+              "count": 1089
+            },
+            {
+              "text": "944",
+              "count": 944
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,984",
+              "count": 1984
+            },
+            {
+              "text": "142",
+              "count": 142
+            },
+            {
+              "text": "1,018",
+              "count": 1018
+            },
+            {
+              "text": "816",
+              "count": 816
+            },
+            {
+              "text": "929",
+              "count": 929
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "2,260",
+              "count": 2260
+            },
+            {
+              "text": "105",
+              "count": 105
+            },
+            {
+              "text": "1,256",
+              "count": 1256
+            },
+            {
+              "text": "892",
+              "count": 892
+            },
+            {
+              "text": "528",
+              "count": 528
+            },
+            {
+              "text": "500",
+              "count": 500
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "cells": [
+            {
+              "text": "April"
+            },
+            {
+              "text": "1,637",
+              "count": 1637
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "498",
+              "count": 498
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "505",
+              "count": 505
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 2,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Single-Engine Fighters"
+            },
+            {
+              "text": "Twin- Engine Fighters"
+            },
+            {
+              "text": "Night-Fighters"
+            },
+            {
+              "text": "Ground Attack"
+            },
+            {
+              "text": "Bombers"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "1939",
+              "count": 1939
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "870",
+              "count": 870
+            },
+            {
+              "text": "141",
+              "count": 141
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "267",
+              "count": 267
+            },
+            {
+              "text": "1,014",
+              "count": 1014
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "769",
+              "count": 769
+            },
+            {
+              "text": "299",
+              "count": 299
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "356",
+              "count": 356
+            },
+            {
+              "text": "1,000",
+              "count": 1000
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "1940",
+              "count": 1940
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "817",
+              "count": 817
+            },
+            {
+              "text": "222",
+              "count": 222
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "368",
+              "count": 368
+            },
+            {
+              "text": "1,102",
+              "count": 1102
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "856",
+              "count": 856
+            },
+            {
+              "text": "261",
+              "count": 261
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "337",
+              "count": 337
+            },
+            {
+              "text": "841",
+              "count": 841
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "721",
+              "count": 721
+            },
+            {
+              "text": "114",
+              "count": 114
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "401",
+              "count": 401
+            },
+            {
+              "text": "818",
+              "count": 818
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "587",
+              "count": 587
+            },
+            {
+              "text": "168",
+              "count": 168
+            },
+            {
+              "text": "104",
+              "count": 104
+            },
+            {
+              "text": "375",
+              "count": 375
+            },
+            {
+              "text": "722",
+              "count": 722
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "1941",
+              "count": 1941
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "846",
+              "count": 846
+            },
+            {
+              "text": "224",
+              "count": 224
+            },
+            {
+              "text": "124",
+              "count": 124
+            },
+            {
+              "text": "353",
+              "count": 353
+            },
+            {
+              "text": "932",
+              "count": 932
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "885",
+              "count": 885
+            },
+            {
+              "text": "131",
+              "count": 131
+            },
+            {
+              "text": "172",
+              "count": 172
+            },
+            {
+              "text": "278",
+              "count": 278
+            },
+            {
+              "text": "763",
+              "count": 763
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "774",
+              "count": 774
+            },
+            {
+              "text": "83",
+              "count": 83
+            },
+            {
+              "text": "140",
+              "count": 140
+            },
+            {
+              "text": "280",
+              "count": 280
+            },
+            {
+              "text": "630",
+              "count": 630
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "670",
+              "count": 670
+            },
+            {
+              "text": "21",
+              "count": 21
+            },
+            {
+              "text": "132",
+              "count": 132
+            },
+            {
+              "text": "132",
+              "count": 132
+            },
+            {
+              "text": "383",
+              "count": 383
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "text": "1942",
+              "count": 1942
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "747",
+              "count": 747
+            },
+            {
+              "text": "61",
+              "count": 61
+            },
+            {
+              "text": "134",
+              "count": 134
+            },
+            {
+              "text": "205",
+              "count": 205
+            },
+            {
+              "text": "480",
+              "count": 480
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "901",
+              "count": 901
+            },
+            {
+              "text": "210",
+              "count": 210
+            },
+            {
+              "text": "162",
+              "count": 162
+            },
+            {
+              "text": "300",
+              "count": 300
+            },
+            {
+              "text": "885",
+              "count": 885
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,024",
+              "count": 1024
+            },
+            {
+              "text": "166",
+              "count": 166
+            },
+            {
+              "text": "245",
+              "count": 245
+            },
+            {
+              "text": "273",
+              "count": 273
+            },
+            {
+              "text": "741",
+              "count": 741
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "908",
+              "count": 908
+            },
+            {
+              "text": "111",
+              "count": 111
+            },
+            {
+              "text": "278",
+              "count": 278
+            },
+            {
+              "text": "160",
+              "count": 160
+            },
+            {
+              "text": "611",
+              "count": 611
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "cells": [
+            {
+              "text": "1943",
+              "count": 1943
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,006",
+              "count": 1006
+            },
+            {
+              "text": "206",
+              "count": 206
+            },
+            {
+              "text": "360",
+              "count": 360
+            },
+            {
+              "text": "325",
+              "count": 325
+            },
+            {
+              "text": "844",
+              "count": 844
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "1,361",
+              "count": 1361
+            },
+            {
+              "text": "305",
+              "count": 305
+            },
+            {
+              "text": "371",
+              "count": 371
+            },
+            {
+              "text": "444",
+              "count": 444
+            },
+            {
+              "text": "1,070",
+              "count": 1070
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,080",
+              "count": 1080
+            },
+            {
+              "text": "243",
+              "count": 243
+            },
+            {
+              "text": "248",
+              "count": 248
+            },
+            {
+              "text": "395",
+              "count": 395
+            },
+            {
+              "text": "639",
+              "count": 639
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "1,095",
+              "count": 1095
+            },
+            {
+              "text": "199",
+              "count": 199
+            },
+            {
+              "text": "405",
+              "count": 405
+            },
+            {
+              "text": "466",
+              "count": 466
+            },
+            {
+              "text": "1,078",
+              "count": 1078
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "cells": [
+            {
+              "text": "1944",
+              "count": 1944
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "cells": [
+            {
+              "text": "March"
+            },
+            {
+              "text": "1,188",
+              "count": 1188
+            },
+            {
+              "text": "148",
+              "count": 148
+            },
+            {
+              "text": "361",
+              "count": 361
+            },
+            {
+              "text": "516",
+              "count": 516
+            },
+            {
+              "text": "825",
+              "count": 825
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "cells": [
+            {
+              "text": "June"
+            },
+            {
+              "text": "895",
+              "count": 895
+            },
+            {
+              "text": "124",
+              "count": 124
+            },
+            {
+              "text": "528",
+              "count": 528
+            },
+            {
+              "text": "751",
+              "count": 751
+            },
+            {
+              "text": "694",
+              "count": 694
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "1,413",
+              "count": 1413
+            },
+            {
+              "text": "122",
+              "count": 122
+            },
+            {
+              "text": "854",
+              "count": 854
+            },
+            {
+              "text": "606",
+              "count": 606
+            },
+            {
+              "text": "644",
+              "count": 644
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "cells": [
+            {
+              "text": "December"
+            },
+            {
+              "text": "1,521",
+              "count": 1521
+            },
+            {
+              "text": "85",
+              "count": 85
+            },
+            {
+              "text": "913",
+              "count": 913
+            },
+            {
+              "text": "637",
+              "count": 637
+            },
+            {
+              "text": "359",
+              "count": 359
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "cells": [
+            {
+              "text": "1945",
+              "count": 1945
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "cells": [
+            {
+              "text": "April"
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "n/a"
+            },
+            {
+              "text": "n/a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

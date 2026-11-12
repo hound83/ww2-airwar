@@ -1,0 +1,517 @@
+{
+  "id": "RKKA-VVS-06-11",
+  "topic": "Long-range DA/ADD major operation participation",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_11.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 16,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de la operación y el periodo de accion de la aviacion de largo alcance",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad de ataques aereos",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos realizados",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad de tripulaciones implicadas en la mision",
+              "rowspan": 2
+            },
+            {
+              "value": "Bombas lanzadas, toneladas",
+              "rowspan": 2
+            },
+            {
+              "value": "Bajas de combate sufridas",
+              "colspan": 4
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "A causa de los cazas"
+            },
+            {
+              "value": "A causa de la artilleria antiaerea"
+            },
+            {
+              "value": "No volvieron de la mision"
+            },
+            {
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "La batalla de Stalingrado (17.08.42 - 23.01.43)"
+            },
+            {
+              "value": "125"
+            },
+            {
+              "value": "13 874"
+            },
+            {
+              "value": "12 497"
+            },
+            {
+              "value": "14 954"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": "60"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Operación ofensiva de Orel-Bolhov (05.07 - 5.08.43)"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "6 632"
+            },
+            {
+              "value": "5 938"
+            },
+            {
+              "value": "8 391"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Operación ofensiva de Belgorod-Kharkov (16.07 - 23.08.43)"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "1 898"
+            },
+            {
+              "value": "1 726"
+            },
+            {
+              "value": "2 289"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Defensa de Leningrado"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "(1.9 - 30.10.1942)"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "3 583"
+            },
+            {
+              "value": "3 395"
+            },
+            {
+              "value": "3 721"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "(1.6 - 31.08.1943)"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "5 356"
+            },
+            {
+              "value": "4 807"
+            },
+            {
+              "value": "6 538"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "21"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "(1.1 - 30.05.1944)"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "14 331"
+            },
+            {
+              "value": "14 251"
+            },
+            {
+              "value": "16 018"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "24"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Liberacion de Crimea (1.04 - 31.05.44)"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "1 865"
+            },
+            {
+              "value": "1 487"
+            },
+            {
+              "value": "1 729"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Operación ofensiva de Bielorrusia (1.06 - 3.07.44)"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "13 451"
+            },
+            {
+              "value": "11 361"
+            },
+            {
+              "value": "14 174"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "67"
+            },
+            {
+              "value": "124"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Operación ofensiva de Yass-Kishinev (1.04 - 30.06.44)"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "2 602"
+            },
+            {
+              "value": "2 441"
+            },
+            {
+              "value": "2 590"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "Liberacion de paises balticos (1.07 - 31.12.44)"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "7 213"
+            },
+            {
+              "value": "6 811"
+            },
+            {
+              "value": "7 638"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "33"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Operación ofensiva de Prusia Oriental (1.01 - 9.05.45)"
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": "6 651"
+            },
+            {
+              "value": "5 691"
+            },
+            {
+              "value": "6 174"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "39"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "Operaciones ofensivas de Visla-Oder y de Berlin (1.02 - 1.08.45)"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "3 441"
+            },
+            {
+              "value": "3 140"
+            },
+            {
+              "value": "3 766"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "31"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "415"
+            },
+            {
+              "value": "80 897"
+            },
+            {
+              "value": "73 545"
+            },
+            {
+              "value": "87 982"
+            },
+            {
+              "value": "121"
+            },
+            {
+              "value": "77"
+            },
+            {
+              "value": "196"
+            },
+            {
+              "value": "394"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

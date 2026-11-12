@@ -1,0 +1,38 @@
+{
+  "id": "BELGIAN-AM-ORDER-OF-BATTLE-1940-05-10",
+  "date": "1940-05-10",
+  "force": "Belgian Military Aeronautics (Aéronautique Militaire Belge)",
+  "primarySource": "https://cgsc.contentdm.oclc.org/digital/api/collection/p15040coll6/id/4811/download",
+  "primarySourceDescription": "US Army Command and General Staff College digitized 2-page Belgian Air Force Order of Battle, dated 10 May 1940; table cites E.C. Weal and J.A. Weal, Combat Aircraft of World War Two (1977). Despite US Army archive hosting, NUMBERS derive from secondary book, not contemporary unit registers.",
+  "alternativeSource": "https://www.nevingtonwarmuseum.com/belgium-airforce.html",
+  "alternativeSourceDescription": "Specialist secondary compilation distinguishing prewar/base assignment versus wartime dispersal sites; contains contradictions to US CGSC table in unit designations and aircraft allocations. All alternative sites are candidates, NOT independently verified historical airfield coordinates.",
+  "records": [
+    {"regiment":1,"serviceRole":"army_cooperation","squadron":"1/I/1","aircraft":10,"typesAsPrinted":"Fairey Fox II and III","basePrintedCGSC":"Deurne","alternativeReportedWartimeBase":"Hingene"},
+    {"regiment":1,"serviceRole":"army_cooperation","squadron":"3/II/1","aircraft":12,"typesAsPrinted":"Fairey Fox II, III, IIIC","basePrintedCGSC":"Gossoncourt","alternativeReportedWartimeBase":"Glabeek"},
+    {"regiment":1,"serviceRole":"army_cooperation","squadron":"5/III/1","aircraft":10,"typesAsPrinted":"Fairey Fox VI","basePrintedCGSC":"Gossoncourt","alternativeReportedWartimeBase":"Jeneffe"},
+    {"regiment":1,"serviceRole":"army_cooperation","squadron":"7/VI/1","aircraft":9,"typesAsPrinted":"Fairey Fox VI","basePrintedCGSC":"Gossoncourt","alternativeReportedWartimeBase":"Lonzee","alternateSquadronDesignation":"7/IV/1"},
+    {"regiment":1,"serviceRole":"army_cooperation","squadron":"9/V/1","aircraft":11,"typesAsPrinted":"Renard R-31","basePrintedCGSC":"Bierset","alternativeReportedWartimeBase":"Wilderen"},
+    {"regiment":1,"serviceRole":"army_cooperation","squadron":"11/VI/1","aircraft":10,"typesAsPrinted":"Renard R-31","basePrintedCGSC":"Bierset","alternativeReportedWartimeBase":"Hannut","alternateSquadronDesignation":"11/V/1","alternativeAircraft":8},
+    {"regiment":2,"serviceRole":"fighters","squadron":"1/I/2","aircraft":15,"typesAsPrinted":"Gloster Gladiator Mk I","basePrintedCGSC":"Schaffen","alternativeReportedWartimeBase":"Beauvecchain/Bevekom"},
+    {"regiment":2,"serviceRole":"fighters","squadron":"2/I/2","aircraft":11,"typesAsPrinted":"Hawker Hurricane Mk I","basePrintedCGSC":"Schaffen","alternativeReportedWartimeBase":"Beauvecchain/Bevekom"},
+    {"regiment":2,"serviceRole":"fighters","squadron":"3/II/2","aircraft":15,"typesAsPrinted":"Fiat CR.42","basePrintedCGSC":"Nivelles","alternativeReportedWartimeBase":"Brustem","alternativeAircraft":14},
+    {"regiment":2,"serviceRole":"fighters","squadron":"4/II/2","aircraft":8,"typesAsPrinted":"Fiat CR.42","basePrintedCGSC":"Nivelles","alternativeReportedWartimeBase":"Brustem","alternativeAircraft":9},
+    {"regiment":2,"serviceRole":"fighters","squadron":"5/III/2","aircraft":15,"typesAsPrinted":"Fairey Fox VI","basePrintedCGSC":"Schaffen","alternativeReportedWartimeBase":"Vissenaken","alternativePeacetimeBase":"Nivelles"},
+    {"regiment":2,"serviceRole":"fighters","squadron":"6/III/2","aircraft":15,"typesAsPrinted":"Fairey Fox VI and VII","basePrintedCGSC":"Le Zoute","alternativeReportedWartimeBase":"Vissenaken","alternativePeacetimeBase":"Nivelles"},
+    {"regiment":3,"serviceRole":"reconnaissance_bombers","squadron":"1/I/3","aircraft":9,"typesAsPrinted":"Fairey Fox III and IIIC","basePrintedCGSC":"Evère","alternativeReportedWartimeBase":"Neerhespen","alternativeAircraft":15},
+    {"regiment":3,"serviceRole":"reconnaissance_bombers","squadron":"3/I/3","aircraft":9,"typesAsPrinted":"Fairey Fox III and IIIC","basePrintedCGSC":"Evère","alternativeReportedWartimeBase":"Neerhespen","alternativeAircraft":15},
+    {"regiment":3,"serviceRole":"reconnaissance_bombers","squadron":"5/III/3","aircraft":14,"typesAsPrinted":"Fairey Battle","basePrintedCGSC":"Evère","alternativeReportedWartimeBase":"Belcele"},
+    {"regiment":3,"serviceRole":"reconnaissance_bombers","squadron":"7/III/3","aircraft":9,"typesAsPrinted":"Fairey Fox VIII","basePrintedCGSC":"Evère","alternativeReportedWartimeBase":"Belcele"}
+  ],
+  "derivedSourceCounts": {"regiment1":{"squadrons":6,"aircraft":62},"regiment2":{"squadrons":6,"aircraft":79},"regiment3":{"squadrons":4,"aircraft":41},"allThreeRegiments":{"squadrons":16,"aircraft":182}},
+  "officialCampaignSource": "https://www.ibiblio.org/hyperwar/UN/Belgium/Belgium_1939-40/Belgium-4.html",
+  "officialCampaignStatement": "Belgian government wartime/postwar official account states German attacks on 10 May destroyed MORE THAN HALF of Belgian Air Force machines on the ground. This is qualitative, not a number of confirmed losses or a specific count of planes surviving after 10 May.",
+  "warnings": [
+    "The 182 aircraft are from 16 selected combat/army-cooperation squadron rows; air training, reserves, communications and anti-aircraft detachments were not included. This is NOT a verified national all-aircraft-on-hand number.",
+    "Squadron 'fighter regiment' includes older Fairey Fox aircraft, so DO NOT interpret all 79 aircraft as equivalent modern interceptors or as 79 serviceable airplanes.",
+    "There is no serviceability count and no proven aircraft-versus-pilot matching in this OOB.",
+    "Several unit names and equipment counts disagree with alternate Nevington compilation, which itself contains serious typographic and historical errors: alternatives require better original Belgian sources.",
+    "The CGSC printed base strings may refer to prewar/administrative bases, not dispersed wartime airfields. Two stations named per unit do not mean the unit was simultaneously at two bases.",
+    "Unverified candidate bases have no coordinates and must not be mapped on 10 May 1940 as settled facts."
+  ]
+}

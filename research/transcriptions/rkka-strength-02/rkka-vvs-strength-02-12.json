@@ -1,0 +1,2116 @@
+{
+  "id": "RKKA-VVS-02-12",
+  "topic": "Air armies, end of Great Patriotic War",
+  "formationOrForce": "soviet_vvs_ka",
+  "dateScopeIndex": "1945-05",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_12.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Denominacion del Ejercito del Aire",
+          "rowspan": 3
+        },
+        {
+          "value": "Cantidad de agrupaciones, unidades y destacamentos aereos",
+          "colspan": 14
+        },
+        {
+          "value": "Cantidad de aviones de combate {4}",
+          "colspan": 5
+        },
+        {
+          "value": "Cantidad de tripulaciones preparadas para el combate {5}",
+          "colspan": 5
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "Cuerpos",
+          "colspan": 4
+        },
+        {
+          "value": "Divisiones {2}",
+          "colspan": 4
+        },
+        {
+          "value": "Regimientos {3}",
+          "colspan": 6
+        },
+        {
+          "value": "bomba rdero",
+          "rowspan": 2
+        },
+        {
+          "value": "shtur movik",
+          "rowspan": 2
+        },
+        {
+          "value": "caza",
+          "rowspan": 2
+        },
+        {
+          "value": "recono cimi ento",
+          "rowspan": 2
+        },
+        {
+          "value": "Total",
+          "rowspan": 2
+        },
+        {
+          "value": "bomba rdero",
+          "rowspan": 2
+        },
+        {
+          "value": "shtur movik",
+          "rowspan": 2
+        },
+        {
+          "value": "caza",
+          "rowspan": 2
+        },
+        {
+          "value": "recono cimi ento",
+          "rowspan": 2
+        },
+        {
+          "value": "Total tripulaciones preparadas para el combate {6}",
+          "rowspan": 2
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "BAK"
+        },
+        {
+          "value": "ShAK"
+        },
+        {
+          "value": "IAK"
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "BAD"
+        },
+        {
+          "value": "ShAD"
+        },
+        {
+          "value": "IAD"
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "BAP"
+        },
+        {
+          "value": "NBAP"
+        },
+        {
+          "value": "ShAP"
+        },
+        {
+          "value": "IAP"
+        },
+        {
+          "value": "RAP"
+        },
+        {
+          "value": "Total"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "13 Ejercito del Aire del Frente de Leningrado",
+          "rowspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": "3 Ejercito del Aire del 1 Frente Baltico",
+          "rowspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "196"
+        },
+        {
+          "value": "217"
+        },
+        {
+          "value": "202"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "659"
+        },
+        {
+          "value": "163"
+        },
+        {
+          "value": "212"
+        },
+        {
+          "value": "212"
+        },
+        {
+          "value": "38"
+        },
+        {
+          "value": "625"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "87"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "87"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": "15 Ejercito del Aire del 2 Frente Baltico",
+          "rowspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "259"
+        },
+        {
+          "value": "325"
+        },
+        {
+          "value": "466"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "1094"
+        },
+        {
+          "value": "229"
+        },
+        {
+          "value": "274"
+        },
+        {
+          "value": "291"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "835"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "68"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "122"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": "1 Ejercito del Aire del 3 Frente Bielorruso",
+          "rowspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "584"
+        },
+        {
+          "value": "315"
+        },
+        {
+          "value": "438"
+        },
+        {
+          "value": "164"
+        },
+        {
+          "value": "1501"
+        },
+        {
+          "value": "532"
+        },
+        {
+          "value": "368"
+        },
+        {
+          "value": "331"
+        },
+        {
+          "value": "170"
+        },
+        {
+          "value": "1401"
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "49"
+        },
+        {
+          "value": "101"
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "191"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": "4 Ejercito del Aire del 2 Frente Bielorruso",
+          "rowspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "514"
+        },
+        {
+          "value": "602"
+        },
+        {
+          "value": "85"
+        },
+        {
+          "value": "1351"
+        },
+        {
+          "value": "144"
+        },
+        {
+          "value": "456"
+        },
+        {
+          "value": "525"
+        },
+        {
+          "value": "77"
+        },
+        {
+          "value": "1202"
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "39"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "51"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "118"
+        },
+        {
+          "value": "136"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "136"
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "cells": [
+        {
+          "value": "16 Ejercito del Aire del 1 Frente Bielorruso",
+          "rowspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "69"
+        },
+        {
+          "value": "463"
+        },
+        {
+          "value": "665"
+        },
+        {
+          "value": "1352"
+        },
+        {
+          "value": "138"
+        },
+        {
+          "value": "2618"
+        },
+        {
+          "value": "320"
+        },
+        {
+          "value": "588"
+        },
+        {
+          "value": "1075"
+        },
+        {
+          "value": "93"
+        },
+        {
+          "value": "2076"
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "41"
+        },
+        {
+          "value": "164"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "257"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "cells": [
+        {
+          "value": "2 Ejercito del Aire del 1 Frente Ucraniano",
+          "rowspan": 2
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "21"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "67"
+        },
+        {
+          "value": "437"
+        },
+        {
+          "value": "376"
+        },
+        {
+          "value": "1105"
+        },
+        {
+          "value": "86"
+        },
+        {
+          "value": "2004"
+        },
+        {
+          "value": "383"
+        },
+        {
+          "value": "509"
+        },
+        {
+          "value": "935"
+        },
+        {
+          "value": "93"
+        },
+        {
+          "value": "1920"
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "18"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "63"
+        },
+        {
+          "value": "93"
+        },
+        {
+          "value": "119"
+        },
+        {
+          "value": "208"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "428"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "cells": [
+        {
+          "value": "5 Ejercito del Aire del 2 Frente Ucraniano",
+          "rowspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "33"
+        },
+        {
+          "value": "184"
+        },
+        {
+          "value": "256"
+        },
+        {
+          "value": "482"
+        },
+        {
+          "value": "49"
+        },
+        {
+          "value": "971"
+        },
+        {
+          "value": "186"
+        },
+        {
+          "value": "223"
+        },
+        {
+          "value": "386"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "848"
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": "69"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "154"
+        },
+        {
+          "value": "93"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "103"
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "cells": [
+        {
+          "value": "8 Ejercito del Aire del 4 Frente Ucraniano",
+          "rowspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": "180"
+        },
+        {
+          "value": "273"
+        },
+        {
+          "value": "61"
+        },
+        {
+          "value": "590"
+        },
+        {
+          "value": "83"
+        },
+        {
+          "value": "216"
+        },
+        {
+          "value": "218"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "572"
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "81"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "154"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "cells": [
+        {
+          "value": "17 Ejercito del Aire del 3 Frente Ucraniano",
+          "rowspan": 2
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "34"
+        },
+        {
+          "value": "125"
+        },
+        {
+          "value": "373"
+        },
+        {
+          "value": "563"
+        },
+        {
+          "value": "47"
+        },
+        {
+          "value": "1108"
+        },
+        {
+          "value": "129"
+        },
+        {
+          "value": "385"
+        },
+        {
+          "value": "397"
+        },
+        {
+          "value": "55"
+        },
+        {
+          "value": "966"
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "67"
+        },
+        {
+          "value": "101"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "176"
+        },
+        {
+          "value": "82"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "82"
+        }
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "cells": [
+        {
+          "value": "Reserva de VVS (7 Ejercito del Aire)",
+          "rowspan": 2
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "23{6}"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "72"
+        },
+        {
+          "value": "503"
+        },
+        {
+          "value": "364"
+        },
+        {
+          "value": "785"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "1664"
+        },
+        {
+          "value": "265"
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": "157"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "1418{7}"
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "25"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "69"
+        },
+        {
+          "value": "53"
+        },
+        {
+          "value": "46"
+        },
+        {
+          "value": "108"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "207"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "14"
+        }
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "cells": [
+        {
+          "value": "Total en los frentes y en reserva",
+          "rowspan": 2
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "128"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": "36"
+        },
+        {
+          "value": "138"
+        },
+        {
+          "value": "167"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "444"
+        },
+        {
+          "value": "2977"
+        },
+        {
+          "value": "3585"
+        },
+        {
+          "value": "6268"
+        },
+        {
+          "value": "791"
+        },
+        {
+          "value": "13621"
+        },
+        {
+          "value": "2434"
+        },
+        {
+          "value": "3371"
+        },
+        {
+          "value": "4527"
+        },
+        {
+          "value": "725"
+        },
+        {
+          "value": "11904{7}"
+        }
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "76"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "138"
+        },
+        {
+          "value": "167"
+        },
+        {
+          "value": "27"
+        },
+        {
+          "value": "408"
+        },
+        {
+          "value": "338"
+        },
+        {
+          "value": "522"
+        },
+        {
+          "value": "897"
+        },
+        {
+          "value": "78"
+        },
+        {
+          "value": "1835"
+        },
+        {
+          "value": "408"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "433"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "id": "SPECIALIST-MILBALANCE40",
+  "force": "cross_force",
+  "dataDescription": "Air strength by combat type at May 1940",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=milbalance40",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "I.C.B. Dear &amp; M.R.D. Foot, The Oxford Companion to World War II .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "Fighters"
+            },
+            {
+              "text": "Bombers"
+            },
+            {
+              "text": "Recon"
+            },
+            {
+              "text": "Total"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "France"
+            },
+            {
+              "text": "637",
+              "count": 637
+            },
+            {
+              "text": "242",
+              "count": 242
+            },
+            {
+              "text": "489",
+              "count": 489
+            },
+            {
+              "text": "1,368",
+              "count": 1368
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "United Kingdom (BEF)"
+            },
+            {
+              "text": "261",
+              "count": 261
+            },
+            {
+              "text": "135",
+              "count": 135
+            },
+            {
+              "text": "60",
+              "count": 60
+            },
+            {
+              "text": "456",
+              "count": 456
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "United Kingdom (Home)"
+            },
+            {
+              "text": "540",
+              "count": 540
+            },
+            {
+              "text": "310",
+              "count": 310
+            },
+            {
+              "text": "-"
+            },
+            {
+              "text": "850",
+              "count": 850
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "Belgium"
+            },
+            {
+              "text": "90",
+              "count": 90
+            },
+            {
+              "text": "12",
+              "count": 12
+            },
+            {
+              "text": "120",
+              "count": 120
+            },
+            {
+              "text": "250",
+              "count": 250
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Netherlands"
+            },
+            {
+              "text": "62",
+              "count": 62
+            },
+            {
+              "text": "9",
+              "count": 9
+            },
+            {
+              "text": "50",
+              "count": 50
+            },
+            {
+              "text": "175",
+              "count": 175
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "Total Allied"
+            },
+            {
+              "text": "1,590",
+              "count": 1590
+            },
+            {
+              "text": "708",
+              "count": 708
+            },
+            {
+              "text": "719",
+              "count": 719
+            },
+            {
+              "text": "3,099",
+              "count": 3099
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "Germany (Operational)"
+            },
+            {
+              "text": "1,220",
+              "count": 1220
+            },
+            {
+              "text": "1,559",
+              "count": 1559
+            },
+            {
+              "text": "535",
+              "count": 535
+            },
+            {
+              "text": "4,020",
+              "count": 4020
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Total Germany"
+            },
+            {
+              "text": "1,736",
+              "count": 1736
+            },
+            {
+              "text": "2,224",
+              "count": 2224
+            },
+            {
+              "text": "700",
+              "count": 700
+            },
+            {
+              "text": "5,446",
+              "count": 5446
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
