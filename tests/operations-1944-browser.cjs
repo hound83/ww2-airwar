@@ -66,6 +66,25 @@ module.exports = async (browser, base, root) => {
       assert.equal(await page.locator("#coverage-rows tr").count(), 6);
       assert.match(await page.locator("#coverage-rows tr").filter({hasText: "February"}).innerText(), /359/);
 
+      await page.getByRole("button", {name: "June 1944", exact: true}).click();
+      await page.getByLabel("Evidence", {exact: true}).selectOption("returns");
+      await page.locator('#filters select[name="force"]').selectOption("west");
+      assert.match(await page.locator("#filter-status").innerText(), /records across 30 start dates/);
+      const june2 = page.locator(".day").filter({has: page.locator('time[datetime="1944-06-02"]')});
+      const daily = june2.locator(".record").filter({hasText: "Daily loss return"});
+      await daily.locator("summary").click();
+      assert.match(await daily.innerText(), /7 \(derived\)/);
+      assert.ok(await daily.locator('a[href$="#page=2"]').count());
+      const juneCsv = page.waitForEvent("download");
+      await page.getByRole("button", {name: "Download filtered records (CSV)"}).click();
+      const juneExport = await fs.readFile(await (await juneCsv).path(), "utf8");
+      assert.match(juneExport, /"enemyMissing"/);
+      assert.match(juneExport, /"derived_metrics"/);
+      assert.match(juneExport, /"west-1944-06-02-ahb"[^\r\n]+#page=2[^\r\n]+"nonOpsDamaged"/);
+      const juneCoverage = page.locator("#coverage-rows tr").filter({hasText: "June"});
+      await juneCoverage.locator("summary").click();
+      assert.match(await juneCoverage.innerText(), /415 \/ 405/);
+
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       assert.ok(overflow <= 2, "1944 timeline overflow at " + width + "px");
       assert.deepEqual(errors, []);

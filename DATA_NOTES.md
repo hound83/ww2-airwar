@@ -91,7 +91,7 @@ Original RAF AHB reports VII/134 (Reich May), VII/133 (Western Front May), VII/1
 
 **Original transcription caveat:** West May's printed enemy-action subtotal is 228, but adding its visibly legible breakdown of subcauses seems to yield 229. We preserve the printed subtotal and show this one-unit discrepancy openly. The final monthly totals are distinct from long-run all-front single-engine-fighter losses by Murray / Zamansky, and the sources' named damaged-aircraft category is not a write-off by definition.
 
-The provisional **June 1944** Bf 109/Fw 190 subtotals were obtained with `scripts/inspect-ahb-losses.py`, whose source PDFs are linked from the dashboard. Page 15 of both June PDFs has an inverted searchable text layer; four aircraft-type rows per document were read directly from the upright scans, and five ambiguous OCR cells were corrected by eye. These candidate sums are *not yet independently reconciled against every original daily row*. They are kept separate from the four verified monthly totals, and no modeled percentages are used to fill May's aircraft-type breakdown or dates elsewhere.
+The **June 1944** Bf 109 and Fw 190 figures now come from a page-image review of the Luftflotte 3 and Luftflotte Reich returns. The [dated transcript and reconciliation](research/sources/atlas-v91-june-loss-returns-and-missions-2026-11-12.md) provide 189 type and role records within 60 all-aircraft daily totals. Earlier OCR candidates remain in the source audit for comparison.
 
 ## V7.3: geography, Soviet documentation and monthly estimation
 

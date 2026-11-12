@@ -12,6 +12,10 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
+## v9.1 June 1944 loss returns and mission evidence
+
+The [June timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=june) adds 261 dated records, including all 30 days of Luftflotte 3 and Luftflotte Reich returns and 189 Bf 109 and Fw 190 aircraft-role rows. Open Monthly coverage for the comparison with the printed returns. The [Cobra dossier](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html#operation=cobra&step=1) adds Eighth and Ninth Air Force evidence for 25 July. The Bodenplatte dossier includes four figures from the Manrho and Pütz reconstruction. [Sources, six mission decisions and reconciliation](research/sources/atlas-v91-june-loss-returns-and-missions-2026-11-12.md) · [Next milestones](docs/LATEST_INSIGHTS.md#next-milestones)
+
 ## v9.0 Campaign claims and losses
 
 [Compare the full Battle of Britain](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=britain-campaign#claim-loss-calculator) by week or phase, then open the held-out estimates and error ranges. The [Normandy comparison](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=normandy-campaign#claim-loss-calculator) uses the 18 daily Allied and German reports for 1–18 July 1944. [Sources, scope and validation](research/sources/atlas-v90-campaign-loss-validation-2026-11-12.md).

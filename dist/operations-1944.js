@@ -1,7 +1,8 @@
 (() => {
   "use strict";
   const full = ["1944-01-01", "1944-06-30"];
-  const ranges = {full, "big-week": ["1944-02-19", "1944-02-26"], "d-day": ["1944-06-05", "1944-06-10"]};
+  const ranges = {full, "big-week": ["1944-02-19", "1944-02-26"], "d-day": ["1944-06-05", "1944-06-10"],
+    june: ["1944-06-01", "1944-06-30"]};
   const form = document.getElementById("filters");
   const field = name => form.elements.namedItem(name);
   const days = document.getElementById("days");
@@ -18,9 +19,13 @@
   const dateText = day => dateLabel.format(new Date(day + "T00:00:00Z"));
   let data, byId, linksById, bilateral, filtered = [], limit = 12;
 
-  function sourceLink(id, locator) {
+  function sourceUrl(id, page) {
+    return data.sources[id].url + (page ? "#page=" + page : "");
+  }
+
+  function sourceLink(id, locator, page) {
     const source = data.sources[id];
-    return '<a href="' + escape(source.url) + '">' + escape(source.title) + '</a>' +
+    return '<a href="' + escape(sourceUrl(id, page)) + '">' + escape(source.title) + '</a>' +
       (locator ? " · " + escape(locator) : "");
   }
 
@@ -39,7 +44,8 @@
 
   function card(record) {
     const metrics = Object.entries(record.metrics).map(([key, value]) =>
-      '<div><dt>' + escape(data.metrics[key]) + '</dt><dd>' + escape(record.qualifiers?.[key] || "") + fmt(value) + '</dd></div>').join("");
+      '<div><dt>' + escape(data.metrics[key]) + '</dt><dd>' + escape(record.qualifiers?.[key] || "") + fmt(value) +
+      (record.derivedMetrics?.includes(key) ? ' <small>(derived)</small>' : '') + '</dd></div>').join("");
     const details = [record.units, record.aircraft].filter(Boolean).join(" · ");
     const refs = (record.references || []).map(ref => '<p>' + sourceLink(ref.source, ref.locator) + '</p>').join("");
     return '<details class="record"><summary><span class="title">' + escape(displayTitle(record)) +
@@ -49,7 +55,7 @@
       (record.localities?.length > 3 ? '<p>Reported locations · ' + escape(record.localities.join(", ")) + '</p>' : '') +
       (metrics ? '<dl class="metrics">' + metrics + '</dl>' : '<p class="muted">Aircraft counts unavailable in this entry.</p>') +
       (record.note ? '<p>' + escape(record.note) + '</p>' : '') + evidenceFor(record) +
-      '<p>' + sourceLink(record.source, record.locator) + ' · ' + escape(data.sources[record.source].type) + '</p>' + refs + '</div></details>';
+      '<p>' + sourceLink(record.source, record.locator, record.sourcePage) + ' · ' + escape(data.sources[record.source].type) + '</p>' + refs + '</div></details>';
   }
 
   function side(records, side) {
@@ -110,6 +116,7 @@
       (!force || force === record.force) &&
       (evidence !== "both" || hasBilateral(record)) &&
       (evidence !== "linked" || linksById.has(record.id)) &&
+      (evidence !== "returns" || ["loss-return", "loss-type"].includes(record.kind)) &&
       (!q || [record.name, record.units, record.aircraft, ...(record.localities || [])]
         .filter(Boolean).join(" ").toLocaleLowerCase().includes(q))) : [];
     limit = 12;
@@ -117,32 +124,41 @@
     renderDays();
   }
 
+  function causeComparison(row) {
+    if (!row.capturedByCause) return "";
+    const causes = Object.entries(row.capturedByCause).map(([key, captured]) =>
+      '<li>' + escape(data.metrics[key]) + ' · ' + fmt(captured) + ' / ' + fmt(row.publishedByCause[key]) + '</li>').join("");
+    return '<details><summary>Daily sum and printed total by cause</summary><ul>' + causes + '</ul></details>';
+  }
+
   function renderCoverage() {
     const id = coverageForce.value;
     const body = document.getElementById("coverage-rows");
     const rows = data.reconciliation.filter(row => row.force === id);
     body.innerHTML = rows.length ? rows.map(row =>
-      '<tr><th scope="row">' + monthLabel.format(new Date(row.month + "-01T00:00:00Z")) + '</th><td>' +
-      fmt(row.captured) + '</td><td>' + fmt(row.published) + '</td><td>' + escape(row.scope) +
-      (row.note ? '<br>' + escape(row.note) : '') + '<br>' + sourceLink(row.source, row.locator) + '</td></tr>').join("") :
-      '<tr><td colspan="4">Monthly command returns are unavailable for this selection.</td></tr>';
+      '<tr role="row"><th scope="row" role="rowheader">' + monthLabel.format(new Date(row.month + "-01T00:00:00Z")) +
+      '</th><td role="cell">' + fmt(row.captured) + '</td><td role="cell">' + fmt(row.published) + '</td><td role="cell">' + escape(row.scope) +
+      (row.note ? '<br>' + escape(row.note) : '') + causeComparison(row) +
+      '<div>' + sourceLink(row.source, row.locator) + '</div></td></tr>').join("") :
+      '<tr role="row"><td role="cell" colspan="4">Monthly command returns are unavailable for this selection.</td></tr>';
   }
 
   function downloadCsv() {
     const columns = Object.keys(data.metrics);
     const fieldNames = ["id", "start_date", "end_date", "command", "record_type", "title", "reported_locations", "unit", "aircraft",
-      ...columns, "number_qualifiers", "source_type", "source_url", "source_locator", "additional_sources", "evidence_links", "notes"];
+      ...columns, "number_qualifiers", "source_type", "source_url", "source_locator", "additional_sources", "evidence_links", "notes", "derived_metrics"];
     const cell = value => '"' + String(value ?? "").replaceAll('"', '""') + '"';
     const lines = [fieldNames.map(cell).join(",")];
     for (const r of filtered) {
       const source = data.sources[r.source];
       const refs = (r.references || []).map(ref => data.sources[ref.source].url + " · " + ref.locator).join(" | ");
       const links = (linksById.get(r.id) || []).map(link => link.label + " · " + link.records.join(" + ") +
-        " · " + data.sources[link.source].url + " · " + link.locator).join(" | ");
+        " · " + data.sources[link.source].url + " · " + link.locator + " · " + link.note).join(" | ");
       lines.push([r.id, r.date, r.endDate, data.forces[r.force].label, data.kinds[r.kind], r.name,
         r.localities?.join(" | "), r.units, r.aircraft, ...columns.map(key => r.metrics[key]),
         Object.entries(r.qualifiers || {}).map(([key, value]) => key + " " + value).join(" | "),
-        source.type, source.url, r.locator, refs, links, r.note].map(cell).join(","));
+        source.type, sourceUrl(r.source, r.sourcePage), r.locator, refs, links, r.note,
+        r.derivedMetrics?.join(" | ")].map(cell).join(","));
     }
     const url = URL.createObjectURL(new Blob([lines.join("\r\n") + "\r\n"], {type: "text/csv;charset=utf-8"}));
     const a = document.createElement("a");

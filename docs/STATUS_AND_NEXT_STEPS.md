@@ -1,5 +1,11 @@
 # Atlas status and next work
 
+## 12 November 2026 · v9.1 June losses and mission evidence
+
+The January–June mission timeline now includes 60 June daily German command totals, 189 aircraft-type and role entries, and 12 unit, airframe and encounter entries. The Cobra evidence shows the 25 July German command return and the separate Eighth and Ninth Air Force reporting scopes. The Bodenplatte dossier includes the Manrho and Pütz aircraft breakdown with its source qualification. [Research and reconciliation](../research/sources/atlas-v91-june-loss-returns-and-missions-2026-11-12.md) · [Live June timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=june)
+
+The next milestones are the Battle of Britain German-to-RAF claim series, the May and July 1944 operational returns with a batch of matched-source cases, and Bodenplatte airfield-level loss accounting. [Milestone scopes and completion evidence](LATEST_INSIGHTS.md#next-milestones)
+
 ## January–June 1944 bombing and air defence
 
 The [mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) covers six months of Eighth and Fifteenth Air Force and RAF Bomber Command operations alongside documented German air defence. [Source audit and data](../research/sources/operations-january-june-1944.md) record the Big Week validation, monthly comparisons and unresolved coverage. [Milestone and independent sweep review](https://github.com/hound83/ww2-airwar/issues/40)

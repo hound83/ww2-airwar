@@ -153,6 +153,11 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/bevrijding-van-nederland-1944-1945/achtergronden/jagdgeschwader-1-twente/na-market-garden",
       "class": "Dutch-defence-official"
     },
+    "bodenplatteManrhoPutz": {
+      "title": "Manrho and Pütz, Bodenplatte, p. 273 (2004), via published citations",
+      "url": "https://en.wikipedia.org/wiki/German_and_Allied_aircraft_losses_during_Operation_Bodenplatte",
+      "class": "specialist secondary reconstruction, accessed through a citation"
+    },
     "marketDetail": {
       "title": "RAF Museum: RAF and Operation Market Garden, Chapter 3",
       "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-3/",
@@ -2855,7 +2860,7 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "consequence": "The Luftwaffe could not replace veteran pilots as rapidly as Allied aircraft; reported loss totals vary across museums and definitions.",
       "sources": [
         "raf1945",
-        "ninh", "ninhEindhoven1945"
+        "ninh", "ninhEindhoven1945", "bodenplatteManrhoPutz"
       ],
       "comparisons": [{"title":"Bodenplatte, 1 January 1945: aircraft destroyed/lost","measure":"same-day Allied and Luftwaffe airframe losses","quality":"caution","rows":[{"side":"Allied aircraft confirmed destroyed","factLabel":"Allied aircraft destroyed"},{"side":"Luftwaffe aircraft reported lost (approx.)","factLabel":"Luftwaffe aircraft lost"}],"caution":"Both observations refer to the same operation and day, but the Luftwaffe around-300 figure is a retrospective approximate total with disputed thresholds. Allied 84 damaged-beyond-unit-repair aircraft and Eindhoven local figures are distinct subsets/categories. Do not add them to 224 or automatically compute a kill ratio."}],
       "facts": [
@@ -2886,6 +2891,54 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "sourceId": "raf1945",
           "date": "1945-01-01",
           "type": "approximate"
+        },
+        {
+          "id": "bodenplatte-mp-single-destroyed",
+          "label": "Bf 109 and Fw 190 destroyed, Manrho and Pütz",
+          "side": "Axis",
+          "measure": "losses-subset",
+          "value": 271,
+          "unit": "aircraft",
+          "scope": "Single-engine aircraft in the specialist reconstruction for 1 January. This is an alternate source to the RAF Museum’s approximate campaign figure.",
+          "sourceId": "bodenplatteManrhoPutz",
+          "date": "1945-01-01",
+          "type": "reported-secondary"
+        },
+        {
+          "id": "bodenplatte-mp-single-damaged",
+          "label": "Bf 109 and Fw 190 damaged, Manrho and Pütz",
+          "side": "Axis",
+          "measure": "damage",
+          "value": 65,
+          "unit": "aircraft",
+          "scope": "Single-engine damage in the specialist reconstruction for 1 January.",
+          "sourceId": "bodenplatteManrhoPutz",
+          "date": "1945-01-01",
+          "type": "reported-secondary"
+        },
+        {
+          "id": "bodenplatte-mp-twin-destroyed",
+          "label": "Twin-engine aircraft destroyed, Manrho and Pütz",
+          "side": "Axis",
+          "measure": "losses-subset",
+          "value": 9,
+          "unit": "aircraft",
+          "scope": "Twin-engine aircraft in the specialist reconstruction for 1 January. This is an alternate source to the RAF Museum’s approximate campaign figure.",
+          "sourceId": "bodenplatteManrhoPutz",
+          "date": "1945-01-01",
+          "type": "reported-secondary"
+        },
+        {
+          "id": "bodenplatte-mp-twin-damaged",
+          "label": "Twin-engine aircraft damaged, Manrho and Pütz",
+          "side": "Axis",
+          "measure": "damage",
+          "value": 4,
+          "unit": "aircraft",
+          "scope": "Twin-engine damage in the specialist reconstruction for 1 January.",
+          "sourceId": "bodenplatteManrhoPutz",
+          "date": "1945-01-01",
+          "type": "reported-secondary"
         },
         {
           "label": "Aircraft present at Eindhoven before the Bodenplatte attack",

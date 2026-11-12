@@ -22,7 +22,7 @@ const allFacts=D.campaigns.flatMap(c=>c.facts.map(f=>({...f,campaign:c.id})));
 const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})));
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
-assert.equal(allFacts.length,135,"campaign quantities need an updated source-count explanation");
+assert.equal(allFacts.length,139,"campaign quantities need an updated source-count explanation");
 assert.equal(allEvents.length,119,"campaign event count should be explicit and reviewed (Normandy benchmark adds 36 episodes)");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
@@ -274,6 +274,7 @@ for(const x of D.campaigns){
 }
 
 const bodenplatte=D.campaigns.find(c=>c.id==="bodenplatte");
+assert.deepEqual(Array.from(bodenplatte.facts.filter(f=>f.sourceId==="bodenplatteManrhoPutz"),f=>f.value),[271,65,9,4]);
 assert.ok(bodenplatte.facts.some(f=>f.value===45&&f.scope.includes("do not add")),"Eindhoven local loss must not be stacked with whole-raid values");
 assert.ok(bodenplatte.facts.some(f=>f.value===35&&f.scope.includes("not necessarily identical")),"local versus whole-raid damage definitions need disclosure");
 for(const id of ["dieppe","bodenplatte"])assert.ok(D.campaigns.find(c=>c.id===id).moments.every(e=>e.summary&&e.sourceIds.length),id+" single-day action needs researched event details");

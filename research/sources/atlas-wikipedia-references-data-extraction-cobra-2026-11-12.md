@@ -7,7 +7,7 @@ Focused extraction of Atlas-relevant operational data (fighter participation, cl
 ### 1. Eighth Air Force Combat Chronology / American Air Museum Mission 494
 - Mission 494 (25 July 1944): 1,581 bombers and 500 fighters dispatched for the Cobra saturation bombing in the Marigny–Saint-Gilles / Périers–St-Lô area.
 - 843 of 917 B-17s and 647 of 664 B-24s attacked the primary target area; 13 B-17s hit targets of opportunity.
-- Escort and participation: 483 of 500 fighters (P-38, P-47, P-51) flew; they also provided escort for Ninth Air Force B-26s and conducted strafing/bombing runs.
+- Escort and participation: 500 fighters were dispatched. The chronology records 483 P-38, P-47 and P-51 escorts for the Eighth’s heavy bombers and Ninth Air Force B-26s.
 - Fighter claims: 12-1-3 Luftwaffe aircraft in the air and 2-0-0 on the ground.
 - Fighter losses: 2 P-51s (pilots MIA); 5 fighters damaged.
 - Bomber losses: 1 B-17 and 4 B-24s lost; 2 B-24s damaged beyond repair; 41 B-17s and 132 B-24s damaged.

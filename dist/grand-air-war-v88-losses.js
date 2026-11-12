@@ -99,6 +99,7 @@ function historicalEstimate(operationId,observations) {
   validation:franceChecks[0],
   validationCases:franceChecks,
   campaignContext:{...julyContext,totals:julyTotals,source:reference(julyContext.reference)},
+  commandReturn:{...cobra.commandReturn,source:reference(cobra.commandReturn.reference)},
   assumptions:[
    'Apply the claims-weighted rate from three selected pre-Cobra Eighth and Ninth Air Force daylight fighter comparisons in northern France to the Mission 494 escorts.',
    'The alternative includes both uncertain landings. The omission results show sensitivity to the choice of dates.',
@@ -194,6 +195,8 @@ function caseNotes(rows) {
 }
 
 function renderCobra(result,claims) {
+ const losses=cobra.commandReturn;
+ const fighterLosses=losses.singleEngineFighters.map(row=>fmt(row.airCombatDestroyed)+' '+esc(row.aircraft)).join(' and ');
  const checkRows=franceChecks.map(row=>'<li><strong>'+esc(row.place)+'</strong> · '+fmt(row.predicted)+' predicted from '+
   fmt(row.claims)+' claims. '+band({low:row.losses,high:row.losses+row.possibleLosses})+' reconstructed losses.</li>').join('');
  return '<p><strong>'+Math.round(100*result.rate)+' losses per 100 claims</strong> across three earlier US fighter comparisons in northern France ('+
@@ -207,8 +210,11 @@ function renderCobra(result,claims) {
   fmt(julyTotals.germanLosses)+' total German losses, and '+fmt(julyTotals.germanClaims)+' German destruction claims with '+
   fmt(julyTotals.alliedLosses)+' total Allied losses. These wider figures cover several air forces, day and night activity, and losses from multiple causes. '+
   sourceLink(reference(julyContext.reference))+'</p>'+
-  '<p>Mission 494 recorded '+cobraClaim.value+' air-to-air claims. The German calendar reports '+cobra.widerLosses+
-  ' aircraft lost across a wider area that day. The Luftflotte 3 situation report also covers British attacks and German night operations. Its loss tables group aircraft by type and cause. A ceiling for Mission 494 needs coverage of the German units in the escort encounters.</p>'+
+  '<h3>25 July German command return</h3><p>Luftflotte 3 recorded '+fmt(losses.enemyDestroyed)+
+  ' aircraft destroyed by enemy action, including '+fmt(losses.enemyMissing)+' missing. The return lists '+
+  fmt(losses.airCombatDestroyed)+' destroyed in air combat across all types, including '+fighterLosses+' in single-engine fighter units. '+
+  'The separate operational calendar reports '+fmt(cobra.widerLosses)+' aircraft lost in its own reporting scope. The command-area return covers multiple engagements. A Mission 494 match needs the German units and airframes from the escort encounters. '+
+  sourceLink(reference(losses.reference))+'</p>'+
   '<p>'+referenceLinks(cobra.references)+' · '+sourceLink(reference({source:'normandyClaimsAudit'}))+'</p></details>';
 }
 

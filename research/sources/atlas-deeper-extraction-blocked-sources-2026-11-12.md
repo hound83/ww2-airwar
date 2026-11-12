@@ -6,7 +6,7 @@ Extra-effort pass focused on pulling actual figures, claims, losses and operatio
 Specialist secondary with aircraft-level ledger. Accessible figures (Manrho & Pütz, incorporating German and Allied sources plus remains found to 2003):
 - German aircraft: 271 fighters destroyed, 65 single-engine fighters damaged, 9 twin-engine destroyed, 4 damaged.
 - German pilots: 143 killed in action, 70 POW, 21 wounded (total ~234 not returned).
-- Allied aircraft: 305 destroyed and 190 damaged on the ground; plus ~15 shot down and 10 damaged in the air; 6 downed by other causes.
+- Allied aircraft: published summaries give 305 destroyed and 190 damaged. They disagree on whether the 15 destroyed and 10 damaged in air combat are included. A further six other causes are mentioned in one summary. The underlying pages are needed to settle the categories.
 - Friendly-fire myth: only 17 German aircraft certain to have been shot down by German Flak; even including unknowns the figure is 30–35. The claim that one-third fell to friendly fire is rejected.
 - Other secondary variants exist (Zaloga: 214 German aircrew killed/captured, 304 aircraft destroyed; Allied 144 lost on ground + 62 damaged + 70 in air). Manrho & Pütz remain the most detailed open figures.
 These totals are ready for Atlas review with the “Manrho & Pütz 2004/2010” label. The full airframe-level ledger is still restricted.
@@ -22,10 +22,10 @@ Sheet key is now fully available for any future workbook import. Individual year
 
 ## Operation Cobra / Mission 494 — additional quantitative extraction from official histories
 From AAF Vol. III, *Breakout and Pursuit*, and related mission summaries:
-- 25 July air phase: 1,503 of 1,581 B-17s/B-24s attacked (dropping ~3,300 tons); ~380 mediums; 559 fighter-bombers (212 tons + napalm). Total effort ~4,000+ tons.
+- 25 July air phase: 1,503 heavy bombers attacking from the Eighth Air Force chronology (843 + 647 + 13), from 1,581 dispatched. Craven and Cate give 1,507 heavy bombers attacking, over 3,300 tons, over 380 mediums, and 559 fighter-bombers delivering 212 tons plus napalm.
 - Bomber losses: 5 four-engine + 1 medium, all to flak.
 - Friendly-fire: bombs from 35 heavies and 42 mediums fell inside US lines → 102 killed (including Lt Gen McNair) and 380 wounded (USSTAF investigation); alternative counts reach 111 killed / 490 wounded.
-- Ninth AF fighter-bomber note: 406th Group met 15 GAF aircraft over Lisieux and claimed 4 destroyed for 1 missing.
+- Ninth AF fighter-bomber note: 406th Group met 15 GAF aircraft over Lisieux and claimed 4 destroyed for 1 missing. Its engagement is separate from the Eighth’s escort claim tally.
 - Panzer-Lehr effect (ground, not air-to-air): estimates of ~1,000 casualties and heavy equipment losses; Bayerlein postwar statements of ~70% personnel out of action.
 These refine the existing Atlas Cobra notes but do not add new airframe-level escort matches.
 

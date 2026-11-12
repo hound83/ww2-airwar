@@ -14,12 +14,12 @@ window.AtlasClaimLossData = {
       {
         "source": "aafChronJuly",
         "page": "25 July, Mission 494",
-        "detail": "483 Eighth Air Force escorts; 12 claimed destroyed in the air. One probable, three damaged and two ground claims are separate."
+        "detail": "500 Eighth Air Force fighters dispatched, with 483 providing escort to Eighth Air Force bombers and Ninth Air Force B-26s. Air claims were 12 destroyed, one probable and three damaged. Two ground claims and the escort’s two P-51 losses and five damaged are separate."
       },
       {
         "source": "mission494",
         "page": "Missions 492 and 494",
-        "detail": "Original Eighth Air Force mission report, archival catalogue entry."
+        "detail": "CARL N5160. Field orders 913 and 917 and annexes for routes, target plans, bombing, weather and statistics. The catalogue does not identify a separate fighter annex."
       },
       {
         "source": "germanCalendarJuly",
@@ -39,9 +39,46 @@ window.AtlasClaimLossData = {
       {
         "source": "luftflotte3LossTables",
         "page": "25 July, PDF p. 22",
-        "detail": "Command-wide return with cause and aircraft-type columns. The scanned sheet is inverted and its OCR cannot establish the column counts. Airframe and claimant attribution require separate evidence."
+        "detail": "Image-checked command-wide return: 33 enemy-action destroyed including 11 missing; 22 explicitly destroyed in air combat. It covers the full command area and day."
+      },
+      {
+        "source": "cravenCobra",
+        "page": "p. 237, Ninth Air Force operations",
+        "detail": "The 406th Fighter Group claimed four aircraft destroyed over Lisieux for one missing. This Ninth Air Force engagement has its own reporting population."
       }
-    ]
+    ],
+    "commandReturn": {
+      "date": "1944-07-25",
+      "command": "Luftflotte 3",
+      "scope": "Command-area losses for the entire day across aircraft types, causes, times and engagements.",
+      "enemyDestroyed": 33,
+      "enemyMissing": 11,
+      "airCombatDestroyed": 22,
+      "airCombatDamaged": 5,
+      "enemyDamaged": 7,
+      "opsDestroyed": 7,
+      "opsDamaged": 8,
+      "nonOpsDestroyed": 1,
+      "nonOpsDamaged": 3,
+      "singleEngineFighters": [
+        {
+          "aircraft": "Bf 109",
+          "airCombatDestroyed": 15,
+          "airCombatDamaged": 2,
+          "enemyMissing": 5
+        },
+        {
+          "aircraft": "Fw 190",
+          "airCombatDestroyed": 4,
+          "airCombatDamaged": 2,
+          "enemyMissing": 2
+        }
+      ],
+      "reference": {
+        "source": "luftflotte3LossTables",
+        "page": "25 July, PDF p. 22"
+      }
+    }
   },
   "france": {
     "area": "Northern France",
@@ -74,7 +111,7 @@ window.AtlasClaimLossData = {
         "losses": 9,
         "possibleLosses": 0,
         "basis": "Reconstructed",
-        "detail": "Evening encounter. The Clark-based reconstruction matches 14 US claims to nine Bf 109 losses. Jure’s report corroborates 56th Fighter Group participation. The Eighth Air Force day summary covers additional missions.",
+        "detail": "Evening encounter. The Clark-based reconstruction matches 14 US claims to nine Bf 109 losses. Jure’s report corroborates 56th Fighter Group participation. The Eighth Air Force day summary covers additional missions. The 27 June Luftflotte 3 return covers the whole command area. It records 17 single-engine Bf 109s destroyed in air combat, five damaged and seven missing. The narrower reconstruction retains its own scope.",
         "references": [
           {
             "source": "june27Reconstruction",
@@ -83,6 +120,10 @@ window.AtlasClaimLossData = {
           {
             "source": "jureReport",
             "page": "27 June, 20:30–20:45"
+          },
+          {
+            "source": "juneWestReturn",
+            "page": "27 June, PDF p. 21"
           }
         ]
       },
@@ -612,6 +653,10 @@ window.AtlasClaimLossData = {
     "luftflotte3LossTables": {
       "title": "Luftflotte 3 July–August aircraft losses (RAF AHB translation 144)",
       "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-july-31st-august-1944/#page=22"
+    },
+    "juneWestReturn": {
+      "title": "RAF AHB VII/136, Luftflotte 3 June 1944",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-june-1944/#page=21"
     }
   }
 };

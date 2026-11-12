@@ -36,6 +36,8 @@ for (const record of data.records) {
   assert.ok(!(record.metrics.attacked > record.metrics.dispatched), record.id);
   assert.ok(!(record.metrics.missing > record.metrics.dispatched), record.id);
   for (const ref of record.references || []) assert.ok(data.sources[ref.source] && ref.locator);
+  if (record.sourcePage) assert.ok(Number.isInteger(record.sourcePage) && record.sourcePage > 1);
+  for (const key of record.derivedMetrics || []) assert.ok(Object.hasOwn(record.metrics, key));
 }
 for (const [id, source] of Object.entries(data.sources)) {
   assert.equal(new URL(source.url).protocol, "https:", id);
@@ -69,5 +71,32 @@ const reichBigWeek = data.records.filter(r => r.force === "reich" && r.kind === 
 assert.equal(reichBigWeek.length, 6);
 assert.equal(reichBigWeek.reduce((sum, r) => sum + r.metrics.enemyDestroyed, 0), 260);
 assert.equal(reichBigWeek.reduce((sum, r) => sum + r.metrics.enemyDamaged, 0), 71);
+const juneKeys = ["enemyDestroyed", "enemyDamaged", "opsDestroyed", "opsDamaged", "nonOpsDestroyed", "nonOpsDamaged", "enemyMissing"];
+const juneValues = {
+  west: {daily: [818, 220, 113, 219, 67, 160, 313], printed: [818, 220, 113, 219, 67, 160, 313], types: 99},
+  reich: {daily: [208, 88, 44, 44, 183, 415, 18], printed: [208, 90, 42, 44, 183, 405, 18], types: 90}
+};
+for (const [force, expected] of Object.entries(juneValues)) {
+  const returns = data.records.filter(row => row.force === force && row.source === force + "Jun");
+  const daily = returns.filter(row => row.kind === "loss-return");
+  const types = returns.filter(row => row.kind === "loss-type");
+  const summary = data.reconciliation.find(row => row.force === force && row.month === "1944-06");
+  assert.deepEqual(daily.map(row => Number(row.date.slice(-2))), Array.from({length: 30}, (_, i) => i + 1));
+  assert.equal(types.length, expected.types);
+  assert.deepEqual(juneKeys.map(key => daily.reduce((sum, row) => sum + row.metrics[key], 0)), expected.daily);
+  assert.deepEqual(juneKeys.map(key => summary.capturedByCause[key]), expected.daily);
+  assert.deepEqual(juneKeys.map(key => summary.publishedByCause[key]), expected.printed);
+  for (const day of daily) {
+    const subsets = types.filter(row => row.date === day.date);
+    for (const key of juneKeys) assert.ok(subsets.reduce((sum, row) => sum + row.metrics[key], 0) <= day.metrics[key], day.id + " " + key);
+    assert.ok(day.metrics.enemyMissing <= day.metrics.enemyDestroyed, day.id);
+  }
+}
+assert.deepEqual(byId.get("west-1944-06-02-ahb").derivedMetrics, ["nonOpsDamaged"]);
+assert.equal(byId.get("west-1944-06-02-ahb").metrics.nonOpsDamaged, 7);
+assert.equal(byId.get("west-1944-06-06-ahb").metrics.airCombatDestroyed, 14);
+assert.equal(byId.get("west-1944-06-27-ahb-s109").metrics.airCombatDestroyed, 17);
+assert.ok(data.links.some(link => link.label === "Possible night-fighter attribution" &&
+  link.records.includes("rafbc-1944-06-12-hk545")));
 console.log("PASS January–June 1944 ledger: " + data.records.length +
   " dated records, source references, overnight dates, Big Week, D-Day and monthly returns.");
