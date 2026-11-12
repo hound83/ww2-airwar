@@ -2,6 +2,8 @@ name: Western air war source audit
 on:
   push:
     branches: [codex/atlas-may-july-source-audit-20261112]
+  pull_request:
+    paths: ['.github/workflows/atlas-may-source-verification.yml']
 permissions:
   contents: read
 jobs:
