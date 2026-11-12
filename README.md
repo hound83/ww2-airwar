@@ -2,7 +2,7 @@
 
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
-[January–June 1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) · [Operational dataset and source audit](research/sources/operations-january-june-1944.md)
+[January–July 1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) · [Operational dataset and source audit](research/sources/operations-january-june-1944.md)
 
 **[Open the current Campaign Atlas](https://hound83.github.io/ww2-airwar/)** · **[Pilot & Aircraft Lab (legacy)](https://hound83.github.io/ww2-airwar/?legacy=1)** · **[v7.5 experimental view](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
 
@@ -11,6 +11,10 @@ A source-led, interactive historical atlas of WWII European airpower: aircraft a
 The research datasets distinguish operationally serviceable aircraft, assigned strength, sorties, observed losses, claims and missing figures. A link to the original source accompanies each new observation. The German Normandy published sortie category total differs by ten from its stated headline; this is documented rather than corrected without evidence. Earlier standalone research routes `grand-air-war-v76.html` and `grand-air-war-v77.html` remain available for historical comparison.
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
+
+## v9.3 Western air war in May and July 1944
+
+The [1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) covers January through July with 2,093 dated records. The July Luftflotte 3 enemy-action destruction total reconciles across 31 days. The timeline links the records for Normandy night operations, Goodwood, Évreux and Cobra. The [Davis target extract](research/transcriptions/davis-western-targets-may-july-1944.csv) adds 497 May and July Eighth Air Force target rows. [Source audit and outstanding May scans](research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md)
 
 ## v9.2 Battle of Britain German claims and RAF losses
 

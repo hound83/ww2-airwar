@@ -85,6 +85,50 @@ module.exports = async (browser, base, root) => {
       await juneCoverage.locator("summary").click();
       assert.match(await juneCoverage.innerText(), /415 \/ 405/);
 
+      await page.getByRole("button", {name: "July 1944", exact: true}).click();
+      assert.equal(await page.locator("input[name=to]").inputValue(), "1944-07-31");
+      assert.match(await page.locator("#filter-status").innerText(), /37 records across 31 start dates/);
+      await page.locator("#coverage-force").selectOption("west");
+      const julyCoverage = page.locator("#coverage-rows tr").filter({hasText: "July"});
+      await julyCoverage.locator("summary").click();
+      assert.match(await julyCoverage.innerText(), /602 \/ 602 · 31 of 31 days/);
+      assert.match(await julyCoverage.innerText(), /279 \/ 288 · 29 of 31 days/);
+      assert.ok(await julyCoverage.locator('a[href$="#page=28"]').count());
+      const mayCoverage = page.locator("#coverage-rows tr").filter({hasText: "May"});
+      await mayCoverage.locator("summary").click();
+      assert.match(await mayCoverage.innerText(), /— \/ 228/);
+      assert.ok(await mayCoverage.locator('a[href$="#page=15"]').count());
+
+      const julyCases = page.getByRole("navigation", {name: "July operation comparisons"});
+      await julyCases.getByRole("link", {name: "Évreux and Bourth"}).click();
+      await page.locator(".record").first().waitFor();
+      await page.getByRole("searchbox").fill("Evreux");
+      const evreux = page.locator(".record").filter({has: page.locator(".title", {hasText: "Évreux railway bridge"})});
+      await evreux.locator("summary").click();
+      assert.match(await evreux.innerText(), /OpRep 114/);
+      assert.ok(await evreux.locator('a[href$="#page=31"]').count());
+      const targetsPromise = page.waitForEvent("download");
+      await page.getByRole("link", {name: "Download Davis target rows (CSV)"}).click();
+      const targetsCsv = await fs.readFile(await (await targetsPromise).path(), "utf8");
+      assert.equal(targetsCsv.trimEnd().split("\n").length, 498);
+
+      await julyCases.getByRole("link", {name: "Cobra", exact: true}).click();
+      await page.locator(".record").first().waitFor();
+      assert.equal(await page.locator("input[name=from]").inputValue(), "1944-07-24");
+      const cobra105 = page.locator(".record").filter({has: page.locator(".title", {hasText: "Saint-Gilles defended area"})});
+      await cobra105.locator("summary").click();
+      assert.match(await cobra105.innerText(), /OpRep 116/);
+      const marigny = page.locator(".record").filter({has: page.locator(".title", {hasText: "weather abort"})});
+      await marigny.locator("summary").click();
+      assert.match(await marigny.innerText(), /Aircraft attacking\s+0/);
+
+      await page.goto(new URL("./operations-1944.html?from=1944-07-18&to=1944-07-18&force=raf2taf", base).href);
+      await page.locator(".record").first().waitFor();
+      const overnight = page.locator(".record").filter({hasText: "Normandy night operations"});
+      assert.match(await overnight.innerText(), /through 18 Jul/);
+      await overnight.locator("summary").click();
+      assert.match(await overnight.innerText(), /Aircraft assigned\s+50/);
+
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       assert.ok(overflow <= 2, "1944 timeline overflow at " + width + "px");
       assert.deepEqual(errors, []);
@@ -93,5 +137,5 @@ module.exports = async (browser, base, root) => {
       await page.close();
     }
   }
-  console.log("PASS 1944 operations Chromium: Atlas navigation, dates, opposing evidence, keyboard, search, export and coverage on desktop and mobile.");
+  console.log("PASS 1944 operations Chromium: Atlas navigation, dates, opposing evidence, keyboard, search, export, May and July coverage and the Normandy comparisons on desktop and mobile.");
 };

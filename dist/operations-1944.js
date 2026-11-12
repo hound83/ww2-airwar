@@ -1,8 +1,8 @@
 (() => {
   "use strict";
-  const full = ["1944-01-01", "1944-06-30"];
+  const full = ["1944-01-01", "1944-07-31"];
   const ranges = {full, "big-week": ["1944-02-19", "1944-02-26"], "d-day": ["1944-06-05", "1944-06-10"],
-    june: ["1944-06-01", "1944-06-30"]};
+    may: ["1944-05-01", "1944-05-31"], june: ["1944-06-01", "1944-06-30"], july: ["1944-07-01", "1944-07-31"]};
   const form = document.getElementById("filters");
   const field = name => form.elements.namedItem(name);
   const days = document.getElementById("days");
@@ -16,6 +16,7 @@
   const number = new Intl.NumberFormat("en-GB");
   const escape = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = value => value == null ? "—" : number.format(value);
+  const searchText = value => value.toLowerCase().normalize("NFD").replace(/\p{M}/gu, "");
   const dateText = day => dateLabel.format(new Date(day + "T00:00:00Z"));
   let data, byId, linksById, bilateral, filtered = [], limit = 12;
 
@@ -38,7 +39,7 @@
       const peerId = link.records.find(id => id !== record.id);
       const peer = byId.get(peerId);
       return '<p class="link-note"><strong>' + escape(link.label) + '</strong> · ' +
-        escape(displayTitle(peer)) + '. ' + escape(link.note) + ' ' + sourceLink(link.source, link.locator) + '</p>';
+        escape(displayTitle(peer)) + '. ' + escape(link.note) + ' ' + sourceLink(link.source, link.locator, link.sourcePage) + '</p>';
     }).join("");
   }
 
@@ -47,7 +48,7 @@
       '<div><dt>' + escape(data.metrics[key]) + '</dt><dd>' + escape(record.qualifiers?.[key] || "") + fmt(value) +
       (record.derivedMetrics?.includes(key) ? ' <small>(derived)</small>' : '') + '</dd></div>').join("");
     const details = [record.units, record.aircraft].filter(Boolean).join(" · ");
-    const refs = (record.references || []).map(ref => '<p>' + sourceLink(ref.source, ref.locator) + '</p>').join("");
+    const refs = (record.references || []).map(ref => '<p>' + sourceLink(ref.source, ref.locator, ref.sourcePage) + '</p>').join("");
     return '<details class="record"><summary><span class="title">' + escape(displayTitle(record)) +
       '</span><span class="command">' + escape(data.forces[record.force].label) + ' · ' + escape(data.kinds[record.kind]) +
       (record.endDate ? ' · through ' + dateText(record.endDate) : '') + '</span></summary><div class="details">' +
@@ -110,24 +111,28 @@
     const [from, to] = currentRange();
     const force = field("force").value;
     const evidence = field("evidence").value;
-    const q = field("q").value.trim().toLocaleLowerCase();
+    const q = searchText(field("q").value.trim());
     filtered = from <= to ? data.records.filter(record =>
       record.date <= to && (record.endDate || record.date) >= from &&
       (!force || force === record.force) &&
       (evidence !== "both" || hasBilateral(record)) &&
       (evidence !== "linked" || linksById.has(record.id)) &&
       (evidence !== "returns" || ["loss-return", "loss-type"].includes(record.kind)) &&
-      (!q || [record.name, record.units, record.aircraft, ...(record.localities || [])]
-        .filter(Boolean).join(" ").toLocaleLowerCase().includes(q))) : [];
+      (!q || searchText([record.name, record.units, record.aircraft, ...(record.localities || [])]
+        .filter(Boolean).join(" ")).includes(q))) : [];
     limit = 12;
     updateURL();
     renderDays();
   }
 
   function causeComparison(row) {
-    if (!row.capturedByCause) return "";
-    const causes = Object.entries(row.capturedByCause).map(([key, captured]) =>
-      '<li>' + escape(data.metrics[key]) + ' · ' + fmt(captured) + ' / ' + fmt(row.publishedByCause[key]) + '</li>').join("");
+    if (!row.publishedByCause) return "";
+    const causes = Object.entries(row.publishedByCause).map(([key, published]) => {
+      const dates = row.capturedDaysByCause?.[key];
+      const coverage = dates == null ? "" : " · " + fmt(dates) + " of " + fmt(row.totalDays) + " days";
+      return '<li>' + escape(data.metrics[key]) + ' · ' + fmt(row.capturedByCause?.[key]) + ' / ' +
+        fmt(published) + coverage + '</li>';
+    }).join("");
     return '<details><summary>Daily sum and printed total by cause</summary><ul>' + causes + '</ul></details>';
   }
 
@@ -139,7 +144,7 @@
       '<tr role="row"><th scope="row" role="rowheader">' + monthLabel.format(new Date(row.month + "-01T00:00:00Z")) +
       '</th><td role="cell">' + fmt(row.captured) + '</td><td role="cell">' + fmt(row.published) + '</td><td role="cell">' + escape(row.scope) +
       (row.note ? '<br>' + escape(row.note) : '') + causeComparison(row) +
-      '<div>' + sourceLink(row.source, row.locator) + '</div></td></tr>').join("") :
+      '<div>' + sourceLink(row.source, row.locator, row.sourcePage) + '</div></td></tr>').join("") :
       '<tr role="row"><td role="cell" colspan="4">Monthly command returns are unavailable for this selection.</td></tr>';
   }
 
@@ -151,9 +156,9 @@
     const lines = [fieldNames.map(cell).join(",")];
     for (const r of filtered) {
       const source = data.sources[r.source];
-      const refs = (r.references || []).map(ref => data.sources[ref.source].url + " · " + ref.locator).join(" | ");
+      const refs = (r.references || []).map(ref => sourceUrl(ref.source, ref.sourcePage) + " · " + ref.locator).join(" | ");
       const links = (linksById.get(r.id) || []).map(link => link.label + " · " + link.records.join(" + ") +
-        " · " + data.sources[link.source].url + " · " + link.locator + " · " + link.note).join(" | ");
+        " · " + sourceUrl(link.source, link.sourcePage) + " · " + link.locator + " · " + link.note).join(" | ");
       lines.push([r.id, r.date, r.endDate, data.forces[r.force].label, data.kinds[r.kind], r.name,
         r.localities?.join(" | "), r.units, r.aircraft, ...columns.map(key => r.metrics[key]),
         Object.entries(r.qualifiers || {}).map(([key, value]) => key + " " + value).join(" | "),
@@ -191,7 +196,7 @@
     coverageForce.value = "rafbc";
     const params = new URLSearchParams(location.search);
     const [start, end] = ranges[params.get("preset")] || full;
-    const validDate = (value, fallback) => /^1944-0[1-6]-\d{2}$/.test(value || "") && value >= full[0] && value <= full[1] ? value : fallback;
+    const validDate = (value, fallback) => /^1944-0[1-7]-\d{2}$/.test(value || "") && value >= full[0] && value <= full[1] ? value : fallback;
     field("from").value = validDate(params.get("from"), start);
     field("to").value = validDate(params.get("to"), end);
     for (const name of ["force", "evidence", "q"]) {

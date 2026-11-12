@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Source-linked Allied bombing and German air defence records from January to June 1944.">
-  <title>Air operations, January–June 1944 | European Air War Atlas</title>
+  <meta name="description" content="Source-linked Allied bombing and German air defence records from January to July 1944.">
+  <title>Air operations, January–July 1944 | European Air War Atlas</title>
   <link rel="stylesheet" href="./dist/operations-1944.css">
   <script defer src="./dist/operations-1944.js"></script>
 </head>
@@ -18,12 +18,19 @@
   </header>
   <main class="wrap">
     <header class="intro">
-      <h1>Air operations<br><em>January–June 1944</em></h1>
-      <p>Trace Allied bombing missions and German air defence across six months. Open each record for its reporting scope and source.</p>
+      <h1>Air operations<br><em>January–July 1944</em></h1>
+      <p>Compare Allied bombing and tactical air operations with German reports. Open each record for its scope and source.</p>
       <div class="intro-links">
         <a href="#coverage">Monthly coverage</a>
-        <a id="json-download" href="./research/transcriptions/operations-january-june-1944.json" download>Download full dataset (JSON)</a>
+        <a id="json-download" href="./research/transcriptions/operations-january-june-1944.json" download>Download timeline (JSON)</a>
+        <a id="davis-download" href="./research/transcriptions/davis-western-targets-may-july-1944.csv" download>Download Davis target rows (CSV)</a>
       </div>
+      <nav class="intro-links" aria-label="July operation comparisons">
+        <a href="?from=1944-07-16&amp;to=1944-07-18#timeline">Normandy night operations</a>
+        <a href="?from=1944-07-18&amp;to=1944-07-18#timeline">Goodwood</a>
+        <a href="?from=1944-07-22&amp;to=1944-07-23#timeline">Évreux and Bourth</a>
+        <a href="?from=1944-07-24&amp;to=1944-07-26#timeline">Cobra</a>
+      </nav>
     </header>
     <section id="timeline" aria-labelledby="timeline-heading">
       <h2 id="timeline-heading">Mission timeline</h2>
@@ -32,11 +39,13 @@
           <button type="button" data-range="full" aria-pressed="true">Full period</button>
           <button type="button" data-range="big-week" aria-pressed="false">Big Week · 19–26 Feb</button>
           <button type="button" data-range="d-day" aria-pressed="false">D-Day · 5–10 Jun</button>
+          <button type="button" data-range="may" aria-pressed="false">May 1944</button>
           <button type="button" data-range="june" aria-pressed="false">June 1944</button>
+          <button type="button" data-range="july" aria-pressed="false">July 1944</button>
         </div>
         <form id="filters" role="search" aria-label="Filter mission records">
-          <label>From <input type="date" name="from" min="1944-01-01" max="1944-06-30" value="1944-01-01"></label>
-          <label>Through <input type="date" name="to" min="1944-01-01" max="1944-06-30" value="1944-06-30"></label>
+          <label>From <input type="date" name="from" min="1944-01-01" max="1944-07-31" value="1944-01-01"></label>
+          <label>Through <input type="date" name="to" min="1944-01-01" max="1944-07-31" value="1944-07-31"></label>
           <label><span id="command-label">Command</span> <select name="force" aria-labelledby="command-label"><option value="">All commands</option></select></label>
           <label><span id="evidence-label">Evidence</span> <select name="evidence" aria-labelledby="evidence-label">
             <option value="">All records</option>
@@ -49,7 +58,7 @@
         <p id="filter-status" class="muted" role="status">Loading mission records…</p>
         <button type="button" id="csv-download" disabled>Download filtered records (CSV)</button>
       </div>
-      <noscript><p>The timeline requires JavaScript. The full source-linked JSON is available above.</p></noscript>
+      <noscript><p>The timeline requires JavaScript. The source-linked timeline JSON is available above.</p></noscript>
       <div id="days"></div>
       <button type="button" id="more" hidden>Show more dates</button>
     </section>
@@ -65,8 +74,12 @@
         </table>
       </div>
       <p class="definitions">Allied claims remain separate from German recorded losses. Two sides on one date means that records overlap on the calendar. The evidence links identify specific or possible connections.</p>
-      <p class="definitions">The June aircraft-type and role rows are included in their command’s all-aircraft total. The German enemy-action destruction column includes aircraft listed as missing.</p>
-      <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/operations-january-june-1944.md">Read the source audit and counting rules</a>
+      <p class="definitions">Aircraft-type and role rows are included in the all-aircraft daily totals. German enemy-action destruction includes aircraft listed as missing.</p>
+      <p class="definitions">Davis worksheet summaries add up the listed target rows. Those aircraft can also appear in the mission reports.</p>
+      <div class="intro-links">
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md">May and July source audit</a>
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/operations-january-june-1944.md">January–June source audit</a>
+      </div>
     </section>
   </main>
 </body>
