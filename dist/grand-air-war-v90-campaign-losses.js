@@ -82,6 +82,7 @@ const july=claims.france.julyContext;
 const julyRefs=[{...claims.sources[july.reference.source],page:july.reference.page}];
 const julyScope='The RAF history compares several Allied air forces with the Luftwaffe. Its loss totals include multiple causes and its coverage includes day and night operations.';
 const {weekSeries,phaseSeries,germanClaims}=britain;
+const reverse=germanClaims.reverse;
 const series={
  'britain-weeks':{
   label:'British claims by week',scope:'Battle of Britain · 10 July–31 October 1940',unit:'week',
@@ -98,7 +99,7 @@ const series={
   references:britainRefs(phaseSeries.sourceIds)
  },
  'britain-german':{
-  label:'Luftwaffe claims against the RAF',scope:'Battle of Britain · 10 July–31 October 1940',
+  label:'German claims, selected dates',scope:'Battle of Britain · 10 July–31 October 1940',
   claimant:'Luftwaffe claims',lossLabel:'RAF fighters lost',
   detail:'The campaign total compares German claims with RAF Fighter Command fighter losses. The table below pairs seven dates in German situation reports with RAF losses from the published study.',
   rows:periodRows(germanClaims.selectedDates.rows,'claims','rafLosses'),
@@ -121,9 +122,33 @@ const series={
  }
 };
 
+if(reverse){
+ for(const [unit,periods] of [['week',weekSeries.rows],['phase',phaseSeries.rows]]){
+  const rows=periods.map(period=>{
+   const days=reverse.daily.filter(day=>period.start<=day.date&&day.date<=period.end);
+   const reports=days.filter(day=>Number.isInteger(day.report?.fighterClaims));
+   return {
+    start:period.start,end:period.end,name:period.name,
+    losses:sum(days,day=>day.rafAirframeLosses),
+    churchillLosses:period.britishFighterLosses,
+    claims:reports.length?sum(reports,day=>day.report.fighterClaims):null,
+    reportDays:reports.length,days:days.length,
+    selectedDates:germanClaims.selectedDates.rows.filter(day=>period.start<=day.date&&day.date<=period.end).length
+   };
+  });
+  series['britain-german-'+unit+'s']={
+   label:'German claims by '+unit,unit,rows,reverse,
+   scope:'Battle of Britain · 10 July–31 October 1940',
+   lossLabel:'RAF airframe losses in the daily reconstruction',
+   total:{losses:sum(rows,row=>row.losses),reportDays:sum(rows,row=>row.reportDays),days:sum(rows,row=>row.days)},
+   references:britainRefs(reverse.sourceIds)
+  };
+ }
+}
+
 for(const report of Object.values(series)){
  report.total??=totals(report.rows);
- report.validation=report.unit?validate(report.rows):null;
+ report.validation=report.unit&&!report.reverse?validate(report.rows):null;
 }
 window.AtlasCampaignLosses={series,validate};
 })();

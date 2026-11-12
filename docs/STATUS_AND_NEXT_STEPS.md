@@ -1,10 +1,13 @@
 # Atlas status and next work
 
+## 12 November 2026 · v9.2 German claims and British losses
+
+All 17 Battle of Britain weeks and five phases now show a reverse comparison with source coverage. The British reconstruction covers 114 days. Captured German staff reports contribute 34 daily fighter-claim figures. The source audit preserves separate loss definitions, the later Cox days, seven raid or unit checks and archive references for later German returns. The May and July 1944 operations milestone is next. [Source audit](../research/sources/atlas-v92-britain-german-claims-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)
+
 ## 12 November 2026 · v9.1 June losses and mission evidence
 
 The January–June mission timeline now includes 60 June daily German command totals, 189 aircraft-type and role entries, and 12 unit, airframe and encounter entries. The Cobra evidence shows the 25 July German command return and the separate Eighth and Ninth Air Force reporting scopes. The Bodenplatte dossier includes the Manrho and Pütz aircraft breakdown with its source qualification. [Research and reconciliation](../research/sources/atlas-v91-june-loss-returns-and-missions-2026-11-12.md) · [Live June timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=june)
 
-The next milestones are the Battle of Britain German-to-RAF claim series, the May and July 1944 operational returns with a batch of matched-source cases, and Bodenplatte airfield-level loss accounting. [Milestone scopes and completion evidence](LATEST_INSIGHTS.md#next-milestones)
 
 ## January–June 1944 bombing and air defence
 

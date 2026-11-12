@@ -1,5 +1,7 @@
 # Battle of Britain — German weekly loss series (12 November 2026)
 
+Integration review. These dates and figures match the pre-existing Churchill transcription. Its German column measures German losses. The v9.2 audit documents the added German staff claim subtotals and the distinct scope of the 823-aircraft survey. [Integration audit](atlas-v92-britain-german-claims-2026-11-12.md)
+
 German aircraft destroyed by week, matched to the reverse comparison needed for milestone 1. The series totals 1,733, consistent with the official German records already held from the Hansard phase table.
 
 Source: Winston Churchill, *The Second World War* (via World Wars.net compilation). RAF losses and RAF claims are shown for context; the German column is the new quantitative set.
