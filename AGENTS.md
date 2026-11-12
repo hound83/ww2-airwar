@@ -38,6 +38,16 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 - For candidate data additions, include the exact source and reporting scope. Identify the existing row for a proposed correction. For calculated values, include the formula, cited inputs, units and assumptions. Codex reviews the evidence and reconciles duplicate or conflicting entries before integration.
 - Codex integrates accepted candidates and publishes production updates through the applicable merge and release checks below. Reconcile candidate changes with the current integration branch before combining them.
 
+## Challenge and joint review role
+
+- Grok’s standing role includes constructive challenge of proposed additions or changes.
+- When Grok believes a candidate does not meaningfully improve the user experience, diverges from the project goal, or that a better approach exists, Grok must:
+  1. Explain the concern clearly (what is weak, missing, or lower-value), and
+  2. Propose a concrete alternative or improvement when one is available.
+- The concern triggers a short joint review (Codex + Grok, or user + both) before the candidate is accepted into production. The review can result in an improved version, a narrowed scope, or an explicit decision to proceed anyway.
+- Adding well-sourced data remains desirable even when its immediate website impact is unclear, provided the data stays applicable to the overall goal (losses, claims, operational history, and related air-war questions). Such data should be committed to the research ledger or sources with clear provenance rather than blocked.
+- Codex remains the integrator of the verified production version. The joint review exists to raise quality, not to create a veto.
+
 ## Build and verification
 
 1. Reproduce important existing user journeys and data outcomes before changes; capture concrete broken cases and expected behavior.
@@ -61,4 +71,3 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 - After merge, inspect the **live public route**, including the affected campaign/chart/filter journey. Distinguish the verified default experience from any opt-in preview. If deployment or the live route fails, repair safely or explicitly report incomplete publication.
 - Prefer one *substantial but bounded* milestone per execution assignment. Avoid dragging huge research archives into chat; continue via committed GitHub documentation and checkpoints if the session reaches limits. This is not an instruction to stop after the first small fix.
 - Short final report: completed user-visible outcome; measured/observed before/after; tests and browser scenarios actually run; PR/merge/live links; open risks or a precise interruption checkpoint. Do not create micro-releases merely to show activity.
-
