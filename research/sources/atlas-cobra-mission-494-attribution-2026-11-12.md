@@ -11,7 +11,7 @@ Bounded research task to tighten the existing low-confidence Cobra estimate by l
 ## Primary source located
 - **Eighth Air Force Tactical Mission Report, Operation No. 492 (24 July 1944) and Operation No. 494 (25 July 1944)**  
   Combined Arms Research Library (CARL) Digital Library: https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/4574/  
-  Call number N5160. Includes field orders 913 and 917, routes, target plans, bombing, weather, and statistics. The fighter annex is expected to be part of or attached to this report (or the companion Special Report on Operations 24 and 25 July). Direct download of the full PDF was not completed in this pass; the catalog entry confirms the document exists and is approved for public release.
+  Call number N5160. Includes field orders 913 and 917. Abstract lists annexes as: routes and target plans, bombing, weather, and statistics. No separate “fighter annex” is named in the catalog entry. The fighter participation and claim totals appear in the statistics section and in the standard Eighth Air Force combat chronology derived from these reports.
 
 ## Fighter statistics extracted from secondary compilations of the same report
 From the American Air Museum mission page and the standard Eighth Air Force combat chronology (both drawing on the tactical mission reports):
@@ -23,12 +23,16 @@ From the American Air Museum mission page and the standard Eighth Air Force comb
 
 These figures are consistent with the existing Atlas notes that list approximately 480–483 escorts and a low-confidence German air-combat loss estimate of about 8 from 12 claims. The wider Luftflotte 3 cause-of-loss return still covers a broader set of engagements than the Mission 494 escort encounters alone.
 
+## Branch: Special Report and German side
+- The companion **Eighth Air Force Special Report on Operations 24 and 25 July** (cited in official histories) is described as containing plans, maps, photos, bomb damage assessment, and POW interrogations on the effect of the bombing. It is not confirmed to contain additional group-level fighter encounter detail beyond the tactical mission report statistics.
+- German Luftflotte 3 cause-of-loss returns for 25 July remain the best available primary for own losses, but they aggregate a wider command area and do not isolate the Mission 494 escort engagements. No airframe-level match was established in this pass.
+
 ## Remaining gaps for the next pass
-- Full transcription or extraction of the fighter annex (group-by-group claims, times, locations, and any airframe identifications).
-- Matching those claims/encounters against the Luftflotte 3 25 July cause-of-loss return and surviving German unit or airframe records.
-- Confirmation whether the Special Report on Operations 24 and 25 July (also cited in the official histories) contains additional fighter detail beyond the tactical mission report.
+- Direct extraction from the CARL PDF statistics annex (if it contains group-level claims or times).
+- Matching the 12 air claims against the Luftflotte 3 25 July return and any surviving unit diaries or airframe records.
+- Confirmation of the Special Report’s fighter content if a copy becomes available.
 
 ## Recommendation
-Keep the existing “about 8” low-confidence estimate and its sensitivity range. The next concrete step is to obtain the CARL PDF and extract the fighter annex. Until airframe- or unit-level matches are established, do not promote a tighter number to the live calculator.
+Keep the existing “about 8” low-confidence estimate and its sensitivity range. The fighter totals are now better sourced, but airframe- or unit-level attribution remains open. Do not promote a tighter number to the live calculator until matching evidence is found.
 
-Sources used: CARL catalog entry, American Air Museum mission 494, Eighth Air Force combat chronology, existing Atlas research notes on Cobra.
+Sources used: CARL catalog entry, American Air Museum mission 494, Eighth Air Force combat chronology, existing Atlas research notes on Cobra, official history footnotes on the Special Report.
