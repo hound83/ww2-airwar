@@ -21,6 +21,9 @@ for (const row of observations) {
   assert.ok([...fieldIds, "operation"].includes(row.place), row.id);
   assert.ok(row.population && row.setting && row.locator && row.note && row.quality, row.id);
   assert.equal(new URL(sources[row.source].url).protocol, "https:", row.id);
+  for (const reference of row.relatedSources || []) {
+    assert.ok(reference.locator && sources[reference.source], row.id);
+  }
   if (row.quality === "unquantified") assert.equal(row.value, null);
   else assert.ok([row.value].flat().every(value => Number.isInteger(value) && value >= 0), row.id);
   if (Array.isArray(row.value)) assert.ok(row.value.length === 2 && row.value[0] < row.value[1]);
@@ -30,6 +33,8 @@ assert.equal(get("eindhoven-air").value + get("eindhoven-ground").value, get("ei
 assert.equal(get("asch-487th-lost").value, 0);
 assert.equal(get("metz-368-loss").value, null);
 assert.equal(get("metz-jg53-loss").setting, "Metz sector");
+assert.equal(get("operation-typhoon-ff").serial, "EK497");
+assert.equal(get("operation-typhoon-ff").place, "operation");
 assert.equal(get("evere-grimbergen-ff").setting, "Grimbergen route");
 assert.equal(get("melsbroek-jg27-lost").value + get("melsbroek-jg54-lost").value, 20);
 assert.equal(get("melsbroek-combined-lost").value, 21);

@@ -2,7 +2,7 @@
 
 ## Bodenplatte airfield and unit losses
 
-The five airfield accounts follow Eindhoven, Asch, Evere, Melsbroek and Metz–Frescaty from the attack to the aircraft and formation records. At Metz the 365th Fighter Group’s 22 destroyed and 11 badly damaged Thunderbolts are distinct from the unquantified 368th Fighter Group losses. At Asch the 487th’s explicit zero airborne Mustang losses and JG 11’s route-wide 28 have different populations. The ledger links these records, the operation-wide reporting differences and two identified airframes. [Airfield explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Source audit](../research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md)
+The five airfield accounts follow Eindhoven, Asch, Evere, Melsbroek and Metz–Frescaty from the attack to the aircraft and formation records. At Metz the 365th Fighter Group’s 22 destroyed and 11 badly damaged Thunderbolts are distinct from the unquantified 368th Fighter Group losses. At Asch the 487th’s explicit zero airborne Mustang losses and JG 11’s route-wide 28 have different populations. The ledger links these records, the operation-wide reporting differences and three identified airframes. [Airfield explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Source audit](../research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md)
 
 ## Atlas v9.3.1
 

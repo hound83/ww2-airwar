@@ -41,7 +41,9 @@
           '</span><span class="muted">' + escape(row.setting) + '</span></span></summary><p>' +
           escape(row.note) + (row.serial ? ' <strong>' + escape(row.serial) + '</strong>' : "") +
           '</p><p>' + sourceLink(source, row.locator) + ' · ' + escape(source.type) +
-          ' · ' + escape(row.quality) + '</p></details>';
+          ' · ' + escape(row.quality) + '</p>' + (row.relatedSources || []).map(reference =>
+            '<p>' + sourceLink(sources[reference.source], reference.locator) + '</p>').join("") +
+          '</details>';
       }).join("");
       return '<div class="loss-group"><' + headingLevel + '>' + side + ' records</' +
         headingLevel + '>' + contents + '</div>';

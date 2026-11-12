@@ -139,7 +139,7 @@
       "type": "Indirect specialist citations"
     },
     "smithsonian": {
-      "title": "Robert F. Dorr and Thomas D. Jones, Cold Front, Smithsonian Air & Space",
+      "title": "Thomas D. Jones and Robert F. Dorr, Cold Front, Smithsonian Air & Space",
       "url": "https://www.smithsonianmag.com/air-space-magazine/cold-front-7359183/",
       "type": "Veteran interviews and group history"
     },
@@ -162,6 +162,11 @@
       "title": "U.S. Air Force Historical Research Agency, European airfields",
       "url": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
       "type": "Official airfield catalogue"
+    },
+    "sglo": {
+      "title": "Studiegroep Luchtoorlog 1939–1945, 1945 loss register",
+      "url": "https://wo2-hoekschewaard.nl/wp-content/uploads/2014/12/register1945.pdf",
+      "type": "Specialist loss register"
     }
   },
   "observations": [
@@ -234,7 +239,6 @@
     {"id":"metz-jg53-loss","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Lost","value":30,"setting":"Metz sector","quality":"secondary","source":"sector","locator":"Metz-Frescaty table and note 64","note":"Both assignments combined. Do not add the strike force losses."},
     {"id":"metz-jg53-damaged","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Damaged","value":8,"setting":"Metz sector","quality":"secondary","source":"sector","locator":"Metz-Frescaty table and note 64","note":"Both assignments combined."},
     {"id":"metz-jg53-claims","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Claimed destroyed","value":27,"setting":"Ground","quality":"claim","source":"sector","locator":"Metz-Frescaty table and note 64","note":"German claim for U.S. fighters on the ground."},
-    {"id":"metz-typhoon-ff","place":"metz","side":"Allied","population":"No. 183 Squadron RAF","aircraft":"Typhoon","metric":"Destroyed","value":1,"setting":"Air","quality":"reported","source":"raf","locator":"Friendly-fire case 102, 1 January 1945","note":"U.S. P-51 shot down an Allied Typhoon. Separate afternoon friendly-fire case near Metz; location from Rickard, 5. Jagddivision."},
     {"id":"operation-taf-lost","place":"operation","side":"Allied","population":"Second Tactical Air Force","aircraft":"Mixed aircraft","metric":"Destroyed","value":127,"setting":"Operation","quality":"reported","source":"canada","locator":"p. 343, note 68","note":"Second Tactical Air Force only. American losses are reported separately."},
     {"id":"operation-taf-damaged","place":"operation","side":"Allied","population":"Second Tactical Air Force","aircraft":"Mixed aircraft","metric":"Damaged","value":133,"setting":"Operation","quality":"reported","source":"canada","locator":"p. 343, note 68","note":"Same command population."},
     {"id":"operation-report-lost","place":"operation","side":"Allied","population":"RAF and USAAF report synthesis","aircraft":"Mixed aircraft","metric":"Destroyed","value":173,"setting":"Ground","quality":"approximate","source":"milhist","locator":"Overall results","note":"Approximate official-report synthesis with incomplete U.S. coverage."},
@@ -251,6 +255,7 @@
     {"id":"operation-mp-twin-damaged","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz breakdown","aircraft":"Twin-engine aircraft","metric":"Damaged","value":4,"setting":"Operation","quality":"secondary","source":"manrho","locator":"Loss statistics, p. 273 as cited","note":"Twin-engine category. Existing Atlas dossier observation."},
     {"id":"operation-german-flak","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz reconstruction","aircraft":"Mixed aircraft","metric":"Destroyed","value":17,"setting":"German anti-aircraft fire","quality":"lower bound","source":"manrho","locator":"Loss statistics, friendly-fire discussion","note":"Aircraft the authors could attribute with certainty. The accessible account gives a wider possible total of 30–35. This subset overlaps the German loss totals."},
     {"id":"operation-mp-allied-conflict-destroyed","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Destroyed","value":305,"setting":"Air coverage disputed","quality":"alternative","source":"manrho","locator":"Loss statistics, Allied losses paragraph","note":"This summary gives 305 and then lists 15 more in aerial combat. The operation article explicitly includes those 15 in its 305. The book’s loss appendices are needed to resolve the difference."},
-    {"id":"operation-mp-allied-conflict-damaged","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Damaged","value":190,"setting":"Air coverage disputed","quality":"alternative","source":"manrho","locator":"Loss statistics, Allied losses paragraph","note":"This summary gives 190 and then lists 10 more in aerial combat. The operation article explicitly includes those 10 in its 190."}
+    {"id":"operation-mp-allied-conflict-damaged","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Damaged","value":190,"setting":"Air coverage disputed","quality":"alternative","source":"manrho","locator":"Loss statistics, Allied losses paragraph","note":"This summary gives 190 and then lists 10 more in aerial combat. The operation article explicitly includes those 10 in its 190."},
+    {"id":"operation-typhoon-ff","place":"operation","side":"Allied","population":"No. 183 Squadron RAF","aircraft":"Typhoon Mk Ib","metric":"Destroyed","value":1,"setting":"Air, afternoon","quality":"airframe","source":"sglo","locator":"1 January 1945, 15:00, Rips-Milheeze, EK497","note":"F/O Donald Webber. RAF Air Power Review case 102 identifies a U.S. P-51 as the cause. Rickard discusses the incident under Asch. The loss register places the crash at Rips-Milheeze.","serial":"EK497","relatedSources":[{"source":"raf","locator":"Friendly-fire case 102"},{"source":"milhist","locator":"JG 11, afternoon friendly-fire incident"}]}
   ]
 }

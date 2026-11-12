@@ -2,7 +2,7 @@
 
 ## 13 November 2026 · Bodenplatte airfield and unit losses
 
-The campaign dossier links to five airfield accounts with 70 local or unit observations and 17 operation-wide records. The ledger retains two identified airframes, the differing Evere and Melsbroek accounts, and the scope of JG 53’s Metz-sector return. The remaining work is individual airframe and casualty reconciliation from the unit returns. [Airfield explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Source audit](../research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md)
+The campaign dossier links to five airfield accounts with 69 local or unit observations and 18 operation-wide records. The ledger retains three identified airframes, the differing Evere and Melsbroek accounts, and the scope of JG 53’s Metz-sector return. The remaining work is individual airframe and casualty reconciliation from the unit returns. [Airfield explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Source audit](../research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md)
 
 ## 12 November 2026 · v9.3.1 May and July Western air war
 
