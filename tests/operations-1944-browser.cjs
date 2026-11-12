@@ -87,12 +87,13 @@ module.exports = async (browser, base, root) => {
 
       await page.getByRole("button", {name: "July 1944", exact: true}).click();
       assert.equal(await page.locator("input[name=to]").inputValue(), "1944-07-31");
-      assert.match(await page.locator("#filter-status").innerText(), /37 records across 31 start dates/);
+      assert.match(await page.locator("#filter-status").innerText(), /39 records across 31 start dates/);
       await page.locator("#coverage-force").selectOption("west");
       const julyCoverage = page.locator("#coverage-rows tr").filter({hasText: "July"});
       await julyCoverage.locator("summary").click();
       assert.match(await julyCoverage.innerText(), /602 \/ 602 · 31 of 31 days/);
-      assert.match(await julyCoverage.innerText(), /279 \/ 288 · 29 of 31 days/);
+      assert.match(await julyCoverage.innerText(), /289 \/ 288 · 31 of 31 days/);
+      assert.match(await julyCoverage.innerText(), /86 \/ 87 · 31 of 31 days/);
       assert.ok(await julyCoverage.locator('a[href$="#page=28"]').count());
       const mayCoverage = page.locator("#coverage-rows tr").filter({hasText: "May"});
       await mayCoverage.locator("summary").click();
@@ -110,7 +111,7 @@ module.exports = async (browser, base, root) => {
       const targetsPromise = page.waitForEvent("download");
       await page.getByRole("link", {name: "Download Davis target rows (CSV)"}).click();
       const targetsCsv = await fs.readFile(await (await targetsPromise).path(), "utf8");
-      assert.equal(targetsCsv.trimEnd().split("\n").length, 498);
+      assert.equal(targetsCsv.trimEnd().split("\n").length, 636);
 
       await julyCases.getByRole("link", {name: "Cobra", exact: true}).click();
       await page.locator(".record").first().waitFor();
@@ -118,6 +119,10 @@ module.exports = async (browser, base, root) => {
       const cobra105 = page.locator(".record").filter({has: page.locator(".title", {hasText: "Saint-Gilles defended area"})});
       await cobra105.locator("summary").click();
       assert.match(await cobra105.innerText(), /OpRep 116/);
+      const lisieux = page.locator(".record").filter({has: page.locator(".title", {hasText: "406th Fighter Group encounter"})});
+      await lisieux.locator("summary").click();
+      assert.match(await lisieux.innerText(), /Air claims · destroyed\s+4/);
+      assert.match(await lisieux.innerText(), /Aircraft missing\s+1/);
       const marigny = page.locator(".record").filter({has: page.locator(".title", {hasText: "weather abort"})});
       await marigny.locator("summary").click();
       assert.match(await marigny.innerText(), /Aircraft attacking\s+0/);

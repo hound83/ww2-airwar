@@ -12,9 +12,9 @@ The research datasets distinguish operationally serviceable aircraft, assigned s
 
 **Release evidence:** [Normandy historical research and interpretation limits](research/sources/normandy-1944-story-benchmark-2026-11-10.md) · [Normandy benchmark QA](docs/ATLAS_NORMANDY_STORY_BENCHMARK_QA_2026-11-10.md) · [German/Soviet original-source ledger](research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md).
 
-## v9.3 Western air war in May and July 1944
+## v9.3.1 Western air war in May and July 1944
 
-The [1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) covers January through July with 2,093 dated records. The July Luftflotte 3 enemy-action destruction total reconciles across 31 days. The timeline links the records for Normandy night operations, Goodwood, Évreux and Cobra. The [Davis target extract](research/transcriptions/davis-western-targets-may-july-1944.csv) adds 497 May and July Eighth Air Force target rows. [Source audit and outstanding May scans](research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md)
+The [1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) covers January through July with 2,103 dated records. All nine published July loss measures have daily Luftflotte 3 figures. Seven reconcile with the monthly return. The timeline links Normandy night operations, Goodwood, Évreux and Cobra. The [Davis target extract](research/transcriptions/davis-western-targets-may-july-1944.csv) contains 635 May and July Eighth Air Force target rows. [Source audit and outstanding May scans](research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md)
 
 ## v9.2 Battle of Britain German claims and RAF losses
 
