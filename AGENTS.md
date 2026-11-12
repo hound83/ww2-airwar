@@ -31,6 +31,13 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 - A battle/campaign page must answer useful historical questions and connect relevant events to evidence; do not surface isolated trivia or unrelated units/timeframes just because they exist in the database.
 - **Persist research, not just implementation:** for each research task, commit the relevant findings to the existing `research/sources/` records or a suitable source audit/data note, even when no feature uses them yet. Preserve reusable extracted figures and definitions, original source IDs/links/pages, reporting scope, confidence, contradictions, useful negative findings and remaining gaps. Prefer small CSV/JSON datasets plus concise Markdown explanations; summarize lengthy investigations without discarding the evidence needed to reproduce or reuse them. Link to original archives instead of committing large scans, PDFs, downloaded pages or redundant research dumps.
 
+## Parallel research and production ownership
+
+- Codex leads shared Atlas work and owns the latest verified production version. Codex is responsible for the canonical data and schema, integration, verification and publication. Record the deployed revision and its verification result when production changes.
+- Codex and Grok may each develop work-in-progress versions and submit candidates. Use a dedicated branch or worktree for each candidate, or a standalone handoff file for chat-based research. Keep one shared milestone tracker with each work item's owner, scope, baseline commit and expected deliverable. Mark intentional overlap as independent review.
+- For candidate data additions, include the exact source and reporting scope. Identify the existing row for a proposed correction. For calculated values, include the formula, cited inputs, units and assumptions. Codex reviews the evidence and reconciles duplicate or conflicting entries before integration.
+- Codex integrates accepted candidates and publishes production updates through the applicable merge and release checks below. Reconcile candidate changes with the current integration branch before combining them.
+
 ## Build and verification
 
 1. Reproduce important existing user journeys and data outcomes before changes; capture concrete broken cases and expected behavior.
