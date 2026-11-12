@@ -1,8 +1,12 @@
 # Atlas status and next work
 
+## 12 November 2026 · v9.3 May and July Western air war
+
+The timeline adds 113 dated records, including 31 July Luftflotte 3 daily loss returns and operation checks for Normandy night work, Goodwood, Évreux and Cobra. The separate worksheet export adds 497 target rows. The July enemy-action destruction figures reconcile across all 31 days. The May daily rows and remaining July cause cells need legible source scans. The roadmap retains the Bodenplatte field and unit ledger as the next campaign milestone. [July timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [Audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)
+
 ## 12 November 2026 · v9.2 German claims and British losses
 
-All 17 Battle of Britain weeks and five phases now show a reverse comparison with source coverage. The British reconstruction covers 114 days. Captured German staff reports contribute 34 daily fighter-claim figures. The source audit preserves separate loss definitions, the later Cox days, seven raid or unit checks and archive references for later German returns. The May and July 1944 operations milestone is next. [Source audit](../research/sources/atlas-v92-britain-german-claims-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)
+All 17 Battle of Britain weeks and five phases now show a reverse comparison with source coverage. The British reconstruction covers 114 days. Captured German staff reports contribute 34 daily fighter-claim figures. The source audit preserves separate loss definitions, the later Cox days, seven raid or unit checks and archive references for later German returns. [Source audit](../research/sources/atlas-v92-britain-german-claims-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)
 
 ## 12 November 2026 · v9.1 June losses and mission evidence
 

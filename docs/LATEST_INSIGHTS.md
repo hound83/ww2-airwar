@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Atlas v9.3
+
+The May and July batch adds 113 timeline records and 497 downloadable Eighth Air Force target rows. The 31 July Luftflotte 3 daily destruction counts sum to the printed 602 enemy-action losses. Six fighter-type subtotals and the Allied and German operations records cover the Normandy night work, Goodwood, the Évreux rail bridge and both Cobra dates. Remaining German cause cells and both May daily command tables are tracked in the source audit. [July timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [May and July audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md)
+
 ## Atlas v9.2
 
 The Battle of Britain comparison now covers 17 weeks and five phases in both directions. The German-to-RAF views add 114 daily British airframe-loss rows, 34 dated German staff fighter-claim figures, and seven raid and unit checks. The captured reports give figures for two complete reporting windows and parts of four more. The other windows display gaps, with separate links to the seven Cox dates. [Live comparison](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?loss-scope=britain-campaign&loss-series=britain-german-weeks#claim-loss-calculator) · [Sources and remaining returns](../research/sources/atlas-v92-britain-german-claims-2026-11-12.md)
@@ -16,7 +20,7 @@ Grok’s follow-up supplied the Cobra figures, the specialist Bodenplatte breakd
 
 | Order | Scope | Completion evidence |
 | --- | --- | --- |
-| **2. Western air war, May and July 1944 returns and operations** | Extend the June image audit to both May command returns and the July Luftflotte 3 return. Reconcile dates and totals. Build a multi-operation batch across Normandy night attacks, Goodwood, Évreux and 24/25 July Cobra, adding Ninth Air Force and RAF 2nd TAF reports where they cover the same events. | Page-linked command returns and several unit comparisons are available in the Atlas. Publish comparable Allied and German scopes with unresolved rows visible. Pursue CARL N5160, the Eighth’s July special report, Frappé and the Davis 1944 workbook where they can change the outcome. |
+| **2. Western air war source gaps** | Obtain legible copies of the two May returns, finish the inverted July cause cells and locate the Ninth Air Force July report and Eighth special report in the archives. Extend the Davis May German-target window. | Daily May rows reconcile against their printed command totals. July cause totals give metric-by-metric coverage. A unit-level match to the Cobra escort uses the fighter report and a German airframe source. |
 | **3. Bodenplatte, airfield and unit losses** | Build a bilateral ledger for Eindhoven, Asch, Evere, Melsbroek and Metz-Frescaty. Use the existing 37 formation leads, specialist loss lists and Allied airfield or squadron reports. | Reconcile ground and air losses, damage and German friendly fire by unit and location. Link airframes where the evidence permits, then compare with the published operation totals and retain differences with their source scopes. |
 
 Narvik and the other campaign evidence candidates remain available for later campaign coverage work. [Bilateral evidence candidate](https://github.com/hound83/ww2-airwar/pull/20) · [Narvik candidate](https://github.com/hound83/ww2-airwar/pull/15) · [Wider roadmap](https://github.com/hound83/ww2-airwar/pull/23)

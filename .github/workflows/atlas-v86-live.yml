@@ -8,6 +8,7 @@ on:
       - 'operations-1944.html'
       - 'dist/operations-1944.*'
       - 'research/transcriptions/operations-january-june-1944.json'
+      - 'research/transcriptions/davis-western-targets-may-july-1944.csv'
       - 'tests/operations-1944-browser.cjs'
       - 'dist/grand-air-war-v80-core.js'
       - 'dist/grand-air-war-v86*'
