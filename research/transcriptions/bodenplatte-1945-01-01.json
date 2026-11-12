@@ -1,0 +1,256 @@
+{
+  "date": "1945-01-01",
+  "fields": [
+    {
+      "id": "eindhoven",
+      "name": "Eindhoven",
+      "code": "B-78",
+      "country": "Netherlands",
+      "lat": 51.45,
+      "lng": 5.38,
+      "story": "JG 3 caught Canadian Typhoons lined up for takeoff. Elements of JG 6 also strafed the field after misidentifying it.",
+      "allied": "Nos. 39 and 143 Wings RCAF; visiting No. 124 Wing RAF",
+      "german": "JG 3; elements of JG 6",
+      "gap": "The Canadian account’s takeoff losses, the wing figures and the published station totals overlap. JG 3’s losses cover its mission, including the route.",
+      "sources": [
+        "canada",
+        "bhic",
+        "sector",
+        "nimh"
+      ]
+    },
+    {
+      "id": "asch",
+      "name": "Asch / Zutendaal",
+      "code": "Y-29",
+      "country": "Belgium",
+      "lat": 50.95,
+      "lng": 5.6,
+      "story": "The 390th Fighter Squadron was already airborne when the 487th scrambled under fire. Part of JG 11 attacked nearby Ophoven after mistaking it for Asch.",
+      "allied": "366th and 352nd Fighter Groups, USAAF",
+      "german": "JG 11; elements of JG 4 also reached Asch",
+      "gap": "JG 11’s losses cover its entire assignment, including Ophoven and losses en route. The reported Mustang zero covers the 487th’s scramble only. A base-wide Allied loss return is still missing.",
+      "sources": [
+        "asch",
+        "memorial",
+        "sector"
+      ]
+    },
+    {
+      "id": "evere",
+      "name": "Brussels–Evere",
+      "code": "B-56",
+      "country": "Belgium",
+      "lat": 50.88,
+      "lng": 4.41,
+      "story": "Icy runways held No. 127 Wing’s Spitfires on the ground. The raid also struck other aircraft at the field, including transports.",
+      "allied": "No. 127 Wing RCAF; other RAF and U.S. aircraft at the field",
+      "german": "II. and III./JG 26",
+      "gap": "No. 127 Wing’s Spitfires are a subset of the airfield population. The published 34/29 and 60–61 figures use incompletely described coverage. The Grimbergen force had a separate route and loss account.",
+      "sources": [
+        "canada",
+        "sector"
+      ]
+    },
+    {
+      "id": "melsbroek",
+      "name": "Brussels–Melsbroek",
+      "code": "B-58",
+      "country": "Belgium",
+      "lat": 50.9,
+      "lng": 4.49,
+      "story": "Attackers from JG 27 and IV./JG 54 strafed an airfield serving reconnaissance, bomber and transport units. Parked aircraft included Wellingtons, Spitfires, Mosquitoes and Harrows.",
+      "allied": "Nos. 16, 69, 140 and 271 Squadrons RAF; No. 139 Wing RAF",
+      "german": "JG 27; IV./JG 54",
+      "gap": "The published airfield total and the listed squadron and wing figures overlap. Some aircraft visiting the field lack comparable unit returns. The German sources do not split the seven outbound losses by cause.",
+      "sources": [
+        "sector",
+        "hwh",
+        "codes"
+      ]
+    },
+    {
+      "id": "metz",
+      "name": "Metz–Frescaty",
+      "code": "Y-34 · A-90",
+      "country": "France",
+      "lat": 49.08,
+      "lng": 6.13,
+      "story": "JG 53 hit parked Thunderbolts at Frescaty. U.S. fighters intercepted a separate part of the same wing’s force elsewhere in the Metz sector.",
+      "allied": "365th and 368th Fighter Groups, USAAF",
+      "german": "Stab, II. and IV./JG 53 at Frescaty; III./JG 53 elsewhere in the sector",
+      "gap": "The 22/11 figures cover the 365th Fighter Group. The 368th also reported losses without a usable count here. JG 53’s 30/8 total covers both German missions.",
+      "sources": [
+        "smithsonian",
+        "bergstrom",
+        "sector"
+      ]
+    }
+  ],
+  "sources": {
+    "canada": {
+      "title": "Royal Canadian Air Force official history, The Crucible of War, vol. III",
+      "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-9.pdf",
+      "type": "Official history"
+    },
+    "nimh": {
+      "title": "Netherlands Institute for Military History, Operatie Bodenplatte",
+      "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/bevrijding-van-nederland-1944-1945/achtergronden/jagdgeschwader-1-twente/na-market-garden",
+      "type": "Institutional history"
+    },
+    "bhic": {
+      "title": "Brabants Historisch Informatie Centrum, Vliegveld Eindhoven aangevallen!",
+      "url": "https://www.bhic.nl/ontdekken/verhalen/vliegveld-eindhoven-aangevallen",
+      "type": "Regional archive article"
+    },
+    "keller": {
+      "title": "Aircrew Remembered, Ross Whaley Keller",
+      "url": "https://aircrewremembered.com/keller-ross-whaley.html",
+      "type": "Airframe and crew reconstruction"
+    },
+    "asch": {
+      "title": "366th Fighter Association, Legend of Y-29",
+      "url": "https://www.366thgunfighters.org/links-to-our-friends-and-related-sites.html",
+      "type": "Veterans association"
+    },
+    "memorial": {
+      "title": "U.S. War Memorials Overseas, Y-29 memorial",
+      "url": "https://www.uswarmemorials.org/html/monument_details.php?MemID=1965&SiteID=1484",
+      "type": "Memorial account"
+    },
+    "limburg": {
+      "title": "Mathieu Rutten, Oorlog in Limburg",
+      "url": "https://rutten.org/literatuur/mathieu-rutten/markante-feiten/",
+      "type": "Local crash register transcription"
+    },
+    "sector": {
+      "title": "Operation Bodenplatte, linked specialist citations",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bodenplatte",
+      "type": "Indirect specialist citations"
+    },
+    "milhist": {
+      "title": "John Rickard, Operation Bodenplatte",
+      "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+      "type": "Secondary synthesis"
+    },
+    "manrho": {
+      "title": "Manrho and Pütz, Bodenplatte, via the published loss tables",
+      "url": "https://en.wikipedia.org/wiki/German_and_Allied_aircraft_losses_during_Operation_Bodenplatte",
+      "type": "Indirect specialist citations"
+    },
+    "smithsonian": {
+      "title": "Robert F. Dorr and Thomas D. Jones, Cold Front, Smithsonian Air & Space",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/cold-front-7359183/",
+      "type": "Veteran interviews and group history"
+    },
+    "bergstrom": {
+      "title": "Christer Bergström, The Ardennes, 1944–1945",
+      "url": "https://erenow.org/ww/ardennes-1944-1945-hitlers-winter-offensive/11.php",
+      "type": "Specialist secondary"
+    },
+    "hwh": {
+      "title": "Heemkring De Wesp, No. 69 Squadron at Melsbroek",
+      "url": "https://www.hwh.be/Publicaties/Artikels/HWH020C1.htm",
+      "type": "Local history and veteran testimony"
+    },
+    "raf": {
+      "title": "Chris Hobson, Allied friendly fire incidents, Air Power Review",
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol2-iss2-3-pdf/",
+      "type": "RAF journal loss chronology"
+    },
+    "codes": {
+      "title": "U.S. Air Force Historical Research Agency, European airfields",
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "type": "Official airfield catalogue"
+    }
+  },
+  "observations": [
+    {"id":"eindhoven-takeoff","place":"eindhoven","side":"Allied","population":"Nos. 438 and 440 Squadrons RCAF","aircraft":"Typhoon","metric":"Participating","value":16,"setting":"Runway","quality":"reported","source":"canada","locator":"pp. 341–343, notes 63–65","note":"Eight aircraft per squadron, lined up for departure."},
+    {"id":"eindhoven-air","place":"eindhoven","side":"Allied","population":"Nos. 438 and 440 Squadrons RCAF","aircraft":"Typhoon","metric":"Destroyed","value":2,"setting":"Air","quality":"reported","source":"canada","locator":"pp. 341–343, notes 63–65","note":"Two of the 16 got airborne and were shot down."},
+    {"id":"eindhoven-ground","place":"eindhoven","side":"Allied","population":"Nos. 438 and 440 Squadrons RCAF","aircraft":"Typhoon","metric":"Destroyed or damaged","value":14,"setting":"Ground","quality":"reported","source":"canada","locator":"pp. 341–343, notes 63–65","note":"Remainder of the 16 at takeoff. The account does not tabulate write-offs separately."},
+    {"id":"eindhoven-pilots","place":"eindhoven","side":"Allied","population":"Nos. 438 and 440 Squadrons RCAF","aircraft":"Typhoon","metric":"Personnel killed","value":3,"setting":"Air and ground","quality":"reported","source":"canada","locator":"pp. 341–343, notes 63–65","note":"Pilots of the Typhoon wing."},
+    {"id":"eindhoven-condition","place":"eindhoven","side":"Allied","population":"Eindhoven airfield","aircraft":"Mixed aircraft","metric":"Destroyed or damaged","value":31,"setting":"Ground","quality":"reported","source":"canada","locator":"pp. 341–343, note 65","note":"Official Canadian account’s immediate description of aircraft left burning or shot up. Coverage differs from later station and wing figures."},
+    {"id":"eindhoven-pd503","place":"eindhoven","side":"Allied","population":"No. 438 Squadron RCAF","aircraft":"Typhoon Mk Ib","metric":"Destroyed","value":1,"setting":"Takeoff","quality":"airframe","source":"keller","locator":"PD503 entry, 1 January 1945","note":"F/O Ross Whaley Keller. This named airframe overlaps the takeoff losses.","serial":"PD503"},
+    {"id":"eindhoven-station-destroyed","place":"eindhoven","side":"Allied","population":"Eindhoven airfield","aircraft":"Mixed aircraft","metric":"Destroyed","value":43,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 118 and 122–123","note":"British records as cited in the reconstruction."},
+    {"id":"eindhoven-station-damaged","place":"eindhoven","side":"Allied","population":"Eindhoven airfield","aircraft":"Mixed aircraft","metric":"Damaged","value":60,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 118 and 122–123","note":"Same British-record reconstruction."},
+    {"id":"eindhoven-alternative-destroyed","place":"eindhoven","side":"Allied","population":"Eindhoven airfield","aircraft":"Mixed aircraft","metric":"Destroyed","value":47,"setting":"Airfield","quality":"alternative","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 118 and 122–123","note":"Alternative account, kept as a separate pair with 43 damaged."},
+    {"id":"eindhoven-alternative-damaged","place":"eindhoven","side":"Allied","population":"Eindhoven airfield","aircraft":"Mixed aircraft","metric":"Damaged","value":43,"setting":"Airfield","quality":"alternative","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 118 and 122–123","note":"Alternative account, paired with 47 destroyed."},
+    {"id":"eindhoven-wing39","place":"eindhoven","side":"Allied","population":"No. 39 Wing RCAF","aircraft":"Mixed aircraft","metric":"Destroyed or damaged","value":24,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, note 122","note":"Wing population. Separate destroyed and damaged figures are unavailable in this summary."},
+    {"id":"eindhoven-wing124","place":"eindhoven","side":"Allied","population":"No. 124 Wing RAF","aircraft":"Mixed aircraft","metric":"Destroyed or damaged","value":30,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, note 122","note":"Wing population. Separate destroyed and damaged figures are unavailable in this summary."},
+    {"id":"eindhoven-wing143","place":"eindhoven","side":"Allied","population":"No. 143 Wing RCAF","aircraft":"Mixed aircraft","metric":"Destroyed or damaged","value":29,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, note 122","note":"Wing population. Separate destroyed and damaged figures are unavailable in this summary."},
+    {"id":"eindhoven-jg3-commit","place":"eindhoven","side":"German","population":"JG 3","aircraft":"Bf 109 and Fw 190","metric":"Participating","value":60,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 79 and 118–121","note":"JG 3 fighters sent. KG 51 aircraft are outside this count."},
+    {"id":"eindhoven-jg3-lost","place":"eindhoven","side":"German","population":"JG 3","aircraft":"Bf 109 and Fw 190","metric":"Lost","value":15,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 79 and 118–121","note":"All-cause JG 3 mission losses. The source does not place all losses at Eindhoven."},
+    {"id":"eindhoven-jg3-single-claim","place":"eindhoven","side":"German","population":"JG 3","aircraft":"Bf 109 and Fw 190","metric":"Claimed destroyed","value":53,"setting":"Ground","quality":"claim","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 79 and 118–121","note":"German claim for single-engine targets."},
+    {"id":"eindhoven-jg3-twin-claim","place":"eindhoven","side":"German","population":"JG 3","aircraft":"Bf 109 and Fw 190","metric":"Claimed destroyed","value":11,"setting":"Ground","quality":"claim","source":"sector","locator":"Gilze-Rijen and Eindhoven, notes 79 and 118–121","note":"German claim for twin-engine targets."},
+    {"id":"asch-390th-air","place":"asch","side":"Allied","population":"390th Fighter Squadron, 366th Fighter Group","aircraft":"P-47","metric":"Participating","value":8,"setting":"Air","quality":"reported","source":"asch","locator":"Legend of Y-29, January 1945","note":"P-47s airborne as the attackers arrived."},
+    {"id":"asch-487th-scramble","place":"asch","side":"Allied","population":"487th Fighter Squadron, 352nd Fighter Group","aircraft":"P-51","metric":"Participating","value":12,"setting":"Takeoff","quality":"reported","source":"asch","locator":"Legend of Y-29, January 1945","note":"Mustangs beginning their takeoff as the Germans arrived."},
+    {"id":"asch-487th-lost","place":"asch","side":"Allied","population":"487th Fighter Squadron, 352nd Fighter Group","aircraft":"P-51","metric":"Lost","value":0,"setting":"Air","quality":"secondary","source":"sector","locator":"Asch, notes 83–85","note":"Explicit zero for the defending Mustangs in the air battle."},
+    {"id":"asch-487th-damaged","place":"asch","side":"Allied","population":"487th Fighter Squadron, 352nd Fighter Group","aircraft":"P-51","metric":"Damaged","value":2,"setting":"Air","quality":"secondary","source":"sector","locator":"Asch, notes 83–85","note":"Separate from one Mustang damaged on the ground in the account."},
+    {"id":"asch-487th-ground","place":"asch","side":"Allied","population":"487th Fighter Squadron, 352nd Fighter Group","aircraft":"P-51","metric":"Damaged","value":1,"setting":"Ground","quality":"secondary","source":"sector","locator":"Asch, notes 83–85","note":"Reported Mustang ground damage."},
+    {"id":"asch-487th-claims","place":"asch","side":"Allied","population":"487th Fighter Squadron, 352nd Fighter Group","aircraft":"German aircraft","metric":"Claimed destroyed","value":23,"setting":"Air","quality":"claim","source":"memorial","locator":"Airfield Y-29 Monument, narrative","note":"Memorial account of U.S. aerial credits. German losses cannot be matched one for one."},
+    {"id":"asch-jg11-commit","place":"asch","side":"German","population":"Stab, I., II. and III./JG 11","aircraft":"Bf 109 and Fw 190","metric":"Participating","value":61,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Asch, notes 77–91","note":"41 Fw 190s and 20 Bf 109s."},
+    {"id":"asch-jg11-lost","place":"asch","side":"German","population":"Stab, I., II. and III./JG 11","aircraft":"Bf 109 and Fw 190","metric":"Lost","value":28,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Asch, notes 77–91","note":"The German count includes the Ophoven diversion and losses on the route."},
+    {"id":"asch-jg11-aaa","place":"asch","side":"German","population":"Stab, I., II. and III./JG 11","aircraft":"Bf 109 and Fw 190","metric":"Destroyed","value":4,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Asch, notes 77–91","note":"Reconstruction attributed to Allied anti-aircraft fire. Subset of JG 11 losses."},
+    {"id":"asch-jg11-killed","place":"asch","side":"German","population":"Stab, I., II. and III./JG 11","aircraft":"Bf 109 and Fw 190","metric":"Personnel killed","value":20,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Asch, notes 77–91","note":"Pilots in the reconstructed JG 11 loss account."},
+    {"id":"asch-jg11-captured","place":"asch","side":"German","population":"Stab, I., II. and III./JG 11","aircraft":"Bf 109 and Fw 190","metric":"Personnel captured","value":4,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Asch, notes 77–91","note":"Pilots in the same account."},
+    {"id":"asch-wnr171742","place":"asch","side":"German","population":"3./JG 11","aircraft":"Fw 190 A-8","metric":"Lost","value":1,"setting":"Mission route","quality":"airframe","source":"limburg","locator":"Opglabbeek, 1 January 1945","note":"Recorded crash near Opglabbeek. Individual combat attribution remains unresolved.","serial":"WNr 171742"},
+    {"id":"evere-wing-present","place":"evere","side":"Allied","population":"No. 127 Wing RCAF","aircraft":"Spitfire","metric":"Present","value":60,"setting":"Airfield","quality":"approximate","source":"canada","locator":"p. 343, note 67","note":"Approximate Spitfire population."},
+    {"id":"evere-wing-affected","place":"evere","side":"Allied","population":"No. 127 Wing RCAF","aircraft":"Spitfire","metric":"Destroyed or damaged","value":24,"setting":"Airfield","quality":"reported","source":"canada","locator":"p. 343, note 67","note":"Official history groups the Spitfires affected during the raid."},
+    {"id":"evere-wing-air","place":"evere","side":"Allied","population":"No. 127 Wing RCAF","aircraft":"Spitfire","metric":"Lost","value":1,"setting":"Air","quality":"secondary","source":"sector","locator":"Brussels-Evere/Grimbergen, notes 97–100","note":"Spitfire lost in the air."},
+    {"id":"evere-wing-ground","place":"evere","side":"Allied","population":"No. 127 Wing RCAF","aircraft":"Spitfire","metric":"Lost","value":11,"setting":"Ground","quality":"secondary","source":"sector","locator":"Brussels-Evere/Grimbergen, notes 97–100","note":"Spitfires reported lost on the ground. The wing figures overlap the wider airfield accounts."},
+    {"id":"evere-field-destroyed","place":"evere","side":"Allied","population":"Evere airfield","aircraft":"Mixed aircraft","metric":"Destroyed","value":34,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Results of raid, loss table and Brussels-Evere/Grimbergen, note 98","note":"Conservative table entry, paired with 29 damaged."},
+    {"id":"evere-field-damaged","place":"evere","side":"Allied","population":"Evere airfield","aircraft":"Mixed aircraft","metric":"Damaged","value":29,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Results of raid, loss table and Brussels-Evere/Grimbergen, note 98","note":"Same airfield table entry, paired with 34 destroyed."},
+    {"id":"evere-field-alternate","place":"evere","side":"Allied","population":"Evere airfield","aircraft":"Mixed aircraft","metric":"Destroyed","value":[60,61],"setting":"Airfield","quality":"alternative","source":"sector","locator":"Results of raid, loss table and Brussels-Evere/Grimbergen, note 98","note":"Narrative reconstruction with incompletely described coverage. The source’s aircraft-type breakdown also differs."},
+    {"id":"evere-ii-jg26-lost","place":"evere","side":"German","population":"II./JG 26","aircraft":"Fw 190","metric":"Destroyed","value":13,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Evere/Grimbergen, notes 97–100","note":"Group losses on the Evere assignment."},
+    {"id":"evere-ii-jg26-damaged","place":"evere","side":"German","population":"II./JG 26","aircraft":"Fw 190","metric":"Damaged","value":2,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Evere/Grimbergen, notes 97–100","note":"Group damage on the Evere assignment."},
+    {"id":"evere-iii-jg26-lost","place":"evere","side":"German","population":"III./JG 26","aircraft":"Bf 109","metric":"Lost","value":6,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Evere/Grimbergen, notes 97–100","note":"Group losses on the Evere assignment."},
+    {"id":"evere-grimbergen-ff","place":"evere","side":"German","population":"I./JG 26 and III./JG 54","aircraft":"Fw 190","metric":"Destroyed","value":3,"setting":"Grimbergen route","quality":"secondary","source":"sector","locator":"Brussels-Evere/Grimbergen, notes 95–96","note":"Attributed to German anti-aircraft fire on the shared sector’s other route, before Grimbergen. Kept apart from II. and III./JG 26 at Evere."},
+    {"id":"melsbroek-field-destroyed","place":"melsbroek","side":"Allied","population":"Melsbroek airfield","aircraft":"Mixed aircraft","metric":"Destroyed","value":35,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Results of raid, Melsbroek row","note":"Published table figure. Unit records and visiting aircraft may overlap."},
+    {"id":"melsbroek-field-damaged","place":"melsbroek","side":"Allied","population":"Melsbroek airfield","aircraft":"Mixed aircraft","metric":"Severely damaged","value":9,"setting":"Airfield","quality":"secondary","source":"sector","locator":"Results of raid, Melsbroek row","note":"Same airfield table. Severity differs from an all-damage count."},
+    {"id":"melsbroek-wellington-lost","place":"melsbroek","side":"Allied","population":"No. 69 Squadron RAF","aircraft":"Wellington","metric":"Lost","value":11,"setting":"Ground","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 105–108","note":"Squadron figures in the published reconstruction. Another account gives 13 destroyed."},
+    {"id":"melsbroek-wellington-damaged","place":"melsbroek","side":"Allied","population":"No. 69 Squadron RAF","aircraft":"Wellington","metric":"Damaged","value":2,"setting":"Ground","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 105–108","note":"In addition to 11 lost in the same account."},
+    {"id":"melsbroek-wellington-alternative","place":"melsbroek","side":"Allied","population":"No. 69 Squadron RAF","aircraft":"Wellington","metric":"Destroyed","value":13,"setting":"Ground","quality":"alternative","source":"sector","locator":"Brussels-Melsbroek, notes 105–108","note":"Alternative account. Overlaps the 11 lost and two damaged report."},
+    {"id":"melsbroek-hayward","place":"melsbroek","side":"Allied","population":"No. 69 Squadron RAF","aircraft":"Wellington XIII","metric":"Destroyed","value":1,"setting":"Ground","quality":"reported","source":"hwh","locator":"Stanley Hayward, account of his final operational sortie","note":"Hayward describes his repaired aircraft being destroyed in the raid. Serial unverified. Overlaps squadron totals."},
+    {"id":"melsbroek-mosquito","place":"melsbroek","side":"Allied","population":"No. 140 Squadron RAF","aircraft":"Mosquito","metric":"Lost","value":4,"setting":"Ground","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 105–109","note":"A second account gives five destroyed."},
+    {"id":"melsbroek-spitfire","place":"melsbroek","side":"Allied","population":"No. 16 Squadron RAF","aircraft":"Spitfire","metric":"Destroyed","value":5,"setting":"Ground","quality":"lower bound","source":"sector","locator":"Brussels-Melsbroek, notes 105–109","note":"Lower bound in one account. Another gives three lost and two damaged."},
+    {"id":"melsbroek-harrow","place":"melsbroek","side":"Allied","population":"No. 271 Squadron RAF","aircraft":"Harrow","metric":"Out of action","value":7,"setting":"Ground","quality":"lower bound","source":"sector","locator":"Brussels-Melsbroek, notes 105–109","note":"Lower bound. The figure does not establish seven write-offs."},
+    {"id":"melsbroek-b25-lost","place":"melsbroek","side":"Allied","population":"No. 139 Wing RAF","aircraft":"B-25","metric":"Destroyed","value":5,"setting":"Ground","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 105–109","note":"Wing report as cited."},
+    {"id":"melsbroek-b25-damaged","place":"melsbroek","side":"Allied","population":"No. 139 Wing RAF","aircraft":"B-25","metric":"Damaged","value":5,"setting":"Ground","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 105–109","note":"Same wing population."},
+    {"id":"melsbroek-jg27-commit","place":"melsbroek","side":"German","population":"JG 27","aircraft":"Bf 109","metric":"Participating","value":28,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 101–111","note":"Bf 109s reported to have taken off."},
+    {"id":"melsbroek-jg27-lost","place":"melsbroek","side":"German","population":"JG 27","aircraft":"Bf 109","metric":"Lost","value":17,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 101–111","note":"Unit figure in the narrative. Does not reconcile with the combined table and IV./JG 54 figure."},
+    {"id":"melsbroek-jg54-commit","place":"melsbroek","side":"German","population":"IV./JG 54","aircraft":"Fw 190","metric":"Participating","value":15,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 101–111","note":"Fw 190s reported to have taken off."},
+    {"id":"melsbroek-jg54-lost","place":"melsbroek","side":"German","population":"IV./JG 54","aircraft":"Fw 190","metric":"Lost","value":3,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 101–111","note":"Unit figure in the narrative."},
+    {"id":"melsbroek-jg54-damaged","place":"melsbroek","side":"German","population":"IV./JG 54","aircraft":"Fw 190","metric":"Damaged","value":1,"setting":"Mission route","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, notes 101–111","note":"Unit figure in the narrative."},
+    {"id":"melsbroek-combined-lost","place":"melsbroek","side":"German","population":"JG 27 and IV./JG 54","aircraft":"Bf 109 and Fw 190","metric":"Lost","value":21,"setting":"Mission route","quality":"alternative","source":"sector","locator":"Brussels-Melsbroek, table and notes 104, 110–111","note":"Combined table figure. Unit figures in the narrative sum to 20. No attribution for the difference."},
+    {"id":"melsbroek-outbound","place":"melsbroek","side":"German","population":"JG 27 and IV./JG 54","aircraft":"Bf 109 and Fw 190","metric":"Lost","value":7,"setting":"Outbound route","quality":"secondary","source":"sector","locator":"Brussels-Melsbroek, table and notes 104, 110–111","note":"Attributed jointly to Allied aircraft and German flak, with no split by cause."},
+    {"id":"melsbroek-claim","place":"melsbroek","side":"German","population":"JG 27 and IV./JG 54","aircraft":"Bf 109 and Fw 190","metric":"Claimed destroyed","value":85,"setting":"Ground","quality":"claim","source":"sector","locator":"Brussels-Melsbroek, table and notes 104, 110–111","note":"German aircrew claim. A German reconnaissance tally is a separate source measure."},
+    {"id":"metz-365-destroyed","place":"metz","side":"Allied","population":"365th Fighter Group","aircraft":"P-47","metric":"Destroyed","value":22,"setting":"Ground","quality":"reported","source":"smithsonian","locator":"Cold Front, Y-34 section","note":"The 365th’s P-47 losses, also reported by Bergström."},
+    {"id":"metz-365-damaged","place":"metz","side":"Allied","population":"365th Fighter Group","aircraft":"P-47","metric":"Severely damaged","value":11,"setting":"Ground","quality":"reported","source":"smithsonian","locator":"Cold Front, Y-34 section","note":"Same fighter group."},
+    {"id":"metz-368-loss","place":"metz","side":"Allied","population":"368th Fighter Group","aircraft":"P-47","metric":"Destroyed or damaged","value":null,"setting":"Ground","quality":"unquantified","source":"bergstrom","locator":"New Year’s Day 1945, note 30","note":"Group history reports several aircraft destroyed or seriously damaged without a count in the cited account."},
+    {"id":"metz-strike-loss","place":"metz","side":"German","population":"Stab, II. and IV./JG 53","aircraft":"Bf 109","metric":"Lost","value":20,"setting":"Frescaty assignment","quality":"secondary","source":"sector","locator":"Metz-Frescaty, notes 59–65","note":"Strike force account. Another reconstruction gives 19. Losses include the mission route."},
+    {"id":"metz-strike-damaged","place":"metz","side":"German","population":"Stab, II. and IV./JG 53","aircraft":"Bf 109","metric":"Damaged","value":7,"setting":"Frescaty assignment","quality":"secondary","source":"sector","locator":"Metz-Frescaty, notes 59–65","note":"Same strike force."},
+    {"id":"metz-strike-alt","place":"metz","side":"German","population":"Stab, II. and IV./JG 53","aircraft":"Bf 109","metric":"Lost","value":19,"setting":"Frescaty assignment","quality":"alternative","source":"milhist","locator":"5. Jagddivision, Frescaty attack","note":"Alternative reconstruction for the strike force."},
+    {"id":"metz-jg53-commit","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Participating","value":80,"setting":"Metz sector","quality":"secondary","source":"sector","locator":"Metz-Frescaty table and note 64","note":"Includes the separate III./JG 53 assignment."},
+    {"id":"metz-jg53-loss","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Lost","value":30,"setting":"Metz sector","quality":"secondary","source":"sector","locator":"Metz-Frescaty table and note 64","note":"Both assignments combined. Do not add the strike force losses."},
+    {"id":"metz-jg53-damaged","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Damaged","value":8,"setting":"Metz sector","quality":"secondary","source":"sector","locator":"Metz-Frescaty table and note 64","note":"Both assignments combined."},
+    {"id":"metz-jg53-claims","place":"metz","side":"German","population":"JG 53","aircraft":"Bf 109","metric":"Claimed destroyed","value":27,"setting":"Ground","quality":"claim","source":"sector","locator":"Metz-Frescaty table and note 64","note":"German claim for U.S. fighters on the ground."},
+    {"id":"metz-typhoon-ff","place":"metz","side":"Allied","population":"No. 183 Squadron RAF","aircraft":"Typhoon","metric":"Destroyed","value":1,"setting":"Air","quality":"reported","source":"raf","locator":"Friendly-fire case 102, 1 January 1945","note":"U.S. P-51 shot down an Allied Typhoon. Separate afternoon friendly-fire case near Metz; location from Rickard, 5. Jagddivision."},
+    {"id":"operation-taf-lost","place":"operation","side":"Allied","population":"Second Tactical Air Force","aircraft":"Mixed aircraft","metric":"Destroyed","value":127,"setting":"Operation","quality":"reported","source":"canada","locator":"p. 343, note 68","note":"Second Tactical Air Force only. American losses are reported separately."},
+    {"id":"operation-taf-damaged","place":"operation","side":"Allied","population":"Second Tactical Air Force","aircraft":"Mixed aircraft","metric":"Damaged","value":133,"setting":"Operation","quality":"reported","source":"canada","locator":"p. 343, note 68","note":"Same command population."},
+    {"id":"operation-report-lost","place":"operation","side":"Allied","population":"RAF and USAAF report synthesis","aircraft":"Mixed aircraft","metric":"Destroyed","value":173,"setting":"Ground","quality":"approximate","source":"milhist","locator":"Overall results","note":"Approximate official-report synthesis with incomplete U.S. coverage."},
+    {"id":"operation-report-damage","place":"operation","side":"Allied","population":"RAF and USAAF report synthesis","aircraft":"Mixed aircraft","metric":"Damaged","value":137,"setting":"Ground","quality":"approximate","source":"milhist","locator":"Overall results","note":"Same ground-only reconstruction."},
+    {"id":"operation-recon-ground-loss","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Destroyed","value":290,"setting":"Ground","quality":"secondary","source":"sector","locator":"Results of raid, note 125","note":"Published reconstruction’s ground component."},
+    {"id":"operation-recon-ground-damage","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Damaged","value":180,"setting":"Ground","quality":"secondary","source":"sector","locator":"Results of raid, note 125","note":"Published reconstruction’s ground component."},
+    {"id":"operation-recon-air-loss","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Destroyed","value":15,"setting":"Air","quality":"secondary","source":"sector","locator":"Results of raid, note 125","note":"Published reconstruction’s aerial component."},
+    {"id":"operation-recon-air-damage","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Damaged","value":10,"setting":"Air","quality":"secondary","source":"sector","locator":"Results of raid, note 125","note":"Published reconstruction’s aerial component."},
+    {"id":"operation-recon-loss","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Destroyed","value":305,"setting":"Air and ground","quality":"secondary","source":"sector","locator":"Results of raid, note 125","note":"290 on the ground plus 15 in the air. Published reconstruction, not a new total of ledger rows."},
+    {"id":"operation-recon-damage","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Damaged","value":190,"setting":"Air and ground","quality":"secondary","source":"sector","locator":"Results of raid, note 125","note":"180 on the ground plus 10 in the air."},
+    {"id":"operation-mp-single-lost","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz breakdown","aircraft":"Single-engine fighters","metric":"Destroyed","value":271,"setting":"Operation","quality":"secondary","source":"manrho","locator":"Loss statistics, p. 273 as cited","note":"Single-engine fighter category. Existing Atlas dossier observation."},
+    {"id":"operation-mp-single-damaged","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz breakdown","aircraft":"Single-engine fighters","metric":"Damaged","value":65,"setting":"Operation","quality":"secondary","source":"manrho","locator":"Loss statistics, p. 273 as cited","note":"Single-engine fighter category. Existing Atlas dossier observation."},
+    {"id":"operation-mp-twin-lost","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz breakdown","aircraft":"Twin-engine aircraft","metric":"Destroyed","value":9,"setting":"Operation","quality":"secondary","source":"manrho","locator":"Loss statistics, p. 273 as cited","note":"Twin-engine category. Existing Atlas dossier observation."},
+    {"id":"operation-mp-twin-damaged","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz breakdown","aircraft":"Twin-engine aircraft","metric":"Damaged","value":4,"setting":"Operation","quality":"secondary","source":"manrho","locator":"Loss statistics, p. 273 as cited","note":"Twin-engine category. Existing Atlas dossier observation."},
+    {"id":"operation-german-flak","place":"operation","side":"German","population":"Luftwaffe, Manrho and Pütz reconstruction","aircraft":"Mixed aircraft","metric":"Destroyed","value":17,"setting":"German anti-aircraft fire","quality":"lower bound","source":"manrho","locator":"Loss statistics, friendly-fire discussion","note":"Aircraft the authors could attribute with certainty. The accessible account gives a wider possible total of 30–35. This subset overlaps the German loss totals."},
+    {"id":"operation-mp-allied-conflict-destroyed","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Destroyed","value":305,"setting":"Air coverage disputed","quality":"alternative","source":"manrho","locator":"Loss statistics, Allied losses paragraph","note":"This summary gives 305 and then lists 15 more in aerial combat. The operation article explicitly includes those 15 in its 305. The book’s loss appendices are needed to resolve the difference."},
+    {"id":"operation-mp-allied-conflict-damaged","place":"operation","side":"Allied","population":"All Allied air forces, reconstructed","aircraft":"Mixed aircraft","metric":"Damaged","value":190,"setting":"Air coverage disputed","quality":"alternative","source":"manrho","locator":"Loss statistics, Allied losses paragraph","note":"This summary gives 190 and then lists 10 more in aerial combat. The operation article explicitly includes those 10 in its 190."}
+  ]
+}

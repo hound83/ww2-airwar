@@ -5,6 +5,10 @@ on:
     paths:
       - 'grand-air-war-v80.html'
       - 'operations-1944.html'
+      - 'bodenplatte.html'
+      - 'dist/bodenplatte.*'
+      - 'research/transcriptions/bodenplatte-1945-01-01.json'
+      - 'tests/bodenplatte-browser.cjs'
       - 'dist/operations-1944.*'
       - 'research/transcriptions/operations-january-june-1944.json'
       - 'research/transcriptions/davis-western-targets-may-july-1944.csv'

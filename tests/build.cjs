@@ -39,3 +39,6 @@ require('./grand-air-war-v80-interactions.cjs');
 
 // Normandy operation journeys and dated evidence integrity.
 require('./grand-air-war-v86.cjs');
+
+// Bodenplatte airfield observations and source boundaries.
+require('./bodenplatte.cjs');

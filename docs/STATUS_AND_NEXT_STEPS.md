@@ -1,5 +1,9 @@
 # Atlas status and next work
 
+## 13 November 2026 · Bodenplatte airfield and unit losses
+
+The campaign dossier links to five airfield accounts with 70 local or unit observations and 17 operation-wide records. The ledger retains two identified airframes, the differing Evere and Melsbroek accounts, and the scope of JG 53’s Metz-sector return. The remaining work is individual airframe and casualty reconciliation from the unit returns. [Airfield explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Source audit](../research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md)
+
 ## 12 November 2026 · v9.3.1 May and July Western air war
 
 The January–July timeline now has 2,103 dated records and 635 Davis target rows. The follow-up adds 138 May targets and completes nine loss measures for all 31 July dates. The printed and daily air-combat totals differ by one each. The two May daily German returns and Cobra fighter attribution remain open. The next campaign milestone is the Bodenplatte airfield and unit ledger. [July timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [Audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md) · [Milestones](LATEST_INSIGHTS.md#next-milestones)

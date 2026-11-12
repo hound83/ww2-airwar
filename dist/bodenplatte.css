@@ -1,0 +1,33 @@
+.field-picker { display: grid; grid-template-columns: minmax(12rem, .72fr) minmax(0, 2fr); gap: .75rem; margin-block-end: 1rem; }
+#field-list { display: grid; align-content: start; gap: .35rem; }
+.field-choice { display: flex; gap: .45rem; justify-content: space-between; align-items: center; min-height: 44px; border: 1px solid var(--line); border-radius: .3rem; padding: .48rem .65rem; background: var(--panel); text-decoration: none; }
+.field-choice:hover { text-decoration: underline; }
+.field-choice[aria-current="true"] { color: #fffdf6; background: var(--accent); border-color: var(--accent); }
+.field-choice small { white-space: nowrap; }
+.field-map { min-height: 18rem; border: 1px solid var(--line); border-radius: .45rem; background: #d7e1dd; }
+.field-map .leaflet-tooltip { font-weight: 700; }
+.field-marker { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: #fffdf6; border: 2px solid var(--accent); color: var(--deep); font-weight: 800; }
+.field-marker.selected { background: #f6cf83; border-color: #83410f; }
+.field-marker:focus-visible { outline: 3px solid #a04d1c; outline-offset: 3px; }
+.field-code { margin: 0 0 .25rem; }
+#field-name { font-size: clamp(1.65rem, 3vw, 2.6rem); margin-bottom: .3rem; }
+.field-forces { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+.field-forces dt { font-weight: 750; }
+.field-forces dd { margin: 0; }
+.field-gap { border-inline-start: .22rem solid #977240; padding-inline-start: .7rem; max-width: 76ch; }
+.field-filters { display: flex; flex-wrap: wrap; align-items: end; gap: .55rem 1rem; margin-block-start: 1.15rem; }
+.loss-group + .loss-group { margin-top: 1.2rem; }
+.loss-group h4 { margin: 0 0 .35rem; }
+.loss-row { margin-block-end: .35rem; overflow-wrap: anywhere; }
+.loss-row summary { display: list-item; }
+.loss-summary { display: inline-flex; align-items: baseline; gap: .25rem .8rem; flex-wrap: wrap; max-width: 96%; vertical-align: top; }
+.loss-value { color: var(--deep); font-size: 1.16rem; }
+.loss-row p { margin: .15rem .65rem .65rem; }
+@media (max-width: 44rem) {
+  .field-picker { grid-template-columns: 1fr; }
+  .field-map { min-height: 17rem; }
+  .field-forces { grid-template-columns: 1fr; }
+}
+@media (max-width: 27rem) {
+  .field-filters label { width: 100%; }
+}

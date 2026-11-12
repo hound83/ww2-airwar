@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Five airfields, opposing formations and source-linked loss records for Operation Bodenplatte on 1 January 1945.">
+  <title>Operation Bodenplatte | European Air War Atlas</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="./dist/operations-1944.css">
+  <link rel="stylesheet" href="./dist/bodenplatte.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script defer src="./dist/bodenplatte.js"></script>
+</head>
+<body>
+  <a class="skip" href="#airfields">Skip to airfields</a>
+  <header class="mast">
+    <nav class="wrap" aria-label="Atlas navigation">
+      <a class="brand" href="./grand-air-war-v80.html">European Air War Atlas</a>
+      <a href="./grand-air-war-v80.html?campaign=bodenplatte#campaign-dossier">Bodenplatte campaign dossier</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <header class="intro">
+      <h1>Operation <em>Bodenplatte</em></h1>
+      <p><time datetime="1945-01-01">1 January 1945</time>. German fighters struck Allied forward airfields in a bid to regain air superiority during the Ardennes offensive. At Eindhoven they caught aircraft lining up for takeoff. At Asch, two U.S. squadrons met the raid in the air. The five accounts below trace what happened to the aircraft and units involved.</p>
+      <nav class="intro-links" aria-label="Bodenplatte evidence">
+        <a href="#airfields">Airfields and units</a>
+        <a href="#operation-totals">Operation totals</a>
+        <a href="./research/transcriptions/bodenplatte-1945-01-01.json" download>Download full ledger (JSON)</a>
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md">Source audit</a>
+      </nav>
+    </header>
+    <section id="airfields" aria-labelledby="airfields-title">
+      <h2 id="airfields-title">Five airfields</h2>
+      <div class="field-picker">
+        <nav id="field-list" aria-label="Select an airfield"></nav>
+        <div id="field-map" class="field-map" aria-label="Approximate wartime airfield locations" hidden></div>
+      </div>
+      <noscript><p>The airfield explorer requires JavaScript. The full ledger is available above.</p></noscript>
+      <p id="field-error" role="status">Loading airfield records.</p>
+      <article id="field-detail" class="panel" aria-labelledby="field-name" hidden>
+        <p id="field-code" class="muted field-code"></p>
+        <h3 id="field-name"></h3>
+        <p id="field-story"></p>
+        <dl class="field-forces">
+          <div><dt>Allied units</dt><dd id="field-allied"></dd></div>
+          <div><dt>German units</dt><dd id="field-german"></dd></div>
+        </dl>
+        <p id="field-gap" class="field-gap"></p>
+        <div class="intro-links" id="field-sources"></div>
+        <form class="field-filters" aria-label="Filter airfield evidence">
+          <label>Side <select id="side"><option value="">Both sides</option><option>Allied</option><option>German</option></select></label>
+          <label>Evidence <select id="evidence">
+            <option value="">All evidence</option>
+            <option value="outcomes">Aircraft losses and damage</option>
+            <option value="strength">Aircraft present or participating</option>
+            <option value="claims">Victory claims</option>
+            <option value="personnel">Personnel casualties</option>
+          </select></label>
+          <button type="button" id="field-csv">Download shown records (CSV)</button>
+        </form>
+        <p id="field-status" class="muted" role="status"></p>
+        <div id="field-rows"></div>
+      </article>
+    </section>
+    <section id="operation-totals" aria-labelledby="operation-title">
+      <h2 id="operation-title">Operation-wide reports</h2>
+      <p class="field-gap">The airfield and unit records overlap. The totals below come from published accounts with different reporting populations and loss definitions. The 305 destroyed and 190 damaged reconstruction has two published summaries that disagree on whether the aerial losses are included.</p>
+      <div id="operation-rows"></div>
+    </section>
+  </main>
+</body>
+</html>
