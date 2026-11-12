@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Source-linked Allied bombing and German air defence records from January to June 1944.">
+  <title>Air operations, January–June 1944 | European Air War Atlas</title>
+  <link rel="stylesheet" href="./dist/operations-1944.css">
+  <script defer src="./dist/operations-1944.js"></script>
+</head>
+<body>
+  <a class="skip" href="#timeline">Skip to timeline</a>
+  <header class="mast">
+    <nav class="wrap" aria-label="Atlas navigation">
+      <a class="brand" href="./grand-air-war-v80.html">European Air War Atlas</a>
+      <a href="./grand-air-war-v80.html#campaigns">Campaign explorer</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <header class="intro">
+      <h1>Air operations<br><em>January–June 1944</em></h1>
+      <p>Trace Allied bombing missions and German air defence across six months. Open each record for its reporting scope and source.</p>
+      <div class="intro-links">
+        <a href="#coverage">Monthly coverage</a>
+        <a id="json-download" href="./research/transcriptions/operations-january-june-1944.json" download>Download full dataset (JSON)</a>
+      </div>
+    </header>
+    <section id="timeline" aria-labelledby="timeline-heading">
+      <h2 id="timeline-heading">Mission timeline</h2>
+      <div class="panel">
+        <div class="presets" aria-label="Date presets">
+          <button type="button" data-range="full" aria-pressed="true">Full period</button>
+          <button type="button" data-range="big-week" aria-pressed="false">Big Week · 19–26 Feb</button>
+          <button type="button" data-range="d-day" aria-pressed="false">D-Day · 5–10 Jun</button>
+        </div>
+        <form id="filters" role="search" aria-label="Filter mission records">
+          <label>From <input type="date" name="from" min="1944-01-01" max="1944-06-30" value="1944-01-01"></label>
+          <label>Through <input type="date" name="to" min="1944-01-01" max="1944-06-30" value="1944-06-30"></label>
+          <label><span id="command-label">Command</span> <select name="force" aria-labelledby="command-label"><option value="">All commands</option></select></label>
+          <label><span id="evidence-label">Evidence</span> <select name="evidence" aria-labelledby="evidence-label">
+            <option value="">All records</option>
+            <option value="both">Dates with both sides</option>
+            <option value="linked">Matched or possible links</option>
+          </select></label>
+          <label class="query">Location, unit or mission <input type="search" name="q" placeholder="e.g. Schweinfurt"></label>
+        </form>
+        <p id="filter-status" class="muted" role="status">Loading mission records…</p>
+        <button type="button" id="csv-download" disabled>Download filtered records (CSV)</button>
+      </div>
+      <noscript><p>The timeline requires JavaScript. The full source-linked JSON is available above.</p></noscript>
+      <div id="days"></div>
+      <button type="button" id="more" hidden>Show more dates</button>
+    </section>
+    <section id="coverage" aria-labelledby="coverage-heading">
+      <h2 id="coverage-heading">Monthly coverage</h2>
+      <p class="muted">Daily records and published returns can cover different aircraft, dates and activities. Each comparison states its scope.</p>
+      <label class="coverage-control"><span id="coverage-command-label">Command</span> <select id="coverage-force" aria-labelledby="coverage-command-label"></select></label>
+      <div class="table-frame">
+        <table>
+          <caption class="sr-only">Published monthly figures and comparable captured records</caption>
+          <thead><tr><th scope="col">Month</th><th scope="col">Captured</th><th scope="col">Published</th><th scope="col">Scope and source</th></tr></thead>
+          <tbody id="coverage-rows"></tbody>
+        </table>
+      </div>
+      <p class="definitions">Allied claims remain separate from German recorded losses. Two sides on one date means that records overlap on the calendar. The evidence links identify specific or possible connections.</p>
+      <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/operations-january-june-1944.md">Read the source audit and counting rules</a>
+    </section>
+  </main>
+</body>
+</html>

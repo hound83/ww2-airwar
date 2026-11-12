@@ -4,6 +4,10 @@ on:
   pull_request:
     paths:
       - 'grand-air-war-v80.html'
+      - 'operations-1944.html'
+      - 'dist/operations-1944.*'
+      - 'research/transcriptions/operations-january-june-1944.json'
+      - 'tests/operations-1944-browser.cjs'
       - 'dist/grand-air-war-v80-*'
       - 'dist/grand-air-war-v77-campaigns.js'
       - 'dist/grand-air-war-v86*'
@@ -45,4 +49,5 @@ jobs:
           path: |
             v80-qa-*.png
             v80-qa-layout-report.json
+            operations-1944-qa-*.png
           if-no-files-found: ignore

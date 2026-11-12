@@ -1,6 +1,8 @@
 # Atlas status and next work
 
-## Planned next milestone - January–June 1944 bombing and air defence
+## January–June 1944 bombing and air defence
+
+The [mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) covers six months of Eighth and Fifteenth Air Force and RAF Bomber Command operations alongside documented German air defence. [Source audit and data](../research/sources/operations-january-june-1944.md) record the Big Week validation, monthly comparisons and unresolved coverage. [Milestone and independent sweep review](https://github.com/hound83/ww2-airwar/issues/40)
 
 Build an operational dataset for 1 January through 30 June 1944. Cover the US Eighth and Fifteenth Air Forces and RAF Bomber Command over continental Europe, with documented German air defence operations for the same period.
 
