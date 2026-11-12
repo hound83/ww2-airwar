@@ -1,0 +1,23 @@
+name: May loss-return source verification
+on:
+  push:
+    branches: [codex/atlas-may-july-source-audit-20261112]
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve the two official May loss returns
+        run: |
+          mkdir -p review
+          curl -fLsS --retry 2 --max-time 35 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-may-1944/' -o review/westMay.pdf
+          curl -fLsS --retry 2 --max-time 35 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-may-1944/' -o review/reichMay.pdf
+          file review/*.pdf
+          sha256sum review/*.pdf | tee review/sha256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: may-loss-return-sources
+          path: review/
+          retention-days: 1
