@@ -1,23 +1,90 @@
-name: May loss-return source verification
+name: Western air war source audit
 on:
   push:
     branches: [codex/atlas-may-july-source-audit-20261112]
 permissions:
   contents: read
 jobs:
-  sources:
+  worksheets:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Retrieve the two official May loss returns
+      - name: Read official Davis target worksheets
         run: |
-          mkdir -p review
-          curl -fLsS --retry 2 --max-time 35 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-may-1944/' -o review/westMay.pdf
-          curl -fLsS --retry 2 --max-time 35 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-may-1944/' -o review/reichMay.pdf
-          file review/*.pdf
-          sha256sum review/*.pdf | tee review/sha256.txt
+          python -m pip install --quiet xlrd==2.0.2
+          python - <<'PY'
+          import collections, json, urllib.request
+          import xlrd
+          base = 'https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/'
+          for name, month in [('1944-1',5),('1944-2',7)]:
+              request = urllib.request.Request(base + name + '.xls', headers={'Accept': 'application/vnd.ms-excel'})
+              with urllib.request.urlopen(request, timeout=25) as response:
+                  book = xlrd.open_workbook(file_contents=response.read())
+              sheet = book.sheet_by_name(name)
+              groups = collections.defaultdict(list)
+              for index in range(1,sheet.nrows):
+                  row = sheet.row_values(index)
+                  if sheet.cell_type(index,3) != xlrd.XL_CELL_DATE: continue
+                  date = xlrd.xldate_as_datetime(row[3], book.datemode).date()
+                  if date.year == 1944 and date.month == month:
+                      groups[str(row[1])].append((index+1,date.isoformat(),row))
+              print('DAVIS_SCOPE', name, {force:len(rows) for force,rows in groups.items()})
+              for force, rows in groups.items():
+                  for number,date,row in rows:
+                      if month == 7 or any(t in str(row[2]).lower() for t in ['evreux','évreux','conches','dreux','caen','st. lo','st lo']):
+                          print('DAVIS_ROW '+json.dumps([name,number,date,row[0],force,*row[2:3],*row[4:14]],ensure_ascii=False,separators=(',',':')))
+          PY
+  returns:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve the public RAF scan files
+        run: |
+          npm install --no-save playwright
+          cat > read.cjs <<'JS'
+          const {chromium} = require('playwright');
+          const fs = require('node:fs/promises');
+          const base = 'https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/';
+          const reports = {
+            westMay: 'luftwaffe-losses-on-the-western-front-luftflotte-3-may-1944/',
+            reichMay: 'luftwaffe-losses-in-the-area-of-luftflotte-reich-may-1944/',
+            westJuly: 'luftwaffe-losses-on-the-western-front-luftflotte-3-1st-july-31st-august-1944/'
+          };
+          (async()=>{
+            await fs.mkdir('review',{recursive:true});
+            const browser=await chromium.launch({executablePath:process.env.CHROME_PATH,headless:true});
+            try{
+              await Promise.all(Object.entries(reports).map(async ([id,route])=>{
+                const page=await browser.newPage();
+                try {
+                  const response=await page.goto(base+route,{waitUntil:'commit',timeout:20000});
+                  const bytes=await response.body();
+                  console.log('SOURCE',id,response.status(),response.headers()['content-type'],bytes.length);
+                  if (response.ok() && bytes.subarray(0,4).toString()==='%PDF') await fs.writeFile('review/'+id+'.pdf',bytes);
+                } catch(error) { console.log('SOURCE GAP',id,error.message); }
+                finally {await page.close();}
+              }));
+            } finally {await browser.close();}
+          })().catch(error=>{console.error(error);process.exitCode=1;});
+          JS
+          CHROME_PATH="$(command -v google-chrome)" node read.cjs
+      - name: Capture page layout and checksums
+        if: always()
+        run: |
+          shopt -s nullglob
+          files=(review/*.pdf)
+          if [[ ${#files[@]} == 0 ]]; then exit 0; fi
+          if ! command -v pdftotext >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq poppler-utils
+          fi
+          for file in "${files[@]}"; do
+            sha256sum "$file"
+            pdftotext -layout "$file" "${file%.pdf}.txt"
+          done
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: may-loss-return-sources
+          name: western-air-war-returns
           path: review/
           retention-days: 1
