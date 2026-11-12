@@ -488,6 +488,8 @@ function renderDossier(){
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");
  const norm=c.id==="normandy",lossScope=norm?"normandy-campaign":c.id==="britain"?"britain-campaign":"";
  const links=norm?['<a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a>']:[];
+ if(norm)links.push('<a href="./operations-1944.html?preset=d-day">D-Day air operations timeline</a>');
+ if(c.id==="bigweek")links.push('<a href="./operations-1944.html?preset=big-week">Big Week mission and loss records</a>');
  if(lossScope)links.push('<a href="?loss-scope='+lossScope+'#claim-loss-calculator" data-claim-scope="'+lossScope+'">Compare campaign claims and losses</a>');
  $("dossier-link-detail").innerHTML=links.length?'<div class="dossier-links">'+links.join("")+'</div>':'';
  $("dossier-link-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{

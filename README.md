@@ -2,6 +2,8 @@
 
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
+[January–June 1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) · [Operational dataset and source audit](research/sources/operations-january-june-1944.md)
+
 **[Open the current Campaign Atlas](https://hound83.github.io/ww2-airwar/)** · **[Pilot & Aircraft Lab (legacy)](https://hound83.github.io/ww2-airwar/?legacy=1)** · **[v7.5 experimental view](https://hound83.github.io/ww2-airwar/?preview=7.5)** · **[Historical data notes](DATA_NOTES.md)** · **[Source audit](SOURCE_AUDIT.md)**
 
 > **Normandy storytelling benchmark, 10 November 2026:** The default URL opens the European Air War **Campaign Explorer**. It contains 20 campaigns, 61 operational chapters and 119 researched chronology entries (including 8 explicitly labelled Normandy period-context anchors), with 135 source-scoped numerical observations. Normandy has **9 connected historical chapters and 39 episodes**, rather than three broad monthly summaries and three isolated events. The old v7.4 pilot and aircraft labs remain accessible using `?legacy=1`; the v7.5 preview remains at `?preview=7.5`. The embedded aircraft physics research snapshot is still v2.4, **not** a validated newer flight solver.
