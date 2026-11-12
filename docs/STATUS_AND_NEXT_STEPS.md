@@ -1,5 +1,9 @@
 # Atlas status and next work
 
+## 12 November 2026 - Wikipedia references and earlier research
+
+The research ledger captures the reference sections of 44 selected articles in eight languages and records follow-up on 24 works or archival leads. The older link inventory includes 128 URLs outside the previous campaign link sweep. The new dataset holds 15 quantitative observations and 37 Bodenplatte formation listings. [Sweep and source gaps](../research/sources/atlas-wikipedia-reference-sweep-2026-11-12.md) · [Coverage and trace ledger](../research/sources/wikipedia-source-coverage-2026-11-12.json) · [Transcription](../research/transcriptions/wikipedia-followup-evidence-2026-11-12.json).
+
 ## 12 November 2026 - Source audit across all 20 campaigns
 
 The research dataset adds 343 period, formation and airframe rows across all 20 dossiers. The campaign rundown covers new source transcriptions, exact archival leads and reporting discrepancies. Cobra's alternate official US escort and flak figures are available in the research data. The fighter annex and German airframe matches remain open. [Campaign audit](../research/sources/atlas-campaign-source-audit-2026-11-12.md) · [Research dataset](../research/transcriptions/campaign-evidence-audit-2026-11-12.json) · [Reference check](../research/sources/campaign-reference-check-2026-11-12.csv).
