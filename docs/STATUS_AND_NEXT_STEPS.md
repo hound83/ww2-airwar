@@ -1,5 +1,16 @@
 # Atlas status and next work
 
+## Planned next milestone - January–June 1944 bombing and air defence
+
+Build an operational dataset for 1 January through 30 June 1944. Cover the US Eighth and Fifteenth Air Forces and RAF Bomber Command over continental Europe, with documented German air defence operations for the same period.
+
+- Build a dated Allied mission ledger with targets, dispatched and attacking aircraft, escort strength, losses and claims where recorded. Use the Davis workbooks where accessible and the official mission chronologies and unit records to fill gaps.
+- Record German sorties, aircraft losses and damage by date and formation. Link records to specific Allied raids where the time, location and unit evidence supports a match.
+- Use Big Week as the first validation batch, then apply the method across the full six months. Reconcile monthly totals against compatible command returns and show coverage gaps.
+- Deliver a filterable Atlas mission timeline and downloadable source-linked data, with dates that have usable evidence from both sides identified.
+
+[Source coverage and archival leads](../research/sources/wikipedia-source-coverage-2026-11-12.json) · [Campaign source audit](../research/sources/atlas-campaign-source-audit-2026-11-12.md)
+
 ## 12 November 2026 - Wikipedia references and earlier research
 
 The research ledger captures the reference sections of 44 selected articles in eight languages and records follow-up on 24 works or archival leads. The older link inventory includes 128 URLs outside the previous campaign link sweep. The new dataset holds 15 quantitative observations and 37 Bodenplatte formation listings. [Sweep and source gaps](../research/sources/atlas-wikipedia-reference-sweep-2026-11-12.md) · [Coverage and trace ledger](../research/sources/wikipedia-source-coverage-2026-11-12.json) · [Transcription](../research/transcriptions/wikipedia-followup-evidence-2026-11-12.json).
