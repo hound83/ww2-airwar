@@ -9,6 +9,9 @@ These instructions apply to `hound83/ww2-airwar`, the **historical website**. Th
 - Mark each item `- [x]` once its outcome is verified. Add brief evidence such as a file path, test result, commit, PR, or verified live link. Save the log at each meaningful checkpoint with the current branch, commit, or worktree location as applicable. Keep open items unchecked and record any blocker and the next concrete action.
 - When resuming, open the existing log and verify the checkpoint against the current repository state. Before the final reply, reconcile the checklist with the latest request. Record `Done` when all requested outcomes are verified, or `In progress` or `Blocked` with the remaining work. Leave the log available for the user's review.
 
+
+- **Pre-assignment WIP and latest-insights check:** Before starting a new implementation milestone, inspect open PRs, unmerged feature branches, and recent commits under `docs/`, `research/` and source registers for work that touches the same campaigns, data, or UI paths. Also read `docs/LATEST_INSIGHTS.md` if it exists. Record the scan result in the task log. If relevant in-progress material exists, either incorporate it or state why the milestone proceeds without it. Do not begin from a private chat history when committed or open work already covers the same ground.
+
 ## Mission and autonomous milestones
 
 - Work toward a historically informative, coherent and genuinely usable Atlas. For substantial implementation requests, own **one substantial end-to-end website milestone**: investigate, fix or build, integrate, test user journeys, repair problems, and document what changed. Keep explicitly small fixes narrow.
