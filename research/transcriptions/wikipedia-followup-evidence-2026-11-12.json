@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "compiledOn": "2026-11-12",
+  "sourceBaseline": "0bc2084afa2dab72e2ead649b27b2fa5d136b34c",
+  "sources": {
+    "dieppe-ors-395": {
+      "title": "Ross Mahoney, The Royal Air Force, Combined Operations Doctrine and the Raid on Dieppe",
+      "url": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+      "classification": "Academic secondary study reproducing a wartime operational research report",
+      "locator": "Printed pp. 115–119, Table 3.1 and text, citing Fighter Command ORS Report 395, TNA AIR 16/1044"
+    },
+    "timokhovich-kursk": {
+      "title": "I. V. Timokhovich, Soviet Aviation in the Battle of Kursk",
+      "url": "https://militera.lib.ru/h/timohovich/02.html",
+      "classification": "Postwar Soviet institutional history",
+      "locator": "Chapter 2, offensive operations at Orel and on the Belgorod–Kharkov direction"
+    },
+    "nafziger-bodenplatte": {
+      "title": "George Nafziger, Luftwaffe Operation Bodenplatte, 1 January 1945",
+      "url": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945gala.pdf",
+      "classification": "Modern order-of-battle compilation citing Werner Girbig",
+      "locator": "Nafziger collection item 945GALA, pp. 1–2"
+    },
+    "nafziger-berlin": {
+      "title": "George Nafziger, Russian 16th Air Army, Battle for Berlin, 16 April 1945",
+      "url": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945rdad.pdf",
+      "classification": "Modern order-of-battle compilation",
+      "locator": "Nafziger collection item 945RDAD, p. 1, summary inventory"
+    },
+    "ploesti-study-103": {
+      "title": "Army Air Forces Historical Division, The Ploesti Mission of 1 August 1943",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/AAFHS/AAFHS-103.pdf",
+      "classification": "Wartime institutional operational history compiled from mission records",
+      "locator": "USAF Historical Study 103, formerly AAFRH-3, planning table note and chapter discussion"
+    }
+  },
+  "observations": [
+    {
+      "id": "jubilee-spitfire-patrol",
+      "campaign": "dieppe",
+      "source": "dieppe-ors-395",
+      "from": "1942-08-19",
+      "to": "1942-08-19",
+      "force": "RAF Fighter Command Spitfire patrols",
+      "geography": "Sea and beaches near Dieppe",
+      "scope": "Patrol subset and its reported Category E (write-off) rate.",
+      "values": {
+        "sorties": {
+          "value": 1009,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "categoryELossRate": {
+          "value": 3.1,
+          "unit": "percent",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "jubilee-174-175-hurricanes",
+      "campaign": "dieppe",
+      "source": "dieppe-ors-395",
+      "from": "1942-08-19",
+      "to": "1942-08-19",
+      "force": "RAF Nos. 174 and 175 Squadrons, Hurricane Mk IIb",
+      "geography": "Dieppe direct support",
+      "scope": "Combined squadron subset. The rate is rounded as printed.",
+      "values": {
+        "sorties": {
+          "value": 62,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "categoryELossRate": {
+          "value": 9.7,
+          "unit": "percent",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "jubilee-direct-support-rate",
+      "campaign": "dieppe",
+      "source": "dieppe-ors-395",
+      "from": "1942-08-19",
+      "to": "1942-08-19",
+      "force": "RAF Fighter Command, direct ground support",
+      "geography": "Dieppe",
+      "scope": "Reported average loss rate for direct support. The thesis does not give the denominator in this passage.",
+      "values": {
+        "reportedLossRate": {
+          "value": 8.3,
+          "unit": "percent",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "jubilee-air-cover-withdrawal",
+      "campaign": "dieppe",
+      "source": "dieppe-ors-395",
+      "from": "1942-08-19",
+      "to": "1942-08-19",
+      "force": "RAF Fighter Command, air cover",
+      "geography": "Dieppe",
+      "scope": "The withdrawal is a subset of all air-cover sorties. The Spitfire patrol row has a narrower reporting category.",
+      "values": {
+        "coverSorties": {
+          "value": 1709,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "withdrawalSubset": {
+          "value": 844,
+          "unit": "sorties",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "jubilee-hurricane-ground-attack",
+      "campaign": "dieppe",
+      "source": "dieppe-ors-395",
+      "from": "1942-08-19",
+      "to": "1942-08-19",
+      "force": "RAF Fighter Command Hurricanes, ground attacks",
+      "geography": "Dieppe",
+      "scope": "All Hurricane ground attacks in the passage, with withdrawal a subset. Nos. 174 and 175 are separately scoped.",
+      "values": {
+        "attackSorties": {
+          "value": 194,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "withdrawalSubset": {
+          "value": 111,
+          "unit": "sorties",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "kursk-orel-26july",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-07-26",
+      "to": "1943-07-26",
+      "force": "1st Air Army assault and bomber formations",
+      "geography": "Orel direction",
+      "scope": "The history gives a rounded estimate for the two roles.",
+      "values": {
+        "sorties": {
+          "value": 400,
+          "unit": "sorties",
+          "qualifier": "approximately"
+        }
+      }
+    },
+    {
+      "id": "kursk-karachev-21july",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-07-20",
+      "to": "1943-07-21",
+      "force": "Soviet Long-Range Aviation",
+      "geography": "Karachev railway station",
+      "scope": "Single raid on the night leading into 21 July.",
+      "values": {
+        "sorties": {
+          "value": 126,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "bombTonnage": {
+          "value": 160,
+          "unit": "tons",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "kursk-3august-add",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-08-02",
+      "to": "1943-08-03",
+      "force": "Soviet Long-Range Aviation",
+      "geography": "Belgorod–Kharkov breakthrough sectors",
+      "scope": "Night leading into 3 August. Tonnage covers the high-explosive bombs identified in the source.",
+      "values": {
+        "sorties": {
+          "value": 70,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "highExplosiveBombTonnage": {
+          "value": 36,
+          "unit": "tons",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "kursk-3august-208bad",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-08-02",
+      "to": "1943-08-03",
+      "force": "208th Bomber Aviation Division",
+      "geography": "Belgorod–Kharkov direction",
+      "scope": "Reported as simultaneous with the night operation.",
+      "values": {
+        "sorties": {
+          "value": 300,
+          "unit": "sorties",
+          "qualifier": "approximately"
+        }
+      }
+    },
+    {
+      "id": "kursk-3august-2-5va",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-08-03",
+      "to": "1943-08-03",
+      "force": "2nd and 5th Air Armies, combined",
+      "geography": "Belgorod–Kharkov direction",
+      "scope": "Lower bound for the combined daily count. Other rows can overlap.",
+      "values": {
+        "sorties": {
+          "value": 2600,
+          "unit": "sorties",
+          "qualifier": "more-than"
+        }
+      }
+    },
+    {
+      "id": "kursk-17va-4-5august",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-08-04",
+      "to": "1943-08-05",
+      "force": "17th Air Army",
+      "geography": "German reserves moving from the Donbas",
+      "scope": "The original sentence gives an upper bound for the two-day period.",
+      "values": {
+        "sorties": {
+          "value": 1000,
+          "unit": "sorties",
+          "qualifier": "up-to"
+        }
+      }
+    },
+    {
+      "id": "kursk-kharkov-6-11august",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-08-06",
+      "to": "1943-08-11",
+      "force": "Soviet Long-Range Aviation",
+      "geography": "Four railway stations in the Kharkov area",
+      "scope": "Kharkov Central, Lyubotin, Merefa and Osnova, combined.",
+      "values": {
+        "sorties": {
+          "value": 256,
+          "unit": "sorties",
+          "qualifier": "reported"
+        },
+        "bombTonnage": {
+          "value": 250,
+          "unit": "tons",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "kursk-5va-21-22august",
+      "campaign": "kursk",
+      "source": "timokhovich-kursk",
+      "from": "1943-08-21",
+      "to": "1943-08-22",
+      "force": "5th Air Army",
+      "geography": "Kharkov area",
+      "scope": "Lower bound for the two days in the named area.",
+      "values": {
+        "sorties": {
+          "value": 1300,
+          "unit": "sorties",
+          "qualifier": "more-than"
+        }
+      }
+    },
+    {
+      "id": "berlin-16va-nafziger",
+      "campaign": "berlin",
+      "source": "nafziger-berlin",
+      "from": "1945-04-16",
+      "to": "1945-04-16",
+      "force": "16th Air Army",
+      "geography": "Berlin direction",
+      "scope": "The 3,033 combat aircraft are a subset of 3,188 total. The reconnaissance category includes spotting aircraft. The existing Soviet headquarters report has a serviceable figure of 3,037 and 118 reconnaissance/spotters. These source figures are separate observations.",
+      "values": {
+        "aircraft": {
+          "value": 3188,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "combatAircraft": {
+          "value": 3033,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "fighters": {
+          "value": 1548,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "groundAttack": {
+          "value": 687,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "dayBombers": {
+          "value": 533,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "nightBombers": {
+          "value": 151,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "reconnaissanceAndSpotting": {
+          "value": 114,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "airDivisions": {
+          "value": 28,
+          "unit": "divisions",
+          "qualifier": "reported"
+        },
+        "separateAirRegiments": {
+          "value": 7,
+          "unit": "regiments",
+          "qualifier": "reported"
+        }
+      }
+    },
+    {
+      "id": "tidal-wave-planned-and-airborne",
+      "campaign": "tidal-wave-research",
+      "source": "ploesti-study-103",
+      "from": "1943-08-01",
+      "to": "1943-08-01",
+      "force": "USAAF, Ploiești raid force",
+      "geography": "Launch from Libya toward Ploiești, Romania",
+      "scope": "Candidate dossier. The report distinguishes 154 planning aircraft and 177 successful takeoffs. Neither count represents aircraft over the target.",
+      "values": {
+        "plannedAircraft": {
+          "value": 154,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        },
+        "aircraftSuccessfullyAirborne": {
+          "value": 177,
+          "unit": "aircraft",
+          "qualifier": "reported"
+        }
+      }
+    }
+  ],
+  "formationListings": [
+    {
+      "campaign": "bodenplatte",
+      "date": "1945-01-01",
+      "source": "nafziger-bodenplatte",
+      "scope": "The source is a compiled order of battle. Each row is a listed formation, aircraft type or types, and location. It does not supply aircraft counts, sortie confirmation or an independently verified departure field. Place spellings follow the source. The trailing page numeral after Vorden is omitted.",
+      "rows": [
+        {
+          "formation": "I./JG 1",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Twenthe"
+        },
+        {
+          "formation": "II./JG 1",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Drope"
+        },
+        {
+          "formation": "III./JG 1",
+          "aircraft": "Bf 109 G-14",
+          "baseAsListed": "Rheine"
+        },
+        {
+          "formation": "I./JG 2",
+          "aircraft": "Fw 190 A-8/A-9",
+          "baseAsListed": "Merzhausen"
+        },
+        {
+          "formation": "II./JG 2",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Nidda; Ettinghausen"
+        },
+        {
+          "formation": "III./JG 2",
+          "aircraft": "Fw 190 D-9",
+          "baseAsListed": "Altenstadt"
+        },
+        {
+          "formation": "I./JG 3",
+          "aircraft": "Bf 109 G-10 / G-14",
+          "baseAsListed": "Paderborn"
+        },
+        {
+          "formation": "III./JG 3",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Lipespringe"
+        },
+        {
+          "formation": "IV./JG 3",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Gutersloh"
+        },
+        {
+          "formation": "I./JG 4",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Darmstadt-Greisheim"
+        },
+        {
+          "formation": "III./JG 4",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Babenhausen"
+        },
+        {
+          "formation": "IV./JG 4",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Rhein-Main"
+        },
+        {
+          "formation": "I./JG 6",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Delmenhorst"
+        },
+        {
+          "formation": "II./JG 6",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Quakenbruck; Vechta"
+        },
+        {
+          "formation": "III./JG 6",
+          "aircraft": "Bf 109 G-10 / G-14",
+          "baseAsListed": "Bissel"
+        },
+        {
+          "formation": "I./JG 11",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Darmstadt-Greisheim"
+        },
+        {
+          "formation": "II./JG 11",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Zellhausen"
+        },
+        {
+          "formation": "III./JG 11",
+          "aircraft": "Fw 190 A-8",
+          "baseAsListed": "Gross-Ostheim"
+        },
+        {
+          "formation": "I./JG 26",
+          "aircraft": "Fw 190 D-9",
+          "baseAsListed": "Furstenau"
+        },
+        {
+          "formation": "II./JG 26",
+          "aircraft": "Fw 190 D-9",
+          "baseAsListed": "Furstenau"
+        },
+        {
+          "formation": "III./JG 26",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Plantlunne"
+        },
+        {
+          "formation": "I./JG 27",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Rheine"
+        },
+        {
+          "formation": "II./JG 27",
+          "aircraft": "Bf 109 G-14",
+          "baseAsListed": "Rheine"
+        },
+        {
+          "formation": "III./JG 27",
+          "aircraft": "Bf 109 K-4",
+          "baseAsListed": "Hespe"
+        },
+        {
+          "formation": "IV./JG 27",
+          "aircraft": "Bf 109 G-10",
+          "baseAsListed": "Achmer"
+        },
+        {
+          "formation": "II./JG 53",
+          "aircraft": "Bf 109 G-14 / K-4",
+          "baseAsListed": "Malmsheim"
+        },
+        {
+          "formation": "III./JG 53",
+          "aircraft": "Bf 109 G-14",
+          "baseAsListed": "Kirrlach"
+        },
+        {
+          "formation": "IV./JG 53",
+          "aircraft": "Bf 109 G-14",
+          "baseAsListed": "St. Echterdingen"
+        },
+        {
+          "formation": "III./JG 54",
+          "aircraft": "Fw 190 D-9",
+          "baseAsListed": "Furstenau"
+        },
+        {
+          "formation": "IV./JG 54",
+          "aircraft": "Fw 190 A-8/A-9",
+          "baseAsListed": "Vorden"
+        },
+        {
+          "formation": "I./JG 77",
+          "aircraft": "Bf 109 G-14",
+          "baseAsListed": "Dortmund"
+        },
+        {
+          "formation": "II./JG 77",
+          "aircraft": "Bf 109 K-4",
+          "baseAsListed": "Bonninghardt"
+        },
+        {
+          "formation": "III./JG 77",
+          "aircraft": "Bf 109 K-4",
+          "baseAsListed": "Düsseldorf-Lohausen"
+        },
+        {
+          "formation": "III./SG 4",
+          "aircraft": "Fw 190 F-8",
+          "baseAsListed": "Köln-Wahn"
+        },
+        {
+          "formation": "Einsatzstaffel/Jagdgruppe 104",
+          "aircraft": "Bf 109 K-4",
+          "baseAsListed": "Fürstenau"
+        },
+        {
+          "formation": "Kampfgruppe (J) 51",
+          "aircraft": "Me 262 A",
+          "baseAsListed": "Rheine"
+        },
+        {
+          "formation": "Einsatzstaffel III/Kampfgruppe (J) 76",
+          "aircraft": "Ar 234 B",
+          "baseAsListed": "Münster-Handorf"
+        }
+      ]
+    }
+  ]
+}

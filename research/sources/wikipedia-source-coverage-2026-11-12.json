@@ -1,0 +1,3909 @@
+{
+  "schemaVersion": 1,
+  "compiledOn": "2026-11-12",
+  "baseRevision": "0bc2084afa2dab72e2ead649b27b2fa5d136b34c",
+  "scope": "European Air War Atlas and adjacent European/mediterranean operation candidates. The article list is a finite seed manifest. A captured tail records retrieval of the rendered reference-area lines. It does not mean every citation was followed or that a revision ID was pinned.",
+  "legacyLedgers": [
+    "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md",
+    "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md",
+    "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md",
+    "research/sources/atlas-bilateral-strength-losses-2026-11-06.md",
+    "research/sources/atlas-campaign-gap-research-2026-11-06.md",
+    "research/sources/atlas-campaign-operational-coverage-2026-11-06.md",
+    "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md",
+    "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md",
+    "research/sources/atlas-thin-campaign-operations-2026-11-06.md",
+    "research/sources/atlas-v87-losses-and-claims-2026-11-11.md",
+    "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+    "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+    "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md",
+    "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md",
+    "research/sources/lead-inventory.md",
+    "research/sources/normandy-1944-story-benchmark-2026-11-10.md",
+    "research/sources/normandy-v86-operational-evidence-2026-11-11.md",
+    "research/sources/poland-1939-campaign-pilot-2026-11-05.md",
+    "research/sources/v75-aircraft-performance.md",
+    "research/sources/v75-german-production.md",
+    "research/sources/v75-integration-log.md",
+    "research/sources/v75-research-ledger.md",
+    "SOURCE_AUDIT.md"
+  ],
+  "articles": [
+    {
+      "campaign": "spain",
+      "lang": "en",
+      "title": "Condor_Legion",
+      "url": "https://en.wikipedia.org/wiki/Condor_Legion",
+      "access": "rendered-article",
+      "renderedLineCount": 597,
+      "referenceHeadingLines": [
+        {
+          "line": 414,
+          "heading": "Notes"
+        },
+        {
+          "line": 427,
+          "heading": "References"
+        },
+        {
+          "line": 430,
+          "heading": "Citations"
+        },
+        {
+          "line": 520,
+          "heading": "Sources"
+        },
+        {
+          "line": 535,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          414,
+          596
+        ]
+      ],
+      "referenceTailCapturedLines": 183,
+      "numberedNoteOrCitationLines": 96,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        597
+      ]
+    },
+    {
+      "campaign": "poland",
+      "lang": "en",
+      "title": "Invasion_of_Poland",
+      "url": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
+      "access": "rendered-article",
+      "renderedLineCount": 963,
+      "referenceHeadingLines": [
+        {
+          "line": 641,
+          "heading": "Notes"
+        },
+        {
+          "line": 662,
+          "heading": "References"
+        },
+        {
+          "line": 816,
+          "heading": "Sources and further reading"
+        },
+        {
+          "line": 851,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          641,
+          962
+        ]
+      ],
+      "referenceTailCapturedLines": 322,
+      "numberedNoteOrCitationLines": 170,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        963
+      ]
+    },
+    {
+      "campaign": "norway",
+      "lang": "en",
+      "title": "Norwegian_campaign",
+      "url": "https://en.wikipedia.org/wiki/Norwegian_campaign",
+      "access": "rendered-article",
+      "renderedLineCount": 931,
+      "referenceHeadingLines": [
+        {
+          "line": 701,
+          "heading": "References"
+        },
+        {
+          "line": 704,
+          "heading": "Notes"
+        },
+        {
+          "line": 710,
+          "heading": "Citations"
+        },
+        {
+          "line": 839,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 875,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          701,
+          930
+        ]
+      ],
+      "referenceTailCapturedLines": 230,
+      "numberedNoteOrCitationLines": 128,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        931
+      ]
+    },
+    {
+      "campaign": "france1940",
+      "lang": "en",
+      "title": "Battle_of_France",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_France",
+      "access": "rendered-article",
+      "renderedLineCount": 1506,
+      "referenceHeadingLines": [
+        {
+          "line": 1273,
+          "heading": "References"
+        },
+        {
+          "line": 1426,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          1273,
+          1505
+        ]
+      ],
+      "referenceTailCapturedLines": 233,
+      "numberedNoteOrCitationLines": 0,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1506
+      ]
+    },
+    {
+      "campaign": "britain",
+      "lang": "en",
+      "title": "Battle_of_Britain",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+      "access": "rendered-article",
+      "renderedLineCount": 1505,
+      "referenceHeadingLines": [
+        {
+          "line": 931,
+          "heading": "References"
+        },
+        {
+          "line": 1240,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 1399,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          931,
+          1504
+        ]
+      ],
+      "referenceTailCapturedLines": 574,
+      "numberedNoteOrCitationLines": 305,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1505
+      ]
+    },
+    {
+      "campaign": "malta",
+      "lang": "en",
+      "title": "Siege_of_Malta_(World_War_II)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Malta_(World_War_II)",
+      "access": "rendered-article",
+      "renderedLineCount": 968,
+      "referenceHeadingLines": [
+        {
+          "line": 654,
+          "heading": "Notes"
+        },
+        {
+          "line": 848,
+          "heading": "References"
+        },
+        {
+          "line": 897,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          654,
+          967
+        ]
+      ],
+      "referenceTailCapturedLines": 314,
+      "numberedNoteOrCitationLines": 191,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        968
+      ]
+    },
+    {
+      "campaign": "barbarossa",
+      "lang": "en",
+      "title": "Operation_Barbarossa",
+      "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+      "access": "rendered-article",
+      "renderedLineCount": 1648,
+      "referenceHeadingLines": [
+        {
+          "line": 929,
+          "heading": "References"
+        },
+        {
+          "line": 932,
+          "heading": "Notes"
+        },
+        {
+          "line": 963,
+          "heading": "Citations"
+        },
+        {
+          "line": 1372,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 1576,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          929,
+          1647
+        ]
+      ],
+      "referenceTailCapturedLines": 719,
+      "numberedNoteOrCitationLines": 429,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1648
+      ]
+    },
+    {
+      "campaign": "dieppe",
+      "lang": "en",
+      "title": "Dieppe_Raid",
+      "url": "https://en.wikipedia.org/wiki/Dieppe_Raid",
+      "access": "rendered-article",
+      "renderedLineCount": 994,
+      "referenceHeadingLines": [
+        {
+          "line": 661,
+          "heading": "Notes"
+        },
+        {
+          "line": 674,
+          "heading": "References"
+        },
+        {
+          "line": 677,
+          "heading": "Citations"
+        },
+        {
+          "line": 908,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          661,
+          993
+        ]
+      ],
+      "referenceTailCapturedLines": 333,
+      "numberedNoteOrCitationLines": 176,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        994
+      ]
+    },
+    {
+      "campaign": "stalingrad",
+      "lang": "en",
+      "title": "Battle_of_Stalingrad",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+      "access": "rendered-article",
+      "renderedLineCount": 1370,
+      "referenceHeadingLines": [
+        {
+          "line": 842,
+          "heading": "References"
+        },
+        {
+          "line": 1205,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 1271,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          842,
+          1369
+        ]
+      ],
+      "referenceTailCapturedLines": 528,
+      "numberedNoteOrCitationLines": 352,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1370
+      ]
+    },
+    {
+      "campaign": "reichdefense",
+      "lang": "en",
+      "title": "Defence_of_the_Reich",
+      "url": "https://en.wikipedia.org/wiki/Defence_of_the_Reich",
+      "access": "rendered-article",
+      "renderedLineCount": 1046,
+      "referenceHeadingLines": [
+        {
+          "line": 707,
+          "heading": "Notes"
+        },
+        {
+          "line": 724,
+          "heading": "References"
+        },
+        {
+          "line": 727,
+          "heading": "Citations"
+        },
+        {
+          "line": 918,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 980,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          707,
+          1045
+        ]
+      ],
+      "referenceTailCapturedLines": 339,
+      "numberedNoteOrCitationLines": 201,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1046
+      ]
+    },
+    {
+      "campaign": "sicily",
+      "lang": "en",
+      "title": "Allied_invasion_of_Sicily",
+      "url": "https://en.wikipedia.org/wiki/Allied_invasion_of_Sicily",
+      "access": "rendered-article",
+      "renderedLineCount": 832,
+      "referenceHeadingLines": [
+        {
+          "line": 518,
+          "heading": "Notes"
+        },
+        {
+          "line": 526,
+          "heading": "References"
+        },
+        {
+          "line": 688,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 743,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          518,
+          831
+        ]
+      ],
+      "referenceTailCapturedLines": 314,
+      "numberedNoteOrCitationLines": 163,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        832
+      ]
+    },
+    {
+      "campaign": "kursk",
+      "lang": "en",
+      "title": "Battle_of_Kursk",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kursk",
+      "access": "rendered-article",
+      "renderedLineCount": 1347,
+      "referenceHeadingLines": [
+        {
+          "line": 823,
+          "heading": "References"
+        },
+        {
+          "line": 1196,
+          "heading": "Sources"
+        },
+        {
+          "line": 1273,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          823,
+          1346
+        ]
+      ],
+      "referenceTailCapturedLines": 524,
+      "numberedNoteOrCitationLines": 369,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1347
+      ]
+    },
+    {
+      "campaign": "schweinfurt",
+      "lang": "en",
+      "title": "Schweinfurt–Regensburg_mission",
+      "url": "https://en.wikipedia.org/wiki/Schweinfurt%E2%80%93Regensburg_mission",
+      "access": "rendered-article",
+      "renderedLineCount": 433,
+      "referenceHeadingLines": [
+        {
+          "line": 301,
+          "heading": "Notes"
+        },
+        {
+          "line": 315,
+          "heading": "Citations"
+        },
+        {
+          "line": 354,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 371,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          301,
+          432
+        ]
+      ],
+      "referenceTailCapturedLines": 132,
+      "numberedNoteOrCitationLines": 44,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        431,
+        433
+      ]
+    },
+    {
+      "campaign": "italy",
+      "lang": "en",
+      "title": "Italian_campaign_(World_War_II)",
+      "url": "https://en.wikipedia.org/wiki/Italian_campaign_(World_War_II)",
+      "access": "rendered-article",
+      "renderedLineCount": 685,
+      "referenceHeadingLines": [
+        {
+          "line": 433,
+          "heading": "Notes"
+        },
+        {
+          "line": 462,
+          "heading": "References"
+        },
+        {
+          "line": 542,
+          "heading": "Sources"
+        },
+        {
+          "line": 592,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          433,
+          684
+        ]
+      ],
+      "referenceTailCapturedLines": 252,
+      "numberedNoteOrCitationLines": 94,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        685
+      ]
+    },
+    {
+      "campaign": "bigweek",
+      "lang": "en",
+      "title": "Big_Week",
+      "url": "https://en.wikipedia.org/wiki/Big_Week",
+      "access": "rendered-article",
+      "renderedLineCount": 502,
+      "referenceHeadingLines": [
+        {
+          "line": 368,
+          "heading": "Notes"
+        },
+        {
+          "line": 373,
+          "heading": "References"
+        },
+        {
+          "line": 422,
+          "heading": "Bibliography"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          368,
+          501
+        ]
+      ],
+      "referenceTailCapturedLines": 134,
+      "numberedNoteOrCitationLines": 47,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        502
+      ]
+    },
+    {
+      "campaign": "normandy",
+      "lang": "en",
+      "title": "Air_war_during_Operation_Overlord",
+      "url": "https://en.wikipedia.org/wiki/Air_war_during_Operation_Overlord",
+      "access": "rendered-article",
+      "renderedLineCount": 518,
+      "referenceHeadingLines": [
+        {
+          "line": 434,
+          "heading": "Literature"
+        },
+        {
+          "line": 441,
+          "heading": "External links"
+        },
+        {
+          "line": 451,
+          "heading": "References"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          434,
+          517
+        ]
+      ],
+      "referenceTailCapturedLines": 84,
+      "numberedNoteOrCitationLines": 24,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        516,
+        518
+      ]
+    },
+    {
+      "campaign": "bagration",
+      "lang": "en",
+      "title": "Operation_Bagration",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration",
+      "access": "rendered-article",
+      "renderedLineCount": 789,
+      "referenceHeadingLines": [
+        {
+          "line": 584,
+          "heading": "Notes"
+        },
+        {
+          "line": 592,
+          "heading": "Citations"
+        },
+        {
+          "line": 686,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 715,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          584,
+          788
+        ]
+      ],
+      "referenceTailCapturedLines": 205,
+      "numberedNoteOrCitationLines": 95,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        789
+      ]
+    },
+    {
+      "campaign": "marketgarden",
+      "lang": "en",
+      "title": "Operation_Market_Garden",
+      "url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "access": "rendered-article",
+      "renderedLineCount": 1570,
+      "referenceHeadingLines": [
+        {
+          "line": 1028,
+          "heading": "References"
+        },
+        {
+          "line": 1052,
+          "heading": "Citations"
+        },
+        {
+          "line": 1386,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 1485,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          1028,
+          1569
+        ]
+      ],
+      "referenceTailCapturedLines": 542,
+      "numberedNoteOrCitationLines": 344,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1570
+      ]
+    },
+    {
+      "campaign": "bodenplatte",
+      "lang": "en",
+      "title": "Operation_Bodenplatte",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bodenplatte",
+      "access": "rendered-article",
+      "renderedLineCount": 762,
+      "referenceHeadingLines": [
+        {
+          "line": 510,
+          "heading": "Notes"
+        },
+        {
+          "line": 515,
+          "heading": "References"
+        },
+        {
+          "line": 518,
+          "heading": "Citations"
+        },
+        {
+          "line": 668,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 698,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          510,
+          761
+        ]
+      ],
+      "referenceTailCapturedLines": 252,
+      "numberedNoteOrCitationLines": 149,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        761,
+        762
+      ]
+    },
+    {
+      "campaign": "berlin",
+      "lang": "en",
+      "title": "Battle_of_Berlin",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Berlin",
+      "access": "rendered-article",
+      "renderedLineCount": 824,
+      "referenceHeadingLines": [
+        {
+          "line": 525,
+          "heading": "Notes"
+        },
+        {
+          "line": 551,
+          "heading": "References"
+        },
+        {
+          "line": 700,
+          "heading": "Sources"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          525,
+          823
+        ]
+      ],
+      "referenceTailCapturedLines": 299,
+      "numberedNoteOrCitationLines": 168,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        824
+      ]
+    },
+    {
+      "campaign": "general",
+      "lang": "en",
+      "title": "Air_warfare_of_World_War_II",
+      "url": "https://en.wikipedia.org/wiki/Air_warfare_of_World_War_II",
+      "access": "rendered-article",
+      "renderedLineCount": 1164,
+      "referenceHeadingLines": [
+        {
+          "line": 850,
+          "heading": "Sources"
+        },
+        {
+          "line": 1105,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          850,
+          1163
+        ]
+      ],
+      "referenceTailCapturedLines": 314,
+      "numberedNoteOrCitationLines": 0,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1163,
+        1164
+      ]
+    },
+    {
+      "campaign": "reichdefense",
+      "lang": "en",
+      "title": "Luftwaffe_serviceable_aircraft_strengths_(1940–1945)",
+      "url": "https://en.wikipedia.org/wiki/Luftwaffe_serviceable_aircraft_strengths_(1940%E2%80%931945)",
+      "access": "rendered-article",
+      "renderedLineCount": 177,
+      "referenceHeadingLines": [
+        {
+          "line": 134,
+          "heading": "References and links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          134,
+          176
+        ]
+      ],
+      "referenceTailCapturedLines": 43,
+      "numberedNoteOrCitationLines": 0,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        177
+      ]
+    },
+    {
+      "campaign": "normandy",
+      "lang": "en",
+      "title": "Operation_Cobra",
+      "url": "https://en.wikipedia.org/wiki/Operation_Cobra",
+      "access": "rendered-article",
+      "renderedLineCount": 552,
+      "referenceHeadingLines": [
+        {
+          "line": 341,
+          "heading": "Citations"
+        },
+        {
+          "line": 457,
+          "heading": "References"
+        },
+        {
+          "line": 493,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          341,
+          551
+        ]
+      ],
+      "referenceTailCapturedLines": 211,
+      "numberedNoteOrCitationLines": 113,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        552
+      ]
+    },
+    {
+      "campaign": "spain",
+      "lang": "es",
+      "title": "Legión_Cóndor",
+      "url": "https://es.wikipedia.org/wiki/Legi%C3%B3n_C%C3%B3ndor",
+      "access": "rendered-article",
+      "renderedLineCount": 546,
+      "referenceHeadingLines": [
+        {
+          "line": 457,
+          "heading": "Referencias"
+        },
+        {
+          "line": 484,
+          "heading": "Bibliografía"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          457,
+          545
+        ]
+      ],
+      "referenceTailCapturedLines": 89,
+      "numberedNoteOrCitationLines": 24,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        544,
+        546
+      ]
+    },
+    {
+      "campaign": "poland",
+      "lang": "pl",
+      "title": "Kampania_wrześniowa",
+      "url": "https://pl.wikipedia.org/wiki/Kampania_wrze%C5%9Bniowa",
+      "access": "rendered-article",
+      "renderedLineCount": 3498,
+      "referenceHeadingLines": [
+        {
+          "line": 2087,
+          "heading": "Przypisy"
+        },
+        {
+          "line": 2940,
+          "heading": "Bibliografia"
+        },
+        {
+          "line": 3026,
+          "heading": "Linki zewnętrzne"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          2087,
+          3497
+        ]
+      ],
+      "referenceTailCapturedLines": 1411,
+      "numberedNoteOrCitationLines": 841,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        3498
+      ]
+    },
+    {
+      "campaign": "france1940",
+      "lang": "fr",
+      "title": "Bataille_de_France",
+      "url": "https://fr.wikipedia.org/wiki/Bataille_de_France",
+      "access": "rendered-article",
+      "renderedLineCount": 1582,
+      "referenceHeadingLines": [
+        {
+          "line": 1062,
+          "heading": "Notes et références"
+        },
+        {
+          "line": 1066,
+          "heading": "Notes"
+        },
+        {
+          "line": 1224,
+          "heading": "Voir aussi"
+        },
+        {
+          "line": 1227,
+          "heading": "Sources primaires"
+        },
+        {
+          "line": 1232,
+          "heading": "Bibliographie"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          1062,
+          1581
+        ]
+      ],
+      "referenceTailCapturedLines": 520,
+      "numberedNoteOrCitationLines": 146,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1582
+      ]
+    },
+    {
+      "campaign": "britain",
+      "lang": "de",
+      "title": "Luftschlacht_um_England",
+      "url": "https://de.wikipedia.org/wiki/Luftschlacht_um_England",
+      "access": "rendered-article",
+      "renderedLineCount": 612,
+      "referenceHeadingLines": [
+        {
+          "line": 509,
+          "heading": "Literatur"
+        },
+        {
+          "line": 531,
+          "heading": "Weblinks"
+        },
+        {
+          "line": 544,
+          "heading": "Einzelnachweise"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          509,
+          611
+        ]
+      ],
+      "referenceTailCapturedLines": 103,
+      "numberedNoteOrCitationLines": 24,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        610,
+        612
+      ]
+    },
+    {
+      "campaign": "sicily",
+      "lang": "it",
+      "title": "Sbarco_in_Sicilia",
+      "url": "https://it.wikipedia.org/wiki/Sbarco_in_Sicilia",
+      "access": "rendered-article",
+      "renderedLineCount": 1086,
+      "referenceHeadingLines": [
+        {
+          "line": 717,
+          "heading": "Note"
+        },
+        {
+          "line": 737,
+          "heading": "Bibliografiche"
+        },
+        {
+          "line": 936,
+          "heading": "Bibliografia"
+        },
+        {
+          "line": 958,
+          "heading": "Voci correlate"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          717,
+          1085
+        ]
+      ],
+      "referenceTailCapturedLines": 369,
+      "numberedNoteOrCitationLines": 205,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1084,
+        1086
+      ]
+    },
+    {
+      "campaign": "kursk",
+      "lang": "ru",
+      "title": "Курская_битва",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0",
+      "access": "rendered-article",
+      "renderedLineCount": 1357,
+      "referenceHeadingLines": [
+        {
+          "line": 1139,
+          "heading": "Примечания"
+        },
+        {
+          "line": 1265,
+          "heading": "Литература"
+        },
+        {
+          "line": 1288,
+          "heading": "Ссылки"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          1139,
+          1356
+        ]
+      ],
+      "referenceTailCapturedLines": 218,
+      "numberedNoteOrCitationLines": 119,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1357
+      ]
+    },
+    {
+      "campaign": "bagration",
+      "lang": "ru",
+      "title": "Белорусская_операция_(1944)",
+      "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F_(1944)",
+      "access": "rendered-article",
+      "renderedLineCount": 1142,
+      "referenceHeadingLines": [
+        {
+          "line": 965,
+          "heading": "Примечания"
+        },
+        {
+          "line": 1047,
+          "heading": "Литература"
+        },
+        {
+          "line": 1061,
+          "heading": "Ссылки"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          965,
+          1141
+        ]
+      ],
+      "referenceTailCapturedLines": 177,
+      "numberedNoteOrCitationLines": 77,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1142
+      ]
+    },
+    {
+      "campaign": "marketgarden",
+      "lang": "nl",
+      "title": "Operatie_Market_Garden",
+      "url": "https://nl.wikipedia.org/wiki/Operatie_Market_Garden",
+      "access": "rendered-article",
+      "renderedLineCount": 864,
+      "referenceHeadingLines": [
+        {
+          "line": 783,
+          "heading": "Bronnen"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          783,
+          863
+        ]
+      ],
+      "referenceTailCapturedLines": 81,
+      "numberedNoteOrCitationLines": 37,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        862,
+        864
+      ]
+    },
+    {
+      "campaign": "bodenplatte",
+      "lang": "de",
+      "title": "Unternehmen_Bodenplatte",
+      "url": "https://de.wikipedia.org/wiki/Unternehmen_Bodenplatte",
+      "access": "rendered-article",
+      "renderedLineCount": 327,
+      "referenceHeadingLines": [
+        {
+          "line": 266,
+          "heading": "Literatur"
+        },
+        {
+          "line": 273,
+          "heading": "Weblinks"
+        },
+        {
+          "line": 282,
+          "heading": "Einzelnachweise"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          266,
+          326
+        ]
+      ],
+      "referenceTailCapturedLines": 61,
+      "numberedNoteOrCitationLines": 6,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        325,
+        327
+      ]
+    },
+    {
+      "campaign": "berlin",
+      "lang": "ru",
+      "title": "Берлинская_стратегическая_наступательная_операция",
+      "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F",
+      "access": "rendered-article",
+      "renderedLineCount": 880,
+      "referenceHeadingLines": [
+        {
+          "line": 744,
+          "heading": "Примечания"
+        },
+        {
+          "line": 780,
+          "heading": "Литература"
+        },
+        {
+          "line": 815,
+          "heading": "Ссылки"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          744,
+          879
+        ]
+      ],
+      "referenceTailCapturedLines": 136,
+      "numberedNoteOrCitationLines": 33,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        1110,
+        880
+      ]
+    },
+    {
+      "campaign": "schweinfurt",
+      "lang": "en",
+      "title": "Second_Schweinfurt_raid",
+      "url": "https://en.wikipedia.org/wiki/Second_Schweinfurt_raid",
+      "access": "rendered-article",
+      "renderedLineCount": 290,
+      "referenceHeadingLines": [
+        {
+          "line": 173,
+          "heading": "Notes"
+        },
+        {
+          "line": 180,
+          "heading": "References"
+        },
+        {
+          "line": 183,
+          "heading": "Citations"
+        },
+        {
+          "line": 210,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 234,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          173,
+          289
+        ]
+      ],
+      "referenceTailCapturedLines": 117,
+      "numberedNoteOrCitationLines": 26,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        290
+      ]
+    },
+    {
+      "campaign": "general",
+      "lang": "en",
+      "title": "Operation_Tidal_Wave",
+      "url": "https://en.wikipedia.org/wiki/Operation_Tidal_Wave",
+      "access": "rendered-article",
+      "renderedLineCount": 560,
+      "referenceHeadingLines": [
+        {
+          "line": 388,
+          "heading": "Notes"
+        },
+        {
+          "line": 402,
+          "heading": "References"
+        },
+        {
+          "line": 484,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 494,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          388,
+          559
+        ]
+      ],
+      "referenceTailCapturedLines": 172,
+      "numberedNoteOrCitationLines": 90,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        558,
+        560
+      ]
+    },
+    {
+      "campaign": "general",
+      "lang": "en",
+      "title": "Combined_Bomber_Offensive",
+      "url": "https://en.wikipedia.org/wiki/Combined_Bomber_Offensive",
+      "access": "rendered-article",
+      "renderedLineCount": 472,
+      "referenceHeadingLines": [
+        {
+          "line": 294,
+          "heading": "Notes"
+        },
+        {
+          "line": 383,
+          "heading": "References"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          294,
+          471
+        ]
+      ],
+      "referenceTailCapturedLines": 178,
+      "numberedNoteOrCitationLines": 83,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        472
+      ]
+    },
+    {
+      "campaign": "general",
+      "lang": "en",
+      "title": "Operational_history_of_the_Luftwaffe_(1939–1945)",
+      "url": "https://en.wikipedia.org/wiki/Operational_history_of_the_Luftwaffe_(1939%E2%80%931945)",
+      "access": "rendered-article",
+      "renderedLineCount": 647,
+      "referenceHeadingLines": [
+        {
+          "line": 427,
+          "heading": "Notes"
+        },
+        {
+          "line": 538,
+          "heading": "References"
+        },
+        {
+          "line": 600,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          427,
+          646
+        ]
+      ],
+      "referenceTailCapturedLines": 220,
+      "numberedNoteOrCitationLines": 108,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        647
+      ]
+    },
+    {
+      "campaign": "general",
+      "lang": "en",
+      "title": "German_aircraft_production_during_World_War_II",
+      "url": "https://en.wikipedia.org/wiki/German_aircraft_production_during_World_War_II",
+      "access": "rendered-article",
+      "renderedLineCount": 244,
+      "referenceHeadingLines": [
+        {
+          "line": 197,
+          "heading": "References"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          197,
+          243
+        ]
+      ],
+      "referenceTailCapturedLines": 47,
+      "numberedNoteOrCitationLines": 0,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        244
+      ]
+    },
+    {
+      "campaign": "bagration",
+      "lang": "en",
+      "title": "16th_Air_Army",
+      "url": "https://en.wikipedia.org/wiki/16th_Air_Army",
+      "access": "rendered-article",
+      "renderedLineCount": 392,
+      "referenceHeadingLines": [
+        {
+          "line": 309,
+          "heading": "References"
+        },
+        {
+          "line": 312,
+          "heading": "Citations"
+        },
+        {
+          "line": 329,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 334,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          309,
+          391
+        ]
+      ],
+      "referenceTailCapturedLines": 83,
+      "numberedNoteOrCitationLines": 14,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        392
+      ]
+    },
+    {
+      "campaign": "norway",
+      "lang": "en",
+      "title": "No._263_Squadron_RAF",
+      "url": "https://en.wikipedia.org/wiki/No._263_Squadron_RAF",
+      "access": "rendered-article",
+      "renderedLineCount": 357,
+      "referenceHeadingLines": [
+        {
+          "line": 276,
+          "heading": "References"
+        },
+        {
+          "line": 279,
+          "heading": "Notes"
+        },
+        {
+          "line": 297,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 305,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          276,
+          356
+        ]
+      ],
+      "referenceTailCapturedLines": 81,
+      "numberedNoteOrCitationLines": 15,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        357
+      ]
+    },
+    {
+      "campaign": "malta",
+      "lang": "en",
+      "title": "RAF_Luqa",
+      "url": "https://en.wikipedia.org/wiki/RAF_Luqa",
+      "access": "rendered-article",
+      "renderedLineCount": 241,
+      "referenceHeadingLines": [
+        {
+          "line": 168,
+          "heading": "References"
+        },
+        {
+          "line": 182,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          168,
+          240
+        ]
+      ],
+      "referenceTailCapturedLines": 73,
+      "numberedNoteOrCitationLines": 7,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        241
+      ]
+    },
+    {
+      "campaign": "normandy",
+      "lang": "en",
+      "title": "Jagdgeschwader_26",
+      "url": "https://en.wikipedia.org/wiki/Jagdgeschwader_26",
+      "access": "rendered-article",
+      "renderedLineCount": 816,
+      "referenceHeadingLines": [
+        {
+          "line": 485,
+          "heading": "References"
+        },
+        {
+          "line": 488,
+          "heading": "Citations"
+        },
+        {
+          "line": 709,
+          "heading": "Bibliography"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          485,
+          815
+        ]
+      ],
+      "referenceTailCapturedLines": 331,
+      "numberedNoteOrCitationLines": 218,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        816
+      ]
+    },
+    {
+      "campaign": "bagration",
+      "lang": "de",
+      "title": "Jagdgeschwader_51",
+      "url": "https://de.wikipedia.org/wiki/Jagdgeschwader_51",
+      "access": "rendered-article",
+      "renderedLineCount": 298,
+      "referenceHeadingLines": [
+        {
+          "line": 242,
+          "heading": "Literatur"
+        },
+        {
+          "line": 248,
+          "heading": "Weblinks"
+        },
+        {
+          "line": 255,
+          "heading": "Einzelnachweise"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          242,
+          297
+        ]
+      ],
+      "referenceTailCapturedLines": 56,
+      "numberedNoteOrCitationLines": 2,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        298
+      ]
+    },
+    {
+      "campaign": "poland",
+      "lang": "pl",
+      "title": "Lotnictwo_w_kampanii_wrześniowej",
+      "url": "https://pl.wikipedia.org/wiki/Lotnictwo_w_kampanii_wrze%C5%9Bniowej",
+      "access": "retrieval-failed",
+      "reason": "Failed to fetch https://pl.wikipedia.org/wiki/Lotnictwo_w_kampanii_wrze%C5%9Bniowej: DisabledError"
+    },
+    {
+      "campaign": "general",
+      "lang": "en",
+      "title": "Republic_P-47_Thunderbolt",
+      "url": "https://en.wikipedia.org/wiki/Republic_P-47_Thunderbolt",
+      "access": "rendered-article",
+      "renderedLineCount": 745,
+      "referenceHeadingLines": [
+        {
+          "line": 529,
+          "heading": "References"
+        },
+        {
+          "line": 532,
+          "heading": "Notes"
+        },
+        {
+          "line": 542,
+          "heading": "Citations"
+        },
+        {
+          "line": 634,
+          "heading": "Bibliography"
+        },
+        {
+          "line": 675,
+          "heading": "External links"
+        }
+      ],
+      "referenceTailRanges": [
+        [
+          529,
+          744
+        ]
+      ],
+      "referenceTailCapturedLines": 216,
+      "numberedNoteOrCitationLines": 96,
+      "referenceTailComplete": true,
+      "initialRenderedLineCounts": [
+        745
+      ]
+    }
+  ],
+  "legacyLinks": [
+    {
+      "url": "https://ww2.dk/oob/bestand/jagd/biiijg51.html",
+      "ledgers": [
+        "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ww2.dk/oob/bestand/schlacht/bisg10.html",
+      "ledgers": [
+        "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://asisbiz.com/Luftwaffe/bisg10.html",
+      "ledgers": [
+        "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ww2.dk/air/jagd/jg51.htm",
+      "ledgers": [
+        "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ww2.dk/air/attack/sg10.htm",
+      "ledgers": [
+        "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://militera.lib.ru/h/16va/03.html",
+      "ledgers": [
+        "research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md",
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md",
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md",
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://hansard.parliament.uk/Commons/1947-05-14/debates/fa295090-0de7-4cfe-bf9a-7cf2739a70b4/RoyalAirForce",
+      "ledgers": [
+        "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md",
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-hardest-day",
+      "ledgers": [
+        "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/UN/Canada/CA/OpSumm/OpSumm-5.html",
+      "ledgers": [
+        "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/08/in-the-skies-above-dieppe-august-19-1942.html",
+      "ledgers": [
+        "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.nationalww2museum.org/war/articles/black-thursday-october-14-1943-second-schweinfurt-bombing-raid",
+      "ledgers": [
+        "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md",
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519661/black-thursday-schweinfurt-october-14-1943",
+      "ledgers": [
+        "research/sources/atlas-all-campaign-bilateral-evidence-audit-2026-11-10.md",
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1947/may/14/battle-of-britain-enemy-losses",
+      "ledgers": [
+        "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://erenow.org/ww/narrow-margin-battle-britain-rise-air-power-1930-1940/21.php",
+      "ledgers": [
+        "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md",
+        "research/sources/v75-integration-log.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://bc.pollub.pl/Content/14151/Aero%201%201993.pdf",
+      "ledgers": [
+        "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.fadedpage.com/books/20191054/html.php",
+      "ledgers": [
+        "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-I/UK-RAF-I-6.html",
+      "ledgers": [
+        "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss3-3-pdf",
+      "ledgers": [
+        "research/sources/atlas-battle-of-britain-claims-over-campaign-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss4-2-pdf",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/g/gaf-invasion-normandy.html",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md",
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/70-58.pdf",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.eucom.mil/organization/history-of-useucom/operation-overlord-d-day",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.royalpioneercorps.co.uk/rpc/newsletters/2014_Oct_Newsletter.pdf",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0012_MURRAY_STRATEGY_FOR_DEFEAT.pdf",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://media.defense.gov/2010/Oct/12/2001330116/-1/-1/0/AFD-101012-038.pdf",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.operationbarbarossa.net/the-period-22nd-june-to-5th-august-1941",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.generalstaff.org/WW2/Hist_UK/MedMiddleEastVol5.pdf",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-german-translations",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md",
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md",
+        "research/sources/lead-inventory.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/despatches-and-reports",
+      "ledgers": [
+        "research/sources/atlas-bilateral-strength-losses-2026-11-06.md",
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/despatches-and-reports"
+    },
+    {
+      "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/wwii/milimprov/ch07.htm",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.airuniversity.af.edu/Portals/10/AUPress/Papers/T_0002_BRUNHAVER_LIFELINE_FROM_THE_SKY.PDF",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.airandspaceforces.com/article/turning-point-at-stalingrad",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-january-april-1944",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-20.html",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://media.defense.gov/2010/Sep/22/2001330054/-1/-1/0/AFD-100922-028.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.smithsonianmag.com/air-space-magazine/kursk-180954670",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-MTO-Salerno/USA-MTO-Salerno-25.html",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/72-20.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://history.army.mil/Portals/143/Images/Publications/Publication%20By%20Title%20Images/C%20Img/campaigns-wwii/pdf/31.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://musei.difesa.it/allegati/Atti%202013%20Le%20Operazioni%20Interforze%20e%20Multinazionali%20nella%20Storia%20Militare%20-%20Torino%20tomo%20I/files/basic-html/page449.html",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D110-PURL-LPS68395/pdf/GOVPUB-D110-PURL-LPS68395.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ospreypublishing.com/us/eastern-front-1945-9781472857842",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md",
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://media.defense.gov/2010/Oct/28/2001330228/-1/-1/0/AFD-101028-004.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://doi.org/10.4324/9780429314353",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md",
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://docs.historyrussia.org/ru/nodes/221504-iz-otcheta-o-rabote-armeyskogo-uzla-navedeniya-16-y-vozdushnoy-armii-v-berlinskoy-operatsii-sostavlennogo-shtabom-etoy-armii-15-maya-1945-g",
+      "ledgers": [
+        "research/sources/atlas-campaign-gap-research-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md",
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1941-2",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1942-2",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.iwmprints.org.uk/collections/armed-forces-weapons-ships/products/pod445981",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/104-21.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090515-102.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/72-16.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/11-1.pdf",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md",
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md",
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519655/regensburgschweinfurt-august-17-1943",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196143/black-thursday",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519678/big-week-february-20-25-1944",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196168/industry-crippled",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-4",
+      "ledgers": [
+        "research/sources/atlas-campaign-operational-coverage-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/26/33",
+      "ledgers": [
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://ru.wikisource.org/wiki/Сборник_боевых_документов_Великой_Отечественной_войны/26",
+      "ledgers": [
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://ru.wikisource.org/wiki/%D0%A1%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA_%D0%B1%D0%BE%D0%B5%D0%B2%D1%8B%D1%85_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B/26"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-june-1944",
+      "ledgers": [
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md",
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-eastern-front-1st-september-31st-december-1943",
+      "ledgers": [
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-strength-and-serviceability-tables-august-1938-april-1945",
+      "ledgers": [
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/situation-reports-issued-by-luftflotte-3-france-june-1944",
+      "ledgers": [
+        "research/sources/atlas-german-soviet-original-operational-ledgers-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/situation-reports-issued-by-luftflotte-3-france-june-1944"
+    },
+    {
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-air-force-operations-record-books-1911-1963",
+      "ledgers": [
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://263squadron.weebly.com/orb.html",
+      "ledgers": [
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://263squadron.weebly.com/orb.html"
+    },
+    {
+      "url": "https://znaci.org/00002/315.pdf",
+      "ledgers": [
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/s/the-sicilian-campaign-operation-husky.html",
+      "ledgers": [
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md",
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/mare-nostrum-a-review-of-macaf-operations-march1943-september1944",
+      "ledgers": [
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.armyaircorpsmuseum.org/july-1943-army-air-forces.cfm",
+      "ledgers": [
+        "research/sources/atlas-original-raf-daily-returns-and-maaf-sicily-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.armyaircorpsmuseum.org/july-1943-army-air-forces.cfm"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-on-operations-of-no-263-sqn-in-norway-by-sqn-ldr-j-w-donaldson-oc/):",
+      "ledgers": [
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/documents/collections/72-A-472-Gladiator-II-N5628.pdf",
+      "ledgers": [
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1940-2",
+      "ledgers": [
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+      "ledgers": [
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1943/sicilian-campaign.html",
+      "ledgers": [
+        "research/sources/atlas-thin-campaign-operations-2026-11-06.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://ibccdigitalarchive.blogs.lincoln.ac.uk/2018/07/19/the-normandy-campaign-and-the-bombing-of-caen-1944",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://aircrewremembered.com/USAAFCombatOperations/Jul.44.html",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md",
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/UN/UK/LondonGazette/37838.html",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md",
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.backtonormandy.org/Air-Force-Operations/Missions-and-crashes-by-airplane/Avro-Lancaster/the-300-sqdn-left-from-faldingworth-at-1944-08-14-at-13-31-loc-or-duty-falaise-88570.html",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/4574",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md",
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://hansard.parliament.uk/Commons/1947-05-14/debates/c2ffba1e-313d-44ea-a198-29b573d9441e/CommonsChamber",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://hansard.parliament.uk/Commons/1947-05-14/debates/c2ffba1e-313d-44ea-a198-29b573d9441e/CommonsChamber"
+    },
+    {
+      "url": "https://www.history.navy.mil/content/history/nhhc/research/library/online-reading-room/title-list-alphabetically/g/gaf-invasion-normandy.html",
+      "ledgers": [
+        "research/sources/atlas-v87-losses-and-claims-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/calendar-of-operations-in-north-west-europe-july-1944",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/situation-reports-issued-by-luftflotte-3-france-july-1944",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-8.html",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-8.html"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-july-31st-august-1944",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/liberation-of-north-west-europe-vol-iv-the-breakout-and-advance-to-the-lower-rhine-12-jun-30-sep-1944",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md",
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ww2.dk/Changes%20Log%202019-2020%20Officer%20Career%20Summaries%20%282%29.pdf",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.ww2.dk/Changes%20Log%202019-2020%20Officer%20Career%20Summaries%20%282%29.pdf"
+    },
+    {
+      "url": "https://www.scribd.com/document/699609505/Jagdwaffe-Volume-Five-Section-2-War-in-The-East-1944-1945",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+      "ledgers": [
+        "research/sources/atlas-v88-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://forum.dcs.world/topic/144168-the-air-battle-over-normandy",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.8af.org/james-jure-56th-fighter-group-27-june-1944.cfm",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://raf-warmwell.co.uk/anatomy-of-a-dogfight",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://b24.net/8thAAFcombat.htm",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://b24.net/8thAAFcombat.htm"
+    },
+    {
+      "url": "https://www.8af.org/robert-foy-357th-fighter-group-25-july-1944.cfm",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md",
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://falkeeins.blogspot.com/2018/11/herbert-huppertz-jg-2-6-8-june-1944.html",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://docs.historyrussia.org/ru/nodes/279190",
+      "ledgers": [
+        "research/sources/atlas-v89-regional-claims-and-losses-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://img1.wsimg.com/blobby/go/36836b51-c255-4987-81d0-d13854eca3cb/downloads/Newsletter%20367th%20Fighter%20Group%20issue%2010.pdf?ver=1735205332520",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://387bg.com/Stations/Clastres/Clastres.htm",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.8af.org/thomas-schank-55th-fighter-group-25-july-1944.cfm",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.8af.org/thomas-schank-55th-fighter-group-25-july-1944.cfm"
+    },
+    {
+      "url": "https://www.8af.org/enoch-stephenson-339th-fighter-group-25-july-1944.cfm",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.8af.org/enoch-stephenson-339th-fighter-group-25-july-1944.cfm"
+    },
+    {
+      "url": "https://www.8af.org/john-holloway-339th-fighter-group-25-july-1944.cfm",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.8af.org/john-holloway-339th-fighter-group-25-july-1944.cfm"
+    },
+    {
+      "url": "https://aircrewremembered.com/KrackerDatabase/?q=Gr%C3%BCnewald",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://aircrewremembered.com/KrackerDatabase/?exc1=&exc2=&o=Score&q=march+1944&qand=&s=2300&search_only=&search_type=",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://aircrewremembered.com/KrackerDatabase/?exc1=&exc2=&o=Score&q=march+1944&qand=&s=2300&search_only=&search_type="
+    },
+    {
+      "url": "https://aircrewremembered.com/KrackerDatabase/?exc1=&exc2=&o=Pilot&q=france&qand=&s=600&search_only=&search_type=",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://aircrewremembered.com/KrackerDatabase/?exc1=&exc2=&o=Pilot&q=france&qand=&s=600&search_only=&search_type="
+    },
+    {
+      "url": "https://aircrewremembered.com/KrackerDatabase/?q=Dahmer,+Hugo",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://aircrewremembered.com/KrackerDatabase/?q=Dahmer%2C+Hugo"
+    },
+    {
+      "url": "https://asisbiz.com/il2/Bf-109G/JG1.html",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://asisbiz.com/il2/Bf-109G/JG1.html"
+    },
+    {
+      "url": "https://cyberaerobreton.fr/document/pdf-anglais/me109f.pdf",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://aircrewremembered.com/KrackerDatabase/?exc1=&exc2=&q=march+1944&qand=&s=8400&search_only=&search_type=",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://aircrewremembered.com/KrackerDatabase/?exc1=&exc2=&q=march+1944&qand=&s=8400&search_only=&search_type="
+    },
+    {
+      "url": "https://www.bundesarchiv.de/im-archiv-recherchieren/archivgut-recherchieren/nach-themen/das-schicksal-abgestuerzter-deutscher-flugzeuge-und-deren-besatzungen-im-zweiten-weltkrieg",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.bundesarchiv.de/im-archiv-recherchieren/archivgut-recherchieren/nach-themen/das-schicksal-abgestuerzter-deutscher-flugzeuge-und-deren-besatzungen-im-zweiten-weltkrieg"
+    },
+    {
+      "url": "https://caspir.warplane.com/aircraft/serial-search/aircraft-no/200001102",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.geocities.ws/ratuszynski/44/aug_18_44.html",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.geocities.ws/ratuszynski/44/aug_18_44.html"
+    },
+    {
+      "url": "https://stratusonline.pl/historia/eugeniusz-horbaczewski",
+      "ledgers": [
+        "research/sources/atlas-v891-normandy-claims-audit-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://stratusonline.pl/historia/eugeniusz-horbaczewski"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47072/pdf/GOVPUB-D301-PURL-LPS47072.pdf",
+      "ledgers": [
+        "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47072/pdf/GOVPUB-D301-PURL-LPS47072.pdf"
+    },
+    {
+      "url": "https://www.trumanlibrary.gov/library/federal-record/records-united-states-strategic-bombing-survey",
+      "ledgers": [
+        "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.trumanlibrary.gov/library/federal-record/records-united-states-strategic-bombing-survey"
+    },
+    {
+      "url": "https://www.scribd.com/document/754259981/Germany-and-the-Second-World-War-Vol-VII-the-Strategic-Horst-Boog-2006-Clarendon-Press-44ac2fcc10274caa9f6e73c5d92b2e80-Anna-s-Arch",
+      "ledgers": [
+        "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.scribd.com/document/754259981/Germany-and-the-Second-World-War-Vol-VII-the-Strategic-Horst-Boog-2006-Clarendon-Press-44ac2fcc10274caa9f6e73c5d92b2e80-Anna-s-Arch"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/AAF-Luftwaffe/AAF-Luftwaffe-7.html",
+      "ledgers": [
+        "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/AAF-Luftwaffe/AAF-Luftwaffe-7.html"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/notes-on-discussions-with-reichsmarschall-goering-held-on-15th-16th-may-1944-on-the-subject-of-fighters-and-fighter-personnel",
+      "ledgers": [
+        "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/notes-on-discussions-with-reichsmarschall-goering-held-on-15th-16th-may-1944-on-the-subject-of-fighters-and-fighter-personnel"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-thematic-studies/rise-and-fall-of-the-german-air-force-1933-1945",
+      "ledgers": [
+        "research/sources/grand-air-war-v80-historical-map-and-german-capacity-2026-11-01.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/aafsd-3.html",
+      "ledgers": [
+        "research/sources/lead-inventory.md",
+        "research/sources/v75-research-ledger.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/aafsd-3.html"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_02.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_02.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_03.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_03.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_04.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_04.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_05.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_05.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_06.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_06.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_07.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_07.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_08.htm",
+      "ledgers": [
+        "research/sources/lead-inventory.md",
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ww2.dk/oob/statistics/gobintro.html",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://www.soviet.airforce/home/english-2/military-publications/luftwaffe-losses-on-the-eastern-front-database",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.soviet.airforce/home/english-2/military-publications/luftwaffe-losses-on-the-eastern-front-database"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/index.html",
+      "ledgers": [
+        "research/sources/lead-inventory.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/III/index.html"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/liberation-of-north-west-europe-vol-iii-the-landings-in-normandy",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://history.army.mil/Publications/Publications-Catalog/Cross-Channel-Attack",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://history.army.mil/Publications/Publications-Catalog/St-Lo",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://history.army.mil/Publications/Publications-Catalog/Breakout-And-Pursuit",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/World-War-II/World-War-II-European-African-Middle-Eastern-Theater",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://history.army.mil/portals/143/Images/Publications/catalog/72-30.pdf",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959/invasion-battle-normandy-1944.html",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959/invasion-battle-normandy-1944.html"
+    },
+    {
+      "url": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959/canadian-operations-north-west-europe-august-1944.html",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959/canadian-operations-north-west-europe-august-1944.html"
+    },
+    {
+      "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959/offensive-air-support-north-west-europe-ww2.html",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959/offensive-air-support-north-west-europe-ww2.html"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/documents/Research/RAF-Historical-Society-Journals/Bracknell-No-5-OVERLORD.pdf",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rafmuseum.org.uk/documents/Research/RAF-Historical-Society-Journals/Bracknell-No-5-OVERLORD.pdf"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/blog/lawn-mowing-on-d-day",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.rafmuseum.org.uk/blog/lawn-mowing-on-d-day"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/blog/flying-nightingales",
+      "ledgers": [
+        "research/sources/normandy-1944-story-benchmark-2026-11-10.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.rafmuseum.org.uk/blog/flying-nightingales"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/AAF-H-DDay/index.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-10.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-12.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/UN/Canada/CA/Victory/Victory-10.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-13.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-24.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-8.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-III/UK-RAF-III-6.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.cartesfrance.fr/carte-france-ville/50123_La-Chapelle-en-Juger.html",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.cartesfrance.fr/carte-france-ville/50123_La-Chapelle-en-Juger.html"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/La_Chapelle-en-Juger",
+      "ledgers": [
+        "research/sources/normandy-v86-operational-evidence-2026-11-11.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/La_Chapelle-en-Juger"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/blog/poles-and-czechoslovaks-in-the-battle-of-britain",
+      "ledgers": [
+        "research/sources/poland-1939-campaign-pilot-2026-11-05.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://muzeumlotnictwa.pl/en/pilots-2nd-aviation-regiment",
+      "ledgers": [
+        "research/sources/poland-1939-campaign-pilot-2026-11-05.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://muzeumlotnictwa.pl/en/aviation-traces/aviation-disasters/g-39-orawka",
+      "ledgers": [
+        "research/sources/poland-1939-campaign-pilot-2026-11-05.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://muzeumlotnictwa.pl/en/about-the-museum/museum-history",
+      "ledgers": [
+        "research/sources/poland-1939-campaign-pilot-2026-11-05.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/invasion-of-poland-fall-1939",
+      "ledgers": [
+        "research/sources/poland-1939-campaign-pilot-2026-11-05.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://muzhp.pl/wiedza-on-line/polska-w-ii-wojnie-swiatowej%20%E2%80%8B",
+      "ledgers": [
+        "research/sources/poland-1939-campaign-pilot-2026-11-05.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.wwiiaircraftperformance.com/org/spitcom/mk9/spitLF-HF-mkIX.html",
+      "ledgers": [
+        "research/sources/v75-aircraft-performance.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.wwiiaircraftperformance.com/org/spitcom/mk9/spitLF-HF-mkIX.html"
+    },
+    {
+      "url": "https://www.wwiiaircraftperformance.com/org/p-51/p-51b-6883.html",
+      "ledgers": [
+        "research/sources/v75-aircraft-performance.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.wwiiaircraftperformance.com/org/p-51/p-51b-6883.html"
+    },
+    {
+      "url": "https://wwiiaircraftperformance.com/org/p-47/p-47.html",
+      "ledgers": [
+        "research/sources/v75-aircraft-performance.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://wwiiaircraftperformance.com/org/p-47/p-47.html"
+    },
+    {
+      "url": "https://www.wwiiaircraftperformance.org/me109/me109e.html):",
+      "ledgers": [
+        "research/sources/v75-aircraft-performance.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://books.google.com/books?id=rmgTAQAAMAAJ",
+      "ledgers": [
+        "research/sources/v75-german-production.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://books.google.com/books?id=rmgTAQAAMAAJ"
+    },
+    {
+      "url": "https://www.anesi.com/ussbs02.htm?level=1",
+      "ledgers": [
+        "research/sources/v75-german-production.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.anesi.com/ussbs02.htm?level=1"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/raf-in-the-bombing-offensive-against-germany-vol-v-the-full-offensive-february-1943-to-february-1944",
+      "ledgers": [
+        "research/sources/v75-german-production.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://erenow.org/ww/the-battle-of-britain-myth-and-reality/6.php",
+      "ledgers": [
+        "research/sources/v75-integration-log.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://erenow.org/ww/the-battle-of-britain-myth-and-reality/6.php"
+    },
+    {
+      "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/00-80T-80.pdf",
+      "ledgers": [
+        "research/sources/v75-integration-log.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://ntrs.nasa.gov/citations/19930094435",
+      "ledgers": [
+        "research/sources/v75-integration-log.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://ntrs.nasa.gov/citations/19930094435"
+    },
+    {
+      "url": "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B_0020_SPANGRUD_STRATEGIC_BOMBING_SURVEYS.PDF",
+      "ledgers": [
+        "research/sources/v75-research-ledger.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090522-058.pdf",
+      "ledgers": [
+        "research/sources/v75-research-ledger.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-battle-of-france",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/documents1/air-power-review-vol-14-no-3",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": true,
+      "recheck": "listed-in-prior-campaign-ledger"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-1-september-31-december-1943",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-1-september-31-december-1943"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-september-31st-december-1943",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-september-31st-december-1943"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-january-30th-april-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-1st-january-30th-april-1944"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-july-september-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-july-september-1944"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-october-november-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-october-november-1944"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-renamed-luftwaffe-kommando-west-on-20th-september-1944-1st-september-30th-november-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-renamed-luftwaffe-kommando-west-on-20th-september-1944-1st-september-30th-november-1944"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-may-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-may-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-on-the-western-front-luftflotte-3-may-1944"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-june-1944",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-june-1944"
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/2011525363_NT_Nazi_Vol-VII/2011525363_NT_Nazi_Vol-VII.pdf",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/index.html",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/index.html"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/III"
+    },
+    {
+      "url": "https://www.wwiiaircraftperformance.org/marshall/SUMMARY_OF_COMBAT_OPERATIONS.pdf",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.wwiiaircraftperformance.org/marshall/SUMMARY_OF_COMBAT_OPERATIONS.pdf"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/USSBS/ETO-Summary.html",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/USSBS/ETO-Summary.html"
+    },
+    {
+      "url": "https://www.ww2.dk/Dan%20Zamansky%20-%20The%20Study.pdf",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.ww2.dk/Dan%20Zamansky%20-%20The%20Study.pdf"
+    },
+    {
+      "url": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airstrusaafeur",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airstrusaafeur"
+    },
+    {
+      "url": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airstrrafeur",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=airstrrafeur"
+    },
+    {
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090529-044.pdf",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://media.defense.gov/2025/Jun/12/2003737774/-1/-1/0/LEAPING_THE_ATLANTIC_WALL.PDF",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.si.edu/object/strategic-bombing-german-aircraft-industry-united-states-strategic-bombing-survey-aircraft-division%3Asiris_sil_335023",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Defence_of_the_Reich",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Defence_of_the_Reich"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Luftwaffe_serviceable_aircraft_strengths_(1940%E2%80%931945)",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Luftwaffe_serviceable_aircraft_strengths_%281940%E2%80%931945%29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Air_war_during_Operation_Overlord",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Air_war_during_Operation_Overlord"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Republic_P-47_Thunderbolt",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Republic_P-47_Thunderbolt"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Battle_of_Britain"
+    },
+    {
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/german-aircraft-losses-september-1939-december-1940",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/german-aircraft-losses-september-1939-december-1940"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Condor_Legion",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Condor_Legion"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Operation_Bodenplatte",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Operation_Bodenplatte"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Big_Week",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Big_Week"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kursk",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Battle_of_Kursk"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Operation_Barbarossa"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Second_Raid_on_Schweinfurt",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Second_Raid_on_Schweinfurt"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/North_American_P-51_Mustang",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/North_American_P-51_Mustang"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hawker_Typhoon",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Hawker_Typhoon"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Messerschmitt_Me_262",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Messerschmitt_Me_262"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/German_aircraft_production_during_World_War_II",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/German_aircraft_production_during_World_War_II"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_109",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_109"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lockheed_P-38_Lightning",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Lockheed_P-38_Lightning"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Supermarine_Spitfire",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Supermarine_Spitfire"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hawker_Tempest",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Hawker_Tempest"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Consolidated_B-24_Liberator",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Consolidated_B-24_Liberator"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Operation_Overlord",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Operation_Overlord"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Operational_history_of_the_Luftwaffe_(1939%E2%80%931945)",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://en.wikipedia.org/wiki/Operational_history_of_the_Luftwaffe_%281939%E2%80%931945%29"
+    },
+    {
+      "url": "https://www.bundesarchiv.de/en/research-our-records/research-by-topic/the-fate-of-downed-airplanes-and-their-crews-in-the-second-world-war",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.bundesarchiv.de/en/research-our-records/research-by-topic/the-fate-of-downed-airplanes-and-their-crews-in-the-second-world-war"
+    },
+    {
+      "url": "https://www.archives.gov/research/guide-fed-records/groups/018.html",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.archives.gov/research/guide-fed-records/groups/018.html"
+    },
+    {
+      "url": "https://www.dafhistory.af.mil",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/II",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.ibiblio.org/hyperwar/AAF/II"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/AAF/StatDigest/index.html):",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "not-returned"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_09.htm",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_09.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_10.htm",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_10.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_11.htm",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_11.htm"
+    },
+    {
+      "url": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_12.htm",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "opened",
+      "resolvedUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_12.htm"
+    },
+    {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196263/north-american-p-51d-mustang",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "retrieval-failed"
+    },
+    {
+      "url": "https://www.rafmuseum.org.uk/london/things-to-see-and-do/london-aircraft",
+      "ledgers": [
+        "SOURCE_AUDIT.md"
+      ],
+      "inPriorCampaignLinkLedger": false,
+      "recheck": "redirect-or-rewrite",
+      "resolvedUrl": "https://www.rafmuseum.org.uk/london/things-to-see-and-do/london-aircraft"
+    }
+  ],
+  "tracedLeads": [
+    {
+      "id": "dieppe-command-report",
+      "campaign": "dieppe",
+      "seed": "https://en.wikipedia.org/wiki/Dieppe_Raid",
+      "relation": "article citation",
+      "title": "Leigh-Mallory, Report by the Air Force Commander, 5 September 1942",
+      "url": "https://scholars.wlu.ca/cmh/vol12/iss4/6/",
+      "type": "contemporary operational report, reprinted",
+      "access": "catalogue opened, reprint download forbidden",
+      "finding": "The university record identifies the reprint. Mahoney cites the originating record at TNA AIR 20/5186.",
+      "next": "Obtain AIR 20/5186 and Appendix C to reconcile own losses by force, cause and operation.",
+      "archivalLocator": "TNA AIR 20/5186; publisher download article=1347"
+    },
+    {
+      "id": "dieppe-ors",
+      "campaign": "dieppe",
+      "seed": "https://en.wikipedia.org/wiki/Dieppe_Raid",
+      "relation": "follow-up to article citation",
+      "title": "Fighter Command ORS Report 395 via Ross Mahoney",
+      "url": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+      "type": "academic secondary with contemporary report extracts",
+      "access": "full thesis opened, selected figures transcribed",
+      "finding": "Table 3.1 and prose distinguish patrol, direct support and withdrawal activity.",
+      "next": "Obtain the original page 2 table image to resolve categories that OCR disordered.",
+      "archivalLocator": "TNA AIR 16/1044, ORS Report 395, 3 December 1942"
+    },
+    {
+      "id": "davis-workbooks",
+      "campaign": "general",
+      "seed": "https://en.wikipedia.org/wiki/Air_war_during_Operation_Overlord",
+      "relation": "article external link, also cited by Combined Bomber Offensive",
+      "title": "Richard G. Davis, Bombing the European Axis Powers and supplemental workbooks",
+      "url": "https://media.defense.gov/2017/Mar/31/2001725263/-1/-1/0/B_0099_DAVIS_BOMBING_AXIS_POWERS.PDF",
+      "type": "official retrospective archive-derived compilation",
+      "access": "book and methods opened, workbook and key access tested and forbidden",
+      "finding": "The preface defines aircraft and command coverage. The appendix lists seven workbooks with sortie, target and loss fields.",
+      "next": "Obtain the sheet key and test a single overlapping date before importing mission-level rows.",
+      "codebook": "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1_Sheet_Key.pdf",
+      "workbooks": [
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1939-41.xls",
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1942.xls",
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1942-45.xls",
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1943.xls",
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1944-1.xls",
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1944-2.xls",
+        "https://www.airuniversity.af.edu/Portals/10/AUPress/Books/Davis_Disk/Worksheets/1945.xls"
+      ]
+    },
+    {
+      "id": "normandy-frappe",
+      "campaign": "normandy",
+      "seed": "https://en.wikipedia.org/wiki/Air_war_during_Operation_Overlord",
+      "relation": "article bibliography and earlier SOURCE_AUDIT entry",
+      "title": "Jean-Bernard Frappé, La Luftwaffe face au débarquement allié",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb45702024v",
+      "type": "specialist secondary",
+      "access": "national library record and review located; book pages unavailable",
+      "finding": "The revised volume covers 6 June–31 August and includes Normandy and Provence.",
+      "next": "Read the applicable 25 July Gruppe entries before treating it as mission-level corroboration.",
+      "catalogueSearch": "Frappé, La Luftwaffe face au débarquement, revised 2018, ISBN 9782840484646",
+      "review": "https://www.persee.fr/doc/rharm_0035-3299_1999_num_216_3_4868_t1_0135_0000_4"
+    },
+    {
+      "id": "bodenplatte-945gala",
+      "campaign": "bodenplatte",
+      "seed": "https://de.wikipedia.org/wiki/Unternehmen_Bodenplatte",
+      "relation": "article external link; recovered through finding aid",
+      "title": "Nafziger 945GALA, Luftwaffe Operation Bodenplatte",
+      "url": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945gala.pdf",
+      "type": "modern secondary compilation",
+      "access": "both pages opened, listed locations and aircraft types transcribed",
+      "finding": "The failed Wayback link points to a working mirror. The compilation names Girbig as its source.",
+      "next": "Match the launch fields and variants to actual Gruppe records, including Manrho and Pütz.",
+      "archivalLocator": "Nafziger 945GALA"
+    },
+    {
+      "id": "bodenplatte-manrho",
+      "campaign": "bodenplatte",
+      "seed": "https://de.wikipedia.org/wiki/Unternehmen_Bodenplatte",
+      "relation": "article bibliography and earlier SOURCE_AUDIT entry",
+      "title": "John Manrho and Ron Pütz, Bodenplatte, The Luftwaffe's Last Hope",
+      "url": "https://search.worldcat.org/search?q=isbn%3A9780811706865",
+      "type": "specialist secondary",
+      "access": "edition and citation identified; loss register not read",
+      "finding": "The German article provides page references for the cited figures. Different editions require page checks.",
+      "next": "Read the aircraft-level ledger, including the pages originally cited for loss and write-off reconciliation."
+    },
+    {
+      "id": "berlin-945rdad",
+      "campaign": "berlin",
+      "seed": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F",
+      "relation": "related discovery via the Nafziger finding aid",
+      "title": "Nafziger 945RDAD, Russian 16th Air Army, 16 April 1945",
+      "url": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945rdad.pdf",
+      "type": "modern secondary compilation",
+      "access": "opened, summary strengths extracted",
+      "finding": "The compilation gives 3,188 total and 3,033 combat aircraft. The previously checked headquarters serviceable total is 3,037.",
+      "next": "Use the two populations and the separate reconnaissance categories when comparing the figures.",
+      "archivalLocator": "Nafziger 945RDAD, p. 1"
+    },
+    {
+      "id": "kursk-timokhovich",
+      "campaign": "kursk",
+      "seed": "https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0",
+      "relation": "article bibliography",
+      "title": "I. V. Timokhovich, Soviet Aviation in the Battle of Kursk, 1959",
+      "url": "https://militera.lib.ru/h/timohovich/02.html",
+      "type": "postwar Soviet institutional history",
+      "access": "chapter opened, eight dated offensive episodes extracted",
+      "finding": "The data extend the July defensive-return study with Orel and Belgorod–Kharkov counteroffensive periods.",
+      "next": "Check the cited 1st, 2nd, 5th, 15th, 16th and 17th Air Army or ADD return pages against the individual episodes."
+    },
+    {
+      "id": "ploesti-103",
+      "campaign": "tidal-wave-research",
+      "seed": "https://en.wikipedia.org/wiki/Operation_Tidal_Wave",
+      "relation": "related discovery from new operation seed",
+      "title": "The Ploesti Mission of 1 August 1943, Study 103",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/AAFHS/AAFHS-103.pdf",
+      "type": "wartime institutional compilation from mission records",
+      "access": "scanned study opened, planning and takeoff counts extracted",
+      "finding": "154 planning aircraft and 177 successful takeoffs are distinguishable in the report. OCR readings of one target spare count conflict.",
+      "next": "Read target-force tables, loss appendix and unit mission records from scan images.",
+      "archivalLocator": "AAFRH-3 / USAF Historical Study 103"
+    },
+    {
+      "id": "reich-sperling",
+      "campaign": "reichdefense",
+      "seed": "https://en.wikipedia.org/wiki/Defence_of_the_Reich",
+      "relation": "article footnote and earlier SOURCE_AUDIT entry",
+      "title": "Hans Sperling, Die Luftkriegsverluste während des zweiten Weltkrieges in Deutschland",
+      "url": "https://www.destatis.de/GPStatistik/servlets/MCRFileNodeServlet/DEAusgabe_derivate_00000950/Wirtschaft_und_Statistik-1956-10.pdf",
+      "type": "postwar official civilian statistics study",
+      "access": "publication and scope inspected",
+      "finding": "Sperling estimates human losses from the air war. This does not supply German aircraft attrition.",
+      "next": "Use for civilian impact with geographic and population definitions when that field is in scope."
+    },
+    {
+      "id": "reich-caldwell-muller",
+      "campaign": "reichdefense",
+      "seed": "https://en.wikipedia.org/wiki/Defence_of_the_Reich",
+      "relation": "article bibliography, also appears in Schweinfurt and Big Week",
+      "title": "Donald Caldwell and Richard Muller, The Luftwaffe Over Germany",
+      "url": "https://search.worldcat.org/title/The-Luftwaffe-over-Germany-%3A-defense-of-the-Reich/oclc/76852917",
+      "type": "specialist secondary",
+      "access": "catalogue metadata located; specific pages unread",
+      "finding": "The volume is repeatedly cited for Reich defence attrition, Big Week and Schweinfurt.",
+      "next": "Acquire cited pages 112–114, 162–163 and 190–229 and trace each loss category to the author's source notes."
+    },
+    {
+      "id": "britain-stilla",
+      "campaign": "britain",
+      "seed": "https://de.wikipedia.org/wiki/Luftschlacht_um_England",
+      "relation": "German article footnote",
+      "title": "Ernst Stilla, Die Luftwaffe im Kampf um die Luftherrschaft",
+      "url": "https://www.lexikon-der-wehrmacht.de/Biblio/Drei.pdf",
+      "type": "doctoral archive-based secondary analysis",
+      "access": "PDF located and opened; numerical tables not extracted",
+      "finding": "The footnote specifies p. 79 and notes 363 and 366. The thesis treats several factors in German western air defence.",
+      "next": "Pull the cited source notes and evaluate command, campaign and all-war population boundaries.",
+      "archivalLocator": "urn:nbn:de:hbz:5-05816"
+    },
+    {
+      "id": "france-garraud",
+      "campaign": "france1940",
+      "seed": "https://fr.wikipedia.org/wiki/Bataille_de_France",
+      "relation": "French article bibliography",
+      "title": "Philippe Garraud, Les contraintes industrielles dans la préparation de la guerre de 1939–1940",
+      "url": "https://shs.cairn.info/article/GMCC_207_0037/pdf?lang=fr",
+      "type": "peer-reviewed historical secondary",
+      "access": "publication located; figures not extracted",
+      "finding": "A dedicated treatment of modernization and production constraints, relevant to inventory-to-serviceability differences.",
+      "next": "Follow its French archive notes and compare factory output, intake and aircraft accepted by operational units."
+    },
+    {
+      "id": "france-kirkland",
+      "campaign": "france1940",
+      "seed": "https://fr.wikipedia.org/wiki/Bataille_de_France",
+      "relation": "French article bibliography",
+      "title": "Faris R. Kirkland, The French Air Force in 1940",
+      "url": "https://www.airuniversity.af.mil/Portals/10/ASPJ/journals/1985_Vol36_No1-6/1985_Vol36_No6.pdf",
+      "type": "institutional journal secondary analysis",
+      "access": "issue indexed; article figures not transcribed",
+      "finding": "The cited September–October 1985 issue is a route to an alternative interpretation and its evidence.",
+      "next": "Read the article and tie any aircraft figures to the underlying French records."
+    },
+    {
+      "id": "poland-1939-okt",
+      "campaign": "poland",
+      "seed": "https://pl.wikipedia.org/wiki/Kampania_wrze%C5%9Bniowa",
+      "relation": "Polish article cites a German report in a 1979 documentary edition",
+      "title": "Raport Oberkommando der Luftwaffe, in Wojna Obronna Polski 1939",
+      "url": "https://wwii.germandocsinrussia.org/de/nodes/2410-opis-12452-glavnoe-komandovanie-lyuftvaffe-okl",
+      "type": "underlying contemporary report, exact file unresolved",
+      "access": "documentary citation seen and collection catalogue opened",
+      "finding": "The 1979 KAW citation gives a route for checking the German figures beyond the postwar aggregations.",
+      "next": "Identify the exact pages and original signature. The catalogue link is a search lead, not a confirmed match."
+    },
+    {
+      "id": "okl-12452",
+      "campaign": "barbarossa",
+      "seed": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+      "relation": "parallel archive search while following the Polish and German trails",
+      "title": "CAMO collection 500, Findbuch 12452, Oberkommando der Luftwaffe",
+      "url": "https://wwii.germandocsinrussia.org/de/nodes/2410-opis-12452-glavnoe-komandovanie-lyuftvaffe-okl",
+      "type": "archive catalogue for contemporary records",
+      "access": "catalogue opened",
+      "finding": "The catalogue describes 678 files across 1938–45, including air fleet, flying unit and staff records.",
+      "next": "Index by date, reporting command and document type. Start with aircraft returns and daily operations, not collection-wide totals.",
+      "archivalLocator": "CAMO f. 500, op. 12452"
+    },
+    {
+      "id": "lf4-427",
+      "campaign": "barbarossa",
+      "seed": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+      "relation": "specific file found through OKL collection",
+      "title": "Luftflotte 4 Führungsabteilung operations and loss reports, Akte 427",
+      "url": "https://wwii.germandocsinrussia.org/de/nodes/2713",
+      "type": "archive catalogue for contemporary operations and loss records",
+      "access": "file metadata opened, numerical pages not transcribed",
+      "finding": "The catalogue identifies July 1941 reporting dates. This is an Eastern Front lead with a bounded period.",
+      "next": "Read the original pages and map loss columns to aircraft or personnel before importing.",
+      "archivalLocator": "CAMO f. 500, op. 12452, file 427"
+    },
+    {
+      "id": "condor-rl35",
+      "campaign": "spain",
+      "seed": "https://es.wikipedia.org/wiki/Legi%C3%B3n_C%C3%B3ndor",
+      "relation": "parallel archive follow-up to Spanish and German literature",
+      "title": "Bundesarchiv RL 35/34, Condor Legion bomb effects",
+      "url": "https://www.bundesarchiv.de/das-bundesarchiv/aus-unserer-archivarbeit/digitalisierte-einzelstuecke-der-abteilung-militaerarchiv/",
+      "type": "archive description of contemporary photographs",
+      "access": "archivist's description and file reference opened",
+      "finding": "The German archive identifies a May 1938 activity by 5./J 88 across four named towns.",
+      "next": "Retrieve original captions and expand to RL 35 flight and formation records for counts.",
+      "archivalLocator": "Bundesarchiv RL 35/34"
+    },
+    {
+      "id": "norway-national-archives",
+      "campaign": "norway",
+      "seed": "https://en.wikipedia.org/wiki/No._263_Squadron_RAF",
+      "relation": "parallel Norwegian archive follow-up to English squadron citations",
+      "title": "Nasjonalarkivet, Kamphandlinger i Norge / felttoget 1940",
+      "url": "https://www.nasjonalarkivet.no/kamphandlinger-i-norge-felttoget-1940/",
+      "type": "archive guide",
+      "access": "opened; underlying unit files not read",
+      "finding": "Native-language archive route complements British and New Zealand official histories.",
+      "next": "Identify Norwegian air units and match German transport incidents against the dated Norwegian files."
+    },
+    {
+      "id": "malta-de-zeng",
+      "campaign": "malta",
+      "seed": "https://en.wikipedia.org/wiki/Siege_of_Malta_(World_War_II)",
+      "relation": "article bibliography",
+      "title": "H. L. de Zeng, D. G. Stankey and E. J. Creek, Bomber Units of the Luftwaffe 1933–1945",
+      "url": "https://search.worldcat.org/search?q=isbn%3A9781857802795",
+      "type": "specialist secondary",
+      "access": "bibliographic lead; book pages unread",
+      "finding": "Both volumes can help identify participating Gruppen and date their bases.",
+      "next": "Start with the documented October 1942 dates, then obtain relevant air fleet or unit returns."
+    },
+    {
+      "id": "sicily-pantelleria-52",
+      "campaign": "sicily",
+      "seed": "https://en.wikipedia.org/wiki/Allied_invasion_of_Sicily",
+      "relation": "article citation",
+      "title": "Edith C. Rogers, The Reduction of Pantelleria and Adjacent Islands, 8 May–14 June 1943",
+      "url": "https://www.dafhistory.af.mil/Information/Studies/Numbered-USAF-Historical-Studies-51-100/",
+      "type": "official postwar operational study",
+      "access": "study identified, direct document retrieval inconclusive",
+      "finding": "The study covers the preliminary air campaign before the Sicily landings.",
+      "next": "Locate the correct scan and extract command sorties and loss definitions before comparing to Husky.",
+      "archivalLocator": "USAF Historical Study 52"
+    },
+    {
+      "id": "bagration-16va-journal",
+      "campaign": "bagration",
+      "seed": "https://en.wikipedia.org/wiki/16th_Air_Army",
+      "relation": "parallel Russian archive follow-up to the formation article",
+      "title": "16th Air Army combat journal, February–October 1944",
+      "url": "https://pamyat-naroda.ru/warunit/id4463/",
+      "type": "contemporary unit journal candidate",
+      "access": "journal described in indexed references; formation portal open failed",
+      "finding": "An indexed example dates a journal entry to 19 July. The full daily series remains to be retrieved.",
+      "next": "Resolve the exact journal file and page ranges. Compare to 16th Air Army headquarters evidence already in the Atlas."
+    },
+    {
+      "id": "reich-price-strength",
+      "campaign": "reichdefense",
+      "seed": "https://en.wikipedia.org/wiki/Luftwaffe_serviceable_aircraft_strengths_(1940%E2%80%931945)",
+      "relation": "article sole bibliography and earlier SOURCE_AUDIT disagreement",
+      "title": "Alfred Price, The Luftwaffe Data Book",
+      "url": "https://search.worldcat.org/search?q=isbn%3A1853672939",
+      "type": "specialist secondary",
+      "access": "reference read; edition pages unread",
+      "finding": "The earlier audit noted disagreement with AHB VII/107 for August 1940 serviceability.",
+      "next": "Check Price's pages, labels and aircraft population against the original command reports."
+    },
+    {
+      "id": "normandy-2taf-orb",
+      "campaign": "normandy",
+      "seed": "https://en.wikipedia.org/wiki/Air_war_during_Operation_Overlord",
+      "relation": "article reference and earlier SOURCE_AUDIT lead",
+      "title": "Second Tactical Air Force operations record book",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-air-force-operations/",
+      "type": "contemporary headquarters record candidate",
+      "access": "series guide opened; cited piece not inspected",
+      "finding": "The article cites AIR 24/1496. Scope and actual pages need direct catalogue and image checks.",
+      "next": "Identify the dated 25 July, Goodwood and Falaise records in AIR 24, and cross-reference AIR 37 and the tasked groups.",
+      "archivalLocator": "AIR 24/1496 as cited by article, not yet inspected"
+    }
+  ]
+}
