@@ -1,5 +1,7 @@
 # Battle of Britain — milestone 1 start: German claims vs RAF losses (12 November 2026)
 
+Integration review. The live phase comparison uses the prior reconciliation of the Hansard cells, including 403 for 8–23 August. The Overy window below extends from May into November. The v9.2 reverse comparison uses the campaign dates and links the new German and British observations. [Integration audit](atlas-v92-britain-german-claims-2026-11-12.md)
+
 First pass on the reverse comparison (German claims against RAF losses) across the 17 weeks and five phases. Builds on the existing Atlas baseline in atlas-v90-campaign-loss-validation-2026-11-12.md and the earlier claims-over-campaign note. Focus is on phase totals and the seven intensive days where both sides have published figures.
 
 ## Phase-level comparison (RAF contemporary estimates vs official German records)

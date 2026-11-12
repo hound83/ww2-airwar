@@ -186,6 +186,33 @@ for(const [id,count,totalClaims,totalLosses,from,to,mae,covered,baseline] of [
 }
 assert.deepEqual([series['britain-german'].total.claims,series['britain-german'].total.losses,series['britain-german'].rows.length],[3058,915,7]);
 assert.equal(series['britain-german'].validation,null);
+const reverseWeeks=series['britain-german-weeks'],reversePhases=series['britain-german-phases'];
+for(const [report,periods] of [[reverseWeeks,17],[reversePhases,5]]){
+ assert.equal(report.rows.length,periods);
+ assert.deepEqual({...report.total},{losses:1023,reportDays:34,days:114});
+ assert.equal(report.validation,null);
+ assert.equal(report.reverse.daily.length,114);
+ assert.equal(report.reverse.cases.length,7);
+ for(const [index,row] of report.reverse.daily.entries()){
+  assert.equal(Date.parse(row.date),Date.parse('1940-07-10')+86400000*index);
+  assert.ok(Number.isInteger(row.rafAirframeLosses)&&row.rafAirframeLosses>=0);
+  assert.ok(row.rafPdfPage>=153&&row.rafPdfPage<=156);
+  if(row.report){
+   assert.ok(Object.hasOwn(window.AtlasBritainCampaignLossData.sources,row.report.sourceId));
+   assert.ok(Number.isInteger(row.report.pdfPage)&&row.report.pdfPage>0);
+  }
+ }
+}
+assert.equal(reverseWeeks.rows.reduce((total,row)=>total+row.churchillLosses,0),915);
+assert.deepEqual({...reverseWeeks.rows[0]},{
+ start:'1940-07-10',end:'1940-07-13',name:undefined,losses:19,churchillLosses:15,claims:49,reportDays:4,days:4,selectedDates:0
+});
+assert.deepEqual(Array.from(reversePhases.rows,row=>[row.losses,row.claims,row.reportDays]),[
+ [111,141,26],[204,382,8],[264,null,0],[259,null,0],[185,null,0]
+]);
+assert.equal(reverseWeeks.reverse.daily.find(row=>row.date==='1940-08-04').report.fighterClaims,null);
+assert.equal(reverseWeeks.reverse.daily.find(row=>row.date==='1940-08-06').report.fighterClaims,0);
+assert.equal(reverseWeeks.reverse.daily.find(row=>row.date==='1940-08-15').report.fighterClaims,101);
 assert.equal(campaignModel.validate(series['britain-weeks'].rows.slice(0,3)),null);
 const zeroClaims=Array.from({length:4},()=>({claims:0,losses:3,days:1}));
 assert.ok(campaignModel.validate(zeroClaims).checks.every(row=>row.expected===3&&row.low===3&&row.high===3));

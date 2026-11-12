@@ -21,7 +21,7 @@ const france=D.france;
 const bobruisk=D.bobruisk;
 const easternCampaign=C.campaigns.find(campaign=>campaign.id===bobruisk.campaign);
 const scopes={
- 'britain-campaign':{series:['britain-weeks','britain-phases','britain-german']},
+ 'britain-campaign':{series:['britain-weeks','britain-phases','britain-german-weeks','britain-german-phases','britain-german']},
  'normandy-campaign':{series:['normandy-allied','normandy-german']},
  britain:{claimCount:september.rafClaim,operation:'britain-15-sep',step:0},
  cobra:{claimCount:cobraClaim.value,operation:cobra.operation,step:1},
@@ -279,7 +279,7 @@ function campaignTable(caption,headings,rows,attributes=''){
 
 function renderCampaignValidation(report){
  const result=report.validation;
- if(!result)return '<p>German claims by week and phase are the remaining source gap for the RAF loss model.</p>';
+ if(!result)return '<p>These dated comparisons use the claim and loss counts published together by Cox.</p>';
  const periods=result.checks.length+' '+report.unit+'s';
  const rows=result.checks.map(row=>'<tr data-held-out-period="'+esc(row.start)+'">'+campaignPeriod(row)+
   '<td>'+fmt(row.losses)+'</td><td>'+fmt(row.expected)+'</td><td class="'+(row.covered?'':'claim-range-miss')+'">'+
@@ -303,15 +303,65 @@ function renderCampaignReport(report){
   renderCampaignValidation(report)+campaignTable(caption,['Recorded losses',report.claimant,'Losses per 100 claims'],rows,'data-recorded-campaign-table');
 }
 
+function renderReverseCampaignReport(report){
+ const {daily,cases,survey,claimScope,lossScope,coverageNote}=report.reverse;
+ const sources=window.AtlasBritainCampaignLossData.sources;
+ const weekly=report.unit==='week';
+ const pageLink=(sourceId,page,label)=>{
+  const source=sources[sourceId];
+  return '<a href="'+esc(source.url+'#page='+page)+'" target="_blank" rel="noopener noreferrer" '+
+   'aria-label="'+esc(label+' · '+source.title+' · PDF page '+page)+'">'+esc(label)+'</a>';
+ };
+ const rows=report.rows.map(row=>{
+  const status=row.reportDays===row.days?'complete':row.reportDays?'partial':'gap';
+  const claimLabel=row.claims===null?'Source gap':fmt(row.claims);
+  const coverage=row.reportDays+' of '+row.days+' days';
+  const selected=row.selectedDates?' · '+row.selectedDates+' selected Cox '+(row.selectedDates===1?'date':'dates'):'';
+  return '<tr data-reverse-period="'+esc(row.start)+'" data-claim-coverage="'+status+'">'+campaignPeriod(row)+
+   '<td>'+fmt(row.losses)+'</td>'+(weekly?'<td>'+fmt(row.churchillLosses)+'</td>':'')+
+   '<td>'+claimLabel+'<small>'+coverage+selected+'</small></td></tr>';
+ });
+ const days=daily.map(row=>{
+  const claims=row.report?.fighterClaims;
+  const claimLabel=claims==null?'Source gap':fmt(claims);
+  const claimCell=row.report?pageLink(row.report.sourceId,row.report.pdfPage,claimLabel):claimLabel;
+  return '<tr data-reverse-date="'+esc(row.date)+'">'+campaignPeriod({start:row.date,end:row.date})+
+   '<td>'+pageLink('fagan',row.rafPdfPage,fmt(row.rafAirframeLosses))+'</td><td>'+claimCell+
+   (row.report?.note?'<small>'+esc(row.report.note)+'</small>':'')+'</td></tr>';
+ });
+ const caseList=cases.map(entry=>'<li><strong>'+campaignDate({start:entry.date,end:entry.date})+
+  ' · '+esc(entry.title)+'</strong><p>'+esc(entry.note)+'</p><p>'+
+  entry.sourceIds.map(id=>sourceLink({...sources[id],page:sources[id].locator})).join(' · ')+'</p></li>');
+ const headings=['RAF airframes lost'];
+ if(weekly)headings.push('Fighter write-offs or missing');
+ headings.push('German staff fighter claims');
+ return '<p>'+esc(claimScope)+'</p><p>'+esc(lossScope)+'</p><p>'+esc(coverageNote)+'</p>'+
+  campaignTable('German claims and RAF losses by '+report.unit,headings,rows,'data-reverse-campaign-table')+
+  '<details><summary>Daily figures and source pages</summary>'+
+  campaignTable('Daily evidence, 10 July–31 October 1940',['RAF airframes lost','German staff fighter claims'],days,'data-reverse-daily-table')+
+  '</details><details><summary>Raid and unit checks</summary><ul>'+caseList.join('')+'</ul></details>'+
+  '<p>'+pageLink(survey.sourceId,survey.pdfPage,'German staff survey, 1 July–15 August')+
+  ' reported '+fmt(survey.fighterClaims)+' fighters claimed shot down by fighters, '+fmt(survey.fighterAircraftTotal)+
+  ' fighters claimed across all causes and '+fmt(survey.allAircraftTotal)+' aircraft of all types. '+esc(survey.note)+'</p>'+
+  '<p><a href="?loss-scope=britain-campaign&amp;loss-series=britain-german#claim-loss-calculator">Seven selected dates in the Cox comparison</a></p>'+
+  '<p>'+report.references.map(sourceLink).join(' · ')+'</p>';
+}
+
 function render() {
  const scope=$('claim-loss-scope').value,input=$('claim-loss-count'),result=$('claim-loss-result'),method=$('claim-loss-method');
  if(scopes[scope].series){
   const report=campaignReports?.[$('claim-loss-series').value];
   result.classList.remove('claim-loss-estimated');
   method.hidden=!report;
-  result.innerHTML=report?'<strong>'+fmt(report.total.losses)+'</strong><span>'+esc(report.lossLabel)+
-   '<small>'+fmt(report.total.claims)+' '+esc(report.claimant)+' · '+esc(report.scope)+'</small></span>':'Campaign comparison could not load. Reload this page to retry.';
-  if(report)method.innerHTML=renderCampaignReport(report);
+  if(report){
+   const total=report.total;
+   const subtitle=report.reverse?
+    total.reportDays+' of '+total.days+' days with German staff fighter-claim figures':
+    fmt(total.claims)+' '+report.claimant;
+   result.innerHTML='<strong>'+fmt(total.losses)+'</strong><span>'+esc(report.lossLabel)+
+    '<small>'+esc(subtitle+' · '+report.scope)+'</small></span>';
+   method.innerHTML=report.reverse?renderReverseCampaignReport(report):renderCampaignReport(report);
+  }else result.textContent='Campaign comparison could not load. Reload this page to retry.';
   return;
  }
  const wasOpen=method.querySelector('details')?.open;
@@ -377,9 +427,9 @@ function selectScope(scope,claims=scopes[scope]?.claimCount) {
  const reporting=$('claim-loss-series'),series=scopes[scope].series;
  $('claim-loss-series-wrap').hidden=!series;
  if(series){
-  reporting.innerHTML=campaignReports?series.map(id=>'<option value="'+id+'">'+esc(campaignReports[id].label)+'</option>').join(''):'';
+  reporting.innerHTML=series.filter(id=>campaignReports?.[id]).map(id=>'<option value="'+id+'">'+esc(campaignReports[id].label)+'</option>').join('');
   const requested=new URLSearchParams(window.location.search).get('loss-series');
-  if(series.includes(requested))reporting.value=requested;
+  if(series.includes(requested)&&campaignReports?.[requested])reporting.value=requested;
  }
  render();
  return true;
