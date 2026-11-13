@@ -490,7 +490,7 @@ function renderDossier(){
  const links=norm?['<a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a>']:[];
  if(norm)links.push('<a href="./operations-1944.html?preset=d-day">D-Day air operations timeline</a>');
  if(c.id==="bigweek")links.push('<a href="./operations-1944.html?preset=big-week">Big Week mission and loss records</a>');
- if(c.id==="bodenplatte")links.push('<a href="./bodenplatte.html">Explore five airfields and unit losses</a>');
+ if(c.id==="bodenplatte")links.push('<a href="./bodenplatte.html">Explore Bodenplatte locations and unit losses</a>');
  if(lossScope)links.push('<a href="?loss-scope='+lossScope+'#claim-loss-calculator" data-claim-scope="'+lossScope+'">Compare campaign claims and losses</a>');
  $("dossier-link-detail").innerHTML=links.length?'<div class="dossier-links">'+links.join("")+'</div>':'';
  $("dossier-link-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{

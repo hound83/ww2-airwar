@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Five airfields, opposing formations and source-linked loss records for Operation Bodenplatte on 1 January 1945.">
+  <meta name="description" content="Explore 20 Operation Bodenplatte locations, the raid chronology and source-linked records for units and individual aircraft.">
   <title>Operation Bodenplatte | European Air War Atlas</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="./dist/operations-1944.css">
-  <link rel="stylesheet" href="./dist/bodenplatte.css">
+  <link rel="stylesheet" href="./dist/bodenplatte.css?v=9.5.0">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-  <script defer src="./dist/bodenplatte.js"></script>
+  <script defer src="./dist/bodenplatte-data.js?v=9.5.0"></script>
+  <script defer src="./dist/bodenplatte.js?v=9.5.0"></script>
 </head>
 <body>
   <a class="skip" href="#airfields">Skip to airfields</a>
@@ -23,32 +24,48 @@
   <main class="wrap">
     <header class="intro">
       <h1>Operation <em>Bodenplatte</em></h1>
-      <p><time datetime="1945-01-01">1 January 1945</time>. German fighters struck Allied forward airfields in a bid to regain air superiority during the Ardennes offensive. At Eindhoven they caught aircraft lining up for takeoff. At Asch, two U.S. squadrons met the raid in the air. The five accounts below trace what happened to the aircraft and units involved.</p>
+      <p><time datetime="1945-01-01">1 January 1945</time>. German fighters struck Allied forward airfields in a bid to regain air superiority during the Ardennes offensive. At Eindhoven they caught aircraft lining up for takeoff. At Asch, two U.S. squadrons met the raid in the air. Follow the assigned targets, diversions and interceptions, then trace what each side reported at the airfield and unit level.</p>
       <nav class="intro-links" aria-label="Bodenplatte evidence">
-        <a href="#airfields">Airfields and units</a>
-        <a href="#operation-totals">Operation totals</a>
-        <a href="./research/transcriptions/bodenplatte-1945-01-01.json" download>Download full ledger (JSON)</a>
-        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bodenplatte-airfield-ledger-2026-11-13.md">Source audit</a>
+        <a href="#airfields">Map and locations</a>
+        <a href="#chronology">Chronology</a>
+        <a href="#formations">German formations</a>
+        <a href="#operation-totals">Operation-wide reports</a>
+        <a href="#downloads">Sources and downloads</a>
       </nav>
     </header>
     <section id="airfields" aria-labelledby="airfields-title">
-      <h2 id="airfields-title">Five airfields</h2>
+      <h2 id="airfields-title">20 locations</h2>
+      <p class="muted">Map points mark approximate airfield locations. Select a field to see the raid outcome and the evidence behind it.</p>
       <div class="field-picker">
-        <nav id="field-list" aria-label="Select an airfield"></nav>
-        <div id="field-map" class="field-map" aria-label="Approximate wartime airfield locations" hidden></div>
+        <div class="field-picker-list">
+          <label>Raid outcome <select id="raid-outcome"><option value="">All locations</option><option value="attacked">Attacked</option><option value="intercepted">Intercepted</option><option value="disputed">Disputed or unresolved</option></select></label>
+          <nav id="field-list" aria-label="Select an airfield"></nav>
+        </div>
+        <div class="field-map-panel">
+          <div id="field-map" class="field-map" aria-label="Approximate wartime airfield locations" hidden></div>
+          <ul id="map-key" class="map-key muted" hidden>
+            <li><span class="key-dot attacked"></span>Attacked</li>
+            <li><span class="key-dot intercepted"></span>Intercepted</li>
+            <li><span class="key-dot disputed"></span>Disputed or unresolved</li>
+          </ul>
+        </div>
       </div>
-      <noscript><p>The airfield explorer requires JavaScript. The full ledger is available above.</p></noscript>
+      <noscript><p>The airfield explorer requires JavaScript. The source files are available under Sources and downloads.</p></noscript>
       <p id="field-error" role="status">Loading airfield records.</p>
       <article id="field-detail" class="panel" aria-labelledby="field-name" hidden>
         <p id="field-code" class="muted field-code"></p>
-        <h3 id="field-name"></h3>
+        <h3 id="field-name" tabindex="-1"></h3>
         <p id="field-story"></p>
         <dl class="field-forces">
           <div><dt>Allied units</dt><dd id="field-allied"></dd></div>
           <div><dt>German units</dt><dd id="field-german"></dd></div>
         </dl>
         <p id="field-gap" class="field-gap"></p>
-        <div class="intro-links" id="field-sources"></div>
+        <div id="field-highlights"></div>
+        <details class="record supporting-sources">
+          <summary>Site sources and map location</summary>
+          <div class="details" id="field-sources"></div>
+        </details>
         <form class="field-filters" aria-label="Filter airfield evidence">
           <label>Side <select id="side"><option value="">Both sides</option><option>Allied</option><option>German</option></select></label>
           <label>Evidence <select id="evidence">
@@ -57,17 +74,46 @@
             <option value="strength">Aircraft present or participating</option>
             <option value="claims">Victory claims</option>
             <option value="personnel">Personnel casualties</option>
+            <option value="defence">Ground defence reports</option>
+            <option value="airframes">Named aircraft</option>
+            <option value="other">Other reports</option>
           </select></label>
+          <label>Unit or aircraft <input type="search" id="unit-query" placeholder="e.g. 140 Squadron or NS746"></label>
           <button type="button" id="field-csv">Download shown records (CSV)</button>
         </form>
         <p id="field-status" class="muted" role="status"></p>
         <div id="field-rows"></div>
       </article>
     </section>
+    <section id="chronology" aria-labelledby="chronology-title">
+      <h2 id="chronology-title">From the Ardennes offensive to the aftermath</h2>
+      <p class="muted">16 December 1944 to 14 January 1945. The Bodenplatte raid took place on 1 January.</p>
+      <div id="chronology-events"></div>
+    </section>
+    <section id="formations" aria-labelledby="formations-title">
+      <h2 id="formations-title">German order of battle</h2>
+      <div id="formation-list"></div>
+    </section>
     <section id="operation-totals" aria-labelledby="operation-title">
       <h2 id="operation-title">Operation-wide reports</h2>
       <p class="field-gap">The airfield and unit records overlap. The totals below come from published accounts with different reporting populations and loss definitions. The 305 destroyed and 190 damaged reconstruction has two published summaries that disagree on whether the aerial losses are included.</p>
       <div id="operation-rows"></div>
+    </section>
+    <section id="downloads" aria-labelledby="downloads-title">
+      <h2 id="downloads-title">Sources and downloads</h2>
+      <div class="intro-links">
+        <a href="./research/transcriptions/bodenplatte-operation-scope-1944-1945.json" download>Operation scope (JSON)</a>
+        <a href="./research/transcriptions/bodenplatte-1945-01-01.json" download>Original five-airfield ledger (JSON)</a>
+        <a href="./research/transcriptions/bodenplatte-map.json" download>Map locations (JSON)</a>
+        <a href="./research/transcriptions/bodenplatte-archival-evidence-1945-01-01.json" download>Archival follow-up (JSON)</a>
+        <a href="./research/transcriptions/bodenplatte-unit-airframes-1945-01-01.csv" download>Unit airframes (CSV)</a>
+        <a href="./research/transcriptions/bodenplatte-operation-airframes-1945-01-01.csv" download>Operation airframes (CSV)</a>
+      </div>
+      <div class="intro-links source-audits">
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bodenplatte-operation-scope-2026-11-13.md">Operation source audit</a>
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bodenplatte-unit-reports-2026-11-13.md">Unit source audit</a>
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bodenplatte-original-sources-2026-11-13.md">Archive references and access</a>
+      </div>
     </section>
   </main>
 </body>

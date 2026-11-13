@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Atlas v9.5 · Operation Bodenplatte
+
+The [Bodenplatte explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) maps 20 documented locations and links a 16-entry chronology to airfield, unit and aircraft evidence. Sint-Truiden displays the two wartime counts together. Melsbroek shows airframe dispositions, including later status changes, and the archive references. Operation-level estimates, unit records and individual airframes retain their reporting scope. [Operation source audit](../research/sources/atlas-bodenplatte-operation-scope-2026-11-13.md)
+
 ## Bodenplatte archival evidence
 
 The XXIX TAC annex dated 2 January gives 10 aircraft destroyed and 31 damaged at Sint-Truiden. The other U.S. excerpt gives 6 and 33. The Melsbroek follow-up identifies 20 Allied aircraft by serial and distinguishes raid damage from later disposal. It also identifies the Dutch No. 320 Squadron archive files. Two German Werknummer leads are recorded at Sint-Truiden. AHB5/234 and the original Allied returns remain open. [Source audit](../research/sources/atlas-bodenplatte-original-sources-2026-11-13.md) · [Evidence](../research/transcriptions/bodenplatte-archival-evidence-1945-01-01.json)

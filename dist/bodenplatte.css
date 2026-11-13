@@ -1,13 +1,15 @@
-.field-picker { display: grid; grid-template-columns: minmax(12rem, .72fr) minmax(0, 2fr); gap: .75rem; margin-block-end: 1rem; }
-#field-list { display: grid; align-content: start; gap: .35rem; }
+.field-picker { display: grid; grid-template-columns: minmax(15rem, .9fr) minmax(0, 2fr); gap: .75rem; margin-block-end: 1rem; }
+#field-list { display: grid; align-content: start; gap: .35rem; max-height: 23rem; overflow: auto; padding: .25rem; margin: .35rem -.25rem 0; }
 .field-choice { display: flex; gap: .45rem; justify-content: space-between; align-items: center; min-height: 44px; border: 1px solid var(--line); border-radius: .3rem; padding: .48rem .65rem; background: var(--panel); text-decoration: none; }
 .field-choice:hover { text-decoration: underline; }
 .field-choice[aria-current="true"] { color: #fffdf6; background: var(--accent); border-color: var(--accent); }
 .field-choice small { white-space: nowrap; }
-.field-map { min-height: 18rem; border: 1px solid var(--line); border-radius: .45rem; background: #d7e1dd; }
+.field-map { height: 26rem; border: 1px solid var(--line); border-radius: .45rem; background: #d7e1dd; }
 .field-map .leaflet-tooltip { font-weight: 700; }
-.field-marker { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: #fffdf6; border: 2px solid var(--accent); color: var(--deep); font-weight: 800; }
-.field-marker.selected { background: #f6cf83; border-color: #83410f; }
+.field-marker { display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: #fffdf6; border: 2px solid var(--accent); color: var(--deep); font-weight: 800; }
+.field-marker.intercepted { border-color: #315e7c; }
+.field-marker.disputed { border-color: #915619; border-style: dashed; }
+.field-marker.selected { background: #f6cf83; outline: 2px solid #83410f; outline-offset: 1px; }
 .field-marker:focus-visible { outline: 3px solid #a04d1c; outline-offset: 3px; }
 .field-code { margin: 0 0 .25rem; }
 #field-name { font-size: clamp(1.65rem, 3vw, 2.6rem); margin-bottom: .3rem; }
@@ -25,9 +27,43 @@
 .loss-row p { margin: .15rem .65rem .65rem; }
 @media (max-width: 44rem) {
   .field-picker { grid-template-columns: 1fr; }
-  .field-map { min-height: 17rem; }
+  .field-map-panel { grid-row: 1; }
+  .field-map { height: 22rem; }
+  #field-list { max-height: 12rem; }
   .field-forces { grid-template-columns: 1fr; }
 }
 @media (max-width: 27rem) {
   .field-filters label { width: 100%; }
 }
+
+.field-choice .choice-name { min-width: 0; }
+.field-choice small { align-self: start; padding-top: .18rem; }
+.field-map-panel { min-width: 0; }
+.map-key { display: flex; flex-wrap: wrap; gap: .25rem 1rem; list-style: none; padding: 0; margin: .45rem 0 0; font-size: .84rem; }
+.map-key[hidden] { display: none; }
+.key-dot { display: inline-block; width: .68rem; height: .68rem; margin-right: .3rem; border: 2px solid var(--accent); border-radius: 50%; }
+.key-dot.intercepted { border-color: #315e7c; }
+.key-dot.disputed { border-color: #915619; border-style: dashed; }
+#field-highlights { margin-block: 1rem; }
+#field-highlights:empty { display: none; }
+#field-highlights p { margin: .4rem 0; }
+.comparison { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .65rem; margin-block: .65rem; }
+.comparison > div { padding: .65rem .8rem; border: 1px solid var(--line); border-radius: .3rem; }
+.comparison strong { display: block; color: var(--deep); font-size: 1.15rem; }
+.supporting-sources .details p { margin: .25rem 0; }
+.field-filters label { max-width: 100%; }
+.field-filters input { min-width: min(100%, 14rem); }
+.chronology { list-style: none; padding: 0; margin: .5rem 0; }
+.chronology li { display: grid; grid-template-columns: minmax(7rem, 9rem) minmax(0, 1fr); gap: .4rem 1.3rem; padding: .7rem 0; }
+.chronology li + li { border-top: 1px solid var(--line); }
+.chronology time { font-weight: 750; }
+.chronology p { margin: .15rem 0; }
+.chronology strong { display: block; text-transform: capitalize; }
+.chronology .links { display: flex; flex-wrap: wrap; gap: .25rem .75rem; font-size: .9rem; }
+.source-audits { margin-block: .75rem 2rem; }
+.formation-sites { display: flex; flex-wrap: wrap; gap: .15rem .7rem; }
+@media (max-width: 35rem) {
+  .chronology li { grid-template-columns: minmax(0, 1fr); }
+}
+
+.field-choice[hidden] { display: none; }
