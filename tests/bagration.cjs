@@ -43,6 +43,8 @@ assert.equal(obs["pocket-own"].value, 0);
 assert.equal(obs["mogilev-missing"].value, null);
 assert.equal(obs["brest-german-observed"].measure, "passages");
 assert.equal(obs["aug-all-loss"].value, 822);
+assert.equal(obs["german-opening"].kind, "Readiness");
+assert.equal(obs["german-combat-775"].kind, "Inventory");
 assert.equal(obs["minsk-loss"].value, 119);
 assert.equal(obs["minsk-loss-sum"].value, 179);
 assert.equal([0, 1, 2].reduce((sum, i) => sum + obs["minsk-loss-component-" + i].value, 0), 179);

@@ -704,6 +704,36 @@
       "datePrecision": "eve of the offensive"
     },
     {
+      "id": "german-combat-775",
+      "case": "preparation",
+      "unit": "lf6",
+      "date": "1944-06-22",
+      "end": "1944-06-22",
+      "datePrecision": "opening strength",
+      "kind": "Inventory",
+      "label": "Combat aircraft in the U.S. Army historical account",
+      "value": 775,
+      "measure": "aircraft",
+      "source": "ziemke",
+      "locator": "Chapter XV, situation before breakthrough, note 18",
+      "note": "Sixth Air Force supporting Army Group Centre. Ziemke includes 405 long-range bombers and reconnaissance aircraft assigned to strategic missions. This count has a different definition from Fritz’s 602 operational aircraft."
+    },
+    {
+      "id": "german-tactical-275",
+      "case": "preparation",
+      "unit": "lf6",
+      "date": "1944-06-22",
+      "end": "1944-06-22",
+      "datePrecision": "opening strength",
+      "kind": "Inventory",
+      "label": "Fighters and ground-support bombers in the same account",
+      "value": 275,
+      "measure": "aircraft",
+      "source": "ziemke",
+      "locator": "Chapter XV, situation before breakthrough, note 18",
+      "note": "Role subset of Luftflotte 6 in the account. The roles quoted here do not exhaust all 775 aircraft."
+    },
+    {
       "id": "planned-u2",
       "case": "preparation",
       "unit": "vvs16",
