@@ -1,6 +1,6 @@
 # European Air War Atlas roadmap through v10
 
-Updated 13 November 2026 for Atlas v9.5. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
+Updated 13 November 2026 for Atlas v9.6. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
 
 ## What has shipped
 
@@ -10,18 +10,19 @@ Updated 13 November 2026 for Atlas v9.5. This revises the 11 November [six-relea
 | Battle of Britain, v8.7–v9.2 | Four worked raid dossiers, followed by both comparison directions across 17 weeks and five phases, with source coverage and seven dated checks. | Extend the captured German daily claim series where the dated reports can be recovered. [Battle of Britain source audit](../research/sources/atlas-v92-britain-german-claims-2026-11-12.md) |
 | Western air war, v9.1–v9.3.1 | January–July 1944 timeline with 2,103 dated records and 635 May/July Davis target rows. The June and July German command returns are available with reconciliation notes. | Daily May returns VII/133 and VII/134, Ninth Air Force July reporting and mission-level attribution. [Timeline](https://hound83.github.io/ww2-airwar/operations-1944.html?preset=july) · [Research audit](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md) |
 | Bodenplatte, v9.4–v9.5 | The original five accounts now sit within a 20-location map and a 16-entry chronology. Unit, airframe, ground-defence and order-of-battle details link to sources and filtered exports. | Reconcile the Sint-Truiden and Melsbroek reports when original returns become accessible. [Explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Operation audit](../research/sources/atlas-bodenplatte-operation-scope-2026-11-13.md) |
+| Bagration, v9.6 | Fifteen dated cases connect campaign geography, opposing air records, station changes, source links and filtered export. | Resolve the 1st Air Army’s loss discrepancy and retrieve matched German daily losses and the 4th Air Army’s assessment. [Explorer](https://hound83.github.io/ww2-airwar/bagration.html) · [Audit](../research/sources/atlas-bagration-air-campaign-2026-11-13.md) |
 
 Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. The six flagship depth targets, reusable formation histories, operational balance studies and connected European history remain ahead.
 
 ## Recommended next milestone
 
-**Bagration flagship.** Follow Soviet and German air operations through the changing ground situation. Build source-backed operation cases with dated geography, opposing formation records and a path from the campaign to the evidence. Start with the [Eastern unit research](../research/sources/atlas-eastern-front-and-condor-legion-unit-data-2026-11-12.md) and [inventory evidence](../research/sources/atlas-aircraft-inventory-loss-ceilings-2026-11-11.md).
+**Defence of the Reich flagship.** Build the next detailed campaign journey around raid, escort and interception evidence. Show what the German command returns cover and how individual combat records relate to the wider campaign totals. Malta and Sicily follow within the remaining flagship work.
 
 ## Following milestones
 
 | Order | Reader outcome | Completion evidence |
 | --- | --- | --- |
-| 2 · Remaining flagship campaigns and all-entry review | Bring Defence of the Reich, Malta and Sicily to the Normandy/Britain standard and improve the remaining campaign entries. | Normandy, Battle of Britain, Bagration, Defence of the Reich, Malta and Sicily have deep, linked accounts. All 20 entries explain situation, objectives, participants, sequence, consequences and sources. Review the [bilateral evidence candidate](https://github.com/hound83/ww2-airwar/pull/20) and [Narvik candidate](https://github.com/hound83/ww2-airwar/pull/15) against main before reuse. |
+| 2 · Remaining flagship campaigns and all-entry review | Bring Malta and Sicily to the Normandy/Britain standard and improve the remaining campaign entries. | Normandy, Battle of Britain, Bagration, Defence of the Reich, Malta and Sicily have deep, linked accounts. All 20 entries explain situation, objectives, participants, sequence, consequences and sources. Review the [bilateral evidence candidate](https://github.com/hound83/ww2-airwar/pull/20) and [Narvik candidate](https://github.com/hound83/ww2-airwar/pull/15) against main before reuse. |
 | 3 · Formation and airfield histories | Trace a dated formation through its equipment, stations and operations. | Reuse the data relationships tested in Bodenplatte and Bagration. Aim for 20 substantive histories across the six flagships, with dated deployments and a traceable formation journey in each. |
 | 4 · Operational balance studies | Use the records to answer questions about effort, losses, readiness, replacement and constraints. | Six worked studies with source definitions, compatible comparisons and inspectable exports. See study questions below. |
 | 5 · v10, connected European air war | Move from the wider history into a campaign, operation, dated map and formation or source, then return to the wider context. | Six to eight Europe-wide chapters, working routes through all 20 campaigns, six flagship journeys, six evidence studies and verified desktop/mobile publication. |

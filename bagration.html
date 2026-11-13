@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Follow Soviet and German air operations during Operation Bagration, with dated maps, unit records and source-linked evidence.">
+  <title>Operation Bagration | European Air War Atlas</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="./dist/operations-1944.css">
+  <link rel="stylesheet" href="./dist/bagration.css?v=9.6.0">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script defer src="./dist/bagration.js?v=9.6.0"></script>
+</head>
+<body>
+  <a class="skip" href="#campaign">Skip to campaign</a>
+  <header class="mast">
+    <nav class="wrap" aria-label="Atlas navigation">
+      <a class="brand" href="./grand-air-war-v80.html">European Air War Atlas</a>
+      <a href="./grand-air-war-v80.html?campaign=bagration#campaign-dossier">Bagration campaign dossier</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <header class="intro">
+      <p class="campaign-date"><time datetime="1944-06-22">22 June</time>–<time datetime="1944-08-29">29 August 1944</time></p>
+      <h1>Operation <em>Bagration</em></h1>
+      <p>Four Soviet fronts broke through Army Group Centre in Belarus and drove west. Their air armies covered crossings, struck retreat routes and moved to forward fields. German records follow the Luftwaffe’s withdrawal and the changing strength of individual formations.</p>
+      <nav class="intro-links" aria-label="Bagration navigation">
+        <a href="#campaign">Map and chronology</a>
+        <a href="#formations">Formations and stations</a>
+        <a href="#sources">Sources and downloads</a>
+      </nav>
+    </header>
+    <section id="campaign" aria-labelledby="campaign-heading">
+      <h2 id="campaign-heading">Follow the offensive</h2>
+      <div class="bagration-picker">
+        <div class="bagration-choices">
+          <label>Phase <select id="phase"><option value="">All phases</option></select></label>
+          <nav id="case-list" aria-label="Dated campaign cases"></nav>
+        </div>
+        <div class="bagration-map-panel">
+          <div id="campaign-map" aria-label="Approximate campaign locations" hidden></div>
+          <p id="map-note" class="muted" hidden>Markers locate campaign sectors and towns. Some evidence covers a wider front or an entire calendar month.</p>
+        </div>
+      </div>
+      <noscript><p>JavaScript enables the campaign explorer. The complete evidence is available as a JSON download.</p></noscript>
+      <p id="load-status" role="status">Loading campaign evidence.</p>
+      <article class="panel case-panel" id="case-detail" aria-labelledby="case-title" hidden>
+        <p id="case-context" class="muted"></p>
+        <h3 id="case-title" tabindex="-1"></h3>
+        <p id="case-summary"></p>
+        <p id="case-limit" class="case-limit"></p>
+        <div id="case-sources" class="intro-links"></div>
+        <p class="case-unit-label">Formations in this case</p>
+        <div id="case-units" class="intro-links"></div>
+        <div class="bagration-controls" aria-label="Evidence filters">
+          <label>Formation <select id="unit"><option value="">All formations</option></select></label>
+          <label>Evidence <select id="kind"><option value="">All evidence</option></select></label>
+          <button type="button" id="evidence-csv">Download shown evidence (CSV)</button>
+        </div>
+        <p id="evidence-status" class="muted" role="status"></p>
+        <div id="evidence"></div>
+        <div id="inventory"></div>
+      </article>
+    </section>
+    <section id="formations" aria-labelledby="formation-heading">
+      <h2 id="formation-heading">Formations and dated stations</h2>
+      <div id="unit-list" class="unit-grid"></div>
+    </section>
+    <section id="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Sources and downloads</h2>
+      <div class="intro-links">
+        <a href="./research/transcriptions/bagration-air-campaign-1944.json" download>Campaign evidence (JSON)</a>
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bagration-air-campaign-2026-11-13.md">Research audit and Wikipedia reference trail</a>
+      </div>
+      <div id="source-register"></div>
+    </section>
+  </main>
+</body>
+</html>
