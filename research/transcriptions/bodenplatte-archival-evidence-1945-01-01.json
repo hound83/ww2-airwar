@@ -1,0 +1,990 @@
+{
+  "raidDate": "1945-01-01",
+  "scope": "Follow-up evidence for Sint-Truiden, Le Culot, Melsbroek and the German operation-wide assessment. Rows reproduce overlapping source populations and must not be added to the operation ledger.",
+  "sources": {
+    "ahb": {
+      "title": "RAF Air Historical Branch, The Royal Air Force and Airfield Air Defence",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-thematic-studies/ground-based-air-defences/",
+      "type": "Official historical study citing wartime records"
+    },
+    "lowe": {
+      "title": "Malcolm V. Lowe, Bf 109 Jabo Units in the West, Bodenplatte section",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Specialist history"
+    },
+    "rickard": {
+      "title": "John Rickard, Operation Bodenplatte, 1 January 1945",
+      "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+      "type": "Secondary synthesis"
+    },
+    "targets": {
+      "title": "Operation Bodenplatte, order of battle and airfield sections with linked references",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bodenplatte",
+      "type": "Indirect citations to specialist histories"
+    },
+    "trond": {
+      "title": "412th Fighter Squadron veterans, published 1988 Bealke report and St. Trond excerpt",
+      "url": "https://412th.org/archives/Boden_Platte.html",
+      "type": "Indexed retrospective text containing tactical report excerpt"
+    },
+    "taf90": {
+      "title": "XXIX TAC A-2 Periodic Report No. 90, annex, 2 January 1945",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Wartime command report reproduced in the 404th FG diary and published by Malcolm V. Lowe"
+    },
+    "manss": {
+      "title": "404th Fighter Group diary, January 1945, Maj. Robert W. Manss",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Wartime group diary excerpt reproduced by Lowe"
+    },
+    "michalski": {
+      "title": "JG 4 monthly operations summary, Maj. Gerhard Michalski",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Wartime German formation report excerpt reproduced in English by Lowe"
+    },
+    "seward": {
+      "title": "F. J. Seward and J. Shaw, 140 Squadron RAF, May 1941–May 1945",
+      "url": "https://www.shawbits.co.uk/140squadron.pdf",
+      "type": "Retrospective squadron history based partly on the ORB"
+    },
+    "tudor": {
+      "title": "Flt Lt H. M. H. Tudor, No. 140 Squadron, account of the raid",
+      "url": "https://www.shawbits.co.uk/140squadron.pdf",
+      "type": "Eyewitness account reproduced in the squadron history"
+    },
+    "mossie": {
+      "title": "AirHistory, de Havilland Mosquito production and service histories",
+      "url": "https://www.airhistory.org.uk/Mosquito/",
+      "type": "Specialist airframe register"
+    },
+    "spit": {
+      "title": "AirHistory, Spitfire production and service histories",
+      "url": "https://www.airhistory.org.uk/spitfire/p088.html",
+      "type": "Specialist airframe register"
+    },
+    "mitchell": {
+      "title": "North American Aviation B-25 Mitchells in Royal Air Force Service, Dunsfold Airfield History Society",
+      "url": "https://dunsfoldairfield.org/wp-content/uploads/2024/11/NAA-Mitchells-in-RAF.pdf",
+      "type": "Specialist airframe register"
+    },
+    "vanDerKop": {
+      "title": "H. J. E. van der Kop, 320 Squadron: Herinneringen aan Melsbroek, Dakota News",
+      "url": "https://dakota15wing.be/Dakota%20News%20Online/DakNws5%20Digit.pdf",
+      "type": "Retrospective account by a No. 320 Squadron veteran who left the day before the raid"
+    },
+    "hwh69": {
+      "title": "15 Wing Documentation Centre, 1998 Wellington commemoration material reproduced by Holsbeekse Werkgroep Heemkunde",
+      "url": "https://www.hwh.be/Publicaties/Artikels/HWH020C1.htm",
+      "type": "Institutional retrospective with a No. 69 Squadron eyewitness account"
+    },
+    "jones": {
+      "title": "Flintshire War Memorials, Bernard Jones, 1535818",
+      "url": "https://www.flintshirewarmemorials.com/memorials/22549-2/hope-ww2-war-memorial/jones-bernard/",
+      "type": "Local casualty reconstruction citing the Commonwealth War Graves certificate"
+    },
+    "iwm1808": {
+      "title": "Imperial War Museums CL 1808, burning RAF Transport Command Dakota at Melsbroek",
+      "url": "https://commons.wikimedia.org/wiki/File:Douglas_DC-3_-_Melsbroek_-_Royal_Air_Force_Transport_Command,_1943-1945._CL1808.jpg",
+      "type": "Wartime official photograph and caption via Wikimedia Commons"
+    },
+    "franksWiki": {
+      "title": "Norman Franks, The Battle of the Airfields, 1994, as cited in Operation Bodenplatte",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bodenplatte#Results",
+      "type": "Indirect access to specialist history"
+    },
+    "bergstrom": {
+      "title": "Christer Bergström, The Ardennes, 1944–1945, Hitler’s Winter Offensive",
+      "url": "https://erenow.org/ww/ardennes-1944-1945-hitlers-winter-offensive/11.php",
+      "type": "Specialist history"
+    },
+    "dakota69": {
+      "title": "Dakota News, 69 Squadron and Melsbroek",
+      "url": "https://dakota15wing.be/Dakota%20News%20Online/DakNws5%20Digit.pdf",
+      "type": "Belgian 15 Wing association publication"
+    },
+    "rafweb180": {
+      "title": "RAFWeb, operational units aircraft serials, No. 180 Squadron",
+      "url": "https://rafweb.org/Members%20Pages/Aircraft%20Serials/Operational%20Units_101-200.htm",
+      "type": "Retrospective aircraft association list covering service life"
+    }
+  },
+  "observations": [
+    {
+      "id": "a92-attacking-aircraft",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "Attackers observed",
+      "value": 7,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "Bf 109s and Fw 190s, 09:20–09:45; three or four passes."
+    },
+    {
+      "id": "a92-allied-destroyed",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "Allied aircraft destroyed",
+      "value": 10,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "A-92 combat and administrative aircraft. Compare trond-destroyed without adding."
+    },
+    {
+      "id": "a92-allied-damaged",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "Allied aircraft damaged",
+      "value": 31,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "A-92 combat and administrative aircraft. Compare trond-damaged without adding."
+    },
+    {
+      "id": "a92-enemy-confirmed",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "German aircraft destruction confirmed by command",
+      "value": 4,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "Wartime AA accounting."
+    },
+    {
+      "id": "a92-enemy-extra-claim",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "Additional German aircraft destruction claimed",
+      "value": 1,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "Additional to four confirmed by the wartime report."
+    },
+    {
+      "id": "a92-enemy-damage-claim",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "German aircraft damage claimed",
+      "value": 1,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "Wartime AA claim."
+    },
+    {
+      "id": "a92-aa-killed",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "Antiaircraft soldier believed killed",
+      "value": 1,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "Provisional. The annex mentions several wounded without an exact count."
+    },
+    {
+      "id": "a92-air-personnel",
+      "site": "sinttruiden",
+      "unit": "XXIX TAC",
+      "metric": "Air personnel killed or seriously wounded",
+      "value": 0,
+      "source": "taf90",
+      "locator": "Annex to report No. 90, reproduced in Manss diary in Lowe",
+      "scope": "Air personnel only."
+    },
+    {
+      "id": "a92-group-personnel",
+      "site": "sinttruiden",
+      "unit": "404th Fighter Group",
+      "metric": "Personnel injured",
+      "value": 0,
+      "source": "manss",
+      "locator": "Manss diary as reproduced in Lowe, St Trond section",
+      "scope": "Group personnel only."
+    },
+    {
+      "id": "trond-destroyed",
+      "site": "sinttruiden",
+      "unit": "A-92 tactical excerpt",
+      "metric": "Allied aircraft destroyed",
+      "value": 6,
+      "source": "trond",
+      "locator": "Bealke 1988, indexed excerpt of reproduced report",
+      "scope": "Enumerated 2 P-47, 1 UC-78, 1 B-24 and 2 B-17. Compare the annex's 10."
+    },
+    {
+      "id": "trond-damaged",
+      "site": "sinttruiden",
+      "unit": "A-92 tactical excerpt",
+      "metric": "Allied aircraft damaged",
+      "value": 33,
+      "source": "trond",
+      "locator": "Bealke 1988, indexed excerpt of reproduced report",
+      "scope": "Enumerated 11 P-47 AC, 16 P-47 A, 4 command aircraft and 2 B-17 AC. Compare the annex's 31."
+    },
+    {
+      "id": "a92-492-d",
+      "site": "sinttruiden",
+      "unit": "492nd Fighter Squadron",
+      "metric": "P-47s destroyed",
+      "value": 3,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Later specialist account."
+    },
+    {
+      "id": "a92-492-dmg",
+      "site": "sinttruiden",
+      "unit": "492nd Fighter Squadron",
+      "metric": "P-47s damaged",
+      "value": 10,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Later specialist account."
+    },
+    {
+      "id": "a92-494-d",
+      "site": "sinttruiden",
+      "unit": "494th Fighter Squadron",
+      "metric": "P-47s destroyed",
+      "value": 2,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Later specialist account."
+    },
+    {
+      "id": "a92-494-dmg",
+      "site": "sinttruiden",
+      "unit": "494th Fighter Squadron",
+      "metric": "P-47s damaged",
+      "value": 4,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Later specialist account."
+    },
+    {
+      "id": "a92-506-d",
+      "site": "sinttruiden",
+      "unit": "506th Fighter Squadron",
+      "metric": "P-47s destroyed",
+      "value": 1,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Later specialist account."
+    },
+    {
+      "id": "a92-506-dmg",
+      "site": "sinttruiden",
+      "unit": "506th Fighter Squadron",
+      "metric": "P-47s damaged",
+      "value": 4,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Later specialist account. Possible overlap with joint 506th/507th figure."
+    },
+    {
+      "id": "a92-506-507-dmg",
+      "site": "sinttruiden",
+      "unit": "506th and 507th Fighter Squadrons",
+      "metric": "P-47s damaged",
+      "value": 5,
+      "source": "lowe",
+      "locator": "St Trond loss narrative",
+      "scope": "Possible overlap with 506th figure."
+    },
+    {
+      "id": "b58-140-squadron-loss",
+      "site": "melsbroek",
+      "unit": "RAF No. 140 Squadron",
+      "metric": "Mosquitoes reported lost to the squadron",
+      "value": 4,
+      "source": "seward",
+      "locator": "PDF page 19, 1 January entry",
+      "scope": "Four candidate serials, corroborated by the production register. One shows a later final disposal category. The squadron history reports replacement the same day and says its ORB lacked a loss list."
+    },
+    {
+      "id": "b58-69-d",
+      "site": "melsbroek",
+      "unit": "RAF No. 69 Squadron",
+      "metric": "Wellingtons destroyed",
+      "value": 11,
+      "source": "hwh69",
+      "locator": "Holsbeek reproduction, paragraphs following Hayward's account",
+      "scope": "1998 institutional retrospective; see competing summaries in audit."
+    },
+    {
+      "id": "b58-69-dmg",
+      "site": "melsbroek",
+      "unit": "RAF No. 69 Squadron",
+      "metric": "Wellingtons damaged",
+      "value": 2,
+      "source": "hwh69",
+      "locator": "Holsbeek reproduction, paragraphs following Hayward's account",
+      "scope": "1998 institutional retrospective."
+    },
+    {
+      "id": "b58-69-kia",
+      "site": "melsbroek",
+      "unit": "RAF No. 69 Squadron",
+      "metric": "Personnel killed or later died",
+      "value": 5,
+      "source": "hwh69",
+      "locator": "Holsbeek reproduction, paragraphs following Hayward's account",
+      "scope": "Shaw's family account attributes casualties to 6069 Servicing Echelon."
+    },
+    {
+      "id": "b58-69-wia",
+      "site": "melsbroek",
+      "unit": "RAF No. 69 Squadron",
+      "metric": "Personnel injured",
+      "value": 25,
+      "source": "hwh69",
+      "locator": "Holsbeek reproduction, paragraphs following Hayward's account",
+      "scope": "1998 institutional retrospective."
+    },
+    {
+      "id": "b58-98-dmg-all",
+      "site": "melsbroek",
+      "unit": "RAF No. 98 Squadron",
+      "metric": "Mitchells affected",
+      "value": 2,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "Includes one described as irreparable. Reconcile with the airframe register's No. 98 attributions before use."
+    },
+    {
+      "id": "b58-98-dbr",
+      "site": "melsbroek",
+      "unit": "RAF No. 98 Squadron",
+      "metric": "Mitchells beyond repair",
+      "value": 1,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "Included in b58-98-dmg-all."
+    },
+    {
+      "id": "b58-320-dmg",
+      "site": "melsbroek",
+      "unit": "RAF No. 320 Squadron",
+      "metric": "Mitchells damaged",
+      "value": 2,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "Dutch text describes both as damaged."
+    },
+    {
+      "id": "b58-180-d",
+      "site": "melsbroek",
+      "unit": "RAF No. 180 Squadron",
+      "metric": "Mitchells total losses",
+      "value": 3,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "Three of the six on the ground in his account."
+    },
+    {
+      "id": "b58-180-ground",
+      "site": "melsbroek",
+      "unit": "RAF No. 180 Squadron",
+      "metric": "Mitchells on the ground in the account",
+      "value": 6,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "Denominator for this account, not a strength return."
+    },
+    {
+      "id": "b58-repair-mitchell",
+      "site": "melsbroek",
+      "unit": "Repair organization, unidentified",
+      "metric": "Mitchells lost",
+      "value": 2,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "In repair when hit. Possible overlap with serial register."
+    },
+    {
+      "id": "b58-repair-boston",
+      "site": "melsbroek",
+      "unit": "Repair organization, unidentified",
+      "metric": "Bostons lost",
+      "value": 1,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "In repair when hit."
+    },
+    {
+      "id": "b58-271-harrow",
+      "site": "melsbroek",
+      "unit": "RAF No. 271 Squadron",
+      "metric": "Harrows lost",
+      "value": 5,
+      "source": "vanDerKop",
+      "locator": "Dakota News, bilingual 320 Squadron article, New Year's Day and closing paragraphs",
+      "scope": "Retrospective account. English Wikipedia gives at least seven out of action."
+    },
+    {
+      "id": "b58-transport-dakota",
+      "site": "melsbroek",
+      "unit": "RAF Transport Command",
+      "metric": "Dakotas photographed destroyed",
+      "value": 1,
+      "source": "iwm1808",
+      "locator": "CL 1808",
+      "scope": "Minimum. Serial and owning squadron unknown."
+    },
+    {
+      "id": "b58-franks-d",
+      "site": "melsbroek",
+      "unit": "Franks station table",
+      "metric": "Aircraft destroyed",
+      "value": 35,
+      "source": "franksWiki",
+      "locator": "Franks 1994, p. 196 via English Wikipedia note 132",
+      "scope": "Indirect. Airfield population and handling of visitors need the printed table."
+    },
+    {
+      "id": "b58-franks-severe",
+      "site": "melsbroek",
+      "unit": "Franks station table",
+      "metric": "Aircraft severely damaged",
+      "value": 9,
+      "source": "franksWiki",
+      "locator": "Franks 1994, p. 196 via English Wikipedia note 132",
+      "scope": "Indirect. Severe damage threshold."
+    },
+    {
+      "id": "op-german-estimate-d",
+      "site": "operation",
+      "unit": "German reconnaissance assessment",
+      "metric": "Allied aircraft assessed destroyed in air and ground combat",
+      "value": 479,
+      "source": "ahb",
+      "locator": "Chapter 7 note 34, AHB5/234 Box 485",
+      "scope": "Cited in the official RAF study. Translation scan unlocated."
+    },
+    {
+      "id": "op-german-estimate-dmg",
+      "site": "operation",
+      "unit": "German reconnaissance assessment",
+      "metric": "Allied aircraft assessed damaged",
+      "value": 114,
+      "source": "ahb",
+      "locator": "Chapter 7 note 34, AHB5/234 Box 485",
+      "scope": "Cited in the official RAF study. Translation scan unlocated."
+    },
+    {
+      "id": "b58-bergstrom-d",
+      "site": "melsbroek",
+      "unit": "Bergström station figures",
+      "metric": "British aircraft destroyed",
+      "value": 47,
+      "source": "bergstrom",
+      "locator": "New Year’s Day 1945, Melsbroek paragraph, n. 27",
+      "scope": "British population as described by Bergström. Footnote 27. Underlying Allied return unverified."
+    },
+    {
+      "id": "b58-bergstrom-dmg",
+      "site": "melsbroek",
+      "unit": "Bergström station figures",
+      "metric": "British aircraft damaged",
+      "value": 14,
+      "source": "bergstrom",
+      "locator": "New Year’s Day 1945, Melsbroek paragraph, n. 27",
+      "scope": "British population as described by Bergström. Damage threshold and underlying return unverified."
+    }
+  ],
+  "airframes": [
+    {
+      "serial": "MM284",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 140 Squadron",
+      "type": "Mosquito PR Mk XVI",
+      "disposition": "Raid loss, CE on 1 January",
+      "sources": [
+        {
+          "source": "mossie",
+          "locator": "p018, MM284",
+          "url": "https://www.airhistory.org.uk/Mosquito/p018.html"
+        },
+        {
+          "source": "seward",
+          "locator": "PDF page 19, 1 January entry"
+        }
+      ],
+      "note": "CE on 1 January. The register lists movement to 412 RSU on 11 January."
+    },
+    {
+      "serial": "MM349",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 140 Squadron",
+      "type": "Mosquito PR Mk XVI",
+      "disposition": "Raid loss, CE on 1 January",
+      "sources": [
+        {
+          "source": "mossie",
+          "locator": "p018, MM349",
+          "url": "https://www.airhistory.org.uk/Mosquito/p018.html"
+        },
+        {
+          "source": "seward",
+          "locator": "PDF page 19, 1 January entry"
+        }
+      ],
+      "note": "Burnt, CE on 1 January."
+    },
+    {
+      "serial": "NS567",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 140 Squadron",
+      "type": "Mosquito PR Mk XVI",
+      "disposition": "Raid loss, CE on 1 January",
+      "sources": [
+        {
+          "source": "mossie",
+          "locator": "p021, NS567",
+          "url": "https://www.airhistory.org.uk/Mosquito/p021.html"
+        },
+        {
+          "source": "seward",
+          "locator": "PDF page 19, 1 January entry"
+        },
+        {
+          "source": "tudor",
+          "locator": "printed p. 43"
+        }
+      ],
+      "note": "Tudor identifies his own aircraft as a write-off. The register lists CE on 1 January and 412 RSU on 11 January."
+    },
+    {
+      "serial": "NS746",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 140 Squadron",
+      "type": "Mosquito PR Mk XVI",
+      "disposition": "Raid damage, initially AC; later CE",
+      "sources": [
+        {
+          "source": "mossie",
+          "locator": "p022, NS746",
+          "url": "https://www.airhistory.org.uk/Mosquito/p022.html"
+        },
+        {
+          "source": "seward",
+          "locator": "PDF page 19, 1 January entry"
+        }
+      ],
+      "note": "The register lists AC on 1 January, 412 RSU on 11 January and recategorization to CE on 8 July 1948. The squadron history counts it among the aircraft lost to the unit."
+    },
+    {
+      "serial": "PL905",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 16 Squadron",
+      "type": "Spitfire PR Mk XI",
+      "disposition": "Raid loss, CE on 1 January",
+      "sources": [
+        {
+          "source": "spit",
+          "locator": "p088, PL905"
+        }
+      ]
+    },
+    {
+      "serial": "PL976",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 16 Squadron",
+      "type": "Spitfire PR Mk XI",
+      "disposition": "Raid loss, CE on 1 January",
+      "sources": [
+        {
+          "source": "spit",
+          "locator": "p088, PL976"
+        }
+      ]
+    },
+    {
+      "serial": "PL912",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 16 Squadron",
+      "type": "Spitfire PR Mk XI",
+      "disposition": "Raid damage, returned to squadron",
+      "sources": [
+        {
+          "source": "spit",
+          "locator": "p088, PL912"
+        }
+      ],
+      "note": "Register gives 412 RSU and No. 16 Squadron on 25 January. The 26 May accident is a separate event."
+    },
+    {
+      "serial": "PL978",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 16 Squadron",
+      "type": "Spitfire PR Mk XI",
+      "disposition": "Raid damage, CB on 1 January",
+      "sources": [
+        {
+          "source": "spit",
+          "locator": "p088, PL978"
+        }
+      ],
+      "note": "Returned to No. 16 Squadron on 18 January. The 22 March landing accident and eventual disposal are separate events."
+    },
+    {
+      "serial": "FV903",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAE / RAF No. 180 Squadron",
+      "type": "Mitchell II",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FV903, extracted text line 150"
+        }
+      ],
+      "usSerial": "42-64625",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FV945",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF Nos. 180 / 226 / 180 Squadrons",
+      "type": "Mitchell II",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FV945, extracted text line 180"
+        }
+      ],
+      "usSerial": "41-30462",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FV961",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": null,
+      "type": "Mitchell II",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FV961, extracted text line 186"
+        }
+      ],
+      "usSerial": "41-30805",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FV982",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 98 Squadron",
+      "type": "Mitchell II",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FV982, extracted text line 191"
+        }
+      ],
+      "usSerial": "42-87116",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FW168",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 98 Squadron",
+      "type": "Mitchell II series ii",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FW168, extracted text line 241"
+        }
+      ],
+      "usSerial": "42-87609",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FW199",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 180 Squadron",
+      "type": "Mitchell II series ii",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FW199, extracted text line 267"
+        }
+      ],
+      "usSerial": "43-3465",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FW202",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 226 Squadron",
+      "type": "Mitchell II series ii",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FW202, extracted text line 269"
+        },
+        {
+          "source": "rafweb180",
+          "locator": "No. 180 Squadron, Mitchell II list"
+        }
+      ],
+      "usSerial": "43-3468",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified.",
+      "note": "Register lists No. 226 Squadron. RAFWeb also lists the aircraft under No. 180 over its service life."
+    },
+    {
+      "serial": "FW206",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 98 Squadron",
+      "type": "Mitchell II series ii",
+      "disposition": "Damaged; struck off charge 30 March 1945",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FW206, extracted text line 271"
+        },
+        {
+          "source": "rafweb180",
+          "locator": "No. 180 Squadron, Mitchell II list"
+        }
+      ],
+      "usSerial": "43-3472",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified.",
+      "note": "RAFWeb also lists the aircraft under No. 180 over its service life. The register gives No. 98 and VO codes."
+    },
+    {
+      "serial": "FW252",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 98 Squadron",
+      "type": "Mitchell II series ii",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FW252, extracted text line 303"
+        }
+      ],
+      "usSerial": "43-3687",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "FW255",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 98 Squadron",
+      "type": "Mitchell II series ii",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "FW255, extracted text line 305"
+        }
+      ],
+      "usSerial": "43-3690",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "HD363",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": "RAF No. 98 Squadron",
+      "type": "Mitchell III",
+      "disposition": "DBR",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "HD363, extracted text line 339"
+        }
+      ],
+      "usSerial": "43-27991",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "HD382",
+      "site": "melsbroek",
+      "side": "Allied",
+      "unit": null,
+      "type": "Mitchell III",
+      "disposition": "Damaged; recorded as not repaired",
+      "sources": [
+        {
+          "source": "mitchell",
+          "locator": "HD382, extracted text line 348"
+        }
+      ],
+      "usSerial": "43-35970",
+      "unitBasis": "Service history as listed by the register. Station accounting and ownership on 1 January are unverified."
+    },
+    {
+      "serial": "461200",
+      "site": "sinttruiden",
+      "side": "German",
+      "unit": "IV./JG 4",
+      "type": "Bf 109 G-14/AS",
+      "disposition": "Flak damage and forced landing",
+      "sources": [
+        {
+          "source": "lowe",
+          "locator": "St Trond raid account, Arnolf Russow"
+        }
+      ],
+      "pilot": "Arnolf Russow",
+      "marking": "Yellow 13",
+      "pilotOutcome": "Captured"
+    },
+    {
+      "serial": "331473",
+      "site": "sinttruiden",
+      "side": "German",
+      "unit": "15./JG 4",
+      "type": "Bf 109 K-4",
+      "disposition": "Crash beside the runway; provisional Werknummer",
+      "sources": [
+        {
+          "source": "lowe",
+          "locator": "St Trond wreck photograph caption"
+        }
+      ],
+      "pilot": "Horst Grüner",
+      "pilotOutcome": "Killed",
+      "note": "Lowe describes the pictured wreck identification as probable."
+    }
+  ],
+  "personnel": [
+    {
+      "name": "Bernard Jones",
+      "serviceNumber": "1535818",
+      "rank": "Leading Aircraftman",
+      "unit": "6069 Servicing Echelon, No. 69 Squadron RAF",
+      "site": "melsbroek",
+      "date": "1945-01-01",
+      "outcome": "Killed",
+      "sources": [
+        {
+          "source": "jones",
+          "locator": "casualty entry and unit attribution"
+        }
+      ]
+    }
+  ],
+  "archive": [
+    {
+      "site": "operation",
+      "institution": "RAF Air Historical Branch",
+      "reference": "AHB5/234, AHB Box 485",
+      "title": "Attack on Allied Airfields on 1st January 1945",
+      "access": "Exact reference in the official RAF study. Scan unlocated in the published translation index.",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-german-translations/"
+    },
+    {
+      "site": "sinttruiden",
+      "institution": "USAF Historical Research Agency / U.S. National Archives",
+      "reference": "XXIX TAC A-2 Periodic Report No. 90, annex, 2 January 1945; 404th Fighter Group history, January 1945",
+      "title": "Command intelligence annex and group diary",
+      "access": "Text recovered in Lowe. Original scans and exact archival item identifiers unlocated.",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "Nationaal Archief",
+      "reference": "2.13.154, inv. 5",
+      "title": "320 Squadron operations record book and air-attack reports, 1944–1945",
+      "access": "Catalogue verified. Inventory states items are unavailable in copy form.",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/2.13.154/download/pdf"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "Nationaal Archief",
+      "reference": "2.13.154, inv. 12",
+      "title": "320 Squadron Opreps to Allied Expeditionary Air Force, 1944–February 1945",
+      "access": "Catalogue verified. Inventory states items are unavailable in copy form.",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/2.13.154/download/pdf"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "Netherlands Institute for Military History",
+      "reference": "Collection 59, H. J. E. van der Kop, inv. 305–307",
+      "title": "320 Squadron operations reports and photographs",
+      "access": "Open collection catalogue and item range cited in Militaire Spectator. January leaf unverified.",
+      "url": "https://militairespectator.nl/artikelen/groote-vlammen-werden-waargenomen"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "The National Archives, Kew",
+      "reference": "AIR 27/223 (16), AIR 27/609 (69), AIR 27/967 (140), AIR 27/1574–1579 (271)",
+      "title": "Squadron operations record book leads",
+      "access": "References recovered from published research. Check coverage and exact January Form 540/541 items in Discovery before requesting.",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-air-force-squadron/"
+    }
+  ],
+  "findings": [
+    {
+      "site": "leculot",
+      "summary": "The wartime German formation summary gives Le Culot as JG 4's assignment. The wartime U.S. annex identifies A-89 from documents recovered from crashed aircraft and records no attack there that day. A later account differs.",
+      "sources": [
+        {
+          "source": "michalski",
+          "locator": "Lowe, Bodenplatte section, JG 4 monthly summary"
+        },
+        {
+          "source": "taf90",
+          "locator": "A-89 paragraph in reproduced annex"
+        },
+        {
+          "source": "rickard",
+          "locator": "JG 4 narrative"
+        }
+      ]
+    },
+    {
+      "site": "sinttruiden",
+      "summary": "The two resident fighter groups flew planned missions later on 1 January. Capt. Floyd Blair, 507th Fighter Squadron, recalled making his scheduled 11:44 departure.",
+      "sources": [
+        {
+          "source": "lowe",
+          "locator": "St Trond loss narrative and Blair testimony"
+        }
+      ]
+    },
+    {
+      "site": "melsbroek",
+      "summary": "Hayward says his No. 69 Squadron Wellington was destroyed before its test flight, after being repaired for earlier friendly fire damage. The aircraft's serial is unknown.",
+      "sources": [
+        {
+          "source": "hwh69",
+          "locator": "Flt Lt Stanley Hayward account"
+        }
+      ]
+    },
+    {
+      "site": "melsbroek",
+      "summary": "The RAF Transport Command Dakota photograph is IWM CL 1808. The cited CL 2934 is an image of Meteor EE239 at Melsbroek.",
+      "sources": [
+        {
+          "source": "iwm1808",
+          "locator": "IWM reference in Commons metadata"
+        }
+      ]
+    }
+  ]
+}

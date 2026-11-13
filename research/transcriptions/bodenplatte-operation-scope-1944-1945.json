@@ -117,6 +117,16 @@
       "title": "Christopher Chant, Operations & Codenames, Bodenplatte",
       "url": "https://codenames.info/operation/bodenplatte/",
       "type": "Secondary synthesis"
+    },
+    "taf90": {
+      "title": "XXIX TAC A-2 Periodic Report No. 90, annex, 2 January 1945",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Wartime command report reproduced in the 404th FG diary and published by Malcolm V. Lowe"
+    },
+    "michalski": {
+      "title": "JG 4 monthly operations summary, Maj. Gerhard Michalski",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Wartime German formation report excerpt reproduced in English by Lowe"
     }
   },
   "sites": [
@@ -349,8 +359,16 @@
       "german": "JG 4 assignment",
       "allied": "USAAF units including the 36th Fighter Group",
       "status": "outcome disputed",
-      "scope": "Source accounts range from no damage or no successful attack to a small element reaching the field. Le Culot East was a separate auxiliary strip.",
+      "scope": "JG 4 was assigned Le Culot. The wartime XXIX TAC annex says no attack on A-89 occurred on 1 January. A later account describes a small element reaching the field. Le Culot East was a separate auxiliary strip.",
       "sources": [
+        {
+          "source": "taf90",
+          "locator": "Report No. 90 annex, A-89 paragraph in Lowe"
+        },
+        {
+          "source": "michalski",
+          "locator": "JG 4 monthly summary in Lowe"
+        },
         {
           "source": "targets",
           "locator": "target, engagement and results sections"
@@ -449,8 +467,12 @@
       "german": "JG 2 and SG 4 assignment; diverted IV./JG 4 also reported",
       "allied": "48th and 404th Fighter Groups; XXIX Tactical Air Command and visiting VIII Air Force aircraft",
       "status": "attacked",
-      "scope": "Indexed U.S. extract gives an enumerated 6/33 result. A specialist summary gives 10/31. The reports' aircraft population and damage categories need reconciliation.",
+      "scope": "A wartime XXIX TAC annex gives 10 aircraft destroyed and 31 damaged. A separate indexed U.S. excerpt enumerates 6 destroyed and 33 damaged. The difference remains unresolved.",
       "sources": [
+        {
+          "source": "taf90",
+          "locator": "Report No. 90 annex, A-92 loss paragraph in Lowe"
+        },
         {
           "source": "trond",
           "locator": "indexed G-1–G-4 extract"
@@ -1170,27 +1192,27 @@
       "id": "trond-alt-d",
       "date": "1945-01-01",
       "place": "sinttruiden",
-      "force": "Airfield reconstruction",
-      "measure": "American aircraft destroyed",
+      "force": "XXIX Tactical Air Command",
+      "measure": "Allied aircraft destroyed",
       "value": 10,
       "unit": "aircraft",
-      "qualifier": "alternative",
-      "source": "targets",
-      "locator": "Le Culot and Ophoven section; loss table",
-      "scope": "Alternative station totals. No reconciliation with the U.S. report excerpt."
+      "qualifier": "reported",
+      "source": "taf90",
+      "locator": "Report No. 90 annex, 2 January 1945, as reproduced in the 404th FG diary in Lowe",
+      "scope": "A-92 combat and administrative aircraft. The separately enumerated excerpt gives different totals."
     },
     {
       "id": "trond-alt-dmg",
       "date": "1945-01-01",
       "place": "sinttruiden",
-      "force": "Airfield reconstruction",
-      "measure": "American aircraft damaged",
+      "force": "XXIX Tactical Air Command",
+      "measure": "Allied aircraft damaged",
       "value": 31,
       "unit": "aircraft",
-      "qualifier": "alternative",
-      "source": "targets",
-      "locator": "Le Culot and Ophoven section; loss table",
-      "scope": "Alternative station totals. No reconciliation with the U.S. report excerpt."
+      "qualifier": "reported",
+      "source": "taf90",
+      "locator": "Report No. 90 annex, 2 January 1945, as reproduced in the 404th FG diary in Lowe",
+      "scope": "A-92 combat and administrative aircraft. The separately enumerated excerpt gives different totals."
     },
     {
       "id": "mal-d",
@@ -2800,7 +2822,8 @@
     "unitAudit": "../sources/atlas-bodenplatte-unit-reports-2026-11-13.md",
     "unitAirframes": "bodenplatte-unit-airframes-1945-01-01.csv",
     "liveFiveFieldLedger": "bodenplatte-1945-01-01.json",
-    "formationOrderOfBattle": "wikipedia-followup-evidence-2026-11-12.json"
+    "formationOrderOfBattle": "wikipedia-followup-evidence-2026-11-12.json",
+    "archivalFollowup": "bodenplatte-archival-evidence-1945-01-01.json"
   },
   "coverage": {
     "scope": "Documented targets, reported diversions and intercepted assignments",
