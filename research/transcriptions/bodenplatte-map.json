@@ -1,0 +1,163 @@
+{
+  "sources": {
+    "alg": {
+      "title": "Advanced landing ground coordinate index",
+      "url": "https://en.wikipedia.org/wiki/Advanced_landing_ground",
+      "type": "Compiled airfield locator"
+    },
+    "rafList": {
+      "title": "RAF landing-ground coordinate list",
+      "url": "https://www.rafcommands.com/archive/18479.php",
+      "type": "Transcribed airfield list"
+    },
+    "belgium": {
+      "title": "deZeng, Luftwaffe Airfields 1935–45: Belgium and Luxembourg",
+      "url": "https://www.ww2.dk/Airfields%20-%20Belgium%20and%20Luxembourg.pdf",
+      "type": "Historical airfield gazetteer"
+    },
+    "legacy": {
+      "title": "Atlas v9.4 airfield ledger",
+      "url": "./research/transcriptions/bodenplatte-1945-01-01.json",
+      "type": "Existing approximate map point"
+    },
+    "heesch": {
+      "title": "Forgotten Airfields, Heesch",
+      "url": "https://www.forgottenairfields.com/airfield-heesch-515.html",
+      "type": "Historical airfield locator"
+    },
+    "ophoven": {
+      "title": "Forgotten Airfields, Ophoven Y-32",
+      "url": "https://gateway.forgottenairfields.com/airfield-ophoven-y-32-102.html",
+      "type": "Historical airfield locator"
+    },
+    "heritage": {
+      "title": "Agentschap Onroerend Erfgoed, Y-32 Ophoven",
+      "url": "https://inventaris.onroerenderfgoed.be/waarnemingen/163579",
+      "type": "Archaeological inventory"
+    }
+  },
+  "sites": {
+    "antwerp": {
+      "lat": 51.19,
+      "lng": 4.461,
+      "source": "alg",
+      "locator": "B-70"
+    },
+    "asch": {
+      "lat": 50.95,
+      "lng": 5.6,
+      "source": "legacy",
+      "locator": "Y-29"
+    },
+    "evere": {
+      "lat": 50.88,
+      "lng": 4.41,
+      "source": "legacy",
+      "locator": "B-56"
+    },
+    "grimbergen": {
+      "lat": 50.949,
+      "lng": 4.392,
+      "source": "alg",
+      "locator": "B-60"
+    },
+    "melsbroek": {
+      "lat": 50.9,
+      "lng": 4.49,
+      "source": "legacy",
+      "locator": "B-58"
+    },
+    "eindhoven": {
+      "lat": 51.45,
+      "lng": 5.38,
+      "source": "legacy",
+      "locator": "B-78"
+    },
+    "ghent": {
+      "lat": 51.027,
+      "lng": 3.69,
+      "source": "belgium",
+      "locator": "Gent – Saint-Denis/Westrem"
+    },
+    "gilze": {
+      "lat": 51.567,
+      "lng": 4.933,
+      "source": "rafList",
+      "locator": "B.77"
+    },
+    "heesch": {
+      "lat": 51.715,
+      "lng": 5.569,
+      "source": "heesch",
+      "locator": "B-88, north of Nistelrode"
+    },
+    "leculot": {
+      "lat": 50.756,
+      "lng": 4.768,
+      "source": "alg",
+      "locator": "A-89/B-68, Beauvechain"
+    },
+    "maldegem": {
+      "lat": 51.198,
+      "lng": 3.478,
+      "source": "alg",
+      "locator": "B-65"
+    },
+    "metz": {
+      "lat": 49.08,
+      "lng": 6.13,
+      "source": "legacy",
+      "locator": "Frescaty, Y-34"
+    },
+    "ophoven": {
+      "lat": 51.042,
+      "lng": 5.543,
+      "source": "ophoven",
+      "locator": "Grote Heide, west of Opglabbeek",
+      "note": "Approximate wartime field at Grote Heide, west of Opglabbeek. A published coordinate points to a different Ophoven. The Flemish archaeological inventory and local runway history place Y-32 here.",
+      "relatedSource": "heritage"
+    },
+    "sinttruiden": {
+      "lat": 50.79,
+      "lng": 5.197,
+      "source": "alg",
+      "locator": "A-92/B-62, Brustem"
+    },
+    "ursel": {
+      "lat": 51.126,
+      "lng": 3.456,
+      "source": "belgium",
+      "locator": "Ursel, wartime field"
+    },
+    "volkel": {
+      "lat": 51.65,
+      "lng": 5.7,
+      "source": "rafList",
+      "locator": "B.80"
+    },
+    "woensdrecht": {
+      "lat": 51.45,
+      "lng": 4.35,
+      "source": "rafList",
+      "locator": "B.79"
+    },
+    "helmond": {
+      "lat": 51.478,
+      "lng": 5.651,
+      "source": "alg",
+      "locator": "B-86, Rijpelberg"
+    },
+    "etain": {
+      "lat": 49.227,
+      "lng": 5.672,
+      "source": "alg",
+      "locator": "A-82, Étain–Rouvres"
+    },
+    "knokke": {
+      "lat": 51.356,
+      "lng": 3.349,
+      "source": "alg",
+      "locator": "B-83, Knokke–Le Zoute"
+    }
+  }
+}

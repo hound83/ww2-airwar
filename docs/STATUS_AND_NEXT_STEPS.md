@@ -2,9 +2,9 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
-## 13 November 2026 · Recommended Bodenplatte milestone
+## 13 November 2026 · Bodenplatte v9.5
 
-The v9.4 explorer covers five airfields. The operation research now covers 20 locations, 16 dated entries and the most recent 22 aircraft identifications. The next proposed release brings that evidence into the existing explorer with a chronology, formation detail, source links and consistent exports. The original January unit and wing returns remain open. [Recommended milestone and acceptance checks](ATLAS_ROADMAP_TO_V10.md#recommended-next-milestone) · [Archive references](../research/sources/atlas-bodenplatte-original-sources-2026-11-13.md#january-returns-archive-access-follow-up)
+The explorer covers 20 documented locations and a 16-entry chronology, with searchable unit records, named airframes, 11 ground-defence accounts and the German order of battle. The Sint-Truiden reports remain unreconciled and the original January unit and wing returns are open. Bagration is the next campaign milestone. [Explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Roadmap](ATLAS_ROADMAP_TO_V10.md#recommended-next-milestone)
 
 ## 13 November 2026 · Bodenplatte airfield and unit losses
 
