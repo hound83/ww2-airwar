@@ -1,0 +1,2811 @@
+{
+  "raidDate": "1945-01-01",
+  "contextFrom": "1944-12-16",
+  "contextTo": "1945-01-14",
+  "sources": {
+    "ahb": {
+      "title": "RAF Air Historical Branch, The Royal Air Force and Airfield Air Defence",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-thematic-studies/ground-based-air-defences/",
+      "type": "Official historical study citing wartime records"
+    },
+    "polish": {
+      "title": "308 and 317 Squadrons, personnel combat report, 1 January 1945",
+      "url": "https://www.polishairforce.pl/_meldunek_breyner_1945_01_01.html",
+      "type": "Wartime report, facsimile and transcription"
+    },
+    "toy": {
+      "title": "London Gazette, Military Medal citation, Sgt George Daniel Toye",
+      "url": "https://www.thegazette.co.uk/London/issue/37030/supplement/1966/data.pdf",
+      "type": "Official wartime award citation"
+    },
+    "usa": {
+      "title": "Craven and Cate, The Army Air Forces in World War II, vol. III, ch. 18",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-18.html",
+      "type": "Official history"
+    },
+    "chron": {
+      "title": "USAAF Combat Chronology, January 1945 web transcription based on Carter and Mueller",
+      "url": "https://aircrewremembered.com/USAAFCombatOperations/Jan.45.html",
+      "type": "Official chronology, expanded web transcription"
+    },
+    "ca": {
+      "title": "RCAF official history, The Crucible of War, vol. III, Final Battles",
+      "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-9.pdf",
+      "type": "Official history"
+    },
+    "nimh": {
+      "title": "Netherlands Institute for Military History, Operatie Bodenplatte",
+      "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/bevrijding-van-nederland-1944-1945/achtergronden/jagdgeschwader-1-twente/na-market-garden",
+      "type": "Institutional history"
+    },
+    "heesch": {
+      "title": "Netherlands Institute for Military History, Heesch",
+      "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/heesch",
+      "type": "Institutional airfield history"
+    },
+    "lowe": {
+      "title": "Malcolm V. Lowe, Bf 109 Jabo Units in the West, Bodenplatte section",
+      "url": "https://dokumen.pub/bf-109-jabo-units-in-the-west.html",
+      "type": "Specialist history"
+    },
+    "rickard": {
+      "title": "John Rickard, Operation Bodenplatte, 1 January 1945",
+      "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+      "type": "Secondary synthesis"
+    },
+    "targets": {
+      "title": "Operation Bodenplatte, order of battle and airfield sections with linked references",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bodenplatte",
+      "type": "Indirect citations to specialist histories"
+    },
+    "codes": {
+      "title": "USAF Historical Research Agency, U.S. Army Air Forces airfields in Europe",
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+      "type": "Official airfield catalogue"
+    },
+    "b350": {
+      "title": "350 (Belgian) Squadron, published squadron chronology",
+      "url": "https://www.350sqn-raf.be/index/diary",
+      "type": "Unit history"
+    },
+    "trond": {
+      "title": "412th Fighter Squadron veterans, published 1988 Bealke report and St. Trond excerpt",
+      "url": "https://412th.org/archives/Boden_Platte.html",
+      "type": "Indexed retrospective text containing tactical report excerpt"
+    },
+    "wood": {
+      "title": "Municipality of Woensdrecht, Vliegveld Woensdrecht",
+      "url": "https://www.woensdrecht.nl/woensdrecht-in-oorlogstijd-15",
+      "type": "Local institutional history"
+    },
+    "recovery": {
+      "title": "Jones and Dorr, Cold Front",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/cold-front-7359183/",
+      "type": "Unit history with eyewitness interviews"
+    },
+    "fg368": {
+      "title": "368th Fighter Group chronology, January 1945",
+      "url": "https://368thfightergroup.com/368-timeline-w.html",
+      "type": "Unit retrospective chronology"
+    },
+    "jg53": {
+      "title": "Lexikon der Wehrmacht, Jagdgeschwader 53, 1945 sections",
+      "url": "https://www.lexikon-der-wehrmacht.de/Gliederungen/Jagdgeschwader/JG53-R.htm",
+      "type": "Secondary unit history"
+    },
+    "sglo": {
+      "title": "Studiegroep Luchtoorlog, printed 1945 loss register",
+      "url": "https://wo2-hoekschewaard.nl/wp-content/uploads/2014/12/register1945.pdf",
+      "type": "Specialist loss register"
+    },
+    "choj": {
+      "title": "Aircrew Remembered, Wacław Chojnacki, MJ281",
+      "url": "https://aircrewremembered.com/chojnacki-waclaw.html",
+      "type": "Airframe and casualty reconstruction"
+    },
+    "pow": {
+      "title": "Aircrew Remembered, Tadeusz Powierza, MK190",
+      "url": "https://aircrewremembered.com/powierza-tadeusz.html",
+      "type": "Airframe and casualty reconstruction"
+    },
+    "maxis": {
+      "title": "AirHistory, WNr 784993, Herbert Maxis",
+      "url": "https://www.airhistory.net/photo/749530/784993",
+      "type": "Aircraft provenance and loss reconstruction"
+    },
+    "delay": {
+      "title": "Christopher Chant, Operations & Codenames, Bodenplatte",
+      "url": "https://codenames.info/operation/bodenplatte/",
+      "type": "Secondary synthesis"
+    }
+  },
+  "sites": [
+    {
+      "id": "antwerp",
+      "name": "Antwerp–Deurne",
+      "code": "B-70",
+      "country": "Belgium",
+      "german": "JG 77",
+      "allied": "Nos. 145 and 146 Wings RAF; visiting aircraft",
+      "status": "attacked",
+      "scope": "Three waves appear in the RAF gun report. Station loss totals vary between published accounts.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "asch",
+      "name": "Asch / Zutendaal",
+      "code": "Y-29",
+      "country": "Belgium",
+      "german": "JG 11; II./JG 4 elements",
+      "allied": "352nd and 366th Fighter Groups",
+      "status": "attacked",
+      "scope": "JG 11 also diverted to Ophoven. The U.S. scramble and the German mission-wide loss population overlap geographically but are different.",
+      "sources": [
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "evere",
+      "name": "Brussels–Evere",
+      "code": "B-56",
+      "country": "Belgium",
+      "german": "II. and III./JG 26",
+      "allied": "No. 127 Wing RCAF; visiting RAF and USAAF aircraft",
+      "status": "attacked",
+      "scope": "No. 2800 Light Anti-Aircraft Squadron reported the raid. Retain the wing and station loss scopes from the detailed audit.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "ca",
+          "locator": "pp. 341–343"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "grimbergen",
+      "name": "Brussels–Grimbergen",
+      "code": "B-60",
+      "country": "Belgium",
+      "german": "I./JG 26 and III./JG 54",
+      "allied": "2777 Armoured Squadron and 2719 Rifle Squadron detachments; no resident flying wing in RAF report",
+      "status": "attacked",
+      "scope": "Sources differ on whether this was originally assigned or a diversion. The RAF report describes an attack on installations and a ground defence response.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "melsbroek",
+      "name": "Brussels–Melsbroek",
+      "code": "B-58",
+      "country": "Belgium",
+      "german": "JG 27 and IV./JG 54; additional attribution in some reconstructions",
+      "allied": "Nos. 34 and 139 Wings RAF; other RAF/USAAF aircraft",
+      "status": "attacked",
+      "scope": "The RAF gun report and Toye citation document active defence. Station and visiting-aircraft loss totals remain open.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "toy",
+          "locator": "p. 1966"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "eindhoven",
+      "name": "Eindhoven",
+      "code": "B-78",
+      "country": "Netherlands",
+      "german": "JG 3 and elements of JG 6",
+      "allied": "Nos. 39 and 143 Wings RCAF and No. 124 Wing RAF",
+      "status": "attacked",
+      "scope": "The Dutch register, Canadian history and RAF ground-defence report represent different populations.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "ca",
+          "locator": "pp. 341–343"
+        },
+        {
+          "source": "sglo",
+          "locator": "printed 1945 register"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "ghent",
+      "name": "Ghent–Sint-Denijs-Westrem",
+      "code": "B-61",
+      "country": "Belgium",
+      "german": "II./JG 1",
+      "allied": "No. 131 (Polish) Wing, Nos. 302, 308 and 317 Squadrons",
+      "status": "attacked",
+      "scope": "The contemporary combat report gives air and ground losses, separate victory claims, and aircraft forced down short of fuel.",
+      "sources": [
+        {
+          "source": "polish",
+          "locator": "sections I–K"
+        },
+        {
+          "source": "nimh",
+          "locator": "Operatie Bodenplatte, lead-up and aftermath"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "gilze",
+      "name": "Gilze-Rijen",
+      "code": "B-77",
+      "country": "Netherlands",
+      "german": "KG 51 and JG 3-associated assignment",
+      "allied": "No. 35 Reconnaissance Wing RAF; RAF Regiment detachments",
+      "status": "attacked",
+      "scope": "The RAF gunners included an Me 262 in their three destruction claims. The register independently identifies a Spitfire destroyed on the ground.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        },
+        {
+          "source": "sglo",
+          "locator": "printed 1945 register"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "heesch",
+      "name": "Heesch",
+      "code": "B-88",
+      "country": "Netherlands",
+      "german": "JG 6 elements",
+      "allied": "No. 126 Wing RCAF; 2734 and 2819 LAA Squadrons",
+      "status": "approach intercepted",
+      "scope": "No. 401 Squadron scrambled and the local defences engaged. The Canadian account describes light physical damage to the field.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "ca",
+          "locator": "pp. 341–343"
+        },
+        {
+          "source": "heesch",
+          "locator": "Duitse operatie Bodenplatte section"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "leculot",
+      "name": "Le Culot / Beauvechain",
+      "code": "A-89",
+      "country": "Belgium",
+      "german": "JG 4 assignment",
+      "allied": "USAAF units including the 36th Fighter Group",
+      "status": "outcome disputed",
+      "scope": "Source accounts range from no damage or no successful attack to a small element reaching the field. Le Culot East was a separate auxiliary strip.",
+      "sources": [
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "maldegem",
+      "name": "Maldegem",
+      "code": "B-65",
+      "country": "Belgium",
+      "german": "JG 1",
+      "allied": "Nos. 349 (Belgian) and 485 (New Zealand) Squadrons",
+      "status": "attacked",
+      "scope": "Different later accounts give 16 destroyed or 13 destroyed plus two beyond repair.",
+      "sources": [
+        {
+          "source": "nimh",
+          "locator": "Operatie Bodenplatte, lead-up and aftermath"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "metz",
+      "name": "Metz–Frescaty",
+      "code": "Y-34",
+      "country": "France",
+      "german": "Stab, II. and IV./JG 53",
+      "allied": "365th and 368th Fighter Groups",
+      "status": "attacked",
+      "scope": "Y-34 follows the U.S. unit chronology and Lowe. A-90 identifies Toul–Croix de Metz in Lowe; some later compilations use it for Frescaty. Keep the Étain-bound Gruppe separate.",
+      "sources": [
+        {
+          "source": "lowe",
+          "locator": "Bodenplatte section"
+        },
+        {
+          "source": "fg368",
+          "locator": "January 1945 chronology"
+        },
+        {
+          "source": "recovery",
+          "locator": "Cold Front recovery passage"
+        },
+        {
+          "source": "codes",
+          "locator": "Y-34 Metz, A-90 Toul/Croix de Metz and A-82 Verdun cross-reference"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "ophoven",
+      "name": "Ophoven / Uphoven",
+      "code": "Y-32",
+      "country": "Belgium",
+      "german": "Diverted JG 11 and JG 4 elements",
+      "allied": "No. 125 Wing RAF; Nos. 130 and 350 Squadrons",
+      "status": "attacked",
+      "scope": "RAF gun account, Belgian squadron history and later station estimates have different scopes.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "b350",
+          "locator": "1 and 13 January chronology entries"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "sinttruiden",
+      "name": "Sint-Truiden / St. Trond",
+      "code": "A-92",
+      "country": "Belgium",
+      "german": "JG 2 and SG 4 assignment; diverted IV./JG 4 also reported",
+      "allied": "48th and 404th Fighter Groups; XXIX Tactical Air Command and visiting VIII Air Force aircraft",
+      "status": "attacked",
+      "scope": "Indexed U.S. extract gives an enumerated 6/33 result. A specialist summary gives 10/31. The reports' aircraft population and damage categories need reconciliation.",
+      "sources": [
+        {
+          "source": "trond",
+          "locator": "indexed G-1–G-4 extract"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "ursel",
+      "name": "Ursel",
+      "code": "B-67",
+      "country": "Belgium",
+      "german": "JG 1",
+      "allied": "Mixed RAF and USAAF aircraft; many Spitfires already withdrawn",
+      "status": "attacked",
+      "scope": "Later published loss counts of three and six destroyed differ.",
+      "sources": [
+        {
+          "source": "nimh",
+          "locator": "Operatie Bodenplatte, lead-up and aftermath"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "volkel",
+      "name": "Volkel",
+      "code": "B-80",
+      "country": "Netherlands",
+      "german": "JG 6 intended assignment; identity of all aircraft in RAF report open",
+      "allied": "RAF Regiment 2834, 2809 and 2874 LAA Squadrons; RAF and RNZAF Tempests in later accounts",
+      "status": "attack and outcome disputed",
+      "scope": "The RAF ground report describes an attack by more than 20 aircraft. A secondary reconstruction says JG 6 failed to find the field and based aircraft were unharmed. Record approach, ground damage and formation attribution separately.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "woensdrecht",
+      "name": "Woensdrecht",
+      "code": "B-79",
+      "country": "Netherlands",
+      "german": "JG 77 elements",
+      "allied": "No. 132 Wing RAF",
+      "status": "attacked",
+      "scope": "Eight aircraft in the RAF gun report. Local history dates No. 322 Squadron's arrival to 1 January, without establishing its participation in the morning engagement.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "rickard",
+          "locator": "operation narrative and formation headings"
+        },
+        {
+          "source": "wood",
+          "locator": "Vliegveld Woensdrecht history"
+        }
+      ],
+      "inSeventeenSiteList": true
+    },
+    {
+      "id": "helmond",
+      "name": "Helmond",
+      "code": "B-86",
+      "country": "Netherlands",
+      "german": "JG 6 elements",
+      "allied": "RAF Regiment 2873, 2875 and 2881 LAA Squadrons",
+      "status": "attacked",
+      "scope": "The RAF report provides timing and gun activity. Air combat and aircraft parked on the field need separate accounting.",
+      "sources": [
+        {
+          "source": "ahb",
+          "locator": "pp. 99–103, 110–111"
+        },
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        },
+        {
+          "source": "codes",
+          "locator": "Allied airfield code catalogue"
+        }
+      ],
+      "inSeventeenSiteList": false
+    },
+    {
+      "id": "etain",
+      "name": "Étain–Rouvres",
+      "code": "A-82",
+      "country": "France",
+      "german": "III./JG 53",
+      "allied": "362nd Fighter Group based there; 358th Fighter Group interception en route",
+      "status": "intercepted before target",
+      "scope": "Lowe says the Gruppe scattered and Étain escaped attack. The intercepting 367th and 366th Fighter Squadrons were flying from Toul–Croix de Metz.",
+      "sources": [
+        {
+          "source": "lowe",
+          "locator": "Bodenplatte section"
+        },
+        {
+          "source": "jg53",
+          "locator": "1945 Gruppe sections"
+        },
+        {
+          "source": "codes",
+          "locator": "Allied airfield code catalogue"
+        }
+      ],
+      "inSeventeenSiteList": false
+    },
+    {
+      "id": "knokke",
+      "name": "Knokke / Le Zoute",
+      "code": "B-83",
+      "country": "Belgium",
+      "german": "Unit assignment unresolved",
+      "allied": "RAF/Allied field in official airfield catalogue",
+      "status": "reported diversion, unresolved",
+      "scope": "A later target summary mentions a possible mistaken attack. No unit return or independent loss figure is established here.",
+      "sources": [
+        {
+          "source": "targets",
+          "locator": "target, engagement and results sections"
+        },
+        {
+          "source": "codes",
+          "locator": "Allied airfield code catalogue"
+        }
+      ],
+      "inSeventeenSiteList": false
+    }
+  ],
+  "timeline": [
+    {
+      "id": "ardenne-opening",
+      "date": "1944-12-16",
+      "phase": "preparation",
+      "place": "operation",
+      "text": "The Ardennes offensive opened. NIMH dates the intended start of the air operation to 16 December. Bad weather postponed the mass raid.",
+      "source": "nimh",
+      "locator": "Operatie Bodenplatte, opening paragraphs"
+    },
+    {
+      "id": "dec17-plan-alternative",
+      "date": "1944-12-17",
+      "phase": "preparation, alternative chronology",
+      "place": "operation",
+      "text": "Another synthesis places the originally envisaged air attack on the day after the ground offensive began.",
+      "source": "delay",
+      "locator": "Planning and weather delay paragraph"
+    },
+    {
+      "id": "dec17-defence",
+      "date": "1944-12-17",
+      "phase": "preceding air operations",
+      "place": "operation",
+      "text": "No. 83 Group airfields, including Eindhoven and Volkel, faced German air attacks. These earlier raids are distinct from Bodenplatte.",
+      "source": "ahb",
+      "locator": "p. 99, note 30"
+    },
+    {
+      "id": "dec18-defence",
+      "date": "1944-12-18",
+      "phase": "preceding air operations",
+      "place": "operation",
+      "text": "The Air Historical Branch records further German attacks on 83 Group airfields.",
+      "source": "ahb",
+      "locator": "p. 99, note 30"
+    },
+    {
+      "id": "dec23-helmond",
+      "date": "1944-12-23",
+      "phase": "preceding air operations",
+      "place": "helmond",
+      "text": "Two Me 262s targeted Helmond.",
+      "source": "ahb",
+      "locator": "p. 99, note 30"
+    },
+    {
+      "id": "dec25-eindhoven",
+      "date": "1944-12-25",
+      "phase": "preceding air operations",
+      "place": "eindhoven",
+      "text": "A German raid hit the Communications Flight dispersal at Eindhoven.",
+      "source": "ahb",
+      "locator": "p. 99, note 30"
+    },
+    {
+      "id": "dec31-ursel",
+      "date": "1944-12-31",
+      "phase": "preparation and stationing",
+      "place": "ursel",
+      "text": "NIMH records that most of the Spitfires at Ursel had already moved to Britain by the day before the attack.",
+      "source": "nimh",
+      "locator": "Ursel and Maldegem paragraph"
+    },
+    {
+      "id": "jan1-raid",
+      "date": "1945-01-01",
+      "phase": "raid",
+      "place": "operation",
+      "text": "German formations flew low and maintained radio silence. The RAF study describes tactical surprise followed by engagements with anti-aircraft units and increasing Allied fighter opposition.",
+      "source": "ahb",
+      "locator": "pp. 99–101"
+    },
+    {
+      "id": "jan1-met-recovery",
+      "date": "1945-01-01",
+      "phase": "same-day recovery",
+      "place": "metz",
+      "text": "Pilots from all three squadrons of the 365th Fighter Group were back in the air that afternoon after sharing aircraft and salvaging serviceable machines.",
+      "source": "recovery",
+      "locator": "Cold Front, Y-34 recovery passage"
+    },
+    {
+      "id": "jan1-ninth-ops",
+      "date": "1945-01-01",
+      "phase": "same-day Allied operations",
+      "place": "operation",
+      "text": "The Ninth Air Force continued ground support, escorts, sweeps and patrols. Its bomber count describes wider theatre operations.",
+      "source": "chron",
+      "locator": "1 January, Ninth Air Force tactical operations"
+    },
+    {
+      "id": "jan2-368",
+      "date": "1945-01-02",
+      "phase": "aftermath",
+      "place": "metz",
+      "text": "The 368th Fighter Group chronology records armed reconnaissance towards Trier, Cochem and Sinzig.",
+      "source": "fg368",
+      "locator": "January 1945, 2nd"
+    },
+    {
+      "id": "jan3-jg1",
+      "date": "1945-01-03",
+      "phase": "aftermath",
+      "place": "operation",
+      "text": "Günter Capito took over I./JG 1 following the death of Georg Hackbarth; Emil Demuth led in the air.",
+      "source": "nimh",
+      "locator": "Aftermath paragraphs"
+    },
+    {
+      "id": "jan5-368",
+      "date": "1945-01-05",
+      "phase": "aftermath",
+      "place": "metz",
+      "text": "The 368th Fighter Group landed at Metz after armed reconnaissance. The advance echelon had reached the field on New Year's Day.",
+      "source": "fg368",
+      "locator": "January 1945, 1st and 5th"
+    },
+    {
+      "id": "jan8-intel",
+      "date": "1945-01-08",
+      "phase": "aftermath reporting",
+      "place": "operation",
+      "text": "A Second TAF intelligence summary retained the RAF Regiment's 43 destruction claims. A July Regiment report gave a different account.",
+      "source": "ahb",
+      "locator": "p. 111, note 35, 2TAF/30256/1/Int"
+    },
+    {
+      "id": "jan13-350",
+      "date": "1945-01-13",
+      "phase": "aftermath",
+      "place": "ophoven",
+      "text": "No. 350 Squadron's published chronology records its Spitfire strength restored.",
+      "source": "b350",
+      "locator": "13 January 1945 diary entry"
+    },
+    {
+      "id": "jan14-jg1",
+      "date": "1945-01-14",
+      "phase": "aftermath",
+      "place": "operation",
+      "text": "I./JG 1 left Twente for the Eastern Front. NIMH describes further losses during the move. These fall outside the 1 January tally.",
+      "source": "nimh",
+      "locator": "Twente departure paragraphs"
+    }
+  ],
+  "observations": [
+    {
+      "id": "gh-302",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "No. 302 Squadron dispatched",
+      "value": 8,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-308",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "No. 308 Squadron dispatched",
+      "value": 12,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-317",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "No. 317 Squadron dispatched",
+      "value": 11,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-takeoff",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Wing takeoffs",
+      "value": 31,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-attacker",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "German aircraft reported in the attack",
+      "value": [
+        30,
+        50
+      ],
+      "unit": "aircraft",
+      "qualifier": "estimate range",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-ground-d",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Spitfires destroyed on the ground",
+      "value": 18,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-ground-dmg",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Spitfires damaged on the ground",
+      "value": 5,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-air-d",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Spitfires lost in air combat",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-pilots",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Polish pilots killed in air combat",
+      "value": 2,
+      "unit": "people",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-force",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Forced landings due to fuel shortage",
+      "value": 7,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-claim-d",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Fw 190s claimed destroyed",
+      "value": 20,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-claim-p",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Fw 190s claimed probably destroyed",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-claim-dmg",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "No. 131 (Polish) Wing",
+      "measure": "Fw 190s claimed damaged",
+      "value": 4,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "polish",
+      "locator": "Combat report, sections I–K",
+      "scope": "Contemporary combined report. Ground aircraft from other organisations are mentioned without numbers."
+    },
+    {
+      "id": "gh-de-loss",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "II./JG 1",
+      "measure": "German Gruppe aircraft lost",
+      "value": 17,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "rickard",
+      "locator": "JG 1 section",
+      "scope": "Secondary reconstruction for the Gruppe assigned to Ghent. It does not match each Polish claim to an airframe."
+    },
+    {
+      "id": "hee-401-takeoff",
+      "date": "1945-01-01",
+      "place": "heesch",
+      "force": "No. 401 Squadron RCAF",
+      "measure": "Spitfires scrambled",
+      "value": 10,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "ca",
+      "locator": "p. 343, note 66",
+      "scope": "No. 401 Squadron scramble and engagement; separate from No. 126 Wing's wider claims."
+    },
+    {
+      "id": "hee-401-claim",
+      "date": "1945-01-01",
+      "place": "heesch",
+      "force": "No. 401 Squadron RCAF",
+      "measure": "German aircraft claimed destroyed",
+      "value": 6,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ca",
+      "locator": "p. 343, note 66",
+      "scope": "No. 401 Squadron scramble and engagement; separate from No. 126 Wing's wider claims."
+    },
+    {
+      "id": "hee-401-own",
+      "date": "1945-01-01",
+      "place": "heesch",
+      "force": "No. 401 Squadron RCAF",
+      "measure": "Own aircraft lost in this engagement",
+      "value": 0,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "ca",
+      "locator": "p. 343, note 66",
+      "scope": "No. 401 Squadron scramble and engagement; separate from No. 126 Wing's wider claims."
+    },
+    {
+      "id": "hee-wing-claim",
+      "date": "1945-01-01",
+      "place": "heesch",
+      "force": "No. 126 Wing RCAF",
+      "measure": "German pilots claimed brought down",
+      "value": 19,
+      "unit": "people",
+      "qualifier": "claim",
+      "source": "ca",
+      "locator": "p. 343, note 66",
+      "scope": "Wing-wide reported outcome, distinct from No. 401 Squadron's engagement."
+    },
+    {
+      "id": "hee-wing-killed",
+      "date": "1945-01-01",
+      "place": "heesch",
+      "force": "No. 126 Wing RCAF",
+      "measure": "Own personnel killed",
+      "value": 1,
+      "unit": "people",
+      "qualifier": "reported",
+      "source": "ca",
+      "locator": "p. 343, note 66",
+      "scope": "Wing-wide reported outcome, distinct from No. 401 Squadron's engagement."
+    },
+    {
+      "id": "hee-wing-wounded",
+      "date": "1945-01-01",
+      "place": "heesch",
+      "force": "No. 126 Wing RCAF",
+      "measure": "Own personnel wounded",
+      "value": 1,
+      "unit": "people",
+      "qualifier": "reported",
+      "source": "ca",
+      "locator": "p. 343, note 66",
+      "scope": "Wing-wide reported outcome, distinct from No. 401 Squadron's engagement."
+    },
+    {
+      "id": "trond-planes",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "Attackers observed",
+      "value": 7,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-p47-d",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "P-47s destroyed",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-p47-ac",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "P-47s damaged category AC",
+      "value": 11,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-p47-a",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "P-47s damaged category A",
+      "value": 16,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-uc",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "UC-78 command aircraft destroyed",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-command-dmg",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "Other command aircraft damaged",
+      "value": 4,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-b24",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "B-24 destroyed",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-b17",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "B-17s destroyed",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-b17-dmg",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "B-17s damaged category AC",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-all-d",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "All aircraft destroyed in this report",
+      "value": 6,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-all-dmg",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "A-92 U.S. tactical report excerpt",
+      "measure": "All aircraft damaged in this report",
+      "value": 33,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "trond",
+      "locator": "St. Trond paragraph within Bealke pages G-1–G-4",
+      "scope": "Indexed text of the reproduced passage. A, AC categories retained as printed. Aggregate overlaps component rows."
+    },
+    {
+      "id": "trond-alt-d",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "Airfield reconstruction",
+      "measure": "American aircraft destroyed",
+      "value": 10,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Le Culot and Ophoven section; loss table",
+      "scope": "Alternative station totals. No reconciliation with the U.S. report excerpt."
+    },
+    {
+      "id": "trond-alt-dmg",
+      "date": "1945-01-01",
+      "place": "sinttruiden",
+      "force": "Airfield reconstruction",
+      "measure": "American aircraft damaged",
+      "value": 31,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Le Culot and Ophoven section; loss table",
+      "scope": "Alternative station totals. No reconciliation with the U.S. report excerpt."
+    },
+    {
+      "id": "mal-d",
+      "date": "1945-01-01",
+      "place": "maldegem",
+      "force": "Allied aircraft at B-65",
+      "measure": "Aircraft destroyed",
+      "value": 16,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "rickard",
+      "locator": "JG 1 section",
+      "scope": "Secondary station figure."
+    },
+    {
+      "id": "mal-alt-d",
+      "date": "1945-01-01",
+      "place": "maldegem",
+      "force": "Allied aircraft at B-65",
+      "measure": "Aircraft destroyed",
+      "value": 13,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Results of raid, Maldegem row",
+      "scope": "Published figures using distinct destroyed and beyond-repair categories."
+    },
+    {
+      "id": "mal-alt-dbr",
+      "date": "1945-01-01",
+      "place": "maldegem",
+      "force": "Allied aircraft at B-65",
+      "measure": "Aircraft damaged beyond repair",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Results of raid, Maldegem row",
+      "scope": "Published figures using distinct destroyed and beyond-repair categories."
+    },
+    {
+      "id": "ur-d",
+      "date": "1945-01-01",
+      "place": "ursel",
+      "force": "Allied aircraft at B-67",
+      "measure": "Aircraft destroyed",
+      "value": 6,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "rickard",
+      "locator": "JG 1 section",
+      "scope": "Secondary station figure."
+    },
+    {
+      "id": "ur-alt-d",
+      "date": "1945-01-01",
+      "place": "ursel",
+      "force": "Allied aircraft at B-67",
+      "measure": "Aircraft destroyed",
+      "value": 3,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Results of raid, Ursel row",
+      "scope": "Alternative station figure."
+    },
+    {
+      "id": "grim-all-d",
+      "date": "1945-01-01",
+      "place": "grimbergen",
+      "force": "Parked Allied aircraft",
+      "measure": "Aircraft destroyed on ground",
+      "value": 6,
+      "unit": "aircraft",
+      "qualifier": "approximate",
+      "source": "rickard",
+      "locator": "JG 26 and III./JG 54 section",
+      "scope": "Approximate secondary ground-loss figure at the field."
+    },
+    {
+      "id": "gr-d",
+      "date": "1945-01-01",
+      "place": "gilze",
+      "force": "Allied aircraft at B-77",
+      "measure": "Aircraft destroyed",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "targets",
+      "locator": "Results of raid, Gilze-Rijen row",
+      "scope": "Secondary station figure. PL765 is a named ground-loss record that may overlap."
+    },
+    {
+      "id": "gr-dmg",
+      "date": "1945-01-01",
+      "place": "gilze",
+      "force": "Allied aircraft at B-77",
+      "measure": "Aircraft damaged",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "targets",
+      "locator": "Results of raid, Gilze-Rijen row",
+      "scope": "Secondary station figure. PL765 is a named ground-loss record that may overlap."
+    },
+    {
+      "id": "ant-min-d",
+      "date": "1945-01-01",
+      "place": "antwerp",
+      "force": "Allied aircraft at B-70",
+      "measure": "Aircraft confirmed destroyed in table",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Results of raid, Antwerp-Deurne row",
+      "scope": "Conservative table figure; some losses were later considered possible write-offs."
+    },
+    {
+      "id": "ant-dmg",
+      "date": "1945-01-01",
+      "place": "antwerp",
+      "force": "Allied aircraft at B-70",
+      "measure": "Aircraft reported damaged",
+      "value": 15,
+      "unit": "aircraft",
+      "qualifier": "approximate",
+      "source": "targets",
+      "locator": "Results of raid, Antwerp-Deurne row",
+      "scope": "Conservative table figure; some losses were later considered possible write-offs."
+    },
+    {
+      "id": "ant-spit-d",
+      "date": "1945-01-01",
+      "place": "antwerp",
+      "force": "Allied aircraft at B-70",
+      "measure": "Spitfires destroyed in the attack",
+      "value": 12,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "rickard",
+      "locator": "JG 77 section",
+      "scope": "Alternate later station account with an additional air-combat figure."
+    },
+    {
+      "id": "ant-air-d",
+      "date": "1945-01-01",
+      "place": "antwerp",
+      "force": "Allied aircraft at B-70",
+      "measure": "Aircraft lost in subsequent dogfight",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "rickard",
+      "locator": "JG 77 section",
+      "scope": "Alternate later station account with an additional air-combat figure."
+    },
+    {
+      "id": "mels-toye-attackers",
+      "date": "1945-01-01",
+      "place": "melsbroek",
+      "force": "Sgt Toye's gun detachment",
+      "measure": "Approaching aircraft reported",
+      "value": [
+        36,
+        50
+      ],
+      "unit": "aircraft",
+      "qualifier": "estimate range",
+      "source": "toy",
+      "locator": "p. 1966, George Daniel Toye citation",
+      "scope": "Sentry estimate about 09:25. Different local observation from the 2701 Squadron record."
+    },
+    {
+      "id": "et-367-aircraft",
+      "date": "1945-01-01",
+      "place": "etain",
+      "force": "367th Fighter Squadron, 358th Fighter Group",
+      "measure": "U.S. P-47s in the formation",
+      "value": 12,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "lowe",
+      "locator": "Bodenplatte section, Étain interception",
+      "scope": "Claims against III./JG 53 before it reached Étain."
+    },
+    {
+      "id": "et-claim-d",
+      "date": "1945-01-01",
+      "place": "etain",
+      "force": "367th Fighter Squadron, 358th Fighter Group",
+      "measure": "Bf 109s claimed destroyed",
+      "value": 13,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "lowe",
+      "locator": "Bodenplatte section, Étain interception",
+      "scope": "Claims against III./JG 53 before it reached Étain."
+    },
+    {
+      "id": "et-claim-p",
+      "date": "1945-01-01",
+      "place": "etain",
+      "force": "367th Fighter Squadron, 358th Fighter Group",
+      "measure": "Bf 109s claimed probably destroyed",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "lowe",
+      "locator": "Bodenplatte section, Étain interception",
+      "scope": "Claims against III./JG 53 before it reached Étain."
+    },
+    {
+      "id": "et-claim-dmg",
+      "date": "1945-01-01",
+      "place": "etain",
+      "force": "367th Fighter Squadron, 358th Fighter Group",
+      "measure": "Bf 109s claimed damaged",
+      "value": 6,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "lowe",
+      "locator": "Bodenplatte section, Étain interception",
+      "scope": "Claims against III./JG 53 before it reached Étain."
+    },
+    {
+      "id": "op-ahb-force",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Luftwaffe attacking force",
+      "measure": "German fighters involved",
+      "value": [
+        790,
+        870
+      ],
+      "unit": "aircraft",
+      "qualifier": "estimate range",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "scope": "Fighter estimate. Excludes any unquantified distinction between aircraft assigned and launched."
+    },
+    {
+      "id": "op-fighter-claim",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "Allied fighters claimed destroyed",
+      "value": 92,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-ra-claim",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "Royal Artillery claimed destroyed",
+      "value": 122,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-usaa-claim",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "U.S. Army gunners claimed destroyed",
+      "value": 194,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-raf-claim",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "RAF Regiment claimed destroyed",
+      "value": 43,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-raf-dmg",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "RAF Regiment claimed damaged",
+      "value": 28,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-raf-july-d",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "July RAF Regiment report credited shot down",
+      "value": 27,
+      "unit": "aircraft",
+      "qualifier": "alternative report",
+      "source": "ahb",
+      "locator": "printed p. 111, note 35, Regiment in Action Report No. 34, 2 July 1945",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-raf-july-dmg",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied fighter, Army and RAF Regiment claims",
+      "measure": "July RAF Regiment report credited damaged",
+      "value": 59,
+      "unit": "aircraft",
+      "qualifier": "alternative report",
+      "source": "ahb",
+      "locator": "printed p. 111, note 35, Regiment in Action Report No. 34, 2 July 1945",
+      "scope": "Multiple Allied formations could engage the same aircraft. July report figures are a separate report of the January action."
+    },
+    {
+      "id": "op-german-d",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "German reconnaissance estimate of Allied losses",
+      "measure": "Allied aircraft assessed destroyed, air and ground",
+      "value": 479,
+      "unit": "aircraft",
+      "qualifier": "opponent estimate",
+      "source": "ahb",
+      "locator": "p. 110, note 34; AHB5/234, AHB Box 485",
+      "scope": "Contemporary German estimate cited in the official RAF study. The translation was not retrieved directly."
+    },
+    {
+      "id": "op-german-dmg",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "German reconnaissance estimate of Allied losses",
+      "measure": "Allied aircraft assessed damaged",
+      "value": 114,
+      "unit": "aircraft",
+      "qualifier": "opponent estimate",
+      "source": "ahb",
+      "locator": "p. 110, note 34; AHB5/234, AHB Box 485",
+      "scope": "Contemporary German estimate cited in the official RAF study. The translation was not retrieved directly."
+    },
+    {
+      "id": "op-ground-d",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Manrho and Pütz reconstruction",
+      "measure": "Allied aircraft destroyed on the ground",
+      "value": 290,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "ahb",
+      "locator": "p. 110, note 34, citing Manrho and Pütz pp. 460–462",
+      "scope": "The RAF study cites Manrho and Pütz and specifies ground scope. The original Allied loss appendices and exact 305/190 coverage remain open."
+    },
+    {
+      "id": "op-ground-dmg",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Manrho and Pütz reconstruction",
+      "measure": "Allied aircraft damaged on the ground",
+      "value": 180,
+      "unit": "aircraft",
+      "qualifier": "reconstructed",
+      "source": "ahb",
+      "locator": "p. 110, note 34, citing Manrho and Pütz pp. 460–462",
+      "scope": "The RAF study cites Manrho and Pütz and specifies ground scope. The original Allied loss appendices and exact 305/190 coverage remain open."
+    },
+    {
+      "id": "op-german-killed",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Manrho and Pütz reconstruction",
+      "measure": "German pilots killed or missing",
+      "value": 143,
+      "unit": "people",
+      "qualifier": "reconstructed",
+      "source": "ahb",
+      "locator": "p. 110, note 34, citing Manrho and Pütz pp. 460–462",
+      "scope": "RAF study independently specifies the ground scope of 290/180 and reproduces German aircrew outcomes. The original Allied loss appendices and exact 305/190 coverage remain open."
+    },
+    {
+      "id": "op-german-pow",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Manrho and Pütz reconstruction",
+      "measure": "German pilots taken prisoner",
+      "value": 70,
+      "unit": "people",
+      "qualifier": "reconstructed",
+      "source": "ahb",
+      "locator": "p. 110, note 34, citing Manrho and Pütz pp. 460–462",
+      "scope": "RAF study independently specifies the ground scope of 290/180 and reproduces German aircrew outcomes. The original Allied loss appendices and exact 305/190 coverage remain open."
+    },
+    {
+      "id": "op-german-wounded",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Manrho and Pütz reconstruction",
+      "measure": "German pilots wounded",
+      "value": 21,
+      "unit": "people",
+      "qualifier": "reconstructed",
+      "source": "ahb",
+      "locator": "p. 110, note 34, citing Manrho and Pütz pp. 460–462",
+      "scope": "RAF study independently specifies the ground scope of 290/180 and reproduces German aircrew outcomes. The original Allied loss appendices and exact 305/190 coverage remain open."
+    },
+    {
+      "id": "op-aaf-force",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied losses in U.S. official history",
+      "measure": "German aircraft in attack",
+      "value": 700,
+      "unit": "aircraft",
+      "qualifier": "approximate",
+      "source": "usa",
+      "locator": "ch. 18, New Year’s Day passage, notes 139–142",
+      "scope": "Early Allied estimate derived from the Coffin report and a January 30 intelligence memo. The U.S. 36 is included within 156."
+    },
+    {
+      "id": "op-aaf-loss",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied losses in U.S. official history",
+      "measure": "Allied airplanes lost",
+      "value": 156,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "usa",
+      "locator": "ch. 18, New Year’s Day passage, notes 139–142",
+      "scope": "Early Allied estimate derived from the Coffin report and a January 30 intelligence memo. The U.S. 36 is included within 156."
+    },
+    {
+      "id": "op-aaf-us",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Allied losses in U.S. official history",
+      "measure": "American airplanes lost",
+      "value": 36,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "usa",
+      "locator": "ch. 18, New Year’s Day passage, notes 139–142",
+      "scope": "Early Allied estimate derived from the Coffin report and a January 30 intelligence memo. The U.S. 36 is included within 156."
+    },
+    {
+      "id": "op-9-force",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Ninth Air Force chronology",
+      "measure": "German aircraft estimated in attack",
+      "value": [
+        700,
+        800
+      ],
+      "unit": "aircraft",
+      "qualifier": "estimate range",
+      "source": "chron",
+      "locator": "1 January, Ninth Air Force tactical operations",
+      "scope": "Chronology reports 127 operational Allied aircraft destroyed. Its 190 bombers are same-day Allied operations across Belgium and Germany."
+    },
+    {
+      "id": "op-9-loss",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Ninth Air Force chronology",
+      "measure": "Operational Allied aircraft reported destroyed",
+      "value": 127,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "chron",
+      "locator": "1 January, Ninth Air Force tactical operations",
+      "scope": "Chronology reports 127 operational Allied aircraft destroyed. Its 190 bombers are same-day Allied operations across Belgium and Germany."
+    },
+    {
+      "id": "op-9-bomb",
+      "date": "1945-01-01",
+      "place": "operation",
+      "force": "Ninth Air Force chronology",
+      "measure": "A-20s, A-26s and B-26s attacking",
+      "value": 190,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "chron",
+      "locator": "1 January, Ninth Air Force tactical operations",
+      "scope": "Chronology reports 127 operational Allied aircraft destroyed. Its 190 bombers are same-day Allied operations across Belgium and Germany."
+    },
+    {
+      "id": "dec17-raids",
+      "date": "1944-12-17",
+      "place": "operation",
+      "force": "83 Group airfield defence",
+      "measure": "German attacks reported",
+      "value": 9,
+      "unit": "attacks",
+      "qualifier": "approximate",
+      "source": "ahb",
+      "locator": "p. 99, note 30",
+      "scope": "Earlier German attacks. Claims do not enter the Bodenplatte ledger."
+    },
+    {
+      "id": "dec17-rounds",
+      "date": "1944-12-17",
+      "place": "operation",
+      "force": "83 Group airfield defence",
+      "measure": "RAF Regiment rounds fired",
+      "value": 1679,
+      "unit": "rounds",
+      "qualifier": "reported",
+      "source": "ahb",
+      "locator": "p. 99, note 30",
+      "scope": "Earlier German attacks. Claims do not enter the Bodenplatte ledger."
+    },
+    {
+      "id": "dec17-claim",
+      "date": "1944-12-17",
+      "place": "operation",
+      "force": "83 Group airfield defence",
+      "measure": "German aircraft claimed damaged",
+      "value": 5,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "ahb",
+      "locator": "p. 99, note 30",
+      "scope": "Earlier German attacks. Claims do not enter the Bodenplatte ledger."
+    },
+    {
+      "id": "dec25-auster",
+      "date": "1944-12-25",
+      "place": "eindhoven",
+      "force": "Communications Flight dispersal",
+      "measure": "Austers destroyed",
+      "value": 4,
+      "unit": "aircraft",
+      "qualifier": "reported",
+      "source": "ahb",
+      "locator": "p. 99, note 30",
+      "scope": "Earlier German raid. These losses are distinct from the 1 January raid."
+    },
+    {
+      "id": "dec25-airmen",
+      "date": "1944-12-25",
+      "place": "eindhoven",
+      "force": "Communications Flight dispersal",
+      "measure": "Airmen wounded",
+      "value": 5,
+      "unit": "people",
+      "qualifier": "reported",
+      "source": "ahb",
+      "locator": "p. 99, note 30",
+      "scope": "Earlier German raid. These losses are distinct from the 1 January raid."
+    },
+    {
+      "id": "oph-350-survived",
+      "date": "1945-01-01",
+      "place": "ophoven",
+      "force": "No. 350 (Belgian) Squadron RAF",
+      "measure": "Spitfires said to have survived the attack",
+      "value": 4,
+      "unit": "aircraft",
+      "qualifier": "retrospective unit account",
+      "source": "b350",
+      "locator": "1 January 1945 diary entry",
+      "scope": "The entry lacks an opening count and a damage/write-off split. It cannot establish the number destroyed."
+    },
+    {
+      "id": "vol-none-jg6",
+      "date": "1945-01-01",
+      "place": "volkel",
+      "force": "Based Allied aircraft",
+      "measure": "Aircraft damaged or lost",
+      "value": 0,
+      "unit": "aircraft",
+      "qualifier": "alternative reconstruction",
+      "source": "rickard",
+      "locator": "JG 6 section",
+      "scope": "Rickard reports that JG 6 did not find Volkel and that based aircraft escaped loss. This does not settle the RAF ground report or the alternative table."
+    },
+    {
+      "id": "vol-alt-d",
+      "date": "1945-01-01",
+      "place": "volkel",
+      "force": "Allied airfield loss table",
+      "measure": "Aircraft listed destroyed",
+      "value": 1,
+      "unit": "aircraft",
+      "qualifier": "alternative",
+      "source": "targets",
+      "locator": "Results of raid, Volkel row",
+      "scope": "Alternative station figure. Aircraft identity and exact cause remain unresolved."
+    },
+    {
+      "id": "woen-noeffect",
+      "date": "1945-01-01",
+      "place": "woensdrecht",
+      "force": "Allied airfield loss table",
+      "measure": "Aircraft losses indicated by a no-effect entry",
+      "value": null,
+      "unit": "aircraft",
+      "qualifier": "unquantified",
+      "source": "targets",
+      "locator": "Results of raid, Woensdrecht row",
+      "scope": "The table uses a qualitative outcome. The RAF gun report independently documents the attack."
+    },
+    {
+      "id": "gh-breyner",
+      "date": "1945-01-01",
+      "place": "ghent",
+      "force": "Sgt Stanisław Breyner, No. 308 Squadron",
+      "measure": "Fw 190s personally claimed destroyed",
+      "value": 2,
+      "unit": "aircraft",
+      "qualifier": "claim",
+      "source": "polish",
+      "locator": "Breyner's appended personal account",
+      "scope": "Breyner reports seeing both aircraft crash and using no ammunition. Do not add his claim to the combined report."
+    }
+  ],
+  "airDefence": [
+    {
+      "site": "ophoven",
+      "date": "1945-01-01",
+      "unit": "2876 and 2794 LAA Squadrons",
+      "source": "ahb",
+      "locator": "printed p. 100",
+      "window": "09:15–09:55",
+      "aircraft": 55,
+      "qualifier": "reported",
+      "rounds": 705,
+      "claimedDestroyed": 4,
+      "claimedDamaged": null,
+      "personnelKilled": 0,
+      "personnelWounded": 0,
+      "observedHits": 23,
+      "enemyPilotsCaptured": null,
+      "scope": "Attack; recorded hits are separate from claims."
+    },
+    {
+      "site": "eindhoven",
+      "date": "1945-01-01",
+      "unit": "2703, 2817 and 2773 LAA Squadrons",
+      "source": "ahb",
+      "locator": "printed p. 101",
+      "window": "09:15–09:50",
+      "aircraft": 70,
+      "qualifier": "approximate",
+      "rounds": 2750,
+      "claimedDestroyed": 6,
+      "claimedDamaged": null,
+      "personnelKilled": 2,
+      "personnelWounded": 7,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "Approximate attackers; casualties belong to the RAF Regiment."
+    },
+    {
+      "site": "volkel",
+      "date": "1945-01-01",
+      "unit": "2834, 2809 and 2874 LAA Squadrons",
+      "source": "ahb",
+      "locator": "printed p. 101",
+      "window": "09:25–09:45",
+      "aircraft": 20,
+      "qualifier": "more than",
+      "rounds": 188,
+      "claimedDestroyed": 5,
+      "claimedDamaged": null,
+      "personnelKilled": 0,
+      "personnelWounded": 0,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "The RAF report describes an attack. It does not identify the German formation or report an Allied airframe loss."
+    },
+    {
+      "site": "helmond",
+      "date": "1945-01-01",
+      "unit": "2873, 2875 and 2881 LAA Squadrons",
+      "source": "ahb",
+      "locator": "printed p. 101",
+      "window": "09:19–10:26",
+      "aircraft": 31,
+      "qualifier": "reported",
+      "rounds": 1937,
+      "claimedDestroyed": 6,
+      "claimedDamaged": 5,
+      "personnelKilled": null,
+      "personnelWounded": null,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "The airfield report does not give Allied aircraft losses."
+    },
+    {
+      "site": "heesch",
+      "date": "1945-01-01",
+      "unit": "2734 and 2819 LAA Squadrons",
+      "source": "ahb",
+      "locator": "printed p. 101",
+      "window": "09:20",
+      "aircraft": 31,
+      "qualifier": "reported",
+      "rounds": 344,
+      "claimedDestroyed": 7,
+      "claimedDamaged": 2,
+      "personnelKilled": null,
+      "personnelWounded": null,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "Aircraft approached the field; gun and fighter claims may overlap."
+    },
+    {
+      "site": "antwerp",
+      "date": "1945-01-01",
+      "unit": "2880 LAA Squadron, one flight",
+      "source": "ahb",
+      "locator": "printed p. 101",
+      "window": "09:25 / 09:40 / 10:00",
+      "aircraft": [
+        16,
+        14,
+        3
+      ],
+      "qualifier": "wave counts",
+      "rounds": 120,
+      "claimedDestroyed": null,
+      "claimedDamaged": 1,
+      "personnelKilled": null,
+      "personnelWounded": 1,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "The array gives three waves in order. Aircraft may recur between waves."
+    },
+    {
+      "site": "gilze",
+      "date": "1945-01-01",
+      "unit": "2895 LAA Squadron and one flight of 2736 LAA Squadron",
+      "source": "ahb",
+      "locator": "printed pp. 101–102",
+      "window": "09:22–10:05",
+      "aircraft": 20,
+      "qualifier": "at least",
+      "rounds": 806,
+      "claimedDestroyed": 3,
+      "claimedDamaged": 5,
+      "personnelKilled": null,
+      "personnelWounded": 3,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "One Me 262 appears in the three destruction claims. Wounded comprises an officer and two other ranks."
+    },
+    {
+      "site": "woensdrecht",
+      "date": "1945-01-01",
+      "unit": "2872 LAA Squadron",
+      "source": "ahb",
+      "locator": "printed p. 102",
+      "window": "09:25",
+      "aircraft": 8,
+      "qualifier": "reported",
+      "rounds": 44,
+      "claimedDestroyed": 2,
+      "claimedDamaged": 1,
+      "personnelKilled": null,
+      "personnelWounded": null,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "The attack and gun claims are documented separately from station aircraft damage."
+    },
+    {
+      "site": "grimbergen",
+      "date": "1945-01-01",
+      "unit": "2777 Armoured and 2719 Rifle Squadron detachments",
+      "source": "ahb",
+      "locator": "printed p. 102",
+      "window": "09:20",
+      "aircraft": 24,
+      "qualifier": "reported",
+      "rounds": 2300,
+      "claimedDestroyed": 3,
+      "claimedDamaged": 2,
+      "personnelKilled": 0,
+      "personnelWounded": 0,
+      "observedHits": null,
+      "enemyPilotsCaptured": 3,
+      "scope": "Bren small-arms ammunition. Three German pilots were captured."
+    },
+    {
+      "site": "evere",
+      "date": "1945-01-01",
+      "unit": "2800 LAA Squadron",
+      "source": "ahb",
+      "locator": "printed p. 102",
+      "window": null,
+      "aircraft": 40,
+      "qualifier": "at least",
+      "rounds": 350,
+      "claimedDestroyed": 3,
+      "claimedDamaged": 8,
+      "personnelKilled": null,
+      "personnelWounded": null,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "No time or Regiment casualty count in this line of the study."
+    },
+    {
+      "site": "melsbroek",
+      "date": "1945-01-01",
+      "unit": "2701 LAA Squadron",
+      "source": "ahb",
+      "locator": "printed p. 102",
+      "window": "09:19–09:45",
+      "aircraft": 25,
+      "qualifier": "at least",
+      "rounds": 300,
+      "claimedDestroyed": 4,
+      "claimedDamaged": 4,
+      "personnelKilled": null,
+      "personnelWounded": null,
+      "observedHits": null,
+      "enemyPilotsCaptured": null,
+      "scope": "Toye's estimate concerns a gun position and has its own scope."
+    }
+  ],
+  "airframes": [
+    {
+      "date": "1945-01-01",
+      "side": "Allied",
+      "unit": "4 Sqdn",
+      "aircraft": "Spitfire IX",
+      "serial": "PL765",
+      "serialAsPrinted": "PL765",
+      "clock": "",
+      "location": "Gilze Rijen (vlgv.)",
+      "pilot": "",
+      "disposition": "Destroyed on ground",
+      "context": "Gilze-Rijen",
+      "source": "sglo",
+      "locator": "printed p. 126",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "1./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "960729",
+      "serialAsPrinted": "960729*",
+      "clock": "",
+      "location": "Noordzee (W Hoek van Holland)",
+      "pilot": "Uffz E.Comtesse",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "2./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "739228",
+      "serialAsPrinted": "739228*",
+      "clock": "",
+      "location": "Oudenbosch (Oudlandschedijk)",
+      "pilot": "Uffz P.Wunderlich",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "2./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "960553",
+      "serialAsPrinted": "960553",
+      "clock": "",
+      "location": "Baarn (buurt van)",
+      "pilot": "Ofhr W.Ade",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "2./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "960709",
+      "serialAsPrinted": "960709*",
+      "clock": "",
+      "location": "Stadse Dijk (ZO van)",
+      "pilot": "Gfr K-H.Bauch",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "3./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "173929",
+      "serialAsPrinted": "173929*",
+      "clock": "",
+      "location": "Strijen (in de griend langs Hollandse Diep)",
+      "pilot": "Uffz H.Böhmer",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "3./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "738159",
+      "serialAsPrinted": "738159*",
+      "clock": "",
+      "location": "Vreeland",
+      "pilot": "Fw H-J.Kilian",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "4./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "961052",
+      "serialAsPrinted": "961052*",
+      "clock": "",
+      "location": "Breda (Teteringsedijk)",
+      "pilot": "Oblt H.G.Meinhoff",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": "NIMH attributes Meinhof's loss near Breda to Allied anti-aircraft fire. Spelling in the register differs.",
+      "relatedSources": [
+        {
+          "source": "nimh",
+          "locator": "JG 1 losses, Meinhof near Breda"
+        }
+      ]
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "5./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "739429",
+      "serialAsPrinted": "739429*",
+      "clock": "",
+      "location": "Kloosterzande (N van)",
+      "pilot": "Lt E. von Johannides",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "7./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "173813",
+      "serialAsPrinted": "173813*",
+      "clock": "",
+      "location": "Almelo (buurt van)",
+      "pilot": "Uffz O.Vetter",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "8./JG 1",
+      "aircraft": "Fw 190A-8",
+      "serial": "960547",
+      "serialAsPrinted": "960547*",
+      "clock": "",
+      "location": "Zeedorp (Z.Vl.)",
+      "pilot": "Fw P.Mayr",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "4./JG 2",
+      "aircraft": "Fw 190D-9",
+      "serial": "500390",
+      "serialAsPrinted": "500390*",
+      "clock": "",
+      "location": "As (B)",
+      "pilot": "Uffz F.Optenhestert",
+      "disposition": "Loss-register entry",
+      "context": "JG 2 Sint-Truiden assignment and route",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 2",
+      "aircraft": "Fw 190D-9",
+      "serial": "600380",
+      "serialAsPrinted": "600380*",
+      "clock": "",
+      "location": "Millen (NO Sittard)",
+      "pilot": "Lt C.Clemens",
+      "disposition": "Loss-register entry",
+      "context": "JG 2 Sint-Truiden assignment and route",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "5./JG 4",
+      "aircraft": "Fw 190A-8/R2",
+      "serial": "682676",
+      "serialAsPrinted": "682676*",
+      "clock": "10:05",
+      "location": "Vosberg (N Panningen)",
+      "pilot": "Ofhr F.Schaar",
+      "disposition": "Loss-register entry",
+      "context": "JG 4 Le Culot assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "7./JG 4",
+      "aircraft": "Fw 190A-8/R2",
+      "serial": "682296",
+      "serialAsPrinted": "682296*",
+      "clock": "",
+      "location": "Venray (op Vredepeel)",
+      "pilot": "Uffz E.Güldenpfennig",
+      "disposition": "Loss-register entry",
+      "context": "JG 4 Le Culot assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "Stab/JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "980543",
+      "serialAsPrinted": "980543*",
+      "clock": "",
+      "location": "Sevenum (7 km W van)",
+      "pilot": "ObstLt J.Kogler",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "2./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "737414",
+      "serialAsPrinted": "737414*",
+      "clock": "",
+      "location": "Oirschot (ZZO van)",
+      "pilot": "Hptm E.Trost",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "4./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "737405",
+      "serialAsPrinted": "737405*",
+      "clock": "09:30",
+      "location": "De Rips",
+      "pilot": "Uffz K.Fries",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "5./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "175049",
+      "serialAsPrinted": "175049*",
+      "clock": "09:45",
+      "location": "Erp (ZO Veghel)",
+      "pilot": "Lt K.Grabmair",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "5./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "738173",
+      "serialAsPrinted": "738173*",
+      "clock": "10:15",
+      "location": "Oostrum (NO van)",
+      "pilot": "Fw H.Grislawski",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "5./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "960221",
+      "serialAsPrinted": "960221*",
+      "clock": "",
+      "location": "Haaksbergen (Buursestraat 198)",
+      "pilot": "Hptm N.J.Katz",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "7./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "171605",
+      "serialAsPrinted": "171605*",
+      "clock": "09:30",
+      "location": "Mill",
+      "pilot": "Uffz P.Schneider",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "7./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "738167",
+      "serialAsPrinted": "738167*",
+      "clock": "10:30",
+      "location": "Westerbeek (NO van) Oploo (ZO van)",
+      "pilot": "Uffz K-H.Riedel",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "8./JG 6",
+      "aircraft": "Fw 190A-8",
+      "serial": "960224",
+      "serialAsPrinted": "960224*",
+      "clock": "09:20",
+      "location": "Ysselsteyn (Rouwkuilenweg)",
+      "pilot": "Lt H.Wulff",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 127",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "7./SG 4",
+      "aircraft": "Fw 190F-8",
+      "serial": "586450",
+      "serialAsPrinted": "586450*",
+      "clock": "",
+      "location": "Eys (Wittem)",
+      "pilot": "Fw R.Heinz",
+      "disposition": "Loss-register entry",
+      "context": "SG 4 Sint-Truiden assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "8./SG 4",
+      "aircraft": "Fw 190F-8",
+      "serial": "933433",
+      "serialAsPrinted": "933433*",
+      "clock": "",
+      "location": "Slenaken ?",
+      "pilot": "Ofw H.Schmieder",
+      "disposition": "Loss-register entry",
+      "context": "SG 4 Sint-Truiden assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "9./JG 1",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "782402",
+      "serialAsPrinted": "782402*",
+      "clock": "",
+      "location": "Goes (W van)",
+      "pilot": "FjFw W.Wichardt",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 1",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "780375",
+      "serialAsPrinted": "780375*",
+      "clock": "",
+      "location": "Biervliet (NO van)",
+      "pilot": "Lt A.Guha",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 1",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "784090",
+      "serialAsPrinted": "784090*",
+      "clock": "",
+      "location": "Dirksland (Kraaijenissedijk)",
+      "pilot": "Fw W.Kräuter",
+      "disposition": "Loss-register entry",
+      "context": "JG 1 western Belgian assignments",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "4./JG 4",
+      "aircraft": "Bf 109G-14",
+      "serial": "781173",
+      "serialAsPrinted": "781173*",
+      "clock": "",
+      "location": "Kleindorp (ZW Sittard)",
+      "pilot": "Uffz W.Zetzschke",
+      "disposition": "Loss-register entry",
+      "context": "JG 4 Le Culot assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "Stab III/JG 6",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "460339",
+      "serialAsPrinted": "460339*",
+      "clock": "",
+      "location": "Helmond (NNW van)",
+      "pilot": "Maj H.Kühle",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "Stab III/JG 6",
+      "aircraft": "Bf 109G-10",
+      "serial": "491282",
+      "serialAsPrinted": "491282*",
+      "clock": "",
+      "location": "Hunsel (ZO Weert)",
+      "pilot": "Hptm W.Kindler",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "9./JG 6",
+      "aircraft": "Bf 109G-10",
+      "serial": "490704",
+      "serialAsPrinted": "490704*",
+      "clock": "09:15",
+      "location": "Gemert (in ‘t Broek)",
+      "pilot": "Uffz R.Schlossborn",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "9./JG 6",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "784778",
+      "serialAsPrinted": "784778*",
+      "clock": "09:30",
+      "location": "Haps (O van)",
+      "pilot": "Oblt L.Gerlach",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "9./JG 6",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "785763",
+      "serialAsPrinted": "785763*",
+      "clock": "09:30",
+      "location": "‘t Hersfeld (W Groeningen)",
+      "pilot": "Uffz H-J.Rose",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 6",
+      "aircraft": "Bf 109G-10",
+      "serial": "490719",
+      "serialAsPrinted": "490719*",
+      "clock": "09:30",
+      "location": "Veghel (op Dorsthout)",
+      "pilot": "Uffz K.Betz",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 6",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "784968",
+      "serialAsPrinted": "784968*",
+      "clock": "09:30",
+      "location": "Vredepeel (NW Venray)",
+      "pilot": "Uffz H.Schaupp",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "11./JG 6",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "784986",
+      "serialAsPrinted": "784986*",
+      "clock": "",
+      "location": "Groesbeek (buurt van)",
+      "pilot": "Ofw P.Schwerdtfeger",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "12./JG 6",
+      "aircraft": "Bf 109G-14/AS",
+      "serial": "784946",
+      "serialAsPrinted": "784946*",
+      "clock": "09:30",
+      "location": "Berghem (O Oss)",
+      "pilot": "Ofhr J.Krumm",
+      "disposition": "Loss-register entry",
+      "context": "JG 6 Volkel assignment and diversions",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "4./JG 77",
+      "aircraft": "Bf 109G-14",
+      "serial": "512426",
+      "serialAsPrinted": "512426*",
+      "clock": "",
+      "location": "Oosterhout (4 km O van)",
+      "pilot": "Gfr E.Mannweiler",
+      "disposition": "Loss-register entry",
+      "context": "JG 77 Deurne/Woensdrecht assignment",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 77",
+      "aircraft": "Bf 109K-4",
+      "serial": "330119",
+      "serialAsPrinted": "330119*",
+      "clock": "",
+      "location": "Wijchen (O van)",
+      "pilot": "Lt H-J.Schumacher",
+      "disposition": "Loss-register entry",
+      "context": "JG 77 Deurne/Woensdrecht assignment",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "10./JG 77",
+      "aircraft": "Bf 109K-4",
+      "serial": "330168",
+      "serialAsPrinted": "330168*",
+      "clock": "",
+      "location": "Galder (gem. Alphen - Chaam)",
+      "pilot": "Uffz J.Twietmeyer",
+      "disposition": "Loss-register entry",
+      "context": "JG 77 Deurne/Woensdrecht assignment",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "11./JG 77",
+      "aircraft": "Bf 109K-4",
+      "serial": "330174",
+      "serialAsPrinted": "330174*",
+      "clock": "",
+      "location": "Stampersgat (NW Roosendaal)",
+      "pilot": "Fhr R.Braband",
+      "disposition": "Loss-register entry",
+      "context": "JG 77 Deurne/Woensdrecht assignment",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "11./JG 77",
+      "aircraft": "Bf 109K-4",
+      "serial": "330196",
+      "serialAsPrinted": "330196*",
+      "clock": "",
+      "location": "De Raamberg (NW Zundert)",
+      "pilot": "Lt H.Hackler",
+      "disposition": "Loss-register entry",
+      "context": "JG 77 Deurne/Woensdrecht assignment",
+      "source": "sglo",
+      "locator": "printed p. 129",
+      "note": ""
+    },
+    {
+      "date": "1945-01-01",
+      "side": "Allied",
+      "unit": "No. 308 Squadron RAF (Polish)",
+      "aircraft": "Spitfire IX",
+      "serial": "MJ281",
+      "serialAsPrinted": "MJ281",
+      "clock": "",
+      "location": "Ghent–Sint-Denijs-Westrem area",
+      "pilot": "Wacław Chojnacki",
+      "disposition": "Lost in air combat",
+      "context": "One of the two Polish air losses in the combined combat report",
+      "source": "choj",
+      "locator": "MJ281, ZF-P, 1 January 1945",
+      "note": "Serial and identity from the case reconstruction."
+    },
+    {
+      "date": "1945-01-01",
+      "side": "Allied",
+      "unit": "No. 317 Squadron RAF (Polish)",
+      "aircraft": "Spitfire LF IX",
+      "serial": "MK190",
+      "serialAsPrinted": "MK190",
+      "clock": "",
+      "location": "South of Ghent",
+      "pilot": "Tadeusz Powierza",
+      "disposition": "Lost in air combat",
+      "context": "One of the two Polish air losses in the combined combat report",
+      "source": "pow",
+      "locator": "MK190, 1 January 1945",
+      "note": "Serial and identity from the case reconstruction."
+    },
+    {
+      "date": "1945-01-01",
+      "side": "German",
+      "unit": "13./JG 53",
+      "aircraft": "Bf 109 G-14/AS",
+      "serial": "784993",
+      "serialAsPrinted": "784993",
+      "clock": "",
+      "location": "Near Ober-Felsberg, Saarland",
+      "pilot": "Herbert Maxis",
+      "disposition": "Forced landing after U.S. ground fire",
+      "context": "Metz–Frescaty assignment, en route",
+      "source": "lowe",
+      "locator": "Bodenplatte section, WNr 784993",
+      "note": "AirHistory provides the locality. Account already noted in PR #51's prose; first structured entry.",
+      "relatedSources": [
+        {
+          "source": "maxis",
+          "locator": "WNr 784993 provenance note"
+        }
+      ]
+    }
+  ],
+  "priorEvidence": {
+    "unitAudit": "../sources/atlas-bodenplatte-unit-reports-2026-11-13.md",
+    "unitAirframes": "bodenplatte-unit-airframes-1945-01-01.csv",
+    "liveFiveFieldLedger": "bodenplatte-1945-01-01.json",
+    "formationOrderOfBattle": "wikipedia-followup-evidence-2026-11-12.json"
+  },
+  "coverage": {
+    "scope": "Documented targets, reported diversions and intercepted assignments",
+    "comparisonList": "delay",
+    "locator": "Target list following the opening chronology",
+    "caution": "The 17-place published list includes locations whose original assignment or outcome is disputed. The three additional locations broaden the evidence map. The result is not a count of successfully attacked airfields."
+  }
+}
