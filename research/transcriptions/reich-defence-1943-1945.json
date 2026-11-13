@@ -97,6 +97,16 @@
       "title": "IBCC Digital Archive · Personal Report No. 7 on Operational Flight",
       "url": "https://ibccdigitalarchive.omeka.net/collections/document/30164",
       "type": "Wartime operational report"
+    },
+    "bg384Aug": {
+      "title": "384th Bomb Group archive · 17 August 1943",
+      "url": "https://www.384thbombgroup.com/_content/_pages/One384thMission.php?MissionKey=17",
+      "type": "Wartime group data and published chronology"
+    },
+    "bg303Aug": {
+      "title": "303rd Bomb Group archive · Combat Mission No. 60",
+      "url": "https://www.303rdbg.com/missionreports/060.pdf",
+      "type": "Bomb group mission account"
     }
   },
   "cases": [
@@ -162,28 +172,33 @@
             "dispatched": 376,
             "lost": 60
           },
-          "note": "B-17s in the two waves combined."
+          "note": "B-17s in both waves. The official narrative gives the same combined loss but reverses the wing split shown in the group archives."
         },
         {
           "label": "4th Bombardment Wing · Regensburg",
-          "source": "cravenAug",
-          "locator": "Vol. II, ch. 20 · Regensburg force",
+          "source": "bg384Aug",
+          "locator": "17 August · Eighth Air Force operations · Air Task Force 2",
           "metrics": {
             "dispatched": 146,
-            "lost": 24
+            "lost": 24,
+            "attacked": 127
           },
           "note": "Part of the combined US totals. North Africa was the planned destination after the raid."
         },
         {
           "label": "1st Bombardment Wing · Schweinfurt",
-          "source": "cravenAug",
-          "locator": "Vol. II, ch. 20 · Schweinfurt force",
+          "source": "bg384Aug",
+          "locator": "17 August · Eighth Air Force operations · Air Task Force 1",
           "metrics": {
             "dispatched": 230,
-            "lost": 36
+            "lost": 36,
+            "attacked": 188
           },
           "note": "Part of the combined US totals. Schweinfurt is the other target; the map pin locates Regensburg."
         }
+      ],
+      "refs": [
+        "bg303Aug"
       ]
     },
     {

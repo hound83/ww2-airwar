@@ -40,6 +40,7 @@ for (const item of data.cases) {
     }
   }
 }
+assert.deepEqual(byId.get('double-strike').extra.map(row => row.metrics.lost), [60, 24, 36]);
 assert.equal(byId.get('berlin-march').extra[0].metrics.enemyDestroyed, 69);
 assert.equal(byId.get('leuna-november').extra[2].metrics.enemyDestroyed, 142);
 assert.equal(byId.get('leuna-november').extra[2].metrics.airCombatDestroyed, 97);
