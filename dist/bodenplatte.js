@@ -313,6 +313,7 @@
         links.forEach((link, index) => { link.href = fieldUrl(fields[index].id, filters()); });
       });
     }
+    csv.closest("form").addEventListener("submit", event => event.preventDefault());
     csv.addEventListener("click", () => saveCsv(selected, [...visibleRows, ...visibleAirframes]));
     window.addEventListener("popstate", restore);
     $("chronology-events").innerHTML = renderTimeline(timeline, fields);

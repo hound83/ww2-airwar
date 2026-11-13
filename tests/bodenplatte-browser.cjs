@@ -81,6 +81,7 @@ module.exports = async function checkBodenplatte(browser, base, root) {
       await page.locator("#raid-outcome").selectOption("");
       await page.locator('[data-airfield="melsbroek"]').click();
       await page.getByRole("button", { name: "Find NS746" }).click();
+      await page.locator("#unit-query").press("Enter");
       assert.match(page.url(), /airfield=melsbroek.*evidence=airframes.*q=NS746/);
       await page.reload();
       const mosquito = page.locator('[data-observation="airframe-NS746"]');
