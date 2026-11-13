@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Bodenplatte archival evidence
+
+The XXIX TAC annex dated 2 January gives 10 aircraft destroyed and 31 damaged at Sint-Truiden. The other U.S. excerpt gives 6 and 33. The Melsbroek follow-up identifies 20 Allied aircraft by serial and distinguishes raid damage from later disposal. It also identifies the Dutch No. 320 Squadron archive files. Two German Werknummer leads are recorded at Sint-Truiden. AHB5/234 and the original Allied returns remain open. [Source audit](../research/sources/atlas-bodenplatte-original-sources-2026-11-13.md) · [Evidence](../research/transcriptions/bodenplatte-archival-evidence-1945-01-01.json)
+
 ## Bodenplatte operation-wide research
 
 The research now covers 20 locations and 16 dated entries between 16 December 1944 and 14 January 1945, with 1 January as the raid date. The Polish combat report gives Ghent air and ground losses. RAF records cover 11 defended locations, including a disputed attack at Volkel, and cite the contemporary German reconnaissance assessment. The operation ledger adds 81 quantitative observations and 47 aircraft identifiers alongside the earlier 106. [Research audit](../research/sources/atlas-bodenplatte-operation-scope-2026-11-13.md) · [Operation data](../research/transcriptions/bodenplatte-operation-scope-1944-1945.json)
