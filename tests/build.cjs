@@ -45,3 +45,6 @@ require('./bodenplatte.cjs');
 
 // Operation Bagration campaign evidence and source boundaries.
 require('./bagration.cjs');
+
+// Reich defence case chronology, population boundaries and source graph.
+require('./reich-defence.cjs');

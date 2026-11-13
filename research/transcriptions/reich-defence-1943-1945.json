@@ -1,0 +1,535 @@
+{
+  "schema": 1,
+  "extraMetrics": {
+    "leunaAttackers": "Bombers attacking Leuna",
+    "berlinAttackers": "Bombers attacking Tempelhof rail target",
+    "groundBombDestroyed": "Ground bombing destroyed, included in enemy action",
+    "groundBombDamaged": "Ground bombing damaged, included in enemy action",
+    "groundOtherDestroyed": "Ground loss by other causes, included in enemy action",
+    "fighterDispatch": "Fighters dispatched across mission tasks"
+  },
+  "sources": {
+    "hamburg": {
+      "title": "RAFWeb · RAF operations timeline",
+      "url": "https://www.rafweb.org/General/Timeline2.htm",
+      "type": "Secondary chronology"
+    },
+    "knilans": {
+      "title": "RAF Museum · Hubert ‘Nick’ Knilans",
+      "url": "https://www.rafmuseum.org.uk/research/online-exhibitions/americans-in-the-royal-air-force/americans-in-the-british-flying-services-1914-1945/hubert-nick-knilans/",
+      "type": "Museum unit history"
+    },
+    "hamburgDiary": {
+      "title": "Hamburg raid chronology citing the RAF Bomber Command campaign diary",
+      "url": "https://en.wikipedia.org/wiki/Bombing_of_Hamburg_in_World_War_II#Timeline",
+      "type": "Reference-led chronology"
+    },
+    "cravenAug": {
+      "title": "Craven & Cate · The Army Air Forces in World War II, vol. II, ch. 20",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-20.html",
+      "type": "USAF official history"
+    },
+    "schwMuseum": {
+      "title": "National Museum of the US Air Force · Black Thursday",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196143/black-thursday/",
+      "type": "Museum citing headquarters tally"
+    },
+    "schwWW2": {
+      "title": "The National WWII Museum · Black Thursday",
+      "url": "https://www.nationalww2museum.org/war/articles/black-thursday-october-14-1943-second-schweinfurt-bombing-raid",
+      "type": "Museum synthesis citing German records"
+    },
+    "cravenBig": {
+      "title": "Craven and Cate · The Army Air Forces in World War II, vol. III",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-2.html",
+      "type": "Official historical compilation"
+    },
+    "cravenOil": {
+      "title": "Craven & Cate · The Army Air Forces in World War II, vol. III, ch. 6",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-6.html",
+      "type": "USAF official history"
+    },
+    "nurembergOfficial": {
+      "title": "L. F. Ellis · Victory in the West, vol. I",
+      "url": "https://www.generalstaff.org/WW2/Hist_UK/VictoryintheWestVol1.pdf",
+      "type": "Official historical compilation"
+    },
+    "nurembergMuseum": {
+      "title": "RAF Museum · The story of Cyril Barton VC",
+      "url": "https://www.rafmuseum.org.uk/blog/for-valour-pilot-officer-cyril-joe-bartons-victoria-cross/",
+      "type": "Museum citing the squadron raid"
+    },
+    "nurembergBCM": {
+      "title": "Bomber Command Museum of Canada · Nuremberg",
+      "url": "https://bombercommandmuseumarchives.ca/s%2Cnuremberg.html",
+      "type": "Museum raid account"
+    },
+    "reichFall": {
+      "title": "RAF AHB VII/143 · Luftflotte Reich, Oct–Nov 1944",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/luftwaffe-losses-in-the-area-of-luftflotte-reich-october-november-1944/",
+      "type": "Wartime German return in RAF translation"
+    },
+    "nov698": {
+      "title": "USAAF chronology · 2 November 1944",
+      "url": "https://etherit.co.uk/1944/11/02.htm",
+      "type": "Published operational chronology"
+    },
+    "bg398": {
+      "title": "398th Bomb Group archive · Mission to Leuna",
+      "url": "https://kajh.398th.org/Missions/Dates/1944/November/MIS_441102.html",
+      "type": "Wartime unit records, reproduced"
+    },
+    "macr10156": {
+      "title": "398th Bomb Group archive · MACR 10156",
+      "url": "https://kajh.398th.org/History/398th_Aircraft/MACRs/MACR_10156_398th_601st_19441102_Campbell.html",
+      "type": "Wartime missing air crew report"
+    },
+    "bg384": {
+      "title": "384th Bomb Group archive · Mission 264 and USAAF Mission 817",
+      "url": "https://www.384thbombgroup.com/_content/_pages/One384thMission.php?MissionKey=279",
+      "type": "Wartime group data and published chronology"
+    },
+    "baBerlin": {
+      "title": "Bundesarchiv · Bomben auf Berlin",
+      "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/themenbeitraege/bomben-auf-berlin/",
+      "type": "Archive guide and city records"
+    },
+    "hamburgReport": {
+      "title": "IBCC Digital Archive · Personal Report No. 7 on Operational Flight",
+      "url": "https://ibccdigitalarchive.omeka.net/collections/document/30164",
+      "type": "Wartime operational report"
+    }
+  },
+  "cases": [
+    {
+      "id": "hamburg",
+      "date": "1943-07-24",
+      "title": "Gomorrah opens",
+      "mode": "night",
+      "place": "Hamburg",
+      "lat": 53.55,
+      "lng": 9.99,
+      "story": "Bomber Command used Window for the first time in combat during the opening raid. Foil strips confused German radar and disrupted control of the night defence. The following raids over Hamburg included separate American daylight operations.",
+      "endDate": "1943-07-25",
+      "extra": [
+        {
+          "label": "RAF Bomber Command · opening Hamburg raid",
+          "source": "hamburgDiary",
+          "locator": "July 1943 · 24/25 July raid",
+          "metrics": {
+            "dispatched": 791,
+            "attacked": 728,
+            "lost": 12
+          },
+          "note": "Opening night only. This figure excludes later Gomorrah raids."
+        },
+        {
+          "label": "Contemporary operational report · Hamburg",
+          "source": "hamburgReport",
+          "locator": "Personal Report No. 7 · §§ 2–3",
+          "metrics": {
+            "dispatched": 751,
+            "missing": 12
+          },
+          "note": "The report describes 751 aircraft in six phases following Pathfinder marking. Its scope differs from the campaign chronology’s 791 dispatched. The difference remains open."
+        },
+        {
+          "label": "No. 619 Squadron · Lancaster crew",
+          "source": "knilans",
+          "locator": "Biographical account · first operation as captain",
+          "metrics": {},
+          "note": "Knilans captained a No. 619 Squadron Lancaster that night. The museum account identifies the squadron participation without a squadron total."
+        }
+      ],
+      "refs": [
+        "hamburg"
+      ]
+    },
+    {
+      "id": "double-strike",
+      "date": "1943-08-17",
+      "title": "Schweinfurt and Regensburg",
+      "mode": "day",
+      "place": "Regensburg",
+      "lat": 49.01,
+      "lng": 12.1,
+      "story": "The Eighth Air Force targeted aircraft production and ball bearings in one operation. The Regensburg force continued to North Africa. A fog delay separated the Schweinfurt force from the first wave, allowing German fighters to land and rearm.",
+      "extra": [
+        {
+          "label": "US Eighth Air Force · both waves",
+          "source": "cravenAug",
+          "locator": "Vol. II, ch. 20 · 17 August double mission",
+          "metrics": {
+            "dispatched": 376,
+            "lost": 60
+          },
+          "note": "B-17s in the two waves combined."
+        },
+        {
+          "label": "4th Bombardment Wing · Regensburg",
+          "source": "cravenAug",
+          "locator": "Vol. II, ch. 20 · Regensburg force",
+          "metrics": {
+            "dispatched": 146,
+            "lost": 24
+          },
+          "note": "Part of the combined US totals. North Africa was the planned destination after the raid."
+        },
+        {
+          "label": "1st Bombardment Wing · Schweinfurt",
+          "source": "cravenAug",
+          "locator": "Vol. II, ch. 20 · Schweinfurt force",
+          "metrics": {
+            "dispatched": 230,
+            "lost": 36
+          },
+          "note": "Part of the combined US totals. Schweinfurt is the other target; the map pin locates Regensburg."
+        }
+      ]
+    },
+    {
+      "id": "black-thursday",
+      "date": "1943-10-14",
+      "title": "Black Thursday",
+      "mode": "day",
+      "place": "Schweinfurt",
+      "lat": 50.05,
+      "lng": 10.23,
+      "story": "German fighters intercepted the B-17 formations after their short-range escort turned back. This case compares the final US headquarters tally with a museum’s account of the German records for that date.",
+      "extra": [
+        {
+          "label": "US Eighth Air Force · final headquarters tally",
+          "source": "schwMuseum",
+          "locator": "Black Thursday exhibit · final tally",
+          "metrics": {
+            "dispatched": 251,
+            "missing": 60,
+            "writeoffs": 17,
+            "damaged": 121
+          },
+          "note": "The 17 comprise five crashed in England and twelve scrapped. Dispatch and departure figures depend on the source’s counting point."
+        },
+        {
+          "label": "German fighters · published loss account",
+          "source": "schwWW2",
+          "locator": "Black Thursday · German records as cited",
+          "metrics": {
+            "enemyDestroyed": 31,
+            "writeoffs": 12,
+            "damaged": 34
+          },
+          "note": "The museum lists destroyed, written off and damaged separately. The underlying fighter ledger is not reproduced on the page.",
+          "group": "german"
+        }
+      ]
+    },
+    {
+      "id": "big-week",
+      "date": "1944-02-20",
+      "title": "Big Week opens",
+      "mode": "day",
+      "place": "Leipzig",
+      "lat": 51.34,
+      "lng": 12.37,
+      "story": "Mission 226 sent three bomber forces against the German aircraft industry. ZG 26’s daily figure shows losses in the air and damage on the ground at Wunstorf.",
+      "records": [
+        "us8-1944-02-20-226",
+        "zg26-1944-02-20",
+        "reich-1944-02-20"
+      ],
+      "refs": [
+        "cravenBig"
+      ]
+    },
+    {
+      "id": "schweinfurt-day-night",
+      "date": "1944-02-24",
+      "title": "Schweinfurt by day and night",
+      "mode": "both",
+      "place": "Schweinfurt",
+      "lat": 50.05,
+      "lng": 10.23,
+      "story": "The Eighth Air Force struck several targets by day, including Schweinfurt. RAF Bomber Command returned to Schweinfurt after dark. Near Holzminden, III./ZG 26 met escorted B-24s consistent with the Gotha force’s route.",
+      "endDate": "1944-02-25",
+      "records": [
+        "us8-1944-02-24-233",
+        "us8-445-1944-02-24",
+        "raf-5-28827",
+        "zg26-1944-02-24",
+        "reich-1944-02-24"
+      ],
+      "refs": [
+        "cravenBig"
+      ]
+    },
+    {
+      "id": "berlin-march",
+      "date": "1944-03-06",
+      "title": "American daylight raid on Berlin",
+      "mode": "day",
+      "place": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405,
+      "story": "Mission 250 brought B-17s and B-24s deep into Germany with long-range escort. A ZG 26 unit return records five losses; the German command sheet separately records losses across its entire area that day.",
+      "records": [
+        "us8-1944-03-06-250",
+        "zg26-1944-03-06"
+      ],
+      "extra": [
+        {
+          "label": "Luftflotte Reich · daily loss return · 6 March 1944",
+          "source": "reichJanApr",
+          "locator": "VII/138 · 6 March 1944 · Total (all types)",
+          "metrics": {
+            "enemyDestroyed": 69,
+            "enemyDamaged": 12,
+            "opsDestroyed": 1,
+            "opsDamaged": 5,
+            "nonOpsDestroyed": 4,
+            "nonOpsDamaged": 7,
+            "enemyMissing": 8,
+            "airCombatDestroyed": 60,
+            "airCombatDamaged": 12,
+            "groundOtherDestroyed": 1
+          },
+          "note": "Whole command and calendar day. The return’s 69 is a separate population from the 69 Eighth Air Force bombers lost.",
+          "group": "command"
+        }
+      ],
+      "refs": [
+        "cravenBig"
+      ]
+    },
+    {
+      "id": "nuremberg",
+      "date": "1944-03-30",
+      "title": "Nuremberg night raid",
+      "mode": "night",
+      "place": "Nuremberg",
+      "lat": 49.45,
+      "lng": 11.08,
+      "story": "German night fighters caught the stream on the outward leg in moonlight. The RAF’s 795 dispatched is common across the accounts. The number that attacked and the loss tally vary with the source and category.",
+      "endDate": "1944-03-31",
+      "records": [
+        "raf-6-17385",
+        "reich-1944-03-30",
+        "reich-1944-03-31"
+      ],
+      "extra": [
+        {
+          "label": "British official history · alternate attacking count",
+          "source": "nurembergOfficial",
+          "locator": "Vol. I · The Strategic Air Offensive (30/31 March)",
+          "metrics": {
+            "attacked": 710,
+            "missing": 94
+          },
+          "note": "Retain alongside the Appendix 10 target row (616 attacked). A denominator crosswalk is unavailable."
+        },
+        {
+          "label": "Bomber Command Museum of Canada · raid losses",
+          "source": "nurembergBCM",
+          "locator": "30/31 March · outward leg and final tally",
+          "metrics": {
+            "lost": 95
+          },
+          "note": "The museum describes 82 losses on the outward leg. Its 95 lost is a separate tally from the Appendix’s 94 missing."
+        },
+        {
+          "label": "No. 78 Squadron · Halifax LK797",
+          "source": "nurembergMuseum",
+          "locator": "Combat account of Pilot Officer Cyril Barton, 30/31 March",
+          "metrics": {},
+          "note": "The museum describes a night-fighter attack on LK797, which continued to Nuremberg before reaching England and crashing. No German formation attribution is made here."
+        }
+      ],
+      "refs": []
+    },
+    {
+      "id": "oil-may",
+      "date": "1944-05-12",
+      "title": "Opening strike against synthetic oil",
+      "mode": "day",
+      "place": "Leuna",
+      "lat": 51.32,
+      "lng": 12.02,
+      "story": "Mission 353 struck a set of synthetic-oil plants, including Leuna near Merseburg. The official narrative and mission chronology give different dispatch totals. Each is shown with its own population label.",
+      "records": [
+        "us8-1944-05-12-353"
+      ],
+      "extra": [
+        {
+          "label": "USAF official history · 15 combat wings",
+          "source": "cravenOil",
+          "locator": "Vol. III, ch. 6 · The First Oil Attacks",
+          "metrics": {
+            "dispatched": 935
+          },
+          "note": "Official narrative force count. The operational chronology’s Mission 353 target listings total 886 dispatched. The source-level difference remains open."
+        }
+      ]
+    },
+    {
+      "id": "munich",
+      "date": "1944-06-09",
+      "title": "Munich and the 332d Fighter Group",
+      "mode": "day",
+      "place": "Munich",
+      "lat": 48.14,
+      "lng": 11.58,
+      "story": "The 55th Bombardment Wing raided rail and airfield targets around Munich. A separate 459th Bomb Group formation lost two identifiable B-24s during the 332d Fighter Group’s escort window.",
+      "records": [
+        "us15-1944-06-09-55bw",
+        "us15-1944-06-09-460bg",
+        "us15-1944-06-09-465bg",
+        "us15-1944-06-09-485bg",
+        "us15-1944-06-09-332fg",
+        "us15-1944-06-09-42-78219",
+        "us15-1944-06-09-42-52318",
+        "reich-1944-06-09-ahb"
+      ]
+    },
+    {
+      "id": "gelsenkirchen",
+      "date": "1944-06-12",
+      "title": "Nordstern and Lancaster HK545",
+      "mode": "night",
+      "place": "Gelsenkirchen",
+      "lat": 51.52,
+      "lng": 7.09,
+      "story": "No. 115 Squadron lists Lancaster HK545 as missing. A loss investigation associates it with an overnight claim by Ernst-Wilhelm Modrow, 1./NJG 1. The two sources describe different locations, leaving the attribution open.",
+      "endDate": "1944-06-13",
+      "records": [
+        "raf-6-20646-1",
+        "rafbc-1944-06-12-hk545",
+        "njg1-1944-06-13-modrow-hk545",
+        "reich-1944-06-12-ahb",
+        "reich-1944-06-13-ahb"
+      ]
+    },
+    {
+      "id": "misburg",
+      "date": "1944-06-20",
+      "title": "Misburg and Mission 425",
+      "mode": "day",
+      "place": "Misburg, Hanover",
+      "lat": 52.39,
+      "lng": 9.85,
+      "story": "The Eighth Air Force sent several forces over northern and central Germany. The German command return covers a much wider territory than the Hanover oil targets and therefore supports a same-day comparison at command level.",
+      "records": [
+        "us8-1944-06-20-425",
+        "reich-1944-06-20-ahb"
+      ],
+      "refs": [
+        "cravenOil"
+      ],
+      "extra": [
+        {
+          "label": "Mission 425 · escort coverage",
+          "source": "us06",
+          "locator": "20 June · Eighth Air Force strategic operations · Mission 425",
+          "metrics": {},
+          "note": "The 44 escorts indexed in the archive cover a partial force and cannot be read as the mission-wide escort count."
+        }
+      ]
+    },
+    {
+      "id": "leuna-november",
+      "date": "1944-11-02",
+      "title": "Leuna and the November interception",
+      "mode": "day",
+      "place": "Leuna",
+      "lat": 51.32,
+      "lng": 12.02,
+      "story": "Mission 698 included a large force against the Leuna synthetic-oil plant and separate refinery and rail targets. The 398th Bomb Group archive includes the original loss report for Campbell’s crew. The German daily return separates aircraft destroyed in air combat from losses on the ground and other causes.",
+      "extra": [
+        {
+          "label": "US Eighth Air Force · Mission 698",
+          "source": "nov698",
+          "locator": "2 November 1944 · Mission 698",
+          "metrics": {
+            "dispatched": 1174,
+            "leunaAttackers": 571,
+            "lost": 40,
+            "escortLost": 16,
+            "fighterDispatch": 968
+          },
+          "note": "Full mission across five forces and multiple targets. The 968 were dispatched fighters across several tasks."
+        },
+        {
+          "label": "398th Bomb Group · Campbell crew",
+          "source": "macr10156",
+          "locator": "MACR 10156 · 601st Bomb Squadron",
+          "metrics": {
+            "lost": 1
+          },
+          "note": "One documented B-17 loss from the Leuna operation, contained within the wider US losses."
+        },
+        {
+          "label": "Luftflotte Reich · daily loss return · 2 November 1944",
+          "source": "reichFall",
+          "locator": "VII/143 · PDF p. 25 · 2 November · Total (all types)",
+          "metrics": {
+            "enemyDestroyed": 142,
+            "enemyDamaged": 42,
+            "opsDestroyed": 11,
+            "opsDamaged": 20,
+            "nonOpsDestroyed": 6,
+            "nonOpsDamaged": 7,
+            "enemyMissing": 23,
+            "airCombatDestroyed": 97,
+            "airCombatDamaged": 27,
+            "groundBombDestroyed": 22,
+            "groundBombDamaged": 15
+          },
+          "note": "Whole command day. The air-combat, ground-bombing and missing columns are already included in the enemy-action total.",
+          "group": "command"
+        }
+      ],
+      "refs": [
+        "bg398"
+      ]
+    },
+    {
+      "id": "berlin-february",
+      "date": "1945-02-03",
+      "title": "Berlin and the February 1945 strike",
+      "mode": "day",
+      "place": "Berlin Tempelhof",
+      "lat": 52.47,
+      "lng": 13.4,
+      "story": "B-17s struck Berlin’s Tempelhof rail target while B-24s went to Magdeburg. Bundesarchiv records document the raid’s impact in Berlin and identify the air-district files for further investigation.",
+      "extra": [
+        {
+          "label": "US Eighth Air Force · Mission 817",
+          "source": "bg384",
+          "locator": "3 February · Eighth Air Force operations",
+          "metrics": {
+            "dispatched": 1437,
+            "lost": 25,
+            "escortLost": 8,
+            "fighterDispatch": 948
+          },
+          "note": "Entire mission, including the separate Magdeburg target and fighter tasks."
+        },
+        {
+          "label": "Air Task Force 1 · Berlin",
+          "source": "bg384",
+          "locator": "3 February · Air Task Force 1",
+          "metrics": {
+            "dispatched": 1003,
+            "berlinAttackers": 937,
+            "escorts": 575,
+            "lost": 23,
+            "escortLost": 7,
+            "writeoffs": 6
+          },
+          "note": "937 B-17s attacked the primary rail target. This force and its losses form part of Mission 817."
+        }
+      ],
+      "refs": [
+        "baBerlin"
+      ]
+    }
+  ]
+}

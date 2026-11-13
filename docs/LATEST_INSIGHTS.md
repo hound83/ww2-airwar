@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Atlas v9.7 · Defence of the Reich
+
+The [Reich defence explorer](https://hound83.github.io/ww2-airwar/reich-defence.html) links 13 raid cases to mission records, unit accounts, claim evidence and German calendar-day and monthly losses. Two additional dated command returns cover 6 March and 2 November 1944. The Nuremberg attacking and loss counts and the 12 May oil dispatch counts retain their source definitions. [Research audit](../research/sources/atlas-reich-defence-2026-11-13.md)
+
 ## Atlas v9.6 · Bagration air campaign
 
 The [Bagration explorer](https://hound83.github.io/ww2-airwar/bagration.html) links 15 dated cases to Soviet, German and French formation records, 10 German aircraft movement rows, and downloadable source-linked evidence. The 1st Air Army study’s printed 119 and component sum of 179 are both visible. The 822 Soviet strategic combat-aircraft losses remain separate from the German unit-level returns. [Research audit and reference trail](../research/sources/atlas-bagration-air-campaign-2026-11-13.md)
