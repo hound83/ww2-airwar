@@ -5,7 +5,6 @@
     "berlinAttackers": "Bombers attacking Tempelhof rail target",
     "groundBombDestroyed": "Ground bombing destroyed, included in enemy action",
     "groundBombDamaged": "Ground bombing damaged, included in enemy action",
-    "groundOtherDestroyed": "Ground loss by other causes, included in enemy action",
     "fighterDispatch": "Fighters dispatched across mission tasks"
   },
   "sources": {
@@ -290,7 +289,7 @@
             "enemyMissing": 8,
             "airCombatDestroyed": 60,
             "airCombatDamaged": 12,
-            "groundOtherDestroyed": 1
+            "groundBombDestroyed": 1
           },
           "note": "Whole command and calendar day. The return’s 69 is a separate population from the 69 Eighth Air Force bombers lost.",
           "group": "command"

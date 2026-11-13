@@ -35,7 +35,7 @@ for (const item of data.cases) {
     }
     if (row.group === 'command') {
       const m = row.metrics;
-      assert.equal(m.enemyDestroyed, m.enemyMissing + m.airCombatDestroyed + (m.groundBombDestroyed || 0) + (m.groundOtherDestroyed || 0));
+      assert.equal(m.enemyDestroyed, m.enemyMissing + m.airCombatDestroyed + (m.groundBombDestroyed || 0));
       assert.equal(m.enemyDamaged, m.airCombatDamaged + (m.groundBombDamaged || 0));
     }
   }
