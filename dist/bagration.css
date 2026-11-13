@@ -1,0 +1,40 @@
+:root { --air-blue: #284b63; --brick: #754130; }
+.campaign-date { margin: 0 0 .55rem; color: var(--muted); font-weight: 680; }
+.bagration-picker { display: grid; grid-template-columns: minmax(15rem, .95fr) minmax(0, 2fr); gap: 1rem; margin-bottom: 1rem; }
+.bagration-map-panel { min-width: 0; }
+#campaign-map { height: 27rem; background: #d7e1dd; border: 1px solid var(--line); border-radius: .45rem; }
+#map-note { margin: .4rem 0 0; font-size: .86rem; }
+#case-list { display: grid; gap: .4rem; max-height: 24rem; overflow: auto; margin: .4rem -.25rem 0; padding: .25rem; }
+.case-choice { display: grid; gap: .1rem; min-height: 52px; background: var(--panel); border: 1px solid var(--line); border-radius: .3rem; padding: .45rem .65rem; text-decoration: none; }
+.case-choice:hover { text-decoration: underline; }
+.case-choice[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fffdf6; }
+.case-choice small { font-size: .8rem; }
+.case-choice[hidden] { display: none; }
+.bagration-pin { display: grid; place-items: center; border: 2px solid var(--accent); background: #fffdf6; color: var(--deep); border-radius: 50%; font-weight: 800; }
+.bagration-pin[data-active="true"] { background: #f6cf83; border-color: #83410f; }
+.case-panel { scroll-margin-top: .7rem; }
+#case-context { margin: 0 0 .35rem; }
+#case-title { font-size: clamp(1.7rem, 4vw, 2.8rem); }
+.case-limit { max-width: 76ch; border-inline-start: .22rem solid #977240; padding-inline-start: .7rem; }
+.case-unit-label { margin: .85rem 0 .3rem; font-weight: 700; }
+.bagration-controls { display: flex; flex-wrap: wrap; align-items: end; gap: .55rem 1rem; margin-top: 1rem; }
+.bagration-controls label { min-width: min(100%, 12rem); max-width: 100%; }
+.evidence-line { display: inline-flex; flex-wrap: wrap; vertical-align: top; align-items: baseline; gap: .25rem .7rem; max-width: 96%; }
+.evidence-value { font-size: 1.1rem; color: var(--deep); }
+.evidence-kind { font-size: .82rem; color: var(--muted); }
+.evidence-kind.claims { color: var(--brick); }
+.evidence-kind.own-losses { color: var(--air-blue); }
+.evidence-detail p { margin: .15rem .65rem .65rem; }
+.unit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.unit-grid .details ul { padding-inline-start: 1.15rem; }
+#source-register { margin-top: 1rem; }
+#sources { margin-bottom: 3rem; }
+#source-register li { margin-block: .3rem; }
+#inventory table { white-space: nowrap; font-size: .88rem; }
+#inventory h4 { margin-bottom: .3rem; }
+@media (max-width: 43rem) {
+  .bagration-picker, .unit-grid { grid-template-columns: minmax(0, 1fr); }
+  .bagration-map-panel { grid-row: 1; }
+  #campaign-map { height: 21rem; }
+  #case-list { max-height: 14rem; }
+}

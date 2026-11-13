@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Atlas v9.6 · Bagration air campaign
+
+The [Bagration explorer](https://hound83.github.io/ww2-airwar/bagration.html) links 15 dated cases to Soviet, German and French formation records, 10 German aircraft movement rows, and downloadable source-linked evidence. The 1st Air Army study’s printed 119 and component sum of 179 are both visible. The 822 Soviet strategic combat-aircraft losses remain separate from the German unit-level returns. [Research audit and reference trail](../research/sources/atlas-bagration-air-campaign-2026-11-13.md)
+
 ## Atlas v9.5 · Operation Bodenplatte
 
 The [Bodenplatte explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) maps 20 documented locations and links a 16-entry chronology to airfield, unit and aircraft evidence. Sint-Truiden displays the two wartime counts together. Melsbroek shows airframe dispositions, including later status changes, and the archive references. Operation-level estimates, unit records and individual airframes retain their reporting scope. [Operation source audit](../research/sources/atlas-bodenplatte-operation-scope-2026-11-13.md)

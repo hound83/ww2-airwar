@@ -42,3 +42,6 @@ require('./grand-air-war-v86.cjs');
 
 // Bodenplatte airfield observations and source boundaries.
 require('./bodenplatte.cjs');
+
+// Operation Bagration campaign evidence and source boundaries.
+require('./bagration.cjs');

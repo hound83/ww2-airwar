@@ -1,0 +1,1750 @@
+{
+  "title": "Operation Bagration",
+  "campaignStart": "1944-06-22",
+  "campaignEnd": "1944-08-29",
+  "sources": {
+    "connor": {
+      "title": "William M. Connor, Analysis of Deep Attack Operations",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D110-PURL-LPS68395/pdf/GOVPUB-D110-PURL-LPS68395.pdf",
+      "type": "U.S. Army Combat Studies Institute"
+    },
+    "ziemke": {
+      "title": "Earl F. Ziemke, Stalingrad to Berlin, chapter XV",
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Defeat/USA-EF-Defeat-15.html",
+      "type": "U.S. Army official history"
+    },
+    "fritz": {
+      "title": "Stephen G. Fritz, Ostkrieg",
+      "url": "https://prussia.online/Data/Book/os/ostkrieg-hitlers-war-of-extermination-in-the-east/Fritz%20S.%20Ostkrieg.%20Hitler%27s%20War%20of%20Extermination%20in%20the%20East%20%282011%29%2C%20OCR.pdf",
+      "type": "Academic synthesis"
+    },
+    "kriv": {
+      "title": "G. F. Krivosheev et al., Russia and the USSR in the Wars of the 20th Century",
+      "url": "https://djvu.online/file/OHjWPWWLbYyvA",
+      "type": "Published Soviet/Russian statistical compilation"
+    },
+    "army1": {
+      "title": "D. A. Dyakov, The 1st Air Army’s contribution to the liberation of Belarus",
+      "url": "https://military.wikireading.ru/h8TBm5FnI7",
+      "type": "Archival study citing TsAMO, including F. 290, op. 3284, d. 796"
+    },
+    "army3": {
+      "title": "Third Air Army history, chapter 4",
+      "url": "https://biography.wikireading.ru/256259",
+      "type": "Soviet institutional unit history"
+    },
+    "army4": {
+      "title": "Mogilev Offensive, in Belarus: The Memorable Summer of 1944",
+      "url": "https://military.wikireading.ru/hGZ8576rTK",
+      "type": "Retrospective operation study"
+    },
+    "archive4": {
+      "title": "50th Army HQ report on 4th Air Army support, 13 August 1944",
+      "url": "https://docs.historyrussia.org/ru/nodes/217738",
+      "type": "Wartime archive catalogue entry"
+    },
+    "army16": {
+      "title": "16th Air Army history, chapter 3",
+      "url": "https://militera.lib.ru/h/16va/03.html",
+      "type": "Soviet institutional unit history"
+    },
+    "plan16": {
+      "title": "16th Air Army air support plan, 9 June 1944",
+      "url": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/26/32",
+      "type": "Wartime plan transcribed from General Staff document collection"
+    },
+    "hq16": {
+      "title": "16th Air Army headquarters report, 22 July 1944",
+      "url": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/26/33",
+      "type": "Wartime report excerpt transcribed from General Staff document collection"
+    },
+    "french": {
+      "title": "GC 3 Normandie, journal de marche",
+      "url": "https://bibert.fr/Joseph_Bibert_fichiers/Gabriel%20MERTZISEN_fichiers/Normandie%20Niemen%20JM.pdf",
+      "type": "Published French wartime unit journal"
+    },
+    "memorial": {
+      "title": "Mémorial Normandie-Niémen, second campaign",
+      "url": "https://memorial-normandie-niemen.fr/deuxieme-campagne/",
+      "type": "Institutional unit history"
+    },
+    "tessin": {
+      "title": "Georg Tessin, Verbände und Truppen, vol. 14",
+      "url": "https://www.bundesarchiv.de/assets/bundesarchiv/de/Downloads/Tessin/Bd_14_ocr.pdf",
+      "type": "German military organisational reference hosted by Bundesarchiv"
+    },
+    "lf6": {
+      "title": "Michael Holm, Luftflotte 6 chronology",
+      "url": "https://www.ww2.dk/air/hq/lfl6.htm",
+      "type": "Specialist basing compilation"
+    },
+    "germanob": {
+      "title": "German Luftwaffe order of battle in the East, 26 June 1944",
+      "url": "https://www.lexikon-der-wehrmacht.de/OrdersofBattle/Juni1944-R.htm",
+      "type": "Specialist order-of-battle transcription"
+    },
+    "jg51": {
+      "title": "Michael Holm, Jagdgeschwader 51",
+      "url": "https://www.ww2.dk/air/jagd/jg51.htm",
+      "type": "Specialist unit and station chronology"
+    },
+    "sg10": {
+      "title": "Michael Holm, Schlachtgeschwader 10",
+      "url": "https://www.ww2.dk/air/attack/sg10.htm",
+      "type": "Specialist unit and station chronology"
+    },
+    "jg1returns": {
+      "title": "I./JG 51 aircraft holdings and movements",
+      "url": "https://www.ww2.dk/oob/bestand/jagd/bijg51.html",
+      "type": "Transcription of German aircraft movement returns"
+    },
+    "jg3returns": {
+      "title": "III./JG 51 aircraft holdings and movements",
+      "url": "https://www.ww2.dk/oob/bestand/jagd/biiijg51.html",
+      "type": "Transcription of German aircraft movement returns"
+    },
+    "sg1returns": {
+      "title": "I./SG 10 aircraft holdings and movements",
+      "url": "https://asisbiz.com/Luftwaffe/bisg10.html",
+      "type": "Mirror of German movement-return transcription"
+    },
+    "aces": {
+      "title": "John Weal, Bf 109 Aces of the Russian Front",
+      "url": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/Bf%20109%20Aces%20Of%20The%20Russian%20Front%20c20040310%20%5B99%5D.pdf",
+      "type": "Specialist fighter order of battle"
+    },
+    "gazetteer": {
+      "title": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45",
+      "url": "https://ww2.dk/Airfields%20-%20Russia%20and%20Ukraine.pdf",
+      "type": "Historical airfield gazetteer"
+    },
+    "brest": {
+      "title": "Glantz, Lublin–Brest Offensive and Advance on Warsaw",
+      "url": "https://doi.org/10.1080/13518040600697993",
+      "type": "Bibliographic reference, with July–September scope"
+    },
+    "osovets": {
+      "title": "Pamyat Naroda, Osovets offensive",
+      "url": "https://pamyat-naroda.ru/ops/osovetskaya-nastupatelnaya-operatsiya-/",
+      "type": "Operational archive catalogue"
+    },
+    "shia": {
+      "title": "Šiauliai offensive, reference trail",
+      "url": "https://en.wikipedia.org/wiki/%C5%A0iauliai_offensive",
+      "type": "Reference guide, used alongside the 3rd Air Army history"
+    },
+    "wikiOs": {
+      "title": "Osovets offensive, reference trail",
+      "url": "https://en.wikipedia.org/wiki/Osovets_offensive",
+      "type": "Indirect citation to the Soviet General Staff study"
+    },
+    "aircrew": {
+      "title": "French Ministry of the Armed Forces, Normandie-Niémen",
+      "url": "https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/operations-militaires/1941-1943-8",
+      "type": "Institutional unit history"
+    }
+  },
+  "units": [
+    {
+      "id": "vvs1",
+      "side": "Soviet",
+      "name": "1st Air Army",
+      "parent": "3rd Belorussian Front",
+      "role": "Fighter cover, tactical bombing and assault support from Orsha to Minsk, Vilnius and Kaunas.",
+      "source": "army1",
+      "locator": "Opening deployment and four front operations"
+    },
+    {
+      "id": "vvs3",
+      "side": "Soviet",
+      "name": "3rd Air Army",
+      "parent": "1st Baltic Front",
+      "role": "Supported the northern pincer at Vitebsk and the subsequent advance toward Polotsk and Šiauliai.",
+      "source": "army3",
+      "locator": "Chapter 4, Vitebsk and Baltic sections"
+    },
+    {
+      "id": "vvs4",
+      "side": "Soviet",
+      "name": "4th Air Army",
+      "parent": "2nd Belorussian Front",
+      "role": "Supported the Mogilev axis and the crossings on the route to the Dnieper.",
+      "source": "army4",
+      "locator": "Opening night and Mogilev chronology"
+    },
+    {
+      "id": "vvs16",
+      "side": "Soviet",
+      "name": "16th Air Army",
+      "parent": "1st Belorussian Front, right wing",
+      "role": "Concentrated air support around Bobruisk, then operated toward Minsk and Baranovichi.",
+      "source": "army16",
+      "locator": "Chapter 3, Bobruisk and Baranovichi"
+    },
+    {
+      "id": "vvs6",
+      "side": "Soviet",
+      "name": "6th Air Army",
+      "parent": "1st Belorussian Front, left wing",
+      "role": "Supported the July offensive toward Lublin and the Vistula with attached units from the 16th Air Army and reserves.",
+      "source": "army16",
+      "locator": "Chapter 3, July left-wing operations"
+    },
+    {
+      "id": "add",
+      "side": "Soviet",
+      "name": "Long-Range Aviation (ADD)",
+      "parent": "Soviet high command",
+      "role": "Supported the offensive with selected night missions and appears separately in the Mogilev preparation figures.",
+      "source": "army4",
+      "locator": "Night of 22–23 June"
+    },
+    {
+      "id": "assault4",
+      "side": "Soviet",
+      "name": "4th Assault Aviation Corps",
+      "parent": "16th Air Army at Bobruisk",
+      "role": "Assigned to attack troops and equipment inside the Bobruisk pocket.",
+      "source": "army16",
+      "locator": "Chapter 3, evening orders of 27 June"
+    },
+    {
+      "id": "normandie",
+      "side": "French",
+      "name": "GC 3 Normandie",
+      "parent": "Fighting with the 1st Air Army",
+      "role": "French Yak fighter unit. Its journal follows an escort mission near Orsha and its memorial records a later transfer accident.",
+      "source": "french",
+      "locator": "Journal, 23 June 1944, p. 56"
+    },
+    {
+      "id": "lf6",
+      "side": "German",
+      "name": "Luftflotte 6",
+      "parent": "Central Eastern Front",
+      "role": "Air fleet commanded by Robert Ritter von Greim. Headquarters moved from the Minsk area to Warsaw during the retreat.",
+      "source": "tessin",
+      "locator": "Vol. 14, Luftflotte 6, 1944"
+    },
+    {
+      "id": "i-jg51",
+      "side": "German",
+      "name": "I./JG 51",
+      "parent": "Jagdabschnittführer 6 / Luftflotte 6",
+      "role": "Bf 109 fighter Gruppe associated with Orsha. Station and strength publications disagree on the exact late-June position.",
+      "source": "jg51",
+      "locator": "I. Gruppe station chronology"
+    },
+    {
+      "id": "iii-jg51",
+      "side": "German",
+      "name": "III./JG 51",
+      "parent": "Jagdabschnittführer 6 / Luftflotte 6",
+      "role": "Bf 109 fighter Gruppe based at Bobruisk in the opening battles and moved west after 27 June.",
+      "source": "jg51",
+      "locator": "III. Gruppe station chronology"
+    },
+    {
+      "id": "i-sg10",
+      "side": "German",
+      "name": "I./SG 10",
+      "parent": "1. Flieger-Division / Luftflotte 6 (26 June listing)",
+      "role": "Fw 190 ground-attack Gruppe at Bobruisk in the opening week.",
+      "source": "sg10",
+      "locator": "I. Gruppe station chronology"
+    },
+    {
+      "id": "recon12",
+      "side": "German",
+      "name": "12./NAGr. 12",
+      "parent": "4. Flieger-Division sector",
+      "role": "Short-range reconnaissance Staffel listed at Mogilev with Bf 109s.",
+      "source": "germanob",
+      "locator": "26 June, 4. Flieger-Division listing"
+    },
+    {
+      "id": "kg4",
+      "side": "German",
+      "name": "II. and III./KG 4",
+      "parent": "Luftflotte 6",
+      "role": "He 111 bomber Gruppen listed at Baranovichi. Their presence is established in the listing, while a matching sortie series remains open.",
+      "source": "germanob",
+      "locator": "26 June, Luftflotte 6 listing"
+    },
+    {
+      "id": "de4",
+      "side": "German",
+      "name": "4. Flieger-Division",
+      "parent": "Luftflotte 6",
+      "role": "Luftflotte 6 command associated with Orsha. Tessin places its headquarters at Sudauen in July.",
+      "source": "tessin",
+      "locator": "Vol. 14, Luftflotte 6, 1944"
+    }
+  ],
+  "cases": [
+    {
+      "id": "preparation",
+      "title": "Concentrating the air armies",
+      "start": "1944-06-09",
+      "end": "1944-06-22",
+      "phase": "Preparation",
+      "lat": 53.9,
+      "lng": 27.57,
+      "point": "Minsk, campaign overview",
+      "units": [
+        "vvs1",
+        "vvs3",
+        "vvs4",
+        "vvs16",
+        "vvs6",
+        "lf6"
+      ],
+      "summary": "Four fronts prepared a coordinated assault against Army Group Centre. Reserve formations reinforced the front air armies. The southern air plan assigned night bombing, reconnaissance and ground support by army sector.",
+      "limit": "Preparatory orders are dated before the offensive. The force snapshots shown here also include the first days of the operation. Their readiness definitions and populations differ.",
+      "source": "plan16",
+      "locator": "9 June plan, army and aviation tasks",
+      "related": [
+        "connor",
+        "tessin"
+      ]
+    },
+    {
+      "id": "mogilev",
+      "title": "Mogilev and the Dnieper",
+      "start": "1944-06-22",
+      "end": "1944-06-28",
+      "phase": "Breakthrough",
+      "lat": 53.9,
+      "lng": 30.34,
+      "point": "Mogilev sector",
+      "units": [
+        "vvs4",
+        "add",
+        "recon12",
+        "lf6",
+        "de4"
+      ],
+      "summary": "Aircraft supported the 2nd Belorussian Front before its attack across the Pronya and on toward the Dnieper. The German 4th Army faced converging breakthroughs on its flanks and withdrew from the exposed bridgehead.",
+      "limit": "The two opening-night sortie counts belong to front aviation and Long-Range Aviation. The later 50th Army report has a catalogue reference. Its figures remain to be verified.",
+      "source": "ziemke",
+      "locator": "Chapter XV, Fourth Army withdrawal",
+      "related": [
+        "army4",
+        "archive4",
+        "germanob"
+      ]
+    },
+    {
+      "id": "vitebsk",
+      "title": "Vitebsk and the Western Dvina",
+      "start": "1944-06-23",
+      "end": "1944-06-26",
+      "phase": "Breakthrough",
+      "lat": 55.19,
+      "lng": 30.2,
+      "point": "Vitebsk sector",
+      "units": [
+        "vvs3",
+        "vvs1",
+        "lf6"
+      ],
+      "summary": "The 1st Baltic and 3rd Belorussian fronts converged on Vitebsk. The 3rd Air Army supported the river crossings and the encirclement. Its published history records a sharp rise in activity from 23 to 26 June.",
+      "limit": "The reported sorties cover the 3rd Air Army’s wider sector. Its victory claims have no matched German loss series here.",
+      "source": "army3",
+      "locator": "Chapter 4, 23–26 June",
+      "related": [
+        "ziemke"
+      ]
+    },
+    {
+      "id": "orsha",
+      "title": "Orsha and the rail corridor",
+      "start": "1944-06-23",
+      "end": "1944-06-27",
+      "phase": "Breakthrough",
+      "lat": 54.51,
+      "lng": 30.42,
+      "point": "Orsha sector",
+      "units": [
+        "vvs1",
+        "normandie",
+        "i-jg51",
+        "lf6",
+        "de4"
+      ],
+      "summary": "The 1st Air Army massed much of its opening force on the Orsha axis. French pilots escorted a Pe-2 mission against Bogushevsk. German fighter listings and June movement returns give a second perspective on the sector.",
+      "limit": "The German listings and basing chronology differ for I./JG 51 around 26 June. The June removals cover the whole month.",
+      "source": "army1",
+      "locator": "Opening deployment and 23 June operations",
+      "related": [
+        "french",
+        "germanob",
+        "jg51"
+      ]
+    },
+    {
+      "id": "bobruisk",
+      "title": "Bobruisk: claims and returns",
+      "start": "1944-06-24",
+      "end": "1944-06-26",
+      "phase": "Breakthrough",
+      "lat": 53.14,
+      "lng": 29.22,
+      "point": "Bobruisk sector",
+      "units": [
+        "vvs16",
+        "assault4",
+        "iii-jg51",
+        "i-sg10"
+      ],
+      "summary": "The 16th Air Army supported both pincers around the German 9th Army. Its 26 June account gives sortie, loss and victory-claim figures. German returns show what two locally based Gruppen lost across the full month.",
+      "limit": "The 12 June enemy-action removals cap losses for those two Gruppen on any single June day. The 26 June Soviet claims cover a wider population.",
+      "source": "army16",
+      "locator": "Chapter 3, first three days of the offensive",
+      "related": [
+        "gazetteer",
+        "plan16"
+      ]
+    },
+    {
+      "id": "pocket",
+      "title": "Bobruisk: the pocket strike",
+      "start": "1944-06-27",
+      "end": "1944-06-29",
+      "phase": "Breakthrough",
+      "lat": 53.06,
+      "lng": 29.3,
+      "point": "Approximate pocket sector southeast of Bobruisk",
+      "units": [
+        "vvs16",
+        "assault4",
+        "iii-jg51",
+        "i-sg10"
+      ],
+      "summary": "On 27 June the 16th Air Army sent bombers, assault aircraft and fighters against the encircled force. Separate formations handled bombing, low-level attack and fighter patrol. Bobruisk fell on 29 June.",
+      "limit": "The air army reported zero own losses for the evening strike. The number applies to that mission only.",
+      "source": "army16",
+      "locator": "Chapter 3, evening attack and 29 June",
+      "related": [
+        "ziemke"
+      ]
+    },
+    {
+      "id": "polotsk",
+      "title": "Polotsk and the northern flank",
+      "start": "1944-06-27",
+      "end": "1944-07-04",
+      "phase": "Encirclement",
+      "lat": 55.49,
+      "lng": 28.77,
+      "point": "Polotsk sector",
+      "units": [
+        "vvs3",
+        "lf6"
+      ],
+      "summary": "The 1st Baltic Front cleared Polotsk while the 3rd Air Army attacked crossings and retreating traffic along the Dvina and Drissa. The advance widened the break between Army Groups Centre and North.",
+      "limit": "The 3rd Air Army’s 23–30 June figures include earlier Vitebsk operations. Polotsk’s own daily totals remain open.",
+      "source": "army3",
+      "locator": "Chapter 4, Dvina and Drissa pursuit"
+    },
+    {
+      "id": "minsk",
+      "title": "Berezina crossings and Minsk",
+      "start": "1944-06-28",
+      "end": "1944-07-04",
+      "phase": "Encirclement",
+      "lat": 53.9,
+      "lng": 27.57,
+      "point": "Minsk and the eastward approaches",
+      "units": [
+        "vvs1",
+        "vvs16",
+        "lf6",
+        "iii-jg51"
+      ],
+      "summary": "Soviet aircraft attacked retreat roads and river crossings. Ziemke describes repeated attacks on the Berezino bridge as the German 4th Army staff withdrew. The pincers reached Minsk on 3 July as German aviation shifted west.",
+      "limit": "The bridge count is an account of attacks witnessed from the ground. The 1st Air Army’s aggregate spans 23 June to 3 July.",
+      "source": "ziemke",
+      "locator": "Chapter XV, Fourth Army diary and Minsk pocket",
+      "related": [
+        "hq16",
+        "lf6"
+      ]
+    },
+    {
+      "id": "baranovichi",
+      "title": "Baranovichi airfields and rail junction",
+      "start": "1944-07-05",
+      "end": "1944-07-08",
+      "phase": "Pursuit",
+      "lat": 53.13,
+      "lng": 26.02,
+      "point": "Baranovichi sector",
+      "units": [
+        "vvs16",
+        "kg4",
+        "lf6"
+      ],
+      "summary": "German forces resisted around the rail junction. Soviet fighters also attacked its airfield, and assault and night-bomber units hit roads, crossings and railway traffic. Baranovichi fell on 8 July.",
+      "limit": "German bomber stationing is a 26 June snapshot. It does not establish which bombers flew in the July battle.",
+      "source": "army16",
+      "locator": "Chapter 3, Baranovichi operations",
+      "related": [
+        "germanob",
+        "ziemke"
+      ]
+    },
+    {
+      "id": "vilnius",
+      "title": "Vilnius and the Niemen approach",
+      "start": "1944-07-05",
+      "end": "1944-07-15",
+      "phase": "Pursuit",
+      "lat": 54.69,
+      "lng": 25.28,
+      "point": "Vilnius sector",
+      "units": [
+        "vvs1",
+        "normandie",
+        "lf6"
+      ],
+      "summary": "The 3rd Belorussian Front pursued the retreat through Vilnius. The 1st Air Army used reconnaissance to keep contact and continued support toward the Niemen. On 15 July a French Yak was lost in a transfer accident.",
+      "limit": "The 15 July accident is a named non-combat loss. Its map point represents the operation sector, with no claim about the accident coordinates.",
+      "source": "army1",
+      "locator": "Westward pursuit and French regiment",
+      "related": [
+        "memorial",
+        "aircrew"
+      ]
+    },
+    {
+      "id": "siauliai",
+      "title": "Šiauliai: range, fuel and forward fields",
+      "start": "1944-07-14",
+      "end": "1944-07-31",
+      "phase": "Pursuit",
+      "lat": 55.93,
+      "lng": 23.32,
+      "point": "Šiauliai sector",
+      "units": [
+        "vvs3",
+        "vvs1"
+      ],
+      "summary": "As ground troops outpaced the airfields, the 3rd Air Army described longer transits and fuel constraints. Fighters from the 1st Air Army helped cover the advance while the northern air units moved forward.",
+      "limit": "The Soviet history reports renewed German opposition. A daily German sortie or loss return has yet to be matched to this account.",
+      "source": "army3",
+      "locator": "Chapter 4, advance to Šiauliai",
+      "related": [
+        "shia"
+      ]
+    },
+    {
+      "id": "brest",
+      "title": "Lublin–Brest and the Vistula",
+      "start": "1944-07-18",
+      "end": "1944-08-02",
+      "phase": "Pursuit",
+      "lat": 52.1,
+      "lng": 23.69,
+      "point": "Brest sector, within the wider Lublin–Vistula operation",
+      "units": [
+        "vvs6",
+        "vvs16",
+        "lf6"
+      ],
+      "summary": "The 1st Belorussian Front’s left wing opened a new thrust with air support led by the 6th Air Army. Brest fell on 28 July and Soviet troops established Vistula bridgeheads.",
+      "limit": "The 6th Air Army sortie tally covers the left wing from 18–31 July. It includes activity beyond Brest itself.",
+      "source": "army16",
+      "locator": "Chapter 3, left wing and July totals",
+      "related": [
+        "brest",
+        "ziemke"
+      ]
+    },
+    {
+      "id": "kaunas",
+      "title": "Kaunas and the retreating fighter groups",
+      "start": "1944-07-28",
+      "end": "1944-08-02",
+      "phase": "Pursuit",
+      "lat": 54.9,
+      "lng": 23.9,
+      "point": "Kaunas sector",
+      "units": [
+        "vvs1",
+        "iii-jg51",
+        "i-sg10"
+      ],
+      "summary": "The 1st Air Army supported the Kaunas operation. German records already place two Gruppen there earlier in July during their retreat from Belarus. Their dated basing and later operation chronology show different stages of the advance.",
+      "limit": "The basing windows precede the Kaunas battle. The markers indicate city sectors and station associations.",
+      "source": "army1",
+      "locator": "Kaunas operation and post-capture air reorganisation",
+      "related": [
+        "jg51",
+        "sg10"
+      ]
+    },
+    {
+      "id": "august",
+      "title": "August: wider air operations and the campaign total",
+      "start": "1944-08-03",
+      "end": "1944-08-29",
+      "phase": "Culmination",
+      "lat": 55.63,
+      "lng": 22.93,
+      "point": "Kelmė sector, August example",
+      "units": [
+        "vvs1",
+        "vvs3",
+        "lf6",
+        "i-jg51",
+        "iii-jg51"
+      ],
+      "summary": "Air activity continued as the front widened. The 1st Air Army account records strikes on 16 August and support around Kelmė. The 3rd Air Army history describes continued airfield attacks in the Baltic sector.",
+      "limit": "The 822 figure is the Soviet strategic operation’s reported combat-aircraft loss total for 23 June–29 August. German Gruppen returns cover selected units and whole calendar months.",
+      "source": "kriv",
+      "locator": "Equipment losses by strategic operation, Belorussian offensive row",
+      "related": [
+        "army1",
+        "army3"
+      ]
+    },
+    {
+      "id": "osovets",
+      "title": "Osovets and the Narew approaches",
+      "start": "1944-08-06",
+      "end": "1944-08-14",
+      "phase": "Culmination",
+      "lat": 53.47,
+      "lng": 22.66,
+      "point": "Osovets fortress sector",
+      "units": [
+        "vvs4",
+        "assault4"
+      ],
+      "summary": "The 2nd Belorussian Front continued from Białystok toward the Narew and took Osovets on 14 August. Published accounts associate Baydukov’s 4th Assault Aviation Corps with the preparatory bombardment.",
+      "limit": "The operation catalogue supports the ground chronology. The air attack attribution still needs the corps mission return, and sortie and loss counts remain open.",
+      "source": "osovets",
+      "locator": "Osovets operation entry, 6–14 August",
+      "related": [
+        "wikiOs"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "sov1-opening",
+      "case": "preparation",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Inventory",
+      "label": "Aircraft on strength at opening",
+      "value": 1991,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "TsAMO F. 290, op. 3284, d. 796, ff. 34–36, as cited",
+      "note": "Reported complement of 58 regiments. Readiness is unspecified."
+    },
+    {
+      "id": "sov16-opening",
+      "case": "preparation",
+      "unit": "vvs16",
+      "date": "1944-06-24",
+      "end": "1944-06-24",
+      "kind": "Readiness",
+      "label": "Serviceable combat aircraft",
+      "value": 2319,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, opening strength",
+      "note": "331 day bombers, 149 night bombers, 661 assault, 1,108 fighter and 70 reconnaissance or spotting aircraft."
+    },
+    {
+      "id": "sov16-crews",
+      "case": "preparation",
+      "unit": "vvs16",
+      "date": "1944-06-24",
+      "end": "1944-06-24",
+      "kind": "Readiness",
+      "label": "Combat-ready crews",
+      "value": 1846,
+      "measure": "crews",
+      "source": "army16",
+      "locator": "Chapter 3, opening strength",
+      "note": "The figure counts crews rather than aircraft."
+    },
+    {
+      "id": "sov6-opening",
+      "case": "preparation",
+      "unit": "vvs6",
+      "date": "1944-06-24",
+      "end": "1944-06-24",
+      "kind": "Inventory",
+      "label": "Aircraft at the southern opening",
+      "value": 321,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, comparison of the two air armies",
+      "note": "6th Air Army was a separate force on the left wing of 1st Belorussian Front."
+    },
+    {
+      "id": "german-opening",
+      "case": "preparation",
+      "unit": "lf6",
+      "date": "1944-06-22",
+      "end": "1944-06-22",
+      "kind": "Readiness",
+      "label": "Operational aircraft at campaign opening",
+      "value": 602,
+      "measure": "aircraft",
+      "source": "fritz",
+      "locator": "p. 410, opening air strength",
+      "note": "Fritz reports 602 operational aircraft on the eve of the offensive. The underlying day and exact geographic boundary are unspecified.",
+      "datePrecision": "eve of the offensive"
+    },
+    {
+      "id": "german-combat-775",
+      "case": "preparation",
+      "unit": "lf6",
+      "date": "1944-06-22",
+      "end": "1944-06-22",
+      "datePrecision": "opening strength",
+      "kind": "Inventory",
+      "label": "Combat aircraft in the U.S. Army historical account",
+      "value": 775,
+      "measure": "aircraft",
+      "source": "ziemke",
+      "locator": "Chapter XV, situation before breakthrough, note 18",
+      "note": "Sixth Air Force supporting Army Group Centre. Ziemke includes 405 long-range bombers and reconnaissance aircraft assigned to strategic missions. This count has a different definition from Fritz’s 602 operational aircraft."
+    },
+    {
+      "id": "german-tactical-275",
+      "case": "preparation",
+      "unit": "lf6",
+      "date": "1944-06-22",
+      "end": "1944-06-22",
+      "datePrecision": "opening strength",
+      "kind": "Inventory",
+      "label": "Fighters and ground-support bombers in the same account",
+      "value": 275,
+      "measure": "aircraft",
+      "source": "ziemke",
+      "locator": "Chapter XV, situation before breakthrough, note 18",
+      "note": "Role subset of Luftflotte 6 in the account. The roles quoted here do not exhaust all 775 aircraft."
+    },
+    {
+      "id": "planned-u2",
+      "case": "preparation",
+      "unit": "vvs16",
+      "date": "1944-06-09",
+      "end": "1944-06-09",
+      "kind": "Plan",
+      "label": "U-2 allocated to 271st Light Bomber Division in the plan",
+      "value": 90,
+      "measure": "aircraft",
+      "source": "plan16",
+      "locator": "3rd Army, table of supporting aircraft",
+      "note": "A planning allocation."
+    },
+    {
+      "id": "north-23",
+      "case": "vitebsk",
+      "unit": "vvs3",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Sorties",
+      "label": "Sorties on the first full day",
+      "value": 828,
+      "measure": "sorties",
+      "source": "army3",
+      "locator": "Chapter 4, 23 June, note 122",
+      "note": "Includes 421 ground-attack sorties."
+    },
+    {
+      "id": "north-23-assault",
+      "case": "vitebsk",
+      "unit": "vvs3",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Sorties",
+      "label": "Ground-attack sorties",
+      "value": 421,
+      "measure": "sorties",
+      "source": "army3",
+      "locator": "Chapter 4, 23 June, note 122",
+      "note": "Included in the 828 sorties."
+    },
+    {
+      "id": "north-23-claim",
+      "case": "vitebsk",
+      "unit": "vvs3",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Claims",
+      "label": "Enemy aircraft claimed shot down",
+      "value": 11,
+      "measure": "aircraft",
+      "source": "army3",
+      "locator": "Chapter 4, 23 June, note 122",
+      "note": "Claimed in 15 engagements."
+    },
+    {
+      "id": "north-24",
+      "case": "vitebsk",
+      "unit": "vvs3",
+      "date": "1944-06-24",
+      "end": "1944-06-24",
+      "kind": "Sorties",
+      "label": "Sorties",
+      "value": 1210,
+      "measure": "sorties",
+      "source": "army3",
+      "locator": "Chapter 4, 24 June, note 123",
+      "note": "Army-wide across its assigned sector."
+    },
+    {
+      "id": "north-26",
+      "case": "vitebsk",
+      "unit": "vvs3",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Sorties",
+      "label": "Sorties",
+      "value": 1415,
+      "measure": "sorties",
+      "source": "army3",
+      "locator": "Chapter 4, 26 June, note 126",
+      "note": "Army-wide on the day Vitebsk and Ulla were captured."
+    },
+    {
+      "id": "north-26-claim",
+      "case": "vitebsk",
+      "unit": "vvs3",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Claims",
+      "label": "Enemy fighters claimed shot down",
+      "value": 10,
+      "measure": "aircraft",
+      "source": "army3",
+      "locator": "Chapter 4, 26 June, note 126",
+      "note": "Claimed in 13 air combats."
+    },
+    {
+      "id": "orsha-allocated",
+      "case": "orsha",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Plan",
+      "label": "Aircraft allocated to the Orsha axis",
+      "value": 1019,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "TsAMO F. 290, op. 3284, d. 796, ff. 38–39, as cited",
+      "note": "Allocation for the 3rd Belorussian Front’s Orsha axis."
+    },
+    {
+      "id": "orsha-sorties",
+      "case": "orsha",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Sorties",
+      "label": "First-day sorties",
+      "value": 2214,
+      "measure": "sorties",
+      "source": "army1",
+      "locator": "TsAMO F. 290, op. 3284, d. 796, f. 52, as cited",
+      "note": "Army-wide across both axes."
+    },
+    {
+      "id": "orsha-own",
+      "case": "orsha",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Own losses",
+      "label": "Aircraft that did not return from missions",
+      "value": 30,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "TsAMO F. 290, op. 3284, d. 796, f. 52, as cited",
+      "note": "One Pe-2, 14 Il-2 and 15 fighters."
+    },
+    {
+      "id": "orsha-claim",
+      "case": "orsha",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-06-23",
+      "kind": "Claims",
+      "label": "Enemy aircraft claimed shot down",
+      "value": 15,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "TsAMO F. 290, op. 3284, d. 796, f. 52, as cited",
+      "note": "Claimed in 28 air combats."
+    },
+    {
+      "id": "orsha-german-listed",
+      "case": "orsha",
+      "unit": "i-jg51",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Inventory",
+      "label": "Bf 109s in the Orsha listing",
+      "value": 35,
+      "measure": "aircraft",
+      "source": "germanob",
+      "locator": "26 June, Jagdabschnittführer 6",
+      "note": "Holm lists Orsha to 25 June, Dokudowo 25–26 June and Bojary from 26 June. The snapshot and movement chronology may have different cut-offs."
+    },
+    {
+      "id": "orsha-german-ready",
+      "case": "orsha",
+      "unit": "i-jg51",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Readiness",
+      "label": "Serviceable Bf 109s in the published snapshot",
+      "value": 20,
+      "measure": "aircraft",
+      "source": "aces",
+      "locator": "Order of battle, 26 June 1944",
+      "note": "Subset of 35 listed. Holm gives a different station sequence. The snapshot and movement chronology may have different cut-offs."
+    },
+    {
+      "id": "mogilev-front",
+      "case": "mogilev",
+      "unit": "vvs4",
+      "date": "1944-06-22",
+      "end": "1944-06-23",
+      "kind": "Sorties",
+      "label": "Front aviation sorties during night preparation",
+      "value": 359,
+      "measure": "sorties",
+      "source": "army4",
+      "locator": "Night of 22–23 June",
+      "note": "2nd Belorussian Front aviation under 4th Air Army."
+    },
+    {
+      "id": "mogilev-add",
+      "case": "mogilev",
+      "unit": "add",
+      "date": "1944-06-22",
+      "end": "1944-06-23",
+      "kind": "Sorties",
+      "label": "Long-Range Aviation sorties in the same preparation",
+      "value": 260,
+      "measure": "sorties",
+      "source": "army4",
+      "locator": "Night of 22–23 June",
+      "note": "Separately reported ADD activity."
+    },
+    {
+      "id": "mogilev-recon",
+      "case": "mogilev",
+      "unit": "recon12",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Inventory",
+      "label": "Bf 109s listed at Mogilev",
+      "value": 12,
+      "measure": "aircraft",
+      "source": "germanob",
+      "locator": "26 June, 12./NAGr. 12",
+      "note": "Reconnaissance aircraft in the listing, with no serviceability breakdown."
+    },
+    {
+      "id": "mogilev-missing",
+      "case": "mogilev",
+      "unit": "vvs4",
+      "date": "1944-06-23",
+      "end": "1944-06-28",
+      "kind": "Own losses",
+      "label": "4th Air Army losses for the Mogilev operation",
+      "value": null,
+      "measure": "aircraft",
+      "source": "archive4",
+      "locator": "TsAMO F. 46, op. 2394, d. 727, ff. 1–2",
+      "note": "The archive catalogue identifies the 50th Army’s assessment of air support. A reconciled loss count was not recovered."
+    },
+    {
+      "id": "bob-24",
+      "case": "bobruisk",
+      "unit": "vvs16",
+      "date": "1944-06-24",
+      "end": "1944-06-24",
+      "kind": "Sorties",
+      "label": "First-day combat sorties",
+      "value": 3191,
+      "measure": "sorties",
+      "source": "army16",
+      "locator": "Chapter 3, first day",
+      "note": "1,846 attack, 860 escort, 264 cover, 102 reconnaissance, 99 free-hunt and 20 airfield bombing sorties."
+    },
+    {
+      "id": "bob-26",
+      "case": "bobruisk",
+      "unit": "vvs16",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Sorties",
+      "label": "Combat sorties",
+      "value": 2950,
+      "measure": "sorties",
+      "source": "army16",
+      "locator": "Chapter 3, p. 168",
+      "note": "16th Air Army day total."
+    },
+    {
+      "id": "bob-26-loss",
+      "case": "bobruisk",
+      "unit": "vvs16",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Own losses",
+      "label": "Own aircraft lost",
+      "value": 19,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 168",
+      "note": "Losses in the air army history, across its day’s activity."
+    },
+    {
+      "id": "bob-26-claim",
+      "case": "bobruisk",
+      "unit": "vvs16",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Claims",
+      "label": "German aircraft claimed shot down",
+      "value": 13,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 168",
+      "note": "Claimed in 29 engagements across the army."
+    },
+    {
+      "id": "bob-german-listed",
+      "case": "bobruisk",
+      "unit": "iii-jg51",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Inventory",
+      "label": "Bf 109s listed at Bobruisk",
+      "value": 31,
+      "measure": "aircraft",
+      "source": "germanob",
+      "locator": "26 June, Jagdabschnittführer 6",
+      "note": "Station snapshot, separate from monthly inventory."
+    },
+    {
+      "id": "bob-german-ready",
+      "case": "bobruisk",
+      "unit": "iii-jg51",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Readiness",
+      "label": "Serviceable Bf 109s in the published snapshot",
+      "value": 14,
+      "measure": "aircraft",
+      "source": "aces",
+      "locator": "Order of battle, 26 June 1944",
+      "note": "Subset of 31 listed."
+    },
+    {
+      "id": "pocket-total",
+      "case": "pocket",
+      "unit": "vvs16",
+      "date": "1944-06-27",
+      "end": "1944-06-27",
+      "kind": "Mission",
+      "label": "Aircraft launched for the evening strike",
+      "value": 526,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, pp. 172–177",
+      "note": "Concentrated attack on the pocket southeast of Bobruisk."
+    },
+    {
+      "id": "pocket-part-0",
+      "case": "pocket",
+      "unit": "vvs16",
+      "date": "1944-06-27",
+      "end": "1944-06-27",
+      "kind": "Mission",
+      "label": "day bombers in the strike",
+      "value": 175,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 172",
+      "note": "Component of the 526 aircraft."
+    },
+    {
+      "id": "pocket-part-1",
+      "case": "pocket",
+      "unit": "vvs16",
+      "date": "1944-06-27",
+      "end": "1944-06-27",
+      "kind": "Mission",
+      "label": "assault aircraft in the strike",
+      "value": 217,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 172",
+      "note": "Component of the 526 aircraft."
+    },
+    {
+      "id": "pocket-part-2",
+      "case": "pocket",
+      "unit": "vvs16",
+      "date": "1944-06-27",
+      "end": "1944-06-27",
+      "kind": "Mission",
+      "label": "fighters in the strike",
+      "value": 134,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 172",
+      "note": "Component of the 526 aircraft."
+    },
+    {
+      "id": "pocket-own",
+      "case": "pocket",
+      "unit": "vvs16",
+      "date": "1944-06-27",
+      "end": "1944-06-27",
+      "kind": "Own losses",
+      "label": "Own aircraft lost in the evening strike",
+      "value": 0,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 177",
+      "note": "Explicit mission-specific zero."
+    },
+    {
+      "id": "berezino-bridge",
+      "case": "minsk",
+      "unit": null,
+      "date": "1944-06-28",
+      "end": "1944-06-28",
+      "kind": "Observed activity",
+      "label": "Attacks on the Berezino bridge noted by German 4th Army staff",
+      "value": 25,
+      "measure": "attacks",
+      "source": "ziemke",
+      "locator": "Chapter XV, Fourth Army withdrawal, 28 June",
+      "note": "German ground account of attacks reproduced by Ziemke. It gives neither aircraft nor sortie counts and does not establish which Soviet unit flew each attack.",
+      "reporter": "German 4th Army staff"
+    },
+    {
+      "id": "minsk-sorties",
+      "case": "minsk",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-07-03",
+      "kind": "Sorties",
+      "label": "Sorties through the capture of Minsk",
+      "value": 12496,
+      "measure": "sorties",
+      "source": "army1",
+      "locator": "First stage, paragraph on 23 June–3 July",
+      "note": "Includes the earlier Vitebsk–Orsha operations."
+    },
+    {
+      "id": "minsk-loss",
+      "case": "minsk",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-07-03",
+      "kind": "Own losses",
+      "label": "Aircraft losses, published headline",
+      "value": 119,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "First stage, citing Dyakov (2008), p. 155",
+      "note": "The breakdown in the same passage totals 179. The return behind the discrepancy remains open."
+    },
+    {
+      "id": "minsk-loss-component-0",
+      "case": "minsk",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-07-03",
+      "kind": "Own losses",
+      "label": "Losses attributed to air combat",
+      "value": 98,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "First stage, citing Dyakov (2008), p. 155",
+      "note": "Published category. The three categories total 179 against a headline of 119."
+    },
+    {
+      "id": "minsk-loss-component-1",
+      "case": "minsk",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-07-03",
+      "kind": "Own losses",
+      "label": "Losses attributed to anti-aircraft fire",
+      "value": 47,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "First stage, citing Dyakov (2008), p. 155",
+      "note": "Published category. The three categories total 179 against a headline of 119."
+    },
+    {
+      "id": "minsk-loss-component-2",
+      "case": "minsk",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-07-03",
+      "kind": "Own losses",
+      "label": "Aircraft that did not return",
+      "value": 34,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "First stage, citing Dyakov (2008), p. 155",
+      "note": "Published category. The three categories total 179 against a headline of 119."
+    },
+    {
+      "id": "minsk-loss-sum",
+      "case": "minsk",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-07-03",
+      "kind": "Calculated",
+      "label": "Sum of the three printed loss categories",
+      "value": 179,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "First stage, citing Dyakov (2008), p. 155",
+      "note": "98 + 47 + 34. Arithmetic only. The underlying reported total is unresolved."
+    },
+    {
+      "id": "polotsk-north",
+      "case": "polotsk",
+      "unit": "vvs3",
+      "date": "1944-06-23",
+      "end": "1944-06-30",
+      "kind": "Sorties",
+      "label": "Sorties in the opening eight days",
+      "value": 9289,
+      "measure": "sorties",
+      "source": "army3",
+      "locator": "Chapter 4, note 129",
+      "note": "Covers the opening sector including Vitebsk and the start of the pursuit."
+    },
+    {
+      "id": "polotsk-claims",
+      "case": "polotsk",
+      "unit": "vvs3",
+      "date": "1944-06-23",
+      "end": "1944-06-30",
+      "kind": "Claims",
+      "label": "Enemy aircraft claimed shot down",
+      "value": 83,
+      "measure": "aircraft",
+      "source": "army3",
+      "locator": "Chapter 4, note 129",
+      "note": "Claims in 101 engagements over the same eight-day window."
+    },
+    {
+      "id": "bar-7",
+      "case": "baranovichi",
+      "unit": "vvs16",
+      "date": "1944-07-07",
+      "end": "1944-07-07",
+      "kind": "Sorties",
+      "label": "Sorties during the fighting for Baranovichi",
+      "value": 769,
+      "measure": "sorties",
+      "source": "army16",
+      "locator": "Chapter 3, Baranovichi narrative",
+      "note": "The history also gives 300–500 per day in the decisive period."
+    },
+    {
+      "id": "bar-kg4-2",
+      "case": "baranovichi",
+      "unit": "kg4",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Inventory",
+      "label": "II./KG 4 He 111s listed at Baranovichi",
+      "value": 34,
+      "measure": "aircraft",
+      "source": "germanob",
+      "locator": "26 June, Luftflotte 6 bomber listings",
+      "note": "Aircraft in a dated order of battle. Readiness and July mission attribution are unspecified."
+    },
+    {
+      "id": "bar-kg4-3",
+      "case": "baranovichi",
+      "unit": "kg4",
+      "date": "1944-06-26",
+      "end": "1944-06-26",
+      "kind": "Inventory",
+      "label": "III./KG 4 He 111s listed at Baranovichi",
+      "value": 40,
+      "measure": "aircraft",
+      "source": "germanob",
+      "locator": "26 June, Luftflotte 6 bomber listings",
+      "note": "Same snapshot and qualification."
+    },
+    {
+      "id": "french-airframe",
+      "case": "vilnius",
+      "unit": "normandie",
+      "date": "1944-07-15",
+      "end": "1944-07-15",
+      "kind": "Own losses",
+      "label": "Yak lost in transfer accident",
+      "value": 1,
+      "measure": "aircraft",
+      "source": "memorial",
+      "locator": "Second campaign, entry for 15 July",
+      "note": "Pilot Maurice de Seynes and mechanic Vladimir Bielozub died. A fuel leak is reported."
+    },
+    {
+      "id": "brest-strength",
+      "case": "brest",
+      "unit": "vvs6",
+      "date": "1944-07-17",
+      "end": "1944-07-17",
+      "kind": "Inventory",
+      "label": "Aircraft available to the reinforced left-wing grouping",
+      "value": 1534,
+      "measure": "aircraft",
+      "source": "army16",
+      "locator": "Chapter 3, p. 194",
+      "note": "Includes reinforcements from 16th Air Army and the high-command reserve."
+    },
+    {
+      "id": "brest-sorties",
+      "case": "brest",
+      "unit": "vvs6",
+      "date": "1944-07-18",
+      "end": "1944-07-31",
+      "kind": "Sorties",
+      "label": "Sorties in the second half of July",
+      "value": 7591,
+      "measure": "sorties",
+      "source": "army16",
+      "locator": "Chapter 3, 6th Air Army July figures, note 16",
+      "note": "18–31 July. The full July total is 11,856."
+    },
+    {
+      "id": "brest-german-observed",
+      "case": "brest",
+      "unit": "vvs6",
+      "date": "1944-07-01",
+      "end": "1944-07-31",
+      "kind": "Observed activity",
+      "label": "German aircraft passages observed over the left wing",
+      "value": 6646,
+      "measure": "passages",
+      "source": "army16",
+      "locator": "Chapter 3, following the July figures",
+      "note": "Observation count for all July. Repeated sightings may refer to the same aircraft. Comparison to recorded German sorties requires German returns.",
+      "reporter": "Soviet account of the left-wing sector"
+    },
+    {
+      "id": "brest-july-fields",
+      "case": "brest",
+      "unit": "vvs16",
+      "date": "1944-07-01",
+      "end": "1944-07-31",
+      "kind": "Logistics",
+      "label": "New airfields constructed in July",
+      "value": 77,
+      "measure": "airfields",
+      "source": "army16",
+      "locator": "Chapter 3, pp. 202–203",
+      "note": "Air army engineering figure for the whole month."
+    },
+    {
+      "id": "aug-1a-sorties",
+      "case": "august",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-08-29",
+      "kind": "Sorties",
+      "label": "1st Air Army sorties across the operation",
+      "value": 32308,
+      "measure": "sorties",
+      "source": "army1",
+      "locator": "Closing synthesis, whole-operation estimates",
+      "note": "Author’s reconstruction. Includes the army’s opening-period activity."
+    },
+    {
+      "id": "aug-1a-loss",
+      "case": "august",
+      "unit": "vvs1",
+      "date": "1944-06-23",
+      "end": "1944-08-29",
+      "kind": "Own losses",
+      "label": "1st Air Army aircraft losses across the operation",
+      "value": 343,
+      "measure": "aircraft",
+      "source": "army1",
+      "locator": "Closing synthesis, whole-operation estimates",
+      "note": "Author’s reconstruction for one army. Its source does not establish that its loss definitions can be nested directly within Krivosheev’s 822."
+    },
+    {
+      "id": "aug-all-loss",
+      "case": "august",
+      "unit": null,
+      "date": "1944-06-23",
+      "end": "1944-08-29",
+      "kind": "Own losses",
+      "label": "Soviet combat-aircraft losses across the strategic operation",
+      "value": 822,
+      "measure": "aircraft",
+      "source": "kriv",
+      "locator": "Equipment losses by strategic operation, Belorussian offensive row",
+      "note": "Strategic-operation figure. The scope of the 1st Air Army study is separately labelled.",
+      "reporter": "Soviet strategic operation"
+    },
+    {
+      "id": "aug-de-missing",
+      "case": "august",
+      "unit": "lf6",
+      "date": "1944-06-23",
+      "end": "1944-08-29",
+      "kind": "Own losses",
+      "label": "Matched German campaign loss total",
+      "value": null,
+      "measure": "aircraft",
+      "source": "tessin",
+      "locator": "Vol. 14, Luftflotte 6, 1944",
+      "note": "The organisational record gives command and basing history. A comparable campaign loss series was not recovered."
+    },
+    {
+      "id": "osovets-assault",
+      "case": "osovets",
+      "unit": "assault4",
+      "date": "1944-08-14",
+      "end": "1944-08-14",
+      "kind": "Sorties",
+      "label": "Sorties in the Osovets bombardment",
+      "value": null,
+      "measure": "sorties",
+      "source": "wikiOs",
+      "locator": "Course of operations, footnote 4",
+      "note": "The secondary reference trail attributes the bombardment to the corps. A numeric mission return remains open."
+    },
+    {
+      "id": "bob-june-ceiling",
+      "case": "bobruisk",
+      "unit": null,
+      "reporter": "III./JG 51 and I./SG 10",
+      "date": "1944-06-01",
+      "end": "1944-06-30",
+      "kind": "Calculated",
+      "label": "June enemy-action removals in the two Bobruisk Gruppen",
+      "value": 12,
+      "measure": "aircraft",
+      "source": "jg3returns",
+      "related": [
+        "sg1returns"
+      ],
+      "locator": "June 1944, see the two source returns below",
+      "note": "Eight from III./JG 51 and four from I./SG 10. This is an upper bound for one June day within those two formations. The movement reports do not date the individual losses."
+    }
+  ],
+  "balances": [
+    {
+      "id": "i51-jun",
+      "case": "orsha",
+      "unit": "i-jg51",
+      "period": "1944-06",
+      "type": "Bf 109G-6",
+      "open": 44,
+      "newBuild": 0,
+      "repair": 5,
+      "transferIn": 0,
+      "enemy": 14,
+      "nonEnemy": 6,
+      "overhaul": 0,
+      "transferOut": 1,
+      "close": 28,
+      "source": "jg1returns",
+      "locator": "1944-06 movement row, Bf 109G-6"
+    },
+    {
+      "id": "i51-jul",
+      "case": "orsha",
+      "unit": "i-jg51",
+      "period": "1944-07",
+      "type": "Bf 109G-6",
+      "open": 28,
+      "newBuild": 16,
+      "repair": 4,
+      "transferIn": 0,
+      "enemy": 9,
+      "nonEnemy": 10,
+      "overhaul": 1,
+      "transferOut": 0,
+      "close": 28,
+      "source": "jg1returns",
+      "locator": "1944-07 movement row, Bf 109G-6"
+    },
+    {
+      "id": "i51-aug",
+      "case": "august",
+      "unit": "i-jg51",
+      "period": "1944-08",
+      "type": "Bf 109G-6",
+      "open": 28,
+      "newBuild": 5,
+      "repair": 1,
+      "transferIn": 0,
+      "enemy": 6,
+      "nonEnemy": 8,
+      "overhaul": 0,
+      "transferOut": 0,
+      "close": 20,
+      "source": "jg1returns",
+      "locator": "1944-08 movement row, Bf 109G-6"
+    },
+    {
+      "id": "iii51-jun",
+      "case": "bobruisk",
+      "unit": "iii-jg51",
+      "period": "1944-06",
+      "type": "Bf 109G-6",
+      "open": 40,
+      "newBuild": 0,
+      "repair": 3,
+      "transferIn": 0,
+      "enemy": 8,
+      "nonEnemy": 9,
+      "overhaul": 1,
+      "transferOut": 1,
+      "close": 24,
+      "source": "jg3returns",
+      "locator": "1944-06 movement row, Bf 109G-6"
+    },
+    {
+      "id": "iii51-jul",
+      "case": "kaunas",
+      "unit": "iii-jg51",
+      "period": "1944-07",
+      "type": "Bf 109G-6",
+      "open": 24,
+      "newBuild": 13,
+      "repair": 5,
+      "transferIn": 1,
+      "enemy": 9,
+      "nonEnemy": 18,
+      "overhaul": 0,
+      "transferOut": 0,
+      "close": 16,
+      "source": "jg3returns",
+      "locator": "1944-07 movement row, Bf 109G-6"
+    },
+    {
+      "id": "iii51-aug",
+      "case": "august",
+      "unit": "iii-jg51",
+      "period": "1944-08",
+      "type": "Bf 109G-6",
+      "open": 16,
+      "newBuild": 4,
+      "repair": 7,
+      "transferIn": 7,
+      "enemy": 11,
+      "nonEnemy": 7,
+      "overhaul": 0,
+      "transferOut": 0,
+      "close": 16,
+      "source": "jg3returns",
+      "locator": "1944-08 movement row, Bf 109G-6"
+    },
+    {
+      "id": "isg10-jun-f3",
+      "case": "bobruisk",
+      "unit": "i-sg10",
+      "period": "1944-06",
+      "type": "Fw 190F-3",
+      "open": 2,
+      "newBuild": 2,
+      "repair": 0,
+      "transferIn": 0,
+      "enemy": 0,
+      "nonEnemy": 0,
+      "overhaul": 0,
+      "transferOut": 0,
+      "close": 4,
+      "source": "sg1returns",
+      "locator": "1944-06 movement row, Fw 190F-3"
+    },
+    {
+      "id": "isg10-jun-f8",
+      "case": "bobruisk",
+      "unit": "i-sg10",
+      "period": "1944-06",
+      "type": "Fw 190F-8",
+      "open": 26,
+      "newBuild": 5,
+      "repair": 0,
+      "transferIn": 0,
+      "enemy": 2,
+      "nonEnemy": 0,
+      "overhaul": 0,
+      "transferOut": 0,
+      "close": 29,
+      "source": "sg1returns",
+      "locator": "1944-06 movement row, Fw 190F-8"
+    },
+    {
+      "id": "isg10-jun-g3",
+      "case": "bobruisk",
+      "unit": "i-sg10",
+      "period": "1944-06",
+      "type": "Fw 190G-3",
+      "open": 3,
+      "newBuild": 0,
+      "repair": 0,
+      "transferIn": 0,
+      "enemy": 1,
+      "nonEnemy": 0,
+      "overhaul": 2,
+      "transferOut": 0,
+      "close": 0,
+      "source": "sg1returns",
+      "locator": "1944-06 movement row, Fw 190G-3"
+    },
+    {
+      "id": "isg10-jun-g8",
+      "case": "bobruisk",
+      "unit": "i-sg10",
+      "period": "1944-06",
+      "type": "Fw 190G-8",
+      "open": 1,
+      "newBuild": 0,
+      "repair": 0,
+      "transferIn": 0,
+      "enemy": 1,
+      "nonEnemy": 0,
+      "overhaul": 0,
+      "transferOut": 0,
+      "close": 0,
+      "source": "sg1returns",
+      "locator": "1944-06 movement row, Fw 190G-8"
+    }
+  ],
+  "stations": [
+    {
+      "unit": "iii-jg51",
+      "case": "bobruisk",
+      "date": "1944-06-21",
+      "end": "1944-06-27",
+      "place": "Bobruisk",
+      "source": "jg51",
+      "locator": "III. Gruppe station table"
+    },
+    {
+      "unit": "iii-jg51",
+      "case": "minsk",
+      "date": "1944-06-27",
+      "end": "1944-06-30",
+      "place": "Matschulitsche",
+      "source": "jg51",
+      "locator": "III. Gruppe station table"
+    },
+    {
+      "unit": "iii-jg51",
+      "case": "minsk",
+      "date": "1944-06-30",
+      "end": "1944-07-02",
+      "place": "Minsk-Süd",
+      "source": "jg51",
+      "locator": "III. Gruppe station table"
+    },
+    {
+      "unit": "iii-jg51",
+      "case": "minsk",
+      "date": "1944-07-02",
+      "end": "1944-07-08",
+      "place": "Pinsk",
+      "source": "jg51",
+      "locator": "III. Gruppe station table"
+    },
+    {
+      "unit": "iii-jg51",
+      "case": "kaunas",
+      "date": "1944-07-08",
+      "end": "1944-07-15",
+      "place": "Kowno (Kaunas)",
+      "source": "jg51",
+      "locator": "III. Gruppe station table"
+    },
+    {
+      "unit": "i-sg10",
+      "case": "bobruisk",
+      "date": "1944-06-23",
+      "end": "1944-06-27",
+      "place": "Bobruisk",
+      "source": "sg10",
+      "locator": "I. Gruppe station table"
+    },
+    {
+      "unit": "i-sg10",
+      "case": "kaunas",
+      "date": "1944-07-10",
+      "end": "1944-07-20",
+      "place": "Kowno (Kaunas)",
+      "source": "sg10",
+      "locator": "I. Gruppe station table"
+    },
+    {
+      "unit": "i-jg51",
+      "case": "orsha",
+      "date": "1944-06-09",
+      "end": "1944-06-25",
+      "place": "Orscha (display clipped to campaign preparation window)",
+      "source": "jg51",
+      "locator": "I. Gruppe station table, original start 29 March"
+    },
+    {
+      "unit": "i-jg51",
+      "case": "orsha",
+      "date": "1944-06-25",
+      "end": "1944-06-26",
+      "place": "Dokudowo",
+      "source": "jg51",
+      "locator": "I. Gruppe station table"
+    },
+    {
+      "unit": "i-jg51",
+      "case": "orsha",
+      "date": "1944-06-26",
+      "end": "1944-06-27",
+      "place": "Bojary",
+      "source": "jg51",
+      "locator": "I. Gruppe station table"
+    },
+    {
+      "unit": "lf6",
+      "case": "preparation",
+      "date": "1944-06-09",
+      "end": "1944-06-28",
+      "place": "Priluki, near Minsk (display clipped to campaign preparation window)",
+      "source": "lf6",
+      "locator": "HQ chronology, original start February 1944"
+    },
+    {
+      "unit": "lf6",
+      "case": "minsk",
+      "date": "1944-06-30",
+      "end": null,
+      "place": "Warsaw (from 30 June)",
+      "source": "lf6",
+      "locator": "HQ chronology; Tessin gives July"
+    }
+  ]
+}

@@ -21,6 +21,7 @@ const check=async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
   await require("./bodenplatte-browser.cjs")(browser,base,root);
+  await require("./bagration-browser.cjs")(browser,base,root);
   await require("./operations-1944-browser.cjs")(browser,base,root);
   await require("./grand-air-war-v80-layout-browser.cjs")(browser,base,root);
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){

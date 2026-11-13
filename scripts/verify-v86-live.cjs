@@ -6,6 +6,7 @@ const files=['grand-air-war-v80.html','dist/grand-air-war-v77-campaigns.js','dis
 const hash=s=>crypto.createHash('sha256').update(s.replace(/\r\n/g,'\n')).digest('hex');
 files.push('operations-1944.html','dist/operations-1944.js','dist/operations-1944.css','research/transcriptions/operations-january-june-1944.json','research/transcriptions/davis-western-targets-may-july-1944.csv');
 files.push('bodenplatte.html','dist/bodenplatte.js','dist/bodenplatte.css','dist/bodenplatte-data.js','research/transcriptions/bodenplatte-1945-01-01.json','research/transcriptions/bodenplatte-map.json','research/transcriptions/bodenplatte-operation-scope-1944-1945.json','research/transcriptions/bodenplatte-archival-evidence-1945-01-01.json','research/transcriptions/bodenplatte-unit-airframes-1945-01-01.csv','research/transcriptions/bodenplatte-operation-airframes-1945-01-01.csv','research/transcriptions/wikipedia-followup-evidence-2026-11-12.json');
+files.push('bagration.html','dist/bagration.js','dist/bagration.css','research/transcriptions/bagration-air-campaign-1944.json');
 async function verify(){
  for(let attempt=1;attempt<=30;attempt++){
   const checks=await Promise.all(files.map(async file=>{try{const response=await fetch(base+file+'?verify='+encodeURIComponent(process.env.GITHUB_SHA||'v86'),{signal:AbortSignal.timeout(15000)});return response.ok&&hash(await response.text())===hash(fs.readFileSync(path.join(root,file),'utf8'));}catch{return false;}}));
