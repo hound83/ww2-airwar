@@ -2,6 +2,10 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 13 November 2026 · Defence of the Reich v9.7
+
+The [Reich defence explorer](https://hound83.github.io/ww2-airwar/reich-defence.html) links 13 raid cases to mission records, unit accounts, claim evidence and German calendar-day and monthly losses. Two additional dated command returns cover 6 March and 2 November 1944. The Nuremberg attacking and loss counts and the 12 May oil dispatch counts retain their source definitions. [Research audit](../research/sources/atlas-reich-defence-2026-11-13.md)
+
 ## 13 November 2026 · Bagration v9.6
 
 The Atlas now connects the Bagration dossier to 15 mapped campaign cases, with 15 formations, dated station records and source-linked exports. German calendar-month returns provide unit outcomes for I. and III./JG 51 and I./SG 10. Matched daily German losses and the 1st Air Army's opening-phase loss discrepancy remain open. [Explorer](https://hound83.github.io/ww2-airwar/bagration.html) · [Audit](../research/sources/atlas-bagration-air-campaign-2026-11-13.md)

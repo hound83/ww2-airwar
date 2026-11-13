@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142622">
+<meta name="description" content="Explore RAF and USAAF raids, German fighter interceptions and original Luftflotte Reich aircraft-loss returns from 1943 to 1945.">
+<title>Defence of the Reich · European Air War Atlas</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="./dist/reich-defence.css">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script defer src="./dist/model-v3-data.js"></script>
+<script defer src="./dist/atlas-v7-data.js"></script>
+<script defer src="./dist/atlas-v71-data.js"></script>
+<script defer src="./dist/atlas-v72-data.js"></script>
+<script defer src="./dist/reich-defence.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="shell">
+    <nav aria-label="Atlas navigation"><a href="./grand-air-war-v80.html">European Air War Atlas</a><a href="./operations-1944.html">1944 operations archive</a></nav>
+    <h1>Defence of the Reich</h1>
+    <p>Follow the bomber streams, fighter escorts and German interceptions from Hamburg in 1943 to Berlin in 1945. Compare mission records with daily and monthly German aircraft-loss returns.</p>
+  </div>
+</header>
+<main class="shell">
+  <section aria-labelledby="cases-title">
+    <div class="section-heading">
+      <h2 id="cases-title">Raids and interceptions</h2>
+      <label for="raid-mode">Flying conditions
+        <select id="raid-mode">
+          <option value="">Day and night</option>
+          <option value="day">Daylight operations</option>
+          <option value="night">Night operations</option>
+        </select>
+      </label>
+    </div>
+    <div class="workspace">
+      <div>
+        <div id="reich-map" aria-label="Map of raid locations" hidden></div>
+        <p class="map-note" id="map-note" hidden>Pins identify target areas. Locations of losses and interception routes are described in the evidence.</p>
+        <p id="load-status" role="status">Loading source records…</p>
+        <ol id="raid-list" class="raid-list" aria-label="Raid chronology"></ol>
+      </div>
+      <article id="raid-detail" tabindex="-1" aria-labelledby="raid-title" hidden>
+        <p id="raid-date" class="raid-date"></p>
+        <h2 id="raid-title"></h2>
+        <p id="raid-story"></p>
+        <div id="raid-sources"></div>
+        <div id="raid-records"></div>
+        <section id="raid-links" hidden></section>
+        <section id="raid-month"></section>
+      </article>
+    </div>
+  </section>
+  <footer>
+    <a href="./research/sources/atlas-reich-defence-2026-11-13.md">Source audit and Wikipedia references</a>
+    <a href="./research/transcriptions/reich-defence-1943-1945.json" download>Download case data (JSON)</a>
+    <a href="./research/transcriptions/operations-january-june-1944.json" download>Download linked operations records (JSON)</a>
+  </footer>
+</main>
+</body>
+</html>
