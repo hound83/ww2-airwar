@@ -909,7 +909,7 @@
       "institution": "Nationaal Archief",
       "reference": "2.13.154, inv. 5",
       "title": "320 Squadron operations record book and air-attack reports, 1944–1945",
-      "access": "Catalogue verified. Inventory states items are unavailable in copy form.",
+      "access": "Catalogue verified and holding marked physical. Eligibility for scanning on demand for this item is unverified.",
       "url": "https://www.nationaalarchief.nl/onderzoeken/archief/2.13.154/download/pdf"
     },
     {
@@ -917,7 +917,7 @@
       "institution": "Nationaal Archief",
       "reference": "2.13.154, inv. 12",
       "title": "320 Squadron Opreps to Allied Expeditionary Air Force, 1944–February 1945",
-      "access": "Catalogue verified. Inventory states items are unavailable in copy form.",
+      "access": "Catalogue verified and holding marked physical. Eligibility for scanning on demand for this item is unverified.",
       "url": "https://www.nationaalarchief.nl/onderzoeken/archief/2.13.154/download/pdf"
     },
     {
@@ -935,6 +935,46 @@
       "title": "Squadron operations record book leads",
       "access": "References recovered from published research. Check coverage and exact January Form 540/541 items in Discovery before requesting.",
       "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-air-force-squadron/"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "The National Archives, Kew",
+      "reference": "AIR 27/1714",
+      "title": "No. 320 Squadron operations record book, January 1944–July 1945",
+      "access": "January Form 540/541 sub-item and scans unverified. The archive lists this numerical range as online.",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-air-force-operations-record-books-1911-1963/"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "The National Archives, Kew",
+      "reference": "AIR 26/203",
+      "title": "No. 139 Wing Airfield appendices, January–May 1945",
+      "access": "Exact piece identified in the published reference inventory. Raid-day leaves and download unverified.",
+      "url": "https://digitaleplannen.apeldoorn.nl/NL.IMRO.0200.bp1538-ont1/b_NL.IMRO.0200.bp1538-ont1_tb4.pdf"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "The National Archives, Kew",
+      "reference": "AIR 26/200",
+      "title": "No. 139 Wing Airfield operations record book",
+      "access": "RAFWeb excerpts cover January personnel entries. Raid and damage return unverified.",
+      "url": "https://www.rafweb.org/Members%20Pages/Unit%20Details/Wings/No%20139%20Wing.htm"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "The National Archives, Kew",
+      "reference": "AIR 27/784",
+      "title": "No. 98 Squadron operations record book, 1945",
+      "access": "Exact piece identified in the published reference inventory. Raid-day leaves unverified.",
+      "url": "https://digitaleplannen.apeldoorn.nl/NL.IMRO.0200.bp1538-ont1/b_NL.IMRO.0200.bp1538-ont1_tb4.pdf"
+    },
+    {
+      "site": "melsbroek",
+      "institution": "The National Archives, Kew",
+      "reference": "AIR 27/1132",
+      "title": "No. 180 Squadron operations record book, July 1944–March 1946",
+      "access": "Exact piece identified in the published reference inventory. Raid-day leaves unverified.",
+      "url": "https://digitaleplannen.apeldoorn.nl/NL.IMRO.0200.bp1538-ont1/b_NL.IMRO.0200.bp1538-ont1_tb4.pdf"
     }
   ],
   "findings": [

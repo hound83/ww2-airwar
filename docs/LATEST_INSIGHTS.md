@@ -32,12 +32,13 @@ Grok’s follow-up supplied the Cobra figures, the specialist Bodenplatte breakd
 
 | Milestone | Scope | Completion evidence |
 | --- | --- | --- |
-| **Bodenplatte, individual aircraft and casualty follow-up** | Reconcile the open airfield and formation discrepancies from squadron operation records and the Manrho and Pütz appendices. | Obtain the original January unit returns, AHB5/234 and the Manrho and Pütz appendices. Resolve the 305/190 coverage and confirm remaining airframe and claim matches. |
+| **Recommended next · v9.5 Bodenplatte** | Expand the five-airfield explorer with the 20-location operation ledger, 16 dated entries and sourced formation and airframe drill-downs. | Readers can follow the operation into a site, unit and source. Maps, reports and exports agree across desktop and mobile. Source gaps and conflicting loss figures remain visible. [Roadmap](ATLAS_ROADMAP_TO_V10.md#recommended-next-milestone) |
+| **Bodenplatte archival retrieval** | Follow AIR 27/1714 and AIR 26/203 first, then the companion wing and squadron books and Dutch inventory 5 and 12. Pursue AHB5/234, A-92 and the Manrho/Pütz appendices when accessible. | Retrieve and cite the January leaves by folio, then compare serials, dates, thresholds and reporting populations before revising any counts. [Archive access](../research/sources/atlas-bodenplatte-original-sources-2026-11-13.md#january-returns-archive-access-follow-up) |
 
 Western air war source follow-up remains open for the daily May reports VII/133 and VII/134, the July Ninth Air Force command records and the Mission 494 fighter annex and German airframe matches. The source audit records the archival leads. [Open Western air war sources](../research/sources/atlas-v93-may-july-returns-and-operations-2026-11-12.md#archive-follow-up)
 
-Narvik and the other campaign evidence candidates remain available for later campaign coverage work. [Bilateral evidence candidate](https://github.com/hound83/ww2-airwar/pull/20) · [Narvik candidate](https://github.com/hound83/ww2-airwar/pull/15) · [Wider roadmap](https://github.com/hound83/ww2-airwar/pull/23)
+Narvik and the other campaign evidence candidates remain available for later campaign coverage work. [Bilateral evidence candidate](https://github.com/hound83/ww2-airwar/pull/20) · [Narvik candidate](https://github.com/hound83/ww2-airwar/pull/15) · [Wider roadmap](ATLAS_ROADMAP_TO_V10.md)
 
 Codex owns production integration and verification. Grok’s contributions remain available for independent review in the [reference sweep tracker](https://github.com/hound83/ww2-airwar/issues/40). The Atlas uses its pinned physics snapshot. [Atlas physics integration](ATLAS_PHYSICS_INTEGRATION.md)
 
-Updated 12 November 2026.
+Updated 13 November 2026.
