@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## Atlas v9.8 · Siege and air battle of Malta
+
+The [Malta explorer](https://hound83.github.io/ww2-airwar/malta.html) follows 16 dated cases across the fighter deliveries, airfield defence and convoys. Spotter now identifies HMS Eagle and records 15 arrivals alongside the IWM caption’s 16. New evidence includes the wartime Italian Air Staff sortie and reconnaissance records, daily RAF airfield and fighter records, and the Admiralty’s Pedestal claims and unloading figures. [Source audit](../research/sources/atlas-malta-air-campaign-2026-11-13.md)
+
 ## Atlas v9.7 · Defence of the Reich
 
 The [Reich defence explorer](https://hound83.github.io/ww2-airwar/reich-defence.html) links 13 raid cases to mission records, unit accounts, claim evidence and German calendar-day and monthly losses. Two additional dated command returns cover 6 March and 2 November 1944. The Nuremberg attacking and loss counts and the 12 May oil dispatch counts retain their source definitions. [Research audit](../research/sources/atlas-reich-defence-2026-11-13.md)

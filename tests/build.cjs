@@ -48,3 +48,6 @@ require('./bagration.cjs');
 
 // Reich defence case chronology, population boundaries and source graph.
 require('./reich-defence.cjs');
+
+// Malta campaign chronology, provenance and populations.
+require('./malta.cjs');

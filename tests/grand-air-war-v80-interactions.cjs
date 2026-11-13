@@ -175,7 +175,7 @@ for(const campaign of app.campaigns){
   auditedEventCount++;
  }
 }
-assert.equal(auditedEventCount,119,"each dated event must have a visible reciprocal evidence assessment");
+assert.equal(auditedEventCount,121,"each dated event must have a visible reciprocal evidence assessment");
 app.choose("britain",false);
 assert.equal((element("dossier-facts").innerHTML.match(/data-opponent-returns="britain"/g)||[]).length,1,"British Parliament wartime claim-vs-loss ledger missing");
 assert.ok(element("dossier-facts").innerHTML.includes("1,760")&&element("dossier-facts").innerHTML.includes("1,733"),"historical source inconsistency must be explicit");

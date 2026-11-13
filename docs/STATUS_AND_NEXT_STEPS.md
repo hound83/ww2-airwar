@@ -2,6 +2,10 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 13 November 2026 · Malta v9.8
+
+The [Malta explorer](https://hound83.github.io/ww2-airwar/malta.html) follows 16 dated cases across the fighter deliveries, airfield defence and convoys. Spotter now identifies HMS Eagle and records 15 arrivals alongside the IWM caption’s 16. New evidence includes the wartime Italian Air Staff sortie and reconnaissance records, daily RAF airfield and fighter records, and the Admiralty’s Pedestal claims and unloading figures. [Source audit](../research/sources/atlas-malta-air-campaign-2026-11-13.md)
+
 ## 13 November 2026 · Defence of the Reich v9.7
 
 The [Reich defence explorer](https://hound83.github.io/ww2-airwar/reich-defence.html) links 13 raid cases to mission records, unit accounts, claim evidence and German calendar-day and monthly losses. Two additional dated command returns cover 6 March and 2 November 1944. The Nuremberg attacking and loss counts and the 12 May oil dispatch counts retain their source definitions. [Research audit](../research/sources/atlas-reich-defence-2026-11-13.md)
@@ -171,7 +175,7 @@ The preceding Normandy narrative benchmark was merged in PR #22 at commit `13a95
 - A campaign now offers a researched operational narrative in **12/20** cases (previously 5/20), comprising **37** phases (previously 17) with at least one clickable evidence-detailed event in each. The original five phase guides have been made more informative too.
 - **50** detailed dated events (previously 11), **57** total dated records (36), **42** source-scoped historical quantities (30). No invented phase subdivisions for one-day Dieppe/Bodenplatte, and six campaigns remain explicitly without local numeric reports.
 - Search now finds *Cobra*, convoy *Peewit*, HMS *Glorious*, *Black Thursday* and other actual phase/event names, with short-token whole-word matching. The UI distinguishes researched events from simple calendar markers and shows `>200` rather than an exact 200 for a Big Week lower-bound figure.
-- Contradictions and denominators are documented: 7 March 1942 Malta HMS *Eagle* versus USS *Wasp* museum sources, 17 Aug versus 14 Oct 1943 Schweinfurt, Market Garden 152 as a subset of 162 resupply aircraft on 20 September, and Eindhoven local Bodenplatte losses versus whole-raid figures.
+- Contradictions and denominators are documented: 7 March 1942 Malta Spotter arrival counts (RAF Air Historical Branch and naval sources corroborate HMS *Eagle*), 17 Aug versus 14 Oct 1943 Schweinfurt, Market Garden 152 as a subset of 162 resupply aircraft on 20 September, and Eindhoven local Bodenplatte losses versus whole-raid figures.
 - Exact source and test report: `research/sources/atlas-campaign-operational-coverage-2026-11-06.md` and `docs/ATLAS_CAMPAIGN_COVERAGE_QA_2026-11-06.md`. GitHub core **42194849014** and final Chromium desktop/mobile **42194848882** both passed following the source discrepancy fix. Screenshots were generated but not independently downloaded and inspected here.
 - **Next substantial milestone:** source-audit additional phase journeys and genuinely local operational counts in the eight thinner campaigns; verify contradictory mission claims against original operational returns where accessible.
 

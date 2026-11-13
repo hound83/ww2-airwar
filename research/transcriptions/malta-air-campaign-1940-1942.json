@@ -1,0 +1,866 @@
+{
+  "schema": 1,
+  "sources": {
+    "ahb": {
+      "title": "RAF Air Historical Branch · Malta, June 1940–May 1945",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/middle-east-campaigns-vol-xi-malta-june-1940-may-1945/",
+      "kind": "Official campaign history"
+    },
+    "ahbSea": {
+      "title": "RAF Air Historical Branch · RAF in Maritime War, vol. VI",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/raf-in-maritime-war-vol-vi-the-mediterranean-and-the-red-sea/",
+      "kind": "Official campaign history"
+    },
+    "italianMay": {
+      "title": "Italian Air Staff · Memorandum on the Malta situation, 10 May 1942",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/memorandum-on-the-malta-situation-10-may-1942/",
+      "kind": "Wartime memorandum in RAF translation"
+    },
+    "italianOct": {
+      "title": "Italian Air Staff · Air and naval bases on Malta, 31 October 1942",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/the-air-and-naval-bases-in-malta-june-1940-to-october-1942/",
+      "kind": "Wartime assessment in RAF translation"
+    },
+    "iwm": {
+      "title": "Imperial War Museums · photograph A 7840, Operation Spotter",
+      "url": "https://www.iwmprints.org.uk/collections/armed-forces-weapons-ships/products/pod445981",
+      "kind": "Wartime photograph and museum caption"
+    },
+    "raf1942": {
+      "title": "RAF Museum · British Military Aviation in 1942",
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1942-2/",
+      "kind": "Museum chronology"
+    },
+    "raf1941": {
+      "title": "RAF Museum · British Military Aviation in 1941",
+      "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-military-aviation/1941-2/",
+      "kind": "Museum chronology"
+    },
+    "hagueAir": {
+      "title": "Arnold Hague · The Supply of Malta, aircraft reinforcements",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply02.htm",
+      "kind": "Naval history using official reports"
+    },
+    "hagueConvoys": {
+      "title": "Arnold Hague · The Supply of Malta, convoy chronology",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply01b.htm",
+      "kind": "Naval history using official reports"
+    },
+    "haguePed": {
+      "title": "Arnold Hague · The Supply of Malta, Operations Pedestal and Stoneage",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply03.htm",
+      "kind": "Naval history using official reports"
+    },
+    "wasp": {
+      "title": "US Naval History and Heritage Command · Wasp VIII (CV-7)",
+      "url": "https://www.history.navy.mil/research/histories/ship-histories/danfs/w/wasp-viii.html",
+      "kind": "Official US Navy ship history"
+    },
+    "fleetDiary": {
+      "title": "Mediterranean Fleet · Admiralty war diary, August 1942",
+      "url": "https://www.naval-history.net/xDKWD-MedFleet1942b.htm",
+      "kind": "Wartime naval diary transcription"
+    },
+    "maltaDiary": {
+      "title": "Malta Command · Admiralty war diary, August–December 1942",
+      "url": "https://www.naval-history.net/xDKWD-Malta1942a.htm",
+      "kind": "Wartime naval diary transcription"
+    },
+    "museumHal": {
+      "title": "Malta Aviation Museum · Hal Far",
+      "url": "https://www.maltaaviationmuseum.com/2023/10/27/hal-far-from-calafrana-outpost-to-raf-airfield/",
+      "kind": "Local museum airfield history"
+    },
+    "marinaJune": {
+      "title": "Marina Militare · La battaglia di Mezzo giugno",
+      "url": "https://www.marina.difesa.it/media-cultura/Notiziario-online/Pagine/20210615_la_battaglia_di_pantelleria_una_storica_vittoria_italiana.aspx",
+      "kind": "Official Italian naval retrospective"
+    },
+    "marinaAug": {
+      "title": "Marina Militare · Battaglia di mezzo agosto, 1942",
+      "url": "https://www.marina.difesa.it/media-cultura/Notiziario-online/Pagine/20220812_battaglia_di_mezzo_agosto_1942.aspx",
+      "kind": "Official Italian naval retrospective"
+    },
+    "mattesini": {
+      "title": "Francesco Mattesini · L’operazione Pedestal, Mezzo Agosto 1942",
+      "url": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+      "kind": "Italian study using naval and air records"
+    }
+  },
+  "sites": {
+    "harbour": {
+      "name": "Grand Harbour",
+      "lat": 35.89,
+      "lng": 14.52,
+      "area": "island"
+    },
+    "halfar": {
+      "name": "Hal Far",
+      "lat": 35.817,
+      "lng": 14.513,
+      "area": "island"
+    },
+    "taqali": {
+      "name": "Ta’ Qali",
+      "lat": 35.894,
+      "lng": 14.413,
+      "area": "island"
+    },
+    "luqa": {
+      "name": "Luqa",
+      "lat": 35.851,
+      "lng": 14.478,
+      "area": "island"
+    },
+    "pantelleria": {
+      "name": "Pantelleria sector",
+      "lat": 36.83,
+      "lng": 11.93,
+      "area": "mediterranean"
+    },
+    "alexandria": {
+      "name": "Alexandria",
+      "lat": 31.2,
+      "lng": 29.9,
+      "area": "mediterranean"
+    },
+    "eagleLoss": {
+      "name": "HMS Eagle sinking · diary position",
+      "lat": 38.08333,
+      "lng": 3.03333,
+      "area": "mediterranean"
+    }
+  },
+  "metrics": {
+    "aircraft": "Aircraft reported",
+    "emb": "Spitfires embarked",
+    "flown": "Spitfires flown off",
+    "arrivals": "Spitfires arriving on Malta",
+    "serviceable": "Serviceable Spitfires",
+    "minutes": "Minutes to make fighters operational",
+    "germanSorties": "German sorties",
+    "italianSorties": "Italian sorties",
+    "enemySorties": "Enemy sorties in RAF chronology",
+    "fighterSorties": "RAF fighter sorties",
+    "bomberSorties": "Bomber sorties",
+    "reconSorties": "Reconnaissance sorties",
+    "localFighterSorties": "Fighter sorties",
+    "enemyAircraft": "Enemy aircraft in RAF account",
+    "groundDead": "Aircraft destroyed on the ground",
+    "groundDamage": "Aircraft damaged on the ground",
+    "groundEither": "Aircraft destroyed or badly damaged on the ground",
+    "combatDead": "Aircraft lost in combat",
+    "boatsSent": "Merchant ships dispatched",
+    "boatsArrived": "Merchant ships reaching Malta",
+    "cargo": "General cargo received, tons",
+    "furnace": "Furnace fuel received, tons",
+    "diesel": "Diesel fuel received, tons",
+    "maxClosed": "Longest reported airfield closure, minutes",
+    "observed": "Aircraft visible in Axis reconnaissance",
+    "claims": "Reported aircraft destruction claims",
+    "probable": "Probable destruction claims",
+    "heldFighters": "Single-engine fighters on strength",
+    "serviceableFighters": "Serviceable single-engine fighters",
+    "reportedLost": "Aircraft reported lost"
+  },
+  "series": {
+    "title": "German sorties against Malta",
+    "source": "italianMay",
+    "locator": "Appendix B · German sorties against Malta, January–April 1942",
+    "rows": [
+      [
+        "January",
+        591,
+        1145,
+        257,
+        1973
+      ],
+      [
+        "February",
+        568,
+        1606,
+        323,
+        2497
+      ],
+      [
+        "March",
+        1425,
+        3041,
+        461,
+        4927
+      ],
+      [
+        "April",
+        4591,
+        4410,
+        598,
+        9599
+      ]
+    ],
+    "note": "January’s reported total (1,973) differs from the sum of its role counts (1,993). For February, the memorandum table gives 2,497 while the RAF narrative gives 2,447. Both totals retain their source wording."
+  },
+  "cases": [
+    {
+      "id": "first-raid",
+      "date": "1940-06-11",
+      "site": "halfar",
+      "topics": [
+        "defence"
+      ],
+      "title": "The first Italian raid",
+      "story": "Italy entered the war on 10 June. The next day Italian bombers attacked Malta, where Hal Far and the other island bases had only a small fighter defence. Malta’s strategic value came from its position astride the approaches to Sicily and North Africa.",
+      "evidence": [
+        {
+          "label": "Regia Aeronautica · first raid",
+          "source": "ahb",
+          "locator": "Chronological Summary · 11 June 1940",
+          "metrics": {
+            "aircraft": 10
+          },
+          "note": "Italian bombers in the first raid as described in the RAF history. The figure covers that raid only."
+        },
+        {
+          "label": "Hal Far airfield",
+          "source": "museumHal",
+          "locator": "June 1940 · early airfield defence",
+          "metrics": {},
+          "note": "The museum reconstructs the field’s first wartime raids and Fleet Air Arm role."
+        }
+      ]
+    },
+    {
+      "id": "illustrious",
+      "date": "1941-01-16",
+      "site": "harbour",
+      "topics": [
+        "defence",
+        "convoys"
+      ],
+      "title": "Illustrious under attack",
+      "story": "HMS Illustrious reached Grand Harbour after German dive-bombing south of Malta. Luftwaffe raids on the damaged carrier and dockyard continued while the Royal Navy made repairs. The carrier later escaped to Alexandria.",
+      "evidence": [
+        {
+          "label": "Royal Navy · HMS Illustrious",
+          "source": "raf1941",
+          "locator": "16 January 1941 · air attacks in Malta",
+          "metrics": {},
+          "note": "A harbour-defence episode. Available evidence here identifies the attacking force and ship outcome."
+        },
+        {
+          "label": "Italian Air Staff · the first air offensive",
+          "source": "italianOct",
+          "locator": "§ 2 · January to May 1941",
+          "metrics": {},
+          "note": "The wartime assessment describes Axis attempts to curtail Malta’s activity against shipping and records continued arrivals of supplies."
+        }
+      ]
+    },
+    {
+      "id": "spotter",
+      "date": "1942-03-07",
+      "site": "taqali",
+      "topics": [
+        "reinforcement"
+      ],
+      "title": "Spotter · the first Spitfires",
+      "story": "HMS Argus brought the Spitfires from Britain. HMS Eagle launched them on the successful attempt. Blenheims led the fighters towards Malta, where No. 249 Squadron operated the first deliveries.",
+      "evidence": [
+        {
+          "label": "HMS Eagle · photographed launch operation",
+          "source": "hagueAir",
+          "locator": "Spotter and Spotter II · 7 March",
+          "metrics": {
+            "flown": 15,
+            "arrivals": 15
+          },
+          "note": "Hague records both the fly-off and all 15 arrivals. The first deployment attempt was aborted over fuel-tank defects."
+        },
+        {
+          "label": "RAF · first arrivals",
+          "source": "ahb",
+          "locator": "Chronological Summary · 7 March 1942; reinforcement table",
+          "metrics": {
+            "arrivals": 15
+          },
+          "note": "The RAF Air Historical Branch counts 15 first arrivals and dates the first USS Wasp delivery to 20 April."
+        },
+        {
+          "label": "IWM photographic caption · alternate published count",
+          "source": "iwm",
+          "locator": "Photograph A 7840",
+          "metrics": {
+            "arrivals": 16
+          },
+          "note": "The caption identifies HMS Eagle and gives 16 delivered. The ship history and RAF campaign history support 15 arrivals. The caption does not explain its count."
+        }
+      ],
+      "place": "Malta arrival · Ta’ Qali fighter base"
+    },
+    {
+      "id": "picket",
+      "date": "1942-03-21",
+      "site": "taqali",
+      "topics": [
+        "reinforcement"
+      ],
+      "title": "Picket · two March reinforcements",
+      "story": "Two more patrols flew Spitfires off HMS Eagle on 21 and 29 March. The reinforcement flights also accompanied additional bomber and torpedo-bomber arrivals.",
+      "evidence": [
+        {
+          "label": "HMS Eagle · 21 March",
+          "source": "hagueAir",
+          "locator": "Picket I",
+          "metrics": {
+            "flown": 9,
+            "arrivals": 9
+          },
+          "note": "First Picket flight."
+        },
+        {
+          "label": "HMS Eagle · 29 March",
+          "source": "hagueAir",
+          "locator": "Picket II",
+          "metrics": {
+            "flown": 7,
+            "arrivals": 7,
+            "emb": 8
+          },
+          "note": "Second Picket flight. The eight embarked and seven flown off distinguish loading from dispatch."
+        },
+        {
+          "label": "RAF · March Picket total",
+          "source": "ahb",
+          "locator": "Reinforcement table · 21 and 29 March",
+          "metrics": {
+            "arrivals": 16
+          },
+          "note": "Combined arrivals from the two preceding records."
+        }
+      ],
+      "end": "1942-03-29",
+      "place": "Malta arrival · Ta’ Qali fighter base"
+    },
+    {
+      "id": "april",
+      "date": "1942-04-01",
+      "site": "halfar",
+      "topics": [
+        "defence"
+      ],
+      "title": "April blitz · the airfields under pressure",
+      "story": "The spring offensive cratered runways and struck aircraft and workshops. Hal Far was temporarily unserviceable on 1 April. On 3 April the campaign history records temporary closure at Ta’ Qali. The month’s figures give the scale of the wider assault.",
+      "evidence": [
+        {
+          "label": "Luftwaffe · April aircraft operations",
+          "source": "italianMay",
+          "locator": "Appendix B · German sorties against Malta, April column",
+          "metrics": {
+            "germanSorties": 9599,
+            "bomberSorties": 4591,
+            "localFighterSorties": 4410,
+            "reconSorties": 598
+          },
+          "note": "The three role counts partition the monthly total. The Italian staff’s table and RAF narrative agree on 9,599. These are flights."
+        },
+        {
+          "label": "RAF Malta · April damage and air combat",
+          "source": "ahb",
+          "locator": "Chronological Summary · April 1942",
+          "metrics": {
+            "groundDead": 44,
+            "groundDamage": 82,
+            "combatDead": 20
+          },
+          "note": "The combat figure covers RAF fighters. The broader ground figures cover RAF aircraft across Malta."
+        },
+        {
+          "label": "Luftwaffe · April air combat losses",
+          "source": "ahb",
+          "locator": "Chronological Summary · April 1942",
+          "metrics": {
+            "combatDead": 43
+          },
+          "note": "The official narrative prints 43 aircraft lost in action. The later RAF Museum chronology reports 45 lost without a comparable cause breakdown."
+        },
+        {
+          "label": "Luftwaffe · museum tally",
+          "source": "raf1942",
+          "locator": "April 1942 summary",
+          "metrics": {
+            "reportedLost": 45
+          },
+          "note": "Aircraft reported lost. The official narrative’s 43 are tagged as lost in action. The two counts are preserved under their own source wording."
+        },
+        {
+          "label": "Hal Far · 1 April",
+          "source": "ahb",
+          "locator": "Chronological Summary · 1 April",
+          "metrics": {
+            "groundDead": 2,
+            "groundDamage": 10
+          },
+          "note": "The RAF narrative reports heavy cratering and temporary unserviceability."
+        }
+      ],
+      "end": "1942-04-30"
+    },
+    {
+      "id": "luqa-april",
+      "date": "1942-04-11",
+      "site": "luqa",
+      "topics": [
+        "defence"
+      ],
+      "title": "Luqa · bombing the bomber base",
+      "story": "Raids put aircraft, buildings, runways and dispersal areas at risk. At Luqa the RAF recorded nine aircraft burnt out on 11 April, then three Wellingtons burnt out the next day as runways and dispersals were hit.",
+      "evidence": [
+        {
+          "label": "Luqa · 11 April",
+          "source": "ahb",
+          "locator": "Chronological Summary · 11 April",
+          "metrics": {
+            "groundDead": 9,
+            "groundDamage": 4
+          },
+          "note": "RAF aircraft at Luqa on this date."
+        },
+        {
+          "label": "Hal Far · 11 April",
+          "source": "ahb",
+          "locator": "Chronological Summary · 11 April",
+          "metrics": {
+            "groundEither": 6
+          },
+          "note": "Six Hurricanes destroyed or badly damaged. The source gives one combined category."
+        },
+        {
+          "label": "Luqa · 12 April",
+          "source": "ahb",
+          "locator": "Chronological Summary · 12 April",
+          "metrics": {
+            "groundDead": 3
+          },
+          "note": "Wellingtons burnt out. Runways and dispersal areas were badly cratered."
+        }
+      ],
+      "end": "1942-04-12"
+    },
+    {
+      "id": "calendar",
+      "date": "1942-04-20",
+      "site": "taqali",
+      "topics": [
+        "reinforcement",
+        "defence"
+      ],
+      "title": "Calendar · delivery under immediate attack",
+      "story": "USS Wasp brought more Spitfires and pilots of Nos. 601 and 603 Squadrons. Attacks on Luqa and Ta’ Qali destroyed or damaged many of the new fighters within days.",
+      "evidence": [
+        {
+          "label": "USS Wasp · Calendar",
+          "source": "hagueAir",
+          "locator": "Calendar · 20 April",
+          "metrics": {
+            "emb": 47,
+            "flown": 47,
+            "arrivals": 46
+          },
+          "note": "The operation’s shipped and flown figure was 47. One fewer reached Malta."
+        },
+        {
+          "label": "RAF · Calendar aftermath by 23 April",
+          "source": "ahb",
+          "locator": "Chronological Summary · 20–23 April",
+          "metrics": {
+            "arrivals": 46,
+            "groundDead": 9,
+            "groundDamage": 29
+          },
+          "note": "The campaign history attributes the ground damage to raids following the delivery. A damaged airframe may return to service."
+        },
+        {
+          "label": "RAF · Ta’ Qali, 21 April",
+          "source": "ahb",
+          "locator": "Chronological Summary · 21 April",
+          "metrics": {
+            "groundDead": 4,
+            "groundDamage": 5
+          },
+          "note": "Losses and damage in one attack. These sit inside the wider aftermath and should not be added to it."
+        }
+      ],
+      "end": "1942-04-23",
+      "refs": [
+        "wasp"
+      ]
+    },
+    {
+      "id": "bowery",
+      "date": "1942-05-09",
+      "site": "taqali",
+      "topics": [
+        "reinforcement",
+        "defence"
+      ],
+      "title": "Bowery · into action after landing",
+      "story": "HMS Eagle and USS Wasp launched a larger delivery. Malta teams met the arrivals with fuel, ammunition and servicing, which shortened the time fighters spent exposed on the ground.",
+      "evidence": [
+        {
+          "label": "USS Wasp · Bowery fly-off",
+          "source": "hagueAir",
+          "locator": "Bowery · 9 May",
+          "metrics": {
+            "flown": 47
+          },
+          "note": "Carrier share of the same operation."
+        },
+        {
+          "label": "HMS Eagle · Bowery fly-off",
+          "source": "hagueAir",
+          "locator": "Bowery · 9 May",
+          "metrics": {
+            "flown": 17
+          },
+          "note": "Carrier share of the same operation. Hague records three mishaps and one aircraft diverting to North Africa."
+        },
+        {
+          "label": "RAF · receiving and launching the fighters",
+          "source": "ahb",
+          "locator": "Chronological Summary · 9 May, Oppidan/Hansford",
+          "metrics": {
+            "arrivals": 60,
+            "minutes": 35,
+            "fighterSorties": 134
+          },
+          "note": "Official narrative says the new fighters became operational within 35 minutes and records 134 sorties in that entry. This records the receiving effort, separate from the count flown off."
+        }
+      ],
+      "refs": [
+        "wasp"
+      ]
+    },
+    {
+      "id": "spring-axis",
+      "date": "1942-05-10",
+      "site": "luqa",
+      "topics": [
+        "defence"
+      ],
+      "title": "Axis assessment · Malta still able to recover",
+      "story": "The Italian Air Staff’s review describes joint planning and Italian air participation. It concluded that Malta’s neutralisation was temporary and that the island could recover if the blockade relaxed. Its reconnaissance figures cover aircraft visible to observers.",
+      "evidence": [
+        {
+          "label": "Regia Aeronautica · spring air operations",
+          "source": "italianMay",
+          "locator": "Appendix C · 20 March–10 May",
+          "metrics": {
+            "italianSorties": 865,
+            "bomberSorties": 210,
+            "localFighterSorties": 504
+          },
+          "note": "The published total also includes 25 torpedo-bomber and 126 reconnaissance sorties, including naval reconnaissance. Its reporting window differs from April’s 9,599 German sorties."
+        },
+        {
+          "label": "Luftflotte 2 · single-engine fighters in Sicily",
+          "source": "italianMay",
+          "locator": "Appendix A · 10 May, columns (a) and (b)",
+          "metrics": {
+            "heldFighters": 98,
+            "serviceableFighters": 69
+          },
+          "note": "The German Air Ministry figures inserted by the RAF translator give 98 on strength and 69 serviceable for the single-engine fighter row. This is a Sicily-based force snapshot."
+        },
+        {
+          "label": "Italian Air Staff · aircraft visible on Malta",
+          "source": "italianMay",
+          "locator": "§ 14 · 10 May reconnaissance",
+          "metrics": {
+            "observed": 87
+          },
+          "note": "Aircraft in cave workshops lay outside the estimate. The figure has no serviceability breakdown."
+        }
+      ]
+    },
+    {
+      "id": "harpoon",
+      "date": "1942-06-11",
+      "site": "pantelleria",
+      "topics": [
+        "convoys"
+      ],
+      "title": "Harpoon · supply from the west",
+      "story": "The convoy left Gibraltar from the west under Force W and Force X. Carrier aircraft covered the earlier leg. Malta-based fighters helped during the later air attacks near the Sicilian Narrows. Only Orari and Troilus reached Malta as merchant ships, accompanied by a separately counted cargo run by the minelayer HMS Welshman.",
+      "evidence": [
+        {
+          "label": "Western convoy · merchant shipping",
+          "source": "hagueConvoys",
+          "locator": "Harpoon · 11–16 June",
+          "metrics": {
+            "boatsSent": 6,
+            "boatsArrived": 2
+          },
+          "note": "The six include Kentucky, which joined at Gibraltar. Welshman’s cargo delivery sits outside the merchant count."
+        },
+        {
+          "label": "Air cover in the Sicilian Narrows",
+          "source": "hagueConvoys",
+          "locator": "Harpoon · 15 June, attacks and fighter cover",
+          "metrics": {},
+          "note": "The report describes difficulties coordinating Malta fighters by radio and their intervention against a dive-bombing attack."
+        }
+      ],
+      "end": "1942-06-16",
+      "refs": [
+        "marinaJune",
+        "ahbSea"
+      ]
+    },
+    {
+      "id": "vigorous",
+      "date": "1942-06-12",
+      "site": "alexandria",
+      "topics": [
+        "convoys"
+      ],
+      "title": "Vigorous · the eastern convoy turns back",
+      "story": "The eastern convoy lacked an aircraft carrier. Air attacks and the threat of the Italian surface fleet forced changes of course. Escort fuel and ammunition ran low and the force returned east. Bhután and Aagtekirk were lost following air attacks.",
+      "evidence": [
+        {
+          "label": "Eastern convoy · merchant shipping",
+          "source": "hagueConvoys",
+          "locator": "Vigorous · 12–17 June",
+          "metrics": {
+            "boatsSent": 11,
+            "boatsArrived": 0
+          },
+          "note": "The dispatch total covers the three departure sections. It excludes the disarmed battleship HMS Centurion. Zero merchant ships reached Malta in this operation."
+        }
+      ],
+      "end": "1942-06-17",
+      "refs": [
+        "marinaJune",
+        "ahbSea"
+      ],
+      "place": "Alexandria · eastern convoy assembly"
+    },
+    {
+      "id": "pedestal",
+      "date": "1942-08-10",
+      "site": "harbour",
+      "topics": [
+        "convoys"
+      ],
+      "title": "Pedestal · fuel and cargo reach Grand Harbour",
+      "story": "British carrier fighters covered the convoy in the western Mediterranean and Malta-based Spitfires and Beaufighters took part on the approaches. German and Italian aircraft attacked alongside submarines and surface craft. Five merchant ships made it through, including the disabled tanker Ohio, which was towed into Grand Harbour on 15 August.",
+      "evidence": [
+        {
+          "label": "Pedestal · merchant convoy",
+          "source": "haguePed",
+          "locator": "Pedestal · merchant roster and arrival sequence",
+          "metrics": {
+            "boatsSent": 14,
+            "boatsArrived": 5
+          },
+          "note": "Merchant ships only. The wider operation included carriers, escorts and the Bellows fighter ferry."
+        },
+        {
+          "label": "Fleet fighters · engagement claims",
+          "source": "fleetDiary",
+          "locator": "16 August · enemy aircraft shot down",
+          "metrics": {
+            "claims": 39,
+            "probable": 5
+          },
+          "note": "The diary calls its 39 claims certain. The claims are recorded as British reports."
+        },
+        {
+          "label": "Malta-based aircraft · engagement claims",
+          "source": "fleetDiary",
+          "locator": "16 August · enemy aircraft shot down",
+          "metrics": {
+            "claims": 10,
+            "probable": 2
+          },
+          "note": "Malta-based fighter claims in the same diary. Anti-aircraft gunnery was logged separately."
+        },
+        {
+          "label": "Malta Command · unloading Operation Ceres",
+          "source": "maltaDiary",
+          "locator": "August war diary · outstanding events, Pedestal/Ceres",
+          "metrics": {
+            "cargo": 32000,
+            "furnace": 12000,
+            "diesel": 3600
+          },
+          "note": "Approximate quantities in the diary’s own tons. The bulk of unloading was complete by 23 August. The diary’s quantities are for furnace fuel, diesel and general cargo."
+        }
+      ],
+      "end": "1942-08-15",
+      "refs": [
+        "ahbSea",
+        "marinaAug",
+        "mattesini"
+      ]
+    },
+    {
+      "id": "bellows",
+      "date": "1942-08-11",
+      "site": "eagleLoss",
+      "topics": [
+        "reinforcement",
+        "convoys"
+      ],
+      "title": "Bellows · Spitfires fly off during Pedestal",
+      "story": "HMS Furious launched replacement fighters while Pedestal passed through the western Mediterranean. One aircraft landed on HMS Indomitable. In the same convoy operation, U-73 sank HMS Eagle.",
+      "evidence": [
+        {
+          "label": "HMS Furious · naval operations chronology",
+          "source": "hagueAir",
+          "locator": "Bellows · 11 August",
+          "metrics": {
+            "emb": 39,
+            "flown": 38,
+            "arrivals": 37
+          },
+          "note": "The RAF campaign history also gives 37 arrivals."
+        },
+        {
+          "label": "HMS Furious · Mediterranean Fleet return",
+          "source": "fleetDiary",
+          "locator": "11 August · Operation Pedestal",
+          "metrics": {
+            "flown": 38,
+            "arrivals": 36
+          },
+          "note": "The naval diary reports 36 reaching Malta. Its arrival denominator remains unresolved against Hague and the RAF narrative."
+        }
+      ],
+      "refs": [
+        "ahb"
+      ],
+      "place": "Western Mediterranean · HMS Eagle’s reported sinking position"
+    },
+    {
+      "id": "october",
+      "date": "1942-10-11",
+      "site": "luqa",
+      "topics": [
+        "defence"
+      ],
+      "title": "October offensive · sustained flying",
+      "story": "Axis aircraft renewed attacks on Malta. The RAF campaign summary records only brief airfield closures and two aircraft destroyed on the ground over the offensive. The Italian Air Staff separately observed aircraft from aerial photographs.",
+      "evidence": [
+        {
+          "label": "RAF Malta · the nine-day offensive",
+          "source": "ahb",
+          "locator": "Chronological Summary · 11–19 October",
+          "metrics": {
+            "maxClosed": 30,
+            "groundDead": 2,
+            "reportedLost": 30
+          },
+          "note": "The loss figure refers to RAF Spitfires reported lost during the offensive. The RAF history reports that no individual airfield was out of action for longer than half an hour."
+        },
+        {
+          "label": "German or combined Axis sortie count · scope differs",
+          "source": "ahb",
+          "locator": "Chronological Summary · 11–19 October",
+          "metrics": {
+            "germanSorties": 2400
+          },
+          "note": "The AHB chronology attributes the approximate count to the Luftwaffe. The RAF Museum uses a combined Axis description for the same headline figure. Italian formations took part and no pooled total is derived."
+        },
+        {
+          "label": "Italian Air Staff · photo-reconnaissance, 20 October",
+          "source": "italianOct",
+          "locator": "§ 6 · third offensive, post-offensive reconnaissance",
+          "metrics": {
+            "observed": 113
+          },
+          "note": "The photo-reconnaissance also counted 168 at the start of the offensive. Concealed aircraft and incoming replacements affect the difference."
+        }
+      ],
+      "end": "1942-10-19",
+      "refs": [
+        "raf1942"
+      ]
+    },
+    {
+      "id": "october-interception",
+      "date": "1942-10-13",
+      "site": "taqali",
+      "topics": [
+        "defence"
+      ],
+      "title": "October · Luqa, Ta’ Qali and forward interception",
+      "story": "RAF controllers sent fighters out to meet raids before they reached Malta. Luqa sustained little damage in the 13 October attack and Ta’ Qali was briefly put out of action the next day.",
+      "evidence": [
+        {
+          "label": "Luqa · 13 October",
+          "source": "ahb",
+          "locator": "Chronological Summary · 13 October",
+          "metrics": {
+            "enemyAircraft": 219,
+            "fighterSorties": 107
+          },
+          "note": "The RAF account describes 219 enemy aircraft in attacks mainly directed at Luqa, and 107 Spitfire sorties."
+        },
+        {
+          "label": "Ta’ Qali · 14 October",
+          "source": "ahb",
+          "locator": "Chronological Summary · 14 October",
+          "metrics": {
+            "enemySorties": 220
+          },
+          "note": "The sorties cover Malta. Ta’ Qali was temporarily unserviceable."
+        },
+        {
+          "label": "RAF Malta · 16 October defensive effort",
+          "source": "ahb",
+          "locator": "Chronological Summary · 16 October",
+          "metrics": {
+            "serviceable": 46,
+            "fighterSorties": 125,
+            "enemySorties": 260
+          },
+          "note": "Forty-six Spitfires were serviceable, against 125 RAF sorties flown. Repeated flights by the same fighter count separately."
+        }
+      ],
+      "end": "1942-10-16"
+    },
+    {
+      "id": "stoneage",
+      "date": "1942-11-16",
+      "site": "harbour",
+      "topics": [
+        "convoys"
+      ],
+      "title": "Stoneage · the eastern supply route reopens",
+      "story": "After the Allied advance in North Africa, land-based aircraft could cover more of the route. All four merchant ships of Stoneage reached Malta. The later unloading report marks an easing of the siege.",
+      "evidence": [
+        {
+          "label": "Stoneage · eastern convoy",
+          "source": "haguePed",
+          "locator": "Stoneage · convoy MW 13",
+          "metrics": {
+            "boatsSent": 4,
+            "boatsArrived": 4
+          },
+          "note": "All four merchant ships arrived. Air attacks still inflicted damage on the escort, including HMS Arethusa."
+        },
+        {
+          "label": "Malta Command · after unloading",
+          "source": "maltaDiary",
+          "locator": "November war diary · outstanding events, Operation Stoneage",
+          "metrics": {},
+          "note": "The diary dates the easing of the siege to 26 November, when most of the four cargoes had been unloaded."
+        }
+      ],
+      "end": "1942-11-20",
+      "refs": [
+        "ahb",
+        "ahbSea"
+      ]
+    }
+  ]
+}

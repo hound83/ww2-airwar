@@ -23,7 +23,7 @@ const allEvents=D.campaigns.flatMap(c=>c.moments.map(e=>({...e,campaign:c.id})))
 const isMonth=x=>/^\d{4}-(0[1-9]|1[0-2])$/.test(x);
 assert.equal(D.campaigns.length,20);
 assert.equal(allFacts.length,139,"campaign quantities need an updated source-count explanation");
-assert.equal(allEvents.length,119,"campaign event count should be explicit and reviewed (Normandy benchmark adds 36 episodes)");
+assert.equal(allEvents.length,121,"campaign event count includes the two added Malta dossier dates");
 assert.equal(new Set(D.campaigns.map(c=>c.id)).size,D.campaigns.length);
 for(const c of D.campaigns){
  assert.ok(isMonth(c.start)&&isMonth(c.end)&&c.start<=c.end,c.id+" invalid period");
@@ -206,9 +206,9 @@ assert.ok(naval.filter(f=>[3568,9151,1101,153].includes(f.value)).every(f=>f.sco
 assert.ok(naval.every(f=>f.sourceId==="navyNormandyGermanDaily"&&f.unit.includes("sorties")),"sorties may not be described as aircraft strength");
 
 const malta=D.campaigns.find(c=>c.id==="malta");
-assert.ok(malta.chapters.find(c=>c.id==="crisis").limits.includes("HMS Eagle"),"documented RAF/IWM carrier disagreement must remain visible");
+assert.ok(malta.chapters.find(c=>c.id==="crisis").limits.includes("HMS Eagle"),"the independently corroborated Spotter carrier must be visible");
 assert.equal(malta.facts.find(f=>f.date==="1942-03-07").value,15);
-assert.ok(malta.facts.find(f=>f.date.startsWith("1942-10")).scope.includes("separate population"),"October Axis sorties must not be pooled with April Luftwaffe sorties");
+assert.ok(malta.facts.find(f=>f.date.startsWith("1942-10")).scope.includes("separate population"),"October and April sortie scopes must stay separate");
 const garden=D.campaigns.find(c=>c.id==="marketgarden");
 assert.equal(garden.facts.find(f=>f.value===152).type,"recorded-subset");
 assert.equal(garden.facts.find(f=>f.value===162).date,"1944-09-20");
