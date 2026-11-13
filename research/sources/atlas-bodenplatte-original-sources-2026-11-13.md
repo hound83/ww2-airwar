@@ -47,7 +47,7 @@ The RAF study cites Manrho and Pütz (2010, pp. 460–462) for **290 destroyed a
 
 ## January returns archive access follow-up
 
-The Dutch archive catalogue lists the relevant items as physical holdings. Public searches recovered a parallel UK squadron book and precise wing files. The 1 January raid-day leaves and appendix images remain uninspected. The published evidence above retains its existing scope and confidence.
+The Dutch archive catalogue lists the relevant items as physical holdings. Public searches recovered a parallel UK squadron book and precise wing files. The 1 January raid-day leaves and appendix images remain uninspected. Use freely accessible copies, published extracts and reading-room access for further retrieval. Paid bulk ordering is outside scope. Any paid request for an individual item needs a separate decision. The published evidence above retains its existing scope and confidence.
 
 | Priority | Reference | What to retrieve |
 | --- | --- | --- |

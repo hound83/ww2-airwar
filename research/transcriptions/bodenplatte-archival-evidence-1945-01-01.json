@@ -1026,5 +1026,9 @@
         }
       ]
     }
-  ]
+  ],
+  "archiveAcquisition": {
+    "policy": "Use freely accessible copies, extracts or reading-room access. Paid bulk ordering is out of scope. Any individual paid order requires a separate user decision.",
+    "status": "Original January leaves remain uninspected."
+  }
 }
