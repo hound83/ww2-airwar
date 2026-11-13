@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17303b">
+<meta name="description" content="The Siege and air battle of Malta, with source-linked Spitfire deliveries, airfield readiness, Axis raids and convoy outcomes.">
+<title>Siege and air battle of Malta · European Air War Atlas</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="./dist/reich-defence.css">
+<link rel="stylesheet" href="./dist/malta.css">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script defer src="./dist/malta.js"></script>
+</head>
+<body class="malta">
+<header class="masthead">
+  <div class="shell">
+    <nav aria-label="Atlas navigation"><a href="./grand-air-war-v80.html">European Air War Atlas</a></nav>
+    <h1>Siege and air battle of Malta</h1>
+    <p>Trace how Malta kept its fighters flying through bombing, blockade and shortages. Follow the carrier deliveries, the defence of its airfields and the convoys that brought supplies ashore.</p>
+  </div>
+</header>
+<main class="shell">
+  <section aria-labelledby="campaign-heading">
+    <div class="section-heading">
+      <h2 id="campaign-heading">Campaign chronology</h2>
+      <div class="topic-filter">
+        <label for="topic">View</label>
+        <select id="topic">
+          <option value="">Whole campaign</option>
+          <option value="reinforcement">Carrier reinforcements</option>
+          <option value="defence">Airfield defence</option>
+          <option value="convoys">Convoy operations</option>
+        </select>
+      </div>
+    </div>
+    <div class="workspace">
+      <div>
+        <div id="malta-map" aria-label="Campaign locations" hidden></div>
+        <p id="map-note" class="map-note" hidden>Choose a location to see its related cases. Pins mark places in the evidence, including arrival points and representative sea sectors.</p>
+        <p id="load-status" role="status">Loading campaign records…</p>
+        <ol class="raid-list" id="raid-list" aria-label="Dated campaign cases"></ol>
+      </div>
+      <article id="raid-detail" tabindex="-1" aria-labelledby="raid-title" hidden>
+        <p class="raid-date" id="raid-date"></p>
+        <h2 id="raid-title"></h2>
+        <p id="raid-story"></p>
+        <div id="raid-records"></div>
+        <p id="case-references" class="locator" hidden></p>
+        <p><a href="#campaign-heading">Back to chronology</a></p>
+      </article>
+    </div>
+  </section>
+  <section id="spring-series" aria-labelledby="spring-heading" hidden></section>
+  <footer>
+    <a href="./research/sources/atlas-malta-air-campaign-2026-11-13.md">Source audit and Wikipedia references</a>
+    <a href="./research/transcriptions/malta-air-campaign-1940-1942.json" download>Download case data (JSON)</a>
+  </footer>
+</main>
+</body>
+</html>

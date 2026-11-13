@@ -365,10 +365,30 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/eindhoven",
       "class": "Dutch-Defence-official-local-airfield-account"
     },
+    "maltaAhb": {
+      "title": "RAF Air Historical Branch · Malta, June 1940–May 1945",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/middle-east-campaigns-vol-xi-malta-june-1940-may-1945/",
+      "class": "Official campaign history"
+    },
+    "maltaNavalSupply": {
+      "title": "Arnold Hague · The Supply of Malta, aircraft reinforcements",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply02.htm",
+      "class": "Naval history using official reports"
+    },
+    "maltaItalianStaff": {
+      "title": "Italian Air Staff · Memorandum on the Malta situation, 10 May 1942",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/memorandum-on-the-malta-situation-10-may-1942/",
+      "class": "Wartime memorandum in RAF translation"
+    },
+    "maltaShipDiary": {
+      "title": "Malta Command · Admiralty war diary, August–December 1942",
+      "url": "https://www.naval-history.net/xDKWD-Malta1942a.htm",
+      "class": "Wartime naval diary transcription"
+    },
     "iwmMaltaSpotter": {
       "title": "Imperial War Museums image A 7840: HMS Eagle and Operation Spotter, 7 March 1942",
       "url": "https://www.iwmprints.org.uk/collections/armed-forces-weapons-ships/products/pod445981",
-      "class": "IWM-photographic-archive; caption gives 16 shipped, RAF Museum gives 15 arriving"
+      "class": "IWM photographic archive; caption gives 16 delivered"
     },
     "raf1941chron": {
       "title": "RAF Museum: British Military Aviation in 1941, air attacks on Malta",
@@ -1327,8 +1347,8 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "id": "malta",
       "name": "Siege and air battle of Malta",
       "theater": "med",
-      "start": "1941-01",
-      "end": "1942-10",
+      "start": "1940-06",
+      "end": "1942-11",
       "focus": {
         "lat": 35.93,
         "lng": 14.4,
@@ -1343,47 +1363,99 @@ window.GrandAirWarV77Campaigns=Object.freeze({
       "turningPoint": "In April 1942 German offensive intensity reached a peak, striking airfields as well as fighters in the air.",
       "consequence": "The defence held, making Malta a continuing threat to Axis supply lines; aircraft and pilot losses must retain cause and side.",
       "sources": [
-        "raf1941chron", "raf1942", "iwmMaltaSpotter"
+        "raf1941chron",
+        "raf1942",
+        "iwmMaltaSpotter",
+        "maltaAhb",
+        "maltaNavalSupply",
+        "maltaItalianStaff",
+        "maltaShipDiary"
       ],
       "chapters": [
         {
-          "id": "early-siege", "title": "The first German offensive and Malta's exposed airfields",
-          "start": "1941-01-16", "end": "1941-12-31", "location": "Luqa, Ta' Qali and the central Mediterranean",
-          "situation": "Malta was a British naval and air base astride Axis supply routes to North Africa. From January 1941 German bomber units intensified attacks on harbour installations and RAF aircraft; fighting fluctuated through the year.",
+          "id": "early-siege",
+          "title": "Early raids and Malta’s exposed airfields",
+          "start": "1940-06-11",
+          "end": "1941-12-31",
+          "location": "Luqa, Ta' Qali and the central Mediterranean",
+          "situation": "Malta was a British naval and air base astride Axis supply routes to North Africa. Italian bombing began in June 1940. German bomber units intensified attacks on harbour installations and RAF aircraft from January 1941.",
           "airRole": "Luftwaffe bombers attacked HMS Illustrious and RAF fields; Malta-based reconnaissance and strike aircraft continued to threaten Axis shipping. Defensive Hurricanes had to protect a small number of vulnerable airfields.",
           "change": "Airfield survivability, fighters and convoy reinforcement became central to keeping Malta operational instead of simply possessing the island.",
           "limits": "This is a long analytical opening chapter, not a claim of uninterrupted German raid intensity or a complete loss sequence for 1941.",
-          "sourceIds": ["raf1941chron", "raf1942"]
+          "sourceIds": [
+            "raf1941chron",
+            "raf1942",
+            "maltaAhb"
+          ]
         },
         {
-          "id": "crisis", "title": "The 1942 air assault and fighter reinforcement crisis",
-          "start": "1942-01-01", "end": "1942-04-30", "location": "Malta's fighter bases and harbours",
+          "id": "crisis",
+          "title": "The 1942 air assault and fighter reinforcement crisis",
+          "start": "1942-01-01",
+          "end": "1942-04-30",
+          "location": "Malta's fighter bases and harbours",
           "situation": "Renewed Axis bombing subjected Malta's runway system, shipping and civilians to sustained pressure. Maintaining usable fighters and fuel mattered as much as replacing aircraft on paper.",
           "airRole": "Spitfire reinforcements first reached Malta on 7 March, but heavy raids continued, including attacks on Ta' Qali. The RAF Museum records a particularly intense April with distinct figures for German sorties and aircraft losses.",
           "change": "The RAF shifted toward Spitfires as the island struggled to keep aircraft dispersed, fueled and repairable under bombardment.",
-          "limits": "April's German sorties, German losses and RAF ground losses are differently defined observations. The RAF Museum names USS Wasp for 7 March; IWM's contemporary-image catalogue identifies HMS Eagle instead. The carrier identity is treated as disputed in that timeline entry.",
-          "sourceIds": ["raf1942", "iwmMaltaSpotter"]
+          "limits": "April sorties, German losses and RAF ground losses cover different measures. RAF campaign and naval histories support HMS Eagle and 15 Spitfire arrivals on 7 March. The IWM caption gives 16.",
+          "sourceIds": [
+            "maltaAhb",
+            "maltaNavalSupply",
+            "iwmMaltaSpotter",
+            "raf1942"
+          ]
         },
         {
-          "id": "reinforce", "title": "Further carrier deliveries and the August supply lifeline",
-          "start": "1942-05-01", "end": "1942-08-15", "location": "Malta and western Mediterranean convoy routes",
+          "id": "reinforce",
+          "title": "Further carrier deliveries and the August supply lifeline",
+          "start": "1942-05-01",
+          "end": "1942-08-15",
+          "location": "Malta and western Mediterranean convoy routes",
           "situation": "Fighter deliveries and convoy efforts kept the isolated base in the war. Supplies, especially fuel and ammunition, were essential for ongoing offensive and defensive flights.",
-          "airRole": "Aircraft were repeatedly flown off carriers to reinforce the fighter defence. The Pedestal convoy endured heavy Axis air and sea attack before vital shipping reached Malta in mid-August.",
+          "airRole": "Calendar and Bowery delivered Spitfires from American and British carriers. The June convoy attempts met air and naval opposition. Pedestal brought vital cargo into Malta in mid-August.",
           "change": "An airfield with aircraft but without fuel and supplies could not sustain sortie generation. The August deliveries helped preserve Malta's operational role.",
           "limits": "Carrier-delivered aircraft and convoy ships are different units; this phase does not convert supply deliveries into a specific count of combat sorties or Axis losses.",
-          "sourceIds": ["raf1942"]
+          "sourceIds": [
+            "raf1942",
+            "maltaAhb",
+            "maltaShipDiary"
+          ]
         },
         {
-          "id": "october", "title": "Renewed October assault and a defence that remains operational",
-          "start": "1942-08-16", "end": "1942-10-31", "location": "Malta's airfields and the central Mediterranean",
+          "id": "october",
+          "title": "October air offensive and the eastern supply route",
+          "start": "1942-08-16",
+          "end": "1942-11-26",
+          "location": "Malta's airfields and the central Mediterranean",
           "situation": "Malta continued to threaten Axis routes while both sides fought for control of Mediterranean air and sea movement. Heavy Axis attacks returned in October.",
-          "airRole": "During 11–19 October Axis forces flew an estimated 2,400 sorties against Malta, yet the RAF Museum says no airfield was inoperative for more than 30 minutes in that period.",
-          "change": "The October attacks failed to suppress Malta's airfields for long, unlike the island's precarious condition in spring.",
-          "limits": "The 2,400 October figure covers Axis forces in nine days; April's 9,599 covers Luftwaffe sorties in a full month. Never sum or directly compare as like-for-like rates.",
-          "sourceIds": ["raf1942"]
+          "airRole": "The RAF Air Historical Branch credits the Luftwaffe with about 2,400 sorties during 11–19 October. It records airfield closures of half an hour or less.",
+          "change": "The airfields continued to operate. In November all four Stoneage merchant ships reached Malta and the eastern convoy route reopened.",
+          "limits": "The RAF Museum describes the October figure as combined Axis activity. The AHB chronology assigns it to the Luftwaffe. The exact October population remains unresolved.",
+          "sourceIds": [
+            "maltaAhb",
+            "raf1942",
+            "maltaShipDiary"
+          ]
         }
       ],
-      "comparisons": [{"title":"April 1942: opposing aircraft lost under different cause definitions","measure":"monthly losses with different aircraft/cause populations","quality":"not-directly-comparable","rows":[{"side":"RAF aircraft destroyed on airfields","factLabel":"RAF aircraft destroyed on ground · April"},{"side":"Luftwaffe aircraft lost, all reported causes","factLabel":"Luftwaffe aircraft lost · April 1942"}],"caution":"Both 44 RAF aircraft destroyed on the ground and 45 Luftwaffe aircraft lost refer to April 1942, but the British figure is only a ground-loss category while the German figure is broader. These cannot be treated as complete reciprocal losses or a 44:45 exchange ratio; Regia Aeronautica losses are not included."}],
+      "comparisons": [
+        {
+          "title": "April 1942: opposing aircraft lost under different cause definitions",
+          "measure": "monthly losses with different aircraft/cause populations",
+          "quality": "not-directly-comparable",
+          "rows": [
+            {
+              "side": "RAF aircraft destroyed on airfields",
+              "factLabel": "RAF aircraft destroyed on ground · April"
+            },
+            {
+              "side": "Luftwaffe aircraft lost, all reported causes",
+              "factLabel": "Luftwaffe aircraft lost · April 1942, RAF Museum tally"
+            }
+          ],
+          "caution": "Both 44 RAF aircraft destroyed on the ground and 45 Luftwaffe aircraft lost refer to April 1942, but the British figure is only a ground-loss category while the German figure is broader. These cannot be treated as complete reciprocal losses or a 44:45 exchange ratio; Regia Aeronautica losses are not included."
+        }
+      ],
       "facts": [
         {
           "label": "Luftwaffe sorties against Malta · April 1942",
@@ -1395,14 +1467,14 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "type": "recorded"
         },
         {
-          "label": "Luftwaffe aircraft lost · April 1942",
+          "label": "Luftwaffe aircraft lost · April 1942, RAF Museum tally",
           "measure": "losses",
           "value": 45,
           "unit": "aircraft",
-          "scope": "RAF Museum account of same April Malta operations",
+          "scope": "RAF Museum summary reports 45 lost. The RAF AHB chronology reports 43 lost in action. Exact crosswalk unavailable.",
           "sourceId": "raf1942",
           "date": "1942-04",
-          "type": "recorded"
+          "type": "source-contested"
         },
         {
           "label": "RAF aircraft destroyed on ground · April",
@@ -1418,39 +1490,65 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "label": "First Spitfires flown to Malta, 7 March 1942",
           "value": 15,
           "unit": "Spitfire fighters",
-          "scope": "RAF Museum March 7 chronology says 15 arrived. Its USS Wasp carrier identification conflicts with Imperial War Museums' HMS Eagle photographic caption, which cites 16 delivered; not an airfield serviceability report",
-          "sourceId": "raf1942",
+          "scope": "RAF Air Historical Branch counts 15 arriving Spitfires. The naval chronology names HMS Eagle and also counts 15. The IWM caption reports 16 delivered.",
+          "sourceId": "maltaAhb",
           "date": "1942-03-07",
           "type": "source-contested"
         },
         {
-          "label": "Axis sorties during renewed Malta assault, 11–19 October",
+          "label": "RAF campaign history: German sorties, 11–19 October",
           "value": 2400,
           "unit": "sorties",
-          "scope": "RAF Museum, both Axis air forces during 11–19 October 1942; separate population and shorter period than April's German-only sorties",
-          "sourceId": "raf1942",
+          "scope": "RAF AHB assigns the approximate count to the Luftwaffe. The RAF Museum uses a combined Axis description. This nine-day figure is a separate population from April.",
+          "sourceId": "maltaAhb",
           "date": "1942-10-11 to 1942-10-19",
-          "type": "recorded"
+          "type": "source-contested"
         }
       ],
       "moments": [
         {
-          "date": "1941-01-16", "title": "Luftwaffe attacks the carrier Illustrious in Grand Harbour",
-          "place": "Grand Harbour, Malta", "lat": 35.9, "lng": 14.52,
+          "date": "1940-06-11",
+          "title": "First Italian raid on Malta",
+          "place": "Malta",
+          "lat": 35.817,
+          "lng": 14.513,
+          "summary": "Italian aircraft began bombing Malta one day after Italy entered the war. The AHB chronology records ten bombers in the first raid.",
+          "units": "Regia Aeronautica and the Malta island defence.",
+          "outcome": "First recorded raid in a campaign to suppress the island’s air and naval facilities.",
+          "sourceIds": [
+            "maltaAhb"
+          ],
+          "confidence": "RAF AHB chronological summary"
+        },
+        {
+          "date": "1941-01-16",
+          "title": "Luftwaffe attacks the carrier Illustrious in Grand Harbour",
+          "place": "Grand Harbour, Malta",
+          "lat": 35.9,
+          "lng": 14.52,
           "summary": "German aircraft mounted an intensive attack on the damaged aircraft carrier HMS Illustrious while it was at Malta. Despite sustained air attack, the carrier later escaped for Alexandria.",
           "units": "Luftwaffe bombers and Royal Navy HMS Illustrious; no complete fighter or airfield-loss count derived from this ship attack.",
           "outcome": "The attacks demonstrated Malta's exposed harbour and the importance of anti-aircraft defence without eliminating the island as a base.",
-          "sourceIds": ["raf1941chron"],
+          "sourceIds": [
+            "raf1941chron"
+          ],
           "confidence": "RAF Museum dated 1941 chronology"
         },
         {
-          "date": "1942-03-07", "title": "First Spitfires reinforce Malta; source disagreement over carrier",
-          "place": "Malta's airfields (regional)", "lat": 35.87, "lng": 14.43,
-          "summary": "The RAF Museum chronology reports fifteen Spitfires reached Malta on 7 March; IWM's Operation Spotter photo identifies HMS Eagle as the carrier, whereas the RAF Museum text names USS Wasp, which was involved in later May reinforcement. Both original linked descriptions are exposed instead of silently choosing one.",
-          "units": "RAF No. 249 Squadron and transferred Spitfires; 15 is the RAF Museum's arriving-aircraft figure, not fighters serviceable during later raids.",
+          "date": "1942-03-07",
+          "title": "HMS Eagle launches Malta’s first Spitfires in Operation Spotter",
+          "place": "Malta's airfields (regional)",
+          "lat": 35.87,
+          "lng": 14.43,
+          "summary": "RAF campaign history and naval records support 15 arrivals following launch from HMS Eagle. The IWM caption also identifies Eagle and gives 16 delivered. USS Wasp’s first delivery was Calendar on 20 April.",
+          "units": "RAF No. 249 Squadron operated the first Spitfire reinforcements.",
           "outcome": "Malta received its first Spitfire fighters, while continuing to depend on further carrier reinforcement to resist the offensive.",
-          "sourceIds": ["raf1942", "iwmMaltaSpotter"],
-          "confidence": "Day confirmed in museum histories; carrier attribution and 15-versus-16 count require original ship and squadron records"
+          "sourceIds": [
+            "maltaAhb",
+            "maltaNavalSupply",
+            "iwmMaltaSpotter"
+          ],
+          "confidence": "Carrier supported by photographic and naval evidence. The IWM count of 16 remains a source discrepancy."
         },
         {
           "date": "1942-04-01",
@@ -1461,26 +1559,54 @@ window.GrandAirWarV77Campaigns=Object.freeze({
           "summary": "The RAF Museum's April summary describes thousands of German sorties and extensive attack on Malta's fighter bases. The 1 April pin represents the full April reporting month, not one day's 9,599 sorties.",
           "units": "Luftwaffe attacking the island and RAF defending it; all April observations retain their separate source definitions.",
           "outcome": "RAF aircraft and facilities suffered severely, but the island's defence continued. German sortie counts must not be read as individual aircraft numbers.",
-          "sourceIds": ["raf1942"],
+          "sourceIds": [
+            "raf1942"
+          ],
           "confidence": "RAF Museum monthly chronology placed at 1 April solely as a period marker"
         },
         {
-          "date": "1942-08-15", "title": "Surviving Pedestal merchant ships reach Malta",
-          "place": "Grand Harbour and approaches", "lat": 35.9, "lng": 14.5,
+          "date": "1942-08-15",
+          "title": "Surviving Pedestal merchant ships reach Malta",
+          "place": "Grand Harbour and approaches",
+          "lat": 35.9,
+          "lng": 14.5,
           "summary": "After sustained German and Italian air and naval attacks on Convoy Pedestal, essential supplies reached Malta. The convoy's survival mattered to the air campaign because fighters required fuel, ammunition and functioning airfields.",
           "units": "Royal Navy and merchant shipping, RAF fighters, German and Italian attacking units; this is a supply event rather than an aircraft loss observation.",
           "outcome": "The arrival preserved Malta's ability to continue air operations despite the blockade and attacks.",
-          "sourceIds": ["raf1942"],
+          "sourceIds": [
+            "raf1942"
+          ],
           "confidence": "RAF Museum chronology, event place approximate"
         },
         {
-          "date": "1942-10-11", "title": "Renewed Axis attacks begin; airfields stay usable",
-          "place": "Malta island airfield system", "lat": 35.93, "lng": 14.4,
-          "summary": "RAF Museum summarizes the 11–19 October assault as approximately 2,400 Axis sorties with no Malta airfield closed for longer than thirty minutes; the marker opens a nine-day reporting window, not a daily count.",
-          "units": "Combined Axis air forces versus Malta-based RAF defences; not German-only April loss accounting.",
+          "date": "1942-10-11",
+          "title": "Renewed Axis attacks begin; airfields stay usable",
+          "place": "Malta island airfield system",
+          "lat": 35.93,
+          "lng": 14.4,
+          "summary": "The RAF Air Historical Branch gives approximately 2,400 Luftwaffe sorties across 11–19 October and no individual airfield closed for longer than thirty minutes. The RAF Museum assigns the tally to the combined Axis air forces.",
+          "units": "Luftwaffe and Regia Aeronautica versus Malta-based RAF defences. The RAF sources assign different populations to the sortie total.",
           "outcome": "Intense attacks inflicted losses but failed to stop Malta's airfields from operating for sustained periods.",
-          "sourceIds": ["raf1942"],
-          "confidence": "RAF Museum period account, mapped to opening date to make its range explicit"
+          "sourceIds": [
+            "maltaAhb",
+            "raf1942"
+          ],
+          "confidence": "RAF Air Historical Branch and RAF Museum period accounts"
+        },
+        {
+          "date": "1942-11-20",
+          "title": "Stoneage restores the eastern convoy route",
+          "place": "Grand Harbour, Malta",
+          "lat": 35.89,
+          "lng": 14.52,
+          "summary": "All four merchant ships in Stoneage reached Malta from the east. Allied air cover could now extend farther along the route.",
+          "units": "Convoy MW 13 and its naval and air escorts.",
+          "outcome": "The Malta Command war diary records that unloading eased the siege by 26 November.",
+          "sourceIds": [
+            "maltaAhb",
+            "maltaShipDiary"
+          ],
+          "confidence": "RAF AHB campaign history and naval command diary"
         }
       ]
     },

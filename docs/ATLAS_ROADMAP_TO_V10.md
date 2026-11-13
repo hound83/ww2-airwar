@@ -1,6 +1,6 @@
 # European Air War Atlas roadmap through v10
 
-Updated 13 November 2026 for Atlas v9.7. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
+Updated 13 November 2026 for Atlas v9.8. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
 
 ## What has shipped
 
@@ -12,12 +12,13 @@ Updated 13 November 2026 for Atlas v9.7. This revises the 11 November [six-relea
 | Bodenplatte, v9.4–v9.5 | The original five accounts now sit within a 20-location map and a 16-entry chronology. Unit, airframe, ground-defence and order-of-battle details link to sources and filtered exports. | Reconcile the Sint-Truiden and Melsbroek reports when original returns become accessible. [Explorer](https://hound83.github.io/ww2-airwar/bodenplatte.html) · [Operation audit](../research/sources/atlas-bodenplatte-operation-scope-2026-11-13.md) |
 | Bagration, v9.6 | Fifteen dated cases connect campaign geography, opposing air records, station changes, source links and filtered export. | Resolve the 1st Air Army’s loss discrepancy and retrieve matched German daily losses and the 4th Air Army’s assessment. [Explorer](https://hound83.github.io/ww2-airwar/bagration.html) · [Audit](../research/sources/atlas-bagration-air-campaign-2026-11-13.md) |
 | Defence of the Reich, v9.7 | Thirteen map-linked day and night cases show Allied missions and escorts, German interceptions and original command returns. Two additional German daily command rows and an aircrew report extend the evidence. | Resolve selected formation-level matches and missing archival ledgers. [Explorer](https://hound83.github.io/ww2-airwar/reich-defence.html) · [Audit](../research/sources/atlas-reich-defence-2026-11-13.md) |
+| Malta, v9.8 | Sixteen mapped cases link Spitfire deliveries, airfield defence and convoy outcomes. The Atlas resolves the Spotter carrier and records the remaining delivery, loss and sortie-count discrepancies. | Extend squadron and Axis unit daily records and reconcile the Bellows count. [Explorer](https://hound83.github.io/ww2-airwar/malta.html) · [Audit](../research/sources/atlas-malta-air-campaign-2026-11-13.md) |
 
 Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. The six flagship depth targets, reusable formation histories, operational balance studies and connected European history remain ahead.
 
 ## Recommended next milestone
 
-**Malta flagship.** Connect carrier reinforcement and airfield defence to dated siege outcomes and convoy operations. Sicily follows within the remaining flagship work.
+**Sicily flagship.** Connect the air forces, pre-invasion strikes, airfield seizures and airborne operations of the Sicily campaign to dated source records.
 
 ## Following milestones
 

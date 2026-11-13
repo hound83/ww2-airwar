@@ -23,6 +23,7 @@ const check=async()=>{
   await require("./bodenplatte-browser.cjs")(browser,base,root);
   await require("./bagration-browser.cjs")(browser,base,root);
   await require("./reich-defence-browser.cjs")(browser,base,root);
+  await require("./malta-browser.cjs")(browser,base,root);
   await require("./operations-1944-browser.cjs")(browser,base,root);
   await require("./grand-air-war-v80-layout-browser.cjs")(browser,base,root);
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
@@ -166,7 +167,7 @@ const check=async()=>{
    assert.equal(await page.locator('#campaign-list [data-campaign="barbarossa"]').count(),0,"RAF search matches incidental 'aircraft' substring");
    await page.locator("#campaign-search").fill("");
    // Test new research chapters as a visitor, including the documented Malta
-   // disagreement and Market Garden's failed-at-destination supply drops.
+   // carrier correction and Market Garden's failed-at-destination supply drops.
    for(const [id,count,phase,eventDate,expected] of [
     ["norway",3,"withdrawal","1940-06-08","Glorious"],
     ["malta",4,"crisis","1942-03-07","HMS Eagle"],
@@ -301,7 +302,7 @@ const check=async()=>{
    await page.locator("#loss-outcome").selectOption("damaged");
    assert.match(await page.locator("#loss-detail").innerText(),/damaged/);
 
-   // Audited comparisons must actually render for all 20 campaigns and 119 dated episodes.
+   // Audited comparisons must actually render for all 20 campaigns and 121 dated episodes.
    const allCoverage=await page.evaluate(()=>{
     const app=window.GrandAirWarV77, errors=[],states={};let count=0;
     for(const campaign of app.campaigns){
@@ -318,7 +319,7 @@ const check=async()=>{
     return {campaigns:app.campaigns.length,events:count,errors,states};
    });
    assert.equal(allCoverage.campaigns,20);
-   assert.equal(allCoverage.events,119);
+   assert.equal(allCoverage.events,121);
    assert.deepEqual(allCoverage.errors,[],"campaign/event bilateral audit coverage incomplete");
    assert.ok(allCoverage.states["no-matched-data"]>0,"the Atlas must label unsourced dates transparently");
    for(const [id,expected] of [["britain-hardest","paired-own-losses"],["dieppe","paired-own-losses"],["schweinfurt","paired-own-losses"],["bodenplatte","paired-own-losses"],["britain","claim-versus-record"]]){
