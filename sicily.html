@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Follow the air campaign for Sicily from offshore fighter bases to the Messina crossings, with a dated map and sourced records.">
+<title>From Malta to Messina · European Air War Atlas</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="./dist/operations-1944.css">
+<link rel="stylesheet" href="./dist/sicily.css?v=9.9">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script defer src="./dist/sicily.js?v=9.9"></script>
+</head>
+<body>
+<a class="skip" href="#campaign">Skip to the campaign</a>
+<header class="mast">
+  <nav class="wrap" aria-label="Atlas navigation">
+    <a class="brand" href="./grand-air-war-v80.html">European Air War Atlas</a>
+    <a href="./grand-air-war-v80.html?campaign=sicily#campaign-dossier">Sicily campaign dossier</a>
+  </nav>
+</header>
+<main class="wrap">
+  <header class="intro">
+    <p class="campaign-date">Operation Husky · 1943</p>
+    <h1>From Malta to <em>Messina</em></h1>
+    <p>Follow Allied fighter cover from offshore bases to captured Sicilian airfields. See where Axis attacks still broke through, and how the retreat continued across the Strait of Messina.</p>
+    <nav class="intro-links" aria-label="Sicily navigation">
+      <a href="#campaign">Map and chronology</a>
+      <a href="#formations">Formations</a>
+      <a href="#sources">Sources and download</a>
+    </nav>
+  </header>
+
+  <section id="campaign" aria-labelledby="campaign-heading">
+    <h2 id="campaign-heading">The air campaign</h2>
+    <div class="campaign-controls" hidden>
+      <label for="chapter">Chapter<select id="chapter" aria-label="Chapter"></select></label>
+      <label for="formation">Formation<select id="formation" aria-label="Formation"></select></label>
+    </div>
+    <p id="chapter-summary"></p>
+    <p id="load-status" role="status">Loading campaign records.</p>
+    <div class="campaign-layout">
+      <div class="map-panel" id="map-panel" hidden>
+        <div id="campaign-map" role="region" aria-label="Sicily campaign map"></div>
+        <p id="map-note" class="muted"></p>
+      </div>
+      <nav id="case-list" aria-label="Dated cases"></nav>
+    </div>
+    <p id="case-count" class="muted" role="status"></p>
+    <article id="case-detail" class="panel" aria-labelledby="case-title" hidden>
+      <p id="case-context" class="muted"></p>
+      <h3 id="case-title" tabindex="-1"></h3>
+      <p id="case-summary"></p>
+      <div id="case-formations" class="intro-links"></div>
+      <div id="station-history"></div>
+      <div id="case-evidence"></div>
+    </article>
+  </section>
+  <section id="formations" aria-labelledby="formation-heading" hidden>
+    <h2 id="formation-heading">Formations and dated operations</h2>
+    <div id="formation-list"></div>
+  </section>
+  <section id="sources" aria-labelledby="sources-heading">
+    <h2 id="sources-heading">Sources and download</h2>
+    <div class="intro-links">
+      <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-sicily-air-campaign-2026-11-14.md">Research audit</a>
+      <a href="./research/transcriptions/sicily-air-campaign-1943.json" download>Campaign records (JSON)</a>
+      <a href="./malta.html">Explore the siege and air battle of Malta</a>
+    </div>
+    <div id="source-register"></div>
+  </section>
+  <noscript><p>JavaScript enables the explorer. The complete evidence is available in the campaign records above.</p></noscript>
+</main>
+</body>
+</html>

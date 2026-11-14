@@ -24,6 +24,7 @@ const check=async()=>{
   await require("./bagration-browser.cjs")(browser,base,root);
   await require("./reich-defence-browser.cjs")(browser,base,root);
   await require("./malta-browser.cjs")(browser,base,root);
+  await require("./sicily-browser.cjs")(browser,base,root);
   await require("./operations-1944-browser.cjs")(browser,base,root);
   await require("./grand-air-war-v80-layout-browser.cjs")(browser,base,root);
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){

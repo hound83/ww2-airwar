@@ -1,0 +1,46 @@
+:root {
+  --paper: #f5efdf;
+  --panel: #fdf9ef;
+  --deep: #233e42;
+  --accent: #276061;
+  --line: #c6bda6;
+}
+.campaign-date { margin: 0 0 .55rem; color: var(--muted); font-weight: 650; }
+.intro h1 { max-width: 17ch; }
+.campaign-controls:not([hidden]) { display: flex; flex-wrap: wrap; gap: .65rem 1.15rem; }
+.campaign-controls label { min-width: min(100%, 15rem); }
+.campaign-controls select { max-width: calc(100vw - 2rem); }
+#chapter-summary { max-width: 65ch; }
+.campaign-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(13rem, 1fr); gap: 1rem; }
+.map-panel { min-width: 0; }
+#campaign-map { height: clamp(18rem, 36vw, 28rem); border: 1px solid var(--line); border-radius: .45rem; background: #d8e7e4; }
+#map-note { font-size: .88rem; margin: .4rem 0 0; }
+#case-list { display: grid; align-content: start; gap: .4rem; max-height: 28rem; overflow: auto; padding: .2rem; }
+.case-link { display: grid; gap: .15rem; padding: .55rem .7rem; border: 1px solid var(--line); border-radius: .35rem; background: var(--panel); text-decoration: none; }
+.case-link:hover { text-decoration: underline; }
+.case-link[aria-current="true"] { background: var(--deep); border-color: var(--deep); color: #fff9eb; }
+.case-link time { font-size: .85rem; }
+#case-detail { scroll-margin-top: 1rem; }
+#case-context { margin-top: 0; }
+#case-title { font-size: clamp(1.55rem, 3vw, 2.55rem); }
+#case-formations { margin-bottom: .8rem; }
+#station-history:not(:empty) { border-inline-start: 3px solid #916f3c; padding-inline-start: .8rem; margin: 1rem 0; }
+#station-history h4 { margin: 0 0 .35rem; }
+#station-history ol { padding-inline-start: 1.15rem; margin-block: .4rem; }
+#station-history li { margin-block: .25rem; }
+#case-evidence { margin-top: 1rem; }
+.source-record { border-top: 1px solid var(--line); padding-block: .75rem; overflow-wrap: anywhere; }
+.source-record h4, .source-record p { margin: 0 0 .4rem; }
+.source-record dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: .4rem; }
+.source-record .metrics div { background: #e6ece3; padding: .42rem .55rem; }
+.source-record .metrics dd { color: var(--deep); }
+#formation-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; }
+#source-register { margin-block: 1rem 2rem; }
+.sicily-pin { display: grid; place-items: center; border: 2px solid #fffdf4; border-radius: 50%; background: #276061; color: white; font-weight: 750; box-shadow: 0 1px 4px #0006; }
+.sicily-pin.active { background: #903e20; }
+.sicily-pin.reference { background: #415166; }
+#campaign-map .leaflet-popup-content a { display: block; margin-block: .4rem; }
+@media (max-width: 46rem) {
+  .campaign-layout, #formation-list { grid-template-columns: minmax(0, 1fr); }
+  #case-list { max-height: 15rem; }
+}

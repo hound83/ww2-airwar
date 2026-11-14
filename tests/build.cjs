@@ -51,3 +51,6 @@ require('./reich-defence.cjs');
 
 // Malta campaign chronology, provenance and populations.
 require('./malta.cjs');
+
+// Sicily campaign chronology, capture dates, readiness and source scope.
+require('./sicily.cjs');

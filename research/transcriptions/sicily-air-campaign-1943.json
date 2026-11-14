@@ -1,0 +1,841 @@
+{
+  "phases": [
+    {
+      "id": "prepare",
+      "title": "Prepare the invasion",
+      "summary": "Offshore bases put more fighters within reach of Sicily. Allied bombers attacked the fields the Axis needed to defend the island."
+    },
+    {
+      "id": "land",
+      "title": "Cover the landings",
+      "summary": "Fighters flew from offshore bases. Axis raids still reached the assault area, and Allied fire scattered a follow-up troop lift."
+    },
+    {
+      "id": "advance",
+      "title": "Move the fighters forward",
+      "summary": "Securing a landing ground was only the first step. Engineers, supplies and ground crews made it possible to fly from the island."
+    },
+    {
+      "id": "strait",
+      "title": "Try to close the strait",
+      "summary": "Allied aircraft attacked the approaches and crossing points. The Axis kept enough of the ferry system working to evacuate much of its force."
+    }
+  ],
+  "sites": [
+    {
+      "id": "pantelleria",
+      "name": "Pantelleria airfield",
+      "lat": 36.816,
+      "lng": 11.968,
+      "precision": "Airfield"
+    },
+    {
+      "id": "gozo",
+      "name": "Gozo landing ground",
+      "lat": 36.035,
+      "lng": 14.292,
+      "precision": "Airfield area"
+    },
+    {
+      "id": "gerbini",
+      "name": "Gerbini complex",
+      "lat": 37.468,
+      "lng": 14.864,
+      "precision": "Main field represents the complex"
+    },
+    {
+      "id": "pontegrande",
+      "name": "Ponte Grande",
+      "lat": 37.048,
+      "lng": 15.259,
+      "precision": "Bridge objective"
+    },
+    {
+      "id": "beaches",
+      "name": "Gela assault sector",
+      "lat": 37.054,
+      "lng": 14.245,
+      "precision": "Representative point for western landing cover"
+    },
+    {
+      "id": "gela",
+      "name": "Gela–Farello",
+      "lat": 37.069,
+      "lng": 14.288,
+      "precision": "Intended drop area"
+    },
+    {
+      "id": "pachino",
+      "name": "Pachino landing ground",
+      "lat": 36.711,
+      "lng": 15.075,
+      "precision": "Airfield"
+    },
+    {
+      "id": "comiso",
+      "name": "Comiso airfield",
+      "lat": 36.992,
+      "lng": 14.608,
+      "precision": "Airfield"
+    },
+    {
+      "id": "ponteolivo",
+      "name": "Ponte Olivo airfield",
+      "lat": 37.128,
+      "lng": 14.317,
+      "precision": "Airfield"
+    },
+    {
+      "id": "biscari",
+      "name": "Biscari / San Pietro",
+      "lat": 37.135,
+      "lng": 14.507,
+      "precision": "Approximate airfield area"
+    },
+    {
+      "id": "primosole",
+      "name": "Primosole Bridge",
+      "lat": 37.397,
+      "lng": 15.075,
+      "precision": "Bridge objective"
+    },
+    {
+      "id": "licata",
+      "name": "Licata airfield",
+      "lat": 37.131,
+      "lng": 13.908,
+      "precision": "Airfield"
+    },
+    {
+      "id": "palermo",
+      "name": "Palermo",
+      "lat": 38.116,
+      "lng": 13.361,
+      "precision": "City and port"
+    },
+    {
+      "id": "termini",
+      "name": "Termini Imerese",
+      "lat": 37.99,
+      "lng": 13.699,
+      "precision": "Station area"
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "lat": 37.505,
+      "lng": 15.085,
+      "precision": "City represents the sector"
+    },
+    {
+      "id": "messina",
+      "name": "Strait of Messina",
+      "lat": 38.232,
+      "lng": 15.609,
+      "precision": "Representative crossing area"
+    },
+    {
+      "id": "malta",
+      "name": "Malta fighter bases",
+      "lat": 35.882,
+      "lng": 14.45,
+      "precision": "Island-wide reference point"
+    },
+    {
+      "id": "licata-beach",
+      "name": "Licata / JOSS sector",
+      "lat": 37.094,
+      "lng": 13.96,
+      "precision": "Representative beach sector"
+    },
+    {
+      "id": "scoglitti",
+      "name": "Scoglitti / CENT sector",
+      "lat": 36.895,
+      "lng": 14.428,
+      "precision": "Representative beach sector"
+    }
+  ],
+  "formations": [
+    {
+      "id": "fg33",
+      "name": "33rd Fighter Group",
+      "role": "USAAF · P-40 Warhawk",
+      "summary": "Flew landing cover from Pantelleria and moved to Licata on 16 July."
+    },
+    {
+      "id": "fg31",
+      "name": "31st Fighter Group",
+      "role": "USAAF · Spitfire",
+      "summary": "Flew landing cover from Gozo and moved to Ponte Olivo and then Termini."
+    },
+    {
+      "id": "wing244",
+      "name": "No. 244 Wing",
+      "role": "RAF / Desert Air Force · Spitfire",
+      "summary": "Flying units and ground parties reached Pachino in stages. The aircraft arrived on 13 July."
+    },
+    {
+      "id": "skg10",
+      "name": "Schnellkampfgeschwader 10",
+      "role": "Luftwaffe · ground attack",
+      "summary": "The RAF’s invasion-day intelligence snapshot follows components at Gerbini, San Pietro and Montecorvino."
+    },
+    {
+      "id": "tc52",
+      "name": "52nd Troop Carrier Wing",
+      "role": "USAAF · troop carriers",
+      "summary": "Aircraft carried the follow-up lift for the 504th Combat Team."
+    },
+    {
+      "id": "para1",
+      "name": "1st Parachute Brigade",
+      "role": "British Army · airborne",
+      "summary": "Its objective was to seize Primosole Bridge and open a route towards Catania."
+    },
+    {
+      "id": "airland1",
+      "name": "1st Airlanding Brigade",
+      "role": "British Army · glider infantry",
+      "summary": "Its objective was to secure Ponte Grande on the approach to Syracuse."
+    }
+  ],
+  "cases": [
+    {
+      "id": "corkscrew",
+      "date": "1943-06-11",
+      "phase": "prepare",
+      "site": "pantelleria",
+      "title": "Pantelleria becomes a forward base",
+      "summary": "After air and naval bombardment, Pantelleria surrendered on 11 June. Its airfield later supported fighters for the western landings.",
+      "formations": [
+        "fg33"
+      ],
+      "evidence": [
+        {
+          "source": "prep",
+          "locator": "Chapter 13, Pantelleria",
+          "title": "Operation Corkscrew",
+          "note": "The date refers to surrender. The RAF narrative places the 33rd Fighter Group on Pantelleria by early July.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "gozo",
+      "date": "1943-07-03",
+      "phase": "prepare",
+      "site": "gozo",
+      "title": "Spitfires stage through Gozo",
+      "summary": "A temporary airfield on Gozo added capacity for short-range fighters. The 31st Fighter Group flew Spitfires from there during the invasion.",
+      "formations": [
+        "fg31"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "Preparation of Tactical Bases and D-Day fighter plan",
+          "title": "Offshore basing",
+          "note": "The date is the early-July checkpoint for Malta’s operational control of Spitfire units. The narrative places the group at Gozo by early July.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "gerbini",
+      "date": "1943-07-03",
+      "end": "1943-07-09",
+      "phase": "prepare",
+      "site": "gerbini",
+      "title": "The Gerbini complex comes under sustained attack",
+      "summary": "Heavy bombers struck Gerbini and its satellite fields. Allied assessments describe widespread disruption before the landings, with some aircraft still serviceable in the complex.",
+      "formations": [
+        "skg10"
+      ],
+      "evidence": [
+        {
+          "source": "prep",
+          "locator": "Chapter 13, final pre-invasion air offensive",
+          "title": "Bomb loads and field condition",
+          "note": "The two bomb loads cover the same 3–9 July target complex under separate commands. Seven satellites and the main field were reported unserviceable around D-Day.",
+          "figures": {
+            "Northwest African Air Forces bomb load, tons": 1323,
+            "Ninth Air Force bomb load, tons": 197,
+            "Satellites reported unserviceable": 7
+          }
+        },
+        {
+          "source": "fields",
+          "locator": "Gerbini and satellite entries",
+          "title": "Location of the main field",
+          "note": "The map anchor is Gerbini-Main. The directory lists additional satellite strips with different historical coverage from the pre-invasion Allied report.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "ladbroke",
+      "date": "1943-07-09",
+      "end": "1943-07-10",
+      "phase": "land",
+      "site": "pontegrande",
+      "title": "Ladbroke · gliders on the approach to Syracuse",
+      "summary": "A glider assault sought to hold Ponte Grande. Wind, navigation difficulties and premature releases scattered the force and brought gliders down at sea.",
+      "formations": [
+        "airland1"
+      ],
+      "evidence": [
+        {
+          "source": "air",
+          "locator": "Chapter 14, opening airborne operations",
+          "title": "Ponte Grande objective",
+          "note": "The map marks the bridge objective. The gliders came down at scattered locations on land and at sea.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "landing-cover",
+      "date": "1943-07-10",
+      "end": "1943-07-12",
+      "phase": "land",
+      "site": "beaches",
+      "title": "D-Day · fighters over the beaches",
+      "summary": "Spitfires and Warhawks covered the landings from Malta, Gozo and Pantelleria. German and Italian aircraft still reached ships and troops around the western assault beaches.",
+      "formations": [
+        "fg31",
+        "fg33"
+      ],
+      "evidence": [
+        {
+          "source": "navy",
+          "locator": "Section XXXVI, Fighter Cover and Air Support",
+          "title": "Western Naval Task Force report",
+          "note": "Approximate cover rate across CENT, DIME and JOSS. Enemy tracks cover 02:45 on 10 July to 18:15 on 12 July and may include repeat flights.",
+          "figures": {
+            "Approximate fighter cover, sorties per day": 440,
+            "Approximate enemy flights plotted": 200
+          }
+        },
+        {
+          "source": "raf",
+          "locator": "The Western Task Force Landings",
+          "title": "Axis attacks reached the ships",
+          "note": "The RAF narrative records the loss of USS Maddox to bombing in the DIME sector on 10 July.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "pachino-capture",
+      "date": "1943-07-10",
+      "phase": "land",
+      "site": "pachino",
+      "title": "Pachino · captured on invasion day",
+      "summary": "British forces took the landing ground by noon. The field had been ploughed up. Engineers and servicing parties had work ahead before squadrons could use it.",
+      "formations": [
+        "wing244"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "The First Fighter Wing in Sicily and Comparison with the Air Plan",
+          "title": "Capture and engineering",
+          "note": "Advance officers inspected the field on D-Day. The air echelon arrived on 13 July.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "axis-readiness",
+      "date": "1943-07-10",
+      "phase": "land",
+      "site": "gerbini",
+      "title": "Axis aircraft on hand and ready to fly",
+      "summary": "The RAF intelligence appendix lists a split deployment. Elements of the same German formations were on Sicily and the Italian mainland.",
+      "formations": [
+        "skg10"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "Appendix 3, Ground Attack, 10 July",
+          "title": "II./SKG 10 · Gerbini and Montecorvino",
+          "note": "The zero for serviceable aircraft at Gerbini is explicit. The mainland detachment has a separate line in the same British intelligence snapshot.",
+          "figures": {
+            "Gerbini on hand": 8,
+            "Gerbini serviceable": 0,
+            "Montecorvino on hand": 12,
+            "Montecorvino serviceable": 12
+          }
+        },
+        {
+          "source": "raf",
+          "locator": "Appendix 3, Ground Attack, 10 July",
+          "title": "III./SKG 10 · San Pietro and Montecorvino",
+          "note": "San Pietro is the Biscari airfield. These are estimated aircraft inventories and readiness, with no aircraft-loss count.",
+          "figures": {
+            "San Pietro on hand": 7,
+            "San Pietro serviceable": 0,
+            "Montecorvino on hand": 18,
+            "Montecorvino serviceable": 18
+          }
+        },
+        {
+          "source": "raf",
+          "locator": "Appendix 3, Ground Attack, 10 July",
+          "title": "IV./SKG 10 · Gerbini",
+          "note": "Aircraft serviceability and runway condition are separate observations.",
+          "figures": {
+            "On hand": 25,
+            "Serviceable": 11
+          }
+        }
+      ]
+    },
+    {
+      "id": "gela-friendly-fire",
+      "date": "1943-07-11",
+      "end": "1943-07-12",
+      "phase": "land",
+      "site": "gela",
+      "title": "Gela · friendly fire on the follow-up lift",
+      "summary": "Transports carrying the 504th Combat Team approached after Axis attacks on the invasion fleet. Ship and shore batteries opened fire. The formations broke up and many drops missed the intended area.",
+      "formations": [
+        "tc52"
+      ],
+      "evidence": [
+        {
+          "source": "gela",
+          "locator": "Chapter IX, Husky No. 2",
+          "title": "Outcomes for the transports",
+          "note": "The denominator is aircraft departing Tunisia. The Army history reports aircraft that failed to return and badly damaged aircraft. The total does not assign each loss to a specific battery.",
+          "figures": {
+            "Departed Tunisia": 144,
+            "Failed to return": 23,
+            "Badly damaged": 37
+          }
+        }
+      ]
+    },
+    {
+      "id": "comiso",
+      "date": "1943-07-11",
+      "end": "1943-07-13",
+      "phase": "advance",
+      "site": "comiso",
+      "title": "Comiso · aircraft found on a captured field",
+      "summary": "The RAF narrative records occupation on the night of 11 July and lists the field as serviceable by 13 July. Inspections counted aircraft left at the field.",
+      "formations": [],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "Air offensive results table and Comparison with the Air Plan",
+          "title": "Post-capture inspection",
+          "note": "The inspection count does not establish when each aircraft was abandoned or damaged.",
+          "figures": {
+            "Aircraft found at Comiso": 108
+          }
+        }
+      ]
+    },
+    {
+      "id": "ponteolivo",
+      "date": "1943-07-12",
+      "end": "1943-07-13",
+      "phase": "advance",
+      "site": "ponteolivo",
+      "title": "Ponte Olivo · from capture to flight operations",
+      "summary": "The U.S. 1st Infantry Division took the field on 12 July. The 309th Squadron prepared the ground. The 31st Fighter Group and 111th Observation Squadron arrived on 13 July.",
+      "formations": [
+        "fg31"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "The Landing of XII Air Support Command",
+          "title": "Gozo to Ponte Olivo",
+          "note": "The group’s Spitfires had supplied landing cover from Gozo. Arrival and capture are separately dated.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "biscari",
+      "date": "1943-07-12",
+      "end": "1943-07-14",
+      "phase": "advance",
+      "site": "biscari",
+      "title": "Biscari · two accounts of the capture date",
+      "summary": "The RAF summary dates occupation to 12 July and excludes Biscari from fields serviceable by 13 July. The U.S. Military Academy study dates the 45th Division taking the airfield to 14 July.",
+      "formations": [
+        "skg10"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "Comparison with the Air Plan",
+          "title": "RAF account · 12 July",
+          "note": "The RAF account does not give a serviceable date for this airfield.",
+          "figures": {}
+        },
+        {
+          "source": "biscari",
+          "locator": "Seventh Army operations, 13–14 July",
+          "title": "U.S. account · 14 July",
+          "note": "The sources give different dates and do not establish if their thresholds for occupation match.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "pachino-operational",
+      "date": "1943-07-13",
+      "phase": "advance",
+      "site": "pachino",
+      "title": "Pachino · the first fighter wing arrives",
+      "summary": "No. 244 Wing’s fighters landed after their first patrols. Mobile plotting, signals, fuel and ammunition enabled operations. Squadron parties handled much of the Spitfire IX servicing.",
+      "formations": [
+        "wing244"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "The First Fighter Wing in Sicily, 13 July, citing the wing ORB",
+          "title": "Operational handover",
+          "note": "Ground personnel came in stages. The date marks the air echelon’s arrival and local readiness.",
+          "figures": {
+            "Aircraft held ready for local defence": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "fustian",
+      "date": "1943-07-13",
+      "end": "1943-07-14",
+      "phase": "advance",
+      "site": "primosole",
+      "title": "Fustian · under fire en route to Primosole",
+      "summary": "The British 1st Parachute Brigade went in to seize the bridge. Friendly anti-aircraft fire, scattering and German resistance complicated the assault. Ground forces later secured the crossing.",
+      "formations": [
+        "para1"
+      ],
+      "evidence": [
+        {
+          "source": "air",
+          "locator": "Chapter 14, Fustian",
+          "title": "Bridge objective and friendly fire",
+          "note": "The bridge anchor locates the objective. Fire and landings were spread across the approach and drop areas.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "licata",
+      "date": "1943-07-16",
+      "phase": "advance",
+      "site": "licata",
+      "title": "Licata · Warhawks come ashore",
+      "summary": "The 33rd Fighter Group moved from Pantelleria to Licata on 16 July. Axis aircraft attacked the field and Ponte Olivo that night and caused little reported damage.",
+      "formations": [
+        "fg33"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "The Landing of XII Air Support Command, 16 July",
+          "title": "Pantelleria to Licata",
+          "note": "The date records the group’s arrival. The port and beachhead had been taken on invasion day.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "axis-withdrawal",
+      "date": "1943-07-16",
+      "end": "1943-07-22",
+      "phase": "advance",
+      "site": "catania",
+      "title": "Axis air forces withdraw from Sicily",
+      "summary": "The RAF narrative reports a sharp reduction in aircraft remaining on the island as Axis units withdrew. Aircraft moved to another base, left behind and lost in combat had different outcomes.",
+      "formations": [],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "The Defeat of the Axis Air Forces",
+          "title": "German aircraft remaining on Sicily",
+          "note": "Separate island-wide inventories.",
+          "figures": {
+            "Aircraft on 16 July": 120,
+            "Aircraft on 18 July": 25
+          }
+        },
+        {
+          "source": "raf",
+          "locator": "The Defeat of the Axis Air Forces, Italian documents",
+          "title": "Italian fighters on Sicily, 22 July",
+          "note": "The four serviceable aircraft are included in the 28 on hand.",
+          "figures": {
+            "On hand": 28,
+            "Serviceable": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "palermo",
+      "date": "1943-07-22",
+      "phase": "advance",
+      "site": "palermo",
+      "title": "Palermo falls · the advance turns east",
+      "summary": "The Seventh Army took Palermo and turned east. During the western advance, aircraft struck communications and targets of opportunity.",
+      "formations": [],
+      "evidence": [
+        {
+          "source": "air",
+          "locator": "Chapter 14, The Capture of Palermo",
+          "title": "Western advance",
+          "note": "The pin locates the port. The described air activity covers the wider advance.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "termini",
+      "date": "1943-07-27",
+      "phase": "advance",
+      "site": "termini",
+      "title": "The 31st Fighter Group moves to Termini",
+      "summary": "The group shifted from Ponte Olivo to the north coast. XII Air Support Command retained operational control.",
+      "formations": [
+        "fg31"
+      ],
+      "evidence": [
+        {
+          "source": "raf",
+          "locator": "XII Air Support Command following 24 July",
+          "title": "Forward station on the north coast",
+          "note": "The group moved on 27 July. The advanced headquarters moved on 28 July.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "catania",
+      "date": "1943-08-05",
+      "phase": "strait",
+      "site": "catania",
+      "title": "Catania falls · the front moves north",
+      "summary": "British forces entered Catania after the German withdrawal. The air campaign had attacked Catania and the roads and rail links supporting the Axis around Etna.",
+      "formations": [],
+      "evidence": [
+        {
+          "source": "air",
+          "locator": "Chapter 14, Break-through at Mount Etna",
+          "title": "Isolation of the battlefield",
+          "note": "The date is for entry into the city. The July suppression of airfields around Catania and Gerbini is a separate event.",
+          "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "messina",
+      "date": "1943-08-11",
+      "end": "1943-08-17",
+      "phase": "strait",
+      "site": "messina",
+      "title": "Messina · the strait remains open",
+      "summary": "Bombing interrupted some crossings. The Axis used several routes, anti-aircraft protection and daylight runs to move personnel and equipment to Italy. Allied forces entered Messina by 17 August.",
+      "formations": [],
+      "evidence": [
+        {
+          "source": "air",
+          "locator": "Chapter 14, Across the Strait",
+          "title": "Allied attacks on the crossings",
+          "note": "The daylight figure covers 8–17 August and includes attacks along the mainland approaches. The Wellington average refers to the nights of 8/9 to 13/14 August against evacuation beaches.",
+          "figures": {
+            "Daylight medium and fighter-bomber sorties": 1170,
+            "Wellington sorties per night, about": 85
+          }
+        },
+        {
+          "source": "army",
+          "locator": "Chapter XXI, The End of the Campaign, note 9",
+          "title": "Allied claims and Axis craft records",
+          "note": "The Army history juxtaposes Allied air claims and the Axis craft register. The ship losses have different cause and reporting coverage. This is no basis for a matched success rate.",
+          "figures": {
+            "Allied claims of craft destroyed": 23,
+            "Italian craft recorded sunk": 8,
+            "German craft recorded sunk": 7
+          }
+        },
+        {
+          "source": "army",
+          "locator": "Chapter XXI, The End of the Campaign, note 21, German report of 17 August",
+          "title": "German evacuation return",
+          "note": "Wounded are included in the personnel total. The Italian evacuation falls outside these figures.",
+          "figures": {
+            "German personnel evacuated": 39569,
+            "Wounded included in that total": 4444,
+            "German vehicles evacuated": 9605
+          }
+        },
+        {
+          "source": "evac",
+          "locator": "Chapter XIX, The Evacuation Begins",
+          "title": "Ferry network and air defence",
+          "note": "The evacuation used separate crossing routes and concentrated anti-aircraft defences. The campaign range on the map starts with the German main evacuation, which was underway by 11 August.",
+          "figures": {}
+        }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "site": "pantelleria",
+      "date": "1943-06-11",
+      "status": "Captured",
+      "caseId": "corkscrew"
+    },
+    {
+      "site": "pantelleria",
+      "date": "1943-07-03",
+      "status": "Operational by early July",
+      "caseId": "corkscrew"
+    },
+    {
+      "site": "gozo",
+      "date": "1943-07-03",
+      "status": "Operational by early July",
+      "caseId": "gozo"
+    },
+    {
+      "site": "gerbini",
+      "date": "1943-07-09",
+      "status": "Main field and seven satellites reported unserviceable by D-Day",
+      "caseId": "gerbini"
+    },
+    {
+      "site": "pachino",
+      "date": "1943-07-10",
+      "status": "Captured",
+      "caseId": "pachino-capture"
+    },
+    {
+      "site": "pachino",
+      "date": "1943-07-13",
+      "status": "Operational · No. 244 Wing arrived",
+      "caseId": "pachino-operational"
+    },
+    {
+      "site": "comiso",
+      "date": "1943-07-11",
+      "status": "Occupied per RAF narrative",
+      "caseId": "comiso"
+    },
+    {
+      "site": "comiso",
+      "date": "1943-07-13",
+      "status": "Serviceable by this date",
+      "caseId": "comiso"
+    },
+    {
+      "site": "ponteolivo",
+      "date": "1943-07-12",
+      "status": "Captured",
+      "caseId": "ponteolivo"
+    },
+    {
+      "site": "ponteolivo",
+      "date": "1943-07-13",
+      "status": "Operational · 31st Fighter Group arrived",
+      "caseId": "ponteolivo"
+    },
+    {
+      "site": "biscari",
+      "date": "1943-07-12",
+      "status": "Occupation reported by RAF narrative",
+      "caseId": "biscari"
+    },
+    {
+      "site": "biscari",
+      "date": "1943-07-14",
+      "status": "Capture reported by U.S. Military Academy",
+      "caseId": "biscari"
+    },
+    {
+      "site": "licata",
+      "date": "1943-07-16",
+      "status": "33rd Fighter Group arrived",
+      "caseId": "licata"
+    }
+  ],
+  "sources": {
+    "raf": [
+      "RAF Air Historical Branch · Sicilian Campaign, June–August 1943",
+      "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/"
+    ],
+    "prep": [
+      "USAAF official history · The Approach to Sicily",
+      "https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-13.html"
+    ],
+    "air": [
+      "USAAF official history · The Sicilian Campaign",
+      "https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-14.html"
+    ],
+    "navy": [
+      "Western Naval Task Force · wartime action report",
+      "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/s/the-sicilian-campaign-operation-husky.html"
+    ],
+    "gela": [
+      "U.S. Army official history · Husky No. 2",
+      "https://ibiblio.org/hyperwar/USA/USA-MTO-Sicily/USA-MTO-Sicily-9.html"
+    ],
+    "biscari": [
+      "U.S. Military Academy · Operations in Sicily and Italy",
+      "https://www.ibiblio.org/hyperwar/NHC/NewPDFs/USArmy/United%20States%20Military%20Academy/USMA%2C%20Operations%20in%20Sicily%20and%20Italy%2C%201950.pdf"
+    ],
+    "army": [
+      "U.S. Army official history · The End of the Campaign",
+      "https://www.ibiblio.org/hyperwar/USA/USA-MTO-Sicily/USA-MTO-Sicily-21.html"
+    ],
+    "maaf": [
+      "HQ Mediterranean Allied Air Forces · wartime campaign summary",
+      "https://znaci.org/00002/315.pdf"
+    ],
+    "fields": [
+      "H. L. deZeng IV · Luftwaffe airfield directory",
+      "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf"
+    ],
+    "evac": [
+      "U.S. Army official history · Evacuation",
+      "https://www.ibiblio.org/hyperwar/USA/USA-MTO-Sicily/USA-MTO-Sicily-19.html"
+    ]
+  },
+  "initial": "landing-cover",
+  "totals": {
+    "source": "maaf",
+    "locator": "Printed p. 13, Major Campaigns, Sicily row",
+    "title": "Allied campaign totals · 10 July–17 August",
+    "note": "The headquarters compilation gives Allied sorties, bomb tonnage, reported claims and own aircraft losses for this campaign window.",
+    "figures": {
+      "Operational sorties": 25070,
+      "Bombs dropped, tons": 16243,
+      "Enemy aircraft claimed": 293,
+      "Allied aircraft lost": 177
+    }
+  },
+  "cover": [
+    [
+      "gozo",
+      "beaches",
+      "31st Fighter Group · DIME sector"
+    ],
+    [
+      "pantelleria",
+      "licata-beach",
+      "33rd Fighter Group · JOSS sector"
+    ]
+  ]
+}
