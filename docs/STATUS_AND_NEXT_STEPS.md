@@ -2,6 +2,10 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 14 November 2026 · From Malta to Messina v9.9
+
+The [Sicily explorer](https://hound83.github.io/ww2-airwar/sicily.html) connects offshore fighter cover, dated airfield capture and use, the Gela friendly-fire incident and the Messina evacuation across 19 cases. It retains both Biscari dates and separates Axis readiness, fighter effort, claims and reported losses. [Source audit](../research/sources/atlas-sicily-air-campaign-2026-11-14.md)
+
 ## 13 November 2026 · Malta v9.8
 
 The [Malta explorer](https://hound83.github.io/ww2-airwar/malta.html) follows 16 dated cases across the fighter deliveries, airfield defence and convoys. Spotter now identifies HMS Eagle and records 15 arrivals alongside the IWM caption’s 16. New evidence includes the wartime Italian Air Staff sortie and reconnaissance records, daily RAF airfield and fighter records, and the Admiralty’s Pedestal claims and unloading figures. [Source audit](../research/sources/atlas-malta-air-campaign-2026-11-13.md)
