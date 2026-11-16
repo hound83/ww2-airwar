@@ -1,0 +1,965 @@
+{
+  "id": "RKKA-VVS-06-27",
+  "topic": "Western Front VVS claims of German aircraft 1941",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_27.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 30,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Fecha",
+              "rowspan": 2
+            },
+            {
+              "value": "Derribado en los combates aereos",
+              "colspan": 6
+            },
+            {
+              "value": "Eliminado en los aerodromos:"
+            },
+            {
+              "value": "Total",
+              "rowspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "He-111"
+            },
+            {
+              "value": "Ju-88"
+            },
+            {
+              "value": "Me-110"
+            },
+            {
+              "value": "FW-189"
+            },
+            {
+              "value": "Me-109"
+            },
+            {
+              "value": "Varios"
+            },
+            {
+              "value": "tipos varios"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "22.6"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "85"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "143"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "23.6"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "124"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "24.6"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "29"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "25.6"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "19"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "26.6"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "29"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "27.6"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "28.6"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "29.6"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "30.6"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "43"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "1.7"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "2.7"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "3.7"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "4.7"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "5.7"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "17"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "6.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": "49"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "7.7"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "40"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "8.7"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "50"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "9.7"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": "73"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "10.7"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "29"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "11.7"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "12.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "36"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "13.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "14.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "15.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "16.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "17.7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "76"
+            },
+            {
+              "value": "91"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "222"
+            },
+            {
+              "value": "150"
+            },
+            {
+              "value": "205"
+            },
+            {
+              "value": "818"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

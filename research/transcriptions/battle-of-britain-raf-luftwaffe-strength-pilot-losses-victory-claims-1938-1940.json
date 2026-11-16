@@ -1,0 +1,571 @@
+{
+  "researchOnly": true,
+  "sourceUrl": "https://erenow.org/ww/narrow-margin-battle-britain-rise-air-power-1930-1940/21.php",
+  "sourceClass": "Wood/Dempster, The Narrow Margin, secondary compilation citing RAF and original German Generalquartiermeister returns",
+  "scope": "Selected source appendices 7, 10, 11, 16 and 20; no copyrighted pilot roster or graphical tables reproduced",
+  "rafFighterCommandWeeklyAircraftAvailability": {
+    "sourceAppendix": 7,
+    "measurement": "Weekly daily average operationally equipped fighter squadron aircraft vs aircraft actually available for sorties",
+    "records": [
+      {
+        "weekEnding": "1940-06-22",
+        "nominalInOperationalSquadrons": 814,
+        "availableForOperations": 565
+      },
+      {
+        "weekEnding": "1940-06-29",
+        "nominalInOperationalSquadrons": 814,
+        "availableForOperations": 587
+      },
+      {
+        "weekEnding": "1940-07-06",
+        "nominalInOperationalSquadrons": 871,
+        "availableForOperations": 644
+      },
+      {
+        "weekEnding": "1940-07-13",
+        "nominalInOperationalSquadrons": 901,
+        "availableForOperations": 666
+      },
+      {
+        "weekEnding": "1940-07-20",
+        "nominalInOperationalSquadrons": 1052,
+        "availableForOperations": 658
+      },
+      {
+        "weekEnding": "1940-07-27",
+        "nominalInOperationalSquadrons": 1052,
+        "availableForOperations": 651
+      },
+      {
+        "weekEnding": "1940-08-03",
+        "nominalInOperationalSquadrons": 1061,
+        "availableForOperations": 708
+      },
+      {
+        "weekEnding": "1940-08-10",
+        "nominalInOperationalSquadrons": 1106,
+        "availableForOperations": 749
+      },
+      {
+        "weekEnding": "1940-08-17",
+        "nominalInOperationalSquadrons": 1113,
+        "availableForOperations": 704
+      },
+      {
+        "weekEnding": "1940-08-24",
+        "nominalInOperationalSquadrons": 1169,
+        "availableForOperations": 758
+      },
+      {
+        "weekEnding": "1940-08-31",
+        "nominalInOperationalSquadrons": 1181,
+        "availableForOperations": 764
+      },
+      {
+        "weekEnding": "1940-09-07",
+        "nominalInOperationalSquadrons": 1161,
+        "availableForOperations": 746
+      },
+      {
+        "weekEnding": "1940-09-14",
+        "nominalInOperationalSquadrons": 1046,
+        "availableForOperations": 725
+      },
+      {
+        "weekEnding": "1940-09-21",
+        "nominalInOperationalSquadrons": 1048,
+        "availableForOperations": 715
+      },
+      {
+        "weekEnding": "1940-09-28",
+        "nominalInOperationalSquadrons": 1048,
+        "availableForOperations": 732
+      },
+      {
+        "weekEnding": "1940-10-05",
+        "nominalInOperationalSquadrons": 1048,
+        "availableForOperations": 734
+      },
+      {
+        "weekEnding": "1940-10-12",
+        "nominalInOperationalSquadrons": 1054,
+        "availableForOperations": 735
+      },
+      {
+        "weekEnding": "1940-10-19",
+        "nominalInOperationalSquadrons": 1056,
+        "availableForOperations": 734
+      },
+      {
+        "weekEnding": "1940-10-26",
+        "nominalInOperationalSquadrons": 1064,
+        "availableForOperations": 747
+      },
+      {
+        "weekEnding": "1940-11-02",
+        "nominalInOperationalSquadrons": 1064,
+        "availableForOperations": 721
+      }
+    ]
+  },
+  "rafFighterCommandPilotEstablishmentAndOnHand": {
+    "sourceAppendix": 11,
+    "records": [
+      {
+        "date": "1940-06-15",
+        "establishment": 1456,
+        "onHandPilots": 1094,
+        "deficiencyOrSurplus": -362
+      },
+      {
+        "date": "1940-06-30",
+        "establishment": 1482,
+        "onHandPilots": 1200,
+        "deficiencyOrSurplus": -282
+      },
+      {
+        "date": "1940-07-06",
+        "establishment": 1456,
+        "onHandPilots": 1259,
+        "deficiencyOrSurplus": -197
+      },
+      {
+        "date": "1940-07-13",
+        "establishment": 1456,
+        "onHandPilots": 1341,
+        "deficiencyOrSurplus": -115
+      },
+      {
+        "date": "1940-07-20",
+        "establishment": 1456,
+        "onHandPilots": 1365,
+        "deficiencyOrSurplus": -91
+      },
+      {
+        "date": "1940-07-27",
+        "establishment": 1456,
+        "onHandPilots": 1377,
+        "deficiencyOrSurplus": -79
+      },
+      {
+        "date": "1940-08-03",
+        "establishment": 1588,
+        "onHandPilots": 1434,
+        "deficiencyOrSurplus": -154
+      },
+      {
+        "date": "1940-08-10",
+        "establishment": 1588,
+        "onHandPilots": 1396,
+        "deficiencyOrSurplus": -192
+      },
+      {
+        "date": "1940-08-17",
+        "establishment": 1588,
+        "onHandPilots": 1379,
+        "deficiencyOrSurplus": -209
+      },
+      {
+        "date": "1940-08-24",
+        "establishment": 1588,
+        "onHandPilots": 1377,
+        "deficiencyOrSurplus": -211
+      },
+      {
+        "date": "1940-08-31",
+        "establishment": 1588,
+        "onHandPilots": 1422,
+        "deficiencyOrSurplus": -166
+      },
+      {
+        "date": "1940-09-07",
+        "establishment": 1588,
+        "onHandPilots": 1381,
+        "deficiencyOrSurplus": -207
+      },
+      {
+        "date": "1940-09-14",
+        "establishment": 1662,
+        "onHandPilots": 1492,
+        "deficiencyOrSurplus": -170
+      },
+      {
+        "date": "1940-09-21",
+        "establishment": 1662,
+        "onHandPilots": 1509,
+        "deficiencyOrSurplus": -153
+      },
+      {
+        "date": "1940-09-28",
+        "establishment": 1662,
+        "onHandPilots": 1581,
+        "deficiencyOrSurplus": -81
+      },
+      {
+        "date": "1940-10-05",
+        "establishment": 1714,
+        "onHandPilots": 1703,
+        "deficiencyOrSurplus": -11
+      },
+      {
+        "date": "1940-10-12",
+        "establishment": 1714,
+        "onHandPilots": 1752,
+        "deficiencyOrSurplus": 38
+      },
+      {
+        "date": "1940-10-19",
+        "establishment": 1700,
+        "onHandPilots": 1737,
+        "deficiencyOrSurplus": 37
+      },
+      {
+        "date": "1940-10-26",
+        "establishment": 1727,
+        "onHandPilots": 1735,
+        "deficiencyOrSurplus": 8
+      },
+      {
+        "date": "1940-11-02",
+        "establishment": 1727,
+        "onHandPilots": 1796,
+        "deficiencyOrSurplus": 69
+      }
+    ]
+  },
+  "rafFighterCommandMonthlyPilotCasualties": {
+    "sourceAppendix": 10,
+    "definition": "Casualties caused by combat, enemy action on ground, and flying accidents; killed/POW/missing not decomposable into death vs captivity",
+    "records": [
+      {
+        "month": "1940-07",
+        "killedCapturedOrMissing": 74,
+        "woundedOrInjured": 49
+      },
+      {
+        "month": "1940-08",
+        "killedCapturedOrMissing": 148,
+        "woundedOrInjured": 156
+      },
+      {
+        "month": "1940-09",
+        "killedCapturedOrMissing": 159,
+        "woundedOrInjured": 152
+      },
+      {
+        "month": "1940-10",
+        "killedCapturedOrMissing": 100,
+        "woundedOrInjured": 65
+      }
+    ],
+    "publishedTotals": {
+      "killedCapturedOrMissing": 481,
+      "woundedOrInjured": 422
+    }
+  },
+  "germanBattleOfBritainAircraftLossesVersusRafClaims": {
+    "sourceAppendix": 16,
+    "definition": "RAF British claims vs actual German destroyed and damaged aircraft from Luftwaffe Quartermaster General returns; public official admitted figures in a third separate column",
+    "records": [
+      {
+        "from": "1940-07-10",
+        "through": "1940-08-07",
+        "rafClaimedDestroyedGermanAircraft": 188,
+        "germanActuallyDestroyedFromOwnReturns": 192,
+        "germanPubliclyAdmittedDestroyedDuringBattle": 63,
+        "germanActuallyDamagedFromOwnReturns": 77
+      },
+      {
+        "from": "1940-08-08",
+        "through": "1940-08-23",
+        "rafClaimedDestroyedGermanAircraft": 755,
+        "germanActuallyDestroyedFromOwnReturns": 403,
+        "germanPubliclyAdmittedDestroyedDuringBattle": 213,
+        "germanActuallyDamagedFromOwnReturns": 127
+      },
+      {
+        "from": "1940-08-24",
+        "through": "1940-09-06",
+        "rafClaimedDestroyedGermanAircraft": 643,
+        "germanActuallyDestroyedFromOwnReturns": 378,
+        "germanPubliclyAdmittedDestroyedDuringBattle": 243,
+        "germanActuallyDamagedFromOwnReturns": 115
+      },
+      {
+        "from": "1940-09-07",
+        "through": "1940-09-30",
+        "rafClaimedDestroyedGermanAircraft": 846,
+        "germanActuallyDestroyedFromOwnReturns": 435,
+        "germanPubliclyAdmittedDestroyedDuringBattle": 243,
+        "germanActuallyDamagedFromOwnReturns": 161
+      },
+      {
+        "from": "1940-10-01",
+        "through": "1940-10-31",
+        "rafClaimedDestroyedGermanAircraft": 260,
+        "germanActuallyDestroyedFromOwnReturns": 325,
+        "germanPubliclyAdmittedDestroyedDuringBattle": 134,
+        "germanActuallyDamagedFromOwnReturns": 163
+      }
+    ],
+    "publishedTotals": {
+      "rafClaimedDestroyedGermanAircraft": 2692,
+      "germanActuallyDestroyed": 1733,
+      "germanPubliclyAdmittedDestroyed": 896,
+      "germanActuallyDamaged": 643
+    }
+  },
+  "luftwaffeFourStrengthServiceabilitySnapshots": {
+    "1938-09-19_all_flying_units": {
+      "fields": [
+        "strength",
+        "serviceable"
+      ],
+      "aircraftRoles": {
+        "long_range_recon": [
+          222,
+          111
+        ],
+        "close_recon": [
+          289,
+          238
+        ],
+        "ground_attack": [
+          195,
+          164
+        ],
+        "fighters": [
+          810,
+          717
+        ],
+        "bombers": [
+          1235,
+          1019
+        ],
+        "dive_bombers": [
+          247,
+          227
+        ],
+        "transports": [
+          317,
+          293
+        ]
+      },
+      "publishedTotalIncludingTransports": [
+        3315,
+        2835
+      ],
+      "calculatedSumOfPublishedAircraftCategories": [
+        3315,
+        2769
+      ],
+      "printedTotalMinusCategorySum": [
+        0,
+        66
+      ]
+    },
+    "1939-09-02_all_flying_units": {
+      "fields": [
+        "authorized_establishment",
+        "strength",
+        "serviceable"
+      ],
+      "aircraftRoles": {
+        "close_recon_Luftwaffe": [
+          183,
+          190,
+          146
+        ],
+        "close_recon_army": [
+          297,
+          285,
+          164
+        ],
+        "long_recon_Luftwaffe": [
+          192,
+          297,
+          235
+        ],
+        "long_recon_army": [
+          120,
+          115,
+          109
+        ],
+        "ground_attack": [
+          39,
+          40,
+          36
+        ],
+        "heavy_fighters": [
+          438,
+          408,
+          377
+        ],
+        "single_engine_fighters": [
+          811,
+          771,
+          676
+        ],
+        "bombers": [
+          1239,
+          1180,
+          1008
+        ],
+        "dive_bombers": [
+          381,
+          366,
+          318
+        ],
+        "transports": [
+          554,
+          552,
+          540
+        ]
+      },
+      "publishedTotalIncludingTransports": [
+        4254,
+        4204,
+        3609
+      ],
+      "calculatedSumOfPublishedAircraftCategories": [
+        4254,
+        4204,
+        3609
+      ],
+      "printedTotalMinusCategorySum": [
+        0,
+        0,
+        0
+      ]
+    },
+    "1940-05-11_all_flying_units": {
+      "fields": [
+        "strength",
+        "serviceable"
+      ],
+      "aircraftRoles": {
+        "close_recon": [
+          304,
+          253
+        ],
+        "long_recon_army": [
+          153,
+          124
+        ],
+        "long_recon_Luftwaffe": [
+          180,
+          105
+        ],
+        "ground_attack": [
+          50,
+          45
+        ],
+        "heavy_fighters": [
+          355,
+          263
+        ],
+        "single_engine_fighters": [
+          1346,
+          1076
+        ],
+        "bombers": [
+          1615,
+          1031
+        ],
+        "dive_bombers": [
+          414,
+          345
+        ],
+        "transports": [
+          408,
+          285
+        ]
+      },
+      "publishedTotalIncludingTransports": [
+        4825,
+        3527
+      ],
+      "calculatedSumOfPublishedAircraftCategories": [
+        4825,
+        3527
+      ],
+      "printedTotalMinusCategorySum": [
+        0,
+        0
+      ]
+    },
+    "1940-08-10_operating_against_Britain_ONLY": {
+      "fields": [
+        "authorized_establishment",
+        "strength",
+        "serviceable"
+      ],
+      "aircraftRoles": {
+        "close_recon": [
+          120,
+          95,
+          80
+        ],
+        "long_recon": [
+          126,
+          100,
+          71
+        ],
+        "fighters": [
+          1011,
+          934,
+          805
+        ],
+        "heavy_fighters": [
+          301,
+          289,
+          224
+        ],
+        "bombers": [
+          1569,
+          1481,
+          998
+        ],
+        "dive_bombers": [
+          348,
+          327,
+          261
+        ],
+        "ground_attack": [
+          40,
+          39,
+          31
+        ],
+        "coastal": [
+          94,
+          93,
+          80
+        ]
+      },
+      "publishedTotal": [
+        3609,
+        3358,
+        2550
+      ],
+      "calculatedSumOfPublishedAircraftCategories": [
+        3609,
+        3358,
+        2550
+      ],
+      "printedTotalMinusCategorySum": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "interpretationCautions": [
+    "1940-08-10 Luftwaffe is Battle of Britain force only, not entire Luftwaffe; other three strength snapshots are national.",
+    "Luftwaffe 1938/1939/May1940 snapshots have shifting force/type taxonomy; compare serviceability ratios without assuming identical composition.",
+    "Luftwaffe September 1938 source printed overall 2,835 serviceable, but its seven printed aircraft-class rows total only 2,769 (66 unexplained difference). Both recorded; do not silently fix.",
+    "RAF pilot casualty table contains killed, POW, missing combined. Not all those 481 died.",
+    "RAF fighter availability in a week is a daily average and not an aircraft stock independent of the nominal squadron strength.",
+    "RAF victory credits in Appendix 16 are overclaims against German own-loss returns; no causal one-to-one reconciliation can be inferred."
+  ]
+}

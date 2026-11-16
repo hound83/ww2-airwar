@@ -1,0 +1,459 @@
+{
+  "sourceType": "Soviet archival derived secondary Spanish-language tables",
+  "sourceUrlAnnual": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_03.htm",
+  "sourceUrlStrategicPeriods": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_02.htm",
+  "population": "VVS KA (Red Army Air Force) front / air-army sorties 22 June 1941–9 May 1945; excludes separate DA/ADD naval and PVO returns unless original population explicitly includes them",
+  "recordType": "combat aircraft sorties, NOT missions/aircraft/crews killed",
+  "calendarYearMissionRows": [
+    {
+      "sourceRow": 3,
+      "missionAsPrinted": "Ataques sobre tropas",
+      "calendarYearSorties": {
+        "1941_from_June22": 120905,
+        "1942": 291689,
+        "1943": 308812,
+        "1944": 326565,
+        "1945_to_May9": 303400
+      },
+      "publishedGrandTotal": 1351371,
+      "publishedPercentByYear": {
+        "1941_from_June22": "44,85%",
+        "1942": "51,07%",
+        "1943": "45,56%",
+        "1944": "39,97%",
+        "1945_to_May9": "53,31%",
+        "all": "46,52%"
+      }
+    },
+    {
+      "sourceRow": 4,
+      "missionAsPrinted": "Ataques sobre aerodromos",
+      "calendarYearSorties": {
+        "1941_from_June22": 6695,
+        "1942": 17156,
+        "1943": 13767,
+        "1944": 12306,
+        "1945_to_May9": 8522
+      },
+      "publishedGrandTotal": 58446,
+      "publishedPercentByYear": {
+        "1941_from_June22": "2,48%",
+        "1942": "3,00%",
+        "1943": "2,03%",
+        "1944": "1,51%",
+        "1945_to_May9": "1,50%",
+        "all": "2,01%"
+      }
+    },
+    {
+      "sourceRow": 5,
+      "missionAsPrinted": "Ataques sobre objetivos ferroviarios",
+      "calendarYearSorties": {
+        "1941_from_June22": 2508,
+        "1942": 22171,
+        "1943": 36844,
+        "1944": 31406,
+        "1945_to_May9": 7866
+      },
+      "publishedGrandTotal": 100795,
+      "publishedPercentByYear": {
+        "1941_from_June22": "0,93%",
+        "1942": "3,88%",
+        "1943": "5,44%",
+        "1944": "3,84%",
+        "1945_to_May9": "1,38%",
+        "all": "3,47%"
+      }
+    },
+    {
+      "sourceRow": 6,
+      "missionAsPrinted": "Ataques sobre almacenes",
+      "calendarYearSorties": {
+        "1941_from_June22": null,
+        "1942": null,
+        "1943": null,
+        "1944": 1052,
+        "1945_to_May9": null
+      },
+      "publishedGrandTotal": 1052,
+      "publishedPercentByYear": {
+        "1941_from_June22": "",
+        "1942": "",
+        "1943": "",
+        "1944": "0,13%",
+        "1945_to_May9": "0,00%",
+        "all": "0,04%"
+      }
+    },
+    {
+      "sourceRow": 7,
+      "missionAsPrinted": "Ataques sobre puertos, cruces de rio, puentes y embarcaciones",
+      "calendarYearSorties": {
+        "1941_from_June22": null,
+        "1942": null,
+        "1943": 8214,
+        "1944": 7529,
+        "1945_to_May9": 5735
+      },
+      "publishedGrandTotal": 21478,
+      "publishedPercentByYear": {
+        "1941_from_June22": "",
+        "1942": "0,00%",
+        "1943": "1,21%",
+        "1944": "0,92%",
+        "1945_to_May9": "1,01%",
+        "all": "0,74%"
+      }
+    },
+    {
+      "sourceRow": 8,
+      "missionAsPrinted": "Defensa aerea de las tropas terrestres y objetivos de la retaguardia",
+      "calendarYearSorties": {
+        "1941_from_June22": 83120,
+        "1942": 110536,
+        "1943": 111819,
+        "1944": 118981,
+        "1945_to_May9": 64982
+      },
+      "publishedGrandTotal": 489438,
+      "publishedPercentByYear": {
+        "1941_from_June22": "30,83%",
+        "1942": "19,35%",
+        "1943": "16,50%",
+        "1944": "14,56%",
+        "1945_to_May9": "11,42%",
+        "all": "16,85%"
+      }
+    },
+    {
+      "sourceRow": 9,
+      "missionAsPrinted": "Intercepcion de los aviones enemigos",
+      "calendarYearSorties": {
+        "1941_from_June22": null,
+        "1942": null,
+        "1943": 9590,
+        "1944": 9459,
+        "1945_to_May9": 1824
+      },
+      "publishedGrandTotal": 20873,
+      "publishedPercentByYear": {
+        "1941_from_June22": "",
+        "1942": "0,00%",
+        "1943": "1,41%",
+        "1944": "1,16%",
+        "1945_to_May9": "0,32%",
+        "all": "0,72%"
+      }
+    },
+    {
+      "sourceRow": 10,
+      "missionAsPrinted": "Caza libre sobre el territorio enemigo",
+      "calendarYearSorties": {
+        "1941_from_June22": null,
+        "1942": null,
+        "1943": 3648,
+        "1944": 14738,
+        "1945_to_May9": 11832
+      },
+      "publishedGrandTotal": 30218,
+      "publishedPercentByYear": {
+        "1941_from_June22": "",
+        "1942": "0,00%",
+        "1943": "0,54%",
+        "1944": "1,80%",
+        "1945_to_May9": "2,08%",
+        "all": "1,04%"
+      }
+    },
+    {
+      "sourceRow": 11,
+      "missionAsPrinted": "Escolta de aviones de otras clases",
+      "calendarYearSorties": {
+        "1941_from_June22": 23348,
+        "1942": 49501,
+        "1943": 96527,
+        "1944": 147296,
+        "1945_to_May9": 107881
+      },
+      "publishedGrandTotal": 424553,
+      "publishedPercentByYear": {
+        "1941_from_June22": "8,66%",
+        "1942": "8,67%",
+        "1943": "14,24%",
+        "1944": "18,03%",
+        "1945_to_May9": "18,95%",
+        "all": "14,62%"
+      }
+    },
+    {
+      "sourceRow": 12,
+      "missionAsPrinted": "Correccion de fuego de artilleria",
+      "calendarYearSorties": {
+        "1941_from_June22": null,
+        "1942": null,
+        "1943": 203,
+        "1944": 1205,
+        "1945_to_May9": 510
+      },
+      "publishedGrandTotal": 1918,
+      "publishedPercentByYear": {
+        "1941_from_June22": "",
+        "1942": "0,00%",
+        "1943": "0,03%",
+        "1944": "0,15%",
+        "1945_to_May9": "0,09%",
+        "all": "0,07%"
+      }
+    },
+    {
+      "sourceRow": 13,
+      "missionAsPrinted": "Realizacion de misiones especiales",
+      "calendarYearSorties": {
+        "1941_from_June22": 6976,
+        "1942": 25717,
+        "1943": 4545,
+        "1944": 9282,
+        "1945_to_May9": 918
+      },
+      "publishedGrandTotal": 47438,
+      "publishedPercentByYear": {
+        "1941_from_June22": "2,59%",
+        "1942": "4,50%",
+        "1943": "0,67%",
+        "1944": "1,14%",
+        "1945_to_May9": "0,16%",
+        "all": "1,63%"
+      }
+    },
+    {
+      "sourceRow": 14,
+      "missionAsPrinted": "Transporte de cargamentos",
+      "calendarYearSorties": {
+        "1941_from_June22": null,
+        "1942": null,
+        "1943": 7589,
+        "1944": 21192,
+        "1945_to_May9": 3533
+      },
+      "publishedGrandTotal": 32314,
+      "publishedPercentByYear": {
+        "1941_from_June22": "",
+        "1942": "0,00%",
+        "1943": "1,12%",
+        "1944": "2,59%",
+        "1945_to_May9": "0,62%",
+        "all": "1,11%"
+      }
+    },
+    {
+      "sourceRow": 15,
+      "missionAsPrinted": "Misiones de reconocimiento aereo",
+      "calendarYearSorties": {
+        "1941_from_June22": 26012,
+        "1942": 54360,
+        "1943": 76299,
+        "1944": 116053,
+        "1945_to_May9": 52159
+      },
+      "publishedGrandTotal": 324883,
+      "publishedPercentByYear": {
+        "1941_from_June22": "9,65%",
+        "1942": "9,52%",
+        "1943": "11,26%",
+        "1944": "14,20%",
+        "1945_to_May9": "9,16%",
+        "all": "11,18%"
+      }
+    },
+    {
+      "sourceRow": 16,
+      "missionAsPrinted": "Total",
+      "calendarYearSorties": {
+        "1941_from_June22": 269564,
+        "1942": 571130,
+        "1943": 677857,
+        "1944": 817064,
+        "1945_to_May9": 569162
+      },
+      "publishedGrandTotal": 2904777,
+      "publishedPercentByYear": {
+        "1941_from_June22": "100%",
+        "1942": "100%",
+        "1943": "100%",
+        "1944": "100%",
+        "1945_to_May9": "100%",
+        "all": "100%"
+      }
+    }
+  ],
+  "strategicPeriodMissionRows": [
+    {
+      "sourceRow": 4,
+      "missionAsPrinted": "Ataques sobre tropas terrestres",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 393958,
+        "1942-11-19_to_1943-12-31": 327449,
+        "1944-01-01_to_1945-05-09": 629965
+      },
+      "publishedGrandTotal": 1351372
+    },
+    {
+      "sourceRow": 5,
+      "missionAsPrinted": "Ataques sobre aerodromos",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 22851,
+        "1942-11-19_to_1943-12-31": 14767,
+        "1944-01-01_to_1945-05-09": 20828
+      },
+      "publishedGrandTotal": 58446
+    },
+    {
+      "sourceRow": 6,
+      "missionAsPrinted": "Ataques sobre nudos ferroviarios, estaciones ferroviarias y tramos ferroviarios",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 22789,
+        "1942-11-19_to_1943-12-31": 38734,
+        "1944-01-01_to_1945-05-09": 39272
+      },
+      "publishedGrandTotal": 100795
+    },
+    {
+      "sourceRow": 7,
+      "missionAsPrinted": "Ataques sobre almacenes",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": null,
+        "1942-11-19_to_1943-12-31": null,
+        "1944-01-01_to_1945-05-09": 1052
+      },
+      "publishedGrandTotal": 1052
+    },
+    {
+      "sourceRow": 8,
+      "missionAsPrinted": "Ataques sobre puertos, cruces de rios, puentes y embarcaciones",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": null,
+        "1942-11-19_to_1943-12-31": 8214,
+        "1944-01-01_to_1945-05-09": 13264
+      },
+      "publishedGrandTotal": 21478
+    },
+    {
+      "sourceRow": 9,
+      "missionAsPrinted": "Defensa aerea de las tropas terrestres y objetivos de la retaguardia del frente",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 184686,
+        "1942-11-19_to_1943-12-31": 120789,
+        "1944-01-01_to_1945-05-09": 183963
+      },
+      "publishedGrandTotal": 489438
+    },
+    {
+      "sourceRow": 10,
+      "missionAsPrinted": "Intercepcion de los aviones enemigos solitarios",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": null,
+        "1942-11-19_to_1943-12-31": 9590,
+        "1944-01-01_to_1945-05-09": 11283
+      },
+      "publishedGrandTotal": 20873
+    },
+    {
+      "sourceRow": 11,
+      "missionAsPrinted": "Caza libre sobre el territorio enemigo",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": null,
+        "1942-11-19_to_1943-12-31": 3648,
+        "1944-01-01_to_1945-05-09": 26570
+      },
+      "publishedGrandTotal": 30218
+    },
+    {
+      "sourceRow": 12,
+      "missionAsPrinted": "Escolta de aviones de otras clases",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 69397,
+        "1942-11-19_to_1943-12-31": 99979,
+        "1944-01-01_to_1945-05-09": 255177
+      },
+      "publishedGrandTotal": 424553
+    },
+    {
+      "sourceRow": 13,
+      "missionAsPrinted": "Correccion de fuego de artilleria",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": null,
+        "1942-11-19_to_1943-12-31": 203,
+        "1944-01-01_to_1945-05-09": 1715
+      },
+      "publishedGrandTotal": 1918
+    },
+    {
+      "sourceRow": 14,
+      "missionAsPrinted": "Realizacion de misiones especiales",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 30703,
+        "1942-11-19_to_1943-12-31": 6535,
+        "1944-01-01_to_1945-05-09": 10200
+      },
+      "publishedGrandTotal": 47438
+    },
+    {
+      "sourceRow": 15,
+      "missionAsPrinted": "Transporte de cargamentos",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": null,
+        "1942-11-19_to_1943-12-31": 7589,
+        "1944-01-01_to_1945-05-09": 24725
+      },
+      "publishedGrandTotal": 32314
+    },
+    {
+      "sourceRow": 16,
+      "missionAsPrinted": "Misiones de reconocimiento aereo",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 76641,
+        "1942-11-19_to_1943-12-31": 80030,
+        "1944-01-01_to_1945-05-09": 168212
+      },
+      "publishedGrandTotal": 324883
+    },
+    {
+      "sourceRow": 17,
+      "missionAsPrinted": "Total",
+      "strategicPeriodSorties": {
+        "1941-06-22_to_1942-11-18": 801025,
+        "1942-11-19_to_1943-12-31": 717527,
+        "1944-01-01_to_1945-05-09": 1386226
+      },
+      "publishedGrandTotal": 2904778
+    }
+  ],
+  "independentOriginalSourceDiscrepancies": {
+    "overallPart06_02Minus06_03": 1,
+    "calendar1944Part06_03MinusPart06_07AirArmy": 17,
+    "sourceNote": "Same website, distinct source summaries; differences of 1 and 17 sorties should not be silently resolved or summed."
+  },
+  "ordinalAlignedMissionComparisonWarnings": [
+    {
+      "missionAsPrintedAnnual": "Ataques sobre tropas",
+      "missionAsPrintedPeriod": "Ataques sobre tropas terrestres",
+      "annualSource": 1351371,
+      "strategicPeriodSource": 1351372,
+      "deltaPeriodMinusAnnual": 1
+    },
+    {
+      "missionAsPrintedAnnual": "Total",
+      "missionAsPrintedPeriod": "Total",
+      "annualSource": 2904777,
+      "strategicPeriodSource": 2904778,
+      "deltaPeriodMinusAnnual": 1
+    }
+  ],
+  "cautions": [
+    "The annual and strategic-period datasets are alternative views of the same broad VVS KA sortie population, not additive independent outputs.",
+    "1941 starts 22 June and 1945 ends 9 May; neither is a full year.",
+    "A printed blank is null, not a measured zero; source percentage strings remain as printed.",
+    "The 1944 air-army 817,047 and annual 817,064 disagree; further cross-check of original operational staff files is necessary.",
+    "Source 06_02 and 06_03 also disagree by one in national grand totals and in attack-on-ground-force class."
+  ]
+}

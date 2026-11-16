@@ -1,0 +1,3196 @@
+{
+  "id": "RKKA-VVS-06-31",
+  "topic": "Soviet VMF claims of German naval damage and losses",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_31.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 46,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de las bajas causadas por la aviacion sovietica",
+              "rowspan": 3
+            },
+            {
+              "value": "Daños causados por la aviacion de la marina sovietica a las fuerzas navales alemanas en los años de la guerra",
+              "colspan": 17
+            },
+            {
+              "value": "Total durante 1941-1945",
+              "colspan": 4,
+              "rowspan": 2
+            },
+            {
+              "value": "Total",
+              "rowspan": 3
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "1 año de la guerra (22.06.1941 - 21.06.1942)",
+              "colspan": 4
+            },
+            {
+              "value": "2 año de la guerra (22.06.1942 - 21.06.1943)",
+              "colspan": 4
+            },
+            {
+              "value": "3 año de la guerra (22.06.1943 - 21.06.1944)",
+              "colspan": 4
+            },
+            {
+              "value": "4 año de la guerra (22.06.1944 - 9.05.1945)",
+              "colspan": 5
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "VVS TOF y STOF (8.8-3.9.1945)"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "VVS TOF y STOF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "23"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Barcos de combate",
+              "colspan": 23
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Navios de linea y cruceros",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Acorazado de defensa costera",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Destructor de escuadra",
+              "rowspan": 2
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Destructor",
+              "rowspan": 2
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "28"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "40"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "Submarinos",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "Cañoneros y monitores",
+              "rowspan": 2
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "15"
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "21"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "Minador",
+              "rowspan": 2
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "Dragaminas",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "56"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "39"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "48"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "91"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "113"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "65"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "89"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "94"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "Barco de escolta",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "57"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "59"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "78"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "109"
+            },
+            {
+              "value": "48"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "164"
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "101"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "126"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "Lancha dragaminas",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "14"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "Torpedero",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "64"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "48"
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "Lancha blindada",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "53"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "53"
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "Patrullero",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "33"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "39"
+            },
+            {
+              "value": "59"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "110"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "80"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "145"
+            },
+            {
+              "value": "33"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "242"
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "82"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "127"
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": "Total:",
+              "rowspan": 2
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "102"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "114"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": "93"
+            },
+            {
+              "value": "126"
+            },
+            {
+              "value": "45"
+            },
+            {
+              "value": "264"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "194"
+            },
+            {
+              "value": "46"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "264"
+            },
+            {
+              "value": "136"
+            },
+            {
+              "value": "486"
+            },
+            {
+              "value": "110"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "737"
+            }
+          ]
+        },
+        {
+          "sourceRow": 33,
+          "cells": [
+            {
+              "value": "12"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "49"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "77"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "97"
+            },
+            {
+              "value": "90"
+            },
+            {
+              "value": "115"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "228"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "88"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "128"
+            },
+            {
+              "value": "133"
+            },
+            {
+              "value": "314"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "502"
+            }
+          ]
+        },
+        {
+          "sourceRow": 34,
+          "cells": [
+            {
+              "value": "Barcos de transporte",
+              "colspan": 23
+            }
+          ]
+        },
+        {
+          "sourceRow": 35,
+          "cells": [
+            {
+              "value": "Transportes",
+              "rowspan": 2
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "50"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "78"
+            },
+            {
+              "value": "88"
+            },
+            {
+              "value": "94"
+            },
+            {
+              "value": "54"
+            },
+            {
+              "value": "236"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "288"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "355"
+            },
+            {
+              "value": "130"
+            },
+            {
+              "value": "451"
+            },
+            {
+              "value": "133"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "748"
+            }
+          ]
+        },
+        {
+          "sourceRow": 36,
+          "cells": [
+            {
+              "value": "14"
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "56"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "39"
+            },
+            {
+              "value": "51"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "50"
+            },
+            {
+              "value": "125"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "135"
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "191"
+            },
+            {
+              "value": "74"
+            },
+            {
+              "value": "211"
+            },
+            {
+              "value": "109"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "411"
+            }
+          ]
+        },
+        {
+          "sourceRow": 37,
+          "cells": [
+            {
+              "value": "Petroleros",
+              "rowspan": 2
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "36"
+            }
+          ]
+        },
+        {
+          "sourceRow": 38,
+          "cells": [
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "sourceRow": 39,
+          "cells": [
+            {
+              "value": "Navios de apoyo",
+              "rowspan": 2
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "39"
+            },
+            {
+              "value": "78"
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "107"
+            },
+            {
+              "value": "301"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "348"
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": "118"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "169"
+            },
+            {
+              "value": "434"
+            },
+            {
+              "value": "193"
+            },
+            {
+              "value": "36"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "663"
+            }
+          ]
+        },
+        {
+          "sourceRow": 40,
+          "cells": [
+            {
+              "value": "22"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "37"
+            },
+            {
+              "value": "44"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "271"
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "305"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "140"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "170"
+            },
+            {
+              "value": "352"
+            },
+            {
+              "value": "203"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "576"
+            }
+          ]
+        },
+        {
+          "sourceRow": 41,
+          "cells": [
+            {
+              "value": "Otros navios",
+              "rowspan": 2
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "96"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "118"
+            },
+            {
+              "value": "71"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "76"
+            },
+            {
+              "value": "53"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "139"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "121"
+            },
+            {
+              "value": "139"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "326"
+            },
+            {
+              "value": "165"
+            },
+            {
+              "value": "243"
+            },
+            {
+              "value": "204"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "659"
+            }
+          ]
+        },
+        {
+          "sourceRow": 42,
+          "cells": [
+            {
+              "value": "17"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "51"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "93"
+            },
+            {
+              "value": "92"
+            },
+            {
+              "value": "88"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "232"
+            }
+          ]
+        },
+        {
+          "sourceRow": 43,
+          "cells": [
+            {
+              "value": "Total:",
+              "rowspan": 2
+            },
+            {
+              "value": "75"
+            },
+            {
+              "value": "154"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "236"
+            },
+            {
+              "value": "167"
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "266"
+            },
+            {
+              "value": "445"
+            },
+            {
+              "value": "159"
+            },
+            {
+              "value": "134"
+            },
+            {
+              "value": "738"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "538"
+            },
+            {
+              "value": "196"
+            },
+            {
+              "value": "85"
+            },
+            {
+              "value": "866"
+            },
+            {
+              "value": "734"
+            },
+            {
+              "value": "903"
+            },
+            {
+              "value": "384"
+            },
+            {
+              "value": "85"
+            },
+            {
+              "value": "2 106"
+            }
+          ]
+        },
+        {
+          "sourceRow": 44,
+          "cells": [
+            {
+              "value": "53"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "125"
+            },
+            {
+              "value": "65"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "132"
+            },
+            {
+              "value": "378"
+            },
+            {
+              "value": "71"
+            },
+            {
+              "value": "61"
+            },
+            {
+              "value": "510"
+            },
+            {
+              "value": "25"
+            },
+            {
+              "value": "328"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "458"
+            },
+            {
+              "value": "521"
+            },
+            {
+              "value": "504"
+            },
+            {
+              "value": "174"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "1 225"
+            }
+          ]
+        },
+        {
+          "sourceRow": 45,
+          "cells": [
+            {
+              "value": "SUMA:",
+              "rowspan": 2
+            },
+            {
+              "value": "84"
+            },
+            {
+              "value": "256"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "350"
+            },
+            {
+              "value": "182"
+            },
+            {
+              "value": "116"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "361"
+            },
+            {
+              "value": "538"
+            },
+            {
+              "value": "285"
+            },
+            {
+              "value": "179"
+            },
+            {
+              "value": "1 002"
+            },
+            {
+              "value": "66"
+            },
+            {
+              "value": "732"
+            },
+            {
+              "value": "242"
+            },
+            {
+              "value": "90"
+            },
+            {
+              "value": "1 130"
+            },
+            {
+              "value": "870"
+            },
+            {
+              "value": "1 389"
+            },
+            {
+              "value": "494"
+            },
+            {
+              "value": "90"
+            },
+            {
+              "value": "2 843"
+            }
+          ]
+        },
+        {
+          "sourceRow": 46,
+          "cells": [
+            {
+              "value": "65"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "174"
+            },
+            {
+              "value": "76"
+            },
+            {
+              "value": "118"
+            },
+            {
+              "value": "35"
+            },
+            {
+              "value": "229"
+            },
+            {
+              "value": "468"
+            },
+            {
+              "value": "186"
+            },
+            {
+              "value": "84"
+            },
+            {
+              "value": "738"
+            },
+            {
+              "value": "45"
+            },
+            {
+              "value": "416"
+            },
+            {
+              "value": "99"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "586"
+            },
+            {
+              "value": "654"
+            },
+            {
+              "value": "818"
+            },
+            {
+              "value": "229"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "1 727"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceTableIndex": 1,
+      "sourceRowCount": 4,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Mar Negro"
+            },
+            {
+              "value": "VVS ChF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Báltico de la Bandera Roja"
+            },
+            {
+              "value": "VVS KBF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Norte"
+            },
+            {
+              "value": "VVS SF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Pacifico y de la Flotilla del Nor-Pacifico"
+            },
+            {
+              "value": "VVS TOF y STOF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

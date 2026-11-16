@@ -1,0 +1,850 @@
+{
+  "id": "RKKA-VVS-06-14",
+  "topic": "Soviet VMF naval aviation sorties by role and fleet",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_14.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 12,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de las misiones",
+              "rowspan": 3
+            },
+            {
+              "value": "Cantidad de los avion-vuelos por años",
+              "colspan": 17
+            },
+            {
+              "value": "Total durante 1941-1945",
+              "colspan": 4,
+              "rowspan": 2
+            },
+            {
+              "value": "Total",
+              "rowspan": 3
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "1 año de la guerra (22.06.1941 - 21.06.1942)",
+              "colspan": 4
+            },
+            {
+              "value": "2 año de la guerra (22.06.1942 - 21.06.1943)",
+              "colspan": 4
+            },
+            {
+              "value": "3 año de la guerra (22.06.1943 - 21.06.1944)",
+              "colspan": 4
+            },
+            {
+              "value": "4 año de la guerra (22.06.1944 - 9.05.1945)",
+              "colspan": 5
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "VVS TOF y STOF (8.8-3.9.1945)"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "VVS ChF"
+            },
+            {
+              "value": "VVS KBF"
+            },
+            {
+              "value": "VVS SF"
+            },
+            {
+              "value": "VVS TOF y STOF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Acciones para la interrupcion de comunicaciones"
+            },
+            {
+              "value": "541"
+            },
+            {
+              "value": "721"
+            },
+            {
+              "value": "313"
+            },
+            {
+              "value": "1 575"
+            },
+            {
+              "value": "668"
+            },
+            {
+              "value": "1 160"
+            },
+            {
+              "value": "446"
+            },
+            {
+              "value": "2 274"
+            },
+            {
+              "value": "2 582"
+            },
+            {
+              "value": "3 861"
+            },
+            {
+              "value": "892"
+            },
+            {
+              "value": "7 335"
+            },
+            {
+              "value": "114"
+            },
+            {
+              "value": "7 013"
+            },
+            {
+              "value": "963"
+            },
+            {
+              "value": "615"
+            },
+            {
+              "value": "8 705"
+            },
+            {
+              "value": "3 905"
+            },
+            {
+              "value": "12 755"
+            },
+            {
+              "value": "2 614"
+            },
+            {
+              "value": "615"
+            },
+            {
+              "value": "19 889"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "Ataques sobre bases navales militares y puertos"
+            },
+            {
+              "value": "825"
+            },
+            {
+              "value": "1 082"
+            },
+            {
+              "value": "304"
+            },
+            {
+              "value": "2 211"
+            },
+            {
+              "value": "2 686"
+            },
+            {
+              "value": "992"
+            },
+            {
+              "value": "360"
+            },
+            {
+              "value": "4 038"
+            },
+            {
+              "value": "2 449"
+            },
+            {
+              "value": "412"
+            },
+            {
+              "value": "316"
+            },
+            {
+              "value": "3 177"
+            },
+            {
+              "value": "356"
+            },
+            {
+              "value": "2 463"
+            },
+            {
+              "value": "477"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3 296"
+            },
+            {
+              "value": "6 316"
+            },
+            {
+              "value": "4 949"
+            },
+            {
+              "value": "1 457"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "12 722"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Ataques a los aerodromos"
+            },
+            {
+              "value": "3 655"
+            },
+            {
+              "value": "681"
+            },
+            {
+              "value": "257"
+            },
+            {
+              "value": "4 593"
+            },
+            {
+              "value": "820"
+            },
+            {
+              "value": "529"
+            },
+            {
+              "value": "188"
+            },
+            {
+              "value": "1 537"
+            },
+            {
+              "value": "79"
+            },
+            {
+              "value": "31"
+            },
+            {
+              "value": "158"
+            },
+            {
+              "value": "268"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "128"
+            },
+            {
+              "value": "50"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "191"
+            },
+            {
+              "value": "4 554"
+            },
+            {
+              "value": "1 369"
+            },
+            {
+              "value": "653"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "6 589"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Ataques sobre los centros administrativos e industriales"
+            },
+            {
+              "value": "113"
+            },
+            {
+              "value": "70"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "183"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "113"
+            },
+            {
+              "value": "70"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "183"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Defensa de las comunicaciones propias"
+            },
+            {
+              "value": "29 040"
+            },
+            {
+              "value": "29 530"
+            },
+            {
+              "value": "12 500"
+            },
+            {
+              "value": "71 070"
+            },
+            {
+              "value": "8 349"
+            },
+            {
+              "value": "6 518"
+            },
+            {
+              "value": "9 191"
+            },
+            {
+              "value": "24 058"
+            },
+            {
+              "value": "5 581"
+            },
+            {
+              "value": "4 930"
+            },
+            {
+              "value": "6 459"
+            },
+            {
+              "value": "16 970"
+            },
+            {
+              "value": "2 259"
+            },
+            {
+              "value": "4 120"
+            },
+            {
+              "value": "4 548"
+            },
+            {
+              "value": "868"
+            },
+            {
+              "value": "11 795"
+            },
+            {
+              "value": "45 229"
+            },
+            {
+              "value": "45 098"
+            },
+            {
+              "value": "32 698"
+            },
+            {
+              "value": "868"
+            },
+            {
+              "value": "123 893"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "Reconocimiento aereo"
+            },
+            {
+              "value": "8 754"
+            },
+            {
+              "value": "4 461"
+            },
+            {
+              "value": "1 842"
+            },
+            {
+              "value": "15 057"
+            },
+            {
+              "value": "3 243"
+            },
+            {
+              "value": "5 976"
+            },
+            {
+              "value": "1 934"
+            },
+            {
+              "value": "11 153"
+            },
+            {
+              "value": "3 163"
+            },
+            {
+              "value": "5 347"
+            },
+            {
+              "value": "2 553"
+            },
+            {
+              "value": "11 063"
+            },
+            {
+              "value": "858"
+            },
+            {
+              "value": "8 297"
+            },
+            {
+              "value": "1 918"
+            },
+            {
+              "value": "835"
+            },
+            {
+              "value": "11 908"
+            },
+            {
+              "value": "16 018"
+            },
+            {
+              "value": "24 081"
+            },
+            {
+              "value": "8 247"
+            },
+            {
+              "value": "835"
+            },
+            {
+              "value": "49 181"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Escolta de los bombarderos y de los aviones de reconocimiento"
+            },
+            {
+              "value": "6 353"
+            },
+            {
+              "value": "1 663"
+            },
+            {
+              "value": "1 203"
+            },
+            {
+              "value": "9 219"
+            },
+            {
+              "value": "8 761"
+            },
+            {
+              "value": "4 519"
+            },
+            {
+              "value": "1 512"
+            },
+            {
+              "value": "14 792"
+            },
+            {
+              "value": "12 404"
+            },
+            {
+              "value": "7 445"
+            },
+            {
+              "value": "2 865"
+            },
+            {
+              "value": "22 714"
+            },
+            {
+              "value": "1 964"
+            },
+            {
+              "value": "10 285"
+            },
+            {
+              "value": "2 541"
+            },
+            {
+              "value": "1 659"
+            },
+            {
+              "value": "16 449"
+            },
+            {
+              "value": "29 482"
+            },
+            {
+              "value": "23 912"
+            },
+            {
+              "value": "8 121"
+            },
+            {
+              "value": "1 659"
+            },
+            {
+              "value": "63 174"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Apoyo a las tropas terrestres"
+            },
+            {
+              "value": "15 018"
+            },
+            {
+              "value": "23 664"
+            },
+            {
+              "value": "2 174"
+            },
+            {
+              "value": "40 856"
+            },
+            {
+              "value": "6 465"
+            },
+            {
+              "value": "8 828"
+            },
+            {
+              "value": "316"
+            },
+            {
+              "value": "15 609"
+            },
+            {
+              "value": "3 351"
+            },
+            {
+              "value": "11 075"
+            },
+            {
+              "value": "240"
+            },
+            {
+              "value": "14 666"
+            },
+            {
+              "value": "185"
+            },
+            {
+              "value": "2 356"
+            },
+            {
+              "value": "722"
+            },
+            {
+              "value": "734"
+            },
+            {
+              "value": "3 997"
+            },
+            {
+              "value": "25 019"
+            },
+            {
+              "value": "45 923"
+            },
+            {
+              "value": "3 452"
+            },
+            {
+              "value": "734"
+            },
+            {
+              "value": "75 128"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "64 299"
+            },
+            {
+              "value": "61 872"
+            },
+            {
+              "value": "18 593"
+            },
+            {
+              "value": "144 764"
+            },
+            {
+              "value": "30 992"
+            },
+            {
+              "value": "28 522"
+            },
+            {
+              "value": "13 947"
+            },
+            {
+              "value": "73 461"
+            },
+            {
+              "value": "29 609"
+            },
+            {
+              "value": "33 101"
+            },
+            {
+              "value": "13 483"
+            },
+            {
+              "value": "76 193"
+            },
+            {
+              "value": "5 736"
+            },
+            {
+              "value": "34 662"
+            },
+            {
+              "value": "11 219"
+            },
+            {
+              "value": "4 724"
+            },
+            {
+              "value": "56 341"
+            },
+            {
+              "value": "130 636"
+            },
+            {
+              "value": "158 157"
+            },
+            {
+              "value": "57 242"
+            },
+            {
+              "value": "4 724"
+            },
+            {
+              "value": "350 759"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceTableIndex": 1,
+      "sourceRowCount": 4,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Mar Negro"
+            },
+            {
+              "value": "VVS ChF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Báltico de la Bandera Roja"
+            },
+            {
+              "value": "VVS KBF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Norte"
+            },
+            {
+              "value": "VVS SF"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "Fuerzas Aéreas de la Flota del Pacifico y de la Flotilla del Nor-Pacifico"
+            },
+            {
+              "value": "VVS TOF y STOF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "id": "SPECIALIST-BATTLEBRITAIN",
+  "force": "raf_and_luftwaffe",
+  "dataDescription": "Air losses during the 1940 Battle of Britain",
+  "sourceUrl": "https://www.theworldwars.net/stats/file.php?e=ww2&s=battlebritain",
+  "sourceClass": "secondary_specialist_compilation_quoting_historical_sources",
+  "compiler": "Rodrigo Aguilera, The World Wars.net, statistics page (last modified 2022)",
+  "reportedUnderlyingSources": "Winston Churchill, The Second World War .",
+  "reviewStatus": "source_rows_only_not_independently_checked_against_original_books_or_archive",
+  "zeroWarning": "Printed dash/blank/n.a. are not recoded as zero; totals/categories may have different reporting denominators.",
+  "tables": [
+    {
+      "tableNumber": 1,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "Luftwaffe"
+            },
+            {
+              "text": "Claimed by RAF"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "Jul 10-13"
+            },
+            {
+              "text": "15",
+              "count": 15
+            },
+            {
+              "text": "45",
+              "count": 45
+            },
+            {
+              "text": "63",
+              "count": 63
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "Week to Jul 20"
+            },
+            {
+              "text": "22",
+              "count": 22
+            },
+            {
+              "text": "31",
+              "count": 31
+            },
+            {
+              "text": "49",
+              "count": 49
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "Week to Jul 27"
+            },
+            {
+              "text": "14",
+              "count": 14
+            },
+            {
+              "text": "51",
+              "count": 51
+            },
+            {
+              "text": "58",
+              "count": 58
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "Week to Aug 3"
+            },
+            {
+              "text": "8",
+              "count": 8
+            },
+            {
+              "text": "56",
+              "count": 56
+            },
+            {
+              "text": "39",
+              "count": 39
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Week to Aug 10"
+            },
+            {
+              "text": "25",
+              "count": 25
+            },
+            {
+              "text": "44",
+              "count": 44
+            },
+            {
+              "text": "64",
+              "count": 64
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "text": "Week to Aug 17"
+            },
+            {
+              "text": "134",
+              "count": 134
+            },
+            {
+              "text": "261",
+              "count": 261
+            },
+            {
+              "text": "496",
+              "count": 496
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "text": "Week to Aug 24"
+            },
+            {
+              "text": "59",
+              "count": 59
+            },
+            {
+              "text": "145",
+              "count": 145
+            },
+            {
+              "text": "251",
+              "count": 251
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "text": "Week to Aug 31"
+            },
+            {
+              "text": "141",
+              "count": 141
+            },
+            {
+              "text": "193",
+              "count": 193
+            },
+            {
+              "text": "316",
+              "count": 316
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "text": "Week to Sep 7"
+            },
+            {
+              "text": "144",
+              "count": 144
+            },
+            {
+              "text": "187",
+              "count": 187
+            },
+            {
+              "text": "375",
+              "count": 375
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cells": [
+            {
+              "text": "Week to Sep 14"
+            },
+            {
+              "text": "67",
+              "count": 67
+            },
+            {
+              "text": "102",
+              "count": 102
+            },
+            {
+              "text": "182",
+              "count": 182
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cells": [
+            {
+              "text": "Week to Sep 21"
+            },
+            {
+              "text": "52",
+              "count": 52
+            },
+            {
+              "text": "120",
+              "count": 120
+            },
+            {
+              "text": "268",
+              "count": 268
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cells": [
+            {
+              "text": "Week to Sep 28"
+            },
+            {
+              "text": "72",
+              "count": 72
+            },
+            {
+              "text": "118",
+              "count": 118
+            },
+            {
+              "text": "230",
+              "count": 230
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cells": [
+            {
+              "text": "Week to Oct 5"
+            },
+            {
+              "text": "44",
+              "count": 44
+            },
+            {
+              "text": "112",
+              "count": 112
+            },
+            {
+              "text": "100",
+              "count": 100
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cells": [
+            {
+              "text": "Week to Oct 12"
+            },
+            {
+              "text": "47",
+              "count": 47
+            },
+            {
+              "text": "73",
+              "count": 73
+            },
+            {
+              "text": "66",
+              "count": 66
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cells": [
+            {
+              "text": "Week to Oct 19"
+            },
+            {
+              "text": "29",
+              "count": 29
+            },
+            {
+              "text": "67",
+              "count": 67
+            },
+            {
+              "text": "38",
+              "count": 38
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cells": [
+            {
+              "text": "Week to Oct 26"
+            },
+            {
+              "text": "21",
+              "count": 21
+            },
+            {
+              "text": "72",
+              "count": 72
+            },
+            {
+              "text": "43",
+              "count": 43
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cells": [
+            {
+              "text": "Oct 27-31"
+            },
+            {
+              "text": "21",
+              "count": 21
+            },
+            {
+              "text": "56",
+              "count": 56
+            },
+            {
+              "text": "60",
+              "count": 60
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cells": [
+            {
+              "text": "Total"
+            },
+            {
+              "text": "915",
+              "count": 915
+            },
+            {
+              "text": "1,733",
+              "count": 1733
+            },
+            {
+              "text": "2,698",
+              "count": 2698
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tableNumber": 2,
+      "rows": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "text": ""
+            },
+            {
+              "text": "RAF"
+            },
+            {
+              "text": "Luftwaffe"
+            },
+            {
+              "text": "Claimed by RAF"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "text": "July (from July 10)"
+            },
+            {
+              "text": "58",
+              "count": 58
+            },
+            {
+              "text": "164",
+              "count": 164
+            },
+            {
+              "text": "203",
+              "count": 203
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "text": "August"
+            },
+            {
+              "text": "360",
+              "count": 360
+            },
+            {
+              "text": "662",
+              "count": 662
+            },
+            {
+              "text": "1,133",
+              "count": 1133
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "text": "September"
+            },
+            {
+              "text": "361",
+              "count": 361
+            },
+            {
+              "text": "582",
+              "count": 582
+            },
+            {
+              "text": "1,108",
+              "count": 1108
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "text": "October"
+            },
+            {
+              "text": "136",
+              "count": 136
+            },
+            {
+              "text": "325",
+              "count": 325
+            },
+            {
+              "text": "254",
+              "count": 254
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "text": "Total"
+            },
+            {
+              "text": "915",
+              "count": 915
+            },
+            {
+              "text": "1,733",
+              "count": 1733
+            },
+            {
+              "text": "2,698",
+              "count": 2698
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

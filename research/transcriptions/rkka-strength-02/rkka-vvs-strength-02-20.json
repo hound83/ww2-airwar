@@ -1,0 +1,169 @@
+{
+  "id": "RKKA-VVS-02-20",
+  "topic": "Luftwaffe aggregate fleet at invasion of USSR",
+  "formationOrForce": "german_luftwaffe",
+  "dateScopeIndex": "1941-06",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_20.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Mayo de 1941 {1}"
+        },
+        {
+          "value": "22 de junio de 1941 {2}"
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "1. Aviones de combate en los destacamentos operativos, academias aereas y en la reserva."
+        },
+        {
+          "value": "10 980"
+        },
+        {
+          "value": "10 100"
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "De los cuales:"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "bombarderos"
+        },
+        {
+          "value": "4 090"
+        },
+        {
+          "value": "5 840"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "bombarderos de picado"
+        },
+        {
+          "value": "1 850"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": "cazas"
+        },
+        {
+          "value": "3 820"
+        },
+        {
+          "value": "3 150"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": "aviones de reconocimiento"
+        },
+        {
+          "value": "1 220"
+        },
+        {
+          "value": "1 110"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": "2. Aviones de transporte"
+        },
+        {
+          "value": "2 000"
+        },
+        {
+          "value": "no datos exactos"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": "3. Aviones de entrenamiento y entrenamiento-combate"
+        },
+        {
+          "value": "4 320"
+        },
+        {
+          "value": "no datos exactos"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": "4. Aviones de la Marina y otros"
+        },
+        {
+          "value": "2 200"
+        },
+        {
+          "value": "no datos exactos"
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": "Total aviones"
+        },
+        {
+          "value": "19 500"
+        },
+        {
+          "value": "no datos exactos"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "id": "RKKA-VVS-02-22",
+  "topic": "German allied air forces deployed on Soviet front",
+  "formationOrForce": "axis_allies",
+  "dateScopeIndex": "1941-1945",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_22.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Fechas mas importantes"
+        },
+        {
+          "value": "Finlandia"
+        },
+        {
+          "value": "Rumania"
+        },
+        {
+          "value": "Hungria"
+        },
+        {
+          "value": "Italia"
+        },
+        {
+          "value": "Total"
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "A 22 junio 1941"
+        },
+        {
+          "value": "506"
+        },
+        {
+          "value": "504"
+        },
+        {
+          "value": "90"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "1 100"
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "A 1 enero 1942 {2}"
+        },
+        {
+          "value": "160"
+        },
+        {
+          "value": "165"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "425"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "A 1 julio 1942 {3}"
+        },
+        {
+          "value": "295"
+        },
+        {
+          "value": "165"
+        },
+        {
+          "value": "50"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "580"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "A 18 noviebre 1942"
+        },
+        {
+          "value": "310"
+        },
+        {
+          "value": "250"
+        },
+        {
+          "value": "150"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "780"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": "A 1 julio 1943"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "140"
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "280"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": "A 1 enero 1944"
+        },
+        {
+          "value": "360"
+        },
+        {
+          "value": "110"
+        },
+        {
+          "value": "70"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "540"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": "A 1 junio 1944 {3}"
+        },
+        {
+          "value": "100"
+        },
+        {
+          "value": "265"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "381"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": "A 1 enero 1945"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "250"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "250"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": "A 1 abril 1945"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "80"
+        },
+        {
+          "value": "no habia"
+        },
+        {
+          "value": "80"
+        }
+      ]
+    }
+  ]
+}
