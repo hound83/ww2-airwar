@@ -206,3 +206,8 @@
 .dossier-study h3{margin:0;font:600 1.15rem/1.2 Georgia,serif}
 .dossier-study p{margin:.5rem 0}
 .dossier-study a{display:inline-block;padding:.35rem 0;font-weight:650}
+
+.dossier-study details { margin-top: .75rem; }
+.dossier-study summary { cursor: pointer; }
+.dossier-study summary:focus-visible { outline: 2px solid currentColor; }
+.moment-navigation { margin-top: 1rem; }

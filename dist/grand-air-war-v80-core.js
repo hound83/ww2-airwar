@@ -465,30 +465,32 @@ function renderCampaignComparisons(c){
  }
  return blocks.length?'<div class="campaign-comparisons"><h3>Operational strength & losses · inspect before comparing</h3><p class="comparison-intro">Only matching dates, units and accounting definitions may be compared directly. A snapshot is not a sortie; a claim is not a confirmed loss.</p>'+blocks.join("")+'</div>':"";
 }
-const campaignStudies = {
-  "sicily": {
-    "question": "What difference did Allied fighters make in the battle for Sicily?",
-    "answer": "Fighters covered the beaches and ships from the first morning, though Axis aircraft still reached the fleet. Inland, fighter and fighter-bomber attacks slowed Axis troops moving by road while the Allies secured their beachheads. Later, fighter-bombers struck the ferries at Messina, but the Axis kept the crossing open.",
-    "label": "How much cover did the landing fleet receive? · 10 July 1943",
-    "href": "./sicily.html?case=landing-cover#case-detail"
-  },
-  "dieppe": {
-    "question": "What did air cover achieve at Dieppe?",
-    "answer": "Fighters covered the ships and the boats sent to recover troops. Close to shore, the landing craft still came under fire. No. 403 Squadron and the boat crews recorded different parts of the withdrawal.",
-    "label": "Follow the withdrawal · 19 August 1942",
-    "href": "./dieppe.html#withdrawal"
-  }
-};
+function momentUrl(campaign, moment) {
+ const base = "./grand-air-war-v80.html?campaign=" + encodeURIComponent(campaign.id) + "&event=" + encodeURIComponent(moment.date);
+ const repeated = campaign.moments.filter(item => item.date === moment.date).length > 1;
+ return base + (repeated ? "&episode=" + encodeURIComponent(moment.title) : "") + "#moment-detail";
+}
+const studyDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
- const study = campaignStudies[c?.id];
+ const study = window.AtlasCampaignStudies?.[c?.id];
  $("dossier-study").hidden = !study;
  if (study) {
   $("dossier-study-title").textContent = study.question;
   $("dossier-study-answer").textContent = study.answer;
-  $("dossier-study-link").href = study.href;
-  $("dossier-study-link").textContent = study.label;
+  $("dossier-study-link").href = study.href || momentUrl(c, c.moments.find(item => item.date === study.date && (!study.episode || item.title === study.episode)));
+  $("dossier-study-link").textContent = study.label + " · " + studyDate.format(new Date(study.date + "T00:00:00Z"));
+  $("dossier-study-gap").textContent = study.gap;
+  $("dossier-study-source").textContent = study.locator;
+  $("dossier-study-source").href = study.source;
+  $("dossier-study-context").hidden = !study.context;
+  if (study.context) {
+   $("dossier-study-context-text").textContent = study.context.text;
+   $("dossier-study-context-source").textContent = study.context.locator;
+   $("dossier-study-context-source").href = study.context.url;
+  }
+  if (state.lastDossierId !== state.selected) $("dossier-study-notes").open = false;
  }
  if(state.lastDossierId!==state.selected){$("campaign-dossier").scrollTop=0;state.lastDossierId=state.selected;}
  if(!c){
@@ -578,7 +580,7 @@ function renderMoments(){
  if(!chosen){$("moment-detail").innerHTML='';return;}
  const detail=chosen.summary?(chosen.airAction?'<h4>What happened and why</h4><p>'+esc(chosen.summary)+'</p><h4>Air operations and their limits</h4><p>'+esc(chosen.airAction)+'</p><h4>German perspective</h4><p>'+esc(chosen.opposingView)+'</p>':'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p>')+'<h4>What changed</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
  const ids=chosen.sourceIds?.length?chosen.sourceIds:c.sources;
- $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
+ $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div><p class="moment-navigation"><a href="'+esc(momentUrl(c,chosen))+'">Link to this event</a> · <a href="./grand-air-war-v80.html?campaign='+esc(c.id)+'#campaign-dossier">Return to the campaign dossier</a></p>';
  $("moment-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{
   if(window.AtlasClaimLosses?.openCalculator(event.currentTarget.dataset.claimScope))event.preventDefault();
  });
@@ -691,6 +693,8 @@ function init(){
   if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
   const origin = new URL(window.location.href);
   origin.searchParams.set("campaign", state.selected);
+  origin.searchParams.delete("event");
+  origin.searchParams.delete("episode");
   origin.hash = "campaign-dossier";
   window.history.replaceState(window.history.state, "", origin);
  });
@@ -730,9 +734,18 @@ function init(){
  $("force-metric").addEventListener("change",e=>{state.forceMetric=e.target.value;state.forceSelected=state.month;renderForces();});
  $("download-force").addEventListener("click",()=>download(forcePoints(),"grand-air-war-"+state.forceSeries+"-observations.csv"));
  document.addEventListener("visibilitychange",()=>{if(document.hidden)cancelPlay();});
- const campaign=window.location?.search?new URLSearchParams(window.location.search).get("campaign"):null;
- if(D.campaigns.some(c=>c.id===campaign))pickCampaign(campaign,false);
- else update();
+ const query = window.location?.search ? new URLSearchParams(window.location.search) : null;
+ const campaign = D.campaigns.find(c => c.id === query?.get("campaign"));
+ if (campaign) {
+  const events = campaign.moments.filter(e => e.date === query.get("event") && (!query.has("episode") || e.title === query.get("episode")));
+  if (events.length === 1) {
+   const event = events[0];
+   selectMoment(campaign.id, event.date, event.lat, event.lng, event.title);
+   if (window.location.hash === "#moment-detail") $("moment-detail").scrollIntoView();
+  } else {
+   pickCampaign(campaign.id, false);
+  }
+ } else update();
  renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();

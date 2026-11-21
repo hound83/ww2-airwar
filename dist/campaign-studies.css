@@ -1,0 +1,15 @@
+.study { max-width: 62rem; padding-bottom: 2rem; }
+.study h1 { max-width: 18ch; }
+.study section > p { max-width: 70ch; }
+.study .intro-links a, .study .return a { padding-block: .4rem; }
+.study h3 { margin-top: 1.4rem; }
+.study th, .study td { padding: .45rem .55rem; }
+.study table { font-variant-numeric: tabular-nums; }
+.study caption { text-align: left; padding-bottom: .65rem; font-weight: 650; }
+.study tbody tr:nth-child(even) { background: var(--paper); }
+.study .return { margin-top: 2.5rem; }
+@media (max-width: 540px) {
+  .study th, .study td { padding: .45rem .2rem; overflow-wrap: anywhere; }
+  .study table { table-layout: fixed; font-size: .83rem; }
+  .study .daily th:first-child { width: 17%; }
+}

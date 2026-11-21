@@ -2,6 +2,10 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 21 November 2026 · Air power across 20 campaigns
+
+Every dossier leads with a historical question, a dated case, a source and an open question. The [Narvik anchorage](../narvik.html#anchorage) and [Big Week raids](../big-week.html#february-24) have new studies. [Twenty-campaign review](CAMPAIGN_EVIDENCE_REVIEW.md) · [Candidate decisions](../research/sources/campaign-candidates-second-sweep.md). The next milestone follows 20 substantive formation histories across six flagship campaigns.
+
 ## 21 November 2026 · Sicily airfields and Dieppe air cover
 
 [No. 92 Squadron at Pachino](../sicily.html?case=pachino-patrols#case-detail) follows patrols from Malta through island-based operations and cover for the ships off Syracuse. Dated engineering returns extend the Pachino, Ponte Olivo and Biscari histories. [Dieppe](../dieppe.html#withdrawal) connects No. 403 Squadron’s diary with the experience of the landing craft, the German observations and the differing aircraft loss accounts. [Source audit](../research/sources/sicily-dieppe-operational-evidence-2026-11-21.md)
