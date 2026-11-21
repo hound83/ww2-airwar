@@ -12,8 +12,8 @@
     },
     {
       "id": "advance",
-      "title": "Move the fighters forward",
-      "summary": "Securing a landing ground was only the first step. Engineers, supplies and ground crews made it possible to fly from the island."
+      "title": "Support the advance",
+      "summary": "Flying from Sicilian fields, fighters covered warships off Syracuse. Fighter-bombers struck roads and ports used by the Axis as the Allied armies advanced."
     },
     {
       "id": "strait",
@@ -328,6 +328,13 @@
           "locator": "The Western Task Force Landings",
           "title": "Axis attacks reached the ships",
           "note": "The RAF narrative records the loss of USS Maddox to bombing in the DIME sector on 10 July.",
+          "figures": {}
+        },
+        {
+          "source": "air",
+          "locator": "Chapter 14, pp. 450–452, fighter cover on 10 July",
+          "title": "How much protection reached the fleet?",
+          "note": "The long flight from offshore fields limited time over the beaches. The US Navy reported gaps in cover over the American sectors. Allied air commanders pointed to the scale of their patrols and lower ship losses than the Navy had feared. The number of ships saved by patrols remains unknown.",
           "figures": {}
         }
       ]
