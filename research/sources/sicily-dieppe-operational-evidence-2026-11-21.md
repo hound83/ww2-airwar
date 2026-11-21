@@ -17,6 +17,13 @@ Source locators
 - [RAF campaign narrative, printed pp. 64–65, PDF pp. 66–67](https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/#page=66). First Fighter Wing in Sicily and Landing of XII Air Support Command.
 - [No. 92 Squadron Form 540, entries 13–17 July](https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942). This is a published transcription. Its 14 July entry describes contact with aircraft identified as Macchi fighters. A matched Italian unit return remains open, so no Italian unit loss has been entered from the British account.
 
+### What did the fighters change?
+
+- On 10 July fighters covered the assault fleet from offshore fields. Distance limited time over the beaches. The US Navy recorded gaps over American sectors. The Allied air command defended its performance by comparing losses with the Navy's forecast. A forecast cannot establish how many ships the patrols saved. [USAAF official history, chapter 14, pp. 450–452](https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-14.html#page450).
+- The same history credits Twelfth Air Force day fighters and fighter-bombers with disrupting Axis road traffic on 12 July while the Allied armies consolidated their beachheads. The account covers the island's roads. The contribution at Gela of any individual squadron, or relative to naval gunfire, needs a more local record. [Official history, p. 453](https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-14.html#page453).
+- On 16 July No. 92 Squadron recorded eight aircraft covering the ships off Syracuse, including the battleships that shelled Catania. The diary establishes who flew cover and for whom. The increase in patrol time attributable to moving from Malta to Pachino still needs comparable flights before and after the move. [Squadron diary, 16 July](https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942).
+- At Messina the official history identifies fighter-bomber attacks on shipping and docks and distinguishes them from the bombing by other aircraft. The Axis continued to evacuate troops and equipment across the strait. The evacuation total describes the outcome of the combined operation. It cannot isolate the effect of fighter-bombers. [Official history, pp. 472–473](https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-14.html#page472).
+
 ## Dieppe, 19 August 1942
 
 The [Dieppe study](../../dieppe.html) follows the cover of the ships, observations from shore, the withdrawal and the competing loss totals. The Canadian squadron diary describes four squadron operations that day. Its first three give a sequence from close cover over Dieppe to observation of the homeward convoy.

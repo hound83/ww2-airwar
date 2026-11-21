@@ -467,10 +467,10 @@ function renderCampaignComparisons(c){
 }
 const campaignStudies = {
   "sicily": {
-    "question": "When could fighters fly from Sicily?",
-    "answer": "No. 92 Squadron landed at Pachino after a patrol from Malta on 13 July. By the next day its pilots were flying patrols before their ground crews had arrived.",
-    "label": "Follow No. 92 Squadron at Pachino · 14 July 1943",
-    "href": "./sicily.html?case=pachino-patrols#case-detail"
+    "question": "What difference did Allied fighters make in the battle for Sicily?",
+    "answer": "Fighters covered the beaches and ships from the first morning, though Axis aircraft still reached the fleet. Inland, fighter and fighter-bomber attacks slowed Axis troops moving by road while the Allies secured their beachheads. Later, fighter-bombers struck the ferries at Messina, but the Axis kept the crossing open.",
+    "label": "How much cover did the landing fleet receive? · 10 July 1943",
+    "href": "./sicily.html?case=landing-cover#case-detail"
   },
   "dieppe": {
     "question": "What did air cover achieve at Dieppe?",
