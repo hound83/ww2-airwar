@@ -116,6 +116,7 @@ const check=async()=>{
    const separated=await page.locator("#dossier-facts .fact").evaluateAll(nodes=>nodes.every(node=>node.querySelector("small").getBoundingClientRect().bottom<=node.querySelector("a").getBoundingClientRect().top+1));
    assert.ok(separated,"claim source links overlap their scope notes");
    const dossier=await page.locator(".dossier").boundingBox(),jump=page.getByRole("link",{name:"Sourced figures",exact:true});
+   assert.equal(new URL(await jump.getAttribute("href"),base).searchParams.get("campaign"),"poland","a new tab must preserve a campaign selected by search");
    const shortcut=await jump.boundingBox();
    assert.ok(shortcut.y-dossier.y<230,"the route to numerical evidence must remain above the campaign interpretation");
    if(viewport.width<500)await jump.tap();else await jump.press("Enter");

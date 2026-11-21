@@ -493,6 +493,7 @@ function renderDossier(){
  const study = window.AtlasCampaignStudies?.[c?.id];
  $("dossier-study").hidden = !study;
  $("dossier-facts-jump").hidden = !c?.facts.length;
+ if (c) $("dossier-facts-jump").href = "./grand-air-war-v80.html?campaign=" + encodeURIComponent(c.id) + "#dossier-facts";
  if (study) {
   $("dossier-study-title").textContent = study.question;
   $("dossier-study-answer").textContent = study.answer;
