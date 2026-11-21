@@ -42,6 +42,7 @@ module.exports = async (browser, base, root) => {
           const detail = page.locator("#moment-detail");
           await detail.locator(":scope > h3").waitFor();
           assert.ok((await detail.innerText()).includes(study.date));
+          if (id === "berlin") await detail.getByRole("heading", {name: "Infantry at Alt-Malisch"}).waitFor();
           assert.equal(new URL(await detail.getByRole("link", {name: "Link to this event"}).getAttribute("href"), base).href, target.href);
         }
         if (id === "norway" || id === "bigweek") {

@@ -202,11 +202,17 @@ window.AtlasCampaignStudies = {
   },
   "berlin": {
     "date": "1945-04-19",
-    "question": "What can the Soviet flying effort tell us about the breakthrough toward Berlin?",
-    "answer": "The 16th Air Army continued to fly intensively as Soviet ground forces broke through the defences on the approaches to Berlin. Hiestand's daily table records the scale of the commitment. It leaves open how much a particular strike contributed to taking a defended position.",
-    "label": "Examine the 16th Air Army's daily return",
-    "source": "https://www.ospreypublishing.com/us/eastern-front-1945-9781472857842/",
-    "locator": "William E. Hiestand, Eastern Front 1945, 16th Air Army daily sortie table",
-    "gap": "Which army or corps reports identify positions where air attack materially changed the ground fighting?"
+    "question": "Where did air support help ground troops advance toward Berlin?",
+    "answer": "On 19 April, heavy fire held up the Soviet 25th Rifle Corps at Alt-Malisch. The 16th Air Army's history describes 21 ground-attack aircraft arriving from another sector. Their crews saw the infantry advance, and the history credits the attack with helping the troops take the position.",
+    "label": "Follow the reported breakthrough at Alt-Malisch",
+    "source": "https://militera.lib.ru/h/16va/05.html",
+    "locator": "16th Air Army history, chapter 5, printed pp. 349–352 (Russian)",
+    "gap": "Do the 25th Rifle Corps and German defenders' records confirm when the firing stopped and how the position fell?",
+    "context": {
+      "text": "The 16th Air Army counted 4,398 sorties that day, including 1,968 for bombing and ground attack and 236 for reconnaissance. The 21 aircraft described at Alt-Malisch belonged to one engagement. The day’s total covers the whole air army.",
+      "url": "https://militera.lib.ru/h/16va/05.html",
+      "locator": "16th Air Army history, printed p. 352, daily breakdown"
+    },
+    "episodeHeading": "Infantry at Alt-Malisch"
   }
 };

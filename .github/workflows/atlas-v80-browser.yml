@@ -72,44 +72,6 @@ jobs:
           printf 'ATLAS_CHROMIUM_PATH=%s\n' "$browser_path" >> "$GITHUB_ENV"
       - name: Desktop and mobile campaign QA
         run: node tests/grand-air-war-v80-browser.cjs
-      - name: Check out the published comparison for visual review
-        if: always()
-        uses: actions/checkout@v4
-        with:
-          ref: 03081e77b36a63da29960205167a41f39f7fcc84
-          path: visual-baseline
-      - name: Compare campaign reading views
-        if: always()
-        run: |
-          python3 -m http.server 4986 --directory visual-baseline >/dev/null 2>&1 &
-          node <<'NODE'
-          const {chromium}=require("playwright");
-          (async()=>{
-            const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM_PATH,args:["--no-sandbox"]});
-            const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true});
-            await page.goto("http://127.0.0.1:4986/grand-air-war-v80.html?campaign=norway#campaign-dossier",{waitUntil:"domcontentloaded"});
-            await page.locator("#dossier-title").evaluate(el=>el.scrollIntoView({block:"start"}));
-            await page.locator("#campaign-dossier").screenshot({path:"v80-qa-prior-norway.png"});
-            await browser.close();
-          })().catch(err=>{console.error(err);process.exitCode=1;});
-          NODE
-          python3 -m pip install --target "$RUNNER_TEMP/atlas-preview-py" Pillow --quiet
-          PYTHONPATH="$RUNNER_TEMP/atlas-preview-py" python3 - <<'PY'
-          from PIL import Image,ImageOps,ImageDraw
-          import os,base64,io
-          files=[("Prior Norway dossier","v80-qa-prior-norway.png"),("Norway dossier with evidence","v80-qa-dossier-review-390.png"),("Narvik study","v80-qa-norway-study-390.png"),("Big Week study","v80-qa-bigweek-study-390.png")]
-          sheet=Image.new("RGB",(640,900),"white")
-          for i,(label,path) in enumerate(files):
-              if not os.path.exists(path): continue
-              x,y=(i%2)*320,(i//2)*450
-              part=Image.open(path).convert("RGB")
-              part.thumbnail((315,422))
-              sheet.paste(part,(x,y+20))
-              ImageDraw.Draw(sheet).text((x+3,y+3),label,fill="black")
-          output=io.BytesIO()
-          sheet.save(output,format="JPEG",quality=50,optimize=True)
-          print("ATLAS_VISUAL_REVIEW "+base64.b64encode(output.getvalue()).decode())
-          PY
       - name: Save screenshots for review
         if: always()
         uses: actions/upload-artifact@v4
