@@ -116,14 +116,22 @@ const check=async()=>{
    const separated=await page.locator("#dossier-facts .fact").evaluateAll(nodes=>nodes.every(node=>node.querySelector("small").getBoundingClientRect().bottom<=node.querySelector("a").getBoundingClientRect().top+1));
    assert.ok(separated,"claim source links overlap their scope notes");
    const dossier=await page.locator(".dossier").boundingBox(),jump=page.getByRole("link",{name:"Sourced figures",exact:true});
+   assert.equal(new URL(await jump.getAttribute("href"),base).searchParams.get("campaign"),"poland","a new tab must preserve a campaign selected by search");
    const shortcut=await jump.boundingBox();
    assert.ok(shortcut.y-dossier.y<230,"the route to numerical evidence must remain above the campaign interpretation");
-   await jump.press("Enter");
+   if(viewport.width<500)await jump.tap();else await jump.press("Enter");
+   const factGeometry=()=>{
+    const fact=document.querySelector("#dossier-facts .fact");
+    const rect=fact.getBoundingClientRect(),panel=fact.closest(".dossier").getBoundingClientRect();
+    return {focus:document.activeElement.id,top:rect.top,panelTop:panel.top,panelBottom:panel.bottom,viewport:innerHeight};
+   };
    await page.waitForFunction(()=>{
     const fact=document.querySelector("#dossier-facts .fact");
     const rect=fact.getBoundingClientRect(),panel=fact.closest(".dossier").getBoundingClientRect();
     return document.activeElement.id==="dossier-facts" && rect.top>=Math.max(0,panel.top)-1 && rect.top<Math.min(innerHeight,panel.bottom);
-   },null,{timeout:5000});
+   },null,{timeout:5000}).catch(async error=>{
+    throw new Error("Sourced figures at "+viewport.width+"px: "+JSON.stringify(await page.evaluate(factGeometry)),{cause:error});
+   });
    assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
    const phaseCardsOverlap=await page.locator("#chapter-list .chapter-card").evaluateAll(cards=>cards.some((card,i)=>cards.some((other,j)=>{
     if(i>=j)return false;const a=card.getBoundingClientRect(),b=other.getBoundingClientRect();

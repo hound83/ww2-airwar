@@ -493,6 +493,7 @@ function renderDossier(){
  const study = window.AtlasCampaignStudies?.[c?.id];
  $("dossier-study").hidden = !study;
  $("dossier-facts-jump").hidden = !c?.facts.length;
+ if (c) $("dossier-facts-jump").href = "./grand-air-war-v80.html?campaign=" + encodeURIComponent(c.id) + "#dossier-facts";
  if (study) {
   $("dossier-study-title").textContent = study.question;
   $("dossier-study-answer").textContent = study.answer;
@@ -709,7 +710,15 @@ function renderSources(){
 function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();window.AtlasNormandyOperations?.sync();}
 function init(){
  // Keep the originating campaign when Back reloads the document after a case study.
- $("dossier-facts-jump").addEventListener("click", () => recordCampaignSelection(state.selected));
+ $("dossier-facts-jump").addEventListener("click", event => {
+  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  recordCampaignSelection(state.selected);
+  window.history.pushState(window.history.state, "", "#dossier-facts");
+  const figures = $("dossier-facts");
+  figures.focus({preventScroll:true});
+  figures.scrollIntoView({block:"start", behavior:"instant"});
+ });
  $("dossier-study-link").addEventListener("click", event => {
   if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
   recordCampaignSelection(state.selected);
