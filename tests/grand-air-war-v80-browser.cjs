@@ -119,12 +119,11 @@ const check=async()=>{
    const shortcut=await jump.boundingBox();
    assert.ok(shortcut.y-dossier.y<230,"the route to numerical evidence must remain above the campaign interpretation");
    await jump.press("Enter");
-   await page.waitForFunction(()=>document.activeElement.id==="dossier-facts-heading");
-   const factView=await page.locator("#dossier-facts .fact").first().evaluate(el=>{
-    const rect=el.getBoundingClientRect(),panel=el.closest(".dossier").getBoundingClientRect();
-    return rect.top>=Math.max(0,panel.top)-1 && rect.top<Math.min(innerHeight,panel.bottom);
-   });
-   assert.ok(factView,"the evidence shortcut must bring the first sourced figure into view");
+   await page.waitForFunction(()=>{
+    const fact=document.querySelector("#dossier-facts .fact");
+    const rect=fact.getBoundingClientRect(),panel=fact.closest(".dossier").getBoundingClientRect();
+    return document.activeElement.id==="dossier-facts" && rect.top>=Math.max(0,panel.top)-1 && rect.top<Math.min(innerHeight,panel.bottom);
+   },null,{timeout:5000});
    assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
    const phaseCardsOverlap=await page.locator("#chapter-list .chapter-card").evaluateAll(cards=>cards.some((card,i)=>cards.some((other,j)=>{
     if(i>=j)return false;const a=card.getBoundingClientRect(),b=other.getBoundingClientRect();

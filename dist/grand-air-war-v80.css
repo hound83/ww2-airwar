@@ -215,4 +215,4 @@
 .dossier-dateline { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .65rem; }
 .dossier-dateline .period { margin-block: .2rem; }
 .dossier-dateline a { font-size: .85rem; padding-block: .25rem; }
-#dossier-facts-heading { scroll-margin-block-start: .5rem; }
+#dossier-facts { scroll-margin-block-start: .5rem; }
