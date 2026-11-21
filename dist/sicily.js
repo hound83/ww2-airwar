@@ -107,14 +107,14 @@
     const caseUrl = (item, unit = "") => "?" + new URLSearchParams({ case: item.id, ...(unit ? { formation: unit } : {}) }) + "#campaign";
     const caseLink = (item, label) => '<a href="' + escape(caseUrl(item, formation.value)) +
       '" data-case="' + escape(item.id) + '">' + escape(label) + '</a>';
-    const source = id => anchor(data.sources[id][1], data.sources[id][0]);
+    const source = (id, pdfPage) => anchor(data.sources[id][1] + (pdfPage ? "#page=" + pdfPage : ""), data.sources[id][0]);
 
     function record(row) {
       const figures = Object.entries(row.figures);
       return '<div class="source-record"><h4>' + escape(row.title) + '</h4>' +
         (figures.length ? '<dl class="metrics">' + figures.map(([label, value]) =>
           '<div><dt>' + escape(label) + '</dt><dd>' + numbers.format(value) + '</dd></div>').join("") + '</dl>' : "") +
-        '<p>' + escape(row.note) + '</p><p>' + source(row.source) + ' · ' + escape(row.locator) + '</p></div>';
+        '<p>' + escape(row.note) + '</p><p>' + source(row.source, row.pdfPage) + ' · ' + escape(row.locator) + '</p></div>';
     }
 
     function render(preferred, { updateUrl = false, reveal = false, refit = true } = {}) {
@@ -204,9 +204,13 @@
     get("formations").hidden = false;
     get("load-status").hidden = true;
     restore();
+    if (location.hash === "#case-detail" && selected) {
+      get("case-title").focus({ preventScroll: true });
+      get("case-detail").scrollIntoView();
+    }
   }
 
-  fetch("./research/transcriptions/sicily-air-campaign-1943.json?v=9.9")
+  fetch("./research/transcriptions/sicily-air-campaign-1943.json?v=airfields2")
     .then(response => {
       if (!response.ok) throw new Error("Campaign records unavailable.");
       return response.json();

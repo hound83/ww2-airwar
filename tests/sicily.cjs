@@ -36,9 +36,12 @@ for (const station of data.stations) {
 for (const [origin, sector] of data.cover) assert.ok(sites.has(origin) && sites.has(sector));
 assert.equal(cases.get("gela-friendly-fire").evidence[0].figures["Failed to return"], 23);
 assert.equal(cases.get("axis-readiness").evidence[0].figures["Gerbini serviceable"], 0);
-assert.deepEqual(data.stations.filter(row => row.site === "pachino").map(row => row.date), ["1943-07-10", "1943-07-13"]);
-assert.deepEqual(data.stations.filter(row => row.site === "biscari").map(row => row.date), ["1943-07-12", "1943-07-14"]);
+assert.deepEqual(data.stations.filter(row => row.site === "pachino").map(row => row.date), ["1943-07-10", "1943-07-12", "1943-07-13", "1943-07-14", "1943-07-16"]);
+assert.deepEqual(data.stations.filter(row => row.site === "biscari").map(row => row.date), ["1943-07-12", "1943-07-14", "1943-07-16", "1943-07-19"]);
 assert.equal(cases.get("messina").evidence.find(row => row.title === "German evacuation return").figures["German personnel evacuated"], 39569);
+assert.deepEqual(data.stations.filter(row => row.site === "ponteolivo").map(row => row.date), ["1943-07-12", "1943-07-13", "1943-07-15", "1943-07-16"]);
+assert.equal(cases.get("pachino-operational").evidence.find(r => r.source === "orb92").figures["Squadron sorties that day, all origins"], 41);
+assert.ok(cases.get("pachino-patrols").formations.includes("sq92"));
 assert.ok(fs.existsSync(path.join(root, "research/sources/atlas-sicily-air-campaign-2026-11-14.md")));
 console.log("PASS Sicily: cases, locations, formations, capture dates, readiness and source scope");
 

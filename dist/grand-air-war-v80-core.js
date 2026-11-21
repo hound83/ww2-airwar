@@ -465,8 +465,31 @@ function renderCampaignComparisons(c){
  }
  return blocks.length?'<div class="campaign-comparisons"><h3>Operational strength & losses · inspect before comparing</h3><p class="comparison-intro">Only matching dates, units and accounting definitions may be compared directly. A snapshot is not a sortie; a claim is not a confirmed loss.</p>'+blocks.join("")+'</div>':"";
 }
+const campaignStudies = {
+  "sicily": {
+    "question": "When could fighters fly from Sicily?",
+    "answer": "No. 92 Squadron landed at Pachino after a patrol from Malta on 13 July. By the next day its pilots were flying patrols before their ground crews had arrived.",
+    "label": "Follow No. 92 Squadron at Pachino · 14 July 1943",
+    "href": "./sicily.html?case=pachino-patrols#case-detail"
+  },
+  "dieppe": {
+    "question": "What did air cover achieve at Dieppe?",
+    "answer": "Fighters covered the ships and the boats sent to recover troops. Close to shore, the landing craft still came under fire. No. 403 Squadron and the boat crews recorded different parts of the withdrawal.",
+    "label": "Follow the withdrawal · 19 August 1942",
+    "href": "./dieppe.html#withdrawal"
+  }
+};
+
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
+ const study = campaignStudies[c?.id];
+ $("dossier-study").hidden = !study;
+ if (study) {
+  $("dossier-study-title").textContent = study.question;
+  $("dossier-study-answer").textContent = study.answer;
+  $("dossier-study-link").href = study.href;
+  $("dossier-study-link").textContent = study.label;
+ }
  if(state.lastDossierId!==state.selected){$("campaign-dossier").scrollTop=0;state.lastDossierId=state.selected;}
  if(!c){
   $("dossier-meta").textContent="NO CAMPAIGN MATCHES THE FILTERS";
@@ -663,6 +686,14 @@ function renderSources(){
 }
 function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();window.AtlasNormandyOperations?.sync();}
 function init(){
+ // Keep the originating campaign when Back reloads the document after a case study.
+ $("dossier-study-link").addEventListener("click", event => {
+  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  const origin = new URL(window.location.href);
+  origin.searchParams.set("campaign", state.selected);
+  origin.hash = "campaign-dossier";
+  window.history.replaceState(window.history.state, "", origin);
+ });
  if(!$("campaign-map"))return;
  setupMap();renderCoverage();renderSources();
  $("date-slider").addEventListener("input",e=>{cancelPlay();updateMonth(atIdx(Number(e.target.value)));});
