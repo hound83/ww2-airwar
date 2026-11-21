@@ -89,7 +89,7 @@ jobs:
             const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true});
             await page.goto("http://127.0.0.1:4986/grand-air-war-v80.html?campaign=norway#campaign-dossier",{waitUntil:"domcontentloaded"});
             await page.locator("#dossier-title").evaluate(el=>el.scrollIntoView({block:"start"}));
-            await page.screenshot({path:"v80-qa-prior-norway.png"});
+            await page.locator("#campaign-dossier").screenshot({path:"v80-qa-prior-norway.png"});
             await browser.close();
           })().catch(err=>{console.error(err);process.exitCode=1;});
           NODE

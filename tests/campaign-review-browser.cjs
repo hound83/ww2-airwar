@@ -23,6 +23,7 @@ module.exports = async (browser, base, root) => {
       for (const [id, study] of Object.entries(studies)) {
         await page.locator('#campaign-list [data-campaign="' + id + '"]').click();
         await page.getByRole("heading", { name: study.question, exact: true }).waitFor();
+        assert.equal(new URL(page.url()).searchParams.get("campaign"), id);
         const panel = page.locator("#dossier-study");
         assert.equal(await panel.locator("#dossier-study-answer").textContent(), study.answer);
         const notes = panel.locator("details");
@@ -57,8 +58,8 @@ module.exports = async (browser, base, root) => {
       await page.getByRole("heading", {name: studies.poland.question}).waitFor();
       assert.ok(await page.locator("#moment-detail").isHidden());
       const episode = "121st Fighter Squadron intercepts Dornier Do 17 bombers";
-      shared.searchParams.set("episode", episode);
-      await page.goto(shared.href, {waitUntil:"domcontentloaded"});
+      await page.locator('#moment-list [data-date="1939-09-01"]').filter({hasText:episode}).click();
+      assert.equal(new URL(page.url()).searchParams.get("episode"), episode);
       await page.locator("#moment-detail").getByRole("heading", {name:episode}).waitFor();
       await page.reload({waitUntil:"domcontentloaded"});
       await page.locator("#moment-detail").getByRole("heading", {name:episode}).waitFor();

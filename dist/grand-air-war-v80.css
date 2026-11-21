@@ -211,3 +211,8 @@
 .dossier-study summary { cursor: pointer; }
 .dossier-study summary:focus-visible { outline: 2px solid currentColor; }
 .moment-navigation { margin-top: 1rem; }
+
+.dossier-dateline { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .65rem; }
+.dossier-dateline .period { margin-block: .2rem; }
+.dossier-dateline a { font-size: .85rem; padding-block: .25rem; }
+#dossier-facts-heading { scroll-margin-block-start: .5rem; }
