@@ -1,10 +1,10 @@
 # Atlas v10 WIP · All-campaign evidence review
 
-**Status:** Initial review baseline. **Owner:** Codex. **Starting revision:** [v9.9 · From Malta to Messina](https://github.com/hound83/ww2-airwar/commit/5ad240057d285eded7b4005ff7f0f356d0850580). The [published Atlas](https://hound83.github.io/ww2-airwar/) is v9.9. The [second-sweep roadmap](#second-sweep-roadmap) sets the proposed delivery order and research questions. This candidate starts the evidence review milestone on the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md).
+**Status:** Sicily and Dieppe published. The 20-campaign review is next. **Owner:** Codex. **Starting revision:** [v9.9 · From Malta to Messina](https://github.com/hound83/ww2-airwar/commit/5ad240057d285eded7b4005ff7f0f356d0850580). The release used for the coverage baseline was v9.9. The [second-sweep roadmap](#second-sweep-roadmap) sets the proposed delivery order and research questions. This candidate starts the evidence review milestone on the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md).
 
 ## Coverage baseline
 
-Counts come from the campaign registry after loading the Normandy narrative, in the same order as the Atlas audit suite. Chapters, chronology entries and quantitative facts are three different measures. These counts describe the main campaign dossiers. Linked explorers and timelines have their own records. A small count identifies a review candidate and says nothing by itself about the historical quality or completeness of its evidence.
+At the v9.9 starting revision, counts came from the campaign registry after loading the Normandy narrative, in the same order as the Atlas audit suite. Chapters, chronology entries and quantitative facts are three different measures. These counts describe the main campaign dossiers. Linked explorers and timelines have their own records. A small count identifies a review candidate and says nothing by itself about the historical quality or completeness of its evidence.
 
 | Campaign dossier | Chapters | Chronology entries | Quantitative facts | Specialist explorer or timeline |
 | --- | ---: | ---: | ---: | --- |
@@ -30,7 +30,7 @@ Counts come from the campaign registry after loading the Normandy narrative, in 
 | [Final air operations over Berlin](https://hound83.github.io/ww2-airwar/grand-air-war-v80.html?campaign=berlin#campaign-dossier) | 3 | 5 | 3 | — |
 | **Total** | **61** | **121** | **139** | |
 
-Dieppe has a single dated entry and no dossier chapters. Bodenplatte also has a single overview entry, but links to its dedicated campaign explorer. Review the route as well as the registry counts before prioritizing repairs.
+At baseline, Dieppe had a single dated entry and no dossier chapters. Bodenplatte also had a single overview entry, but links to its dedicated campaign explorer. Review the route as well as the registry counts before prioritizing repairs.
 
 ## Earlier candidates
 
@@ -51,6 +51,8 @@ Dieppe has a single dated entry and no dossier chapters. Bodenplatte also has a 
 ## Second-sweep roadmap
 
 Proposed 21 November 2026.
+
+**Milestone 1 shipped on 21 November.** [PR #63](https://github.com/hound83/ww2-airwar/pull/63) added three mapped cases in Sicily and a dedicated Dieppe study. Readers can follow [No. 92 Squadron at Pachino](https://hound83.github.io/ww2-airwar/sicily.html?case=pachino-patrols#case-detail) or [the withdrawal at Dieppe](https://hound83.github.io/ww2-airwar/dieppe.html#withdrawal) from the respective campaign dossier and return to it. The [source audit at the deployed revision](https://github.com/hound83/ww2-airwar/blob/5eb1459baf7c5a2a51003783dc6fe5794020de45/research/sources/sicily-dieppe-operational-evidence-2026-11-21.md) records the remaining gaps. Continue with the 20-row review in milestone 2.
 
 **Start in Sicily.** Build a short account of when fighters could first operate from captured airfields. Use Dieppe to test whether the same way of telling a story works for a single day with conflicting loss totals. The all-campaign review can then apply a tested approach to the other entries.
 
