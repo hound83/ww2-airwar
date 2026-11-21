@@ -1,6 +1,6 @@
 # European Air War Atlas roadmap through v10
 
-Updated 14 November 2026 for Atlas v9.9. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
+Updated 21 November 2026 after the second-sweep campaign review. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
 
 ## What has shipped
 
@@ -14,18 +14,19 @@ Updated 14 November 2026 for Atlas v9.9. This revises the 11 November [six-relea
 | Defence of the Reich, v9.7 | Thirteen map-linked day and night cases show Allied missions and escorts, German interceptions and original command returns. Two additional German daily command rows and an aircrew report extend the evidence. | Resolve selected formation-level matches and missing archival ledgers. [Explorer](https://hound83.github.io/ww2-airwar/reich-defence.html) · [Audit](../research/sources/atlas-reich-defence-2026-11-13.md) |
 | Malta, v9.8 | Sixteen mapped cases link Spitfire deliveries, airfield defence and convoy outcomes. The Atlas resolves the Spotter carrier and records the remaining delivery, loss and sortie-count discrepancies. | Extend squadron and Axis unit daily records and reconcile the Bellows count. [Explorer](https://hound83.github.io/ww2-airwar/malta.html) · [Audit](../research/sources/atlas-malta-air-campaign-2026-11-13.md) |
 | Sicily, v9.9 | Nineteen dated cases link offshore landing cover, airborne missions, usable airfields, formation moves and the Messina evacuation. | Extend matched Axis unit records and reconcile the Biscari occupation dates. [Explorer](https://hound83.github.io/ww2-airwar/sicily.html) · [Audit](../research/sources/atlas-sicily-air-campaign-2026-11-14.md) |
+| Second sweep, campaigns | All 20 dossiers connect a historical question to an observed effect, a dated case, a source and an open question. Narvik and Big Week have dedicated studies. | Follow up the receiving-side and opposing records identified in the [campaign review](CAMPAIGN_EVIDENCE_REVIEW.md). The [candidate ledger](../research/transcriptions/campaign-candidate-reconciliation.csv) records the disposition of all 320 rows. |
 
 Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. The six flagship depth targets, reusable formation histories, operational balance studies and connected European history remain ahead.
 
 ## Recommended next milestone
 
-**All-campaign evidence review.** Check the reader journeys across all 20 dossiers and reconcile the bilateral evidence and Narvik candidates against main.
+**Formation and airfield histories.** Connect 20 substantive unit histories across Normandy, Britain, Bagration, Reich defence, Malta and Sicily. For each flagship, follow at least one unit from its station through a dated operation to the people or forces it affected. Distinguish arrival, readiness and actual sorties. No. 92 Squadron's move from Malta to Pachino already provides a starting point.
 
 ## Following milestones
 
 | Order | Reader outcome | Completion evidence |
 | --- | --- | --- |
-| 2 · Flagship depth and all-entry review | Review evidence and navigation across the six flagships and improve the remaining campaign entries. | Normandy, Battle of Britain, Bagration, Defence of the Reich, Malta and Sicily have deep, linked accounts. All 20 entries explain situation, objectives, participants, sequence, consequences and sources. Review the [bilateral evidence candidate](https://github.com/hound83/ww2-airwar/pull/20) and [Narvik candidate](https://github.com/hound83/ww2-airwar/pull/15) against main before reuse. |
+| 2 · Flagship depth and all-entry review | Review evidence and navigation across the six flagships and improve the remaining campaign entries. | Normandy, Battle of Britain, Bagration, Defence of the Reich, Malta and Sicily have deep, linked accounts. All 20 entries explain situation, objectives, participants, sequence, consequences and sources. The [row-level review](../research/sources/campaign-candidates-second-sweep.md) reconciles the bilateral and Narvik candidates. The open questions in each dossier guide further flagship research. |
 | 3 · Formation and airfield histories | Trace a dated formation through its equipment, stations and operations. | Reuse the data relationships tested in Bodenplatte and Bagration. Aim for 20 substantive histories across the six flagships, with dated deployments and a traceable formation journey in each. |
 | 4 · Operational balance studies | Use the records to answer questions about effort, losses, readiness, replacement and constraints. | Six worked studies with source definitions, compatible comparisons and inspectable exports. See study questions below. |
 | 5 · v10, connected European air war | Move from the wider history into a campaign, operation, dated map and formation or source, then return to the wider context. | Six to eight Europe-wide chapters, working routes through all 20 campaigns, six flagship journeys, six evidence studies and verified desktop/mobile publication. |

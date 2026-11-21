@@ -25,6 +25,7 @@ const check=async()=>{
   await require("./reich-defence-browser.cjs")(browser,base,root);
   await require("./malta-browser.cjs")(browser,base,root);
   await require("./sicily-browser.cjs")(browser,base,root);
+  await require("./campaign-review-browser.cjs")(browser,base,root);
   await require("./operations-1944-browser.cjs")(browser,base,root);
   await require("./grand-air-war-v80-layout-browser.cjs")(browser,base,root);
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
@@ -114,8 +115,15 @@ const check=async()=>{
    assert.match(await page.locator("#dossier-facts").innerText(),/1,300/);
    const separated=await page.locator("#dossier-facts .fact").evaluateAll(nodes=>nodes.every(node=>node.querySelector("small").getBoundingClientRect().bottom<=node.querySelector("a").getBoundingClientRect().top+1));
    assert.ok(separated,"claim source links overlap their scope notes");
-   const dossier=await page.locator(".dossier").boundingBox(),firstFact=await page.locator("#dossier-facts .fact").first().boundingBox();
-   assert.ok(firstFact.y-dossier.y<230,"source-backed facts are buried below the initial campaign narrative");
+   const dossier=await page.locator(".dossier").boundingBox(),jump=page.getByRole("link",{name:"Sourced figures",exact:true});
+   const shortcut=await jump.boundingBox();
+   assert.ok(shortcut.y-dossier.y<230,"the route to numerical evidence must remain above the campaign interpretation");
+   await jump.press("Enter");
+   await page.waitForFunction(()=>{
+    const fact=document.querySelector("#dossier-facts .fact");
+    const rect=fact.getBoundingClientRect(),panel=fact.closest(".dossier").getBoundingClientRect();
+    return document.activeElement.id==="dossier-facts" && rect.top>=Math.max(0,panel.top)-1 && rect.top<Math.min(innerHeight,panel.bottom);
+   },null,{timeout:5000});
    assert.equal(await page.locator("#chapter-list .chapter-card").count(),3,"Poland needs three major operational phases");
    const phaseCardsOverlap=await page.locator("#chapter-list .chapter-card").evaluateAll(cards=>cards.some((card,i)=>cards.some((other,j)=>{
     if(i>=j)return false;const a=card.getBoundingClientRect(),b=other.getBoundingClientRect();

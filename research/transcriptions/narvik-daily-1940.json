@@ -1,0 +1,168 @@
+{
+  "areaSource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/",
+  "squadronSource": "https://263squadron.weebly.com/uploads/9/2/1/7/92171046/air271547.pdf",
+  "rows": [
+    {
+      "date": "1940-05-21",
+      "areaSorties": null,
+      "areaApproximate": false,
+      "areaCombats": null,
+      "areaLosses": null,
+      "squadronSorties": 40,
+      "squadronQualifier": "approximate"
+    },
+    {
+      "date": "1940-05-22",
+      "areaSorties": 54,
+      "areaApproximate": false,
+      "areaCombats": 3,
+      "areaLosses": 1,
+      "squadronSorties": 54,
+      "squadronQualifier": "recorded"
+    },
+    {
+      "date": "1940-05-23",
+      "areaSorties": 40,
+      "areaApproximate": false,
+      "areaCombats": 3,
+      "areaLosses": 2,
+      "squadronSorties": 40,
+      "squadronQualifier": "approximate"
+    },
+    {
+      "date": "1940-05-24",
+      "areaSorties": 38,
+      "areaApproximate": false,
+      "areaCombats": 6,
+      "areaLosses": 1,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-05-25",
+      "areaSorties": 36,
+      "areaApproximate": false,
+      "areaCombats": 5,
+      "areaLosses": 2,
+      "squadronSorties": 40,
+      "squadronQualifier": "lower-bound-exclusive"
+    },
+    {
+      "date": "1940-05-26",
+      "areaSorties": 50,
+      "areaApproximate": false,
+      "areaCombats": 15,
+      "areaLosses": 1,
+      "squadronSorties": 50,
+      "squadronQualifier": "lower-bound-exclusive"
+    },
+    {
+      "date": "1940-05-27",
+      "areaSorties": 32,
+      "areaApproximate": false,
+      "areaCombats": 11,
+      "areaLosses": 3,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-05-28",
+      "areaSorties": 95,
+      "areaApproximate": false,
+      "areaCombats": 3,
+      "areaLosses": 0,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-05-29",
+      "areaSorties": 84,
+      "areaApproximate": false,
+      "areaCombats": 8,
+      "areaLosses": 1,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-05-30",
+      "areaSorties": 27,
+      "areaApproximate": false,
+      "areaCombats": 8,
+      "areaLosses": 3,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-05-31",
+      "areaSorties": 21,
+      "areaApproximate": false,
+      "areaCombats": 0,
+      "areaLosses": 0,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-06-01",
+      "areaSorties": null,
+      "areaApproximate": false,
+      "areaCombats": null,
+      "areaLosses": null,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-06-02",
+      "areaSorties": 75,
+      "areaApproximate": false,
+      "areaCombats": 24,
+      "areaLosses": 3,
+      "squadronSorties": 55,
+      "squadronQualifier": "recorded"
+    },
+    {
+      "date": "1940-06-03",
+      "areaSorties": 6,
+      "areaApproximate": false,
+      "areaCombats": 0,
+      "areaLosses": 0,
+      "squadronSorties": 0,
+      "squadronQualifier": "explicit-zero"
+    },
+    {
+      "date": "1940-06-04",
+      "areaSorties": 11,
+      "areaApproximate": false,
+      "areaCombats": null,
+      "areaLosses": null,
+      "squadronSorties": 0,
+      "squadronQualifier": "explicit-zero"
+    },
+    {
+      "date": "1940-06-05",
+      "areaSorties": 9,
+      "areaApproximate": false,
+      "areaCombats": null,
+      "areaLosses": null,
+      "squadronSorties": 0,
+      "squadronQualifier": "explicit-zero"
+    },
+    {
+      "date": "1940-06-06",
+      "areaSorties": 16,
+      "areaApproximate": false,
+      "areaCombats": null,
+      "areaLosses": null,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    },
+    {
+      "date": "1940-06-07",
+      "areaSorties": 50,
+      "areaApproximate": true,
+      "areaCombats": 12,
+      "areaLosses": 2,
+      "squadronSorties": null,
+      "squadronQualifier": "unquantified"
+    }
+  ]
+}

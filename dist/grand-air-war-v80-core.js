@@ -41,7 +41,21 @@ function updateMonth(month){
  // Scrubbing and playback never silently replace the campaign a reader selected.
  update();
 }
-function pickCampaign(id,fly=true){
+function recordCampaignSelection(id, moment) {
+ if (!window.history?.replaceState || !window.location) return;
+ const url = new URL(window.location.href);
+ url.searchParams.set("campaign", id);
+ url.searchParams.delete("event");
+ url.searchParams.delete("episode");
+ if (moment) {
+  const campaign = D.campaigns.find(c => c.id === id);
+  const eventUrl = new URL(momentUrl(campaign, moment), url);
+  eventUrl.searchParams.forEach((value, key) => url.searchParams.set(key, value));
+ }
+ url.hash = moment ? "moment-detail" : "campaign-dossier";
+ window.history.replaceState(window.history.state, "", url);
+}
+function pickCampaign(id,fly=true,share=false){
  window.AtlasNormandyOperations?.onNavigate();
  const c=D.campaigns.find(x=>x.id===id);if(!c)return;cancelPlay();
  const changed=state.selected!==id;
@@ -52,6 +66,7 @@ function pickCampaign(id,fly=true){
  if(!active(c))state.month=c.start;
  if(state.theater!=="all"&&state.theater!==c.theater)state.theater="all";
  update();
+ if (share) recordCampaignSelection(id);
  if(changed)$("moment-list").scrollTop=0;
  const list=$('campaign-list'),row=list.querySelector?.('[data-campaign="'+id+'"]');
  // Only scroll the chronology's own viewport. Do not jump the entire page
@@ -63,12 +78,13 @@ function pickCampaign(id,fly=true){
  }
  if(fly&&state.map){const z=state.map.getZoom();state.map.flyTo([c.focus.lat,c.focus.lng],Math.max(6,Math.min(9,z)),{duration:.6});}
 }
-function selectMoment(cId,date,lat,lng,title){
+function selectMoment(cId,date,lat,lng,title,share=false){
  pickCampaign(cId,false);
  if(date&&date.slice(0,7)!==state.month)updateMonth(date.slice(0,7));
  const c=D.campaigns.find(x=>x.id===cId);
  state.selectedChapter=c?.chapters?.find(ch=>ch.start<=date&&date<=ch.end)?.id||null;
  state.selectedMoment=date+"|"+title;
+ if (share) recordCampaignSelection(cId, {date, title});
  renderMoments();
  if(state.map)state.map.flyTo([lat,lng],Math.max(7,Math.min(10,state.map.getZoom())),{duration:.6});
 }
@@ -271,7 +287,7 @@ function drawMap(){
    mk.bindPopup('<div class="cluster-choices"><strong>'+group.length+' campaigns here</strong><p>Choose one directly, or zoom in to separate the markers.</p>'+items+'<button type="button" data-map-zoom>Zoom into group</button></div>',{maxWidth:280});
    mk.on("popupopen",e=>{
     const root=e.popup.getElement();
-    root.querySelectorAll("[data-map-campaign]").forEach(b=>b.addEventListener("click",()=>{state.map.closePopup();pickCampaign(b.dataset.mapCampaign,true);}));
+    root.querySelectorAll("[data-map-campaign]").forEach(b=>b.addEventListener("click",()=>{state.map.closePopup();pickCampaign(b.dataset.mapCampaign,true,true);}));
     root.querySelector("[data-map-zoom]")?.addEventListener("click",()=>{
      const bounds=L.latLngBounds(group.map(q=>[q.lat,q.lng]));
      state.map.closePopup();state.map.flyToBounds(bounds.pad(1),{maxZoom:Math.min(11,state.map.getZoom()+2)});
@@ -279,7 +295,7 @@ function drawMap(){
    });
    mk.bindTooltip(group.map(q=>q.index+" · "+q.c.name).join(" / "),{direction:"top",opacity:.95});
   }else{
-   mk.on("click",()=>pickCampaign(p.c.id,true));
+   mk.on("click",()=>pickCampaign(p.c.id,true,true));
    mk.bindTooltip(p.index+" · "+p.c.name+" · "+p.c.start+"–"+p.c.end,{direction:"top",opacity:.95});
   }
   state.mapMarkers.addLayer(mk);
@@ -297,12 +313,12 @@ function drawMap(){
    const focused=group.some(e=>state.selectedMoment===e.date+"|"+e.title);
    const icon=L.divIcon({className:"gaw-icon",html:'<span class="story-map-point'+(focused?' selected':'')+'">'+(group.length>1?group.length:'●')+'</span>',iconSize:[24,24],iconAnchor:[12,12]});
    const mk=L.marker([group[0].lat,group[0].lng],{icon,keyboard:true,title:group.length>1?group.length+" campaign episodes":group[0].title,zIndexOffset:focused?1100:800});
-   if(group.length===1){const e=group[0];mk.on("click",()=>selectMoment(selectedCampaign.id,e.date,e.lat,e.lng,e.title));mk.bindTooltip(e.date+" · "+e.title);}
+   if(group.length===1){const e=group[0];mk.on("click",()=>selectMoment(selectedCampaign.id,e.date,e.lat,e.lng,e.title,true));mk.bindTooltip(e.date+" · "+e.title);}
    else{
     mk.bindPopup('<div class="cluster-choices"><strong>'+group.length+' nearby historical episodes</strong>'+group.map(e=>'<button type="button" data-story-date="'+esc(e.date)+'" data-story-title="'+esc(e.title)+'">'+esc(e.date+' · '+e.title)+'</button>').join("")+'</div>',{maxWidth:310});
     mk.on("popupopen",ev=>ev.popup.getElement().querySelectorAll("[data-story-date]").forEach(b=>b.addEventListener("click",()=>{
      const e=group.find(x=>x.date===b.dataset.storyDate&&x.title===b.dataset.storyTitle);
-     if(e){state.map.closePopup();selectMoment(selectedCampaign.id,e.date,e.lat,e.lng,e.title);}
+     if(e){state.map.closePopup();selectMoment(selectedCampaign.id,e.date,e.lat,e.lng,e.title,true);}
     })));
    }
    state.mapMarkers.addLayer(mk);
@@ -465,30 +481,33 @@ function renderCampaignComparisons(c){
  }
  return blocks.length?'<div class="campaign-comparisons"><h3>Operational strength & losses · inspect before comparing</h3><p class="comparison-intro">Only matching dates, units and accounting definitions may be compared directly. A snapshot is not a sortie; a claim is not a confirmed loss.</p>'+blocks.join("")+'</div>':"";
 }
-const campaignStudies = {
-  "sicily": {
-    "question": "What difference did Allied fighters make in the battle for Sicily?",
-    "answer": "Fighters covered the beaches and ships from the first morning, though Axis aircraft still reached the fleet. Inland, fighter and fighter-bomber attacks slowed Axis troops moving by road while the Allies secured their beachheads. Later, fighter-bombers struck the ferries at Messina, but the Axis kept the crossing open.",
-    "label": "How much cover did the landing fleet receive? · 10 July 1943",
-    "href": "./sicily.html?case=landing-cover#case-detail"
-  },
-  "dieppe": {
-    "question": "What did air cover achieve at Dieppe?",
-    "answer": "Fighters covered the ships and the boats sent to recover troops. Close to shore, the landing craft still came under fire. No. 403 Squadron and the boat crews recorded different parts of the withdrawal.",
-    "label": "Follow the withdrawal · 19 August 1942",
-    "href": "./dieppe.html#withdrawal"
-  }
-};
+function momentUrl(campaign, moment) {
+ const base = "./grand-air-war-v80.html?campaign=" + encodeURIComponent(campaign.id) + "&event=" + encodeURIComponent(moment.date);
+ const repeated = campaign.moments.filter(item => item.date === moment.date).length > 1;
+ return base + (repeated ? "&episode=" + encodeURIComponent(moment.title) : "") + "#moment-detail";
+}
+const studyDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
- const study = campaignStudies[c?.id];
+ const study = window.AtlasCampaignStudies?.[c?.id];
  $("dossier-study").hidden = !study;
+ $("dossier-facts-jump").hidden = !c?.facts.length;
  if (study) {
   $("dossier-study-title").textContent = study.question;
   $("dossier-study-answer").textContent = study.answer;
-  $("dossier-study-link").href = study.href;
-  $("dossier-study-link").textContent = study.label;
+  $("dossier-study-link").href = study.href || momentUrl(c, c.moments.find(item => item.date === study.date && (!study.episode || item.title === study.episode)));
+  $("dossier-study-link").textContent = study.label + " · " + studyDate.format(new Date(study.date + "T00:00:00Z"));
+  $("dossier-study-gap").textContent = study.gap;
+  $("dossier-study-source").textContent = study.locator;
+  $("dossier-study-source").href = study.source;
+  $("dossier-study-context").hidden = !study.context;
+  if (study.context) {
+   $("dossier-study-context-text").textContent = study.context.text;
+   $("dossier-study-context-source").textContent = study.context.locator;
+   $("dossier-study-context-source").href = study.context.url;
+  }
+  if (state.lastDossierId !== state.selected) $("dossier-study-notes").open = false;
  }
  if(state.lastDossierId!==state.selected){$("campaign-dossier").scrollTop=0;state.lastDossierId=state.selected;}
  if(!c){
@@ -532,7 +551,7 @@ function renderCampaignList(){
  const rows=matching().sort((a,b)=>a.start.localeCompare(b.start)||D.campaigns.indexOf(a)-D.campaigns.indexOf(b));
  $("campaign-count").textContent=rows.filter(active).length+" active of "+rows.length;
  $("campaign-list").innerHTML=rows.length?rows.map(c=>'<button type="button" data-campaign="'+esc(c.id)+'" aria-current="'+(c.id===state.selected?'true':'false')+'" class="record '+(c.id===state.selected?"selected ":"")+(active(c)?"":"muted")+'"><span><strong>'+(D.campaigns.findIndex(x=>x.id===c.id)+1)+'. '+esc(c.name)+(c.id===state.selected?" · SELECTED":"")+'</strong><small>'+esc(campaignRegion(c))+' · '+countPhrase((c.chapters||[]).length,"phase","phases")+' · '+countPhrase(c.moments.filter(e=>e.summary).length,c.story?"researched episode":"researched event",c.story?"researched episodes":"researched events")+' · '+countPhrase(c.facts.length,"source-scoped figure","source-scoped figures")+'</small></span><span class="date-tag">'+esc(c.start.slice(0,4))+(active(c)?" · ACTIVE":"")+'</span></button>').join(""):'<div class="empty">No matching campaigns. Try another theater or search term.</div>';
- $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign)));
+ $("campaign-list").querySelectorAll("[data-campaign]").forEach(b=>b.addEventListener("click",()=>pickCampaign(b.dataset.campaign,true,true)));
 }
 function renderMoments(){
  const c=D.campaigns.find(x=>x.id===state.selected&&matches(x));
@@ -572,13 +591,16 @@ function renderMoments(){
   const selected=state.selectedMoment===e.date+"|"+e.title;
   return '<button type="button" class="record '+(selected?'selected':'')+'" aria-current="'+selected+'" data-moment="'+esc(e.cid)+'" data-date="'+esc(e.date)+'" data-title="'+esc(e.title)+'" data-lat="'+e.lat+'" data-lng="'+e.lng+'"><span><strong>'+esc(e.title)+'</strong><small>'+esc(e.place)+(e.dating==="period-anchor"?' · Period context (representative date)':e.summary?' · Detailed research':' · Date marker, not yet an air-operation dossier')+'</small></span><span class="date-tag">'+esc(e.date)+(e.date.slice(0,7)===state.month?' · MAP MONTH':'')+'</span></button>';
  }).join(""):'<div class="empty">No individual dated event has been researched for this phase. The source-backed phase narrative above does not imply there were no aircraft or operations.</div>';
- $("moment-list").querySelectorAll("[data-moment]").forEach(b=>b.addEventListener("click",()=>selectMoment(b.dataset.moment,b.dataset.date,Number(b.dataset.lat),Number(b.dataset.lng),b.dataset.title)));
+ $("moment-list").querySelectorAll("[data-moment]").forEach(b=>b.addEventListener("click",()=>selectMoment(b.dataset.moment,b.dataset.date,Number(b.dataset.lat),Number(b.dataset.lng),b.dataset.title,true)));
  const chosen=scoped.find(e=>e.date+"|"+e.title===state.selectedMoment);
  $("moment-detail").hidden=!chosen;
  if(!chosen){$("moment-detail").innerHTML='';return;}
  const detail=chosen.summary?(chosen.airAction?'<h4>What happened and why</h4><p>'+esc(chosen.summary)+'</p><h4>Air operations and their limits</h4><p>'+esc(chosen.airAction)+'</p><h4>German perspective</h4><p>'+esc(chosen.opposingView)+'</p>':'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p>')+'<h4>What changed</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
  const ids=chosen.sourceIds?.length?chosen.sourceIds:c.sources;
- $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div>';
+ const study = window.AtlasCampaignStudies?.[c.id];
+ const casePassage = study?.episodeHeading && study.date === chosen.date && (!study.episode || study.episode === chosen.title)
+  ? '<section class="event-study"><h4>' + esc(study.episodeHeading) + '</h4><p>' + esc(study.answer) + '</p><a href="' + esc(study.source) + '">' + esc(study.locator) + '</a></section>' : '';
+ $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+casePassage+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div><p class="moment-navigation"><a href="'+esc(momentUrl(c,chosen))+'">Link to this event</a> · <a href="./grand-air-war-v80.html?campaign='+esc(c.id)+'#campaign-dossier">Return to the campaign dossier</a></p>';
  $("moment-detail").querySelector?.('[data-claim-scope]')?.addEventListener('click',event=>{
   if(window.AtlasClaimLosses?.openCalculator(event.currentTarget.dataset.claimScope))event.preventDefault();
  });
@@ -687,12 +709,10 @@ function renderSources(){
 function update(){renderTime();renderDossier();renderCampaignList();renderMoments();drawMap();window.AtlasNormandyOperations?.sync();}
 function init(){
  // Keep the originating campaign when Back reloads the document after a case study.
+ $("dossier-facts-jump").addEventListener("click", () => recordCampaignSelection(state.selected));
  $("dossier-study-link").addEventListener("click", event => {
   if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-  const origin = new URL(window.location.href);
-  origin.searchParams.set("campaign", state.selected);
-  origin.hash = "campaign-dossier";
-  window.history.replaceState(window.history.state, "", origin);
+  recordCampaignSelection(state.selected);
  });
  if(!$("campaign-map"))return;
  setupMap();renderCoverage();renderSources();
@@ -730,9 +750,18 @@ function init(){
  $("force-metric").addEventListener("change",e=>{state.forceMetric=e.target.value;state.forceSelected=state.month;renderForces();});
  $("download-force").addEventListener("click",()=>download(forcePoints(),"grand-air-war-"+state.forceSeries+"-observations.csv"));
  document.addEventListener("visibilitychange",()=>{if(document.hidden)cancelPlay();});
- const campaign=window.location?.search?new URLSearchParams(window.location.search).get("campaign"):null;
- if(D.campaigns.some(c=>c.id===campaign))pickCampaign(campaign,false);
- else update();
+ const query = window.location?.search ? new URLSearchParams(window.location.search) : null;
+ const campaign = D.campaigns.find(c => c.id === query?.get("campaign"));
+ if (campaign) {
+  const events = campaign.moments.filter(e => e.date === query.get("event") && (!query.has("episode") || e.title === query.get("episode")));
+  if (events.length === 1) {
+   const event = events[0];
+   selectMoment(campaign.id, event.date, event.lat, event.lng, event.title);
+   if (window.location.hash === "#moment-detail") $("moment-detail").scrollIntoView();
+  } else {
+   pickCampaign(campaign.id, false, query.has("event"));
+  }
+ } else update();
  renderLosses();renderForces();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();

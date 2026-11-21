@@ -206,3 +206,13 @@
 .dossier-study h3{margin:0;font:600 1.15rem/1.2 Georgia,serif}
 .dossier-study p{margin:.5rem 0}
 .dossier-study a{display:inline-block;padding:.35rem 0;font-weight:650}
+
+.dossier-study details { margin-top: .75rem; }
+.dossier-study summary { cursor: pointer; }
+.dossier-study summary:focus-visible { outline: 2px solid currentColor; }
+.moment-navigation { margin-top: 1rem; }
+
+.dossier-dateline { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .65rem; }
+.dossier-dateline .period { margin-block: .2rem; }
+.dossier-dateline a { font-size: .85rem; padding-block: .25rem; }
+#dossier-facts { scroll-margin-block-start: .5rem; }
