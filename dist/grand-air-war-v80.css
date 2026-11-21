@@ -201,3 +201,8 @@
 .story-map-point.selected{background:#f0d49c;color:#132e34;border-color:#fff;box-shadow:0 0 0 3px #e2f5e4ad}
 @media(max-width:900px){#campaigns.benchmark-story-mode{grid-template-columns:1fr}.campaign-story{padding:18px}.benchmark-story-mode .chapter-detail{padding:17px}}
 @media(max-width:600px){.campaign-story h3{font-size:23px}.campaign-story p{font-size:13px}.chapter-longform p{font-size:13px}.benchmark-story-mode .moment-detail{padding:13px}.chapter-navigation{flex-direction:column}.chapter-navigation button{width:100%;flex:auto}}
+
+.dossier-study{margin:1rem 0;padding:.85rem 1rem;border-inline-start:3px solid currentColor;background:rgba(127,127,100,.08)}
+.dossier-study h3{margin:0;font:600 1.15rem/1.2 Georgia,serif}
+.dossier-study p{margin:.5rem 0}
+.dossier-study a{display:inline-block;padding:.35rem 0;font-weight:650}

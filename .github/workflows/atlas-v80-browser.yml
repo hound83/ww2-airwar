@@ -6,6 +6,7 @@ on:
       - 'grand-air-war-v80.html'
       - 'operations-1944.html'
       - 'bodenplatte.html'
+      - 'dieppe.html'
       - 'sicily.html'
       - 'dist/sicily.*'
       - 'research/transcriptions/sicily-air-campaign-1943.json'

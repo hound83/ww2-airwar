@@ -20,7 +20,7 @@ module.exports = async (browser, base, root) => {
       const capture = page.locator('#case-list [data-case="pachino-capture"]');
       if (width < 500) await capture.tap();
       else await capture.press("Enter");
-      assert.match(await page.locator("#station-history").innerText(), /10 Jul 1943.*Captured[\s\S]+13 Jul 1943.*Operational/);
+      assert.match(await page.locator("#station-history").innerText(), /10 Jul 1943.*Captured[\s\S]+13 Jul 1943.*No. 244 Wing/);
       await page.locator('#station-history [data-case="pachino-operational"]').click();
       assert.match(await page.locator("#case-title").innerText(), /first fighter wing/);
       assert.match(await page.locator("#case-evidence").innerText(), /Aircraft held ready for local defence\s+6/);
@@ -56,7 +56,35 @@ module.exports = async (browser, base, root) => {
       assert.equal(await page.locator("#case-evidence a").count(), 2);
       const payload = await page.request.get(new URL("./research/transcriptions/sicily-air-campaign-1943.json", route).href);
       assert.ok(payload.ok());
-      assert.equal((await payload.json()).cases.length, 19);
+      assert.equal((await payload.json()).cases.length, 22);
+      // Enter both studies through the public campaign list, then verify shared and return routes.
+      await page.goto(base);
+      await page.locator('#campaign-list [data-campaign="sicily"]').click();
+      const entry = page.locator("#dossier-study-link");
+      if (width < 500) await entry.tap();
+      else await entry.press("Enter");
+      await page.waitForURL(/case=pachino-patrols#case-detail$/);
+      await page.getByRole("heading", { name: /patrols before the ground party/ }).waitFor();
+      assert.match(await page.locator("#case-evidence").innerText(), /Further patrols that day\s+3/);
+      assert.ok(await page.locator('#case-evidence a[href$="#page=160"]').count());
+      await page.reload();
+      await page.getByRole("heading", { name: /patrols before the ground party/ }).waitFor();
+      await page.goBack();
+      await page.waitForURL(/campaign=sicily#campaign-dossier$/);
+      assert.match(await page.locator("#dossier-title").innerText(), /Sicily/);
+      await page.locator('#campaign-list [data-campaign="dieppe"]').click();
+      await page.locator("#dossier-study-link").click();
+      await page.waitForURL(/dieppe\.html#withdrawal$/);
+      assert.match(await page.locator("#withdrawal").innerText(), /All twelve aircraft/);
+      assert.ok(await page.locator('#withdrawal a[href$="#page383"]').count());
+      await page.screenshot({path: path.join(root, "v80-qa-dieppe-" + width + ".png"), fullPage: true});
+      await page.getByRole("link", {name: "Loss accounts",exact:true}).click();
+      await page.reload();
+      await page.waitForURL(/#losses$/);
+      assert.match(await page.locator("#losses").innerText(), /108 Allied aircraft/);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+      await page.getByRole("link", {name:"Return to the Dieppe dossier and its sourced figures"}).click();
+      assert.match(await page.locator("#dossier-title").innerText(), /Dieppe/);
       assert.deepEqual(errors, []);
     } finally {
       await page.close();

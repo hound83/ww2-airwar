@@ -198,6 +198,12 @@
       "name": "1st Airlanding Brigade",
       "role": "British Army · glider infantry",
       "summary": "Its objective was to secure Ponte Grande on the approach to Syracuse."
+    },
+    {
+      "id": "sq92",
+      "name": "No. 92 Squadron RAF",
+      "role": "Spitfire · No. 244 Wing",
+      "summary": "Pilots moved from Malta to Pachino on 13 July. The squadron diary follows their patrols before the ground party arrived and their later cover of ships off Syracuse."
     }
   ],
   "cases": [
@@ -341,8 +347,17 @@
           "source": "raf",
           "locator": "The First Fighter Wing in Sicily and Comparison with the Air Plan",
           "title": "Capture and engineering",
-          "note": "Advance officers inspected the field on D-Day. The air echelon arrived on 13 July.",
-          "figures": {}
+          "note": "Advance officers inspected the strip on invasion day. On 12 July visiting Spitfires refuelled on their way back to Malta. The wing’s air echelon followed on 13 July.",
+          "figures": {},
+          "pdfPage": 66
+        },
+        {
+          "source": "nataf",
+          "locator": "Appendix H, printed p. 157, row 1",
+          "title": "Engineering return",
+          "note": "Work began on 10 July. The engineering staff entered 14 July in its operational column.",
+          "figures": {},
+          "pdfPage": 160
         }
       ]
     },
@@ -442,11 +457,11 @@
     {
       "id": "ponteolivo",
       "date": "1943-07-12",
-      "end": "1943-07-13",
+      "end": "1943-07-16",
       "phase": "advance",
       "site": "ponteolivo",
-      "title": "Ponte Olivo · from capture to flight operations",
-      "summary": "The U.S. 1st Infantry Division took the field on 12 July. The 309th Squadron prepared the ground. The 31st Fighter Group and 111th Observation Squadron arrived on 13 July.",
+      "title": "Ponte Olivo · preparing and occupying the field",
+      "summary": "The U.S. 1st Infantry Division took the field on 12 July. The RAF narrative places the 31st Fighter Group’s arrival on 13 July. The tactical air force records the field as operational on 15 July and lists the group there on 16 July.",
       "formations": [
         "fg31"
       ],
@@ -456,7 +471,24 @@
           "locator": "The Landing of XII Air Support Command",
           "title": "Gozo to Ponte Olivo",
           "note": "The group’s Spitfires had supplied landing cover from Gozo. Arrival and capture are separately dated.",
-          "figures": {}
+          "figures": {},
+          "pdfPage": 67
+        },
+        {
+          "source": "nataf",
+          "locator": "Appendix H, printed p. 157, row 13",
+          "title": "Engineering return",
+          "note": "The engineering staff dates the start of work to 12 July and the field’s operational status to 15 July.",
+          "figures": {},
+          "pdfPage": 160
+        },
+        {
+          "source": "nataf",
+          "locator": "Appendix I, printed p. 158, 31st Fighter Group",
+          "title": "The group in the build-up return",
+          "note": "The return lists the 307th, 308th and 309th Squadrons together at Ponte Olivo on 16 July. It does not date each aircraft’s arrival or first sortie.",
+          "figures": {},
+          "pdfPage": 161
         }
       ]
     },
@@ -496,7 +528,8 @@
       "title": "Pachino · the first fighter wing arrives",
       "summary": "No. 244 Wing’s fighters landed after their first patrols. Mobile plotting, signals, fuel and ammunition enabled operations. Squadron parties handled much of the Spitfire IX servicing.",
       "formations": [
-        "wing244"
+        "wing244",
+        "sq92"
       ],
       "evidence": [
         {
@@ -506,6 +539,17 @@
           "note": "Ground personnel came in stages. The date marks the air echelon’s arrival and local readiness.",
           "figures": {
             "Aircraft held ready for local defence": 6
+          },
+          "pdfPage": 66
+        },
+        {
+          "source": "orb92",
+          "locator": "Form 540, 13 July 1943",
+          "title": "A patrol ended at the new field",
+          "note": "Eleven pilots left Luqa on Malta, patrolled the beaches and landed at Pachino. Other pilots flew directly to the field. The daily total covers the transition between bases.",
+          "figures": {
+            "Pilots on the inbound patrol": 11,
+            "Squadron sorties that day, all origins": 41
           }
         }
       ]
@@ -528,6 +572,38 @@
           "title": "Bridge objective and friendly fire",
           "note": "The bridge anchor locates the objective. Fire and landings were spread across the approach and drop areas.",
           "figures": {}
+        }
+      ]
+    },
+    {
+      "id": "pachino-patrols",
+      "phase": "advance",
+      "site": "pachino",
+      "date": "1943-07-14",
+      "title": "Pachino · patrols before the ground party arrived",
+      "formations": [
+        "wing244",
+        "sq92"
+      ],
+      "summary": "By the time No. 92 Squadron’s ground personnel reached Pachino, its pilots had already flown two patrols. A damaged Spitfire returned to base on the second. Three more patrols followed that day.",
+      "evidence": [
+        {
+          "source": "orb92",
+          "locator": "Form 540, 14 July 1943, under Pachino, Sicily",
+          "title": "Flying from the new base",
+          "note": "The diary counts patrols, each of which could involve several aircraft. It establishes flying activity by this date. The time of the first take-off from the strip remains open.",
+          "figures": {
+            "Patrols before the ground party arrived": 2,
+            "Further patrols that day": 3
+          }
+        },
+        {
+          "source": "nataf",
+          "locator": "Appendix H, printed p. 157, row 1",
+          "title": "Engineering return",
+          "note": "The field is listed as operational on 14 July. The wing and squadron accounts document landings there the preceding day.",
+          "figures": {},
+          "pdfPage": 160
         }
       ]
     },
@@ -580,6 +656,49 @@
             "On hand": 28,
             "Serviceable": 4
           }
+        }
+      ]
+    },
+    {
+      "id": "pachino-shipping",
+      "phase": "advance",
+      "site": "pachino",
+      "date": "1943-07-16",
+      "title": "Pachino · cover for ships off Syracuse",
+      "formations": [
+        "sq92",
+        "wing244"
+      ],
+      "summary": "Eight squadron aircraft covered ships off Syracuse that afternoon. The force included HMS Rodney and HMS Nelson, which bombarded Catania at dusk. Pachino marks the squadron’s station.",
+      "evidence": [
+        {
+          "source": "orb92",
+          "locator": "Form 540, 16–17 July 1943",
+          "title": "A dated task for the island-based squadron",
+          "note": "The entry names both ships and orders a move to Cassibile at dawn. The next diary entry is headed Cassibile.",
+          "figures": {
+            "Aircraft covering shipping": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "biscari-engineering",
+      "date": "1943-07-16",
+      "end": "1943-07-19",
+      "phase": "advance",
+      "site": "biscari",
+      "title": "Biscari · the strip enters the engineering return",
+      "formations": [],
+      "summary": "After the two accounts of capture, the engineering return records another sequence. Work began on 16 July and the field was listed as operational on 19 July. The first unit sortie from Biscari remains undated here.",
+      "evidence": [
+        {
+          "source": "nataf",
+          "locator": "Appendix H, printed p. 157, row 11",
+          "title": "Engineering return",
+          "note": "Biscari was an existing airfield requiring repair or improvement. The operational column describes the field. It supplies neither a flying unit nor a time of take-off.",
+          "figures": {},
+          "pdfPage": 160
         }
       ]
     },
@@ -724,8 +843,14 @@
     },
     {
       "site": "pachino",
+      "date": "1943-07-12",
+      "status": "Visiting Spitfires refuelled on return to Malta",
+      "caseId": "pachino-capture"
+    },
+    {
+      "site": "pachino",
       "date": "1943-07-13",
-      "status": "Operational · No. 244 Wing arrived",
+      "status": "No. 244 Wing arrived after patrols from Malta",
       "caseId": "pachino-operational"
     },
     {
@@ -749,7 +874,7 @@
     {
       "site": "ponteolivo",
       "date": "1943-07-13",
-      "status": "Operational · 31st Fighter Group arrived",
+      "status": "31st Fighter Group arrival in RAF narrative",
       "caseId": "ponteolivo"
     },
     {
@@ -769,6 +894,42 @@
       "date": "1943-07-16",
       "status": "33rd Fighter Group arrived",
       "caseId": "licata"
+    },
+    {
+      "site": "pachino",
+      "date": "1943-07-14",
+      "status": "Listed as operational · No. 92 Squadron patrols recorded",
+      "caseId": "pachino-patrols"
+    },
+    {
+      "site": "pachino",
+      "date": "1943-07-16",
+      "status": "No. 92 Squadron covered ships off Syracuse",
+      "caseId": "pachino-shipping"
+    },
+    {
+      "site": "ponteolivo",
+      "date": "1943-07-15",
+      "status": "Listed as operational in engineering return",
+      "caseId": "ponteolivo"
+    },
+    {
+      "site": "ponteolivo",
+      "date": "1943-07-16",
+      "status": "31st Fighter Group listed in build-up return",
+      "caseId": "ponteolivo"
+    },
+    {
+      "site": "biscari",
+      "date": "1943-07-16",
+      "status": "Engineering work began",
+      "caseId": "biscari-engineering"
+    },
+    {
+      "site": "biscari",
+      "date": "1943-07-19",
+      "status": "Listed as operational in engineering return",
+      "caseId": "biscari-engineering"
     }
   ],
   "sources": {
@@ -811,6 +972,14 @@
     "evac": [
       "U.S. Army official history · Evacuation",
       "https://www.ibiblio.org/hyperwar/USA/USA-MTO-Sicily/USA-MTO-Sicily-19.html"
+    ],
+    "nataf": [
+      "Northwest African Tactical Air Force · campaign report",
+      "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-by-northwest-african-tactical-air-force-on-operations-in-the-capture-of-sicily/"
+    ],
+    "orb92": [
+      "No. 92 Squadron · published Form 540 transcription",
+      "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942"
     ]
   },
   "initial": "landing-cover",

@@ -2,6 +2,10 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 21 November 2026 · Sicily airfields and Dieppe air cover
+
+[No. 92 Squadron at Pachino](../sicily.html?case=pachino-patrols#case-detail) follows patrols from Malta through island-based operations and cover for the ships off Syracuse. Dated engineering returns extend the Pachino, Ponte Olivo and Biscari histories. [Dieppe](../dieppe.html#withdrawal) connects No. 403 Squadron’s diary with the experience of the landing craft, the German observations and the differing aircraft loss accounts. [Source audit](../research/sources/sicily-dieppe-operational-evidence-2026-11-21.md)
+
 ## 14 November 2026 · From Malta to Messina v9.9
 
 The [Sicily explorer](https://hound83.github.io/ww2-airwar/sicily.html) connects offshore fighter cover, dated airfield capture and use, the Gela friendly-fire incident and the Messina evacuation across 19 cases. It retains both Biscari dates and separates Axis readiness, fighter effort, claims and reported losses. [Source audit](../research/sources/atlas-sicily-air-campaign-2026-11-14.md)

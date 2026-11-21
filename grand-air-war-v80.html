@@ -16,7 +16,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script defer src="./dist/grand-air-war-v86-data.js?v=8.7.0"></script>
 <script defer src="./dist/grand-air-war-v87-data.js?v=8.7.0"></script>
-<script defer src="./dist/grand-air-war-v80-core.js?v=9.6.0"></script>
+<script defer src="./dist/grand-air-war-v80-core.js?v=field-studies"></script>
 <script defer src="./dist/grand-air-war-v88-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-campaign-losses.js?v=9.0.0"></script>
@@ -40,6 +40,9 @@
  <div class="map-panel"><div class="map-top"><div class="eyebrow">HISTORICAL THEATER CHART · COASTLINES ONLY</div><strong id="map-heading">Air campaigns active in June 1944</strong></div><div id="campaign-map" tabindex="0" role="region" aria-label="Interactive Europe map with clickable campaign centres and wartime reporting areas"></div><div id="map-fallback" hidden>Historical coastline geometry could not be loaded. The campaign locations remain accessible; the map intentionally does not fall back to modern political borders.</div><div class="map-bottom"><span id="map-legend"><i class="marker-swatch campaign"></i> Numbered pins = campaign IDs; larger circles = cluster counts (click to choose)</span><span id="map-source-note">Gold = active month · muted = other periods · Natural Earth coastlines, no modern borders</span></div></div>
  <aside class="dossier" id="campaign-dossier" aria-live="polite" aria-label="Campaign historical analysis">
   <div class="dossier-label" id="dossier-meta">BATTLE DOSSIER · WESTERN FRONT</div><h2 id="dossier-title">Normandy · Overlord</h2><p id="dossier-dates" class="period"></p>
+  <section id="dossier-study" class="dossier-study" aria-labelledby="dossier-study-title" hidden>
+   <h3 id="dossier-study-title"></h3><p id="dossier-study-answer"></p><a id="dossier-study-link"></a>
+  </section>
   <h3 class="dossier-key-findings" id="dossier-facts-heading">Campaign evidence · sourced figures</h3><div id="dossier-facts" class="fact-grid"></div>
   <div class="label">WHY IT WAS FOUGHT</div><p id="dossier-aim"></p><div class="label">WHAT CHANGED / WHY</div><p id="dossier-turn"></p><div class="label">OUTCOME</div><p id="dossier-outcome"></p>
   <div class="dossier-forces" id="dossier-forces"></div>
