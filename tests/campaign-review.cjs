@@ -41,6 +41,13 @@ for (const [date, text] of [
   ["1940-06-04", /<td>11<\/td><td>Blank<\/td><td>Blank<\/td><td>0<\/td>/],
   ["1940-06-07", /About 50/]
 ]) assert.match(narvik.split('<tr id="day-' + date + '">')[1].split("</tr>")[0], text);
+const missions = JSON.parse(read("research/transcriptions/operations-january-june-1944.json")).records;
+const expected = [["raf-5-28827",{"dispatched":734,"attacked":635,"missing":33}],["us15-1944-02-24",{"sorties":114,"escorts":146,"lost":17}],["us8-1944-02-24-233",{"dispatched":809,"lost":49}],["us8-445-1944-02-24",{"dispatched":25,"lost":13}]];
+for (const [id, metrics] of expected) {
+  const mission = missions.find(item => item.id === id);
+  assert.equal(mission.date, "1944-02-24", id);
+  assert.deepEqual(mission.metrics, metrics, id);
+}
 const ledger = read("research/transcriptions/campaign-candidate-reconciliation.csv").trimEnd().split(/\r?\n/);
 assert.equal(ledger.length, 321);
 const dispositions = {};

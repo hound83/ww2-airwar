@@ -93,7 +93,8 @@ jobs:
             await browser.close();
           })().catch(err=>{console.error(err);process.exitCode=1;});
           NODE
-          python3 - <<'PY'
+          python3 -m pip install --target "$RUNNER_TEMP/atlas-preview-py" Pillow --quiet
+          PYTHONPATH="$RUNNER_TEMP/atlas-preview-py" python3 - <<'PY'
           from PIL import Image,ImageOps,ImageDraw
           import os,base64,io
           files=[("Prior Norway dossier","v80-qa-prior-norway.png"),("Norway dossier with evidence","v80-qa-dossier-review-390.png"),("Narvik study","v80-qa-norway-study-390.png"),("Big Week study","v80-qa-bigweek-study-390.png")]
