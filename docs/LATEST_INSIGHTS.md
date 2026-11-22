@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## 22 November 2026 · v9.10 operational balance studies
+
+[Six studies](../operational-balance.html) connect capacity to what units and their beneficiaries experienced. The [77 evidence figures and 19 calculations](../research/exports/operational-balance.csv) retain their dates, populations and sources. [Source audit](../research/sources/operational-balance.md). The next milestone is the connected European history planned for v10.
+
 ## 22 November 2026 · Formation and airfield histories
 
 [26 formation histories](../formations.html) connect six flagship campaigns and the 16th Air Army's later service in Berlin. The [research audit](../research/sources/formation-histories.md) records 82 dated entries, 41 distinct stations, the Sicily naval chronology discrepancy and priorities for paired operational and receiving-side evidence. The next milestone groups the six operational balance studies.

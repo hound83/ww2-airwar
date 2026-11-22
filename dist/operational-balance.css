@@ -1,0 +1,35 @@
+.balance { max-width:76rem; padding-bottom:3rem; }
+.balance h1 { max-width:15ch; }
+.balance h2 { font-size:clamp(1.9rem,4vw,3rem); max-width:26ch; }
+.balance h3 { margin-top:1.75rem; font-size:1.4rem; }
+.balance h4 { margin:0; font-size:1rem; }
+.balance p { max-width:72ch; }
+.balance .lead { font-size:clamp(1.05rem,2vw,1.25rem); max-width:66ch; }
+.directory,.worked { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr)); gap:.8rem 1.5rem; }
+.directory li { border-top:1px solid var(--line); padding:.6rem 0; }
+.directory a { display:inline-block; padding:.35rem 0; font-weight:700; }
+.directory span,.balance td span { display:block; color:var(--muted); font-size:.9rem; }
+.study { padding-top:2rem; border-top:3px solid var(--accent); margin-top:3rem; }
+.kicker { font-weight:700; color:var(--accent); }
+.worked li,.gap { background:var(--panel); padding:1rem 1.2rem; border-left:3px solid var(--line); }
+.worked p,.gap p { margin:.4rem 0; }
+.gap { border-color:var(--accent); margin:1.5rem 0; }
+.gap h3 { margin:0; }
+.citation { font-size:.9rem; }
+.equation,.quantity { font-variant-numeric:tabular-nums; }
+.equation { font-size:1.15rem; }
+.balance table { width:100%; border-collapse:collapse; font-size:.94rem; }
+.balance th,.balance td { padding:.65rem; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; overflow-wrap:anywhere; }
+.balance th { max-width:22ch; }
+.balance tbody tr:target,.worked li:target { background:#fae3aa; }
+.balance caption { text-align:left; padding:.4rem 0; }
+.related { display:flex; flex-wrap:wrap; gap:.3rem 1.25rem; }
+.related a { padding-block:.4rem; }
+@media (max-width:680px) {
+  .balance table,.balance tbody { display:block; }
+  .balance thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+  .balance tr { display:grid; grid-template-columns:1fr minmax(6rem,36%); border-block-start:1px solid var(--line); padding:.5rem 0; }
+  .balance td,.balance th { border:0; padding:.25rem; }
+  .balance th,.balance td:last-child { grid-column:1 / -1; max-width:none; }
+  .balance td:last-child,.balance td span { font-size:.85rem; }
+}

@@ -1,0 +1,1440 @@
+{
+  "version": "9.10",
+  "date": "2026-11-22",
+  "sources": {
+    "air": {
+      "title": "Craven and Cate, The Army Air Forces in World War II, vol. III, chapter 8",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-8.html",
+      "kind": "Official U.S. Air Force campaign history"
+    },
+    "army": {
+      "title": "Blumenson, Breakout and Pursuit, Chapter XII",
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-12.html",
+      "kind": "Official U.S. Army retrospective history"
+    },
+    "army13": {
+      "title": "Martin Blumenson · Breakout and Pursuit, chapter XIII",
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-13.html",
+      "kind": "U.S. Army official history"
+    },
+    "bourth": {
+      "title": "416th Bomb Group archive · Mission 103",
+      "url": "https://www.416th.com/missions/mission103.html",
+      "kind": "Unit archive with wartime operations reports and loading lists"
+    },
+    "carrier": {
+      "title": "Arnold Hague · The Supply of Malta, aircraft reinforcements",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply02.htm",
+      "kind": "Naval history using official reports"
+    },
+    "chron": {
+      "title": "Kit C. Carter and Robert Mueller, U.S. Army Air Forces Combat Chronology, July 1944",
+      "url": "https://aircrewremembered.com/USAAFCombatOperations/Jul.44.html",
+      "kind": "Official Air Force chronology, online transcription"
+    },
+    "convoy": {
+      "title": "Arnold Hague · The Supply of Malta, Operations Pedestal and Stoneage",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply03.htm",
+      "kind": "Naval history using official reports"
+    },
+    "east": {
+      "title": "Earl F. Ziemke, Stalingrad to Berlin, chapter XV",
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Defeat/USA-EF-Defeat-15.html",
+      "kind": "U.S. Army official history"
+    },
+    "furth": {
+      "title": "445th Bomb Group · Mission 29",
+      "url": "https://445bg.org/mission-29.html",
+      "kind": "Group mission summary"
+    },
+    "galland": {
+      "title": "RAF Air Historical Branch · German fighter personnel conference, 15–16 May 1944",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/notes-on-discussions-with-reichsmarschall-goering-held-on-15th-16th-may-1944-on-the-subject-of-fighters-and-fighter-personnel/",
+      "kind": "Translation of captured German proceedings"
+    },
+    "gilles": {
+      "title": "416th Bomb Group archive · Mission 105",
+      "url": "https://www.416th.com/missions/mission105.html",
+      "kind": "Unit archive with wartime operations reports and loading lists"
+    },
+    "gotha": {
+      "title": "445th Bomb Group · Mission 28",
+      "url": "https://445bg.org/mission-28.html",
+      "kind": "Unit association history"
+    },
+    "harbour": {
+      "title": "Malta Command · Admiralty war diary, August–December 1942",
+      "url": "https://www.naval-history.net/xDKWD-Malta1942a.htm",
+      "kind": "Wartime naval diary transcription"
+    },
+    "intercept": {
+      "title": "III./ZG 26 · Major Kogler’s Big Week diary",
+      "url": "https://aviationtrails.co.uk/luftwaffe-pages/luftwaffe-diaries-big-week/",
+      "kind": "Published transcription of wartime unit diary"
+    },
+    "jg": {
+      "title": "III./JG 51 aircraft holdings and movements",
+      "url": "https://www.ww2.dk/oob/bestand/jagd/biiijg51.html",
+      "kind": "Transcription of German aircraft movement returns"
+    },
+    "malta": {
+      "title": "RAF Air Historical Branch · Malta, June 1940–May 1945",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/middle-east-campaigns-vol-xi-malta-june-1940-may-1945/",
+      "kind": "Official campaign history"
+    },
+    "marigny": {
+      "title": "416th Bomb Group archive · Mission 106",
+      "url": "https://www.416th.com/missions/mission106.html",
+      "kind": "Unit archive with wartime operations reports and loading lists"
+    },
+    "murray": {
+      "title": "Williamson Murray · Strategy for Defeat, chapter VII",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/AAF-Luftwaffe/AAF-Luftwaffe-7.html",
+      "kind": "USAF historical study"
+    },
+    "orb": {
+      "title": "No. 92 Squadron · published Form 540 transcription",
+      "url": "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942",
+      "kind": "Published squadron diary transcription"
+    },
+    "pol": {
+      "title": "Polish No. 303 Squadron and the Hurricane 80K - RAF Museum",
+      "url": "https://www.rafmuseum.org.uk/blog/polish-no-303-squadron-and-the-hurricane-80k/",
+      "kind": "Institutional history"
+    },
+    "production": {
+      "title": "Boog, Krebs and Vogel · Germany and the Second World War, vol. VII",
+      "url": "https://books.google.com/books?id=rmgTAQAAMAAJ",
+      "kind": "Published production table derived from USSBS records"
+    },
+    "rcaf": {
+      "title": "History - Battle of Britain - Royal Canadian Air Force - Canada.ca",
+      "url": "https://www.canada.ca/en/air-force/services/history-heritage/battle-britain/timeline.html",
+      "kind": "Institutional history"
+    },
+    "recon": {
+      "title": "RAF AHB · Liberation of North-West Europe, vol. IV",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/liberation-of-north-west-europe-vol-iv-the-breakout-and-advance-to-the-lower-rhine-12-jun-30-sep-1944/",
+      "kind": "Official historical compilation citing wartime operations records"
+    },
+    "survey": {
+      "title": "United States Strategic Bombing Survey · European War summary, September 1945",
+      "url": "https://www.anesi.com/ussbs02.htm",
+      "kind": "Postwar survey of records and participants"
+    },
+    "usafUK": {
+      "title": "Air Force History Office · Case Studies in the Achievement of Air Superiority",
+      "url": "https://media.defense.gov/2010/Oct/12/2001309632/-1/-1/0/AFD-101012-038.pdf",
+      "kind": "Official historical study"
+    },
+    "v1": {
+      "title": "D. A. Dyakov, The 1st Air Army’s contribution to the liberation of Belarus",
+      "url": "https://military.wikireading.ru/h8TBm5FnI7",
+      "kind": "Archival study citing TsAMO, including F. 290, op. 3284, d. 796"
+    },
+    "v16": {
+      "title": "16th Air Army history, chapter 3",
+      "url": "https://militera.lib.ru/h/16va/03.html",
+      "kind": "Soviet institutional unit history"
+    }
+  },
+  "studies": [
+    {
+      "id": "normandy",
+      "label": "Normandy",
+      "period": "16–26 July 1944",
+      "title": "Which missions made a difference to the ground advance?",
+      "answer": "Reconnaissance gave the armies a picture of the Dives crossings. Photographs later showed a rail line cut at Bourth. At Cobra, a much larger bombardment helped open the way, but infantry and armour still had to fight for the roads to Marigny and Saint-Gilles.",
+      "campaigns": [
+        "normandy"
+      ],
+      "units": [
+        "rcaf-430",
+        "us-416bg"
+      ],
+      "record": [
+        "operations-1944.html?from=1944-07-26&to=1944-07-26&q=Marigny",
+        "Open the Marigny mission"
+      ],
+      "points": [
+        {
+          "title": "What the ground staff could learn",
+          "text": "On 16 July, No. 430 Squadron RCAF reported roughly twelve Dives bridges intact despite poor visibility. On 22 July the 416th Group’s report on Bourth cited photographs showing breaks in the railway track. The photographs confirm damage at Bourth. The Dives reconnaissance concerned other crossings six days earlier.",
+          "source": "bourth",
+          "locator": "Mission 103, results and later photographs. Dives observation in the evidence table below."
+        },
+        {
+          "title": "What the ground forces still had to do",
+          "text": "On 26 July VII Corps sent its mobile units forward to deepen the penetration. Their commanders had expected the roads to be clear and instead put assault troops up front. The 416th had dispatched the same number of aircraft to support the advance on two successive days. It recorded a bombing pattern at Saint-Gilles on the first day and cloud preventing the Marigny attack on the second.",
+          "source": "army13",
+          "locator": "Chapter XIII, pp. 251–253. Missions 105 and 106 identify the group’s own results."
+        }
+      ],
+      "rows": [
+        {
+          "id": "dives",
+          "dates": "1944-07-16",
+          "scope": "No. 430 Squadron RCAF · River Dives",
+          "label": "Bridges observed intact",
+          "value": 12,
+          "unit": "bridges",
+          "source": "recon",
+          "locator": "Vol. IV, chapter 2, p. 42, evening report",
+          "qualifier": "approximate"
+        },
+        {
+          "id": "bourth-dispatch",
+          "dates": "1944-07-22",
+          "scope": "416th Bomb Group · Bourth",
+          "label": "Aircraft dispatched, including two pathfinders",
+          "value": 32,
+          "unit": "aircraft",
+          "source": "bourth",
+          "locator": "Mission 103, formation and load",
+          "qualifier": "reported"
+        },
+        {
+          "id": "gilles-dispatch",
+          "dates": "1944-07-25",
+          "scope": "416th Bomb Group · Saint-Gilles",
+          "label": "Aircraft dispatched",
+          "value": 36,
+          "unit": "aircraft",
+          "source": "gilles",
+          "locator": "Mission 105, group formation",
+          "qualifier": "reported"
+        },
+        {
+          "id": "marigny-dispatch",
+          "dates": "1944-07-26",
+          "scope": "416th Bomb Group · Marigny",
+          "label": "Aircraft dispatched",
+          "value": 36,
+          "unit": "aircraft",
+          "source": "marigny",
+          "locator": "Mission 106, dispatch",
+          "qualifier": "reported"
+        },
+        {
+          "id": "marigny-attacks",
+          "dates": "1944-07-26",
+          "scope": "416th Bomb Group · Marigny",
+          "label": "Dispatched aircraft that attacked",
+          "value": 0,
+          "unit": "aircraft",
+          "source": "marigny",
+          "locator": "Mission 106, weather abort and field order",
+          "qualifier": "reported"
+        },
+        {
+          "id": "heavy-dispatch",
+          "dates": "1944-07-25",
+          "scope": "Eighth Air Force · Mission 494 heavy bombers",
+          "label": "Heavy bombers dispatched",
+          "value": 1581,
+          "unit": "aircraft",
+          "source": "chron",
+          "locator": "25 July, Mission 494: 917 B-17s and 664 B-24s",
+          "qualifier": "reported"
+        },
+        {
+          "id": "heavy-attack",
+          "dates": "1944-07-25",
+          "scope": "Eighth Air Force · Mission 494 heavy bombers",
+          "label": "Heavy bombers attacking assigned or opportunity targets",
+          "value": 1503,
+          "unit": "aircraft",
+          "source": "chron",
+          "locator": "25 July, Mission 494: 843 and 647 at the area, plus 13 elsewhere",
+          "qualifier": "reconstructed"
+        },
+        {
+          "id": "history-attack",
+          "dates": "1944-07-25",
+          "scope": "AAF official campaign narrative · Cobra",
+          "label": "Heavy bombers attacking in the alternate account",
+          "value": 1507,
+          "unit": "aircraft",
+          "source": "air",
+          "locator": "Vol. III, chapter 8, pp. 231–232",
+          "qualifier": "alternate account"
+        },
+        {
+          "id": "army-killed",
+          "dates": "1944-07-25",
+          "scope": "U.S. troops · short bombing on 25 July",
+          "label": "Killed, Army history",
+          "value": 111,
+          "unit": "people",
+          "source": "army",
+          "locator": "Chapter XII, p. 235",
+          "qualifier": "reported"
+        },
+        {
+          "id": "army-wounded",
+          "dates": "1944-07-25",
+          "scope": "U.S. troops · short bombing on 25 July",
+          "label": "Wounded, Army history",
+          "value": 490,
+          "unit": "people",
+          "source": "army",
+          "locator": "Chapter XII, p. 235",
+          "qualifier": "reported"
+        },
+        {
+          "id": "air-killed",
+          "dates": "1944-07-25",
+          "scope": "U.S. troops · short bombing on 25 July",
+          "label": "Killed, AAF investigation figure",
+          "value": 102,
+          "unit": "people",
+          "source": "air",
+          "locator": "Vol. III, p. 233, note 9",
+          "qualifier": "alternate account"
+        },
+        {
+          "id": "air-wounded",
+          "dates": "1944-07-25",
+          "scope": "U.S. troops · short bombing on 25 July",
+          "label": "Wounded, AAF investigation figure",
+          "value": 380,
+          "unit": "people",
+          "source": "air",
+          "locator": "Vol. III, p. 233, note 9",
+          "qualifier": "alternate account"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "attack-share",
+          "label": "Mission 494 heavy bombers that attacked",
+          "op": "percent",
+          "inputs": [
+            "heavy-attack",
+            "heavy-dispatch"
+          ],
+          "unit": "%",
+          "interpretation": "Both figures use the Eighth Air Force chronology. This measures mission completion, including opportunity targets."
+        },
+        {
+          "id": "marigny-share",
+          "label": "Marigny dispatch that attacked",
+          "op": "percent",
+          "inputs": [
+            "marigny-attacks",
+            "marigny-dispatch"
+          ],
+          "unit": "%",
+          "interpretation": "The group recorded an explicit weather abort for this entire mission."
+        }
+      ],
+      "gap": "How long the Bourth railway stayed closed, and which army decision depended on the Dives report, require railway repair and receiving-headquarters records."
+    },
+    {
+      "id": "britain",
+      "label": "Battle of Britain",
+      "period": "August–September 1940",
+      "title": "What kept fighter squadrons available for the next raid?",
+      "answer": "Fighter Command drew down its reserve of replacement Hurricanes and Spitfires. At Northolt, repairs put nine Polish squadron Hurricanes back into service overnight. Aircraft supply, pilot strength and the number a squadron could launch on a given call each tell a different part of the story.",
+      "campaigns": [
+        "britain"
+      ],
+      "units": [
+        "raf-303",
+        "rcaf-1"
+      ],
+      "record": [
+        "grand-air-war-v80.html?campaign=britain&event=1940-09-15#moment-detail",
+        "Open the 15 September campaign record"
+      ],
+      "points": [
+        {
+          "title": "The reserve available for issue",
+          "text": "On 10 August the maintenance units could issue 160 Hurricanes and 129 Spitfires to Fighter Command. By 7 September they could issue 86 and 39. The same study reports that Fighter Command considered itself 201 pilots below authorized strength on the latter date.",
+          "source": "usafUK",
+          "locator": "Battle of Britain chapter, aircraft supply around fig. 3-3 and Pilot and Aircraft Resources."
+        },
+        {
+          "title": "Two squadrons at Northolt",
+          "text": "After the fighting on 15 September, No. 303 Squadron’s ground crew restored nine damaged Hurricanes for the following day. On 27 September No. 1 RCAF scrambled twelve, then eight, then six aircraft. Those launches show repeated commitments through a single day. The sources do not trace the Canadian aircraft individually.",
+          "source": "pol",
+          "locator": "Ground personnel after 15 September. Canadian scramble counts in the RCAF timeline below."
+        }
+      ],
+      "rows": [
+        {
+          "id": "aug-h",
+          "dates": "1940-08-10",
+          "scope": "Fighter Command maintenance units · ready for issue",
+          "label": "Hurricanes available for issue",
+          "value": 160,
+          "unit": "aircraft",
+          "source": "usafUK",
+          "locator": "Battle of Britain, fig. 3-3 discussion, 10 August",
+          "qualifier": "reported"
+        },
+        {
+          "id": "aug-s",
+          "dates": "1940-08-10",
+          "scope": "Fighter Command maintenance units · ready for issue",
+          "label": "Spitfires available for issue",
+          "value": 129,
+          "unit": "aircraft",
+          "source": "usafUK",
+          "locator": "Fig. 3-3 discussion, 10 August",
+          "qualifier": "reported"
+        },
+        {
+          "id": "sep-h",
+          "dates": "1940-09-07",
+          "scope": "Fighter Command maintenance units · ready for issue",
+          "label": "Hurricanes available for issue",
+          "value": 86,
+          "unit": "aircraft",
+          "source": "usafUK",
+          "locator": "Fig. 3-3 discussion, 7 September",
+          "qualifier": "reported"
+        },
+        {
+          "id": "sep-s",
+          "dates": "1940-09-07",
+          "scope": "Fighter Command maintenance units · ready for issue",
+          "label": "Spitfires available for issue",
+          "value": 39,
+          "unit": "aircraft",
+          "source": "usafUK",
+          "locator": "Fig. 3-3 discussion, 7 September",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pilot-short",
+          "dates": "1940-09-07",
+          "scope": "RAF Fighter Command · pilots",
+          "label": "Shortfall against authorized pilot strength",
+          "value": 201,
+          "unit": "pilots",
+          "source": "usafUK",
+          "locator": "Pilot and Aircraft Resources, paragraph citing the AHB study",
+          "qualifier": "reported"
+        },
+        {
+          "id": "overnight",
+          "dates": "1940-09-15/16",
+          "scope": "No. 303 Squadron RAF · Northolt",
+          "label": "Damaged Hurricanes restored overnight",
+          "value": 9,
+          "unit": "aircraft",
+          "source": "pol",
+          "locator": "Ground personnel after 15 September",
+          "qualifier": "reported"
+        },
+        {
+          "id": "scramble-1",
+          "dates": "1940-09-27",
+          "scope": "No. 1 Squadron RCAF · same three calls",
+          "label": "Aircraft sent on scramble 1",
+          "value": 12,
+          "unit": "aircraft",
+          "source": "rcaf",
+          "locator": "Timeline, 27 September, successive scrambles",
+          "qualifier": "reported"
+        },
+        {
+          "id": "scramble-2",
+          "dates": "1940-09-27",
+          "scope": "No. 1 Squadron RCAF · same three calls",
+          "label": "Aircraft sent on scramble 2",
+          "value": 8,
+          "unit": "aircraft",
+          "source": "rcaf",
+          "locator": "Timeline, 27 September, successive scrambles",
+          "qualifier": "reported"
+        },
+        {
+          "id": "scramble-3",
+          "dates": "1940-09-27",
+          "scope": "No. 1 Squadron RCAF · same three calls",
+          "label": "Aircraft sent on scramble 3",
+          "value": 6,
+          "unit": "aircraft",
+          "source": "rcaf",
+          "locator": "Timeline, 27 September, successive scrambles",
+          "qualifier": "reported"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "aug-total",
+          "label": "Immediate issue reserve on 10 August",
+          "op": "sum",
+          "inputs": [
+            "aug-h",
+            "aug-s"
+          ],
+          "unit": "aircraft",
+          "interpretation": "Hurricanes and Spitfires available in maintenance units for issue to squadrons."
+        },
+        {
+          "id": "sep-total",
+          "label": "Immediate issue reserve on 7 September",
+          "op": "sum",
+          "inputs": [
+            "sep-h",
+            "sep-s"
+          ],
+          "unit": "aircraft",
+          "interpretation": "The same two types and supply category four weeks later."
+        },
+        {
+          "id": "reserve-draw",
+          "label": "Reduction in the immediate issue reserve",
+          "op": "difference",
+          "inputs": [
+            "aug-total",
+            "sep-total"
+          ],
+          "unit": "aircraft",
+          "interpretation": "A net reduction between snapshots. Replacements, transfers and repairs can all change the stock."
+        }
+      ],
+      "gap": "The sources give the size of each Canadian scramble. Reasons why individual aircraft or pilots missed a later call need timed readiness sheets and pilot rosters."
+    },
+    {
+      "id": "reich",
+      "label": "Defence of the Reich",
+      "period": "20–25 February 1944",
+      "title": "What could the 445th Bomb Group fly the day after Gotha?",
+      "answer": "The 445th lost thirteen of its twenty-five dispatched Liberators at Gotha on 24 February. The following day it dispatched seventeen to Fürth. Twelve reached the primary target. The two mission reports establish next-day capability even though the aircraft and crews that made it possible have yet to be matched.",
+      "campaigns": [
+        "reichdefense",
+        "bigweek"
+      ],
+      "units": [
+        "us-445bg",
+        "de-zg26-iii"
+      ],
+      "record": [
+        "big-week.html#february-24",
+        "Open the 24 February raid comparison"
+      ],
+      "points": [
+        {
+          "title": "A second mission after severe losses",
+          "text": "The Fürth return records seventeen takeoffs and dispatches, five aborts and twelve aircraft over the primary target. Counting the whole group on both days avoids attributing the wider Eighth Air Force loss total to the 445th.",
+          "source": "furth",
+          "locator": "Mission 29, group table under Fürth, 25 February. The preceding Mission 28 covers Gotha."
+        },
+        {
+          "title": "What one defending unit could still launch",
+          "text": "III./ZG 26’s diary traces launches from Wunstorf on 20, 21 and 24 February. Four aircraft took off on the 24th and the diary recorded a Liberator claim. Matching that claim to a 445th aircraft would require a time, location and identified loss on both sides.",
+          "source": "intercept",
+          "locator": "Kogler diary, III. Gruppe entries for 20, 21 and 24 February."
+        }
+      ],
+      "rows": [
+        {
+          "id": "445-sent",
+          "dates": "1944-02-24",
+          "scope": "445th Bombardment Group · Gotha",
+          "label": "Liberators dispatched",
+          "value": 25,
+          "unit": "aircraft",
+          "source": "gotha",
+          "locator": "Mission 28, group account",
+          "qualifier": "reported"
+        },
+        {
+          "id": "445-lost",
+          "dates": "1944-02-24",
+          "scope": "445th Bombardment Group · Gotha",
+          "label": "Liberators lost",
+          "value": 13,
+          "unit": "aircraft",
+          "source": "gotha",
+          "locator": "Mission 28, group losses",
+          "qualifier": "reported"
+        },
+        {
+          "id": "next-sent",
+          "dates": "1944-02-25",
+          "scope": "445th Bombardment Group · Fürth",
+          "label": "Liberators dispatched",
+          "value": 17,
+          "unit": "aircraft",
+          "source": "furth",
+          "locator": "Mission 29, Aircraft Dispatched",
+          "qualifier": "reported"
+        },
+        {
+          "id": "next-abort",
+          "dates": "1944-02-25",
+          "scope": "445th Bombardment Group · Fürth",
+          "label": "Aircraft aborts",
+          "value": 5,
+          "unit": "aircraft",
+          "source": "furth",
+          "locator": "Mission 29, Aircraft Aborts",
+          "qualifier": "reported"
+        },
+        {
+          "id": "next-primary",
+          "dates": "1944-02-25",
+          "scope": "445th Bombardment Group · Fürth",
+          "label": "Aircraft over primary target",
+          "value": 12,
+          "unit": "aircraft",
+          "source": "furth",
+          "locator": "Mission 29, Aircraft Over Primary",
+          "qualifier": "reported"
+        },
+        {
+          "id": "force-sent",
+          "dates": "1944-02-24",
+          "scope": "Eighth Air Force · Mission 233, three bomber forces",
+          "label": "Bombers dispatched",
+          "value": 809,
+          "unit": "aircraft",
+          "source": "gotha",
+          "locator": "Mission 233, three force dispatch totals",
+          "qualifier": "reported"
+        },
+        {
+          "id": "force-lost",
+          "dates": "1944-02-24",
+          "scope": "Eighth Air Force · Mission 233, three bomber forces",
+          "label": "Bombers lost, including the 445th",
+          "value": 49,
+          "unit": "aircraft",
+          "source": "gotha",
+          "locator": "Mission 233, losses across the three forces",
+          "qualifier": "reported"
+        },
+        {
+          "id": "zg-20",
+          "dates": "1944-02-20",
+          "scope": "III./ZG 26 · Wunstorf",
+          "label": "Aircraft launched",
+          "value": 16,
+          "unit": "aircraft",
+          "source": "intercept",
+          "locator": "III. Gruppe diary, 20 February",
+          "qualifier": "reported"
+        },
+        {
+          "id": "zg-21",
+          "dates": "1944-02-21",
+          "scope": "III./ZG 26 · Wunstorf",
+          "label": "Aircraft launched",
+          "value": 10,
+          "unit": "aircraft",
+          "source": "intercept",
+          "locator": "III. Gruppe diary, 21 February",
+          "qualifier": "reported"
+        },
+        {
+          "id": "zg-24",
+          "dates": "1944-02-24",
+          "scope": "III./ZG 26 · Wunstorf",
+          "label": "Aircraft launched",
+          "value": 4,
+          "unit": "aircraft",
+          "source": "intercept",
+          "locator": "III. Gruppe diary, 24 February",
+          "qualifier": "reported"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "group-loss",
+          "label": "445th dispatch lost at Gotha",
+          "op": "percent",
+          "inputs": [
+            "445-lost",
+            "445-sent"
+          ],
+          "unit": "%",
+          "interpretation": "Thirteen of twenty-five dispatched aircraft."
+        },
+        {
+          "id": "force-loss",
+          "label": "Mission 233 dispatch lost",
+          "op": "percent",
+          "inputs": [
+            "force-lost",
+            "force-sent"
+          ],
+          "unit": "%",
+          "interpretation": "The three-force total already includes the 445th."
+        },
+        {
+          "id": "next-share",
+          "label": "Next-day dispatch over the primary target",
+          "op": "percent",
+          "inputs": [
+            "next-primary",
+            "next-sent"
+          ],
+          "unit": "%",
+          "interpretation": "Fürth mission completion answers a different question from the preceding day's loss share."
+        }
+      ],
+      "gap": "The change from 25 dispatched to 17 cannot tell us how many replacements, repaired aircraft or reserve crews arrived overnight."
+    },
+    {
+      "id": "bagration",
+      "label": "Operation Bagration",
+      "period": "June–July 1944",
+      "title": "What did Soviet air concentration change around Bobruisk?",
+      "answer": "The 16th Air Army assembled 526 aircraft for one evening strike against the trapped German force. German-side records place the closing of the pocket before the attack. Aviation added pressure on an already encircled army, and the same air army went on to support the advance toward Baranovichi.",
+      "campaigns": [
+        "bagration"
+      ],
+      "units": [
+        "su-16va",
+        "de-jg51-iii",
+        "su-1va"
+      ],
+      "record": [
+        "bagration.html?case=pocket#campaign",
+        "Open the Bobruisk pocket record"
+      ],
+      "points": [
+        {
+          "title": "Order of events matters",
+          "text": "Ziemke’s account traces Ninth Army’s delayed retreat orders and the Soviet ground forces closing the pocket on 27 June. Its sequence changes what can be credited to that evening’s air strike. Bombers, assault aircraft and fighters attacked a force whose routes out had already narrowed.",
+          "source": "east",
+          "locator": "Chapter XV, The Bobruysk Pocket, 26–27 June."
+        },
+        {
+          "title": "What remained available",
+          "text": "The 16th Air Army reported 769 sorties around Baranovichi on 7 July. The Bf 109G-6 inventory of III./JG 51 fell from forty at the start of June to twenty-four at its close, then sixteen at the end of July. Both series show forces continuing to operate as the front moved, but one counts flights and the other aircraft held.",
+          "source": "jg",
+          "locator": "Bf 109G-6 movement return, June and July. The 7 July sortie figure comes from the Soviet air-army history."
+        }
+      ],
+      "rows": [
+        {
+          "id": "first-sorties",
+          "dates": "1944-06-24",
+          "scope": "16th Air Army · opening day, Bobruisk sector",
+          "label": "All combat sorties",
+          "value": 3191,
+          "unit": "sorties",
+          "source": "v16",
+          "locator": "Chapter 3, first day",
+          "qualifier": "reported"
+        },
+        {
+          "id": "first-assault",
+          "dates": "1944-06-24",
+          "scope": "16th Air Army · opening day, Bobruisk sector",
+          "label": "Attack sorties within the total",
+          "value": 1846,
+          "unit": "sorties",
+          "source": "v16",
+          "locator": "Chapter 3, first-day task breakdown",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pocket-bombers",
+          "dates": "1944-06-27",
+          "scope": "16th Air Army · evening pocket strike",
+          "label": "Day bombers",
+          "value": 175,
+          "unit": "aircraft",
+          "source": "v16",
+          "locator": "Chapter 3, printed p. 172",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pocket-assault",
+          "dates": "1944-06-27",
+          "scope": "16th Air Army · evening pocket strike",
+          "label": "Assault aircraft",
+          "value": 217,
+          "unit": "aircraft",
+          "source": "v16",
+          "locator": "Chapter 3, printed p. 172",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pocket-fighters",
+          "dates": "1944-06-27",
+          "scope": "16th Air Army · evening pocket strike",
+          "label": "Fighters",
+          "value": 134,
+          "unit": "aircraft",
+          "source": "v16",
+          "locator": "Chapter 3, printed p. 172",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pocket-total",
+          "dates": "1944-06-27",
+          "scope": "16th Air Army · evening pocket strike",
+          "label": "Aircraft launched",
+          "value": 526,
+          "unit": "aircraft",
+          "source": "v16",
+          "locator": "Chapter 3, pp. 172–177",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pocket-loss",
+          "dates": "1944-06-27",
+          "scope": "16th Air Army · evening pocket strike",
+          "label": "Own aircraft reported lost",
+          "value": 0,
+          "unit": "aircraft",
+          "source": "v16",
+          "locator": "Chapter 3, p. 177",
+          "qualifier": "reported"
+        },
+        {
+          "id": "baranovichi",
+          "dates": "1944-07-07",
+          "scope": "16th Air Army · Baranovichi fighting",
+          "label": "Sorties flown",
+          "value": 769,
+          "unit": "sorties",
+          "source": "v16",
+          "locator": "Chapter 3, Baranovichi narrative",
+          "qualifier": "reported"
+        },
+        {
+          "id": "jg-1944-06-01",
+          "dates": "1944-06-01",
+          "scope": "III./JG 51 · Bf 109G-6 only",
+          "label": "June opening holding",
+          "value": 40,
+          "unit": "aircraft",
+          "source": "jg",
+          "locator": "Monthly Bf 109G-6 movement row, June opening",
+          "qualifier": "reported"
+        },
+        {
+          "id": "jg-1944-06-30",
+          "dates": "1944-06-30",
+          "scope": "III./JG 51 · Bf 109G-6 only",
+          "label": "June closing holding",
+          "value": 24,
+          "unit": "aircraft",
+          "source": "jg",
+          "locator": "Monthly Bf 109G-6 movement row, June closing",
+          "qualifier": "reported"
+        },
+        {
+          "id": "jg-1944-07-31",
+          "dates": "1944-07-31",
+          "scope": "III./JG 51 · Bf 109G-6 only",
+          "label": "July closing holding",
+          "value": 16,
+          "unit": "aircraft",
+          "source": "jg",
+          "locator": "Monthly Bf 109G-6 movement row, July closing",
+          "qualifier": "reported"
+        },
+        {
+          "id": "minsk-headline",
+          "dates": "1944-06-23 to 1944-07-03",
+          "scope": "1st Air Army · opening stage through Minsk",
+          "label": "Published total",
+          "value": 119,
+          "unit": "aircraft",
+          "source": "v1",
+          "locator": "First stage, loss paragraph citing Dyakov (2008), p. 155",
+          "qualifier": "printed, unresolved"
+        },
+        {
+          "id": "minsk-combat",
+          "dates": "1944-06-23 to 1944-07-03",
+          "scope": "1st Air Army · opening stage through Minsk",
+          "label": "Attributed to air combat",
+          "value": 98,
+          "unit": "aircraft",
+          "source": "v1",
+          "locator": "First stage, loss paragraph citing Dyakov (2008), p. 155",
+          "qualifier": "printed, unresolved"
+        },
+        {
+          "id": "minsk-flak",
+          "dates": "1944-06-23 to 1944-07-03",
+          "scope": "1st Air Army · opening stage through Minsk",
+          "label": "Attributed to anti-aircraft fire",
+          "value": 47,
+          "unit": "aircraft",
+          "source": "v1",
+          "locator": "First stage, loss paragraph citing Dyakov (2008), p. 155",
+          "qualifier": "printed, unresolved"
+        },
+        {
+          "id": "minsk-missing",
+          "dates": "1944-06-23 to 1944-07-03",
+          "scope": "1st Air Army · opening stage through Minsk",
+          "label": "Failed to return",
+          "value": 34,
+          "unit": "aircraft",
+          "source": "v1",
+          "locator": "First stage, loss paragraph citing Dyakov (2008), p. 155",
+          "qualifier": "printed, unresolved"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "opening-share",
+          "label": "Opening sorties assigned to attack",
+          "op": "percent",
+          "inputs": [
+            "first-assault",
+            "first-sorties"
+          ],
+          "unit": "%",
+          "interpretation": "Both numbers describe 24 June in the same air army."
+        },
+        {
+          "id": "strike-check",
+          "label": "Composition of the pocket strike",
+          "op": "sum",
+          "inputs": [
+            "pocket-bombers",
+            "pocket-assault",
+            "pocket-fighters"
+          ],
+          "unit": "aircraft",
+          "interpretation": "The sum matches the reported 526 aircraft launched."
+        },
+        {
+          "id": "minsk-sum",
+          "label": "Sum of the three printed Minsk loss categories",
+          "op": "sum",
+          "inputs": [
+            "minsk-combat",
+            "minsk-flak",
+            "minsk-missing"
+          ],
+          "unit": "aircraft",
+          "interpretation": "The printed headline is 119. Overlap or a transcription problem remains possible. No loss rate uses either figure."
+        }
+      ],
+      "gap": "The evening strike’s ground losses cannot be isolated from the effects of encirclement and artillery. The original 1st Air Army return is needed to reconcile the separate Minsk loss figures."
+    },
+    {
+      "id": "mediterranean",
+      "label": "Malta and Sicily",
+      "period": "April 1942–July 1943",
+      "title": "When did fighters delivered or moved forward actually supply protection?",
+      "answer": "Malta’s May 1942 receiving arrangements put newly arrived fighters into service within 35 minutes. During the Sicily invasion the next summer, fighters covered the beaches before an island base was ready. The move to Pachino then put a named squadron in a position to keep patrolling and to cover ships off Syracuse.",
+      "campaigns": [
+        "malta",
+        "sicily"
+      ],
+      "units": [
+        "raf-92",
+        "raf-249",
+        "raf-244"
+      ],
+      "record": [
+        "sicily.html?case=pachino-shipping#case-detail",
+        "Open the 16 July shipping patrol"
+      ],
+      "points": [
+        {
+          "title": "Arriving, surviving and flying",
+          "text": "After Calendar’s April delivery, raids struck the airfields while Spitfires were on the ground. For Bowery on 9 May, teams were prepared to service the arrivals. The RAF entry records 134 fighter sorties that day across the defence. The source does not assign all those flights to the newly delivered aircraft.",
+          "source": "malta",
+          "locator": "Chronological Summary, 20–23 April and 9 May 1942."
+        },
+        {
+          "title": "What reached the harbour",
+          "text": "Five of Pedestal’s fourteen merchant ships reached Malta in August, including the tanker Ohio. Malta Command recorded about 32,000 tons of general cargo, alongside separate furnace-fuel and diesel quantities. The convoy documents how supplies got through while the escorts and island fighters opposed attacks. The cargo total cannot measure aviation fuel issued to fighter squadrons.",
+          "source": "harbour",
+          "locator": "August 1942, Malta Command war diary, outstanding events and unloading of Ceres."
+        },
+        {
+          "title": "What a patrol supplied",
+          "text": "On 13 July 1943 eleven pilots left Luqa, patrolled the beaches and landed at Pachino. No. 92 recorded five patrols there on the 14th and eight aircraft covering ships on the 16th. Its diary names Rodney and Nelson. Nelson’s naval chronology places her Catania bombardment later than the diary does. The patrol itself is well documented.",
+          "source": "orb",
+          "locator": "No. 92 Squadron Form 540, 13–17 July. Both accounts are available in the linked Sicily campaign record."
+        }
+      ],
+      "rows": [
+        {
+          "id": "calendar-flown",
+          "dates": "1942-04-20",
+          "scope": "Operation Calendar · Wasp delivery",
+          "label": "Spitfires flown off",
+          "value": 47,
+          "unit": "aircraft",
+          "source": "carrier",
+          "locator": "Calendar, 20 April",
+          "qualifier": "reported"
+        },
+        {
+          "id": "calendar-in",
+          "dates": "1942-04-20",
+          "scope": "Operation Calendar · Wasp delivery",
+          "label": "Spitfires reaching Malta",
+          "value": 46,
+          "unit": "aircraft",
+          "source": "carrier",
+          "locator": "Calendar, 20 April",
+          "qualifier": "reported"
+        },
+        {
+          "id": "april-dead",
+          "dates": "1942-04-20 to 1942-04-23",
+          "scope": "Malta ground losses · Calendar aftermath",
+          "label": "Spitfires destroyed on the ground",
+          "value": 9,
+          "unit": "aircraft",
+          "source": "malta",
+          "locator": "Chronological Summary, 20–23 April",
+          "qualifier": "reported"
+        },
+        {
+          "id": "april-damage",
+          "dates": "1942-04-20 to 1942-04-23",
+          "scope": "Malta ground losses · Calendar aftermath",
+          "label": "Spitfires damaged on the ground",
+          "value": 29,
+          "unit": "aircraft",
+          "source": "malta",
+          "locator": "Chronological Summary, 20–23 April",
+          "qualifier": "reported"
+        },
+        {
+          "id": "wasp",
+          "dates": "1942-05-09",
+          "scope": "Operation Bowery · Wasp",
+          "label": "Spitfires flown off",
+          "value": 47,
+          "unit": "aircraft",
+          "source": "carrier",
+          "locator": "Bowery, 9 May, Wasp",
+          "qualifier": "reported"
+        },
+        {
+          "id": "eagle",
+          "dates": "1942-05-09",
+          "scope": "Operation Bowery · Eagle",
+          "label": "Spitfires flown off",
+          "value": 17,
+          "unit": "aircraft",
+          "source": "carrier",
+          "locator": "Bowery, 9 May, Eagle",
+          "qualifier": "reported"
+        },
+        {
+          "id": "bow-in",
+          "dates": "1942-05-09",
+          "scope": "Operation Bowery · both carriers",
+          "label": "Spitfires reaching Malta",
+          "value": 60,
+          "unit": "aircraft",
+          "source": "malta",
+          "locator": "Chronological Summary, 9 May",
+          "qualifier": "reported"
+        },
+        {
+          "id": "turnaround",
+          "dates": "1942-05-09",
+          "scope": "Malta · newly arrived fighters",
+          "label": "Time to operational use, within",
+          "value": 35,
+          "unit": "minutes",
+          "source": "malta",
+          "locator": "Chronological Summary, 9 May",
+          "qualifier": "upper bound"
+        },
+        {
+          "id": "island-sorties",
+          "dates": "1942-05-09",
+          "scope": "Malta defence · daily activity",
+          "label": "Fighter sorties",
+          "value": 134,
+          "unit": "sorties",
+          "source": "malta",
+          "locator": "Chronological Summary, 9 May",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pedestal-sent",
+          "dates": "1942-08",
+          "scope": "Pedestal · merchant convoy",
+          "label": "Merchant ships sent",
+          "value": 14,
+          "unit": "ships",
+          "source": "convoy",
+          "locator": "Pedestal roster",
+          "qualifier": "reported"
+        },
+        {
+          "id": "pedestal-in",
+          "dates": "1942-08",
+          "scope": "Pedestal · merchant convoy",
+          "label": "Merchant ships reaching Malta",
+          "value": 5,
+          "unit": "ships",
+          "source": "convoy",
+          "locator": "Arrival sequence, including Ohio on 15 August",
+          "qualifier": "reported"
+        },
+        {
+          "id": "cargo",
+          "dates": "By 1942-08-23",
+          "scope": "Malta Command · Pedestal/Ceres unloading",
+          "label": "General cargo unloaded",
+          "value": 32000,
+          "unit": "tons",
+          "source": "harbour",
+          "locator": "August war diary, Ceres unloading",
+          "qualifier": "approximate"
+        },
+        {
+          "id": "inbound",
+          "dates": "1943-07-13",
+          "scope": "No. 92 Squadron · Luqa to Pachino",
+          "label": "Pilots on the inbound beach patrol",
+          "value": 11,
+          "unit": "pilots",
+          "source": "orb",
+          "locator": "Form 540, 13 July",
+          "qualifier": "reported"
+        },
+        {
+          "id": "early-patrols",
+          "dates": "1943-07-14",
+          "scope": "No. 92 Squadron · Pachino",
+          "label": "Patrols before ground party arrived",
+          "value": 2,
+          "unit": "patrols",
+          "source": "orb",
+          "locator": "Form 540, 14 July",
+          "qualifier": "reported"
+        },
+        {
+          "id": "later-patrols",
+          "dates": "1943-07-14",
+          "scope": "No. 92 Squadron · Pachino",
+          "label": "Additional patrols that day",
+          "value": 3,
+          "unit": "patrols",
+          "source": "orb",
+          "locator": "Form 540, 14 July",
+          "qualifier": "reported"
+        },
+        {
+          "id": "ships",
+          "dates": "1943-07-16",
+          "scope": "No. 92 Squadron · shipping off Syracuse",
+          "label": "Aircraft covering shipping",
+          "value": 8,
+          "unit": "aircraft",
+          "source": "orb",
+          "locator": "Form 540, 16 July",
+          "qualifier": "reported"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "bow-flown",
+          "label": "Total flown off for Bowery",
+          "op": "sum",
+          "inputs": [
+            "wasp",
+            "eagle"
+          ],
+          "unit": "aircraft",
+          "interpretation": "Ships reported their own contributions to the same delivery."
+        },
+        {
+          "id": "bow-arrival",
+          "label": "Bowery fighters reaching Malta",
+          "op": "percent",
+          "inputs": [
+            "bow-in",
+            "bow-flown"
+          ],
+          "unit": "%",
+          "interpretation": "Arrival share for the two carriers. How quickly the arrivals could fly again is answered by the separate readiness report."
+        },
+        {
+          "id": "pachino",
+          "label": "Patrols recorded from Pachino on 14 July",
+          "op": "sum",
+          "inputs": [
+            "early-patrols",
+            "later-patrols"
+          ],
+          "unit": "patrols",
+          "interpretation": "One patrol could involve several aircraft. This figure counts assignments."
+        }
+      ],
+      "gap": "Damaged fighters could return to service. Identifying which aircraft survived and flew next requires serial-level repair and squadron returns. Shipping cover alone cannot establish how many attacks it prevented."
+    },
+    {
+      "id": "germany",
+      "label": "German replacement capacity",
+      "period": "April 1944–March 1945",
+      "title": "Why did new aircraft fail to restore German fighter strength?",
+      "answer": "German aircraft acceptances remained high while fighter units faced shortages of pilots and fuel. In April fewer replacement pilots arrived than the fighter force reported losing. Over the summer the fall in aviation gasoline output forced further reductions in training and even in the time allowed to run in engines.",
+      "campaigns": [
+        "reichdefense",
+        "bodenplatte"
+      ],
+      "units": [
+        "de-zg26-iii"
+      ],
+      "record": [
+        "grand-air-war-v80.html#german-war-lab",
+        "Open the German capacity series"
+      ],
+      "points": [
+        {
+          "title": "What the unit returns show",
+          "text": "Murray’s table for Luftflotte Reich counts 472 operationally ready single-engine fighters on 1 June and 242 on 1 July. The proportion ready actually rose slightly because the command’s holdings also shrank. The snapshots describe a single command during deployments to the invasion front.",
+          "source": "murray",
+          "locator": "Chapter VII, table LIX and discussion of dispositions in June."
+        },
+        {
+          "title": "What fuel shortages changed",
+          "text": "The Strategic Bombing Survey found that curtailed fuel supply cut pilot training further. In August the final engine run-in was reduced from two hours to half an hour. Its national aircraft acceptance figure, 39,807 in 1944, includes all types. It provides industrial context without telling us how many fighters a particular command could fly.",
+          "source": "survey",
+          "locator": "Aircraft and Oil sections, especially printed pp. 6–9."
+        },
+        {
+          "title": "Factories kept delivering into 1945",
+          "text": "The monthly all-type series records 3,188 aircraft in January, 2,249 in February and 1,930 in March. It establishes continued output during the collapse. Neither a fighter-unit allocation nor an airworthy aircraft with a trained pilot can be inferred from these totals.",
+          "source": "production",
+          "locator": "Vol. VII, table I.I.10, p. 118, derived from USSBS report 2a. Published table transcription, pending check of the underlying monthly scan."
+        }
+      ],
+      "rows": [
+        {
+          "id": "lost-pilots",
+          "dates": "1944-04",
+          "scope": "German fighter force · Galland conference account",
+          "label": "Fighter pilots reported lost",
+          "value": 489,
+          "unit": "pilots",
+          "source": "galland",
+          "locator": "15–16 May conference, April loss and replacement discussion",
+          "qualifier": "reported"
+        },
+        {
+          "id": "new-pilots",
+          "dates": "1944-04",
+          "scope": "German fighter force · Galland conference account",
+          "label": "Replacement pilots sent",
+          "value": 396,
+          "unit": "pilots",
+          "source": "galland",
+          "locator": "15–16 May conference, April replacements",
+          "qualifier": "reported"
+        },
+        {
+          "id": "june-held",
+          "dates": "1944-06-01",
+          "scope": "Luftflotte Reich · single-engine fighters",
+          "label": "On hand",
+          "value": 788,
+          "unit": "aircraft",
+          "source": "murray",
+          "locator": "Chapter VII, table LIX",
+          "qualifier": "reported"
+        },
+        {
+          "id": "june-ready",
+          "dates": "1944-06-01",
+          "scope": "Luftflotte Reich · single-engine fighters",
+          "label": "Operationally ready",
+          "value": 472,
+          "unit": "aircraft",
+          "source": "murray",
+          "locator": "Chapter VII, table LIX",
+          "qualifier": "reported"
+        },
+        {
+          "id": "july-held",
+          "dates": "1944-07-01",
+          "scope": "Luftflotte Reich · single-engine fighters",
+          "label": "On hand",
+          "value": 388,
+          "unit": "aircraft",
+          "source": "murray",
+          "locator": "Chapter VII, table LIX",
+          "qualifier": "reported"
+        },
+        {
+          "id": "july-ready",
+          "dates": "1944-07-01",
+          "scope": "Luftflotte Reich · single-engine fighters",
+          "label": "Operationally ready",
+          "value": 242,
+          "unit": "aircraft",
+          "source": "murray",
+          "locator": "Chapter VII, table LIX",
+          "qualifier": "reported"
+        },
+        {
+          "id": "gas-04",
+          "dates": "1944-04",
+          "scope": "Germany · synthetic plants",
+          "label": "Aviation gasoline output",
+          "value": 175000,
+          "unit": "tons",
+          "source": "survey",
+          "locator": "Oil, synthetic aviation gasoline output, April/July/September",
+          "qualifier": "reported"
+        },
+        {
+          "id": "gas-07",
+          "dates": "1944-07",
+          "scope": "Germany · synthetic plants",
+          "label": "Aviation gasoline output",
+          "value": 30000,
+          "unit": "tons",
+          "source": "survey",
+          "locator": "Oil, synthetic aviation gasoline output, April/July/September",
+          "qualifier": "reported"
+        },
+        {
+          "id": "gas-09",
+          "dates": "1944-09",
+          "scope": "Germany · synthetic plants",
+          "label": "Aviation gasoline output",
+          "value": 5000,
+          "unit": "tons",
+          "source": "survey",
+          "locator": "Oil, synthetic aviation gasoline output, April/July/September",
+          "qualifier": "reported"
+        },
+        {
+          "id": "test-old",
+          "dates": "Before August 1944 cut",
+          "scope": "German aircraft engines · final run-in",
+          "label": "Previous run-in time",
+          "value": 2,
+          "unit": "hours",
+          "source": "survey",
+          "locator": "Oil, consequences for the armed forces",
+          "qualifier": "reported"
+        },
+        {
+          "id": "test-new",
+          "dates": "1944-08",
+          "scope": "German aircraft engines · final run-in",
+          "label": "Reduced run-in time",
+          "value": 0.5,
+          "unit": "hours",
+          "source": "survey",
+          "locator": "Oil, August reduction",
+          "qualifier": "reported"
+        },
+        {
+          "id": "accepted",
+          "dates": "1944",
+          "scope": "German air force · all aircraft types",
+          "label": "Aircraft accepted over the year",
+          "value": 39807,
+          "unit": "aircraft",
+          "source": "survey",
+          "locator": "Aircraft section, annual acceptances",
+          "qualifier": "reported"
+        },
+        {
+          "id": "output-01",
+          "dates": "1945-01",
+          "scope": "Germany · national all-type production",
+          "label": "Aircraft built",
+          "value": 3188,
+          "unit": "aircraft",
+          "source": "production",
+          "locator": "Vol. VII, table I.I.10, p. 118; USSBS-derived monthly series",
+          "qualifier": "secondary transcription"
+        },
+        {
+          "id": "output-02",
+          "dates": "1945-02",
+          "scope": "Germany · national all-type production",
+          "label": "Aircraft built",
+          "value": 2249,
+          "unit": "aircraft",
+          "source": "production",
+          "locator": "Vol. VII, table I.I.10, p. 118; USSBS-derived monthly series",
+          "qualifier": "secondary transcription"
+        },
+        {
+          "id": "output-03",
+          "dates": "1945-03",
+          "scope": "Germany · national all-type production",
+          "label": "Aircraft built",
+          "value": 1930,
+          "unit": "aircraft",
+          "source": "production",
+          "locator": "Vol. VII, table I.I.10, p. 118; USSBS-derived monthly series",
+          "qualifier": "secondary transcription"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "pilots-gap",
+          "label": "Reported losses exceeding replacement arrivals",
+          "op": "difference",
+          "inputs": [
+            "lost-pilots",
+            "new-pilots"
+          ],
+          "unit": "pilots",
+          "interpretation": "The April flows differ by 93. This is not a complete personnel balance."
+        },
+        {
+          "id": "ready-jun",
+          "label": "Single-engine fighters ready on 1 June",
+          "op": "percent",
+          "inputs": [
+            "june-ready",
+            "june-held"
+          ],
+          "unit": "%",
+          "interpretation": "One command, same reporting date for numerator and denominator."
+        },
+        {
+          "id": "ready-jul",
+          "label": "Single-engine fighters ready on 1 July",
+          "op": "percent",
+          "inputs": [
+            "july-ready",
+            "july-held"
+          ],
+          "unit": "%",
+          "interpretation": "A higher share of a substantially smaller command inventory."
+        },
+        {
+          "id": "fuel-share",
+          "label": "September synthetic aviation gasoline output as a share of April",
+          "op": "percent",
+          "inputs": [
+            "gas-09",
+            "gas-04"
+          ],
+          "unit": "%",
+          "interpretation": "Both monthly figures describe production. Storage, deliveries to units and fuel consumed in operations are separate quantities."
+        },
+        {
+          "id": "quarter",
+          "label": "All-type aircraft built in January–March 1945",
+          "op": "sum",
+          "inputs": [
+            "output-01",
+            "output-02",
+            "output-03"
+          ],
+          "unit": "aircraft",
+          "interpretation": "Three complete calendar months of the same production series. April is unavailable."
+        }
+      ],
+      "gap": "A month-by-month chain from national acceptances through assignment, trained pilots, fuel deliveries and a named unit’s sorties is still missing. The evidence supports several constraints acting together."
+    }
+  ]
+}

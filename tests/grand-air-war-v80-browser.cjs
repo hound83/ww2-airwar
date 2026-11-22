@@ -25,6 +25,7 @@ const check=async()=>{
   await require("./reich-defence-browser.cjs")(browser,base,root);
   await require("./malta-browser.cjs")(browser,base,root);
   await require("./sicily-browser.cjs")(browser,base,root);
+  await require("./operational-balance-browser.cjs")(browser,base,root);
   await require("./formations-browser.cjs")(browser,base,root);
   await require("./campaign-review-browser.cjs")(browser,base,root);
   await require("./operations-1944-browser.cjs")(browser,base,root);
