@@ -1,6 +1,6 @@
 # Atlas v10 WIP · All-campaign evidence review
 
-**Status:** All 20 campaign dossiers reviewed and published, including the new Narvik and Big Week studies. Formation and airfield histories have shipped. The six operational balance studies are next. **Owner:** Codex. **Starting revision:** [v9.9 · From Malta to Messina](https://github.com/hound83/ww2-airwar/commit/5ad240057d285eded7b4005ff7f0f356d0850580). The release used for the coverage baseline was v9.9. The [second-sweep roadmap](#second-sweep-roadmap) sets the proposed delivery order and research questions. This candidate starts the evidence review milestone on the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md).
+**Status:** All 20 campaign dossiers reviewed and published, including the new Narvik and Big Week studies. Formation and airfield histories have shipped. The public version is v9.10, including all six operational balance studies. The Europe-wide narrative is next for v10. **Owner:** Codex. **Starting revision:** [v9.9 · From Malta to Messina](https://github.com/hound83/ww2-airwar/commit/5ad240057d285eded7b4005ff7f0f356d0850580). The release used for the coverage baseline was v9.9. The [second-sweep roadmap](#second-sweep-roadmap) sets the proposed delivery order and research questions. This candidate starts the evidence review milestone on the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md).
 
 ## Coverage baseline
 
@@ -50,6 +50,8 @@ At baseline, Dieppe had a single dated entry and no dossier chapters. Bodenplatt
 
 - [x] Publish linked formation and station histories across all six flagships. The [formation histories](https://hound83.github.io/ww2-airwar/formations.html) now cover 26 units, 82 dated entries and 41 named operating stations across the six flagships, with a follow-through to Berlin. [Release PR #67](https://github.com/hound83/ww2-airwar/pull/67) · [Published revision](https://github.com/hound83/ww2-airwar/commit/e59c4ca2c528a940c0f74c05b9814d84ef048045) · [Live desktop and mobile QA](https://github.com/hound83/ww2-airwar/actions/runs/44970254904).
 
+- [x] Publish v9.10 with six operational balance studies, 77 evidence figures, 19 worked calculations and seven downloadable CSVs. [Public studies](https://hound83.github.io/ww2-airwar/operational-balance.html) · [PR #68](https://github.com/hound83/ww2-airwar/pull/68) · [Published revision](https://github.com/hound83/ww2-airwar/commit/050c1b0e745646fc8de1152bd6737ca662c3f018) · [Live desktop and mobile QA](https://github.com/hound83/ww2-airwar/actions/runs/44972700677).
+
 ## Second-sweep roadmap
 
 Proposed 21 November 2026.
@@ -58,7 +60,7 @@ Proposed 21 November 2026.
 
 **Milestone 2 shipped.** [PR #65](https://github.com/hound83/ww2-airwar/pull/65) added an evidence route for every campaign, up from two. The [20-row campaign review](https://github.com/hound83/ww2-airwar/blob/38afa4d75a169a3e44af1b51aaca6ab9fb24a8a1/docs/CAMPAIGN_EVIDENCE_REVIEW.md) names the historical effect, reporting source, dated case and remaining question. The [candidate ledger](https://github.com/hound83/ww2-airwar/blob/38afa4d75a169a3e44af1b51aaca6ab9fb24a8a1/research/transcriptions/campaign-candidate-reconciliation.csv) records 38 accepted, 272 duplicates or superseded records, nine differences of scope and one unverified population across 320 rows. [Narvik](https://hound83.github.io/ww2-airwar/narvik.html#anchorage) compares 18 reporting days, and [Big Week](https://hound83.github.io/ww2-airwar/big-week.html#february-24) follows Eighth and Fifteenth Air Force operations, RAF night raids and the evidence of damage. [PR #66](https://github.com/hound83/ww2-airwar/pull/66) made the shortcut to sourced figures work consistently on touch and keyboard and retained the searched campaign in a new tab. The [live browser check](https://github.com/hound83/ww2-airwar/actions/runs/44960727157) exercised all 20 routes at 390 and 1440 pixels against the [deployed revision](https://github.com/hound83/ww2-airwar/commit/38afa4d75a169a3e44af1b51aaca6ab9fb24a8a1).
 
-**Next milestone.** Publish six operational balance studies together. Connect effort, readiness, losses and replacement to what forces could do afterwards. Show the reporting periods and populations, the observed effect and the open question in each study.
+**Next milestone.** Publish the connected European air war as v10. Six to eight Europe-wide chapters should link through the 20 campaign dossiers to dated operations, formations and balance studies, with a working return from the evidence to each chapter.
 
 **Start with the campaign outcome.** In Sicily, ask what difference fighters made to the invasion fleet, the armies ashore and the Axis withdrawal. The date at which a unit flew from a captured strip helps explain how it provided cover. At Dieppe, ask what air cover achieved for the ships and troops during the raid. For each campaign, select a question that fits the decisions and experiences of the people involved. Seek evidence from those receiving or opposing an operation as well as from those who flew it.
 
