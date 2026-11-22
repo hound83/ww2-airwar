@@ -1,5 +1,7 @@
 # European Air War Atlas (1936–May 1945)
 
+**Current public version: v9.10 · Operational balance.** [Open the Atlas](https://hound83.github.io/ww2-airwar/) or [read the six studies and download their figures](https://hound83.github.io/ww2-airwar/operational-balance.html). The 26 formation histories are included. The [connected European air war](docs/ATLAS_ROADMAP_TO_V10.md) remains the v10 milestone.
+
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
 [January–July 1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) · [Operational dataset and source audit](research/sources/operations-january-june-1944.md)

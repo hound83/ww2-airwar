@@ -495,6 +495,8 @@ function renderDossier(){
  const hasHistories = ["sicily","malta","britain","normandy","reichdefense","bagration","berlin"].includes(c?.id);
  formationLink.hidden = !hasHistories;
  if (hasHistories) formationLink.href = "./formations.html#campaign-" + c.id;
+ const balances = window.AtlasBalanceLinks?.[c?.id] || [];
+ $("dossier-balances").innerHTML = balances.map(entry => '<a href="./operational-balance.html#' + esc(entry.id) + '">' + esc(entry.label) + ' balance study</a>').join(' · ');
  $("dossier-study").hidden = !study;
  $("dossier-facts-jump").hidden = !c?.facts.length;
  if (c) $("dossier-facts-jump").href = "./grand-air-war-v80.html?campaign=" + encodeURIComponent(c.id) + "#dossier-facts";

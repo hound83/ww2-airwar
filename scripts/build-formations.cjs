@@ -39,12 +39,15 @@ function campaignPanel(id, c) {
   return panel("campaign-" + id, c.name, '<p class="lead">' + esc(c.question) + '</p><p>' + dossier(id) + '</p><h2>Formations</h2>' +
     list(members.map(u => unitLink(u) + '<span>' + esc(u.role) + '</span>'), "directory") , c.period);
 }
+const balanceStudies = JSON.parse(fs.readFileSync(path.join(root,"research/transcriptions/operational-balance.json"),"utf8")).studies;
 function unitPanel(u) {
+  const related = balanceStudies.filter(s=>s.units.includes(u.id)).map(s=>link("./operational-balance.html#"+s.id,s.title));
+  const balance = related.length ? "<h2>Operational balance</h2>"+list(related,"station-links") : "";
   const events = u.events.map(e => '<li><p class="event-date">' + esc(displayDate(e.date)) + '</p><div><h3>' + esc(e.place) + '</h3><p>' + esc(e.text) + '</p><p class="citation">' + cite(e) + '</p></div></li>');
   const stationList = u.stations.length ? list(u.stations.map(s => link("#" + stationId(s.place), s.place) + ' · ' + esc(s.period)), "station-links") : '<p>The air-army sources cited here locate operations across a front. They give no single operating airfield for the entire formation.</p>';
   return panel("unit-" + u.id, u.name, '<p class="lead">' + esc(u.contribution) + '</p><nav class="crumbs" aria-label="Related campaign histories">' + u.campaigns.map(campaignLink).join(" · ") + '</nav><h2>Operations and evidence</h2><ol class="events">' + events.join("\n") +
     '</ol><aside class="limit"><h2>What remains uncertain</h2><p>' + esc(u.limit) + '</p></aside><h2>Operating stations</h2>' + stationList +
-    '<h2>Read the campaign record</h2><p>' + link("./" + u.href, "Open the campaign evidence") + '</p><p class="crumbs">' + u.campaigns.map(dossier).join(" · ") + '</p>', u.role);
+    balance + '<h2>Read the campaign record</h2><p>' + link("./" + u.href, "Open the campaign evidence") + '</p><p class="crumbs">' + u.campaigns.map(dossier).join(" · ") + '</p>', u.role);
 }
 function stationPanel(place) {
   return panel(stationId(place), place, '<h2>Formations recorded here</h2>' + list(stationRows.get(place).map(({unit,row}) => unitLink(unit) + '<span>' + esc(row.period) + '</span><p class="citation">' + cite(row) + '</p>'), "directory"), "Operating station");
