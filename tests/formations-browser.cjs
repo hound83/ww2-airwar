@@ -57,7 +57,7 @@ module.exports = async (browser,base,root) => {
       await page.goto(histories+"#unrecorded");
       await page.locator("#unknown").waitFor();
       await page.goto(histories+"#unit-su-16va");
-      await page.getByText(/no single operating airfield/).waitFor();
+      await page.locator("#unit-su-16va").getByText(/no single operating airfield/).waitFor();
       await page.goto(base+"?campaign=poland#campaign-dossier");
       await page.locator("#dossier-study-title").waitFor();
       assert.ok(await page.locator("#dossier-formations").isHidden());
