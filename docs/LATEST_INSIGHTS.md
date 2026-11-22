@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## 22 November 2026 · Formation and airfield histories
+
+[26 formation histories](../formations.html) connect six flagship campaigns and the 16th Air Army's later service in Berlin. The [research audit](../research/sources/formation-histories.md) records 82 dated entries, 41 distinct stations, the Sicily naval chronology discrepancy and priorities for paired operational and receiving-side evidence. The next milestone groups the six operational balance studies.
+
 ## 21 November 2026 · Air power across 20 campaigns
 
 Every dossier leads with a historical question, a dated case, a source and an open question. The [Narvik anchorage](../narvik.html#anchorage) and [Big Week raids](../big-week.html#february-24) have new studies. [Twenty-campaign review](CAMPAIGN_EVIDENCE_REVIEW.md) · [Candidate decisions](../research/sources/campaign-candidates-second-sweep.md). The next milestone follows 20 substantive formation histories across six flagship campaigns.

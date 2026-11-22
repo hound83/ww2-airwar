@@ -491,6 +491,10 @@ const studyDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "sho
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
  const study = window.AtlasCampaignStudies?.[c?.id];
+ const formationLink = $("dossier-formations");
+ const hasHistories = ["sicily","malta","britain","normandy","reichdefense","bagration","berlin"].includes(c?.id);
+ formationLink.hidden = !hasHistories;
+ if (hasHistories) formationLink.href = "./formations.html#campaign-" + c.id;
  $("dossier-study").hidden = !study;
  $("dossier-facts-jump").hidden = !c?.facts.length;
  if (c) $("dossier-facts-jump").href = "./grand-air-war-v80.html?campaign=" + encodeURIComponent(c.id) + "#dossier-facts";

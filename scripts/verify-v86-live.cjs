@@ -6,6 +6,7 @@ const files=['grand-air-war-v80.html','dist/grand-air-war-v77-campaigns.js','dis
 const hash=s=>crypto.createHash('sha256').update(s.replace(/\r\n/g,'\n')).digest('hex');
 files.push('operations-1944.html','dist/operations-1944.js','dist/operations-1944.css','research/transcriptions/operations-january-june-1944.json','research/transcriptions/davis-western-targets-may-july-1944.csv');
 files.push('bodenplatte.html','dist/bodenplatte.js','dist/bodenplatte.css','dist/bodenplatte-data.js','research/transcriptions/bodenplatte-1945-01-01.json','research/transcriptions/bodenplatte-map.json','research/transcriptions/bodenplatte-operation-scope-1944-1945.json','research/transcriptions/bodenplatte-archival-evidence-1945-01-01.json','research/transcriptions/bodenplatte-unit-airframes-1945-01-01.csv','research/transcriptions/bodenplatte-operation-airframes-1945-01-01.csv','research/transcriptions/wikipedia-followup-evidence-2026-11-12.json');
+files.push('formations.html','dist/formations.js','dist/formations.css','research/transcriptions/formation-histories.json');
 files.push('bagration.html','dist/bagration.js','dist/bagration.css','research/transcriptions/bagration-air-campaign-1944.json');
 files.push('reich-defence.html','dist/reich-defence.js','dist/reich-defence.css','research/transcriptions/reich-defence-1943-1945.json','research/sources/atlas-reich-defence-2026-11-13.md');
 files.push('malta.html','dist/malta.js','dist/malta.css','research/transcriptions/malta-air-campaign-1940-1942.json','research/sources/atlas-malta-air-campaign-2026-11-13.md');

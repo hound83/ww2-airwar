@@ -3,14 +3,17 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('nod
 const root=path.resolve(__dirname,'..'),parent=path.resolve(os.tmpdir()),tmp=fs.mkdtempSync(path.join(parent,'airwar-build-'));
 try{
  for(const folder of ['dist','scripts','research/transcriptions'])fs.mkdirSync(path.join(tmp,folder),{recursive:true});
- const files=['scripts/build-web.cjs','scripts/build-narvik.cjs','research/transcriptions/narvik-daily-1940.json','research/transcriptions/aircraft-performance.json','research/transcriptions/normandy-v86-operations.json','research/transcriptions/britain-v87-operations.json','research/transcriptions/claims-losses-v88.json','research/transcriptions/battle-of-britain-campaign-claims-1940.json',...fs.readdirSync(path.join(root,'dist')).filter(f=>/\.(js|css|html)$/.test(f)).map(f=>'dist/'+f)];
+ const files=['scripts/build-web.cjs','scripts/build-narvik.cjs','scripts/build-formations.cjs','research/transcriptions/formation-histories.json','research/transcriptions/narvik-daily-1940.json','research/transcriptions/aircraft-performance.json','research/transcriptions/normandy-v86-operations.json','research/transcriptions/britain-v87-operations.json','research/transcriptions/claims-losses-v88.json','research/transcriptions/battle-of-britain-campaign-claims-1940.json',...fs.readdirSync(path.join(root,'dist')).filter(f=>/\.(js|css|html)$/.test(f)).map(f=>'dist/'+f)];
  const build=()=>cp.execFileSync(process.execPath,[path.join(tmp,'scripts/build-web.cjs')],{stdio:'pipe'});
  for(const file of files)fs.writeFileSync(path.join(tmp,file),fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n'));
  build();
+ const histories=fs.readFileSync(path.join(tmp,'formations.html'),'utf8');
  const narvik=fs.readFileSync(path.join(tmp,'narvik.html'),'utf8');
  const lf=fs.readFileSync(path.join(tmp,'index.html'),'utf8'),data=fs.readFileSync(path.join(tmp,'dist/atlas-v75-performance-data.js'),'utf8');
  for(const file of files)fs.writeFileSync(path.join(tmp,file),fs.readFileSync(path.join(tmp,file),'utf8').replace(/\r\n/g,'\n').replace(/\n/g,'\r\n'));
  build();
+ assert.equal(fs.readFileSync(path.join(tmp,'formations.html'),'utf8'),histories,'formation pages must survive CRLF checkouts');
+ assert.equal(fs.readFileSync(path.join(root,'formations.html'),'utf8').replace(/\r\n/g,'\n'),histories,'published formation pages must match the source graph');
  assert.equal(fs.readFileSync(path.join(tmp,'narvik.html'),'utf8'),narvik,'Narvik table must survive CRLF checkouts');
  assert.equal(fs.readFileSync(path.join(root,'narvik.html'),'utf8').replace(/\r\n/g,'\n'),narvik,'published Narvik table must match its transcription');
  assert.equal(fs.readFileSync(path.join(tmp,'index.html'),'utf8'),lf,'LF and CRLF checkouts produce identical HTML and cache hashes');
@@ -59,3 +62,4 @@ require('./malta.cjs');
 require('./sicily.cjs');
 
 require('./campaign-review.cjs');
+require('./formations.cjs');
