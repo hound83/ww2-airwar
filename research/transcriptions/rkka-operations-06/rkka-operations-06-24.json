@@ -1,0 +1,1451 @@
+{
+  "id": "RKKA-VVS-06-24",
+  "topic": "Soviet PVO fighter sorties, claims and own aircraft losses by unit",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_24.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 36,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Denominacion de los Ejercitos del Aire, Frentes y Agrupaciones Aereas",
+              "rowspan": 2
+            },
+            {
+              "value": "Cantidad de avion-vuelos",
+              "colspan": 2
+            },
+            {
+              "value": "Horas de vuelo",
+              "colspan": 2
+            },
+            {
+              "value": "Combates aereos realizados",
+              "colspan": 2
+            },
+            {
+              "value": "Aviones enemigos derribados",
+              "colspan": 2
+            },
+            {
+              "value": "Bajas propias de aviones",
+              "rowspan": 2
+            },
+            {
+              "value": "Proyectiles a reaccion y proyectiles de cañon gastados",
+              "rowspan": 2
+            },
+            {
+              "value": "El gasto por cada avion enemigo derribado",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "Total"
+            },
+            {
+              "value": "de noche"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "de noche"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "de noche"
+            },
+            {
+              "value": "Total"
+            },
+            {
+              "value": "de noche"
+            },
+            {
+              "value": "avion-vuelos"
+            },
+            {
+              "value": "proyectiles a reaccion y de cañon"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "13"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "1er Ejercito del Aire de Cazas",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "122 iad"
+            },
+            {
+              "value": "10 229"
+            },
+            {
+              "value": "82"
+            },
+            {
+              "value": "8 058"
+            },
+            {
+              "value": "72"
+            },
+            {
+              "value": "158"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "196"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "91"
+            },
+            {
+              "value": "335 070"
+            },
+            {
+              "value": "52"
+            },
+            {
+              "value": "1 710"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "104 iad"
+            },
+            {
+              "value": "3 288"
+            },
+            {
+              "value": "118"
+            },
+            {
+              "value": "3 770"
+            },
+            {
+              "value": "127"
+            },
+            {
+              "value": "16"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "5 506"
+            },
+            {
+              "value": "1 096"
+            },
+            {
+              "value": "1 835"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "147 iad"
+            },
+            {
+              "value": "1 269"
+            },
+            {
+              "value": "175"
+            },
+            {
+              "value": "1 037"
+            },
+            {
+              "value": "167"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5 040"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": "388"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "142 iad"
+            },
+            {
+              "value": "3 713"
+            },
+            {
+              "value": "412"
+            },
+            {
+              "value": "3 116"
+            },
+            {
+              "value": "412"
+            },
+            {
+              "value": "33"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "15"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "12 522"
+            },
+            {
+              "value": "248"
+            },
+            {
+              "value": "835"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "2 gv. liak"
+            },
+            {
+              "value": "41 377"
+            },
+            {
+              "value": "1 334"
+            },
+            {
+              "value": "40 431"
+            },
+            {
+              "value": "1 576"
+            },
+            {
+              "value": "1 272"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "927"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "539"
+            },
+            {
+              "value": "2 217 900"
+            },
+            {
+              "value": "45"
+            },
+            {
+              "value": "2 393"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "317, 318 y 319 iad"
+            },
+            {
+              "value": "97 510"
+            },
+            {
+              "value": "2 314"
+            },
+            {
+              "value": "95 507"
+            },
+            {
+              "value": "2 282"
+            },
+            {
+              "value": "2 208"
+            },
+            {
+              "value": "256"
+            },
+            {
+              "value": "992"
+            },
+            {
+              "value": "78"
+            },
+            {
+              "value": "377"
+            },
+            {
+              "value": "3 141 300"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": "3 167"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "157 386"
+            },
+            {
+              "value": "4 435"
+            },
+            {
+              "value": "151 919"
+            },
+            {
+              "value": "4 636"
+            },
+            {
+              "value": "3 710"
+            },
+            {
+              "value": "318"
+            },
+            {
+              "value": "2 146"
+            },
+            {
+              "value": "128"
+            },
+            {
+              "value": "1 019"
+            },
+            {
+              "value": "5 717 338"
+            },
+            {
+              "value": "73"
+            },
+            {
+              "value": "2 664"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Frente Occidental PVO",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "124 iad"
+            },
+            {
+              "value": "435"
+            },
+            {
+              "value": "47"
+            },
+            {
+              "value": "395"
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "300"
+            },
+            {
+              "value": "218"
+            },
+            {
+              "value": "150"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "106 iad"
+            },
+            {
+              "value": "16 396"
+            },
+            {
+              "value": "295"
+            },
+            {
+              "value": "14 967"
+            },
+            {
+              "value": "302"
+            },
+            {
+              "value": "545"
+            },
+            {
+              "value": "26"
+            },
+            {
+              "value": "259"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": "115 188"
+            },
+            {
+              "value": "63"
+            },
+            {
+              "value": "445"
+            }
+          ]
+        },
+        {
+          "sourceRow": 15,
+          "cells": [
+            {
+              "value": "328 iad"
+            },
+            {
+              "value": "1 734"
+            },
+            {
+              "value": "168"
+            },
+            {
+              "value": "1 929"
+            },
+            {
+              "value": "162"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "20"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "12 180"
+            },
+            {
+              "value": "46"
+            },
+            {
+              "value": "321"
+            }
+          ]
+        },
+        {
+          "sourceRow": 16,
+          "cells": [
+            {
+              "value": "320 iad"
+            },
+            {
+              "value": "98"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "89"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 17,
+          "cells": [
+            {
+              "value": "125 iad"
+            },
+            {
+              "value": "8 195"
+            },
+            {
+              "value": "108"
+            },
+            {
+              "value": "7 897"
+            },
+            {
+              "value": "105"
+            },
+            {
+              "value": "167"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "108 466"
+            },
+            {
+              "value": "205"
+            },
+            {
+              "value": "2 712"
+            }
+          ]
+        },
+        {
+          "sourceRow": 18,
+          "cells": [
+            {
+              "value": "148 iad"
+            },
+            {
+              "value": "2 900"
+            },
+            {
+              "value": "157"
+            },
+            {
+              "value": "2 561"
+            },
+            {
+              "value": "147"
+            },
+            {
+              "value": "180"
+            },
+            {
+              "value": "41"
+            },
+            {
+              "value": "149"
+            },
+            {
+              "value": "38"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "18 270"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "123"
+            }
+          ]
+        },
+        {
+          "sourceRow": 19,
+          "cells": [
+            {
+              "value": "36 iad"
+            },
+            {
+              "value": "15 288"
+            },
+            {
+              "value": "163"
+            },
+            {
+              "value": "14 910"
+            },
+            {
+              "value": "162"
+            },
+            {
+              "value": "859"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "152"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "100"
+            },
+            {
+              "value": "218 600"
+            },
+            {
+              "value": "101"
+            },
+            {
+              "value": "1 438"
+            }
+          ]
+        },
+        {
+          "sourceRow": 20,
+          "cells": [
+            {
+              "value": "144 iad"
+            },
+            {
+              "value": "2 087"
+            },
+            {
+              "value": "475"
+            },
+            {
+              "value": "2 170"
+            },
+            {
+              "value": "534"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "18"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "7 215"
+            },
+            {
+              "value": "116"
+            },
+            {
+              "value": "401"
+            }
+          ]
+        },
+        {
+          "sourceRow": 21,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "47 133"
+            },
+            {
+              "value": "1 434"
+            },
+            {
+              "value": "44 918"
+            },
+            {
+              "value": "1 475"
+            },
+            {
+              "value": "1 826"
+            },
+            {
+              "value": "156"
+            },
+            {
+              "value": "658"
+            },
+            {
+              "value": "97"
+            },
+            {
+              "value": "187"
+            },
+            {
+              "value": "480 219"
+            },
+            {
+              "value": "72"
+            },
+            {
+              "value": "730"
+            }
+          ]
+        },
+        {
+          "sourceRow": 22,
+          "cells": [
+            {
+              "value": "Frente Sur-Occidental PVO",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 23,
+          "cells": [
+            {
+              "value": "9 iak"
+            },
+            {
+              "value": "21 405"
+            },
+            {
+              "value": "518"
+            },
+            {
+              "value": "18 409"
+            },
+            {
+              "value": "522"
+            },
+            {
+              "value": "405"
+            },
+            {
+              "value": "57"
+            },
+            {
+              "value": "372"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "107"
+            },
+            {
+              "value": "440 556"
+            },
+            {
+              "value": "58"
+            },
+            {
+              "value": "1 184"
+            }
+          ]
+        },
+        {
+          "sourceRow": 24,
+          "cells": [
+            {
+              "value": "10 iak"
+            },
+            {
+              "value": "13 009"
+            },
+            {
+              "value": "244"
+            },
+            {
+              "value": "11 756"
+            },
+            {
+              "value": "195"
+            },
+            {
+              "value": "151"
+            },
+            {
+              "value": "17"
+            },
+            {
+              "value": "301"
+            },
+            {
+              "value": "48"
+            },
+            {
+              "value": "112"
+            },
+            {
+              "value": "229 823"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "764"
+            }
+          ]
+        },
+        {
+          "sourceRow": 25,
+          "cells": [
+            {
+              "value": "2 gv.iad"
+            },
+            {
+              "value": "16 882"
+            },
+            {
+              "value": "274"
+            },
+            {
+              "value": "16 181"
+            },
+            {
+              "value": "285"
+            },
+            {
+              "value": "542"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "385"
+            },
+            {
+              "value": "6"
+            },
+            {
+              "value": "135"
+            },
+            {
+              "value": "30 780"
+            },
+            {
+              "value": "44"
+            },
+            {
+              "value": "80"
+            }
+          ]
+        },
+        {
+          "sourceRow": 26,
+          "cells": [
+            {
+              "value": "310 iad"
+            },
+            {
+              "value": "6 543"
+            },
+            {
+              "value": "267"
+            },
+            {
+              "value": "5 404"
+            },
+            {
+              "value": "254"
+            },
+            {
+              "value": "56"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "17 900"
+            },
+            {
+              "value": "344"
+            },
+            {
+              "value": "942"
+            }
+          ]
+        },
+        {
+          "sourceRow": 27,
+          "cells": [
+            {
+              "value": "14 iad"
+            },
+            {
+              "value": "530"
+            },
+            {
+              "value": "55"
+            },
+            {
+              "value": "507"
+            },
+            {
+              "value": "43"
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": "1 260"
+            },
+            {
+              "value": "106"
+            },
+            {
+              "value": "252"
+            }
+          ]
+        },
+        {
+          "sourceRow": 28,
+          "cells": [
+            {
+              "value": "123 iad"
+            },
+            {
+              "value": "70"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "58"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 29,
+          "cells": [
+            {
+              "value": "126 iad"
+            },
+            {
+              "value": "1 064"
+            },
+            {
+              "value": "113"
+            },
+            {
+              "value": "905"
+            },
+            {
+              "value": "97"
+            },
+            {
+              "value": "30"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2"
+            },
+            {
+              "value": "3 000"
+            },
+            {
+              "value": "89"
+            },
+            {
+              "value": "250"
+            }
+          ]
+        },
+        {
+          "sourceRow": 30,
+          "cells": [
+            {
+              "value": "127 iad"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 31,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "59 503"
+            },
+            {
+              "value": "1 471"
+            },
+            {
+              "value": "53 220"
+            },
+            {
+              "value": "1 396"
+            },
+            {
+              "value": "1 192"
+            },
+            {
+              "value": "92"
+            },
+            {
+              "value": "1 094"
+            },
+            {
+              "value": "76"
+            },
+            {
+              "value": "373"
+            },
+            {
+              "value": "723 319"
+            },
+            {
+              "value": "54"
+            },
+            {
+              "value": "661"
+            }
+          ]
+        },
+        {
+          "sourceRow": 32,
+          "cells": [
+            {
+              "value": "Frente del Caucaso PVO",
+              "colspan": 13
+            }
+          ]
+        },
+        {
+          "sourceRow": 33,
+          "cells": [
+            {
+              "value": "8 iak"
+            },
+            {
+              "value": "1 606"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "1 829"
+            },
+            {
+              "value": "7"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "3"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "1"
+            },
+            {
+              "value": "2 350"
+            },
+            {
+              "value": "535"
+            },
+            {
+              "value": "783"
+            }
+          ]
+        },
+        {
+          "sourceRow": 34,
+          "cells": [
+            {
+              "value": "298 iad"
+            },
+            {
+              "value": "3 937"
+            },
+            {
+              "value": "14"
+            },
+            {
+              "value": "3 810"
+            },
+            {
+              "value": "12"
+            },
+            {
+              "value": "48"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "29"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "8"
+            },
+            {
+              "value": "26 564"
+            },
+            {
+              "value": "136"
+            },
+            {
+              "value": "916"
+            }
+          ]
+        },
+        {
+          "sourceRow": 35,
+          "cells": [
+            {
+              "value": "Total:"
+            },
+            {
+              "value": "5 543"
+            },
+            {
+              "value": "23"
+            },
+            {
+              "value": "5 639"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "59"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "32"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "28 914"
+            },
+            {
+              "value": "173"
+            },
+            {
+              "value": "904"
+            }
+          ]
+        },
+        {
+          "sourceRow": 36,
+          "cells": [
+            {
+              "value": "Total IA PVO KA"
+            },
+            {
+              "value": "269 565"
+            },
+            {
+              "value": "7 363"
+            },
+            {
+              "value": "255 696"
+            },
+            {
+              "value": "7 526"
+            },
+            {
+              "value": "6 787"
+            },
+            {
+              "value": "566"
+            },
+            {
+              "value": "3 930"
+            },
+            {
+              "value": "301"
+            },
+            {
+              "value": "1 588"
+            },
+            {
+              "value": "6 949 790"
+            },
+            {
+              "value": "69"
+            },
+            {
+              "value": "1 768"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

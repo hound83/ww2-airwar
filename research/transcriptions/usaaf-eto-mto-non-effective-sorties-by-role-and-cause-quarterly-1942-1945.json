@@ -1,0 +1,714 @@
+{
+  "sourceTitle": "Army Air Forces Statistical Digest, World War II (1945), Tables 130 and 131",
+  "sourceUrl": "https://archive.org/details/ArmyAirForcesStatisticalDigestWorldWarII",
+  "printedPage": 232,
+  "scanPdfPage": 253,
+  "sourceClass": "USAAF official primary statistical digest, verified against printed scan",
+  "definition": "Non-effective combat sorties flown, by cause and aircraft role: not aircraft losses, pilot casualties, or all attempted missions.",
+  "scopeNotes": [
+    "ETO 1942-Q3 covers August–September only, not the entire quarter; 1945-Q2 covers April–May only.",
+    "MTO starts in 1943-Q1, excludes 1942 from non-effective series; 1945-Q2 covers April–May only.",
+    "ETO medium/light bomber returns before 1943-Q3 printed dash; retain nulls instead of zeros.",
+    "The category 'other' is published without finer causes in these tables; do not interpret as enemy action.",
+    "Do not add these non-effective counts on top of airborne totals: non-effective sorties are a subset of airborne sorties."
+  ],
+  "theaters": [
+    {
+      "theater": "ETO",
+      "sourceTable": 130,
+      "quarterly": {
+        "all_types": [
+          {
+            "quarter": "1942-Q3 (Aug-Sep)",
+            "total": 142,
+            "weather": 48,
+            "mechanical": 36,
+            "other": 58
+          },
+          {
+            "quarter": "1942-Q4",
+            "total": 607,
+            "weather": 235,
+            "mechanical": 131,
+            "other": 241
+          },
+          {
+            "quarter": "1943-Q1",
+            "total": 510,
+            "weather": 192,
+            "mechanical": 140,
+            "other": 178
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 1399,
+            "weather": 395,
+            "mechanical": 360,
+            "other": 644
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 4336,
+            "weather": 1416,
+            "mechanical": 1159,
+            "other": 1761
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 7521,
+            "weather": 3088,
+            "mechanical": 1964,
+            "other": 2469
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 13018,
+            "weather": 4363,
+            "mechanical": 3686,
+            "other": 4969
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 35289,
+            "weather": 17074,
+            "mechanical": 8742,
+            "other": 9473
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 28258,
+            "weather": 14248,
+            "mechanical": 7322,
+            "other": 6688
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 19107,
+            "weather": 8721,
+            "mechanical": 5429,
+            "other": 4957
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 17960,
+            "weather": 3946,
+            "mechanical": 6084,
+            "other": 7930
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 7147,
+            "weather": 3647,
+            "mechanical": 1601,
+            "other": 1899
+          }
+        ],
+        "heavy_bomber": [
+          {
+            "quarter": "1942-Q3 (Aug-Sep)",
+            "total": 122,
+            "weather": 44,
+            "mechanical": 26,
+            "other": 52
+          },
+          {
+            "quarter": "1942-Q4",
+            "total": 577,
+            "weather": 229,
+            "mechanical": 116,
+            "other": 232
+          },
+          {
+            "quarter": "1943-Q1",
+            "total": 464,
+            "weather": 184,
+            "mechanical": 113,
+            "other": 167
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 1140,
+            "weather": 358,
+            "mechanical": 256,
+            "other": 526
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 2303,
+            "weather": 433,
+            "mechanical": 660,
+            "other": 1210
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 3326,
+            "weather": 1826,
+            "mechanical": 876,
+            "other": 624
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 6529,
+            "weather": 2645,
+            "mechanical": 1550,
+            "other": 2334
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 16581,
+            "weather": 9345,
+            "mechanical": 2604,
+            "other": 4632
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 11707,
+            "weather": 6798,
+            "mechanical": 2247,
+            "other": 2662
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 5610,
+            "weather": 2702,
+            "mechanical": 1594,
+            "other": 1314
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 7268,
+            "weather": 982,
+            "mechanical": 1574,
+            "other": 4712
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 2356,
+            "weather": 1384,
+            "mechanical": 223,
+            "other": 749
+          }
+        ],
+        "medium_light_bomber": [
+          {
+            "quarter": "1942-Q3 (Aug-Sep)",
+            "total": null,
+            "weather": null,
+            "mechanical": null,
+            "other": null
+          },
+          {
+            "quarter": "1942-Q4",
+            "total": null,
+            "weather": null,
+            "mechanical": null,
+            "other": null
+          },
+          {
+            "quarter": "1943-Q1",
+            "total": null,
+            "weather": null,
+            "mechanical": null,
+            "other": null
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": null,
+            "weather": null,
+            "mechanical": null,
+            "other": null
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 1196,
+            "weather": 883,
+            "mechanical": 119,
+            "other": 194
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 2578,
+            "weather": 1065,
+            "mechanical": 154,
+            "other": 1359
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 3162,
+            "weather": 1439,
+            "mechanical": 282,
+            "other": 1441
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 8308,
+            "weather": 5345,
+            "mechanical": 748,
+            "other": 2215
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 6815,
+            "weather": 4371,
+            "mechanical": 462,
+            "other": 1982
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 6254,
+            "weather": 3821,
+            "mechanical": 363,
+            "other": 2070
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 4481,
+            "weather": 1412,
+            "mechanical": 1187,
+            "other": 1882
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 1734,
+            "weather": 953,
+            "mechanical": 249,
+            "other": 532
+          }
+        ],
+        "fighter": [
+          {
+            "quarter": "1942-Q3 (Aug-Sep)",
+            "total": 20,
+            "weather": 4,
+            "mechanical": 10,
+            "other": 6
+          },
+          {
+            "quarter": "1942-Q4",
+            "total": 30,
+            "weather": 6,
+            "mechanical": 15,
+            "other": 9
+          },
+          {
+            "quarter": "1943-Q1",
+            "total": 46,
+            "weather": 8,
+            "mechanical": 27,
+            "other": 11
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 259,
+            "weather": 37,
+            "mechanical": 104,
+            "other": 118
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 837,
+            "weather": 100,
+            "mechanical": 380,
+            "other": 357
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 1617,
+            "weather": 197,
+            "mechanical": 934,
+            "other": 486
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 3327,
+            "weather": 279,
+            "mechanical": 1854,
+            "other": 1194
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 10400,
+            "weather": 2384,
+            "mechanical": 5390,
+            "other": 2626
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 9736,
+            "weather": 3079,
+            "mechanical": 4613,
+            "other": 2044
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 7243,
+            "weather": 2198,
+            "mechanical": 3472,
+            "other": 1573
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 6211,
+            "weather": 1552,
+            "mechanical": 3323,
+            "other": 1336
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 3057,
+            "weather": 1310,
+            "mechanical": 1129,
+            "other": 618
+          }
+        ]
+      },
+      "printedGrandTotals": {
+        "all_types": {
+          "total": 135294,
+          "weather": 57373,
+          "mechanical": 36654,
+          "other": 41267
+        },
+        "heavy_bomber": {
+          "total": 57983,
+          "weather": 26930,
+          "mechanical": 11839,
+          "other": 19214
+        },
+        "medium_light_bomber": {
+          "total": 34528,
+          "weather": 19289,
+          "mechanical": 3564,
+          "other": 11675
+        },
+        "fighter": {
+          "total": 42783,
+          "weather": 11154,
+          "mechanical": 21251,
+          "other": 10378
+        }
+      }
+    },
+    {
+      "theater": "MTO",
+      "sourceTable": 131,
+      "quarterly": {
+        "all_types": [
+          {
+            "quarter": "1943-Q1",
+            "total": 1752,
+            "weather": 683,
+            "mechanical": 374,
+            "other": 695
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 3079,
+            "weather": 644,
+            "mechanical": 315,
+            "other": 2120
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 3833,
+            "weather": 379,
+            "mechanical": 1534,
+            "other": 1920
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 6512,
+            "weather": 2643,
+            "mechanical": 1591,
+            "other": 2278
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 10365,
+            "weather": 3790,
+            "mechanical": 2871,
+            "other": 3704
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 13380,
+            "weather": 4171,
+            "mechanical": 4768,
+            "other": 4441
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 11187,
+            "weather": 3013,
+            "mechanical": 4961,
+            "other": 3213
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 15273,
+            "weather": 6669,
+            "mechanical": 4003,
+            "other": 4601
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 11823,
+            "weather": 5238,
+            "mechanical": 3825,
+            "other": 2760
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 6644,
+            "weather": 4176,
+            "mechanical": 1172,
+            "other": 1296
+          }
+        ],
+        "heavy_bomber": [
+          {
+            "quarter": "1943-Q1",
+            "total": 381,
+            "weather": 122,
+            "mechanical": 111,
+            "other": 148
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 610,
+            "weather": 134,
+            "mechanical": 79,
+            "other": 397
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 1153,
+            "weather": 164,
+            "mechanical": 359,
+            "other": 630
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 1727,
+            "weather": 698,
+            "mechanical": 567,
+            "other": 462
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 4304,
+            "weather": 1822,
+            "mechanical": 1177,
+            "other": 1305
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 6706,
+            "weather": 2585,
+            "mechanical": 2214,
+            "other": 1907
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 4798,
+            "weather": 1056,
+            "mechanical": 2272,
+            "other": 1470
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 8649,
+            "weather": 4280,
+            "mechanical": 1973,
+            "other": 2396
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 5992,
+            "weather": 2964,
+            "mechanical": 1806,
+            "other": 1222
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 4071,
+            "weather": 2934,
+            "mechanical": 564,
+            "other": 573
+          }
+        ],
+        "medium_light_bomber": [
+          {
+            "quarter": "1943-Q1",
+            "total": 427,
+            "weather": 219,
+            "mechanical": 50,
+            "other": 158
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 679,
+            "weather": 242,
+            "mechanical": 35,
+            "other": 402
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 849,
+            "weather": 40,
+            "mechanical": 248,
+            "other": 561
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 1851,
+            "weather": 601,
+            "mechanical": 198,
+            "other": 1052
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 2650,
+            "weather": 738,
+            "mechanical": 361,
+            "other": 1551
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 2647,
+            "weather": 738,
+            "mechanical": 374,
+            "other": 1535
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 2839,
+            "weather": 1091,
+            "mechanical": 528,
+            "other": 1220
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 3078,
+            "weather": 1191,
+            "mechanical": 419,
+            "other": 1468
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 2697,
+            "weather": 1168,
+            "mechanical": 537,
+            "other": 992
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 1200,
+            "weather": 504,
+            "mechanical": 214,
+            "other": 482
+          }
+        ],
+        "fighter": [
+          {
+            "quarter": "1943-Q1",
+            "total": 944,
+            "weather": 342,
+            "mechanical": 213,
+            "other": 389
+          },
+          {
+            "quarter": "1943-Q2",
+            "total": 1790,
+            "weather": 268,
+            "mechanical": 201,
+            "other": 1321
+          },
+          {
+            "quarter": "1943-Q3",
+            "total": 1831,
+            "weather": 175,
+            "mechanical": 927,
+            "other": 729
+          },
+          {
+            "quarter": "1943-Q4",
+            "total": 2934,
+            "weather": 1344,
+            "mechanical": 826,
+            "other": 764
+          },
+          {
+            "quarter": "1944-Q1",
+            "total": 3411,
+            "weather": 1230,
+            "mechanical": 1333,
+            "other": 848
+          },
+          {
+            "quarter": "1944-Q2",
+            "total": 4027,
+            "weather": 848,
+            "mechanical": 2180,
+            "other": 999
+          },
+          {
+            "quarter": "1944-Q3",
+            "total": 3550,
+            "weather": 866,
+            "mechanical": 2161,
+            "other": 523
+          },
+          {
+            "quarter": "1944-Q4",
+            "total": 3546,
+            "weather": 1198,
+            "mechanical": 1611,
+            "other": 737
+          },
+          {
+            "quarter": "1945-Q1",
+            "total": 3134,
+            "weather": 1106,
+            "mechanical": 1482,
+            "other": 546
+          },
+          {
+            "quarter": "1945-Q2 (Apr-May)",
+            "total": 1373,
+            "weather": 738,
+            "mechanical": 394,
+            "other": 241
+          }
+        ]
+      },
+      "printedGrandTotals": {
+        "all_types": {
+          "total": 83848,
+          "weather": 31406,
+          "mechanical": 25414,
+          "other": 27028
+        },
+        "heavy_bomber": {
+          "total": 38391,
+          "weather": 16759,
+          "mechanical": 11122,
+          "other": 10510
+        },
+        "medium_light_bomber": {
+          "total": 18917,
+          "weather": 6532,
+          "mechanical": 2964,
+          "other": 9421
+        },
+        "fighter": {
+          "total": 26540,
+          "weather": 8115,
+          "mechanical": 11328,
+          "other": 7097
+        }
+      }
+    }
+  ],
+  "arithmeticExceptions": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "USAAF-STATISTICAL-DIGEST-1945-TABLES119-120",
+  "sourceClass": "primary_official_USAAF_statistical_digest_published_1945",
+  "author": "US Army Air Forces, Office of Statistical Control",
+  "printedBook": "Army Air Forces Statistical Digest, World War II (December 1945)",
+  "digitizedBook": "https://archive.org/details/ArmyAirForcesStatisticalDigestWorldWarII",
+  "sourceTableNumbers": [119, 120],
+  "printedPageNumbers": [221, 222],
+  "metric": "airborne_and_effective_combat_sorties_flown_not_aircraft_strength_or_individual_airmen",
+  "roleKeys": ["heavyBomber", "mediumLightBomber", "fighter"],
+  "cautions": [
+    "Different starting periods: ETO 1942 Aug-Dec, MTO 1942 Jun-Dec; 1945 Jan-May only, not the full calendar year.",
+    "For 1942 MTO, effective sorties are expressly NOT AVAILABLE and remain null. Grand reported MTO effective 568,369 comprises 1943-45 only.",
+    "Airborne and effective are different official USAAF reporting metrics; do not interpret the difference as airplanes destroyed or casualties.",
+    "MTO and ETO geographical/command definitions changed with the Ninth Air Force's transfer; preserve theater assignment by source month.",
+    "Totals have been reconciled here at annual role level against the published totals, but individual monthly entries in the scan remain to be audited.",
+    "Scan/OCR occasionally confuses digits; annual values here were manually checked through all book total and role arithmetic."
+  ],
+  "theaters": [
+    {
+      "theater": "ETO",
+      "printedTable": 119,
+      "reportedGrandTotal": {
+        "all": {"airborne": 1034052, "effective": 898758},
+        "heavyBomber": {"airborne": 332904, "effective": 274921},
+        "mediumLightBomber": {"airborne": 131051, "effective": 96523},
+        "fighter": {"airborne": 570097, "effective": 527314}
+      },
+      "annual": [
+        {"period": "1942-08/1942-12", "all": {"airborne": 2453, "effective": 1704}, "heavyBomber": {"airborne": 1453, "effective": 754}, "mediumLightBomber": {"airborne": null, "effective": null}, "fighter": {"airborne": 1000, "effective": 950}},
+        {"period": "1943", "all": {"airborne": 63929, "effective": 50163}, "heavyBomber": {"airborne": 27362, "effective": 20129}, "mediumLightBomber": {"airborne": 9307, "effective": 5533}, "fighter": {"airborne": 27260, "effective": 24501}},
+        {"period": "1944", "all": {"airborne": 655289, "effective": 559617}, "heavyBomber": {"airborne": 210544, "effective": 170117}, "mediumLightBomber": {"airborne": 79461, "effective": 54922}, "fighter": {"airborne": 365284, "effective": 334578}},
+        {"period": "1945-01/1945-05", "all": {"airborne": 312381, "effective": 287274}, "heavyBomber": {"airborne": 93545, "effective": 83921}, "mediumLightBomber": {"airborne": 42283, "effective": 36068}, "fighter": {"airborne": 176553, "effective": 167285}}
+      ]
+    },
+    {
+      "theater": "MTO",
+      "printedTable": 120,
+      "reportedGrandTotal": {
+        "all": {"airborne": 659513, "effective": 568369},
+        "heavyBomber": {"airborne": 187410, "effective": 147111},
+        "mediumLightBomber": {"airborne": 113221, "effective": 93266},
+        "fighter": {"airborne": 358882, "effective": 327992}
+      },
+      "annual": [
+        {"period": "1942-06/1942-12", "all": {"airborne": 7296, "effective": null}, "heavyBomber": {"airborne": 1908, "effective": null}, "mediumLightBomber": {"airborne": 1038, "effective": null}, "fighter": {"airborne": 4350, "effective": null}},
+        {"period": "1943", "all": {"airborne": 169594, "effective": 154418}, "heavyBomber": {"airborne": 22389, "effective": 18518}, "mediumLightBomber": {"airborne": 35012, "effective": 31206}, "fighter": {"airborne": 112193, "effective": 104694}},
+        {"period": "1944", "all": {"airborne": 356812, "effective": 306607}, "heavyBomber": {"airborne": 114840, "effective": 90383}, "mediumLightBomber": {"airborne": 58444, "effective": 47230}, "fighter": {"airborne": 183528, "effective": 168994}},
+        {"period": "1945-01/1945-05", "all": {"airborne": 125811, "effective": 107344}, "heavyBomber": {"airborne": 48273, "effective": 38210}, "mediumLightBomber": {"airborne": 18727, "effective": 14830}, "fighter": {"airborne": 58811, "effective": 54304}}
+      ]
+    }
+  ]
+}

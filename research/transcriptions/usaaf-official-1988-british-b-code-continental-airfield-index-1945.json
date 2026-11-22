@@ -1,0 +1,1608 @@
+{
+  "source": {
+    "title": "US Army Air Forces Continental Airfields (ETO), D-Day to V-E Day",
+    "author": "1st Lt David C. Johnson, USAF",
+    "publisher": "USAF Historical Research Center, Research Division, 1 December 1988",
+    "originalOfficialPDF": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_european_airfields.pdf",
+    "mirrorRead": "https://ww2gp.org/pdf/airfields/usaaf_european_airfields.pdf",
+    "section": "Part III: British Airfields, original printed pp.79–82",
+    "indexReferenceAsOf": "1945-07-01"
+  },
+  "rights": "U.S. government-authored historical research; preserve attribution and original-page provenance",
+  "semantics": [
+    "Official historical B-code index as of 1 July 1945: this is beyond Atlas's exact 9 May 1945 endpoint.",
+    "B-code and location name do not prove the runway operated on that date or which unit used it during the war.",
+    "Original paper is printed in two columns. OCR has obvious name/code errors; site names are deliberately uncorrected pending visual proofing.",
+    "Unassigned and renumbered codes MUST NOT be plotted as physical airfields.",
+    "British B-code is an operational/administrative identifier, not a modern airport ICAO or IATA identifier."
+  ],
+  "audit": {
+    "recordsExtracted": 174,
+    "coverageRange": "B-1 through B-174",
+    "uniqueCodes": 174,
+    "unmatchedCodes": [],
+    "duplicateCodes": [],
+    "statuses": {
+      "construction_cancelled": 2,
+      "historical_code_site_candidate": 127,
+      "renumbered_not_a_distinct_b_airfield": 5,
+      "unassigned": 40
+    },
+    "countriesForNamedCandidateRows": {
+      "Belgium": 19,
+      "Denmark": 1,
+      "France": 54,
+      "Germany": 38,
+      "Netherlands": 15
+    },
+    "manualOCRWarnings": []
+  },
+  "records": [
+    {
+      "code": "B-1",
+      "siteNameOCRAsPrinted": "Asnelles sur Mer",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-2",
+      "siteNameOCRAsPrinted": "Bazenville",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-3",
+      "siteNameOCRAsPrinted": "St Croix sur Mer",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-4",
+      "siteNameOCRAsPrinted": "Beny sur Mer",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-5",
+      "siteNameOCRAsPrinted": "Camilly",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-6",
+      "siteNameOCRAsPrinted": "Coulombs",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-7",
+      "siteNameOCRAsPrinted": "Martragny",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-8",
+      "siteNameOCRAsPrinted": "Sommervieu",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-9",
+      "siteNameOCRAsPrinted": "Lantheuil",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-10",
+      "siteNameOCRAsPrinted": "Plumetot",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-11",
+      "siteNameOCRAsPrinted": "Lcngues",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-12",
+      "siteNameOCRAsPrinted": "Ellon",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-13",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-14",
+      "siteNameOCRAsPrinted": "Amblie",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-15",
+      "siteNameOCRAsPrinted": "Ryes",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-16",
+      "siteNameOCRAsPrinted": "Villans les Buissons",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-17",
+      "siteNameOCRAsPrinted": "Caen/Carpiquet",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-18",
+      "siteNameOCRAsPrinted": "Cristot",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-19",
+      "siteNameOCRAsPrinted": "Lingevres",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-20",
+      "siteNameOCRAsPrinted": "Demouville",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-21",
+      "siteNameOCRAsPrinted": "St Hanorine",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-22",
+      "siteNameOCRAsPrinted": "Authie",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-23",
+      "siteNameOCRAsPrinted": "La Rue Huguenot",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-24",
+      "siteNameOCRAsPrinted": "St Andre de 1'Eure",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-25",
+      "siteNameOCRAsPrinted": "Le Theil-Nolent",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-26",
+      "siteNameOCRAsPrinted": "Illiers 1'Eveque",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-27",
+      "siteNameOCRAsPrinted": "Boisney",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-28",
+      "siteNameOCRAsPrinted": "Evreux",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-29",
+      "siteNameOCRAsPrinted": "Valailles",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-30",
+      "siteNameOCRAsPrinted": "Cretan",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-31",
+      "siteNameOCRAsPrinted": "FTesnoy Folny",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-32",
+      "siteNameOCRAsPrinted": "Prey",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-33",
+      "siteNameOCRAsPrinted": "Campneuseville",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-34",
+      "siteNameOCRAsPrinted": "Avrilly",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-35",
+      "siteNameOCRAsPrinted": "Godelemesnil",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-36",
+      "siteNameOCRAsPrinted": "Boussey",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-37",
+      "siteNameOCRAsPrinted": "Corroy",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-38",
+      "siteNameOCRAsPrinted": "La Lande",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-39",
+      "siteNameOCRAsPrinted": "Ecouffler",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-40",
+      "siteNameOCRAsPrinted": "Beauvais/Nivillers",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-41",
+      "siteNameOCRAsPrinted": "Plouy",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-42",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "renumbered_not_a_distinct_b_airfield",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-43",
+      "siteNameOCRAsPrinted": "St Omer/Ft Rouge",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 79,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-44",
+      "siteNameOCRAsPrinted": "Poi x",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-45",
+      "siteNameOCRAsPrinted": "St Omer/Lcnguenesse",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-46",
+      "siteNameOCRAsPrinted": "Grandvilliers",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-47",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "construction_cancelled",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-48",
+      "siteNameOCRAsPrinted": "Amiens/Glisy",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-49",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "construction_cancelled",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-50",
+      "siteNameOCRAsPrinted": "Vitry en Artois",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-51",
+      "siteNameOCRAsPrinted": "Lille/Vendeville",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-52",
+      "siteNameOCRAsPrinted": "Douai/Dechy",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-53",
+      "siteNameOCRAsPrinted": "Merville",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-54",
+      "siteNameOCRAsPrinted": "Achiet",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-55",
+      "siteNameOCRAsPrinted": "Courtrai/Wevelghem",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-56",
+      "siteNameOCRAsPrinted": "Brussels/Evere",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-57",
+      "siteNameOCRAsPrinted": "Lille/Wambrechies",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-58",
+      "siteNameOCRAsPrinted": "Brussels/Melsbroek",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-59",
+      "siteNameOCRAsPrinted": "Ypres/Vlamertinghe",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-60",
+      "siteNameOCRAsPrinted": "Grimberghen",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-61",
+      "siteNameOCRAsPrinted": "St Denis/Westrem",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-62",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "renumbered_not_a_distinct_b_airfield",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-63",
+      "siteNameOCRAsPrinted": "Bruges/St Croix",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-64",
+      "siteNameOCRAsPrinted": "Diest/Schaffen",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-65",
+      "siteNameOCRAsPrinted": "Maldegen",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-66",
+      "siteNameOCRAsPrinted": "Blakenberg",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-67",
+      "siteNameOCRAsPrinted": "Ursel",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-68",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "renumbered_not_a_distinct_b_airfield",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-69",
+      "siteNameOCRAsPrinted": "Nberbeke",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-70",
+      "siteNameOCRAsPrinted": "Antwerp/Deurne",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-71",
+      "siteNameOCRAsPrinted": "Coxyde",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-72",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "renumbered_not_a_distinct_b_airfield",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-73",
+      "siteNameOCRAsPrinted": "Moorseele",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-74",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "renumbered_not_a_distinct_b_airfield",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-75",
+      "siteNameOCRAsPrinted": "Nivelles",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-76",
+      "siteNameOCRAsPrinted": "Peer",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-77",
+      "siteNameOCRAsPrinted": "Gilze/Rijen",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-78",
+      "siteNameOCRAsPrinted": "Eindhoven",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-79",
+      "siteNameOCRAsPrinted": "Wbensdrecht",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-80",
+      "siteNameOCRAsPrinted": "Volkel",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-81",
+      "siteNameOCRAsPrinted": "Le Madrillet",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-82",
+      "siteNameOCRAsPrinted": "Grave",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 80,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-83",
+      "siteNameOCRAsPrinted": "Knocke/Le Zoute",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-84",
+      "siteNameOCRAsPrinted": "Rips",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-85",
+      "siteNameOCRAsPrinted": "Schijndel",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-86",
+      "siteNameOCRAsPrinted": "Helmond",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-87",
+      "siteNameOCRAsPrinted": "Rosieres en Santerre",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-88",
+      "siteNameOCRAsPrinted": "Heesch",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-89",
+      "siteNameOCRAsPrinted": "Mill",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-90",
+      "siteNameOCRAsPrinted": "Petit/Brogel",
+      "countryAsPrintedMapped": "Belgium",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-91",
+      "siteNameOCRAsPrinted": "Kluis",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-92",
+      "siteNameOCRAsPrinted": "Abbeville/Drucat",
+      "countryAsPrintedMapped": "France",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-93",
+      "siteNameOCRAsPrinted": "Valkenberg",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-94",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-95",
+      "siteNameOCRAsPrinted": "Teuge",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-96",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-97",
+      "siteNameOCRAsPrinted": "Amsterdam/Schipol",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-98",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-99",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-100",
+      "siteNameOCRAsPrinted": "Goch",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-101",
+      "siteNameOCRAsPrinted": "Nordhorn",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-102",
+      "siteNameOCRAsPrinted": "Vorst",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-103",
+      "siteNameOCRAsPrinted": "Plantlune",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-104",
+      "siteNameOCRAsPrinted": "Damm",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-105",
+      "siteNameOCRAsPrinted": "Drope",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-106",
+      "siteNameOCRAsPrinted": "Twente/Enschede",
+      "countryAsPrintedMapped": "Netherlands",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-107",
+      "siteNameOCRAsPrinted": "Lingen",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-108",
+      "siteNameOCRAsPrinted": "Rheine",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-109",
+      "siteNameOCRAsPrinted": "Quakenbruck",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-110",
+      "siteNameOCRAsPrinted": "Achmer",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-111",
+      "siteNameOCRAsPrinted": "Ahlhorn",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-112",
+      "siteNameOCRAsPrinted": "Hcpsten",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-113",
+      "siteNameOCRAsPrinted": "Varrelbusch",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-114",
+      "siteNameOCRAsPrinted": "Diepholz",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-115",
+      "siteNameOCRAsPrinted": "Melle",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-116",
+      "siteNameOCRAsPrinted": "Wunstorf",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-117",
+      "siteNameOCRAsPrinted": "Jever",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-118",
+      "siteNameOCRAsPrinted": "Celle",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-119",
+      "siteNameOCRAsPrinted": "Walm",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-120",
+      "siteNameOCRAsPrinted": "Hanover/Langenhagen",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-121",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-122",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-123",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-124",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-125",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-126",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-127",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-128",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-129",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-130",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-131",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-132",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-133",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-134",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-135",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-136",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-137",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-138",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-139",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-140",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-141",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-142",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-143",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-144",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-145",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-146",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-147",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-148",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "explicit_unassigned_range_in_original_table"
+    },
+    {
+      "code": "B-149",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-150",
+      "siteNameOCRAsPrinted": "Hustedt",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-151",
+      "siteNameOCRAsPrinted": "Buckeburg",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-152",
+      "siteNameOCRAsPrinted": "Fassberg",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-153",
+      "siteNameOCRAsPrinted": "Bad Oeynhausen",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-154",
+      "siteNameOCRAsPrinted": "Reinsehlen",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-155",
+      "siteNameOCRAsPrinted": "Dedelstorf",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-156",
+      "siteNameOCRAsPrinted": "Luneburg",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-157",
+      "siteNameOCRAsPrinted": "Werl",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 81,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-158",
+      "siteNameOCRAsPrinted": "Lubeck",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-159",
+      "siteNameOCRAsPrinted": "Mahlen",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-160",
+      "siteNameOCRAsPrinted": "Ccpenhagen/Kastrup",
+      "countryAsPrintedMapped": "Denmark",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-161",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-162",
+      "siteNameOCRAsPrinted": "Stade",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-163",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-164",
+      "siteNameOCRAsPrinted": "Schleswig/Land",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-165",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-166",
+      "siteNameOCRAsPrinted": "Flensburg",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-167",
+      "siteNameOCRAsPrinted": "Kiel/Holtenau",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-168",
+      "siteNameOCRAsPrinted": "Hamburg/Fuhlsbuttel",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-169",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-170",
+      "siteNameOCRAsPrinted": "Westerland",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-171",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-172",
+      "siteNameOCRAsPrinted": "Husum",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-173",
+      "siteNameOCRAsPrinted": null,
+      "countryAsPrintedMapped": null,
+      "status": "unassigned",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    },
+    {
+      "code": "B-174",
+      "siteNameOCRAsPrinted": "Utersen",
+      "countryAsPrintedMapped": "Germany",
+      "status": "historical_code_site_candidate",
+      "originalTablePrintedPage": 82,
+      "sourcePageAsOf": "1945-07-01",
+      "validationStatus": "site_name_ocr_needs_figure_and_wartime_date_check"
+    }
+  ]
+}

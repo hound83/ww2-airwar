@@ -1,0 +1,522 @@
+{
+  "id": "RKKA-VVS-06-15",
+  "topic": "Civil air fleet sortie categories",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_15.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 14,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Fechas",
+              "rowspan": 2
+            },
+            {
+              "value": "De dia {2}",
+              "rowspan": 2
+            },
+            {
+              "value": "De noche {2}",
+              "rowspan": 2
+            },
+            {
+              "value": "Total {2}",
+              "rowspan": 2
+            },
+            {
+              "value": "De los cuales",
+              "colspan": 4
+            },
+            {
+              "value": "Cantidad de horas de vuelo total {5}",
+              "colspan": 3
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "vuelos la retaguardia enemiga sin aterrizar {3}"
+            },
+            {
+              "value": "vuelos para bombardear los objetivos enemigos {4}"
+            },
+            {
+              "value": "vuelos para realizar otras misiones"
+            },
+            {
+              "value": "Traslado de aviones desde USA"
+            },
+            {
+              "value": "Por las unidades aereas que formaban parte del Ejercito operativo"
+            },
+            {
+              "value": "durante el traslado de aviones desde USA"
+            },
+            {
+              "value": "por las unidades especiales"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "1941 (desde 22 junio)",
+              "rowspan": 2
+            },
+            {
+              "value": "135 117"
+            },
+            {
+              "value": "673"
+            },
+            {
+              "value": "135 790"
+            },
+            {
+              "value": "1 443"
+            },
+            {
+              "value": "482"
+            },
+            {
+              "value": "133 865"
+            },
+            {
+              "value": "0"
+            },
+            {
+              "value": "259 434"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "135 117"
+            },
+            {
+              "value": "673"
+            },
+            {
+              "value": "135 790"
+            },
+            {
+              "value": "59"
+            },
+            {
+              "value": "40"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "5 047"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "1942",
+              "rowspan": 2
+            },
+            {
+              "value": "300 567"
+            },
+            {
+              "value": "42 259"
+            },
+            {
+              "value": "342 826"
+            },
+            {
+              "value": "21 406"
+            },
+            {
+              "value": "6 707"
+            },
+            {
+              "value": "313 775"
+            },
+            {
+              "value": "938"
+            },
+            {
+              "value": "539 343"
+            },
+            {
+              "value": "4 100"
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "299 629"
+            },
+            {
+              "value": "42 259"
+            },
+            {
+              "value": "341 888"
+            },
+            {
+              "value": "4 586"
+            },
+            {
+              "value": "1 085"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "73 332"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": ""
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "1943",
+              "rowspan": 2
+            },
+            {
+              "value": "460 700"
+            },
+            {
+              "value": "24 359"
+            },
+            {
+              "value": "485 059"
+            },
+            {
+              "value": "16 328"
+            },
+            {
+              "value": "795"
+            },
+            {
+              "value": "451 075"
+            },
+            {
+              "value": "16 861"
+            },
+            {
+              "value": "499 334"
+            },
+            {
+              "value": "66 357"
+            },
+            {
+              "value": "5 778"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "441 770"
+            },
+            {
+              "value": "24 265"
+            },
+            {
+              "value": "466 035"
+            },
+            {
+              "value": "4 551"
+            },
+            {
+              "value": "337"
+            },
+            {
+              "value": "448 912"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "41 483"
+            },
+            {
+              "value": "1 283"
+            },
+            {
+              "value": "83"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "1944",
+              "rowspan": 2
+            },
+            {
+              "value": "518 409"
+            },
+            {
+              "value": "13 801"
+            },
+            {
+              "value": "532 210"
+            },
+            {
+              "value": "11 543"
+            },
+            {
+              "value": "469"
+            },
+            {
+              "value": "491 233"
+            },
+            {
+              "value": "28 965"
+            },
+            {
+              "value": "488 905"
+            },
+            {
+              "value": "105 323"
+            },
+            {
+              "value": "13 004"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "485 112"
+            },
+            {
+              "value": "13 690"
+            },
+            {
+              "value": "498 802"
+            },
+            {
+              "value": "3 817"
+            },
+            {
+              "value": "57"
+            },
+            {
+              "value": "486 790"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "24 041"
+            },
+            {
+              "value": "3 570"
+            },
+            {
+              "value": "192"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "1945",
+              "rowspan": 2
+            },
+            {
+              "value": "174 179"
+            },
+            {
+              "value": "2 895"
+            },
+            {
+              "value": "177 074"
+            },
+            {
+              "value": "2 552"
+            },
+            {
+              "value": "1 625"
+            },
+            {
+              "value": "150 631"
+            },
+            {
+              "value": "22 266"
+            },
+            {
+              "value": "136 037"
+            },
+            {
+              "value": "76 858"
+            },
+            {
+              "value": "21 832"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "150 533"
+            },
+            {
+              "value": "2 895"
+            },
+            {
+              "value": "153 428"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "230"
+            },
+            {
+              "value": "149 251"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "4 368"
+            },
+            {
+              "value": "1 768"
+            },
+            {
+              "value": "172"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "Total en 1941-1945",
+              "rowspan": 2
+            },
+            {
+              "value": "1 588 972"
+            },
+            {
+              "value": "83 987"
+            },
+            {
+              "value": "1 672 959"
+            },
+            {
+              "value": "53 272"
+            },
+            {
+              "value": "10 078"
+            },
+            {
+              "value": "1 540 579"
+            },
+            {
+              "value": "69 030"
+            },
+            {
+              "value": "1 923 053"
+            },
+            {
+              "value": "252 638"
+            },
+            {
+              "value": "40 614"
+            }
+          ]
+        },
+        {
+          "sourceRow": 14,
+          "cells": [
+            {
+              "value": "1 512 161"
+            },
+            {
+              "value": "83 782"
+            },
+            {
+              "value": "1 595 943"
+            },
+            {
+              "value": "13 018"
+            },
+            {
+              "value": "1 749"
+            },
+            {
+              "value": "1 084 953"
+            },
+            {
+              "value": ""
+            },
+            {
+              "value": "148 271"
+            },
+            {
+              "value": "6 621"
+            },
+            {
+              "value": "447"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

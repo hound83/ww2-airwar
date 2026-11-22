@@ -1,0 +1,23 @@
+{
+  "dataset_id":"ga-royal-navy-fleet-air-arm-separate-from-raf",
+  "status":"research_only_secondary_strength_endpoints",
+  "force":"Royal Navy Fleet Air Arm",
+  "source":"David Hobbs, The Fleet Air Arm and the War in Europe 1939–1945 (2022), Naval Institute Press description",
+  "source_url":"https://www.usni.org/press/books/fleet-air-arm-and-war-europe",
+  "strength_endpoints":[
+    {"date":"1939-09","pilots_available_for_operations":406,"frontline_aircraft_available_for_operations":232,"scope":"Royal Navy Fleet Air Arm as of opening war, all units / no Europe filter"},
+    {"date":"1945-05","pilots":3243,"aircraft":1336,"scope":"whole FAA at the end of the war in Europe, not proven exclusively stationed/operating in Europe; exact May date unspecified"}
+  ],
+  "original_record_series_leads":[
+    {"archive":"UK The National Archives","series":"ADM 207","purpose":"numbered naval air squadron war diaries, time-specific operations, individual names and ships/bases","link":"https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/fleet-air-arm-personnel/"},
+    {"archive":"UK The National Archives","series":"ADM 199","purpose":"Royal Navy squadron and ship operations reports, including air operations","link":"https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-navy-operations-second-world-war/"},
+    {"archive":"UK The National Archives","series":"ADM 335/1–4, 63–65","purpose":"FAA wartime operational and technological histories","link":"https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/royal-navy-operations-second-world-war/"},
+    {"archive":"UK The National Archives","series":"AIR 50","purpose":"pilot/air-gunner original combat reports, including naval squadrons and aircraft claims","link":"https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/raf-combat-reports-1939-1945/"}
+  ],
+  "warnings":[
+    "The Fleet Air Arm is part of the Royal Navy, not RAF Fighter/Coastal Command; do not lose it inside Royal Air Force totals.",
+    "The quoted 1945 figures refer to the Royal Navy's whole FAA at war-in-Europe end, which still had forces outside Europe; no Europe-only total is established.",
+    "1939 frontline available-to-operate differs in definition from 1945 total aircraft; a 1939-to-1945 growth ratio would be misleading until denominators are made comparable.",
+    "No comprehensive FAA pilot deaths, squadron losses, claims, theater-specific sorties or map coordinates have been directly transcribed; original ADM series require archival access."
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": "RKKA-VVS-06-29",
+  "topic": "Soviet PVO claims of enemy aircraft by year",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_29.htm",
+  "sourceClass": "Secondary Spanish-language edition of wartime Soviet/Russian archive-derived statistical tables",
+  "status": "Research-only first-pass transcription; original Russian pages/folios unverified",
+  "scopeCautions": [
+    "The main table is sourceTableIndex 0; additional tables, if any, may be abbreviations or explanatory legends.",
+    "Original 1945 data may extend beyond 9 May and include Japanese/Pacific operations. Check individual column periods.",
+    "Source totals, component unit totals and geographic subtotals overlap and should not be added together.",
+    "Enemy destroyed columns in Soviet operational report tables represent CLAIMS unless cross-checked against German aircraft loss records.",
+    "Blank, dash and nonnumeric original values are preserved as literal strings, never assumed to be observed zero.",
+    "Aircraft loss counts, sorties, and human crew/pilot casualties are distinct metrics."
+  ],
+  "tables": [
+    {
+      "sourceTableIndex": 0,
+      "sourceRowCount": 13,
+      "rows": [
+        {
+          "sourceRow": 1,
+          "cells": [
+            {
+              "value": "Los modelos de aviones con los cuales fueron derribados los aviones enemigos"
+            },
+            {
+              "value": "Cantidad de aviones enemigos derribados"
+            },
+            {
+              "value": "% del total"
+            }
+          ]
+        },
+        {
+          "sourceRow": 2,
+          "cells": [
+            {
+              "value": "I-153"
+            },
+            {
+              "value": "122"
+            },
+            {
+              "value": "3,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 3,
+          "cells": [
+            {
+              "value": "I-16"
+            },
+            {
+              "value": "563"
+            },
+            {
+              "value": "14,30%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 4,
+          "cells": [
+            {
+              "value": "MiG-3"
+            },
+            {
+              "value": "710"
+            },
+            {
+              "value": "18,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 5,
+          "cells": [
+            {
+              "value": "LaGG-3"
+            },
+            {
+              "value": "315"
+            },
+            {
+              "value": "8,00%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 6,
+          "cells": [
+            {
+              "value": "Yak-1"
+            },
+            {
+              "value": "632"
+            },
+            {
+              "value": "16,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 7,
+          "cells": [
+            {
+              "value": "Yak-7b"
+            },
+            {
+              "value": "436"
+            },
+            {
+              "value": "11,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 8,
+          "cells": [
+            {
+              "value": "Yak-9"
+            },
+            {
+              "value": "231"
+            },
+            {
+              "value": "5,90%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 9,
+          "cells": [
+            {
+              "value": "La-5"
+            },
+            {
+              "value": "319"
+            },
+            {
+              "value": "8,10%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 10,
+          "cells": [
+            {
+              "value": "Hurricane"
+            },
+            {
+              "value": "252"
+            },
+            {
+              "value": "6,40%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 11,
+          "cells": [
+            {
+              "value": "Kittyhawk"
+            },
+            {
+              "value": "255"
+            },
+            {
+              "value": "6,50%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 12,
+          "cells": [
+            {
+              "value": "Airacobra"
+            },
+            {
+              "value": "95"
+            },
+            {
+              "value": "2,40%"
+            }
+          ]
+        },
+        {
+          "sourceRow": 13,
+          "cells": [
+            {
+              "value": "Total aviones derribados"
+            },
+            {
+              "value": "3 930"
+            },
+            {
+              "value": "100,00%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

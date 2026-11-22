@@ -1,0 +1,4923 @@
+{
+  "sourceClass": "Soviet archival references, Spanish secondary republication (RKKA.es part 06)",
+  "researchOnly": true,
+  "chronologyCaveat": "Many VMF source headings end 9May1945 but incorporate explicit Pacific naval aviation Aug-Sep1945 columns; these are isolated and excluded from derived European totals.",
+  "measurementCautions": [
+    "VVS KA, PVO, DA/ADD and VMF are overlapping historically restructured Soviet armed services and cannot be blindly summed.",
+    "Soviet reports of enemy aircraft shot down and naval targets destroyed are reporting-side CLAIMS, not cross-verified German losses.",
+    "Published PVO front/army subtotals and their child units overlap; do not add both.",
+    "The source 06_24 PVO 269,565 sorties conflicts by 100 with 06_13 PVO 269,465; both original totals are retained.",
+    "The original 06_25 VMF aircraft-loss report excludes economy/wear writeoffs, and includes Pacific August–September 1945 aircraft in grand totals.",
+    "ADD 1941 aggregate 1,150 aircraft lost has NO aircraft-model breakdown, unlike 1942–45; blank type-year cells are unknown, not zero.",
+    "Bomb sorties, aircraft losses, enemy claims, human casualties and aircraft strength are separate denominators."
+  ],
+  "vmfWideFleetTables": {
+    "14": {
+      "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_14.htm",
+      "sourceTable": 14,
+      "metricClass": "Soviet naval aviation sorties by mission",
+      "scope": "Four war-year periods, by Black Sea/Baltic/Northern fleets; source additionally includes Pacific Aug-Sep 1945 outside European cutoff",
+      "records": [
+        {
+          "sourceRow": 4,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Acciones para la interrupcion de comunicaciones",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 541,
+                "baltic": 721,
+                "northern": 313
+              },
+              "printedTotal": 1575
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 668,
+                "baltic": 1160,
+                "northern": 446
+              },
+              "printedTotal": 2274
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 2582,
+                "baltic": 3861,
+                "northern": 892
+              },
+              "printedTotal": 7335
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 114,
+                "baltic": 7013,
+                "northern": 963,
+                "pacific_aug_sep_1945": 615
+              },
+              "printedTotalIncludingPacific": 8705,
+              "derivedEuropeanFleetTotal": 8090
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 3905,
+            "baltic": 12755,
+            "northern": 2614,
+            "pacific_aug_sep_1945": 615
+          },
+          "printedAllWarTotalIncludingPacific": 19889,
+          "derivedEuropeanSubtotalExcludingPacific": 19274
+        },
+        {
+          "sourceRow": 5,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Ataques sobre bases navales militares y puertos",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 825,
+                "baltic": 1082,
+                "northern": 304
+              },
+              "printedTotal": 2211
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 2686,
+                "baltic": 992,
+                "northern": 360
+              },
+              "printedTotal": 4038
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 2449,
+                "baltic": 412,
+                "northern": 316
+              },
+              "printedTotal": 3177
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 356,
+                "baltic": 2463,
+                "northern": 477,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 3296,
+              "derivedEuropeanFleetTotal": 3296
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 6316,
+            "baltic": 4949,
+            "northern": 1457,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 12722,
+          "derivedEuropeanSubtotalExcludingPacific": 12722
+        },
+        {
+          "sourceRow": 6,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Ataques a los aerodromos",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 3655,
+                "baltic": 681,
+                "northern": 257
+              },
+              "printedTotal": 4593
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 820,
+                "baltic": 529,
+                "northern": 188
+              },
+              "printedTotal": 1537
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 79,
+                "baltic": 31,
+                "northern": 158
+              },
+              "printedTotal": 268
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 128,
+                "northern": 50,
+                "pacific_aug_sep_1945": 13
+              },
+              "printedTotalIncludingPacific": 191,
+              "derivedEuropeanFleetTotal": 178
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 4554,
+            "baltic": 1369,
+            "northern": 653,
+            "pacific_aug_sep_1945": 13
+          },
+          "printedAllWarTotalIncludingPacific": 6589,
+          "derivedEuropeanSubtotalExcludingPacific": 6576
+        },
+        {
+          "sourceRow": 7,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Ataques sobre los centros administrativos e industriales",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 113,
+                "baltic": 70,
+                "northern": null
+              },
+              "printedTotal": 183
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 113,
+            "baltic": 70,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 183,
+          "derivedEuropeanSubtotalExcludingPacific": 183
+        },
+        {
+          "sourceRow": 8,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Defensa de las comunicaciones propias",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 29040,
+                "baltic": 29530,
+                "northern": 12500
+              },
+              "printedTotal": 71070
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 8349,
+                "baltic": 6518,
+                "northern": 9191
+              },
+              "printedTotal": 24058
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 5581,
+                "baltic": 4930,
+                "northern": 6459
+              },
+              "printedTotal": 16970
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2259,
+                "baltic": 4120,
+                "northern": 4548,
+                "pacific_aug_sep_1945": 868
+              },
+              "printedTotalIncludingPacific": 11795,
+              "derivedEuropeanFleetTotal": 10927
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 45229,
+            "baltic": 45098,
+            "northern": 32698,
+            "pacific_aug_sep_1945": 868
+          },
+          "printedAllWarTotalIncludingPacific": 123893,
+          "derivedEuropeanSubtotalExcludingPacific": 123025
+        },
+        {
+          "sourceRow": 9,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Reconocimiento aereo",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 8754,
+                "baltic": 4461,
+                "northern": 1842
+              },
+              "printedTotal": 15057
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 3243,
+                "baltic": 5976,
+                "northern": 1934
+              },
+              "printedTotal": 11153
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 3163,
+                "baltic": 5347,
+                "northern": 2553
+              },
+              "printedTotal": 11063
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 858,
+                "baltic": 8297,
+                "northern": 1918,
+                "pacific_aug_sep_1945": 835
+              },
+              "printedTotalIncludingPacific": 11908,
+              "derivedEuropeanFleetTotal": 11073
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 16018,
+            "baltic": 24081,
+            "northern": 8247,
+            "pacific_aug_sep_1945": 835
+          },
+          "printedAllWarTotalIncludingPacific": 49181,
+          "derivedEuropeanSubtotalExcludingPacific": 48346
+        },
+        {
+          "sourceRow": 10,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Escolta de los bombarderos y de los aviones de reconocimiento",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 6353,
+                "baltic": 1663,
+                "northern": 1203
+              },
+              "printedTotal": 9219
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 8761,
+                "baltic": 4519,
+                "northern": 1512
+              },
+              "printedTotal": 14792
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 12404,
+                "baltic": 7445,
+                "northern": 2865
+              },
+              "printedTotal": 22714
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 1964,
+                "baltic": 10285,
+                "northern": 2541,
+                "pacific_aug_sep_1945": 1659
+              },
+              "printedTotalIncludingPacific": 16449,
+              "derivedEuropeanFleetTotal": 14790
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 29482,
+            "baltic": 23912,
+            "northern": 8121,
+            "pacific_aug_sep_1945": 1659
+          },
+          "printedAllWarTotalIncludingPacific": 63174,
+          "derivedEuropeanSubtotalExcludingPacific": 61515
+        },
+        {
+          "sourceRow": 11,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Apoyo a las tropas terrestres",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 15018,
+                "baltic": 23664,
+                "northern": 2174
+              },
+              "printedTotal": 40856
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 6465,
+                "baltic": 8828,
+                "northern": 316
+              },
+              "printedTotal": 15609
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 3351,
+                "baltic": 11075,
+                "northern": 240
+              },
+              "printedTotal": 14666
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 185,
+                "baltic": 2356,
+                "northern": 722,
+                "pacific_aug_sep_1945": 734
+              },
+              "printedTotalIncludingPacific": 3997,
+              "derivedEuropeanFleetTotal": 3263
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 25019,
+            "baltic": 45923,
+            "northern": 3452,
+            "pacific_aug_sep_1945": 734
+          },
+          "printedAllWarTotalIncludingPacific": 75128,
+          "derivedEuropeanSubtotalExcludingPacific": 74394
+        },
+        {
+          "sourceRow": 12,
+          "sectionAsPrinted": null,
+          "itemAsPrinted": "Total",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 64299,
+                "baltic": 61872,
+                "northern": 18593
+              },
+              "printedTotal": 144764
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 30992,
+                "baltic": 28522,
+                "northern": 13947
+              },
+              "printedTotal": 73461
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 29609,
+                "baltic": 33101,
+                "northern": 13483
+              },
+              "printedTotal": 76193
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 5736,
+                "baltic": 34662,
+                "northern": 11219,
+                "pacific_aug_sep_1945": 4724
+              },
+              "printedTotalIncludingPacific": 56341,
+              "derivedEuropeanFleetTotal": 51617
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 130636,
+            "baltic": 158157,
+            "northern": 57242,
+            "pacific_aug_sep_1945": 4724
+          },
+          "printedAllWarTotalIncludingPacific": 350759,
+          "derivedEuropeanSubtotalExcludingPacific": 346035
+        }
+      ],
+      "sourceArithmeticDiscrepancies": []
+    },
+    "25": {
+      "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_25.htm",
+      "sourceTable": 25,
+      "metricClass": "Soviet naval aviation own aircraft losses by type",
+      "scope": "Four war-year periods, by Black Sea/Baltic/Northern fleets; source additionally includes Pacific Aug-Sep 1945 outside European cutoff",
+      "records": [
+        {
+          "sourceRow": 6,
+          "sectionAsPrinted": "Aviacion de minas y torpedos",
+          "itemAsPrinted": "IL-4 y DB-3",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 57,
+                "baltic": null,
+                "northern": 1
+              },
+              "printedTotal": 58
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 20,
+                "baltic": 4,
+                "northern": 12
+              },
+              "printedTotal": 36
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 17,
+                "baltic": 7,
+                "northern": 5
+              },
+              "printedTotal": 29
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 4,
+                "northern": 3,
+                "pacific_aug_sep_1945": 6
+              },
+              "printedTotalIncludingPacific": 17,
+              "derivedEuropeanFleetTotal": 11
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 98,
+            "baltic": 15,
+            "northern": 21,
+            "pacific_aug_sep_1945": 6
+          },
+          "printedAllWarTotalIncludingPacific": 140,
+          "derivedEuropeanSubtotalExcludingPacific": 134
+        },
+        {
+          "sourceRow": 7,
+          "sectionAsPrinted": "Aviacion de minas y torpedos",
+          "itemAsPrinted": "A-20-G (B-3)",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 6,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 6
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 16,
+                "baltic": 16,
+                "northern": 34
+              },
+              "printedTotal": 66
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 101,
+                "northern": 38,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 139,
+              "derivedEuropeanFleetTotal": 139
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 22,
+            "baltic": 117,
+            "northern": 72,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 211,
+          "derivedEuropeanSubtotalExcludingPacific": 211
+        },
+        {
+          "sourceRow": 8,
+          "sectionAsPrinted": "Aviacion de minas y torpedos",
+          "itemAsPrinted": "Hambden",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 12
+              },
+              "printedTotal": 12
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 2
+              },
+              "printedTotal": 2
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 0,
+            "northern": 14,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 14,
+          "derivedEuropeanSubtotalExcludingPacific": 14
+        },
+        {
+          "sourceRow": 9,
+          "sectionAsPrinted": "Aviacion de minas y torpedos",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 57,
+                "baltic": 0,
+                "northern": 1
+              },
+              "printedTotal": 58
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 26,
+                "baltic": 4,
+                "northern": 24
+              },
+              "printedTotal": 54
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 33,
+                "baltic": 23,
+                "northern": 41
+              },
+              "printedTotal": 97
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 105,
+                "northern": 41,
+                "pacific_aug_sep_1945": 6
+              },
+              "printedTotalIncludingPacific": 156,
+              "derivedEuropeanFleetTotal": 150
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 120,
+            "baltic": 132,
+            "northern": 107,
+            "pacific_aug_sep_1945": 6
+          },
+          "printedAllWarTotalIncludingPacific": 365,
+          "derivedEuropeanSubtotalExcludingPacific": 359
+        },
+        {
+          "sourceRow": 11,
+          "sectionAsPrinted": "Aviacion de bombardeo",
+          "itemAsPrinted": "Pe-2",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 49,
+                "baltic": 8,
+                "northern": 4
+              },
+              "printedTotal": 61
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 33,
+                "baltic": 29,
+                "northern": 13
+              },
+              "printedTotal": 75
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 24,
+                "baltic": 40,
+                "northern": 21
+              },
+              "printedTotal": 85
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 56,
+                "northern": 3,
+                "pacific_aug_sep_1945": 3
+              },
+              "printedTotalIncludingPacific": 66,
+              "derivedEuropeanFleetTotal": 63
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 110,
+            "baltic": 133,
+            "northern": 41,
+            "pacific_aug_sep_1945": 3
+          },
+          "printedAllWarTotalIncludingPacific": 287,
+          "derivedEuropeanSubtotalExcludingPacific": 284
+        },
+        {
+          "sourceRow": 12,
+          "sectionAsPrinted": "Aviacion de bombardeo",
+          "itemAsPrinted": "SB",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 63,
+                "baltic": 59,
+                "northern": 8
+              },
+              "printedTotal": 130
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 7,
+                "baltic": null,
+                "northern": 4
+              },
+              "printedTotal": 11
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 1,
+                "northern": 1,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 2,
+              "derivedEuropeanFleetTotal": 2
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 70,
+            "baltic": 60,
+            "northern": 13,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 143,
+          "derivedEuropeanSubtotalExcludingPacific": 143
+        },
+        {
+          "sourceRow": 13,
+          "sectionAsPrinted": "Aviacion de bombardeo",
+          "itemAsPrinted": "A-20-G (B-3)",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 3,
+                "northern": null
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 10,
+                "baltic": 3,
+                "northern": null
+              },
+              "printedTotal": 13
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 5,
+                "northern": null,
+                "pacific_aug_sep_1945": 1
+              },
+              "printedTotalIncludingPacific": 6,
+              "derivedEuropeanFleetTotal": 5
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 10,
+            "baltic": 11,
+            "northern": 0,
+            "pacific_aug_sep_1945": 1
+          },
+          "printedAllWarTotalIncludingPacific": 22,
+          "derivedEuropeanSubtotalExcludingPacific": 21
+        },
+        {
+          "sourceRow": 14,
+          "sectionAsPrinted": "Aviacion de bombardeo",
+          "itemAsPrinted": "IL-4",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 69,
+                "northern": null
+              },
+              "printedTotal": 69
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 5,
+                "northern": null
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 3,
+                "northern": null
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 77,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 77,
+          "derivedEuropeanSubtotalExcludingPacific": 77
+        },
+        {
+          "sourceRow": 15,
+          "sectionAsPrinted": "Aviacion de bombardeo",
+          "itemAsPrinted": "Ar-2",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 18,
+                "northern": null
+              },
+              "printedTotal": 18
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 18,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 18,
+          "derivedEuropeanSubtotalExcludingPacific": 18
+        },
+        {
+          "sourceRow": 16,
+          "sectionAsPrinted": "Aviacion de bombardeo",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 112,
+                "baltic": 154,
+                "northern": 12
+              },
+              "printedTotal": 278
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 40,
+                "baltic": 37,
+                "northern": 17
+              },
+              "printedTotal": 94
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 34,
+                "baltic": 46,
+                "northern": 21
+              },
+              "printedTotal": 101
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 62,
+                "northern": 4,
+                "pacific_aug_sep_1945": 4
+              },
+              "printedTotalIncludingPacific": 74,
+              "derivedEuropeanFleetTotal": 70
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 190,
+            "baltic": 299,
+            "northern": 54,
+            "pacific_aug_sep_1945": 4
+          },
+          "printedAllWarTotalIncludingPacific": 547,
+          "derivedEuropeanSubtotalExcludingPacific": 543
+        },
+        {
+          "sourceRow": 18,
+          "sectionAsPrinted": "Aviacion de reconocimiento",
+          "itemAsPrinted": "MBR-2",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 81,
+                "baltic": 80,
+                "northern": 11
+              },
+              "printedTotal": 172
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 29,
+                "baltic": 13,
+                "northern": 7
+              },
+              "printedTotal": 49
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 11,
+                "baltic": 1,
+                "northern": 10
+              },
+              "printedTotal": 22
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 20,
+                "pacific_aug_sep_1945": 2
+              },
+              "printedTotalIncludingPacific": 22,
+              "derivedEuropeanFleetTotal": 20
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 121,
+            "baltic": 94,
+            "northern": 48,
+            "pacific_aug_sep_1945": 2
+          },
+          "printedAllWarTotalIncludingPacific": 265,
+          "derivedEuropeanSubtotalExcludingPacific": 263
+        },
+        {
+          "sourceRow": 19,
+          "sectionAsPrinted": "Aviacion de reconocimiento",
+          "itemAsPrinted": "CHe-2",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 3,
+                "northern": 8
+              },
+              "printedTotal": 11
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 1,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 1,
+              "derivedEuropeanFleetTotal": 1
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 5,
+            "baltic": 3,
+            "northern": 9,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 17,
+          "derivedEuropeanSubtotalExcludingPacific": 17
+        },
+        {
+          "sourceRow": 20,
+          "sectionAsPrinted": "Aviacion de reconocimiento",
+          "itemAsPrinted": "Katalina",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 5
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 1,
+                "pacific_aug_sep_1945": 1
+              },
+              "printedTotalIncludingPacific": 2,
+              "derivedEuropeanFleetTotal": 1
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 0,
+            "northern": 6,
+            "pacific_aug_sep_1945": 1
+          },
+          "printedAllWarTotalIncludingPacific": 7,
+          "derivedEuropeanSubtotalExcludingPacific": 6
+        },
+        {
+          "sourceRow": 21,
+          "sectionAsPrinted": "Aviacion de reconocimiento",
+          "itemAsPrinted": "GST y MTB-1",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": null,
+                "northern": 4
+              },
+              "printedTotal": 9
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 1
+              },
+              "printedTotal": 1
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 5,
+            "baltic": 0,
+            "northern": 5,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 10,
+          "derivedEuropeanSubtotalExcludingPacific": 10
+        },
+        {
+          "sourceRow": 22,
+          "sectionAsPrinted": "Aviacion de reconocimiento",
+          "itemAsPrinted": "Otros tipos de aviones",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 13,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 13
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 15,
+                "baltic": null,
+                "northern": 5
+              },
+              "printedTotal": 20
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": null,
+                "northern": 1,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 6,
+              "derivedEuropeanFleetTotal": 6
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 33,
+            "baltic": 0,
+            "northern": 6,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 39,
+          "derivedEuropeanSubtotalExcludingPacific": 39
+        },
+        {
+          "sourceRow": 23,
+          "sectionAsPrinted": "Aviacion de reconocimiento",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 86,
+                "baltic": 83,
+                "northern": 23
+              },
+              "printedTotal": 192
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 47,
+                "baltic": 13,
+                "northern": 8
+              },
+              "printedTotal": 68
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 26,
+                "baltic": 1,
+                "northern": 20
+              },
+              "printedTotal": 47
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": 0,
+                "northern": 23,
+                "pacific_aug_sep_1945": 3
+              },
+              "printedTotalIncludingPacific": 31,
+              "derivedEuropeanFleetTotal": 28
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 164,
+            "baltic": 97,
+            "northern": 74,
+            "pacific_aug_sep_1945": 3
+          },
+          "printedAllWarTotalIncludingPacific": 338,
+          "derivedEuropeanSubtotalExcludingPacific": 335
+        },
+        {
+          "sourceRow": 25,
+          "sectionAsPrinted": "Aviacion de asalto",
+          "itemAsPrinted": "IL-2",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 39,
+                "baltic": 27,
+                "northern": null
+              },
+              "printedTotal": 66
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 68,
+                "baltic": 59,
+                "northern": 1
+              },
+              "printedTotal": 128
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 146,
+                "baltic": 159,
+                "northern": 57
+              },
+              "printedTotal": 362
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": 195,
+                "northern": 38,
+                "pacific_aug_sep_1945": 13
+              },
+              "printedTotalIncludingPacific": 251,
+              "derivedEuropeanFleetTotal": 238
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 258,
+            "baltic": 440,
+            "northern": 96,
+            "pacific_aug_sep_1945": 13
+          },
+          "printedAllWarTotalIncludingPacific": 807,
+          "derivedEuropeanSubtotalExcludingPacific": 794
+        },
+        {
+          "sourceRow": 27,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "LaGG-3",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 28,
+                "baltic": 8,
+                "northern": null
+              },
+              "printedTotal": 36
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 41,
+                "baltic": 21,
+                "northern": 2
+              },
+              "printedTotal": 64
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 28,
+                "baltic": 4,
+                "northern": null
+              },
+              "printedTotal": 32
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 18,
+                "northern": null,
+                "pacific_aug_sep_1945": 1
+              },
+              "printedTotalIncludingPacific": 21,
+              "derivedEuropeanFleetTotal": 20
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 99,
+            "baltic": 51,
+            "northern": 2,
+            "pacific_aug_sep_1945": 1
+          },
+          "printedAllWarTotalIncludingPacific": 153,
+          "derivedEuropeanSubtotalExcludingPacific": 152
+        },
+        {
+          "sourceRow": 28,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "I-15",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 64,
+                "baltic": 19,
+                "northern": 9
+              },
+              "printedTotal": 92
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 13,
+                "baltic": 2,
+                "northern": 2
+              },
+              "printedTotal": 17
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 1,
+                "northern": 3
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 10,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 10,
+              "derivedEuropeanFleetTotal": 10
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 78,
+            "baltic": 22,
+            "northern": 24,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 124,
+          "derivedEuropeanSubtotalExcludingPacific": 124
+        },
+        {
+          "sourceRow": 29,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "I-153",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 43,
+                "baltic": 72,
+                "northern": 13
+              },
+              "printedTotal": 128
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 9,
+                "baltic": 14,
+                "northern": null
+              },
+              "printedTotal": 23
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 1,
+                "northern": 1
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 16,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 16,
+              "derivedEuropeanFleetTotal": 16
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 53,
+            "baltic": 87,
+            "northern": 30,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 170,
+          "derivedEuropeanSubtotalExcludingPacific": 170
+        },
+        {
+          "sourceRow": 30,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "I-16",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 107,
+                "baltic": 97,
+                "northern": 11
+              },
+              "printedTotal": 215
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 22,
+                "baltic": 20,
+                "northern": 4
+              },
+              "printedTotal": 46
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": 3
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 4,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 4,
+              "derivedEuropeanFleetTotal": 4
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 129,
+            "baltic": 119,
+            "northern": 22,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 270,
+          "derivedEuropeanSubtotalExcludingPacific": 270
+        },
+        {
+          "sourceRow": 31,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "MiG-3",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 33,
+                "baltic": 46,
+                "northern": 6
+              },
+              "printedTotal": 85
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 3,
+                "baltic": null,
+                "northern": 1
+              },
+              "printedTotal": 4
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 36,
+            "baltic": 46,
+            "northern": 7,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 89,
+          "derivedEuropeanSubtotalExcludingPacific": 89
+        },
+        {
+          "sourceRow": 32,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Yak-1 y Yak-3",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 84,
+                "baltic": 13,
+                "northern": null
+              },
+              "printedTotal": 97
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 68,
+                "baltic": 6,
+                "northern": 3
+              },
+              "printedTotal": 77
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 25,
+                "baltic": 7,
+                "northern": 23
+              },
+              "printedTotal": 55
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 5,
+                "northern": 6,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 11,
+              "derivedEuropeanFleetTotal": 11
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 177,
+            "baltic": 31,
+            "northern": 32,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 240,
+          "derivedEuropeanSubtotalExcludingPacific": 240
+        },
+        {
+          "sourceRow": 33,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Yak-7",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 37,
+                "northern": null
+              },
+              "printedTotal": 38
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 3,
+                "baltic": 37,
+                "northern": 1
+              },
+              "printedTotal": 41
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 11,
+                "northern": 5,
+                "pacific_aug_sep_1945": 1
+              },
+              "printedTotalIncludingPacific": 17,
+              "derivedEuropeanFleetTotal": 16
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 4,
+            "baltic": 85,
+            "northern": 6,
+            "pacific_aug_sep_1945": 1
+          },
+          "printedAllWarTotalIncludingPacific": 96,
+          "derivedEuropeanSubtotalExcludingPacific": 95
+        },
+        {
+          "sourceRow": 34,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Yak-9",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 11,
+                "northern": null
+              },
+              "printedTotal": 11
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 17,
+                "baltic": 21,
+                "northern": 8
+              },
+              "printedTotal": 46
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 3,
+                "baltic": 87,
+                "northern": 2,
+                "pacific_aug_sep_1945": 6
+              },
+              "printedTotalIncludingPacific": 98,
+              "derivedEuropeanFleetTotal": 92
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 20,
+            "baltic": 119,
+            "northern": 10,
+            "pacific_aug_sep_1945": 6
+          },
+          "printedAllWarTotalIncludingPacific": 155,
+          "derivedEuropeanSubtotalExcludingPacific": 149
+        },
+        {
+          "sourceRow": 35,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Pe-3",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 6
+              },
+              "printedTotal": 6
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 12
+              },
+              "printedTotal": 12
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 8
+              },
+              "printedTotal": 8
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 4,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 4,
+              "derivedEuropeanFleetTotal": 4
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 0,
+            "northern": 30,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 30,
+          "derivedEuropeanSubtotalExcludingPacific": 30
+        },
+        {
+          "sourceRow": 36,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "La-5 (7)",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 14,
+                "northern": null
+              },
+              "printedTotal": 14
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 72,
+                "northern": null
+              },
+              "printedTotal": 72
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 13,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 13,
+              "derivedEuropeanFleetTotal": 13
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 99,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 99,
+          "derivedEuropeanSubtotalExcludingPacific": 99
+        },
+        {
+          "sourceRow": 37,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Hurricane",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 48
+              },
+              "printedTotal": 48
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 18,
+                "northern": 61
+              },
+              "printedTotal": 79
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 58
+              },
+              "printedTotal": 58
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 18,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 18,
+              "derivedEuropeanFleetTotal": 18
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 18,
+            "northern": 185,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 203,
+          "derivedEuropeanSubtotalExcludingPacific": 203
+        },
+        {
+          "sourceRow": 38,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Kittyhawk",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 1
+              },
+              "printedTotal": 1
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 9
+              },
+              "printedTotal": 9
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": null,
+                "northern": 3
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": null,
+                "northern": 32,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 34,
+              "derivedEuropeanFleetTotal": 34
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 4,
+            "baltic": 0,
+            "northern": 45,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 49,
+          "derivedEuropeanSubtotalExcludingPacific": 49
+        },
+        {
+          "sourceRow": 39,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Airacobra",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": null,
+                "northern": 16
+              },
+              "printedTotal": 17
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 20,
+                "baltic": null,
+                "northern": 57
+              },
+              "printedTotal": 77
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": null,
+                "northern": 25,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 30,
+              "derivedEuropeanFleetTotal": 30
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 26,
+            "baltic": 0,
+            "northern": 98,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 124,
+          "derivedEuropeanSubtotalExcludingPacific": 124
+        },
+        {
+          "sourceRow": 40,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 359,
+                "baltic": 255,
+                "northern": 94
+              },
+              "printedTotal": 708
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 158,
+                "baltic": 143,
+                "northern": 110
+              },
+              "printedTotal": 411
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 97,
+                "baltic": 145,
+                "northern": 165
+              },
+              "printedTotal": 407
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 12,
+                "baltic": 134,
+                "northern": 122,
+                "pacific_aug_sep_1945": 8
+              },
+              "printedTotalIncludingPacific": 276,
+              "derivedEuropeanFleetTotal": 268
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 626,
+            "baltic": 677,
+            "northern": 491,
+            "pacific_aug_sep_1945": 8
+          },
+          "printedAllWarTotalIncludingPacific": 1802,
+          "derivedEuropeanSubtotalExcludingPacific": 1794
+        },
+        {
+          "sourceRow": 41,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "Aviacion auxiliar",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 95,
+                "baltic": 25,
+                "northern": null
+              },
+              "printedTotal": 120
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 43,
+                "baltic": null,
+                "northern": 1
+              },
+              "printedTotal": 44
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 1,
+                "northern": 4
+              },
+              "printedTotal": 6
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": 11,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 11,
+              "derivedEuropeanFleetTotal": 11
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 139,
+            "baltic": 26,
+            "northern": 16,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 181,
+          "derivedEuropeanSubtotalExcludingPacific": 181
+        },
+        {
+          "sourceRow": 42,
+          "sectionAsPrinted": "Aviacion de caza",
+          "itemAsPrinted": "TOTAL:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 748,
+                "baltic": 544,
+                "northern": 130
+              },
+              "printedTotal": 1422
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 382,
+                "baltic": 256,
+                "northern": 161
+              },
+              "printedTotal": 799
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 337,
+                "baltic": 375,
+                "northern": 308
+              },
+              "printedTotal": 1020
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 30,
+                "baltic": 496,
+                "northern": 239,
+                "pacific_aug_sep_1945": 34
+              },
+              "printedTotalIncludingPacific": 799,
+              "derivedEuropeanFleetTotal": 765
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 1497,
+            "baltic": 1671,
+            "northern": 838,
+            "pacific_aug_sep_1945": 34
+          },
+          "printedAllWarTotalIncludingPacific": 4040,
+          "derivedEuropeanSubtotalExcludingPacific": 4006
+        }
+      ],
+      "sourceArithmeticDiscrepancies": []
+    },
+    "30": {
+      "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_30.htm",
+      "sourceTable": 30,
+      "metricClass": "Soviet naval aviation enemy aircraft CLAIMS",
+      "scope": "Four war-year periods, by Black Sea/Baltic/Northern fleets; source additionally includes Pacific Aug-Sep 1945 outside European cutoff",
+      "records": [
+        {
+          "sourceRow": 6,
+          "sectionAsPrinted": "Derribados en los combates aereos",
+          "itemAsPrinted": "1. Bombarderos",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 235,
+                "baltic": 222,
+                "northern": 110
+              },
+              "printedTotal": 567
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 117,
+                "baltic": 73,
+                "northern": 37
+              },
+              "printedTotal": 227
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 73,
+                "baltic": 95,
+                "northern": 3
+              },
+              "printedTotal": 171
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 66,
+                "northern": 2,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 69,
+              "derivedEuropeanFleetTotal": 69
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 426,
+            "baltic": 456,
+            "northern": 152,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 1034,
+          "derivedEuropeanSubtotalExcludingPacific": 1034
+        },
+        {
+          "sourceRow": 7,
+          "sectionAsPrinted": "Derribados en los combates aereos",
+          "itemAsPrinted": "2. Cazas",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 398,
+                "baltic": 285,
+                "northern": 136
+              },
+              "printedTotal": 819
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 102,
+                "baltic": 372,
+                "northern": 139
+              },
+              "printedTotal": 613
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 342,
+                "baltic": 480,
+                "northern": 340
+              },
+              "printedTotal": 1162
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 10,
+                "baltic": 427,
+                "northern": 125,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 562,
+              "derivedEuropeanFleetTotal": 562
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 852,
+            "baltic": 1564,
+            "northern": 740,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 3156,
+          "derivedEuropeanSubtotalExcludingPacific": 3156
+        },
+        {
+          "sourceRow": 8,
+          "sectionAsPrinted": "Derribados en los combates aereos",
+          "itemAsPrinted": "3. Aviones de reconocimiento",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 32,
+                "baltic": 53,
+                "northern": 7
+              },
+              "printedTotal": 92
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 11,
+                "baltic": 4,
+                "northern": 3
+              },
+              "printedTotal": 18
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 35,
+                "baltic": 14,
+                "northern": 1
+              },
+              "printedTotal": 50
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": 30,
+                "northern": 1,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 36,
+              "derivedEuropeanFleetTotal": 36
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 83,
+            "baltic": 101,
+            "northern": 12,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 196,
+          "derivedEuropeanSubtotalExcludingPacific": 196
+        },
+        {
+          "sourceRow": 9,
+          "sectionAsPrinted": "Derribados en los combates aereos",
+          "itemAsPrinted": "4. Otros aviones",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 27,
+                "baltic": 1,
+                "northern": 5
+              },
+              "printedTotal": 33
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 18,
+                "baltic": 1,
+                "northern": 5
+              },
+              "printedTotal": 24
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 25,
+                "baltic": 2,
+                "northern": 10
+              },
+              "printedTotal": 37
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 78,
+                "northern": 9,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 87,
+              "derivedEuropeanFleetTotal": 87
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 70,
+            "baltic": 82,
+            "northern": 29,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 181,
+          "derivedEuropeanSubtotalExcludingPacific": 181
+        },
+        {
+          "sourceRow": 10,
+          "sectionAsPrinted": "Derribados en los combates aereos",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 692,
+                "baltic": 561,
+                "northern": 258
+              },
+              "printedTotal": 1511
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 248,
+                "baltic": 450,
+                "northern": 184
+              },
+              "printedTotal": 882
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 475,
+                "baltic": 591,
+                "northern": 354
+              },
+              "printedTotal": 1420
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 16,
+                "baltic": 601,
+                "northern": 137,
+                "pacific_aug_sep_1945": 0
+              },
+              "printedTotalIncludingPacific": 754,
+              "derivedEuropeanFleetTotal": 754
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 1431,
+            "baltic": 2203,
+            "northern": 933,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 4567,
+          "derivedEuropeanSubtotalExcludingPacific": 4567
+        },
+        {
+          "sourceRow": 12,
+          "sectionAsPrinted": "Eliminados en los aerodromos",
+          "itemAsPrinted": "1. Bombarderos",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 176,
+                "baltic": 15,
+                "northern": null
+              },
+              "printedTotal": 191
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 20,
+                "baltic": 29,
+                "northern": null
+              },
+              "printedTotal": 49
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 1,
+                "northern": null
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 2,
+              "derivedEuropeanFleetTotal": 2
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 200,
+            "baltic": 47,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 247,
+          "derivedEuropeanSubtotalExcludingPacific": 247
+        },
+        {
+          "sourceRow": 13,
+          "sectionAsPrinted": "Eliminados en los aerodromos",
+          "itemAsPrinted": "2. Cazas",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 38,
+                "baltic": 6,
+                "northern": null
+              },
+              "printedTotal": 44
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 10,
+                "baltic": 2,
+                "northern": null
+              },
+              "printedTotal": 12
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 12,
+                "baltic": 4,
+                "northern": null
+              },
+              "printedTotal": 16
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 1,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 1,
+              "derivedEuropeanFleetTotal": 1
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 60,
+            "baltic": 13,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 73,
+          "derivedEuropeanSubtotalExcludingPacific": 73
+        },
+        {
+          "sourceRow": 14,
+          "sectionAsPrinted": "Eliminados en los aerodromos",
+          "itemAsPrinted": "3. Aviones de reconocimiento",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 11,
+                "northern": null
+              },
+              "printedTotal": 11
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 1,
+                "northern": null
+              },
+              "printedTotal": 1
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 2,
+              "derivedEuropeanFleetTotal": 2
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 14,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 14,
+          "derivedEuropeanSubtotalExcludingPacific": 14
+        },
+        {
+          "sourceRow": 15,
+          "sectionAsPrinted": "Eliminados en los aerodromos",
+          "itemAsPrinted": "4. Otros aviones",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 306,
+                "baltic": 84,
+                "northern": 58
+              },
+              "printedTotal": 448
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 53,
+                "baltic": 42,
+                "northern": 9
+              },
+              "printedTotal": 104
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 9,
+                "northern": 43
+              },
+              "printedTotal": 52
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 6,
+                "northern": 2,
+                "pacific_aug_sep_1945": 8
+              },
+              "printedTotalIncludingPacific": 16,
+              "derivedEuropeanFleetTotal": 8
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 359,
+            "baltic": 141,
+            "northern": 112,
+            "pacific_aug_sep_1945": 8
+          },
+          "printedAllWarTotalIncludingPacific": 620,
+          "derivedEuropeanSubtotalExcludingPacific": 612
+        },
+        {
+          "sourceRow": 16,
+          "sectionAsPrinted": "Eliminados en los aerodromos",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 520,
+                "baltic": 116,
+                "northern": 58
+              },
+              "printedTotal": 694
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 83,
+                "baltic": 73,
+                "northern": 9
+              },
+              "printedTotal": 165
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 16,
+                "baltic": 15,
+                "northern": 43
+              },
+              "printedTotal": 74
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 0,
+                "baltic": 11,
+                "northern": 2,
+                "pacific_aug_sep_1945": 8
+              },
+              "printedTotalIncludingPacific": 21,
+              "derivedEuropeanFleetTotal": 13
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 619,
+            "baltic": 215,
+            "northern": 112,
+            "pacific_aug_sep_1945": 8
+          },
+          "printedAllWarTotalIncludingPacific": 954,
+          "derivedEuropeanSubtotalExcludingPacific": 946
+        },
+        {
+          "sourceRow": 17,
+          "sectionAsPrinted": "Eliminados en los aerodromos",
+          "itemAsPrinted": "Suma:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 1212,
+                "baltic": 677,
+                "northern": 316
+              },
+              "printedTotal": 2205
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 331,
+                "baltic": 523,
+                "northern": 193
+              },
+              "printedTotal": 1047
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 491,
+                "baltic": 606,
+                "northern": 397
+              },
+              "printedTotal": 1494
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 16,
+                "baltic": 612,
+                "northern": 139,
+                "pacific_aug_sep_1945": 8
+              },
+              "printedTotalIncludingPacific": 775,
+              "derivedEuropeanFleetTotal": 767
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 2050,
+            "baltic": 2418,
+            "northern": 1045,
+            "pacific_aug_sep_1945": 8
+          },
+          "printedAllWarTotalIncludingPacific": 5521,
+          "derivedEuropeanSubtotalExcludingPacific": 5513
+        }
+      ],
+      "sourceArithmeticDiscrepancies": []
+    },
+    "31": {
+      "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_31.htm",
+      "sourceTable": 31,
+      "metricClass": "Soviet naval aviation ship damage/destruction CLAIMS",
+      "scope": "Four war-year periods, by Black Sea/Baltic/Northern fleets; source additionally includes Pacific Aug-Sep 1945 outside European cutoff",
+      "records": [
+        {
+          "sourceRow": 6,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Navios de linea y cruceros",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 2,
+              "derivedEuropeanFleetTotal": 2
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 2,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 2,
+          "derivedEuropeanSubtotalExcludingPacific": 2
+        },
+        {
+          "sourceRow": 8,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Acorazado de defensa costera",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 0,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 0,
+          "derivedEuropeanSubtotalExcludingPacific": 0
+        },
+        {
+          "sourceRow": 10,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Destructor de escuadra",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 2
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 5,
+                "northern": null,
+                "pacific_aug_sep_1945": 2
+              },
+              "printedTotalIncludingPacific": 7,
+              "derivedEuropeanFleetTotal": 5
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 2,
+            "baltic": 5,
+            "northern": 0,
+            "pacific_aug_sep_1945": 2
+          },
+          "printedAllWarTotalIncludingPacific": 9,
+          "derivedEuropeanSubtotalExcludingPacific": 7
+        },
+        {
+          "sourceRow": 12,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Destructor",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 9,
+                "northern": 1
+              },
+              "printedTotal": 12
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": null
+              },
+              "printedTotal": 2
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 1,
+                "northern": 2
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 8,
+                "northern": 2,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 11,
+              "derivedEuropeanFleetTotal": 11
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 3,
+            "baltic": 20,
+            "northern": 5,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 28,
+          "derivedEuropeanSubtotalExcludingPacific": 28
+        },
+        {
+          "sourceRow": 14,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Submarinos",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 3,
+                "northern": 1
+              },
+              "printedTotal": 4
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 1,
+                "northern": 1
+              },
+              "printedTotal": 6
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 5,
+                "baltic": null,
+                "northern": 2
+              },
+              "printedTotal": 7
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 3,
+                "baltic": 8,
+                "northern": 2,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 13,
+              "derivedEuropeanFleetTotal": 13
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 12,
+            "baltic": 12,
+            "northern": 6,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 30,
+          "derivedEuropeanSubtotalExcludingPacific": 30
+        },
+        {
+          "sourceRow": 16,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Cañoneros y monitores",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 4
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 5,
+                "northern": null
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 2,
+                "northern": null
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 1,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 3,
+              "derivedEuropeanFleetTotal": 3
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 7,
+            "baltic": 8,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 15,
+          "derivedEuropeanSubtotalExcludingPacific": 15
+        },
+        {
+          "sourceRow": 18,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Minador",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 1
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": null
+              },
+              "printedTotal": 2
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 0,
+              "derivedEuropeanFleetTotal": 0
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 1,
+            "baltic": 2,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 3,
+          "derivedEuropeanSubtotalExcludingPacific": 3
+        },
+        {
+          "sourceRow": 20,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Dragaminas",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 4,
+                "northern": null
+              },
+              "printedTotal": 4
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 1,
+                "northern": 4
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 47,
+                "northern": 5
+              },
+              "printedTotal": 56
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 39,
+                "northern": 9,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 48,
+              "derivedEuropeanFleetTotal": 48
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 4,
+            "baltic": 91,
+            "northern": 18,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 113,
+          "derivedEuropeanSubtotalExcludingPacific": 113
+        },
+        {
+          "sourceRow": 22,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Barco de escolta",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 2,
+                "northern": 1
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 18,
+                "northern": 7
+              },
+              "printedTotal": 26
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 4,
+                "baltic": 30,
+                "northern": 23
+              },
+              "printedTotal": 57
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 59,
+                "northern": 17,
+                "pacific_aug_sep_1945": 2
+              },
+              "printedTotalIncludingPacific": 78,
+              "derivedEuropeanFleetTotal": 76
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 5,
+            "baltic": 109,
+            "northern": 48,
+            "pacific_aug_sep_1945": 2
+          },
+          "printedAllWarTotalIncludingPacific": 164,
+          "derivedEuropeanSubtotalExcludingPacific": 162
+        },
+        {
+          "sourceRow": 24,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Lancha dragaminas",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 3,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 3
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 9,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 11,
+              "derivedEuropeanFleetTotal": 11
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 5,
+            "baltic": 9,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 14,
+          "derivedEuropeanSubtotalExcludingPacific": 14
+        },
+        {
+          "sourceRow": 26,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Torpedero",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 19,
+                "northern": null
+              },
+              "printedTotal": 19
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 8,
+                "baltic": 4,
+                "northern": null
+              },
+              "printedTotal": 12
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 17,
+                "baltic": 6,
+                "northern": null
+              },
+              "printedTotal": 23
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 9,
+                "baltic": 1,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 10,
+              "derivedEuropeanFleetTotal": 10
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 34,
+            "baltic": 30,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 64,
+          "derivedEuropeanSubtotalExcludingPacific": 64
+        },
+        {
+          "sourceRow": 28,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Lancha blindada",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 52,
+                "northern": null
+              },
+              "printedTotal": 52
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 1,
+                "northern": null,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 1,
+              "derivedEuropeanFleetTotal": 1
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 0,
+            "baltic": 53,
+            "northern": 0,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 53,
+          "derivedEuropeanSubtotalExcludingPacific": 53
+        },
+        {
+          "sourceRow": 30,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Patrullero",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": 13,
+                "northern": null
+              },
+              "printedTotal": 13
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 33,
+                "northern": 4
+              },
+              "printedTotal": 39
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 59,
+                "baltic": 38,
+                "northern": 13
+              },
+              "printedTotal": 110
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 61,
+                "northern": 16,
+                "pacific_aug_sep_1945": 1
+              },
+              "printedTotalIncludingPacific": 80,
+              "derivedEuropeanFleetTotal": 79
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 63,
+            "baltic": 145,
+            "northern": 33,
+            "pacific_aug_sep_1945": 1
+          },
+          "printedAllWarTotalIncludingPacific": 242,
+          "derivedEuropeanSubtotalExcludingPacific": 241
+        },
+        {
+          "sourceRow": 32,
+          "sectionAsPrinted": "Barcos de combate",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 9,
+                "baltic": 102,
+                "northern": 3
+              },
+              "printedTotal": 114
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 15,
+                "baltic": 64,
+                "northern": 16
+              },
+              "printedTotal": 95
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 93,
+                "baltic": 126,
+                "northern": 45
+              },
+              "printedTotal": 264
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 19,
+                "baltic": 194,
+                "northern": 46,
+                "pacific_aug_sep_1945": 5
+              },
+              "printedTotalIncludingPacific": 264,
+              "derivedEuropeanFleetTotal": 259
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 136,
+            "baltic": 486,
+            "northern": 110,
+            "pacific_aug_sep_1945": 5
+          },
+          "printedAllWarTotalIncludingPacific": 737,
+          "derivedEuropeanSubtotalExcludingPacific": 732
+        },
+        {
+          "sourceRow": 35,
+          "sectionAsPrinted": "Barcos de transporte",
+          "itemAsPrinted": "Transportes",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 23,
+                "baltic": 50,
+                "northern": 6
+              },
+              "printedTotal": 79
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 17,
+                "baltic": 19,
+                "northern": 42
+              },
+              "printedTotal": 78
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 88,
+                "baltic": 94,
+                "northern": 54
+              },
+              "printedTotal": 236
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 2,
+                "baltic": 288,
+                "northern": 31,
+                "pacific_aug_sep_1945": 34
+              },
+              "printedTotalIncludingPacific": 355,
+              "derivedEuropeanFleetTotal": 321
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 130,
+            "baltic": 451,
+            "northern": 133,
+            "pacific_aug_sep_1945": 34
+          },
+          "printedAllWarTotalIncludingPacific": 748,
+          "derivedEuropeanSubtotalExcludingPacific": 714
+        },
+        {
+          "sourceRow": 37,
+          "sectionAsPrinted": "Barcos de transporte",
+          "itemAsPrinted": "Petroleros",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": null,
+                "baltic": null,
+                "northern": null
+              },
+              "printedTotal": 0
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 1,
+                "northern": 3
+              },
+              "printedTotal": 5
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 3,
+                "baltic": 4,
+                "northern": 8
+              },
+              "printedTotal": 15
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 1,
+                "baltic": 11,
+                "northern": null,
+                "pacific_aug_sep_1945": 4
+              },
+              "printedTotalIncludingPacific": 16,
+              "derivedEuropeanFleetTotal": 12
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 5,
+            "baltic": 16,
+            "northern": 11,
+            "pacific_aug_sep_1945": 4
+          },
+          "printedAllWarTotalIncludingPacific": 36,
+          "derivedEuropeanSubtotalExcludingPacific": 32
+        },
+        {
+          "sourceRow": 39,
+          "sectionAsPrinted": "Barcos de transporte",
+          "itemAsPrinted": "Navios de apoyo",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 30,
+                "baltic": 8,
+                "northern": 1
+              },
+              "printedTotal": 39
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 78,
+                "baltic": 29,
+                "northern": null
+              },
+              "printedTotal": 107
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 301,
+                "baltic": 38,
+                "northern": 9
+              },
+              "printedTotal": 348
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 25,
+                "baltic": 118,
+                "northern": 26,
+                "pacific_aug_sep_1945": null
+              },
+              "printedTotalIncludingPacific": 169,
+              "derivedEuropeanFleetTotal": 169
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 434,
+            "baltic": 193,
+            "northern": 36,
+            "pacific_aug_sep_1945": 0
+          },
+          "printedAllWarTotalIncludingPacific": 663,
+          "derivedEuropeanSubtotalExcludingPacific": 663
+        },
+        {
+          "sourceRow": 41,
+          "sectionAsPrinted": "Barcos de transporte",
+          "itemAsPrinted": "Otros navios",
+          "isPublishedSubtotal": false,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 22,
+                "baltic": 96,
+                "northern": null
+              },
+              "printedTotal": 118
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 71,
+                "baltic": 3,
+                "northern": 2
+              },
+              "printedTotal": 76
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 53,
+                "baltic": 23,
+                "northern": 63
+              },
+              "printedTotal": 139
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 19,
+                "baltic": 121,
+                "northern": 139,
+                "pacific_aug_sep_1945": 47
+              },
+              "printedTotalIncludingPacific": 326,
+              "derivedEuropeanFleetTotal": 279
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 165,
+            "baltic": 243,
+            "northern": 204,
+            "pacific_aug_sep_1945": 47
+          },
+          "printedAllWarTotalIncludingPacific": 659,
+          "derivedEuropeanSubtotalExcludingPacific": 612
+        },
+        {
+          "sourceRow": 43,
+          "sectionAsPrinted": "Barcos de transporte",
+          "itemAsPrinted": "Total:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 75,
+                "baltic": 154,
+                "northern": 7
+              },
+              "printedTotal": 236
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 167,
+                "baltic": 52,
+                "northern": 47
+              },
+              "printedTotal": 266
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 445,
+                "baltic": 159,
+                "northern": 134
+              },
+              "printedTotal": 738
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 47,
+                "baltic": 538,
+                "northern": 196,
+                "pacific_aug_sep_1945": 85
+              },
+              "printedTotalIncludingPacific": 866,
+              "derivedEuropeanFleetTotal": 781
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 734,
+            "baltic": 903,
+            "northern": 384,
+            "pacific_aug_sep_1945": 85
+          },
+          "printedAllWarTotalIncludingPacific": 2106,
+          "derivedEuropeanSubtotalExcludingPacific": 2021
+        },
+        {
+          "sourceRow": 45,
+          "sectionAsPrinted": "Barcos de transporte",
+          "itemAsPrinted": "SUMA:",
+          "isPublishedSubtotal": true,
+          "periodByFleet": [
+            {
+              "period": "1941-06-22_to_1942-06-21",
+              "byFleet": {
+                "black_sea": 84,
+                "baltic": 256,
+                "northern": 10
+              },
+              "printedTotal": 350
+            },
+            {
+              "period": "1942-06-22_to_1943-06-21",
+              "byFleet": {
+                "black_sea": 182,
+                "baltic": 116,
+                "northern": 63
+              },
+              "printedTotal": 361
+            },
+            {
+              "period": "1943-06-22_to_1944-06-21",
+              "byFleet": {
+                "black_sea": 538,
+                "baltic": 285,
+                "northern": 179
+              },
+              "printedTotal": 1002
+            },
+            {
+              "period": "1944-06-22_to_1945-05-09_Europe__with_1945-08_Pacific_column",
+              "byFleet": {
+                "black_sea": 66,
+                "baltic": 732,
+                "northern": 242,
+                "pacific_aug_sep_1945": 90
+              },
+              "printedTotalIncludingPacific": 1130,
+              "derivedEuropeanFleetTotal": 1040
+            }
+          ],
+          "publishedWarPeriodGrandByFleet": {
+            "black_sea": 870,
+            "baltic": 1389,
+            "northern": 494,
+            "pacific_aug_sep_1945": 90
+          },
+          "printedAllWarTotalIncludingPacific": 2843,
+          "derivedEuropeanSubtotalExcludingPacific": 2753
+        }
+      ],
+      "sourceArithmeticDiscrepancies": []
+    }
+  },
+  "pvoFighterOperationsByUnit": {
+    "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_24.htm",
+    "records": [
+      {
+        "sourceRow": 5,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "122 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 10229,
+        "nightCombatSorties": 82,
+        "flyingHours": 8058,
+        "nightFlyingHours": 72,
+        "aerialEngagements": 158,
+        "nightAerialEngagements": 3,
+        "claimedEnemyAircraftShotDown": 196,
+        "claimedAtNight": 12,
+        "ownAircraftLost": 91,
+        "cannonAndRocketRoundsExpended": 335070,
+        "sortiesPerClaimReported": 52,
+        "roundsPerClaimReported": 1710
+      },
+      {
+        "sourceRow": 6,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "104 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 3288,
+        "nightCombatSorties": 118,
+        "flyingHours": 3770,
+        "nightFlyingHours": 127,
+        "aerialEngagements": 16,
+        "nightAerialEngagements": 6,
+        "claimedEnemyAircraftShotDown": 3,
+        "claimedAtNight": 1,
+        "ownAircraftLost": 2,
+        "cannonAndRocketRoundsExpended": 5506,
+        "sortiesPerClaimReported": 1096,
+        "roundsPerClaimReported": 1835
+      },
+      {
+        "sourceRow": 7,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "147 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 1269,
+        "nightCombatSorties": 175,
+        "flyingHours": 1037,
+        "nightFlyingHours": 167,
+        "aerialEngagements": 23,
+        "nightAerialEngagements": 19,
+        "claimedEnemyAircraftShotDown": 13,
+        "claimedAtNight": 8,
+        "ownAircraftLost": 5,
+        "cannonAndRocketRoundsExpended": 5040,
+        "sortiesPerClaimReported": 98,
+        "roundsPerClaimReported": 388
+      },
+      {
+        "sourceRow": 8,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "142 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 3713,
+        "nightCombatSorties": 412,
+        "flyingHours": 3116,
+        "nightFlyingHours": 412,
+        "aerialEngagements": 33,
+        "nightAerialEngagements": 12,
+        "claimedEnemyAircraftShotDown": 15,
+        "claimedAtNight": 6,
+        "ownAircraftLost": 5,
+        "cannonAndRocketRoundsExpended": 12522,
+        "sortiesPerClaimReported": 248,
+        "roundsPerClaimReported": 835
+      },
+      {
+        "sourceRow": 9,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "2 gv. liak",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 41377,
+        "nightCombatSorties": 1334,
+        "flyingHours": 40431,
+        "nightFlyingHours": 1576,
+        "aerialEngagements": 1272,
+        "nightAerialEngagements": 22,
+        "claimedEnemyAircraftShotDown": 927,
+        "claimedAtNight": 23,
+        "ownAircraftLost": 539,
+        "cannonAndRocketRoundsExpended": 2217900,
+        "sortiesPerClaimReported": 45,
+        "roundsPerClaimReported": 2393
+      },
+      {
+        "sourceRow": 10,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "317, 318 y 319 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 97510,
+        "nightCombatSorties": 2314,
+        "flyingHours": 95507,
+        "nightFlyingHours": 2282,
+        "aerialEngagements": 2208,
+        "nightAerialEngagements": 256,
+        "claimedEnemyAircraftShotDown": 992,
+        "claimedAtNight": 78,
+        "ownAircraftLost": 377,
+        "cannonAndRocketRoundsExpended": 3141300,
+        "sortiesPerClaimReported": 98,
+        "roundsPerClaimReported": 3167
+      },
+      {
+        "sourceRow": 11,
+        "groupingAsPrinted": "1er Ejercito del Aire de Cazas",
+        "formationAsPrinted": "Total:",
+        "aggregationType": "section_subtotal",
+        "combatSorties": 157386,
+        "nightCombatSorties": 4435,
+        "flyingHours": 151919,
+        "nightFlyingHours": 4636,
+        "aerialEngagements": 3710,
+        "nightAerialEngagements": 318,
+        "claimedEnemyAircraftShotDown": 2146,
+        "claimedAtNight": 128,
+        "ownAircraftLost": 1019,
+        "cannonAndRocketRoundsExpended": 5717338,
+        "sortiesPerClaimReported": 73,
+        "roundsPerClaimReported": 2664
+      },
+      {
+        "sourceRow": 13,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "124 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 435,
+        "nightCombatSorties": 47,
+        "flyingHours": 395,
+        "nightFlyingHours": 42,
+        "aerialEngagements": 2,
+        "nightAerialEngagements": 1,
+        "claimedEnemyAircraftShotDown": 2,
+        "claimedAtNight": 1,
+        "ownAircraftLost": null,
+        "cannonAndRocketRoundsExpended": 300,
+        "sortiesPerClaimReported": 218,
+        "roundsPerClaimReported": 150
+      },
+      {
+        "sourceRow": 14,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "106 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 16396,
+        "nightCombatSorties": 295,
+        "flyingHours": 14967,
+        "nightFlyingHours": 302,
+        "aerialEngagements": 545,
+        "nightAerialEngagements": 26,
+        "claimedEnemyAircraftShotDown": 259,
+        "claimedAtNight": 19,
+        "ownAircraftLost": 55,
+        "cannonAndRocketRoundsExpended": 115188,
+        "sortiesPerClaimReported": 63,
+        "roundsPerClaimReported": 445
+      },
+      {
+        "sourceRow": 15,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "328 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 1734,
+        "nightCombatSorties": 168,
+        "flyingHours": 1929,
+        "nightFlyingHours": 162,
+        "aerialEngagements": 30,
+        "nightAerialEngagements": 41,
+        "claimedEnemyAircraftShotDown": 38,
+        "claimedAtNight": 20,
+        "ownAircraftLost": 5,
+        "cannonAndRocketRoundsExpended": 12180,
+        "sortiesPerClaimReported": 46,
+        "roundsPerClaimReported": 321
+      },
+      {
+        "sourceRow": 16,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "320 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 98,
+        "nightCombatSorties": 21,
+        "flyingHours": 89,
+        "nightFlyingHours": 21,
+        "aerialEngagements": null,
+        "nightAerialEngagements": null,
+        "claimedEnemyAircraftShotDown": null,
+        "claimedAtNight": null,
+        "ownAircraftLost": null,
+        "cannonAndRocketRoundsExpended": null,
+        "sortiesPerClaimReported": null,
+        "roundsPerClaimReported": null
+      },
+      {
+        "sourceRow": 17,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "125 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 8195,
+        "nightCombatSorties": 108,
+        "flyingHours": 7897,
+        "nightFlyingHours": 105,
+        "aerialEngagements": 167,
+        "nightAerialEngagements": 14,
+        "claimedEnemyAircraftShotDown": 40,
+        "claimedAtNight": 8,
+        "ownAircraftLost": 10,
+        "cannonAndRocketRoundsExpended": 108466,
+        "sortiesPerClaimReported": 205,
+        "roundsPerClaimReported": 2712
+      },
+      {
+        "sourceRow": 18,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "148 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 2900,
+        "nightCombatSorties": 157,
+        "flyingHours": 2561,
+        "nightFlyingHours": 147,
+        "aerialEngagements": 180,
+        "nightAerialEngagements": 41,
+        "claimedEnemyAircraftShotDown": 149,
+        "claimedAtNight": 38,
+        "ownAircraftLost": 14,
+        "cannonAndRocketRoundsExpended": 18270,
+        "sortiesPerClaimReported": 19,
+        "roundsPerClaimReported": 123
+      },
+      {
+        "sourceRow": 19,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "36 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 15288,
+        "nightCombatSorties": 163,
+        "flyingHours": 14910,
+        "nightFlyingHours": 162,
+        "aerialEngagements": 859,
+        "nightAerialEngagements": 11,
+        "claimedEnemyAircraftShotDown": 152,
+        "claimedAtNight": 5,
+        "ownAircraftLost": 100,
+        "cannonAndRocketRoundsExpended": 218600,
+        "sortiesPerClaimReported": 101,
+        "roundsPerClaimReported": 1438
+      },
+      {
+        "sourceRow": 20,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "144 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 2087,
+        "nightCombatSorties": 475,
+        "flyingHours": 2170,
+        "nightFlyingHours": 534,
+        "aerialEngagements": 43,
+        "nightAerialEngagements": 22,
+        "claimedEnemyAircraftShotDown": 18,
+        "claimedAtNight": 6,
+        "ownAircraftLost": 3,
+        "cannonAndRocketRoundsExpended": 7215,
+        "sortiesPerClaimReported": 116,
+        "roundsPerClaimReported": 401
+      },
+      {
+        "sourceRow": 21,
+        "groupingAsPrinted": "Frente Occidental PVO",
+        "formationAsPrinted": "Total:",
+        "aggregationType": "section_subtotal",
+        "combatSorties": 47133,
+        "nightCombatSorties": 1434,
+        "flyingHours": 44918,
+        "nightFlyingHours": 1475,
+        "aerialEngagements": 1826,
+        "nightAerialEngagements": 156,
+        "claimedEnemyAircraftShotDown": 658,
+        "claimedAtNight": 97,
+        "ownAircraftLost": 187,
+        "cannonAndRocketRoundsExpended": 480219,
+        "sortiesPerClaimReported": 72,
+        "roundsPerClaimReported": 730
+      },
+      {
+        "sourceRow": 23,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "9 iak",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 21405,
+        "nightCombatSorties": 518,
+        "flyingHours": 18409,
+        "nightFlyingHours": 522,
+        "aerialEngagements": 405,
+        "nightAerialEngagements": 57,
+        "claimedEnemyAircraftShotDown": 372,
+        "claimedAtNight": 21,
+        "ownAircraftLost": 107,
+        "cannonAndRocketRoundsExpended": 440556,
+        "sortiesPerClaimReported": 58,
+        "roundsPerClaimReported": 1184
+      },
+      {
+        "sourceRow": 24,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "10 iak",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 13009,
+        "nightCombatSorties": 244,
+        "flyingHours": 11756,
+        "nightFlyingHours": 195,
+        "aerialEngagements": 151,
+        "nightAerialEngagements": 17,
+        "claimedEnemyAircraftShotDown": 301,
+        "claimedAtNight": 48,
+        "ownAircraftLost": 112,
+        "cannonAndRocketRoundsExpended": 229823,
+        "sortiesPerClaimReported": 43,
+        "roundsPerClaimReported": 764
+      },
+      {
+        "sourceRow": 25,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "2 gv.iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 16882,
+        "nightCombatSorties": 274,
+        "flyingHours": 16181,
+        "nightFlyingHours": 285,
+        "aerialEngagements": 542,
+        "nightAerialEngagements": 13,
+        "claimedEnemyAircraftShotDown": 385,
+        "claimedAtNight": 6,
+        "ownAircraftLost": 135,
+        "cannonAndRocketRoundsExpended": 30780,
+        "sortiesPerClaimReported": 44,
+        "roundsPerClaimReported": 80
+      },
+      {
+        "sourceRow": 26,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "310 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 6543,
+        "nightCombatSorties": 267,
+        "flyingHours": 5404,
+        "nightFlyingHours": 254,
+        "aerialEngagements": 56,
+        "nightAerialEngagements": null,
+        "claimedEnemyAircraftShotDown": 19,
+        "claimedAtNight": null,
+        "ownAircraftLost": 14,
+        "cannonAndRocketRoundsExpended": 17900,
+        "sortiesPerClaimReported": 344,
+        "roundsPerClaimReported": 942
+      },
+      {
+        "sourceRow": 27,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "14 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 530,
+        "nightCombatSorties": 55,
+        "flyingHours": 507,
+        "nightFlyingHours": 43,
+        "aerialEngagements": 8,
+        "nightAerialEngagements": 4,
+        "claimedEnemyAircraftShotDown": 5,
+        "claimedAtNight": null,
+        "ownAircraftLost": 3,
+        "cannonAndRocketRoundsExpended": 1260,
+        "sortiesPerClaimReported": 106,
+        "roundsPerClaimReported": 252
+      },
+      {
+        "sourceRow": 28,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "123 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 70,
+        "nightCombatSorties": null,
+        "flyingHours": 58,
+        "nightFlyingHours": null,
+        "aerialEngagements": null,
+        "nightAerialEngagements": null,
+        "claimedEnemyAircraftShotDown": null,
+        "claimedAtNight": null,
+        "ownAircraftLost": null,
+        "cannonAndRocketRoundsExpended": null,
+        "sortiesPerClaimReported": null,
+        "roundsPerClaimReported": null
+      },
+      {
+        "sourceRow": 29,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "126 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 1064,
+        "nightCombatSorties": 113,
+        "flyingHours": 905,
+        "nightFlyingHours": 97,
+        "aerialEngagements": 30,
+        "nightAerialEngagements": 1,
+        "claimedEnemyAircraftShotDown": 12,
+        "claimedAtNight": 1,
+        "ownAircraftLost": 2,
+        "cannonAndRocketRoundsExpended": 3000,
+        "sortiesPerClaimReported": 89,
+        "roundsPerClaimReported": 250
+      },
+      {
+        "sourceRow": 30,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "127 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": null,
+        "nightCombatSorties": null,
+        "flyingHours": null,
+        "nightFlyingHours": null,
+        "aerialEngagements": null,
+        "nightAerialEngagements": null,
+        "claimedEnemyAircraftShotDown": null,
+        "claimedAtNight": null,
+        "ownAircraftLost": null,
+        "cannonAndRocketRoundsExpended": null,
+        "sortiesPerClaimReported": null,
+        "roundsPerClaimReported": null
+      },
+      {
+        "sourceRow": 31,
+        "groupingAsPrinted": "Frente Sur-Occidental PVO",
+        "formationAsPrinted": "Total:",
+        "aggregationType": "section_subtotal",
+        "combatSorties": 59503,
+        "nightCombatSorties": 1471,
+        "flyingHours": 53220,
+        "nightFlyingHours": 1396,
+        "aerialEngagements": 1192,
+        "nightAerialEngagements": 92,
+        "claimedEnemyAircraftShotDown": 1094,
+        "claimedAtNight": 76,
+        "ownAircraftLost": 373,
+        "cannonAndRocketRoundsExpended": 723319,
+        "sortiesPerClaimReported": 54,
+        "roundsPerClaimReported": 661
+      },
+      {
+        "sourceRow": 33,
+        "groupingAsPrinted": "Frente del Caucaso PVO",
+        "formationAsPrinted": "8 iak",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 1606,
+        "nightCombatSorties": 9,
+        "flyingHours": 1829,
+        "nightFlyingHours": 7,
+        "aerialEngagements": 11,
+        "nightAerialEngagements": null,
+        "claimedEnemyAircraftShotDown": 3,
+        "claimedAtNight": null,
+        "ownAircraftLost": 1,
+        "cannonAndRocketRoundsExpended": 2350,
+        "sortiesPerClaimReported": 535,
+        "roundsPerClaimReported": 783
+      },
+      {
+        "sourceRow": 34,
+        "groupingAsPrinted": "Frente del Caucaso PVO",
+        "formationAsPrinted": "298 iad",
+        "aggregationType": "named_unit_or_formation",
+        "combatSorties": 3937,
+        "nightCombatSorties": 14,
+        "flyingHours": 3810,
+        "nightFlyingHours": 12,
+        "aerialEngagements": 48,
+        "nightAerialEngagements": null,
+        "claimedEnemyAircraftShotDown": 29,
+        "claimedAtNight": null,
+        "ownAircraftLost": 8,
+        "cannonAndRocketRoundsExpended": 26564,
+        "sortiesPerClaimReported": 136,
+        "roundsPerClaimReported": 916
+      },
+      {
+        "sourceRow": 35,
+        "groupingAsPrinted": "Frente del Caucaso PVO",
+        "formationAsPrinted": "Total:",
+        "aggregationType": "section_subtotal",
+        "combatSorties": 5543,
+        "nightCombatSorties": 23,
+        "flyingHours": 5639,
+        "nightFlyingHours": 19,
+        "aerialEngagements": 59,
+        "nightAerialEngagements": 0,
+        "claimedEnemyAircraftShotDown": 32,
+        "claimedAtNight": 0,
+        "ownAircraftLost": 9,
+        "cannonAndRocketRoundsExpended": 28914,
+        "sortiesPerClaimReported": 173,
+        "roundsPerClaimReported": 904
+      },
+      {
+        "sourceRow": 36,
+        "groupingAsPrinted": "Frente del Caucaso PVO",
+        "formationAsPrinted": "Total IA PVO KA",
+        "aggregationType": "overall_total",
+        "combatSorties": 269565,
+        "nightCombatSorties": 7363,
+        "flyingHours": 255696,
+        "nightFlyingHours": 7526,
+        "aerialEngagements": 6787,
+        "nightAerialEngagements": 566,
+        "claimedEnemyAircraftShotDown": 3930,
+        "claimedAtNight": 301,
+        "ownAircraftLost": 1588,
+        "cannonAndRocketRoundsExpended": 6949790,
+        "sortiesPerClaimReported": 69,
+        "roundsPerClaimReported": 1768
+      }
+    ],
+    "printedOverall": {
+      "sourceRow": 36,
+      "groupingAsPrinted": "Frente del Caucaso PVO",
+      "formationAsPrinted": "Total IA PVO KA",
+      "aggregationType": "overall_total",
+      "combatSorties": 269565,
+      "nightCombatSorties": 7363,
+      "flyingHours": 255696,
+      "nightFlyingHours": 7526,
+      "aerialEngagements": 6787,
+      "nightAerialEngagements": 566,
+      "claimedEnemyAircraftShotDown": 3930,
+      "claimedAtNight": 301,
+      "ownAircraftLost": 1588,
+      "cannonAndRocketRoundsExpended": 6949790,
+      "sortiesPerClaimReported": 69,
+      "roundsPerClaimReported": 1768
+    },
+    "publishedOwnAircraftLossesByCalendarYearFromFootnote2": {
+      "1941_Jun_Dec": 662,
+      "1942": 513,
+      "1943": 278,
+      "1944": 131,
+      "1945_Jan_May": 4
+    }
+  },
+  "pvoFighterSortiesByActionMethod": {
+    "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_13.htm",
+    "records": [
+      {
+        "sourceRow": 3,
+        "methodAsPrinted": "Misiones de patrulla",
+        "byYear": {
+          "1941": 59145,
+          "1942": 74410,
+          "1943": 25671,
+          "1944": 12250,
+          "1945": 1213
+        },
+        "total": 172689
+      },
+      {
+        "sourceRow": 5,
+        "methodAsPrinted": "Despegues para la intercepcion desde el estado de alerta \"Espera en el aeródromo\"",
+        "byYear": {
+          "1941": 3173,
+          "1942": 17220,
+          "1943": 10007,
+          "1944": 7626,
+          "1945": 254
+        },
+        "total": 38280
+      },
+      {
+        "sourceRow": 7,
+        "methodAsPrinted": "Escolta",
+        "byYear": {
+          "1941": 1127,
+          "1942": 5292,
+          "1943": 1213,
+          "1944": 5979,
+          "1945": 44
+        },
+        "total": 13655
+      },
+      {
+        "sourceRow": 9,
+        "methodAsPrinted": "Caza libre",
+        "byYear": {
+          "1941": 30,
+          "1942": 43,
+          "1943": 358,
+          "1944": 675,
+          "1945": 60
+        },
+        "total": 1166
+      },
+      {
+        "sourceRow": 11,
+        "methodAsPrinted": "Defensa de las tropas terrestres sobre el campo de batalla, ataques a los aerodromos y a las tropas enemigas, otros metodos de lucha",
+        "byYear": {
+          "1941": 27516,
+          "1942": 9452,
+          "1943": 3355,
+          "1944": 3185,
+          "1945": 167
+        },
+        "total": 43675
+      },
+      {
+        "sourceRow": 13,
+        "methodAsPrinted": "Total",
+        "byYear": {
+          "1941": 90991,
+          "1942": 106417,
+          "1943": 40604,
+          "1944": 29715,
+          "1945": 1738
+        },
+        "total": 269465
+      }
+    ],
+    "printedOverall": {
+      "sourceRow": 13,
+      "methodAsPrinted": "Total",
+      "byYear": {
+        "1941": 90991,
+        "1942": 106417,
+        "1943": 40604,
+        "1944": 29715,
+        "1945": 1738
+      },
+      "total": 269465
+    }
+  },
+  "pvoIndependentTableTotalDiscrepancy": 100,
+  "longRangeADDCombatSortiesByMissionAndYear": {
+    "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_09.htm",
+    "sourceTable": 9,
+    "metricClass": "Long-range aviation sorties BY MISSION, not aircraft or crew deaths",
+    "records": [
+      {
+        "sourceRow": 3,
+        "itemAsPrinted": "Eliminacion de las tropas y armamento enemigo",
+        "byYear": {
+          "1941": 15408,
+          "1942": 20026,
+          "1943": 29416,
+          "1944": 16124,
+          "1945_Jan_May": 7927
+        },
+        "publishedGrandTotal": 88901,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 4,
+        "itemAsPrinted": "Frustracion del transporte ferroviario",
+        "byYear": {
+          "1941": 1346,
+          "1942": 9110,
+          "1943": 27437,
+          "1944": 24134,
+          "1945_Jan_May": 5251
+        },
+        "publishedGrandTotal": 67278,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 5,
+        "itemAsPrinted": "Ataques sobre los aerodromos",
+        "byYear": {
+          "1941": 1506,
+          "1942": 6607,
+          "1943": 8674,
+          "1944": 3275,
+          "1945_Jan_May": 70
+        },
+        "publishedGrandTotal": 20132,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 6,
+        "itemAsPrinted": "Transporte de personas y cargamentos",
+        "byYear": {
+          "1941": null,
+          "1942": 1941,
+          "1943": 5086,
+          "1944": 6054,
+          "1945_Jan_May": 3567
+        },
+        "publishedGrandTotal": 16648,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 7,
+        "itemAsPrinted": "Realizacion de misiones especiales",
+        "byYear": {
+          "1941": 1478,
+          "1942": 698,
+          "1943": 2361,
+          "1944": 3957,
+          "1945_Jan_May": 302
+        },
+        "publishedGrandTotal": 8796,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 8,
+        "itemAsPrinted": "Actuacion sobre los objetivos administrativo-politicos y militares en la retaguardia profunda enemiga",
+        "byYear": {
+          "1941": 366,
+          "1942": 1114,
+          "1943": 1027,
+          "1944": 4466,
+          "1945_Jan_May": null
+        },
+        "publishedGrandTotal": 6973,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 9,
+        "itemAsPrinted": "Destruccion de puertos maritimos militares",
+        "byYear": {
+          "1941": null,
+          "1942": null,
+          "1943": null,
+          "1944": 4564,
+          "1945_Jan_May": 1731
+        },
+        "publishedGrandTotal": 6295,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 10,
+        "itemAsPrinted": "Reconocimiento aereo",
+        "byYear": {
+          "1941": 637,
+          "1942": 137,
+          "1943": 652,
+          "1944": 1197,
+          "1945_Jan_May": 788
+        },
+        "publishedGrandTotal": 3411,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 11,
+        "itemAsPrinted": "Misiones de patrulla e intercepcion de aviones enemigos",
+        "byYear": {
+          "1941": null,
+          "1942": 59,
+          "1943": null,
+          "1944": 289,
+          "1945_Jan_May": 316
+        },
+        "publishedGrandTotal": 664,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 12,
+        "itemAsPrinted": "El bloqueo de aerodromos",
+        "byYear": {
+          "1941": null,
+          "1942": null,
+          "1943": null,
+          "1944": 224,
+          "1945_Jan_May": 163
+        },
+        "publishedGrandTotal": 387,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 13,
+        "itemAsPrinted": "Desembarco aereo de personas y armamento",
+        "byYear": {
+          "1941": null,
+          "1942": null,
+          "1943": 303,
+          "1944": null,
+          "1945_Jan_May": null
+        },
+        "publishedGrandTotal": 303,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 14,
+        "itemAsPrinted": "Total",
+        "byYear": {
+          "1941": 20741,
+          "1942": 39692,
+          "1943": 74956,
+          "1944": 64284,
+          "1945_Jan_May": 20115
+        },
+        "publishedGrandTotal": 219788,
+        "isPublishedTotal": true
+      }
+    ]
+  },
+  "longRangeADDCombatAircraftLossesByTypeAndYear": {
+    "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/06/06_23.htm",
+    "sourceTable": 23,
+    "metricClass": "Long-range aviation combat aircraft losses BY AIRCRAFT MODEL",
+    "records": [
+      {
+        "sourceRow": 2,
+        "itemAsPrinted": "IL-4",
+        "byYear": {
+          "1941": null,
+          "1942": 259,
+          "1943": 306,
+          "1944": 305,
+          "1945_Jan_May": 84
+        },
+        "publishedGrandTotal": 954,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 3,
+        "itemAsPrinted": "Li-2",
+        "byYear": {
+          "1941": null,
+          "1942": 47,
+          "1943": 133,
+          "1944": 169,
+          "1945_Jan_May": 35
+        },
+        "publishedGrandTotal": 384,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 4,
+        "itemAsPrinted": "TB-3",
+        "byYear": {
+          "1941": null,
+          "1942": 65,
+          "1943": 17,
+          "1944": null,
+          "1945_Jan_May": null
+        },
+        "publishedGrandTotal": 82,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 5,
+        "itemAsPrinted": "TB-7",
+        "byYear": {
+          "1941": null,
+          "1942": 8,
+          "1943": 13,
+          "1944": 6,
+          "1945_Jan_May": null
+        },
+        "publishedGrandTotal": 27,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 6,
+        "itemAsPrinted": "Er-2",
+        "byYear": {
+          "1941": null,
+          "1942": 5,
+          "1943": 1,
+          "1944": null,
+          "1945_Jan_May": 1
+        },
+        "publishedGrandTotal": 7,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 7,
+        "itemAsPrinted": "C-47",
+        "byYear": {
+          "1941": null,
+          "1942": 1,
+          "1943": 4,
+          "1944": 2,
+          "1945_Jan_May": null
+        },
+        "publishedGrandTotal": 7,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 8,
+        "itemAsPrinted": "B-25",
+        "byYear": {
+          "1941": null,
+          "1942": 11,
+          "1943": 42,
+          "1944": 60,
+          "1945_Jan_May": 37
+        },
+        "publishedGrandTotal": 150,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 9,
+        "itemAsPrinted": "A-20-G",
+        "byYear": {
+          "1941": null,
+          "1942": null,
+          "1943": null,
+          "1944": 12,
+          "1945_Jan_May": 3
+        },
+        "publishedGrandTotal": 15,
+        "isPublishedTotal": false
+      },
+      {
+        "sourceRow": 10,
+        "itemAsPrinted": "Total:",
+        "byYear": {
+          "1941": null,
+          "1942": 396,
+          "1943": 516,
+          "1944": 554,
+          "1945_Jan_May": 160
+        },
+        "publishedGrandTotal": 2776,
+        "isPublishedTotal": true
+      }
+    ]
+  }
+}

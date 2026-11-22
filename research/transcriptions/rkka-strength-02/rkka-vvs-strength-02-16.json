@@ -1,0 +1,7241 @@
+{
+  "id": "RKKA-VVS-02-16",
+  "topic": "Naval Aviation VMF, organization snapshots",
+  "formationOrForce": "soviet_vmf",
+  "dateScopeIndex": "1941-1945",
+  "atlasEuropeanScope": "candidate_european",
+  "sourceUrl": "https://www.rkka.es/Estadisticas/VVS_stat/02/02_16.htm",
+  "sourceClass": "secondary_spanish_transcription_of_historical_soviet_staff_material",
+  "archiveReferenceAsPrinted": null,
+  "reviewStatus": "research_only_unchecked_against_original_archives",
+  "nullConvention": "Blank or dash is preserved exactly; neither implies a measured zero.",
+  "columnWarning": "These pages use nonuniform column widths/rowspans; align only after reading their specific headers and footnotes.",
+  "rows": [
+    {
+      "sourceRow": 1,
+      "cells": [
+        {
+          "value": "Denominacion de VVS de las Flotas",
+          "colspan": 2,
+          "rowspan": 3
+        },
+        {
+          "value": "Cantidad de agrupaciones, unidades y destacamentos aereos",
+          "colspan": 42
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "cells": [
+        {
+          "value": "Divisiones {1}",
+          "colspan": 6
+        },
+        {
+          "value": "Regimientos {2}",
+          "colspan": 21
+        },
+        {
+          "value": "Escuadrones especiales {3}",
+          "colspan": 15
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "cells": [
+        {
+          "value": "MTAD"
+        },
+        {
+          "value": "BAD"
+        },
+        {
+          "value": "ShAD"
+        },
+        {
+          "value": "IAD"
+        },
+        {
+          "value": "SAD"
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "MTAP",
+          "colspan": 3
+        },
+        {
+          "value": "BAP",
+          "colspan": 3
+        },
+        {
+          "value": "ShAP",
+          "colspan": 3
+        },
+        {
+          "value": "IAP",
+          "colspan": 3
+        },
+        {
+          "value": "RAP",
+          "colspan": 3
+        },
+        {
+          "value": "SAP",
+          "colspan": 3
+        },
+        {
+          "value": "Total",
+          "colspan": 3
+        },
+        {
+          "value": "BAE"
+        },
+        {
+          "value": "NBAE"
+        },
+        {
+          "value": "ShAE",
+          "colspan": 3
+        },
+        {
+          "value": "IAE",
+          "colspan": 3
+        },
+        {
+          "value": "RAE",
+          "colspan": 3
+        },
+        {
+          "value": "KAE"
+        },
+        {
+          "value": "Total",
+          "colspan": 3
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "cells": [
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "8",
+          "colspan": 3
+        },
+        {
+          "value": "9",
+          "colspan": 3
+        },
+        {
+          "value": "10",
+          "colspan": 3
+        },
+        {
+          "value": "11",
+          "colspan": 3
+        },
+        {
+          "value": "12",
+          "colspan": 3
+        },
+        {
+          "value": "13",
+          "colspan": 3
+        },
+        {
+          "value": "14",
+          "colspan": 3
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "17",
+          "colspan": 3
+        },
+        {
+          "value": "18",
+          "colspan": 3
+        },
+        {
+          "value": "19",
+          "colspan": 3
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "21",
+          "colspan": 3
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "cells": [
+        {
+          "value": "Al comienzo de la Gran Guerra Patriotica 1941-1945 (a fecha de 22 de junio de 1941) {6}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja {8}",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro {9}",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "cells": [
+        {
+          "value": "Al comienzo de la segunda etapa de la campaña de verano-otoño de 1941 (a fecha de 10 de julio) {10}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "29"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "cells": [
+        {
+          "value": "Al comienzo de la tercera etapa de la campaña verano-otoño de 1941 (a fecha de 1 de octubre) {11}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "32"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de invierno 1941-1942 (a fecha de 5 de diciembre de 1941) {12}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña verano-otoño de 1942 (a fecha de 1 de mayo) {14}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 4
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "19"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "cells": [
+        {
+          "value": "Al comienzo de la operación estrategica defensiva en direccion Sur-Oeste, 1942 (a fecha de 1 de julio) {15}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 4
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "24"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "cells": [
+        {
+          "value": "Al comienzo de la segunda etapa de la guerra, 1942 (a fecha de 18 de noviembre) {16}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 4
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de verano-otoño de 1943 (a fecha de 1 de julio) {18}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja",
+          "colspan": 4
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2{19}"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro",
+          "colspan": 2
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "14"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "35"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 45,
+      "cells": [
+        {
+          "value": "Al comienzo de la tercera etapa de la guerra, 1944 (a fecha de 1 de enero) {20}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 46,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1{21}"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 47,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 48,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 49,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "26"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 50,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña de verano-otoño de 1944 (a fecha de 1 de junio) {22}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2{23}*"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 52,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 53,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 54,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "44"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "28"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 55,
+      "cells": [
+        {
+          "value": "Al comienzo de la campaña en Europa de 1945 (A fecha de 1 de enero) {24}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 56,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 57,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 58,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 59,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "30"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 60,
+      "cells": [
+        {
+          "value": "Al final de la Gran Guerra Patriotica, 1945 (a fecha de 10 de mayo) {25}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 61,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Norte"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 62,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Baltico de la Bandera Roja"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 63,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS Flota del Mar Negro"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "13"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 64,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "20"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "17"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "40"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "37"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "9"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "sourceRow": 65,
+      "cells": [
+        {
+          "value": "Al final de la Gran Guerra Patriotica, 1945 (a fecha de 10 de mayo) {26}",
+          "colspan": 44
+        }
+      ]
+    },
+    {
+      "sourceRow": 66,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS de la Flota del Pacifico"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "11"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "23"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "16"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 67,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "VVS de la Flotilla del Norte-Pacifico",
+          "colspan": 5
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "8"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        }
+      ]
+    },
+    {
+      "sourceRow": 68,
+      "cells": [
+        {
+          "value": ""
+        },
+        {
+          "value": "Total"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "6"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "15"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": ""
+        },
+        {
+          "value": "31"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "22"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "/"
+        },
+        {
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}
