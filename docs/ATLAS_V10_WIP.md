@@ -1,6 +1,6 @@
 # Atlas v10 WIP · All-campaign evidence review
 
-**Status:** All 20 campaign dossiers reviewed and published, including the new Narvik and Big Week studies. Formation and airfield histories are next. **Owner:** Codex. **Starting revision:** [v9.9 · From Malta to Messina](https://github.com/hound83/ww2-airwar/commit/5ad240057d285eded7b4005ff7f0f356d0850580). The release used for the coverage baseline was v9.9. The [second-sweep roadmap](#second-sweep-roadmap) sets the proposed delivery order and research questions. This candidate starts the evidence review milestone on the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md).
+**Status:** All 20 campaign dossiers reviewed and published, including the new Narvik and Big Week studies. Formation and airfield histories have shipped. The six operational balance studies are next. **Owner:** Codex. **Starting revision:** [v9.9 · From Malta to Messina](https://github.com/hound83/ww2-airwar/commit/5ad240057d285eded7b4005ff7f0f356d0850580). The release used for the coverage baseline was v9.9. The [second-sweep roadmap](#second-sweep-roadmap) sets the proposed delivery order and research questions. This candidate starts the evidence review milestone on the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md).
 
 ## Coverage baseline
 
@@ -48,6 +48,8 @@ At baseline, Dieppe had a single dated entry and no dossier chapters. Bodenplatt
 
 **Baseline inputs:** [Campaign registry](../dist/grand-air-war-v77-campaigns.js) · [Normandy narrative](../dist/normandy-1944-story.js) · [Atlas audit test](../tests/grand-air-war-v80-audit.cjs).
 
+- [x] Publish linked formation and station histories across all six flagships. The [formation histories](https://hound83.github.io/ww2-airwar/formations.html) now cover 26 units, 82 dated entries and 41 named operating stations across the six flagships, with a follow-through to Berlin. [Release PR #67](https://github.com/hound83/ww2-airwar/pull/67) · [Published revision](https://github.com/hound83/ww2-airwar/commit/e59c4ca2c528a940c0f74c05b9814d84ef048045) · [Live desktop and mobile QA](https://github.com/hound83/ww2-airwar/actions/runs/44970254904).
+
 ## Second-sweep roadmap
 
 Proposed 21 November 2026.
@@ -56,7 +58,7 @@ Proposed 21 November 2026.
 
 **Milestone 2 shipped.** [PR #65](https://github.com/hound83/ww2-airwar/pull/65) added an evidence route for every campaign, up from two. The [20-row campaign review](https://github.com/hound83/ww2-airwar/blob/38afa4d75a169a3e44af1b51aaca6ab9fb24a8a1/docs/CAMPAIGN_EVIDENCE_REVIEW.md) names the historical effect, reporting source, dated case and remaining question. The [candidate ledger](https://github.com/hound83/ww2-airwar/blob/38afa4d75a169a3e44af1b51aaca6ab9fb24a8a1/research/transcriptions/campaign-candidate-reconciliation.csv) records 38 accepted, 272 duplicates or superseded records, nine differences of scope and one unverified population across 320 rows. [Narvik](https://hound83.github.io/ww2-airwar/narvik.html#anchorage) compares 18 reporting days, and [Big Week](https://hound83.github.io/ww2-airwar/big-week.html#february-24) follows Eighth and Fifteenth Air Force operations, RAF night raids and the evidence of damage. [PR #66](https://github.com/hound83/ww2-airwar/pull/66) made the shortcut to sourced figures work consistently on touch and keyboard and retained the searched campaign in a new tab. The [live browser check](https://github.com/hound83/ww2-airwar/actions/runs/44960727157) exercised all 20 routes at 390 and 1440 pixels against the [deployed revision](https://github.com/hound83/ww2-airwar/commit/38afa4d75a169a3e44af1b51aaca6ab9fb24a8a1).
 
-**Next milestone.** Follow 20 formation histories across the six flagship campaigns. Each flagship gets a documented journey from a station to an operation and its consequences. Malta to Sicily is a natural first thread because the Atlas already follows No. 92 Squadron to Pachino and the ships it covered.
+**Next milestone.** Publish six operational balance studies together. Connect effort, readiness, losses and replacement to what forces could do afterwards. Show the reporting periods and populations, the observed effect and the open question in each study.
 
 **Start with the campaign outcome.** In Sicily, ask what difference fighters made to the invasion fleet, the armies ashore and the Axis withdrawal. The date at which a unit flew from a captured strip helps explain how it provided cover. At Dieppe, ask what air cover achieved for the ships and troops during the raid. For each campaign, select a question that fits the decisions and experiences of the people involved. Seek evidence from those receiving or opposing an operation as well as from those who flew it.
 
@@ -75,7 +77,7 @@ Proposed 21 November 2026.
 | --- | --- | --- |
 | 1 · Sicily and Dieppe | Understand how fighters influenced the battle for Sicily and what air cover achieved at Dieppe. | One sourced Sicily field-to-formation journey, the two Biscari accounts, and a Dieppe account covering objective, cover, withdrawal and losses. A direct link and return journey work for each. |
 | 2 · Review all 20 dossiers | Each campaign explains what air operations changed, shows where their influence fell short and identifies its most important open question. | A 20-row review names the campaign question, the observed effect and who reported it, the dated case and source, the entry point or specialist destination, and the principal gap. Reconcile PRs [#20](https://github.com/hound83/ww2-airwar/pull/20) and [#15](https://github.com/hound83/ww2-airwar/pull/15) row by row. Record accepted, duplicate, differently scoped and unverified items. |
-| 3 · Follow formations and airfields across campaigns | Read a unit's history through successive stations and operations. | Use the existing roadmap target of 20 substantive histories across six flagships. Include one traceable journey per flagship. Cite station, readiness and actual operation separately. Link across campaigns wherever a dated record supports continuity. |
+| 3 · Follow formations and airfields across campaigns | Read a unit's history through successive stations and operations. | Shipped 26 histories and 41 stations across six flagship campaigns. All six journeys from a campaign through a unit, station and dated record were verified on desktop and mobile. |
 | 4 · Explain the European air war | Move from a Europe-wide chapter into a worked study and back to the wider outcome. | Retain the six studies and six-to-eight chapters in the [v10 roadmap](ATLAS_ROADMAP_TO_V10.md). Start with Malta–Sicily operational effort and German production, fuel and pilot availability. Provide comparable series, source passages and exports for each study. |
 
 ### Second-sweep research queue
