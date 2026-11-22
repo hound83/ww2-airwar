@@ -1,6 +1,6 @@
 # European Air War Atlas roadmap through v10
 
-Updated 21 November 2026 after the second-sweep campaign review. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
+Updated 22 November 2026 after the formation and airfield milestone. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
 
 ## What has shipped
 
@@ -15,19 +15,20 @@ Updated 21 November 2026 after the second-sweep campaign review. This revises th
 | Malta, v9.8 | Sixteen mapped cases link Spitfire deliveries, airfield defence and convoy outcomes. The Atlas resolves the Spotter carrier and records the remaining delivery, loss and sortie-count discrepancies. | Extend squadron and Axis unit daily records and reconcile the Bellows count. [Explorer](https://hound83.github.io/ww2-airwar/malta.html) · [Audit](../research/sources/atlas-malta-air-campaign-2026-11-13.md) |
 | Sicily, v9.9 | Nineteen dated cases link offshore landing cover, airborne missions, usable airfields, formation moves and the Messina evacuation. | Extend matched Axis unit records and reconcile the Biscari occupation dates. [Explorer](https://hound83.github.io/ww2-airwar/sicily.html) · [Audit](../research/sources/atlas-sicily-air-campaign-2026-11-14.md) |
 | Second sweep, campaigns | All 20 dossiers connect a historical question to an observed effect, a dated case, a source and an open question. Narvik and Big Week have dedicated studies. | Follow up the receiving-side and opposing records identified in the [campaign review](CAMPAIGN_EVIDENCE_REVIEW.md). The [candidate ledger](../research/transcriptions/campaign-candidate-reconciliation.csv) records the disposition of all 320 rows. |
+| Formation and airfield histories | [26 units, 82 dated entries and 41 stations](../formations.html) across all six flagships, with a follow-through to Berlin. | [Source audit and outstanding receiving-side records](../research/sources/formation-histories.md). |
 
-Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. The six flagship depth targets, reusable formation histories, operational balance studies and connected European history remain ahead.
+Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. Further flagship research, operational balance studies and the connected European history remain ahead.
 
 ## Recommended next milestone
 
-**Formation and airfield histories.** Connect 20 substantive unit histories across Normandy, Britain, Bagration, Reich defence, Malta and Sicily. For each flagship, follow at least one unit from its station through a dated operation to the people or forces it affected. Distinguish arrival, readiness and actual sorties. No. 92 Squadron's move from Malta to Pachino already provides a starting point.
+**Operational balance across six campaigns.** Build the six studies together. For each, connect a period of effort or losses to evidence of what a force could do afterwards. Start with the Dives reconnaissance, Northolt repairs, Gotha losses, the Minsk discrepancy, Malta/Sicily air cover and German replacement capacity. Publish the evidence definitions, compatible comparisons and downloadable rows with the studies.
 
 ## Following milestones
 
 | Order | Reader outcome | Completion evidence |
 | --- | --- | --- |
 | 2 · Flagship depth and all-entry review | Review evidence and navigation across the six flagships and improve the remaining campaign entries. | Normandy, Battle of Britain, Bagration, Defence of the Reich, Malta and Sicily have deep, linked accounts. All 20 entries explain situation, objectives, participants, sequence, consequences and sources. The [row-level review](../research/sources/campaign-candidates-second-sweep.md) reconciles the bilateral and Narvik candidates. The open questions in each dossier guide further flagship research. |
-| 3 · Formation and airfield histories | Trace a dated formation through its equipment, stations and operations. | Reuse the data relationships tested in Bodenplatte and Bagration. Aim for 20 substantive histories across the six flagships, with dated deployments and a traceable formation journey in each. |
+| 3 · Formation and airfield histories | Trace a dated formation through its equipment, stations and operations. | Published 26 sourced histories with linked operating stations and six flagship reading routes. The 16th Air Army continues to Berlin. |
 | 4 · Operational balance studies | Use the records to answer questions about effort, losses, readiness, replacement and constraints. | Six worked studies with source definitions, compatible comparisons and inspectable exports. See study questions below. |
 | 5 · v10, connected European air war | Move from the wider history into a campaign, operation, dated map and formation or source, then return to the wider context. | Six to eight Europe-wide chapters, working routes through all 20 campaigns, six flagship journeys, six evidence studies and verified desktop/mobile publication. |
 

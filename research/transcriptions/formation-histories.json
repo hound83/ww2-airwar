@@ -1,0 +1,1483 @@
+{
+  "campaigns": {
+    "sicily": {
+      "name": "Sicily",
+      "period": "1943",
+      "question": "How did fighters influence the landings and the advance inland?"
+    },
+    "malta": {
+      "name": "Malta",
+      "period": "1941–42",
+      "question": "How did the island turn delivered fighters into a working defence?"
+    },
+    "britain": {
+      "name": "Battle of Britain",
+      "period": "1940",
+      "question": "How did pilots and ground crews keep squadrons fighting through repeated raids?"
+    },
+    "normandy": {
+      "name": "Normandy",
+      "period": "1944",
+      "question": "What support did ground forces receive, and what did crews bring back as evidence?"
+    },
+    "reichdefense": {
+      "name": "Defence of the Reich",
+      "period": "1943–44",
+      "question": "What did the bombers, escorts and interceptors accomplish on the same operations?"
+    },
+    "bagration": {
+      "name": "Operation Bagration",
+      "period": "1944",
+      "question": "What did aviation contribute to the advance, and what happened to the units that withdrew?"
+    },
+    "berlin": {
+      "name": "Berlin",
+      "period": "1945",
+      "question": "What happened when the 16th Air Army supported infantry at Alt-Malisch?"
+    }
+  },
+  "sources": {
+    "b-army1": {
+      "title": "D. A. Dyakov, The 1st Air Army’s contribution to the liberation of Belarus",
+      "url": "https://military.wikireading.ru/h8TBm5FnI7"
+    },
+    "b-army16": {
+      "title": "16th Air Army history, chapter 3",
+      "url": "https://militera.lib.ru/h/16va/03.html"
+    },
+    "b-army3": {
+      "title": "Third Air Army history, chapter 4",
+      "url": "https://biography.wikireading.ru/256259"
+    },
+    "b-french": {
+      "title": "GC 3 Normandie, journal de marche",
+      "url": "https://bibert.fr/Joseph_Bibert_fichiers/Gabriel%20MERTZISEN_fichiers/Normandie%20Niemen%20JM.pdf"
+    },
+    "b-jg3returns": {
+      "title": "III./JG 51 aircraft holdings and movements",
+      "url": "https://www.ww2.dk/oob/bestand/jagd/biiijg51.html"
+    },
+    "b-jg51": {
+      "title": "Michael Holm, Jagdgeschwader 51",
+      "url": "https://www.ww2.dk/air/jagd/jg51.htm"
+    },
+    "b-memorial": {
+      "title": "Mémorial Normandie-Niémen, second campaign",
+      "url": "https://memorial-normandie-niemen.fr/deuxieme-campagne/"
+    },
+    "b-sg10": {
+      "title": "Michael Holm, Schlachtgeschwader 10",
+      "url": "https://www.ww2.dk/air/attack/sg10.htm"
+    },
+    "b-sg1returns": {
+      "title": "I./SG 10 aircraft holdings and movements",
+      "url": "https://asisbiz.com/Luftwaffe/bisg10.html"
+    },
+    "berlin16": {
+      "title": "16th Air Army history · Berlin operation",
+      "url": "https://militera.lib.ru/h/16va/05.html"
+    },
+    "can": {
+      "title": "History - Battle of Britain - Royal Canadian Air Force - Canada.ca",
+      "url": "https://www.canada.ca/en/air-force/services/history-heritage/battle-britain/timeline.html"
+    },
+    "can430": {
+      "title": "No.430 Squadron (RCAF)) during the Second World War",
+      "url": "https://www.historyofwar.org/air/units/RCAF/430_wwII.html"
+    },
+    "czech": {
+      "title": "Czech Ministry of Defence · Czech airmen in the Battle of Britain",
+      "url": "https://www.mo.gov.cz/assets/en/ministry-of-defence/newsroom/publication/arewue2_2015.pdf"
+    },
+    "dux": {
+      "title": "Imperial War Museums · Duxford Operations Block",
+      "url": "https://www.iwm.org.uk/sites/default/files/files/2020-09/OPS_BLOCK_Largeprint.pdf"
+    },
+    "grafton": {
+      "title": "384th Bombardment Group Museum · Group history",
+      "url": "https://384thbombardmentgroupmuseum.org.uk/discover/about-the-384th"
+    },
+    "grott": {
+      "title": "Grottaglie Italy - The 449th Bomb Group(H)",
+      "url": "https://449th.com/grottaglie-italy/"
+    },
+    "m-hagueAir": {
+      "title": "Arnold Hague · The Supply of Malta, aircraft reinforcements",
+      "url": "https://www.naval-history.net/xAH-MaltaSupply02.htm"
+    },
+    "missions332": {
+      "title": "Table of 332d Fighter Group Missions for the Fifteenth Air Force",
+      "url": "https://15thaf.org/XV%20FC/306th%20FW/332nd%20FG/PDFs/332nd%20Fighter%20Group%20mission%20chart.pdf"
+    },
+    "nelson": {
+      "title": "HMS Nelson, British battleship, WW2",
+      "url": "https://www.naval-history.net/xGM-Chrono-01BB-Nelson.htm"
+    },
+    "orb40": {
+      "title": "Form 540 Oct 1939- Sept 1940 | 92 Squadron",
+      "url": "https://www.92-squadron.com/general-5-1"
+    },
+    "pol": {
+      "title": "Polish No. 303 Squadron and the Hurricane 80K - RAF Museum",
+      "url": "https://www.rafmuseum.org.uk/blog/polish-no-303-squadron-and-the-hurricane-80k/"
+    },
+    "r-bg384Aug": {
+      "title": "384th Bomb Group archive · 17 August 1943",
+      "url": "https://www.384thbombgroup.com/_content/_pages/One384thMission.php?MissionKey=17"
+    },
+    "ramitelli": {
+      "title": "Air Force Historical Research Agency · Tuskegee Airmen Chronology",
+      "url": "https://media.defense.gov/2025/Jun/12/2003737849/-1/-1/0/TUSKEGEE%20AIRMEN%20CHRONOLOGY.PDF"
+    },
+    "s-nataf": {
+      "title": "Northwest African Tactical Air Force · campaign report",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-by-northwest-african-tactical-air-force-on-operations-in-the-capture-of-sicily/"
+    },
+    "s-orb92": {
+      "title": "No. 92 Squadron · published Form 540 transcription",
+      "url": "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942"
+    },
+    "s-raf": {
+      "title": "RAF Air Historical Branch · Sicilian Campaign, June–August 1943",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/"
+    },
+    "uk185": {
+      "title": "No. 185 Squadron (RAF) during the Second World War",
+      "url": "https://www.historyofwar.org/air/units/RAF/185_wwII.html"
+    },
+    "uk249": {
+      "title": "No. 249 Squadron (RAF) during the Second World War",
+      "url": "https://www.historyofwar.org/air/units/RAF/249_wwII.html"
+    },
+    "uk601": {
+      "title": "No. 601 Squadron (RAF) during the Second World War",
+      "url": "https://www.historyofwar.org/air/units/RAF/601_wwII.html"
+    },
+    "uk603": {
+      "title": "No. 603 Squadron (RAF) during the Second World War",
+      "url": "https://www.historyofwar.org/air/units/RAF/603_wwII.html"
+    },
+    "us406": {
+      "title": "406th Fighter Group - WWII - World War II - Army Air Forces - Army Air Corps Museum",
+      "url": "https://www.armyaircorpsmuseum.org/406th_Fighter_Group.cfm"
+    },
+    "us445": {
+      "title": "445th Bombardment Group - WWII - World War II - Army Air Forces - Army Air Corps Museum",
+      "url": "https://www.armyaircorpsmuseum.org/445th_Bombardment_Group.cfm"
+    },
+    "w-aafCobra": {
+      "title": "Craven and Cate · The Army Air Forces in World War II, vol. III, ch. 8",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/III/AAF-III-8.html"
+    },
+    "w-afhraMunich": {
+      "title": "AFHRA study of the 332d Fighter Group’s escorted bomber losses",
+      "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/AFD-141118-047.pdf"
+    },
+    "w-bg384Caen": {
+      "title": "384th Bomb Group, Mission 129",
+      "url": "https://www.384thbombgroup.com/_content/_pages/One384thMission.php?MissionKey=138"
+    },
+    "w-bg416m100": {
+      "title": "416th Bomb Group archive · Mission 100",
+      "url": "https://www.416th.com/missions/mission100.html"
+    },
+    "w-bg416m101": {
+      "title": "416th Bomb Group archive · Mission 101",
+      "url": "https://www.416th.com/missions/mission101.html"
+    },
+    "w-bg416m103": {
+      "title": "416th Bomb Group archive · Mission 103",
+      "url": "https://www.416th.com/missions/mission103.html"
+    },
+    "w-bg416m105": {
+      "title": "416th Bomb Group archive · Mission 105",
+      "url": "https://www.416th.com/missions/mission105.html"
+    },
+    "w-bg416m106": {
+      "title": "416th Bomb Group archive · Mission 106",
+      "url": "https://www.416th.com/missions/mission106.html"
+    },
+    "w-group445": {
+      "title": "445th Bomb Group · Mission 28",
+      "url": "https://445bg.org/mission-28.html"
+    },
+    "w-group449": {
+      "title": "449th Bomb Group · Big Week mission narrative",
+      "url": "https://449th.com/significant-missions/"
+    },
+    "w-rafBreakout": {
+      "title": "RAF AHB · Liberation of North-West Europe, vol. IV",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/liberation-of-north-west-europe-vol-iv-the-breakout-and-advance-to-the-lower-rhine-12-jun-30-sep-1944/"
+    },
+    "w-zgDiary": {
+      "title": "III./ZG 26 · Major Kogler’s Big Week diary",
+      "url": "https://aviationtrails.co.uk/luftwaffe-pages/luftwaffe-diaries-big-week/"
+    }
+  },
+  "units": [
+    {
+      "id": "raf-92",
+      "name": "No. 92 Squadron RAF",
+      "role": "Spitfire fighter squadron",
+      "campaigns": [
+        "britain",
+        "sicily"
+      ],
+      "contribution": "In Kent the squadron intercepted raids. In Sicily it supplied cover over the beaches and then for a named naval force. Its diary lets us follow the change in work across individual days.",
+      "events": [
+        {
+          "date": "1940-09-09",
+          "place": "Biggin Hill",
+          "text": "The squadron intercepted fighters close to its airfield. Two pilots were wounded and a third returned in a damaged aircraft.",
+          "source": "orb40",
+          "locator": "Biggin Hill, 9 September"
+        },
+        {
+          "date": "1943-07-13",
+          "place": "Luqa to Pachino",
+          "text": "Eleven pilots patrolled the beaches on the way to their new field. The day's 41 sorties include flights from both sides of the move.",
+          "source": "s-orb92",
+          "locator": "Form 540, 13 July"
+        },
+        {
+          "date": "1943-07-14",
+          "place": "Pachino",
+          "text": "Two patrols preceded the arrival of the ground party. A damaged Spitfire came back on the second patrol and three more patrols followed.",
+          "source": "s-orb92",
+          "locator": "Form 540, 14 July"
+        },
+        {
+          "date": "1943-07-16",
+          "place": "Off Syracuse",
+          "text": "Eight aircraft covered shipping. The squadron identified Nelson and Rodney and associated them with a bombardment of Catania that evening.",
+          "source": "s-orb92",
+          "locator": "Form 540, 16 July"
+        },
+        {
+          "date": "1943-07-16/17",
+          "place": "Force H off Sicily",
+          "text": "Nelson’s ship chronology places Rodney back with Force H on the 16th and Nelson’s bombardment after the torpedoing of Indomitable early on the 17th. The two accounts agree on the ships’ presence but differ on the sequence.",
+          "source": "nelson",
+          "locator": "Service chronology, July 1943, 14th–20th"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Biggin Hill",
+          "period": "September 1940",
+          "source": "orb40",
+          "locator": "September station heading"
+        },
+        {
+          "place": "Luqa",
+          "period": "13 July 1943 departure",
+          "source": "s-orb92",
+          "locator": "13 July"
+        },
+        {
+          "place": "Pachino",
+          "period": "13–16 July 1943",
+          "source": "s-orb92",
+          "locator": "13–16 July"
+        },
+        {
+          "place": "Cassibile",
+          "period": "17 July 1943",
+          "source": "s-orb92",
+          "locator": "17 July station heading"
+        }
+      ],
+      "limit": "The diary establishes the protection task. Neither account measures attacks prevented or proves that the patrol enabled a particular salvo.",
+      "href": "sicily.html?case=pachino-shipping#case-detail"
+    },
+    {
+      "id": "us-31fg",
+      "name": "31st Fighter Group",
+      "role": "USAAF Spitfire group",
+      "campaigns": [
+        "sicily"
+      ],
+      "contribution": "The group provided western landing cover from Gozo, then followed the advance across Sicily. Three different records date the transition at Ponte Olivo.",
+      "events": [
+        {
+          "date": "1943-07-10",
+          "place": "Gozo and the western beaches",
+          "text": "The group's Spitfires flew assault cover from Gozo. The naval report describes uneven cover across the American sectors.",
+          "source": "s-raf",
+          "locator": "Preparation of Tactical Bases and Western Task Force Landings"
+        },
+        {
+          "date": "1943-07-13",
+          "place": "Ponte Olivo",
+          "text": "The RAF narrative dates the group's arrival to 13 July, the day after the infantry took the field.",
+          "source": "s-raf",
+          "locator": "The Landing of XII Air Support Command"
+        },
+        {
+          "date": "1943-07-15/16",
+          "place": "Ponte Olivo",
+          "text": "The tactical air force lists operational use on 15 July and the 31st stationed there on the 16th.",
+          "source": "s-nataf",
+          "locator": "Appendices H and I, printed pp. 157–158"
+        },
+        {
+          "date": "1943-07-27",
+          "place": "Termini",
+          "text": "The group moved to the north coast under XII Air Support Command.",
+          "source": "s-raf",
+          "locator": "XII Air Support Command after 24 July"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Gozo",
+          "period": "Opening landings, July 1943",
+          "source": "s-raf",
+          "locator": "Preparation of Tactical Bases"
+        },
+        {
+          "place": "Ponte Olivo",
+          "period": "Listed 16 July 1943",
+          "source": "s-nataf",
+          "locator": "Appendix I, p. 158"
+        },
+        {
+          "place": "Termini",
+          "period": "27 July 1943",
+          "source": "s-raf",
+          "locator": "XII Air Support Command"
+        }
+      ],
+      "limit": "The records date arrival, field readiness and unit presence separately. None gives a daily group total for protection over the beaches.",
+      "href": "sicily.html?case=ponteolivo#case-detail"
+    },
+    {
+      "id": "us-33fg",
+      "name": "33rd Fighter Group",
+      "role": "USAAF P-40 fighter group",
+      "campaigns": [
+        "sicily"
+      ],
+      "contribution": "Pantelleria put American fighters within reach of the western landings. The move to Licata brought the group to the invasion coast while Axis aircraft were still attacking it.",
+      "events": [
+        {
+          "date": "1943-07-10",
+          "place": "Pantelleria and the western beaches",
+          "text": "The group provided P-40 cover for the landings. The naval assessment of patrol coverage covers several fields and formations.",
+          "source": "s-raf",
+          "locator": "Western Task Force Landings and XII Air Support Command"
+        },
+        {
+          "date": "1943-07-16",
+          "place": "Licata",
+          "text": "The group moved from Pantelleria to Licata. Axis aircraft attacked Licata and Ponte Olivo that night, with little reported damage.",
+          "source": "s-raf",
+          "locator": "The Landing of XII Air Support Command, 16 July"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Pantelleria",
+          "period": "Opening landings, July 1943",
+          "source": "s-raf",
+          "locator": "Western Task Force Landings"
+        },
+        {
+          "place": "Licata",
+          "period": "16 July 1943",
+          "source": "s-raf",
+          "locator": "XII Air Support Command, 16 July"
+        }
+      ],
+      "limit": "The group supplied cover even while ships were hit. The theatre-wide cover rate cannot be assigned to its P-40s.",
+      "href": "sicily.html?case=licata#case-detail"
+    },
+    {
+      "id": "raf-244",
+      "name": "No. 244 Wing RAF",
+      "role": "Desert Air Force fighter wing",
+      "campaigns": [
+        "sicily"
+      ],
+      "contribution": "The wing kept aircraft ready on the island while signals, plotting and servicing parties were still arriving. A subordinate squadron’s diary shows what that organization delivered.",
+      "events": [
+        {
+          "date": "1943-07-13",
+          "place": "Pachino",
+          "text": "The flying echelon landed after patrols. Six aircraft were held ready for local defence, and squadron parties helped service the Spitfire IXs.",
+          "source": "s-raf",
+          "locator": "The First Fighter Wing in Sicily, 13 July, PDF p. 66"
+        },
+        {
+          "date": "1943-07-14",
+          "place": "Pachino",
+          "text": "The field return dates operational use to 14 July. No. 92 Squadron's daily account records five patrols while personnel arrived.",
+          "source": "s-orb92",
+          "locator": "Form 540, 14 July; field status in NATAF appendix H"
+        },
+        {
+          "date": "1943-07-16",
+          "place": "Syracuse approaches",
+          "text": "No. 92 Squadron supplied eight aircraft for shipping cover. This identifies one unit's contribution within the wing.",
+          "source": "s-orb92",
+          "locator": "Form 540, 16 July"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Pachino",
+          "period": "13–16 July 1943",
+          "source": "s-raf",
+          "locator": "The First Fighter Wing in Sicily"
+        }
+      ],
+      "limit": "The six aircraft on local readiness and the eight on a later squadron patrol describe different tasks and dates.",
+      "href": "sicily.html?case=pachino-operational#case-detail"
+    },
+    {
+      "id": "raf-249",
+      "name": "No. 249 Squadron RAF",
+      "role": "Hurricane and Spitfire fighter squadron",
+      "campaigns": [
+        "britain",
+        "malta"
+      ],
+      "contribution": "The squadron carried its air-defence role from southern England to Malta, where it operated the first successful Spitfire delivery.",
+      "events": [
+        {
+          "date": "1940-08-16",
+          "place": "Southern England",
+          "text": "Two days after moving to Boscombe Down, Flight Lieutenant Nicolson attacked during the fighting despite his Hurricane catching fire. He survived and received the Victoria Cross.",
+          "source": "uk249",
+          "locator": "Battle of Britain narrative, 14–16 August"
+        },
+        {
+          "date": "1940-09-01",
+          "place": "North Weald",
+          "text": "The squadron moved into No. 11 Group and continued defending the London approaches through the attacks on its station.",
+          "source": "uk249",
+          "locator": "North Weald, September 1940"
+        },
+        {
+          "date": "1942-03-07",
+          "place": "Malta",
+          "text": "Eagle flew off 15 Spitfires and all reached Malta. No. 249 operated the first arrivals. A prior attempt had turned back after fuel-system trouble.",
+          "source": "m-hagueAir",
+          "locator": "Spotter and Spotter II, 7 March; see Malta case"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Boscombe Down",
+          "period": "August 1940",
+          "source": "uk249",
+          "locator": "Stations"
+        },
+        {
+          "place": "North Weald",
+          "period": "September 1940–May 1941",
+          "source": "uk249",
+          "locator": "Stations"
+        },
+        {
+          "place": "Ta’ Qali",
+          "period": "May 1941–November 1942",
+          "source": "uk249",
+          "locator": "Stations, Takali"
+        }
+      ],
+      "limit": "Fifteen arrivals count delivered aircraft. The delivery record gives no squadron serviceability or interception total for that day.",
+      "href": "malta.html#spotter"
+    },
+    {
+      "id": "raf-601",
+      "name": "No. 601 Squadron RAF",
+      "role": "Hurricane and Spitfire fighter squadron",
+      "campaigns": [
+        "britain",
+        "malta",
+        "sicily"
+      ],
+      "contribution": "The same squadron designation connects three different jobs: defending English sector stations, reinforcing Malta by carrier and covering the Sicily invasion.",
+      "events": [
+        {
+          "date": "1940-08-19",
+          "place": "Debden",
+          "text": "After defending from Tangmere, the squadron relieved No. 85 at Debden during the attacks on Fighter Command's stations.",
+          "source": "uk601",
+          "locator": "Battle of Britain, 17 June–7 September"
+        },
+        {
+          "date": "1942-04-20",
+          "place": "Malta",
+          "text": "Pilots of Nos. 601 and 603 flew Spitfires from Wasp. Forty-six aircraft reached the island across the delivery, followed by damaging raids on the airfields.",
+          "source": "m-hagueAir",
+          "locator": "Calendar, 20 April; Malta campaign narrative"
+        },
+        {
+          "date": "1943-07",
+          "place": "Luqa to Sicily",
+          "text": "The squadron covered the invasion from Malta and moved to Pachino, then Cassibile, during July.",
+          "source": "uk601",
+          "locator": "Invasion of Sicily narrative and station list"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Tangmere",
+          "period": "July–August 1940",
+          "source": "uk601",
+          "locator": "Stations"
+        },
+        {
+          "place": "Debden",
+          "period": "August–September 1940",
+          "source": "uk601",
+          "locator": "Stations"
+        },
+        {
+          "place": "Luqa",
+          "period": "June–July 1943",
+          "source": "uk601",
+          "locator": "Stations"
+        },
+        {
+          "place": "Pachino",
+          "period": "July 1943",
+          "source": "uk601",
+          "locator": "Stations"
+        },
+        {
+          "place": "Cassibile",
+          "period": "July 1943",
+          "source": "uk601",
+          "locator": "Stations"
+        }
+      ],
+      "limit": "The carrier reported the combined delivery. A separate No. 601 return would be needed to allocate arrivals, damage and subsequent sorties.",
+      "href": "malta.html#calendar"
+    },
+    {
+      "id": "raf-603",
+      "name": "No. 603 Squadron RAF",
+      "role": "Auxiliary Air Force fighter squadron",
+      "campaigns": [
+        "britain",
+        "malta"
+      ],
+      "contribution": "The move to Malta split the squadron. Its flying personnel reinforced island defence while its ground personnel took a different route and serviced other units.",
+      "events": [
+        {
+          "date": "1940-08-27",
+          "place": "Hornchurch",
+          "text": "The move south brought the squadron into sustained combat. Its published history records the loss of 12 pilots and 16 aircraft by 5 September.",
+          "source": "uk603",
+          "locator": "Hornchurch, 27 August–5 September"
+        },
+        {
+          "date": "1942-04-20",
+          "place": "Malta",
+          "text": "Spitfires and flying personnel arrived with Calendar. The ground echelon travelled separately to the Middle East and later Cyprus.",
+          "source": "uk603",
+          "locator": "April–June 1942, separate flying and ground echelons"
+        },
+        {
+          "date": "1942-08-03",
+          "place": "Malta",
+          "text": "The flying element was absorbed into No. 229 Squadron. Following the original number alone would lose sight of those pilots.",
+          "source": "uk603",
+          "locator": "Malta merger, 3 August 1942"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Hornchurch",
+          "period": "August–December 1940",
+          "source": "uk603",
+          "locator": "Stations"
+        }
+      ],
+      "limit": "The shared fly-off total gives no 603-only loss figure. The station list and narrative also differ on the merger year. The dated narrative places it in 1942.",
+      "href": "malta.html#calendar"
+    },
+    {
+      "id": "raf-185",
+      "name": "No. 185 Squadron RAF",
+      "role": "Malta fighter squadron",
+      "campaigns": [
+        "malta",
+        "sicily"
+      ],
+      "contribution": "A locally formed Hurricane squadron became part of the Spitfire defence and later flew across to Sicily from Malta.",
+      "events": [
+        {
+          "date": "1941-04-27",
+          "place": "Malta",
+          "text": "C Flight of No. 251 Squadron supplied the nucleus of the re-formed fighter unit. Hurricanes defended the island from its own airfields.",
+          "source": "uk185",
+          "locator": "Formation and aircraft, April 1941"
+        },
+        {
+          "date": "1942 (late)",
+          "place": "Malta to Sicily",
+          "text": "By the end of the year the squadron was flying offensive sweeps over Sicily after its conversion to Spitfires.",
+          "source": "uk185",
+          "locator": "Combat narrative and aircraft table"
+        },
+        {
+          "date": "1943-07",
+          "place": "Qrendi",
+          "text": "During the invasion of Sicily it supported the landings while based at Qrendi. The station list keeps it on Malta throughout July.",
+          "source": "uk185",
+          "locator": "Invasion paragraph and stations, 5 June–23 September"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Hal Far",
+          "period": "1941–43, shared listing with Takali",
+          "source": "uk185",
+          "locator": "Stations"
+        },
+        {
+          "place": "Ta’ Qali",
+          "period": "1941–43, shared listing with Hal Far",
+          "source": "uk185",
+          "locator": "Stations"
+        },
+        {
+          "place": "Qrendi",
+          "period": "June–September 1943",
+          "source": "uk185",
+          "locator": "Stations"
+        }
+      ],
+      "limit": "The station history dates the operating base. A July operations book is still needed to identify individual patrols and their results.",
+      "href": "sicily.html?case=landing-cover#case-detail"
+    },
+    {
+      "id": "rcaf-1",
+      "name": "No. 1 Squadron RCAF",
+      "role": "Canadian Hurricane fighter squadron",
+      "campaigns": [
+        "britain"
+      ],
+      "contribution": "The Canadian squadron reinforced the defence of London. Three successive scrambles on 27 September show how many aircraft it could put back into the air as the day wore on.",
+      "events": [
+        {
+          "date": "1940-08-17",
+          "place": "Northolt",
+          "text": "The squadron was declared operational after training at Croydon.",
+          "source": "can",
+          "locator": "Timeline, 17 August"
+        },
+        {
+          "date": "1940-08-26",
+          "place": "North Weald and southern England",
+          "text": "Ordered to relieve another unit, it met bombers on its second sortie. It claimed three destroyed and four damaged, lost three Hurricanes and suffered its first fatal combat casualty.",
+          "source": "can",
+          "locator": "Timeline, 26 August"
+        },
+        {
+          "date": "1940-09-27",
+          "place": "London approaches",
+          "text": "The first scramble sent up twelve aircraft, the second eight and the third six. Some of the day's victory claims were shared with other squadrons.",
+          "source": "can",
+          "locator": "Timeline, 27 September"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Croydon",
+          "period": "July 1940, training",
+          "source": "can",
+          "locator": "July timeline"
+        },
+        {
+          "place": "Northolt",
+          "period": "From 17 August 1940",
+          "source": "can",
+          "locator": "17 August"
+        }
+      ],
+      "limit": "The three scramble sizes measure what flew. They do not identify how many aircraft were under repair, or why each pilot missed a later scramble.",
+      "href": "grand-air-war-v80.html?campaign=britain&event=1940-09-15#moment-detail"
+    },
+    {
+      "id": "raf-303",
+      "name": "No. 303 (Polish) Squadron RAF",
+      "role": "Polish Hurricane fighter squadron",
+      "campaigns": [
+        "britain"
+      ],
+      "contribution": "Polish pilots added experienced crews to Fighter Command. Their ground personnel also returned damaged Hurricanes to service in time for the next day's operations.",
+      "events": [
+        {
+          "date": "1940-08-30",
+          "place": "Northolt area",
+          "text": "During a training flight, Ludwik Paszkiewicz engaged an enemy aircraft. The RAF Museum places this encounter before the squadron’s formal operational declaration.",
+          "source": "pol",
+          "locator": "Paszkiewicz training flight, 30 August"
+        },
+        {
+          "date": "1940-08-31",
+          "place": "Northolt",
+          "text": "The squadron was declared operational. Its later victory tally covered 42 days of fighting.",
+          "source": "pol",
+          "locator": "Operational declaration and claims period"
+        },
+        {
+          "date": "1940-09-15/16",
+          "place": "Northolt",
+          "text": "Following the fighting on 15 September, Flying Officer Wiorkiewicz’s ground team restored nine damaged Hurricanes overnight for the next day.",
+          "source": "pol",
+          "locator": "Ground personnel and the night after 15 September"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Northolt",
+          "period": "August–September 1940",
+          "source": "pol",
+          "locator": "Training flight and Battle of Britain account"
+        }
+      ],
+      "limit": "The repair count measures renewed availability. The squadron's victory claims would require matching German losses before assessing destruction.",
+      "href": "grand-air-war-v80.html?campaign=britain&event=1940-09-15#moment-detail"
+    },
+    {
+      "id": "raf-310",
+      "name": "No. 310 (Czechoslovak) Squadron RAF",
+      "role": "Czechoslovak Hurricane fighter squadron",
+      "campaigns": [
+        "britain"
+      ],
+      "contribution": "Pilots assembled at Duxford were flying in defence of No. 11 Group’s airfields by late August. By mid-September they were taking part in larger Duxford formations.",
+      "events": [
+        {
+          "date": "1940-07",
+          "place": "Duxford",
+          "text": "Czechoslovak airmen formed a fighter squadron and trained on Hurricanes before joining the southern air fighting.",
+          "source": "czech",
+          "locator": "Czechoslovak airmen, formation at Duxford"
+        },
+        {
+          "date": "1940-08-26",
+          "place": "Approaches to No. 11 Group airfields",
+          "text": "The Czech account dates the squadron's first combat mission to this raid and credits its members with three enemy aircraft.",
+          "source": "czech",
+          "locator": "First combat mission, 26 August"
+        },
+        {
+          "date": "1940-09-15",
+          "place": "Duxford wing",
+          "text": "Flight Sergeant Bohumir Furst of No. 310 flew twice, once against the morning raid and once in the afternoon. His two flights identify an individual contribution to the larger Duxford effort.",
+          "source": "dux",
+          "locator": "Personal stories, Flight Sergeant Bohumir Furst, 310 Squadron"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Duxford",
+          "period": "July–September 1940",
+          "source": "czech",
+          "locator": "Formation and first mission"
+        }
+      ],
+      "limit": "The five-squadron claim cannot establish No. 310’s share or the German losses on 15 September.",
+      "href": "grand-air-war-v80.html?campaign=britain&event=1940-09-15#moment-detail"
+    },
+    {
+      "id": "us-416bg",
+      "name": "416th Bombardment Group (Light)",
+      "role": "USAAF Ninth Air Force light bombers",
+      "campaigns": [
+        "normandy"
+      ],
+      "contribution": "The group's reports distinguish targets attacked, damage later seen in photographs and an entire mission that returned without bombing. Those differences matter when judging support for the ground advance.",
+      "events": [
+        {
+          "date": "1944-07-18",
+          "place": "Giberville",
+          "text": "For Goodwood the group dispatched 36 A-20s and recorded its attack at 07:42. Its summary gives no finding on damage at the strongpoint.",
+          "source": "w-bg416m100",
+          "locator": "Mission 100, formation and results"
+        },
+        {
+          "date": "1944-07-22",
+          "place": "Bourth",
+          "text": "The group attacked a railway crossing through cloud. Its history cites later photographs showing cuts in the track.",
+          "source": "w-bg416m103",
+          "locator": "Mission 103, results and reconnaissance"
+        },
+        {
+          "date": "1944-07-25",
+          "place": "Saint-Gilles",
+          "text": "The group recorded a concentrated bombing pattern on the defended area during Cobra.",
+          "source": "w-bg416m105",
+          "locator": "Mission 105, group narrative"
+        },
+        {
+          "date": "1944-07-26",
+          "place": "Marigny",
+          "text": "Thirty-six aircraft were sent. Cloud prevented bombing and the field order gave no alternative, leaving zero attacks recorded.",
+          "source": "w-bg416m106",
+          "locator": "Mission 106, field order and abort"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Wethersfield",
+          "period": "18 July 1944, recorded departure",
+          "source": "w-bg416m101",
+          "locator": "Mission 101, place of take-off"
+        }
+      ],
+      "limit": "The track damage has photographic follow-up. For Saint-Gilles the pattern alone cannot establish what happened to the defenders.",
+      "href": "operations-1944.html?from=1944-07-22&to=1944-07-22&q=Bourth"
+    },
+    {
+      "id": "rcaf-430",
+      "name": "No. 430 Squadron RCAF",
+      "role": "Canadian tactical reconnaissance squadron",
+      "campaigns": [
+        "normandy"
+      ],
+      "contribution": "Moving its Mustangs across the Channel gave the squadron a base in Normandy. Its reports could tell ground planners which crossings remained intact.",
+      "events": [
+        {
+          "date": "1944-06-29",
+          "place": "Odiham to Sommervieu",
+          "text": "The station chronology records the move to strip B.8, a few weeks after the landings.",
+          "source": "can430",
+          "locator": "Location table, 1 April–14 August"
+        },
+        {
+          "date": "1944-07-16",
+          "place": "River Dives",
+          "text": "The squadron inspected roughly twelve bridges and reported them intact despite imperfect visibility. The official narrative traces this report to its July operations book.",
+          "source": "w-rafBreakout",
+          "locator": "Vol. IV, chapter 2, printed p. 42, evening reconnaissance"
+        },
+        {
+          "date": "1944-08-14",
+          "place": "Sommervieu",
+          "text": "The station record ends its B.8 period, during which it had supplied tactical reconnaissance to the armies in Normandy.",
+          "source": "can430",
+          "locator": "Location table, B.8 Sommervieu"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Odiham",
+          "period": "1 April–29 June 1944",
+          "source": "can430",
+          "locator": "Locations"
+        },
+        {
+          "place": "Sommervieu (B.8)",
+          "period": "29 June–14 August 1944",
+          "source": "can430",
+          "locator": "Locations"
+        }
+      ],
+      "limit": "The report establishes what the pilots could see on the evening of 16 July. Subsequent use or destruction of a bridge needs a later observation.",
+      "href": "operations-1944.html?from=1944-07-16&to=1944-07-16&q=Dives"
+    },
+    {
+      "id": "us-406fg",
+      "name": "406th Fighter Group",
+      "role": "USAAF P-47 fighter-bomber group",
+      "campaigns": [
+        "normandy"
+      ],
+      "contribution": "The group’s work ranged from covering the landings to supporting the breakout. Its encounter near Lisieux provides a unit-level check on broad accounts of German air activity during Cobra.",
+      "events": [
+        {
+          "date": "1944-06",
+          "place": "Normandy landing area",
+          "text": "Flying from Ashford, the group provided area cover for the landings, then flew armed reconnaissance and ground-support missions.",
+          "source": "us406",
+          "locator": "History and stations, Normandy operations"
+        },
+        {
+          "date": "1944-07-25",
+          "place": "Lisieux",
+          "text": "The group encountered fifteen German aircraft. The American account records four victory claims and one American aircraft missing.",
+          "source": "w-aafCobra",
+          "locator": "Lisieux encounter in the Cobra account"
+        },
+        {
+          "date": "1944-08-05",
+          "place": "Tour-en-Bessin",
+          "text": "The station list dates its move to France to 5 August, after the July fighting it had supported from England.",
+          "source": "us406",
+          "locator": "Stations, Tour-en-Bassin entry"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Ashford",
+          "period": "April–early August 1944",
+          "source": "us406",
+          "locator": "Stations"
+        },
+        {
+          "place": "Tour-en-Bessin",
+          "period": "From 5 August 1944",
+          "source": "us406",
+          "locator": "Stations, Tour-en-Bassin"
+        }
+      ],
+      "limit": "The encounter documents opposition on 25 July. The cited material leaves the German airframes and the cause of the American loss unidentified.",
+      "href": "operations-1944.html?from=1944-07-25&to=1944-07-25&q=Lisieux"
+    },
+    {
+      "id": "us-384bg",
+      "name": "384th Bombardment Group",
+      "role": "USAAF Eighth Air Force B-17 group",
+      "campaigns": [
+        "reichdefense",
+        "normandy"
+      ],
+      "contribution": "The same heavy-bomber group attacked a German industrial target and later flew in support of the Normandy landings. Its D-Day record preserves an important zero.",
+      "events": [
+        {
+          "date": "1943-06-22",
+          "place": "Grafton Underwood",
+          "text": "The group's first European combat operation followed its May deployment to the English airfield.",
+          "source": "grafton",
+          "locator": "Group history, arrival and first mission"
+        },
+        {
+          "date": "1943-08-17",
+          "place": "Schweinfurt",
+          "text": "The group flew in the low position of the provisional wing sent against the bearing works. The group archive identifies the Schweinfurt arm of the double strike.",
+          "source": "r-bg384Aug",
+          "locator": "Mission 17, First Schweinfurt"
+        },
+        {
+          "date": "1944-06-06",
+          "place": "Caen",
+          "text": "On mission 129 twelve B-17s completed the sortie. Cloud and the absence of pathfinders for this wave meant the crews brought their bombs back.",
+          "source": "w-bg384Caen",
+          "locator": "Mission 129, Air Task Force 4"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Grafton Underwood",
+          "period": "From May 1943",
+          "source": "grafton",
+          "locator": "Group history"
+        }
+      ],
+      "limit": "Mission 129 establishes zero attacks for this wave. Other groups and other D-Day waves have their own results.",
+      "href": "operations-1944.html?from=1944-06-06&to=1944-06-06&q=384th"
+    },
+    {
+      "id": "us-445bg",
+      "name": "445th Bombardment Group",
+      "role": "USAAF Eighth Air Force B-24 group",
+      "campaigns": [
+        "reichdefense",
+        "normandy"
+      ],
+      "contribution": "The group lost over half its dispatched force at Gotha and continued flying. Later assignments switched from the German aircraft industry to shore installations and ground defences in Normandy.",
+      "events": [
+        {
+          "date": "1944-02-24",
+          "place": "Gotha",
+          "text": "Twenty-five Liberators were dispatched on group mission 28. Thirteen were lost in the attack on the aircraft assembly plant.",
+          "source": "w-group445",
+          "locator": "Mission 28, Gotha"
+        },
+        {
+          "date": "1944-06-06",
+          "place": "Normandy coast",
+          "text": "The group attacked shore installations on D-Day after participating in the preparations for the invasion.",
+          "source": "us445",
+          "locator": "Unit history, Normandy"
+        },
+        {
+          "date": "1944-07",
+          "place": "Saint-Lô",
+          "text": "The group attacked German defences in support of ground forces around Saint-Lô.",
+          "source": "us445",
+          "locator": "Unit history, Saint-Lô"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Tibenham",
+          "period": "November 1943–May 1945",
+          "source": "us445",
+          "locator": "Stations"
+        }
+      ],
+      "limit": "Gotha's thirteen losses are already included in the Eighth Air Force mission total. The Normandy summary gives neither a group bomb total nor casualties on the ground.",
+      "href": "big-week.html#february-24"
+    },
+    {
+      "id": "us-449bg",
+      "name": "449th Bombardment Group",
+      "role": "USAAF Fifteenth Air Force B-24 group",
+      "campaigns": [
+        "reichdefense"
+      ],
+      "contribution": "From southern Italy, the group attacked aircraft industry targets on three Big Week dates. Its account distinguishes enemy losses, damaged aircraft lost on return and a takeoff accident.",
+      "events": [
+        {
+          "date": "1944-02-22",
+          "place": "Regensburg",
+          "text": "Four aircraft went down over enemy territory. Two more reached friendly territory but were lost there following damage.",
+          "source": "w-group449",
+          "locator": "Significant missions, Regensburg, 22 February"
+        },
+        {
+          "date": "1944-02-23",
+          "place": "Steyr",
+          "text": "The group lost one aircraft at takeoff and another to fighters.",
+          "source": "w-group449",
+          "locator": "Steyr, 23 February"
+        },
+        {
+          "date": "1944-02-25",
+          "place": "Regensburg",
+          "text": "The group returned to the target. Its account attributes three aircraft losses to enemy fighters.",
+          "source": "w-group449",
+          "locator": "Regensburg, 25 February"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Grottaglie",
+          "period": "Big Week, February 1944",
+          "source": "grott",
+          "locator": "Grottaglie field and arrival of the air echelon"
+        }
+      ],
+      "limit": "The losses reveal the cost of the sequence to the group. A factory output series is needed to assess how long production was interrupted.",
+      "href": "reich-defence.html#big-week"
+    },
+    {
+      "id": "de-zg26-iii",
+      "name": "III./ZG 26",
+      "role": "Luftwaffe heavy-fighter Gruppe",
+      "campaigns": [
+        "reichdefense"
+      ],
+      "contribution": "The diary from Wunstorf shows how quickly fewer aircraft were being launched during Big Week, and what happened when a sortie made contact without achieving a firing position.",
+      "events": [
+        {
+          "date": "1944-02-20",
+          "place": "Wunstorf",
+          "text": "Sixteen aircraft launched in two groups. Eleven were lost in the air and another nine were damaged on the field.",
+          "source": "w-zgDiary",
+          "locator": "20 February, Wunstorf entries"
+        },
+        {
+          "date": "1944-02-21",
+          "place": "Wunstorf",
+          "text": "Ten went up. The diary describes contact with a formation and trouble getting into position to attack.",
+          "source": "w-zgDiary",
+          "locator": "21 February"
+        },
+        {
+          "date": "1944-02-24",
+          "place": "Holzminden area",
+          "text": "Four aircraft took off. One returned damaged, another had no landing report, and the diary recorded a Liberator claim.",
+          "source": "w-zgDiary",
+          "locator": "24 February, III. Gruppe entries"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Wunstorf",
+          "period": "20–24 February 1944",
+          "source": "w-zgDiary",
+          "locator": "Big Week diary, Wunstorf"
+        }
+      ],
+      "limit": "The figures measure launches and reported outcomes. The figures for other Gruppen appearing in the diary belong to separate units.",
+      "href": "reich-defence.html#big-week"
+    },
+    {
+      "id": "us-332fg",
+      "name": "332d Fighter Group",
+      "role": "USAAF Fifteenth Air Force escort fighters",
+      "campaigns": [
+        "reichdefense"
+      ],
+      "contribution": "The group's June escort reports identify which bomber wings it covered and when. Aerial victory credits and losses among escorted bombers can both be true of the same mission.",
+      "events": [
+        {
+          "date": "1944-05-28",
+          "place": "Ramitelli",
+          "text": "The group moved from Capodichino to Ramitelli, which remained its base for the rest of the European war.",
+          "source": "ramitelli",
+          "locator": "Chronology, 28 May 1944"
+        },
+        {
+          "date": "1944-06-09",
+          "place": "Munich operation",
+          "text": "The 301st and 302d Squadrons provided penetration escort. Five victory credits were awarded. Missing Air Crew Reports identify two 459th Group B-24s lost during the escort period.",
+          "source": "w-afhraMunich",
+          "locator": "Mission report 3, GO 1473, MACRs 6317 and 6179"
+        },
+        {
+          "date": "1944-06-13",
+          "place": "Munich operation",
+          "text": "The group escorted the 5th and 49th Bomb Wings. Its mission table records enemy contact in the Udine area and no aerial victory credits.",
+          "source": "missions332",
+          "locator": "Haulman, mission 5, 13 June"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Capodichino",
+          "period": "Until 28 May 1944",
+          "source": "ramitelli",
+          "locator": "28 May entry"
+        },
+        {
+          "place": "Ramitelli",
+          "period": "From 28 May 1944",
+          "source": "ramitelli",
+          "locator": "28 May entry"
+        }
+      ],
+      "limit": "The two bomber losses on 9 June belong to a documented escort window. Assigning every loss on the route to this group would require timed evidence.",
+      "href": "reich-defence.html#munich"
+    },
+    {
+      "id": "fr-normandie",
+      "name": "GC 3 Normandie",
+      "role": "French fighter regiment with the Soviet 1st Air Army",
+      "campaigns": [
+        "bagration"
+      ],
+      "contribution": "French Yak pilots escorted Soviet bombers over Belarus. Their journal and memorial also preserve the human cost of moving the unit forward and the recognition it received during the pursuit.",
+      "events": [
+        {
+          "date": "1944-06-23",
+          "place": "Bogushevsk, Orsha sector",
+          "text": "The unit journal identifies an escort for Pe-2 bombers attacking Bogushevsk in the opening of the offensive.",
+          "source": "b-french",
+          "locator": "Journal de marche, 23 June 1944"
+        },
+        {
+          "date": "1944-07-15",
+          "place": "Doubrovka to Mikountani",
+          "text": "A fuel leak during the transfer led to the loss of a Yak. Pilot Maurice de Seynes and mechanic Vladimir Bielozub both died.",
+          "source": "b-memorial",
+          "locator": "Deuxième campagne, 15 juillet"
+        },
+        {
+          "date": "1944-07-21",
+          "place": "Niemen crossing",
+          "text": "A Soviet order awarded the French unit the name Niémen for its part in the fighting for the crossing.",
+          "source": "b-memorial",
+          "locator": "Deuxième campagne, 21 juillet"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Doubrovka",
+          "period": "15 July 1944 departure",
+          "source": "b-memorial",
+          "locator": "15 juillet"
+        },
+        {
+          "place": "Mikountani",
+          "period": "15 July 1944 transfer destination",
+          "source": "b-memorial",
+          "locator": "15 juillet"
+        }
+      ],
+      "limit": "The 15 July loss occurred during transfer. The honorary title recognizes service but gives no tally of enemy losses.",
+      "href": "bagration.html?case=orsha#campaign"
+    },
+    {
+      "id": "de-jg51-iii",
+      "name": "III./JG 51",
+      "role": "Luftwaffe Bf 109 fighter Gruppe",
+      "campaigns": [
+        "bagration"
+      ],
+      "contribution": "During the withdrawal from Bobruisk the Gruppe moved repeatedly. Its movement returns show how far its fighter inventory contracted while those bases changed.",
+      "events": [
+        {
+          "date": "1944-06-21/27",
+          "place": "Bobruisk",
+          "text": "The station chronology places the Gruppe at Bobruisk as the offensive opened. It moved to Matschulitsche on 27 June.",
+          "source": "b-jg51",
+          "locator": "III. Gruppe station table"
+        },
+        {
+          "date": "1944-06",
+          "place": "Gruppe inventory",
+          "text": "The Bf 109G-6 return goes from forty aircraft to twenty-four. Eight removals were for enemy action and nine for other losses, alongside repairs and transfers.",
+          "source": "b-jg3returns",
+          "locator": "June 1944, Bf 109G-6 aircraft movement row"
+        },
+        {
+          "date": "1944-07",
+          "place": "Pinsk to Kaunas",
+          "text": "After leaving the Minsk area it operated from Pinsk and then Kowno. The July Bf 109G-6 return closed at sixteen, after nine enemy-action and eighteen other losses.",
+          "source": "b-jg3returns",
+          "locator": "July 1944 movement row; station chronology linked below"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Bobruisk",
+          "period": "1944-06-21 to 1944-06-27",
+          "source": "b-jg51",
+          "locator": "III. Gruppe station table"
+        },
+        {
+          "place": "Matschulitsche",
+          "period": "1944-06-27 to 1944-06-30",
+          "source": "b-jg51",
+          "locator": "III. Gruppe station table"
+        },
+        {
+          "place": "Minsk-Süd",
+          "period": "1944-06-30 to 1944-07-02",
+          "source": "b-jg51",
+          "locator": "III. Gruppe station table"
+        },
+        {
+          "place": "Pinsk",
+          "period": "1944-07-02 to 1944-07-08",
+          "source": "b-jg51",
+          "locator": "III. Gruppe station table"
+        },
+        {
+          "place": "Kowno (Kaunas)",
+          "period": "1944-07-08 to 1944-07-15",
+          "source": "b-jg51",
+          "locator": "III. Gruppe station table"
+        }
+      ],
+      "limit": "Monthly losses cover every cause and location recorded for that Gruppe during the month. They cannot be allocated to the Soviet claims of 26 June.",
+      "href": "bagration.html?case=bobruisk#campaign"
+    },
+    {
+      "id": "de-sg10-i",
+      "name": "I./SG 10",
+      "role": "Luftwaffe Fw 190 ground-attack Gruppe",
+      "campaigns": [
+        "bagration"
+      ],
+      "contribution": "The return from this Bobruisk-based Gruppe shows how an attack unit’s aircraft mix changed. Replacement Fw 190F-8s arrived while two other variants disappeared from its inventory.",
+      "events": [
+        {
+          "date": "1944-06-23/27",
+          "place": "Bobruisk",
+          "text": "The station table places the Gruppe at the airfield during the opening attack and through 27 June.",
+          "source": "b-sg10",
+          "locator": "I. Gruppe station table, Bobruisk"
+        },
+        {
+          "date": "1944-06",
+          "place": "Gruppe inventory",
+          "text": "Five new F-8s arrived and two were removed for enemy action, taking that variant from 26 to 29. The G-3 and G-8 rows both closed at zero.",
+          "source": "b-sg1returns",
+          "locator": "June 1944, Fw 190F-8, G-3 and G-8 rows"
+        },
+        {
+          "date": "1944-07-10/20",
+          "place": "Kaunas",
+          "text": "The station table next places the Gruppe at Kowno for this period. Its movement indicates that the formation continued westward.",
+          "source": "b-sg10",
+          "locator": "I. Gruppe station table, Kowno"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Bobruisk",
+          "period": "1944-06-23 to 1944-06-27",
+          "source": "b-sg10",
+          "locator": "I. Gruppe station table"
+        },
+        {
+          "place": "Kowno (Kaunas)",
+          "period": "1944-07-10 to 1944-07-20",
+          "source": "b-sg10",
+          "locator": "I. Gruppe station table"
+        }
+      ],
+      "limit": "These returns give aircraft movements and station dates. They leave the Gruppe's individual engagements, weapons effects and daily sortie rate open.",
+      "href": "bagration.html?case=bobruisk#campaign"
+    },
+    {
+      "id": "su-16va",
+      "name": "16th Air Army",
+      "role": "Soviet air army supporting the 1st Belorussian Front",
+      "campaigns": [
+        "bagration",
+        "berlin"
+      ],
+      "contribution": "At Bobruisk the army concentrated several kinds of aviation against an encircled force. In the Berlin operation its history identified a particular rifle corps, a position and the advance observed by the aircrews.",
+      "events": [
+        {
+          "date": "1944-06-24",
+          "place": "Bobruisk sector",
+          "text": "The army history records 3,191 combat sorties on the opening day in its sector, including 1,846 attack sorties. The totals cover repeated flights by many units.",
+          "source": "b-army16",
+          "locator": "Chapter 3, first day"
+        },
+        {
+          "date": "1944-06-27",
+          "place": "Bobruisk pocket",
+          "text": "The history records 526 aircraft launched for the evening attack against the pocket and reports no aircraft lost on that mission.",
+          "source": "b-army16",
+          "locator": "Chapter 3, printed pp. 172–177"
+        },
+        {
+          "date": "1944-07-07",
+          "place": "Baranovichi",
+          "text": "The history reports 769 sorties during fighting for the rail junction. The town fell the following day.",
+          "source": "b-army16",
+          "locator": "Chapter 3, Baranovichi narrative"
+        },
+        {
+          "date": "1945-04-19",
+          "place": "Alt-Malisch",
+          "text": "Twenty-one ground-attack aircraft assisted the 25th Rifle Corps. Aircrews reported seeing the infantry advance, and the army history credits the attack with helping it take the position.",
+          "source": "berlin16",
+          "locator": "Chapter 5, printed pp. 349–352"
+        }
+      ],
+      "stations": [],
+      "limit": "Alt-Malisch gives an observed local effect in the air army’s account. The 4,398 sorties it reported that day cover its entire front.",
+      "href": "bagration.html?case=pocket#campaign"
+    },
+    {
+      "id": "su-1va",
+      "name": "1st Air Army",
+      "role": "Soviet air army supporting the 3rd Belorussian Front",
+      "campaigns": [
+        "bagration"
+      ],
+      "contribution": "The Orsha axis received a large share of the army's aircraft. The published figures let a reader distinguish that allocation from what the whole army actually flew and lost.",
+      "events": [
+        {
+          "date": "1944-06-23",
+          "place": "Orsha axis",
+          "text": "The archival study assigns 1,019 aircraft to the Orsha axis. The first-day total of 2,214 sorties and 30 aircraft missing from missions covers both axes.",
+          "source": "b-army1",
+          "locator": "Opening deployment; TsAMO F. 290, op. 3284, d. 796, folio 52 as cited"
+        },
+        {
+          "date": "1944-06-23/07-03",
+          "place": "Advance to Minsk",
+          "text": "The study reports 12,496 sorties for the opening period. Its loss headline reads 119, but the three printed components add to 179 (98, 47 and 34).",
+          "source": "b-army1",
+          "locator": "First stage, 23 June–3 July"
+        },
+        {
+          "date": "1944-07",
+          "place": "Vilnius and the Niemen",
+          "text": "Reconnaissance helped maintain contact during the pursuit toward Vilnius, alongside continued support for the advancing front.",
+          "source": "b-army1",
+          "locator": "Westward pursuit and Vilnius operations"
+        }
+      ],
+      "stations": [],
+      "limit": "Both printed loss readings remain visible. Determining the intended total or overlapping categories requires the underlying return.",
+      "href": "bagration.html?case=minsk#campaign"
+    },
+    {
+      "id": "su-3va",
+      "name": "3rd Air Army",
+      "role": "Soviet air army supporting the 1st Baltic Front",
+      "campaigns": [
+        "bagration"
+      ],
+      "contribution": "The northern army's records trace support from the Vitebsk fighting into the pursuit. The breakdown shows the share of the opening day devoted to ground attack.",
+      "events": [
+        {
+          "date": "1944-06-23",
+          "place": "Vitebsk sector",
+          "text": "Of 828 sorties recorded by the army, 421 were ground attack. Its eleven aerial victory claims came from fifteen reported engagements.",
+          "source": "b-army3",
+          "locator": "Chapter 4, note 122"
+        },
+        {
+          "date": "1944-06-26",
+          "place": "Vitebsk and Ulla",
+          "text": "The history counted 1,415 sorties across the army on the day these places were taken.",
+          "source": "b-army3",
+          "locator": "Chapter 4, note 126"
+        },
+        {
+          "date": "1944-06-23/30",
+          "place": "Opening operation and pursuit",
+          "text": "The history gives 9,289 sorties for the first eight days including the start of the pursuit. The opening-day figures are already included.",
+          "source": "b-army3",
+          "locator": "Chapter 4, note 129"
+        }
+      ],
+      "stations": [],
+      "limit": "The army-wide count includes missions over more than one locality. It cannot tell us how many sorties influenced the capture of a single crossing.",
+      "href": "bagration.html?case=vitebsk#campaign"
+    },
+    {
+      "id": "de-skg10",
+      "name": "Schnellkampfgeschwader 10",
+      "role": "Luftwaffe ground-attack wing",
+      "campaigns": [
+        "sicily"
+      ],
+      "contribution": "On invasion day, British intelligence placed parts of this wing on both Sicily and the mainland. The split explains why counting aircraft present on Sicilian fields gives a misleading picture of the forces available.",
+      "events": [
+        {
+          "date": "1943-07-10",
+          "place": "Gerbini and Montecorvino",
+          "text": "For II. Gruppe the RAF listed eight aircraft at Gerbini, none serviceable, and twelve serviceable out of twelve at Montecorvino.",
+          "source": "s-raf",
+          "locator": "Appendix 3, Ground Attack, II./SKG 10"
+        },
+        {
+          "date": "1943-07-10",
+          "place": "San Pietro and Montecorvino",
+          "text": "For III. Gruppe the same assessment listed seven at San Pietro, none serviceable, and eighteen serviceable out of eighteen on the mainland.",
+          "source": "s-raf",
+          "locator": "Appendix 3, Ground Attack, III./SKG 10"
+        },
+        {
+          "date": "1943-07-10",
+          "place": "Gerbini",
+          "text": "A separate listing for IV. Gruppe showed eleven serviceable out of twenty-five. The state of one Gruppe at Gerbini did not describe the whole field.",
+          "source": "s-raf",
+          "locator": "Appendix 3, Ground Attack, IV./SKG 10"
+        }
+      ],
+      "stations": [
+        {
+          "place": "Gerbini",
+          "period": "10 July 1943, II. and IV. Gruppen",
+          "source": "s-raf",
+          "locator": "Appendix 3"
+        },
+        {
+          "place": "San Pietro (Biscari)",
+          "period": "10 July 1943, III. Gruppe",
+          "source": "s-raf",
+          "locator": "Appendix 3"
+        },
+        {
+          "place": "Montecorvino",
+          "period": "10 July 1943, II. and III. Gruppen",
+          "source": "s-raf",
+          "locator": "Appendix 3"
+        }
+      ],
+      "limit": "All three rows are estimates by the opposing service on one day. They cannot establish who attacked a particular ship, or how many sorties flew.",
+      "href": "sicily.html?case=axis-readiness#case-detail"
+    }
+  ]
+}

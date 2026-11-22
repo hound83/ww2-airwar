@@ -676,7 +676,7 @@
         "sq92",
         "wing244"
       ],
-      "summary": "Eight squadron aircraft covered ships off Syracuse that afternoon. The force included HMS Rodney and HMS Nelson, which bombarded Catania at dusk. Pachino marks the squadron’s station.",
+      "summary": "Eight aircraft covered shipping off Syracuse. The squadron diary identifies Nelson and Rodney and describes a bombardment that evening. Nelson’s service chronology places her bombardment later. Pachino was the squadron’s operating station.",
       "evidence": [
         {
           "source": "orb92",
@@ -686,6 +686,13 @@
           "figures": {
             "Aircraft covering shipping": 8
           }
+        },
+        {
+          "source": "nelson",
+          "title": "A different sequence in the ship’s chronology",
+          "locator": "July 1943, entries for 16–20 July",
+          "note": "Rodney rejoined Force H on 16 July. The ship history places Nelson’s Catania bombardment after the torpedoing of Indomitable early on 17 July. The squadron’s shipping patrol is documented independently of that timing.",
+          "figures": {}
         }
       ]
     },
@@ -987,6 +994,10 @@
     "orb92": [
       "No. 92 Squadron · published Form 540 transcription",
       "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942"
+    ],
+    "nelson": [
+      "HMS Nelson · naval service chronology",
+      "https://www.naval-history.net/xGM-Chrono-01BB-Nelson.htm"
     ]
   },
   "initial": "landing-cover",

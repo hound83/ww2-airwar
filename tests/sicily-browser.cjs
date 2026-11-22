@@ -72,7 +72,7 @@ module.exports = async (browser, base, root) => {
       await page.goBack();
       await page.waitForURL(/campaign=sicily#campaign-dossier$/);
       await page.locator("#dossier-study-link").click();
-      await page.getByRole("link", { name: "covered the ships bombarding Catania" }).click();
+      await page.getByRole("link", { name: "covered Nelson and Rodney off Syracuse" }).click();
       await page.getByRole("heading", { name: /cover for ships off Syracuse/ }).waitFor();
       assert.match(await page.locator("#case-evidence").innerText(), /Aircraft covering shipping\s+8/);
       await page.locator('#station-history [data-case="pachino-patrols"]').click();
