@@ -70,7 +70,7 @@
   }
 
   function updateURL() {
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(window.AtlasReading?.params);
     const [from, to] = currentRange();
     if (from !== full[0]) params.set("from", from);
     if (to !== full[1]) params.set("to", to);

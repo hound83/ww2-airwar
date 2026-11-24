@@ -1,0 +1,434 @@
+{
+  "version": "10.0",
+  "sources": {
+    "gernika": [
+      "Gernika Peace Museum",
+      "Chronology, 26 and 29 April and May 1937",
+      "https://www.museodelapaz.eus/en/the-bombing-of-gernika/the-timeline/"
+    ],
+    "airlift": [
+      "Kim M. Juntunen, U.S. Army Attachés and the Spanish Civil War",
+      "Chapter II, p. 32, the first transport flights",
+      "https://armyfaoassociation.com/wp-content/uploads/2024/12/1990-US-ARMY-ATTACHES-AND-THE-SPANISH-CIVIL-WAR-1936-1939-THE-GATHERING-OF-TECHNICAL-AND-TACTICAL-INTELLIGENCE.pdf"
+    ],
+    "poles": [
+      "RAF Museum, The Polish Air Force in World War 2",
+      "Opening account of evacuation through France to Britain",
+      "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-polish-air-force-in-world-war-2/"
+    ],
+    "dunkirk": [
+      "Harry Raffal, RAF Museum",
+      "Dunkirk harbour and Nieuport, 31 May, citing AIR 20/4447",
+      "https://www.rafmuseum.org.uk/blog/the-rafs-role-in-the-evacuation-of-dunkirk/"
+    ],
+    "britain": [
+      "Royal Air Force, Battle of Britain",
+      "Detect and observe, Control the skies, Ground Crew",
+      "https://www.raf.mod.uk/what-we-do/our-history/anniversaries/battle-of-britain/"
+    ],
+    "eastAir": [
+      "John F. Kreis, Air Warfare and Air Base Air Defense",
+      "Chapter VI, pp. 177–180 and 199–203",
+      "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo113228/pdf/GOVPUB-D301-PURL-gpo113228.pdf"
+    ],
+    "stalingrad": [
+      "US Army, Military Improvisations During the Russian Campaign",
+      "Stalingrad airlift, pp. 61–62, German retrospective",
+      "https://history.army.mil/Publications/Publications-Catalog/Military-Improvisations-During-the-Russian-Campaign/"
+    ],
+    "bagration": [
+      "William M. Connor, Analysis of Deep Attack Operations",
+      "Operation Bagration, Conduct of Operations, 27 June",
+      "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/connor.pdf"
+    ],
+    "arnhem": [
+      "RAF Museum, The Royal Air Force and Operation Market Garden",
+      "Chapter 5, 23 and 24 September",
+      "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-5/"
+    ],
+    "airfields": [
+      "Sebastian Ritchie, The Royal Air Force and Airfield Air Defence",
+      "German attacks on Allied airfields, pp. 100–101",
+      "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-thematic-studies/ground-based-air-defences/"
+    ],
+    "berlin": [
+      "Gerhard L. Weinberg, Stalingrad and Berlin",
+      "Soldiers in Cities, chapter 2, pp. 18–20",
+      "https://media.defense.gov/2023/Apr/26/2003208715/-1/-1/0/1595.PDF"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "spain",
+      "period": "1936–1939",
+      "title": "An army crosses the strait",
+      "place": [
+        "Gernika",
+        -2.68,
+        43.32
+      ],
+      "intro": "Aircraft brought troops past a naval obstacle in the opening weeks of the Spanish Civil War. In the Basque country the following spring, civilians experienced a different consequence of foreign air intervention.",
+      "campaigns": [
+        "spain"
+      ],
+      "passages": [
+        [
+          "The troops on the far shore",
+          "When the military rising began in July 1936, much of the Spanish fleet remained loyal to the Republic. Franco’s Army of Africa was in Spanish Morocco, across the water from the fighting on the peninsula. The German decision of 26 July to supply transports changed the choices available to the insurgents. By 1 August German and Italian aircraft were carrying troops across. The reinforcements strengthened the rebel foothold in Andalusia. It took repeated flights, and men and equipment also crossed by sea.",
+          [
+            "campaign.spain",
+            "airlift"
+          ]
+        ],
+        [
+          "Gernika after the aircraft left",
+          "On 26 April 1937 aircraft of the German Condor Legion and Italy’s Aviazione Legionaria bombed Gernika during the offensive in the Basque country. The centre of the town burned. Rebel ground troops entered on 29 April. In May, children were evacuated from the Basque country after attacks on Gernika and other towns. The dates distinguish three human experiences often compressed into a single image of the raid. They included surviving the bombing, living through occupation and leaving home.",
+          [
+            "gernika"
+          ]
+        ]
+      ],
+      "next": "In Spain, aircraft had given troops a way around an obstacle. In 1939 and 1940, the ability to keep flying depended on where crews could land as fronts moved past their bases.",
+      "records": []
+    },
+    {
+      "id": "early-campaigns",
+      "period": "1939–1940",
+      "title": "Flying as the front moves",
+      "place": [
+        "Narvik",
+        17.43,
+        68.44
+      ],
+      "intro": "Polish crews flew from dispersed strips, RAF fighters defended a Norwegian anchorage, and troops at Dunkirk depended on ships. An air force could still do valuable work while its army was retreating.",
+      "campaigns": [
+        "poland",
+        "norway",
+        "france1940"
+      ],
+      "passages": [
+        [
+          "What survived in Poland",
+          "Dispersal before the invasion allowed Polish crews to keep flying after German aircraft struck their established bases. On 3 September three Karaś aircraft flew from a field strip at Klimontów and attacked a column near Orawka. The Polish account identifies what the crews found. How long the column was delayed is an open question. After Poland’s defeat, surviving airmen continued through France. About 8,400 Polish air personnel were evacuated to Britain after the fall of France, preserving experience for the next campaign.",
+          [
+            "campaign.poland",
+            "poles"
+          ]
+        ],
+        [
+          "Why an anchorage mattered",
+          "In northern Norway, the Allies depended on ships to supply their expedition. The RAF history credits fighters and anti-aircraft guns with helping to keep Harstad and the fleet anchorage usable. The anchorage was still under attack on 2 June. The local achievement was that ships could continue to use it during the campaign, even as the Allies prepared to withdraw from Norway.",
+          [
+            "campaign.norway"
+          ]
+        ],
+        [
+          "From Sedan to Dunkirk",
+          "On 14 May RAF attacks failed to put the Meuse crossings at Sedan out of use. Two weeks later, preserving an escape route mattered more than cutting an enemy crossing. At Nieuport on 31 May, British infantry reported that its own fire had checked the first German attack. RAF Blenheims struck as German reserves moved up, and the movement stopped. Inside Dunkirk harbour German bombing had already restricted embarkation, making the Mole vital. Air power affected both the perimeter and the route home.",
+          [
+            "campaign.france1940",
+            "dunkirk"
+          ]
+        ]
+      ],
+      "next": "When Britain itself came under attack, many of the crews saved in the retreat could fly again, this time with an organised warning system and repair shops behind them.",
+      "records": []
+    },
+    {
+      "id": "island-defence",
+      "period": "1940–1942",
+      "title": "Keeping an island in the fight",
+      "place": [
+        "Malta",
+        14.51,
+        35.9
+      ],
+      "intro": "Britain and Malta both needed fighters in the air when raids arrived. Britain could draw on a domestic repair and replacement system. Malta also had to bring aircraft, fuel and food across contested water.",
+      "campaigns": [
+        "britain",
+        "malta",
+        "dieppe"
+      ],
+      "passages": [
+        [
+          "The next raid over Britain",
+          "Radar stations and the mainly civilian Observer Corps reported incoming aircraft. Fighter Command checked and passed that information to the groups directing interceptions. Mechanics gave that system another chance to work each day. After the raids of 15 September, nine damaged Hurricanes of No. 303 Squadron at Northolt went back into service overnight. The strain also shows up outside individual squadrons. The immediate issue reserve of Hurricanes and Spitfires fell from 289 on 10 August to 125 on 7 September 1940. Fighter Command was still contesting the raids over London on 15 September.",
+          [
+            "britain",
+            "balance.pol|Repairs to No. 303 Squadron Hurricanes at Northolt",
+            "balance.usafUK|Case Studies in the Achievement of Air Superiority, discussion of figure 3-3",
+            "campaign.britain"
+          ]
+        ],
+        [
+          "Getting fuel past the harbour entrance",
+          "In May 1942, ground crews on Malta had newly delivered Spitfires ready within 35 minutes. Keeping them flying was another problem. Only five of the fourteen merchant vessels in the August Pedestal convoy reached Malta. One was the damaged tanker Ohio. The surviving ships brought fuel and cargo to the island’s garrison and people. The unloading records tell us what reached the harbour. To determine when a given squadron could increase its patrols we would also need its fuel issues and flying record.",
+          [
+            "balance.malta|Chronological summary, 9 May 1942",
+            "balance.harbour|Malta Command war diary, August 1942, unloading returns"
+          ]
+        ],
+        [
+          "What the boats at Dieppe experienced",
+          "On 19 August 1942 Allied fighters covered the ships and boats taking troops off Dieppe. Near shore, landing craft still came under fire. The squadron diary describes engagements overhead, while the Canadian Army account follows the men trying to reach the boats. Read together, they explain how an air force could provide cover and a withdrawal could still be costly.",
+          [
+            "campaign.dieppe"
+          ]
+        ]
+      ],
+      "next": "A convoy could carry bulk supplies once a ship got through. At Stalingrad a whole encircled army would have to live on what transport aircraft could deliver.",
+      "records": [
+        [
+          "formations.html#unit-raf-303",
+          "No. 303 Squadron at Northolt"
+        ],
+        [
+          "formations.html#unit-raf-249",
+          "No. 249 Squadron on Malta"
+        ],
+        [
+          "operational-balance.html#britain",
+          "Britain’s reserve and repair figures"
+        ],
+        [
+          "operational-balance.html#mediterranean",
+          "Malta and Sicily’s fighter patrols"
+        ]
+      ]
+    },
+    {
+      "id": "eastern-front",
+      "period": "1941–1943",
+      "title": "What an airlift could sustain",
+      "place": [
+        "Stalingrad",
+        44.51,
+        48.71
+      ],
+      "intro": "German air attacks in June 1941 helped the invasion armies advance into the Soviet Union. Eighteen months later the Luftwaffe had to keep one of those armies alive through a shrinking set of airfields.",
+      "campaigns": [
+        "barbarossa",
+        "stalingrad",
+        "kursk"
+      ],
+      "passages": [
+        [
+          "The opening attacks",
+          "On 22 June 1941 many Soviet aircraft were caught on the ground at frontier bases. The Luftwaffe gained freedom of action in the opening battles. Estimates of aircraft destroyed differ, and even a precise count of the first morning would say little about the crews and aircraft available farther east. The Soviet Union continued to field new formations. The opening advantage depended on circumstances that the Germans could not reproduce each summer.",
+          [
+            "eastAir",
+            "campaign.barbarossa"
+          ]
+        ],
+        [
+          "The loss of a landing ground",
+          "After the encirclement at Stalingrad, transports carried food, ammunition and other supplies in and evacuated wounded men on return flights. As the Soviets took or threatened airfields outside the pocket, some departure bases moved farther away. Inside the pocket, the loss of Pitomnik in January deprived the Sixth Army of a principal receiving field. Aircraft and personnel drawn from flying schools had been committed to the effort. Supplies reaching the pocket could prolong resistance, but the airlift failed to sustain the army.",
+          [
+            "stalingrad",
+            "campaign.stalingrad"
+          ]
+        ],
+        [
+          "A different opponent at Kursk",
+          "By July 1943 the Soviet air force could sustain intense fighting by dispersing aircraft and replacing worn or damaged machines. German units faced competing calls for crews, aircraft and spares from the East, the Mediterranean and the defence of Germany. At Kursk, claims for tanks destroyed from the air are an especially uncertain guide to the fighting on the ground. The ability to return and fly another day is more securely documented than many of the losses attributed to a single attack.",
+          [
+            "eastAir",
+            "campaign.kursk"
+          ]
+        ]
+      ],
+      "next": "While the German summer offensive was fighting at Kursk, Allied fighters were covering an invasion of Sicily. The distances worked differently in the Mediterranean and over Germany itself.",
+      "records": []
+    },
+    {
+      "id": "reach",
+      "period": "1943–early 1944",
+      "title": "How far the fighters could reach",
+      "place": [
+        "Schweinfurt",
+        10.23,
+        50.05
+      ],
+      "intro": "A fighter patrol off Sicily and an escort mission into Germany faced the same practical question. Who would still have protection when the fighters reached the limit of their flight?",
+      "campaigns": [
+        "sicily",
+        "reichdefense",
+        "schweinfurt",
+        "bigweek"
+      ],
+      "passages": [
+        [
+          "Cover before a squadron moved ashore",
+          "Allied fighters covered Sicily’s landing beaches and shipping from the first morning of the invasion on 10 July 1943. Axis aircraft nevertheless reached the fleet. On 13 July eleven No. 92 Squadron pilots flew from Malta, patrolled the beaches and landed at Pachino. On the 16th the squadron put eight aircraft over warships off Syracuse. The operating base changed and the task continued. Later Allied attacks on the Messina crossings could not prevent the Axis evacuation.",
+          [
+            "campaign.sicily",
+            "balance.orb|Form 540, 13–16 July 1943"
+          ]
+        ],
+        [
+          "Beyond the escorts",
+          "In the raids on Regensburg and Schweinfurt on 17 August, American bombers spent part of the journey beyond their fighter escorts. German fighters could engage the bomber stream after the escorts turned back. On the return to Schweinfurt on 14 October, sixty B-17s were shot down. The cost curtailed further efforts to send deep daylight raids on this scale until better escort was available. For the people in the factories, the attack had come through. For the bomber force, simply reaching the target had proved too costly to repeat.",
+          [
+            "campaign.reichdefense",
+            "campaign.schweinfurt"
+          ]
+        ],
+        [
+          "What changed during Big Week",
+          "By February 1944 longer-range escorts accompanied bomber formations farther into Germany, drawing German fighters into combat as the Allies attacked aircraft plants. Individual American groups still suffered heavily. At Gotha on 24 February the 445th Bomb Group lost thirteen of its twenty-five dispatched Liberators. Next day it dispatched seventeen to Fürth. Five aborted and twelve reached the primary target. German factories dispersed and output recovered. The mission diaries, escort battles and factory returns each describe a different consequence of the same offensive.",
+          [
+            "campaign.bigweek",
+            "balance.gotha|Mission 28, 24 February",
+            "balance.furth|Mission 29, 25 February"
+          ]
+        ]
+      ],
+      "next": "Longer range gave Allied commanders more places to send aircraft. The campaigns of 1944 show how often the result still depended on the people waiting on the ground.",
+      "records": [
+        [
+          "sicily.html?case=pachino-shipping#case-detail",
+          "The shipping patrol from Pachino"
+        ],
+        [
+          "formations.html#unit-raf-92",
+          "No. 92 Squadron’s operating stations"
+        ],
+        [
+          "formations.html#unit-de-zg26-iii",
+          "The German interceptor group III./ZG 26"
+        ],
+        [
+          "operational-balance.html#reich",
+          "What the 445th could fly the next day"
+        ]
+      ]
+    },
+    {
+      "id": "offensives",
+      "period": "March–September 1944",
+      "title": "What reached the troops below",
+      "place": [
+        "Bobruisk",
+        29.23,
+        53.14
+      ],
+      "intro": "At Cassino, in Normandy and around Bobruisk, aircraft attacked in support of armies. At Arnhem they carried supplies. In every case the result looked different from the ground than it did on a dispatch sheet.",
+      "campaigns": [
+        "italy",
+        "normandy",
+        "bagration",
+        "marketgarden"
+      ],
+      "passages": [
+        [
+          "Two bombardments, two different openings",
+          "In March, Allied bombing broke up Cassino’s buildings and roads. The rubble obstructed the tanks meant to follow, and German troops could still defend the ruins. Before the American breakout in Normandy in July, the Cobra bombardment disrupted defenders west of Saint-Lô, but also hit American troops waiting to attack. Ground formations then had to fight for the roads to Marigny and Saint-Gilles. Aerial destruction changed what the infantry encountered. In one place it made movement harder. In the other the attackers could exploit gaps.",
+          [
+            "campaign.italy",
+            "balance.army|Chapter XII, the opening of Cobra",
+            "balance.army13|Chapter XIII, advance to Marigny and Saint-Gilles"
+          ]
+        ],
+        [
+          "What closed the Bobruisk pocket",
+          "On 27 June Soviet tank formations linked up around the German force near Bobruisk. The 16th Air Army’s evening attack followed the link-up. Its own history records 526 aircraft assembled for the strike. The ground link-up fixes the timing. The aircraft struck troops already encircled and added to the pressure on them. Some German soldiers still escaped. The Soviet aircraft total measures the force committed. It cannot tell us how many casualties the strike caused in the pocket.",
+          [
+            "bagration",
+            "balance.v16|Chapter 3, printed pp. 172–177"
+          ]
+        ],
+        [
+          "Supplies dropped, supplies received",
+          "At Arnhem on 20 September, aircraft dropped loads at assigned zones that German troops had overrun. At Oosterbeek three days later, crews of 123 aircraft dropped supplies and little reached the British 1st Airborne Division. On 24 September four Dakotas turned back with their loads after finding no signals on the ground. The crews who brought cargo home and those who dropped it obeyed different instructions on different days. The men short of food, ammunition and medicine experienced much the same result.",
+          [
+            "campaign.marketgarden",
+            "arnhem"
+          ]
+        ]
+      ],
+      "next": "By late 1944 the Allies could return to the air in strength across several fronts. Germany still had aircraft; its ability to fuel them, crew them and repeat an effort was shrinking.",
+      "records": [
+        [
+          "grand-air-war-v80.html#operation=cobra&step=3",
+          "Operation Cobra on the dated map"
+        ],
+        [
+          "formations.html#unit-rcaf-430",
+          "No. 430 Squadron and the reconnaissance record"
+        ],
+        [
+          "operational-balance.html#normandy",
+          "What the Normandy mission returns show"
+        ],
+        [
+          "bagration.html?case=pocket#campaign",
+          "The evening attack on the Bobruisk pocket"
+        ],
+        [
+          "formations.html#unit-fr-normandie",
+          "Normandie’s moves on the Eastern Front"
+        ],
+        [
+          "operational-balance.html#bagration",
+          "The 16th Air Army’s concentration"
+        ]
+      ]
+    },
+    {
+      "id": "last-winter",
+      "period": "1944–May 1945",
+      "title": "Who could fly again?",
+      "place": [
+        "Berlin",
+        13.41,
+        52.52
+      ],
+      "intro": "German factories continued delivering aircraft while fuel and trained crews became harder to replace. The New Year attack on Allied airfields and the final fighting around Berlin show what remained possible, and for how long.",
+      "campaigns": [
+        "bodenplatte",
+        "berlin"
+      ],
+      "passages": [
+        [
+          "A fighter on strength needed a pilot and fuel",
+          "At a May 1944 conference Galland put April’s fighter-pilot losses at 489 and replacements at 396. Later in the year attacks on oil plants drove German synthetic aviation gasoline production sharply down. The US Strategic Bombing Survey also documented cuts to training and engine running-in. One return counts men, another tons of fuel, and a factory acceptance counts an aircraft. Together they explain how an air force could receive new fighters and still struggle to put trained crews into the air.",
+          [
+            "balance.galland|Conference of 15–16 May 1944, discussion of April personnel",
+            "balance.survey|European War summary, oil and aircraft sections"
+          ]
+        ],
+        [
+          "The morning after Bodenplatte",
+          "On 1 January 1945 German fighters surprised Allied airfields in the Low Countries and elsewhere. At Eindhoven aircraft and installations were hit. For the Allies, a machine damaged on the ground might later be repaired, and much of its flying personnel survived. German pilots killed or captured during the operation were lost to their units. The immediate damage at an airfield therefore answers a different question from the number of aircraft and crews each side could put up the next morning.",
+          [
+            "campaign.bodenplatte",
+            "airfields"
+          ]
+        ],
+        [
+          "The infantry still had to take Berlin",
+          "On 19 April outside Berlin the 16th Air Army’s history describes an attack at Alt-Malisch that helped the Soviet 25th Rifle Corps resume its advance. The account is from the air army. A ground return would help establish the timing. Over Berlin itself Soviet aircraft predominated, while some German aircraft still flew from city streets. The rubble left by earlier bombing gave defenders cover in places. Infantry and artillery fought their way through the city. Even at this late stage, command of the air and possession of a street were separate achievements.",
+          [
+            "campaign.berlin",
+            "berlin"
+          ]
+        ]
+      ],
+      "next": "",
+      "records": [
+        [
+          "bodenplatte.html?airfield=eindhoven#airfields",
+          "The airfield record at Eindhoven"
+        ],
+        [
+          "operational-balance.html#germany",
+          "German pilot, fuel and readiness figures"
+        ],
+        [
+          "formations.html#unit-su-16va",
+          "The 16th Air Army from Belarus to Berlin"
+        ]
+      ]
+    }
+  ]
+}

@@ -491,6 +491,13 @@ const studyDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "sho
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
  const study = window.AtlasCampaignStudies?.[c?.id];
+ const chapterLink = $("dossier-europe");
+ const europeId = window.AtlasEurope?.byCampaign[c?.id];
+ chapterLink.hidden = !europeId;
+ if (europeId) {
+  chapterLink.href = "./europe.html#" + europeId;
+  chapterLink.textContent = "European history · " + window.AtlasEurope.titles[europeId];
+ }
  const formationLink = $("dossier-formations");
  const hasHistories = ["sicily","malta","britain","normandy","reichdefense","bagration","berlin"].includes(c?.id);
  formationLink.hidden = !hasHistories;

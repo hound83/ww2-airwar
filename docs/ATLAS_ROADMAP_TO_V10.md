@@ -1,6 +1,6 @@
 # European Air War Atlas roadmap through v10
 
-Updated 22 November 2026 after the v9.10 operational balance milestone. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
+Updated 24 November 2026 for the v10.0 connected European air war. This revises the 11 November [six-release proposal](https://github.com/hound83/ww2-airwar/pull/23).
 
 ## What has shipped
 
@@ -17,21 +17,22 @@ Updated 22 November 2026 after the v9.10 operational balance milestone. This rev
 | Second sweep, campaigns | All 20 dossiers connect a historical question to an observed effect, a dated case, a source and an open question. Narvik and Big Week have dedicated studies. | Follow up the receiving-side and opposing records identified in the [campaign review](CAMPAIGN_EVIDENCE_REVIEW.md). The [candidate ledger](../research/transcriptions/campaign-candidate-reconciliation.csv) records the disposition of all 320 rows. |
 | Formation and airfield histories | [26 units, 82 dated entries and 41 stations](../formations.html) across all six flagships, with a follow-through to Berlin. | [Source audit and outstanding receiving-side records](../research/sources/formation-histories.md). |
 | v9.10 · Operational balance | Six linked [worked studies](../operational-balance.html), 77 evidence figures and 19 reproducible comparisons, with source-linked downloads. | Paired records still to find are listed in the [research audit](../research/sources/operational-balance.md). |
+| v10.0 · The connected European air war | [Seven chapters](../europe.html) connect all 20 campaigns and dated cases to formations and the six balance studies, with routes back to the originating chapter. | [Source audit](../research/sources/connected-europe.md) and outstanding receiving-side evidence. |
 
-Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. Further flagship research and the connected European history remain ahead.
+Release numbers follow the shipped GitHub history. The earlier proposal used some of the same numbers for larger outcomes that are still open. Main contains 20 campaign entries. The seven-chapter European history completes this roadmap. Further flagship research can build on its open questions.
 
-## Recommended next milestone
+## Next research milestone
 
-**v10 · The connected European air war.** Write six to eight Europe-wide chapters and link them to all 20 campaign dossiers. Each chapter should follow a change in what air forces could do, with a route into the dated operations, formations and balance studies that establish it. Verify the return from the evidence to the chapter on mobile and desktop.
+Compare what transport crews dispatched with what the receiving troops could actually use at Stalingrad and Arnhem. Match dated dispatch and receipt records for a bounded period in each campaign, preserving missing or incomparable quantities.
 
-## Following milestones
+## Milestone record
 
 | Order | Reader outcome | Completion evidence |
 | --- | --- | --- |
 | 2 · Flagship depth and all-entry review | Review evidence and navigation across the six flagships and improve the remaining campaign entries. | Normandy, Battle of Britain, Bagration, Defence of the Reich, Malta and Sicily have deep, linked accounts. All 20 entries explain situation, objectives, participants, sequence, consequences and sources. The [row-level review](../research/sources/campaign-candidates-second-sweep.md) reconciles the bilateral and Narvik candidates. The open questions in each dossier guide further flagship research. |
 | 3 · Formation and airfield histories | Trace a dated formation through its equipment, stations and operations. | Published 26 sourced histories with linked operating stations and six flagship reading routes. The 16th Air Army continues to Berlin. |
 | 4 · Operational balance studies | Use the records to answer questions about effort, losses, readiness, replacement and constraints. | Published together in v9.10 with traceable arithmetic, source passages and downloadable evidence. |
-| 5 · v10, connected European air war | Move from the wider history into a campaign, operation, dated map and formation or source, then return to the wider context. | Six to eight Europe-wide chapters, working routes through all 20 campaigns, six flagship journeys, six evidence studies and verified desktop/mobile publication. |
+| 5 · v10, connected European air war | Move from the wider history into a campaign, operation, dated map and formation or source, then return to the wider context. | Seven published chapters cover all 20 campaigns, six flagship journeys and six operational balance studies. The release checks cover desktop and mobile reading paths. |
 
 ## Evidence studies and v10 chapters
 

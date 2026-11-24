@@ -4,7 +4,7 @@
   const $ = id => document.getElementById(id);
   const escape = value => String(value).replace(/[&<>"']/g, char =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
-  const fieldUrl = (id, filters = {}) => "?" + new URLSearchParams({ airfield: id, ...filters }) + "#airfields";
+  const fieldUrl = (id, filters = {}) => "?" + new URLSearchParams({ airfield: id, ...filters, ...window.AtlasReading?.params }) + "#airfields";
   const prettyDate = new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeZone: "UTC" });
   const formatDate = date => prettyDate.format(new Date(date + "T00:00:00Z"));
 

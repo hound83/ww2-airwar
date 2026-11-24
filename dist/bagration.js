@@ -107,7 +107,7 @@
     const source = (id, locator = "") => link(sources[id].url, sources[id].title) + (locator ? " · " + escape(locator) : "");
     const formatUnit = id => byUnit.get(id)?.name || "";
     const rowUnit = row => row.reporter || formatUnit(row.unit);
-    const fieldUrl = (item, filters = {}) => "?" + new URLSearchParams({ case: item.id, ...filters }) + "#campaign";
+    const fieldUrl = (item, filters = {}) => "?" + new URLSearchParams({ case: item.id, ...filters, ...window.AtlasReading?.params }) + "#campaign";
     const filters = () => Object.fromEntries([["phase", phase.value], ["unit", unit.value], ["kind", kind.value]].filter(([, value]) => value));
     const chooseLink = (item, label) => '<a data-case-link="' + escape(item.id) + '" href="' + fieldUrl(item) + '">' + escape(label) + '</a>';
 
