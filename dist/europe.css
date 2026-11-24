@@ -20,7 +20,7 @@ h1{font-size:clamp(3.2rem,6.3vw,6rem);line-height:.98;font-weight:500;letter-spa
 .lead p:not(.period){max-width:38em;font-size:1.12rem}
 .lead div>a{display:inline-block;margin-top:1.3rem;font-weight:700}
 .places{display:block;width:100%;height:auto;border:1px solid #a6b8ad;background:#dbe9eb}
-.places text{fill:#263c35;stroke:#e6eadf;stroke-width:3px;paint-order:stroke;font:600 10.5px system-ui,sans-serif}
+.places text{fill:#263c35;stroke:#e6eadf;stroke-width:3px;paint-order:stroke;font:600 13px system-ui,sans-serif}
 .places .hit{fill:transparent}
 .places .pin{fill:#a44828;stroke:white;stroke-width:1.4px}
 .places a:hover .pin,.places a:focus .pin{fill:#133e35;stroke-width:2px}
