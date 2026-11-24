@@ -51,4 +51,13 @@ assert.equal([0, 1, 2].reduce((sum, i) => sum + obs["minsk-loss-component-" + i]
 assert.equal([0, 1, 2].reduce((sum, i) => sum + obs["pocket-part-" + i].value, 0), obs["pocket-total"].value);
 assert.equal(balances.filter(row => row.case === "bobruisk").reduce((sum, row) => sum + row.enemy, 0), obs["bob-june-ceiling"].value);
 assert.match(fs.readFileSync(require.resolve("../bagration.html"), "utf8"), /bagration-air-campaign-1944\.json/);
+const campaignHtml = fs.readFileSync(require.resolve("../bagration.html"), "utf8");
+assert.match(campaignHtml, /forces\.html\?campaign=bagration&amp;population=bagration-air-armies/);
+const populations = fs.readFileSync(require.resolve("../research/transcriptions/deployment-eastern-populations.csv"), "utf8");
+for (const unit of units.filter(row => row.roster)) {
+  assert.ok(populations.includes('"' + unit.roster.population + '","bagration",'), unit.id);
+  assert.ok(unit.roster.label, unit.id);
+}
+assert.equal(units.filter(row => /^vvs\d+$/.test(row.id) && row.roster).length, 5);
+assert.match(units.find(row => row.id === "recon12").parent, /Fliegerführer Nr\. 1/);
 console.log("PASS Bagration: 15 dated cases, scoped observations, formation links and 10 reconciled movement returns.");

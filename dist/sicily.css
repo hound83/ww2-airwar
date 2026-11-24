@@ -44,3 +44,19 @@
   .campaign-layout, #formation-list { grid-template-columns: minmax(0, 1fr); }
   #case-list { max-height: 15rem; }
 }
+
+.roster-jump { align-self: end; padding-block: .45rem; }
+#case-formations p { margin-block: .35rem; }
+#case-rosters:not(:empty) { margin-block: .7rem; }
+#deployment label { display: block; font-weight: 650; }
+#roster-select { max-width: 100%; }
+#roster-scope { margin-block: .8rem; }
+#roster-citation { max-width: 85ch; font-size: .95rem; }
+.roster-table { overflow-x: auto; }
+.roster-table table { width: 100%; border-collapse: collapse; }
+.roster-table caption { text-align: left; font-weight: 700; padding-block: .5rem; }
+.roster-table th, .roster-table td { text-align: left; padding: .5rem .65rem; border-bottom: 1px solid var(--line); }
+.roster-table thead th { background: #e6ece3; }
+@media (max-width: 35rem) {
+  .roster-table th, .roster-table td { font-size: .88rem; padding: .45rem .3rem; }
+}

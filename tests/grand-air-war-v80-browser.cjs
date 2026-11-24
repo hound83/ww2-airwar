@@ -20,6 +20,7 @@ const check=async()=>{
  const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
+  await require("./force-rosters-browser.cjs")(browser,base,root);
   await require("./europe-browser.cjs")(browser,base,root);
   await require("./bodenplatte-browser.cjs")(browser,base,root);
   await require("./bagration-browser.cjs")(browser,base,root);
@@ -118,10 +119,11 @@ const check=async()=>{
    assert.match(await page.locator("#dossier-facts").innerText(),/1,300/);
    const separated=await page.locator("#dossier-facts .fact").evaluateAll(nodes=>nodes.every(node=>node.querySelector("small").getBoundingClientRect().bottom<=node.querySelector("a").getBoundingClientRect().top+1));
    assert.ok(separated,"claim source links overlap their scope notes");
-   const dossier=await page.locator(".dossier").boundingBox(),jump=page.getByRole("link",{name:"Sourced figures",exact:true});
+   const jump=page.getByRole("link",{name:"Sourced figures",exact:true});
    assert.equal(new URL(await jump.getAttribute("href"),base).searchParams.get("campaign"),"poland","a new tab must preserve a campaign selected by search");
-   const shortcut=await jump.boundingBox();
-   assert.ok(shortcut.y-dossier.y<230,"the route to numerical evidence must remain above the campaign interpretation");
+   // Sample both positions in one frame during smooth scrolling on a touch viewport.
+   const shortcutOffset=await jump.evaluate(link=>link.getBoundingClientRect().top-link.closest(".dossier").getBoundingClientRect().top);
+   assert.ok(shortcutOffset<230,"the route to numerical evidence must remain above the campaign interpretation");
    if(viewport.width<500)await jump.tap();else await jump.press("Enter");
    const factGeometry=()=>{
     const fact=document.querySelector("#dossier-facts .fact");

@@ -13,7 +13,7 @@
   link.textContent = "← Return to chapter · " + directory.titles[chapter];
   nav.append(link);
   document.body.prepend(nav);
-  const routes = new Set(["grand-air-war-v80.html","formations.html","operational-balance.html","operations-1944.html",
+  const routes = new Set(["grand-air-war-v80.html","forces.html","formations.html","operational-balance.html","operations-1944.html",
     "sicily.html","malta.html","reich-defence.html","bagration.html","bodenplatte.html","narvik.html","dieppe.html","big-week.html"]);
   const folder = new URL(".", location.href);
   function carry(event) {

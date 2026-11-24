@@ -1,0 +1,43 @@
+.fsm-chart {
+  position:relative; isolation:isolate; overflow:hidden; width:100%;
+  height:clamp(15.5rem,32vw,23rem); background:#dbe9eb;
+  border:1px solid #a6b8ad; color:#213c34;
+}
+.fsm-chart.fsm-can-pan {touch-action:none;cursor:grab}
+.fsm-can-pan:active {cursor:grabbing}
+.fsm-coast,.fsm-grid,.fsm-markers {position:absolute;inset:0;width:100%;height:100%}
+.fsm-coast,.fsm-grid {pointer-events:none}
+.fsm-coast path {fill:#c4cdb9;stroke:#8d9f91;stroke-width:1.05;fill-rule:evenodd}
+.fsm-grid line {stroke:#5a736a;stroke-width:.7;opacity:.34;stroke-dasharray:2 4}
+.fsm-grid text {font:10px system-ui,sans-serif;fill:#536d66;paint-order:stroke;stroke:#edf1e8;stroke-width:2px}
+.fsm-controls {position:absolute;right:.45rem;bottom:.4rem;z-index:5;display:flex;gap:2px}
+.fsm-controls .fsm-control {
+  appearance:none;box-sizing:border-box;cursor:pointer;border:1px solid #83988b;border-radius:3px;
+  min-width:32px;min-height:32px;margin:0;padding:2px 6px;background:#fffdf5;color:#2a493c;
+  font:700 1rem/1 system-ui,sans-serif;
+}
+.fsm-controls .fsm-control:last-child {font-size:.77rem}
+.fsm-controls .fsm-control:disabled {background:#e8ede1;color:#79877c;cursor:default}
+.fsm-markers {pointer-events:none}
+.fsm-markers .fsm-pin {
+  appearance:none;position:absolute;transform:translate(-50%,-50%);pointer-events:auto;
+  width:28px;height:28px;min-width:0;min-height:0;margin:0;padding:0;overflow:visible;
+  background:transparent;border:0;border-radius:100%;cursor:pointer;color:#143f36;
+}
+.fsm-markers .fsm-pin::before {
+  content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:10px;height:10px;border-radius:100%;border:2px solid #fffdf6;background:currentColor;
+  box-shadow:0 0 0 1px #486653;
+}
+.fsm-markers .fsm-pin[aria-pressed=true],.fsm-markers .fsm-pin:focus-visible {z-index:3;color:#994220}
+.fsm-markers .fsm-pin:hover {z-index:4}
+.fsm-markers .fsm-pin[aria-pressed=true]::before {width:13px;height:13px;box-shadow:0 0 0 1.5px #84371b}
+.fsm-markers .fsm-name {
+  position:absolute;display:none;pointer-events:none;left:calc(50% + 10px);top:50%;
+  transform:translateY(-50%);width:max-content;max-width:145px;border-radius:2px;
+  padding:1px 3px;background:#f8f6eddc;color:#223a31;font:600 11px/1.26 system-ui,sans-serif;text-align:left;
+}
+.fsm-label-left .fsm-name {left:auto;right:calc(50% + 10px);text-align:right}
+.fsm-label-show .fsm-name,.fsm-pin:focus-visible .fsm-name,.fsm-pin:hover .fsm-name {display:block}
+.fsm-pin:focus-visible,.fsm-control:focus-visible {outline:3px solid #9a4a21;outline-offset:1px}
+.fsm-empty {margin:0;padding:1rem;border:1px dashed #9cae9e;color:#53645c}

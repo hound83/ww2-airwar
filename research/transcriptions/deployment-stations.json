@@ -1,0 +1,1286 @@
+{
+  "stations": {
+    "tangmere": {
+      "name": "Tangmere",
+      "lat": 50.8458,
+      "lon": -0.7064,
+      "source": "https://en.wikipedia.org/wiki/RAF_Tangmere",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "westhampnett": {
+      "name": "Westhampnett",
+      "lat": 50.8611,
+      "lon": -0.7592,
+      "source": "https://en.wikipedia.org/wiki/RAF_Westhampnett",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "kenley": {
+      "name": "Kenley",
+      "lat": 51.3036,
+      "lon": -0.095,
+      "source": "https://en.wikipedia.org/wiki/RAF_Kenley",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "croydon": {
+      "name": "Croydon",
+      "lat": 51.3564,
+      "lon": -0.1172,
+      "source": "https://en.wikipedia.org/wiki/Croydon_Airport",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "biggin-hill": {
+      "name": "Biggin Hill",
+      "lat": 51.3308,
+      "lon": 0.0325,
+      "source": "https://en.wikipedia.org/wiki/RAF_Biggin_Hill",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "gravesend": {
+      "name": "Gravesend",
+      "lat": 51.4181,
+      "lon": 0.3964,
+      "source": "https://en.wikipedia.org/wiki/RAF_Gravesend",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "hornchurch": {
+      "name": "Hornchurch",
+      "lat": 51.5386,
+      "lon": 0.2047,
+      "source": "https://en.wikipedia.org/wiki/RAF_Hornchurch",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "rochford": {
+      "name": "Rochford",
+      "lat": 51.5703,
+      "lon": 0.6933,
+      "source": "https://en.wikipedia.org/wiki/RAF_Rochford",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "northolt": {
+      "name": "Northolt",
+      "lat": 51.5531,
+      "lon": -0.4183,
+      "source": "https://en.wikipedia.org/wiki/RAF_Northolt",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "heath-row": {
+      "name": "Heath Row (Great West Aerodrome)",
+      "lat": 51.4775,
+      "lon": -0.4614,
+      "source": "https://en.wikipedia.org/wiki/Great_West_Aerodrome",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "north-weald": {
+      "name": "North Weald",
+      "lat": 51.7217,
+      "lon": 0.1542,
+      "source": "https://en.wikipedia.org/wiki/North_Weald_Airfield",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "stapleford-abbots": {
+      "name": "Stapleford Abbots (Stapleford Aerodrome)",
+      "lat": 51.6525,
+      "lon": 0.1561,
+      "source": "https://en.wikipedia.org/wiki/Stapleford_Aerodrome",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "debden": {
+      "name": "Debden",
+      "lat": 51.9917,
+      "lon": 0.2706,
+      "source": "https://en.wikipedia.org/wiki/RAF_Debden",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "martlesham": {
+      "name": "RAF Martlesham Heath",
+      "lat": 52.058,
+      "lon": 1.266,
+      "source": "https://en.wikipedia.org/wiki/RAF_Martlesham_Heath",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "castle-camps": {
+      "name": "Castle Camps",
+      "lat": 52.0514,
+      "lon": 0.3786,
+      "source": "https://en.wikipedia.org/wiki/RAF_Castle_Camps",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "luqa": {
+      "name": "Luqa",
+      "lat": 35.8575,
+      "lon": 14.4775,
+      "source": "https://en.wikipedia.org/wiki/RAF_Luqa",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "ta-kali": {
+      "name": "Ta Kali (Ta’ Qali)",
+      "lat": 35.895,
+      "lon": 14.4208,
+      "source": "https://en.wikipedia.org/wiki/RAF_Ta_Kali",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "hal-far": {
+      "name": "Hal Far",
+      "lat": 35.8164,
+      "lon": 14.5081,
+      "source": "https://en.wikipedia.org/wiki/RAF_Hal_Far",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "st-inglevert": {
+      "name": "Saint-Inglevert airfield",
+      "lat": 50.8825,
+      "lon": 1.7444,
+      "source": "https://en.wikipedia.org/wiki/Saint-Inglevert_Airfield",
+      "locator": "Airfield coordinates in the location infobox."
+    },
+    "bessonovka": {
+      "name": "Bessonovka landing ground",
+      "lat": 50.5275,
+      "lon": 36.3222,
+      "source": "https://ww2.dk/Airfields%20-%20Russia%20and%20Ukraine.pdf",
+      "locator": "de Zeng, Bessonowka, ZNr. 10-7156. Approximate field position."
+    },
+    "comiso": {
+      "name": "Comiso",
+      "lat": 36.9931,
+      "lon": 14.6083,
+      "source": "https://lambadoria.it/bunker/articoli/finocchiaro-c1/finocchiaro%204%20ott%20%20AEROPORTI%20SICILIA%20ANNO%201943.pdf",
+      "locator": "Finocchiaro, Aeroporti Sicilia anno 1943. Coordinates in the entry for Comiso."
+    },
+    "sciacca": {
+      "name": "Sciacca",
+      "lat": 37.575,
+      "lon": 13.0583,
+      "source": "https://lambadoria.it/bunker/articoli/finocchiaro-c1/finocchiaro%204%20ott%20%20AEROPORTI%20SICILIA%20ANNO%201943.pdf",
+      "locator": "Finocchiaro, Aeroporti Sicilia anno 1943. Coordinates in the entry for Sciacca."
+    },
+    "chinisia": {
+      "name": "Trapani-Chinisia",
+      "lat": 37.9122,
+      "lon": 12.4864,
+      "source": "https://lambadoria.it/bunker/articoli/finocchiaro-c1/finocchiaro%204%20ott%20%20AEROPORTI%20SICILIA%20ANNO%201943.pdf",
+      "locator": "Finocchiaro, Aeroporti Sicilia anno 1943. Coordinates in the entry for Trapani-Chinisia."
+    },
+    "boccadifalco": {
+      "name": "Palermo-Boccadifalco",
+      "lat": 38.1153,
+      "lon": 13.3133,
+      "source": "https://lambadoria.it/bunker/articoli/finocchiaro-c1/finocchiaro%204%20ott%20%20AEROPORTI%20SICILIA%20ANNO%201943.pdf",
+      "locator": "Finocchiaro, Aeroporti Sicilia anno 1943. Coordinates in the entry for Palermo-Boccadifalco."
+    },
+    "pantelleria": {
+      "name": "Pantelleria",
+      "lat": 36.8153,
+      "lon": 11.9678,
+      "source": "https://lambadoria.it/bunker/articoli/finocchiaro-c1/finocchiaro%204%20ott%20%20AEROPORTI%20SICILIA%20ANNO%201943.pdf",
+      "locator": "Finocchiaro, Aeroporti Sicilia anno 1943. Coordinates in the entry for Pantelleria."
+    },
+    "safi": {
+      "name": "Safi airstrips",
+      "lat": 35.8417,
+      "lon": 14.4917,
+      "source": "https://www.forgottenairfields.com/airfield-safi-388.html",
+      "locator": "Safi, position above the two wartime runway descriptions."
+    },
+    "gozo": {
+      "name": "Gozo (Ta’ Lambert)",
+      "lat": 36.0314,
+      "lon": 14.2678,
+      "source": "https://www.forgottenairfields.com/airfield-ta-lambert-386.html",
+      "locator": "Ta Lambert (Xewkija), historical airfield coordinates."
+    },
+    "audembert": {
+      "name": "Audembert",
+      "lat": 50.8625,
+      "lon": 1.6792,
+      "source": "https://ww2.dk/Airfields%20-%20France.pdf",
+      "locator": "de Zeng, Luftwaffe Airfields 1935–45: France, Audembert, coordinates in the airfield entry."
+    },
+    "caffiers": {
+      "name": "Caffiers",
+      "lat": 50.8428,
+      "lon": 1.8144,
+      "source": "https://ww2.dk/Airfields%20-%20France.pdf",
+      "locator": "de Zeng, Luftwaffe Airfields 1935–45: France, Caffiers, coordinates in the airfield entry."
+    },
+    "marquise-east": {
+      "name": "Marquise-Hydrequent (east)",
+      "lat": 50.8194,
+      "lon": 1.7375,
+      "source": "https://ww2.dk/Airfields%20-%20France.pdf",
+      "locator": "de Zeng, Luftwaffe Airfields 1935–45: France, Marquise-Hydrequent (east), coordinates in the airfield entry."
+    },
+    "marquise-west": {
+      "name": "Marquise (west)",
+      "lat": 50.8208,
+      "lon": 1.6972,
+      "source": "https://ww2.dk/Airfields%20-%20France.pdf",
+      "locator": "de Zeng, Luftwaffe Airfields 1935–45: France, Marquise (west), coordinates in the airfield entry."
+    },
+    "le-touquet": {
+      "name": "Le Touquet–Étaples",
+      "lat": 50.5167,
+      "lon": 1.625,
+      "source": "https://ww2.dk/Airfields%20-%20France.pdf",
+      "locator": "de Zeng, Luftwaffe Airfields 1935–45: France, Le Touquet–Étaples, coordinates in the airfield entry."
+    },
+    "colembert": {
+      "name": "Colembert",
+      "lat": 50.7508,
+      "lon": 1.8314,
+      "source": "https://ww2.dk/Airfields%20-%20France.pdf",
+      "locator": "de Zeng, Luftwaffe Airfields 1935–45: France, Colembert, coordinates in the airfield entry."
+    },
+    "ramacca": {
+      "name": "Ramacca (Gerbini satellite No. 12)",
+      "lat": 37.3833,
+      "lon": 14.6833,
+      "source": "https://www.lasiciliainrete.it/wordpress/wp-content/uploads/2022/08/Airfields-Italy-Sicily-and-Sardinia.pdf",
+      "locator": "de Zeng, Gerbini satellite No. 12, p. 101. Approximate field position."
+    }
+  },
+  "members": [
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 3",
+      "place": "Pas-de-Calais · Colembert",
+      "stationIds": [
+        "colembert"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg3.htm",
+      "locator": "Holm, I./JG 3, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 3",
+      "place": "Pas-de-Calais",
+      "stationIds": [],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XVII.html",
+      "locator": "Collier, Appendix XVII, 7 September 1940, Luftflotte 2 single-engine fighters: II./JG 3."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 3",
+      "place": "Pas-de-Calais",
+      "stationIds": [],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XVII.html",
+      "locator": "Collier, Appendix XVII, 7 September 1940, Luftflotte 2 single-engine fighters: III./JG 3."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 26",
+      "place": "Pas-de-Calais · Audembert",
+      "stationIds": [
+        "audembert"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg26.htm",
+      "locator": "Holm, I./JG 26, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 26",
+      "place": "Northern France · Marquise-Hydrequent (east)",
+      "stationIds": [
+        "marquise-east"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg26.htm",
+      "locator": "Holm, II./JG 26, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 26",
+      "place": "Northern France · Caffiers",
+      "stationIds": [
+        "caffiers"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg26.htm",
+      "locator": "Holm, III./JG 26, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 27",
+      "place": "Étaples in the return · Guînes in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg27.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, I./JG 27, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 27",
+      "place": "Montreuil in the return · Fiennes in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg27.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, II./JG 27, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 27",
+      "place": "Sempy in the return · Guînes in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg27.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, III./JG 27, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 51",
+      "place": "Saint-Omer and Saint-Inglevert",
+      "stationIds": [
+        "st-inglevert"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XVII.html",
+      "locator": "Collier, Appendix XVII, 7 September 1940, Luftflotte 2 single-engine fighters: I./JG 51."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 51",
+      "place": "Saint-Omer and Saint-Inglevert in the return · Jever in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg51.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, II./JG 51, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 51",
+      "place": "Pas-de-Calais",
+      "stationIds": [],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XVII.html",
+      "locator": "Collier, Appendix XVII, 7 September 1940, Luftflotte 2 single-engine fighters: III./JG 51."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 52",
+      "place": "Laon/Couvron in the return · Coquelles in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg52.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, I./JG 52, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 52",
+      "place": "Pas-de-Calais in the return · Husum in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg52.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, II./JG 52, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 52",
+      "place": "Pas-de-Calais in the return · Zerbst to Neuruppin on 7 September in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg52.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, III./JG 52, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 53",
+      "place": "Wissant in the return · Sempy in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg53.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, II./JG 53, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 53",
+      "place": "Northern France · Le Touquet–Étaples",
+      "stationIds": [
+        "le-touquet"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg53.htm",
+      "locator": "Holm, III./JG 53, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 54",
+      "place": "South Holland in the return · Campagne-lès-Guînes in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg54.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, I./JG 54, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "II./JG 54",
+      "place": "South Holland in the return · Hermelinghen in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg54.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, II./JG 54, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "III./JG 54",
+      "place": "South Holland in the return · Guînes-Sud in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg54.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, III./JG 54, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2",
+      "unit": "I./JG 77",
+      "place": "Northern France · Marquise (west)",
+      "stationIds": [
+        "marquise-west"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg77.htm",
+      "locator": "Holm, I./JG 77, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 1",
+      "place": "Pas-de-Calais",
+      "stationIds": [],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XVII.html",
+      "locator": "Collier, Appendix XVII, 7 September 1940, Luftflotte 2 single-engine fighters: Stab/JG 1."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 3",
+      "place": "Pas-de-Calais",
+      "stationIds": [],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XVII.html",
+      "locator": "Collier, Appendix XVII, 7 September 1940, Luftflotte 2 single-engine fighters: Stab/JG 3."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 26",
+      "place": "Pas-de-Calais · Audembert",
+      "stationIds": [
+        "audembert"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg26.htm",
+      "locator": "Holm, Stab/JG 26, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 27",
+      "place": "Étaples in the return · Guînes in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg27.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, Stab/JG 27, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 51",
+      "place": "Saint-Omer in the return · Saint-Inglevert/Pihen in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg51.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, Stab/JG 51, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 52",
+      "place": "Laon/Couvron in the return · Calais-Marck in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg52.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, Stab/JG 52, Bases, September 1940."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 53",
+      "place": "Northern France · Le Touquet–Étaples",
+      "stationIds": [
+        "le-touquet"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg53.htm",
+      "locator": "Holm, Stab/JG 53, Bases, date range spanning 7 September 1940. Collier gives the broader locality."
+    },
+    {
+      "population": "britain-lf2-hq",
+      "unit": "Stab/JG 54",
+      "place": "South Holland in the return · Campagne-lès-Guînes in the station chronology (unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg54.htm",
+      "locator": "Compare Collier, Appendix XVII, 7 September, with Holm, Stab/JG 54, Bases, September 1940."
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 43 Squadron",
+      "place": "Tangmere",
+      "stationIds": [
+        "tangmere"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 601 Squadron",
+      "place": "Tangmere",
+      "stationIds": [
+        "tangmere"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group",
+      "activity": "1940-08-19 · After defending from Tangmere, the squadron relieved No. 85 at Debden during the attacks on Fighter Command's stations.",
+      "activitySource": "https://www.historyofwar.org/air/units/RAF/601_wwII.html",
+      "activityLocator": "Battle of Britain, 17 June–7 September"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 602 Squadron",
+      "place": "Westhampnett",
+      "stationIds": [
+        "westhampnett"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 66 Squadron",
+      "place": "Kenley",
+      "stationIds": [
+        "kenley"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 253 Squadron",
+      "place": "Kenley",
+      "stationIds": [
+        "kenley"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 72 Squadron",
+      "place": "Croydon",
+      "stationIds": [
+        "croydon"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 111 Squadron",
+      "place": "Croydon",
+      "stationIds": [
+        "croydon"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 79 Squadron",
+      "place": "Biggin Hill",
+      "stationIds": [
+        "biggin-hill"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 501 Squadron",
+      "place": "Gravesend",
+      "stationIds": [
+        "gravesend"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 222 Squadron",
+      "place": "Hornchurch",
+      "stationIds": [
+        "hornchurch"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 603 Squadron",
+      "place": "Hornchurch",
+      "stationIds": [
+        "hornchurch"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group",
+      "activity": "1940-08-27 · The move south brought the squadron into sustained combat. Its published history records the loss of 12 pilots and 16 aircraft by 5 September.",
+      "activitySource": "https://www.historyofwar.org/air/units/RAF/603_wwII.html",
+      "activityLocator": "Hornchurch, 27 August–5 September"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 600 Squadron",
+      "place": "Hornchurch",
+      "stationIds": [
+        "hornchurch"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 41 Squadron",
+      "place": "Rochford",
+      "stationIds": [
+        "rochford"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 1 Squadron RCAF",
+      "place": "Northolt",
+      "stationIds": [
+        "northolt"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group",
+      "activity": "1940-09-27 · The first scramble sent up twelve aircraft, the second eight and the third six. Some of the day's victory claims were shared with other squadrons.",
+      "activitySource": "https://www.canada.ca/en/air-force/services/history-heritage/battle-britain/timeline.html",
+      "activityLocator": "Timeline, 27 September"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 303 (Polish) Squadron",
+      "place": "Northolt",
+      "stationIds": [
+        "northolt"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group",
+      "activity": "1940-09-15/16 · Following the fighting on 15 September, Flying Officer Wiorkiewicz’s ground team restored nine damaged Hurricanes overnight for the next day.",
+      "activitySource": "https://www.rafmuseum.org.uk/blog/polish-no-303-squadron-and-the-hurricane-80k/",
+      "activityLocator": "Ground personnel and the night after 15 September"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 504 Squadron",
+      "place": "Northolt",
+      "stationIds": [
+        "northolt"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 1 Squadron RAF",
+      "place": "Heath Row",
+      "stationIds": [
+        "heath-row"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 249 Squadron",
+      "place": "North Weald",
+      "stationIds": [
+        "north-weald"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group",
+      "activity": "1940-09-01 · The squadron moved into No. 11 Group and continued defending the London approaches through the attacks on its station.",
+      "activitySource": "https://www.historyofwar.org/air/units/RAF/249_wwII.html",
+      "activityLocator": "North Weald, September 1940"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 46 Squadron",
+      "place": "Stapleford Abbots",
+      "stationIds": [
+        "stapleford-abbots"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 17 Squadron",
+      "place": "Debden",
+      "stationIds": [
+        "debden"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 257 Squadron",
+      "place": "Martlesham / North Weald",
+      "stationIds": [
+        "martlesham",
+        "north-weald"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 25 Squadron",
+      "place": "Martlesham",
+      "stationIds": [
+        "martlesham"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "britain-11g",
+      "unit": "No. 73 Squadron",
+      "place": "Castle Camps",
+      "stationIds": [
+        "castle-camps"
+      ],
+      "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+      "locator": "Appendix XX, No. 11 Group"
+    },
+    {
+      "population": "sicily-stab",
+      "unit": "Stab/JG 53",
+      "place": "Comiso in the return · the group chronology records a move to Catania on 10 July (time unresolved)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg53.htm",
+      "locator": "Holm, JG 53 Stab, Bases: Comiso to 10 July, Catania 10–13 July. Compare RAF Appendix 3, p. 9."
+    },
+    {
+      "population": "sicily-gruppen",
+      "unit": "II./JG 53",
+      "place": "Gerbini · Ramacca (satellite No. 12)",
+      "stationIds": [
+        "ramacca"
+      ],
+      "source": "https://www.ww2.dk/air/jagd/jg53.htm",
+      "locator": "Holm, II./JG 53, Bases, Rammaca, 1–13 July. RAF Appendix 3 gives Gerbini.",
+      "activity": "15 July · Four of the Gruppe’s Bf 109s were destroyed on the ground at Ramacca to prevent capture.",
+      "activitySource": "https://www.lasiciliainrete.it/wordpress/wp-content/uploads/2022/08/Airfields-Italy-Sicily-and-Sardinia.pdf",
+      "activityLocator": "de Zeng, Gerbini satellite No. 12, p. 101, German losses on 15 July."
+    },
+    {
+      "population": "sicily-gruppen",
+      "unit": "III./JG 53",
+      "place": "Catania",
+      "stationIds": [],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "locator": "Appendix 3, printed appendix p. 9"
+    },
+    {
+      "population": "sicily-stab",
+      "unit": "Stab/JG 77",
+      "place": "Trapani",
+      "stationIds": [],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "locator": "Appendix 3, printed appendix p. 9"
+    },
+    {
+      "population": "sicily-gruppen",
+      "unit": "I./JG 77",
+      "place": "Trapani / Sciacca",
+      "stationIds": [
+        "sciacca"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "locator": "Appendix 3, printed appendix p. 9"
+    },
+    {
+      "population": "sicily-gruppen",
+      "unit": "II./JG 77",
+      "place": "Trapani / Gerbini",
+      "stationIds": [],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "locator": "Appendix 3, printed appendix p. 9"
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 3 RAAF Squadron",
+      "place": "Ta Kali (Ta’ Qali) (9 July)",
+      "stationIds": [
+        "ta-kali"
+      ],
+      "source": "https://www.3sqnraafasn.net/indexpages/dates.htm",
+      "locator": "3 Squadron Association, campaign chronology, Base 63. Ta Kali from 9 to 13 July."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 112 Squadron",
+      "place": "Safi airstrips (9 July)",
+      "stationIds": [
+        "safi"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 250 Squadron",
+      "place": "Hal Far (9 July)",
+      "stationIds": [
+        "hal-far"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 260 Squadron",
+      "place": "Camp No. 6, Malta (personnel only, 9 July)",
+      "stationIds": [],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 450 RAAF Squadron",
+      "place": "Camp No. 6, Malta (personnel only, 9 July)",
+      "stationIds": [],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 1 SAAF Squadron",
+      "place": "Luqa (9 July)",
+      "stationIds": [
+        "luqa"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "13 July · Left Malta for Pachino, placing aircraft from 244 Wing on Sicily.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "activityLocator": "HQ Malta, Appendix B, movement log, p. 25."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 92 Squadron",
+      "place": "Luqa (9 July)",
+      "stationIds": [
+        "luqa"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "1943-07-13 · Eleven pilots patrolled the beaches on the way to their new field. The day's 41 sorties include flights from both sides of the move.",
+      "activitySource": "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942",
+      "activityLocator": "Form 540, 13 July"
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 145 Squadron",
+      "place": "Luqa (9 July)",
+      "stationIds": [
+        "luqa"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "13 July · Left Malta for Pachino, placing aircraft from 244 Wing on Sicily.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "activityLocator": "HQ Malta, Appendix B, movement log, p. 25."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 417 RCAF Squadron",
+      "place": "Luqa (9 July)",
+      "stationIds": [
+        "luqa"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "16 July · Left Malta for Pachino, placing aircraft from 244 Wing on Sicily.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "activityLocator": "HQ Malta, Appendix B, movement log, p. 25."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 601 Squadron",
+      "place": "Luqa (9 July)",
+      "stationIds": [
+        "luqa"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "13 July · Left Malta for Pachino, placing aircraft from 244 Wing on Sicily.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "activityLocator": "HQ Malta, Appendix B, movement log, p. 25."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 81 Squadron",
+      "place": "Ta Kali (Ta’ Qali) (9 July)",
+      "stationIds": [
+        "ta-kali"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 152 Squadron",
+      "place": "Ta Kali (Ta’ Qali) (9 July)",
+      "stationIds": [
+        "ta-kali"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 154 Squadron",
+      "place": "Ta Kali (Ta’ Qali) (9 July)",
+      "stationIds": [
+        "ta-kali"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "10 July · The campaign narrative includes the squadron among those reporting air combat over the landing area.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "activityLocator": "Chapter III, p. 55, D-Day patrols and engagements."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 232 Squadron",
+      "place": "Ta Kali (Ta’ Qali) (9 July)",
+      "stationIds": [
+        "ta-kali"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 242 Squadron",
+      "place": "Ta Kali (Ta’ Qali) (9 July)",
+      "stationIds": [
+        "ta-kali"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "10 July · Eleven Spitfires intercepted a Heinkel attacking landing craft shortly before dawn.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "activityLocator": "Chapter III, p. 55, opening paragraph on D-Day fighter patrols."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 43 Squadron",
+      "place": "Hal Far (9 July)",
+      "stationIds": [
+        "hal-far"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "10 July · The campaign narrative includes the squadron among those reporting air combat over the landing area.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "activityLocator": "Chapter III, p. 55, D-Day patrols and engagements."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 72 Squadron",
+      "place": "Hal Far (9 July)",
+      "stationIds": [
+        "hal-far"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 93 Squadron",
+      "place": "Hal Far (9 July)",
+      "stationIds": [
+        "hal-far"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23.",
+      "activity": "10 July · The campaign narrative includes the squadron among those reporting air combat over the landing area.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "activityLocator": "Chapter III, p. 55, D-Day patrols and engagements."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 111 Squadron",
+      "place": "Safi airstrips (9 July)",
+      "stationIds": [
+        "safi"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 243 Squadron",
+      "place": "Hal Far (9 July)",
+      "stationIds": [
+        "hal-far"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 2 SAAF Squadron",
+      "place": "El Haouaria, Tunisia (July move, day unresolved)",
+      "stationIds": [],
+      "source": "https://samilitaryhistory.org/diaries/rosy/rosy.html",
+      "locator": "South African Military History Society, du Toit, July re-equipment of Nos. 2 and 4 Squadrons."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 4 SAAF Squadron",
+      "place": "El Haouaria, Tunisia (July move, day unresolved)",
+      "stationIds": [],
+      "source": "https://samilitaryhistory.org/diaries/rosy/rosy.html",
+      "locator": "South African Military History Society, du Toit, July re-equipment of Nos. 2 and 4 Squadrons."
+    },
+    {
+      "population": "sicily-211",
+      "unit": "No. 5 SAAF Squadron",
+      "place": "Ben Gardane South, Tunisia (June–August)",
+      "stationIds": [],
+      "source": "https://www.historyofwar.org/air/units/SAAF/5_wwII.html",
+      "locator": "No. 5 Squadron (SAAF), Location. June to August 1943 at Ben Gardane South. Cross-check South African Military Air Operations Diary, August, move to Agnone."
+    },
+    {
+      "population": "sicily-xii",
+      "unit": "27th Fighter-Bomber Group",
+      "place": "Korba, Tunisia",
+      "stationIds": [],
+      "source": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/1-50/AFD-090602-085.pdf",
+      "locator": "XII Air Support Command, initial order of battle, 27th Bombardment Group (D).",
+      "activity": "13 July · A-36s of the 27th and 86th flew strafing missions in central and northern Sicily. The report names both groups together.",
+      "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/1-50/AFD-090602-085.pdf",
+      "activityLocator": "Bridgehead operations, missions of 13 July, note 57."
+    },
+    {
+      "population": "sicily-xii",
+      "unit": "86th Fighter-Bomber Group",
+      "place": "Korba Field, Tunisia (1–20 July)",
+      "stationIds": [],
+      "source": "https://www.ramstein.af.mil/Portals/6/documents/AFD-160205-007.pdf",
+      "locator": "Wartime 86 FBG Stations, Korba Field, Tunisia.",
+      "activity": "13 July · A-36s of the 27th and 86th flew strafing missions in central and northern Sicily. The report names both groups together.",
+      "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/1-50/AFD-090602-085.pdf",
+      "activityLocator": "Bridgehead operations, missions of 13 July, note 57."
+    },
+    {
+      "population": "sicily-xii",
+      "unit": "33rd Fighter Group",
+      "place": "Pantelleria at the opening of the invasion",
+      "stationIds": [
+        "pantelleria"
+      ],
+      "source": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/1-50/AFD-090602-085.pdf",
+      "locator": "XII Air Support Command, initial order of battle, base column. Cross-check Maurer, 33d Fighter Group, Stations.",
+      "activity": "10 July · Ten P-40s patrolled off Licata.",
+      "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+      "activityLocator": "Chapter III, p. 55, D-Day patrols off Licata."
+    },
+    {
+      "population": "sicily-xii",
+      "unit": "324th Fighter Group",
+      "place": "El Haouaria, Tunisia (group station)",
+      "stationIds": [],
+      "source": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090529-055.pdf",
+      "locator": "Air Force Combat Units of World War II, 324th Fighter Group, Stations, c. 18 June to 3 October."
+    },
+    {
+      "population": "sicily-xii",
+      "unit": "31st Fighter Group",
+      "place": "Gozo (9 July)",
+      "stationIds": [
+        "gozo"
+      ],
+      "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/",
+      "locator": "HQ Malta, preliminary report, Appendix A, order of battle at D−1, pp. 22–23."
+    },
+    {
+      "population": "sicily-italian",
+      "unit": "IX Gruppo",
+      "place": "Catania area",
+      "stationIds": [],
+      "source": "https://cefalunews.org/2022/06/16/la-regia-aeronautica-in-sicilia-alla-vigilia-dello-sbarco-degli-alleati-9-luglio-1943/",
+      "locator": "Locality entries, 9 July"
+    },
+    {
+      "population": "sicily-italian",
+      "unit": "X Gruppo",
+      "place": "Catania area",
+      "stationIds": [],
+      "source": "https://cefalunews.org/2022/06/16/la-regia-aeronautica-in-sicilia-alla-vigilia-dello-sbarco-degli-alleati-9-luglio-1943/",
+      "locator": "Locality entries, 9 July"
+    },
+    {
+      "population": "sicily-italian",
+      "unit": "21° Gruppo",
+      "place": "Chinisia / Boccadifalco detachment",
+      "stationIds": [
+        "chinisia",
+        "boccadifalco"
+      ],
+      "source": "https://cefalunews.org/2022/06/16/la-regia-aeronautica-in-sicilia-alla-vigilia-dello-sbarco-degli-alleati-9-luglio-1943/",
+      "locator": "Locality entries, 9 July"
+    },
+    {
+      "population": "sicily-italian",
+      "unit": "150° Gruppo",
+      "place": "Sciacca",
+      "stationIds": [
+        "sciacca"
+      ],
+      "source": "https://cefalunews.org/2022/06/16/la-regia-aeronautica-in-sicilia-alla-vigilia-dello-sbarco-degli-alleati-9-luglio-1943/",
+      "locator": "Locality entries, 9 July"
+    },
+    {
+      "population": "sicily-italian",
+      "unit": "3° Gruppo",
+      "place": "Comiso",
+      "stationIds": [
+        "comiso"
+      ],
+      "source": "https://cefalunews.org/2022/06/16/la-regia-aeronautica-in-sicilia-alla-vigilia-dello-sbarco-degli-alleati-9-luglio-1943/",
+      "locator": "Locality entries, 9 July"
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "I./JG 51",
+      "place": "Orel area, northern sector (4 July)",
+      "stationIds": [],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 6, Orel rows."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "III./JG 51",
+      "place": "Orel area, northern sector (4 July)",
+      "stationIds": [],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 6, Orel rows."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "IV./JG 51",
+      "place": "Orel area, northern sector (4 July)",
+      "stationIds": [],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 6, Orel rows.",
+      "activity": "11 July · Soviet fighters shot down and killed group commander Rudolf Resch south of Ponyri.",
+      "activitySource": "https://www.pen-and-sword.co.uk/Aces-of-the-Luftwaffe-Hardback/p/7222",
+      "activityLocator": "Peter Jacobs, Aces of the Luftwaffe, chapter “Struggle in the East: Zitadelle,” Resch on 11 July."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "I./JG 54",
+      "place": "Orel area, northern sector (4 July)",
+      "stationIds": [],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 6, Orel rows.",
+      "activity": "6 July · Group commander Reinhard Seiler was shot down and wounded after engaging Soviet fighters.",
+      "activitySource": "https://www.pen-and-sword.co.uk/Aces-of-the-Luftwaffe-Hardback/p/7222",
+      "activityLocator": "Peter Jacobs, Aces of the Luftwaffe, chapter “Struggle in the East: Zitadelle,” second day."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "I./JG 52",
+      "place": "Bessonovka, southern sector (4 July)",
+      "stationIds": [
+        "bessonovka"
+      ],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 4. Also de Zeng, Bessonowka, operational units.",
+      "activity": "5 July · Acting group commander Johannes Wiese submitted twelve victory claims. The count describes his claims and does not establish Soviet losses.",
+      "activitySource": "https://www.ospreypublishing.com/us/jagdgeschwader-52-9781841767864/",
+      "activityLocator": "John Weal, Jagdgeschwader 52: The Experten, p. 94, opening day of Zitadelle."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "III./JG 52",
+      "place": "Ugrim, southern sector (3–13 July)",
+      "stationIds": [],
+      "source": "https://www.ww2.dk/air/jagd/jg52.htm",
+      "locator": "Holm, JG 52, III. Gruppe station table, 3–13 July 1943.",
+      "activity": "5 July · Walter Krupinski of 7./JG 52 claimed eleven victories. This identifies one Staffel’s participation within III. Gruppe.",
+      "activitySource": "https://www.ospreypublishing.com/us/jagdgeschwader-52-9781841767864/",
+      "activityLocator": "John Weal, Jagdgeschwader 52: The Experten, p. 94, 7. Staffel on 5 July."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "II./JG 3",
+      "place": "Kharkov-Rogan, southern sector (4 July)",
+      "stationIds": [],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 4, II/JG 3. Satellite strip unreported.",
+      "activity": "5 July · Joachim Kirschner of 5./JG 3 took part in the early interception of Soviet aircraft attacking German airfields.",
+      "activitySource": "https://www.pen-and-sword.co.uk/Aces-of-the-Luftwaffe-Hardback/p/7222",
+      "activityLocator": "Peter Jacobs, Aces of the Luftwaffe, chapter “Struggle in the East: Zitadelle,” opening of 5 July."
+    },
+    {
+      "population": "citadel-gruppen",
+      "unit": "III./JG 3",
+      "place": "Bessonovka, southern sector (4 July)",
+      "stationIds": [
+        "bessonovka"
+      ],
+      "source": "https://www.oocities.org/sturmvogel_66/lwkursk.html",
+      "locator": "Order of battle for 4 July, Luftflotte 4. Also de Zeng, Bessonowka, operational units."
+    },
+    {
+      "population": "bagration-air-armies",
+      "unit": "1st Air Army",
+      "place": "3rd Belorussian Front (Orsha and Vitebsk axes)",
+      "stationIds": [],
+      "source": "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/connor.pdf",
+      "locator": "Connor, Annex C, Correlation of Forces, Belorussia, June 1944. The front entries specify their air armies and distinguish the two wings of the 1st Belorussian Front.",
+      "activity": "1944-06-23 · The archival study assigns 1,019 aircraft to the Orsha axis. The first-day total of 2,214 sorties and 30 aircraft missing from missions covers both axes.",
+      "activitySource": "https://military.wikireading.ru/h8TBm5FnI7",
+      "activityLocator": "Opening deployment; TsAMO F. 290, op. 3284, d. 796, folio 52 as cited"
+    },
+    {
+      "population": "bagration-air-armies",
+      "unit": "3rd Air Army",
+      "place": "1st Baltic Front (Vitebsk sector)",
+      "stationIds": [],
+      "source": "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/connor.pdf",
+      "locator": "Connor, Annex C, Correlation of Forces, Belorussia, June 1944. The front entries specify their air armies and distinguish the two wings of the 1st Belorussian Front.",
+      "activity": "1944-06-23 · Of 828 sorties recorded by the army, 421 were ground attack. Its eleven aerial victory claims came from fifteen reported engagements.",
+      "activitySource": "https://biography.wikireading.ru/256259",
+      "activityLocator": "Chapter 4, note 122"
+    },
+    {
+      "population": "bagration-air-armies",
+      "unit": "4th Air Army",
+      "place": "2nd Belorussian Front (Mogilev sector)",
+      "stationIds": [],
+      "source": "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/connor.pdf",
+      "locator": "Connor, Annex C, Correlation of Forces, Belorussia, June 1944. The front entries specify their air armies and distinguish the two wings of the 1st Belorussian Front."
+    },
+    {
+      "population": "bagration-air-armies",
+      "unit": "6th Air Army",
+      "place": "1st Belorussian Front, left wing (Kovel–Lublin sector, July)",
+      "stationIds": [],
+      "source": "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/connor.pdf",
+      "locator": "Connor, Annex C, Correlation of Forces, Belorussia, June 1944. The front entries specify their air armies and distinguish the two wings of the 1st Belorussian Front."
+    },
+    {
+      "population": "bagration-air-armies",
+      "unit": "16th Air Army",
+      "place": "1st Belorussian Front, right wing (Bobruisk sector)",
+      "stationIds": [],
+      "source": "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/connor.pdf",
+      "locator": "Connor, Annex C, Correlation of Forces, Belorussia, June 1944. The front entries specify their air armies and distinguish the two wings of the 1st Belorussian Front.",
+      "activity": "1944-06-24 · The army history records 3,191 combat sorties on the opening day in its sector, including 1,846 attack sorties. The totals cover repeated flights by many units.",
+      "activitySource": "https://militera.lib.ru/h/16va/03.html",
+      "activityLocator": "Chapter 3, first day"
+    }
+  ],
+  "notes": {
+    "britain-lf2": "All 21 numbered Gruppen have locations in Collier. Independent station chronologies narrow some entries and contradict others, including the three JG 54 Gruppen listed in South Holland. Disputed locations are shown side by side. Where two places are reported for I./JG 51, only Saint-Inglevert is mapped.",
+    "britain-lf2-hq": "The eight headquarters have separate location entries. Some conflict with station chronologies, including JG 52 and JG 54. Their staff aircraft represent the headquarters element.",
+    "britain-11g": "The war-station and sector columns describe different things. No. 257 has two stations. No. 1 Squadron RAF and No. 1 Squadron RCAF have different bases. Activities carry their own dates.",
+    "sicily-gruppen": "The return lists four island-based Gruppen. The JG 51 station chronology dates a further Gruppe’s move from Sardinia to Trapani to 10 July, leaving the timing of the change unresolved. Ramacca can be identified within the Gerbini complex for II./JG 53.",
+    "sicily-stab": "The German return establishes where two headquarters were based. It does not place every Gruppe of either wing on the island.",
+    "sicily-italian": "The five identified gruppi are a lower bound. Chinisia and the Palermo detachment belong to one unit. The Catania locality does not resolve a runway.",
+    "sicily-211": "The five wing headings account for 23 assigned squadrons. HQ Malta’s 9 July disposition distinguishes aircraft at airfields from personnel in camp. The separate July refit evidence for 7 SAAF Wing cannot establish a 10 July sortie.",
+    "sicily-xii": "The five group names come from the 10 July command table. Gozo, Pantelleria and the Tunisian bases made support possible before the groups moved to Sicily. Dated activities are documented separately.",
+    "citadel-gruppen": "The 4 July assembly table puts four Gruppen around Orel and four on the southern axis. The northern locality covers several airfields. Holm’s III./JG 52 chronology names Ugrim where the initial assembly table offers two possibilities.",
+    "bagration-air-armies": "The five Soviet air armies are linked to front sectors across the offensive. The 6th Air Army supported the later left-wing operation. An air army normally operated from multiple fields."
+  }
+}

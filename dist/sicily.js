@@ -94,11 +94,44 @@
     };
   }
 
+  const rosterOrder = ["sicily-gruppen", "sicily-stab", "sicily-italian",
+    "sicily-211-wings", "sicily-211", "sicily-xii"];
+
+  function rosterUrl(population, unit) {
+    return "./forces.html?" + new URLSearchParams({
+      campaign: "sicily", population, ...(unit ? { unit } : {})
+    });
+  }
+
+  function showRoster(populations, id) {
+    const row = populations.find(item => item.id === id);
+    if (!row) return;
+    get("roster-select").value = id;
+    const strength = row.members.some(m => Number.isFinite(m.strength));
+    const place = row.members.some(m => m.place);
+    get("roster-scope").textContent = window.AtlasRosterTools.labelDate(row.date) + " · " +
+      row.force + " · " + row.echelon + " · " + window.AtlasRosterTools.coverage(row) + ". " + row.scope;
+    const cell = value => "<td>" + escape(value ?? "Unrecorded") + "</td>";
+    const rows = row.members.map(m =>
+      '<tr><th scope="row">' + anchor(rosterUrl(id, m.unit), m.unit) + "</th>" + cell(m.parent || row.force) +
+        (place ? cell(m.place || "Unrecorded") : "") +
+        (strength ? cell(m.strength) + cell(m.serviceable) : "") + "</tr>").join("");
+    const headings = ["Formation", "Parent", ...(place ? ["Location in return"] : []),
+      ...(strength ? ["On strength", "Serviceable"] : [])];
+    get("roster-members").innerHTML = '<div class="roster-table"><table><caption>' +
+      escape(row.label) + "</caption><thead><tr>" +
+      headings.map(heading => '<th scope="col">' + heading + "</th>").join("") +
+      "</tr></thead><tbody>" + rows + "</tbody></table></div>";
+    get("roster-citation").innerHTML = escape(row.note) + " " + anchor(row.source, row.locator);
+    get("open-roster").href = rosterUrl(id);
+  }
+
   function start(data) {
     const sites = new Map(data.sites.map(item => [item.id, item]));
     const cases = new Map(data.cases.map(item => [item.id, item]));
     const formations = new Map(data.formations.map(item => [item.id, item]));
     const chapters = new Map(data.phases.map(item => [item.id, item]));
+    const populations = window.AtlasForceRosters?.campaigns?.sicily?.populations || [];
     const chapter = get("chapter");
     const formation = get("formation");
     const updateMap = createMap(sites, data.cover);
@@ -142,8 +175,13 @@
       get("case-context").textContent = dateRange(selected) + " · " + site.name;
       get("case-title").textContent = selected.title;
       get("case-summary").textContent = selected.summary;
-      get("case-formations").innerHTML = selected.formations.map(id =>
-        '<a href="#formation-' + id + '" data-formation="' + id + '">' + escape(formations.get(id).name) + '</a>').join("");
+      get("case-formations").innerHTML = selected.formations.map(id => {
+        const role = selected.formationRoles?.[id];
+        return '<p><a href="#formation-' + id + '" data-formation="' + id + '">' +
+          escape(formations.get(id).name) + "</a>" + (role ? " · " + escape(role) : "") + "</p>";
+      }).join("");
+      const caseRosters = populations.filter(p => selected.rosters?.includes(p.id));
+      get("case-rosters").innerHTML = caseRosters.map(p => anchor(rosterUrl(p.id), p.label)).join("");
       const historyRows = data.stations.filter(row => row.site === selected.site);
       get("station-history").innerHTML = historyRows.length ? '<h4>Airfield history</h4><ol>' +
         historyRows.map(row => '<li><time datetime="' + row.date + '">' + dateLabel(row.date) + '</time> · ' +
@@ -162,18 +200,40 @@
       const preferred = item || (!namedChapter ? cases.get(data.initial) : undefined);
       const unit = params.get("formation");
       chapter.value = preferred?.phase || params.get("chapter");
-      formation.value = formations.has(unit) ? unit : "";
+      formation.value = formations.has(unit) && (!item || item.formations.includes(unit)) ? unit : "";
       render(preferred);
+      const rosterId = params.get("roster");
+      showRoster(populations, populations.some(r => r.id === rosterId) ? rosterId : "sicily-gruppen");
     }
 
+    if (populations.length) {
+      const ordered = rosterOrder.map(id => populations.find(p => p.id === id)).filter(Boolean);
+      get("roster-select").innerHTML = ordered.map(p => option(p.id, p.label)).join("");
+      get("roster-controls").hidden = false;
+      get("roster-select").addEventListener("change", event => {
+        const id = event.target.value;
+        showRoster(populations, id);
+        const url = new URL(location.href);
+        url.searchParams.set("roster", id);
+        url.hash = "deployment";
+        history.replaceState(null, "", url);
+      });
+    }
+    const lastCase = data.cases[data.cases.length - 1];
+    get("chronology-scope").textContent = "The chronology follows " + formations.size +
+      " selected squadrons, groups, wings and army brigades from " + dateLabel(data.cases[0].date) +
+      " to " + dateLabel(lastCase.end || lastCase.date) + ".";
     chapter.innerHTML = data.phases.map(item => option(item.id, item.title)).join("");
-    formation.innerHTML = option("", "All formations") + data.formations.map(item => option(item.id, item.name)).join("");
+    formation.innerHTML = option("", "All units in these cases") + data.formations.map(item => option(item.id, item.name)).join("");
     get("formation-list").innerHTML = data.formations.map(unit =>
       '<details class="record" id="formation-' + unit.id + '"><summary><strong>' + escape(unit.name) +
       '</strong><span class="command">' + escape(unit.role) + '</span></summary><div class="details"><p>' +
-      escape(unit.summary) + '</p><ul>' + data.cases.filter(item => item.formations.includes(unit.id)).map(item =>
+      escape(unit.summary) + '</p>' + (unit.roster ? '<p>' +
+        anchor(rosterUrl(unit.roster.population, unit.roster.unit), "10 July deployment record") + '</p>' : '') +
+      '<ul>' + data.cases.filter(item => item.formations.includes(unit.id)).map(item =>
         '<li>' + escape(dateRange(item)) + ' · <a href="' + escape(caseUrl(item, unit.id)) +
-        '" data-case="' + item.id + '" data-set-formation="' + unit.id + '">' + escape(item.title) + '</a></li>').join("") +
+        '" data-case="' + item.id + '" data-set-formation="' + unit.id + '">' + escape(item.title) + '</a>' +
+        (item.formationRoles?.[unit.id] ? ' · ' + escape(item.formationRoles[unit.id]) : '') + '</li>').join("") +
       '</ul></div></details>').join("");
     get("source-register").innerHTML = record(data.totals) +
       '<details class="record"><summary>Campaign source register</summary><ul>' +
@@ -210,7 +270,7 @@
     }
   }
 
-  fetch("./research/transcriptions/sicily-air-campaign-1943.json?v=airfields2")
+  fetch("./research/transcriptions/sicily-air-campaign-1943.json?v=10.1")
     .then(response => {
       if (!response.ok) throw new Error("Campaign records unavailable.");
       return response.json();

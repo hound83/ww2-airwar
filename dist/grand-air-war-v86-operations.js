@@ -138,6 +138,21 @@ function choose(id,index=0){
  if(window.history?.replaceState&&window.location)window.history.replaceState(null,'','#operation='+operation.id+'&step='+step);
  return true;
 }
+function formationScope(op) {
+ const campaignLink = './forces.html?campaign=' + D.campaign;
+ if (op.id === 'britain-7-sep') {
+  return '<p class="operation-scope-note">These two cards identify Fighter Command and two German air fleets. On 7 September, the tables for Luftflotte 2 and No. 11 Group identify individual units. ' +
+   '<a href="' + campaignLink + '&amp;population=britain-lf2">21 fighter Gruppen</a>, ' +
+   '<a href="' + campaignLink + '&amp;population=britain-lf2-hq">8 wing headquarters</a> and ' +
+   '<a href="' + campaignLink + '&amp;population=britain-11g">23 No. 11 Group squadrons and stations</a>.</p>';
+ }
+ if (op.id === 'dday') {
+  return '<p class="operation-scope-note">The five cards identify air commands supporting or opposing the landings on 6 June. German fighter reinforcements began arriving the next day. ' +
+   '<a href="' + campaignLink + '&amp;population=normandy-reinforcements">Fighter Gruppen transferred west, 7–9 June</a></p>';
+ }
+ const scope = D.campaign === 'britain' ? 'The cards identify selected British and German commands in this operation.' : 'The cards identify selected air commands and ground formations in this operation.';
+ return '<p class="operation-scope-note">' + scope + ' <a href="' + campaignLink + '">Compare dated force returns for the campaign</a></p>';
+}
 function render(){
  sync();if(!operation)return;
  const active=document.activeElement;
@@ -173,7 +188,7 @@ function render(){
  (raidClaims?'<a class="operation-claim-jump" href="#claim-loss-calculator" data-claim-scope="britain" data-claim-count="'+raidClaims.value+'">Compare with the seven selected days</a>':'')+
  (op.id==='dday'?'<p class="operation-interpretation"><strong>Read the allocation:</strong> 15 + 54 + 33 + 33 + 36 = 171 squadrons. The total is not a sixth additional task and cannot be added to its five components.</p>':'')+
  (op.id==='mortain'?'<p class="operation-interpretation"><strong>Three different scopes:</strong> 294 is local Typhoon activity on 7 August; 2,193 covers wider Typhoon operations over five days; 4,012 is IX TAC over seven days. These figures overlap in time and are not summed. Ground investigation found that air claims overstated tank destruction.</p>':'')+
- '<h3 class="operation-subheading">The formations behind the operation</h3><div class="operation-formations">'+op.formations.map(id=>{const f=D.formations[id];return '<article data-formation="'+esc(id)+'" class="'+(f.side==='German'?'axis':'')+'"><span>'+esc(f.side+' · '+f.level)+'</span><h4>'+esc(f.name)+'</h4><strong>'+esc(f.aircraft)+'</strong><p>'+esc(f.role)+'</p>'+source(f.source,f.page)+'</article>';}).join('')+'</div>'+
+ '<h3 class="operation-subheading">Selected commands and formations</h3>'+formationScope(op)+'<div class="operation-formations">'+op.formations.map(id=>{const f=D.formations[id];return '<article data-formation="'+esc(id)+'" class="'+(f.side==='German'?'axis':'')+'"><span>'+esc(f.side+' · '+f.level)+'</span><h4>'+esc(f.name)+'</h4><strong>'+esc(f.aircraft)+'</strong><p>'+esc(f.role)+'</p>'+source(f.source,f.page)+'</article>';}).join('')+'</div>'+
  (fields.length?'<h3 class="operation-subheading">Forward airfields</h3><p class="operation-scope-note">The dates show first use. Unit presence and serviceability depend on the reporting date.</p><div class="operation-fields">'+fields.map(f=>'<article><span class="operation-field-status">'+(f.firstUse<=s.date?'Known first use by this snapshot':'First use after this snapshot')+'</span><h4>'+esc(f.id+' · '+f.name)+'</h4><strong>'+esc(f.firstUse)+'</strong><p>'+esc(f.dateMeaning)+'</p><p>'+esc(f.unit)+'</p>'+source(f.source,f.page)+'</article>').join('')+'</div>':'')+
  '<div class="operation-connections"><a href="#campaigns">Continue through the campaign chapters ↓</a>'+
  (D.campaign==='normandy'?'<a href="./grand-air-war-v76.html">Open the detailed forward-airfield notebook ↗</a>':'')+

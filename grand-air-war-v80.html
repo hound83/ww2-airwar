@@ -3,10 +3,10 @@
 <link rel="stylesheet" href="./dist/europe-return.css"><script defer src="./dist/europe-index.js"></script><script defer src="./dist/europe-return.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09131b"><meta name="description" content="Grand Air War: European WWII air campaigns, source-backed loss reports, force data and interactive map 1936–1945.">
-<title>Grand Air War Atlas v10.0 · The connected European air war</title>
+<title>Grand Air War Atlas v10.1 · Forces in the field</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/grand-air-war-v77.css">
-<link rel="stylesheet" href="./dist/grand-air-war-v80.css">
+<link rel="stylesheet" href="./dist/grand-air-war-v80.css?v=10.1">
 <link rel="stylesheet" href="./dist/grand-air-war-v86.css?v=9.0.0">
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="./dist/model-v3-data.js"></script><script defer src="./dist/atlas-v7-data.js"></script>
@@ -20,19 +20,20 @@
 <script defer src="./dist/grand-air-war-v87-data.js?v=8.7.0"></script>
 <script defer src="./dist/grand-air-war-v80-studies.js"></script>
 <script defer src="./dist/operational-balance-index.js?v=9.10"></script>
-<script defer src="./dist/grand-air-war-v80-core.js?v=10.0"></script>
+<script defer src="./dist/force-rosters-data.js?v=10.1"></script><script defer src="./dist/force-rosters-shared.js?v=10.1"></script>
+<script defer src="./dist/grand-air-war-v80-core.js?v=10.1"></script>
 <script defer src="./dist/grand-air-war-v88-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-campaign-losses.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v88-losses.js?v=9.0.0"></script>
-<script defer src="./dist/grand-air-war-v86-operations.js?v=8.9.1"></script>
+<script defer src="./dist/grand-air-war-v86-operations.js?v=10.1"></script>
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
 <script defer src="./dist/grand-air-war-v80-lab.js"></script>
 </head><body>
-<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas v10.0 · Campaign Explorer</b></nav></div></header>
+<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas v10.1 · Campaign Explorer</b></nav></div></header>
 <main class="shell">
 <section class="intro" id="overview"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Read how air power changed the war for the people who flew, the armies they supported and the towns beneath them. Explore a campaign on the map or follow the story across Europe.</p><a class="europe-start" href="./europe.html">Read the seven chapters <span aria-hidden="true">→</span></a></section>
-<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="#claim-loss-calculator">Claims and losses</a><a href="./operations-1944.html">1944 mission timeline</a><a href="./operational-balance.html">Operational balance studies</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
+<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="./forces.html">Forces in the field</a><a href="#claim-loss-calculator">Claims and losses</a><a href="./operations-1944.html">1944 mission timeline</a><a href="./operational-balance.html">Operational balance studies</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
 <section class="timebar" aria-label="Date and theatre controls">
 <div class="time-top"><div><span class="eyebrow">SELECT A HISTORICAL MONTH</span><output id="date-display" for="date-slider">June 1944</output></div><div class="time-actions"><button type="button" id="prev-month" aria-label="Previous month">‹</button><button type="button" id="next-month" aria-label="Next month">›</button><button type="button" id="play-time">▶ Play</button><button type="button" id="jump-today">June 1944</button></div></div>
 <input type="range" id="date-slider" min="0" max="106" step="1" value="95" aria-label="Historical month from July 1936 through May 1945">
@@ -43,11 +44,12 @@
 <section class="mainstage" aria-label="Campaign geography and battle dossier">
  <div class="map-panel"><div class="map-top"><div class="eyebrow">HISTORICAL THEATER CHART · COASTLINES ONLY</div><strong id="map-heading">Air campaigns active in June 1944</strong></div><div id="campaign-map" tabindex="0" role="region" aria-label="Interactive Europe map with clickable campaign centres and wartime reporting areas"></div><div id="map-fallback" hidden>Historical coastline geometry could not be loaded. The campaign locations remain accessible; the map intentionally does not fall back to modern political borders.</div><div class="map-bottom"><span id="map-legend"><i class="marker-swatch campaign"></i> Numbered pins = campaign IDs; larger circles = cluster counts (click to choose)</span><span id="map-source-note">Gold = active month · muted = other periods · Natural Earth coastlines, no modern borders</span></div></div>
  <aside class="dossier" id="campaign-dossier" aria-live="polite" aria-label="Campaign historical analysis">
-  <div class="dossier-label" id="dossier-meta">CAMPAIGN HISTORY</div><h2 id="dossier-title">Campaign dossier</h2><div class="dossier-dateline"><p id="dossier-dates" class="period"></p><a id="dossier-facts-jump" href="#dossier-facts">Sourced figures</a><a id="dossier-formations" hidden>Formation histories</a><span id="dossier-balances"></span><a id="dossier-europe" hidden></a></div>
+  <div class="dossier-label" id="dossier-meta">CAMPAIGN HISTORY</div><h2 id="dossier-title">Campaign dossier</h2><div class="dossier-dateline"><p id="dossier-dates" class="period"></p><a id="dossier-facts-jump" href="#dossier-facts">Sourced figures</a><a id="dossier-roster-jump" hidden>Dated force rosters</a><a id="dossier-formations" hidden>Formation histories</a><span id="dossier-balances"></span><a id="dossier-europe" hidden></a></div>
   <section id="dossier-study" class="dossier-study" aria-labelledby="dossier-study-title" hidden>
    <h3 id="dossier-study-title"></h3><p id="dossier-study-answer"></p><a id="dossier-study-link"></a>
    <details id="dossier-study-notes"><summary>Source and open question</summary><p><a id="dossier-study-source"></a></p><p id="dossier-study-gap"></p><div id="dossier-study-context" hidden><p id="dossier-study-context-text"></p><a id="dossier-study-context-source"></a></div></details>
   </section>
+  <section id="dossier-deployments" class="dossier-deployments" aria-label="Deployment coverage" hidden></section>
   <h3 class="dossier-key-findings" id="dossier-facts-heading">Campaign evidence · sourced figures</h3><div id="dossier-facts" class="fact-grid" role="region" aria-labelledby="dossier-facts-heading" tabindex="-1"></div>
   <div class="label">WHY IT WAS FOUGHT</div><p id="dossier-aim"></p><div class="label">WHAT CHANGED / WHY</div><p id="dossier-turn"></p><div class="label">OUTCOME</div><p id="dossier-outcome"></p>
   <div class="dossier-forces" id="dossier-forces"></div>

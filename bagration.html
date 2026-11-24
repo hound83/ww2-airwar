@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./dist/bagration.css?v=9.6.0">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-  <script defer src="./dist/bagration.js?v=9.6.0"></script>
+  <script defer src="./dist/bagration.js?v=10.1.0"></script>
 </head>
 <body>
   <a class="skip" href="#campaign">Skip to campaign</a>
@@ -29,6 +29,7 @@
       <p>Four Soviet fronts broke through Army Group Centre in Belarus and drove west. Their air armies covered crossings, struck retreat routes and moved to forward fields. German records follow the Luftwaffe’s withdrawal and the changing strength of individual formations.</p>
       <nav class="intro-links" aria-label="Bagration navigation">
         <a href="#campaign">Map and chronology</a>
+        <a href="./forces.html?campaign=bagration&amp;population=bagration-air-armies">Five Soviet air armies and their fronts</a>
         <a href="#formations">Formations and stations</a>
         <a href="#sources">Sources and downloads</a>
       </nav>
@@ -67,12 +68,20 @@
     </section>
     <section id="formations" aria-labelledby="formation-heading">
       <h2 id="formation-heading">Formations and dated stations</h2>
+      <p>The 1 July tables name 52 aviation divisions across five Soviet air armies. Each army card links to its divisions. Regimental stations and daily flying records are still incomplete. On 27 June a surviving order identifies the three fighter divisions assigned to cover the Bobruisk attack.</p>
+      <nav class="intro-links" aria-label="Bagration force rosters">
+        <a href="./forces.html?campaign=bagration&amp;population=bagration-soviet-cover">Bobruisk fighter cover, 27 June</a>
+        <a href="./forces.html?campaign=bagration&amp;population=bagration-german-fighters">German fighter groups, 26 June</a>
+        <a href="./forces.html?campaign=bagration&amp;population=bagration-german-assault">German assault groups, 26 June</a>
+        <a href="./forces.html?campaign=bagration&amp;population=bagration-german-bombers">German bomber groups, 26 June</a>
+      </nav>
       <div id="unit-list" class="unit-grid"></div>
     </section>
     <section id="sources" aria-labelledby="sources-heading">
       <h2 id="sources-heading">Sources and downloads</h2>
       <div class="intro-links">
         <a href="./research/transcriptions/bagration-air-campaign-1944.json" download>Campaign evidence (JSON)</a>
+        <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/deployment-eastern-rosters.md">Formation counts, conflicting stations and source notes</a>
         <a href="https://github.com/hound83/ww2-airwar/blob/main/research/sources/atlas-bagration-air-campaign-2026-11-13.md">Research audit and Wikipedia reference trail</a>
       </div>
       <div id="source-register"></div>

@@ -2,6 +2,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const vm = require("node:vm");
 const root = path.join(__dirname, "..");
 const data = JSON.parse(fs.readFileSync(path.join(root, "research/transcriptions/sicily-air-campaign-1943.json"), "utf8"));
 const index = list => {
@@ -43,5 +44,26 @@ assert.deepEqual(data.stations.filter(row => row.site === "ponteolivo").map(row 
 assert.equal(cases.get("pachino-operational").evidence.find(r => r.source === "orb92").figures["Squadron sorties that day, all origins"], 41);
 assert.ok(cases.get("pachino-patrols").formations.includes("sq92"));
 assert.ok(fs.existsSync(path.join(root, "research/sources/atlas-sicily-air-campaign-2026-11-14.md")));
+assert.deepEqual(cases.get("messina").formations, ["sq92"]);
+assert.equal(cases.get("messina").evidence.find(r => r.source === "orb92").figures["Baltimores escorted to Messina"], 12);
+assert.match(cases.get("pachino-capture").formationRoles.wing244, /advance officers inspected/);
+assert.match(cases.get("corkscrew").formationRoles.fg33, /Patrolled/);
+assert.equal(cases.get("pantelleria-basing").date, "1943-06-18");
+assert.equal(cases.get("pantelleria-basing").end, "1943-06-19");
+assert.equal(cases.get("licata").end, "1943-07-18");
+assert.deepEqual(cases.get("axis-readiness").rosters, ["sicily-gruppen", "sicily-stab", "sicily-italian"]);
+assert.ok(cases.get("landing-cover").formations.includes("sq242"));
+assert.ok(!cases.get("biscari").formations.includes("skg10"));
+const rosterContext = {window: {}};
+vm.runInNewContext(fs.readFileSync(path.join(root, "dist/force-rosters-data.js"), "utf8"), rosterContext);
+const populations = index(rosterContext.window.AtlasForceRosters.campaigns.sicily.populations);
+for (const unit of formations.values()) {
+  if (!unit.roster) continue;
+  assert.ok(populations.get(unit.roster.population).members.some(m => m.unit === unit.roster.unit), unit.name);
+}
+for (const item of data.cases) {
+  for (const id of Object.keys(item.formationRoles || {})) assert.ok(item.formations.includes(id));
+  for (const id of item.rosters || []) assert.ok(populations.has(id), item.id + " " + id);
+}
 console.log("PASS Sicily: cases, locations, formations, capture dates, readiness and source scope");
 
