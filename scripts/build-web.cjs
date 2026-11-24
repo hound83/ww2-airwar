@@ -9,6 +9,7 @@ const root=path.resolve(__dirname,'..');
 require('./build-narvik.cjs');
 require('./build-formations.cjs');
 require('./build-operational-balance.cjs');
+require('./build-europe.cjs');
 const normandy=JSON.parse(fs.readFileSync(path.join(root,'research/transcriptions/normandy-v86-operations.json'),'utf8'));
 fs.writeFileSync(path.join(root,'dist/grand-air-war-v86-data.js'),'/* Generated from research/transcriptions/normandy-v86-operations.json. */\nwindow.NormandyV86Data = '+JSON.stringify(normandy,null,2)+';\n','utf8');
 const britain=JSON.parse(fs.readFileSync(path.join(root,'research/transcriptions/britain-v87-operations.json'),'utf8'));

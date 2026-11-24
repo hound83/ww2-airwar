@@ -1,0 +1,4 @@
+#chapter-return{position:sticky;top:0;z-index:1100;isolation:isolate;padding:.38rem max(1rem,calc((100vw - 72rem)/2));background:#ecf0df;border-bottom:1px solid #849b83;color:#1c4339;font:600 .88rem/1.5 system-ui,sans-serif}
+#chapter-return a{color:inherit;text-underline-offset:.16em}
+html:has(#chapter-return){scroll-padding-top:3rem}
+#chapter-return a:focus-visible{outline:2px solid #a34626;outline-offset:2px}

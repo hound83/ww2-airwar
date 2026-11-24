@@ -83,7 +83,7 @@ module.exports = async (browser, base, root) => {
       await page.getByRole("heading", { name: /patrols before the ground party/ }).waitFor();
       await page.getByRole("link", { name: "Sicily campaign dossier", exact: true }).click();
       await page.waitForURL(/campaign=sicily#campaign-dossier$/);
-      assert.match(await page.locator("#dossier-title").innerText(), /Sicily/);
+      await page.locator("#dossier-title").filter({hasText: /Sicily/}).waitFor();
       await page.locator('#campaign-list [data-campaign="dieppe"]').click();
       await page.locator("#dossier-study-link").click();
       await page.waitForURL(/dieppe\.html#withdrawal$/);
@@ -96,7 +96,7 @@ module.exports = async (browser, base, root) => {
       assert.match(await page.locator("#losses").innerText(), /108 Allied aircraft/);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       await page.getByRole("link", {name:"Return to the Dieppe dossier and its sourced figures"}).click();
-      assert.match(await page.locator("#dossier-title").innerText(), /Dieppe/);
+      await page.locator("#dossier-title").filter({hasText: /Dieppe/}).waitFor();
       assert.deepEqual(errors, []);
     } finally {
       await page.close();

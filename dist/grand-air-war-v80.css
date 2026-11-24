@@ -216,3 +216,5 @@
 .dossier-dateline .period { margin-block: .2rem; }
 .dossier-dateline a { font-size: .85rem; padding-block: .25rem; }
 #dossier-facts { scroll-margin-block-start: .5rem; }
+
+.intro .europe-start{display:inline-block;margin-top:.7rem;padding:.45rem .85rem;color:#173c35;background:#edf0dd;border:1px solid #879d85;border-radius:.2rem;font-weight:700;text-decoration:none}.intro .europe-start:hover,.intro .europe-start:focus-visible{text-decoration:underline;text-underline-offset:.18em}

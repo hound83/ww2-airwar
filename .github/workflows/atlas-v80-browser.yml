@@ -4,6 +4,11 @@ on:
   pull_request:
     paths:
       - 'grand-air-war-v80.html'
+      - 'europe.html'
+      - 'dist/europe*'
+      - 'tests/europe*.cjs'
+      - 'scripts/build-europe.cjs'
+      - 'research/transcriptions/europe-chapters.json'
       - 'operations-1944.html'
       - 'bodenplatte.html'
       - 'operational-balance.html'

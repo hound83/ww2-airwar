@@ -2,7 +2,8 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs/promises");
 const path=require("node:path");
-const {studies,version}=require("../research/transcriptions/operational-balance.json");
+const {version}=require("../research/transcriptions/europe-chapters.json");
+const {studies}=require("../research/transcriptions/operational-balance.json");
 module.exports=async(browser,base,root)=>{
   for (const width of [1440,390]) {
     const page=await browser.newPage({viewport:{width,height:width===390?844:900},hasTouch:width===390,isMobile:width===390});
@@ -54,5 +55,5 @@ module.exports=async(browser,base,root)=>{
       assert.deepEqual(errors,[]);
     } finally {await page.close();}
   }
-  console.log("PASS v9.10 public labels, six study journeys, evidence fragments, formation returns and CSV contents at both widths");
+  console.log("PASS current public labels, six study journeys, evidence fragments, formation returns and CSV contents at both widths");
 };

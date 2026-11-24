@@ -104,7 +104,7 @@
     const updateMap = createMap(sites, data.cover);
     let selected;
 
-    const caseUrl = (item, unit = "") => "?" + new URLSearchParams({ case: item.id, ...(unit ? { formation: unit } : {}) }) + "#campaign";
+    const caseUrl = (item, unit = "") => "?" + new URLSearchParams({ case: item.id, ...(unit ? { formation: unit } : {}), ...window.AtlasReading?.params }) + "#campaign";
     const caseLink = (item, label) => '<a href="' + escape(caseUrl(item, formation.value)) +
       '" data-case="' + escape(item.id) + '">' + escape(label) + '</a>';
     const source = (id, pdfPage) => anchor(data.sources[id][1] + (pdfPage ? "#page=" + pdfPage : ""), data.sources[id][0]);
@@ -133,7 +133,7 @@
       get("case-detail").hidden = !selected;
       if (!selected) {
         if (updateUrl) history.pushState(null, "", "?" + new URLSearchParams({
-          chapter: chapter.value, formation: formation.value
+          chapter: chapter.value, formation: formation.value, ...window.AtlasReading?.params
         }) + "#campaign");
         return;
       }

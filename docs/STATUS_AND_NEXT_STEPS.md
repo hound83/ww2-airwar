@@ -2,6 +2,10 @@
 
 [Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 24 November 2026 · v10.0, the connected European air war
+
+[Seven chapters](../europe.html) follow the changing effects of air power from Spain to Berlin. All 20 dossiers and their dated cases are linked in context, with explicit return routes through six flagship campaigns, formation histories and all six balance studies. The [chapter audit](../research/sources/connected-europe.md) records the source limits. The next research priority is a matched comparison of dispatch and receipt at Stalingrad and Arnhem.
+
 ## 22 November 2026 · v9.10 operational balance studies
 
 [Six studies](../operational-balance.html) connect capacity to what units and their beneficiaries experienced. The [77 evidence figures and 19 calculations](../research/exports/operational-balance.csv) retain their dates, populations and sources. [Source audit](../research/sources/operational-balance.md). The next milestone is the connected European history planned for v10.

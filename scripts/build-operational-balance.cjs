@@ -3,7 +3,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname, "..");
 const read = p => JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
-const {studies,sources,version} = read("research/transcriptions/operational-balance.json");
+const {studies,sources} = read("research/transcriptions/operational-balance.json");
+const {version} = read("research/transcriptions/europe-chapters.json");
 const formations = read("research/transcriptions/formation-histories.json");
 const names = { ...Object.fromEntries(Object.entries(formations.campaigns).map(([id,c])=>[id,c.name])),bigweek:"Big Week",bodenplatte:"Bodenplatte" };
 const unitName = new Map(formations.units.map(u=>[u.id,u.name]));
@@ -71,7 +72,7 @@ function studySection(s) {
 const sections=studies.map(studySection);
 saveCsv("",allRecords);
 const index=studies.map(s=>'<li>'+link("#"+s.id,s.label)+'<span>'+escape(s.title)+'</span></li>').join("\n");
-const html='<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Six historical studies of what aircraft, crews, fuel and repairs allowed air forces to do next."><title>Operational balance studies · Grand Air War Atlas v'+version+'</title><link rel="stylesheet" href="./dist/operations-1944.css"><link rel="stylesheet" href="./dist/operational-balance.css"></head><body>'+
+const html='<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="./dist/europe-return.css"><script defer src="./dist/europe-index.js"></script><script defer src="./dist/europe-return.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Six historical studies of what aircraft, crews, fuel and repairs allowed air forces to do next."><title>Operational balance studies · Grand Air War Atlas v'+version+'</title><link rel="stylesheet" href="./dist/operations-1944.css"><link rel="stylesheet" href="./dist/operational-balance.css"></head><body>'+
 '<a class="skip" href="#studies">Skip to studies</a><header class="mast"><nav class="wrap" aria-label="Atlas navigation">'+link("./grand-air-war-v80.html","European Air War Atlas v"+version)+link("./formations.html","Formation histories")+'</nav></header><main class="wrap balance"><header class="intro"><h1>What could the air forces do next?</h1><p class="lead">Six studies follow aircraft and crews from one operation to the next. The records show when repairs restored a squadron, when fuel limited flying, and what the armies and ships under air cover actually experienced.</p></header>'+
 '<nav id="studies" tabindex="-1" aria-label="Choose a study"><ul class="directory">'+index+'</ul></nav><p><a download href="./'+exportPath("")+'">Download all six studies (CSV)</a> · '+link("./research/transcriptions/operational-balance.json","Source data (JSON)")+'</p>\n'+sections.join("\n")+'</main></body></html>\n';
 fs.writeFileSync(path.join(root,"operational-balance.html"),html,"utf8");
