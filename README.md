@@ -2,6 +2,8 @@
 
 **Current public version: v10.0 · The connected European air war.** [Read the seven chapters](https://hound83.github.io/ww2-airwar/europe.html) or [open the campaign map](https://hound83.github.io/ww2-airwar/). The chapters connect all 20 campaign dossiers, dated cases, formation histories and the six operational balance studies. Each evidence route leads back to its chapter.
 
+[Post-v10 roadmap](docs/ATLAS_COVERAGE_ROADMAP.md) · [Deployment and coverage audit across all 20 campaigns](research/sources/atlas-coverage-audit.md)
+
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
 [January–July 1944 mission timeline](https://hound83.github.io/ww2-airwar/operations-1944.html) · [Operational dataset and source audit](research/sources/operations-january-june-1944.md)
