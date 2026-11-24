@@ -80,5 +80,13 @@ assert.equal(record("dec25-auster").date, "1944-12-25");
 assert.deepEqual(record("defence-antwerp").value, [16, 14, 3]);
 assert.equal(record("defence-antwerp").quality, "wave counts");
 assert.match(data.airframes.find(row => row.serial === "NS746").metric, /initially AC; later CE/);
-assert.deepEqual(data.formations.rows.find(row => row.formation === "III./JG 53").sites.map(site => site.id), ["etain"]);
+const formation = id => data.formations.rows.find(row => row.formation === id);
+for (const [unit, site] of Object.entries({
+  "III./JG 53": "etain", "I./JG 26": "grimbergen", "II./JG 26": "evere",
+  "III./JG 26": "evere", "III./JG 54": "grimbergen", "IV./JG 54": "melsbroek"
+})) {
+  assert.deepEqual(formation(unit).sites.map(field => field.id), [site]);
+  assert.match(formation(unit).sectorBasis, /^Gruppe/);
+}
+assert.match(formation("I./JG 77").sectorBasis, /^Parent wing/);
 console.log("PASS Bodenplatte v9.5: 20 locations, 16 chronology entries, 175 named airframes, 37 formations and 11 defence reports.");

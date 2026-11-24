@@ -157,6 +157,7 @@
     },
     {
       "id": "asch",
+      "identifiedGruppen": ["II./JG 4"],
       "name": "Asch / Zutendaal",
       "code": "Y-29",
       "country": "Belgium",
@@ -178,6 +179,7 @@
     },
     {
       "id": "evere",
+      "identifiedGruppen": ["II./JG 26", "III./JG 26"],
       "name": "Brussels–Evere",
       "code": "B-56",
       "country": "Belgium",
@@ -203,6 +205,7 @@
     },
     {
       "id": "grimbergen",
+      "identifiedGruppen": ["I./JG 26", "III./JG 54"],
       "name": "Brussels–Grimbergen",
       "code": "B-60",
       "country": "Belgium",
@@ -228,6 +231,7 @@
     },
     {
       "id": "melsbroek",
+      "identifiedGruppen": ["IV./JG 54"],
       "name": "Brussels–Melsbroek",
       "code": "B-58",
       "country": "Belgium",
@@ -278,6 +282,7 @@
     },
     {
       "id": "ghent",
+      "identifiedGruppen": ["II./JG 1"],
       "name": "Ghent–Sint-Denijs-Westrem",
       "code": "B-61",
       "country": "Belgium",
@@ -407,6 +412,7 @@
     },
     {
       "id": "metz",
+      "identifiedGruppen": ["II./JG 53", "IV./JG 53"],
       "name": "Metz–Frescaty",
       "code": "Y-34",
       "country": "France",
@@ -461,6 +467,7 @@
     },
     {
       "id": "sinttruiden",
+      "identifiedGruppen": ["IV./JG 4"],
       "name": "Sint-Truiden / St. Trond",
       "code": "A-92",
       "country": "Belgium",
@@ -590,6 +597,7 @@
     },
     {
       "id": "etain",
+      "identifiedGruppen": ["III./JG 53"],
       "name": "Étain–Rouvres",
       "code": "A-82",
       "country": "France",

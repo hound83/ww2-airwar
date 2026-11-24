@@ -2,6 +2,12 @@
 
 [Current roadmap after v10](ATLAS_COVERAGE_ROADMAP.md) · [Completed roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 25 November 2026 — v10.1, Who was there?
+
+All 20 dossiers show which forces their sources cover, by date and echelon. The [roster explorer](../forces.html) contains 44 scoped lists and 297 dated memberships. Sicily includes four German fighter Gruppen, two wing headquarters and the 23 squadrons in five Commonwealth wings. Britain includes separate German and No. 11 Group returns for 7 September. Kursk covers both sectors, and Bagration follows the five Soviet air armies into 52 divisional entries on 1 July. These are counts of memberships in particular returns. A unit can recur across dates and a command can appear alongside its subordinates. [Research baseline](../research/sources/atlas-coverage-audit.md) · [Eastern returns](../research/sources/deployment-eastern-rosters.md) · [Station evidence and disagreements](../research/sources/deployment-stations.md) · [Download all rows](../research/exports/force-rosters.csv)
+
+Next up is the opening and Channel campaigns. Establish dated initial and later dispositions for Spain, Poland, Norway, France and the Low Countries, Britain, and Dieppe, then trace a mission to an opposing or receiving-side record where one survives.
+
 ## 24 November 2026 · v10.0, the connected European air war
 
 [Seven chapters](../europe.html) follow the changing effects of air power from Spain to Berlin. All 20 dossiers and their dated cases are linked in context, with explicit return routes through six flagship campaigns, formation histories and all six balance studies. The [chapter audit](../research/sources/connected-europe.md) records the source limits. The next research priority is a matched comparison of dispatch and receipt at Stalingrad and Arnhem.

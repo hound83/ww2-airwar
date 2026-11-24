@@ -9,10 +9,12 @@
 <title>From Malta to Messina · European Air War Atlas</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/operations-1944.css">
-<link rel="stylesheet" href="./dist/sicily.css?v=9.9">
+<link rel="stylesheet" href="./dist/sicily.css?v=10.1">
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script defer src="./dist/sicily.js?v=airfields2"></script>
+<script defer src="./dist/force-rosters-shared.js?v=10.1"></script>
+<script defer src="./dist/force-rosters-data.js?v=10.1"></script>
+<script defer src="./dist/sicily.js?v=10.1"></script>
 </head>
 <body>
 <a class="skip" href="#campaign">Skip to the campaign</a>
@@ -29,16 +31,19 @@
     <p>Allied fighters <a href="?case=landing-cover#case-detail">covered the landings</a> from offshore bases. By 12 July their attacks on <a href="https://www.ibiblio.org/hyperwar/AAF/II/AAF-II-14.html#page453">Axis road traffic</a> were helping the armies hold and expand their beachheads. From Pachino, No. 92 Squadron later <a href="?case=pachino-shipping#case-detail">covered Nelson and Rodney off Syracuse</a>. At <a href="?case=messina#case-detail">Messina</a>, attacks on the ferries continued as Axis troops escaped to Italy.</p>
     <nav class="intro-links" aria-label="Sicily navigation">
       <a href="#campaign">Map and chronology</a>
-      <a href="#formations">Formations</a>
+      <a href="#deployment">Dated force rosters</a>
+      <a href="#formations">Units in the chronology</a>
       <a href="#sources">Sources and download</a>
     </nav>
   </header>
 
   <section id="campaign" aria-labelledby="campaign-heading">
     <h2 id="campaign-heading">The air campaign</h2>
+    <p id="chronology-scope"></p>
     <div class="campaign-controls" hidden>
       <label for="chapter">Chapter<select id="chapter" aria-label="Chapter"></select></label>
-      <label for="formation">Formation<select id="formation" aria-label="Formation"></select></label>
+      <label for="formation">Unit in the dated cases<select id="formation"></select></label>
+      <a class="roster-jump" href="#deployment">Browse forces deployed on 9–10 July</a>
     </div>
     <p id="chapter-summary"></p>
     <p id="load-status" role="status">Loading campaign records.</p>
@@ -54,13 +59,27 @@
       <p id="case-context" class="muted"></p>
       <h3 id="case-title" tabindex="-1"></h3>
       <p id="case-summary"></p>
-      <div id="case-formations" class="intro-links"></div>
+      <div id="case-formations"></div>
+      <div id="case-rosters" class="intro-links"></div>
       <div id="station-history"></div>
       <div id="case-evidence"></div>
     </article>
   </section>
+  <section id="deployment" class="panel" aria-labelledby="roster-heading">
+    <h2 id="roster-heading">Forces at the landings</h2>
+    <p>Compare the units based on Sicily with Allied formations assigned to the invasion. The German and Italian returns are dated a day apart.</p>
+    <div id="roster-controls" hidden>
+      <label for="roster-select">Dated roster</label>
+      <select id="roster-select"></select>
+      <p id="roster-scope" role="status"></p>
+      <div id="roster-members"></div>
+      <p id="roster-citation"></p>
+    </div>
+    <p><a id="open-roster" href="./forces.html?campaign=sicily">View roster, stations and CSV</a></p>
+  </section>
   <section id="formations" aria-labelledby="formation-heading" hidden>
-    <h2 id="formation-heading">Formations and dated operations</h2>
+    <h2 id="formation-heading">Units in the chronology</h2>
+    <p>These units have evidence linked to a dated case. The <a href="#deployment">deployment rosters</a> also identify formations whose individual flights still need a mission record.</p>
     <div id="formation-list"></div>
   </section>
   <section id="sources" aria-labelledby="sources-heading">

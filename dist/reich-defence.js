@@ -144,6 +144,10 @@
       return '<h3>Reich command · monthly context</h3><p class="detail-note">No transcribed command total for this month in the Atlas.</p>';
     }
 
+    const raidRosters = {
+      "black-thursday": ["schweinfurt", "schweinfurt-b17", "The 16 B-17 groups dispatched to Schweinfurt, 14 October 1943"],
+      "berlin-march": ["reichdefense", "berlin-raid-first", "The six German Gruppen in the first scramble, 6 March 1944"]
+    };
     function choose(item, navigate = false, refit = false) {
       selected = item;
       if (navigate) history.replaceState(null, "", "#" + item.id);
@@ -152,6 +156,15 @@
       $("raid-title").textContent = item.title;
       $("raid-date").textContent = interval(item) + " · " + modeLabels[item.mode] + " · " + item.place;
       $("raid-story").textContent = item.story;
+      const roster = raidRosters[item.id];
+      const rosterLink = $("raid-roster");
+      rosterLink.hidden = !roster;
+      if (roster) {
+        const [campaign, population, label] = roster;
+        const link = rosterLink.querySelector("a");
+        link.href = "./forces.html?campaign=" + campaign + "&population=" + population;
+        link.textContent = label;
+      }
       $("raid-sources").innerHTML = (item.refs || []).map(id => link(sources[id])).join("");
       const ids = new Set(item.records || []);
       const rows = [...[...ids].map(id => existing(records.get(id))), ...(item.extra || [])];

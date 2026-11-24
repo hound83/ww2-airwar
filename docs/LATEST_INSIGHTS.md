@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## 25 November 2026 — v10.1, Who was there?
+
+All 20 dossiers show which forces their sources cover, by date and echelon. The [roster explorer](../forces.html) contains 44 scoped lists and 297 dated memberships. Sicily includes four German fighter Gruppen, two wing headquarters and the 23 squadrons in five Commonwealth wings. Britain includes separate German and No. 11 Group returns for 7 September. Kursk covers both sectors, and Bagration follows the five Soviet air armies into 52 divisional entries on 1 July. These are counts of memberships in particular returns. A unit can recur across dates and a command can appear alongside its subordinates. [Research baseline](../research/sources/atlas-coverage-audit.md) · [Eastern returns](../research/sources/deployment-eastern-rosters.md) · [Station evidence and disagreements](../research/sources/deployment-stations.md) · [Download all rows](../research/exports/force-rosters.csv)
+
 ## 24 November 2026 — Deployment coverage audit
 
 The [20-campaign audit](../research/sources/atlas-coverage-audit.md) compares the Atlas with 27 dated historical populations. Sicily’s unit selector covers none of the four German single-engine fighter Gruppen based on the island on 10 July 1943. Bagration’s specialist index covers all five front-line Soviet air-army commands in its reference allocation. The [new roadmap](ATLAS_COVERAGE_ROADMAP.md) begins with coverage on every dossier and substantial deployments for Sicily, Britain, Kursk and Bagration.

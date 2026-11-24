@@ -170,14 +170,14 @@
 
   function renderFormations(formations) {
     return '<details class="record"><summary>View ' + formations.rows.length + ' listed formations</summary><div class="details">' +
-      '<p>' + escape(formations.scope) + '</p><p>' + formations.sources.map(sourceLink).join("") + '</p>' +
+      '<p>' + escape(formations.scope) + '</p><p>The list omits II./JG 4. The loss register identifies aircraft of its 5th and 7th Staffeln. The Gruppe assigned to Babenhausen differs between the two published lists. <a href="./research/sources/deployment-audit/surfaces.md">See the source comparison and airframe records</a>.</p><p>' + formations.sources.map(sourceLink).join("") + '</p>' +
       '<div class="table-frame" tabindex="0" role="region" aria-label="German formation table"><table><thead><tr>' +
       '<th scope="col">Formation</th><th scope="col">Aircraft</th><th scope="col">Base as listed</th><th scope="col">Linked raid sectors</th>' +
       '</tr></thead><tbody>' + formations.rows.map(row =>
         '<tr><th scope="row">' + escape(row.formation) + '</th><td>' + escape(row.aircraft) + '</td><td>' +
         escape(row.baseAsListed) + '</td><td><div class="formation-sites">' + (row.sites.length
-          ? row.sites.map(field => '<a href="' + fieldUrl(field.id) + '" data-site-link="' + field.id + '">' +
-            escape(field.name) + '</a>').join("") : '—') + '</div></td></tr>'
+          ? '<span>' + escape(row.sectorBasis) + '</span>' + row.sites.map(field => '<a href="' + fieldUrl(field.id) + '" data-site-link="' + field.id + '">' +
+            escape(field.name) + '</a>').join("") : 'Site unresolved') + '</div></td></tr>'
       ).join("") + '</tbody></table></div></div></details>';
   }
 

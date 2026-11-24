@@ -36,7 +36,7 @@ function panel(id, title, body, eyebrow = "") {
 }
 function campaignPanel(id, c) {
   const members = sortedUnits.filter(u => u.campaigns.includes(id));
-  return panel("campaign-" + id, c.name, '<p class="lead">' + esc(c.question) + '</p><p>' + dossier(id) + '</p><h2>Formations</h2>' +
+  return panel("campaign-" + id, c.name, '<p class="lead">' + esc(c.question) + '</p><p>' + dossier(id) + ' · ' + link("./forces.html?campaign=" + id, "Dated force returns") + '</p><h2>Selected formation histories</h2>' +
     list(members.map(u => unitLink(u) + '<span>' + esc(u.role) + '</span>'), "directory") , c.period);
 }
 const balanceStudies = JSON.parse(fs.readFileSync(path.join(root,"research/transcriptions/operational-balance.json"),"utf8")).studies;
@@ -54,9 +54,9 @@ function stationPanel(place) {
 }
 const directory = panel("directory", "Formation histories", '<p class="lead">Follow the people and units behind the campaign maps, from their operating stations to the missions they flew and the effects recorded by witnesses.</p><h2>Browse by campaign</h2>' +
   list(Object.entries(campaigns).map(([id,c]) => campaignLink(id) + '<span>' + esc(c.question) + '</span>'), "directory campaign-grid") +
-  '<h2>Browse by name</h2><p class="index-links">' + link("#formations", "All " + units.length + " formations") + link("#stations", "All " + stations.length + " operating stations") + '</p>');
-const pages = [directory, panel("formations","Formation index",list(sortedUnits.map(u => unitLink(u) + '<span>' + esc(u.role) + '</span>'), "directory campaign-grid")),
-  panel("stations","Operating station index",list(stations.map(s => link("#" + stationId(s),s)), "directory station-grid")),
+  '<h2>Browse by name</h2><p class="index-links">' + link("#formations", "Browse " + units.length + " formation histories") + link("#stations", "Browse " + stations.length + " documented stations") + '</p>');
+const pages = [directory, panel("formations","Formation index",'<p>Selected squadron, group, wing and air-army histories. Each history follows the dates and stations documented for that formation.</p>' + list(sortedUnits.map(u => unitLink(u) + '<span>' + esc(u.role) + '</span>'), "directory campaign-grid")),
+  panel("stations","Operating station index",'<p>Stations documented in these formation histories. Each entry gives the period for which a unit can be placed there.</p>' + list(stations.map(s => link("#" + stationId(s),s)), "directory station-grid")),
   ...Object.entries(campaigns).map(([id,c]) => campaignPanel(id,c)), ...units.map(unitPanel), ...stations.map(stationPanel)];
 const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="./dist/europe-return.css"><script defer src="./dist/europe-index.js"></script><script defer src="./dist/europe-return.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Documented formation histories, operating stations and the effects of air operations in the European air war."><title>Formation histories · European Air War Atlas</title><link rel="stylesheet" href="./dist/operations-1944.css"><link rel="stylesheet" href="./dist/formations.css"><script defer src="./dist/formations.js"></script></head><body>\n<a class="skip" href="#content">Skip to history</a><header class="mast"><nav class="wrap" aria-label="Atlas navigation">' +
   link("./grand-air-war-v80.html","European Air War Atlas") + link("#directory","Formation histories") + link("#formations","Formations A–Z") + link("#stations","Stations A–Z") + '</nav></header><main id="content" class="wrap history" tabindex="-1">\n' +

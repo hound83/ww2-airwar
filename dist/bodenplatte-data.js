@@ -175,10 +175,10 @@
       sources: references(order, [orderOfBattle.source]),
       rows: orderOfBattle.rows.map(row => {
         const match = row.formation.match(/\b(?:JG|SG) \d+\b/);
-        const group = row.formation.match(/^(?:I|II|III|IV)\.\/JG 53$/);
-        const sites = group ? [byId.get(row.formation.startsWith("III.") ? "etain" : "metz")]
+        const named = fields.filter(field => field.identifiedGruppen?.includes(row.formation));
+        const sites = named.length ? named
           : fields.filter(field => match && new RegExp("\\b" + match[0] + "\\b").test(field.german));
-        return { ...row, sites };
+        return { ...row, sites, sectorBasis: named.length ? "Gruppe named in site evidence" : "Parent wing named in site evidence" };
       })
     };
     return {

@@ -1,0 +1,146 @@
+{
+  "britain-lf2": {
+    "label": "Luftflotte 2 fighter Gruppen",
+    "note": "Together with eight separately listed headquarters, these 21 Gruppen account for 669 aircraft on strength and 533 serviceable. The return records deployment for use against Britain."
+  },
+  "britain-lf2-hq": {
+    "label": "German fighter wing headquarters"
+  },
+  "britain-11g": {
+    "label": "No. 11 Group fighter squadrons"
+  },
+  "sicily-gruppen": {
+    "label": "German fighter Gruppen based on Sicily",
+    "note": "Four numbered Gruppen and two separate wing headquarters were based on the island. Together their six rows give 136 aircraft held and 55 serviceable. Five other Gruppen in the same return were in Sardinia or mainland Italy."
+  },
+  "sicily-stab": {
+    "label": "German fighter wing headquarters"
+  },
+  "sicily-211": {
+    "label": "Squadrons of five Commonwealth wings"
+  },
+  "sicily-xii": {
+    "label": "US XII Air Support Command groups",
+    "note": "Five group-level commands appear in this part of the Allied return. The 111th Tactical Reconnaissance Squadron is listed separately."
+  },
+  "sicily-italian": {
+    "label": "Italian fighter Gruppi on Sicily"
+  },
+  "brunete-r": {
+    "label": "Republican fighter force at Brunete"
+  },
+  "brunete-n": {
+    "label": "Nationalist fighter force at Brunete"
+  },
+  "warsaw-pursuit": {
+    "label": "Warsaw Pursuit Brigade"
+  },
+  "narvik-raf": {
+    "label": "RAF fighters supporting Narvik"
+  },
+  "france-jg26": {
+    "label": "The three Gruppen of JG 26",
+    "note": "This is a roster for JG 26 alone. Other German fighter wings and other air arms operated in the same campaign."
+  },
+  "malta-fighter": {
+    "label": "Fighter squadrons assigned to Malta"
+  },
+  "barbarossa-14sad": {
+    "label": "Soviet 14th Mixed Air Division"
+  },
+  "dieppe-allied": {
+    "label": "Allied squadrons allocated to Jubilee"
+  },
+  "stalingrad-ro": {
+    "label": "Romanian aviation at the Don Bend"
+  },
+  "berlin-raid-first": {
+    "label": "First German scramble against the Berlin raid"
+  },
+  "citadel-gruppen": {
+    "label": "German day fighters by sector"
+  },
+  "schweinfurt-b17": {
+    "label": "B-17 groups dispatched to Schweinfurt"
+  },
+  "italy-lf2": {
+    "label": "Luftflotte 2 fighter return"
+  },
+  "argument-rearguard": {
+    "label": "Italy-based fighter groups covering withdrawal"
+  },
+  "normandy-reinforcements": {
+    "label": "German fighter reinforcements after D-Day"
+  },
+  "bagration-air-armies": {
+    "label": "Soviet front-line air armies",
+    "note": "The 6th Air Army supported the later-active left wing. Long-Range Aviation reported separately. Regiment-level coverage remains partial."
+  },
+  "market-response": {
+    "label": "German formations prepared against the landings"
+  },
+  "bodenplatte-parents": {
+    "label": "German fighter-wing parents"
+  },
+  "berlin-va": {
+    "label": "Soviet air armies in the Berlin operation"
+  },
+  "kursk-16va-divisions": {
+    "label": "16th Air Army divisions · northern sector"
+  },
+  "kursk-2va-divisions": {
+    "label": "2nd Air Army divisions · southern sector"
+  },
+  "kursk-17va-divisions": {
+    "label": "17th Air Army divisions · Southwestern Front"
+  },
+  "kursk-hungarian-brigade": {
+    "label": "Hungarian aviation brigade"
+  },
+  "kursk-viii-strike-gruppen": {
+    "label": "VIII. Fliegerkorps strike Gruppen"
+  },
+  "bagration-german-fighters": {
+    "label": "German day-fighter Gruppen"
+  },
+  "bagration-german-assault": {
+    "label": "German assault Gruppen"
+  },
+  "bagration-german-bombers": {
+    "label": "German bomber Gruppen"
+  },
+  "bagration-soviet-cover": {
+    "label": "Soviet fighter divisions ordered to cover the Bobruisk pocket"
+  },
+  "bagration-soviet-day-regiments": {
+    "label": "Soviet regiments in the 27 June records"
+  },
+  "bagration-polish-regiments": {
+    "label": "Polish air regiments on the 1 July return"
+  },
+  "bagration-1va-divisions": {
+    "label": "1st Air Army divisions",
+    "parentPopulation": "bagration-air-armies",
+    "parentUnit": "1st Air Army"
+  },
+  "bagration-3va-divisions": {
+    "label": "3rd Air Army divisions",
+    "parentPopulation": "bagration-air-armies",
+    "parentUnit": "3rd Air Army"
+  },
+  "bagration-4va-divisions": {
+    "label": "4th Air Army divisions",
+    "parentPopulation": "bagration-air-armies",
+    "parentUnit": "4th Air Army"
+  },
+  "bagration-6va-divisions": {
+    "label": "6th Air Army divisions",
+    "parentPopulation": "bagration-air-armies",
+    "parentUnit": "6th Air Army"
+  },
+  "bagration-16va-divisions": {
+    "label": "16th Air Army divisions",
+    "parentPopulation": "bagration-air-armies",
+    "parentUnit": "16th Air Army"
+  }
+}

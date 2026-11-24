@@ -32,8 +32,8 @@
     {
       "id": "gozo",
       "name": "Gozo landing ground",
-      "lat": 36.035,
-      "lng": 14.292,
+      "lat": 36.0314,
+      "lng": 14.2678,
       "precision": "Airfield area"
     },
     {
@@ -161,25 +161,37 @@
       "id": "fg33",
       "name": "33rd Fighter Group",
       "role": "USAAF · P-40 Warhawk",
-      "summary": "Flew landing cover from Pantelleria and moved to Licata on 16 July."
+      "summary": "Warhawks patrolled during the landings on Pantelleria, later operated from the island, and covered the Sicilian landings. The July reports place the group's move to Licata on different dates.",
+      "roster": {
+        "population": "sicily-xii",
+        "unit": "33rd Fighter Group"
+      }
     },
     {
       "id": "fg31",
       "name": "31st Fighter Group",
       "role": "USAAF · Spitfire",
-      "summary": "Flew landing cover from Gozo and moved to Ponte Olivo and then Termini."
+      "summary": "Flew landing cover from Gozo and moved to Ponte Olivo and then Termini.",
+      "roster": {
+        "population": "sicily-xii",
+        "unit": "31st Fighter Group"
+      }
     },
     {
       "id": "wing244",
       "name": "No. 244 Wing",
       "role": "RAF / Desert Air Force · Spitfire",
-      "summary": "Flying units and ground parties reached Pachino in stages. The aircraft arrived on 13 July."
+      "summary": "Flying units and ground parties reached Pachino in stages. The aircraft arrived on 13 July.",
+      "roster": {
+        "population": "sicily-211-wings",
+        "unit": "244 Wing"
+      }
     },
     {
       "id": "skg10",
       "name": "Schnellkampfgeschwader 10",
       "role": "Luftwaffe · ground attack",
-      "summary": "The RAF’s invasion-day intelligence snapshot follows components at Gerbini, San Pietro and Montecorvino."
+      "summary": "The 10 July ground-attack return lists elements of this wing at Gerbini, San Pietro and Montecorvino. Some Gruppen were split between island and mainland fields."
     },
     {
       "id": "tc52",
@@ -203,7 +215,21 @@
       "id": "sq92",
       "name": "No. 92 Squadron RAF",
       "role": "Spitfire · No. 244 Wing",
-      "summary": "Pilots moved from Malta to Pachino on 13 July. The squadron diary follows their patrols before the ground party arrived and their later cover of ships off Syracuse."
+      "summary": "Pilots patrolled the beaches en route from Malta to Pachino on 13 July. They covered ships off Syracuse on 16 July and escorted attacks on the Messina crossings on 16 August.",
+      "roster": {
+        "population": "sicily-211",
+        "unit": "No. 92 Squadron"
+      }
+    },
+    {
+      "id": "sq242",
+      "name": "No. 242 Squadron RAF",
+      "role": "Spitfire · No. 322 Wing",
+      "summary": "On 10 July its fighters engaged aircraft attacking the invasion force. The RAF narrative describes an interception while a Heinkel was firing on landing craft.",
+      "roster": {
+        "population": "sicily-211",
+        "unit": "No. 242 Squadron"
+      }
     }
   ],
   "cases": [
@@ -223,6 +249,47 @@
           "locator": "Chapter 13, Pantelleria",
           "title": "Operation Corkscrew",
           "note": "The date refers to surrender. The RAF narrative places the 33rd Fighter Group on Pantelleria by early July.",
+          "figures": {}
+        },
+        {
+          "source": "maurer",
+          "locator": "33d Fighter Group, combat history and station list, June 1943",
+          "title": "Patrols over the landing",
+          "note": "The group history records fighter patrols as Allied troops came ashore. Its station list still places the group at Sousse in Tunisia on the surrender date.",
+          "figures": {}
+        }
+      ],
+      "formationRoles": {
+        "fg33": "Patrolled during the Allied landing after the surrender."
+      }
+    },
+    {
+      "id": "pantelleria-basing",
+      "date": "1943-06-18",
+      "end": "1943-06-19",
+      "phase": "prepare",
+      "site": "pantelleria",
+      "title": "The 33rd Fighter Group moves forward",
+      "summary": "About a week after the surrender, the group moved its base from Tunisia to Pantelleria. From there its Warhawks could cover the western Sicilian beaches in July. Two US histories differ by one day on the move.",
+      "formations": [
+        "fg33"
+      ],
+      "formationRoles": {
+        "fg33": "Relocation from Sousse, dated 18 or 19 June."
+      },
+      "evidence": [
+        {
+          "source": "wing33",
+          "locator": "Group chronology, 1943, 18 June",
+          "title": "Wing chronology · 18 June",
+          "note": "The wing dates the move to Pantelleria to 18 June, following the 9 June move to Sousse.",
+          "figures": {}
+        },
+        {
+          "source": "maurer",
+          "locator": "33d Fighter Group, Stations, June 1943",
+          "title": "USAF station list · 19 June",
+          "note": "Maurer lists Pantelleria from 19 June. The different dates do not identify separate air and ground echelons.",
           "figures": {}
         }
       ]
@@ -255,9 +322,7 @@
       "site": "gerbini",
       "title": "The Gerbini complex comes under sustained attack",
       "summary": "Heavy bombers struck Gerbini and its satellite fields. Allied assessments describe widespread disruption before the landings, with some aircraft still serviceable in the complex.",
-      "formations": [
-        "skg10"
-      ],
+      "formations": [],
       "evidence": [
         {
           "source": "prep",
@@ -310,7 +375,8 @@
       "summary": "Spitfires and Warhawks covered the landings from Malta, Gozo and Pantelleria. German and Italian aircraft still reached ships and troops around the western assault beaches.",
       "formations": [
         "fg31",
-        "fg33"
+        "fg33",
+        "sq242"
       ],
       "evidence": [
         {
@@ -336,7 +402,27 @@
           "title": "How much protection reached the fleet?",
           "note": "The long flight from offshore fields limited time over the beaches. The US Navy reported gaps in cover over the American sectors. Allied air commanders pointed to the scale of their patrols and lower ship losses than the Navy had feared. The number of ships saved by patrols remains unknown.",
           "figures": {}
+        },
+        {
+          "source": "raf",
+          "pdfPage": 56,
+          "locator": "Chapter 3, printed p. 52, fighting on 10 July",
+          "title": "Patrols intercepted attacks on shipping",
+          "note": "At 04:50 No. 242 Squadron engaged a Heinkel firing on landing craft. Later, ten Warhawks of the 33rd Fighter Group attacked German fighters they saw dropping bombs on shipping east of Licata. The US pilots claimed two destroyed and two damaged. The account gives no independent German loss match or count of ships saved.",
+          "figures": {
+            "Spitfires in No. 242 Squadron's first engagement": 11,
+            "Warhawks east of Licata": 10
+          }
         }
+      ],
+      "formationRoles": {
+        "fg31": "Supplied Spitfire cover from Gozo.",
+        "fg33": "Warhawks intercepted aircraft bombing ships east of Licata on 10 July.",
+        "sq242": "Spitfires intercepted an aircraft attacking landing craft on 10 July. The account gives no precise position."
+      },
+      "rosters": [
+        "sicily-211",
+        "sicily-xii"
       ]
     },
     {
@@ -366,6 +452,12 @@
           "figures": {},
           "pdfPage": 160
         }
+      ],
+      "formationRoles": {
+        "wing244": "The wing leader and advance officers inspected the ploughed strip. Its flying echelon arrived on 13 July."
+      },
+      "rosters": [
+        "sicily-211-wings"
       ]
     },
     {
@@ -373,46 +465,57 @@
       "date": "1943-07-10",
       "phase": "land",
       "site": "gerbini",
-      "title": "Axis aircraft on hand and ready to fly",
-      "summary": "The RAF intelligence appendix lists a split deployment. Elements of the same German formations were on Sicily and the Italian mainland.",
+      "title": "German ground-attack aircraft on 10 July",
+      "summary": "The German return splits SKG 10's ground-attack aircraft between Sicily and the mainland. The separate fighter returns identify German and Italian units at Sicilian fields.",
       "formations": [
         "skg10"
       ],
       "evidence": [
         {
           "source": "raf",
-          "locator": "Appendix 3, Ground Attack, 10 July",
+          "locator": "Appendix 3, printed appendix p. 9, Ground Attack, 10 July",
           "title": "II./SKG 10 · Gerbini and Montecorvino",
-          "note": "The zero for serviceable aircraft at Gerbini is explicit. The mainland detachment has a separate line in the same British intelligence snapshot.",
+          "note": "The zero for serviceable aircraft at Gerbini is explicit. The mainland detachment has a separate line in the same return compiled from German records.",
           "figures": {
             "Gerbini on hand": 8,
             "Gerbini serviceable": 0,
             "Montecorvino on hand": 12,
             "Montecorvino serviceable": 12
-          }
+          },
+          "pdfPage": 113
         },
         {
           "source": "raf",
-          "locator": "Appendix 3, Ground Attack, 10 July",
+          "locator": "Appendix 3, printed appendix p. 9, Ground Attack, 10 July",
           "title": "III./SKG 10 · San Pietro and Montecorvino",
-          "note": "San Pietro is the Biscari airfield. These are estimated aircraft inventories and readiness, with no aircraft-loss count.",
+          "note": "San Pietro is the Biscari airfield. These are aircraft held and serviceable at each station.",
           "figures": {
             "San Pietro on hand": 7,
             "San Pietro serviceable": 0,
             "Montecorvino on hand": 18,
             "Montecorvino serviceable": 18
-          }
+          },
+          "pdfPage": 113
         },
         {
           "source": "raf",
-          "locator": "Appendix 3, Ground Attack, 10 July",
+          "locator": "Appendix 3, printed appendix p. 9, Ground Attack, 10 July",
           "title": "IV./SKG 10 · Gerbini",
           "note": "Aircraft serviceability and runway condition are separate observations.",
           "figures": {
             "On hand": 25,
             "Serviceable": 11
-          }
+          },
+          "pdfPage": 113
         }
+      ],
+      "formationRoles": {
+        "skg10": "Three component Gruppen appear in this ground-attack return."
+      },
+      "rosters": [
+        "sicily-gruppen",
+        "sicily-stab",
+        "sicily-italian"
       ]
     },
     {
@@ -507,9 +610,7 @@
       "site": "biscari",
       "title": "Biscari · two accounts of the capture date",
       "summary": "The RAF summary dates occupation to 12 July and excludes Biscari from fields serviceable by 13 July. The U.S. Military Academy study dates the 45th Division taking the airfield to 14 July.",
-      "formations": [
-        "skg10"
-      ],
+      "formations": [],
       "evidence": [
         {
           "source": "raf",
@@ -558,7 +659,17 @@
             "Pilots on the inbound patrol": 11,
             "Squadron sorties that day, all origins": 41
           }
+        },
+        {
+          "source": "hqMalta",
+          "locator": "Appendix B, printed p. 25, departures for Pachino",
+          "title": "The wing moved in stages",
+          "note": "RAF Malta dates the departures of Nos. 1 SAAF, 92, 145 and 601 Squadrons to 13 July. No. 417 Squadron RCAF followed on 16 July.",
+          "figures": {}
         }
+      ],
+      "rosters": [
+        "sicily-211"
       ]
     },
     {
@@ -620,7 +731,7 @@
       "phase": "advance",
       "site": "licata",
       "title": "Licata · Warhawks come ashore",
-      "summary": "The 33rd Fighter Group moved from Pantelleria to Licata on 16 July. Axis aircraft attacked the field and Ponte Olivo that night and caused little reported damage.",
+      "summary": "The tactical air force listed the 33rd Fighter Group at Licata on 16 July. US station histories date its move from Pantelleria to about 18 July. The RAF recorded little damage from raids on Licata and Ponte Olivo on the night of the 16th.",
       "formations": [
         "fg33"
       ],
@@ -629,10 +740,26 @@
           "source": "raf",
           "locator": "The Landing of XII Air Support Command, 16 July",
           "title": "Pantelleria to Licata",
-          "note": "The date records the group’s arrival. The port and beachhead had been taken on invasion day.",
+          "note": "The RAF places the arrival at Licata on 16 July. The port and beachhead had fallen on invasion day.",
+          "figures": {}
+        },
+        {
+          "source": "nataf",
+          "pdfPage": 161,
+          "locator": "Appendix I, printed p. 158, 16 July build-up",
+          "title": "Three squadrons listed at Licata",
+          "note": "The tactical air force lists the group's 58th, 59th and 60th Squadrons at Licata on 16 July.",
+          "figures": {}
+        },
+        {
+          "source": "maurer",
+          "locator": "33d Fighter Group, Stations, July 1943",
+          "title": "Group station entry · about 18 July",
+          "note": "The US station list dates Licata to approximately 18 July. The sources do not resolve which echelon accounts for the two-day difference.",
           "figures": {}
         }
-      ]
+      ],
+      "end": "1943-07-18"
     },
     {
       "id": "axis-withdrawal",
@@ -779,9 +906,21 @@
       "phase": "strait",
       "site": "messina",
       "title": "Messina · the strait remains open",
-      "summary": "Bombing interrupted some crossings. The Axis used several routes, anti-aircraft protection and daylight runs to move personnel and equipment to Italy. Allied forces entered Messina by 17 August.",
-      "formations": [],
+      "summary": "Bombing interrupted some crossings. On 16 August No. 92 Squadron covered Warhawks attacking shipping, escorted Baltimores to Messina and patrolled over Allied warships. Axis troops continued to cross to Italy.",
+      "formations": [
+        "sq92"
+      ],
       "evidence": [
+        {
+          "source": "orb92",
+          "locator": "Form 540, 16 August 1943, 07:25 patrol and later missions",
+          "title": "No. 92 Squadron covered the attacks",
+          "note": "Eight pilots escorted the Warhawks, and six escorted the Baltimores later that morning. An afternoon patrol covered warships southeast of Taormina. The diary records these missions. The fate of individual ferries requires separate craft records.",
+          "figures": {
+            "Warhawks escorted on the anti-shipping mission": 12,
+            "Baltimores escorted to Messina": 12
+          }
+        },
         {
           "source": "air",
           "locator": "Chapter 14, Across the Strait",
@@ -821,7 +960,10 @@
           "note": "The evacuation used separate crossing routes and concentrated anti-aircraft defences. The campaign range on the map starts with the German main evacuation, which was underway by 11 August.",
           "figures": {}
         }
-      ]
+      ],
+      "formationRoles": {
+        "sq92": "On 16 August the squadron escorted attacks on shipping and flew a warship patrol."
+      }
     }
   ],
   "stations": [
@@ -833,9 +975,15 @@
     },
     {
       "site": "pantelleria",
-      "date": "1943-07-03",
-      "status": "Operational by early July",
-      "caseId": "corkscrew"
+      "date": "1943-06-18",
+      "status": "33rd group relocation in the wing chronology",
+      "caseId": "pantelleria-basing"
+    },
+    {
+      "site": "pantelleria",
+      "date": "1943-06-19",
+      "status": "33rd group station in the USAF list",
+      "caseId": "pantelleria-basing"
     },
     {
       "site": "gozo",
@@ -906,7 +1054,7 @@
     {
       "site": "licata",
       "date": "1943-07-16",
-      "status": "33rd Fighter Group arrived",
+      "status": "33rd Fighter Group listed in the tactical build-up return",
       "caseId": "licata"
     },
     {
@@ -944,6 +1092,12 @@
       "date": "1943-07-19",
       "status": "Listed as operational in engineering return",
       "caseId": "biscari-engineering"
+    },
+    {
+      "site": "licata",
+      "date": "1943-07-18",
+      "status": "Approximate move date in the USAF station list",
+      "caseId": "licata"
     }
   ],
   "sources": {
@@ -998,6 +1152,18 @@
     "nelson": [
       "HMS Nelson · naval service chronology",
       "https://www.naval-history.net/xGM-Chrono-01BB-Nelson.htm"
+    ],
+    "wing33": [
+      "33d Fighter Wing · official chronology",
+      "https://www.33fw.af.mil/Portals/36/History%20Pam%20for%20AFPIMS_1.pdf"
+    ],
+    "maurer": [
+      "USAF · Maurer, Air Force Combat Units of World War II",
+      "https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090529-055.pdf"
+    ],
+    "hqMalta": [
+      "Headquarters RAF Malta · preliminary report on Operation Husky",
+      "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/preliminary-report-of-op-husky-operations-by-malta-based-aircraft/"
     ]
   },
   "initial": "landing-cover",

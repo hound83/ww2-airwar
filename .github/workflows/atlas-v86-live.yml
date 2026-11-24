@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
     paths:
+      - 'forces.html'
+      - 'dist/force-*'
+      - 'research/transcriptions/deployment-*'
+      - 'tests/force-rosters*.cjs'
       - 'grand-air-war-v80.html'
       - 'europe.html'
       - 'dist/europe*'

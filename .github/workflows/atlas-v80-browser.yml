@@ -3,6 +3,10 @@ name: Atlas v8 campaign browser QA
 on:
   pull_request:
     paths:
+      - 'forces.html'
+      - 'dist/force-*'
+      - 'research/transcriptions/deployment-*'
+      - 'tests/force-rosters*.cjs'
       - 'grand-air-war-v80.html'
       - 'europe.html'
       - 'dist/europe*'

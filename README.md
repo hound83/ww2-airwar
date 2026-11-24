@@ -1,6 +1,6 @@
 # European Air War Atlas (1936–May 1945)
 
-**Current public version: v10.0 · The connected European air war.** [Read the seven chapters](https://hound83.github.io/ww2-airwar/europe.html) or [open the campaign map](https://hound83.github.io/ww2-airwar/). The chapters connect all 20 campaign dossiers, dated cases, formation histories and the six operational balance studies. Each evidence route leads back to its chapter.
+**Current public version · v10.1 — Who was there?** All 20 campaign dossiers now explain which deployed forces the sources identify and which remain open. The [force rosters](https://hound83.github.io/ww2-airwar/forces.html) link 297 dated unit memberships in 44 scoped lists to their reporting dates, parents, stations and evidence. Start with [Sicily](https://hound83.github.io/ww2-airwar/forces.html?campaign=sicily), [the seven chapters](https://hound83.github.io/ww2-airwar/europe.html) or [the campaign map](https://hound83.github.io/ww2-airwar/).
 
 [Post-v10 roadmap](docs/ATLAS_COVERAGE_ROADMAP.md) · [Deployment and coverage audit across all 20 campaigns](research/sources/atlas-coverage-audit.md)
 

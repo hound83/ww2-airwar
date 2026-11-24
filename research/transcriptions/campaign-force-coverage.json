@@ -1,0 +1,478 @@
+{
+  "spain": {
+    "title": "Fighters at Brunete",
+    "summary": "At the opening of Brunete on 5–6 July 1937, six Republican fighter squadrons faced three opposing Fiat squadrons. Reinforcements soon changed that balance.",
+    "forces": [
+      {
+        "name": "Spanish Republic",
+        "coverage": "The six comprised four I-16 and two I-15 squadrons. The aircraft types alone cannot identify Spanish or Soviet pilots."
+      },
+      {
+        "name": "Spanish Nationalists, Italy and Germany",
+        "coverage": "The initial three Fiat squadrons preceded further Fiat and Bf 109 units and fighters from Grupo Morato. The sources distinguish the Spanish, Italian and Condor Legion formations."
+      }
+    ],
+    "geography": "Brunete and the later Tremp operation give local snapshots. Deployments at Madrid, on the northern front and at the Ebro remain open.",
+    "strength": "The opening count measures squadrons. Their actual aircraft holdings and readiness varied.",
+    "effort": "At Tremp on 24 December 1938, two named Republican squadrons sent ten and nine fighters to escort a bomber squadron.",
+    "losses": "Opposing pilots’ reports establish encounters. Losses need aircraft or crew returns for the same flight.",
+    "effect": "Both sides’ diaries describe escort or patrol at Tremp. What the escort saved remains unresolved.",
+    "source": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_29.pdf",
+    "locator": "Aeroplano 29, p. 183, opening fighter forces at Brunete"
+  },
+  "poland": {
+    "title": "The defence of Warsaw",
+    "summary": "The reinforced Polish Pursuit Brigade had five fighter squadrons on 1 September 1939. A sixth squadron helped from a separate army command.",
+    "forces": [
+      {
+        "name": "Polish aviation",
+        "coverage": "The brigade comprised the 111th–114th squadrons and the attached 123rd. The 152nd assisted from Modlin Army. Army aviation and the Bomber Brigade require separate returns."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "Three Bf 110 Gruppen are named in a type-specific study. A wider two-air-fleet table gives five twin-engine fighter Gruppen. Their inclusion rules remain unresolved."
+      },
+      {
+        "name": "Slovak and Soviet air forces",
+        "coverage": "Slovak escort units deployed on 7 and 9 September. Soviet operations opened a separate eastern front on 17 September."
+      }
+    ],
+    "geography": "Warsaw, Slovak deployments in the south and the Soviet advance in the east have separate dates and units.",
+    "strength": "German strength comparisons depend on whether a table counts Bf 110s or all twin-engine fighter groups. Soviet mobilization figures also differ in scope.",
+    "effort": "The Polish commander recorded two divisions of the Pursuit Brigade in action on the first morning. Slovak records identify escorts for German dive bombers.",
+    "losses": "Polish sightings and victory reports need matching German loss returns for confirmation.",
+    "effect": "The records establish that Polish fighters intercepted and Slovak fighters escorted. Damage prevented over Warsaw remains uncertain.",
+    "source": "https://ipn.gov.pl/download/1/352230/111instrukcjaweb.pdf",
+    "locator": "Polish Institute of National Remembrance, pp. 16–17 and the 123rd Escadrille pilot note"
+  },
+  "norway": {
+    "title": "Fighter cover at Narvik",
+    "summary": "On 28 May 1940, two RAF squadrons flew 95 operational sorties over the Narvik battle area while French and Polish ground forces advanced.",
+    "forces": [
+      {
+        "name": "Norwegian army and naval aviation",
+        "coverage": "The Army Air Service had seven operational Gladiators at Fornebu on 9 April. Naval aviation lies outside that figure."
+      },
+      {
+        "name": "RAF and Fleet Air Arm",
+        "coverage": "Nos. 263 and 46 Squadrons provide the late-May fighter returns. Carrier aviation and UK-based Coastal and Bomber Command aircraft had separate tasks."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "The German assignment list identifies II./JG 77 and I./ZG 76, adding I./ZG 1 from 15 April. The schedule also covers operations beyond Norway."
+      }
+    ],
+    "geography": "Fornebu near Oslo and the Bardufoss–Narvik fighting in the north belong to different phases.",
+    "strength": "Seven Gladiators were operational at Fornebu on 9 April. The Narvik figure counts later flights, some made by the same aircraft.",
+    "effort": "No. 263 Squadron flew 42 sorties on 28 May and No. 46 flew 53. Neither return covers all Allied flying that day.",
+    "losses": "The two RAF returns do not establish Norwegian, carrier or German losses across the campaign.",
+    "effect": "Fighter cover coincided with the ground advance. Its effect on shipping in the anchorage needs German raid and shipboard reports.",
+    "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/",
+    "locator": "RAF Air Historical Branch, Campaign in Norway, Narvik operations, 26–28 May and Table 2"
+  },
+  "france1940": {
+    "title": "The changing fighter deployment",
+    "summary": "On 10 May 1940, three Gruppen of JG 26 appear in the German disposition. Allied unit lists changed even between the morning and evening of the invasion.",
+    "forces": [
+      {
+        "name": "Luftwaffe",
+        "coverage": "The wider opening orders name at least six German fighter-wing parents. JG 26’s three Gruppen can be identified individually."
+      },
+      {
+        "name": "RAF and French Air Force",
+        "coverage": "The British Air Component went from four fighter squadrons on 9 May to six by the afternoon of 10 May. The Advanced Air Striking Force reported separately. French Groupement 23 alone listed five fighter groupes."
+      },
+      {
+        "name": "Belgian and Dutch aviation",
+        "coverage": "Belgium’s 2nd Regiment lists six squadrons. The Dutch 1st Fighter Unit flew from De Kooy. Army and naval flying units need separate tracking."
+      }
+    ],
+    "geography": "The German table includes stations beyond the invasion front. French, Belgian and Dutch airfields had separate commands and withdrawal dates.",
+    "strength": "An aircraft-type discrepancy for JG 51 and mixed British squadron-equivalent figures prevent a single opening aircraft total.",
+    "effort": "RAF returns cover selected operations. German, French, Belgian and Dutch units each need their own dated mission records.",
+    "losses": "Selected RAF aircraft losses cannot establish losses for the French and Low Countries forces or their opponents.",
+    "effect": "To assess attacks on bridges, compare the units that reached each crossing with ground engineers’ or defenders’ accounts.",
+    "source": "https://www.generalstaff.org/NAF/Pt_I_1939-1940/940geal.pdf",
+    "locator": "Nafziger collection, German air disposition of 10 May 1940, JG 26 entries"
+  },
+  "britain": {
+    "title": "Fighter forces on 7 September",
+    "summary": "The dated tables cover 23 squadrons of RAF No. 11 Group and 21 numbered German single-engine fighter Gruppen under Luftflotte 2. Eight German wing headquarters appear separately.",
+    "forces": [
+      {
+        "name": "RAF Fighter Command and attached squadrons",
+        "coverage": "No. 11 Group’s table identifies RAF and RCAF No. 1 as separate squadrons and includes No. 303 (Polish) Squadron. No. 310 (Czechoslovak) Squadron appears with No. 12 Group."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "Luftflotte 2’s single-engine fighter section covers one air fleet and one role. Bombers, twin-engine units and Luftflotte 3 require separate tables."
+      },
+      {
+        "name": "Italian Air Corps",
+        "coverage": "Italian operations began in late October. The 7 September dispositions predate this deployment."
+      }
+    ],
+    "geography": "The British table names war stations by sector, from Tangmere to Debden. A station identifies where a squadron was based on that date.",
+    "strength": "The German fighter section records 669 aircraft on strength and 533 serviceable across its Gruppen and headquarters.",
+    "effort": "On 15 September, eleven No. 11 Group squadrons were ordered up between 11:05 and 11:20. This is a timed commitment on a later day.",
+    "losses": "Dated loss returns can be compared when the area, cause and reporting day match. Pilot claims require separate checks.",
+    "effect": "The scramble timings show how defenders responded to the London-bound raids. Target and damage records are needed to measure what got through.",
+    "source": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+    "locator": "Collier, The Defence of the United Kingdom, Appendix XX, pp. 472–474, No. 11 Group war stations"
+  },
+  "malta": {
+    "title": "The island fighter force",
+    "summary": "The January 1942 RAF Malta table names three fighter squadrons and one separate flight. The force changed repeatedly across the siege.",
+    "forces": [
+      {
+        "name": "RAF and Fleet Air Arm",
+        "coverage": "Nos. 126, 185 and 249 Squadrons and No. 1435 Flight appear in the January fighter list. Carrier aviation, reconnaissance and strike units fall outside it."
+      },
+      {
+        "name": "Luftwaffe and Regia Aeronautica",
+        "coverage": "In March 1942 Fliegerkorps II in Sicily had four single-engine fighter Gruppen. Their names and the Italian formations in individual raids remain partly unresolved."
+      }
+    ],
+    "geography": "Island stations, carriers en route and Axis fields in Sicily represent different stages of the same supply battle.",
+    "strength": "The January table gives organizational strength. Daily serviceability depended on aircraft, fuel and repairs available on the island.",
+    "effort": "RAF Malta reported 147 Spitfire sorties on 12 October 1942. Its count of enemy sorties that day was an estimate.",
+    "losses": "The 12 October British return distinguished five Spitfires destroyed, three pilots lost and 24 enemy aircraft claimed destroyed.",
+    "effect": "British convoy records and Italian assessments can test how much cargo reached port and how long it sustained flying.",
+    "source": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo113228/pdf/GOVPUB-D301-PURL-gpo113228.pdf",
+    "locator": "Kreis, Air Warfare and Air Base Air Defense, Malta, Tables 12 and 14"
+  },
+  "barbarossa": {
+    "title": "Units assigned for the invasion",
+    "summary": "On 22 June 1941 the Soviet 14th Mixed Air Division listed four regiments. Three fighter regiments had aircraft. The fourth, an assault regiment, was still forming.",
+    "forces": [
+      {
+        "name": "Soviet air forces",
+        "coverage": "The Southwestern Front’s return identifies formations that were still forming. Long-range aviation and the other western military districts had separate commands."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "Luftflotte 1’s northern force included three Gruppen of JG 54 and elements of JG 53. Other air fleets covered the centre, south and far north."
+      },
+      {
+        "name": "Romanian and Finnish air forces",
+        "coverage": "The Romanian 7th Fighter Group lists three squadrons on 22 June. Finnish records locate LLv 24 and LLv 26 that day. Their operational records have separate dates."
+      }
+    ],
+    "geography": "The southwestern Soviet division and the German fighter return for the northern sector describe different parts of the front.",
+    "strength": "The 253rd Assault Regiment had no aircraft. German intelligence estimates and Soviet returns use different definitions of Soviet strength.",
+    "effort": "The opening orders establish assignment. Mission returns are needed to identify which equipped units flew in each sector.",
+    "losses": "Ground destruction, air combat, abandonment and later write-offs need separate dates and units on both sides.",
+    "effect": "A station attack can be traced to an individual field. How long it interrupted flying requires the defender’s subsequent records.",
+    "source": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/36/077",
+    "locator": "Southwestern Front air commander’s report, document 77, section I and 14th Mixed Air Division readiness table"
+  },
+  "dieppe": {
+    "title": "Air cover for the raid",
+    "summary": "The 19 August 1942 allocation counted 74 Allied squadrons across nine roles. Forty-eight were assigned Spitfire cover, while others provided smoke, reconnaissance, bombing and direct support.",
+    "forces": [
+      {
+        "name": "RAF, Commonwealth, Polish and US aviation",
+        "coverage": "The 74 included eight RCAF squadrons. No. 308 (Polish) Squadron and the USAAF’s 308th Fighter Squadron were distinct units."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "JG 2 and JG 26 supplied fighter forces. Their 10th Staffeln attacked shipping. The bomber and reconnaissance units need a separate count."
+      }
+    ],
+    "geography": "The covered areas include the beaches, ships and withdrawal route. West Malling is a documented departure field for three Allied squadrons.",
+    "strength": "Squadrons allocated across the day cannot be counted as aircraft simultaneously over the beaches.",
+    "effort": "Nos. 485 (New Zealand), 411 (RCAF) and 610 (RAF) Squadrons took off together at 07:30. Other allocations require squadron-level checks.",
+    "losses": "Both sides recorded losses for the day. Comparing them requires the same airframe categories and treatment of damaged aircraft.",
+    "effect": "Reports establish fighter-bomber attacks on shipping. Attributing a particular ship’s damage requires the ship’s own record.",
+    "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+    "locator": "Mahoney, Chart I.1 and Appendix 1, Allied allocation by role, drawing on AIR 20/5186"
+  },
+  "stalingrad": {
+    "title": "From the Don Bend to the airlift",
+    "summary": "The Romanian Air Force counted 26 squadrons around Stalingrad and the Don Bend at the end of September 1942. The later airlift involved a different force and a different task.",
+    "forces": [
+      {
+        "name": "Romanian air arm",
+        "coverage": "The September count included six fighter and two fighter-bomber squadrons, plus bomber, observation, reconnaissance, transport and medical units."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "VIII. Fliegerkorps’ November combat units and the later transport effort require separate rosters. A wing assignment gives no daily count of serviceable groups."
+      },
+      {
+        "name": "Soviet air armies",
+        "coverage": "A 22 November table covers the 8th, 16th and 17th Air Armies. The 2nd Air Army’s operational subordination makes the table incomplete for the whole counteroffensive."
+      }
+    ],
+    "geography": "The Romanian return covers the wider Don Bend. Later transport returns refer to flights to the surrounded Sixth Army.",
+    "strength": "The three Soviet air armies reported 480 fighters on strength on 22 November. How many could fly depended on serviceability.",
+    "effort": "On 25 November Richthofen’s diary recorded 30 Ju 52s available and nine making sorties.",
+    "losses": "German transport losses need to be tied to the airfields and days when delivery was attempted. September fighter losses concern an earlier force.",
+    "effect": "Richthofen recorded 75 tons delivered on 25 November against an order for 300. Sixth Army’s own receipts would establish what reached the troops.",
+    "source": "https://roaf.ro/?cpt_services=activitatea-fortelor-aeriene-in-zona-stalingrad-si-cotul-donului",
+    "locator": "Romanian Air Force, Stalingrad and the Don Bend, end-September force by mission"
+  },
+  "reichdefense": {
+    "title": "The defence against the Berlin raid",
+    "summary": "The first German scramble against the Berlin raid on 6 March 1944 involved six fighter Gruppen from three wings. Subsequent interceptions drew on other units.",
+    "forces": [
+      {
+        "name": "Luftwaffe",
+        "coverage": "JG 1, JG 11 and JG 54 supplied the opening scramble. Twin-engine ZG 26 and night-fighter NJG 5 also appear in later fighting."
+      },
+      {
+        "name": "USAAF and RAF",
+        "coverage": "The US headquarters account lists fourteen bomber-wing formations and two RAF Mustang squadrons. The US escort narrative and table count groups differently."
+      },
+      {
+        "name": "RAF and Commonwealth night forces",
+        "coverage": "The night offensive had its own squadrons and loss records. Australian casualties identify at least 17 RAF, RAAF and RCAF squadrons on the separate Nuremberg raid of 30/31 March."
+      }
+    ],
+    "geography": "The 6 March return follows one raid into Germany. Daylight routes, night raids and the late-war defence were distinct operations.",
+    "strength": "The first scramble accounted for 107 German aircraft. Later launches have their own totals.",
+    "effort": "The US narrative says 19 groups. Its fighter table lists 17 distinct group numbers across 22 entries, including split groups and repeat sorties.",
+    "losses": "Monthly German losses include other raids. Nuremberg casualty records identify participating squadrons but omit squadrons without recorded Australian deaths.",
+    "effect": "Interception and bomber penetration can be traced by raid. Damage and industrial disruption require records from the target.",
+    "source": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+    "locator": "Alfred Price, Target Berlin, pp. 113–114 and source notes, first scramble on 6 March"
+  },
+  "sicily": {
+    "title": "Fighter forces around the landings",
+    "summary": "The 10 July 1943 returns identify fighters on Sicilian airfields and the Allied wings assigned to the invasion. Unit diaries then show what some of those fighters did.",
+    "forces": [
+      {
+        "name": "Luftwaffe",
+        "coverage": "Four single-engine fighter Gruppen and two wing headquarters were based on the island. SKG 10 appears separately under ground attack."
+      },
+      {
+        "name": "Regia Aeronautica",
+        "coverage": "At least five Italian fighter Gruppi can be placed on Sicilian fields on 9 July. Detachments of one Gruppo count once."
+      },
+      {
+        "name": "RAF, Commonwealth and USAAF",
+        "coverage": "Five wings of No. 211 Group list 23 squadrons, including South African, Australian and Canadian units. XII Air Support Command separately lists five US groups and a tactical reconnaissance squadron."
+      }
+    ],
+    "geography": "German units based on the mainland or Sardinia could intervene over Sicily. The island roster alone cannot establish their missions.",
+    "strength": "The six German island entries total 136 aircraft held and 55 serviceable on 10 July. The Italian island return gives 159 fighters held and 39 serviceable on 9 July.",
+    "effort": "The 33rd Fighter Group patrolled east of Licata on 10 July. On 16 August No. 92 Squadron recorded escorts and a patrol over warships near Messina.",
+    "losses": "Aircrew claims and German or Italian losses need matching dates, unit identities and return categories.",
+    "effect": "The records establish cover over landing craft and escorted attacks on shipping. Independent naval records are needed to attribute a ferry loss.",
+    "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+    "locator": "RAF Air Historical Branch, The Sicilian Campaign, appendices 2–4, Allied assignments and Axis strength"
+  },
+  "kursk": {
+    "title": "Fighters on the two faces of the salient",
+    "summary": "On 5 July 1943 the German northern and southern commands each listed four numbered day-fighter Gruppen. Their parent wings, headquarters and attached squadrons can be distinguished.",
+    "forces": [
+      {
+        "name": "Luftwaffe and attached units",
+        "coverage": "The northern groups came from JG 51 and JG 54, the southern groups from JG 52 and JG 3. The northern command also listed a Spanish Staffel."
+      },
+      {
+        "name": "Hungarian air force",
+        "coverage": "Hungarian aircraft in the south are excluded from the cited German corps total. Their own unit and mission returns remain to be matched."
+      },
+      {
+        "name": "Soviet air armies",
+        "coverage": "The 16th Air Army supported Central Front and the 2nd Air Army supported Voronezh Front. Later counteroffensives changed the participating commands."
+      }
+    ],
+    "geography": "Northern and southern sector tables cover different parts of the salient. The opening German roster cannot be carried forward to the Soviet counteroffensive.",
+    "strength": "Including headquarters and attached elements, the northern fighter table gives 145 operational aircraft and the southern table 118. The eight group identities are a separate count.",
+    "effort": "The 5 July Soviet order and the 14 July counteroffensive order address different duties. Daily flight returns would show which units carried them out.",
+    "losses": "Detailed records for one Soviet division cannot establish airframe losses across either sector. German claims require matching Soviet returns.",
+    "effect": "Sector-specific ground reports are needed to connect air support to the movement or interruption of particular armoured formations.",
+    "source": "https://ebrary.net/116699/political_science/german_potential_kursk_salient",
+    "locator": "Frieser, Germany and the Second World War, vol. VIII, pp. 87–92, opening northern and southern fighter tables"
+  },
+  "schweinfurt": {
+    "title": "Bomb groups in two Schweinfurt raids",
+    "summary": "The 14 October 1943 mission tables name 16 B-17 groups dispatched to Schweinfurt. On 17 August, nine of those groups had gone to Schweinfurt and seven to Regensburg.",
+    "forces": [
+      {
+        "name": "USAAF and RAF escorts",
+        "coverage": "The October B-17 force can be enumerated at group level. Two B-24 groups flew a diversion. US P-47 and RAF Spitfire squadrons supported parts of the August operation."
+      },
+      {
+        "name": "German fighter forces",
+        "coverage": "I. Jagdkorps drew on five numbered fighter divisions in the October account. The separate next-day staff return covers a wider command area."
+      }
+    ],
+    "geography": "Schweinfurt, Regensburg and the diversion were separate destinations. Escort coverage changed along the flight path.",
+    "strength": "The October divisions dispatched 149 and 142 B-17s. German strength figures vary with the reporting command’s boundaries.",
+    "effort": "The October report records a planned withdrawal escort that could not take off. The tasking order alone would overstate the escort that flew.",
+    "losses": "German accounts use destroyed, written-off and damaged categories differently. US gunner claims require a match to German records.",
+    "effect": "Factory and repair records can establish how long production was disrupted. Aircraft dispatched and bombs dropped do not establish that duration.",
+    "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+    "locator": "VIII Bomber Command, 115th operation, 14 October 1943, two B-17 division tables, pp. 1–2"
+  },
+  "italy": {
+    "title": "How the fighter force changed in Italy",
+    "summary": "At Salerno on 9 September 1943 the German close-support force listed five day-fighter Gruppen. By 20 August 1944 the German fighter return for Italy listed only II./JG 77.",
+    "forces": [
+      {
+        "name": "Luftwaffe and Italian Republican aviation",
+        "coverage": "Luftflotte 2 and the Aeronautica Nazionale Repubblicana reported separately. The August Italian Republican return lists two fighter units across three equipment rows."
+      },
+      {
+        "name": "Allied and Italian Co-Belligerent forces",
+        "coverage": "US, British, Commonwealth, French and Italian units served under changing commands. The Co-Belligerent 51° Stormo’s January 1944 roster includes three Gruppi."
+      }
+    ],
+    "geography": "The Salerno bridgehead, Cassino and the later Gothic Line fighting require separate station lists. A change of command need not mean a change of airfield.",
+    "strength": "II./JG 77 held 34 aircraft, 26 serviceable, on 20 August 1944. The fighter return excludes the German night-attack and reconnaissance categories.",
+    "effort": "Allied land-based fighters flew 796 sorties on 9 September 1943. Carrier Seafire sorties were counted separately.",
+    "losses": "Losses among shore-based fighters, carrier aircraft and opposing air arms need returns for the same dates.",
+    "effect": "At Cassino, New Zealand and Gurkha ground records can show what troops encountered after the bombardment and how far they advanced.",
+    "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+    "locator": "RAF Air Historical Branch, Italian Campaign, vol. II, p. 66, German and Republican Italian returns"
+  },
+  "bigweek": {
+    "title": "Forces over different targets in Big Week",
+    "summary": "The raids of 20–25 February 1944 drew on US daylight forces from Britain and Italy, RAF night forces and different German fighter commands.",
+    "forces": [
+      {
+        "name": "USAAF",
+        "coverage": "The Italy-based 5th Bomb Wing’s 24 February account identifies four bomb groups and four supporting fighter groups. The 99th Bomb Group diverted to Fiume."
+      },
+      {
+        "name": "RAF and Commonwealth",
+        "coverage": "No. 419 (RCAF) Squadron’s Leipzig record for the night of 19/20 February includes individual crews and an unsuccessful sortie."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "I. Jagdkorps counted 362 fighters employed on 20 February, of which 155 entered combat. Its diary did not cover all responses to the southern raids."
+      }
+    ],
+    "geography": "Steyr and Fiume must remain distinct in the 24 February records. Aircraft based in Italy also drew a southern German response.",
+    "strength": "The cited 20 February figures concern aircraft employed and aircraft in combat. Neither gives the entire German fighter inventory.",
+    "effort": "The 5th Wing return distinguishes bomb groups that attacked Steyr, the group diverted and fighter groups providing withdrawal support.",
+    "losses": "American heavy-bomber losses and aircrew casualties are separate measures. RAF night losses and German defensive losses require their own returns.",
+    "effect": "Aircraft-industry output and dispersal records can test whether individual raids interrupted production and for how long.",
+    "source": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+    "locator": "5th Bomb Wing, February 1944 daily account, 24 February missions to Steyr and Fiume"
+  },
+  "normandy": {
+    "title": "Opening dispositions and reinforcements",
+    "summary": "Allied planning allocated 54 fighter squadrons to beach cover on 6 June 1944. A German report records 21 fighter Gruppen transferred to the Western Front on 7–9 June.",
+    "forces": [
+      {
+        "name": "Allied air forces",
+        "coverage": "The Allied despatch gives 171 initial squadron allocations across five roles. The 54 for beach cover are included. RAF, Commonwealth and US units, troop carriers and bomber commands also appear in individual operations."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "A 3 June table identifies elements of JG 2 and JG 26. The later report counts 21 transferred Gruppen without naming each one. Reconnaissance and night-fighter reinforcements were counted separately."
+      }
+    ],
+    "geography": "The transfer report covers the Western Front. It does not place all reinforcements over Normandy or on the beaches on D-Day.",
+    "strength": "The despatch gives separate available aircraft and sortie figures for Second Tactical Air Force, Ninth Air Force and Air Defence of Great Britain.",
+    "effort": "Luftflotte 3’s 6–13 June figures cover fighter, bomber and torpedo sorties. The German report records a change in short-range fighter duties on 13 June.",
+    "losses": "A German command’s losses over a period cannot be compared directly with Allied sorties on a single day.",
+    "effect": "Air cover supported the approach to the beaches. Preparatory bombardment left many Omaha defences intact. Ground reports help distinguish these outcomes.",
+    "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/air-operations-over-the-invasion-front-in-june-1944/",
+    "locator": "German 8th Abteilung, Air Operations over the Invasion Front in June 1944, AHB VII/32, p. 3"
+  },
+  "bagration": {
+    "title": "Air armies supporting four fronts",
+    "summary": "The June 1944 allocation identifies five Soviet front-line air armies across four fronts. The 6th Air Army supported the later-active left wing of the 1st Belorussian Front.",
+    "forces": [
+      {
+        "name": "Soviet air forces",
+        "coverage": "The 1st, 3rd, 4th, 6th and 16th Air Armies are identified. Long-Range Aviation had a separate role. The subordinate divisions and regiments are only partly traced."
+      },
+      {
+        "name": "French GC 3 Normandie",
+        "coverage": "The French fighter formation served alongside Soviet forces. Its station history is incomplete here."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "A 26 June Bf 109 table names I. and III./JG 51. German bomber, ground-attack and reconnaissance formations require their own records, as do July reinforcements."
+      }
+    ],
+    "geography": "German sources disagree over I./JG 51’s station on 26 June. Soviet and French station coverage is much thinner than the German record.",
+    "strength": "Selected German unit returns cover losses and replacements. The five Soviet command identities alone cannot establish serviceable aircraft at subordinate units.",
+    "effort": "On 23 June the 3rd Belorussian Front reported 877 bombing and assault sorties, including 105 at night. It described fighter cover separately.",
+    "losses": "German movement returns can distinguish transfers from losses. Soviet and German losses for the same sector and dates remain partly reconciled.",
+    "effect": "The receiving front’s report confirms cover, reconnaissance and support by 1st Air Army. The sortie total combines bombing and assault work.",
+    "source": "https://www.govinfo.gov/content/pkg/GOVPUB-D110-PURL-LPS68395/pdf/GOVPUB-D110-PURL-LPS68395.pdf",
+    "locator": "Connor, Analysis of Deep Attack Operations, Annex C, Belorussia force allocations"
+  },
+  "marketgarden": {
+    "title": "Aircraft prepared and aircraft that reached Arnhem",
+    "summary": "On 17 September 1944 Luftflotte 3 prepared six formations against the landings. Three operated in the Arnhem–Nijmegen area. The diary leaves their individual unit names open.",
+    "forces": [
+      {
+        "name": "RAF and USAAF",
+        "coverage": "Nos. 38 and 46 Groups and IX Troop Carrier Command provided lift. No. 271 Squadron’s own return covers one British tug unit. Escorts and tactical support had separate rosters."
+      },
+      {
+        "name": "German fighter forces",
+        "coverage": "Luftflotte 3 recorded a weather-limited response. Its six formations are described by size and task, without a precise administrative echelon."
+      },
+      {
+        "name": "Airborne troops receiving the lifts",
+        "coverage": "British, Polish and US airborne units landed in different zones. The Arnhem divisional diary covers only part of the wider operation."
+      }
+    ],
+    "geography": "Arnhem, Nijmegen and Eindhoven need separate lift and resupply records. Going off tow in Britain and releasing a glider near Arnhem had different consequences.",
+    "strength": "Theatre-wide German fighter strength does not give the number that reached the airborne landings.",
+    "effort": "No. 271 Squadron detailed 24 glider-tug crews on 17 September. Five gliders came off tow in England and 19 releases near Arnhem were reported satisfactory.",
+    "losses": "All 24 tugs returned on the first lift described by No. 271 Squadron. That return does not cover glider losses or subsequent days’ resupply aircraft.",
+    "effect": "Dispatch and release records show what left and reached a zone. Ground diaries are needed to count the supplies recovered by a particular unit.",
+    "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/war-diary-of-luftflotte-3-western-front-september-1944/",
+    "locator": "Luftflotte 3 war diary, 17 September 1944, pp. 20–21, response to the landings"
+  },
+  "bodenplatte": {
+    "title": "The New Year’s Day airfield attacks",
+    "summary": "Elements of at least eleven German fighter-wing parents can be identified on 1 January 1945. Some groups flew under another wing’s direction and some aircraft turned back.",
+    "forces": [
+      {
+        "name": "Luftwaffe",
+        "coverage": "The eleven JG parent identities exclude the ground-attack unit III./SG 4. The 37-entry compiled list has a disputed JG 4 identification and gaps in unit-to-target assignments."
+      },
+      {
+        "name": "RAF, Commonwealth and Polish units",
+        "coverage": "Polish 131 Wing at Ghent names three squadrons in its departure return. Other airfields need separate resident, visiting and airborne unit lists."
+      },
+      {
+        "name": "USAAF",
+        "coverage": "The 487th Fighter Squadron’s encounter at Asch establishes participation by one squadron. Other defenders and aircraft on the field need their own records."
+      }
+    ],
+    "geography": "Evidence must place each arriving Gruppe at the airfield it actually reached. Evere and Grimbergen had different JG 26 assignments.",
+    "strength": "Availability, departure and arrival are separate counts. Allied station strength also includes aircraft already airborne when a raid arrived.",
+    "effort": "Nos. 302, 308 and 317 Squadrons of Polish 131 Wing sent eight, twelve and eleven aircraft respectively from Ghent.",
+    "losses": "Polish 131 Wing reported two Spitfires and two pilots lost in air combat, plus 18 Spitfires destroyed and five damaged on the ground.",
+    "effect": "Field damage reports establish what happened locally. Repair and subsequent flying records are needed to measure how long operations were interrupted.",
+    "source": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+    "locator": "Rickard, Operation Bodenplatte, individual Jagdgeschwader accounts"
+  },
+  "berlin": {
+    "title": "Air armies in the Berlin offensive",
+    "summary": "Orders and reports dated 17–29 April 1945 identify four Soviet air armies across the offensive. Their missions and sectors changed as the ground armies advanced.",
+    "forces": [
+      {
+        "name": "Soviet air forces",
+        "coverage": "The 2nd, 4th, 16th and 18th Air Armies appear in dated records. The 16th Air Army supplies the most detailed returns in this selection."
+      },
+      {
+        "name": "Polish aviation",
+        "coverage": "Polish 1st Air Corps and 4th Aviation Division changed station areas while supporting the offensive. Their daily missions need separate records."
+      },
+      {
+        "name": "Luftwaffe",
+        "coverage": "II. and III./JG 4 moved to Rechlin on 19 April. I./JG 4 had already been dissolved. The surviving station records leave the full German mission roster unresolved."
+      }
+    ],
+    "geography": "The approaches, the city itself and German fields supporting both eastern and western operations had different reporting boundaries.",
+    "strength": "The 16th Air Army reported 3,037 serviceable aircraft. A later compilation lists 3,033 combat aircraft and uses a different reconnaissance and spotting total.",
+    "effort": "The 16th Air Army reported 4,054 sorties on 20 April, including 2,133 fighter sorties. This counts flights in its sector.",
+    "losses": "German airfield moves in April do not establish aircraft losses. Loss returns for the same dates and sectors on both sides remain incomplete.",
+    "effect": "Soviet and Polish records identify air support for particular advancing fronts. Assigning a specific ground result requires the supported formation’s account.",
+    "source": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+    "locator": "Battle for Berlin, documents 136–143, April orders and the 16th Air Army’s after-action report"
+  }
+}

@@ -25,7 +25,10 @@ const active=c=>c.start<=state.month&&c.end>=state.month;
 // The search field promises battles/missions, not only the 20 catalogue titles.
 // Include researched phase names and dated operations, without treating the
 // free-text search as a license to merge numerical reporting populations.
-const searchable=c=>[c.name,c.objective,c.turningPoint,c.consequence,c.participants.join(" "),
+const rosterFor = id => window.AtlasForceRosters?.campaigns?.[id];
+const rosterSearch = new Map(Object.entries(window.AtlasForceRosters?.campaigns || {}).map(([id,c]) => [id,
+  [c.summary,...c.forces.map(f=>f.name),...c.populations.flatMap(p=>[p.force,...p.members.map(m=>m.unit)])].join(" ")]));
+const searchable=c=>[c.name,rosterSearch.get(c.id) || "",c.objective,c.turningPoint,c.consequence,c.participants.join(" "),
  ...(c.story?.introduction||[]),c.story?.question||"",
  ...(c.chapters||[]).flatMap(ch=>[ch.title,ch.location,ch.situation,ch.airRole,ch.change,ch.limits,...(ch.story||[]),ch.axis||""]),
  ...c.moments.flatMap(e=>[e.title,e.place,e.summary||"",e.airAction||"",e.opposingView||"",e.units||"",e.outcome||""])].join(" ").toLowerCase();
@@ -498,6 +501,17 @@ function renderDossier(){
   chapterLink.href = "./europe.html#" + europeId;
   chapterLink.textContent = "European history · " + window.AtlasEurope.titles[europeId];
  }
+ const roster = rosterFor(c?.id);
+ const rosterPanel = $("dossier-deployments"), rosterJump = $("dossier-roster-jump");
+ if(rosterPanel && rosterJump){
+  rosterPanel.hidden = rosterJump.hidden = !roster;
+  if(roster){
+   const href = "./forces.html?campaign="+encodeURIComponent(c.id);
+   rosterJump.href = href;
+   const rows = roster.populations.map(p => '<li><a href="'+href+'&amp;population='+encodeURIComponent(p.id)+'">'+esc(p.label)+'</a><small>'+esc(window.AtlasRosterTools.labelDate(p.date))+' · '+esc(window.AtlasRosterTools.coverage(p))+' · '+esc(p.echelon)+'</small></li>').join("");
+   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p><a class="roster-open" href="'+href+'">Explore units, dates and stations</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
+  } else { rosterPanel.innerHTML = ""; }
+ }
  const formationLink = $("dossier-formations");
  const hasHistories = ["sicily","malta","britain","normandy","reichdefense","bagration","berlin"].includes(c?.id);
  formationLink.hidden = !hasHistories;
@@ -538,7 +552,7 @@ function renderDossier(){
  $("dossier-facts-heading").textContent=c.facts.length?"Campaign evidence · "+countPhrase(c.facts.length,"sourced figure","sourced figures"):"Numerical evidence · not yet audited";
  $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
- $("dossier-forces").innerHTML=c.participants.map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
+ $("dossier-forces").innerHTML=(roster ? roster.forces.map(f=>f.name) : c.participants).map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
  $("dossier-facts").innerHTML=(c.facts.length?renderCampaignEvidence(c.facts):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>')+renderBilateralCoverage(c)+renderCampaignComparisons(c);
  $("dossier-uncertainty").textContent=c.uncertaintyNote||"Campaign evidence coverage is incomplete. Reported counts are limited to the specific source populations and periods shown, not comparable totals for every belligerent.";
  $("dossier-sources").innerHTML=c.sources.map(id=>sourceLink(id)).join("");

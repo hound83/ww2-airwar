@@ -152,7 +152,11 @@
       "parent": "3rd Belorussian Front",
       "role": "Fighter cover, tactical bombing and assault support from Orsha to Minsk, Vilnius and Kaunas.",
       "source": "army1",
-      "locator": "Opening deployment and four front operations"
+      "locator": "Opening deployment and four front operations",
+      "roster": {
+        "population": "bagration-1va-divisions",
+        "label": "18 divisions of the 1st Air Army, 1 July"
+      }
     },
     {
       "id": "vvs3",
@@ -161,7 +165,11 @@
       "parent": "1st Baltic Front",
       "role": "Supported the northern pincer at Vitebsk and the subsequent advance toward Polotsk and Šiauliai.",
       "source": "army3",
-      "locator": "Chapter 4, Vitebsk and Baltic sections"
+      "locator": "Chapter 4, Vitebsk and Baltic sections",
+      "roster": {
+        "population": "bagration-3va-divisions",
+        "label": "7 divisions of the 3rd Air Army, 1 July"
+      }
     },
     {
       "id": "vvs4",
@@ -170,7 +178,11 @@
       "parent": "2nd Belorussian Front",
       "role": "Supported the Mogilev axis and the crossings on the route to the Dnieper.",
       "source": "army4",
-      "locator": "Opening night and Mogilev chronology"
+      "locator": "Opening night and Mogilev chronology",
+      "roster": {
+        "population": "bagration-4va-divisions",
+        "label": "5 divisions of the 4th Air Army, 1 July"
+      }
     },
     {
       "id": "vvs16",
@@ -179,7 +191,11 @@
       "parent": "1st Belorussian Front, right wing",
       "role": "Concentrated air support around Bobruisk, then operated toward Minsk and Baranovichi.",
       "source": "army16",
-      "locator": "Chapter 3, Bobruisk and Baranovichi"
+      "locator": "Chapter 3, Bobruisk and Baranovichi",
+      "roster": {
+        "population": "bagration-16va-divisions",
+        "label": "19 divisions of the 16th Air Army, 1 July"
+      }
     },
     {
       "id": "vvs6",
@@ -188,7 +204,11 @@
       "parent": "1st Belorussian Front, left wing",
       "role": "Supported the July offensive toward Lublin and the Vistula with attached units from the 16th Air Army and reserves.",
       "source": "army16",
-      "locator": "Chapter 3, July left-wing operations"
+      "locator": "Chapter 3, July left-wing operations",
+      "roster": {
+        "population": "bagration-6va-divisions",
+        "label": "3 divisions of the 6th Air Army, 1 July"
+      }
     },
     {
       "id": "add",
@@ -206,16 +226,24 @@
       "parent": "16th Air Army at Bobruisk",
       "role": "Assigned to attack troops and equipment inside the Bobruisk pocket.",
       "source": "army16",
-      "locator": "Chapter 3, evening orders of 27 June"
+      "locator": "Chapter 3, evening orders of 27 June",
+      "roster": {
+        "population": "bagration-soviet-day-regiments",
+        "label": "Regiments in the Bobruisk fighting, 27 June"
+      }
     },
     {
       "id": "normandie",
       "side": "French",
       "name": "GC 3 Normandie",
-      "parent": "Fighting with the 1st Air Army",
+      "parent": "303rd Fighter Aviation Division / 1st Air Army",
       "role": "French Yak fighter unit. Its journal follows an escort mission near Orsha and its memorial records a later transfer accident.",
       "source": "french",
-      "locator": "Journal, 23 June 1944, p. 56"
+      "locator": "Journal, 23 June 1944, p. 56",
+      "roster": {
+        "population": "bagration-1va-divisions",
+        "label": "303rd Fighter Aviation Division and its peers, 1 July"
+      }
     },
     {
       "id": "lf6",
@@ -231,9 +259,13 @@
       "side": "German",
       "name": "I./JG 51",
       "parent": "Jagdabschnittführer 6 / Luftflotte 6",
-      "role": "Bf 109 fighter Gruppe associated with Orsha. Station and strength publications disagree on the exact late-June position.",
+      "role": "The 26 June order of battle places this fighter Gruppe at Orsha. Holm gives Dokudowo for 25–26 June and Bojary for 26–27 June.",
       "source": "jg51",
-      "locator": "I. Gruppe station chronology"
+      "locator": "I. Gruppe station chronology",
+      "roster": {
+        "population": "bagration-german-fighters",
+        "label": "Four fighter groups in the 26 June list"
+      }
     },
     {
       "id": "iii-jg51",
@@ -242,7 +274,11 @@
       "parent": "Jagdabschnittführer 6 / Luftflotte 6",
       "role": "Bf 109 fighter Gruppe based at Bobruisk in the opening battles and moved west after 27 June.",
       "source": "jg51",
-      "locator": "III. Gruppe station chronology"
+      "locator": "III. Gruppe station chronology",
+      "roster": {
+        "population": "bagration-german-fighters",
+        "label": "Four fighter groups in the 26 June list"
+      }
     },
     {
       "id": "i-sg10",
@@ -251,25 +287,33 @@
       "parent": "1. Flieger-Division / Luftflotte 6 (26 June listing)",
       "role": "Fw 190 ground-attack Gruppe at Bobruisk in the opening week.",
       "source": "sg10",
-      "locator": "I. Gruppe station chronology"
+      "locator": "I. Gruppe station chronology",
+      "roster": {
+        "population": "bagration-german-assault",
+        "label": "Five assault groups in the 26 June list"
+      }
     },
     {
       "id": "recon12",
       "side": "German",
       "name": "12./NAGr. 12",
-      "parent": "4. Flieger-Division sector",
+      "parent": "Fliegerführer Nr. 1 / Luftflotte 6",
       "role": "Short-range reconnaissance Staffel listed at Mogilev with Bf 109s.",
       "source": "germanob",
-      "locator": "26 June, 4. Flieger-Division listing"
+      "locator": "26 June, Fliegerführer Nr. 1 (Minsk), 12./NAGr. 12 row"
     },
     {
       "id": "kg4",
       "side": "German",
       "name": "II. and III./KG 4",
-      "parent": "Luftflotte 6",
+      "parent": "IV. Fliegerkorps / Luftflotte 6",
       "role": "He 111 bomber Gruppen listed at Baranovichi. Their presence is established in the listing, while a matching sortie series remains open.",
       "source": "germanob",
-      "locator": "26 June, Luftflotte 6 listing"
+      "locator": "26 June, Luftflotte 6 listing",
+      "roster": {
+        "population": "bagration-german-bombers",
+        "label": "Ten bomber groups in the 26 June list"
+      }
     },
     {
       "id": "de4",
@@ -421,7 +465,7 @@
         "iii-jg51",
         "i-sg10"
       ],
-      "summary": "On 27 June the 16th Air Army sent bombers, assault aircraft and fighters against the encircled force. Separate formations handled bombing, low-level attack and fighter patrol. Bobruisk fell on 29 June.",
+      "summary": "On 27 June the 16th Air Army attacked the encircled force southeast of Bobruisk. The order assigned the 283rd, 286th and 1st Guards Fighter Aviation Divisions to patrol around the pocket and protect the bombers and assault aircraft. Bobruisk fell on 29 June.",
       "limit": "The air army reported zero own losses for the evening strike. The number applies to that mission only.",
       "source": "army16",
       "locator": "Chapter 3, evening attack and 29 June",
@@ -1726,7 +1770,7 @@
       "end": "1944-06-27",
       "place": "Bojary",
       "source": "jg51",
-      "locator": "I. Gruppe station table"
+      "locator": "I. Gruppe station table. The separate 26 June order of battle gives Orsha."
     },
     {
       "unit": "lf6",

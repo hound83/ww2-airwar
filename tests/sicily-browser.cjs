@@ -17,10 +17,43 @@ module.exports = async (browser, base, root) => {
       assert.equal(await page.getByRole("button", { name: "Gozo landing ground" }).count(), 1);
       assert.equal(await page.getByRole("button", { name: /Licata.*JOSS/ }).count(), 1);
 
+      await page.getByRole("link", { name: /Browse forces deployed on 9.10 July/ }).click();
+      const roster = page.getByRole("combobox", { name: "Dated roster" });
+      for (const [family, members] of [["sicily-gruppen", 4], ["sicily-stab", 2], ["sicily-211-wings", 5],
+        ["sicily-211", 23], ["sicily-xii", 5], ["sicily-italian", 5]]) {
+        await roster.selectOption(family);
+        assert.equal(await page.locator("#roster-members tbody tr").count(), members);
+      }
+      assert.match(await page.locator("#roster-scope").innerText(), /At least 5/);
+      await roster.selectOption("sicily-gruppen");
+      assert.match(await page.locator("#roster-members").innerText(), /Gerbini/);
+      const group = page.locator("#roster-members").getByRole("link", {name: "II./JG 53", exact: true});
+      const groupUrl = new URL(await group.getAttribute("href"), route);
+      assert.equal(groupUrl.searchParams.get("unit"), "II./JG 53");
+      assert.equal(groupUrl.searchParams.get("population"), "sicily-gruppen");
+      assert.match(await page.locator("#roster-members tbody tr").filter({hasText: "II./JG 53"}).first().innerText(), /23\s+18/);
+      await roster.selectOption("sicily-211");
+      await page.reload({waitUntil:"domcontentloaded"});
+      await page.locator('#roster-members tbody tr').first().waitFor();
+      assert.equal(await roster.inputValue(), "sicily-211");
+      assert.match(await page.locator("#roster-members").innerText(), /No. 92 Squadron/);
+      const rosterPage = page.url();
+      await page.locator("#roster-members").getByRole("link", {name: "No. 92 Squadron", exact: true}).click();
+      await page.locator("#unit-detail").getByRole("heading", {name: "No. 92 Squadron", exact: true}).waitFor();
+      await page.locator("#unit-detail").getByRole("link", {name: "Open 244 Wing"}).click();
+      await page.locator("#unit-detail").getByRole("heading", {name: "244 Wing", exact: true}).waitFor();
+      await page.getByRole("link", {name: /View this wing.*squadrons/}).click();
+      await page.locator("#unit-list").getByRole("link", {name: "No. 92 Squadron", exact: true}).click();
+      await page.locator("#unit-detail").getByRole("link", {name: /Messina escort/}).click();
+      await page.locator('#case-list [data-case="messina"][aria-current="true"]').waitFor();
+      assert.match(await page.locator("#case-evidence").innerText(), /Warhawks escorted on the anti-shipping mission/);
+      await page.goto(rosterPage, {waitUntil: "domcontentloaded"});
+      await page.locator('#case-list [data-case="landing-cover"][aria-current="true"]').waitFor();
       const capture = page.locator('#case-list [data-case="pachino-capture"]');
       if (width < 500) await capture.tap();
       else await capture.press("Enter");
       assert.match(await page.locator("#station-history").innerText(), /10 Jul 1943.*Captured[\s\S]+13 Jul 1943.*No. 244 Wing/);
+      assert.match(await page.locator("#case-formations").innerText(), /advance officers inspected/);
       await page.locator('#station-history [data-case="pachino-operational"]').click();
       assert.match(await page.locator("#case-title").innerText(), /first fighter wing/);
       assert.match(await page.locator("#case-evidence").innerText(), /Aircraft held ready for local defence\s+6/);
@@ -29,18 +62,19 @@ module.exports = async (browser, base, root) => {
       assert.equal(await page.locator("#formation-wing244").getAttribute("open") !== null, true);
       assert.match(await page.locator("#formation-wing244").innerText(), /Pachino/);
       await page.locator("#formation-wing244 [data-case=pachino-capture]").click();
-      assert.equal(await page.getByRole("combobox", { name: "Formation" }).inputValue(), "wing244");
+      assert.equal(await page.getByRole("combobox", { name: "Unit in the dated cases" }).inputValue(), "wing244");
       assert.equal(await page.locator("#case-list a").count(), 1);
 
       await page.getByRole("combobox", { name: "Chapter" }).selectOption("strait");
       assert.match(await page.locator("#case-count").innerText(), /No cases/);
       assert.equal(await page.locator("#case-detail").isHidden(), true);
-      await page.getByRole("combobox", { name: "Formation" }).selectOption("");
+      await page.getByRole("combobox", { name: "Unit in the dated cases" }).selectOption("");
       await page.getByRole("button", { name: "Strait of Messina" }).click();
       await page.locator('#campaign-map [data-case="messina"]').click();
       assert.match(await page.locator("#case-evidence").innerText(), /39,569/);
       assert.match(await page.locator("#case-evidence").innerText(), /Allied claims of craft destroyed\s+23/);
-      assert.equal(await page.locator("#case-evidence a").count(), 4);
+      assert.equal(await page.locator("#case-evidence a").count(), 5);
+      assert.match(await page.locator("#case-evidence").innerText(), /Warhawks escorted on the anti-shipping mission\s+12/);
       const share = page.url();
       await page.goto(share, { waitUntil: "domcontentloaded" });
       await page.locator('#case-list [data-case="messina"][aria-current="true"]').waitFor();
@@ -54,9 +88,12 @@ module.exports = async (browser, base, root) => {
       await page.locator('#case-list [data-case="biscari"]').click();
       assert.match(await page.locator("#station-history").innerText(), /12 Jul 1943[\s\S]+14 Jul 1943/);
       assert.equal(await page.locator("#case-evidence a").count(), 2);
+      await page.goto(route.href + "?case=biscari&formation=skg10#campaign", {waitUntil:"domcontentloaded"});
+      await page.locator('#case-list [data-case="biscari"][aria-current="true"]').waitFor();
+      assert.equal(await page.locator("#formation").inputValue(), "");
       const payload = await page.request.get(new URL("./research/transcriptions/sicily-air-campaign-1943.json", route).href);
       assert.ok(payload.ok());
-      assert.equal((await payload.json()).cases.length, 22);
+      assert.equal((await payload.json()).cases.length, 23);
       // Enter both studies through the public campaign list, then verify shared and return routes.
       await page.goto(base);
       await page.locator('#campaign-list [data-campaign="sicily"]').click();

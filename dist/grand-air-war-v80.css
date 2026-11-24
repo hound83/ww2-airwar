@@ -218,3 +218,6 @@
 #dossier-facts { scroll-margin-block-start: .5rem; }
 
 .intro .europe-start{display:inline-block;margin-top:.7rem;padding:.45rem .85rem;color:#173c35;background:#edf0dd;border:1px solid #879d85;border-radius:.2rem;font-weight:700;text-decoration:none}.intro .europe-start:hover,.intro .europe-start:focus-visible{text-decoration:underline;text-underline-offset:.18em}
+
+/* Dated formation coverage alongside each campaign's historical question. */
+.dossier-deployments{margin:1rem 0;padding:.85rem 1rem;background:#edf1e4;color:#203e34;border:1px solid #aebda4;border-left:4px solid #597557;border-radius:.2rem}.dossier-deployments h3{margin:0 0 .4rem;color:#203e34}.dossier-deployments p{margin:0 0 .55rem}.dossier-deployments a{color:#235648;text-decoration:underline;text-underline-offset:.15em}.dossier-deployments .roster-open{font-weight:bold}.dossier-deployments summary{cursor:pointer;color:#344e40;margin-top:.55rem}.dossier-deployments ul{padding-left:1.15rem}.dossier-deployments li{margin:.45rem 0}.dossier-deployments li small{display:block;color:#4b5a4f}

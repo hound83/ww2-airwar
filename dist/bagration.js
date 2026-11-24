@@ -210,13 +210,15 @@
     const unitCards = units.map(group => {
       const deployments = stations.filter(row => row.unit === group.id);
       const linkedCases = cases.filter(item => item.units.includes(group.id));
+      const rosterLink = group.roster ? '<a href="./forces.html?campaign=bagration&amp;population=' +
+        encodeURIComponent(group.roster.population) + '">' + escape(group.roster.label) + '</a>' : "";
       return '<details class="record" id="unit-' + escape(group.id) + '"><summary><b>' + escape(group.name) +
         '</b><span class="command">' + escape(group.side) + ' · ' + escape(group.parent) +
         '</span></summary><div class="details"><p>' + escape(group.role) + '</p><p>' +
         source(group.source, group.locator) + '</p>' + (deployments.length ? '<ul>' + deployments.map(row =>
           '<li>' + escape(interval(row.date, row.end)) + ' · <strong>' + escape(row.place) + '</strong> · ' +
           source(row.source, row.locator) + '</li>').join("") + '</ul>' : "") +
-        '<div class="intro-links">' + linkedCases.map(item => chooseLink(item, item.title)).join("") + '</div></div></details>';
+        '<div class="intro-links">' + rosterLink + linkedCases.map(item => chooseLink(item, item.title)).join("") + '</div></div></details>';
     });
     $("unit-list").innerHTML = unitCards.join("");
     $("source-register").innerHTML = '<details class="record"><summary>Campaign source register</summary><div class="details"><ul>' +
@@ -270,7 +272,7 @@
     restore();
   }
 
-  fetch("./research/transcriptions/bagration-air-campaign-1944.json?v=9.6.0")
+  fetch("./research/transcriptions/bagration-air-campaign-1944.json?v=10.1.0")
     .then(response => {
       if (!response.ok) throw new Error("Campaign evidence unavailable.");
       return response.json();
