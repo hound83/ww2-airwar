@@ -16,7 +16,12 @@ module.exports=async(browser,base,root)=>{
     const page=await browser.newPage({viewport:{width,height:width===390?844:900},isMobile:width===390,hasTouch:width===390});
     const errors=[];
     page.on("pageerror",error=>errors.push(error.message));
-    const follow=async link=>{if(width===390) await link.tap();else await link.press("Enter");};
+    async function follow(link) {
+      const href=await link.getAttribute("href");
+      const target=href && new URL(href,page.url());
+      if(width===390) await link.tap();else await link.press("Enter");
+      if(target) await page.waitForURL(url=>url.pathname===target.pathname && url.hash===target.hash,{waitUntil:"load"});
+    }
     const back=async id=>{
       await follow(page.locator("#chapter-return a"));
       await page.locator("article:target h2").waitFor();
@@ -73,6 +78,9 @@ module.exports=async(browser,base,root)=>{
       await page.goto(base+"?campaign=poland&fromChapter=unknown#campaign-dossier",{waitUntil:"domcontentloaded"});
       assert.equal(await page.locator("#chapter-return").count(),0);
       assert.deepEqual(errors,[]);
+    } catch (error) {
+      await page.screenshot({path:path.join(root,"v80-qa-europe-failure-"+width+".png")});
+      throw new Error(width+"px at "+page.url()+": "+error.message,{cause:error});
     } finally {await page.close();}
   }
   console.log("PASS public v10, seven chapters, 20 dossiers, six flagship cases, study/formation/map returns, sources, keyboard and touch");

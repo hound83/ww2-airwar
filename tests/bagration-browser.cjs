@@ -30,6 +30,7 @@ module.exports = async function checkBagration(browser, base, root) {
       assert.equal(await page.locator("[data-balance]").count(), 1);
       assert.match(await page.locator("[data-balance]").innerText(), /III\.\/JG 51/);
       await page.reload();
+      await page.locator('#case-list [data-case="bobruisk"][aria-current="true"]').waitFor();
       assert.equal(await page.locator("#unit").inputValue(), "iii-jg51");
       const pending = page.waitForEvent("download");
       await page.locator("#evidence-csv").click();
