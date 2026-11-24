@@ -1,5 +1,9 @@
 # Latest Atlas insights
 
+## 24 November 2026 — Deployment coverage audit
+
+The [20-campaign audit](../research/sources/atlas-coverage-audit.md) compares the Atlas with 27 dated historical populations. Sicily’s unit selector covers none of the four German single-engine fighter Gruppen based on the island on 10 July 1943. Bagration’s specialist index covers all five front-line Soviet air-army commands in its reference allocation. The [new roadmap](ATLAS_COVERAGE_ROADMAP.md) begins with coverage on every dossier and substantial deployments for Sicily, Britain, Kursk and Bagration.
+
 ## 24 November 2026 · v10.0, the connected European air war
 
 [Seven chapters](../europe.html) follow the changing effects of air power from Spain to Berlin. All 20 dossiers and their dated cases are linked in context, with explicit return routes through six flagship campaigns, formation histories and all six balance studies. The [chapter audit](../research/sources/connected-europe.md) records the source limits. The next research priority is a matched comparison of dispatch and receipt at Stalingrad and Arnhem.

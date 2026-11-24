@@ -1,6 +1,6 @@
 # Atlas status and next work
 
-[Current roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
+[Current roadmap after v10](ATLAS_COVERAGE_ROADMAP.md) · [Completed roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
 ## 24 November 2026 · v10.0, the connected European air war
 
