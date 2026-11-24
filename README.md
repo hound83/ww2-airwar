@@ -2,7 +2,7 @@
 
 **Current public version · v10.1 — Who was there?** All 20 campaign dossiers now explain which deployed forces the sources identify and which remain open. The [force rosters](https://hound83.github.io/ww2-airwar/forces.html) link 297 dated unit memberships in 44 scoped lists to their reporting dates, parents, stations and evidence. Start with [Sicily](https://hound83.github.io/ww2-airwar/forces.html?campaign=sicily), [the seven chapters](https://hound83.github.io/ww2-airwar/europe.html) or [the campaign map](https://hound83.github.io/ww2-airwar/).
 
-[Post-v10 roadmap](docs/ATLAS_COVERAGE_ROADMAP.md) · [Deployment and coverage audit across all 20 campaigns](research/sources/atlas-coverage-audit.md)
+[Active milestone roadmap after v10.1](docs/ATLAS_ROADMAP_AFTER_V10_1.md) · [Deployment and coverage audit across all 20 campaigns](research/sources/atlas-coverage-audit.md)
 
 A source-led, interactive historical atlas of WWII European airpower: aircraft and pilot strength, losses, claims, manufacturing, operations, campaigns and exploratory simulations.
 
