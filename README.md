@@ -1,6 +1,6 @@
 # European Air War Atlas (1936–May 1945)
 
-**Current public version · v10.2, deployed forces, missions and outcomes.** All 20 campaigns now have dated mission cases and separate coverage assessments for each side. The Atlas identifies 984 unit memberships across 170 dated lists, up from 297 across 44 in v10.1. The 78 cases link what formations did to what a ship, army, unit or observer recorded afterward. [Explore the campaigns](https://hound83.github.io/ww2-airwar/campaign-evidence.html) · [Sicily](https://hound83.github.io/ww2-airwar/campaign-evidence.html?campaign=sicily) · [Browse the forces](https://hound83.github.io/ww2-airwar/forces.html)
+**Current public version · v11.0, What changed because aircraft flew?** Seven studies compare supply received, shipping and beach cover, and German industrial recovery. The dossier audit reviews 40 questions across 20 campaigns and identifies the next record needed for each side. [Read the studies](https://hound83.github.io/ww2-airwar/operational-effects.html) · [Explore the dossier audit](https://hound83.github.io/ww2-airwar/dossier-audit.html) · [Research notes](research/sources/atlas-v11-operational-effects.md)
 
 [Active milestone roadmap after v10.1](docs/ATLAS_ROADMAP_AFTER_V10_1.md) · [Deployment and coverage audit across all 20 campaigns](research/sources/atlas-coverage-audit.md)
 

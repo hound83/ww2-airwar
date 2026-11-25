@@ -1,0 +1,872 @@
+{
+  "sources": {
+    "despatch": {
+      "name": "49 Air Despatch Group war diary",
+      "url": "https://www.pegasusarchive.org/arnhem/war_49adg.htm",
+      "locator": "WO 166/15581, entries for 18–23 September 1944. The dates are the diary headings.",
+      "kind": "Wartime dispatch diary, transcription"
+    },
+    "div": {
+      "name": "1st Airborne Division, report on Operation Market",
+      "url": "https://www.pegasusarchive.org/arnhem/war_divhq.htm",
+      "locator": "Part II, appendices D (net and gross drops) and E(i) (daily collections and notes 1–3).",
+      "kind": "Wartime receiving headquarters, transcription"
+    },
+    "raf": {
+      "name": "RAF Museum, Operation Market Garden, chapter 5",
+      "url": "https://www.rafmuseum.org.uk/blog/the-royal-air-force-and-operation-market-garden-chapter-5/",
+      "locator": "Entries for 23–25 September. Compare the Brussels aircraft narrative with divisional appendix D.",
+      "kind": "Museum operational history"
+    },
+    "army": {
+      "name": "Ziemke and Bauer, Moscow to Stalingrad",
+      "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Decision/USA-EF-Decision-23.html",
+      "locator": "Chapter XXIII, pp. 479, 496–497, notes 6 and 68. Aircraft on 29–30 November and daily averages for December and January.",
+      "kind": "US Army official history using German records"
+    },
+    "qu": {
+      "name": "Jens Wehner, Stalingrad: Breakout and Airlift Operation",
+      "url": "https://www.academia.edu/41734605/STALINGRAD_BREAKOUT_AND_AIRLIFT_OPERATION_A_MATTER_OF_CHOICE",
+      "locator": "Section on Operation Winter Storm, quotation from KTB Qum, 16 December 1942, p. 42.",
+      "kind": "Receiving quartermaster’s contemporary diary, quoted in a study"
+    },
+    "trans": {
+      "name": "The Use of Transport Aircraft in the Present War",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/the-use-of-transport-aircraft-in-the-present-war/",
+      "locator": "RAF Air Historical Branch translation VII/69, Stalingrad section, printed pp. 2–4.",
+      "kind": "Captured German transport assessment in translation"
+    },
+    "mail": {
+      "name": "Army field postmaster’s report, 13 March 1943",
+      "url": "https://wehrmacht-auskunftstelle.de/feldpostversorgung-in-stalingrad/",
+      "locator": "Ziegler, paras 1–2. Transcription identifies microfilm T77-R1036, pp. 74–75.",
+      "kind": "Wartime postal service report, attributed transcription"
+    },
+    "daily": {
+      "name": "Stalingrad airlift daily reconstruction",
+      "url": "https://losthistory.net/stalingrad/germanpart/airliftdec.html",
+      "locator": "16 December entry, column headed “Supply flown in”. Individual entries lack archival references.",
+      "kind": "Secondary compilation, unresolved discrepancy"
+    },
+    "sicnav": {
+      "name": "Eighth Fleet administrative history, Sicily",
+      "url": "https://www.ibiblio.org/hyperwar/USN/Admin-Hist/148.3-Sicily/148.3-Sicily-4.html",
+      "locator": "Part IV, section XXXIV, Enemy Air Activities, paras 1–2, p. 89. Western assault areas only.",
+      "kind": "Naval account based on the operations board"
+    },
+    "dick": {
+      "name": "US Coast Guard, Sicily–Italy landings",
+      "url": "https://www.ibiblio.org/hyperwar/USCG/X-Sicily-Italy/USCG-X-1.html",
+      "locator": "Part I, Captain Harwood’s USS Joseph T. Dickman interview, pp. 29–33.",
+      "kind": "Transport captain’s testimony in service history"
+    },
+    "gela": {
+      "name": "Garland and Smyth, Sicily and the Surrender of Italy",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D114-PURL-gpo89315/pdf/GOVPUB-D114-PURL-gpo89315.pdf",
+      "locator": "Printed pp. 177–178, 11 July attacks, dispersal at Gela and loss of Robert Rowan.",
+      "kind": "Official Army history drawing on Army and naval material"
+    },
+    "fighter": {
+      "name": "No. 92 Squadron operations record",
+      "url": "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942",
+      "locator": "Form 540, entries for 10 and 13–14 July 1943, Pachino sector.",
+      "kind": "Squadron record, transcription"
+    },
+    "ctf": {
+      "name": "Western Naval Task Force, Normandy invasion report",
+      "url": "https://ee.valka.cz/doc/pdf/192.pdf",
+      "locator": "Air support annex, Fighter Cover and daily entries D-Day and D+4. Annex U, Build-up, Omaha and Utah.",
+      "kind": "Wartime operational report from the supported naval force"
+    },
+    "aircmd": {
+      "name": "Leigh-Mallory, despatch on Allied Expeditionary Air Force operations",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/despatch-by-air-commander-in-chief-aeaf-to-supreme-allied-commander-aef-covering-operations-15nov1943-30sep1944/",
+      "locator": "Paragraphs 311–314 on the D-Day fighter allocation.",
+      "kind": "Air commander’s official despatch"
+    },
+    "browne": {
+      "name": "Canada’s History, D-Day memories",
+      "url": "https://canadashistory.ca/explore/military-war/d-day-memories",
+      "locator": "Danny Browne, No. 441 Squadron, and Wilfred Bennett, Royal Winnipeg Rifles, on 6 June.",
+      "kind": "Separate aircrew and infantry recollections"
+    },
+    "bear": {
+      "name": "US Strategic Bombing Survey, European summary",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/USSBS/ETO-Summary",
+      "locator": "The Ball-Bearing Attack, printed pp. 5–6. Plant and user-industry records and interviews.",
+      "kind": "Postwar survey of German industrial records"
+    },
+    "ahb": {
+      "name": "RAF Air Historical Branch, bombing offensive, vol. V",
+      "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/raf-in-the-bombing-offensive-against-germany-vol-v-the-full-offensive-february-1943-to-february-1944/",
+      "locator": "Printed pp. 143–144, damage to machinery and stocks after the August and October raids.",
+      "kind": "Official history based on German records"
+    },
+    "oil": {
+      "name": "US Strategic Bombing Survey, European summary",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/USSBS/ETO-Summary",
+      "locator": "The Attack on Oil, printed pp. 8–9, plant records, Speer correspondence and synthetic aviation gasoline series.",
+      "kind": "Postwar survey of German industrial records"
+    },
+    "airframe": {
+      "name": "US Strategic Bombing Survey, European summary",
+      "url": "https://www.ibiblio.org/hyperwar/AAF/USSBS/ETO-Summary",
+      "locator": "The Attack on German Aircraft Plants, printed pp. 6–7, type-specific acceptances and the spring 1944 recovery.",
+      "kind": "Postwar survey of records and manufacturer interviews"
+    },
+    "strength": {
+      "name": "The War in the Air 1914–1994, table 2",
+      "url": "https://media.defense.gov/2017/Apr/07/2001728538/-1/-1/0/B_0078_STEPHENS_WAR_IN_AIR.PDF",
+      "locator": "The Bombing of Germany, table 2, printed p. 121, sections A and B. Reproduces Webster and Frankland, vol. IV, appendices 22 and 27.",
+      "kind": "Published tabulation from British official history"
+    }
+  },
+  "topics": [
+    {
+      "id": "airlifts",
+      "name": "Airlift and supply",
+      "question": "How much supply reached the troops?",
+      "intro": "At Arnhem, dispatchers and the receiving division kept separate daily accounts. At Stalingrad, the army’s cargo receipts and the postmaster’s surviving returns cover different goods. Compare the journeys through the records each recipient kept.",
+      "cases": [
+        {
+          "id": "stalingrad",
+          "title": "Stalingrad: getting in and feeding the pocket",
+          "window": "November 1942 – January 1943",
+          "beneficiary": "German Sixth Army, its dumps, and the soldiers they supplied.",
+          "finding": "On 29 November 25 of the 59 aircraft that took off landed in the pocket. The next day 66 landed out of 77 committed. A later receipt shows why cargo composition mattered. On 16 December the quartermaster recorded 125 tons, roughly two-thirds fuel, and called for bread.",
+          "alternative": "Weather, the loss of landing grounds, the changing size of the pocket and combat all affected deliveries. Army priorities also changed. A load that met a fuel request did little for the ration issue.",
+          "limit": "No matched weighed departure manifest and unit issue return was located for 16 December. A secondary daily reconstruction lists 174 tons flown in that day. Both are arrival descriptions with different provenance. The discrepancy cannot measure cargo lost en route.",
+          "sources": [
+            "army",
+            "qu",
+            "trans",
+            "daily",
+            "mail"
+          ],
+          "tables": [
+            {
+              "title": "November transport flights",
+              "scope": "Ju 52 and He 111 aircraft in the official history, chapter XXIII, p. 479. The departure and commitment columns preserve its different verbs.",
+              "columns": [
+                {
+                  "label": "Took off",
+                  "unit": "aircraft",
+                  "source": "army"
+                },
+                {
+                  "label": "Committed",
+                  "unit": "aircraft",
+                  "source": "army"
+                },
+                {
+                  "label": "Landed",
+                  "unit": "aircraft",
+                  "source": "army"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "29 Nov 1942",
+                  "values": [
+                    59,
+                    null,
+                    25
+                  ],
+                  "note": "Departures 38 + 21. Landings 12 + 13.",
+                  "derived": {
+                    "0": "38 + 21",
+                    "2": "12 + 13"
+                  }
+                },
+                {
+                  "period": "30 Nov 1942",
+                  "values": [
+                    null,
+                    77,
+                    66
+                  ],
+                  "note": "Commitments 39 + 38. Landings 30 + 36.",
+                  "derived": {
+                    "1": "39 + 38",
+                    "2": "30 + 36"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "What Sixth Army could count",
+              "scope": "The receiving quartermaster recorded incoming cargo. The daily series in the official history measures lift into the pocket. Delivery to individual units remains unquantified.",
+              "columns": [
+                {
+                  "label": "Received by quartermaster",
+                  "unit": "tons",
+                  "source": "qu"
+                },
+                {
+                  "label": "Airlift average",
+                  "unit": "tons per day",
+                  "source": "army"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "16 Dec 1942",
+                  "values": [
+                    125,
+                    null
+                  ],
+                  "note": "Contemporary army diary, p. 42. Dispatch weight and final issue are unknown."
+                },
+                {
+                  "period": "1–23 Dec 1942",
+                  "values": [
+                    null,
+                    90
+                  ],
+                  "note": "Official history, pp. 496–497. The stated minimum in this comparison was 300 tons per day."
+                },
+                {
+                  "period": "First three weeks of Jan 1943",
+                  "values": [
+                    null,
+                    120
+                  ],
+                  "note": "Same historical series. Neither period measures the percentage of dispatched freight received."
+                }
+              ]
+            },
+            {
+              "title": "One service kept a separate account",
+              "scope": "Inbound letter mail carried to the pocket, reported by the army field postmaster on 13 March 1943. This weighs mail rather than rations or parcels.",
+              "columns": [
+                {
+                  "label": "Inbound letter mail",
+                  "unit": "kg",
+                  "source": "mail"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "Late Nov–end Dec 1942",
+                  "values": [
+                    73173
+                  ],
+                  "note": "Postal offices distributed incoming letters. The report gives no signed-for weight by unit."
+                },
+                {
+                  "period": "1–26 Jan 1943",
+                  "values": [
+                    15900
+                  ],
+                  "note": "After the loss of Pitomnik, much of the remaining mail came by drop."
+                },
+                {
+                  "period": "Both periods",
+                  "values": [
+                    89073
+                  ],
+                  "note": "The two inbound entries reconcile. The report’s outbound components and printed total disagree, so they are excluded."
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "stalingrad"
+          ]
+        },
+        {
+          "id": "arnhem",
+          "title": "Arnhem: from the aircraft to the supply dump",
+          "window": "18–25 September 1944",
+          "beneficiary": "British 1st Airborne Division around Oosterbeek.",
+          "finding": "On 19 September the division counted 21 net tons gathered from a drop it put at 388. On 20 September it gathered 41 from 386. The two headquarters broadly agree on the size of those drops, then diverge on the later lifts.",
+          "alternative": "The perimeter contracted and the division lost collection vehicles. By the last day it counted two serviceable jeeps and trailers. Supplies could land in British lines and be used before the divisional dump saw them.",
+          "limit": "The division published 106 tons collected and 7.4% for the operation. The 106 includes 14 from landed gliders on 18 September. The 1,431-ton total in appendix D covers drops. The further 100 tons suggested by the division was an unmeasured estimate. The dates and scopes do not support a single independently verified collection rate. Removing the glider cargo leaves 92 recorded tons from drops, or 6.4% of the division’s 1,431. This narrower calculation still excludes unrecorded local collections.",
+          "sources": [
+            "despatch",
+            "div",
+            "raf"
+          ],
+          "tables": [
+            {
+              "title": "What the two headquarters recorded",
+              "scope": "Diary estimates and divisional net tons are separate series. Unreported entries are blank in the CSV. Zero means the source explicitly recorded no drop or no collection.",
+              "columns": [
+                {
+                  "label": "Aircraft off",
+                  "unit": "aircraft",
+                  "source": "despatch"
+                },
+                {
+                  "label": "Drop estimated by dispatchers",
+                  "unit": "tons, approximate",
+                  "source": "despatch"
+                },
+                {
+                  "label": "Divisional net drop",
+                  "unit": "net tons, approximate",
+                  "source": "div"
+                },
+                {
+                  "label": "Collected from drops",
+                  "unit": "net tons, approximate",
+                  "source": "div"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "18 Sep 1944",
+                  "values": [
+                    33,
+                    89,
+                    87,
+                    12
+                  ],
+                  "note": "Another 14 tons came off three Hamilcar gliders and are excluded from this drop column."
+                },
+                {
+                  "period": "19 Sep 1944",
+                  "values": [
+                    163,
+                    377,
+                    388,
+                    21
+                  ],
+                  "note": "The division’s 21 ÷ 388 gives 5.4%."
+                },
+                {
+                  "period": "20 Sep 1944",
+                  "values": [
+                    163,
+                    380,
+                    386,
+                    41
+                  ],
+                  "note": "Two collections, 3 and 38 tons. Together they account for the division’s 10.6%.",
+                  "derived": {
+                    "3": "3 + 38"
+                  }
+                },
+                {
+                  "period": "21 Sep 1944",
+                  "values": [
+                    163,
+                    211,
+                    271,
+                    11
+                  ],
+                  "note": "The dispatch diary and the divisional account also differ on the aircraft count."
+                },
+                {
+                  "period": "22 Sep 1944",
+                  "values": [
+                    163,
+                    278,
+                    0,
+                    0
+                  ],
+                  "note": "The dispatch diary dates Market V here. The division explicitly recorded no mission."
+                },
+                {
+                  "period": "23 Sep 1944",
+                  "values": [
+                    null,
+                    null,
+                    291,
+                    7
+                  ],
+                  "note": "The division’s 23 September lift is also dated to this day in the RAF Museum chronology. The diary entry concerns freighting."
+                },
+                {
+                  "period": "24 Sep 1944",
+                  "values": [
+                    null,
+                    null,
+                    0,
+                    0
+                  ],
+                  "note": "No mission in the division’s return."
+                },
+                {
+                  "period": "25 Sep 1944",
+                  "values": [
+                    null,
+                    null,
+                    8,
+                    0
+                  ],
+                  "note": "Appendix D records eight tons. The RAF Museum describes aircraft returning without a ground signal. The division recorded no collection."
+                }
+              ]
+            },
+            {
+              "title": "Reconciling the published recovery percentage",
+              "scope": "1st Airborne Division, Part II, appendices D and E(i). Weight in net approximate tons. About 100 further tons were suggested without supporting figures and are excluded from both calculations.",
+              "columns": [
+                {
+                  "label": "Net dropped",
+                  "unit": "tons",
+                  "source": "div"
+                },
+                {
+                  "label": "Recorded collection",
+                  "unit": "tons",
+                  "source": "div"
+                },
+                {
+                  "label": "Share of drops",
+                  "unit": "%",
+                  "source": "div"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "18–25 Sep, as published",
+                  "values": [
+                    1431,
+                    106,
+                    7.4
+                  ],
+                  "note": "Published numerator includes 14 tons landed in gliders."
+                },
+                {
+                  "period": "18–25 Sep, drops only",
+                  "values": [
+                    1431,
+                    92,
+                    6.4
+                  ],
+                  "derived": {
+                    "1": "106 − 14",
+                    "2": "100 × 92 ÷ 1,431, rounded to one decimal"
+                  },
+                  "note": "Includes centrally counted collections from drops. The division reports that nearly all recovered stores were issued. Individual unit receipts are incomplete."
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "marketgarden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landings",
+      "name": "Beaches and shipping",
+      "question": "What could the landing forces do under air cover?",
+      "intro": "Sicily’s western task force counted raids stopped before reaching the ships. In Normandy the fleet described little daylight opposition, then recorded very different unloading conditions on its two beaches.",
+      "cases": [
+        {
+          "id": "sicily",
+          "title": "Sicily: ships could work even when attacks got through",
+          "window": "10–12 July 1943",
+          "beneficiary": "Troops landing in Sicily and the transports unloading in the western assault areas.",
+          "finding": "The Western naval plot distinguishes raids driven off from raids that entered the assault areas. At Gela, Captain Harwood reported that Joseph T. Dickman could keep unloading through attacks. Near misses forced a short shift of anchorage. The ship finished unloading on the afternoon of 11 July. The ammunition ship Robert Rowan was lost the same day.",
+          "alternative": "Harwood credited his crew and sent men ashore when the Army shore party was diverted to defend the beach. Shore fighting and unloading arrangements also governed the pace.",
+          "limit": "The naval plot omits low raids it could not track. No. 92 Squadron’s record of patrols over Pachino documents a different sector. Neither account supplies an estimate of ships that would have been lost without cover.",
+          "sources": [
+            "sicnav",
+            "dick",
+            "gela",
+            "fighter"
+          ],
+          "tables": [
+            {
+              "title": "What reached the western assault areas",
+              "scope": "US naval operations-board plots, from 02:45 on 10 July to 18:15 on 12 July. The unit is a raid, potentially involving multiple aircraft.",
+              "columns": [
+                {
+                  "label": "Aimed at the areas",
+                  "unit": "plotted raids",
+                  "source": "sicnav"
+                },
+                {
+                  "label": "Driven off before entry",
+                  "unit": "plotted raids",
+                  "source": "sicnav"
+                },
+                {
+                  "label": "Entered the areas",
+                  "unit": "plotted raids",
+                  "source": "sicnav"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "10–12 Jul 1943",
+                  "values": [
+                    89,
+                    26,
+                    63
+                  ],
+                  "note": "The latter two counts partition the first. Most raids that entered were engaged. Late detection left further raids outside the plot."
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "sicily"
+          ]
+        },
+        {
+          "id": "normandy",
+          "title": "Normandy: cover overhead, different results on the beaches",
+          "window": "6–10 June 1944",
+          "beneficiary": "Shipping and landing forces off Utah and Omaha, with a separate Canadian view from Juno.",
+          "finding": "The Western Naval Task Force recorded its fighter cover in place on D-Day and slight enemy activity after dark. Utah was unloading efficiently by 7 June and Omaha by 8 June. On the eastern beaches, a Canadian pilot remembered four patrols while an infantryman coming ashore at Juno described taking machine-gun fire.",
+          "alternative": "Under the same western air cover, Omaha faced obstacles, stranded craft and fire at the exits. At Utah unloading was already proceeding on schedule. On 10 June weather interrupted afternoon cover for 42 minutes.",
+          "limit": "The naval commander credited the deterrent effect of the fighters. The reports establish that ships worked and describe the threats they faced. They cannot count attacks averted or assign an extra ton of supplies to a particular patrol.",
+          "sources": [
+            "ctf",
+            "aircmd",
+            "browne"
+          ],
+          "tables": [
+            {
+              "title": "Separate role returns from beach-cover strength",
+              "scope": "Western Task Force flagships originated or relayed these direct-support missions. Beach patrols were a separate task.",
+              "columns": [
+                {
+                  "label": "Direct support requested or relayed",
+                  "unit": "missions",
+                  "source": "ctf"
+                },
+                {
+                  "label": "Flown",
+                  "unit": "missions",
+                  "source": "ctf"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "6 Jun 1944",
+                  "values": [
+                    5,
+                    4
+                  ],
+                  "note": "The fleet recorded night minelaying, flares and reconnaissance. Its report covers the western sector."
+                },
+                {
+                  "period": "10 Jun 1944",
+                  "values": [
+                    27,
+                    12
+                  ],
+                  "note": "The 14:05–14:47 break refers to fighter cover. These daily direct-support totals cannot be attributed to that break."
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "normandy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "name": "Industry and replacement",
+      "question": "How long did industrial disruption last?",
+      "intro": "Recovery took different forms. Bearing stocks cushioned factory losses. Synthetic fuel remained scarce. Fighter output recovered while operational strength and serviceability followed their own course.",
+      "cases": [
+        {
+          "id": "schweinfurt",
+          "title": "Schweinfurt: a factory loss that stocks could absorb",
+          "window": "August 1943 – autumn 1944",
+          "beneficiary": "German bearing producers and manufacturers using their output.",
+          "finding": "Schweinfurt’s September output fell to 35% of its pre-raid level. Production recovered to the pre-raid level by autumn 1944 in the survey’s wider industry account. Its investigators could establish no measurable loss of essential finished war production attributable to the bearing shortage.",
+          "alternative": "Users drew down stocks, changed components and obtained bearings from other sources. Many machine tools survived damage to buildings.",
+          "limit": "The September percentage describes the local centre. The later recovery statement concerns the industry. The records do not supply a continuous local series between those two points.",
+          "sources": [
+            "bear",
+            "ahb"
+          ],
+          "tables": [
+            {
+              "title": "Machinery and inventory at the works",
+              "scope": "RAF historical assessment from German records. Each percentage has its own denominator.",
+              "columns": [
+                {
+                  "label": "Machinery damaged",
+                  "unit": "% of machinery",
+                  "source": "ahb"
+                },
+                {
+                  "label": "Finished stock damaged",
+                  "unit": "% of finished stocks",
+                  "source": "ahb"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "Aug 1943",
+                  "values": [
+                    2.5,
+                    2.3
+                  ],
+                  "note": "Damage to machinery and existing stocks after the August attack."
+                },
+                {
+                  "period": "Oct 1943",
+                  "values": [
+                    3.5,
+                    20
+                  ],
+                  "note": "Approximate stock share. Neither column describes the percentage of monthly output lost."
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "schweinfurt"
+          ]
+        },
+        {
+          "id": "oil",
+          "title": "German fuel: partial reopening and a prolonged shortfall",
+          "window": "April 1944 – spring 1945",
+          "beneficiary": "German aviation fuel users and the people rebuilding the synthetic plants.",
+          "finding": "Leuna returned to partial operation about ten days after its May shutdown. Its output later reached three-quarters of capacity, then fell again. At the national level, synthetic aviation gasoline output in September was under 3% of April’s. The survey connects the shortage to further limits on flight training.",
+          "alternative": "Repeated disruption and repair changed Leuna’s monthly results. The loss of Romanian crude in August also affected the broader fuel economy. Crude imports and synthetic aviation gasoline belong to different series.",
+          "limit": "Leuna’s plant utilisation measures all its production against plant capacity. National aviation gasoline output measures tons produced. The surviving series does not trace a particular batch of fuel to a flying unit.",
+          "sources": [
+            "oil"
+          ],
+          "tables": [
+            {
+              "title": "Synthetic aviation gasoline",
+              "scope": "Monthly output of German synthetic plants, the same product and unit at each date.",
+              "columns": [
+                {
+                  "label": "Production",
+                  "unit": "tons per month",
+                  "source": "oil"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "Apr 1944",
+                  "values": [
+                    175000
+                  ],
+                  "note": "Before the May disruption."
+                },
+                {
+                  "period": "Jul 1944",
+                  "values": [
+                    30000
+                  ],
+                  "note": "National synthetic aviation gasoline."
+                },
+                {
+                  "period": "Sep 1944",
+                  "values": [
+                    5000
+                  ],
+                  "note": "5,000 ÷ 175,000 = 2.9% of April output, rounded."
+                }
+              ]
+            },
+            {
+              "title": "Leuna’s recovery",
+              "scope": "Plant output as a proportion of stated capacity at selected observations. These are point readings unless the period explicitly says average.",
+              "columns": [
+                {
+                  "label": "Operating output",
+                  "unit": "% of plant capacity",
+                  "source": "oil"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "Early Jul 1944",
+                  "values": [
+                    75
+                  ],
+                  "note": "Partial recovery."
+                },
+                {
+                  "period": "19 Jul 1944",
+                  "values": [
+                    53
+                  ],
+                  "note": "Output after another interruption."
+                },
+                {
+                  "period": "27 Jul 1944",
+                  "values": [
+                    35
+                  ],
+                  "note": "Further partial recovery."
+                },
+                {
+                  "period": "20 Nov 1944",
+                  "values": [
+                    28
+                  ],
+                  "note": "Operations had resumed in October."
+                },
+                {
+                  "period": "Jan 1945",
+                  "values": [
+                    15
+                  ],
+                  "note": "The survey says this level broadly persisted into the final months."
+                },
+                {
+                  "period": "First attack to end of war",
+                  "values": [
+                    9
+                  ],
+                  "note": "Average across the full period, including shutdowns."
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "reichdefense"
+          ]
+        },
+        {
+          "id": "replacement",
+          "title": "Germany: replacement aircraft and aircraft fit to fly",
+          "window": "July 1943 – December 1944",
+          "beneficiary": "Aircraft factories, Luftwaffe acceptance officers and the fighter force.",
+          "finding": "Bf 109 acceptances fell from 725 in July 1943 to 357 in December. In 1944 the published fighter-production series rose from 1,555 in January to 3,375 in September, despite the February offensive. At the September strength return, 71% of the single-engine fighter stock was serviceable.",
+          "alternative": "Factory dispersal interrupted work, then spare capacity, surviving machinery and the fighter programme supported recovery. Bad weather delayed acceptance flights. Fuel, crews and maintenance affected what units could use.",
+          "limit": "Monthly production is a flow; strength is a stock and serviceability a share of that stock. No linked factory-to-squadron receipt ledger was found for these national figures. A higher output cannot identify losses replaced at a particular unit.",
+          "sources": [
+            "airframe",
+            "strength"
+          ],
+          "tables": [
+            {
+              "title": "Factory acceptance by type",
+              "scope": "Aircraft accepted in each stated month. A blank means this selection supplies no observation for that type.",
+              "columns": [
+                {
+                  "label": "Bf 109 accepted",
+                  "unit": "aircraft",
+                  "source": "airframe"
+                },
+                {
+                  "label": "Fw 190 accepted",
+                  "unit": "aircraft",
+                  "source": "airframe"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "Jul 1943",
+                  "values": [
+                    725,
+                    325
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Sep 1943",
+                  "values": [
+                    536,
+                    null
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Dec 1943",
+                  "values": [
+                    357,
+                    203
+                  ],
+                  "note": "Weather could shift acceptances into a later month."
+                }
+              ]
+            },
+            {
+              "title": "Production, strength and serviceability",
+              "scope": "Table 2 uses “fighters” for monthly production and “single-engine fighters” for strength. Keep the two populations separate.",
+              "columns": [
+                {
+                  "label": "Fighters produced",
+                  "unit": "aircraft during month",
+                  "source": "strength"
+                },
+                {
+                  "label": "Single-engine strength",
+                  "unit": "aircraft on strength",
+                  "source": "strength"
+                },
+                {
+                  "label": "Single-engine serviceability",
+                  "unit": "% of that stock",
+                  "source": "strength"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "Jan 1944",
+                  "values": [
+                    1555,
+                    null,
+                    null
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Feb 1944",
+                  "values": [
+                    1104,
+                    null,
+                    null
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Mar 1944",
+                  "values": [
+                    1638,
+                    1696,
+                    70
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Jun 1944",
+                  "values": [
+                    2449,
+                    1523,
+                    59
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Sep 1944",
+                  "values": [
+                    3375,
+                    1984,
+                    71
+                  ],
+                  "note": ""
+                },
+                {
+                  "period": "Dec 1944",
+                  "values": [
+                    2630,
+                    2260,
+                    67
+                  ],
+                  "note": ""
+                }
+              ]
+            }
+          ],
+          "campaigns": [
+            "bigweek",
+            "reichdefense"
+          ]
+        }
+      ]
+    }
+  ]
+}
