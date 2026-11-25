@@ -56,10 +56,11 @@ module.exports=async(browser,base)=>{
       await page.locator("#unit-detail a").filter({hasText:/16th Air Army divisions/}).click();
       assert.equal(await page.locator("#unit-list tbody tr").count(),19);
       await page.goBack();assert.match(await page.locator("#unit-detail").innerText(),/16th Air Army/);
-      await page.locator("#campaign").selectOption("stalingrad");
-      assert.match(await page.locator("#scope-meta").innerText(),/26 reported/);
+      await page.locator("#campaign").selectOption("reichdefense");
+      await page.locator('#populations [href*="berlin-250-raf-support"]').click();
+      assert.match(await page.locator("#scope-meta").innerText(),/2 reported/);
       assert.equal(await page.locator("#filters").isVisible(),false);
-      assert.match(await page.locator("#assessment-forces").innerText(),/Romania/);
+      assert.match(await page.locator("#assessment-forces").innerText(),/Luftwaffe|Germany|German/);
       [file]=await Promise.all([page.waitForEvent("download"),page.locator("#export-view").click()]);
       assert.match(fs.readFileSync(await file.path(),"utf8"),/reported total only/);
       assert.ok(await size());assert.deepEqual(errors,[]);

@@ -1,0 +1,1648 @@
+{
+  "campaigns": {
+    "normandy": {
+      "populations": [
+        {
+          "id": "normandy-rcaf-opening",
+          "label": "RCAF 400-series squadrons in the D-Day mission return",
+          "date": "1944-06-06",
+          "force": "Royal Canadian Air Force overseas",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "assigned or on standby",
+          "scope": "Canadian 400-series units in the RCAF’s D-Day tables across fighter, bomber, reconnaissance and coastal commands.",
+          "total": 39,
+          "basis": "bounded source count",
+          "source": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+          "locator": "Canadian squadrons in the air on D-Day and D-Day missions, rows 400–443.",
+          "sourceClass": "Canadian service history with squadron tables",
+          "note": "39 numbered entries, including No. 423 on standby. The RCAF separately mentions No. 162, a Home War Establishment squadron on loan. Coverage excludes Canadians serving in other Allied units.",
+          "members": [
+            {
+              "unit": "No. 400 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Odiham",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 400 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 401 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Tangmere",
+              "stations": [
+                "tangmere"
+              ],
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 401 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 402 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Horne",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 402 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 403 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Tangmere",
+              "stations": [
+                "tangmere"
+              ],
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 403 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 404 Squadron RCAF",
+              "parent": "RAF Coastal Command",
+              "place": "Davidstow Moor",
+              "activity": "Patrolled against shipping.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 404 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 405 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Gransden Lodge",
+              "activity": "Two aircraft marked the target at Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 405 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 406 Squadron RCAF",
+              "parent": "Air Defence of Great Britain",
+              "place": "Winkleigh",
+              "activity": "Swept for enemy aircraft.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 406 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 407 Squadron RCAF",
+              "parent": "RAF Coastal Command",
+              "place": "Chivenor",
+              "activity": "Patrolled against submarines.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 407 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 408 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Linton-on-Ouse",
+              "activity": "Attacked Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 408 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 409 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "West Malling",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 409 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 410 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Hunsdon",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 410 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 411 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Tangmere",
+              "stations": [
+                "tangmere"
+              ],
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 411 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 412 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Tangmere",
+              "stations": [
+                "tangmere"
+              ],
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 412 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 414 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Odiham",
+              "activity": "Spotted fall of shot for naval gunfire.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 414 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 415 Squadron RCAF",
+              "parent": "RAF Coastal Command",
+              "place": "Bircham Newton",
+              "activity": "Patrolled against shipping.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 415 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 416 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Tangmere",
+              "stations": [
+                "tangmere"
+              ],
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 416 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 418 Squadron RCAF",
+              "parent": "Air Defence of Great Britain",
+              "place": "Holmsley South",
+              "activity": "Swept for enemy aircraft.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 418 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 419 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Middleton St George",
+              "activity": "Attacked Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 419 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 420 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Tholthorpe",
+              "activity": "Attacked Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 420 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 421 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Tangmere",
+              "stations": [
+                "tangmere"
+              ],
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 421 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 422 Squadron RCAF",
+              "parent": "RAF Coastal Command",
+              "place": "Castle Archdale",
+              "activity": "Patrolled against submarines.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 422 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 423 Squadron RCAF",
+              "parent": "RAF Coastal Command",
+              "place": "Castle Archdale",
+              "activity": "On standby. The mission table records zero aircraft flown.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 423 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 424 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Skipton-on-Swale",
+              "activity": "Attacked Condé-sur-Noireau.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 424 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 425 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Dishforth",
+              "activity": "Attacked Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 425 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 426 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Linton-on-Ouse",
+              "activity": "Sixteen aircraft attacked the Houlgate battery. One was lost with five RCAF and one RAF aircrew killed.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 426 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 427 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Leeming",
+              "activity": "Attacked Condé-sur-Noireau.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 427 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 428 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Middleton St George",
+              "activity": "Attacked Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 428 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 429 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Leeming",
+              "activity": "Attacked Condé-sur-Noireau.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 429 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 430 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Odiham",
+              "activity": "Flew photographic reconnaissance. The squadron lost an aircraft and its pilot.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 430 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 431 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Croft",
+              "activity": "Attacked Condé-sur-Noireau.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 431 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 432 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "East Moor",
+              "activity": "Attacked Coutances.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 432 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 433 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Skipton-on-Swale",
+              "activity": "Attacked Condé-sur-Noireau.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 433 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 434 Squadron RCAF",
+              "parent": "RAF Bomber Command",
+              "place": "Croft",
+              "activity": "Attacked Condé-sur-Noireau.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 434 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 438 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Wittering",
+              "activity": "Flew armed reconnaissance.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 438 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 439 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Hurn",
+              "activity": "Flew armed reconnaissance.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 439 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 440 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Hurn",
+              "activity": "Flew armed reconnaissance. One aircraft was lost and two were damaged.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 440 row, 6 June 1944."
+            },
+            {
+              "unit": "No. 441 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Ford",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 441 row, 6 June 1944.",
+              "stations": [
+                "ford-sussex"
+              ]
+            },
+            {
+              "unit": "No. 442 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Ford",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 442 row, 6 June 1944.",
+              "stations": [
+                "ford-sussex"
+              ]
+            },
+            {
+              "unit": "No. 443 Squadron RCAF",
+              "parent": "Second Tactical Air Force",
+              "place": "Ford",
+              "activity": "Patrolled the invasion beaches.",
+              "activitySource": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "activityLocator": "D-Day missions, No. 443 row, 6 June 1944.",
+              "stations": [
+                "ford-sussex"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "normandy-neptune-airborne",
+          "label": "RAF squadrons assigned to the British airborne assault",
+          "date": "1944-06-06",
+          "force": "Nos. 38 and 46 Groups RAF",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "Final British transport and glider-tug order of battle for Neptune.",
+          "total": 15,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-on-the-british-airborne-effort-in-operation-neptune-by-38-and-46-groups-raf/",
+          "locator": "Order of Battle, paragraphs 25–27, including marginal addition of No. 620 Squadron; paragraph 49.",
+          "sourceClass": "Wartime RAF group report",
+          "note": "Ten squadrons in No. 38 Group and five in No. 46 Group. The group report lists establishments separately from aircraft actually used on each lift.",
+          "members": [
+            {
+              "unit": "No. 296 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Brize Norton"
+            },
+            {
+              "unit": "No. 297 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Brize Norton"
+            },
+            {
+              "unit": "No. 295 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Harwell"
+            },
+            {
+              "unit": "No. 570 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Harwell"
+            },
+            {
+              "unit": "No. 196 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Keevil"
+            },
+            {
+              "unit": "No. 299 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Keevil"
+            },
+            {
+              "unit": "No. 190 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Fairford"
+            },
+            {
+              "unit": "No. 620 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Fairford"
+            },
+            {
+              "unit": "No. 298 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Tarrant Rushton",
+              "activity": "Provided three Halifax tugs for the Caen Canal and River Orne bridge assault.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-on-the-british-airborne-effort-in-operation-neptune-by-38-and-46-groups-raf/",
+              "activityLocator": "Paragraph 49, distribution between landing zones X and Y.",
+              "stations": [
+                "tarrant-rushton"
+              ]
+            },
+            {
+              "unit": "No. 644 Squadron RAF",
+              "parent": "No. 38 Group RAF",
+              "place": "Tarrant Rushton",
+              "activity": "Provided three Halifax tugs for the Caen Canal and River Orne bridge assault.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-on-the-british-airborne-effort-in-operation-neptune-by-38-and-46-groups-raf/",
+              "activityLocator": "Paragraph 49, distribution between landing zones X and Y.",
+              "stations": [
+                "tarrant-rushton"
+              ]
+            },
+            {
+              "unit": "No. 512 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Broadwell",
+              "stations": [
+                "broadwell"
+              ]
+            },
+            {
+              "unit": "No. 575 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Broadwell",
+              "stations": [
+                "broadwell"
+              ]
+            },
+            {
+              "unit": "No. 48 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Down Ampney",
+              "stations": [
+                "down-ampney"
+              ]
+            },
+            {
+              "unit": "No. 271 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Down Ampney",
+              "stations": [
+                "down-ampney"
+              ]
+            },
+            {
+              "unit": "No. 233 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Blakehill Farm",
+              "stations": [
+                "blakehill-farm"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "normandy-ii-jagdkorps-before",
+          "label": "II. Jagdkorps entries before the invasion",
+          "date": "1944-06-03",
+          "force": "Luftwaffe, II. Jagdkorps",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported on strength",
+          "scope": "Numbered II. Jagdkorps Gruppen in the single-engine fighter section of the 3 June Reich defence return.",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://ww2.dk/misc/ob3644.pdf",
+          "locator": "3 June 1944, Single-engined Fighters, rows under II. Jagdkorps (excluding Stäbe).",
+          "sourceClass": "Air Ministry AHB translation of captured records, copied by W. J. A. Wood",
+          "note": "The table covers a reporting network. Other German formations in France and local transfers on 6 June fall outside this count.",
+          "members": [
+            {
+              "unit": "I./JG 2",
+              "parent": "Jagdgeschwader 2",
+              "place": "Cormeilles-en-Vexin"
+            },
+            {
+              "unit": "I./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Lille-Vendeville and Denain"
+            },
+            {
+              "unit": "III./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Lupcourt"
+            }
+          ]
+        },
+        {
+          "id": "normandy-jg26-opening",
+          "label": "JG 26 in action on the afternoon of D-Day",
+          "date": "1944-06-06",
+          "force": "Luftwaffe, Jagdgeschwader 26",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "operated",
+          "scope": "JG 26 Gruppen reaching the Normandy combat zone on the first afternoon.",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+          "locator": "Donald Caldwell, Top Guns of the Luftwaffe, 6 June, paragraph beginning “The three Gruppen of Jagdgeschwader 26”.",
+          "sourceClass": "Specialist unit history drawing on German and Allied records",
+          "note": "Caldwell reports one FW 190 pilot lost and one Mustang claimed across the wing. His larger command sortie total cannot be broken down into the three unit totals.",
+          "members": [
+            {
+              "unit": "I./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "activity": "Reached the battle area in the afternoon.",
+              "activitySource": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "activityLocator": "6 June, account of the three JG 26 Gruppen."
+            },
+            {
+              "unit": "II./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "activity": "Reached the battle area in the afternoon.",
+              "activitySource": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "activityLocator": "6 June, account of the three JG 26 Gruppen."
+            },
+            {
+              "unit": "III./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "activity": "Reached the battle area in the afternoon.",
+              "activitySource": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "activityLocator": "6 June, account of the three JG 26 Gruppen."
+            }
+          ]
+        },
+        {
+          "extend": "normandy-reinforcements",
+          "side": "Axis",
+          "members": [],
+          "note": "The German wartime report gives 21 fighter Gruppen transferred to the Western Front on 7–9 June. It does not enumerate them. A separate AHB transfer table and station chronologies identify eight moves during those dates. Their membership in this particular anonymous return remains unverified."
+        },
+        {
+          "id": "normandy-june-transfer-matches",
+          "label": "Named fighter Gruppen transferred west on 7–9 June",
+          "date": "1944-06-07/1944-06-09",
+          "force": "Luftwaffe, transfers to II. Jagdkorps",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "transferred",
+          "scope": "Numbered fighter Gruppen with both a transfer entry in the 7 June AHB table and a dated arrival at a French field during 7–9 June.",
+          "total": 8,
+          "basis": "identified lower bound",
+          "source": "https://ww2.dk/misc/ob3644.pdf",
+          "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps. See individual Gruppe station tables for arrival dates.",
+          "sourceClass": "Air Ministry AHB translation of captured records, checked against station chronologies",
+          "note": "Eight named transfers across two records. The separate 21-Gruppe report has no names. Reims/Vertus and Chartres/Villacoublay remain disputed. I. and II./JG 1 staged in France a day earlier and are shown separately.",
+          "members": [
+            {
+              "unit": "II./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Évreux/Fauville",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, II./JG 3 row.",
+              "activity": "Station chronology records 7 June, Évreux.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg3.htm",
+              "activityLocator": "II. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "III./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Saint-André-de-l’Eure",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, III./JG 3 row.",
+              "activity": "Station chronology records 7 June, Saint-André-de-l’Eure.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg3.htm",
+              "activityLocator": "III. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "IV.(Sturm)/JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Dreux",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, IV.(Sturm)/JG 3 row.",
+              "activity": "Station chronology records 8 June, Dreux.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg3.htm",
+              "activityLocator": "IV.(Sturm) Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "I./JG 5",
+              "parent": "Jagdgeschwader 5",
+              "place": "Montdidier",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, I./JG 5 row.",
+              "activity": "Station chronology records 7 June, Montdidier.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg5.htm",
+              "activityLocator": "I. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "I./JG 11",
+              "parent": "Jagdgeschwader 11",
+              "place": "Rennes",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, I./JG 11 row.",
+              "activity": "Station chronology records 7 June, Rennes.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg11.htm",
+              "activityLocator": "I. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "I./JG 27",
+              "parent": "Jagdgeschwader 27",
+              "place": "Reims / Vertus (accounts differ)",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, I./JG 27 row.",
+              "activity": "Station chronology records 7 June, Vertus (Wood gives Reims).",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg27.htm",
+              "activityLocator": "I. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "IV./JG 27",
+              "parent": "Jagdgeschwader 27",
+              "place": "Champfleury–La Perthe",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, IV./JG 27 row.",
+              "activity": "Station chronology records 7 June, Champfleury–La Perthe.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg27.htm",
+              "activityLocator": "IV. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "III./JG 54",
+              "parent": "Jagdgeschwader 54",
+              "place": "Chartres / Villacoublay (accounts differ)",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, III./JG 54 row.",
+              "activity": "Station chronology records 7 June, Villacoublay (Wood gives Chartres).",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg54.htm",
+              "activityLocator": "III. Gruppe, Bases, June 1944 row."
+            }
+          ]
+        },
+        {
+          "id": "normandy-jg1-staging",
+          "label": "JG 1 staging and onward movements",
+          "date": "1944-06-06/1944-06-07",
+          "force": "Luftwaffe, Jagdgeschwader 1",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "transferred",
+          "scope": "Two JG 1 Gruppen that staged through Montdidier and moved onward the following day.",
+          "total": 2,
+          "basis": "identified lower bound",
+          "source": "https://ww2.dk/misc/ob3644.pdf",
+          "locator": "7 June 1944 transfer table, I. and II./JG 1.",
+          "sourceClass": "Air Ministry AHB translation of captured records, copied by W. J. A. Wood",
+          "note": "Holm places both in France on 6 June. Their onward move on 7 June cannot establish membership of the unnamed 7–9 June total.",
+          "members": [
+            {
+              "unit": "I./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "place": "Montdidier → Le Mans",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, I./JG 1 row.",
+              "activity": "Station chronology records 6 June, Montdidier, then Le Mans from 7 June.",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg1.htm",
+              "activityLocator": "I. Gruppe, Bases, June 1944 row."
+            },
+            {
+              "unit": "II./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "place": "Montdidier → Le Mans / Flers (accounts differ)",
+              "source": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June 1944, Single-engined Fighters with transfers to II. Jagdkorps, II./JG 1 row.",
+              "activity": "Station chronology records 6 June, Montdidier, then Le Mans from 7 June (Wood gives Flers).",
+              "activitySource": "https://www.ww2.dk/air/jagd/jg1.htm",
+              "activityLocator": "II. Gruppe, Bases, June 1944 row."
+            }
+          ]
+        },
+        {
+          "id": "normandy-laval-strike",
+          "label": "III./SG 4’s ground-attack deployment to Laval",
+          "date": "1944-06-06/1944-06-13",
+          "force": "Luftwaffe, Fliegerkorps II",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "flew",
+          "scope": "Ground-attack formation explicitly identified at Laval in the German June report.",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/air-operations-over-the-invasion-front-in-june-1944/",
+          "locator": "Section II, German Operations, opening paragraphs, June 1944.",
+          "sourceClass": "Wartime German historical staff report in AHB translation",
+          "note": "Two Staffeln arrived from Saint-Quentin–Clastres and a third from southern France. The report dates the concentration to the beginning of the invasion and gives no exact arrival day.",
+          "members": [
+            {
+              "unit": "III./SG 4",
+              "parent": "Schlachtgeschwader 4",
+              "place": "Laval",
+              "activity": "Three missions on its arrival day, with four to eight aircraft per operation.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/air-operations-over-the-invasion-front-in-june-1944/",
+              "activityLocator": "Section II, paragraph beginning with the transfer of III./SG 4."
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1944-06-06",
+          "title": "Fighters over Gold, Juno and Sword",
+          "mission": "Danny Browne recalled leading No. 441 Squadron RCAF on four beach patrols, starting at 06:25. The Canadian mission table records beach patrols for the squadron.",
+          "effect": "Browne saw the invasion fleet from above. At about 07:30, Corporal Wilfred Bennett of the Royal Winnipeg Rifles landed on Juno and described machine-gun fire from German pillboxes. Leigh-Mallory’s plan assigned 54 squadrons to beach cover.",
+          "limit": "The landing forces’ experience cannot isolate the protection provided by one squadron. The 54 is an allocation for a role, whereas the four are one commander’s D-Day patrols.",
+          "rosterIds": [
+            "normandy-rcaf-opening"
+          ],
+          "sources": [
+            {
+              "name": "Danny Browne, No. 441 Squadron, and Wilfred Bennett, Royal Winnipeg Rifles",
+              "url": "https://canadashistory.ca/explore/military-war/d-day-memories",
+              "locator": "Protecting the ground troops and Capturing the beach, the two participants’ recollections of 6 June.",
+              "kind": "Separate air and ground participant recollections"
+            },
+            {
+              "name": "Royal Canadian Air Force",
+              "url": "https://www.canada.ca/en/department-national-defence/maple-leaf/rcaf/2019/05/who-was-in-the-air-on-d-day.html",
+              "locator": "D-Day missions, row 441.",
+              "kind": "Service history"
+            },
+            {
+              "name": "AEAF commander’s despatch",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/despatch-by-air-commander-in-chief-aeaf-to-supreme-allied-commander-aef-covering-operations-15nov1943-30sep1944/",
+              "locator": "Paragraphs 311–314, fighter allocation on D-Day.",
+              "kind": "Wartime command despatch"
+            }
+          ]
+        },
+        {
+          "date": "1944-06-06",
+          "title": "Tugs delivered the assault force to the Orne bridges",
+          "mission": "Nos. 298 and 644 Squadrons each supplied three Halifax tugs for the six assault gliders. Their passengers included the 2nd Oxfordshire and Buckinghamshire Light Infantry.",
+          "effect": "Five gliders landed at or near the two objectives. The RAF estimated about 140 of 170 men were immediately in action. The assault party took both bridges intact.",
+          "limit": "The sixth glider missed the objective. The tug crews’ releases, the gliders’ landings and the infantry’s seizure of the bridges are three distinct observations.",
+          "rosterIds": [
+            "normandy-neptune-airborne"
+          ],
+          "sources": [
+            {
+              "name": "HQ No. 38 Group RAF, Neptune report",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/report-on-the-british-airborne-effort-in-operation-neptune-by-38-and-46-groups-raf/",
+              "locator": "Paragraphs 49–53, coup-de-main party on landing zones X and Y.",
+              "kind": "Wartime air command report"
+            },
+            {
+              "name": "No. 1 Wing, Glider Pilot Regiment",
+              "url": "https://www.pegasusarchive.org/normandy/war_1wing.htm",
+              "locator": "6 June and appended coup-de-main party reports.",
+              "kind": "Wartime glider pilot war diary transcription"
+            }
+          ]
+        },
+        {
+          "date": "1944-06-07/1944-06-09",
+          "title": "Which reinforcements can be traced to a French field?",
+          "mission": "The 7 June transfer table identifies II./JG 3 bound for Évreux, III./JG 3 for Saint-André-de-l’Eure and IV.(Sturm)/JG 3 for Dreux. The station chronologies date the first two arrivals to 7 June and the third to 8 June. Five other Gruppen have transfer and arrival evidence in the same interval.",
+          "effect": "The records place named reinforcements in the western theatre after D-Day. The German June report separately counts 21 transfers over three days. It gives no names to match against the eight.",
+          "limit": "The eight are a lower bound from identified movements. Their presence does not establish that they flew combat immediately, confirm membership in the anonymous 21, or settle the disputed destinations of I./JG 27 and III./JG 54.",
+          "rosterIds": [
+            "normandy-june-transfer-matches",
+            "normandy-reinforcements",
+            "normandy-jg1-staging"
+          ],
+          "sources": [
+            {
+              "name": "Air Ministry AHB, Defence of the Reich",
+              "url": "https://ww2.dk/misc/ob3644.pdf",
+              "locator": "7 June, table with transfers to II. Jagdkorps, named JG 3 rows.",
+              "kind": "Translation of captured German records"
+            },
+            {
+              "name": "Michael Holm, Jagdgeschwader 3",
+              "url": "https://www.ww2.dk/air/jagd/jg3.htm",
+              "locator": "II., III. and IV. Gruppe base tables, June 1944.",
+              "kind": "Compiled station chronology"
+            },
+            {
+              "name": "Luftwaffe, Air Operations over the Invasion Front in June 1944",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/air-operations-over-the-invasion-front-in-june-1944/",
+              "locator": "Account of 21 Gruppen transferred on 7–9 June.",
+              "kind": "Wartime German retrospective, AHB translation"
+            }
+          ]
+        },
+        {
+          "date": "1944-06-06/1944-06-13",
+          "title": "German fighters returned to air defence as supply routes came under attack",
+          "mission": "The German June report describes III./SG 4 concentrating at Laval at the start of the invasion. Despite losses on the transfer, it mounted three missions on the day of arrival with four to eight aircraft per mission.",
+          "effect": "By 13 June German command ended bombing assignments for fighters and passed the freed formations to II. Jagdkorps. The report attributed their weakened state to Allied bombing of supply routes.",
+          "limit": "The German report supplies a dated change of command and role. It gives neither a target-side damage return for the three III./SG 4 missions nor an exact day for the unit’s arrival.",
+          "rosterIds": [
+            "normandy-laval-strike"
+          ],
+          "sources": [
+            {
+              "name": "Luftwaffe, Air Operations over the Invasion Front in June 1944",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/air-operations-over-the-invasion-front-in-june-1944/",
+              "locator": "Section II, German Operations, p. 3, paragraphs on subordination, 13 June and III./SG 4 at Laval.",
+              "kind": "Wartime German historical staff report in AHB translation"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "The RCAF lists mission roles for 39 Canadian squadrons, including one on standby. RAF Nos. 38 and 46 Groups list 15 airborne squadrons.",
+          "losses": "The Canadian return records one aircraft lost each for Nos. 426, 430 and 440, and two damaged for No. 440.",
+          "effect": "Five gliders reached the Orne bridge objectives closely enough to put most of the assault force into immediate action."
+        },
+        "Axis": {
+          "effort": "The 3 June strength table and 7 June transfer table separate troops already in the west from Gruppe reinforcements. The German June report describes small strike formations from Laval.",
+          "losses": "Caldwell records one JG 26 FW 190 pilot lost on 6 June and a Mustang claimed. The 7–9 June transfer total gives no Gruppe-level loss return.",
+          "effect": "The German June report records that daylight Allied air activity constrained German troop movement. The arrival dates alone cannot measure interceptions or damage inflicted."
+        }
+      }
+    },
+    "marketgarden": {
+      "cases": [
+        {
+          "date": "1944-09-17",
+          "title": "Three of six German formations flew against the airborne landings",
+          "mission": "Luftflotte 3 ordered six formations ready for the Arnhem–Nijmegen landings. Three operated before worsening weather closed in. Caldwell identifies them as the three Gruppen of JG 26.",
+          "effect": "III./JG 26 encountered the 376th Fighter Squadron. Its flight leader William Beyer recalled being attacked while escorting the lift. The British landing brigade reported a quiet flight to its objectives at about 13:30.",
+          "limit": "Beyer’s account and the brigade report cover different positions. Caldwell attributes the absence of German fighter contact with the transports to their escorts. Individual transport saves cannot be assigned.",
+          "rosterIds": [
+            "market-response",
+            "market-46-first-lift"
+          ],
+          "sources": [
+            {
+              "name": "Luftflotte 3 operations diary",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/war-diary-of-luftflotte-3-western-front-september-1944/",
+              "locator": "17 September, pp. 20–21, II. Jagdkorps afternoon operations.",
+              "kind": "Wartime German diary, AHB translation"
+            },
+            {
+              "name": "Donald Caldwell, JG 26",
+              "url": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "locator": "17 September, after the Luftflotte diary excerpt, including William Beyer, 376th Fighter Squadron.",
+              "kind": "Unit history and quoted Allied participant"
+            },
+            {
+              "name": "1 Airlanding Brigade",
+              "url": "https://www.pegasusarchive.org/arnhem/war_divhq3.htm",
+              "locator": "1st Airborne Division HQ, annexure O.2, 17 September, 13:30.",
+              "kind": "Recipient brigade’s wartime report"
+            }
+          ]
+        },
+        {
+          "date": "1944-09-17",
+          "title": "What the glider tugs released and what the brigade received",
+          "mission": "No. 48 Squadron recorded 23 departures from Down Ampney and 19 releases over landing zone S. Four gliders came down elsewhere. No. 512 Squadron towed 22 gliders with men and equipment of 1st Border.",
+          "effect": "The receiving 1 Airlanding Brigade recorded six missing gliders in the 1st Border allotment, including the commanding officer’s, and eight missing from 7th King’s Own Scottish Borderers, including six carrying support arms.",
+          "limit": "The brigade counted gliders by receiving unit. Its six missing 1st Border gliders cannot all be charged to No. 512. The battalion’s equipment travelled in more than one serial.",
+          "rosterIds": [
+            "market-46-first-lift"
+          ],
+          "sources": [
+            {
+              "name": "No. 48 Squadron operations record",
+              "url": "https://www.pegasusarchive.org/arnhem/war_48sqn.htm",
+              "locator": "17 September, Form 540 and Form 541, first lift.",
+              "kind": "Wartime RAF unit return transcription"
+            },
+            {
+              "name": "No. 512 Squadron history",
+              "url": "https://www.pegasusarchive.org/arnhem/batt_512.htm",
+              "locator": "Arnhem, first paragraph.",
+              "kind": "Specialist unit account"
+            },
+            {
+              "name": "1 Airlanding Brigade",
+              "url": "https://www.pegasusarchive.org/arnhem/war_divhq3.htm",
+              "locator": "Annexure O.2, 17 September, 13:30, non-arrivals by battalion.",
+              "kind": "Wartime recipient report"
+            }
+          ]
+        },
+        {
+          "date": "1944-09-19",
+          "title": "How much of the Arnhem resupply reached the division?",
+          "mission": "49 Air Despatch Group recorded 163 aircraft off, 18 failing to return and about 377 tons dropped on 19 September.",
+          "effect": "The receiving division’s tables give 388 net tons dropped and 21 net tons gathered that day, or 5.4%. Its campaign accounting later recorded 106 tons collected from 1,431 dropped, with additional front-line collections only estimated.",
+          "limit": "The dispatch estimate and the division’s net figures have different accounting bases. The 5.4% uses the division’s own two figures. An estimated additional 100 tons for the whole operation cannot be allocated to this day.",
+          "rosterIds": [
+            "market-46-first-lift"
+          ],
+          "sources": [
+            {
+              "name": "49 Air Despatch Group war diary",
+              "url": "https://www.pegasusarchive.org/arnhem/war_49adg.htm",
+              "locator": "19 September, Market II entry.",
+              "kind": "Wartime dispatch diary transcription"
+            },
+            {
+              "name": "HQ 1st Airborne Division",
+              "url": "https://pegasusarchive.org/arnhem/war_divhq.htm",
+              "locator": "Part II, appendices D and E, D+2 and campaign totals.",
+              "kind": "Wartime recipient report and collection tables"
+            }
+          ]
+        },
+        {
+          "date": "1944-09-21",
+          "title": "The Polish drop reached Driel, but the brigade found the ferry gone",
+          "mission": "The US 314th Troop Carrier Group carried Polish parachutists from Saltby. At 17:18, Polish brigade headquarters logged its own drop and estimated that 72 aircraft had delivered 957 troops from a dispatched force of 114 aircraft carrying 1,508.",
+          "effect": "At 21:00 brigade patrols reported that the ferry had sunk and the north bank was held by the enemy. At 22:30 the brigade recorded orders to reinforce the British perimeter and that it lacked the means to cross.",
+          "limit": "These are the brigade’s own preliminary counts for the whole lift. It reported later arrivals from off-zone drops. The figures cannot be applied to the 314th Group alone.",
+          "rosterIds": [
+            "market-polish-lift"
+          ],
+          "sources": [
+            {
+              "name": "HQ 1st Polish Independent Parachute Brigade Group",
+              "url": "https://www.pegasusarchive.org/arnhem/war_pbdehq.htm",
+              "locator": "21 September, 17:18, 21:00 and 22:30.",
+              "kind": "Wartime Polish recipient war diary transcription"
+            },
+            {
+              "name": "Soldiers from the Sky, Operation Market Garden",
+              "url": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "locator": "Polish Independent Parachute Brigade Group table, Saltby, 21 September, citing Karel Margry.",
+              "kind": "Specialist synthesis and unit movement table"
+            }
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "extend": "market-response",
+          "side": "Axis",
+          "members": [
+            {
+              "unit": "I./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "source": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "locator": "17 September 1944, paragraph following the Luftflotte 3 war diary quotation, followed by the separate Gruppe accounts.",
+              "activity": "Fought Spitfires near Nijmegen.",
+              "activitySource": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "activityLocator": "17 September, operations of I., II. and III. Gruppen and Lt. William Beyer’s account."
+            },
+            {
+              "unit": "II./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "source": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "locator": "17 September 1944, paragraph following the Luftflotte 3 war diary quotation, followed by the separate Gruppe accounts.",
+              "activity": "Engaged Mustangs in two encounters.",
+              "activitySource": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "activityLocator": "17 September, operations of I., II. and III. Gruppen and Lt. William Beyer’s account."
+            },
+            {
+              "unit": "III./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "source": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "locator": "17 September 1944, paragraph following the Luftflotte 3 war diary quotation, followed by the separate Gruppe accounts.",
+              "activity": "Engaged Mustangs of the 376th Fighter Squadron near the Dutch-German border.",
+              "activitySource": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/JG%2026-Top%20Guns%20Of%20The%20Luftwaffe%20c20091007%20%5B255%5D.pdf",
+              "activityLocator": "17 September, operations of I., II. and III. Gruppen and Lt. William Beyer’s account."
+            }
+          ],
+          "note": "Luftflotte 3 recorded six formations prepared at about 25 aircraft each, of which three operated. Caldwell identifies the three that flew as I., II. and III./JG 26. The diary supplies the total and Caldwell supplies the identities. The remaining three prepared formations are unnamed."
+        },
+        {
+          "id": "market-46-first-lift",
+          "label": "No. 46 Group’s opening glider lift",
+          "date": "1944-09-17",
+          "force": "No. 46 Group RAF",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "flew",
+          "scope": "RAF Dakota squadrons in the first British glider lift to Arnhem.",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.theworldwars.net/stats/file.php?e=ww2&s=oobmarketgarden",
+          "locator": "No. 46 (Transport) Group RAF, five numbered squadrons in the 17 September order of battle.",
+          "sourceClass": "Compiled Allied order of battle, cross-checked against unit histories and squadron returns",
+          "note": "No. 512’s history supplies the number towed. The other four squadrons record dispatch and release. A tug’s safe return and a glider’s landing are different events.",
+          "members": [
+            {
+              "unit": "No. 48 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Down Ampney",
+              "activity": "23 tugs departed and 19 crews reported release over landing zone S. All tugs returned.",
+              "activitySource": "https://www.pegasusarchive.org/arnhem/war_48sqn.htm",
+              "activityLocator": "17 September 1944, first lift, unit entry and detail of work.",
+              "stations": [
+                "down-ampney"
+              ]
+            },
+            {
+              "unit": "No. 271 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Down Ampney",
+              "activity": "24 crews detailed, 19 successful releases reported. All tugs returned.",
+              "activitySource": "https://www.pegasusarchive.org/arnhem/war_271sqn.htm",
+              "activityLocator": "17 September 1944, first lift, unit entry and detail of work.",
+              "stations": [
+                "down-ampney"
+              ]
+            },
+            {
+              "unit": "No. 233 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Blakehill Farm",
+              "activity": "22 detailed, 21 releases over or near the intended landing zone. All tugs returned.",
+              "activitySource": "https://www.pegasusarchive.org/arnhem/war_233sqn.htm",
+              "activityLocator": "17 September 1944, first lift, unit entry and detail of work.",
+              "stations": [
+                "blakehill-farm"
+              ]
+            },
+            {
+              "unit": "No. 575 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Broadwell",
+              "activity": "24 detailed and 19 gliders released at landing zone S. The crews reported good fighter cover.",
+              "activitySource": "https://www.pegasusarchive.org/arnhem/war_575sqn.htm",
+              "activityLocator": "17 September 1944, first lift, unit entry and detail of work.",
+              "stations": [
+                "broadwell"
+              ]
+            },
+            {
+              "unit": "No. 512 Squadron RAF",
+              "parent": "No. 46 Group RAF",
+              "place": "Broadwell",
+              "activity": "Towed 22 Horsa gliders carrying troops and equipment of 1st Battalion, Border Regiment.",
+              "activitySource": "https://www.pegasusarchive.org/arnhem/batt_512.htm",
+              "activityLocator": "Arnhem, opening paragraph, 17 September.",
+              "stations": [
+                "broadwell"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "market-ix-troop-carrier",
+          "label": "US IX Troop Carrier Command on 17 September",
+          "date": "1944-09-17",
+          "force": "USAAF, IX Troop Carrier Command",
+          "side": "Allied",
+          "echelon": "group",
+          "event": "assigned",
+          "scope": "Numbered US groups in the three troop carrier wings of the Allied opening order of battle.",
+          "total": 14,
+          "basis": "bounded source count",
+          "source": "https://www.theworldwars.net/stats/file.php?e=ww2&s=oobmarketgarden",
+          "locator": "IX Troop Carrier Command, rows for the 50th, 52nd and 53rd Troop Carrier Wings.",
+          "sourceClass": "Compiled Allied order of battle",
+          "note": "Four groups are listed in the 50th Wing, five in the 52nd and five in the 53rd. The 50th Wing’s English operating fields differed from earlier home and continental bases. Named Dutch drop areas require a dated serial or passenger account.",
+          "members": [
+            {
+              "unit": "439th Troop Carrier Group",
+              "parent": "50th Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Balderton",
+              "source": "https://www.pegasusarchive.org/arnhem/order_ix.htm",
+              "locator": "50th Wing, 439th Group, operating field."
+            },
+            {
+              "unit": "440th Troop Carrier Group",
+              "parent": "50th Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Fulbeck",
+              "source": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "locator": "82nd Airborne Division, 17 September, 440th Group and 508th PIR.",
+              "activity": "Carried elements of the 508th Parachute Infantry and 376th Parachute Field Artillery on 17 September.",
+              "activitySource": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "activityLocator": "82nd Airborne Division, 17 September, Fulbeck row."
+            },
+            {
+              "unit": "441st Troop Carrier Group",
+              "parent": "50th Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Langar",
+              "source": "https://www.pegasusarchive.org/arnhem/order_ix.htm",
+              "locator": "50th Wing, 441st Group’s operating field (spelled Langer)."
+            },
+            {
+              "unit": "442nd Troop Carrier Group",
+              "parent": "50th Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Chilbolton",
+              "source": "https://www.airshowspresent.com/raf-chilbolton.html",
+              "locator": "11 and 17 September, 442nd Group and its 501st PIR serial.",
+              "activity": "45 C-47s of the group took the 501st Parachute Infantry toward Veghel on 17 September.",
+              "activitySource": "https://www.airshowspresent.com/raf-chilbolton.html",
+              "activityLocator": "17 September, Chilbolton, group and drop near Veghel."
+            },
+            {
+              "unit": "61st Troop Carrier Group",
+              "parent": "52nd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Barkston Heath",
+              "activity": "Carried elements of British 1st Airborne Division in the 17–18 September lifts.",
+              "activitySource": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "activityLocator": "British 1st Airborne Division, Barkston Heath row."
+            },
+            {
+              "unit": "313th Troop Carrier Group",
+              "parent": "52nd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Folkingham",
+              "activity": "Carried elements of the 505th Parachute Infantry Regiment and 82nd Signal Company on 17 September.",
+              "activitySource": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "activityLocator": "82nd Airborne Division, 17 September, Folkingham row."
+            },
+            {
+              "unit": "314th Troop Carrier Group",
+              "parent": "52nd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Saltby",
+              "activity": "Dropped men of the British 3rd Parachute Battalion near Renkum on 17 September.",
+              "activitySource": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "activityLocator": "Opening photographic caption and the British parachute units table, Saltby row."
+            },
+            {
+              "unit": "315th Troop Carrier Group",
+              "parent": "52nd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Spanhoe"
+            },
+            {
+              "unit": "316th Troop Carrier Group",
+              "parent": "52nd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Cottesmore"
+            },
+            {
+              "unit": "434th Troop Carrier Group",
+              "parent": "53rd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Aldermaston"
+            },
+            {
+              "unit": "435th Troop Carrier Group",
+              "parent": "53rd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Welford Park"
+            },
+            {
+              "unit": "436th Troop Carrier Group",
+              "parent": "53rd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Membury"
+            },
+            {
+              "unit": "437th Troop Carrier Group",
+              "parent": "53rd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Ramsbury"
+            },
+            {
+              "unit": "438th Troop Carrier Group",
+              "parent": "53rd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Greenham Common"
+            }
+          ]
+        },
+        {
+          "id": "market-polish-lift",
+          "label": "US carriers for the Polish parachute brigade at Driel",
+          "date": "1944-09-21",
+          "force": "USAAF with 1st Polish Independent Parachute Brigade",
+          "side": "Allied",
+          "echelon": "group",
+          "event": "flew",
+          "scope": "Identified US carrier group in the 21 September drop south of the lower Rhine.",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+          "locator": "Polish Independent Parachute Brigade Group table, 21 September, Saltby.",
+          "sourceClass": "Local heritage project citing Karel Margry’s Market Garden study",
+          "note": "This single group is identified in the Saltby detachment’s lift. The receiving brigade’s report combines its full air movement.",
+          "members": [
+            {
+              "unit": "314th Troop Carrier Group",
+              "parent": "52nd Troop Carrier Wing, IX Troop Carrier Command",
+              "place": "Saltby",
+              "activity": "Carried elements of Polish 2nd and 3rd Parachute Battalions, brigade HQ and supporting troops.",
+              "activitySource": "https://www.soldiersfromthesky.co.uk/stories/operation-market-garden",
+              "activityLocator": "Polish Independent Parachute Brigade Group table, 21 September 1944."
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Day-one Dakota returns show crews released, tugs returned and gliders missing. On 19 September the dispatch group counted 163 aircraft off on resupply.",
+          "losses": "The 19 September dispatch return counted 18 aircraft failing to return. The ground brigade separately recorded missing gliders in the first lift.",
+          "effect": "The recipient’s 19 September accounts show 21 of 388 net tons gathered, with further unquantified collections possible."
+        },
+        "Axis": {
+          "effort": "Luftflotte 3 recorded six prepared formations and three operating on 17 September. Caldwell identifies all three that flew.",
+          "losses": "Caldwell separates one I./JG 26 FW 190 and pilot lost, two II./JG 26 pilots lost and III./JG 26 commander Mietusch killed. German victory claims have a different basis.",
+          "effect": "The fighters engaged Allied escorts. Caldwell’s reconstruction found no German fighter reached the first lift transports. The British brigade recorded little opposition on its own flight."
+        }
+      }
+    },
+    "bodenplatte": {
+      "populations": [
+        {
+          "id": "boden-jg4-reconciled",
+          "label": "JG 4’s four Gruppen across the Le Culot operation",
+          "date": "1945-01-01",
+          "force": "Luftwaffe, Jagdgeschwader 4",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "flew",
+          "scope": "JG 4 Gruppen named in the attack reconstruction. Intended target Le Culot, with multiple fields actually encountered.",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://codenames.info/operation/bodenplatte/",
+          "locator": "Le Culot section, separate accounts of Schröder, Steinmann, Eberle and Laube.",
+          "sourceClass": "Postwar operation reconstruction cross-checked against unit histories",
+          "note": "Nafziger item 945GALA prints only I., III. and IV., labelling the Babenhausen Fw 190s III. Holm places II. at Babenhausen and III. at Darmstadt-Griesheim. SGLO records individual Fw 190s from 5. and 7./JG 4. Strength at launch and arrival over each field remain separate questions.",
+          "members": [
+            {
+              "unit": "I./JG 4",
+              "parent": "Jagdgeschwader 4",
+              "place": "Darmstadt-Griesheim",
+              "source": "https://www.ww2.dk/air/jagd/jg4.htm",
+              "locator": "I. Gruppe, commander and Bases tables crossing 1 January 1945.",
+              "activity": "Steinmann’s Bf 109s took off with elements of III. Gruppe. At least part of the force reached Ophoven.",
+              "activitySource": "https://codenames.info/operation/bodenplatte/",
+              "activityLocator": "Le Culot attack, paragraph naming the Gruppe commander."
+            },
+            {
+              "unit": "II.(Sturm)/JG 4",
+              "parent": "Jagdgeschwader 4",
+              "place": "Babenhausen",
+              "source": "https://www.ww2.dk/air/jagd/jg4.htm",
+              "locator": "II.(Sturm) Gruppe, commander and Bases tables crossing 1 January 1945.",
+              "activity": "Schröder’s Fw 190s took off for Le Culot and became separated. The operational reconstruction places some near Asch.",
+              "activitySource": "https://codenames.info/operation/bodenplatte/",
+              "activityLocator": "Le Culot attack, paragraph naming the Gruppe commander."
+            },
+            {
+              "unit": "III./JG 4",
+              "parent": "Jagdgeschwader 4",
+              "place": "Darmstadt-Griesheim",
+              "source": "https://www.ww2.dk/air/jagd/jg4.htm",
+              "locator": "III. Gruppe, commander and Bases tables crossing 1 January 1945.",
+              "activity": "Eberle’s Bf 109s joined I. Gruppe for the flight to Le Culot.",
+              "activitySource": "https://codenames.info/operation/bodenplatte/",
+              "activityLocator": "Le Culot attack, paragraph naming the Gruppe commander."
+            },
+            {
+              "unit": "IV./JG 4",
+              "parent": "Jagdgeschwader 4",
+              "place": "Frankfurt/Rhein-Main",
+              "source": "https://www.ww2.dk/air/jagd/jg4.htm",
+              "locator": "IV. Gruppe, commander and Bases tables crossing 1 January 1945.",
+              "activity": "The surviving element under Laube attacked Sint-Truiden after mistaking it for Le Culot.",
+              "activitySource": "https://codenames.info/operation/bodenplatte/",
+              "activityLocator": "Le Culot attack, paragraph naming the Gruppe commander."
+            }
+          ]
+        },
+        {
+          "id": "boden-brussels-groups",
+          "label": "German Gruppen assigned to Grimbergen and Evere",
+          "date": "1945-01-01",
+          "force": "Luftwaffe, JG 26 with III./JG 54",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assigned",
+          "scope": "Two Brussels targets in the JG 26 plan, including the attached Gruppe of JG 54.",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+          "locator": "JG 26 and III./JG 54, paragraph assigning the four Gruppen.",
+          "sourceClass": "Historical synthesis",
+          "note": "Two Gruppen were assigned to each airfield. Turnbacks and losses before arrival prevent an assignment from proving that all aircraft attacked.",
+          "members": [
+            {
+              "unit": "I./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "activity": "Assigned to Grimbergen.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 26 and III./JG 54, planned targets."
+            },
+            {
+              "unit": "III./JG 54",
+              "parent": "Jagdgeschwader 54",
+              "activity": "Assigned to Grimbergen.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 26 and III./JG 54, planned targets."
+            },
+            {
+              "unit": "II./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "activity": "Assigned to Evere.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 26 and III./JG 54, planned targets."
+            },
+            {
+              "unit": "III./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "activity": "Assigned to Evere.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 26 and III./JG 54, planned targets."
+            }
+          ]
+        },
+        {
+          "id": "boden-ghent-polish",
+          "label": "Polish wing airborne from Sint-Denijs-Westrem",
+          "date": "1945-01-01",
+          "force": "No. 131 (Polish) Wing, Second Tactical Air Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "flew",
+          "scope": "Three Polish squadrons in the wing account of sorties from B.61 before its attack.",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.polishairforce.pl/_meldunek_breyner_1945_01_01.html",
+          "locator": "Personnel Combat Reports, 1 January, items D–K, Ghent and Lokeren.",
+          "sourceClass": "Wartime combat report transcription",
+          "note": "31 Spitfires left on offensive missions before the attack on their own base. The report attributes the ensuing air fighting to returning pilots and distinguishes the wing’s ground losses.",
+          "members": [
+            {
+              "unit": "No. 302 (Polish) Squadron",
+              "parent": "No. 131 (Polish) Wing",
+              "place": "Sint-Denijs-Westrem (B.61)",
+              "stations": [
+                "sint-denijs-westrem"
+              ],
+              "activity": "8 Spitfires took off for armed reconnaissance.",
+              "activitySource": "https://www.polishairforce.pl/_meldunek_breyner_1945_01_01.html",
+              "activityLocator": "Item K, squadron strengths and original missions."
+            },
+            {
+              "unit": "No. 308 (Polish) Squadron",
+              "parent": "No. 131 (Polish) Wing",
+              "place": "Sint-Denijs-Westrem (B.61)",
+              "stations": [
+                "sint-denijs-westrem"
+              ],
+              "activity": "12 Spitfires took off for a bombing mission.",
+              "activitySource": "https://www.polishairforce.pl/_meldunek_breyner_1945_01_01.html",
+              "activityLocator": "Item K, squadron strengths and original missions."
+            },
+            {
+              "unit": "No. 317 (Polish) Squadron",
+              "parent": "No. 131 (Polish) Wing",
+              "place": "Sint-Denijs-Westrem (B.61)",
+              "stations": [
+                "sint-denijs-westrem"
+              ],
+              "activity": "11 Spitfires took off for a bombing mission.",
+              "activitySource": "https://www.polishairforce.pl/_meldunek_breyner_1945_01_01.html",
+              "activityLocator": "Item K, squadron strengths and original missions."
+            }
+          ]
+        },
+        {
+          "id": "boden-us-canadian-squadrons",
+          "label": "US and Canadian fighter squadrons at Asch and Eindhoven",
+          "date": "1945-01-01",
+          "force": "USAAF and Royal Canadian Air Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "at field during attack",
+          "scope": "Named units at Asch and Eindhoven with an identified aircraft, crew or mission during the attack.",
+          "total": 3,
+          "basis": "identified lower bound",
+          "source": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+          "locator": "JG 3 and JG 11 sections, Eindhoven and Asch.",
+          "sourceClass": "Operational synthesis with individual records",
+          "note": "Asch’s 487th Squadron took off to fight. The Eindhoven squadrons had Typhoons still on the ground. Other squadrons and aircraft were present at both fields.",
+          "members": [
+            {
+              "unit": "487th Fighter Squadron",
+              "parent": "352nd Fighter Group, USAAF",
+              "place": "Asch (Y-29)",
+              "activity": "Capt. Stewart took off into the fight and filed an encounter report with three claims.",
+              "activitySource": "https://www.8af.org/henry-stewart-352th-fighter-group-1-january-1945.cfm",
+              "activityLocator": "Capt. Henry M. Stewart, combat report, lines b–i."
+            },
+            {
+              "unit": "No. 438 Squadron RCAF",
+              "parent": "No. 143 Wing, Second Tactical Air Force",
+              "place": "Eindhoven (B.78)",
+              "activity": "Typhoons preparing to take off were caught on the runway. PD556, flown by F/L Peter Wilson, was among the losses.",
+              "activitySource": "https://wo2-hoekschewaard.nl/wp-content/uploads/2014/12/register1945.pdf",
+              "activityLocator": "1 January, Eindhoven, 09:10, Typhoon PD556, No. 438 Sqdn."
+            },
+            {
+              "unit": "No. 439 Squadron RCAF",
+              "parent": "No. 143 Wing, Second Tactical Air Force",
+              "place": "Eindhoven (B.78)",
+              "activity": "Eight Typhoons were lined up for takeoff when the attack came.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 3 section, the two Canadian squadrons at Eindhoven."
+            }
+          ]
+        },
+        {
+          "id": "boden-jg1-fields",
+          "label": "JG 1’s three groups over Belgian fields",
+          "date": "1945-01-01",
+          "force": "Luftwaffe, Jagdgeschwader 1",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "flew",
+          "scope": "Numbered fighter groups in the JG 1 attack on Ghent, Maldegem and Ursel.",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+          "locator": "JG 1 section, paragraphs on Maldegem/Ursel and Sint-Denijs-Westrem.",
+          "sourceClass": "Historical synthesis",
+          "note": "The headquarters is excluded from the three numbered Gruppen. I. and III. belonged to the Maldegem–Ursel force, with II. attacking Ghent.",
+          "members": [
+            {
+              "unit": "I./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "activity": "Operated with the Maldegem–Ursel force.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 1, attack on the three Belgian fields."
+            },
+            {
+              "unit": "II./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "activity": "Attacked Sint-Denijs-Westrem near Ghent.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 1, attack on the three Belgian fields."
+            },
+            {
+              "unit": "III./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "activity": "Operated with the Maldegem–Ursel force.",
+              "activitySource": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "activityLocator": "JG 1, attack on the three Belgian fields."
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1945-01-01",
+          "title": "Why two different Gruppen have been labelled III./JG 4",
+          "mission": "Nafziger’s order of battle calls the Fw 190 unit at Babenhausen III./JG 4. Holm’s separate histories locate Schröder’s II. Gruppe there and Eberle’s Bf 109-equipped III. at Darmstadt-Griesheim. Both men appear in the operational account.",
+          "effect": "The Dutch loss register records Fw 190s from 5. and 7./JG 4, both component Staffeln of II. Gruppe. The attack reconstruction places III. with I. on the Le Culot mission and IV. at Sint-Truiden. The separate III. Gruppe therefore remains visible alongside the evidence for II.",
+          "limit": "The aircraft records establish individual losses. Neither a whole Gruppe’s arrival over Le Culot nor its strength can be inferred from those two aircraft. The accounts disagree on how many reached the intended target.",
+          "rosterIds": [
+            "boden-jg4-reconciled",
+            "bodenplatte-parents"
+          ],
+          "sources": [
+            {
+              "name": "George Nafziger, Luftwaffe Operation Bodenplatte",
+              "url": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945gala.pdf",
+              "locator": "Item 945GALA, p. 1, JG 4 entries.",
+              "kind": "Published order-of-battle compilation citing Girbig"
+            },
+            {
+              "name": "Michael Holm, Jagdgeschwader 4",
+              "url": "https://www.ww2.dk/air/jagd/jg4.htm",
+              "locator": "II. and III. Gruppe, staff composition, commanders and station tables.",
+              "kind": "Compiled unit chronologies"
+            },
+            {
+              "name": "Studiegroep Luchtoorlog, Dutch loss register",
+              "url": "https://wo2-hoekschewaard.nl/wp-content/uploads/2014/12/register1945.pdf",
+              "locator": "Printed p. 127, 1 January 1945, Fw 190 works numbers 682676 and 682296.",
+              "kind": "Aircraft loss register"
+            },
+            {
+              "name": "Operations and Codenames, Bodenplatte",
+              "url": "https://codenames.info/operation/bodenplatte/",
+              "locator": "Le Culot, separate descriptions of I./III., II. and IV. Gruppe.",
+              "kind": "Operational reconstruction"
+            }
+          ]
+        },
+        {
+          "date": "1945-01-01",
+          "title": "What returning Polish fighters found over Ghent",
+          "mission": "II./JG 1 attacked Sint-Denijs-Westrem after eight Spitfires of No. 302, twelve of No. 308 and eleven of No. 317 had left. Returning Polish pilots encountered German fighters around Ghent and Lokeren.",
+          "effect": "The Polish wing reported 18 Spitfires destroyed and five damaged on the ground, plus two aircraft and their pilots lost in air combat. Its pilots claimed 20 Fw 190s destroyed. Rickard gives 17 German losses for II./JG 1.",
+          "limit": "The 20 are claims from the Polish report. The 17 are a secondary reconstruction of German losses and include no aircraft-by-aircraft match to individual Polish pilots.",
+          "rosterIds": [
+            "boden-ghent-polish",
+            "boden-jg1-fields"
+          ],
+          "sources": [
+            {
+              "name": "No. 131 (Polish) Wing, combat report and Sgt Breyner’s testimony",
+              "url": "https://www.polishairforce.pl/_meldunek_breyner_1945_01_01.html",
+              "locator": "1 January, items D–K and the account by the No. 308 Squadron pilot.",
+              "kind": "Wartime Polish air combat report transcription"
+            },
+            {
+              "name": "J. Rickard, Operation Bodenplatte",
+              "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "locator": "JG 1 section, II. Gruppe and the attack on the Polish wing.",
+              "kind": "Historical synthesis using German and Allied evidence"
+            }
+          ]
+        },
+        {
+          "date": "1945-01-01",
+          "title": "Different airfields, different consequences in Brussels",
+          "mission": "I./JG 26 and III./JG 54 were sent to Grimbergen. II. and III./JG 26 were sent to Evere. Some aircraft were lost or turned back before reaching either field.",
+          "effect": "A member of 127 Wing’s ground crew at Evere recalled preparing four new Spitfires for squadron markings before the attack. The crew account and memorial identify engine mechanic Robert Medforth of No. 6403 Servicing Echelon as a fatal casualty there. Grimbergen, in contrast, had little aircraft traffic for its attackers to find.",
+          "limit": "The witness identifies the attacked field and the maintenance personnel affected. He supplies no verified serial-by-serial inventory of Evere losses, nor can he identify which German Gruppe caused Medforth’s death.",
+          "rosterIds": [
+            "boden-brussels-groups"
+          ],
+          "sources": [
+            {
+              "name": "J. Rickard, Operation Bodenplatte",
+              "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "locator": "JG 26 and III./JG 54, target allocations and respective outcomes.",
+              "kind": "Historical synthesis"
+            },
+            {
+              "name": "No. 127 Wing maintenance witness and Medforth memorial",
+              "url": "https://rcaf403squadron.wordpress.com/category/operation-bodenplatte/",
+              "locator": "Eyewitness Account, January 01, 1945, and the Robert Charles Medforth entry.",
+              "kind": "Participant recollection and museum memorial transcription"
+            }
+          ]
+        },
+        {
+          "date": "1945-01-01",
+          "title": "A runway full of Typhoons at Eindhoven",
+          "mission": "JG 3 arrived while eight Typhoons each of RCAF Nos. 438 and 439 Squadrons were lined up to leave Eindhoven. Flight Lieutenant Peter Wilson’s No. 438 Squadron Typhoon PD556 appears in the Dutch register at the field at 09:10.",
+          "effect": "Rickard’s airfield total counts 60 of 125 Typhoons affected. Twenty-four were repaired locally and ten elsewhere, with 17 destroyed and nine beyond economical repair. A first damage count of 60 would overstate permanent loss.",
+          "limit": "The repair totals cover the field’s Typhoon force across several squadrons. They cannot be applied to the sixteen aircraft lined up or attributed to a particular JG 3 pilot.",
+          "rosterIds": [
+            "boden-us-canadian-squadrons",
+            "bodenplatte-parents"
+          ],
+          "sources": [
+            {
+              "name": "Dutch wartime aircraft loss register, SGLO",
+              "url": "https://wo2-hoekschewaard.nl/wp-content/uploads/2014/12/register1945.pdf",
+              "locator": "1 January, Eindhoven, 09:10, Typhoon PD556, No. 438 Sqdn, F/L P. Wilson.",
+              "kind": "Aircraft loss register"
+            },
+            {
+              "name": "J. Rickard, Operation Bodenplatte",
+              "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "locator": "JG 3 section, Canadian squadrons, airfield damage and repair categories.",
+              "kind": "Historical synthesis"
+            }
+          ]
+        },
+        {
+          "date": "1945-01-01",
+          "title": "The 487th took off as German fighters reached Asch",
+          "mission": "As members of JG 11 reached Asch, the 487th Fighter Squadron was ready for takeoff. Capt. Henry Stewart described joining the fight immediately after leaving the field. Aircraft of the US 366th Fighter Group were already airborne.",
+          "effect": "Stewart claimed three Bf 109s destroyed. Two American pilots added supporting statements about separate combats. Rickard places about fourteen of JG 11’s aircraft losses in the battle at Asch.",
+          "limit": "Stewart supplied no enemy serial numbers. His three claims and the fourteen reconstructed local losses cannot be equated. The JG 11 route also took other pilots to Ophoven.",
+          "rosterIds": [
+            "boden-us-canadian-squadrons",
+            "bodenplatte-parents"
+          ],
+          "sources": [
+            {
+              "name": "Capt. Henry M. Stewart, 487th Fighter Squadron",
+              "url": "https://www.8af.org/henry-stewart-352th-fighter-group-1-january-1945.cfm",
+              "locator": "1 January, encounter report, section i, claim and two signed supporting statements.",
+              "kind": "Wartime USAAF combat report transcription"
+            },
+            {
+              "name": "J. Rickard, Operation Bodenplatte",
+              "url": "https://www.historyofwar.org/articles/operation_bodenplatte.html",
+              "locator": "JG 11 section, difference between wing and local losses.",
+              "kind": "Historical synthesis"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Polish combat reports give 31 departures by squadron and role. US 487th Fighter Squadron testimony gives an encounter beginning at takeoff.",
+          "losses": "The Polish report separates 18 Spitfires destroyed on the ground, five damaged and two lost in air combat. Eindhoven repair categories distinguish 34 repaired Typhoons from 26 destroyed or beyond repair.",
+          "effect": "Returning Polish fighters engaged the attackers at Ghent. Eindhoven repairs restored part of the Typhoon force, while the Evere ground crew recorded a fatality among its mechanics."
+        },
+        "Axis": {
+          "effort": "The separate II. and III./JG 4 narratives and the four JG 26/JG 54 assignments distinguish launch, intended target and reported contact.",
+          "losses": "Two II./JG 4 aircraft are identified in the Dutch register. Reconstructed JG 1 losses over Ghent do not identify victims of each Polish claim.",
+          "effect": "German attackers struck occupied airfields at Evere, Eindhoven and Ghent. An assigned field could be lightly occupied, as Grimbergen was, or mistaken for a different field."
+        }
+      }
+    }
+  },
+  "stations": {
+    "tarrant-rushton": {
+      "name": "Tarrant Rushton",
+      "lat": 50.85,
+      "lon": -2.075,
+      "source": "https://en.wikipedia.org/wiki/RAF_Tarrant_Rushton",
+      "locator": "Historic airfield coordinates in the location infobox."
+    },
+    "down-ampney": {
+      "name": "Down Ampney",
+      "lat": 51.66694,
+      "lon": -1.83944,
+      "source": "https://en.wikipedia.org/wiki/RAF_Down_Ampney",
+      "locator": "Historic airfield coordinates in the location infobox."
+    },
+    "broadwell": {
+      "name": "Broadwell",
+      "lat": 51.75694,
+      "lon": -1.63944,
+      "source": "https://en.wikipedia.org/wiki/RAF_Broadwell",
+      "locator": "Historic airfield coordinates in the location infobox."
+    },
+    "blakehill-farm": {
+      "name": "Blakehill Farm",
+      "lat": 51.62222,
+      "lon": -1.88889,
+      "source": "https://en.wikipedia.org/wiki/RAF_Blakehill_Farm",
+      "locator": "Historic airfield coordinates in the location infobox."
+    },
+    "ford-sussex": {
+      "name": "Ford",
+      "lat": 50.81722,
+      "lon": -0.59028,
+      "source": "https://en.wikipedia.org/wiki/RNAS_Ford",
+      "locator": "Historic airfield coordinates in the location infobox."
+    },
+    "sint-denijs-westrem": {
+      "name": "Sint-Denijs-Westrem (Ghent B.61)",
+      "lat": 51.027,
+      "lon": 3.69,
+      "source": "https://www.ww2.dk/Airfields%20-%20Belgium%20and%20Luxembourg.pdf",
+      "locator": "Henry L. deZeng, Luftwaffe Airfields, Belgium and Luxembourg, Gent–Saint-Denis/Westrem entry."
+    }
+  }
+}

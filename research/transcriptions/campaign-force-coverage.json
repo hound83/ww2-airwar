@@ -402,26 +402,26 @@
   },
   "marketgarden": {
     "title": "Aircraft prepared and aircraft that reached Arnhem",
-    "summary": "On 17 September 1944 Luftflotte 3 prepared six formations against the landings. Three operated in the Arnhem–Nijmegen area. The diary leaves their individual unit names open.",
+    "summary": "On 17 September 1944 Luftflotte 3 prepared six formations to oppose the airborne landings. Three flew in the Arnhem–Nijmegen area. Donald Caldwell identifies those three as I., II. and III./JG 26. The other three remain unidentified.",
     "forces": [
       {
         "name": "RAF and USAAF",
-        "coverage": "Nos. 38 and 46 Groups and IX Troop Carrier Command provided lift. No. 271 Squadron’s own return covers one British tug unit. Escorts and tactical support had separate rosters."
+        "coverage": "Nos. 38 and 46 Groups and IX Troop Carrier Command provided lift. Five No. 46 Group squadrons and fourteen US troop carrier groups are identified in the opening order of battle. Four of the five British squadron entries have dispatch and release figures."
       },
       {
         "name": "German fighter forces",
-        "coverage": "Luftflotte 3 recorded a weather-limited response. Its six formations are described by size and task, without a precise administrative echelon."
+        "coverage": "Luftflotte 3 counted formations and explained how weather limited the response. Caldwell identifies the three operational Gruppen and follows their encounters with Allied escorts, including III./JG 26’s combat with the US 376th Fighter Squadron."
       },
       {
         "name": "Airborne troops receiving the lifts",
-        "coverage": "British, Polish and US airborne units landed in different zones. The Arnhem divisional diary covers only part of the wider operation."
+        "coverage": "British, Polish and US airborne units landed in different zones. At Arnhem, 1 Airlanding Brigade recorded missing gliders by battalion. The divisional headquarters tabulated daily tonnages dropped and collected."
       }
     ],
     "geography": "Arnhem, Nijmegen and Eindhoven need separate lift and resupply records. Going off tow in Britain and releasing a glider near Arnhem had different consequences.",
-    "strength": "Theatre-wide German fighter strength does not give the number that reached the airborne landings.",
+    "strength": "The German diary estimated about 25 aircraft in each prepared formation. It gives no exact count for the three that actually operated.",
     "effort": "No. 271 Squadron detailed 24 glider-tug crews on 17 September. Five gliders came off tow in England and 19 releases near Arnhem were reported satisfactory.",
     "losses": "All 24 tugs returned on the first lift described by No. 271 Squadron. That return does not cover glider losses or subsequent days’ resupply aircraft.",
-    "effect": "Dispatch and release records show what left and reached a zone. Ground diaries are needed to count the supplies recovered by a particular unit.",
+    "effect": "On 19 September 49 Air Despatch Group estimated 377 tons dropped. The receiving division calculated 388 net tons dropped and 21 net tons gathered, or 5.4% on its own figures. Additional collections by front-line units could only be estimated for the wider operation.",
     "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/war-diary-of-luftflotte-3-western-front-september-1944/",
     "locator": "Luftflotte 3 war diary, 17 September 1944, pp. 20–21, response to the landings"
   },

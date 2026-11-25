@@ -1,0 +1,1459 @@
+{
+  "campaigns": {
+    "dieppe": {
+      "populations": [
+        {
+          "extend": "dieppe-allied",
+          "side": "Allied",
+          "note": "All 74 squadron allocations in Mahoney's Appendix 1, pp. 171–176, have a named unit and one primary role. The table cites AIR 20/5186 Appendix A and Franks. US 307th, 308th and 309th belong to the 31st Fighter Group. No. 308 (Polish) Squadron RAF is a separate unit. Coastal flank patrols and air-sea rescue fall outside these 74. For No. 414 RCAF, pilot Hollis Hills identifies Croydon as the home station and Gatwick as the field to which he returned on his first operation.",
+          "members": [
+            {
+              "unit": "No. 111 Squadron RAF",
+              "parent": "Kenley sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Kenley",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 111 at Kenley.",
+              "stations": [
+                "kenley"
+              ],
+              "activity": "Gave cover to troops as they disembarked.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 121, opening of the landing."
+            },
+            {
+              "unit": "No. 611 Squadron RAF",
+              "parent": "Kenley sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Kenley",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 611 at Kenley.",
+              "stations": [
+                "kenley"
+              ],
+              "activity": "Escorted the B-17 attack on Abbeville–Drucat during the withdrawal.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 122, 97th Group mission."
+            },
+            {
+              "unit": "308th Fighter Squadron USAAF",
+              "parent": "31st Fighter Group USAAF",
+              "role": "Spitfire air cover",
+              "place": "Kenley",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 308 at Kenley. Listed as “308 (Eagle)”. The 31st Fighter Group history identifies the USAAF squadron at this station.",
+              "stations": [
+                "kenley"
+              ],
+              "activity": "Took part in Jubilee under RAF operational control.",
+              "activitySource": "https://www.wwiiaircraftperformance.org/31st/31st.html",
+              "activityLocator": "31st Fighter Group, August 1942, first operational deployments."
+            },
+            {
+              "unit": "No. 402 Squadron RCAF",
+              "parent": "Kenley sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Kenley",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 402 at Kenley.",
+              "stations": [
+                "kenley"
+              ]
+            },
+            {
+              "unit": "No. 350 (Belgian) Squadron RAF",
+              "parent": "Kenley sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Redhill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 350 at Redhill.",
+              "stations": [
+                "redhill"
+              ]
+            },
+            {
+              "unit": "No. 310 (Czechoslovak) Squadron RAF",
+              "parent": "Kenley sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Redhill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 310 at Redhill.",
+              "stations": [
+                "redhill"
+              ]
+            },
+            {
+              "unit": "No. 312 (Czechoslovak) Squadron RAF",
+              "parent": "Kenley sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Redhill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Kenley allocation, 312 at Redhill.",
+              "stations": [
+                "redhill"
+              ]
+            },
+            {
+              "unit": "No. 306 (Polish) Squadron RAF",
+              "parent": "Northolt sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Northolt",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Northolt allocation, 306 at Northolt.",
+              "stations": [
+                "northolt"
+              ]
+            },
+            {
+              "unit": "No. 317 (Polish) Squadron RAF",
+              "parent": "Northolt sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Northolt",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Northolt allocation, 317 at Northolt.",
+              "stations": [
+                "northolt"
+              ]
+            },
+            {
+              "unit": "No. 308 (Polish) Squadron RAF",
+              "parent": "Northolt sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Heston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Northolt allocation, 308 at Heston.",
+              "stations": [
+                "heston"
+              ]
+            },
+            {
+              "unit": "No. 302 (Polish) Squadron RAF",
+              "parent": "Northolt sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Heston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Northolt allocation, 302 at Heston.",
+              "stations": [
+                "heston"
+              ]
+            },
+            {
+              "unit": "No. 303 (Polish) Squadron RAF",
+              "parent": "Northolt sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Redhill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Northolt allocation, 303 at Redhill.",
+              "stations": [
+                "redhill"
+              ]
+            },
+            {
+              "unit": "No. 131 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Merston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 171, Tangmere allocation, 131 at Merston.",
+              "stations": [
+                "merston"
+              ]
+            },
+            {
+              "unit": "No. 412 Squadron RCAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Merston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 412 at Merston.",
+              "stations": [
+                "merston"
+              ]
+            },
+            {
+              "unit": "309th Fighter Squadron USAAF",
+              "parent": "31st Fighter Group USAAF",
+              "role": "Spitfire air cover",
+              "place": "Westhampnett",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 309 at Westhampnett. Listed as “309 (Eagle)”. The 31st Fighter Group history identifies the USAAF squadron at this station.",
+              "stations": [
+                "westhampnett"
+              ],
+              "activity": "Took part in Jubilee under RAF operational control.",
+              "activitySource": "https://www.wwiiaircraftperformance.org/31st/31st.html",
+              "activityLocator": "31st Fighter Group, August 1942, first operational deployments."
+            },
+            {
+              "unit": "No. 129 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Thorney Island",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 129 at Thorney Island.",
+              "stations": [
+                "thorney-island"
+              ],
+              "activity": "Twelve Spitfires supported No. 4 Commando's final assault on the Varengeville battery.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 121, 05:50–07:30 period."
+            },
+            {
+              "unit": "No. 130 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Thorney Island",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 130 at Thorney Island.",
+              "stations": [
+                "thorney-island"
+              ]
+            },
+            {
+              "unit": "No. 66 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Tangmere",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 66 at Tangmere.",
+              "stations": [
+                "tangmere"
+              ]
+            },
+            {
+              "unit": "No. 118 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Tangmere",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 118 at Tangmere.",
+              "stations": [
+                "tangmere"
+              ]
+            },
+            {
+              "unit": "No. 501 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Tangmere",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 501 at Tangmere.",
+              "stations": [
+                "tangmere"
+              ]
+            },
+            {
+              "unit": "No. 41 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Tangmere",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 41 at Tangmere.",
+              "stations": [
+                "tangmere"
+              ]
+            },
+            {
+              "unit": "No. 43 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane close support",
+              "place": "Tangmere",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 43 at Tangmere.",
+              "stations": [
+                "tangmere"
+              ]
+            },
+            {
+              "unit": "No. 87 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane close support",
+              "place": "Tangmere",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 87 at Tangmere.",
+              "stations": [
+                "tangmere"
+              ]
+            },
+            {
+              "unit": "No. 3 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane close support",
+              "place": "Shoreham",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 3 at Shoreham.",
+              "stations": [
+                "shoreham"
+              ]
+            },
+            {
+              "unit": "No. 245 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane close support",
+              "place": "Shoreham",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 245 at Shoreham.",
+              "stations": [
+                "shoreham"
+              ]
+            },
+            {
+              "unit": "No. 32 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane close support",
+              "place": "Friston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 32 at Friston.",
+              "stations": [
+                "friston"
+              ]
+            },
+            {
+              "unit": "No. 253 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane close support",
+              "place": "Friston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 253 at Friston.",
+              "stations": [
+                "friston"
+              ]
+            },
+            {
+              "unit": "No. 174 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane direct support",
+              "place": "Ford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 174 at Ford.",
+              "stations": [
+                "ford-yapton"
+              ]
+            },
+            {
+              "unit": "No. 175 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Hurricane direct support",
+              "place": "Ford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 175 at Ford.",
+              "stations": [
+                "ford-yapton"
+              ]
+            },
+            {
+              "unit": "No. 88 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Boston bombing",
+              "place": "Ford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 172, Tangmere allocation, 88 at Ford.",
+              "stations": [
+                "ford-yapton"
+              ]
+            },
+            {
+              "unit": "No. 107 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Boston bombing",
+              "place": "Ford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Tangmere allocation, 107 at Ford.",
+              "stations": [
+                "ford-yapton"
+              ]
+            },
+            {
+              "unit": "No. 13 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Blenheim smoke laying",
+              "place": "Thruxton",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Tangmere allocation, 13 at Thruxton.",
+              "stations": [
+                "thruxton"
+              ]
+            },
+            {
+              "unit": "No. 614 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Blenheim smoke laying",
+              "place": "Thruxton",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Tangmere allocation, 614 at Thruxton.",
+              "stations": [
+                "thruxton"
+              ]
+            },
+            {
+              "unit": "No. 226 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Boston smoke laying",
+              "place": "Thruxton",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Tangmere allocation, 226 at Thruxton.",
+              "stations": [
+                "thruxton"
+              ]
+            },
+            {
+              "unit": "No. 418 Squadron RCAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Boston bombing",
+              "place": "Bradwell Bay",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Tangmere allocation, 418 at Bradwell Bay.",
+              "stations": [
+                "bradwell-bay"
+              ],
+              "activity": "Boston aircraft from the two intruder squadrons attacked batteries south of Dieppe during the opening operations.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 120, 04:45–05:50 phase, Fighter Command Form Y."
+            },
+            {
+              "unit": "No. 605 Squadron RAF",
+              "parent": "Tangmere sector (Jubilee allocation)",
+              "role": "Boston bombing",
+              "place": "Ford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Tangmere allocation, 605 at Ford.",
+              "stations": [
+                "ford-yapton"
+              ],
+              "activity": "Boston aircraft from the two intruder squadrons attacked batteries south of Dieppe during the opening operations.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 120, 04:45–05:50 phase, Fighter Command Form Y."
+            },
+            {
+              "unit": "No. 232 Squadron RAF",
+              "parent": "Debden sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Gravesend",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Debden allocation, 232 at Gravesend.",
+              "stations": [
+                "gravesend"
+              ]
+            },
+            {
+              "unit": "No. 71 (Eagle) Squadron RAF",
+              "parent": "Debden sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Gravesend",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Debden allocation, 71 at Gravesend.",
+              "stations": [
+                "gravesend"
+              ]
+            },
+            {
+              "unit": "No. 124 Squadron RAF",
+              "parent": "Debden sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Gravesend",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Debden allocation, 124 at Gravesend.",
+              "stations": [
+                "gravesend"
+              ]
+            },
+            {
+              "unit": "No. 616 Squadron RAF",
+              "parent": "Debden sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Hawkinge",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Debden allocation, 616 at Hawkinge.",
+              "stations": [
+                "hawkinge"
+              ]
+            },
+            {
+              "unit": "No. 416 Squadron RCAF",
+              "parent": "Debden sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Hawkinge",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, Debden allocation, 416 at Hawkinge.",
+              "stations": [
+                "hawkinge"
+              ],
+              "activity": "On the third patrol engaged Fw 190s escorting Ju 88s, after two uneventful patrols.",
+              "activitySource": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-6.pdf",
+              "activityLocator": "The Crucible of War, p. 239, No. 416 under Chadburn."
+            },
+            {
+              "unit": "No. 121 (Eagle) Squadron RAF",
+              "parent": "North Weald sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Southend (RAF Rochford)",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, North Weald allocation, 121 at Southend.",
+              "stations": [
+                "rochford"
+              ]
+            },
+            {
+              "unit": "No. 19 Squadron RAF",
+              "parent": "North Weald sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Southend (RAF Rochford)",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, North Weald allocation, 19 at Southend.",
+              "stations": [
+                "rochford"
+              ]
+            },
+            {
+              "unit": "No. 242 Squadron RAF",
+              "parent": "North Weald sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Manston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, North Weald allocation, 242 at Manston.",
+              "stations": [
+                "manston"
+              ]
+            },
+            {
+              "unit": "No. 331 (Norwegian) Squadron RAF",
+              "parent": "North Weald sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Manston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, North Weald allocation, 331 at Manston.",
+              "stations": [
+                "manston"
+              ]
+            },
+            {
+              "unit": "No. 332 (Norwegian) Squadron RAF",
+              "parent": "North Weald sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Manston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, North Weald allocation, 332 at Manston.",
+              "stations": [
+                "manston"
+              ]
+            },
+            {
+              "unit": "No. 403 Squadron RCAF",
+              "parent": "North Weald sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Manston",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 173, North Weald allocation, 403 at Manston.",
+              "stations": [
+                "manston"
+              ],
+              "activity": "Four operations. The 11:15 patrol returned with all twelve aircraft. A later flight observed the ships returning home.",
+              "activitySource": "https://rcaf403squadron.wordpress.com/2015/12/14/august-1942/",
+              "activityLocator": "Squadron diary, 19 August, second and third operations."
+            },
+            {
+              "unit": "No. 64 Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Hornchurch",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 64 at Hornchurch.",
+              "stations": [
+                "hornchurch"
+              ],
+              "activity": "Escorted the B-17 attack on Abbeville–Drucat during the withdrawal.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 122, 97th Group mission."
+            },
+            {
+              "unit": "No. 122 Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Hornchurch",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 122 at Hornchurch.",
+              "stations": [
+                "hornchurch"
+              ]
+            },
+            {
+              "unit": "No. 340 (Free French) Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Hornchurch",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 340 at Hornchurch.",
+              "stations": [
+                "hornchurch"
+              ]
+            },
+            {
+              "unit": "No. 81 Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Fairlop",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 81 at Fairlop.",
+              "stations": [
+                "fairlop"
+              ]
+            },
+            {
+              "unit": "No. 154 Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Fairlop",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 154 at Fairlop.",
+              "stations": [
+                "fairlop"
+              ]
+            },
+            {
+              "unit": "No. 485 (New Zealand) Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "West Malling",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 485 at West Malling.",
+              "stations": [
+                "west-malling"
+              ]
+            },
+            {
+              "unit": "No. 610 Squadron RAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "West Malling",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 610 at West Malling.",
+              "stations": [
+                "west-malling"
+              ]
+            },
+            {
+              "unit": "No. 411 Squadron RCAF",
+              "parent": "Hornchurch sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "West Malling",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Hornchurch allocation, 411 at West Malling.",
+              "stations": [
+                "west-malling"
+              ],
+              "activity": "On its final patrol, attacked a bomber that released its bombs about a mile from the returning convoy.",
+              "activitySource": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-6.pdf",
+              "activityLocator": "The Crucible of War, p. 237, quoting the squadron's account."
+            },
+            {
+              "unit": "No. 602 Squadron RAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Biggin Hill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 602 at Biggin Hill.",
+              "stations": [
+                "biggin-hill"
+              ]
+            },
+            {
+              "unit": "307th Fighter Squadron USAAF",
+              "parent": "31st Fighter Group USAAF",
+              "role": "Spitfire air cover",
+              "place": "Biggin Hill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 307 at Biggin Hill. Listed as “307 (Eagle)”. The 31st Fighter Group history identifies the USAAF squadron at this station.",
+              "stations": [
+                "biggin-hill"
+              ],
+              "activity": "Took part in Jubilee under RAF operational control.",
+              "activitySource": "https://www.wwiiaircraftperformance.org/31st/31st.html",
+              "activityLocator": "31st Fighter Group, August 1942, first operational deployments."
+            },
+            {
+              "unit": "No. 222 Squadron RAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Biggin Hill",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 222 at Biggin Hill.",
+              "stations": [
+                "biggin-hill"
+              ]
+            },
+            {
+              "unit": "No. 165 Squadron RAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Lympne",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 165 at Lympne.",
+              "stations": [
+                "lympne"
+              ]
+            },
+            {
+              "unit": "No. 401 Squadron RCAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Lympne",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 401 at Lympne.",
+              "stations": [
+                "lympne"
+              ],
+              "activity": "Escorted the B-17 attack on Abbeville–Drucat during the withdrawal.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 122, 97th Group mission."
+            },
+            {
+              "unit": "No. 65 Squadron RAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Eastchurch",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 65 at Eastchurch.",
+              "stations": [
+                "eastchurch"
+              ],
+              "activity": "Gave cover to troops as they disembarked.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 121, opening of the landing."
+            },
+            {
+              "unit": "No. 133 (Eagle) Squadron RAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Eastchurch",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 133 at Eastchurch.",
+              "stations": [
+                "eastchurch"
+              ]
+            },
+            {
+              "unit": "No. 91 Squadron RAF",
+              "parent": "Biggin Hill sector (Jubilee allocation)",
+              "role": "Spitfire air cover",
+              "place": "Hawkinge",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Biggin Hill allocation, 91 at Hawkinge.",
+              "stations": [
+                "hawkinge"
+              ]
+            },
+            {
+              "unit": "No. 26 Squadron RAF",
+              "parent": "Gatwick sector (Jubilee allocation)",
+              "role": "Mustang tactical reconnaissance",
+              "place": "Gatwick",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 174, Gatwick allocation, 26 at Gatwick.",
+              "stations": [
+                "gatwick"
+              ]
+            },
+            {
+              "unit": "No. 239 Squadron RAF",
+              "parent": "Gatwick sector (Jubilee allocation)",
+              "role": "Mustang tactical reconnaissance",
+              "place": "Gatwick",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, Gatwick allocation, 239 at Gatwick.",
+              "stations": [
+                "gatwick"
+              ]
+            },
+            {
+              "unit": "No. 400 Squadron RCAF",
+              "parent": "Gatwick sector (Jubilee allocation)",
+              "role": "Mustang tactical reconnaissance",
+              "place": "Gatwick",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, Gatwick allocation, 400 at Gatwick.",
+              "stations": [
+                "gatwick"
+              ]
+            },
+            {
+              "unit": "No. 414 Squadron RCAF",
+              "parent": "Gatwick sector (Jubilee allocation)",
+              "role": "Mustang tactical reconnaissance",
+              "place": "Gatwick (allocation and first patrol's return); Croydon (home station)",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, Gatwick allocation, 414 at Gatwick. Compare The Crucible of War, p. 234, map.",
+              "stations": [
+                "gatwick",
+                "croydon"
+              ],
+              "activity": "Clarke and Hills searched the Abbeville–Dieppe road. Hills recalled that darkness prevented observation on the first flight and that both aircraft returned to Gatwick.",
+              "activitySource": "https://www.warplane.com/documents/Flightlines-March-2019.pdf",
+              "activityLocator": "Hollis Hills, Flightlines, March/April 2019, pp. 14–16, first mission and return to home station."
+            },
+            {
+              "unit": "No. 56 Squadron RAF",
+              "parent": "Duxford sector (Jubilee allocation)",
+              "role": "Typhoon air cover",
+              "place": "Duxford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, Duxford allocation, 56 at Duxford.",
+              "stations": [
+                "duxford"
+              ],
+              "activity": "Escorted the nine Defiants in the 11:15 feint towards Ostend.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 122, Fighter Command Form Y, vol. 11."
+            },
+            {
+              "unit": "No. 266 Squadron RAF",
+              "parent": "Duxford sector (Jubilee allocation)",
+              "role": "Typhoon air cover",
+              "place": "Duxford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, Duxford allocation, 266 at Duxford.",
+              "stations": [
+                "duxford"
+              ],
+              "activity": "Escorted the nine Defiants in the 11:15 feint towards Ostend.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 122, Fighter Command Form Y, vol. 11."
+            },
+            {
+              "unit": "No. 609 Squadron RAF",
+              "parent": "Duxford sector (Jubilee allocation)",
+              "role": "Typhoon air cover",
+              "place": "Duxford",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, Duxford allocation, 609 at Duxford.",
+              "stations": [
+                "duxford"
+              ],
+              "activity": "Escorted the nine Defiants in the 11:15 feint towards Ostend.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "activityLocator": "Printed p. 122, Fighter Command Form Y, vol. 11."
+            },
+            {
+              "unit": "340th Bombardment Squadron USAAF",
+              "parent": "97th Bombardment Group USAAF",
+              "role": "B-17 diversionary bombing",
+              "place": "Polebrook",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, 97th Bombardment Group allocation, 340 at Polebrook.",
+              "stations": [
+                "polebrook"
+              ]
+            },
+            {
+              "unit": "341st Bombardment Squadron USAAF",
+              "parent": "97th Bombardment Group USAAF",
+              "role": "B-17 diversionary bombing",
+              "place": "Polebrook",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, 97th Bombardment Group allocation, 341 at Polebrook.",
+              "stations": [
+                "polebrook"
+              ]
+            },
+            {
+              "unit": "342nd Bombardment Squadron USAAF",
+              "parent": "97th Bombardment Group USAAF",
+              "role": "B-17 diversionary bombing",
+              "place": "Grafton Underwood",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, 97th Bombardment Group allocation, 342 at Grafton Underwood.",
+              "stations": [
+                "grafton-underwood"
+              ]
+            },
+            {
+              "unit": "414th Bombardment Squadron USAAF",
+              "parent": "97th Bombardment Group USAAF",
+              "role": "B-17 diversionary bombing",
+              "place": "Grafton Underwood",
+              "source": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, printed p. 175, 97th Bombardment Group allocation, 414 at Grafton Underwood.",
+              "stations": [
+                "grafton-underwood"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dieppe-german-fighter-gruppen",
+          "label": "German fighter Gruppen over Dieppe",
+          "date": "1942-08-19",
+          "force": "Luftwaffe · JG 2 and JG 26",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "responded",
+          "scope": "Fighter Gruppen of JG 2 and JG 26 identified in the response to the landing",
+          "total": 6,
+          "basis": "identified lower bound",
+          "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+          "locator": "Chapter ‘America Enters the Fray’, Dieppe passages naming all six Gruppen and their stations.",
+          "sourceClass": "published secondary operational history",
+          "note": "Six participating fighter Gruppen, with their reported departure stations. Bomber formations, fighter-bomber Staffeln and wing headquarters have different counting units.",
+          "members": [
+            {
+              "unit": "I./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Saint-Omer",
+              "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+              "locator": "Chapter ‘America Enters the Fray’, Dieppe response, JG 26 paragraph."
+            },
+            {
+              "unit": "II./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Abbeville",
+              "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+              "locator": "Chapter ‘America Enters the Fray’, Dieppe response, JG 26 paragraph."
+            },
+            {
+              "unit": "III./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Wevelgem",
+              "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+              "locator": "Chapter ‘America Enters the Fray’, Dieppe response, JG 26 paragraph."
+            },
+            {
+              "unit": "I./JG 2",
+              "parent": "Jagdgeschwader 2",
+              "place": "Tricqueville",
+              "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+              "locator": "Chapter ‘America Enters the Fray’, Dieppe response, JG 2 paragraph."
+            },
+            {
+              "unit": "II./JG 2",
+              "parent": "Jagdgeschwader 2",
+              "place": "Beaumont-le-Roger",
+              "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+              "locator": "Chapter ‘America Enters the Fray’, Dieppe response, JG 2 paragraph."
+            },
+            {
+              "unit": "III./JG 2",
+              "parent": "Jagdgeschwader 2",
+              "place": "Maupertus",
+              "source": "https://erenow.org/ww/aces-luftwaffe-jagdfliegern-their-tactics-wwii/11.php",
+              "locator": "Chapter ‘America Enters the Fray’, Dieppe response, JG 2 paragraph."
+            }
+          ]
+        },
+        {
+          "id": "dieppe-german-fighter-bombers",
+          "label": "Fighter-bomber Staffeln attacking shipping",
+          "date": "1942-08-19",
+          "force": "Luftwaffe · JG 2 and JG 26",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "attacked",
+          "scope": "Two fighter-bomber Staffeln identified in attacks on the ships off Dieppe",
+          "total": 2,
+          "basis": "identified lower bound",
+          "source": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol4-iss4-5-pdf/",
+          "locator": "Chris Goss, Air Power Review, pp. 103–104, Dieppe.",
+          "sourceClass": "specialist historical study",
+          "note": "These are the dedicated fighter-bomber Staffeln of two fighter wings. The wider strike operation also included twin-engine bombers.",
+          "members": [
+            {
+              "unit": "10.(Jabo)/JG 2",
+              "parent": "Jagdgeschwader 2",
+              "source": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol4-iss4-5-pdf/",
+              "locator": "Printed pp. 103–104, 10/JG 2 at Dieppe.",
+              "activity": "Attacked Allied shipping during the raid.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol4-iss4-5-pdf/",
+              "activityLocator": "Printed pp. 103–104, 19 August."
+            },
+            {
+              "unit": "10.(Jabo)/JG 26",
+              "parent": "Jagdgeschwader 26",
+              "source": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol4-iss4-5-pdf/",
+              "locator": "Printed pp. 103–104, 10/JG 26 at Dieppe.",
+              "activity": "Attacked Allied shipping during the raid.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol4-iss4-5-pdf/",
+              "activityLocator": "Printed pp. 103–104, 19 August."
+            }
+          ]
+        },
+        {
+          "id": "dieppe-german-bomber-staffeln",
+          "label": "Bomber Staffeln identified from crews",
+          "date": "1942-08-19",
+          "force": "Luftwaffe · KG 2 and KG 40",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "identified in action",
+          "scope": "German bomber Staffeln with a crew-level record in the Dieppe operation",
+          "total": 3,
+          "basis": "identified lower bound",
+          "source": "https://www.airmen.dk/pdfs/p114v3reichwest.pdf",
+          "locator": "19 August 1942, Kanalfront, Dieppe, 4./KG 40 and 5./KG 40 crew claims, film C.2031/II.",
+          "sourceClass": "published transcription of German wartime claim records, supplemented by individual crew evidence",
+          "note": "The claim records establish crew presence. British signals intelligence distinguished at least 86 long-range bombers. That count measures aircraft and cannot supply a squadron denominator.",
+          "members": [
+            {
+              "unit": "5./KG 2",
+              "parent": "II./Kampfgeschwader 2",
+              "place": "Eindhoven",
+              "source": "https://crainsmilitaria.com/index.php?product_id=7578&route=product/product",
+              "locator": "Franz Mai's Soldbuch, 5./KG 2 posting and Do 217 U5+YN, WNr 4292, 19 August. Dealer's description with images of service book."
+            },
+            {
+              "unit": "4./KG 40",
+              "parent": "II./Kampfgeschwader 40",
+              "source": "https://www.airmen.dk/pdfs/p114v3reichwest.pdf",
+              "locator": "19 August, crew claim at 14:02, film C.2031/II."
+            },
+            {
+              "unit": "5./KG 40",
+              "parent": "II./Kampfgeschwader 40",
+              "source": "https://www.airmen.dk/pdfs/p114v3reichwest.pdf",
+              "locator": "19 August, crew claims off Dieppe at 16:28 and 16:38, film C.2031/II, nos. 1–2."
+            }
+          ]
+        },
+        {
+          "id": "dieppe-coastal-flank",
+          "label": "Coastal Command searches on the crossing",
+          "date": "1942-08-18 to 1942-08-19",
+          "force": "RAF Coastal Command",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "flew",
+          "scope": "Radar search patrols on the flanks during the overnight outward passage",
+          "total": 2,
+          "basis": "identified lower bound",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+          "locator": "Air Defence of Great Britain, vol. V, p. 121, citing Fighter Command Form Y, vol. 11.",
+          "sourceClass": "RAF official narrative based on the wartime command return",
+          "note": "Both squadrons searched during darkness and reported no sightings. Coastal patrols sat outside the nine-role allocation.",
+          "members": [
+            {
+              "unit": "No. 59 Squadron RAF",
+              "parent": "RAF Coastal Command",
+              "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "locator": "Printed p. 121, outward passage, 18/19 August."
+            },
+            {
+              "unit": "No. 502 Squadron RAF",
+              "parent": "RAF Coastal Command",
+              "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "locator": "Printed p. 121, outward passage, 18/19 August."
+            }
+          ]
+        }
+      ],
+      "allocations": [
+        {
+          "role": "Spitfire air cover",
+          "total": 48,
+          "named": 48,
+          "note": "Includes the three US 31st Fighter Group squadrons. Individual sorties also included bomber escort and support of troops."
+        },
+        {
+          "role": "Typhoon air cover",
+          "total": 3,
+          "named": 3,
+          "note": "Nos. 56, 266 and 609 escorted a feint towards Ostend at 11:15."
+        },
+        {
+          "role": "Hurricane close support",
+          "total": 6,
+          "named": 6,
+          "note": "Nos. 3, 32, 43, 87, 245 and 253 were the cannon-armed allocations."
+        },
+        {
+          "role": "Hurricane direct support",
+          "total": 2,
+          "named": 2,
+          "note": "Nos. 174 and 175 supplied the fighter-bomber allocations."
+        },
+        {
+          "role": "Mustang tactical reconnaissance",
+          "total": 4,
+          "named": 4,
+          "note": "Nos. 26 and 239 RAF and Nos. 400 and 414 RCAF. Pilot Hollis Hills recalled returning to Gatwick on his first patrol. The Canadian map shows 414 at its home station, Croydon."
+        },
+        {
+          "role": "Boston bombing",
+          "total": 4,
+          "named": 4,
+          "note": "Nos. 88 and 107 flew with Bomber Command. Nos. 418 and 605 supplied the two intruder allocations."
+        },
+        {
+          "role": "B-17 diversionary bombing",
+          "total": 4,
+          "named": 4,
+          "note": "Four component squadrons of the US 97th Bombardment Group were assigned. The attack on Abbeville was reported at group level."
+        },
+        {
+          "role": "Blenheim smoke laying",
+          "total": 2,
+          "named": 2,
+          "note": "Nos. 13 and 614 were allocated to smoke."
+        },
+        {
+          "role": "Boston smoke laying",
+          "total": 1,
+          "named": 1,
+          "note": "No. 226 was the Boston smoke allocation."
+        }
+      ],
+      "cases": [
+        {
+          "date": "1942-08-19",
+          "title": "No. 129 Squadron at the Varengeville battery",
+          "mission": "Twelve Spitfires of No. 129 Squadron supported No. 4 Commando's final assault on the six-gun coastal battery west of Dieppe. The Canadian Army history places the fighters' attack at 06:20.",
+          "effect": "The commandos reached the gun positions and destroyed all six guns before withdrawing. The RAF narrative identifies the squadron. The army history places its attack alongside the final advance and records an earlier ammunition explosion at about 06:07.",
+          "limit": "The commandos credited their mortar for the earlier explosion. German accounts credited an aircraft. Stacey favoured the mortar because the Air Force Commander's report records no strike at 06:07.",
+          "rosterIds": [
+            "dieppe-allied"
+          ],
+          "sources": [
+            {
+              "name": "RAF Air Historical Branch, Air Defence of Great Britain V",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "locator": "p. 121, 05:50–07:30 period, actions of No. 129 Squadron",
+              "kind": "official operational history using Fighter Command records"
+            },
+            {
+              "name": "C. P. Stacey, Six Years of War",
+              "url": "https://www.ibiblio.org/hyperwar/UN/Canada/CA/SixYears/SixYears-11.html",
+              "locator": "pp. 362–363, attack by No. 4 Commando, especially the note on the 81st Corps report",
+              "kind": "Canadian Army official history comparing Commando and German reports"
+            }
+          ]
+        },
+        {
+          "date": "1942-08-19",
+          "title": "Cover for the ships during the withdrawal",
+          "mission": "No. 403 Squadron RCAF left at 11:15 and brought all twelve aircraft back at 13:15. Its 16:20 patrol saw the homeward convoy. On No. 411 Squadron's last patrol, its pilots attacked a Do 217 near the returning ships.",
+          "effect": "The No. 411 account places the bomber's release about a mile from the convoy. Captain Hughes-Hallett, commanding the naval force, credited No. 11 Group for covering his ships and considered the loss of one ship to bombing unusually fortunate. The Admiralty diary names HMS Berkeley as disabled by bombing and subsequently sunk.",
+          "limit": "The naval commander assessed the whole force. Neither the ship record nor the squadron entries identify the ship protected by the 411 encounter or quantify how many hits the patrols prevented.",
+          "rosterIds": [
+            "dieppe-allied",
+            "dieppe-german-fighter-bombers"
+          ],
+          "sources": [
+            {
+              "name": "No. 403 Squadron RCAF diary",
+              "url": "https://rcaf403squadron.wordpress.com/2015/12/14/august-1942/",
+              "locator": "19 August 1942, second and third operations",
+              "kind": "published transcription of squadron wartime diary"
+            },
+            {
+              "name": "The Crucible of War, RCAF official history",
+              "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-6.pdf",
+              "locator": "pp. 236–237, No. 411's four patrols and its final encounter",
+              "kind": "official history quoting squadron observations"
+            },
+            {
+              "name": "Naval Force Commander, Report of Proceedings for Jubilee",
+              "url": "https://www.thegazette.co.uk/London/issue/38045/supplement/3823/data.pdf",
+              "locator": "30 August 1942, paragraph 4, London Gazette p. 3823",
+              "kind": "wartime naval commander's despatch"
+            },
+            {
+              "name": "Admiralty War Diary",
+              "url": "https://cd.royalnavy.mod.uk/-/media/rnweb/locations-and-operations/navy-historical-branch/pdfs/1942/war_diary_naval_1942_08---day-16-to-day-31.pdf?rev=49ee2f42961e4926a0ce04d43d15f77c",
+              "locator": "19 August 1942, Home Commands situation report, BERKELEY",
+              "kind": "contemporary operational diary"
+            }
+          ]
+        },
+        {
+          "date": "1942-08-19",
+          "title": "Smoke over the approaches at first light",
+          "mission": "Nos. 13 and 614 Squadrons supplied Blenheims for smoke and No. 226 supplied Bostons. The RAF records a screen off the eastern headland in the 04:45–05:50 period.",
+          "effect": "The German commander in the west reported that smoke obscured the landing craft from defenders ashore. His report attributed the screen to ships or aircraft. Later, the RAF narrative records a request for fresh smoke at the east headland when no aircraft was immediately ready.",
+          "limit": "The reports locate the obstruction from shore and the gap in renewed cover. Neither separates the smoke from each ship or squadron.",
+          "rosterIds": [
+            "dieppe-allied"
+          ],
+          "sources": [
+            {
+              "name": "Ross Mahoney, Jubilee order of battle",
+              "url": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, p. 173, Blenheim and Boston smoke allocations",
+              "kind": "archival research with named squadron allocation"
+            },
+            {
+              "name": "RAF Air Historical Branch, Air Defence of Great Britain V",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "locator": "pp. 120–121, initial screen and subsequent request",
+              "kind": "official operational history citing Fighter Command records"
+            },
+            {
+              "name": "C-in-C West, observations on the raid",
+              "url": "https://publications.gc.ca/collections/collection_2016/mdn-dnd/D63-5-10-1946-eng.pdf",
+              "locator": "Basic Observations no. 8, 23 August 1942, paragraph 2, transcribed in Canadian AHQ Report 10",
+              "kind": "translated German wartime report"
+            }
+          ]
+        },
+        {
+          "date": "1942-08-19",
+          "title": "What the attack on Abbeville changed",
+          "mission": "The 97th Bombardment Group attacked the German fighter field at Abbeville–Drucat. The RAF account names Nos. 64, 401 and 611 as Spitfire escorts. The RCAF history describes four escort squadrons and includes No. 402.",
+          "effect": "The RAF narrative reports that the airfield was unusable for approximately two hours, citing a Luftflotte 3 appreciation. The Canadian air history judges that the two diversions failed to draw pressure away from the evacuation.",
+          "limit": "A temporary closure at one field and fighter opposition over the beaches measure different effects. The sources disagree on the escort roster, and neither quantifies interceptions prevented.",
+          "rosterIds": [
+            "dieppe-allied",
+            "dieppe-german-fighter-gruppen"
+          ],
+          "sources": [
+            {
+              "name": "Ross Mahoney, Jubilee order of battle",
+              "url": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, p. 175, four US bombardment squadrons",
+              "kind": "archival research with named squadron allocation"
+            },
+            {
+              "name": "RAF Air Historical Branch, Air Defence of Great Britain V",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "locator": "p. 122, attack on Abbeville–Drucat, citing Luftflotte 3's seventh appreciation",
+              "kind": "official operational history quoting the opponent's appreciation"
+            },
+            {
+              "name": "The Crucible of War, RCAF official history",
+              "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-6.pdf",
+              "locator": "pp. 236–237, two diversionary air raids and escort roster",
+              "kind": "Canadian air force official history"
+            }
+          ]
+        },
+        {
+          "date": "1942-08-19",
+          "title": "Typhoon escorts on the Ostend diversion",
+          "mission": "At 11:15, Nos. 56, 266 and 609 Squadrons escorted nine Defiants in a diversion towards Ostend while the Dieppe force withdrew.",
+          "effect": "Fighter Command recorded no German reaction to this feint. Allied fighter cover over Dieppe had already increased for the evacuation.",
+          "limit": "The escort report records what the crews observed. It does not show whether a German controller redirected aircraft out of their sight.",
+          "rosterIds": [
+            "dieppe-allied"
+          ],
+          "sources": [
+            {
+              "name": "RAF Air Historical Branch, Air Defence of Great Britain V",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/",
+              "locator": "p. 122, 11:15 Typhoon wing feint, Fighter Command Form Y vol. 11",
+              "kind": "official narrative citing the wartime command form"
+            },
+            {
+              "name": "Ross Mahoney, Jubilee order of battle",
+              "url": "https://etheses.bham.ac.uk/id/eprint/445/1/Mahoney09MPhil.pdf",
+              "locator": "Appendix 1, p. 175, three Typhoon allocations at Duxford",
+              "kind": "archival research with named squadron allocation"
+            }
+          ]
+        },
+        {
+          "date": "1942-08-19",
+          "title": "German attacks on the shipping",
+          "mission": "The fighter-bomber Staffeln of JG 2 and JG 26 attacked shipping off Dieppe. German claim records also place bomber crews of 4. and 5./KG 40 in combat. British wireless intelligence distinguished at least 69 Do 217s and 17 Ju 88s across the long-range bomber response.",
+          "effect": "The Admiralty's diary records that bombing disabled HMS Berkeley and that she had to be sunk. Chris Goss attributes the hit to two aircraft of 10.(Jabo)/JG 2. Aircrew of 5./KG 40 claimed Spitfires off Dieppe late in the afternoon.",
+          "limit": "The naval diary confirms the damage without naming the attackers. The KG 40 claims establish presence. A matched Allied loss return is needed to verify any corresponding aircraft loss.",
+          "rosterIds": [
+            "dieppe-german-fighter-bombers",
+            "dieppe-german-bomber-staffeln"
+          ],
+          "sources": [
+            {
+              "name": "Chris Goss, Air Power Review",
+              "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol4-iss4-5-pdf/",
+              "locator": "pp. 103–104, fighter-bomber Staffeln and the attack on Berkeley",
+              "kind": "secondary operational study"
+            },
+            {
+              "name": "German air victory claims, Western Front",
+              "url": "https://www.airmen.dk/pdfs/p114v3reichwest.pdf",
+              "locator": "19 August 1942, Kanalfront, Dieppe, KG 40 crews, film C.2031/II",
+              "kind": "transcription of wartime claim lists"
+            },
+            {
+              "name": "Air Ministry intelligence narrative",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-thematic-studies/air-ministry-intelligence-narrative/",
+              "locator": "p. 73, paragraph 60, Dieppe long-range bomber radio traffic and later reappearances",
+              "kind": "official signals-intelligence history"
+            },
+            {
+              "name": "Admiralty War Diary",
+              "url": "https://cd.royalnavy.mod.uk/-/media/rnweb/locations-and-operations/navy-historical-branch/pdfs/1942/war_diary_naval_1942_08---day-16-to-day-31.pdf?rev=49ee2f42961e4926a0ce04d43d15f77c",
+              "locator": "19 August 1942, Home Commands situation report, BERKELEY",
+              "kind": "contemporary naval operational diary"
+            }
+          ]
+        },
+        {
+          "date": "1942-08-19",
+          "title": "What the Mustang crews could report inland",
+          "mission": "Four army co-operation squadrons searched the roads for reinforcements. On No. 414 Squadron's first flight, Frederick Clarke and Hollis Hills were sent to check the Abbeville–Dieppe road. Hills recalled losing sight of his leader in darkness. Both returned to Gatwick.",
+          "effect": "Hills could see no traffic on the first flight. The RCAF history reports that the four squadrons' only positive sighting was of three to five supposed light tanks south of Dieppe. It concludes the identification was mistaken and that the Germans dealt with the landing from local resources.",
+          "limit": "The four-squadron reconnaissance effort cost ten aircraft missing. The evidence does not attribute the tank report to No. 414 or establish that a commander changed a decision on receiving it.",
+          "rosterIds": [
+            "dieppe-allied"
+          ],
+          "sources": [
+            {
+              "name": "Hollis Hills, recollection published by the Canadian Warplane Heritage Museum",
+              "url": "https://www.warplane.com/documents/Flightlines-March-2019.pdf",
+              "locator": "Flightlines, March/April 2019, pp. 14–16, first patrol, Gatwick and return to Croydon.",
+              "kind": "participant's retrospective account"
+            },
+            {
+              "name": "The Crucible of War, RCAF official history",
+              "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/popular/crucible-war-1939-1945-6.pdf",
+              "locator": "pp. 239–240, four-squadron reconnaissance results and Hills's wartime report.",
+              "kind": "official history quoting operational records and after-action analysis"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "74 allocated squadrons in nine roles. RAF history counts 2,614 RAF and USAAF sorties over the operation, including seven Coastal Command sorties.",
+          "losses": "The RAF narrative reports 106 aircraft lost in its own force categories. Three No. 403 aircraft failed to return from its first patrol. All twelve returned from its second.",
+          "effect": "The naval commander credited the cover. No. 411 observed a bomber release about a mile from the convoy, while HMS Berkeley was disabled by bombing and scuttled."
+        },
+        "Axis": {
+          "effort": "Six identified fighter Gruppen and two dedicated fighter-bomber Staffeln. British wireless intelligence counted at least 86 long-range bombers. A complete German strike and reconnaissance order remains open.",
+          "losses": "German records summarized by the RAF list 25 bombers and 23 fighters destroyed, plus 16 bombers and eight fighters damaged. Crew combat claims have a separate basis.",
+          "effect": "German ground observers reported that smoke obscured landing craft. German attacks reached the shipping. The naval diary confirms the loss of Berkeley without identifying the attacking unit."
+        }
+      }
+    }
+  },
+  "stations": {
+    "merston": {
+      "name": "Merston",
+      "lat": 50.819191,
+      "lon": -0.742086,
+      "source": "https://www.abct.org.uk/airfields/merston/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "friston": {
+      "name": "Friston",
+      "lat": 50.761589,
+      "lon": 0.176735,
+      "source": "https://www.abct.org.uk/airfields/friston/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "heston": {
+      "name": "Heston",
+      "lat": 51.49123,
+      "lon": -0.392333,
+      "source": "https://www.abct.org.uk/airfields/heston/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "ford-yapton": {
+      "name": "Ford (Yapton)",
+      "lat": 50.817096,
+      "lon": -0.590413,
+      "source": "https://www.abct.org.uk/airfields/ford-yapton/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "redhill": {
+      "name": "Redhill",
+      "lat": 51.213241,
+      "lon": -0.140673,
+      "source": "https://www.abct.org.uk/airfields/redhill/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "thorney-island": {
+      "name": "Thorney Island",
+      "lat": 50.813974,
+      "lon": -0.923015,
+      "source": "https://www.abct.org.uk/airfields/thorney-island/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "thruxton": {
+      "name": "Thruxton",
+      "lat": 51.210814,
+      "lon": -1.602723,
+      "source": "https://www.abct.org.uk/airfields/thruxton/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "shoreham": {
+      "name": "Shoreham",
+      "lat": 50.836128,
+      "lon": -0.293952,
+      "source": "https://www.abct.org.uk/airfields/shoreham/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "fairlop": {
+      "name": "Fairlop",
+      "lat": 51.594059,
+      "lon": 0.100792,
+      "source": "https://www.abct.org.uk/airfields/fairlop/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "bradwell-bay": {
+      "name": "Bradwell Bay",
+      "lat": 51.736378,
+      "lon": 0.900197,
+      "source": "https://www.abct.org.uk/airfields/bradwell-bay/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "west-malling": {
+      "name": "West Malling",
+      "lat": 51.270441,
+      "lon": 0.40487,
+      "source": "https://www.abct.org.uk/airfields/west-malling/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "lympne": {
+      "name": "Lympne",
+      "lat": 51.077851,
+      "lon": 1.018231,
+      "source": "https://www.abct.org.uk/airfields/lympne/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "manston": {
+      "name": "Manston",
+      "lat": 51.342041,
+      "lon": 1.345919,
+      "source": "https://www.abct.org.uk/airfields/manston/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "hawkinge": {
+      "name": "Hawkinge",
+      "lat": 51.111511,
+      "lon": 1.160584,
+      "source": "https://www.abct.org.uk/airfields/hawkinge/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "eastchurch": {
+      "name": "Eastchurch",
+      "lat": 51.389271,
+      "lon": 0.853332,
+      "source": "https://www.abct.org.uk/airfields/eastchurch/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "gatwick": {
+      "name": "Gatwick",
+      "lat": 51.14833,
+      "lon": -0.18899,
+      "source": "https://www.abct.org.uk/airfields/gatwick/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "duxford": {
+      "name": "Duxford",
+      "lat": 52.090581,
+      "lon": 0.131798,
+      "source": "https://www.abct.org.uk/airfields/duxford/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "grafton-underwood": {
+      "name": "Grafton Underwood",
+      "lat": 52.420627,
+      "lon": -0.644734,
+      "source": "https://www.abct.org.uk/airfields/grafton-underwood/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    },
+    "polebrook": {
+      "name": "Polebrook",
+      "lat": 52.46576,
+      "lon": -0.394823,
+      "source": "https://www.abct.org.uk/airfields/polebrook/",
+      "locator": "Airfields of Britain Conservation Trust, location of the Airfield marker on the site map."
+    }
+  }
+}

@@ -1,0 +1,1827 @@
+{
+  "campaigns": {
+    "spain": {
+      "populations": [
+        {
+          "id": "brunete-j88",
+          "label": "Condor Legion reinforcement at Brunete",
+          "date": "1937-07",
+          "force": "German Condor Legion",
+          "side": "Nationalist",
+          "echelon": "Staffel",
+          "event": "reinforced",
+          "scope": "German Bf 109 reinforcement identified on the Brunete front",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://artemiomortera.antoniocuestas.com/wp-content/uploads/2023/12/DIARIO-DE-LA-GUERRA-AEREA-EN-ASTURIAS-1934-1937-12-octubre-2023-en-24.pdf",
+          "locator": "Brunete passage identifying 2.J/88 and aircraft 6-10 and 6-14",
+          "sourceClass": "regional aviation history",
+          "note": "The source identifies the Staffel. Aircraft numbers in the narrative do not measure its effective strength.",
+          "members": [
+            {
+              "unit": "2./J 88",
+              "parent": "Jagdgruppe 88"
+            }
+          ]
+        },
+        {
+          "id": "brunete-morato",
+          "label": "Spanish fighter reinforcement at Brunete",
+          "date": "1937-07",
+          "force": "Aviación Nacional",
+          "side": "Nationalist",
+          "echelon": "grupo",
+          "event": "reinforced",
+          "scope": "Spanish fighter group sent from Seville during the battle",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/r/a/raa_547.pdf",
+          "locator": "Los grandes enfrentamientos del verano y otoño de 1937, Grupo Morato (2G3)",
+          "sourceClass": "service historical journal",
+          "note": "Salas places Grupo Morato among the reinforcements. Its component squadrons cannot be added to the opening three-Fiats count.",
+          "members": [
+            {
+              "unit": "Grupo de Caza 2G3 (Grupo Morato)",
+              "parent": "Aviación Nacional",
+              "place": "From Seville"
+            }
+          ]
+        },
+        {
+          "id": "tremp-escort",
+          "label": "Grupo 21 escort for the Llimiana sortie",
+          "date": "1938-12-24",
+          "force": "Fuerzas Aéreas de la República",
+          "side": "Republican",
+          "echelon": "escuadrilla",
+          "event": "flew",
+          "scope": "Escort squadrons in the fighter command’s afternoon Tremp entry",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_03.pdf",
+          "locator": "El día más aciago de los Natachas, pp. 76–83, Punto de vista de la Escuadra de Caza Republicana, 24 December",
+          "sourceClass": "wartime diary transcription",
+          "note": "This is a complete list for the reported escort of nine Natachas. Its two unit identities cannot fill Brunete’s anonymous squadron counts seventeen months earlier.",
+          "members": [
+            {
+              "unit": "6ª Escuadrilla",
+              "parent": "Grupo de Caza 21"
+            },
+            {
+              "unit": "7ª Escuadrilla",
+              "parent": "Grupo de Caza 21"
+            }
+          ]
+        },
+        {
+          "id": "tremp-nationalist",
+          "label": "Attached Nationalist fighter pilots at Tremp",
+          "date": "1938-12-24",
+          "force": "Aviación Nacional",
+          "side": "Nationalist",
+          "echelon": "grupo",
+          "event": "contributed pilots",
+          "scope": "Parent group of the two pilots temporarily attached to 3G3 in the unit diary",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_03.pdf",
+          "locator": "El día más aciago de los Natachas, pp. 76–83, Los partes de la Escuadra de Caza Nacional, Grupo 2G3",
+          "sourceClass": "opposing wartime unit record transcription",
+          "note": "The identification applies to the two detached pilots. The record does not put every aircraft of either group into this encounter.",
+          "members": [
+            {
+              "unit": "Grupo de Caza 2G3",
+              "parent": "Aviación Nacional, pilots attached to Grupo 3G3"
+            }
+          ]
+        },
+        {
+          "id": "brunete-italian-opening",
+          "label": "Italian squadrons initially at Torrijos-Barcience",
+          "date": "1937-07-06",
+          "force": "Aviazione Legionaria",
+          "side": "Nationalist",
+          "echelon": "squadriglia",
+          "event": "stationed",
+          "scope": "Italian account’s two CR.32 squadrons already at the central-front field",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://it.wikipedia.org/wiki/25%C2%AA_Squadriglia",
+          "locator": "Guerra civile spagnola, July 1937, Torrijos-Barcience and arrivals",
+          "sourceClass": "tertiary unit history, source identification provisional",
+          "note": "The Italian unit account places the 18th later. Salas gives three Fiat squadrons opposing the opening attack. Their geographic scope and reporting time differ or conflict. The signed airfield return is still needed before the third identity is settled.",
+          "members": [
+            {
+              "unit": "19ª Squadriglia",
+              "parent": "XXIII Gruppo Caccia Asso di Bastoni",
+              "place": "Torrijos-Barcience"
+            },
+            {
+              "unit": "20ª Squadriglia",
+              "parent": "XXIII Gruppo Caccia Asso di Bastoni",
+              "place": "Torrijos-Barcience"
+            }
+          ]
+        },
+        {
+          "id": "brunete-italian-arrivals",
+          "label": "Italian fighter squadrons arriving on the central front",
+          "date": "1937-07",
+          "force": "Aviazione Legionaria",
+          "side": "Nationalist",
+          "echelon": "squadriglia",
+          "event": "reinforced",
+          "scope": "Named squadrons arriving at Torrijos-Barcience in the unit chronology",
+          "total": 4,
+          "basis": "identified lower bound",
+          "source": "https://it.wikipedia.org/wiki/25%C2%AA_Squadriglia",
+          "locator": "Guerra civile spagnola, July 1937, Torrijos-Barcience and arrivals",
+          "sourceClass": "tertiary unit history, source identification provisional",
+          "note": "The chronology places the 18th after the first two XXIII Gruppo squadrons and the XVI Gruppo later. This reconstruction does not establish a time-of-day arrival or sorties for all four.",
+          "members": [
+            {
+              "unit": "18ª Squadriglia",
+              "parent": "XXIII Gruppo Caccia Asso di Bastoni",
+              "place": "Torrijos-Barcience"
+            },
+            {
+              "unit": "24ª Squadriglia",
+              "parent": "XVI Gruppo Caccia La Cucaracha",
+              "place": "Torrijos-Barcience"
+            },
+            {
+              "unit": "25ª Squadriglia",
+              "parent": "XVI Gruppo Caccia La Cucaracha",
+              "place": "Torrijos-Barcience"
+            },
+            {
+              "unit": "26ª Squadriglia",
+              "parent": "XVI Gruppo Caccia La Cucaracha",
+              "place": "Torrijos-Barcience"
+            }
+          ]
+        },
+        {
+          "id": "brunete-eriomenko",
+          "label": "Republican I-15 squadron on the Brunete front",
+          "date": "1937-07-25 to 1937-07-26",
+          "force": "Republican fighter force, Soviet personnel",
+          "side": "Republican",
+          "echelon": "escuadrilla",
+          "event": "flew",
+          "scope": "I-15 squadron identified by its commander in the late Brunete night fighting",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.defensa.gob.es/documents/2073105/2602694/Cap%C3%ADtulo%2B4.%2BLa%2Bcaza%2Brepublicana%2Ben%2Bla%2BGuerra%2BCivil%2Bespa%C3%B1ola.pdf/0646d44d-2229-a65f-2639-36f243018692?t=1772445753766",
+          "locator": "pp. 104–105, La batalla de Brunete and note 17",
+          "sourceClass": "Spanish Ministry of Defence historical study",
+          "note": "Eriomenko’s command and two pilots are named. The study distinguishes Eisiev’s I-16 squadron in Santander. Neither identification completes the six first-night identities.",
+          "members": [
+            {
+              "unit": "Eriomenko’s I-15 escuadrilla",
+              "parent": "Grupo de Caza 26"
+            }
+          ]
+        },
+        {
+          "id": "brunete-spanish-2e3",
+          "label": "Spanish Fiat squadron identified at Brunete",
+          "date": "1937-07",
+          "force": "Aviación Nacional",
+          "side": "Nationalist",
+          "echelon": "escuadrilla",
+          "event": "participated",
+          "scope": "Spanish squadron identified for two Fiat CR.32 airframes during the Brunete campaign",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://files.libcom.org/files/The%20Spanish%20Civil%20War%20-%20Nationalist%20forces_0.pdf",
+          "locator": "Nationalist Air Corps, Angelo Emiliani archive photo of Fiat 3-60 and 3-62, pp. 32–33",
+          "sourceClass": "aviation history and captioned wartime photograph",
+          "note": "The two individual aircraft numbers support this squadron’s presence during the campaign, without a dated take-off or proof that it was among the opening three.",
+          "members": [
+            {
+              "unit": "Escuadrilla 2-E-3",
+              "parent": "Grupo de Caza 2-G-3"
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1937-07-06 to 1937-07-27",
+          "title": "Brunete drew Spanish, Italian and German fighters into the battle",
+          "mission": "Four Republican I-16 and two I-15 squadrons faced three Nationalist-side Fiat squadrons at the opening. The later arrival of Grupo Morato and German 2./J 88 belongs to a separate stage.",
+          "effect": "Italian correspondence records Kindelán’s commendation of Italian fighters in the opening days and further requests for air support. This establishes that ground and air commands valued their intervention during the battle.",
+          "limit": "Salas gives three opposing Fiat squadrons at the opening. The Italian unit chronology puts Nos. 19 and 20 at Torrijos-Barcience and treats No. 18 as a later arrival. A time-stamped field return is needed to place the third squadron on the first night and to identify all six Republican units.",
+          "sources": [
+            {
+              "name": "Jesús Salas Larrazábal, Batalla de Brunete, Aeroplano 29",
+              "url": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_29.pdf",
+              "locator": "p. 183, initial fighter force and reinforcements",
+              "kind": "historical reconstruction"
+            },
+            {
+              "name": "Artemio Mortera, Diario de la Guerra Aérea en Asturias",
+              "url": "https://artemiomortera.antoniocuestas.com/wp-content/uploads/2023/12/DIARIO-DE-LA-GUERRA-AEREA-EN-ASTURIAS-1934-1937-12-octubre-2023-en-24.pdf",
+              "locator": "Brunete passage identifying 2.J/88 and aircraft 6-10 and 6-14",
+              "kind": "regional aviation history"
+            },
+            {
+              "name": "Revista de Aeronáutica y Astronáutica 547",
+              "url": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/r/a/raa_547.pdf",
+              "locator": "Los grandes enfrentamientos del verano y otoño de 1937, Grupo Morato (2G3)",
+              "kind": "service historical journal"
+            },
+            {
+              "name": "Ufficio Storico, Operazione militare Spagna",
+              "url": "https://vistabellaarxiumunicipal.com/wp-content/uploads/2017/04/operazione-militare-spagna_bombardejos.pdf",
+              "locator": "buste 83–84, fasc. 7, subfasc. 1–3, July 1937",
+              "kind": "archival inventory of Italian and Spanish wartime correspondence"
+            },
+            {
+              "name": "Italian unit account of 25ª Squadriglia, citing Alfredo Logoluso",
+              "url": "https://it.wikipedia.org/wiki/25%C2%AA_Squadriglia",
+              "locator": "Guerra civile spagnola, July 1937, Torrijos-Barcience and arrivals",
+              "kind": "tertiary unit history, source identification provisional"
+            },
+            {
+              "name": "Associazione 4° Stormo, Comelli photograph collection",
+              "url": "https://www.asso4stormo.it/arc_02/04Stormo/Comelli_com/Comelli_12.htm",
+              "locator": "com1x197, com1x436 and com1x438, July 1937, Brunete and Torrijos",
+              "kind": "wartime photographs with later archival captions"
+            },
+            {
+              "name": "Alejandro de Quesada, The Spanish Civil War 1936–39: Nationalist Forces",
+              "url": "https://files.libcom.org/files/The%20Spanish%20Civil%20War%20-%20Nationalist%20forces_0.pdf",
+              "locator": "Nationalist Air Corps, Angelo Emiliani archive photo of Fiat 3-60 and 3-62, pp. 32–33",
+              "kind": "aviation history and captioned wartime photograph"
+            }
+          ],
+          "rosterIds": [
+            "brunete-r",
+            "brunete-n",
+            "brunete-j88",
+            "brunete-morato",
+            "brunete-italian-opening",
+            "brunete-italian-arrivals",
+            "brunete-spanish-2e3"
+          ]
+        },
+        {
+          "date": "1937-07-25 to 1937-07-26",
+          "title": "Soviet pilots in Republican service met night bombers at Brunete",
+          "mission": "At the close of the battle, Yakushin and Serov flew night interceptions with Eriomenko’s I-15 squadron. Salas separates their squadron from the Republican I-16 unit then at Santander.",
+          "effect": "Salas records a German Ju 52 lost on the night of 25/26 July and a Spanish Ju 52 on 26 July. Serov subsequently took command of a night-fighter squadron.",
+          "limit": "Each pilot claimed one victory. The historian’s chronology does not establish which pilot destroyed which aircraft or whether both losses had the same cause.",
+          "sources": [
+            {
+              "name": "Jesús Salas Larrazábal, La caza republicana en la Guerra Civil española",
+              "url": "https://www.defensa.gob.es/documents/2073105/2602694/Cap%C3%ADtulo%2B4.%2BLa%2Bcaza%2Brepublicana%2Ben%2Bla%2BGuerra%2BCivil%2Bespa%C3%B1ola.pdf/0646d44d-2229-a65f-2639-36f243018692?t=1772445753766",
+              "locator": "pp. 104–105, La batalla de Brunete and note 17",
+              "kind": "Spanish Ministry of Defence historical study"
+            }
+          ],
+          "rosterIds": [
+            "brunete-eriomenko"
+          ]
+        },
+        {
+          "date": "1938-12-24",
+          "title": "Tremp escort and the loss of the Natachas",
+          "mission": "Grupo 21’s 6ª and 7ª Escuadrillas took off at 14:45 with ten and nine fighters respectively to cover nine Natachas of Grupo 30’s 2ª Escuadrilla on the Llimiana mission.",
+          "effect": "The Republican fighter diary records the escort. Survivor evidence places only three bombers back on friendly fields. Nationalist 2G3’s record independently places two attached pilots in combat. Republican command subsequently relieved the 7ª commander over the separation.",
+          "limit": "The Nationalist account records attacks, including one broken off without a visible result. Neither side supplies a reliable individual attacker for every missing bomber.",
+          "sources": [
+            {
+              "name": "Republican fighter command, operations diary, reproduced by Jesús Salas Larrazábal",
+              "url": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_03.pdf",
+              "locator": "El día más aciago de los Natachas, pp. 76–83, Punto de vista de la Escuadra de Caza Republicana, 24 December",
+              "kind": "wartime diary transcription"
+            },
+            {
+              "name": "Nationalist fighter records, reproduced by Jesús Salas Larrazábal",
+              "url": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_03.pdf",
+              "locator": "El día más aciago de los Natachas, pp. 76–83, Los partes de la Escuadra de Caza Nacional, Grupo 2G3",
+              "kind": "opposing wartime unit record transcription"
+            },
+            {
+              "name": "Jesús Salas Larrazábal, El día más aciago de los Natachas",
+              "url": "https://publicaciones.defensa.gob.es/media/downloadable/files/links/a/e/aeroplano_03.pdf",
+              "locator": "pp. 76–83, Punto de vista de los supervivientes de la 2ª and later reconstruction",
+              "kind": "survivor accounts and historical reconstruction"
+            }
+          ],
+          "rosterIds": [
+            "tremp-escort",
+            "tremp-nationalist"
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Republican": {
+          "effort": "Six opening fighter squadrons by type, a named I-15 squadron with Soviet pilots later at Brunete, and two December escort squadrons at Tremp.",
+          "losses": "The nine-aircraft bomber sortie has three documented returns to friendly fields. Fighter losses for the campaign remain open.",
+          "effect": "Survivor accounts and command action document the consequences of the break in escort."
+        },
+        "Nationalist": {
+          "effort": "The Italian chronology names two initial and four arriving squadrons. Spanish and German accounts identify other reinforcements, with the opening third Fiat squadron unresolved.",
+          "losses": "The 2G3 combat account describes attacks, including one without an observed outcome. A complete reciprocal loss ledger is missing.",
+          "effect": "Italian and Spanish command correspondence documents demand for air support. The Tremp accounts establish contact without allocating every bomber loss."
+        }
+      }
+    },
+    "poland": {
+      "populations": [
+        {
+          "id": "warsaw-lg1-bombers",
+          "label": "II.(K)/LG 1 morning raid",
+          "date": "1939-09-01",
+          "force": "Luftwaffe",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "flew",
+          "scope": "Bomber Staffeln dispatched by II.(K)/LG 1 on the first morning",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.magnum-x.pl/artykul/walka-brygady-poscigowej-z-niemiecka-eskadra-5-k-lg-1-poranek-1-wrzesnia-1939-roku",
+          "locator": "1 September, opening account of II.(K)/LG 1 and I.(Z)/LG 1, plus IV/1 commander’s report",
+          "sourceClass": "research article with contemporary Polish account",
+          "note": "Nine aircraft went out from each Staffel. The 4th attacked Ciechanów station. Only the other two Staffeln entered the Warsaw-area interception described here.",
+          "members": [
+            {
+              "unit": "4.(K)/LG 1",
+              "parent": "II.(K)/LG 1",
+              "place": "Powunden"
+            },
+            {
+              "unit": "5.(K)/LG 1",
+              "parent": "II.(K)/LG 1",
+              "place": "Powunden"
+            },
+            {
+              "unit": "6.(K)/LG 1",
+              "parent": "II.(K)/LG 1",
+              "place": "Powunden"
+            }
+          ]
+        },
+        {
+          "id": "warsaw-lg1-fighters",
+          "label": "Bf 110 sweep east of Warsaw",
+          "date": "1939-09-01",
+          "force": "Luftwaffe",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "flew",
+          "scope": "Identified twin-engine fighter Staffel sweeping the Zegrze–Wołomin area",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.magnum-x.pl/artykul/walka-brygady-poscigowej-z-niemiecka-eskadra-5-k-lg-1-poranek-1-wrzesnia-1939-roku",
+          "locator": "1 September, opening account of II.(K)/LG 1 and I.(Z)/LG 1, plus IV/1 commander’s report",
+          "sourceClass": "research article with contemporary Polish account",
+          "note": "The German account distinguishes the sweep from the three bomber Staffeln. It does not give a fighter denominator for the whole Luftflotte.",
+          "members": [
+            {
+              "unit": "1.(Z)/LG 1",
+              "parent": "I.(Z)/LG 1"
+            }
+          ]
+        },
+        {
+          "id": "warsaw-army-fighter",
+          "label": "Army fighter support for Warsaw",
+          "date": "1939-09-01",
+          "force": "Polish Army aviation",
+          "side": "Allied",
+          "echelon": "eskadra",
+          "event": "flew",
+          "scope": "Army fighter squadron identified in the afternoon action over the Warsaw approaches",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://dawny.pl/kalendarium-dzialan-powietrznych-na-terenie-powiatu-wolominskiego-we-wrzesniu-1939-r/",
+          "locator": "1 and 3 September sections, Warsaw–Wołomin and quoted air-warning reports",
+          "sourceClass": "local reconstruction with wartime report extracts",
+          "note": "This squadron belonged to Army Modlin. Its intervention supplements the five Pursuit Brigade squadrons.",
+          "members": [
+            {
+              "unit": "152 Eskadra Myśliwska",
+              "parent": "III/5 Dywizjon Myśliwski, Armia Modlin"
+            }
+          ]
+        },
+        {
+          "id": "poland-slovak-fighters",
+          "label": "Slovak fighter detachments at Kamenica",
+          "date": "1939-09-07 to 1939-09-09",
+          "force": "Slovak Air Force",
+          "side": "Axis",
+          "echelon": "letka",
+          "event": "moved forward",
+          "scope": "Two fighter squadrons or detachments identified at Kamenica nad Cirochou on separate dates",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.vhu.sk/data/files/217.pdf",
+          "locator": "pp. 113–114, notes 602–607, contrasting Raininec with Emmerling’s Luftflotte documents",
+          "sourceClass": "Slovak military historical monograph, competing reconstructions",
+          "note": "Two squadrons operated here. The 37th is identified. For the other, Raininec places 39/12 here, whereas Emmerling’s reading of Freiburg records gives 49/13 and places 12 at Spišská Nová Ves. These are rival identifications of the same slot.",
+          "members": [
+            {
+              "unit": "37. stíhacia letka (also numbered 11), elements",
+              "parent": "Slovak Air Force",
+              "place": "Kamenica nad Cirochou"
+            }
+          ]
+        },
+        {
+          "id": "poland-opening-bf110",
+          "label": "Bf 110-equipped Gruppen ready on 1 September",
+          "date": "1939-09-01",
+          "force": "Luftwaffe",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported ready",
+          "scope": "Three Bf 110-equipped Gruppen and 95 aircraft identified in the archaeological study",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://raportarcheologiczny.nid.pl/wp-content/uploads/2022/07/Raport-16_Karasiewicz-et-al.pdf",
+          "locator": "Samolot Bf 110 w ataku na Polskę and Dzień 3 września 1939 r., I.(Z)/LG 1 at Jessau",
+          "sourceClass": "archaeological and historical study",
+          "note": "Kreis’s Table 1 lists five twin-engine fighter Gruppen across Luftflotten 1 and 4. Equipment, readiness and inclusion criteria need reconciliation before combining the tables.",
+          "members": [
+            {
+              "unit": "I./ZG 1",
+              "parent": "Zerstörergeschwader 1"
+            },
+            {
+              "unit": "I.(Z)/LG 1",
+              "parent": "Lehrgeschwader 1"
+            },
+            {
+              "unit": "I./ZG 76",
+              "parent": "Zerstörergeschwader 76"
+            }
+          ]
+        },
+        {
+          "id": "poland-pursuit-lublin",
+          "label": "Pursuit Brigade after its move away from Warsaw",
+          "date": "1939-09-07 to 1939-09-17",
+          "force": "Polish Air Force",
+          "side": "Allied",
+          "echelon": "brigade",
+          "event": "redeployed",
+          "scope": "Brigade-level disposition in the Lublin area in IPN’s period summary",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://ligaplanszowek.ipn.gov.pl/download/357/75840/1112023broszura-bookletPL-EN.pdf",
+          "locator": "Historical insert, Wysiłek bojowy Brygady Pościgowej, table of airfields and periods, 1–17 IX",
+          "sourceClass": "Polish institutional historical reconstruction",
+          "note": "The table places the brigade at Zielonka and Poniatów on 1–3 September and Zaborów and Radzików on 4–6 September. It subsequently reports activity from the Lublin area without itemizing all individual aircraft.",
+          "members": [
+            {
+              "unit": "Brygada Pościgowa",
+              "parent": "Polish Air Force",
+              "place": "Lublin area"
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1939-09-01",
+          "title": "Warsaw’s defenders dispersed one formation while bombs reached Jabłonna",
+          "mission": "The Pursuit Brigade scrambled III/1 and IV/1 Dywizjony. Its four organic escadrilles and attached 123rd are distinct from the 152nd, which assisted later. German 5. and 6.(K)/LG 1 met fighters while 4.(K)/LG 1 bombed Ciechanów.",
+          "effect": "By 16:00 Pawlikowski reported that one formation scattered on seeing III/1 while IV/1 saw three aircraft drop bombs on Jabłonna. The different observations explain why the same day contains both a local disruption and a completed bombing.",
+          "limit": "The 16:00 Polish return lists one missing, one heavily damaged, one moderately damaged and eleven lightly damaged aircraft. A full-day loss return is still needed. Visual sightings do not identify the fate of each German bomber.",
+          "sources": [
+            {
+              "name": "Col. Stefan Pawlikowski, Pursuit Brigade report to the Commander-in-Chief",
+              "url": "https://pism.org.uk/wp-content/uploads/2024/04/IPMS_ALBUM_ARCHIWUM_SPREADS_LR_corr.pdf",
+              "locator": "PISM LOT.A.II.11/1d, document 2, pp. 104–105, 1 September 1939 at 16:00",
+              "kind": "facsimile and translation of wartime report"
+            },
+            {
+              "name": "Łukasz Łydżba, Walka Brygady Pościgowej z niemiecką eskadrą 5.(K)/LG 1",
+              "url": "https://www.magnum-x.pl/artykul/walka-brygady-poscigowej-z-niemiecka-eskadra-5-k-lg-1-poranek-1-wrzesnia-1939-roku",
+              "locator": "1 September, opening account of II.(K)/LG 1 and I.(Z)/LG 1, plus IV/1 commander’s report",
+              "kind": "research article with contemporary Polish account"
+            },
+            {
+              "name": "Marek Rogusz, Kalendarium działań powietrznych",
+              "url": "https://dawny.pl/kalendarium-dzialan-powietrznych-na-terenie-powiatu-wolominskiego-we-wrzesniu-1939-r/",
+              "locator": "1 and 3 September sections, Warsaw–Wołomin and quoted air-warning reports",
+              "kind": "local reconstruction with wartime report extracts"
+            },
+            {
+              "name": "Institute of National Remembrance, 111 historical booklet",
+              "url": "https://ligaplanszowek.ipn.gov.pl/download/357/75840/1112023broszura-bookletPL-EN.pdf",
+              "locator": "Historical insert, Wysiłek bojowy Brygady Pościgowej, table of airfields and periods, 1–17 IX",
+              "kind": "Polish institutional historical reconstruction"
+            }
+          ],
+          "rosterIds": [
+            "warsaw-pursuit",
+            "warsaw-lg1-bombers",
+            "warsaw-lg1-fighters",
+            "warsaw-army-fighter"
+          ]
+        },
+        {
+          "date": "1939-09-03",
+          "title": "Interception over Warsaw and damage at Okęcie",
+          "mission": "Pilots of 111 and 112 Eskadry from Zielonka encountered the Bf 110s of I.(Z)/LG 1 covering III.(K)/LG 1. A separate air-warning message recorded damage at Okęcie.",
+          "effect": "The contemporary message distinguished the airframe works, which stopped operating, from the engine factory, which could continue. Contact by the Polish fighters and loss of production can both be traced on the day.",
+          "limit": "The reporting chains locate the engagement and the damage in the same operational area. They do not identify which crew dropped the bomb that stopped the works.",
+          "sources": [
+            {
+              "name": "Marek Rogusz, Kalendarium działań powietrznych",
+              "url": "https://dawny.pl/kalendarium-dzialan-powietrznych-na-terenie-powiatu-wolominskiego-we-wrzesniu-1939-r/",
+              "locator": "1 and 3 September sections, Warsaw–Wołomin and quoted air-warning reports",
+              "kind": "local reconstruction with wartime report extracts"
+            },
+            {
+              "name": "Karasiewicz et al., German Bf 110 wreck in Poland, Raport 16",
+              "url": "https://raportarcheologiczny.nid.pl/wp-content/uploads/2022/07/Raport-16_Karasiewicz-et-al.pdf",
+              "locator": "Samolot Bf 110 w ataku na Polskę and Dzień 3 września 1939 r., I.(Z)/LG 1 at Jessau",
+              "kind": "archaeological and historical study"
+            }
+          ],
+          "rosterIds": [
+            "warsaw-pursuit",
+            "poland-opening-bf110"
+          ]
+        },
+        {
+          "date": "1939-09-07 to 1939-09-09",
+          "title": "Slovak fighters supported the southern front",
+          "mission": "Two Slovak fighter detachments provided cover for German dive bombers from Kamenica nad Cirochou. Elements of 37. letka arrived on 9 September. Accounts disagree about which other unit arrived on 7 September.",
+          "effect": "The two units flew eight escort missions in the account Baka compares. On 9 September antiaircraft fire forced a 37. letka aircraft down. Grúň returned to Slovak lines on 12 September after his capture and escape.",
+          "limit": "Raininec gives the earlier unit as 39/12. Emmerling, using Freiburg records, gives 49/13. The disagreement leaves one of the two identities open. No ground recipient records the effect of those eight escorts here.",
+          "sources": [
+            {
+              "name": "Igor Baka, Vojenská história 9/3",
+              "url": "https://www.vhu.sk/data/att/276/19836.861607.pdf",
+              "locator": "2005, pp. 26–46, air operations around notes 115–122, 7 and 9 September",
+              "kind": "Slovak military historical research"
+            },
+            {
+              "name": "Igor Baka, Slovenská republika a nacistická agresia proti Poľsku",
+              "url": "https://www.vhu.sk/data/files/217.pdf",
+              "locator": "pp. 113–114, notes 602–607, contrasting Raininec with Emmerling’s Luftflotte documents",
+              "kind": "Slovak military historical monograph, competing reconstructions"
+            }
+          ],
+          "rosterIds": [
+            "poland-slovak-fighters"
+          ]
+        },
+        {
+          "date": "1939-09-04 to 1939-09-17",
+          "title": "Warsaw’s Pursuit Brigade withdrew to the Lublin area",
+          "mission": "IPN follows the brigade through Zaborów and Radzików on 4–6 September, then to the Lublin area from 7 September. Its sorties could no longer be counted as fighters operating from the capital’s opening fields.",
+          "effect": "IPN’s table distinguishes own aircraft destroyed and damaged in the Lublin phase. Its separate victory column records claims. This places losses and continued fighting after the withdrawal.",
+          "limit": "The table covers eleven days near Lublin. It does not identify a sortie date for each loss or give the serviceability of every aircraft moved.",
+          "sources": [
+            {
+              "name": "Institute of National Remembrance, 111 historical booklet",
+              "url": "https://ligaplanszowek.ipn.gov.pl/download/357/75840/1112023broszura-bookletPL-EN.pdf",
+              "locator": "Historical insert, Wysiłek bojowy Brygady Pościgowej, table of airfields and periods, 1–17 IX",
+              "kind": "Polish institutional historical reconstruction"
+            }
+          ],
+          "rosterIds": [
+            "warsaw-pursuit",
+            "poland-pursuit-lublin"
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "The Pursuit Brigade report and Army Modlin account document distinct morning and afternoon participation.",
+          "losses": "The commander’s 16:00 report tracks the first day. IPN later distinguishes destroyed and damaged aircraft by airfield and period, including the move to Lublin.",
+          "effect": "A formation dispersed in front of III/1. Jabłonna was bombed, and a separate 3 September report documents a shutdown at the Okęcie airframe works."
+        },
+        "Axis": {
+          "effort": "Three German bomber Staffeln and a separate fighter sweep are identifiable on 1 September. Of two later Slovak fighter detachments at Kamenica, one has competing identifications.",
+          "losses": "A Slovak fighter force-landed on 9 September and its pilot later escaped. German losses claimed by the Pursuit Brigade remain incompletely matched.",
+          "effect": "One Staffel bombed Ciechanów while the others met Polish fighters. Slovak fighter escort is documented without a measured ground result."
+        }
+      }
+    },
+    "norway": {
+      "populations": [
+        {
+          "id": "fornebu-jagervingen",
+          "label": "Army fighter defence of Oslo",
+          "date": "1940-04-09",
+          "force": "Norwegian Army Air Service",
+          "side": "Allied",
+          "echelon": "fighter unit",
+          "event": "flew",
+          "scope": "Army fighter formation that scrambled from Fornebu",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://bfo.no/assets/documents/Offisersbladet_2_21_web.pdf",
+          "locator": "Jagervingen at Fornebu on 9 April, Gladiator 427 and Dornier at Bryn",
+          "sourceClass": "Norwegian officer journal, aircraft-level reconstruction",
+          "note": "Seven Gladiators took off. Aircraft being serviced at Fornebu were present but could not take part.",
+          "members": [
+            {
+              "unit": "Jagervingen",
+              "parent": "Hærens flyvåpen",
+              "place": "Fornebu"
+            }
+          ]
+        },
+        {
+          "id": "norway-maritime-north",
+          "label": "Norwegian naval aviation in the north",
+          "date": "1940-04 to 1940-06",
+          "force": "Royal Norwegian Navy Air Service",
+          "side": "Allied",
+          "echelon": "flyavdeling",
+          "event": "operated",
+          "scope": "Northern naval aviation element based at Skattøra",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.regjeringen.no/globalassets/departementene/fd/dokumenter/rapport-fra-historikerprosjektet-til-fd.pdf",
+          "locator": "1940 campaign, Marinens flyvåpen and 3. flyavdeling at Skattøra",
+          "sourceClass": "official commissioned historical study",
+          "note": "The naval formation operated separately from Army fighters at Fornebu. Its work included bombing German positions in the Narvik area.",
+          "members": [
+            {
+              "unit": "3. flyavdeling",
+              "parent": "Marinens flyvåpen",
+              "place": "Skattøra"
+            }
+          ]
+        },
+        {
+          "id": "norway-x-fighters",
+          "label": "X. Fliegerkorps opening fighter groups",
+          "date": "1940-04-09",
+          "force": "Luftwaffe, X. Fliegerkorps",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assigned",
+          "scope": "Single- and twin-engine fighter Gruppen in the opening Weserübung assignment",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.luftwaffe.no/SIG/veserubung/veser1.html",
+          "locator": "X. Fliegerkorps, fighter and bomber tables, dated reinforcement notes",
+          "sourceClass": "document-based order-of-battle reconstruction",
+          "note": "Gaul’s formation schedule covers operations in Norway and Denmark. A group assignment does not establish how many of its aircraft flew over one Norwegian target.",
+          "members": [
+            {
+              "unit": "II./JG 77",
+              "parent": "Jagdgeschwader 77"
+            },
+            {
+              "unit": "I./ZG 76",
+              "parent": "Zerstörergeschwader 76"
+            }
+          ]
+        },
+        {
+          "id": "norway-x-15april",
+          "label": "X. Fliegerkorps fighter reinforcement",
+          "date": "1940-04-15",
+          "force": "Luftwaffe, X. Fliegerkorps",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reinforced",
+          "scope": "Additional fighter Gruppe dated 15 April in Gaul’s assignment list",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://www.luftwaffe.no/SIG/veserubung/veser1.html",
+          "locator": "X. Fliegerkorps, fighter and bomber tables, dated reinforcement notes",
+          "sourceClass": "document-based order-of-battle reconstruction",
+          "note": "The first two fighter groups are recorded in the opening roster. The mid-month addition changes the force available.",
+          "members": [
+            {
+              "unit": "I./ZG 1",
+              "parent": "Zerstörergeschwader 1"
+            }
+          ]
+        },
+        {
+          "id": "norway-x-bombers",
+          "label": "X. Fliegerkorps opening bomber groups",
+          "date": "1940-04-09",
+          "force": "Luftwaffe, X. Fliegerkorps",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assigned",
+          "scope": "Level- and dive-bomber groups in the opening assault assignment for Norway and Denmark",
+          "total": 11,
+          "basis": "bounded source count",
+          "source": "https://www.luftwaffe.no/SIG/veserubung/veser1.html",
+          "locator": "X. Fliegerkorps, fighter and bomber tables, dated reinforcement notes",
+          "sourceClass": "document-based order-of-battle reconstruction",
+          "note": "The scope excludes reconnaissance, transport and maritime units separately listed in the schedule. From 15 April only III./KG 4 remained of that wing’s three assigned groups.",
+          "members": [
+            {
+              "unit": "I./KG 26",
+              "parent": "Kampfgeschwader 26"
+            },
+            {
+              "unit": "II./KG 26",
+              "parent": "Kampfgeschwader 26"
+            },
+            {
+              "unit": "III./KG 26",
+              "parent": "Kampfgeschwader 26"
+            },
+            {
+              "unit": "I./KG 4",
+              "parent": "Kampfgeschwader 4"
+            },
+            {
+              "unit": "II./KG 4",
+              "parent": "Kampfgeschwader 4"
+            },
+            {
+              "unit": "III./KG 4",
+              "parent": "Kampfgeschwader 4"
+            },
+            {
+              "unit": "I./KG 30",
+              "parent": "Kampfgeschwader 30"
+            },
+            {
+              "unit": "II./KG 30",
+              "parent": "Kampfgeschwader 30"
+            },
+            {
+              "unit": "III./KG 30",
+              "parent": "Kampfgeschwader 30"
+            },
+            {
+              "unit": "Kampfgruppe 100",
+              "parent": "X. Fliegerkorps"
+            },
+            {
+              "unit": "I./StG 1",
+              "parent": "Sturzkampfgeschwader 1"
+            }
+          ]
+        },
+        {
+          "id": "bergen-skuas",
+          "label": "Shore-based Fleet Air Arm strike at Bergen",
+          "date": "1940-04-10",
+          "force": "Royal Navy Fleet Air Arm",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "flew",
+          "scope": "Skua squadrons in the strike on Königsberg from the Orkneys",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.historisches-marinearchiv.de/projekte/rohwer_chronik/40-04.htm",
+          "locator": "10 April 1940, Bergen and Königsberg",
+          "sourceClass": "naval operations chronology",
+          "note": "The aircraft launched from Hatston. Fleet Air Arm service identity does not establish a carrier launch.",
+          "members": [
+            {
+              "unit": "800 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "Hatston, Orkney"
+            },
+            {
+              "unit": "803 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "Hatston, Orkney"
+            }
+          ]
+        },
+        {
+          "id": "ark-royal-norway",
+          "label": "Ark Royal’s Skua squadrons",
+          "date": "1940-04-23 to 1940-04-27",
+          "force": "Royal Navy Fleet Air Arm",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "embarked",
+          "scope": "Skua-equipped squadrons embarked on Ark Royal for the April operation",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.noonans.co.uk/archive/past-catalogues/856/catalogue/520221/",
+          "locator": "Ark Royal in Norway, 25 and 27 April, 800 Squadron",
+          "sourceClass": "service-history reconstruction",
+          "note": "The 27 April engagement is documented for 800 Squadron’s Yellow Section. A shared carrier does not establish that 801 flew the same patrol.",
+          "members": [
+            {
+              "unit": "800 Naval Air Squadron",
+              "parent": "HMS Ark Royal",
+              "place": "HMS Ark Royal"
+            },
+            {
+              "unit": "801 Naval Air Squadron",
+              "parent": "HMS Ark Royal",
+              "place": "HMS Ark Royal"
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1940-04-09",
+          "title": "The Norwegian Army’s fighters met the invasion over Oslo",
+          "mission": "Seven Gladiators of Jagervingen scrambled from Fornebu against incoming German aircraft. The Norwegian airframe history follows Gladiator 427 into combat with a Dornier Do 17.",
+          "effect": "Both machines force-landed, 427 near Kolsås and the Dornier near Bryn church. Its crew burned the German aircraft. Other Norwegian fighters landed at different locations as the defence broke up.",
+          "limit": "The serial-level history establishes this pair of dispositions. The formation’s wider reported victories still require matching German loss returns.",
+          "sources": [
+            {
+              "name": "Offisersbladet 2/2021, Fornebu and the Gladiators",
+              "url": "https://bfo.no/assets/documents/Offisersbladet_2_21_web.pdf",
+              "locator": "Jagervingen at Fornebu on 9 April, Gladiator 427 and Dornier at Bryn",
+              "kind": "Norwegian officer journal, aircraft-level reconstruction"
+            },
+            {
+              "name": "German Luftwaffe in Norway, Order of battle for Weserübung",
+              "url": "https://www.luftwaffe.no/SIG/veserubung/veser1.html",
+              "locator": "X. Fliegerkorps, fighter and bomber tables, dated reinforcement notes",
+              "kind": "document-based order-of-battle reconstruction"
+            }
+          ],
+          "rosterIds": [
+            "fornebu-jagervingen",
+            "norway-x-fighters"
+          ]
+        },
+        {
+          "date": "1940-04-10",
+          "title": "Shore-based naval aircraft sank Königsberg in Bergen",
+          "mission": "Skua dive bombers of 800 and 803 Naval Air Squadrons flew from Hatston against the German cruiser, which had remained in Bergen after gunfire damage the previous day.",
+          "effect": "The British naval diary recorded the attack. The independently written German Naval Staff diary placed the dive bombing at 08:00, described two bomb hits and fire, and recorded that the abandoned cruiser capsized at 11:00. The surviving crew joined the coastal defences.",
+          "limit": "The German diary’s two reported hits belong to its own account. The ship’s later fate is firmer than any assignment of a specific hit to one British crew.",
+          "sources": [
+            {
+              "name": "British Admiralty War Diary, April 1940",
+              "url": "https://cd.royalnavy.mod.uk/-/media/rnweb/locations-and-operations/navy-historical-branch/pdfs/1940/war_diary_naval_1940_04.pdf?rev=c799a8b9d48f41bf8175e0f702567a7f",
+              "locator": "Bergen, cruiser attack, 10 April entries",
+              "kind": "British wartime naval operations diary"
+            },
+            {
+              "name": "German Naval Staff, War Diary Part A, April 1940",
+              "url": "https://archive.org/details/wardiarygermanna81940germ",
+              "locator": "9–10 April, Bergen, cruiser Königsberg at 08:00 and 11:00",
+              "kind": "German wartime naval operations diary in translation"
+            },
+            {
+              "name": "Jürgen Rohwer and Gerhard Hümmelchen, Chronik des Seekrieges",
+              "url": "https://www.historisches-marinearchiv.de/projekte/rohwer_chronik/40-04.htm",
+              "locator": "10 April 1940, Bergen and Königsberg",
+              "kind": "naval operations chronology"
+            }
+          ],
+          "rosterIds": [
+            "bergen-skuas"
+          ]
+        },
+        {
+          "date": "1940-04-27",
+          "title": "Ark Royal fighters broke off a bomber’s attack near Åndalsnes",
+          "mission": "Three 800 Squadron Skuas of Yellow Section took off from Ark Royal to protect shipping. They engaged He 111 1H+CT of 9./KG 26 as it bombed a British warship.",
+          "effect": "Schopis’s aircraft turned away and subsequently crashed near Grotli. The account follows the German airframe beyond the point where it left the ship.",
+          "limit": "A single disrupted attack cannot establish a success rate for the carrier patrols. The account does not identify damage to the intended ship.",
+          "sources": [
+            {
+              "name": "Noonans, Fleet Air Arm service record and operational history, Taylour medal catalogue",
+              "url": "https://www.noonans.co.uk/archive/past-catalogues/856/catalogue/520221/",
+              "locator": "Ark Royal in Norway, 25 and 27 April, 800 Squadron",
+              "kind": "service-history reconstruction"
+            }
+          ],
+          "rosterIds": [
+            "ark-royal-norway",
+            "norway-x-bombers"
+          ]
+        },
+        {
+          "date": "1940-05-28",
+          "title": "Land-based patrols during the recapture of Narvik",
+          "mission": "RAF Nos. 263 and 46 Squadrons patrolled the battle area from Bardufoss. The Air Historical Branch counted 42 and 53 operational flights respectively and at most three aircraft airborne at once.",
+          "effect": "French troops entered Narvik and the Poles reached Beisfjord while the patrols continued. The forward base sustained cover during the assault. The campaign narrative then records the start of the already ordered evacuation.",
+          "limit": "The reconstructed squadron record says Williams broke off short of fuel after observing smoke from a He 111 attacking a cruiser. Milligan’s evening attack had no visible result. Neither entry establishes a German write-off or that the whole assault depended on the patrols.",
+          "sources": [
+            {
+              "name": "RAF Air Historical Branch, Campaign in Norway",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-norway-april-june-1940/",
+              "locator": "Narrative, p. 89, Narvik battle and 28 May operational flights",
+              "kind": "official campaign narrative"
+            },
+            {
+              "name": "No. 263 Squadron RAF, Form 540",
+              "url": "https://263squadron.weebly.com/uploads/9/2/1/7/92171046/air271547f540.pdf",
+              "locator": "TNA AIR 27/1547, reconstructed Norway section, 28 May, Williams 07:30 and Milligan 18:00",
+              "kind": "reconstructed wartime squadron record, later transcription"
+            }
+          ],
+          "rosterIds": [
+            "narvik-raf"
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Norwegian Army fighters, Norwegian naval aviation, shore- and carrier-launched British naval aircraft and the Bardufoss RAF squadrons can be distinguished.",
+          "losses": "Fornebu airframe records follow individual Gladiators. A coalition-wide loss total with common damage criteria remains open.",
+          "effect": "The Bergen sinking has a German recipient record. The 28 May patrols coincided with the Allied assault at Narvik."
+        },
+        "Axis": {
+          "effort": "Gaul’s schedule identifies two initial fighter groups, an additional group on 15 April, and eleven initial level- or dive-bomber groups.",
+          "losses": "The German naval diary establishes the loss of Königsberg. The Grotli account identifies a specific He 111. Neither gives theatre-wide aircraft losses.",
+          "effect": "The cruiser’s surviving crew transferred to coastal defence. The sortie from Ark Royal can be tied to the interruption of one German bombing attack."
+        }
+      }
+    },
+    "france1940": {
+      "populations": [
+        {
+          "id": "france-gch23",
+          "label": "French fighter groups under Groupement 23",
+          "date": "1940-05-10",
+          "force": "Armée de l’air, northern zone",
+          "side": "Allied",
+          "echelon": "groupe",
+          "event": "assigned",
+          "scope": "Groupes de chasse in Groupement de Chasse 23 on 10 May",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.traditions-air.fr/unit/chrono/1940-05-10.htm",
+          "locator": "Groupement de Chasse 23, five GC and separate ECMJ 1/16",
+          "sourceClass": "historical order-of-battle compilation",
+          "note": "The separate ECMJ 1/16 at Wez-Thuisy is an escadrille and lies outside this group count.",
+          "members": [
+            {
+              "unit": "Groupe de Chasse II/2",
+              "parent": "Groupement de Chasse 23",
+              "place": "Laon-Chambry"
+            },
+            {
+              "unit": "Groupe de Chasse III/2",
+              "parent": "Groupement de Chasse 23",
+              "place": "Cambrai"
+            },
+            {
+              "unit": "Groupe de Chasse I/4",
+              "parent": "Groupement de Chasse 23",
+              "place": "Wez-Thuisy"
+            },
+            {
+              "unit": "Groupe de Chasse I/5",
+              "parent": "Groupement de Chasse 23",
+              "place": "Suippes"
+            },
+            {
+              "unit": "Groupe de Chasse III/7",
+              "parent": "Groupement de Chasse 23",
+              "place": "Vitry-le-François"
+            }
+          ]
+        },
+        {
+          "id": "france-belgian-2reg",
+          "label": "Belgium’s 2e Régiment d’Aéronautique",
+          "date": "1940-05-10",
+          "force": "Aéronautique Militaire belge",
+          "side": "Allied",
+          "echelon": "escadrille",
+          "event": "assigned",
+          "scope": "All six escadrilles under the regiment’s three groupes in the Nafziger table",
+          "total": 6,
+          "basis": "bounded source count",
+          "source": "https://www.generalstaff.org/NAF/Pt_I_1939-1940/940ebdd.pdf",
+          "locator": "p. 1, 2e Régiment d’Aéronautique, I, II and III Groupes",
+          "sourceClass": "historical order-of-battle compilation",
+          "note": "The table places Fairey Fox units alongside Gladiator, Hurricane and Fiat units. The count describes the regiment as organized, not six interchangeable single-seat fighter units.",
+          "members": [
+            {
+              "unit": "Escadrille 1/I/2",
+              "parent": "I Groupe, 2e Régiment d’Aéronautique",
+              "place": "Schaffen"
+            },
+            {
+              "unit": "Escadrille 2/I/2",
+              "parent": "I Groupe, 2e Régiment d’Aéronautique",
+              "place": "Schaffen"
+            },
+            {
+              "unit": "Escadrille 3/II/2",
+              "parent": "II Groupe, 2e Régiment d’Aéronautique",
+              "place": "Nivelles"
+            },
+            {
+              "unit": "Escadrille 4/II/2",
+              "parent": "II Groupe, 2e Régiment d’Aéronautique",
+              "place": "Nivelles"
+            },
+            {
+              "unit": "Escadrille 5/III/2",
+              "parent": "III Groupe, 2e Régiment d’Aéronautique",
+              "place": "Schaffen"
+            },
+            {
+              "unit": "Escadrille 6/III/2",
+              "parent": "III Groupe, 2e Régiment d’Aéronautique",
+              "place": "Le Zoute"
+            }
+          ]
+        },
+        {
+          "id": "france-dutch-java",
+          "label": "Dutch fighter units that assembled at Buiksloot",
+          "date": "1940-05-10",
+          "force": "Militaire Luchtvaart",
+          "side": "Allied",
+          "echelon": "jachtvliegtuigafdeling",
+          "event": "flew",
+          "scope": "Two D.XXI units whose surviving aircraft regrouped north of Amsterdam",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://marsethistoria.nl/onewebmedia/Schiphol_militair_vliegveld_Dirk_Starink.pdf",
+          "locator": "10 May 1940, 2e JaVA, first sorties and move to Buiksloot, note 55",
+          "sourceClass": "Dutch aviation historical study",
+          "note": "Morning departure locations differ from the afternoon concentration. Other Dutch fighter units, including twin-engine formations, fall outside this roster.",
+          "members": [
+            {
+              "unit": "1e Jachtvliegtuigafdeling",
+              "parent": "Militaire Luchtvaart",
+              "place": "De Kooy, later Buiksloot",
+              "source": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/de-kooy",
+              "locator": "10 May 1940, 1e Jachtvliegtuigafdeling and move to Buiksloot",
+              "stations": [
+                "de-kooy"
+              ],
+              "activity": "Fought on 10 May before the surviving aircraft moved to Buiksloot.",
+              "activitySource": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/de-kooy",
+              "activityLocator": "10 May 1940, 1e Jachtvliegtuigafdeling and move to Buiksloot"
+            },
+            {
+              "unit": "2e Jachtvliegtuigafdeling",
+              "parent": "Militaire Luchtvaart",
+              "place": "Schiphol, later Buiksloot",
+              "activity": "Nine D.XXIs got away from Schiphol in the morning. Some flew again after refuelling.",
+              "activitySource": "https://marsethistoria.nl/onewebmedia/Schiphol_militair_vliegveld_Dirk_Starink.pdf",
+              "activityLocator": "10 May 1940, 2e JaVA, first sorties and move to Buiksloot, note 55"
+            }
+          ]
+        },
+        {
+          "id": "france-air-component",
+          "label": "RAF Air Component Hurricanes before the invasion",
+          "date": "1940-05-09",
+          "force": "RAF Air Component, BEF",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "Air Component Hurricane squadrons before the May reinforcements",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-france-and-the-low-countries-sep-1939-jun-1940-appendices-and-maps/",
+          "locator": "Appendix L, Component Fighter Aircraft, scan p. 44, 9–17 May 1940",
+          "sourceClass": "official campaign history, appendices",
+          "note": "The Advanced Air Striking Force’s Nos. 1 and 73 Squadrons were separately commanded. Reinforcement flights later became squadron-equivalents in accounts of total effort.",
+          "members": [
+            {
+              "unit": "No. 85 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            },
+            {
+              "unit": "No. 87 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            },
+            {
+              "unit": "No. 607 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            },
+            {
+              "unit": "No. 615 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            }
+          ]
+        },
+        {
+          "id": "france-aasf-hurricanes",
+          "label": "Hurricanes with the Advanced Air Striking Force",
+          "date": "1940-05-10",
+          "force": "RAF Advanced Air Striking Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "AASF fighter squadrons on the invasion date",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo113228/pdf/GOVPUB-D301-PURL-gpo113228.pdf",
+          "locator": "Table 4, RAF British Air Forces in France at the invasion",
+          "sourceClass": "US Air Force historical study",
+          "note": "Alongside the four Air Component squadrons these make six Hurricane squadrons initially in France. The commands covered different tasks.",
+          "members": [
+            {
+              "unit": "No. 1 Squadron RAF",
+              "parent": "Advanced Air Striking Force"
+            },
+            {
+              "unit": "No. 73 Squadron RAF",
+              "parent": "Advanced Air Striking Force"
+            }
+          ]
+        },
+        {
+          "id": "france-lf2-bf109",
+          "label": "Luftflotte 2 Bf 109 Gruppen in the fighter-command table",
+          "date": "1940-05-10",
+          "force": "Luftwaffe, Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assigned",
+          "scope": "Seven Bf 109 Gruppen in the first table headed Jafü 3 on page 2",
+          "total": 7,
+          "basis": "bounded source count",
+          "source": "https://www.generalstaff.org/NAF/Pt_I_1939-1940/940geal.pdf",
+          "locator": "p. 2, Jafü 3 table, Bf 109 Gruppen and locations, 10 May 1940",
+          "sourceClass": "historical order-of-battle compilation",
+          "note": "The compilation repeats the Jafü 3 heading for another Luftflotte on page 3. This count follows the page 2 rows only. Its combined headquarters and II./JG 26 strength cannot be assigned wholly to either.",
+          "members": [
+            {
+              "unit": "III./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Hopsten"
+            },
+            {
+              "unit": "I./JG 20",
+              "parent": "Jagdgeschwader 20",
+              "place": "Bönninghardt"
+            },
+            {
+              "unit": "II./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Dortmund"
+            },
+            {
+              "unit": "I./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Bönninghardt"
+            },
+            {
+              "unit": "III./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Essen-Mülheim"
+            },
+            {
+              "unit": "II./JG 27",
+              "parent": "Jagdgeschwader 27",
+              "place": "Bönninghardt"
+            },
+            {
+              "unit": "I./JG 51",
+              "parent": "Jagdgeschwader 51",
+              "place": "Krefeld"
+            }
+          ]
+        },
+        {
+          "id": "france-lf2-bf110",
+          "label": "Luftflotte 2 twin-engine fighter groups",
+          "date": "1940-05-10",
+          "force": "Luftwaffe, Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assigned",
+          "scope": "Four Bf 110 Gruppen in the same page 2 fighter-command table",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.generalstaff.org/NAF/Pt_I_1939-1940/940geal.pdf",
+          "locator": "p. 2, Jafü 3 table, Bf 109 Gruppen and locations, 10 May 1940",
+          "sourceClass": "historical order-of-battle compilation",
+          "note": "The headquarters of ZG 26 is listed separately. It adds no additional Gruppe.",
+          "members": [
+            {
+              "unit": "I./ZG 1",
+              "parent": "Zerstörergeschwader 1",
+              "place": "Kirchenhellen"
+            },
+            {
+              "unit": "II./ZG 1",
+              "parent": "Zerstörergeschwader 1",
+              "place": "Gelsenkirchen-Buer"
+            },
+            {
+              "unit": "I./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "place": "Niedermendig"
+            },
+            {
+              "unit": "III./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "place": "Krefeld"
+            }
+          ]
+        },
+        {
+          "id": "france-polish-i145",
+          "label": "Polish fighter group in French service",
+          "date": "1940-06-02 to 1940-06-11",
+          "force": "Polish Air Force in France",
+          "side": "Allied",
+          "echelon": "groupe",
+          "event": "flew",
+          "scope": "Polish group operating from Dreux, assigned to Groupement 42 from 6 June",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://mbc.cyfrowemazowsze.pl/Content/1853/PDF/1853.pdf",
+          "locator": "I/145 account, 2–11 June, 9 June interception from Dreux",
+          "sourceClass": "Polish aviation history",
+          "note": "Individual Polish pilots also flew in French units. This named group is a lower bound for Polish participation.",
+          "members": [
+            {
+              "unit": "Groupe de Chasse I/145 Warszawski",
+              "parent": "Groupement de Chasse 42 from 6 June",
+              "place": "Dreux"
+            }
+          ]
+        },
+        {
+          "id": "france-air-component-10may",
+          "label": "Air Component Hurricane reinforcements on 10 May",
+          "date": "1940-05-10",
+          "force": "RAF Air Component, BEF",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "reinforced",
+          "scope": "Named squadrons added to the four pre-offensive Air Component fighter squadrons",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-france-and-the-low-countries-sep-1939-jun-1940-appendices-and-maps/",
+          "locator": "Appendix L, Component Fighter Aircraft, scan p. 44, 9–17 May 1940",
+          "sourceClass": "official campaign history, appendices",
+          "note": "The six Air Component squadrons after this addition have a different command boundary from the pre-offensive six across the Air Component and AASF.",
+          "members": [
+            {
+              "unit": "No. 3 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            },
+            {
+              "unit": "No. 79 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            }
+          ]
+        },
+        {
+          "id": "france-air-component-11may",
+          "label": "Air Component Hurricane reinforcement on 11 May",
+          "date": "1940-05-11",
+          "force": "RAF Air Component, BEF",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "reinforced",
+          "scope": "Additional named squadron in the 11 May return",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-france-and-the-low-countries-sep-1939-jun-1940-appendices-and-maps/",
+          "locator": "Appendix L, Component Fighter Aircraft, scan p. 44, 9–17 May 1940",
+          "sourceClass": "official campaign history, appendices",
+          "note": "Later deliveries include individual pilots and aircraft and flights recorded as squadron-equivalents.",
+          "members": [
+            {
+              "unit": "No. 504 Squadron RAF",
+              "parent": "Air Component, British Expeditionary Force"
+            }
+          ]
+        },
+        {
+          "id": "france-raf-eight-flights",
+          "label": "Eight RAF flights that made four squadron-equivalents",
+          "date": "1940-05-16 to 1940-05-17",
+          "force": "RAF Fighter Command",
+          "side": "Allied",
+          "echelon": "flight",
+          "event": "dispatched",
+          "scope": "Eight contributing squadrons each sent one flight for attachment to squadrons already in France",
+          "total": 8,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-i-growth-of-fighter-command/",
+          "locator": "May crisis, 16–17 May, eight contributing squadrons and despatch of six then two flights",
+          "sourceClass": "official campaign narrative",
+          "note": "Six flights departed on 16 May and two on the morning of 17 May. The account lists parent squadrons but does not assign individual flight letters or departure dates to each.",
+          "members": [
+            {
+              "unit": "Flight from No. 56 Squadron RAF",
+              "parent": "No. 56 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 111 Squadron RAF",
+              "parent": "No. 111 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 213 Squadron RAF",
+              "parent": "No. 213 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 229 Squadron RAF",
+              "parent": "No. 229 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 242 Squadron RAF",
+              "parent": "No. 242 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 245 Squadron RAF",
+              "parent": "No. 245 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 253 Squadron RAF",
+              "parent": "No. 253 Squadron RAF"
+            },
+            {
+              "unit": "Flight from No. 601 Squadron RAF",
+              "parent": "No. 601 Squadron RAF"
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1940-05-10",
+          "title": "Dutch fighters flew from two fields before regrouping",
+          "mission": "The 1e JaVA fought from De Kooy. At Schiphol nine Fokker D.XXIs of 2e JaVA took off during the attack. Some returned for fuel and flew again.",
+          "effect": "Surviving aircraft of both units concentrated at Buiksloot. Its poor turf had kept 2e JaVA at Schiphol during mobilization, but Dutch fighters used the auxiliary field during the invasion.",
+          "limit": "The change of airfield explains how further flights remained possible. It does not reveal the number of serviceable machines available after every sortie.",
+          "sources": [
+            {
+              "name": "Nederlands Instituut voor Militaire Historie, De Kooy",
+              "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/de-kooy",
+              "locator": "10 May 1940, 1e Jachtvliegtuigafdeling and move to Buiksloot",
+              "kind": "Dutch official historical account"
+            },
+            {
+              "name": "Dirk Starink, Schiphol als militair vliegveld",
+              "url": "https://marsethistoria.nl/onewebmedia/Schiphol_militair_vliegveld_Dirk_Starink.pdf",
+              "locator": "10 May 1940, 2e JaVA, first sorties and move to Buiksloot, note 55",
+              "kind": "Dutch aviation historical study"
+            },
+            {
+              "name": "Nederlands Instituut voor Militaire Historie, Buiksloot",
+              "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/historische-overzichten/vliegvelden-in-oorlogstijd/buiksloot",
+              "locator": "Slechte bodemgesteldheid and historical field map",
+              "kind": "Dutch official historical account"
+            }
+          ],
+          "rosterIds": [
+            "france-dutch-java"
+          ]
+        },
+        {
+          "date": "1940-05-11",
+          "title": "Three Belgian escorts met German fighters over Vroenhoven",
+          "mission": "Three Gladiators from the first platoon of Belgian 1/I/2 flew cover for Fairey Battles assigned to the bridges. Fighters of I./JG 1 intercepted them.",
+          "effect": "Rolin escaped by parachute, Pirlot died, and Vandenbroek returned to Beauvechain with his Gladiator damaged. The German formation had removed two of the three escorts. A third had actually returned.",
+          "limit": "Decobeck reconstructed the encounter decades later using the participants’ accounts. Their shared chronology does not establish that the loss of escort caused any particular Battle bomber loss.",
+          "sources": [
+            {
+              "name": "Régis Decobeck, La rencontre de deux adversaires",
+              "url": "https://www.vieillestiges.be/files/vtb-magazines/2-2000.pdf",
+              "locator": "pp. 18–30, Rolin, Franzisket, Pirlot and Vandenbroek, 10–11 May",
+              "kind": "veterans’ historical journal, retrospective encounter reconstruction"
+            },
+            {
+              "name": "George Nafziger Collection, Belgian Air Force, 10 May 1940",
+              "url": "https://www.generalstaff.org/NAF/Pt_I_1939-1940/940ebdd.pdf",
+              "locator": "p. 1, 2e Régiment d’Aéronautique, I, II and III Groupes",
+              "kind": "historical order-of-battle compilation"
+            },
+            {
+              "name": "George Nafziger Collection, German Air Forces, Western Campaign",
+              "url": "https://www.generalstaff.org/NAF/Pt_I_1939-1940/940geal.pdf",
+              "locator": "p. 2, Jafü 3 table, Bf 109 Gruppen and locations, 10 May 1940",
+              "kind": "historical order-of-battle compilation"
+            }
+          ],
+          "rosterIds": [
+            "france-belgian-2reg"
+          ]
+        },
+        {
+          "date": "1940-05-09 to 1940-05-17",
+          "title": "The RAF’s six Hurricane squadrons changed meaning in one day",
+          "mission": "On 9 May the Air Component had four Hurricane squadrons. The AASF’s Nos. 1 and 73 bring the British total in France to six. Nos. 3 and 79 joined the Air Component on 10 May and No. 504 on 11 May.",
+          "effect": "The evening of 10 May therefore yields six in the Air Component alone. By 16 May Dowding described ten squadron-equivalents dispatched in recent days when arguing about the demands on home defence.",
+          "limit": "The four squadron-equivalents ordered on 16 May came from eight different squadrons. Six flights crossed that day and two the next. Neither Dowding’s ten nor the order’s four should become a count of complete named units in France.",
+          "sources": [
+            {
+              "name": "RAF Air Historical Branch, Campaign in France and the Low Countries",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/campaign-in-france-and-the-low-countries-sep-1939-jun-1940-appendices-and-maps/",
+              "locator": "Appendix L, Component Fighter Aircraft, scan p. 44, 9–17 May 1940",
+              "kind": "official campaign history, appendices"
+            },
+            {
+              "name": "John F. Kreis, Air Warfare and Air Base Air Defense, 1914–1973",
+              "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo113228/pdf/GOVPUB-D301-PURL-gpo113228.pdf",
+              "locator": "Table 4, RAF British Air Forces in France at the invasion",
+              "kind": "US Air Force historical study"
+            },
+            {
+              "name": "Hugh Dowding, letter of 16 May 1940, reproduced by the Air Historical Branch",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-i-growth-of-fighter-command/",
+              "locator": "16 May letter to the Air Ministry, para. 8, ten squadron-equivalents",
+              "kind": "wartime command correspondence in official history"
+            },
+            {
+              "name": "RAF Air Historical Branch, Air Defence of Great Britain, volume I",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-i-growth-of-fighter-command/",
+              "locator": "May crisis, 16–17 May, eight contributing squadrons and despatch of six then two flights",
+              "kind": "official campaign narrative"
+            }
+          ],
+          "rosterIds": [
+            "france-air-component",
+            "france-aasf-hurricanes",
+            "france-air-component-10may",
+            "france-air-component-11may",
+            "france-raf-eight-flights"
+          ]
+        },
+        {
+          "date": "1940-06-09",
+          "title": "Polish fighters from Dreux challenged an escorted bomber raid",
+          "mission": "Seventeen pilots of GC I/145 scrambled, according to Pawlak. The unit held part of the Seine defence sector under Groupement 42. Its slow-climbing Caudrons had missed earlier interceptions.",
+          "effect": "On this occasion the pilots reached the raid and sustained fatalities. The roster identifies Lech Lachowicki-Czechowicz among those killed. The group subsequently moved away from Dreux on 11 June.",
+          "limit": "The accounts give estimates of the opposing force and Polish victory claims. No matched German loss return establishes how many bombers the attack destroyed or turned back.",
+          "sources": [
+            {
+              "name": "Jerzy Pawlak, Polish fighter aviation in France",
+              "url": "https://mbc.cyfrowemazowsze.pl/Content/1853/PDF/1853.pdf",
+              "locator": "I/145 account, 2–11 June, 9 June interception from Dreux",
+              "kind": "Polish aviation history"
+            },
+            {
+              "name": "PassionAir, Groupe de Chasse I/145 Varsovie",
+              "url": "https://www.passionair1940.fr/Armee%20de%20l%27Air/Escadrilles/Patrouille-defense/GC-I-145/GC-1_145.htm",
+              "locator": "Historique, roster, and moves of 2–19 June",
+              "kind": "French unit history"
+            }
+          ],
+          "rosterIds": [
+            "france-polish-i145"
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Named French, Dutch, Belgian, Polish and RAF formations have separate command and date boundaries.",
+          "losses": "Vroenhoven yields three escort aircraft outcomes. The Polish roster identifies individual fatalities. French, Dutch and British returns still need a common daily basis.",
+          "effect": "At Schiphol some fighters refuelled and flew again. Survivors regrouped at Buiksloot. Belgian escort losses can be traced through the aircraft that actually returned."
+        },
+        "Axis": {
+          "effort": "The Luftflotte 2 table identifies seven Bf 109 and four Bf 110 Gruppen in one fighter-command section. Other corps and Luftflotte 3 enlarge the theatre total.",
+          "losses": "German assignments and combined headquarters strength do not identify losses. The June Polish claims lack reciprocal German loss returns.",
+          "effect": "I./JG 1 removed two of three Belgian escorts over Vroenhoven. Evidence for the bridge strike itself belongs to the bomber and recipient records."
+        }
+      }
+    },
+    "britain": {
+      "populations": [
+        {
+          "id": "london-7sept-escorts",
+          "label": "German fighter wings ordered to cover the London raid",
+          "date": "1940-09-07",
+          "force": "Luftwaffe, Jafü 2 and I. Fliegerkorps",
+          "side": "Axis",
+          "echelon": "Geschwader",
+          "event": "ordered",
+          "scope": "Identified escort and fighter-clearance wings in the I. Fliegerkorps London order",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://ibiblio.org/hyperwar/ETO/BOB/BoB-German/BoB-German-A.html",
+          "locator": "Appendix 3, 6.9.40 Ia Br.B.Nr. 10285, §§2–4, reproduced from Cajus Bekker, appendix 6",
+          "sourceClass": "German wartime operational order in translation",
+          "note": "The order pairs JG 26 with KG 30, JG 54 with KG 1 and JG 27 with KG 76. ZG 76 had a separate clearance task. The document records assignments for this raid, not every wing in both air fleets.",
+          "members": [
+            {
+              "unit": "Jagdgeschwader 26",
+              "parent": "Jagdfliegerführer 2"
+            },
+            {
+              "unit": "Jagdgeschwader 54",
+              "parent": "Jagdfliegerführer 2"
+            },
+            {
+              "unit": "Jagdgeschwader 27",
+              "parent": "Jagdfliegerführer 2"
+            },
+            {
+              "unit": "Zerstörergeschwader 76",
+              "parent": "I. Fliegerkorps for this operation"
+            }
+          ]
+        },
+        {
+          "id": "london-7sept-bombers",
+          "label": "German bomber wings in the I. Fliegerkorps main attack",
+          "date": "1940-09-07",
+          "force": "Luftwaffe, I. Fliegerkorps",
+          "side": "Axis",
+          "echelon": "Geschwader",
+          "event": "ordered",
+          "scope": "Three main attack elements in the I. Fliegerkorps operational order",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://ibiblio.org/hyperwar/ETO/BOB/BoB-German/BoB-German-A.html",
+          "locator": "Appendix 3, 6.9.40 Ia Br.B.Nr. 10285, §§2–4, reproduced from Cajus Bekker, appendix 6",
+          "sourceClass": "German wartime operational order in translation",
+          "note": "II./KG 76 was attached to KG 30 for the operation and excluded from KG 76’s own left-hand formation. Counting it as a fourth wing would duplicate it.",
+          "members": [
+            {
+              "unit": "Kampfgeschwader 30",
+              "parent": "Reinforcing I. Fliegerkorps with II./KG 76 attached"
+            },
+            {
+              "unit": "Kampfgeschwader 1",
+              "parent": "I. Fliegerkorps"
+            },
+            {
+              "unit": "Kampfgeschwader 76",
+              "parent": "I. Fliegerkorps, less II./KG 76"
+            }
+          ]
+        },
+        {
+          "id": "london-7sept-raf",
+          "label": "Six RAF, Polish and Canadian units in the evening reports",
+          "date": "1940-09-07",
+          "force": "RAF Fighter Command and RCAF",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "reported activity",
+          "scope": "Selected squadrons in the 17:00–18:30 London operations records",
+          "total": 6,
+          "basis": "identified lower bound",
+          "source": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+          "locator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records",
+          "sourceClass": "wartime squadron diaries and intelligence reports in transcription",
+          "note": "The lower bound covers different tasks, from a base patrol with no sightings to an interception by one Canadian pilot. The whole squadron cannot be credited with its leader’s contact.",
+          "members": [
+            {
+              "unit": "No. 1 Squadron RAF",
+              "parent": "RAF Fighter Command",
+              "place": "Northolt",
+              "stations": [
+                "northolt"
+              ],
+              "activity": "Eleven Hurricanes departed Northolt between 17:50 and 18:05 after refuelling and rearming.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "activityLocator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records"
+            },
+            {
+              "unit": "No. 1 Squadron RCAF",
+              "parent": "RAF Fighter Command, RCAF contingent",
+              "place": "Northolt",
+              "stations": [
+                "northolt"
+              ],
+              "activity": "Base defence retained the squadron. McNab departed Northolt alone at 17:09 and engaged.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "activityLocator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records"
+            },
+            {
+              "unit": "No. 17 Squadron RAF",
+              "parent": "RAF Fighter Command",
+              "activity": "B Flight patrolled the Hornchurch area and saw no enemy aircraft.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "activityLocator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records"
+            },
+            {
+              "unit": "No. 79 Squadron RAF",
+              "parent": "RAF Fighter Command",
+              "place": "Croydon",
+              "stations": [
+                "croydon"
+              ],
+              "activity": "Left Croydon at 17:55 and engaged in the Maidstone–Dartford area.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "activityLocator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records"
+            },
+            {
+              "unit": "No. 249 Squadron RAF",
+              "parent": "RAF Fighter Command",
+              "place": "North Weald",
+              "stations": [
+                "north-weald"
+              ],
+              "activity": "Six left North Weald at 17:46. The report describes a formation attack and one Hurricane lost.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "activityLocator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records"
+            },
+            {
+              "unit": "No. 303 (Polish) Squadron RAF",
+              "parent": "RAF Fighter Command, Polish contingent",
+              "activity": "The Canadian diary records orders to patrol south of London at 17:00.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "activityLocator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records"
+            }
+          ]
+        },
+        {
+          "id": "britain-15sept-11g",
+          "label": "No. 11 Group’s first scramble orders",
+          "date": "1940-09-15",
+          "force": "RAF Fighter Command",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "ordered up",
+          "scope": "11:05–11:20 first sequence of No. 11 Group scramble orders",
+          "total": 11,
+          "basis": "bounded source count",
+          "source": "https://www.rafmuseum.org.uk/documents/podcasts/transcripts/15_Sept_Podcast.pdf",
+          "locator": "15 September, 11:05–11:25, Nos. 11 and 12 Groups",
+          "sourceClass": "museum historical chronology with wartime extracts",
+          "note": "The museum names every squadron in this order sequence. Six additional squadrons were ordered up later. This scope excludes earlier routine patrols.",
+          "members": [
+            {
+              "unit": "No. 72 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 92 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 229 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 303 (Polish) Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 253 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 501 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 17 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 73 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 504 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 257 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            },
+            {
+              "unit": "No. 603 Squadron RAF",
+              "parent": "No. 11 Group RAF"
+            }
+          ]
+        },
+        {
+          "id": "britain-15sept-12g",
+          "label": "No. 12 Group airborne by 11:25",
+          "date": "1940-09-15",
+          "force": "RAF Fighter Command",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "airborne",
+          "scope": "Five No. 12 Group squadrons reported airborne at 11:25",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.rafmuseum.org.uk/documents/podcasts/transcripts/15_Sept_Podcast.pdf",
+          "locator": "15 September, 11:05–11:25, Nos. 11 and 12 Groups",
+          "sourceClass": "museum historical chronology with wartime extracts",
+          "note": "The time marks airborne status, unlike the No. 11 Group sequence of orders. Polish and Czechoslovak squadrons appear under RAF operational command.",
+          "members": [
+            {
+              "unit": "No. 242 Squadron RAF",
+              "parent": "No. 12 Group RAF"
+            },
+            {
+              "unit": "No. 19 Squadron RAF",
+              "parent": "No. 12 Group RAF"
+            },
+            {
+              "unit": "No. 302 (Polish) Squadron RAF",
+              "parent": "No. 12 Group RAF"
+            },
+            {
+              "unit": "No. 310 (Czechoslovak) Squadron RAF",
+              "parent": "No. 12 Group RAF"
+            },
+            {
+              "unit": "No. 611 Squadron RAF",
+              "parent": "No. 12 Group RAF"
+            }
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "date": "1940-09-07",
+          "title": "Fighter escorts reached London while RAF units fought and guarded their bases",
+          "mission": "I. Fliegerkorps tasked JG 26, JG 54 and JG 27 with bomber escort, and ZG 76 with clearing the target area. No. 249 Squadron attacked the raid. Canadian No. 1 was kept on station defence apart from McNab’s individual interception.",
+          "effect": "The Admiralty independently recorded serious fires in the East India, West India, Surrey Commercial and Millwall docks. No. 249’s formation could not see what damage its attack caused. A separate pilot claimed a Dornier, and Beard bailed out of a Hurricane.",
+          "limit": "The German order gives intended assignments, the RAF records give observed contact, and the docks report gives the result on the ground. Individual bomb damage cannot be allocated to a particular escorted formation.",
+          "sources": [
+            {
+              "name": "I. Fliegerkorps, operational order signed by Grauert, 6 September 1940",
+              "url": "https://ibiblio.org/hyperwar/ETO/BOB/BoB-German/BoB-German-A.html",
+              "locator": "Appendix 3, 6.9.40 Ia Br.B.Nr. 10285, §§2–4, reproduced from Cajus Bekker, appendix 6",
+              "kind": "German wartime operational order in translation"
+            },
+            {
+              "name": "Wing Leader, Battle of Britain Combat Archive, vol. 11",
+              "url": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "locator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records",
+              "kind": "wartime squadron diaries and intelligence reports in transcription"
+            },
+            {
+              "name": "British Admiralty War Diary, 7 September 1940",
+              "url": "https://cd.royalnavy.mod.uk/-/media/rnweb/locations-and-operations/navy-historical-branch/pdfs/1940/war_diary_naval_1940_09---day-1---day-19.pdf?rev=aae752748f0d442f868e01765400ecb1",
+              "locator": "7 September, p. 158, London dock fires",
+              "kind": "separately authored wartime naval situation report"
+            }
+          ],
+          "rosterIds": [
+            "london-7sept-escorts",
+            "london-7sept-bombers",
+            "london-7sept-raf"
+          ]
+        },
+        {
+          "date": "1940-09-07",
+          "title": "Actual departures differed from the day’s station list",
+          "mission": "The war-station table places British No. 1 at Heath Row and No. 79 at Biggin Hill. No. 1’s intelligence report documents eleven taking off from Northolt. No. 79’s diary records departure from Croydon.",
+          "effect": "The pilots’ reports establish two actual launch fields for the evening. No. 79 engaged over Maidstone–Dartford. In No. 1 the main group missed contact while two separated pilots encountered bombers.",
+          "limit": "The accounts address different events. The departure evidence does not establish a formal transfer of either whole squadron or the location of every flight throughout the day.",
+          "sources": [
+            {
+              "name": "Basil Collier, The Defence of the United Kingdom",
+              "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-Defence-UK/UK-DefenseOfUK-XX.html",
+              "locator": "Appendix XX, 7 September 1940, No. 11 Group war stations",
+              "kind": "British official history, station return"
+            },
+            {
+              "name": "Wing Leader, Battle of Britain Combat Archive, vol. 11",
+              "url": "https://wingleader.co.uk/wp-content/uploads/2023/04/BofBCAV11sample-pages.pdf",
+              "locator": "7 September, pp. 308–311, No. 1 RCAF diary, RAF No. 1, 17, 79 and 249 Squadron records",
+              "kind": "wartime squadron diaries and intelligence reports in transcription"
+            }
+          ],
+          "rosterIds": [
+            "britain-11g",
+            "london-7sept-raf"
+          ]
+        },
+        {
+          "date": "1940-09-15",
+          "title": "Scramble orders, airborne reinforcements and a bomber at Victoria Station",
+          "mission": "No. 11 Group ordered eleven squadrons up between 11:05 and 11:20. The five No. 12 Group squadrons airborne at 11:25 included Polish No. 302 and Czechoslovak No. 310. The museum also reproduces a combat report from a No. 72 pilot.",
+          "effect": "A No. 504 Squadron Hurricane flown by Ray Holmes collided with a Dornier which fell at Victoria Station. Some bombers nevertheless dropped their loads in central London. The museum records further fighter attacks during their return.",
+          "limit": "A dated order does not prove that every unit made contact. The No. 72 pilot saw hits on a fighter but lost sight of it. That report alone cannot establish destruction.",
+          "sources": [
+            {
+              "name": "Royal Air Force Museum, 15 September 1940 chronology",
+              "url": "https://www.rafmuseum.org.uk/documents/podcasts/transcripts/15_Sept_Podcast.pdf",
+              "locator": "15 September, 11:05–11:25, Nos. 11 and 12 Groups",
+              "kind": "museum historical chronology with wartime extracts"
+            }
+          ],
+          "rosterIds": [
+            "britain-15sept-11g",
+            "britain-15sept-12g"
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Six 7 September squadron records distinguish guarding, contact and launch. The 15 September chronology distinguishes scramble orders from airborne status.",
+          "losses": "Beard’s damaged Hurricane and bailout are reported by No. 249. No. 72’s later observation of hits gives no verified German loss.",
+          "effect": "The Admiralty records fires in four dock systems. The museum ties a single 15 September interception to the Dornier that fell at Victoria Station."
+        },
+        "Axis": {
+          "effort": "A contemporary I. Fliegerkorps order specifies three bomber wings, three escort wings and a separate clearance wing. It supplies no actual sortie count.",
+          "losses": "The British accounts contain claims and isolated aircraft outcomes. They do not reconstruct each German wing’s losses or repairable damage.",
+          "effect": "London docks sustained major fires despite interception. No witness assigns the damage at each dock to one German wing."
+        }
+      }
+    }
+  },
+  "stations": {
+    "de-kooy": {
+      "name": "De Kooy, Netherlands",
+      "lat": 52.92361,
+      "lon": 4.78333,
+      "source": "https://www.ww2.dk/Airfields%20-%20Netherlands.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45, Netherlands, De Kooy entry, printed p. 7, 52°55′25″ N, 4°47′00″ E."
+    }
+  }
+}

@@ -1,0 +1,1877 @@
+{
+  "campaigns": {
+    "reichdefense": {
+      "cases": [
+        {
+          "date": "1944-03-06",
+          "title": "Which bombers actually received the Berlin escort?",
+          "mission": "The 56th Fighter Group flew two penetration sections. Near Haselünne, the 13th Combat Wing, including the 100th Bombardment Group, met the first German concentration before substantial escort cover reached it.",
+          "effect": "100th Group gunner Van Pinner described the attack from his bomber. German pilot Wolfgang Kretschmer of JG 1 recalled being wounded and bailing out after a P-47 intervened. Price places the 56th Group's engagement in the same encounter.",
+          "limit": "The fighter return counts support along the route. It gives no continuous escort strength beside each combat wing. The accounts document an intervention but cannot count bombers saved.",
+          "rosterIds": [
+            "berlin-250-us-escort",
+            "berlin-raid-first"
+          ],
+          "sources": [
+            {
+              "name": "Headquarters Eighth Air Force, Narrative of Operations, 6 March 1944",
+              "url": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "locator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)",
+              "kind": "wartime headquarters report"
+            },
+            {
+              "name": "Alfred Price, Target Berlin",
+              "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "locator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants",
+              "kind": "historical reconstruction from operational records and participant testimony"
+            }
+          ]
+        },
+        {
+          "date": "1944-03-06",
+          "title": "What reached Berlin after the fighter battles?",
+          "mission": "Target support included the 4th and 357th Fighter Groups in P-51s and the 55th in P-38s. Most supporting groups flew other legs.",
+          "effect": "The 1st Bomb Division missed its obscured Erkner factory objective and crews bombed the clearer Köpenick and Weissensee districts. The German Naval Staff diary independently reported bombs across Berlin between 13:10 and 13:40.",
+          "limit": "The city-level diary confirms that bombs reached Berlin. It cannot identify which escort group protected the bombers that dropped them or measure damage to the intended target.",
+          "rosterIds": [
+            "berlin-250-us-escort",
+            "berlin-second-gruppen"
+          ],
+          "sources": [
+            {
+              "name": "Headquarters Eighth Air Force, Narrative of Operations, 6 March 1944",
+              "url": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "locator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)",
+              "kind": "wartime headquarters report"
+            },
+            {
+              "name": "German Naval Staff war diary, March 1944",
+              "url": "https://uboatdata.ussleahy.com/SKL/55/Trans/wardiarygermann551944germ.pdf",
+              "locator": "6 March, Air Warfare, Reich Territory, Berlin raid and reported time bombs fell",
+              "kind": "translated wartime diary"
+            },
+            {
+              "name": "Alfred Price, Target Berlin",
+              "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "locator": "Printed pp. 116–119, 1st and 94th Combat Wings, 401st Group bombardier and bomb fall in the city",
+              "kind": "historical reconstruction from operational records and participant testimony"
+            }
+          ]
+        },
+        {
+          "date": "1944-03-30/31",
+          "title": "What could No. 6 Group crews see over Nuremberg?",
+          "mission": "Nine RCAF squadrons supplied 25 Lancasters and 93 Halifaxes. The return identifies individual aircraft and their crews as well as the dispatch total.",
+          "effect": "No. 408 Squadron's Flying Officer Harvey reported jettisoning after seeing no markers. Independently, Australian crewmen of No. 467 Squadron recalled seeing aircraft burning on the route.",
+          "limit": "The Australian evidence describes another squadron on the same operation. Visibility for one crew, losses seen en route and the raid-wide loss total have different denominators.",
+          "rosterIds": [
+            "nuremberg-6group"
+          ],
+          "sources": [
+            {
+              "name": "Richard Koval, 6 Group Bomber Command",
+              "url": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "locator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports",
+              "kind": "group history compiled from operations records"
+            },
+            {
+              "name": "Australian War Memorial, On a Nuremberg moon",
+              "url": "https://www.awm.gov.au/wartime/on-a-nuremberg-moon",
+              "locator": "30/31 March 1944, No. 467 Squadron witnesses and Australian aircrew losses",
+              "kind": "museum history with crew testimony"
+            }
+          ]
+        },
+        {
+          "date": "1945-02-03",
+          "title": "A late-war group saw escorts and flak over Berlin",
+          "mission": "The 306th Bombardment Group recorded P-51s escorting aircraft 802-F when it had to leave formation. Its crews reported flak over Berlin, three aircraft missing and no enemy fighters seen.",
+          "effect": "The lead bombardier reported hits near the marshalling yard. Smoke obscured precise impacts in the group's photographs. German archival photographs document destruction at Hausvogteiplatz and at Moritzplatz after the raid.",
+          "limit": "The photographs locate damage on the ground. They cannot assign it to the 306th. This group's lack of observed fighters establishes no city-wide absence of German aircraft.",
+          "rosterIds": [
+            "berlin-february-1945-306"
+          ],
+          "sources": [
+            {
+              "name": "306th Bombardment Group, intelligence narrative, 3 February 1945",
+              "url": "https://www.306bg.us/MISSION_REPORTS/3feb45.pdf",
+              "locator": "Group S-2 narrative paragraphs 2–4 and 7, and message to 1st Air Division and 40th Combat Wing, including the account of 802-F.",
+              "kind": "wartime bomber group intelligence report"
+            },
+            {
+              "name": "German Federal Archives, Bomben auf Berlin",
+              "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/themenbeitraege/bomben-auf-berlin/",
+              "locator": "Photographs of Hausvogteiplatz station, Bild 183-J31342, and Oranienstraße at Moritzplatz, Bild 183-J31327, after 3 February 1945",
+              "kind": "archival photographs with archival captions"
+            }
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "berlin-250-us-escort",
+          "label": "US fighter groups identifiable on the Berlin escort return",
+          "date": "1944-03-06",
+          "force": "Eighth and Ninth Air Forces",
+          "side": "Allied",
+          "echelon": "fighter group",
+          "event": "flew recorded escort stages",
+          "scope": "Numbered US groups in the fighter table for Eighth Air Force operation 250",
+          "total": 17,
+          "basis": "bounded source count",
+          "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+          "locator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)",
+          "sourceClass": "wartime headquarters report",
+          "note": "The narrative reports 15 Eighth and four Ninth Air Force groups. The table identifies 17 distinct group numbers across 22 entries. The 56th and 78th each supplied A and B sections, and three entries explicitly identify second sorties. Those 796 entries in the aircraft column measure effort across stages. Eleven US fighters were reported lost. The source does not define the discrepancy in group counts.",
+          "members": [
+            {
+              "unit": "365th Fighter Group",
+              "parent": "Ninth Air Force",
+              "activity": "16 P-47s on penetration.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "362nd Fighter Group",
+              "parent": "Ninth Air Force",
+              "activity": "50 P-47s on penetration (one lost) and 42 on a second sortie for withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "359th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "51 P-47s on penetration and 44 on a second sortie for withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "358th Fighter Group",
+              "parent": "Ninth Air Force",
+              "activity": "45 P-47s on penetration and 46 on a second sortie for withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "56th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "A and B sections on penetration, 32 and 34 P-47s respectively (one lost from A).",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "78th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "A section, 36 P-47s on penetration (two lost), and B section, 32 on withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "353rd Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "31 P-47s on penetration.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "4th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "25 P-51s on target support (four lost).",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)",
+              "stations": [
+                "debden"
+              ],
+              "place": "Debden",
+              "source": "https://www.4thfightergroupassociation.org/4th-fighter-group-almanac.html",
+              "locator": "4th Fighter Group Almanac, Station F-356, September 1942–July 1945."
+            },
+            {
+              "unit": "357th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "33 P-51s on target support.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "55th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "31 P-38s on target support.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "354th Fighter Group",
+              "parent": "Ninth Air Force",
+              "activity": "34 P-51s on target and area support (one lost).",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "355th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "35 P-47s on withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "361st Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "37 P-47s on withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "20th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "23 P-38s on withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "352nd Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "47 P-47s on withdrawal.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "364th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "32 P-38s on withdrawal (one lost).",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)"
+            },
+            {
+              "unit": "356th Fighter Group",
+              "parent": "Eighth Air Force",
+              "activity": "40 P-47s on withdrawal (one lost).",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+              "activityLocator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)",
+              "stations": [
+                "martlesham"
+              ],
+              "place": "Martlesham Heath",
+              "source": "https://www.mhas.org.uk/history/356th-fighter-group/",
+              "locator": "Martlesham Heath Aviation Society, 356th Group station dates, October 1943–May 1945."
+            }
+          ]
+        },
+        {
+          "id": "berlin-250-raf-support",
+          "label": "RAF Mustang squadrons reported supporting the Berlin mission",
+          "date": "1944-03-06",
+          "force": "Royal Air Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "reported supporting",
+          "scope": "RAF Mustang contribution identified separately in the US escort narrative",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607e00be2f0fbe4985c7c5b9/1618870481768/440306092a.pdf",
+          "locator": "250th operation, printed pp. 1–4, especially Fighter Operations table on p. 4 (PDF p. 7)",
+          "sourceClass": "wartime headquarters report",
+          "note": "The US report gives two unnamed RAF Mustang squadrons. Price's diagram and narrative identify three squadrons in the plan (pp. 108–110). The comparison bounds the plan and the post-operation report separately.",
+          "members": []
+        },
+        {
+          "id": "berlin-second-gruppen",
+          "label": "Numbered Gruppen in the second Berlin interceptor concentration",
+          "date": "1944-03-06",
+          "force": "1. Jagddivision, Luftwaffe",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assembled for interception",
+          "scope": "Numbered German Gruppen in the second concentration recorded by Price for the Berlin raid",
+          "total": 8,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+          "locator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants",
+          "sourceClass": "historical reconstruction from operational records and participant testimony",
+          "note": "The accompanying independent Sturmstaffel 1 is outside this Gruppe denominator. Price gives about 42 twin-engined fighters for the four Zerstörer Gruppen together. His approximately 70 single-engined aircraft also include Sturmstaffel 1.",
+          "members": [
+            {
+              "unit": "II./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "III./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "I./ZG 76",
+              "parent": "Zerstörergeschwader 76",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "II./ZG 76",
+              "parent": "Zerstörergeschwader 76",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "I./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "II./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "IV./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            },
+            {
+              "unit": "I./JG 302",
+              "parent": "Jagdgeschwader 302",
+              "activity": "Named in the second interceptor concentration under 1. Jagddivision.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol3-iss1-7-pdf",
+              "activityLocator": "Air Power Review, pp. 113–118, notes 13–22, including Freiburg operational maps and named combatants"
+            }
+          ]
+        },
+        {
+          "id": "nuremberg-6group",
+          "label": "No. 6 Group squadrons dispatched to Nuremberg",
+          "date": "1944-03-30/31",
+          "force": "RAF Bomber Command, No. 6 (RCAF) Group",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "dispatched",
+          "scope": "Canadian group contribution to the Nuremberg night raid",
+          "total": 9,
+          "basis": "bounded source count",
+          "source": "https://www.6bombergroup.ca/March44/March30~3144.html",
+          "locator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports",
+          "sourceClass": "group history compiled from operations records",
+          "note": "Two Lancaster and seven Halifax squadrons are named. Australian fatalities from 17 squadrons in the wider raid are a different measure, spanning several national forces.",
+          "members": [
+            {
+              "unit": "No. 408 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Lancaster units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports",
+              "stations": [
+                "linton-on-ouse"
+              ],
+              "place": "Linton-on-Ouse",
+              "source": "https://www.rafweb.org/Stations/Stations-L.htm",
+              "locator": "Linton-on-Ouse, station location and 1943–45 occupancy by Nos. 408 and 426."
+            },
+            {
+              "unit": "No. 426 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Lancaster units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports",
+              "stations": [
+                "linton-on-ouse"
+              ],
+              "place": "Linton-on-Ouse",
+              "source": "https://www.rafweb.org/Stations/Stations-L.htm",
+              "locator": "Linton-on-Ouse, station location and 1943–45 occupancy by Nos. 408 and 426."
+            },
+            {
+              "unit": "No. 420 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            },
+            {
+              "unit": "No. 424 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            },
+            {
+              "unit": "No. 425 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            },
+            {
+              "unit": "No. 427 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            },
+            {
+              "unit": "No. 429 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            },
+            {
+              "unit": "No. 432 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            },
+            {
+              "unit": "No. 433 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/March44/March30~3144.html",
+              "activityLocator": "30/31 March 1944, Nuremberg entry and No. 408 Squadron crew reports"
+            }
+          ]
+        },
+        {
+          "id": "berlin-february-1945-306",
+          "label": "Late-war Berlin groups checked against a unit intelligence file",
+          "date": "1945-02-03",
+          "force": "Eighth Air Force, 1st Air Division",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "flew against Berlin",
+          "scope": "Group with a checked original 40th Wing operation file",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.306bg.us/MISSION_REPORTS/3feb45.pdf",
+          "locator": "Group S-2 narrative paragraphs 2–4 and 7, and message to 1st Air Division and 40th Combat Wing",
+          "sourceClass": "wartime bomber group intelligence report",
+          "note": "One unit's file identifies its own attack and screening forces. It does not establish a total for the whole Berlin operation.",
+          "members": [
+            {
+              "unit": "306th Bombardment Group",
+              "parent": "40th Combat Wing",
+              "activity": "Recorded 36 aircraft with 40th C and six aircraft in the D screening force.",
+              "activitySource": "https://www.306bg.us/MISSION_REPORTS/3feb45.pdf",
+              "activityLocator": "Group S-2 narrative paragraphs 2–4 and 7, and message to 1st Air Division and 40th Combat Wing",
+              "stations": [
+                "thurleigh"
+              ],
+              "place": "Thurleigh",
+              "source": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_bases_in_united_kingdom.pdf?ver=2016-08-30-150752-303",
+              "locator": "USAAF bases in the United Kingdom, station 111, 306th Bomb Group."
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "The 6 March fighter table gives aircraft by group and escort stage. The Canadian return lists dispatches by aircraft type on 30/31 March.",
+          "losses": "The Berlin fighter table reports eleven US fighters lost and identifies the groups. Nuremberg crew reports use a separate RAF night-raid population.",
+          "effect": "The 100th Bombardment Group and 56th Fighter Group supply a local encounter. Night crews reported what they could see and whether they released or jettisoned."
+        },
+        "Axis": {
+          "effort": "German operational maps and participant testimony identify the first and second Berlin concentrations. They leave other response stages outside these counts.",
+          "losses": "Kretschmer of JG 1 describes his own bailout. His testimony cannot establish losses for the wing or reconcile Allied claims.",
+          "effect": "The March 1944 naval diary records bombs falling across Berlin. In February 1945 German archive photographs document damage at specific streets and a station. Neither record attributes it to one escort or bomber group."
+        }
+      }
+    },
+    "schweinfurt": {
+      "cases": [
+        {
+          "date": "1943-08-17",
+          "title": "Two bomber routes imposed different demands on the defenders",
+          "mission": "Nine groups of the 1st Bombardment Wing were dispatched toward Schweinfurt and seven of the 4th toward Regensburg. The 303rd assigned 30 crews. One aircraft failed to take off, which reconciles that figure with the 29 in the headquarters dispatch column.",
+          "effect": "The command reported 36 B-17s missing from 230 dispatched on the Schweinfurt operation and 24 from 146 on the Regensburg operation. The surviving reports therefore support two separate force and loss accounts.",
+          "limit": "The combined 60 missing aircraft cannot be apportioned to particular German groups from this return. The reported 18 US P-47 and 16 RAF Spitfire squadrons supported the wider operation.",
+          "rosterIds": [
+            "schweinfurt-august-first-wing",
+            "regensburg-august-fourth-wing",
+            "august-planned-escort",
+            "august-diversion-b26-plan"
+          ],
+          "sources": [
+            {
+              "name": "Headquarters, VIII Bomber Command, Narrative of Operations, 17 August 1943",
+              "url": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "locator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft",
+              "kind": "wartime headquarters report"
+            },
+            {
+              "name": "303rd Bombardment Group, mission 60",
+              "url": "https://www.303rdbg.com/missionreports/060.pdf",
+              "locator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective",
+              "kind": "group history and mission record compilation"
+            }
+          ]
+        },
+        {
+          "date": "1943-08-17",
+          "title": "A bomber lost from the Regensburg force reached Switzerland",
+          "mission": "Fighters of II./NJG 1 engaged B-17s on the Regensburg route. Boiten identifies the 100th Group's aircraft High Life among those damaged. Its 351st Squadron casualty record names Donald Oakes as pilot.",
+          "effect": "Oakes described engine damage after bomb release and a wheels-up landing at Dübendorf. His crew was interned. An aircraft missing to its command could have a surviving crew and a documented landing elsewhere.",
+          "limit": "The US account corroborates enemy fighter damage and the outcome. It does not identify the individual German crew responsible for each hit.",
+          "rosterIds": [
+            "august-daylight-njg1",
+            "august-daylight-nachtjagd",
+            "regensburg-august-fourth-wing"
+          ],
+          "sources": [
+            {
+              "name": "Theo Boiten, Nachtjagd Combat Archive, 1943, part 2",
+              "url": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "locator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte",
+              "kind": "historical reconstruction from crew testimony, claims returns and US loss identifications"
+            },
+            {
+              "name": "100th Bomb Group Foundation, casualty report for High Life",
+              "url": "https://100thbg.com/casualty-report/?casualtyreport_id=18",
+              "locator": "MACR 00683, aircraft 42-30080, 351st Bombardment Squadron, pilot Donald Oakes's account",
+              "kind": "archival casualty record with postwar pilot testimony"
+            }
+          ]
+        },
+        {
+          "date": "1943-08-17 to 1943-09",
+          "title": "How far did damage to the bearing works travel?",
+          "mission": "The 303rd Bombardment Group assigned crews to VKF works No. 1. Its mission report identifies an intended factory within the wider Schweinfurt force's operation.",
+          "effect": "The postwar survey found that September bearing output at Schweinfurt was 35 percent of the pre-raid level. German industrial records examined for the RAF history show damage to 2.5 percent of machinery and 2.3 percent of finished stocks in the August raid.",
+          "limit": "Local output, damaged machinery and ready stock each use a different denominator. The survey could establish no measurable impact on essential German war production as a whole. It identifies stocks, substitutions and recovery measures.",
+          "rosterIds": [
+            "schweinfurt-august-first-wing"
+          ],
+          "sources": [
+            {
+              "name": "303rd Bombardment Group, mission 60",
+              "url": "https://www.303rdbg.com/missionreports/060.pdf",
+              "locator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective",
+              "kind": "group history and mission record compilation"
+            },
+            {
+              "name": "RAF Air Historical Branch, The RAF in the Bombing Offensive Against Germany, vol. V",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/raf-in-the-bombing-offensive-against-germany-vol-v-the-full-offensive-february-1943-to-february-1944/",
+              "locator": "Printed pp. 143–144, damage at Schweinfurt in the August and October attacks, and reassessment from German records",
+              "kind": "official historical narrative with German industrial evidence"
+            },
+            {
+              "name": "US Strategic Bombing Survey, Summary Report (European War)",
+              "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47072/pdf/GOVPUB-D301-PURL-LPS47072.pdf",
+              "locator": "The Ball-Bearing Industry, printed p. 15, output at Schweinfurt and wider industrial consequences",
+              "kind": "1945 official survey using industrial records and interviews"
+            }
+          ]
+        },
+        {
+          "date": "1943-10-14",
+          "title": "What did the October escort and diversion reports establish?",
+          "mission": "The 353rd and 56th Fighter Groups escorted the two B-17 task forces. The 352nd rendezvoused with the 93rd and 392nd Bombardment Groups' B-24s. Weather broke up B-24 assembly and only 21 of the 29 dispatched flew the subsequent diversion toward the Frisian Islands.",
+          "effect": "303rd crews reported P-47s turning back for fuel. The Werneck school diary independently records German fighters and flak during the approach from the west. Schweinfurt's local raid history lists hits on the bearing works, a malt factory and Oberndorf.",
+          "limit": "The headquarters account says the planned withdrawal escort could not take off. The B-24 diversion belongs outside the main B-17 count. The German observers do not identify which American group they saw.",
+          "rosterIds": [
+            "schweinfurt-b17",
+            "schweinfurt-october-diversion",
+            "october-mission-115-fighter-support"
+          ],
+          "sources": [
+            {
+              "name": "Headquarters, VIII Bomber Command, Narrative of Operations, 14 October 1943",
+              "url": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "locator": "115th operation, printed pp. 4–5 (scan pp. 13–14), Fighter Escort and Mission No. 3 – Diversion",
+              "kind": "wartime headquarters report"
+            },
+            {
+              "name": "303rd Bombardment Group, mission 78",
+              "url": "https://www.303rdbg.com/missionreports/078.pdf",
+              "locator": "14 October 1943, formation, early returns and fighter opposition",
+              "kind": "group history and mission record compilation"
+            },
+            {
+              "name": "Unteroffizierschule 3, Werneck, war diary extract",
+              "url": "https://verymiscellaneous.blogspot.com/2011/05/schweinfurt-14101943-black-thursday.html",
+              "locator": "14 October 1943, report p. 104, transcription attributed to Franz Buch (1987), original references given as RL 205 and 206",
+              "kind": "later transcription of a wartime German observer diary"
+            },
+            {
+              "name": "Volksbund Deutsche Kriegsgräberfürsorge, Luftangriffe auf Schweinfurt",
+              "url": "https://unterfranken.volksbund.de/fileadmin/redaktion/Bayern/BV_Unterfranken/Projekte/Bildung/Projekte_Bildung_Kriegsgraeberstaetten-Schweinfurt.pdf",
+              "locator": "Air-raid table, entry for 14 October citing Ludwig Wiener, Schweinfurt sollte sterben",
+              "kind": "German local history and war-graves documentation"
+            }
+          ]
+        },
+        {
+          "date": "1943-10-14",
+          "title": "Why are there two German defensive effort totals?",
+          "mission": "Jagddivisionen 1 through 5 supplied fighters against the American operation. Schmid reproduced the differing contemporary corps and command returns.",
+          "effect": "The I. Jagdkorps diary recorded 567 aircraft committed. The wider Luftwaffenbefehlshaber Mitte return gave 833 and included the 7. Jagddivision. Schmid lists another 49 from Luftflotte 3.",
+          "limit": "Command boundaries differ and neither series provides a unique-aircraft roster over Schweinfurt. Divisional participation cannot attribute American losses to a Geschwader or Gruppe.",
+          "rosterIds": [
+            "schweinfurt-october-jagddivisionen",
+            "schweinfurt-b17"
+          ],
+          "sources": [
+            {
+              "name": "Josef Schmid, German Air Defense in World War II, vol. I",
+              "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+              "locator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October",
+              "kind": "USAF historical study by a former German commander using German wartime returns"
+            },
+            {
+              "name": "Headquarters, VIII Bomber Command, Narrative of Operations, 14 October 1943",
+              "url": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "locator": "Operation 115, Missions 1–3, diversionary B-24 force, weather and preliminary assessment",
+              "kind": "wartime headquarters report"
+            }
+          ]
+        },
+        {
+          "date": "1943-10-14",
+          "title": "How much of the bearing industry was destroyed?",
+          "mission": "The 303rd Bombardment Group again flew against Schweinfurt. The command used reconnaissance photographs to estimate that the raid had destroyed 75 percent of local bearing production capacity.",
+          "effect": "The RAF history's subsequent comparison with German records gives about 20 percent of finished stocks and 3.5 percent of machinery damaged in the October operation. These figures measure different things from the wartime estimate.",
+          "limit": "The estimates do not identify damage attributable to the 303rd. A factory's damaged machinery, stock on hand, later output and national war production must each be measured separately.",
+          "rosterIds": [
+            "schweinfurt-b17"
+          ],
+          "sources": [
+            {
+              "name": "Headquarters, VIII Bomber Command, Narrative of Operations, 14 October 1943",
+              "url": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "locator": "Operation 115, Missions 1–3, diversionary B-24 force, weather and preliminary assessment",
+              "kind": "wartime headquarters report"
+            },
+            {
+              "name": "303rd Bombardment Group, mission 78",
+              "url": "https://www.303rdbg.com/missionreports/078.pdf",
+              "locator": "14 October 1943, formation, early returns and fighter opposition",
+              "kind": "group history and mission record compilation"
+            },
+            {
+              "name": "RAF Air Historical Branch, The RAF in the Bombing Offensive Against Germany, vol. V",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/raf-in-the-bombing-offensive-against-germany-vol-v-the-full-offensive-february-1943-to-february-1944/",
+              "locator": "Printed pp. 143–144, damage at Schweinfurt in the August and October attacks, and reassessment from German records",
+              "kind": "official historical narrative with German industrial evidence"
+            },
+            {
+              "name": "US Strategic Bombing Survey, Summary Report (European War)",
+              "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47072/pdf/GOVPUB-D301-PURL-LPS47072.pdf",
+              "locator": "The Ball-Bearing Industry, printed p. 15, output at Schweinfurt and wider industrial consequences",
+              "kind": "1945 official survey using industrial records and interviews"
+            }
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "schweinfurt-august-first-wing",
+          "label": "Schweinfurt-bound B-17 groups, 17 August",
+          "date": "1943-08-17",
+          "force": "VIII Bomber Command",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "dispatched",
+          "scope": "1st Bombardment Wing groups in the Schweinfurt task force",
+          "total": 9,
+          "basis": "bounded source count",
+          "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+          "locator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft",
+          "sourceClass": "wartime headquarters report",
+          "note": "Count by destination assigned. Individual aircraft could return early. The Regensburg shuttle forms a separate population. Across the wing, 188 attacked: 183 at Schweinfurt and five elsewhere.",
+          "members": [
+            {
+              "unit": "91st Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "24 B-17s dispatched, 9 recorded as attacking, 10 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "92nd Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "22 B-17s dispatched, 21 recorded as attacking, 2 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "303rd Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "29 B-17s dispatched, 27 recorded as attacking, 0 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft",
+              "stations": [
+                "molesworth"
+              ],
+              "place": "Molesworth",
+              "source": "https://www.rafweb.org/Stations/Stations-M.htm",
+              "locator": "Molesworth, location and 303rd Bomb Group station dates, September 1942 to June 1945."
+            },
+            {
+              "unit": "305th Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "29 B-17s dispatched, 27 recorded as attacking, 2 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "306th Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "30 B-17s dispatched, 30 recorded as attacking, 0 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft",
+              "stations": [
+                "thurleigh"
+              ],
+              "place": "Thurleigh",
+              "source": "https://www.dafhistory.af.mil/Portals/16/documents/Timelines/World%20War%20II/usaaf_bases_in_united_kingdom.pdf?ver=2016-08-30-150752-303",
+              "locator": "USAAF bases in the United Kingdom, station 111, 306th Bomb Group."
+            },
+            {
+              "unit": "351st Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "28 B-17s dispatched, 26 recorded as attacking, 2 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "379th Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "24 B-17s dispatched, 18 recorded as attacking, 4 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "381st Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "26 B-17s dispatched, 18 recorded as attacking, 11 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "384th Bombardment Group",
+              "parent": "1st Bombardment Wing",
+              "activity": "18 B-17s dispatched, 12 recorded as attacking, 5 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            }
+          ]
+        },
+        {
+          "id": "regensburg-august-fourth-wing",
+          "label": "Regensburg-bound B-17 groups, 17 August",
+          "date": "1943-08-17",
+          "force": "VIII Bomber Command",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "dispatched",
+          "scope": "4th Bombardment Wing groups in the Regensburg shuttle task force",
+          "total": 7,
+          "basis": "bounded source count",
+          "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+          "locator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft",
+          "sourceClass": "wartime headquarters report",
+          "note": "The task force continued towards North Africa. Its losses and dispatches have a separate denominator from the Schweinfurt-bound force. The wing recorded 127 attacking, of which 126 bombed Regensburg and one a target of opportunity.",
+          "members": [
+            {
+              "unit": "94th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "21 B-17s dispatched, 20 recorded as attacking, 1 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "95th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "21 B-17s dispatched, 14 recorded as attacking, 4 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "96th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "21 B-17s dispatched, 19 recorded as attacking, 0 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "100th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "21 B-17s dispatched, 14 recorded as attacking, 9 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft",
+              "stations": [
+                "thorpe-abbotts"
+              ],
+              "place": "Thorpe Abbotts",
+              "source": "https://100thbg.com/casualty-report/?casualtyreport_id=18",
+              "locator": "Casualty record for 17 August, MACR 00683, Base and Squadron fields."
+            },
+            {
+              "unit": "385th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "21 B-17s dispatched, 19 recorded as attacking, 3 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "388th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "21 B-17s dispatched, 21 recorded as attacking, 1 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            },
+            {
+              "unit": "390th Bombardment Group",
+              "parent": "4th Bombardment Wing",
+              "activity": "20 B-17s dispatched, 20 recorded as attacking, 6 recorded lost in the command table.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607c4be012650f14725a4c87/1618758641398/430817026a.pdf",
+              "activityLocator": "Operation 84, task-force composition, objectives, results, fighter support and missing aircraft"
+            }
+          ]
+        },
+        {
+          "id": "schweinfurt-october-diversion",
+          "label": "B-24 groups whose October mission became a diversion",
+          "date": "1943-10-14",
+          "force": "2nd Bombardment Division, Eighth Air Force",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "dispatched on the original attack mission",
+          "scope": "B-24 diversion, Mission 3 in the record of operation 115",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+          "locator": "Operation 115, Missions 1–3, diversionary B-24 force, weather and preliminary assessment",
+          "sourceClass": "wartime headquarters report",
+          "note": "Headquarters lists 15 aircraft from the 93rd and 14 from the 392nd. Only 21 of the 29 subsequently flew the sweep toward the Frisian Islands. The source does not apportion these 21 between the groups.",
+          "members": [
+            {
+              "unit": "93rd Bombardment Group",
+              "parent": "2nd Bombardment Division",
+              "activity": "15 B-24s listed in the dispatch table. The report does not say how many of these aircraft joined the subsequent diversion.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "activityLocator": "Operation 115, Missions 1–3, diversionary B-24 force, weather and preliminary assessment"
+            },
+            {
+              "unit": "392nd Bombardment Group",
+              "parent": "2nd Bombardment Division",
+              "activity": "14 B-24s listed in the dispatch table. The report does not say how many of these aircraft joined the subsequent diversion.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "activityLocator": "Operation 115, Missions 1–3, diversionary B-24 force, weather and preliminary assessment"
+            }
+          ]
+        },
+        {
+          "id": "schweinfurt-october-jagddivisionen",
+          "label": "Jagddivisionen contributing day or night fighters",
+          "date": "1943-10-14",
+          "force": "Luftwaffe",
+          "side": "Axis",
+          "echelon": "Jagddivision",
+          "event": "contributed fighters",
+          "scope": "Five divisions named together in Schmid's account of the fighting on 14 October",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+          "locator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October",
+          "sourceClass": "USAF historical study by a former German commander using German wartime returns",
+          "note": "Another return includes 7. Jagddivision and a further Luftflotte 3 contribution. This row bounds the five named divisions in the deployment narrative. Aircraft and Gruppen per division remain unresolved.",
+          "members": [
+            {
+              "unit": "1. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Identified among the five divisions supplying fighters for the operation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+              "activityLocator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October"
+            },
+            {
+              "unit": "2. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Identified among the five divisions supplying fighters for the operation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+              "activityLocator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October"
+            },
+            {
+              "unit": "3. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Identified among the five divisions supplying fighters for the operation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+              "activityLocator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October"
+            },
+            {
+              "unit": "4. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Identified among the five divisions supplying fighters for the operation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+              "activityLocator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October"
+            },
+            {
+              "unit": "5. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Identified among the five divisions supplying fighters for the operation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-056.pdf",
+              "activityLocator": "Section 11, pp. 50–52, 14 October 1943, I. Jagdkorps war diary and Luftwaffenbefehlshaber Mitte Ic return of 15 October"
+            }
+          ]
+        },
+        {
+          "id": "august-daylight-nachtjagd",
+          "label": "Night-fighter Geschwader represented in the August daylight response",
+          "date": "1943-08-17",
+          "force": "Luftwaffe Nachtjagd",
+          "side": "Axis",
+          "echelon": "Geschwader",
+          "event": "contributed elements to a daylight interception",
+          "scope": "Named night-fighter parent wings represented against the combined Regensburg and Schweinfurt missions",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+          "locator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte",
+          "sourceClass": "historical reconstruction from crew testimony, claims returns and US loss identifications",
+          "note": "Boiten also reports elements of nine day-fighter Geschwader. The named night-fighter wings represent contributing elements. Each could operate against a different task force.",
+          "members": [
+            {
+              "unit": "Nachtjagdgeschwader 1",
+              "parent": "Luftwaffe Nachtjagd",
+              "activity": "One or more elements were deployed against the combined raids.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte"
+            },
+            {
+              "unit": "Nachtjagdgeschwader 2",
+              "parent": "Luftwaffe Nachtjagd",
+              "activity": "One or more elements were deployed against the combined raids.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte"
+            },
+            {
+              "unit": "Nachtjagdgeschwader 4",
+              "parent": "Luftwaffe Nachtjagd",
+              "activity": "One or more elements were deployed against the combined raids.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte"
+            },
+            {
+              "unit": "Nachtjagdgeschwader 6",
+              "parent": "Luftwaffe Nachtjagd",
+              "activity": "One or more elements were deployed against the combined raids.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte"
+            },
+            {
+              "unit": "Nachtjagdgeschwader 101",
+              "parent": "Luftwaffe Nachtjagd",
+              "activity": "One or more elements were deployed against the combined raids.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte"
+            }
+          ]
+        },
+        {
+          "id": "august-daylight-njg1",
+          "label": "NJG 1 Gruppen identified on the August raids",
+          "date": "1943-08-17",
+          "force": "Nachtjagdgeschwader 1",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "intercepted",
+          "scope": "Individually documented Gruppen of NJG 1 in the Regensburg and Schweinfurt daylight combats",
+          "total": 2,
+          "basis": "identified lower bound",
+          "source": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+          "locator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte",
+          "sourceClass": "historical reconstruction from crew testimony, claims returns and US loss identifications",
+          "note": "These entries supply confirmed examples of airborne activity. They do not give the total flight strength of the five night-fighter wings.",
+          "members": [
+            {
+              "unit": "I./NJG 1",
+              "parent": "Nachtjagdgeschwader 1",
+              "place": "Venlo-Herongen",
+              "activity": "Scrambled from Venlo. The unit filed two B-17 claims, with subsequent qualifications to their confirmation.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte",
+              "stations": [
+                "venlo"
+              ]
+            },
+            {
+              "unit": "II./NJG 1",
+              "parent": "Nachtjagdgeschwader 1",
+              "place": "Saint-Trond (Brustem)",
+              "activity": "Crews took off from St. Trond. Individual participants and repeat sorties against different bomber streams can be traced.",
+              "activitySource": "https://wingleader.co.uk/wp-content/uploads/2022/04/NCA1943Part2samplepages.pdf",
+              "activityLocator": "Printed pp. 62–63, 17 August 1943, German night fighter units, OKL confirmations and accounts from Fries, Hager and Barte",
+              "stations": [
+                "st-trond"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "august-planned-escort",
+          "label": "P-47 groups in the August escort plan",
+          "date": "1943-08-17",
+          "force": "VIII Fighter Command",
+          "side": "Allied",
+          "echelon": "fighter group",
+          "event": "scheduled for escort",
+          "scope": "Four named groups assigned penetration support to the two bomber streams",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.303rdbg.com/missionreports/060.pdf",
+          "locator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective",
+          "sourceClass": "group history and mission record compilation",
+          "note": "The 56th and 353rd also had a scheduled withdrawal role. The 240 P-47s for the inbound leg and 93 for the return were planned strengths. The headquarters result counts US support in squadrons.",
+          "members": [
+            {
+              "unit": "4th Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Scheduled on the inbound leg.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective",
+              "stations": [
+                "debden"
+              ],
+              "place": "Debden",
+              "source": "https://www.4thfightergroupassociation.org/4th-fighter-group-almanac.html",
+              "locator": "4th Fighter Group Almanac, Station F-356, September 1942–July 1945."
+            },
+            {
+              "unit": "56th Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Scheduled on the inbound and return legs.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective"
+            },
+            {
+              "unit": "78th Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Scheduled on the inbound leg.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective"
+            },
+            {
+              "unit": "353rd Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Scheduled on the inbound and return legs.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective"
+            }
+          ]
+        },
+        {
+          "id": "august-diversion-b26-plan",
+          "label": "B-26 groups in the August airfield diversion plan",
+          "date": "1943-08-17",
+          "force": "VIII Air Support Command",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "scheduled for diversion",
+          "scope": "B-26 groups named in the planned diversion against Bryas-Sud and Poix-Nord",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.303rdbg.com/missionreports/060.pdf",
+          "locator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective",
+          "sourceClass": "group history and mission record compilation",
+          "note": "The plan called for 108 B-26s. The headquarters narrative confirms B-26 attacks on the two airfields but gives no group-by-group sortie return.",
+          "members": [
+            {
+              "unit": "386th Bombardment Group",
+              "parent": "VIII Air Support Command",
+              "activity": "Included in the scheduled 108-aircraft B-26 diversion.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective"
+            },
+            {
+              "unit": "387th Bombardment Group",
+              "parent": "VIII Air Support Command",
+              "activity": "Included in the scheduled 108-aircraft B-26 diversion.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective"
+            },
+            {
+              "unit": "323rd Bombardment Group",
+              "parent": "VIII Air Support Command",
+              "activity": "Included in the scheduled 108-aircraft B-26 diversion.",
+              "activitySource": "https://www.303rdbg.com/missionreports/060.pdf",
+              "activityLocator": "17 August 1943, Schweinfurt, dispatch and VKF No. 1 objective"
+            }
+          ]
+        },
+        {
+          "id": "october-mission-115-fighter-support",
+          "label": "US fighter groups reported on the October penetration legs",
+          "date": "1943-10-14",
+          "force": "VIII Fighter Command",
+          "side": "Allied",
+          "echelon": "fighter group",
+          "event": "flew penetration support",
+          "scope": "US groups reported separately for B-17 Missions 1–2 and the B-24 rendezvous for Mission 3",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+          "locator": "115th operation, printed pp. 4–5 (scan pp. 13–14), Fighter Escort and Mission No. 3 – Diversion",
+          "sourceClass": "wartime headquarters report",
+          "note": "The 353rd and 56th supplied 103 P-47s in total to the B-17s. A further 56 P-47s of the 352nd rendezvoused with the B-24s. The planned B-17 withdrawal escort could not assemble in cloud.",
+          "members": [
+            {
+              "unit": "353rd Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Flew with the first B-17 task force as far as Düren. German fighters engaged the escort near Walcheren.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "activityLocator": "115th operation, printed pp. 4–5 (scan pp. 13–14), Fighter Escort and Mission No. 3 – Diversion"
+            },
+            {
+              "unit": "56th Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Flew with the second B-17 task force as far as Dison and reported less opposition than the 353rd.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "activityLocator": "115th operation, printed pp. 4–5 (scan pp. 13–14), Fighter Escort and Mission No. 3 – Diversion"
+            },
+            {
+              "unit": "352nd Fighter Group",
+              "parent": "VIII Fighter Command",
+              "activity": "Fifty-six P-47s rendezvoused with the B-24s before weather frustrated their planned attack.",
+              "activitySource": "https://static1.squarespace.com/static/5c69f429d745627864a2059c/t/607ce2b2d5cba32f723adea1/1618797256167/431014046a.pdf",
+              "activityLocator": "115th operation, printed pp. 4–5 (scan pp. 13–14), Fighter Escort and Mission No. 3 – Diversion"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "The August plan names four P-47 groups. The October result names separate groups covering the two B-17 task forces and the B-24 rendezvous. Of 29 B-24s dispatched, only 21 flew the diversion.",
+          "losses": "August losses split by route and group. Of 60 B-17s lost in October the headquarters account classed two as flak, eighteen as enemy aircraft and forty as cause unknown.",
+          "effect": "Group records identify assigned works and early returns. The command's October estimate of industrial destruction can be checked against records from the factories."
+        },
+        "Axis": {
+          "effort": "Five named night-fighter wings contributed elements in daylight in August. Two NJG 1 Gruppen can be followed by sortie. In October, five fighter divisions and competing command return totals are identified.",
+          "losses": "Boiten records the return of damaged II./NJG 1 aircraft at St. Trond on 17 August. Contemporary confirmation decisions qualify the initial German claims. A loss roster for the entire October response remains open.",
+          "effect": "The postwar industrial survey distinguishes September Schweinfurt output from the effect on German war production. The RAF history separates stock loss from machine damage."
+        }
+      }
+    },
+    "bigweek": {
+      "cases": [
+        {
+          "date": "1944-02-19/20",
+          "title": "What did the Canadian night force contribute at Leipzig?",
+          "mission": "No. 6 Group supplied 31 Lancasters from two squadrons and 98 Halifaxes from ten squadrons to the opening night raid. No. 419 Squadron's Form 541 records its own crews' work.",
+          "effect": "The group reconstruction identifies eighteen crews that failed to return, totalling 128 missing crew members. The original 419 diary allows individual sorties to be checked inside this national group.",
+          "limit": "The missing count describes the first reporting outcome. The Canadian group's 129 aircraft exclude other Bomber Command groups. This night operation preceded the Eighth Air Force's daylight attack.",
+          "rosterIds": [
+            "argument-6group-leipzig"
+          ],
+          "sources": [
+            {
+              "name": "Richard Koval, 6 Group Bomber Command",
+              "url": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "locator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing",
+              "kind": "group history compiled from operations records"
+            },
+            {
+              "name": "No. 419 Squadron RCAF, Operations Record Book, Form 541",
+              "url": "https://www.bombercommandmuseumarchives.ca/squadronorb_419_f541/419_1944-02.pdf",
+              "locator": "February 1944, Detail of Work Carried Out, operation to Leipzig on 19/20 February",
+              "kind": "digitised wartime squadron record"
+            }
+          ]
+        },
+        {
+          "date": "1944-02-20",
+          "title": "Which German divisions met the daylight offensive?",
+          "mission": "The German account places 1. and 2. Jagddivision against the northern force and 2. and 3. Jagddivision against the main force. The 2. Jagddivision appears in both contexts.",
+          "effect": "The German account separates 362 fighters employed from 155 that actually entered combat. A commitment total would overstate the number reported to have fought.",
+          "limit": "Wood's wider German unit table also lists Gruppen from the fourth, fifth and seventh divisions and Ostmark. Its entries measure claims and losses by unit. They cannot supply a divisional split of the 155 aircraft reported in combat by the corps.",
+          "rosterIds": [
+            "argument-20-feb-jagddivisionen",
+            "argument-20-feb-gruppen"
+          ],
+          "sources": [
+            {
+              "name": "Josef Schmid, German Air Defense in World War II, vol. II",
+              "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-008.pdf",
+              "locator": "Printed pp. 105–107 and 115–117, 20 and 24 February battle accounts and German command returns",
+              "kind": "USAF historical study by a former German commander using German wartime returns"
+            },
+            {
+              "name": "Tony Wood, German combat claims and casualty lists, in Thierry Kleinprintz and colleagues' study of John Mattie",
+              "url": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "locator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage",
+              "kind": "secondary compilation of German combat claims and casualties"
+            }
+          ]
+        },
+        {
+          "date": "1944-02-21",
+          "title": "Can the German claimant for one missing American escort be identified?",
+          "mission": "John Mattie of the 353rd Fighter Squadron, 354th Fighter Group, lost P-51 43-12161 during the escort operation and became a prisoner. Missing Air Crew Report 2329 and his diary survive.",
+          "effect": "Heinz Bär of 6./JG 1 received official German credit for a P-51 in the area. A comparison of the two pilots' records favours Bär, with another claim by Hans-Heinrich König of 3./JG 11 still unresolved.",
+          "limit": "The records establish Mattie's fate and Bär's claim independently. The authors identify the connection as probable. The claim record lacks a matching American serial.",
+          "rosterIds": [],
+          "sources": [
+            {
+              "name": "John D. Mattie, wartime diary and Missing Air Crew Report 2329",
+              "url": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "locator": "Diary pp. 25–83 and appendix C, report 2329, pp. 86–90",
+              "kind": "wartime US airman diary and missing crew report reproduced together"
+            },
+            {
+              "name": "Heinz Bär, Flugbuch, and German confirmation list",
+              "url": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "locator": "Appendices D–E, logbook p. 91 and claims for 21 February, including film C.2025/I, Anerkennung no. 62. See the authors’ comparison on p. 23.",
+              "kind": "German wartime flight log facsimile and transcribed claims examined in a later reconstruction"
+            }
+          ]
+        },
+        {
+          "date": "1944-02-24",
+          "title": "Steyr and Fiume had different bomber and escort histories",
+          "mission": "The 2nd, 97th and 301st Bombardment Groups struck Steyr with 87 B-17s. Weather separated the 99th, whose 27 attacked Fiume. The 5th Wing reported that attacks on the Steyr bombers continued until the four withdrawal fighter groups appeared south of the target.",
+          "effect": "The wing recorded 16 B-17s lost in the Steyr operation, ten from the 2nd Group. The municipal account for Steyr records 212 dead, 371 injured and over 1,000 homeless. It describes the destruction of Building M, light damage to the engine factory and an intact heat-treatment section.",
+          "limit": "The Steyr account cannot attribute individual impacts to a bomber group. The German I. Jagdkorps figure of 336 on 24 February covers its own reporting area and includes repeat sorties. It cannot establish the fighter force over Steyr.",
+          "rosterIds": [
+            "argument-5bw-steyr-fiume",
+            "argument-rearguard"
+          ],
+          "sources": [
+            {
+              "name": "5th Bombardment Wing, February 1944 operations",
+              "url": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+              "locator": "24 February, Steyr and alternate Fiume, group assignments, bombing times and losses",
+              "kind": "historical transcription of wing operations"
+            },
+            {
+              "name": "Walter Zambal, Historical source material and eyewitness reports of the crash of a US Air-Force bomber in Waidhofen/Ybbs–St. Leonhard",
+              "url": "https://login.waidhofen.at/getmedia/4779/3",
+              "locator": "Printed pp. 5–6 and note 11, citing Volker Lutz's 1985 municipal bulletin account of Steyr on 23 and 24 February separately",
+              "kind": "local historical study reproducing a municipal account"
+            },
+            {
+              "name": "Josef Schmid, German Air Defense in World War II, vol. II",
+              "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-008.pdf",
+              "locator": "Printed pp. 105–107 and 115–117, 20 and 24 February battle accounts and German command returns",
+              "kind": "USAF historical study by a former German commander using German wartime returns"
+            }
+          ]
+        },
+        {
+          "date": "1944-02-24",
+          "title": "What could reconnaissance establish about Gotha?",
+          "mission": "The 392nd and 445th Bombardment Groups flew B-24s against the Gotha aircraft works. Hal Turell of the 445th's 703rd Squadron recalled that thirteen of the group's 25 aircraft failed to return.",
+          "effect": "The post-strike reconnaissance photograph shows damage to the works. The 392nd briefing's estimate of potential enemy aircraft production forgone was an expectation contingent on the duration of disruption.",
+          "limit": "Structural damage and American group losses are observable in different records. They cannot establish a definite number of aircraft the factory failed to deliver or which defending formation shot down each bomber.",
+          "rosterIds": [
+            "argument-gotha-liberators"
+          ],
+          "sources": [
+            {
+              "name": "Hal Turell, 703rd Bombardment Squadron, on the Gotha mission",
+              "url": "https://m.445bg.org/gotha.html",
+              "locator": "24 February 1944 account, editorial introduction and passage after bomb release",
+              "kind": "participant recollection published by the 445th Bomb Group"
+            },
+            {
+              "name": "392nd Bomb Group Memorial Association, Gotha",
+              "url": "https://www.b24.net/24February1944.htm",
+              "locator": "24 February 1944, target briefing and group mission history",
+              "kind": "group history with contemporary briefing materials"
+            },
+            {
+              "name": "National Museum of the USAF, Big Week: February 20–25, 1944",
+              "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519678/big-week-february-20-25-1944/",
+              "locator": "Gotha works, post-strike reconnaissance photograph and caption",
+              "kind": "museum interpretation and contemporary reconnaissance photograph"
+            }
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "argument-6group-leipzig",
+          "label": "No. 6 Group squadrons dispatched to Leipzig",
+          "date": "1944-02-19/20",
+          "force": "RAF Bomber Command, No. 6 (RCAF) Group",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "dispatched",
+          "scope": "Canadian group contribution to the opening Leipzig night operation",
+          "total": 12,
+          "basis": "bounded source count",
+          "source": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+          "locator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing",
+          "sourceClass": "group history compiled from operations records",
+          "note": "Two Lancaster and ten Halifax squadrons contributed to this one group's dispatch. The night and following daylight efforts use different commands and denominators.",
+          "members": [
+            {
+              "unit": "No. 408 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Lancaster units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing",
+              "stations": [
+                "linton-on-ouse"
+              ],
+              "place": "Linton-on-Ouse",
+              "source": "https://www.rafweb.org/Stations/Stations-L.htm",
+              "locator": "Linton-on-Ouse, station location and 1943–45 occupancy by Nos. 408 and 426."
+            },
+            {
+              "unit": "No. 426 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Lancaster units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing",
+              "stations": [
+                "linton-on-ouse"
+              ],
+              "place": "Linton-on-Ouse",
+              "source": "https://www.rafweb.org/Stations/Stations-L.htm",
+              "locator": "Linton-on-Ouse, station location and 1943–45 occupancy by Nos. 408 and 426."
+            },
+            {
+              "unit": "No. 419 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 420 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 424 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 425 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 427 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 428 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 429 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 431 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing",
+              "stations": [
+                "croft"
+              ],
+              "place": "Croft",
+              "source": "https://www.rafweb.org/Stations/Stations-C.htm",
+              "locator": "Croft, North Yorkshire, station location. Nos. 431 and 434 arrived in December 1943."
+            },
+            {
+              "unit": "No. 433 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing"
+            },
+            {
+              "unit": "No. 434 Squadron RCAF",
+              "parent": "No. 6 (RCAF) Group",
+              "activity": "The group return names this squadron among the Halifax units dispatched.",
+              "activitySource": "https://www.6bombergroup.ca/Feb44/Feb19~2044.html",
+              "activityLocator": "19/20 February 1944, Leipzig, Canadian squadron list, aircraft and crews missing",
+              "stations": [
+                "croft"
+              ],
+              "place": "Croft",
+              "source": "https://www.rafweb.org/Stations/Stations-C.htm",
+              "locator": "Croft, North Yorkshire, station location. Nos. 431 and 434 arrived in December 1943."
+            }
+          ]
+        },
+        {
+          "id": "argument-20-feb-jagddivisionen",
+          "label": "German fighter divisions in the 20 February daytime account",
+          "date": "1944-02-20",
+          "force": "Luftwaffe Reich air defence",
+          "side": "Axis",
+          "echelon": "Jagddivision",
+          "event": "responded",
+          "scope": "German divisions explicitly named against the northern and main attack formations",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-008.pdf",
+          "locator": "Printed pp. 105–107 and 115–117, 20 and 24 February battle accounts and German command returns",
+          "sourceClass": "USAF historical study by a former German commander using German wartime returns",
+          "note": "Second Jagddivision appears in both engagements and counts once. The figures employed and in combat are aircraft figures for the command account.",
+          "members": [
+            {
+              "unit": "1. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Engaged the northern formation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-008.pdf",
+              "activityLocator": "Printed pp. 105–107 and 115–117, 20 and 24 February battle accounts and German command returns"
+            },
+            {
+              "unit": "2. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Figures in the accounts of the northern and main formations.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-008.pdf",
+              "activityLocator": "Printed pp. 105–107 and 115–117, 20 and 24 February battle accounts and German command returns"
+            },
+            {
+              "unit": "3. Jagddivision",
+              "parent": "Luftwaffe",
+              "activity": "Engaged the main formation.",
+              "activitySource": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-008.pdf",
+              "activityLocator": "Printed pp. 105–107 and 115–117, 20 and 24 February battle accounts and German command returns"
+            }
+          ]
+        },
+        {
+          "id": "argument-5bw-steyr-fiume",
+          "label": "5th Bombardment Wing groups dispatched toward Steyr",
+          "date": "1944-02-24",
+          "force": "Fifteenth Air Force",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "dispatched",
+          "scope": "5th Wing groups assigned to Steyr, including the group that bombed Fiume",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+          "locator": "24 February, Steyr and alternate Fiume, group assignments, bombing times and losses",
+          "sourceClass": "historical transcription of wing operations",
+          "note": "Three groups attacked the assigned target and a fourth bombed an alternate. These records concern the B-17 wing. Its four supporting fighter groups are recorded separately.",
+          "members": [
+            {
+              "unit": "2nd Bombardment Group",
+              "parent": "5th Bombardment Wing",
+              "activity": "Bombed Steyr as part of the 87 B-17 force.",
+              "activitySource": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+              "activityLocator": "24 February, Steyr and alternate Fiume, group assignments, bombing times and losses"
+            },
+            {
+              "unit": "97th Bombardment Group",
+              "parent": "5th Bombardment Wing",
+              "activity": "Bombed Steyr as part of the 87 B-17 force.",
+              "activitySource": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+              "activityLocator": "24 February, Steyr and alternate Fiume, group assignments, bombing times and losses"
+            },
+            {
+              "unit": "301st Bombardment Group",
+              "parent": "5th Bombardment Wing",
+              "activity": "Bombed Steyr as part of the 87 B-17 force.",
+              "activitySource": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+              "activityLocator": "24 February, Steyr and alternate Fiume, group assignments, bombing times and losses"
+            },
+            {
+              "unit": "99th Bombardment Group",
+              "parent": "5th Bombardment Wing",
+              "activity": "Separated in bad weather. Twenty-seven B-17s bombed Fiume.",
+              "activitySource": "https://15thaf.org/5th_BW/Missions/February%201944/February%201944.html",
+              "activityLocator": "24 February, Steyr and alternate Fiume, group assignments, bombing times and losses"
+            }
+          ]
+        },
+        {
+          "id": "argument-gotha-liberators",
+          "label": "B-24 groups checked against Gotha mission records",
+          "date": "1944-02-24",
+          "force": "Eighth Air Force, 2nd Bombardment Division",
+          "side": "Allied",
+          "echelon": "bombardment group",
+          "event": "flew against Gotha",
+          "scope": "Groups with individually checked mission histories for the Gotha aircraft works",
+          "total": 2,
+          "basis": "identified lower bound",
+          "source": "https://m.445bg.org/gotha.html",
+          "locator": "24 February 1944 account, editorial introduction and passage after bomb release",
+          "sourceClass": "participant recollection published by the 445th Bomb Group",
+          "note": "Two group histories have been checked. The mission histories alone do not enumerate the whole divisional force.",
+          "members": [
+            {
+              "unit": "445th Bombardment Group",
+              "parent": "2nd Bombardment Division",
+              "activity": "Navigator Hal Turell recalls thirteen of the group's 25 B-24s failing to return from Gotha.",
+              "activitySource": "https://m.445bg.org/gotha.html",
+              "activityLocator": "24 February 1944 account, editorial introduction and passage after bomb release",
+              "stations": [
+                "tibenham"
+              ],
+              "place": "Tibenham",
+              "source": "https://www.tibenhamairfield.co.uk/history",
+              "locator": "445th Bombardment Group operating at Tibenham from December 1943 to April 1945."
+            },
+            {
+              "unit": "392nd Bombardment Group",
+              "parent": "2nd Bombardment Division",
+              "source": "https://www.b24.net/24February1944.htm",
+              "locator": "24 February 1944, target briefing and group mission history",
+              "activity": "The unit briefing and mission record identify Gotha as the objective.",
+              "activitySource": "https://www.b24.net/24February1944.htm",
+              "activityLocator": "24 February 1944, target briefing and group mission history"
+            }
+          ]
+        },
+        {
+          "id": "argument-20-feb-gruppen",
+          "label": "German Gruppen identified in the 20 February claims and casualty table",
+          "date": "1944-02-20",
+          "force": "Luftwaffe Reich air defence",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "listed in the dated claims and casualty register",
+          "scope": "All numbered Gruppen in the Reich air-defence section of Wood's 20 February table, including night and twin-engined fighters",
+          "total": 27,
+          "basis": "bounded source count",
+          "source": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+          "locator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage",
+          "sourceClass": "secondary compilation of German combat claims and casualties",
+          "note": "Headquarters detachments and the two factory Jagdstaffeln are separate echelons and excluded. A dash in a loss column does not establish that a Gruppe stayed on the ground. The table covers a wider command area than the 362 aircraft in Schmid's corps account. Base is the register's station, not the site of a loss.",
+          "members": [
+            {
+              "unit": "III./JG 54",
+              "parent": "Jagdgeschwader 54",
+              "place": "Ludwigslust",
+              "activity": "Aircraft in the 60–100 percent damage column: 8. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./JG 302",
+              "parent": "Jagdgeschwader 302",
+              "place": "Jüterbog-Waldlager",
+              "activity": "Aircraft in the 60–100 percent damage column: 5. In the lower damage column: 3.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./NJG 5",
+              "parent": "Nachtjagdgeschwader 5",
+              "place": "Stendal",
+              "activity": "Aircraft in the 60–100 percent damage column: 3. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./NJG 5",
+              "parent": "Nachtjagdgeschwader 5",
+              "place": "Parchim",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "place": "Völkenrode",
+              "activity": "Aircraft in the 60–100 percent damage column: 6. In the lower damage column: 2.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "place": "Hildesheim",
+              "activity": "Aircraft in the 60–100 percent damage column: 2. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "III./ZG 26",
+              "parent": "Zerstörergeschwader 26",
+              "place": "Wunstorf",
+              "activity": "Aircraft in the 60–100 percent damage column: 10. In the lower damage column: 3.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage",
+              "stations": [
+                "wunstorf"
+              ]
+            },
+            {
+              "unit": "I./JG 11",
+              "parent": "Jagdgeschwader 11",
+              "place": "Husum",
+              "activity": "Aircraft in the 60–100 percent damage column: 2. In the lower damage column: 7.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./JG 11",
+              "parent": "Jagdgeschwader 11",
+              "place": "Wunstorf",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage",
+              "stations": [
+                "wunstorf"
+              ]
+            },
+            {
+              "unit": "III./JG 11",
+              "parent": "Jagdgeschwader 11",
+              "place": "Oldenburg",
+              "activity": "Aircraft in the 60–100 percent damage column: 2. In the lower damage column: 2.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Rotenburg",
+              "activity": "Aircraft in the 60–100 percent damage column: 4. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "place": "Rheine",
+              "activity": "Aircraft in the 60–100 percent damage column: 3. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "place": "Rheine",
+              "activity": "Aircraft in the 60–100 percent damage column: 4. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "III./JG 1",
+              "parent": "Jagdgeschwader 1",
+              "place": "Volkel",
+              "activity": "Aircraft in the 60–100 percent damage column: 2. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage",
+              "stations": [
+                "volkel"
+              ]
+            },
+            {
+              "unit": "I./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Mönchengladbach",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "IV./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Venlo-Herongen",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage",
+              "stations": [
+                "venlo"
+              ]
+            },
+            {
+              "unit": "II./JG 27",
+              "parent": "Jagdgeschwader 27",
+              "place": "Wiesbaden-Erbenheim",
+              "activity": "Aircraft in the 60–100 percent damage column: 2. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./NJG 6",
+              "parent": "Nachtjagdgeschwader 6",
+              "place": "Mainz-Finthen",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./NJG 6",
+              "parent": "Nachtjagdgeschwader 6",
+              "place": "Stuttgart-Echterdingen",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./JG 26",
+              "parent": "Jagdgeschwader 26",
+              "place": "Cambrai-Épinoy",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 3.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "III./JG 2",
+              "parent": "Jagdgeschwader 2",
+              "place": "Cormeilles",
+              "activity": "Aircraft in the 60–100 percent damage column: 2. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "III./JG 3",
+              "parent": "Jagdgeschwader 3",
+              "place": "Leipheim",
+              "activity": "Aircraft in the 60–100 percent damage column: 5. In the lower damage column: 0.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./JG 301",
+              "parent": "Jagdgeschwader 301",
+              "place": "Neubiberg"
+            },
+            {
+              "unit": "I./ZG 76",
+              "parent": "Zerstörergeschwader 76",
+              "place": "Ansbach",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "II./ZG 76",
+              "parent": "Zerstörergeschwader 76",
+              "place": "Neubiberg"
+            },
+            {
+              "unit": "III./ZG 76",
+              "parent": "Zerstörergeschwader 76",
+              "place": "Oettingen",
+              "activity": "Aircraft in the 60–100 percent damage column: 1. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            },
+            {
+              "unit": "I./JG 27",
+              "parent": "Jagdgeschwader 27",
+              "place": "Fels am Wagram",
+              "activity": "Aircraft in the 60–100 percent damage column: 0. In the lower damage column: 1.",
+              "activitySource": "https://www.354thpmfg.com/thierrykleinprint_bluemoon/bluemoon_TKleinprintz.pdf",
+              "activityLocator": "Appendix E, 20 February 1944 only, printed pp. 92–93, columns for unit, base, air combat claims and damage"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "The Canadian Leipzig night roster, the 5th Wing's Steyr and Fiume assignment, two Gotha group records and four withdrawal fighter groups cover distinct operations.",
+          "losses": "The Leipzig night count records missing Canadian crews. Steyr losses are separately bounded to the 5th Wing, and Gotha losses here cover the 445th Group.",
+          "effect": "B-17 records distinguish Steyr from Fiume. Gotha post-strike photography documents structural damage. A briefing forecast supplies no measured production loss."
+        },
+        "Axis": {
+          "effort": "The corps counted 362 fighters employed and 155 in combat on 20 February. A wider claims and casualty register identifies 27 Gruppen and their reported bases. The Austrian response on 24 February remains unresolved.",
+          "losses": "Wood gives separate damage columns for German Gruppen on 20 February. III./ZG 26 alone has ten aircraft in the 60–100 percent bracket and three at lower damage. These figures cannot verify individual Allied claims.",
+          "effect": "Steyr's municipal account distinguishes factory sections, casualties and housing losses. The evidence cannot disaggregate the effects of individual bomber or escort groups."
+        }
+      }
+    }
+  },
+  "stations": {
+    "venlo": {
+      "name": "Venlo-Herongen",
+      "lat": 51.36944,
+      "lon": 6.21389,
+      "source": "https://ww2.dk/Airfields%20-%20Netherlands.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45, Netherlands. Venlo entry, coordinates of the wartime airfield."
+    },
+    "st-trond": {
+      "name": "Saint-Trond (Brustem)",
+      "lat": 50.79444,
+      "lon": 5.2,
+      "source": "https://ww2.dk/Airfields%20-%20Belgium%20and%20Luxembourg.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45, Belgium and Luxembourg, p. 31, Saint-Trond."
+    },
+    "volkel": {
+      "name": "Volkel",
+      "lat": 51.65694,
+      "lon": 5.70278,
+      "source": "https://ww2.dk/Airfields%20-%20Netherlands.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45, Netherlands. Volkel entry, wartime field coordinates."
+    },
+    "wunstorf": {
+      "name": "Wunstorf",
+      "lat": 52.455,
+      "lon": 9.42889,
+      "source": "https://www.rafweb.org/Stations/Stations-W.htm",
+      "locator": "Wunstorf, location of the postwar RAF station on the former Luftwaffe field."
+    },
+    "molesworth": {
+      "name": "Molesworth",
+      "lat": 52.385,
+      "lon": -0.42083,
+      "source": "https://www.rafweb.org/Stations/Stations-M.htm",
+      "locator": "Molesworth, location and 303rd Bomb Group station dates, September 1942 to June 1945."
+    },
+    "thorpe-abbotts": {
+      "name": "Thorpe Abbotts",
+      "lat": 52.38139,
+      "lon": 1.2125,
+      "source": "https://www.rafweb.org/Stations/Stations-T.htm",
+      "locator": "Thorpe Abbotts, Norfolk, airfield location."
+    },
+    "tibenham": {
+      "name": "Tibenham",
+      "lat": 52.45639,
+      "lon": 1.15417,
+      "source": "https://www.rafweb.org/Stations/Stations-T.htm",
+      "locator": "Tibenham, Norfolk, wartime station location."
+    },
+    "thurleigh": {
+      "name": "Thurleigh",
+      "lat": 52.231067,
+      "lon": -0.459832,
+      "source": "https://historicengland.org.uk/listing/heritage-gateway/results/record/00514065-b008-44ba-a64b-c2fc78241ee5/MBD9268",
+      "locator": "Thurleigh Airfield, Bedford Borough Historic Environment Record MBD9268, latitude and longitude."
+    },
+    "croft": {
+      "name": "Croft",
+      "lat": 54.45417,
+      "lon": -1.5625,
+      "source": "https://www.rafweb.org/Stations/Stations-C.htm",
+      "locator": "Croft, North Yorkshire, station location. Nos. 431 and 434 arrived in December 1943."
+    },
+    "linton-on-ouse": {
+      "name": "Linton-on-Ouse",
+      "lat": 54.0375,
+      "lon": -1.25,
+      "source": "https://www.rafweb.org/Stations/Stations-L.htm",
+      "locator": "Linton-on-Ouse, station location and 1943–45 occupancy by Nos. 408 and 426."
+    }
+  }
+}

@@ -42,6 +42,7 @@
     $("assessment-forces").innerHTML=campaign.forces.map(f=>'<p><strong>'+esc(f.name)+'</strong> · '+esc(f.coverage)+'</p>').join("");
     $("assessment-fields").innerHTML=Object.entries(labels).map(([field,label])=>'<dt>'+esc(label)+'</dt><dd>'+esc(campaign[field])+'</dd>').join("");
     $("assessment-source").innerHTML=anchor(campaign.source,campaign.locator);
+    $("mission-study").href="./campaign-evidence.html?campaign="+encodeURIComponent(campaignId);
     const study=window.AtlasCampaignStudies?.[campaignId];
     if (study) {
       const q = new URLSearchParams({campaign:campaignId,event:study.date});
@@ -64,12 +65,15 @@
       links.push(anchor(href({population:"sicily-211-wings",unit:m.parent,q:"",station:""}),"Open "+m.parent,"data-unit-link"));
     if(p.id==="sicily-211-wings")
       links.push(anchor(href({population:"sicily-211",unit:"",q:m.unit,station:""}),"View this wing’s squadrons","data-siblings"));
+    for (const [index,k] of campaign.cases.entries()) {
+      if (k.rosterIds?.includes(p.id)) links.push(anchor("./campaign-evidence.html?campaign="+encodeURIComponent(campaignId)+"#mission-"+(index+1),k.title+" · "+labelDate(k.date)));
+    }
     if(campaignId==="sicily" && p.id==="sicily-211" && /No\. 92 Squadron/.test(m.unit))
       links.push(anchor("./sicily.html?case=messina#case-detail","Messina escort and cover · 16 Aug 1943"));
     if(campaignId==="britain") links.push(anchor("./grand-air-war-v80.html?campaign=britain#operation=britain-7-sep&step=0","7 September operation"));
     if(campaignId==="bagration") links.push(anchor("./bagration.html#formations","Bagration formation histories"));
     el.innerHTML='<p class="kicker">'+esc(p.echelon)+' · '+esc(labelDate(p.date))+'</p><h3>'+esc(m.unit)+'</h3>'+
-      '<p>'+esc([m.parent,m.place].filter(Boolean).join(" · ") || p.force)+'</p>'+
+      '<p>'+esc([m.parent,m.role,m.place].filter(Boolean).join(" · ") || p.force)+'</p>'+
       (m.strength!==null || m.serviceable!==null ? '<p>'+[m.strength!==null?m.strength+" aircraft on strength":"",m.serviceable!==null?m.serviceable+" serviceable":""].filter(Boolean).join(" · ")+'</p>':'')+
       '<p>'+anchor(p.source,p.locator)+'</p>'+
       (m.source!==p.source || m.locator!==p.locator ? '<p>'+anchor(m.source,m.locator)+'</p>':'')+
@@ -78,7 +82,7 @@
   }
   function renderMembers() {
     const p=population, needle=phrase.trim().toLocaleLowerCase();
-    const matches=p.members.filter(m=>[m.unit,m.parent,m.place].join(" ").toLocaleLowerCase().includes(needle));
+    const matches=p.members.filter(m=>[m.unit,m.parent,m.place,m.role].join(" ").toLocaleLowerCase().includes(needle));
     const mapped=new Map();
     for(const m of matches) for(const id of m.stations) mapped.set(id,(mapped.get(id)||0)+1);
     // Keep an active station available to clear even after a search returns no units there.
@@ -94,13 +98,14 @@
     $("result-count").textContent=!p.members.length ? "This source reports a total. Individual units have yet to be identified here." :
       visible.length===0 ? "No units match these filters. Clear the search or choose another station." :
       visible.length+" of "+p.members.length+" named "+(p.members.length===1?"entry":"entries")+" shown.";
+    const hasRole=p.members.some(m=>m.role);
     const stocks=p.members.some(m=>m.strength!==null || m.serviceable!==null);
     const hasPlace=p.members.some(m=>m.place);
     const table=$("unit-list");
     table.innerHTML=visible.length ? '<div class="table-wrap"><table aria-label="Named units in the selected return"><thead><tr><th scope="col">Unit</th><th scope="col">Parent or sector</th>'+
-      (hasPlace?'<th scope="col">Reported place</th>':'')+(stocks?'<th scope="col">Held</th><th scope="col">Serviceable</th>':'')+'</tr></thead><tbody>'+
+      (hasRole?'<th scope="col">Role</th>':'')+(hasPlace?'<th scope="col">Reported place</th>':'')+(stocks?'<th scope="col">Held</th><th scope="col">Serviceable</th>':'')+'</tr></thead><tbody>'+
       visible.map(m=>'<tr'+(m.unit===unitName?' data-current':'')+'><td>'+anchor(memberUrl(m),m.unit,"data-unit-link")+'</td><td>'+esc(m.parent || "Unspecified")+'</td>'+
-        (hasPlace?'<td>'+esc(m.place || "Unspecified")+'</td>':'')+(stocks?'<td>'+esc(m.strength??"—")+'</td><td>'+esc(m.serviceable??"—")+'</td>':'')+'</tr>').join("")+'</tbody></table></div>':"";
+        (hasRole?'<td>'+esc(m.role || 'Unspecified')+'</td>':'')+(hasPlace?'<td>'+esc(m.place || "Unspecified")+'</td>':'')+(stocks?'<td>'+esc(m.strength??"—")+'</td><td>'+esc(m.serviceable??"—")+'</td>':'')+'</tr>').join("")+'</tbody></table></div>':"";
     renderDetail(visible.find(m=>m.unit===unitName));
     const pins=[...mapped].map(([id,count])=>({...stations[id],id,count}));
     $("map-panel").hidden=!pins.length;

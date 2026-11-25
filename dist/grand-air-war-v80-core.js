@@ -27,7 +27,7 @@ const active=c=>c.start<=state.month&&c.end>=state.month;
 // free-text search as a license to merge numerical reporting populations.
 const rosterFor = id => window.AtlasForceRosters?.campaigns?.[id];
 const rosterSearch = new Map(Object.entries(window.AtlasForceRosters?.campaigns || {}).map(([id,c]) => [id,
-  [c.summary,...c.forces.map(f=>f.name),...c.populations.flatMap(p=>[p.force,...p.members.map(m=>m.unit)])].join(" ")]));
+  [c.summary,...(c.cases || []).map(k=>k.title),...c.forces.map(f=>f.name),...c.populations.flatMap(p=>[p.force,...p.members.map(m=>m.unit)])].join(" ")]));
 const searchable=c=>[c.name,rosterSearch.get(c.id) || "",c.objective,c.turningPoint,c.consequence,c.participants.join(" "),
  ...(c.story?.introduction||[]),c.story?.question||"",
  ...(c.chapters||[]).flatMap(ch=>[ch.title,ch.location,ch.situation,ch.airRole,ch.change,ch.limits,...(ch.story||[]),ch.axis||""]),
@@ -509,7 +509,9 @@ function renderDossier(){
    const href = "./forces.html?campaign="+encodeURIComponent(c.id);
    rosterJump.href = href;
    const rows = roster.populations.map(p => '<li><a href="'+href+'&amp;population='+encodeURIComponent(p.id)+'">'+esc(p.label)+'</a><small>'+esc(window.AtlasRosterTools.labelDate(p.date))+' · '+esc(window.AtlasRosterTools.coverage(p))+' · '+esc(p.echelon)+'</small></li>').join("");
-   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p><a class="roster-open" href="'+href+'">Explore units, dates and stations</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
+   const leadCase = roster.cases?.[0];
+   const caseLink = leadCase ? '<p><a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'#mission-1">'+esc(leadCase.title)+'</a> · '+esc(window.AtlasRosterTools.labelDate(leadCase.date))+'</p>' : "";
+   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p>'+caseLink+'<a class="roster-open" href="'+href+'">Explore units, dates and stations</a> · <a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'">Missions, outcomes and coverage</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
   } else { rosterPanel.innerHTML = ""; }
  }
  const formationLink = $("dossier-formations");

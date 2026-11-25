@@ -3,10 +3,10 @@
 <link rel="stylesheet" href="./dist/europe-return.css"><script defer src="./dist/europe-index.js"></script><script defer src="./dist/europe-return.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09131b"><meta name="description" content="Grand Air War: European WWII air campaigns, source-backed loss reports, force data and interactive map 1936–1945.">
-<title>Grand Air War Atlas v10.1 · Forces in the field</title>
+<title>Grand Air War Atlas v10.2 · Missions and outcomes</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/grand-air-war-v77.css">
-<link rel="stylesheet" href="./dist/grand-air-war-v80.css?v=10.1">
+<link rel="stylesheet" href="./dist/grand-air-war-v80.css?v=10.2">
 <link rel="stylesheet" href="./dist/grand-air-war-v86.css?v=9.0.0">
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="./dist/model-v3-data.js"></script><script defer src="./dist/atlas-v7-data.js"></script>
@@ -20,20 +20,20 @@
 <script defer src="./dist/grand-air-war-v87-data.js?v=8.7.0"></script>
 <script defer src="./dist/grand-air-war-v80-studies.js"></script>
 <script defer src="./dist/operational-balance-index.js?v=9.10"></script>
-<script defer src="./dist/force-rosters-data.js?v=10.1"></script><script defer src="./dist/force-rosters-shared.js?v=10.1"></script>
-<script defer src="./dist/grand-air-war-v80-core.js?v=10.1"></script>
+<script defer src="./dist/force-rosters-data.js?v=10.2"></script><script defer src="./dist/force-rosters-shared.js?v=10.2"></script>
+<script defer src="./dist/grand-air-war-v80-core.js?v=10.2"></script>
 <script defer src="./dist/grand-air-war-v88-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-campaign-losses.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v88-losses.js?v=9.0.0"></script>
-<script defer src="./dist/grand-air-war-v86-operations.js?v=10.1"></script>
+<script defer src="./dist/grand-air-war-v86-operations.js?v=10.2"></script>
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
 <script defer src="./dist/grand-air-war-v80-lab.js"></script>
 </head><body>
-<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas v10.1 · Campaign Explorer</b></nav></div></header>
+<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas v10.2 · Campaign Explorer</b></nav></div></header>
 <main class="shell">
 <section class="intro" id="overview"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Read how air power changed the war for the people who flew, the armies they supported and the towns beneath them. Explore a campaign on the map or follow the story across Europe.</p><a class="europe-start" href="./europe.html">Read the seven chapters <span aria-hidden="true">→</span></a></section>
-<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="./forces.html">Forces in the field</a><a href="#claim-loss-calculator">Claims and losses</a><a href="./operations-1944.html">1944 mission timeline</a><a href="./operational-balance.html">Operational balance studies</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
+<nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="./forces.html">Forces in the field</a><a href="./campaign-evidence.html">Missions and outcomes</a><a href="#claim-loss-calculator">Claims and losses</a><a href="./operations-1944.html">1944 mission timeline</a><a href="./operational-balance.html">Operational balance studies</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
 <section class="timebar" aria-label="Date and theatre controls">
 <div class="time-top"><div><span class="eyebrow">SELECT A HISTORICAL MONTH</span><output id="date-display" for="date-slider">June 1944</output></div><div class="time-actions"><button type="button" id="prev-month" aria-label="Previous month">‹</button><button type="button" id="next-month" aria-label="Next month">›</button><button type="button" id="play-time">▶ Play</button><button type="button" id="jump-today">June 1944</button></div></div>
 <input type="range" id="date-slider" min="0" max="106" step="1" value="95" aria-label="Historical month from July 1936 through May 1945">
