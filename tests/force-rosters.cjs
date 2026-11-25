@@ -33,8 +33,10 @@ count("bagration-air-armies",5);const children=[...byId.values()].filter(p=>p.pa
 assert.equal(children.length,5);assert.equal(children.reduce((a,p)=>a+p.members.length,0),52);
 for(const child of children)assert.ok(byId.get(child.parentPopulation).members.some(m=>m.unit===child.parentUnit));
 for(const [id,n] of [["kursk-2va-divisions",11],["kursk-16va-divisions",12],["kursk-17va-divisions",9],["kursk-hungarian-brigade",6]])count(id,n);
-assert.equal(coverage(byId.get("stalingrad-ro")),"26 reported · names unresolved");
+assert.equal(byId.get("stalingrad-ro").total,26);
+assert.ok(byId.get("stalingrad-ro").members.length>0);
+assert.equal(coverage(byId.get("berlin-250-raf-support")),"2 reported · names unresolved");
 assert.ok(all.some(r=>r.members.some(m=>m.activity && m.stations.length)));
 assert.equal(csv(all,d.stations),read("research/exports/force-rosters.csv"));
-assert.match(csv([all.find(x=>x.population.id==="normandy-reinforcements")],d.stations),/reported total only/);
+assert.match(csv([all.find(x=>x.population.id==="berlin-250-raf-support")],d.stations),/reported total only/);
 console.log("PASS dated force coverage: "+all.length+" returns across 20 campaigns; "+all.reduce((a,i)=>a+i.members.length,0)+" dated memberships; stocks, sources, parent links and CSV agree.");

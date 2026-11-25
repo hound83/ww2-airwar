@@ -1,0 +1,1650 @@
+{
+  "campaigns": {
+    "barbarossa": {
+      "cases": [
+        {
+          "date": "1941-06-22 to 1941-06-24",
+          "title": "Four regiments assigned, three equipped",
+          "mission": "The 14th Mixed Aviation Division reported 51 aircraft with the 17th Fighter Regiment, 55 with the 46th, 66 with the 89th and two at headquarters. The 253rd Assault Regiment had seven pilots and no aircraft. The 46th flew from the Mlynuv area on 22 June, where pilot Ivan Ivanov died.",
+          "effect": "On 23 June Fifth Army ordered the 14th and 62nd divisions to cover 22nd Mechanized Corps as it assembled. Southwestern Front subsequently acknowledged late support to ground troops and 237 aircraft destroyed or damaged on its own fields on 22–24 June.",
+          "limit": "Fifth Army calls the 14th a fighter division and the 62nd mixed. The front’s own organisational return calls them mixed and bomber respectively. The order identifies the intended beneficiary; it does not record completion or attribute the 237 front-wide losses to these divisions.",
+          "sources": [
+            {
+              "name": "Southwestern Front air commander to Red Army Air Force HQ",
+              "url": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/36/077",
+              "locator": "Document 77, 21 August 1941, §§I.1–2 and VII.2–6, f. 229, op. 181, d. 25",
+              "kind": "wartime command report, published transcription"
+            },
+            {
+              "name": "И. И. Иванов. Герой первого тарана",
+              "url": "https://www.fryazino.info/file/book_ivanov.pdf",
+              "locator": "22 June account near Mlynuv and Dubno, including TsAMO f. 58, op. 818883, d. 928, ll. 2–3",
+              "kind": "published study drawing on Soviet personnel records and witness recollections"
+            },
+            {
+              "name": "Fifth Army order no. 3, 23 June",
+              "url": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/36/080",
+              "locator": "Document 80, §6, TsAMO f. 229, op. 9776ss, d. 60, l. 1",
+              "kind": "wartime ground-army order, published transcription"
+            }
+          ],
+          "rosterIds": [
+            "barbarossa-14sad",
+            "barbarossa-swfront-other-regiments"
+          ]
+        },
+        {
+          "date": "1941-06-21 to 1941-06-22",
+          "title": "What the northern German fighter return actually counted",
+          "mission": "All three Gruppen of JG 54 were deployed in Luftflotte 1. Together they reported 102 serviceable fighters out of 120. Separately, two JG 53 Staffeln attached to the northern force reported 33 serviceable out of 35 between them.",
+          "effect": "The return establishes a larger fighter force than the three JG 54 Gruppen alone. In the south, Romania fielded three fighter groups of its own for the Bessarabian front.",
+          "limit": "Neither deployment return assigns an opening-day Soviet loss or a completed escort to a particular German or Romanian squadron. The German and Romanian figures cover different sectors.",
+          "sources": [
+            {
+              "name": "Nigel Askey, German air combat units deployed on 21 June",
+              "url": "https://operationbarbarossa.net/wp-content/uploads/2013/03/Luftwaffe-OOB-sample.pdf",
+              "locator": "Volume IIB extract pp. 2 and 8, Luftflotte 1 / I. Fliegerkorps table",
+              "kind": "research compilation from German strength and order-of-battle sources"
+            },
+            {
+              "name": "Romanian Combat Air Grouping, Bessarabian and Odessa campaign",
+              "url": "https://www.worldwar2.ro/arr/?article=427",
+              "locator": "Opening order, 22 June 1941, 1st Fighter Flotilla and combat-readiness paragraph",
+              "kind": "specialist campaign history"
+            }
+          ],
+          "rosterIds": [
+            "barbarossa-luftflotte1-gruppen",
+            "barbarossa-romanian-fighter-squadrons"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "barbarossa-swfront-other-regiments",
+          "label": "Southwestern Front regiments outside 14th Division",
+          "date": "1941-06-22",
+          "force": "Southwestern Front air forces",
+          "side": "Allied",
+          "echelon": "regiment",
+          "event": "assigned",
+          "scope": "Ten other divisions and the two separate reconnaissance regiments listed alongside 14th Division",
+          "total": 42,
+          "basis": "bounded source count",
+          "source": "https://ru.wikisource.org/wiki/Сборник_боевых_документов/36/077",
+          "locator": "Document 77, 21 August 1941, §§I.1–2 and VII.2–6, f. 229, op. 181, d. 25",
+          "sourceClass": "wartime command report, published transcription",
+          "note": "Section I lists the paper assignment. The front states that the 226th and 227th Bomber Regiments received no combat task on 22–24 June.",
+          "members": [
+            {
+              "unit": "23rd Fighter Aviation Regiment",
+              "parent": "15th Mixed Aviation Division"
+            },
+            {
+              "unit": "28th Fighter Aviation Regiment",
+              "parent": "15th Mixed Aviation Division"
+            },
+            {
+              "unit": "164th Fighter Aviation Regiment",
+              "parent": "15th Mixed Aviation Division"
+            },
+            {
+              "unit": "66th Assault Aviation Regiment",
+              "parent": "15th Mixed Aviation Division"
+            },
+            {
+              "unit": "87th Fighter Aviation Regiment",
+              "parent": "16th Mixed Aviation Division"
+            },
+            {
+              "unit": "92nd Fighter Aviation Regiment",
+              "parent": "16th Mixed Aviation Division"
+            },
+            {
+              "unit": "86th Short-range Bomber Aviation Regiment",
+              "parent": "16th Mixed Aviation Division"
+            },
+            {
+              "unit": "20th Fighter Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "91st Fighter Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "48th Short-range Bomber Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "224th Short-range Bomber Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "225th Short-range Bomber Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "242nd Short-range Bomber Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "244th Short-range Bomber Aviation Regiment",
+              "parent": "17th Mixed Aviation Division"
+            },
+            {
+              "unit": "90th Long-range Bomber Aviation Regiment",
+              "parent": "18th Long-range Bomber Aviation Division"
+            },
+            {
+              "unit": "93rd Long-range Bomber Aviation Regiment",
+              "parent": "18th Long-range Bomber Aviation Division"
+            },
+            {
+              "unit": "33rd Short-range Bomber Aviation Regiment",
+              "parent": "19th Bomber Aviation Division"
+            },
+            {
+              "unit": "136th Short-range Bomber Aviation Regiment",
+              "parent": "19th Bomber Aviation Division"
+            },
+            {
+              "unit": "138th Short-range Bomber Aviation Regiment",
+              "parent": "19th Bomber Aviation Division"
+            },
+            {
+              "unit": "2nd Fighter Aviation Regiment",
+              "parent": "36th Fighter Aviation Division"
+            },
+            {
+              "unit": "43rd Fighter Aviation Regiment",
+              "parent": "36th Fighter Aviation Division"
+            },
+            {
+              "unit": "254th Fighter Aviation Regiment",
+              "parent": "36th Fighter Aviation Division"
+            },
+            {
+              "unit": "255th Fighter Aviation Regiment",
+              "parent": "36th Fighter Aviation Division"
+            },
+            {
+              "unit": "88th Fighter Aviation Regiment",
+              "parent": "44th Fighter Aviation Division"
+            },
+            {
+              "unit": "248th Fighter Aviation Regiment",
+              "parent": "44th Fighter Aviation Division"
+            },
+            {
+              "unit": "249th Fighter Aviation Regiment",
+              "parent": "44th Fighter Aviation Division"
+            },
+            {
+              "unit": "252nd Fighter Aviation Regiment",
+              "parent": "44th Fighter Aviation Division"
+            },
+            {
+              "unit": "52nd Short-range Bomber Aviation Regiment",
+              "parent": "62nd Bomber Aviation Division"
+            },
+            {
+              "unit": "94th Short-range Bomber Aviation Regiment",
+              "parent": "62nd Bomber Aviation Division"
+            },
+            {
+              "unit": "226th Short-range Bomber Aviation Regiment",
+              "parent": "62nd Bomber Aviation Division"
+            },
+            {
+              "unit": "227th Short-range Bomber Aviation Regiment",
+              "parent": "62nd Bomber Aviation Division"
+            },
+            {
+              "unit": "243rd Assault Aviation Regiment",
+              "parent": "62nd Bomber Aviation Division"
+            },
+            {
+              "unit": "245th Assault Aviation Regiment",
+              "parent": "62nd Bomber Aviation Division"
+            },
+            {
+              "unit": "165th Fighter Aviation Regiment",
+              "parent": "63rd Mixed Aviation Division"
+            },
+            {
+              "unit": "62nd Assault Aviation Regiment",
+              "parent": "63rd Mixed Aviation Division"
+            },
+            {
+              "unit": "12th Fighter Aviation Regiment",
+              "parent": "64th Fighter Aviation Division"
+            },
+            {
+              "unit": "149th Fighter Aviation Regiment",
+              "parent": "64th Fighter Aviation Division"
+            },
+            {
+              "unit": "166th Fighter Aviation Regiment",
+              "parent": "64th Fighter Aviation Division"
+            },
+            {
+              "unit": "246th Fighter Aviation Regiment",
+              "parent": "64th Fighter Aviation Division"
+            },
+            {
+              "unit": "247th Fighter Aviation Regiment",
+              "parent": "64th Fighter Aviation Division"
+            },
+            {
+              "unit": "315th Reconnaissance Aviation Regiment",
+              "parent": "Southwestern Front air forces"
+            },
+            {
+              "unit": "316th Reconnaissance Aviation Regiment",
+              "parent": "Southwestern Front air forces"
+            }
+          ]
+        },
+        {
+          "id": "barbarossa-luftflotte1-gruppen",
+          "label": "Luftflotte 1 fighter and bomber Gruppen",
+          "date": "1941-06-21",
+          "force": "Luftflotte 1",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "deployed",
+          "scope": "Numbered single-engine fighter and medium bomber Gruppen in the northern fleet's deployment table",
+          "total": 11,
+          "basis": "bounded source count",
+          "source": "https://operationbarbarossa.net/wp-content/uploads/2013/03/Luftwaffe-OOB-sample.pdf",
+          "locator": "Volume IIB extract pp. 2 and 8, Luftflotte 1 / I. Fliegerkorps table",
+          "sourceClass": "research compilation from German strength and order-of-battle sources",
+          "note": "JG 54 had three Gruppen. Their serviceable counts were 34, 33 and 35. The wing staff and two attached JG 53 Staffeln are separate entries at other echelons.",
+          "members": [
+            {
+              "unit": "I./JG 54",
+              "parent": "JG 54"
+            },
+            {
+              "unit": "II./JG 54",
+              "parent": "JG 54"
+            },
+            {
+              "unit": "III./JG 54",
+              "parent": "JG 54"
+            },
+            {
+              "unit": "II./KG 1",
+              "parent": "KG 1"
+            },
+            {
+              "unit": "III./KG 1",
+              "parent": "KG 1"
+            },
+            {
+              "unit": "I./KG 76",
+              "parent": "KG 76"
+            },
+            {
+              "unit": "II./KG 76",
+              "parent": "KG 76"
+            },
+            {
+              "unit": "III./KG 76",
+              "parent": "KG 76"
+            },
+            {
+              "unit": "I./KG 77",
+              "parent": "KG 77"
+            },
+            {
+              "unit": "II./KG 77",
+              "parent": "KG 77"
+            },
+            {
+              "unit": "III./KG 77",
+              "parent": "KG 77"
+            }
+          ]
+        },
+        {
+          "id": "barbarossa-romanian-fighter-squadrons",
+          "label": "Romanian first-line fighter flotilla",
+          "date": "1941-06-22",
+          "force": "Romanian Combat Air Grouping",
+          "side": "Axis",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "Three groups of 1st Fighter Flotilla in the opening strike force",
+          "total": 8,
+          "basis": "bounded source count",
+          "source": "https://www.worldwar2.ro/arr/?article=427",
+          "locator": "Opening order, 22 June 1941, 1st Fighter Flotilla and combat-readiness paragraph",
+          "sourceClass": "specialist campaign history",
+          "note": "The 205 aircraft available out of 253 held belong to the whole combat grouping, including its nonfighter formations.",
+          "members": [
+            {
+              "unit": "51st Fighter Squadron",
+              "parent": "5th Fighter Group"
+            },
+            {
+              "unit": "52nd Fighter Squadron",
+              "parent": "5th Fighter Group"
+            },
+            {
+              "unit": "56th Fighter Squadron",
+              "parent": "7th Fighter Group"
+            },
+            {
+              "unit": "57th Fighter Squadron",
+              "parent": "7th Fighter Group"
+            },
+            {
+              "unit": "58th Fighter Squadron",
+              "parent": "7th Fighter Group"
+            },
+            {
+              "unit": "41st Fighter Squadron",
+              "parent": "8th Fighter Group"
+            },
+            {
+              "unit": "59th Fighter Squadron",
+              "parent": "8th Fighter Group"
+            },
+            {
+              "unit": "60th Fighter Squadron",
+              "parent": "8th Fighter Group"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "An identified 46th Fighter Regiment flight on 22 June and the front’s acknowledgment that two named bomber regiments received no task on 22–24 June.",
+          "losses": "Southwestern Front recorded 237 aircraft destroyed or damaged on its fields over three days. No destroyed-only total is supplied here.",
+          "effect": "Fifth Army’s 23 June order names 22nd Mechanized Corps as the intended beneficiary. The front air commander later acknowledged late ground support."
+        },
+        "Axis": {
+          "effort": "Three JG 54 Gruppen and two attached Staffeln have readiness figures. Romanian combat grouping readiness covers all roles.",
+          "losses": "No unit-level Axis loss is matched to the specific 46th Regiment flight.",
+          "effect": "The opposing front records combined damage over three days. Attribution among German attacks remains open."
+        }
+      }
+    },
+    "stalingrad": {
+      "cases": [
+        {
+          "date": "1942-09-09 to 1942-09-18",
+          "title": "What Romania’s fighter groups did before the pocket formed",
+          "mission": "On 9 September the 6th Group sent eight aircraft on two sector-reconnaissance missions. The 7th logged 36 aircraft appearances on nine fighter sweeps, the 8th logged 19 on six familiarisation missions. From 9–18 September the Romanian formation reported 524 fighter sorties, many escorting German bombers.",
+          "effect": "German dive-bomber crews praised the Romanian escort in a 15 September command order. This identifies the immediate beneficiary and a contemporary assessment of the cover.",
+          "limit": "The 524 sorties span several roles. No paired German bomber loss series or Soviet interception return establishes how many losses the escort prevented. Parent-group totals do not prove every assigned squadron flew that day.",
+          "sources": [
+            {
+              "name": "Revista de istorie militară 5–6/2022, Romanian aviation at Stalingrad",
+              "url": "https://edituramilitara.ro/wp-content/uploads/2023/06/rim-5-6-2022m.pdf",
+              "locator": "Printed pp. 91–94, 9–18 September and 1 October, especially notes 9–15",
+              "kind": "Romanian military history using operational records"
+            },
+            {
+              "name": "German command acknowledgment of Romanian escorts",
+              "url": "https://www.ligamilitarilor.ro/istorie-militara/campania-de-la-stalingrad-primul-contact-cu-frontul-al-cpt-av-alexandru-serbanescu/",
+              "locator": "German command’s 15 September 1942 order relaying dive-bomber crews’ assessment",
+              "kind": "wartime order quoted in secondary account"
+            },
+            {
+              "name": "Romanian Royal Aeronautics, 1942 command order",
+              "url": "https://www.worldwar2.ro/arme/index.php?article=23",
+              "locator": "1942 Combat Aviation Command order, lists under 2nd Fighter and 2nd Bomber Flotillas and adjacent army/transport paragraph",
+              "kind": "specialist order of battle"
+            }
+          ],
+          "rosterIds": [
+            "stalingrad-ro"
+          ]
+        },
+        {
+          "date": "1942-09-30 to 1942-10-04",
+          "title": "How many of the 26 Romanian squadrons can be named?",
+          "mission": "The air force counted 26 in seven roles at the end of September. German mission correspondence gives group sizes and equipment. Comparison with a dated September squadron register identifies 17 by role, including the 108th medical unit.",
+          "effect": "The 1 October command return distinguishes 17 combat-group squadrons, six observers serving the two Romanian armies and three transport or medical squadrons. This is a broader force than the fighters alone.",
+          "limit": "The two specialist chronologies disagree over when 5th Bomber Group arrived. They place 1st and 3rd Bomber Groups in October. All seven bomber identities are kept outside the 26. The sixth observer (14th or 17th) and second Ju 52 transport remain open.",
+          "sources": [
+            {
+              "name": "Romanian Air Force, Stalingrad and the Don Bend",
+              "url": "https://roaf.ro/?cpt_services=activitatea-fortelor-aeriene-in-zona-stalingrad-si-cotul-donului",
+              "locator": "Opening force return, end of September 1942",
+              "kind": "institutional history"
+            },
+            {
+              "name": "Relațiile militare româno-germane, vol. I",
+              "url": "https://www.fundatiagusa.ro/wp-content/uploads/2023/09/Relatiile-militare-romano-germane_vol.-I_1939-1944.pdf",
+              "locator": "Printed pp. 280–281, §3, forces sent east from 5 September",
+              "kind": "published wartime German–Romanian correspondence"
+            },
+            {
+              "name": "Revista de istorie militară 5–6/2022, Romanian aviation at Stalingrad",
+              "url": "https://edituramilitara.ro/wp-content/uploads/2023/06/rim-5-6-2022m.pdf",
+              "locator": "Printed pp. 91–94, 9–18 September and 1 October, especially notes 9–15",
+              "kind": "Romanian military history using operational records"
+            },
+            {
+              "name": "Romanian Royal Aeronautics, 1942 command order",
+              "url": "https://www.worldwar2.ro/arme/index.php?article=23",
+              "locator": "1942 Combat Aviation Command order, lists under 2nd Fighter and 2nd Bomber Flotillas and adjacent army/transport paragraph",
+              "kind": "specialist order of battle"
+            },
+            {
+              "name": "Romanian Stalingrad campaign register",
+              "url": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September order of battle and ‘Into battle’ movement chronology",
+              "kind": "specialist reconstruction"
+            },
+            {
+              "name": "Battle of Stalingrad, Romanian deployments",
+              "url": "https://www.worldwar2.ro/memorii/?article=12",
+              "locator": "Opening paragraph on the groups arriving or entering action in September and October",
+              "kind": "specialist campaign history"
+            },
+            {
+              "name": "Smaranda Brăescu, Lăsați-mă să zbor",
+              "url": "https://arpia-filialacluj.ro/Documents/ebooks/SMARANDA_BRAESCU_Lasati-ma_sa_zbor.pdf",
+              "locator": "10 September 1942 posting to Escadrila 108 Transport Ușor, citing daily orders 225 and 115",
+              "kind": "biographical study using service orders"
+            },
+            {
+              "name": "Romanian operations and dated air force instructions",
+              "url": "https://historia.ro/sectiune/general/avioane-romanesti-deasupra-stalingradului-2231443.html",
+              "locator": "July staff instructions 1623 and 1628; 9 September operations of the 57th and 58th Fighter Squadrons at Tuzov",
+              "kind": "historical study using wartime staff orders"
+            },
+            {
+              "name": "Mariana Drăgescu’s published wartime correspondence",
+              "url": "https://orizonturiculturale.ro/ro_studii_Cristina-Paiusan-Nuica.html",
+              "locator": "Letter from Plodovitoe, September 1942, and adjacent personal photographs",
+              "kind": "pilot’s wartime letter, published and annotated"
+            }
+          ],
+          "rosterIds": [
+            "stalingrad-ro",
+            "stalingrad-romanian-october-bombers",
+            "stalingrad-romanian-phase-disputed-bombers"
+          ]
+        },
+        {
+          "date": "1942-11-25 to 1942-11-30",
+          "title": "The transports that reached Sixth Army",
+          "mission": "On 29 November 38 Ju 52s and 21 He 111s took off. Twelve and thirteen, respectively, landed in the pocket. On 30 November the sources say 39 and 38 were committed, of which 30 and 36 landed.",
+          "effect": "The pocket received 25 aircraft landings from 59 take-offs on the 29th and 66 from 77 aircraft committed on the 30th. Richthofen’s diary separately records 75 tons delivered against a 300-ton order on 25 November.",
+          "limit": "Commitment and take-off are different dispatch measures. An arrival is neither an aircraft loss nor a weighed cargo receipt. Daily manifests for 29–30 November and Sixth Army’s distribution below the airfield remain open.",
+          "sources": [
+            {
+              "name": "Ziemke and Bauer, Moscow to Stalingrad",
+              "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Decision/USA-EF-Decision-23.html",
+              "locator": "Chapter XXIII, p. 479 and note 6, 29–30 November. See also December supply discussion pp. 496–497.",
+              "kind": "US Army official history using German army records"
+            },
+            {
+              "name": "Joel Hayward, Stalingrad: an examination of Hitler’s decision to airlift",
+              "url": "https://www.allworldwars.com/Stalingrad-An-Examination-of-Hitlers-Decision-to-Airlift-by-Joel-Hayward.html",
+              "locator": "25 November diary entry and notes 40–42",
+              "kind": "specialist study quoting Wolfram von Richthofen’s wartime diary"
+            }
+          ],
+          "rosterIds": []
+        },
+        {
+          "date": "1942-11-22",
+          "title": "Soviet fighter strength during Uranus",
+          "mission": "The 8th, 16th and 17th Air Armies appear in a three-row return with 284, 114 and 82 fighters. The sum is 480 fighters within 1,267 aircraft on strength across those rows.",
+          "effect": "It establishes the scale available to three commands during the counteroffensive. It also exposes a boundary: the 2nd Air Army could be operationally subordinated across the administrative front boundary.",
+          "limit": "Airframes on strength and pilots actually flying are different counts. These three rows cannot supply a sortie or casualty attribution.",
+          "sources": [
+            {
+              "name": "James Sterrett, Soviet Air Force theory and practice",
+              "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/2925857/429305.pdf",
+              "locator": "22 November 1942 table, displayed p. 187 and note 394; operational subordination on following page",
+              "kind": "academic study from Soviet wartime records"
+            }
+          ],
+          "rosterIds": [
+            "stalingrad-uranus-armies"
+          ]
+        },
+        {
+          "date": "1942-12-16",
+          "title": "What the army quartermaster actually received",
+          "mission": "The Sixth Army quartermaster recorded 125 tons of incoming supplies on 16 December, about two-thirds fuel. His diary distinguished the fuel and ammunition position from the need for food, particularly bread.",
+          "effect": "The receiving army judged fuel and ammunition sufficient for the first operations it envisaged and asked for the cargo mix to change. Its account documents which need a delivery relieved and which need persisted.",
+          "limit": "The diary does not give the dispatched tonnage for this date or trace distribution to individual divisions. The November arrival fractions and the December receipt cannot be combined into a single delivery rate.",
+          "sources": [
+            {
+              "name": "Jens Wehner, Stalingrad: Breakout and Airlift Operation",
+              "url": "https://www.academia.edu/41734605/STALINGRAD_BREAKOUT_AND_AIRLIFT_OPERATION_A_MATTER_OF_CHOICE",
+              "locator": "Sixth Army quartermaster’s war diary (KTB Qum), 16 December 1942, p. 42, quoted in the section on Operation Winter Storm",
+              "kind": "receiving army’s wartime quartermaster diary quoted by a military-museum historian"
+            },
+            {
+              "name": "Ziemke and Bauer, Moscow to Stalingrad",
+              "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Decision/USA-EF-Decision-23.html",
+              "locator": "Chapter XXIII, p. 479 and note 6, 29–30 November. See also December supply discussion pp. 496–497.",
+              "kind": "US Army official history using German army records"
+            },
+            {
+              "name": "Joel Hayward, Stalingrad: an examination of Hitler’s decision to airlift",
+              "url": "https://www.allworldwars.com/Stalingrad-An-Examination-of-Hitlers-Decision-to-Airlift-by-Joel-Hayward.html",
+              "locator": "25 November diary entry and notes 40–42",
+              "kind": "specialist study quoting Wolfram von Richthofen’s wartime diary"
+            }
+          ],
+          "rosterIds": []
+        }
+      ],
+      "populations": [
+        {
+          "extend": "stalingrad-ro",
+          "side": "Axis",
+          "members": [
+            {
+              "unit": "56th Fighter Squadron",
+              "parent": "7th Fighter Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 7th Fighter Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "57th Fighter Squadron",
+              "parent": "7th Fighter Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 7th Fighter Group; checked against the German mission’s §3 and the air force’s end-September return.",
+              "place": "Tuzov, September 1942",
+              "activity": "Identified at the start of 7th Fighter Group combat operations near Stalingrad on 9 September.",
+              "activitySource": "https://historia.ro/sectiune/general/avioane-romanesti-deasupra-stalingradului-2231443.html",
+              "activityLocator": "July staff instructions 1623 and 1628; 9 September operations of the 57th and 58th Fighter Squadrons at Tuzov"
+            },
+            {
+              "unit": "58th Fighter Squadron",
+              "parent": "7th Fighter Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 7th Fighter Group; checked against the German mission’s §3 and the air force’s end-September return.",
+              "place": "Tuzov, September 1942",
+              "activity": "Identified at the start of 7th Fighter Group combat operations near Stalingrad on 9 September.",
+              "activitySource": "https://historia.ro/sectiune/general/avioane-romanesti-deasupra-stalingradului-2231443.html",
+              "activityLocator": "July staff instructions 1623 and 1628; 9 September operations of the 57th and 58th Fighter Squadrons at Tuzov"
+            },
+            {
+              "unit": "41st Fighter Squadron",
+              "parent": "8th Fighter Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 8th Fighter Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "42nd Fighter Squadron",
+              "parent": "8th Fighter Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 8th Fighter Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "60th Fighter Squadron",
+              "parent": "8th Fighter Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 8th Fighter Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "61st Fighter-Bomber Squadron",
+              "parent": "6th Fighter-Bomber Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 6th Fighter-Bomber Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "62nd Fighter-Bomber Squadron",
+              "parent": "6th Fighter-Bomber Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 6th Fighter-Bomber Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "11th Observation Squadron",
+              "parent": "Air units attached to Romanian 3rd Army",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: Air units attached to Romanian 3rd Army; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "12th Observation Squadron",
+              "parent": "Air units attached to Romanian 3rd Army",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: Air units attached to Romanian 3rd Army; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "13th Observation Squadron",
+              "parent": "Air units attached to Romanian 3rd Army",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: Air units attached to Romanian 3rd Army; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "15th Observation Squadron",
+              "parent": "Air units attached to Romanian 4th Army",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: Air units attached to Romanian 4th Army; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "16th Observation Squadron",
+              "parent": "Air units attached to Romanian 4th Army",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: Air units attached to Romanian 4th Army; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "1st Long-range Reconnaissance Squadron",
+              "parent": "1st Long-range Reconnaissance Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 1st Long-range Reconnaissance Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "2nd Long-range Reconnaissance Squadron",
+              "parent": "1st Long-range Reconnaissance Group",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: 1st Long-range Reconnaissance Group; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "105th Transport Squadron",
+              "parent": "Romanian Combat Air Grouping",
+              "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+              "locator": "September 1942 Stalingrad order: Romanian Combat Air Grouping; checked against the German mission’s §3 and the air force’s end-September return."
+            },
+            {
+              "unit": "108th Light Transport Squadron (air ambulance)",
+              "parent": "Romanian forward air services",
+              "source": "https://arpia-filialacluj.ro/Documents/ebooks/SMARANDA_BRAESCU_Lasati-ma_sa_zbor.pdf",
+              "locator": "10 September 1942 posting to Escadrila 108 Transport Ușor, citing daily orders 225 and 115",
+              "place": "Plodovitoe, September 1942 (1st Section)",
+              "activity": "Medical evacuation of wounded by the squadron’s first section in September.",
+              "activitySource": "https://orizonturiculturale.ro/ro_studii_Cristina-Paiusan-Nuica.html",
+              "activityLocator": "Letter from Plodovitoe, September 1942, and adjacent personal photographs"
+            }
+          ],
+          "note": "The Romanian Air Force reports 6 fighter, 2 fighter-bomber, 7 bomber, 6 observation, 2 reconnaissance, 2 transport and 1 medical squadron. Seventeen identities match the September assignment by role: 6, 2, 0, 5, 2, 1 and 1. The separately dated September roster and German correspondence establish these assignments, with individual flights documented for only a subset. Excluded are all seven bomber identities owing to conflicting movement dates, the disputed 14th/17th observer and the unidentified second Ju 52 transport. The 108th is counted once as medical."
+        },
+        {
+          "id": "stalingrad-romanian-october-bombers",
+          "label": "Romanian bomber squadrons with October arrival evidence",
+          "date": "1942-10",
+          "force": "Romanian Combat Aviation Command",
+          "side": "Axis",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "1st and 3rd Bomber Groups only",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.worldwar2.ro/arme/index.php?article=23",
+          "locator": "1942 Combat Aviation Command order, lists under 2nd Fighter and 2nd Bomber Flotillas and adjacent army/transport paragraph",
+          "sourceClass": "specialist order of battle",
+          "note": "Two campaign chronologies place these parent groups’ arrival in October, although the official end-September return already counts seven bomber squadrons. These five names stay outside the September numerator.",
+          "members": [
+            {
+              "unit": "71st Bomber Squadron",
+              "parent": "1st Bomber Group"
+            },
+            {
+              "unit": "72nd Bomber Squadron",
+              "parent": "1st Bomber Group"
+            },
+            {
+              "unit": "73rd Bomber Squadron",
+              "parent": "3rd Bomber Group"
+            },
+            {
+              "unit": "74th Bomber Squadron",
+              "parent": "3rd Bomber Group"
+            },
+            {
+              "unit": "81st Bomber Squadron",
+              "parent": "3rd Bomber Group"
+            }
+          ]
+        },
+        {
+          "id": "stalingrad-uranus-armies",
+          "label": "Air armies in the 22 November strength table",
+          "date": "1942-11-22",
+          "force": "Soviet frontal aviation",
+          "side": "Allied",
+          "echelon": "air army",
+          "event": "on strength",
+          "scope": "Three rows of the published Soviet strength table",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/2925857/429305.pdf",
+          "locator": "22 November 1942 table, displayed p. 187 and note 394; operational subordination on following page",
+          "sourceClass": "academic study from Soviet wartime records",
+          "note": "The three rows report 284, 114 and 82 fighters (480 among 1,267 aircraft). The separate 2nd Air Army had an operational relationship with Southwestern Front and lies outside this table.",
+          "members": [
+            {
+              "unit": "8th Air Army",
+              "parent": "Stalingrad Front"
+            },
+            {
+              "unit": "16th Air Army",
+              "parent": "Don Front"
+            },
+            {
+              "unit": "17th Air Army",
+              "parent": "Southwestern Front"
+            }
+          ]
+        },
+        {
+          "id": "stalingrad-viii-command-wings",
+          "label": "VIII. Fliegerkorps wing identities",
+          "date": "1942-11-10",
+          "force": "Luftwaffe",
+          "side": "Axis",
+          "echelon": "wing",
+          "event": "assigned",
+          "scope": "Named fighter, heavy fighter, bomber and dive-bomber wings under VIII. Fliegerkorps",
+          "total": 4,
+          "basis": "identified lower bound",
+          "source": "https://www.lexikon-der-wehrmacht.de/Gliederungen/Fliegerkorps/Fliegerkorps8-R.htm",
+          "locator": "Force listing on 10 November 1942",
+          "sourceClass": "specialist German command chronology",
+          "note": "The list identifies four wing commands. Serviceable subordinate Gruppen and dated sorties require separate returns.",
+          "members": [
+            {
+              "unit": "JG 3",
+              "parent": "VIII. Fliegerkorps"
+            },
+            {
+              "unit": "ZG 1",
+              "parent": "VIII. Fliegerkorps"
+            },
+            {
+              "unit": "KG 27",
+              "parent": "VIII. Fliegerkorps"
+            },
+            {
+              "unit": "StG 2",
+              "parent": "VIII. Fliegerkorps"
+            }
+          ]
+        },
+        {
+          "id": "stalingrad-romanian-phase-disputed-bombers",
+          "label": "5th Bomber Group’s disputed deployment date",
+          "date": "1942-09 to 1942-10",
+          "force": "Romanian Combat Aviation Command",
+          "side": "Axis",
+          "echelon": "squadron",
+          "event": "assigned, arrival disputed",
+          "scope": "Two named He 111 squadrons in 5th Bomber Group",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.geocities.ws/huzumstreza/Stalingrad.htm",
+          "locator": "September order at 5th Bomber Group, then arrival sequence under ‘Into battle’",
+          "sourceClass": "specialist order and campaign history",
+          "note": "One history dates engagement to 25 September. A second puts the group’s arrival after its October bomber-group movements. Both identities remain outside the September 26.",
+          "members": [
+            {
+              "unit": "79th Bomber Squadron",
+              "parent": "5th Bomber Group",
+              "source": "https://www.worldwar2.ro/arme/index.php?article=23",
+              "locator": "1942 Combat Aviation Command order, lists under 2nd Fighter and 2nd Bomber Flotillas and adjacent army/transport paragraph"
+            },
+            {
+              "unit": "80th Bomber Squadron",
+              "parent": "5th Bomber Group",
+              "source": "https://www.worldwar2.ro/arme/index.php?article=23",
+              "locator": "1942 Combat Aviation Command order, lists under 2nd Fighter and 2nd Bomber Flotillas and adjacent army/transport paragraph"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "The 22 November Soviet table gives holdings by air army; aircraft sent on individual interception missions remain untraced here.",
+          "losses": "No Soviet loss return is matched to Romania’s 9–18 September fighter claims.",
+          "effect": "The effect of Soviet interception on individual unsuccessful transport flights is unresolved."
+        },
+        "Axis": {
+          "effort": "Romanian evidence gives 524 fighter sorties on 9–18 September. November transport records separate departures or commitments from arrivals.",
+          "losses": "The Romanian military-history study reports 11 aircraft lost on 9–18 September, but its itemised types account for ten. The difference remains open.",
+          "effect": "German bomber crews assessed Romanian escort positively. On 16 December Sixth Army’s quartermaster recorded 125 tons arriving and asked for more food."
+        }
+      }
+    },
+    "kursk": {
+      "cases": [
+        {
+          "date": "1943-07-05",
+          "title": "Northern face: 1,232 sorties and an army still short of support",
+          "mission": "Eight fighters from the Soviet 53rd Guards Fighter Aviation Regiment engaged German bombers. The 54th Guards and 519th Fighter Regiments also appear in the first-day combat account. Across all roles, 16th Air Army recorded 1,232 sorties.",
+          "effect": "That army’s own history says ground troops received inadequate support and reports German penetration of 6–8 km on the main axis. The Central Front wartime order names both 2nd Tank Army and 16th Air Army for the counterattack.",
+          "limit": "The front order shows the intended cooperation. A particular regiment’s effect on the advance has not been isolated. The air army’s 106 aerial victories are claims without a matching German loss return.",
+          "sources": [
+            {
+              "name": "16th Air Army, published formation history",
+              "url": "https://militera.lib.ru/h/16va/02.html",
+              "locator": "Chapter 2, printed pp. 91–95, 5 July combat narratives and first-day assessment",
+              "kind": "Soviet institutional unit history"
+            },
+            {
+              "name": "Central Front combat order 00366/op",
+              "url": "https://docs.historyrussia.org/ru/nodes/189939-boevoe-rasporyazhenie-komanduyuschego-voyskami-tsentralnogo-fronta-locale-nil-00366-op-komanduyuschim-2-y-tankovoy-i-16-y-vozdushnoy-armiyami-na-nanesenie-kontrudara-5-iyulya-1943-g",
+              "locator": "5 July 1943, TsAMO f. 62, op. 329, d. 23, l. 20",
+              "kind": "wartime ground-front order, archive catalogue"
+            },
+            {
+              "name": "1. Flieger-Division, dated command table",
+              "url": "https://lexikon-der-wehrmacht.de/Gliederungen/Fliegerdivision/Fliegerdiv1-3-R.htm",
+              "locator": "4 July 1943 (Kursk), subordinate and directly attached formations columns",
+              "kind": "specialist German command chronology"
+            }
+          ],
+          "rosterIds": [
+            "kursk-northern-flying-regiments",
+            "kursk-northern-strike-gruppen",
+            "kursk-northern-nagr4"
+          ]
+        },
+        {
+          "date": "1943-07-05",
+          "title": "Southern face: two Soviet air armies struck together",
+          "mission": "Kozhevnikov groups 417 assault aircraft and fighters from 2nd and 17th Air Armies in the morning attacks on seven airfields. He also records support near the Seversky Donets crossings and names the 4th and 5th Fighter Aviation Corps of 2nd Air Army in the fighting over the troops.",
+          "effect": "The German XLVIII Panzer Corps chief of staff later described losses to Soviet aviation. His account corroborates exposure of German ground forces, but does not identify airframes destroyed at the seven airfields or tanks lost to particular sorties.",
+          "limit": "The Soviet airfield-destruction claim, the ground officer’s description, and the 1 July southern German/Hungarian deployment list refer to different targets and observations. No fleet-wide exchange ratio follows from them.",
+          "sources": [
+            {
+              "name": "M. N. Kozhevnikov, Command and staff of the Soviet Air Force",
+              "url": "https://militera.lib.ru/h/kozhevnikov_mn/05.html",
+              "locator": "Chapter V, printed pp. 151–153, morning airfield strikes, river crossings and German ground testimony at n. 265",
+              "kind": "Soviet command history citing participant histories"
+            },
+            {
+              "name": "Steven Newton, Kursk: The German View",
+              "url": "https://www.39-45.org/files3945c/4510_Newton_-_Kursk_-_The_German_View.pdf",
+              "locator": "Appendix 6A, pp. 195–199, Luftflotte 4 and VIII. Fliegerkorps, 1 July",
+              "kind": "published German command order of battle"
+            }
+          ],
+          "rosterIds": [
+            "kursk-2va-divisions",
+            "kursk-17va-divisions",
+            "kursk-hungarian-brigade",
+            "kursk-viii-strike-gruppen"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "kursk-northern-strike-gruppen",
+          "label": "Northern bomber and dive-bomber Gruppen",
+          "date": "1943-07-04",
+          "force": "1. Flieger-Division",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "assigned",
+          "scope": "Numbered medium-bomber and dive-bomber Gruppen, including direct attachments",
+          "total": 11,
+          "basis": "bounded source count",
+          "source": "https://lexikon-der-wehrmacht.de/Gliederungen/Fliegerdivision/Fliegerdiv1-3-R.htm",
+          "locator": "4 July 1943 (Kursk), subordinate and directly attached formations columns",
+          "sourceClass": "specialist German command chronology",
+          "note": "Seven medium-bomber and four dive-bomber Gruppen are named. The 4 July table includes direct attachments, Staffeln and staffs at separate echelons.",
+          "members": [
+            {
+              "unit": "II./KG 4",
+              "parent": "KG 4"
+            },
+            {
+              "unit": "III./KG 4",
+              "parent": "KG 4"
+            },
+            {
+              "unit": "II./KG 51",
+              "parent": "KG 51"
+            },
+            {
+              "unit": "III./KG 51",
+              "parent": "KG 51"
+            },
+            {
+              "unit": "I./KG 53",
+              "parent": "KG 53"
+            },
+            {
+              "unit": "III./KG 53",
+              "parent": "KG 53"
+            },
+            {
+              "unit": "III./KG 1",
+              "parent": "KG 1"
+            },
+            {
+              "unit": "I./StG 1",
+              "parent": "StG 1"
+            },
+            {
+              "unit": "II./StG 1",
+              "parent": "StG 1"
+            },
+            {
+              "unit": "III./StG 1",
+              "parent": "StG 1"
+            },
+            {
+              "unit": "III./StG 3",
+              "parent": "StG 3"
+            }
+          ]
+        },
+        {
+          "id": "kursk-northern-nagr4",
+          "label": "Short-range reconnaissance Staffeln of NAGr 4",
+          "date": "1943-07-04",
+          "force": "1. Flieger-Division",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "assigned",
+          "scope": "Staffeln listed directly under Nahaufklärungsgruppe 4 in the northern command table",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://lexikon-der-wehrmacht.de/Gliederungen/Fliegerdivision/Fliegerdiv1-3-R.htm",
+          "locator": "4 July 1943 (Kursk), subordinate and directly attached formations columns",
+          "sourceClass": "specialist German command chronology",
+          "note": "Long-range reconnaissance units in the same table belong to a separate heading. This is a formation list without sortie returns.",
+          "members": [
+            {
+              "unit": "1./NAGr 4",
+              "parent": "Nahaufklärungsgruppe 4"
+            },
+            {
+              "unit": "2./NAGr 4",
+              "parent": "Nahaufklärungsgruppe 4"
+            },
+            {
+              "unit": "3./NAGr 4",
+              "parent": "Nahaufklärungsgruppe 4"
+            }
+          ]
+        },
+        {
+          "id": "kursk-northern-flying-regiments",
+          "label": "Fighter regiments named in the northern first-day narrative",
+          "date": "1943-07-05",
+          "force": "16th Air Army",
+          "side": "Allied",
+          "echelon": "regiment",
+          "event": "flew",
+          "scope": "Identified regiments in the unit history’s narrative of 5 July — northern sector",
+          "total": 3,
+          "basis": "identified lower bound",
+          "source": "https://militera.lib.ru/h/16va/02.html",
+          "locator": "Chapter 2, printed pp. 91–95, 5 July combat narratives and first-day assessment",
+          "sourceClass": "Soviet institutional unit history",
+          "note": "The selected narrative gives actions at regiment or smaller scale. It does not enumerate every regiment that flew.",
+          "members": [
+            {
+              "unit": "53rd Guards Fighter Aviation Regiment",
+              "parent": "16th Air Army",
+              "activity": "Ratnikov led eight fighters in an engagement with bombers.",
+              "activitySource": "https://militera.lib.ru/h/16va/02.html",
+              "activityLocator": "Chapter 2, printed pp. 91–95, 5 July combat narratives and first-day assessment"
+            },
+            {
+              "unit": "54th Guards Fighter Aviation Regiment",
+              "parent": "16th Air Army",
+              "activity": "Polyakov’s Yak-7 was set on fire during the engagement.",
+              "activitySource": "https://militera.lib.ru/h/16va/02.html",
+              "activityLocator": "Chapter 2, printed pp. 91–95, 5 July combat narratives and first-day assessment"
+            },
+            {
+              "unit": "519th Fighter Aviation Regiment",
+              "parent": "16th Air Army",
+              "activity": "Kolesnichenko fought during the first-day engagements.",
+              "activitySource": "https://militera.lib.ru/h/16va/02.html",
+              "activityLocator": "Chapter 2, printed pp. 91–95, 5 July combat narratives and first-day assessment"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Northern 16th Air Army reported 1,232 sorties on 5 July. The southern 417 counts aircraft in a two-army attack.",
+          "losses": "The 54th Guards account identifies one pilot’s Yak-7 catching fire. Soviet aggregate first-day losses cover several commands.",
+          "effect": "Central Front ordered air and tank cooperation. The northern air army’s own history acknowledges inadequate support to the ground forces."
+        },
+        "Axis": {
+          "effort": "The northern strike and reconnaissance orders name Gruppen and Staffeln on 4 July. They give no 5 July sortie denominator.",
+          "losses": "XLVIII Panzer Corps’s memoir describes losses to Soviet aviation without a matched number of aircraft or tanks.",
+          "effect": "On the main northern axis 16th Air Army’s account records a 6–8 km German penetration. The share explained by air support remains unknown."
+        }
+      }
+    },
+    "bagration": {
+      "cases": [
+        {
+          "date": "1944-06-23",
+          "title": "Normandie’s escort and the ground front’s same-day return",
+          "mission": "GC 3 Normandie, one of four regiments in 303rd Fighter Aviation Division, recorded escorting Soviet Pe-2 bombers to Bogushevsk. Third Belorussian Front separately described 1st Air Army cover, reconnaissance and ground support that day.",
+          "effect": "The receiving front recorded 877 bombing and assault sorties, including 105 at night. Its return confirms support to its troops and distinguishes fighter cover from those 877 sorties.",
+          "limit": "No ground record identifies the result of this particular escorted formation’s bombing, and the other three regiments’ assignments do not prove that they flew with it.",
+          "sources": [
+            {
+              "name": "GC 3 Normandie, journal de marche",
+              "url": "https://bibert.fr/Joseph_Bibert_fichiers/Gabriel%20MERTZISEN_fichiers/Normandie%20Niemen%20JM.pdf",
+              "locator": "23 June 1944, printed p. 56, Pe-2 escort to Bogushevsk",
+              "kind": "wartime French unit diary, published copy"
+            },
+            {
+              "name": "3rd Belorussian Front situation reports",
+              "url": "https://militera.org/books/pdf/h/sb_osvobozhdenie-belarusi.pdf",
+              "locator": "23 and 27 June situation reports, pp. 303–305, TsAMO f. 241, op. 2593, d. 232, ll. 104–105, 141–143",
+              "kind": "wartime ground-front reports, document edition"
+            },
+            {
+              "name": "303rd Division, composition and dates of regimental service",
+              "url": "https://ru.wikipedia.org/wiki/303-я_смешанная_авиационная_дивизия",
+              "locator": "Боевой состав дивизии, dated row for each regiment, and June–July 1944 battle honours",
+              "kind": "secondary compilation of unit service dates"
+            },
+            {
+              "name": "French Ministry of the Armed Forces, Normandie–Niémen",
+              "url": "https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/operations-militaires/1941-1943-8",
+              "locator": "Normandie devient Normandie-Niémen, second campaign and July naming",
+              "kind": "institutional unit history"
+            },
+            {
+              "name": "Smolensk State Museum, Bagration airfield photographs",
+              "url": "https://www.smolensk-museum.ru/afisha/virtualnie-vistavki/v-nebesah-mi-letali-odnih-_1002/normandiya-neman-v-belorusskoy-nast-operacii-bagration-aerod/",
+              "locator": "Photographs of the French unit at Dubrovka, Rudnya district, June 1944",
+              "kind": "museum catalogue of contemporary photographs"
+            },
+            {
+              "name": "Mémorial Normandie–Niémen, second campaign",
+              "url": "https://memorial-normandie-niemen.fr/deuxieme-campagne/",
+              "locator": "Doubrovka, departure for Mikountani on 15 July, subsequent operational chronology",
+              "kind": "institutional unit history"
+            }
+          ],
+          "rosterIds": [
+            "bagration-303iad-regiments",
+            "bagration-1va-divisions"
+          ]
+        },
+        {
+          "date": "1944-06-26 to 1944-06-27",
+          "title": "Bobruisk: an aircrew’s bridge report alongside the ground encirclement",
+          "mission": "On 27 June the 569th Assault Aviation Regiment attacked vehicles heading toward Titovka. Nine Pe-2s of the 24th Bomber Aviation Regiment were sent to the Berezina railway bridge at Bobruisk.",
+          "effect": "The Soviet report credits 569th Regiment with helping 9th Tank Corps and reports a bridge span falling during 24th Regiment’s mission. The lead bomber was lost and two crew died. Ninth Army’s own diary separately records overnight road interruptions and a badly hit signals centre at Osipovichi; a courier carried the morning order.",
+          "limit": "Ninth Army’s overnight entry precedes the daytime bridge attack. Its observable communications loss does not verify that particular bomb hit or explain the whole encirclement. The daytime bomber loss and the separate zero-loss evening strike concern different missions.",
+          "sources": [
+            {
+              "name": "16th Air Army, published unit history",
+              "url": "https://militera.lib.ru/h/16va/03.html",
+              "locator": "Chapter 3, 26–27 June, pp. 169–174, 569th Assault and 24th Bomber Regiments",
+              "kind": "Soviet institutional unit history"
+            },
+            {
+              "name": "Earl Ziemke, Stalingrad to Berlin",
+              "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Defeat/USA-EF-Defeat-15.html",
+              "locator": "Chapter XV, pp. 321–322, The Bobruysk Pocket, German Ninth Army and OKH",
+              "kind": "US Army official history drawing on German army records"
+            },
+            {
+              "name": "German Ninth Army war diary, entry of 27 June",
+              "url": "https://www.wwiidaybyday.com/Einheiten/Infanterietruppen/390.Feldausbildungsdivision/390fadktbjun44.html",
+              "locator": "KTB 9. Armee, opening paragraphs, 27 June 1944, reproduced in the 390. Feldausbildungsdivision material",
+              "kind": "German wartime ground-army diary transcription"
+            }
+          ],
+          "rosterIds": [
+            "bagration-soviet-day-regiments",
+            "bagration-soviet-cover"
+          ]
+        },
+        {
+          "date": "1944-06-26",
+          "title": "Where German short-range reconnaissance was listed",
+          "mission": "The 26 June order places eight reconnaissance Staffeln in three operational commands, including 1./NAGr 4 at Bobruisk, 2./NAGr 4 at Orsha and 12./NAGr 12 at Mogilev.",
+          "effect": "These stations show reconnaissance forces distributed between multiple sectors. A fighter-only table would omit them from the German side entirely.",
+          "limit": "No dated reconnaissance photographs or receiving ground-unit entries here tie an individual report from these eight Staffeln to a decision.",
+          "sources": [
+            {
+              "name": "Luftwaffe Eastern order of battle, 26 June 1944",
+              "url": "https://www.lexikon-der-wehrmacht.de/OrdersofBattle/Juni1944-R.htm",
+              "locator": "Luftflotte 6, 1. and 4. Fliegerdivision and Fliegerführer Nr. 1",
+              "kind": "specialist formation and station table"
+            },
+            {
+              "name": "Henry deZeng, Luftwaffe Airfields — Russia and Ukraine",
+              "url": "https://www.ww2.dk/Airfields%20-%20Russia%20and%20Ukraine.pdf",
+              "locator": "Budslaw (Budslav), ZNr. 10-1404, approximately 54°47′ N 27°26′ E; operational units, June 1944",
+              "kind": "historical airfield gazetteer"
+            }
+          ],
+          "rosterIds": [
+            "bagration-german-close-recce"
+          ]
+        },
+        {
+          "date": "1944-07-29",
+          "title": "A forward base on the Niemen",
+          "mission": "The French regiment moved from Mikountani to Alytus on 29 July. Pilot Roger Sauvage recalls patrols flown from the Alytus base. The local airfield history identifies the site used by the regiment.",
+          "effect": "The move documents a new base in Lithuania after the missions flown from the Smolensk area in June. The map uses the original airfield, identified separately from the Alytus II satellite.",
+          "limit": "A specific ground formation or engagement protected by each Alytus patrol has not been identified. Doubrovka, the earlier field, remains unpinned because the village point does not locate the strip.",
+          "sources": [
+            {
+              "name": "Normandie unit itinerary",
+              "url": "https://www.traditions-air.fr/texte/documents_pdf/Normandie_Niemen.pdf",
+              "locator": "Unit itinerary, station 16, 29 July 1944, ‘Altous’",
+              "kind": "published unit chronology"
+            },
+            {
+              "name": "Alytus tourism centre, Alytus aeroclub and airfield",
+              "url": "https://www.alytusinfo.lt/data/ckfinder/files/Sport%20and%20recreation.pdf",
+              "locator": "Alytus aero-club historical profile, prewar airfield and French regiment in 1944",
+              "kind": "local institutional field history"
+            },
+            {
+              "name": "Henry deZeng, Luftwaffe Airfields — Baltic States",
+              "url": "https://www.ww2.dk/Airfields%20-%20Baltic%20States%20-%20Estonia%2C%20Latvia%20and%20Lithuania.pdf",
+              "locator": "Alytus I (Olita), ZNr. 10-897, 54°24′53″ N 24°03′24″ E; separate Alytus II satellite",
+              "kind": "historical airfield gazetteer based on Allied and German archives"
+            },
+            {
+              "name": "Roger Sauvage, Un du Normandie-Niemen",
+              "url": "https://www.bibert.fr/Joseph_Bibert_fichiers/Gabriel%20MERTZISEN_fichiers/Un%20du%20Normandie%20Niemen.pdf",
+              "locator": "Part III, ‘Alytous – 29 Juillet 44’, p. 60 onward, camp by the right-bank airfield and patrols",
+              "kind": "French participant memoir"
+            }
+          ],
+          "rosterIds": [
+            "bagration-normandie-alytus"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "bagration-303iad-regiments",
+          "label": "Regiments of 303rd Fighter Aviation Division",
+          "date": "1944-06-23",
+          "force": "1st Air Army, 3rd Belorussian Front",
+          "side": "Allied",
+          "echelon": "regiment",
+          "event": "assigned",
+          "scope": "Soviet and French regiments identified from the dated division list",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://ru.wikipedia.org/wiki/303-я_смешанная_авиационная_дивизия",
+          "locator": "Боевой состав дивизии, dated row for each regiment, and June–July 1944 battle honours",
+          "sourceClass": "secondary compilation of unit service dates",
+          "note": "The French unit’s wartime name was Normandie. The Niemen distinction followed in July. The 168th had already left in May, and the 9th Guards joined in October.",
+          "members": [
+            {
+              "unit": "18th Guards Fighter Aviation Regiment",
+              "parent": "303rd Fighter Aviation Division"
+            },
+            {
+              "unit": "139th Guards Fighter Aviation Regiment",
+              "parent": "303rd Fighter Aviation Division"
+            },
+            {
+              "unit": "523rd Fighter Aviation Regiment",
+              "parent": "303rd Fighter Aviation Division"
+            },
+            {
+              "unit": "GC 3 Normandie (French fighter regiment)",
+              "parent": "303rd Fighter Aviation Division",
+              "activity": "Escorted Pe-2 bombers to Bogushevsk on 23 June.",
+              "activitySource": "https://bibert.fr/Joseph_Bibert_fichiers/Gabriel%20MERTZISEN_fichiers/Normandie%20Niemen%20JM.pdf",
+              "activityLocator": "23 June 1944, printed p. 56, Pe-2 escort to Bogushevsk",
+              "place": "Doubrovka field, Rudnya district, June 1944",
+              "source": "https://www.smolensk-museum.ru/afisha/virtualnie-vistavki/v-nebesah-mi-letali-odnih-_1002/normandiya-neman-v-belorusskoy-nast-operacii-bagration-aerod/",
+              "locator": "Photographs of the French unit at Dubrovka, Rudnya district, June 1944"
+            }
+          ]
+        },
+        {
+          "id": "bagration-german-close-recce",
+          "label": "German short-range reconnaissance Staffeln",
+          "date": "1944-06-26",
+          "force": "Luftflotte 6",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "listed at station",
+          "scope": "Three commands in Luftflotte 6: 1. and 4. Fliegerdivision and Fliegerführer 1",
+          "total": 8,
+          "basis": "bounded source count",
+          "source": "https://www.lexikon-der-wehrmacht.de/OrdersofBattle/Juni1944-R.htm",
+          "locator": "Luftflotte 6, 1. and 4. Fliegerdivision and Fliegerführer Nr. 1",
+          "sourceClass": "specialist formation and station table",
+          "note": "The table places reconnaissance detachments beyond the two Bf 109 fighter Gruppen often cited. The numbers alongside them are not verified sortie totals or serviceability counts.",
+          "members": [
+            {
+              "unit": "1./NAGr 4",
+              "parent": "1. Fliegerdivision",
+              "place": "Bobruisk"
+            },
+            {
+              "unit": "11./NAGr 11",
+              "parent": "1. Fliegerdivision",
+              "place": "Uretsye"
+            },
+            {
+              "unit": "11./NAGr 12",
+              "parent": "1. Fliegerdivision",
+              "place": "Uretsye"
+            },
+            {
+              "unit": "2./NAGr 4",
+              "parent": "4. Fliegerdivision",
+              "place": "Orsha"
+            },
+            {
+              "unit": "3./NAGr 14",
+              "parent": "4. Fliegerdivision",
+              "place": "Tolochin"
+            },
+            {
+              "unit": "12./NAGr 12",
+              "parent": "Fliegerführer 1",
+              "place": "Mogilev"
+            },
+            {
+              "unit": "2./NAGr 5",
+              "parent": "Fliegerführer 1",
+              "place": "Budsslav",
+              "stations": [
+                "east-budslaw"
+              ]
+            },
+            {
+              "unit": "4./NAGr 31",
+              "parent": "Fliegerführer 1",
+              "place": "Budsslav",
+              "stations": [
+                "east-budslaw"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bagration-normandie-alytus",
+          "label": "French fighter regiment at Alytus",
+          "date": "1944-07-29",
+          "force": "303rd Fighter Aviation Division",
+          "side": "Allied",
+          "echelon": "regiment",
+          "event": "moved to airfield",
+          "scope": "French regiment transferring from Mikountani to Alytus during the pursuit",
+          "total": 1,
+          "basis": "identified lower bound",
+          "source": "https://www.traditions-air.fr/texte/documents_pdf/Normandie_Niemen.pdf",
+          "locator": "Unit itinerary, station 16, 29 July 1944, ‘Altous’",
+          "sourceClass": "published unit chronology",
+          "note": "The local airfield history identifies the French unit at the aeroclub site. The gazetteer distinguishes the original field from satellite Alytus II. This late-July position is separate from the June escort base.",
+          "members": [
+            {
+              "unit": "GC 3 Normandie–Niémen",
+              "parent": "303rd Fighter Aviation Division",
+              "place": "Alytus I (Olita), 29 July 1944",
+              "stations": [
+                "east-alytus-i"
+              ],
+              "activity": "Sauvage recalled patrols from the Alytus base.",
+              "activitySource": "https://www.bibert.fr/Joseph_Bibert_fichiers/Gabriel%20MERTZISEN_fichiers/Un%20du%20Normandie%20Niemen.pdf",
+              "activityLocator": "Part III, ‘Alytous – 29 Juillet 44’, p. 60 onward, camp by the right-bank airfield and patrols"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "A French regiment’s 23 June escort and the receiving front’s 877 assault/bombing sorties are separately documented.",
+          "losses": "The 24th Bomber Regiment lost the lead Pe-2 during the 27 June daytime bridge sortie. The evening mass strike reported no own losses.",
+          "effect": "Front reports confirm cover and support. The air army identifies 9th Tank Corps as beneficiary of 569th Regiment’s daytime attack."
+        },
+        "Axis": {
+          "effort": "A 26 June station list adds eight short-range reconnaissance Staffeln across three commands. Sorties by each remain open.",
+          "losses": "German aircraft withdrawals in the existing records cover the month. They cannot validate losses on the Bobruisk mission.",
+          "effect": "Ninth Army’s 27 June diary records road traffic halted at times and a courier carrying orders after bombing disrupted telephone communications."
+        }
+      }
+    },
+    "berlin": {
+      "cases": [
+        {
+          "date": "1945-04-16",
+          "title": "What the 16th Air Army could field and what actually flew",
+          "mission": "The after-action report gives 3,037 serviceable aircraft before the offensive. The army records 2,531 aircraft flying 5,342 sorties on 16 April, including 1,188 day fighters on 2,545 sorties. Nineteen assigned regiments in three selected corps can be named.",
+          "effect": "The report attributes 6,548 sorties to the combined effort on this reporting front: 5,342 from 16th Air Army, 766 from 18th and 440 from 4th. The 17 April order names the 8th Guards Army’s sector as beneficiary of a further 6th Bomber Corps task.",
+          "limit": "The compilation counts 3,033 combat aircraft out of 3,188 total. Its 114 reconnaissance and spotting aircraft differ from 51 plus 67 in the army return. Separately, the primary transcription’s first-day sortie categories sum to 5,352 (109 + 1,315 + 1,383 + 2,545), ten above its twice-stated 5,342. Neither discrepancy has been silently corrected.",
+          "sources": [
+            {
+              "name": "Battle for Berlin, Soviet archive document edition",
+              "url": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+              "locator": "Documents 136 and 143, 17 April ground-support order and 19 May after-action report, printed pp. 193–195 and 201–203; 16 April sortie and loss returns",
+              "kind": "wartime air-army returns, published transcription"
+            },
+            {
+              "name": "Russian 16th Air Army, battle for Berlin",
+              "url": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945rdad.pdf",
+              "locator": "16 April roster, pp. 1–3, especially regiments under 6th and 9th Assault and 13th Fighter corps, and source note",
+              "kind": "secondary compilation using Soviet official history and unspecified additional sources"
+            }
+          ],
+          "rosterIds": [
+            "berlin-va",
+            "berlin-16va-three-corps-regiments"
+          ]
+        },
+        {
+          "date": "1945-04-14 to 1945-04-24",
+          "title": "Polish fighter cover along the northern advance",
+          "mission": "Poland’s 1st Fighter Regiment left Mirosławiec for Barnówko on 14 April. It reported twelve flights on 16 April, when its responsibilities included cover for 1st Army’s crossing of the Oder. The regiment also identifies escort of Polish 3rd Assault Regiment near Bad Freienwalde.",
+          "effect": "The ground history records 1st Army establishing a bridgehead over the Oder, reaching the Alte Oder on 18 April and crossing it after further fighting on 19 April. This supplies a dated ground sequence in the same sector.",
+          "limit": "The mapped Mirosławiec field was the departure base on 14 April. Barnówko was the operational base during the crossing; its surviving field description has not established a precise map point. The accounts do not isolate this escort’s effect on any individual crossing.",
+          "sources": [
+            {
+              "name": "Krzemiński, Polish General Staff Academy study",
+              "url": "https://pbio.akademia.mil.pl/wp-content/scans/usb1/PARTIA_6_I_EKSPORTOWA/03_PDF/61111.pdf",
+              "locator": "Berlin operation, pp. 38–39 and discussion of 1st Fighter Regiment, 4th Mixed Division and corps transfers 20–24 April",
+              "kind": "Polish military institutional history"
+            },
+            {
+              "name": "1st Fighter Regiment history, Głos Ziemi Mińskiej",
+              "url": "https://mbc.cyfrowemazowsze.pl/Content/91095/PDF/00104318_-_Glos-Ziemi-Minskiej-biu-ki-2001-nr-12-sierpien-_-.pdf",
+              "locator": "August 2001, p. 9, Berlin operation escort of 3rd Assault Regiment near Bad Freienwalde",
+              "kind": "Polish regimental retrospective"
+            },
+            {
+              "name": "H. Stańczyk, Polish Army on the eastern front 1943–1945",
+              "url": "https://bazhum.muzhp.pl/media/texts/piotrkowskie-zeszyty-historyczne/2003-tom-5/piotrkowskie_zeszyty_historyczne-r2003-t5-s247-262.pdf",
+              "locator": "Piotrkowskie Zeszyty Historyczne 5, pp. 258–259, 1st Army’s Oder crossings on 16–19 April",
+              "kind": "academic ground campaign history drawing on army studies and archival directives"
+            },
+            {
+              "name": "Polish 1st Fighter Regiment, airfield chronology",
+              "url": "https://www.polishairforce.pl/1plmdowodcy.html",
+              "locator": "Lotniska w okresie II wojny światowej, 14 April 1945 change from Mirosławiec to Barnówko",
+              "kind": "specialist unit history"
+            },
+            {
+              "name": "Mirosławiec municipal history of the airfield",
+              "url": "https://www.okwm.pl/wp-content/uploads/2019/12/Miros%C5%82awiec-historia-legendy-ciekawoski-1.pdf",
+              "locator": "Military airfield timeline, 1939–1945, Polish fighter, assault and night-bomber regiments",
+              "kind": "municipal historical study"
+            },
+            {
+              "name": "Märkisch-Friedland wartime field location",
+              "url": "https://forum.axishistory.com/viewtopic.php?p=1479531",
+              "locator": "Historical gazetteer excerpt from AFHRA airfield file, 53°23′35″ N 16°05′04″ E, north of Märkisch-Friedland",
+              "kind": "specialist transcription of wartime airfield catalogue"
+            }
+          ],
+          "rosterIds": [
+            "berlin-polish-escort-regiments"
+          ]
+        },
+        {
+          "date": "1945-04-25 to 1945-04-26",
+          "title": "How many of the 18th Air Army’s Berlin sorties reached the target?",
+          "mission": "The army’s overnight return lists 563 sorties for southwest Berlin. Of these, 517 aircraft reported bombing there: 139, 110, 201 and 60 from the four Guards Aviation Corps and seven from 45th Aviation Division.",
+          "effect": "Crews reported up to 30 fires and three large explosions. The first corps reported two Il-4s failing to return that night. The report also notes enemy fighter patrols and antiaircraft fire over Berlin.",
+          "limit": "The army’s total of 640 sorties includes Breslau and other tasks. Fires seen by crews cannot establish casualties, the effect on German units, or how the raid affected the following day’s Soviet ground advance. No German unit is identified as the patrol contact.",
+          "sources": [
+            {
+              "name": "Battle for Berlin, Soviet archive document edition",
+              "url": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+              "locator": "Document 138, 18th Air Army operational summary no. 116, 26 April, pp. 187–190, f. 480, op. 7106, d. 231, ll. 62–65; separate document 143, 16th Air Army after-action report, pp. 201–203",
+              "kind": "wartime air-army returns, published transcription"
+            }
+          ],
+          "rosterIds": [
+            "berlin-18va-night-corps"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "berlin-16va-three-corps-regiments",
+          "label": "Regiments under three 16th Air Army corps",
+          "date": "1945-04-16",
+          "force": "16th Air Army",
+          "side": "Allied",
+          "echelon": "regiment",
+          "event": "assigned",
+          "scope": "Regiments listed under 6th and 9th Assault Aviation Corps and 13th Fighter Aviation Corps",
+          "total": 19,
+          "basis": "bounded source count",
+          "source": "https://www.generalstaff.org/NAF/Pt_I_1943-1945/945rdad.pdf",
+          "locator": "16 April roster, pp. 1–3, especially regiments under 6th and 9th Assault and 13th Fighter corps, and source note",
+          "sourceClass": "secondary compilation using Soviet official history and unspecified additional sources",
+          "note": "The compilation identifies these regiments in three corps. Its endnote leaves the source of regimental additions unspecified. Other corps and separate divisions are outside these nineteen entries.",
+          "members": [
+            {
+              "unit": "618th Assault Aviation Regiment",
+              "parent": "197th Assault Aviation Division"
+            },
+            {
+              "unit": "765th Assault Aviation Regiment",
+              "parent": "197th Assault Aviation Division"
+            },
+            {
+              "unit": "805th Assault Aviation Regiment",
+              "parent": "197th Assault Aviation Division"
+            },
+            {
+              "unit": "41st Assault Aviation Regiment",
+              "parent": "198th Assault Aviation Division"
+            },
+            {
+              "unit": "567th Assault Aviation Regiment",
+              "parent": "198th Assault Aviation Division"
+            },
+            {
+              "unit": "945th Assault Aviation Regiment",
+              "parent": "198th Assault Aviation Division"
+            },
+            {
+              "unit": "33rd Guards Assault Aviation Regiment",
+              "parent": "3rd Guards Assault Aviation Division"
+            },
+            {
+              "unit": "70th Guards Assault Aviation Regiment",
+              "parent": "3rd Guards Assault Aviation Division"
+            },
+            {
+              "unit": "71st Guards Assault Aviation Regiment",
+              "parent": "3rd Guards Assault Aviation Division"
+            },
+            {
+              "unit": "106th Assault Aviation Regiment",
+              "parent": "300th Assault Aviation Division"
+            },
+            {
+              "unit": "382nd Assault Aviation Regiment",
+              "parent": "300th Assault Aviation Division"
+            },
+            {
+              "unit": "724th Assault Aviation Regiment",
+              "parent": "300th Assault Aviation Division"
+            },
+            {
+              "unit": "904th Assault Aviation Regiment",
+              "parent": "300th Assault Aviation Division"
+            },
+            {
+              "unit": "347th Fighter Aviation Regiment",
+              "parent": "193rd Fighter Aviation Division"
+            },
+            {
+              "unit": "515th Fighter Aviation Regiment",
+              "parent": "193rd Fighter Aviation Division"
+            },
+            {
+              "unit": "518th Fighter Aviation Regiment",
+              "parent": "193rd Fighter Aviation Division"
+            },
+            {
+              "unit": "56th Guards Fighter Aviation Regiment",
+              "parent": "283rd Fighter Aviation Division"
+            },
+            {
+              "unit": "431st Fighter Aviation Regiment",
+              "parent": "283rd Fighter Aviation Division"
+            },
+            {
+              "unit": "116th Guards Fighter Aviation Regiment",
+              "parent": "283rd Fighter Aviation Division"
+            }
+          ]
+        },
+        {
+          "id": "berlin-18va-night-corps",
+          "label": "Bomber corps reporting over southwest Berlin",
+          "date": "1945-04-25 to 1945-04-26",
+          "force": "18th Air Army",
+          "side": "Allied",
+          "echelon": "corps",
+          "event": "bombed",
+          "scope": "Four corps itemised in operational summary 116 for the night of 25/26 April",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+          "locator": "Document 138, 18th Air Army operational summary no. 116, 26 April, pp. 187–190, f. 480, op. 7106, d. 231, ll. 62–65; separate document 143, 16th Air Army after-action report, pp. 201–203",
+          "sourceClass": "wartime air-army returns, published transcription",
+          "note": "The four corps account for 510 aircraft reported bombing Berlin. The separate 45th Aviation Division adds seven, giving the army’s 517.",
+          "members": [
+            {
+              "unit": "1st Guards Aviation Corps",
+              "parent": "18th Air Army",
+              "activity": "139 aircraft reported bombing southwest Berlin.",
+              "activitySource": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+              "activityLocator": "Document 138, corps paragraph 1, night 25/26 April"
+            },
+            {
+              "unit": "2nd Guards Aviation Corps",
+              "parent": "18th Air Army",
+              "activity": "110 aircraft reported bombing southwest Berlin.",
+              "activitySource": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+              "activityLocator": "Document 138, corps paragraph 2, night 25/26 April"
+            },
+            {
+              "unit": "3rd Guards Aviation Corps",
+              "parent": "18th Air Army",
+              "activity": "201 aircraft reported bombing southwest Berlin.",
+              "activitySource": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+              "activityLocator": "Document 138, corps paragraph 3, night 25/26 April"
+            },
+            {
+              "unit": "4th Guards Aviation Corps",
+              "parent": "18th Air Army",
+              "activity": "60 aircraft reported bombing southwest Berlin.",
+              "activitySource": "https://militera.lib.ru/docs/da/berlin_45/07.html",
+              "activityLocator": "Document 138, corps paragraph 4, night 25/26 April"
+            }
+          ]
+        },
+        {
+          "id": "berlin-jg4-rechlin",
+          "label": "JG 4 Gruppen at Rechlin",
+          "date": "1945-04-19",
+          "force": "Luftwaffe",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "listed at station",
+          "scope": "Two numbered JG 4 Gruppen whose station tables record this 19 April move",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.lexikon-der-wehrmacht.de/Gliederungen/Jagdgeschwader/JG4-R.htm",
+          "locator": "II. and III. Gruppe 1945 station tables, entries for 19 April",
+          "sourceClass": "specialist unit chronology",
+          "note": "Only specific units with dated entries are counted. The source spells the field Rechlin-Roggethin; the exact wartime field boundary and sorties over Berlin remain unresolved.",
+          "members": [
+            {
+              "unit": "II./JG 4",
+              "parent": "JG 4",
+              "place": "Rechlin-Roggethin (source spelling)"
+            },
+            {
+              "unit": "III./JG 4",
+              "parent": "JG 4",
+              "place": "Rechlin-Roggethin (source spelling)"
+            }
+          ]
+        },
+        {
+          "id": "berlin-polish-escort-regiments",
+          "label": "Polish fighter and assault regiments operating together",
+          "date": "1945-04",
+          "force": "Polish 4th Mixed Aviation Division",
+          "side": "Allied",
+          "echelon": "regiment",
+          "event": "flew",
+          "scope": "Named escort and escorted regiments in the Bad Freienwalde sector",
+          "total": 2,
+          "basis": "identified lower bound",
+          "source": "https://mbc.cyfrowemazowsze.pl/Content/91095/PDF/00104318_-_Glos-Ziemi-Minskiej-biu-ki-2001-nr-12-sierpien-_-.pdf",
+          "locator": "August 2001, p. 9, Berlin operation escort of 3rd Assault Regiment near Bad Freienwalde",
+          "sourceClass": "Polish regimental retrospective",
+          "note": "These two are documented as partners on operations. The division also contained other aircraft and units.",
+          "members": [
+            {
+              "unit": "1st Fighter Aviation Regiment Warszawa",
+              "parent": "4th Mixed Aviation Division",
+              "activity": "Fighter cover for 3rd Assault Aviation Regiment in the Bad Freienwalde area.",
+              "activitySource": "https://mbc.cyfrowemazowsze.pl/Content/91095/PDF/00104318_-_Glos-Ziemi-Minskiej-biu-ki-2001-nr-12-sierpien-_-.pdf",
+              "activityLocator": "August 2001, p. 9, Berlin operation escort of 3rd Assault Regiment near Bad Freienwalde",
+              "place": "Mirosławiec until 14 April; Barnówko 14–25 April",
+              "source": "https://www.polishairforce.pl/1plmdowodcy.html",
+              "locator": "Lotniska w okresie II wojny światowej, 14 April 1945 change from Mirosławiec to Barnówko",
+              "stations": [
+                "east-miroslawiec"
+              ]
+            },
+            {
+              "unit": "3rd Assault Aviation Regiment",
+              "parent": "4th Mixed Aviation Division",
+              "activity": "Attack flights with 1st Fighter Regiment escort in the Bad Freienwalde area.",
+              "activitySource": "https://mbc.cyfrowemazowsze.pl/Content/91095/PDF/00104318_-_Glos-Ziemi-Minskiej-biu-ki-2001-nr-12-sierpien-_-.pdf",
+              "activityLocator": "August 2001, p. 9, Berlin operation escort of 3rd Assault Regiment near Bad Freienwalde"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "16th Army recorded 2,545 day-fighter sorties on 16 April. The 18th Army gives 563 Berlin sorties on 25/26 April and 517 bombers reporting over the target.",
+          "losses": "The 16th Air Army’s 16 April account lists 87 aircraft lost, 75 on combat tasks and 12 on other flights. On 25/26 April the 18th Air Army’s first corps separately reported two Il-4s missing.",
+          "effect": "The Polish ground account dates the Oder crossings. The 18th Air Army’s city raid produced crew-observed fires without independent building or ground-unit returns."
+        },
+        "Axis": {
+          "effort": "Two JG 4 Gruppen have named 19 April stations. The Soviet night report observed patrols but could not identify their units.",
+          "losses": "A German unit loss return matching the 25/26 April Soviet bombing report has not been identified.",
+          "effect": "Soviet crews observed fires and a German air response. German records tying these to a local command’s ability to fight remain open."
+        }
+      }
+    }
+  },
+  "stations": {
+    "east-alytus-i": {
+      "name": "Alytus I (Olita), historical airfield",
+      "lat": 54.41472,
+      "lon": 24.05667,
+      "source": "https://www.ww2.dk/Airfields%20-%20Baltic%20States%20-%20Estonia%2C%20Latvia%20and%20Lithuania.pdf",
+      "locator": "Alytus I (Olita), ZNr. 10-897, 54°24′53″ N 24°03′24″ E; separate Alytus II satellite"
+    },
+    "east-budslaw": {
+      "name": "Budslaw landing ground (approximate)",
+      "lat": 54.7833,
+      "lon": 27.4333,
+      "source": "https://www.ww2.dk/Airfields%20-%20Russia%20and%20Ukraine.pdf",
+      "locator": "Budslaw (Budslav), ZNr. 10-1404, approximately 54°47′ N 27°26′ E; operational units, June 1944"
+    },
+    "east-miroslawiec": {
+      "name": "Mirosławiec (Märkisch-Friedland), departure airfield",
+      "lat": 53.39306,
+      "lon": 16.08444,
+      "source": "https://forum.axishistory.com/viewtopic.php?p=1479531",
+      "locator": "Historical gazetteer excerpt from AFHRA airfield file, 53°23′35″ N 16°05′04″ E, north of Märkisch-Friedland"
+    }
+  }
+}

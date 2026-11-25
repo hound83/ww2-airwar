@@ -2,11 +2,15 @@
 
 [Active milestone roadmap after v10.1](ATLAS_ROADMAP_AFTER_V10_1.md) · [Completed roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 25 November 2026 — v10.2, deployed forces, missions and outcomes
+
+All 20 campaigns now have dated mission cases and separate coverage assessments for each side. The Atlas identifies 984 unit memberships across 170 dated lists, up from 297 across 44 in v10.1. The 78 cases link what formations did to what a ship, army, unit or observer recorded afterward. A unit can recur on multiple dates and at different reporting levels. [Campaign evidence](../campaign-evidence.html) · [Release findings](../research/sources/atlas-v102-campaign-evidence.md) · [Coverage by side](../research/exports/campaign-coverage.csv)
+
 ## 25 November 2026 — v10.1, Who was there?
 
 All 20 dossiers show which forces their sources cover, by date and echelon. The [roster explorer](../forces.html) contains 44 scoped lists and 297 dated memberships. Sicily includes four German fighter Gruppen, two wing headquarters and the 23 squadrons in five Commonwealth wings. Britain includes separate German and No. 11 Group returns for 7 September. Kursk covers both sectors, and Bagration follows the five Soviet air armies into 52 divisional entries on 1 July. These are counts of memberships in particular returns. A unit can recur across dates and a command can appear alongside its subordinates. [Research baseline](../research/sources/atlas-coverage-audit.md) · [Eastern returns](../research/sources/deployment-eastern-rosters.md) · [Station evidence and disagreements](../research/sources/deployment-stations.md) · [Download all rows](../research/exports/force-rosters.csv)
 
-Next up is v10.2, one release for all 20 campaigns across the opening and Channel battles, Mediterranean, Eastern Front and western air offensive. Each region has its own evidence targets. v11.0 follows with cross-campaign comparisons of protection, supply and industrial disruption. [Active roadmap](ATLAS_ROADMAP_AFTER_V10_1.md)
+The regional research outlined here shipped together in v10.2. The next milestone, v11.0, compares protection, supply and industrial disruption across campaigns. [Roadmap](ATLAS_ROADMAP_AFTER_V10_1.md)
 
 ## 24 November 2026 · v10.0, the connected European air war
 

@@ -1,0 +1,1586 @@
+{
+  "campaigns": {
+    "malta": {
+      "cases": [
+        {
+          "date": "1942-08-12",
+          "title": "Italian escorts shelter a torpedo attack on Pedestal",
+          "mission": "The 2° and 22° Gruppi escorted the first torpedo formation. The 2° also covered the second. Of 43 torpedo bombers dispatched, 41 reached the convoy at about 13:00.",
+          "effect": "Mattesini records that the torpedo attack scored no hits. The 109° Gruppo commander ditched under fighter attack and the 2° Gruppo lost a Re.2001.",
+          "limit": "The two formations shared escorts. This reconstruction does not isolate how much damage the fighters prevented or determine outcomes of the other air attacks that day.",
+          "sources": [
+            {
+              "name": "Francesco Mattesini, L’operazione Pedestal",
+              "url": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "locator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram",
+              "kind": "Italian naval historian’s reconstruction with wartime Superaereo graphic"
+            }
+          ],
+          "rosterIds": [
+            "malta-pedestal-escort",
+            "malta-pedestal-torpedo",
+            "malta-pedestal-training"
+          ]
+        },
+        {
+          "date": "1942-08-15/1942-08-16",
+          "title": "Fighters cover Ohio while the convoy reaches port",
+          "mission": "From 05:30 No. 249 Squadron covered convoy ships. Eight Spitfires of No. 185 Squadron guarded the incoming tanker Ohio from 06:43 to 08:16.",
+          "effect": "The Vice-Admiral at Malta reported fuel discharged by 09:00 on 16 August from Ohio and four merchant ships. The naval damage return puts Ohio’s arrival at 10:00 on 15 August and records a broken upper deck and flooded spaces.",
+          "limit": "The fighter patrol ending at 08:16 and the naval arrival at 10:00 mark different observations. The port signal combines cargoes from five ships. It cannot say which fuel came from Ohio or which attack a patrol prevented.",
+          "sources": [
+            {
+              "name": "Malta War Diary, 15 August",
+              "url": "https://maltagc70.wordpress.com/2022/08/15/15-august-1942-santa-marija-convoy-survivor-ohio-arrives-on-feast-day/",
+              "locator": "Air raids dawn 15 to dawn 16 August, entries from 05:30 to 08:16",
+              "kind": "Published daily chronology of Malta’s operations"
+            },
+            {
+              "name": "Vice-Admiral Malta and Admiralty War Diary",
+              "url": "https://sccd.royalnavy.mod.uk/-/media/rnweb/locations-and-operations/navy-historical-branch/pdfs/1942/war_diary_naval_1942_08---day-16-to-day-31.pdf?rev=49ee2f42961e4926a0ce04d43d15f77c",
+              "locator": "Admiralty War Diary, 16 August, p. 513, V.A. Malta signal 2003B/16 and 17 August, p. 542, convoy damage return",
+              "kind": "Contemporary naval signals"
+            }
+          ],
+          "rosterIds": [
+            "malta-ohio-escort"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "malta-jan41",
+          "label": "Flying squadrons on Malta",
+          "date": "1941-01",
+          "force": "Malta air garrison",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "listed",
+          "scope": "Island flying squadrons in the January comparison",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+          "locator": "Table 12, RAF Malta, January 1941",
+          "sourceClass": "USAF official historical monograph",
+          "note": "The table gives aircraft on strength by role. Its January heading supplies no particular day or serviceability figure.",
+          "members": [
+            {
+              "unit": "No. 261 Squadron RAF",
+              "parent": "RAF Malta, fighter defence",
+              "place": "Malta",
+              "strength": 12
+            },
+            {
+              "unit": "No. 228 Squadron RAF",
+              "parent": "RAF Malta, maritime reconnaissance",
+              "place": "Malta",
+              "strength": 5
+            },
+            {
+              "unit": "No. 69 Squadron RAF",
+              "parent": "RAF Malta, reconnaissance",
+              "place": "Malta",
+              "strength": 4
+            },
+            {
+              "unit": "No. 148 Squadron RAF",
+              "parent": "RAF Malta, bombing",
+              "place": "Malta",
+              "strength": 12
+            },
+            {
+              "unit": "830 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "Malta",
+              "strength": 10
+            }
+          ]
+        },
+        {
+          "id": "malta-jan42-support",
+          "label": "Reconnaissance, bomber and torpedo squadrons",
+          "date": "1942-01",
+          "force": "Malta air garrison",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "listed",
+          "scope": "Squadrons on the island outside the three fighter squadron entries",
+          "total": 7,
+          "basis": "bounded source count",
+          "source": "https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+          "locator": "Table 12, RAF Malta, January 1942",
+          "sourceClass": "USAF official historical monograph",
+          "note": "Aircraft totals for paired bomber and naval squadrons cover both units. Only the single reconnaissance row supplies a separate unit strength.",
+          "members": [
+            {
+              "unit": "No. 69 Squadron RAF",
+              "parent": "RAF Malta, reconnaissance",
+              "place": "Malta",
+              "strength": 8
+            },
+            {
+              "unit": "No. 21 Squadron RAF",
+              "parent": "RAF Malta, Blenheim bombers",
+              "place": "Malta"
+            },
+            {
+              "unit": "No. 107 Squadron RAF",
+              "parent": "RAF Malta, Blenheim bombers",
+              "place": "Malta"
+            },
+            {
+              "unit": "No. 37 Squadron RAF",
+              "parent": "RAF Malta, Wellington bombers",
+              "place": "Malta"
+            },
+            {
+              "unit": "No. 40 Squadron RAF",
+              "parent": "RAF Malta, Wellington bombers",
+              "place": "Malta"
+            },
+            {
+              "unit": "828 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "Malta"
+            },
+            {
+              "unit": "830 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "Malta"
+            }
+          ]
+        },
+        {
+          "id": "malta-jan42-flight",
+          "label": "Hurricane flight",
+          "date": "1942-01",
+          "force": "Malta air garrison",
+          "side": "Allied",
+          "echelon": "flight",
+          "event": "listed",
+          "scope": "A separately numbered flight in the island return",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://media.defense.gov/2025/Jun/10/2003736254/-1/-1/0/AIR%20WARFARE%20%26%20AB%20DEFENSE.PDF",
+          "locator": "Table 12, RAF Malta, January 1942",
+          "sourceClass": "USAF official historical monograph",
+          "note": "The four Hurricanes are the flight’s listed strength. No daily readiness return accompanies the table.",
+          "members": [
+            {
+              "unit": "No. 1435 Flight RAF",
+              "parent": "RAF Malta",
+              "place": "Malta",
+              "strength": 4
+            }
+          ]
+        },
+        {
+          "id": "malta-apr42-gruppen",
+          "label": "German day fighters facing Malta",
+          "date": "1942-04-04",
+          "force": "Fliegerkorps II",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "based",
+          "scope": "Conventional single-engine day-fighter Gruppen based in Sicily in the April table",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://achillestheheel.com/wp-content/uploads/2011/03/malta-appendix.pdf",
+          "locator": "Fliegerkorps II in Sicily, 4 April 1942, Me 109 F-4 rows and strength footnote",
+          "sourceClass": "Akhil Kadidal, specialist order of battle",
+          "note": "The listing distinguishes the Jabo element, night fighters, twin-engine fighters and headquarters. Its aircraft numbers are normal strengths. A daily serviceability sheet would be needed for aircraft available.",
+          "members": [
+            {
+              "unit": "II./JG 3",
+              "parent": "JG 3",
+              "place": "San Pietro"
+            },
+            {
+              "unit": "I./JG 53",
+              "parent": "JG 53",
+              "place": "Gela"
+            },
+            {
+              "unit": "II./JG 53",
+              "parent": "JG 53",
+              "place": "Comiso",
+              "stations": [
+                "comiso"
+              ]
+            },
+            {
+              "unit": "III./JG 53",
+              "parent": "JG 53",
+              "place": "Comiso",
+              "stations": [
+                "comiso"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "malta-pedestal-escort",
+          "label": "Fighter escorts for the torpedo wave",
+          "date": "1942-08-12",
+          "force": "Regia Aeronautica",
+          "side": "Axis",
+          "echelon": "Gruppo",
+          "event": "flew",
+          "scope": "Italian 13:00 torpedo attack on the Pedestal convoy",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+          "locator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram",
+          "sourceClass": "Italian naval historian’s reconstruction with wartime Superaereo graphic",
+          "note": "The 2° Gruppo contributed to both formations. Each formation carried its own escort allocation.",
+          "members": [
+            {
+              "unit": "2° Gruppo Caccia",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Escorted the torpedo attack on Force F.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            },
+            {
+              "unit": "22° Gruppo Caccia",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Escorted the torpedo attack on Force F.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            }
+          ]
+        },
+        {
+          "id": "malta-pedestal-torpedo",
+          "label": "Torpedo groups in the second wave",
+          "date": "1942-08-12",
+          "force": "Regia Aeronautica",
+          "side": "Axis",
+          "echelon": "Gruppo",
+          "event": "flew",
+          "scope": "Italian 13:00 torpedo attack on the Pedestal convoy",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+          "locator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram",
+          "sourceClass": "Italian naval historian’s reconstruction with wartime Superaereo graphic",
+          "note": "Four operational groups contributed aircraft. The two training nuclei supplied further crews and aircraft.",
+          "members": [
+            {
+              "unit": "105° Gruppo Aerosiluranti",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Contributed to the two-sided torpedo attack.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            },
+            {
+              "unit": "89° Gruppo Aerosiluranti",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Contributed to the two-sided torpedo attack.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            },
+            {
+              "unit": "109° Gruppo Aerosiluranti",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Contributed to the two-sided torpedo attack.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            },
+            {
+              "unit": "130° Gruppo Aerosiluranti",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Contributed to the two-sided torpedo attack.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            }
+          ]
+        },
+        {
+          "id": "malta-pedestal-training",
+          "label": "Torpedo training units in the second formation",
+          "date": "1942-08-12",
+          "force": "Regia Aeronautica",
+          "side": "Axis",
+          "echelon": "training nucleus",
+          "event": "flew",
+          "scope": "Italian 13:00 torpedo attack on the Pedestal convoy",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+          "locator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram",
+          "sourceClass": "Italian naval historian’s reconstruction with wartime Superaereo graphic",
+          "note": "Instructors and selected trainees augmented the S.79 force in the second formation.",
+          "members": [
+            {
+              "unit": "2° Nucleo Addestramento Aerosiluranti",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Flew with the second torpedo formation.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            },
+            {
+              "unit": "3° Nucleo Addestramento Aerosiluranti",
+              "parent": "Regia Aeronautica",
+              "place": "Sardinia",
+              "activity": "Flew with the second torpedo formation.",
+              "activitySource": "https://www.societaitalianastoriamilitare.org/COLLANA%20SISM/MATTESINI%20L%27operazione%20Pedestal.%20Mezzo%20Agosto%201942.pdf",
+              "activityLocator": "Mattesini, second torpedo wave, 12 August, 13:00, text before and after the Superaereo diagram"
+            }
+          ]
+        },
+        {
+          "id": "malta-ohio-escort",
+          "label": "Shore-based Spitfires on convoy patrol",
+          "date": "1942-08-15",
+          "force": "RAF Malta",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "flew",
+          "scope": "Two squadrons identified over incoming convoy ships early on 15 August",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://maltagc70.wordpress.com/2022/08/15/15-august-1942-santa-marija-convoy-survivor-ohio-arrives-on-feast-day/",
+          "locator": "Air raids dawn 15 to dawn 16 August, entries from 05:30 to 08:16",
+          "sourceClass": "Published daily chronology of Malta’s operations",
+          "note": "No. 229 Squadron's separate scramble for possible raiders belongs to an interception task. The source distinguishes that task from convoy patrol.",
+          "members": [
+            {
+              "unit": "No. 249 Squadron RAF",
+              "parent": "RAF Malta",
+              "place": "Ta Qali",
+              "stations": [
+                "ta-kali"
+              ],
+              "activity": "Covered convoy ships in sections from 05:30.",
+              "activitySource": "https://maltagc70.wordpress.com/2022/08/15/15-august-1942-santa-marija-convoy-survivor-ohio-arrives-on-feast-day/",
+              "activityLocator": "Air raids dawn 15 to dawn 16 August, entries from 05:30 to 08:16"
+            },
+            {
+              "unit": "No. 185 Squadron RAF",
+              "parent": "RAF Malta",
+              "place": "Hal Far",
+              "stations": [
+                "hal-far"
+              ],
+              "activity": "Eight Spitfires patrolled the incoming tanker from 06:43 to 08:16.",
+              "activitySource": "https://maltagc70.wordpress.com/2022/08/15/15-august-1942-santa-marija-convoy-survivor-ohio-arrives-on-feast-day/",
+              "activityLocator": "Air raids dawn 15 to dawn 16 August, entries from 05:30 to 08:16"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Nos. 185 and 249 supplied timed approach patrols on 15 August. Indomitable’s campaign return covers a separate carrier effort.",
+          "losses": "Indomitable reported eight aircraft lost and four pilots saved during Pedestal. On Malta, two No. 229 Spitfires were damaged in a landing collision on 15 August.",
+          "effect": "The port’s 16 August signal records unloading from five ships including Ohio. The island patrols document cover during the approach."
+        },
+        "Axis": {
+          "effort": "The Italian 13:00 wave on 12 August sent 43 torpedo aircraft. Two turned back. Two fighter groups provided escort.",
+          "losses": "The Italian account identifies the 109° commander’s ditched S.79 and one 2° Gruppo Re.2001 shot down.",
+          "effect": "Mattesini found no torpedo hit from this wave. Other attacks on the convoy continued and the ship damage return does not assign every hit to a unit."
+        }
+      }
+    },
+    "sicily": {
+      "cases": [
+        {
+          "date": "1943-07-10/1943-07-14",
+          "title": "Beach cover flew from Malta before the move to Pachino",
+          "mission": "No. 92 Squadron flew 42 sorties on 10 July covering the Pachino beaches from Malta. On 13 July eleven pilots patrolled en route to Pachino and landed there. On 14 July the squadron flew two patrols before its ground personnel arrived.",
+          "effect": "The squadron recorded an attack on Ju 88s over the landing area on the 10th and contact with Italian fighters after moving ashore. Pilot Dicks-Sherwood, missing on the 10th, returned after a trawler picked him up. The diary later confirmed Savage died.",
+          "limit": "The 41 sorties on 13 July include flying either side of the change of base. The surviving patrol figures do not provide a number of bombers prevented from reaching the beaches.",
+          "sources": [
+            {
+              "name": "No. 92 Squadron Form 540",
+              "url": "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942",
+              "locator": "10, 13, 14 and 17 July 1943",
+              "kind": "Published transcription of a wartime squadron operations record"
+            }
+          ],
+          "rosterIds": [
+            "sicily-211"
+          ]
+        },
+        {
+          "date": "1943-07-25",
+          "title": "US fighter-bombers reached Milazzo harbour",
+          "mission": "The XII Air Support Command daily summary records 36 A-36s bombing Milazzo harbour on 25 July. Its basing table lists the 27th and 86th Bombardment Groups as dive-bomber groups.",
+          "effect": "Crews reported a direct hit on a merchant ship and near misses on small craft. The operational summary shows the effort against a port still supporting the Axis.",
+          "limit": "The summary gives no ship name and no group-by-group allocation of the 36 aircraft. Vessel damage and interruption at the port need a harbour or ship record.",
+          "sources": [
+            {
+              "name": "USAAF historical study, air phase of the Sicilian campaign",
+              "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/1-50/AFD-090602-085.pdf",
+              "locator": "Daily Operational and Intelligence Summary of 25 July, 36 A-36s at Milazzo",
+              "kind": "Wartime command summary reproduced in official USAAF historical study"
+            },
+            {
+              "name": "RAF Air Historical Branch, Sicilian Campaign",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+              "locator": "Printed pp. 85–86, XII ASC and HQ No. 64 Wing summary AHB/IIJ5/78",
+              "kind": "RAF Air Historical Branch campaign history"
+            }
+          ],
+          "rosterIds": [
+            "sicily-third-groups"
+          ]
+        },
+        {
+          "date": "1943-08-16/1943-08-17",
+          "title": "Ferry damage forced traffic away from the Salvatore jetty",
+          "mission": "At 07:25 on 16 August eight No. 92 Squadron pilots covered 12 Warhawks attacking shipping. Six later escorted 12 Baltimores to Messina. A separate afternoon patrol covered warships southeast of Taormina.",
+          "effect": "Captain von Liebenstein recorded a near miss badly damaging ferry barge F 607 and damage to two Siebel ferries shortly before 16:00. Bombing disabled the Salvatore jetty. A reserve embarkation point kept the service operating. The last ferries left Messina shortly before 06:00 on 17 August.",
+          "limit": "Neither diary identifies the bombers responsible for F 607. For SF 175 the translation places its grounding sequence under the night of 15/16 August. The craft register dates it to 23:00 on the 16th and also cites the transport diary. SF 92 helped recover its load. No. 92 Squadron’s record establishes escort and patrol.",
+          "sources": [
+            {
+              "name": "No. 92 Squadron Form 540",
+              "url": "https://www.92-squadron.com/copy-of-form-540-oct-1941-sept-1942",
+              "locator": "16 August 1943, 07:25 escort and subsequent entries",
+              "kind": "Published transcription of a wartime squadron operations record"
+            },
+            {
+              "name": "Captain von Liebenstein, sea transport diary",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/war-diary-of-naval-officer-in-charge-sea-transport-messina-strait-captain-von-liebenstein-with-summary-and-conclusions-1st-august-1943-17th-august-1943/",
+              "locator": "Messina Strait sea transport war diary, 16–17 August, translated pp. 26–29, AHB VII/156",
+              "kind": "German naval commander’s wartime diary, translated by AHB"
+            },
+            {
+              "name": "Historisches Marinearchiv, SF 175",
+              "url": "https://www.historisches-marinearchiv.de/projekte/landungsfahrzeuge/siebelfaehre/ausgabe.php?where_value=164",
+              "locator": "SF 175, vessel history and source keys [1] and [2], messages for 16 August",
+              "kind": "Craft register drawing on transport and flotilla diaries"
+            }
+          ],
+          "rosterIds": [
+            "sicily-211"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "sicily-off-island",
+          "label": "Day fighters on the mainland and Sardinia",
+          "date": "1943-07-10",
+          "force": "Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported",
+          "scope": "Five single-engine Gruppen outside Sicily in the theater return",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 3, 10 July, printed appendix p. 9, single-engine fighters",
+          "sourceClass": "German strength return reproduced by the RAF Air Historical Branch",
+          "note": "Four further Gruppen appear on Sicily. A Sardinian entry for II./JG 51 on the same day as a reported transfer leaves its precise movement time unresolved. These positions establish availability in theater.",
+          "members": [
+            {
+              "unit": "IV./JG 3",
+              "parent": "JG 3",
+              "place": "Lecce",
+              "strength": 36,
+              "serviceable": 28,
+              "stations": [
+                "med-lecce"
+              ]
+            },
+            {
+              "unit": "II./JG 27",
+              "parent": "JG 27",
+              "place": "Vibo Valentia",
+              "strength": 22,
+              "serviceable": 14,
+              "stations": [
+                "med-vibo"
+              ]
+            },
+            {
+              "unit": "II./JG 51",
+              "parent": "JG 51",
+              "place": "Sardinia",
+              "strength": 34,
+              "serviceable": 23
+            },
+            {
+              "unit": "I./JG 53",
+              "parent": "JG 53",
+              "place": "Vibo Valentia",
+              "strength": 36,
+              "serviceable": 15,
+              "stations": [
+                "med-vibo"
+              ]
+            },
+            {
+              "unit": "III./JG 77",
+              "parent": "JG 77",
+              "place": "Chilivani, Sardinia",
+              "strength": 36,
+              "serviceable": 30,
+              "stations": [
+                "med-chilivani"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sicily-night",
+          "label": "Night fighters on the island",
+          "date": "1943-07-10",
+          "force": "Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported",
+          "scope": "Numbered night-fighter Gruppen based on Sicily",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 3, 10 July, printed appendix p. 9, night fighters",
+          "sourceClass": "German strength return reproduced by the RAF Air Historical Branch",
+          "note": "Aircraft on hand and serviceable belong to a separate night-fighter category.",
+          "members": [
+            {
+              "unit": "II./NJG 2",
+              "parent": "NJG 2",
+              "place": "Comiso",
+              "strength": 14,
+              "serviceable": 11,
+              "stations": [
+                "comiso"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sicily-skg10-island",
+          "label": "SKG 10 ground-attack elements on Sicily",
+          "date": "1943-07-10",
+          "force": "Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported",
+          "scope": "Numbered Gruppen of SKG 10 with island elements",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 3, 10 July, printed appendix p. 9, ground attack",
+          "sourceClass": "German strength return reproduced by the RAF Air Historical Branch",
+          "note": "The II. and III. Gruppen also had separate detachments at Montecorvino with 12 and 18 serviceable aircraft respectively. Their island elements reported zero serviceable. I. and II./Schl.G 2 are recorded in transit.",
+          "members": [
+            {
+              "unit": "II./SKG 10",
+              "parent": "SKG 10",
+              "place": "Gerbini",
+              "strength": 8,
+              "serviceable": 0
+            },
+            {
+              "unit": "III./SKG 10",
+              "parent": "SKG 10",
+              "place": "San Pietro",
+              "strength": 7,
+              "serviceable": 0
+            },
+            {
+              "unit": "IV./SKG 10",
+              "parent": "SKG 10",
+              "place": "Gerbini",
+              "strength": 25,
+              "serviceable": 11
+            }
+          ]
+        },
+        {
+          "id": "sicily-285-squadrons",
+          "label": "No. 285 Wing reconnaissance squadrons",
+          "date": "1943-07-10",
+          "force": "Desert Air Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "South African squadrons represented under No. 285 Wing",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 2, order of battle at 10 July, printed appendix pp. 2–3",
+          "sourceClass": "Air Historical Branch transcription of the Allied order of battle",
+          "note": "Only a detachment of No. 40 Squadron appears under this wing. The same squadron is also listed under Air Headquarters Malta.",
+          "members": [
+            {
+              "unit": "No. 40 Squadron SAAF (detachment)",
+              "parent": "No. 285 Wing"
+            },
+            {
+              "unit": "No. 60 Squadron SAAF",
+              "parent": "No. 285 Wing"
+            }
+          ]
+        },
+        {
+          "id": "sicily-285-flight",
+          "label": "No. 285 Wing Mustang flight",
+          "date": "1943-07-10",
+          "force": "Desert Air Force",
+          "side": "Allied",
+          "echelon": "flight",
+          "event": "assigned",
+          "scope": "Separately numbered Mustang flight in the wing order",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 2, order of battle at 10 July, printed appendix pp. 2–3",
+          "sourceClass": "Air Historical Branch transcription of the Allied order of battle",
+          "note": "The appendix gives its Mustang equipment and parent wing. Ground location and daily serviceability are open.",
+          "members": [
+            {
+              "unit": "No. 1437 Flight RAF",
+              "parent": "No. 285 Wing"
+            }
+          ]
+        },
+        {
+          "id": "sicily-211-us",
+          "label": "US fighter groups under No. 211 Group",
+          "date": "1943-07-10",
+          "force": "Desert Air Force",
+          "side": "Allied",
+          "echelon": "group",
+          "event": "assigned",
+          "scope": "US groups under No. 211 Group outside its Commonwealth wings",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 2, order of battle at 10 July, printed appendix pp. 2–3",
+          "sourceClass": "Air Historical Branch transcription of the Allied order of battle",
+          "note": "The two groups comprised six squadrons in this return. The appendix does not name those six here.",
+          "members": [
+            {
+              "unit": "57th Fighter Group USAAF",
+              "parent": "No. 211 Group"
+            },
+            {
+              "unit": "79th Fighter Group USAAF",
+              "parent": "No. 211 Group"
+            }
+          ]
+        },
+        {
+          "id": "sicily-211-direct-squadron",
+          "label": "No. 211 Group’s separately listed Hurricane squadron",
+          "date": "1943-07-10",
+          "force": "Desert Air Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "assigned",
+          "scope": "Hurricane squadron listed directly under the group",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Appendix 2, order of battle at 10 July, printed appendix pp. 2–3",
+          "sourceClass": "Air Historical Branch transcription of the Allied order of battle",
+          "note": "This entry falls outside the five Commonwealth wings and their 23 subordinate squadrons.",
+          "members": [
+            {
+              "unit": "No. 6 Squadron RAF",
+              "parent": "No. 211 Group"
+            }
+          ]
+        },
+        {
+          "id": "sicily-third-groups",
+          "label": "US groups at captured and newly prepared fields",
+          "date": "1943-07-24/1943-07-26",
+          "force": "Third Air Defence Wing, XII Air Support Command",
+          "side": "Allied",
+          "echelon": "group",
+          "event": "based",
+          "scope": "Four US operational groups in the wing’s initial Sicilian field disposition",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Printed pp. 85–86, XII ASC and HQ No. 64 Wing summary AHB/IIJ5/78",
+          "sourceClass": "RAF Air Historical Branch campaign history",
+          "note": "The wing took over field direction on 24 July. The table precedes the 31st Group’s dated move on 27 July. It provides no daily count of aircraft at the strips.",
+          "members": [
+            {
+              "unit": "31st Fighter Group USAAF",
+              "parent": "Third Air Defence Wing, XII Air Support Command",
+              "place": "Ponte Olivo",
+              "stations": [
+                "med-ponte-olivo"
+              ]
+            },
+            {
+              "unit": "33rd Fighter Group USAAF",
+              "parent": "Third Air Defence Wing, XII Air Support Command",
+              "place": "Licata",
+              "stations": [
+                "med-licata"
+              ]
+            },
+            {
+              "unit": "27th Bombardment Group USAAF",
+              "parent": "Third Air Defence Wing, XII Air Support Command",
+              "place": "Gela East",
+              "source": "https://media.defense.gov/2025/Jun/10/2003736230/-1/-1/0/AF_COMBAT_UNITS_WWII%20OPT.PDF",
+              "locator": "Maurer, Air Force Combat Units of World War II, 27th Fighter Group entry, p. 78. The RAF disposition table labels the role (D)."
+            },
+            {
+              "unit": "86th Bombardment Group (Dive) USAAF",
+              "parent": "Third Air Defence Wing, XII Air Support Command",
+              "place": "Gela West"
+            }
+          ]
+        },
+        {
+          "id": "sicily-third-squadrons",
+          "label": "Reconnaissance and fighter squadrons at the advanced fields",
+          "date": "1943-07-24/1943-07-26",
+          "force": "Third Air Defence Wing, XII Air Support Command",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "based",
+          "scope": "Two separately named US squadrons in the same disposition",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/",
+          "locator": "Printed pp. 85–86, XII ASC and HQ No. 64 Wing summary AHB/IIJ5/78",
+          "sourceClass": "RAF Air Historical Branch campaign history",
+          "note": "The 111th flew tactical reconnaissance. The 99th is listed separately at Licata. Parent groups and squadrons are counted at their respective echelons.",
+          "members": [
+            {
+              "unit": "111th Tactical Reconnaissance Squadron USAAF",
+              "parent": "Third Air Defence Wing, XII Air Support Command",
+              "place": "Ponte Olivo",
+              "stations": [
+                "med-ponte-olivo"
+              ]
+            },
+            {
+              "unit": "99th Fighter Squadron USAAF",
+              "parent": "Third Air Defence Wing, XII Air Support Command",
+              "place": "Licata",
+              "stations": [
+                "med-licata"
+              ]
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "No. 92 recorded 42 sorties from Malta on 10 July and 41 on the transition day of 13 July. The US command separately reported 36 A-36s against Milazzo on 25 July.",
+          "losses": "The squadron recorded two missing pilots on 10 July, then a trawler rescue and one confirmed death. On 16 August it recorded Brendan Baker missing from a separate escort.",
+          "effect": "Pachino patrols operated before the ground party arrived. At Messina the diary identifies escorted strike formations, but the German ferry damage lacks an attacking unit."
+        },
+        "Axis": {
+          "effort": "The 10 July strength table distinguishes island and mainland or Sardinian Gruppen, plus night and ground-attack forces. It supplies no sorties by unit.",
+          "losses": "The ferry diary identifies F 607 and two damaged Siebel ferries on 16 August. SF 175’s wrecking time differs between the translated night entry and the craft register.",
+          "effect": "Bombing closed the Salvatore jetty. The ferry command shifted embarkation and finished its final crossings the following morning."
+        }
+      }
+    },
+    "italy": {
+      "cases": [
+        {
+          "date": "1943-09-09/1943-09-13",
+          "title": "Carrier patrols sustained cover while Montecorvino was under fire",
+          "mission": "Force V began Seafire patrols at 06:15 on 9 September and flew 265 sorties that day across five carriers. On Attacker, 886 Naval Air Squadron was among the units flying. Its pilot P. B. N. Prentice was killed on approach to the carrier.",
+          "effect": "The US Army recorded that German artillery still denied use of Montecorvino on 10–11 September, leaving air support to carriers and distant Sicilian bases. No. 324 Wing moved to Tusciano on the 12th. The Army dates completion of the new strip near Paestum to the 13th.",
+          "limit": "The patrol count covers all five carriers. Neither the army account nor the movement timetable identifies the ship or troops protected by an individual 886 Squadron sortie.",
+          "sources": [
+            {
+              "name": "RAF Air Historical Branch, Italian Campaign I",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "locator": "pp. 122–123, Force V operations, daily totals and movement note 1",
+              "kind": "RAF Air Historical Branch campaign narrative drawing on the Force V report of proceedings"
+            },
+            {
+              "name": "Royal Navy Research Archive, 886 Squadron",
+              "url": "https://www.royalnavyresearcharchive.org.uk/SQUADRONS/886_Squadron.htm",
+              "locator": "Operation Avalanche, 9 September on HMS Attacker",
+              "kind": "Specialist squadron history"
+            },
+            {
+              "name": "US Army, Salerno: American Operations from the Beaches to the Volturno",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/wwii/salerno/sal-expansion.htm",
+              "locator": "Expansion of the Beachhead, 10–11 September, Montecorvino and the strip near Paestum, p. 49",
+              "kind": "US Army official campaign study"
+            }
+          ],
+          "rosterIds": [
+            "italy-force-v-squadrons",
+            "italy-force-v-flights",
+            "italy-shore-wings",
+            "italy-shore-groups"
+          ]
+        },
+        {
+          "date": "1943-09-11",
+          "title": "A German strike forced USS Savannah off the gun line",
+          "mission": "On the morning of 11 September III./KG 100 attacked the US cruisers in the Gulf of Salerno. The naval chronology names 16 aircraft in the attacking formation.",
+          "effect": "USS Savannah was supporting troops ashore when a bomb hit turret three. A contemporary photograph shows the damage and fire. The US Army recorded that the cruiser had to withdraw from its fire-support position.",
+          "limit": "The German formation count covers attacks on more than one ship. The ship photograph and army account cannot identify which crew made the hit or which fighter patrol was nearest.",
+          "sources": [
+            {
+              "name": "Württembergische Landesbibliothek, Chronik des Seekrieges",
+              "url": "https://wwwstatic.wlb-stuttgart.de/seekrieg/43-09.htm",
+              "locator": "11–17 September 1943, Luftkrieg Italien, morning of 11 September",
+              "kind": "Rohwer/Hümmelchen, naval operational chronology"
+            },
+            {
+              "name": "US Naval History and Heritage Command, USS Savannah",
+              "url": "https://www.history.navy.mil/content/history/nhhc/our-collections/photography/numerical-list-of-images/nara-series/sc-series/SC-200000/SC-243636.html",
+              "locator": "Photograph SC 243636, Salerno, 11 September 1943",
+              "kind": "Contemporary photographic record"
+            },
+            {
+              "name": "US Army, Salerno",
+              "url": "https://webdoc.sub.gwdg.de/ebook/p/2005/CMH_2/www.army.mil/cmh-pg/books/wwii/salerno/sal-expansion.htm",
+              "locator": "Expansion of the Beachhead, 10–11 September, Savannah withdrawal",
+              "kind": "US Army official campaign study"
+            }
+          ],
+          "rosterIds": [
+            "italy-guided-bombers"
+          ]
+        },
+        {
+          "date": "1944-09-11/1944-09-15",
+          "title": "The air command redirected Mustangs toward Eighth Army’s front",
+          "mission": "On 11 September Desert Air Force ordered No. 239 Wing’s Mustangs off long-range reconnaissance so they could support the army and attack communications closer to the front.",
+          "effect": "In its account of the fighting on 14–15 September, the RAF history records army reports that attacks on troop concentrations, gun positions and strongpoints eased the advance. Some pilots could not locate guns reported by the troops.",
+          "limit": "The army assessment covers the broader air effort. It cannot isolate No. 239 Wing’s contribution or assign the capture of a particular position to its aircraft. The US transfers on 15 and 20 September were administrative changes.",
+          "sources": [
+            {
+              "name": "RAF Air Historical Branch, Italian Campaign II",
+              "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+              "locator": "September Gothic Line operations, 11 September tasking in note 1 and army assessment for 14–15 September",
+              "kind": "RAF official campaign narrative citing army and air records"
+            }
+          ]
+        },
+        {
+          "date": "1945-04-09/1945-04-12",
+          "title": "Fighter-bombers supported the Senio crossing",
+          "mission": "The South African account places fighter-bombers of Nos. 7 and 8 Wings, No. 5 Squadron, No. 3 Wing’s medium bombers and No. 40 Squadron’s army-cooperation aircraft in the offensive that opened on 9 April.",
+          "effect": "The Canadian Army history describes fighter-bomber and medium-bomber attacks between artillery bombardments before Eighth Army troops crossed the Senio that evening. By the morning of 12 April, assaulting divisions had gained a foothold across the next river, the Santerno.",
+          "limit": "The ground account describes a combined attack by several air forces alongside artillery and infantry. It gives no squadron-to-company match. South African night operations and later April sorties have a wider time window.",
+          "sources": [
+            {
+              "name": "Scientia Militaria, South African air operations",
+              "url": "https://scientiamilitaria.journals.ac.za/pub/article/download/378/414/",
+              "locator": "Scientia Militaria 19/3 (1989), pp. 42–43, passage on the final offensive",
+              "kind": "South African military historical journal"
+            },
+            {
+              "name": "G. W. L. Nicholson, The Canadians in Italy",
+              "url": "https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1956-army-ww2-2-en.pdf",
+              "locator": "Closing account of the Eighth Army advance, 9–12 April 1945, notes 220–222",
+              "kind": "Canadian Army official history"
+            }
+          ],
+          "rosterIds": [
+            "italy-saaf-april-wings",
+            "italy-saaf-april-squadrons"
+          ]
+        }
+      ],
+      "populations": [
+        {
+          "id": "italy-salerno-day",
+          "label": "Day-fighter Gruppen on the opening day",
+          "date": "1943-09-09",
+          "force": "German close-support forces",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported serviceable",
+          "scope": "Numbered Jagdgruppen in the close-support table",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, printed p. 146 note 1, German close-support strength on the opening day",
+          "sourceClass": "Dated readiness table reproduced in the RAF official campaign history",
+          "note": "The five Gruppen report 58 serviceable fighters between them. The 98-aircraft total covers these Gruppen plus separate staffs, specialist Staffeln and strike Gruppen.",
+          "members": [
+            {
+              "unit": "I./JG 77",
+              "parent": "JG 77",
+              "serviceable": 14
+            },
+            {
+              "unit": "IV./JG 3",
+              "parent": "JG 3",
+              "serviceable": 7
+            },
+            {
+              "unit": "I./JG 53",
+              "parent": "JG 53",
+              "serviceable": 14
+            },
+            {
+              "unit": "II./JG 53",
+              "parent": "JG 53",
+              "serviceable": 11
+            },
+            {
+              "unit": "III./JG 53",
+              "parent": "JG 53",
+              "serviceable": 12
+            }
+          ]
+        },
+        {
+          "id": "italy-salerno-staffs",
+          "label": "Day-fighter headquarters flights",
+          "date": "1943-09-09",
+          "force": "German close-support forces",
+          "side": "Axis",
+          "echelon": "Geschwader staff",
+          "event": "reported serviceable",
+          "scope": "Separate Geschwader staffs in the close-support table",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, printed p. 146 note 1, German close-support strength on the opening day",
+          "sourceClass": "Dated readiness table reproduced in the RAF official campaign history",
+          "note": "Stab JG 53 was present with zero aircraft serviceable. The table gives no aircraft-held column.",
+          "members": [
+            {
+              "unit": "Stab/JG 77",
+              "parent": "JG 77",
+              "serviceable": 2
+            },
+            {
+              "unit": "Stab/JG 53",
+              "parent": "JG 53",
+              "serviceable": 0
+            }
+          ]
+        },
+        {
+          "id": "italy-salerno-specialist",
+          "label": "Specialist mortar Staffeln",
+          "date": "1943-09-09",
+          "force": "German close-support forces",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "reported serviceable",
+          "scope": "Attached mortar Staffeln in the close-support table",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, printed p. 146 note 1, German close-support strength on the opening day",
+          "sourceClass": "Dated readiness table reproduced in the RAF official campaign history",
+          "note": "The specialist Staffeln have separate entries in the readiness total. The report gives the parent Geschwader and role without a numbered Staffel designation.",
+          "members": [
+            {
+              "unit": "Mortar Staffel/JG 3",
+              "parent": "JG 3",
+              "serviceable": 7
+            },
+            {
+              "unit": "Mortar Staffel/JG 53",
+              "parent": "JG 53",
+              "serviceable": 4
+            }
+          ]
+        },
+        {
+          "id": "italy-salerno-strike",
+          "label": "SKG 10 strike Gruppen",
+          "date": "1943-09-09",
+          "force": "German close-support forces",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "reported serviceable",
+          "scope": "Numbered SKG 10 Gruppen in the close-support table",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, printed p. 146 note 1, German close-support strength on the opening day",
+          "sourceClass": "Dated readiness table reproduced in the RAF official campaign history",
+          "note": "The two groups contributed 27 serviceable aircraft to the mixed return. Unit-level sortie figures for the day are unresolved.",
+          "members": [
+            {
+              "unit": "II./SKG 10",
+              "parent": "SKG 10",
+              "serviceable": 19
+            },
+            {
+              "unit": "III./SKG 10",
+              "parent": "SKG 10",
+              "serviceable": 8
+            }
+          ]
+        },
+        {
+          "id": "italy-force-v-squadrons",
+          "label": "Seafire squadrons embarked for Salerno",
+          "date": "1943-09-08",
+          "force": "Royal Navy, Force V",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "embarked",
+          "scope": "Full naval fighter squadrons on five carriers when Force V sailed from Malta",
+          "total": 9,
+          "basis": "bounded source count",
+          "source": "https://www.royalnavyresearcharchive.org.uk/ESCORT_2/HUNTER.htm",
+          "locator": "HMS Hunter, Operation Avalanche, final Force V composition on sailing from Malta, 8 September",
+          "sourceClass": "Royal Navy Research Archive ship and squadron reconstruction",
+          "note": "The ship history’s preliminary list differs from its sailing list. The 886 Squadron account confirms Attacker. The sailing list distinguishes two additional fighter flights. No carrier has been mapped as a land station.",
+          "members": [
+            {
+              "unit": "879 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Attacker"
+            },
+            {
+              "unit": "886 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Attacker",
+              "source": "https://www.royalnavyresearcharchive.org.uk/SQUADRONS/886_Squadron.htm",
+              "locator": "886 Naval Air Squadron, Operation Avalanche, deck operations on 9 September",
+              "activity": "Flew with Attacker on the first day of the landings. Sub-Lt Prentice was killed on approach to the carrier.",
+              "activitySource": "https://www.royalnavyresearcharchive.org.uk/SQUADRONS/886_Squadron.htm",
+              "activityLocator": "886 Naval Air Squadron, Operation Avalanche, deck operations on 9 September"
+            },
+            {
+              "unit": "807 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Battler"
+            },
+            {
+              "unit": "808 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Battler"
+            },
+            {
+              "unit": "899 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Hunter"
+            },
+            {
+              "unit": "880 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Stalker"
+            },
+            {
+              "unit": "809 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Unicorn"
+            },
+            {
+              "unit": "887 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Unicorn"
+            },
+            {
+              "unit": "897 Naval Air Squadron",
+              "parent": "Fleet Air Arm",
+              "place": "HMS Unicorn"
+            }
+          ]
+        },
+        {
+          "id": "italy-force-v-flights",
+          "label": "Composite squadrons’ fighter flights",
+          "date": "1943-09-08",
+          "force": "Royal Navy, Force V",
+          "side": "Allied",
+          "echelon": "flight",
+          "event": "embarked",
+          "scope": "Two separately embarked Fleet Air Arm fighter flights in the final sailing list",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.royalnavyresearcharchive.org.uk/ESCORT_2/HUNTER.htm",
+          "locator": "HMS Hunter, Operation Avalanche, final Force V composition on sailing from Malta, 8 September",
+          "sourceClass": "Royal Navy Research Archive ship and squadron reconstruction",
+          "note": "The parent squadrons supplied their fighter flights. Counting each as an entire squadron would overstate the formation deployed.",
+          "members": [
+            {
+              "unit": "834 Naval Air Squadron fighter flight",
+              "parent": "834 Naval Air Squadron",
+              "place": "HMS Hunter"
+            },
+            {
+              "unit": "833 Naval Air Squadron fighter flight",
+              "parent": "833 Naval Air Squadron",
+              "place": "HMS Stalker"
+            }
+          ]
+        },
+        {
+          "id": "italy-shore-groups",
+          "label": "US groups moving to the bridgehead",
+          "date": "1943-09-13/1943-09-22",
+          "force": "Allied air forces, Salerno bridgehead",
+          "side": "Allied",
+          "echelon": "group",
+          "event": "moved",
+          "scope": "US group movements listed in the bridgehead strip timetable",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction",
+          "sourceClass": "RAF Air Historical Branch campaign history",
+          "note": "The 31st moved in two stages. The timetable dates 86th Group's move to 15 September, while the engineering narrative calls Capaccio operational on 17 September.",
+          "members": [
+            {
+              "unit": "33rd Fighter Group USAAF",
+              "parent": "USAAF",
+              "place": "Paestum",
+              "activity": "Movement to Paestum recorded 13 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            },
+            {
+              "unit": "86th Fighter-Bomber Group USAAF",
+              "parent": "USAAF",
+              "place": "Capaccio",
+              "source": "https://media.defense.gov/2025/Jun/10/2003736230/-1/-1/0/AF_COMBAT_UNITS_WWII%20OPT.PDF",
+              "locator": "86th Fighter Group entry, pp. 151–152, August 1943 redesignation",
+              "activity": "Movement to Capaccio recorded 15 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            },
+            {
+              "unit": "27th Fighter-Bomber Group USAAF",
+              "parent": "USAAF",
+              "place": "Sele",
+              "source": "https://media.defense.gov/2025/Jun/10/2003736230/-1/-1/0/AF_COMBAT_UNITS_WWII%20OPT.PDF",
+              "locator": "27th Fighter Group entry, p. 78, August 1943 redesignation",
+              "activity": "Movement to Sele recorded 18 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            },
+            {
+              "unit": "31st Fighter Group USAAF",
+              "parent": "USAAF",
+              "place": "Montecorvino",
+              "stations": [
+                "med-montecorvino"
+              ],
+              "activity": "Movement to Montecorvino recorded 16 and 22 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            }
+          ]
+        },
+        {
+          "id": "italy-shore-wings",
+          "label": "RAF wings moving to the bridgehead",
+          "date": "1943-09-12/1943-09-16",
+          "force": "Allied air forces, Salerno bridgehead",
+          "side": "Allied",
+          "echelon": "wing",
+          "event": "moved",
+          "scope": "RAF wing movements listed in the same landing-strip timetable",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction",
+          "sourceClass": "RAF Air Historical Branch campaign history",
+          "note": "The account gives dated wing-level moves to two different strips. The first is evidence of shore basing by 12 September.",
+          "members": [
+            {
+              "unit": "No. 324 Wing RAF",
+              "parent": "RAF",
+              "place": "Tusciano",
+              "activity": "Movement to Tusciano recorded 12 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            },
+            {
+              "unit": "No. 322 Wing RAF",
+              "parent": "RAF",
+              "place": "Asa",
+              "activity": "Movement to Asa recorded 16 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            }
+          ]
+        },
+        {
+          "id": "italy-shore-night",
+          "label": "Night fighters move to Montecorvino",
+          "date": "1943-09-26/1943-09-27",
+          "force": "Allied air forces, Salerno bridgehead",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "moved",
+          "scope": "Individual RAF squadron listed in the landing-strip timetable",
+          "total": 1,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+          "locator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction",
+          "sourceClass": "RAF Air Historical Branch campaign history",
+          "note": "The relocation took place over two dates. Earlier airfield capture and limited use have their own chronology.",
+          "members": [
+            {
+              "unit": "No. 600 Squadron RAF",
+              "parent": "RAF",
+              "place": "Montecorvino",
+              "stations": [
+                "med-montecorvino"
+              ],
+              "activity": "Movement to Montecorvino recorded 26 and 27 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-i-planning-and-invasion-to-the-fall-of-rome/",
+              "activityLocator": "Volume I, p. 122 note 1, movements of fighter squadrons to the strips, cross-checked against the account of landing-ground construction"
+            }
+          ]
+        },
+        {
+          "id": "italy-51-stormo",
+          "label": "Co-belligerent fighter groups of 51° Stormo",
+          "date": "1944-01-01",
+          "force": "Regia Aeronautica cobelligerante",
+          "side": "Allied",
+          "echelon": "Gruppo",
+          "event": "assigned",
+          "scope": "Constituent Gruppi of the re-formed 51° Stormo",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.difesa.it/assets/allegati/39390/2003_la_partecipazione_delle_ffaa_alla_guerra_di_liberazione.pdf",
+          "locator": "Italian Defence Ministry, p. 82, reconstitution of 51° Stormo on 1 January 1944",
+          "sourceClass": "Italian Defence Ministry historical study",
+          "note": "Early co-belligerent fighter operations chiefly supported the Balkans. The three groups establish organization in the Allied Italian air arm. The source does not assign individual missions over the mainland front.",
+          "members": [
+            {
+              "unit": "20° Gruppo Caccia",
+              "parent": "51° Stormo, Raggruppamento Caccia"
+            },
+            {
+              "unit": "21° Gruppo Caccia",
+              "parent": "51° Stormo, Raggruppamento Caccia"
+            },
+            {
+              "unit": "155° Gruppo Caccia",
+              "parent": "51° Stormo, Raggruppamento Caccia"
+            }
+          ]
+        },
+        {
+          "id": "italy-anr-aug44",
+          "label": "Republican Italian fighter groups before Operation Olive",
+          "date": "1944-08-20",
+          "force": "Aeronautica Nazionale Repubblicana",
+          "side": "Axis",
+          "echelon": "Gruppo",
+          "event": "reported",
+          "scope": "Republican Italian fighter identities in the Axis strength return",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+          "locator": "Volume II, p. 66 note 2, Republican Italian air force, fighter rows, 20 August",
+          "sourceClass": "German Air Force Quartermaster return reproduced by the RAF Air Historical Branch",
+          "note": "J.G.1. has two equipment lines, 14 held/13 serviceable and 23/12, aggregated once as 37/25. J.G.2. has 37/36. II./JG 77 belongs to the separate German return.",
+          "members": [
+            {
+              "unit": "1° Gruppo Caccia (return: J.G.1.)",
+              "parent": "Aeronautica Nazionale Repubblicana",
+              "strength": 37,
+              "serviceable": 25
+            },
+            {
+              "unit": "2° Gruppo Caccia (return: J.G.2.)",
+              "parent": "Aeronautica Nazionale Repubblicana",
+              "strength": 37,
+              "serviceable": 36
+            }
+          ]
+        },
+        {
+          "id": "italy-lf2-recon",
+          "label": "German reconnaissance Staffeln before Operation Olive",
+          "date": "1944-08-20",
+          "force": "Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "reported",
+          "scope": "Short- and long-range reconnaissance aircraft in the Italian theater return",
+          "total": 5,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+          "locator": "Volume II, p. 66 note 1, Luftflotte 2 return on 20 August",
+          "sourceClass": "German Air Force Quartermaster return reproduced by the RAF Air Historical Branch",
+          "note": "The two short-range Staffel designations retain the printed form N.A.G. II. The three (F) Staffeln are numbered elements under 122. The single German fighter Gruppe appears in its own category.",
+          "members": [
+            {
+              "unit": "1/N.A.G. II",
+              "parent": "N.A.G. II (as printed)",
+              "strength": 12,
+              "serviceable": 6
+            },
+            {
+              "unit": "2/N.A.G. II",
+              "parent": "N.A.G. II (as printed)",
+              "strength": 14,
+              "serviceable": 9
+            },
+            {
+              "unit": "2./(F) 122",
+              "parent": "Aufklärungsgruppe 122",
+              "strength": 6,
+              "serviceable": 3
+            },
+            {
+              "unit": "4./(F) 122",
+              "parent": "Aufklärungsgruppe 122",
+              "strength": 10,
+              "serviceable": 4
+            },
+            {
+              "unit": "6./(F) 122",
+              "parent": "Aufklärungsgruppe 122",
+              "strength": 6,
+              "serviceable": 4
+            }
+          ]
+        },
+        {
+          "id": "italy-lf2-night",
+          "label": "German night-attack Staffeln before Operation Olive",
+          "date": "1944-08-20",
+          "force": "Luftflotte 2",
+          "side": "Axis",
+          "echelon": "Staffel",
+          "event": "reported",
+          "scope": "All Ju 87 night ground-attack entries under Luftflotte 2, Italy",
+          "total": 3,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+          "locator": "Volume II, p. 66 note 1, Luftflotte 2 return on 20 August",
+          "sourceClass": "German Air Force Quartermaster return reproduced by the RAF Air Historical Branch",
+          "note": "All three Staffeln reported eleven aircraft each. Each row has its own serviceability figure.",
+          "members": [
+            {
+              "unit": "1./NSG 9",
+              "parent": "Nachtschlachtgruppe 9",
+              "strength": 11,
+              "serviceable": 6
+            },
+            {
+              "unit": "2./NSG 9",
+              "parent": "Nachtschlachtgruppe 9",
+              "strength": 11,
+              "serviceable": 6
+            },
+            {
+              "unit": "3./NSG 9",
+              "parent": "Nachtschlachtgruppe 9",
+              "strength": 11,
+              "serviceable": 5
+            }
+          ]
+        },
+        {
+          "id": "italy-xii-transfers",
+          "label": "US fighter groups reassigned in September",
+          "date": "1944-09-15/1944-09-20",
+          "force": "XII Fighter Command",
+          "side": "Allied",
+          "echelon": "group",
+          "event": "transferred command",
+          "scope": "Fighter groups transferred from XII Tactical Air Command to XII Fighter Command in the cited passage",
+          "total": 4,
+          "basis": "bounded source count",
+          "source": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+          "locator": "Volume II, transfer paragraph beginning with 12 September and General Chidlaw, followed by 15 and 20 September",
+          "sourceClass": "RAF Air Historical Branch campaign history",
+          "note": "These were command changes. The account supplies no corresponding move of airfield.",
+          "members": [
+            {
+              "unit": "57th Fighter Group USAAF",
+              "parent": "XII Fighter Command",
+              "activity": "Transferred from XII Tactical Air Command on 15 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+              "activityLocator": "Volume II, transfer paragraph beginning with 12 September and General Chidlaw, followed by 15 and 20 September"
+            },
+            {
+              "unit": "86th Fighter Group USAAF",
+              "parent": "XII Fighter Command",
+              "activity": "Transferred from XII Tactical Air Command on 15 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+              "activityLocator": "Volume II, transfer paragraph beginning with 12 September and General Chidlaw, followed by 15 and 20 September"
+            },
+            {
+              "unit": "27th Fighter Group USAAF",
+              "parent": "XII Fighter Command",
+              "activity": "Transferred from XII Tactical Air Command on 20 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+              "activityLocator": "Volume II, transfer paragraph beginning with 12 September and General Chidlaw, followed by 15 and 20 September"
+            },
+            {
+              "unit": "79th Fighter Group USAAF",
+              "parent": "XII Fighter Command",
+              "activity": "Transferred from XII Tactical Air Command on 20 September.",
+              "activitySource": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/italian-campaign-1943-1945-vol-ii-operations-june-1944-may-1945/",
+              "activityLocator": "Volume II, transfer paragraph beginning with 12 September and General Chidlaw, followed by 15 and 20 September"
+            }
+          ]
+        },
+        {
+          "id": "italy-guided-bombers",
+          "label": "German bomber groups attacking the Salerno shipping",
+          "date": "1943-09-11/1943-09-12",
+          "force": "Kampfgeschwader 100",
+          "side": "Axis",
+          "echelon": "Gruppe",
+          "event": "flew",
+          "scope": "Guided-bomb groups in the chronology for the morning of 11 September and the attacks on 12 September",
+          "total": 2,
+          "basis": "bounded source count",
+          "source": "https://wwwstatic.wlb-stuttgart.de/seekrieg/43-09.htm",
+          "locator": "11–17 September 1943, Luftkrieg Italien, dated paragraphs for 11–13 September",
+          "sourceClass": "Rohwer/Hümmelchen, naval operational chronology",
+          "note": "The naval chronology identifies III. Gruppe on the 11th and II. Gruppe on the 12th. The opening-day close-support table covers a different force.",
+          "members": [
+            {
+              "unit": "III./KG 100",
+              "parent": "KG 100",
+              "activity": "Attacked US cruisers in the Gulf of Salerno on 11 September.",
+              "activitySource": "https://wwwstatic.wlb-stuttgart.de/seekrieg/43-09.htm",
+              "activityLocator": "11–17 September 1943, Luftkrieg Italien, dated paragraphs for 11–13 September"
+            },
+            {
+              "unit": "II./KG 100",
+              "parent": "KG 100",
+              "activity": "Attacked shipping in the landing area on 12 September.",
+              "activitySource": "https://wwwstatic.wlb-stuttgart.de/seekrieg/43-09.htm",
+              "activityLocator": "11–17 September 1943, Luftkrieg Italien, dated paragraphs for 11–13 September"
+            }
+          ]
+        },
+        {
+          "id": "italy-saaf-april-wings",
+          "label": "South African wings in the final offensive",
+          "date": "1945-04-09/1945-04-23",
+          "force": "South African Air Force",
+          "side": "Allied",
+          "echelon": "wing",
+          "event": "flew",
+          "scope": "Named SAAF wings supporting the final offensive, including the night effort",
+          "total": 4,
+          "basis": "identified lower bound",
+          "source": "https://scientiamilitaria.journals.ac.za/pub/article/download/378/414/",
+          "locator": "Scientia Militaria 19/3 (1989), pp. 42–43, passage beginning with the final air attack of 9 April 1945",
+          "sourceClass": "South African military historical journal",
+          "note": "No. 7 and No. 8 Wings flew fighter-bombers, No. 3 Wing medium bombers and No. 2 Wing Liberators at night. The article does not place every wing over the same river crossing.",
+          "members": [
+            {
+              "unit": "No. 7 Wing SAAF",
+              "parent": "South African Air Force"
+            },
+            {
+              "unit": "No. 8 Wing SAAF",
+              "parent": "South African Air Force"
+            },
+            {
+              "unit": "No. 3 Wing SAAF",
+              "parent": "South African Air Force"
+            },
+            {
+              "unit": "No. 2 Wing SAAF",
+              "parent": "South African Air Force"
+            }
+          ]
+        },
+        {
+          "id": "italy-saaf-april-squadrons",
+          "label": "South African squadron roles during the final offensive",
+          "date": "1945-04-09/1945-04-23",
+          "force": "South African Air Force",
+          "side": "Allied",
+          "echelon": "squadron",
+          "event": "flew",
+          "scope": "Separately named SAAF squadrons and roles in the final-offensive account",
+          "total": 3,
+          "basis": "identified lower bound",
+          "source": "https://scientiamilitaria.journals.ac.za/pub/article/download/378/414/",
+          "locator": "Scientia Militaria 19/3 (1989), pp. 42–43, passage beginning with the final air attack of 9 April 1945",
+          "sourceClass": "South African military historical journal",
+          "note": "No. 5 supplied fighters, No. 40 army cooperation and No. 15 night bombing. The full monthly sortie total for No. 2 Squadron has a different date window.",
+          "members": [
+            {
+              "unit": "No. 5 Squadron SAAF",
+              "parent": "South African Air Force"
+            },
+            {
+              "unit": "No. 40 Squadron SAAF",
+              "parent": "South African Air Force"
+            },
+            {
+              "unit": "No. 15 Squadron SAAF",
+              "parent": "South African Air Force"
+            }
+          ]
+        }
+      ],
+      "evidenceBySide": {
+        "Allied": {
+          "effort": "Force V logged 265 carrier sorties on 9 September 1943. The AHB separately gives 796 land-based fighter sorties that day. South African roles are documented again in the April 1945 offensive.",
+          "losses": "886 Squadron lost Sub-Lt Prentice on approach to Attacker. The Force V account records 32 aircraft written off across the carrier operation.",
+          "effect": "Offshore cover remained necessary while artillery denied Montecorvino. A new strip near Paestum went into service on 13 September. By April 1945 fighter-bombers were participating in the Senio offensive."
+        },
+        "Axis": {
+          "effort": "On 9 September the German return records 82 fighter sorties and 26 ground-attack sorties. Separate German and Republican Italian returns give strengths for 20 August 1944.",
+          "losses": "The 12 September naval chronology records one aircraft lost from the II./KG 100 attack. No comparable German loss total for all Salerno fighters is established here.",
+          "effect": "On 11 September III./KG 100’s attack forced Savannah to withdraw from supporting the landing force. The later fighter strength tables alone cannot establish effects over the ground front."
+        }
+      }
+    }
+  },
+  "stations": {
+    "med-ponte-olivo": {
+      "name": "Ponte Olivo (Gela)",
+      "lat": 37.127778,
+      "lon": 14.316667,
+      "source": "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45: Italy, Sicily and Sardinia, Gela / Ponte Olivo entry, PDF p. 98"
+    },
+    "med-licata": {
+      "name": "Licata",
+      "lat": 37.130556,
+      "lon": 13.908333,
+      "source": "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45: Italy, Sicily and Sardinia, Licata entry, PDF p. 126"
+    },
+    "med-montecorvino": {
+      "name": "Montecorvino Rovella",
+      "lat": 40.620833,
+      "lon": 14.913889,
+      "source": "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45: Italy, Sicily and Sardinia, Montecorvino Rovella entry, PDF p. 147"
+    },
+    "med-lecce": {
+      "name": "Lecce-Galatina",
+      "lat": 40.241667,
+      "lon": 18.133333,
+      "source": "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45: Italy, Sicily and Sardinia, Lecce entry, PDF p. 123"
+    },
+    "med-vibo": {
+      "name": "Vibo Valentia",
+      "lat": 38.6375,
+      "lon": 16.045833,
+      "source": "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45: Italy, Sicily and Sardinia, Vibo Valentia entry, PDF p. 252"
+    },
+    "med-chilivani": {
+      "name": "Chilivani",
+      "lat": 40.611111,
+      "lon": 8.888889,
+      "source": "https://www.ww2.dk/Airfields%20-%20Italy%20Sicily%20and%20Sardinia.pdf",
+      "locator": "Henry L. deZeng IV, Luftwaffe Airfields 1935–45: Italy, Sicily and Sardinia, Chilivani entry"
+    }
+  }
+}

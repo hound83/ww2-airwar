@@ -4,12 +4,13 @@ const root=path.resolve(__dirname,'..'),parent=path.resolve(os.tmpdir()),tmp=fs.
 try{
  for(const folder of ['dist','scripts','research/transcriptions'])fs.mkdirSync(path.join(tmp,folder),{recursive:true});
  const files=['scripts/build-web.cjs','scripts/build-europe.cjs','dist/europe-coast.svg','research/transcriptions/europe-chapters.json','scripts/build-narvik.cjs','scripts/build-formations.cjs','scripts/build-operational-balance.cjs','research/transcriptions/operational-balance.json','research/transcriptions/formation-histories.json','research/transcriptions/narvik-daily-1940.json','research/transcriptions/aircraft-performance.json','research/transcriptions/normandy-v86-operations.json','research/transcriptions/britain-v87-operations.json','research/transcriptions/claims-losses-v88.json','research/transcriptions/battle-of-britain-campaign-claims-1940.json',...fs.readdirSync(path.join(root,'dist')).filter(f=>/\.(js|css|html)$/.test(f)).map(f=>'dist/'+f)];
+ files.push('scripts/build-campaign-evidence.cjs', ...fs.readdirSync(path.join(root,'research/transcriptions')).filter(f=>/^v102-.*\.json$/.test(f)).map(f=>'research/transcriptions/'+f));
  files.push('scripts/build-force-rosters.cjs', ...['campaign-force-coverage.json','deployment-stations.json','deployment-roster-context.json','deployment-benchmark-populations.csv','deployment-benchmark-members.csv','deployment-eastern-populations.csv','deployment-eastern-members.csv'].map(f=>'research/transcriptions/'+f));
  const build=()=>cp.execFileSync(process.execPath,[path.join(tmp,'scripts/build-web.cjs')],{stdio:'pipe'});
  for(const file of files)fs.writeFileSync(path.join(tmp,file),fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n'));
  build();
  const histories=fs.readFileSync(path.join(tmp,'formations.html'),'utf8');
- const balanceFiles=['dist/force-rosters-data.js','research/exports/force-rosters.csv','europe.html','dist/europe-index.js','operational-balance.html','dist/operational-balance-index.js',...fs.readdirSync(path.join(tmp,'research/exports')).filter(n=>n.startsWith('operational-balance')).map(n=>'research/exports/'+n)];
+ const balanceFiles=['research/exports/campaign-coverage.csv','research/exports/campaign-missions.csv','dist/force-rosters-data.js','research/exports/force-rosters.csv','europe.html','dist/europe-index.js','operational-balance.html','dist/operational-balance-index.js',...fs.readdirSync(path.join(tmp,'research/exports')).filter(n=>n.startsWith('operational-balance')).map(n=>'research/exports/'+n)];
  const balanceOutputs=balanceFiles.map(p=>fs.readFileSync(path.join(tmp,p),'utf8'));
  const narvik=fs.readFileSync(path.join(tmp,'narvik.html'),'utf8');
  const lf=fs.readFileSync(path.join(tmp,'index.html'),'utf8'),data=fs.readFileSync(path.join(tmp,'dist/atlas-v75-performance-data.js'),'utf8');
@@ -35,6 +36,7 @@ try{
 // Validate its independent source/asset graph alongside normal reproducibility checks.
 require('./grand-air-war-v76.cjs');
 require('./europe.cjs');
+require('./campaign-evidence.cjs');
 
 // Historical Europe overview modules and data populations are tested in default CI.
 require('./grand-air-war-v77.cjs');

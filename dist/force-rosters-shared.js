@@ -17,7 +17,7 @@
     return named + " of " + population.total + " named";
   }
   function csv(items, gazetteer) {
-    const headings = ["campaign","population","date","force","echelon","status","scope","count_basis","reported_count","named_in_roster","record_kind","unit","parent_or_sector","base_or_area","on_strength","serviceable","roster_source","roster_locator","unit_source","unit_locator","station_ids","station_coordinates_and_sources","activity","activity_source","activity_locator","interpretation"];
+    const headings = ["campaign","population","date","force","echelon","status","scope","count_basis","reported_count","named_in_roster","record_kind","unit","parent_or_sector","base_or_area","on_strength","serviceable","roster_source","roster_locator","unit_source","unit_locator","station_ids","station_coordinates_and_sources","activity","activity_source","activity_locator","interpretation","force_side","role"];
     const rows = [headings];
     for (const {campaign, population:p, members} of items) {
       for (const m of members.length ? members : [null]) {
@@ -27,7 +27,7 @@
         }).join(" / ");
         rows.push([campaign,p.id,p.date,p.force,p.echelon,p.event,p.scope,p.basis,p.total,p.members.length,
           m ? "named member" : "reported total only", m?.unit,m?.parent,m?.place,m?.strength,m?.serviceable,
-          p.source,p.locator,m?.source,m?.locator,(m?.stations || []).join(" | "),coords,m?.activity,m?.activitySource,m?.activityLocator,p.note]);
+          p.source,p.locator,m?.source,m?.locator,(m?.stations || []).join(" | "),coords,m?.activity,m?.activitySource,m?.activityLocator,p.note,p.side,m?.role]);
       }
     }
     const cell = v => '"' + String(v ?? "").replaceAll('"','""') + '"';

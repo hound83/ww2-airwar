@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
     paths:
+      - 'campaign-evidence.html'
+      - 'dist/campaign-evidence.*'
+      - 'research/transcriptions/v102-*'
+      - 'scripts/build-campaign-evidence.cjs'
       - 'forces.html'
       - 'dist/force-*'
       - 'research/transcriptions/deployment-*'

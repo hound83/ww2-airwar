@@ -3,6 +3,10 @@ name: Atlas v8 campaign browser QA
 on:
   pull_request:
     paths:
+      - 'campaign-evidence.html'
+      - 'dist/campaign-evidence.*'
+      - 'research/transcriptions/v102-*'
+      - 'scripts/build-campaign-evidence.cjs'
       - 'forces.html'
       - 'dist/force-*'
       - 'research/transcriptions/deployment-*'

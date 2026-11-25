@@ -1,0 +1,164 @@
+.lead {
+  align-items:end;
+}
+
+.lead h1 {
+  max-width:15ch;
+}
+
+.campaign-picker .study-nav {
+  margin-top:.25rem;
+  gap:0 .9rem;
+}
+
+.study-intro,.region {
+  padding:1.55rem 0;
+}
+
+.study-intro>p,.region>p,.mission>p {
+  max-width:72ch;
+  margin-top:.7rem;
+}
+
+.region+.region,.region+.study-intro {
+  border-top:1px solid var(--edge);
+}
+
+.region h2,.study-intro h2 {
+  font-size:clamp(1.65rem,3vw,2.4rem);
+}
+
+caption {
+  text-align:left;
+  font:500 1.65rem Georgia,serif;
+  color:var(--ink);
+  padding:0 0 .65rem;
+}
+
+.region h2~.table-wrap {
+  margin-top:1.1rem;
+}
+
+.region h2~.table-wrap caption {
+  font:650 .96rem "Source Sans",sans-serif;
+}
+
+tbody th {
+  font-weight:550;
+}
+
+.mission {
+  padding:1.15rem 0 1.25rem 1.2rem;
+  border-left:3px solid #65816d;
+  margin-top:1.2rem;
+}
+
+.mission h3 {
+  margin:.35rem 0;
+}
+
+.mission h4 {
+  margin:.9rem 0 -.3rem;
+  font-size:1rem;
+}
+
+.mission .kicker {
+  margin:0;
+}
+
+.mission .limit {
+  color:var(--muted);
+}
+
+.mission .limit strong {
+  display:block;
+  color:var(--ink);
+}
+
+.witnesses {
+  margin:.75rem 0;
+  color:var(--muted);
+}
+
+summary {
+  cursor:pointer;
+}
+
+.witnesses ul {
+  padding-left:1.2rem;
+  margin:.5rem 0;
+}
+
+.witnesses li {
+  margin:.4rem 0;
+  max-width:80ch;
+}
+
+.witnesses span {
+  display:block;
+  font-size:.94rem;
+}
+
+.force-accounts {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:2rem;
+  margin:1.1rem 0;
+}
+
+.force-account h3 {
+  margin-bottom:.55rem;
+}
+
+.force-account dt:not(:first-child) {
+  margin-top:.7rem;
+}
+
+.force-account dd {
+  margin:.15rem 0;
+}
+
+.region td,.region th {
+  padding:.52rem .6rem .52rem 0;
+}
+
+main {
+  overflow-wrap:break-word;
+}
+
+@media(max-width:700px) {
+  .force-accounts {
+    grid-template-columns:1fr;
+    gap:1.15rem;
+  }
+  .study-intro,.region {
+    padding:1.15rem 0;
+  }
+  .mission {
+    padding:.8rem 0 .8rem .75rem;
+  }
+  .region table {
+    font-size:.9rem;
+  }
+  .region td,.region th {
+    padding:.45rem .35rem .45rem 0;
+  }
+  .lead h1 {
+    max-width:100%;
+  }
+}
+
+@media print {
+  .mast,.campaign-picker,footer,.skip {
+    display:none;
+  }
+  .mission {
+    break-inside:avoid;
+  }
+  .return-nav {
+    position:static;
+  }
+  .force-accounts {
+    display:block;
+  }
+}

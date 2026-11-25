@@ -73,7 +73,8 @@ module.exports = async (browser, base, root) => {
       await page.locator('#campaign-map [data-case="messina"]').click();
       assert.match(await page.locator("#case-evidence").innerText(), /39,569/);
       assert.match(await page.locator("#case-evidence").innerText(), /Allied claims of craft destroyed\s+23/);
-      assert.equal(await page.locator("#case-evidence a").count(), 5);
+      assert.equal(await page.locator("#case-evidence a").count(), 7);
+      assert.match(await page.locator("#case-evidence").innerText(), /Siebel/);
       assert.match(await page.locator("#case-evidence").innerText(), /Warhawks escorted on the anti-shipping mission\s+12/);
       const share = page.url();
       await page.goto(share, { waitUntil: "domcontentloaded" });

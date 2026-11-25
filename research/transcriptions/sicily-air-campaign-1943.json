@@ -906,7 +906,7 @@
       "phase": "strait",
       "site": "messina",
       "title": "Messina · the strait remains open",
-      "summary": "Bombing interrupted some crossings. On 16 August No. 92 Squadron covered Warhawks attacking shipping, escorted Baltimores to Messina and patrolled over Allied warships. Axis troops continued to cross to Italy.",
+      "summary": "On 16 August No. 92 Squadron escorted strikes on shipping and Messina, then covered Allied warships. German ferry crews shifted embarkation after bombing closed the Salvatore jetty. Their last ferries left Messina before 06:00 on 17 August.",
       "formations": [
         "sq92"
       ],
@@ -915,11 +915,27 @@
           "source": "orb92",
           "locator": "Form 540, 16 August 1943, 07:25 patrol and later missions",
           "title": "No. 92 Squadron covered the attacks",
-          "note": "Eight pilots escorted the Warhawks, and six escorted the Baltimores later that morning. An afternoon patrol covered warships southeast of Taormina. The diary records these missions. The fate of individual ferries requires separate craft records.",
+          "note": "Eight pilots escorted the Warhawks, and six escorted the Baltimores later that morning. An afternoon patrol covered warships southeast of Taormina. Neither the squadron nor the ferry commander identifies the aircraft that damaged F 607.",
           "figures": {
             "Warhawks escorted on the anti-shipping mission": 12,
             "Baltimores escorted to Messina": 12
           }
+        },
+        {
+          "source": "ferryDiary",
+          "locator": "Sea transport war diary, 16–17 August, translated pp. 26–29, AHB VII/156",
+          "title": "The ferry commander shifted embarkation",
+          "note": "Shortly before 16:00 a near miss badly damaged F 607. Two Siebel ferries were also damaged. Bombing disabled the Salvatore jetty and the command used a relief ferry point. The last ferries left Messina shortly before 06:00 on 17 August.",
+          "figures": {
+            "Siebel ferries reported damaged in the afternoon entry": 2
+          }
+        },
+        {
+          "source": "sf175",
+          "locator": "SF 175, vessel history and source keys [1] and [2], August 1943",
+          "title": "SF 92 salvaged vehicles from SF 175",
+          "note": "The craft register dates SF 175’s loss off San Giovanni to 23:00 on 16 August. The transport diary translation describes the grounding and SF 92 coming alongside under the night of 15/16 August. The register cites that diary and the 10th Landing Flotilla diary. The attacking squadron remains unidentified.",
+          "figures": {}
         },
         {
           "source": "air",
@@ -1101,6 +1117,14 @@
     }
   ],
   "sources": {
+    "ferryDiary": [
+      "Captain von Liebenstein, wartime Messina Strait sea transport diary (AHB translation)",
+      "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/war-diary-of-naval-officer-in-charge-sea-transport-messina-strait-captain-von-liebenstein-with-summary-and-conclusions-1st-august-1943-17th-august-1943/"
+    ],
+    "sf175": [
+      "Historisches Marinearchiv, SF 175 craft register",
+      "https://www.historisches-marinearchiv.de/projekte/landungsfahrzeuge/siebelfaehre/ausgabe.php?where_value=164"
+    ],
     "raf": [
       "RAF Air Historical Branch · Sicilian Campaign, June–August 1943",
       "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/sicilian-campaign-june-august-1943/"
