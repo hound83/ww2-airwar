@@ -6,7 +6,7 @@
 
 All 20 dossiers show which forces their sources cover, by date and echelon. The [roster explorer](../forces.html) contains 44 scoped lists and 297 dated memberships. Sicily includes four German fighter Gruppen, two wing headquarters and the 23 squadrons in five Commonwealth wings. Britain includes separate German and No. 11 Group returns for 7 September. Kursk covers both sectors, and Bagration follows the five Soviet air armies into 52 divisional entries on 1 July. These are counts of memberships in particular returns. A unit can recur across dates and a command can appear alongside its subordinates. [Research baseline](../research/sources/atlas-coverage-audit.md) · [Eastern returns](../research/sources/deployment-eastern-rosters.md) · [Station evidence and disagreements](../research/sources/deployment-stations.md) · [Download all rows](../research/exports/force-rosters.csv)
 
-Next up is the opening and Channel campaigns. Establish dated initial and later dispositions for Spain, Poland, Norway, France and the Low Countries, Britain, and Dieppe, then trace a mission to an opposing or receiving-side record where one survives.
+Next up is v10.2, one release for all 20 campaigns across the opening and Channel battles, Mediterranean, Eastern Front and western air offensive. Each region has its own evidence targets. v11.0 follows with cross-campaign comparisons of protection, supply and industrial disruption. [Active roadmap](ATLAS_ROADMAP_AFTER_V10_1.md)
 
 ## 24 November 2026 · v10.0, the connected European air war
 
