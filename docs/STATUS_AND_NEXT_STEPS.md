@@ -2,6 +2,10 @@
 
 [Active milestone roadmap after v10.1](ATLAS_ROADMAP_AFTER_V10_1.md) · [Completed roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 25 November 2026 · v11.0, What changed because aircraft flew?
+
+Seven studies compare the records of dispatchers and recipients, air and naval commands, manufacturers and forces in the field. At Arnhem the recorded drop-only collection was 92 of 1,431 tons. At Stalingrad a matched cargo dispatch and unit receipt remains open. The audit revisits both sides of all 20 dossiers and names the next document needed for each. [Studies](../operational-effects.html) · [Dossier audit](../dossier-audit.html) · [Research and remaining gaps](../research/sources/atlas-v11-operational-effects.md)
+
 ## 25 November 2026 — v10.2, deployed forces, missions and outcomes
 
 All 20 campaigns now have dated mission cases and separate coverage assessments for each side. The Atlas identifies 984 unit memberships across 170 dated lists, up from 297 across 44 in v10.1. The 78 cases link what formations did to what a ship, army, unit or observer recorded afterward. A unit can recur on multiple dates and at different reporting levels. [Campaign evidence](../campaign-evidence.html) · [Release findings](../research/sources/atlas-v102-campaign-evidence.md) · [Coverage by side](../research/exports/campaign-coverage.csv)

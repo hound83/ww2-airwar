@@ -2,7 +2,7 @@
 
 **v10.2 released on 25 November 2026.** The four regional work packages originally proposed as v10.2 through v10.5 shipped together under v10.2. All 20 campaigns now have dated mission cases and separate coverage assessments for each side. The Atlas identifies 984 unit memberships across 170 dated lists, up from 297 across 44 in v10.1. The 78 cases link what formations did to what a ship, army, unit or observer recorded afterward. [Read the cases](https://hound83.github.io/ww2-airwar/campaign-evidence.html) · [Release findings and outstanding identifications](../research/sources/atlas-v102-campaign-evidence.md)
 
-**Next release · v11.0.** Compare protection of beaches and shipping, supplies dispatched and received, and industrial disruption across compatible periods. The regional briefs below preserve the v10.1 baseline and original research questions.
+**v11.0 delivered.** Seven studies cover the three operational questions. Both sides of all 20 dossiers have a sourced assessment and a specific remaining gap. [Operational effects](../operational-effects.html) · [Dossier audit](../dossier-audit.html) · [Research notes](../research/sources/atlas-v11-operational-effects.md). The regional briefs below preserve the v10.1 baseline and original research questions.
 
 ## Starting coverage in v10.1
 

@@ -3,6 +3,12 @@ name: Atlas v8 campaign browser QA
 on:
   pull_request:
     paths:
+      - 'operational-effects.html'
+      - 'dossier-audit.html'
+      - 'dist/operational-effects.css'
+      - 'research/transcriptions/v11-*.json'
+      - 'scripts/build-operational-effects.cjs'
+      - 'tests/operational-effects*.cjs'
       - 'campaign-evidence.html'
       - 'dist/campaign-evidence.*'
       - 'research/transcriptions/v102-*'

@@ -20,6 +20,7 @@ const check=async()=>{
  const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
+  await require("./operational-effects-browser.cjs")(browser,base,root);
   await require("./campaign-evidence-browser.cjs")(browser,base);
   await require("./force-rosters-browser.cjs")(browser,base,root);
   await require("./europe-browser.cjs")(browser,base,root);

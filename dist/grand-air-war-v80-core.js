@@ -511,7 +511,7 @@ function renderDossier(){
    const rows = roster.populations.map(p => '<li><a href="'+href+'&amp;population='+encodeURIComponent(p.id)+'">'+esc(p.label)+'</a><small>'+esc(window.AtlasRosterTools.labelDate(p.date))+' · '+esc(window.AtlasRosterTools.coverage(p))+' · '+esc(p.echelon)+'</small></li>').join("");
    const leadCase = roster.cases?.[0];
    const caseLink = leadCase ? '<p><a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'#mission-1">'+esc(leadCase.title)+'</a> · '+esc(window.AtlasRosterTools.labelDate(leadCase.date))+'</p>' : "";
-   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p>'+caseLink+'<a class="roster-open" href="'+href+'">Explore units, dates and stations</a> · <a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'">Missions, outcomes and coverage</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
+   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p>'+caseLink+'<a class="roster-open" href="'+href+'">Explore units, dates and stations</a> · <a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'">Missions, outcomes and coverage</a> · <a href="./dossier-audit.html#'+encodeURIComponent(c.id)+'">What the evidence establishes</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
   } else { rosterPanel.innerHTML = ""; }
  }
  const formationLink = $("dossier-formations");

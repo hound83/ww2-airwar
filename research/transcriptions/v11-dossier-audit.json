@@ -1,0 +1,342 @@
+{
+  "spain": {
+    "name": "Spanish Civil War",
+    "sides": {
+      "Republican": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "Brunete’s six opening Republican squadrons can be counted by aircraft type. Later Soviet and Republican participation is identifiable.",
+        "open": "A dated opening return naming all six squadrons."
+      },
+      "Nationalist": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "The Italian chronology places two Fiat squadrons at the opening and distinguishes the later reinforcements.",
+        "open": "A dated field return for the third Fiat squadron in the competing opening account."
+      }
+    }
+  },
+  "poland": {
+    "name": "Poland",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "The first-day reports distinguish Warsaw’s Pursuit Brigade from the assisting Army Modlin fighters. Dispersing one formation still left Jabłonna exposed.",
+        "open": "German losses attributable to each Polish interception."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "Three German bomber Staffeln and the separate fighter sweep can be placed in the opening operation.",
+        "open": "A matching German loss and damage return for the encounter."
+      }
+    }
+  },
+  "norway": {
+    "name": "Norway",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 3,
+        "finding": "Ark Royal fighters interrupted a specific bombing attack near Åndalsnes. The carrier chronology records the incident.",
+        "open": "A consistent series of hours of cover at the Narvik anchorage."
+      },
+      "Axis": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "The German naval diary confirms the loss of Königsberg after the Bergen attack and records the crew’s new shore role.",
+        "open": "Comparable aircraft loss returns across the Norwegian theatre."
+      }
+    }
+  },
+  "france1940": {
+    "name": "France and the Low Countries",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "The Dutch record follows fighters from two fields through refuelling and regrouping at Buiksloot.",
+        "open": "French, Belgian, Dutch and British strength and loss returns on the same day."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 2,
+        "finding": "The German fighter encounter with three Belgian escorts over Vroenhoven is identifiable.",
+        "open": "A receiving-side report measuring the bombers’ effect at the bridge."
+      }
+    }
+  },
+  "britain": {
+    "name": "Battle of Britain",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "Squadron records distinguish aircraft that departed from units simply listed at a station on 7 September.",
+        "open": "A full daily station-by-station reconciliation of serviceable machines and pilots."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "The bomber and escort orders can be read alongside a naval report of fires in four dock systems.",
+        "open": "A record linking each damaged dock to a named bomber formation."
+      }
+    }
+  },
+  "dieppe": {
+    "name": "Dieppe",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "All 74 Allied allocations can be identified across nine roles. The withdrawal has evidence from a patrol and from the supported naval force.",
+        "open": "The amount of shipping damage averted by each patrol."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 6,
+        "finding": "Fighter Gruppen and strike Staffeln are identifiable and the naval record confirms the loss of Berkeley.",
+        "open": "The specific attacking unit responsible for Berkeley and the full bomber and reconnaissance return."
+      }
+    }
+  },
+  "malta": {
+    "name": "Malta",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "Timed approach patrols and the port signal show that Ohio reached unloading under fighter cover.",
+        "open": "A matching return for the contribution of each patrol to the safe passage."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "Italian records identify the size of one torpedo wave and its escorts. The reconstruction found no hit from that wave.",
+        "open": "Ship-by-ship attribution for damage incurred in other attacks on Pedestal."
+      }
+    }
+  },
+  "sicily": {
+    "name": "Sicily",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "The squadron diary dates the change from Malta to Pachino. The v11 western naval plot and Dickman testimony document interruptions during unloading in a separate sector.",
+        "open": "A common ship-and-patrol log for the same Pachino watch."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 3,
+        "finding": "The ferry command documented the damaged craft and a change of embarkation jetty at Messina.",
+        "open": "A matched German craft and Allied sortie record resolving both the attacker and the disputed wrecking time."
+      }
+    }
+  },
+  "italy": {
+    "name": "Mainland Italy",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "The carrier return identifies the cover supplied at Salerno while shelling kept Montecorvino from replacing it.",
+        "open": "A daily matching of shore-based replacements, carrier patrols and the ships supported."
+      },
+      "Axis": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "A dated III./KG 100 attack and the naval account explain why Savannah left the gun line.",
+        "open": "Comparable loss and repair returns across all German units in the Salerno phase."
+      }
+    }
+  },
+  "barbarossa": {
+    "name": "Barbarossa",
+    "sides": {
+      "Allied": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "The return distinguishes four assigned regiments from three equipped ones. Fifth Army named the corps it wanted them to cover.",
+        "open": "The 22nd Mechanized Corps diary confirming when that cover arrived and its effect."
+      },
+      "Axis": {
+        "status": "Open",
+        "case": 2,
+        "finding": "The 22 June fighter readiness return identifies Gruppen and attached Staffeln in the northern sector.",
+        "open": "A combat or loss report tying a specific Axis unit to the 46th Regiment flight in the south."
+      }
+    }
+  },
+  "stalingrad": {
+    "name": "Stalingrad",
+    "sides": {
+      "Allied": {
+        "status": "Open",
+        "case": 4,
+        "finding": "Soviet air-army holdings during Uranus can be dated and bounded.",
+        "open": "A Soviet unit report identifying an interception and the particular German supply flight it affected."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 5,
+        "finding": "The quartermaster’s receipt records cargo and food need. The v11 postal report adds a separate service’s accounting for inbound mail.",
+        "open": "An outgoing weight manifest, destination dump receipt and unit issue for the same supply lift."
+      }
+    }
+  },
+  "kursk": {
+    "name": "Kursk",
+    "sides": {
+      "Allied": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "The northern air army’s first-day sorties can be separated from aircraft committed to the southern strike. Its history acknowledges gaps in ground support.",
+        "open": "A receiving corps return for the effect of a specific 5 July attack."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 2,
+        "finding": "The southern corps account describes losses to Soviet aviation within the armoured fighting.",
+        "open": "A dated loss return separating air attack from artillery and other causes."
+      }
+    }
+  },
+  "bagration": {
+    "name": "Operation Bagration",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "The daytime bridge mission, its aircraft loss and the later mass strike at Bobruisk have distinct accounts.",
+        "open": "A measurement of how the bridge attack affected 9th Tank Corps movement."
+      },
+      "Axis": {
+        "status": "Answered",
+        "case": 2,
+        "finding": "Ninth Army’s diary records traffic and telephone interruptions during the encirclement on 27 June.",
+        "open": "Attribution of a particular road stoppage to a named Soviet sortie."
+      }
+    }
+  },
+  "berlin": {
+    "name": "Berlin",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 3,
+        "finding": "The night army differentiates the Berlin sorties it recorded from the bombers reporting over the target.",
+        "open": "Ground evidence for the effect of that night’s fires on a specific defender."
+      },
+      "Axis": {
+        "status": "Open",
+        "case": 3,
+        "finding": "Soviet crews observed a German response on 25/26 April and the separate German roster identifies earlier stations.",
+        "open": "The defending unit’s identity and a German recipient or loss record for the same raid."
+      }
+    }
+  },
+  "reichdefense": {
+    "name": "Defence of the Reich",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "The 6 March escort table identifies the groups and the stages of their work. V11 traces fuel output and aircraft availability in separate series.",
+        "open": "An acceptance-to-squadron record connecting newly produced aircraft to a unit’s operational strength."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 2,
+        "finding": "German records establish that bombs reached Berlin and identify individual encounters and damage.",
+        "open": "Local repair and activity returns showing how that raid affected the particular unit or transport service."
+      }
+    }
+  },
+  "schweinfurt": {
+    "name": "Schweinfurt",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 4,
+        "finding": "The October reports separate the B-24s dispatched from those that flew the diversion and identify the escort groups.",
+        "open": "A production loss specifically attributable to an individual bomber group."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 6,
+        "finding": "Factory records distinguish machinery, stocks and local output. The v11 comparison follows the recovery and records what users experienced.",
+        "open": "A monthly series at a single plant with traceable deliveries to one of its customers."
+      }
+    }
+  },
+  "bigweek": {
+    "name": "Big Week",
+    "sides": {
+      "Allied": {
+        "status": "Partial",
+        "case": 5,
+        "finding": "Photography documents damage at Gotha. National production and fighter strength can now be followed separately across 1944.",
+        "open": "Gotha’s own monthly production and deliveries for the affected line."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 4,
+        "finding": "The Steyr account distinguishes factory and housing damage. The Fiume mission and its escorts have a separate history.",
+        "open": "A matched Austrian defensive return for 24 February and recipient production records."
+      }
+    }
+  },
+  "normandy": {
+    "name": "Normandy",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "The air and ground reports establish patrols over the eastern beaches. The western naval command records cover and the different unloading experience at Utah and Omaha.",
+        "open": "A contemporaneous ship and fighter log capable of attributing a defined intervention to one patrol."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 3,
+        "finding": "Eight independently dated movements can be distinguished from the reported 21 German reinforcement Gruppen.",
+        "open": "A German return naming the 21 on the dates covered by that total."
+      }
+    }
+  },
+  "marketgarden": {
+    "name": "Market Garden",
+    "sides": {
+      "Allied": {
+        "status": "Partial",
+        "case": 3,
+        "finding": "The divisional account gives daily recovered tonnage. V11 identifies the Hamilcar contribution, two separate 20 September collections and the late date conflict.",
+        "open": "Synchronized loading, drop and collection returns for Market V on 22–23 September and confirmation of loads on the 25th."
+      },
+      "Axis": {
+        "status": "Answered",
+        "case": 1,
+        "finding": "Six German formations prepared for the opening day and the evidence identifies the three that operated.",
+        "open": "A matched record linking later interceptions to a particular load and its recipient."
+      }
+    }
+  },
+  "bodenplatte": {
+    "name": "Operation Bodenplatte",
+    "sides": {
+      "Allied": {
+        "status": "Answered",
+        "case": 4,
+        "finding": "The Eindhoven returns separate aircraft repaired from those destroyed or beyond repair.",
+        "open": "A dated return for the subsequent operational availability of every repaired Typhoon."
+      },
+      "Axis": {
+        "status": "Partial",
+        "case": 1,
+        "finding": "The separate JG 4 narratives and individual Dutch records help distinguish the groups that reached different fields.",
+        "open": "A complete aircraft-level crosswalk between German claims and defenders’ losses."
+      }
+    }
+  }
+}
