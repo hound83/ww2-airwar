@@ -1,6 +1,6 @@
 # Atlas roadmap after v10.0: who was there, who flew, and what changed?
 
-The [active roadmap after v10.1](ATLAS_ROADMAP_AFTER_V10_1.md) starts with six opening and Channel campaigns. This document preserves the original coverage audit and the milestone shipped in v10.1.
+The [active roadmap after v10.1](ATLAS_ROADMAP_AFTER_V10_1.md) combines all four regional investigations in v10.2, followed by the v11.0 cross-campaign comparisons. This document preserves the original coverage audit and the milestone shipped in v10.1.
 
 **The v10.0 audit flagged a first priority: repair the way the Atlas represents deployed forces.** In the v10.0 Sicily explorer a reader could select just one German wing, SKG 10. The German return for 10 July puts four single-engine fighter Gruppen and two wing headquarters on Sicilian fields. SKG 10 belongs to the ground-attack section. The same version included just one of 23 squadrons in five named Commonwealth wings. Both sides need work. [Mediterranean source audit](../research/sources/deployment-audit/med.md)
 
