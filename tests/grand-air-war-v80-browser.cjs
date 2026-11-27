@@ -20,6 +20,7 @@ const check=async()=>{
  const base=process.env.ATLAS_BASE_URL||"http://127.0.0.1:"+server.address().port+"/grand-air-war-v80.html";
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.ATLAS_CHROMIUM_PATH?{executablePath:process.env.ATLAS_CHROMIUM_PATH}:{})});
  try{
+  await require("./campaign-expansion-browser.cjs")(browser,base);
   await require("./operational-effects-browser.cjs")(browser,base,root);
   await require("./campaign-evidence-browser.cjs")(browser,base);
   await require("./force-rosters-browser.cjs")(browser,base,root);
@@ -165,7 +166,7 @@ const check=async()=>{
    assert.match(await page.locator("#moment-detail").innerText(),/24th Reconnaissance Squadron/);
    assert.equal(await page.locator('#moment-detail a[href*="muzeumlotnictwa.pl"]').count(),1);
    await page.locator("#campaigns").screenshot({path:path.join(root,"v80-qa-campaign-guide-"+viewport.width+".png")});
-   // Walk all 20 campaigns through the real controller and verify source-backed
+   // Walk the entire catalogue through the real controller and verify source-backed
    // chapters, with intentionally unphased single-day Dieppe/Bodenplatte.
    const overview=await page.evaluate(()=>{
     const app=window.GrandAirWarV77;
@@ -180,7 +181,7 @@ const check=async()=>{
     return {failures,reviewed:app.campaigns.length};
    });
    assert.deepEqual(overview.failures,[],"campaign guide incomplete or broken for: "+overview.failures.join(", "));
-   assert.equal(overview.reviewed,20);
+   assert.equal(overview.reviewed,42);
    await page.locator("#campaign-search").fill("");
    for(const [term,id] of [["Cobra","normandy"],["Peewit","britain"],["HMS Eagle","malta"],["Black Thursday","schweinfurt"],["Pitomnik","stalingrad"],["Prokhorovka","kursk"],["Cassino","italy"],["Vitebsk","bagration"],["Seelow","berlin"]]){
     await page.locator("#campaign-search").fill(term);
@@ -312,9 +313,9 @@ const check=async()=>{
    await page.locator("#theater-select").selectOption("all");
    await page.locator("#date-slider").evaluate((el,value)=>{el.value=String(value);el.dispatchEvent(new Event("input",{bubbles:true}));},(1939*12+9-1)-(1936*12+6));
    await page.locator("#all-campaigns").uncheck();
-   assert.match(await page.locator("#coverage-label").innerText(),/^1 shown/);
+   assert.match(await page.locator("#coverage-label").innerText(),/^3 shown/);
    await page.locator("#all-campaigns").check();
-   assert.match(await page.locator("#coverage-label").innerText(),/^20 shown/);
+   assert.match(await page.locator("#coverage-label").innerText(),/^42 shown/);
    await page.locator(".research-open").click();
    assert.equal(await page.locator("#research-library").evaluate(e=>e.open),true);
    await page.locator("#force-series").selectOption("vvs");
@@ -326,7 +327,7 @@ const check=async()=>{
    await page.locator("#loss-outcome").selectOption("damaged");
    assert.match(await page.locator("#loss-detail").innerText(),/damaged/);
 
-   // Audited comparisons must actually render for all 20 campaigns and 121 dated episodes.
+   // Audited comparisons must actually render for the entire catalogue and every dated episode.
    const allCoverage=await page.evaluate(()=>{
     const app=window.GrandAirWarV77, errors=[],states={};let count=0;
     for(const campaign of app.campaigns){
@@ -342,8 +343,8 @@ const check=async()=>{
     }
     return {campaigns:app.campaigns.length,events:count,errors,states};
    });
-   assert.equal(allCoverage.campaigns,20);
-   assert.equal(allCoverage.events,121);
+   assert.equal(allCoverage.campaigns,42);
+   assert.equal(allCoverage.events,214);
    assert.deepEqual(allCoverage.errors,[],"campaign/event bilateral audit coverage incomplete");
    assert.ok(allCoverage.states["no-matched-data"]>0,"the Atlas must label unsourced dates transparently");
    for(const [id,expected] of [["britain-hardest","paired-own-losses"],["dieppe","paired-own-losses"],["schweinfurt","paired-own-losses"],["bodenplatte","paired-own-losses"],["britain","claim-versus-record"]]){

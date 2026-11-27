@@ -101,6 +101,6 @@ module.exports=function buildOperationalEffects(campaigns) {
   const jump=Object.entries(audit).map(([id,e])=>link("#"+id,e.name)).join(" ");
   const guide='<p class="standfirst">Each judgement applies to the specific question in its row. “Answered” identifies a bounded historical finding. “Partial” identifies an incomplete chain of evidence. “Open” marks an outcome or attribution that still lacks a matching record. The roster counts carried forward from v10.2 measure what the Atlas documents. A unit can recur on multiple dates.</p>';
   fs.writeFileSync(path.join(root,"dossier-audit.html"),page("What do the 20 dossiers establish?",
-    "Compare each side’s evidence with the v10.1 baseline. Each entry identifies a finding, the record behind it and the next document needed.",link("./operational-effects.html","Operational effects")+download(auditFile,"Download all 40 assessments (CSV)"),
+    "Compare each side’s evidence with the v10.1 baseline. Each entry identifies a finding, the record behind it and the next document needed.",link("./campaign-expansion.html","22 subsequent campaign studies")+link("./operational-effects.html","Operational effects")+download(auditFile,"Download all 40 assessments (CSV)"),
     guide+'<nav class="campaign-index" aria-label="Jump to campaign">'+jump+'</nav>'+cards,download(auditFile,"Download the audit (CSV)")));
 };

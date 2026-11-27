@@ -6,7 +6,7 @@
   const esc = text => String(text ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
   const anchor = (url, label, attrs="") => '<a href="'+esc(url)+'" '+attrs+'>'+esc(label)+'</a>';
   const option = (value,label) => '<option value="'+esc(value)+'">'+esc(label)+'</option>';
-  const names = {spain:"Spanish Civil War", poland:"Poland", norway:"Norway", france1940:"France and the Low Countries", britain:"Battle of Britain", malta:"Malta", barbarossa:"Barbarossa", dieppe:"Dieppe", stalingrad:"Stalingrad", reichdefense:"Defence of the Reich", sicily:"Sicily", kursk:"Kursk", schweinfurt:"Schweinfurt", italy:"Mainland Italy", bigweek:"Big Week", normandy:"Normandy", bagration:"Bagration", marketgarden:"Market Garden", bodenplatte:"Bodenplatte", berlin:"Berlin"};
+  const names = {spain:"Spanish Civil War", poland:"Poland", norway:"Norway", france1940:"France and the Low Countries", britain:"Battle of Britain", malta:"Malta", barbarossa:"Barbarossa", dieppe:"Dieppe", stalingrad:"Stalingrad", reichdefense:"Defence of the Reich", sicily:"Sicily", kursk:"Kursk", schweinfurt:"Schweinfurt", italy:"Mainland Italy", bigweek:"Big Week", normandy:"Normandy", bagration:"Bagration", marketgarden:"Market Garden", bodenplatte:"Bodenplatte", berlin:"Berlin",...window.AtlasExpansionIndex?.names};
   const labels = {geography:"Places and dates",strength:"Strength and readiness",effort:"Flying activity",losses:"Losses and damage",effect:"Operational effect"};
   const idOf = (obj,key,fallback) => Object.hasOwn(obj,key) ? key : fallback;
   let campaignId, campaign, population, unitName, phrase, stationId, visible=[];
@@ -43,7 +43,7 @@
     $("assessment-fields").innerHTML=Object.entries(labels).map(([field,label])=>'<dt>'+esc(label)+'</dt><dd>'+esc(campaign[field])+'</dd>').join("");
     $("assessment-source").innerHTML=anchor(campaign.source,campaign.locator);
     $("mission-study").href="./campaign-evidence.html?campaign="+encodeURIComponent(campaignId);
-    const study=window.AtlasCampaignStudies?.[campaignId];
+    const study=window.AtlasCampaignStudies?.[campaignId] || window.AtlasExpansionIndex?.studies[campaignId];
     if (study) {
       const q = new URLSearchParams({campaign:campaignId,event:study.date});
       if (study.episode) q.set("episode",study.episode);

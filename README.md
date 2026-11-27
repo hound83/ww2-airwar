@@ -1,6 +1,8 @@
 # European Air War Atlas (1936–May 1945)
 
-**Current public version · v11.0, What changed because aircraft flew?** Seven studies compare supply received, shipping and beach cover, and German industrial recovery. The dossier audit reviews 40 questions across 20 campaigns and identifies the next record needed for each side. [Read the studies](https://hound83.github.io/ww2-airwar/operational-effects.html) · [Explore the dossier audit](https://hound83.github.io/ww2-airwar/dossier-audit.html) · [Research notes](research/sources/atlas-v11-operational-effects.md)
+**Current public version · v12.0.** The Campaign Explorer contains 42 dossiers. The expansion adds 22 campaigns, 93 dated episodes and 95 source-scoped figures across the Atlantic, northern and western Europe, the Mediterranean, North Africa and the Eastern Front. Four reporting tables add 114 convoy, evacuation and oil records. [Explore the new campaigns](https://hound83.github.io/ww2-airwar/campaign-expansion.html) · [Source and scope notes](research/sources/atlas-v12-campaign-expansion.md)
+
+**v11.0, What changed because aircraft flew?** Seven studies compare supply received, shipping and beach cover, and German industrial recovery. The dossier audit reviews 40 questions across 20 campaigns and identifies the next record needed for each side. [Read the studies](https://hound83.github.io/ww2-airwar/operational-effects.html) · [Explore the dossier audit](https://hound83.github.io/ww2-airwar/dossier-audit.html) · [Research notes](research/sources/atlas-v11-operational-effects.md)
 
 [Active milestone roadmap after v10.1](docs/ATLAS_ROADMAP_AFTER_V10_1.md) · [Deployment and coverage audit across all 20 campaigns](research/sources/atlas-coverage-audit.md)
 

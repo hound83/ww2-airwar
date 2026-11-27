@@ -1,0 +1,506 @@
+{
+  "coast": {
+    "name": "Coastal Command Review, May 1943",
+    "kind": "Wartime command review",
+    "locator": "Section on the North Atlantic, convoy narratives ONS 5, HX 237, SC 129 and SC 130.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/coastal-cmd-rev-vol2-no1-may1943/"
+  },
+  "roskill": {
+    "name": "S. W. Roskill, The War at Sea, vol. II",
+    "kind": "British official history",
+    "locator": "Chapter XIV, pp. 373–376 and Table 32, pp. 380–382. The convoy loss and submarine columns have separate populations.",
+    "url": "https://www.ibiblio.org/hyperwar/UN/UK/UK-RN-II/UK-RN-II-14.html"
+  },
+  "rcaf": {
+    "name": "Royal Canadian Air Force, On Windswept Heights II",
+    "kind": "Service history",
+    "locator": "Battle of the Atlantic, Canadian aircraft and the mid-Atlantic gap.",
+    "url": "https://www.canada.ca/en/air-force/corporate/reports-publications/on-windswept-heights-2/34-history-1939-1945.html"
+  },
+  "pq": {
+    "name": "US Naval History and Heritage Command, The Ordeal of PQ-17",
+    "kind": "Naval historical synthesis",
+    "locator": "From departure on 27 June through the order to scatter and arrival of the surviving ships.",
+    "url": "https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1942/atlantic/pq-17.html"
+  },
+  "avenger": {
+    "name": "Royal Navy Research Archive, HMS Avenger",
+    "kind": "Specialist carrier history",
+    "locator": "PQ 18, action diary for 13 and 14 September 1942.",
+    "url": "https://www.royalnavyresearcharchive.org.uk/ESCORT_2/AVENGER.htm"
+  },
+  "airsea": {
+    "name": "RAF Air Historical Branch, The Operational Use of the Luftwaffe in the War at Sea",
+    "kind": "Translated German historical assessment",
+    "locator": "Russian convoy operations and German reporting on PQ 17. Enemy estimates have a different basis from convoy ledgers.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/the-operational-use-of-the-luftwaffe-in-the-war-at-sea-1939-43/"
+  },
+  "ruhr": {
+    "name": "International Bomber Command Centre Digital Archive",
+    "kind": "University archive campaign guide",
+    "locator": "Ruhr campaign, opening at Essen and March–July chronology.",
+    "url": "https://ibccdigitalarchive.lincoln.ac.uk/items/show/50079"
+  },
+  "boahb": {
+    "name": "RAF Air Historical Branch, The Bombing Offensive, vol. VII",
+    "kind": "Official history using German and British records",
+    "locator": "Hamburg, printed pp. 125–127, including the Hamburg police president’s damage assessment.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/the-raf-in-the-bombing-offensive-against-germany-vol-vii-the-planning-of-the-bomber-offensive-and-its-contribution-to-german-collapse/"
+  },
+  "berair": {
+    "name": "Australian War Memorial, Australians in the Battle of Berlin",
+    "kind": "Museum history",
+    "locator": "Berlin campaign and the earlier Ruhr and Hamburg offensives.",
+    "url": "https://www.awmlondon.gov.au/battles/berlin"
+  },
+  "blitz": {
+    "name": "RAF Museum, The Blitz",
+    "kind": "Museum exhibition",
+    "locator": "7 September London docks, provincial cities and the attack on Coventry.",
+    "url": "https://www.rafmuseum.org.uk/our-collection/supporting-research/online-exhibitions/the-blitz/"
+  },
+  "gazette": {
+    "name": "London Gazette, despatch on the air defence of Great Britain",
+    "kind": "Published command despatch",
+    "locator": "Supplement of 16 September 1948, p. 5017, Coventry.",
+    "url": "https://www.thegazette.co.uk/London/issue/38404/supplement/5017/data.pdf"
+  },
+  "blitzend": {
+    "name": "United States Holocaust Memorial Museum, The Blitz Begins",
+    "kind": "Museum chronology",
+    "locator": "September 1940–May 1941 and London’s initial run of night attacks.",
+    "url": "https://encyclopedia.ushmm.org/content/en/timeline-event/holocaust/1939-1941/the-blitz-begins"
+  },
+  "circus": {
+    "name": "RAF Air Historical Branch, The Beginning of the Fighter Offensive",
+    "kind": "Official operational history",
+    "locator": "Chapter on the daylight offensive, first fighter sweep and Circus I, pp. 40–51.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-iv-the-beginning-of-the-fighter-offensive-1940-1941/"
+  },
+  "channel": {
+    "name": "Royal Navy, Channel Dash aircrew remembered",
+    "kind": "Service commemoration",
+    "locator": "No. 825 Naval Air Squadron, crew outcomes on 12 February 1942.",
+    "url": "https://www.royalnavy.mod.uk/news/2017/february/14/170214-heroic-channel-dash-aircrew-remembered-after-75-years"
+  },
+  "sweeps": {
+    "name": "RAF Air Historical Branch, The Struggle for Air Supremacy",
+    "kind": "Official operational history",
+    "locator": "Fighter sweeps, the Channel passage, and the offensive over occupied Europe.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/air-defence-of-great-britain-vol-v-the-struggle-for-air-supremacy-jan-42-may-45/"
+  },
+  "crossbow": {
+    "name": "Richard G. Davis, Bombing the European Axis Powers",
+    "kind": "US Air Force historical study",
+    "locator": "Peenemünde, pp. 155–156, and the Crossbow bombing chronology.",
+    "url": "https://media.defense.gov/2025/Jun/10/2003736234/-1/-1/0/DAVIS_BOMBING_EUROPEAN.PDF"
+  },
+  "diver": {
+    "name": "Historic England, Operation Diver",
+    "kind": "Historic landscape study",
+    "locator": "Britain’s air defence and the V-1 campaign in 1944–45.",
+    "url": "https://historicengland.org.uk/images-books/publications/operation-diver/"
+  },
+  "rex": {
+    "name": "City of Antwerp, V-bommen boven Wilrijk",
+    "kind": "Municipal history",
+    "locator": "Cinema Rex, 16 December 1944, military and civilian deaths.",
+    "url": "https://www.antwerpen.be/info/66880272bc28fd00133a19b7/v-bommen-boven-wilrijk"
+  },
+  "warn": {
+    "name": "Nederlands Instituut voor Militaire Historie, Waarschuwing aan de bewoners",
+    "kind": "Historical institute and reproduced leaflet",
+    "locator": "Warnings over Walcheren on 2 October and the breach the following day.",
+    "url": "https://www.nimh.nl/militaire-geschiedenis-van-nederland/webthemas/bevrijding-van-nederland-1944-1945/luchtpamfletten/waarschuwing-aan-de-bewoners"
+  },
+  "westkap": {
+    "name": "Stichting Cultuurbehoud Westkapelle, Oorlogsmonument",
+    "kind": "Local memorial record",
+    "locator": "Sequence of October attacks and total deaths in the village.",
+    "url": "https://www.westkapellecultuurbehoud.nl/oorlog-westkapelle/oorlogsmonument"
+  },
+  "scheldt": {
+    "name": "Veterans Affairs Canada, Battle of the Scheldt",
+    "kind": "Official campaign history",
+    "locator": "Walcheren, cessation of resistance, casualties and reopening of Antwerp.",
+    "url": "https://veterans.gc.ca/en/remembrance/military-history/second-world-war/battle-scheldt"
+  },
+  "bast": {
+    "name": "US Army, Bastogne: The First Eight Days",
+    "kind": "Official study from participant accounts",
+    "locator": "Chapters 16 and 17, cancellation on 22 December and resupply on 23 December.",
+    "url": "https://history.army.mil/portals/143/Images/Publications/catalog/22-2-1.pdf"
+  },
+  "ard": {
+    "name": "Hugh M. Cole, The Ardennes: Battle of the Bulge",
+    "kind": "US Army official history",
+    "locator": "Bastogne and the chapters on Allied air intervention, road and rail damage.",
+    "url": "https://history.army.mil/portals/143/Images/Publications/catalog/7-8.pdf"
+  },
+  "varsity": {
+    "name": "Airborne and Special Operations Museum, Operation Varsity",
+    "kind": "Museum operational history",
+    "locator": "23–24 March, participating British and American divisions and link-up.",
+    "url": "https://www.asomf.org/operation-varsity/"
+  },
+  "rhine": {
+    "name": "National WWII Museum, Operation Undertone",
+    "kind": "Museum history",
+    "locator": "Clearing the Rhineland, Remagen, Veritable, Grenade and Plunder.",
+    "url": "https://www.nationalww2museum.org/war/articles/operation-undertone-allies-clear-rhineland"
+  },
+  "clarion": {
+    "name": "US Army Air Forces, official pictorial history",
+    "kind": "Service history",
+    "locator": "From the Ardennes to the Rhine, p. 142, Operation Clarion on 22 February.",
+    "url": "https://media.defense.gov/2014/May/15/2001329852/-1/-1/0/AFD-140515-045.pdf"
+  },
+  "balkan": {
+    "name": "National Army Museum, War in the Balkans",
+    "kind": "Museum history",
+    "locator": "The German invasions of 1941 and the Allied evacuation.",
+    "url": "https://www.nam.ac.uk/explore/war-Balkans"
+  },
+  "gerbalk": {
+    "name": "RAF Air Historical Branch, Axis Operations in the Mediterranean",
+    "kind": "Translated German operational reports",
+    "locator": "Daily reports for 5–13 April 1941, including the Balkan campaign.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-translations-from-captured-german-documents/axis-operations-in-the-mediterranean-5-april-13-april-1941/"
+  },
+  "partisan": {
+    "name": "Special Operations: AAF Aid to European Resistance Movements, 1943–1945 (USAF Historical Study 121)",
+    "kind": "Official operational history",
+    "locator": "US Air Force Historical Study No. 121, Partisan support and Operation Ratweek; MAAF monthly evacuation tables for Yugoslavia/Greece (1944) and Yugoslavia/Albania (1945).",
+    "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090522-060.pdf"
+  },
+  "crete": {
+    "name": "Australian War Memorial, Battle of Crete",
+    "kind": "Museum operational history",
+    "locator": "20–29 May, Maleme, evacuation ports, participants and losses.",
+    "url": "https://www.awm.gov.au/collection/E84659"
+  },
+  "maleme": {
+    "name": "Australian Department of Veterans’ Affairs, Greece and Crete",
+    "kind": "Official commemoration and history",
+    "locator": "Maleme, Heraklion and Rethymno, May–June 1941.",
+    "url": "https://www.dva.gov.au/recognition-and-commemoration/memorials/memorials-europe/greece-and-crete"
+  },
+  "dragoon": {
+    "name": "US Naval History and Heritage Command, Operation Dragoon",
+    "kind": "Naval historical synthesis",
+    "locator": "Air preparation, 15 August landings and the advance to the ports.",
+    "url": "https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii/1944/operation-dragoon.html"
+  },
+  "dove": {
+    "name": "Airborne Museum, 15 August 1944",
+    "kind": "Museum chronology",
+    "locator": "First Airborne Task Force, American parachutists, Provence.",
+    "url": "https://airborne-museum.org/en/fiche-timeline/august-15-1944/"
+  },
+  "glider": {
+    "name": "Airborne Museum, The Gliders",
+    "kind": "Museum history",
+    "locator": "550th Glider Infantry Battalion and the Dove and Bluebird lifts in Provence.",
+    "url": "https://airborne-museum.org/en/history/the-gliders/"
+  },
+  "ladoga": {
+    "name": "Nikita D. Prigodich, The Food Supply of Besieged Leningrad and the Evacuation of the Population by Using Aviation in the Autumn of 1941",
+    "kind": "Archival historical study",
+    "locator": "Autumn 1941, transport returns and evacuation commission, notes 53–55.",
+    "url": "https://journals.rudn.ru/russian-history/article/view/23774"
+  },
+  "siege": {
+    "name": "Russian Federal Archival Agency, Victory exhibition catalogue",
+    "kind": "Published archival documents",
+    "locator": "Leningrad blockade, Ladoga communications and relief; May 1944 section on the capture of Sevastopol.",
+    "url": "https://archives.gov.ru/sites/default/files/2025_katalog-pobeda-80_en.pdf"
+  },
+  "winter": {
+    "name": "Air & Space Forces, The Winter War",
+    "kind": "Historical synthesis",
+    "locator": "Finnish and Soviet aviation, air attacks and maintenance in winter conditions.",
+    "url": "https://www.airandspaceforces.com/article/0912finland/"
+  },
+  "helsinki": {
+    "name": "City of Helsinki, The Great Raids against Helsinki",
+    "kind": "Municipal historical study",
+    "locator": "Three February raids, 1st Anti-Aircraft Regiment and damage in different parts of the city.",
+    "url": "https://historia.hel.fi/en/kaannekohdat/20th-century/the-great-raids-against-helsinki-1944"
+  },
+  "karelia": {
+    "name": "Finnish Military History Society, Soviet Long-Range Aviation over Finland",
+    "kind": "Historical study of operational records",
+    "locator": "Karelian Isthmus and planned Viipuri missions, 9–10 June 1944.",
+    "url": "https://www.sshs.fi/content/uploads/2026/01/ShAik_44_tarkistuskorj-2.pdf"
+  },
+  "kuban": {
+    "name": "Robert Forczyk, The Kuban 1943",
+    "kind": "Specialist campaign study",
+    "locator": "Chronology, North Caucasus withdrawal and airlift, January–October 1943.",
+    "url": "https://api.pageplace.de/preview/DT0400.9781472822611_A31721000/preview-9781472822611_A31721000.pdf"
+  },
+  "blacksea": {
+    "name": "Hermann Plocher, The German Air Force versus Russia, 1943 (USAF Historical Study 155)",
+    "kind": "Retrospective operational study from German records",
+    "locator": "The Kuban bridgehead, Taman withdrawal and Kerch operations in 1943.",
+    "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090518-049.pdf"
+  },
+  "crimea": {
+    "name": "Robert Forczyk, Sevastopol 1942",
+    "kind": "Specialist campaign study",
+    "locator": "Air and naval operations around Sevastopol, 1941–42.",
+    "url": "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/Sevastopol%201942-Von%20Mansteins%20Triumph%20c20080121%20%5B51%5D.pdf"
+  },
+  "dnieper": {
+    "name": "Military Historical Journal, communications in the Dnieper airborne operation",
+    "kind": "Document-based military history",
+    "locator": "24–25 September drop, October regrouping and November operations with 52nd Army.",
+    "url": "https://history.milportal.ru/osobennosti-organizacii-svyazi-v-dneprovskoj-vozdushno-desantnoj-operacii-1943-goda/"
+  },
+  "kyiv": {
+    "name": "Kyiv Polytechnic Institute, Fight for Dnipro",
+    "kind": "Historical account",
+    "locator": "Offensive from August to December 1943 and recapture of Kyiv.",
+    "url": "https://kpi.ua/en/w2-dnipro"
+  },
+  "korsun": {
+    "name": "Fritz Morzik, German Air Force Airlift Operations (USAF Historical Study 167)",
+    "kind": "Operational history",
+    "locator": "Cherkassy/Korsun-Schevchenkovskiy, air supply operations, January–February 1944.",
+    "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090519-043.pdf"
+  },
+  "ploesti": {
+    "name": "National Museum of the USAF, Ploesti",
+    "kind": "Museum history",
+    "locator": "1 August 1943 mission, US bomber losses and refinery recovery.",
+    "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196184/ploesti/"
+  },
+  "roman": {
+    "name": "A. Timothy Warnock, Air Force Combat Medals, Streamers, and Campaigns",
+    "kind": "Official campaign history",
+    "locator": "Ploesti, 12 June 1942, 1 August 1943 and final Fifteenth Air Force operation on 19 August 1944.",
+    "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS48169/pdf/GOVPUB-D301-PURL-LPS48169.pdf"
+  },
+  "romanian": {
+    "name": "Henri Coandă Air Force Academy, Romanian aviation in the world wars",
+    "kind": "Romanian military research",
+    "locator": "Romanian air operations before and after the change of sides in August 1944.",
+    "url": "https://www.afahc.ro/afases/Volum22-AFASES2021.pdf"
+  },
+  "hungary": {
+    "name": "Helion, Air Battles over Hungary 1944–45",
+    "kind": "Specialist campaign history",
+    "locator": "Debrecen, Budapest, and the Balaton defensive operation; period descriptions.",
+    "url": "https://www.helion.co.uk/military-history-books/air-battles-over-hungary-1944-45-.php"
+  },
+  "buda": {
+    "name": "Ádám Kőszegi, Weather conditions during the siege of Budapest in 1944–1945",
+    "kind": "Hungarian scholarly study quoting German returns",
+    "locator": "Printed pp. 31–32, 25 February OKL return and alternative tonnage.",
+    "url": "https://ojs3.mtak.hu/index.php/hadtudomany/article/download/20803/17163"
+  },
+  "tallinn": {
+    "name": "Tuna, The Bombing of Tallinn in Light of Red Army Documents",
+    "kind": "Archival study of Soviet long-range aviation",
+    "locator": "9–10 March 1944, headquarters tabulations of flights, completed missions, losses and bomb weight.",
+    "url": "https://tuna.ra.ee/en/the-bombing-of-tallinn-in-march-of-1944-in-light-of-red-army-long-range-air-force-documents/"
+  },
+  "estonia": {
+    "name": "Vaivara Sinimägede Museum, From Vaivara to Viimsi",
+    "kind": "Museum campaign guide",
+    "locator": "German withdrawal from Estonia during September 1944.",
+    "url": "https://sinimagedemuuseum.ee/wp-content/uploads/2024/01/In-the-footsteps-of-the-Second-World-War-from-Vaivara-to-Viimsi_parandatud.pdf"
+  },
+  "naval": {
+    "name": "German Naval Staff, War Diary, September 1944",
+    "kind": "Translated wartime naval diary",
+    "locator": "Baltic entries for 22–23 September and the loss of Moero.",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/War_diary_-_German_Naval_Staff_Operations_Division_%28IA_wardiarygermanb611944germ%29.pdf"
+  },
+  "courland": {
+    "name": "Howard Grier, Hitler, Dönitz and the Baltic Sea",
+    "kind": "Archival monograph",
+    "locator": "Courland and the seaborne supply of Army Group North, autumn 1944–spring 1945.",
+    "url": "https://prussia.online/Data/Book/hi/hitler-doenitz-and-the-baltic-sea/Grier%20H.%20Hitler%2C%20D%C3%B6nitz%2C%20and%20the%20Baltic%20Sea%20%282007%29%2C%20OCR.pdf"
+  },
+  "oder": {
+    "name": "William E. Hiestand, Eastern Front 1945",
+    "kind": "Specialist air campaign history",
+    "locator": "Vistula–Oder and East Prussian campaigns, January–April 1945.",
+    "url": "https://www.ospreypublishing.com/us/eastern-front-1945-9781472857842/"
+  },
+  "vvs": {
+    "name": "History of the Great Patriotic War, vol. V",
+    "kind": "Soviet official history",
+    "locator": "January offensive from the Vistula, operations on the 1st Belorussian Front.",
+    "url": "https://prussia.online/Data/Book/is/istoriya-velikoy-otechestvennoy-voyni-sovetskogo-souza-1941-1945-5/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9%20%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%A1%D0%BE%D1%8E%D0%B7%D0%B0%201941-1945%20%D0%B3%D0%B3.%20%D0%A2.%205%2C%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%281963%29%2C%20OCR.pdf"
+  },
+  "prussia": {
+    "name": "William E. Hiestand, Eastern Front 1945, sample",
+    "kind": "Specialist air campaign history",
+    "locator": "January–April chronology and 3rd Belorussian Front at Königsberg.",
+    "url": "https://api.pageplace.de/preview/DT0400.9781472857842_A47811854/preview-9781472857842_A47811854.pdf"
+  },
+  "konig": {
+    "name": "Olaf Groehler, The Soviet Long-Range Airforces in the Great Patriotic War of the USSR (1941–1945)",
+    "kind": "Military historical journal, 1991",
+    "locator": "18th Air Army assault on Königsberg, bomber force and escorts.",
+    "url": "https://www.diva-portal.org/smash/get/diva2%3A1339565/FULLTEXT01.pdf"
+  },
+  "eastref": {
+    "name": "Bastiaan Willems, Violence in Defeat: The Wehrmacht and Late-War Society in East Prussia, 1944–1945",
+    "kind": "Historical study",
+    "locator": "Königsberg, civilian flight and the evacuation route through Pillau.",
+    "url": "https://era.ed.ac.uk/server/api/core/bitstreams/9075ceb8-c2e9-4985-9305-0ace7270b8a6/content"
+  },
+  "desert": {
+    "name": "RAF Historical Society, Land–Air Warfare in the Mediterranean 1940–43",
+    "kind": "Service historical symposium",
+    "locator": "Western Desert Air Force, El Alamein and the development of army–air cooperation.",
+    "url": "https://www.rafmuseum.org.uk/documents/Research/RAF-Historical-Society-Journals/Bracknell-No-3-Land-Air-Warfare.pdf"
+  },
+  "three": {
+    "name": "Australian War Memorial, No. 3 Squadron RAAF",
+    "kind": "Unit history",
+    "locator": "Egypt in August 1940, first combat and subsequent operations in the Western Desert.",
+    "url": "https://www.awm.gov.au/collection/U59368"
+  },
+  "torch": {
+    "name": "US Army Center of Military History, WWII campaign summaries",
+    "kind": "Official campaign history",
+    "locator": "Algeria–French Morocco and Tunisia, Torch through the Axis surrender.",
+    "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/World-War-II/World-War-II-European-African-Middle-Eastern-Theater/"
+  },
+  "flax": {
+    "name": "USAF historical study, Northwest Africa and the air war",
+    "kind": "Official operational history",
+    "locator": "Flax and the Tunisian air bridge, April 1943.",
+    "url": "https://media.defense.gov/2010/Oct/12/2001309632/-1/-1/0/AFD-101012-038.pdf"
+  },
+  "vistulaJournal": {
+    "name": "Voenno-istoricheskii zhurnal, May 2005",
+    "kind": "Military historical journal citing Soviet records",
+    "locator": "16th Air Army in the first two days, followed by the account of the morning of 16 January. Note 16.",
+    "url": "https://prussia.online/Data/Book/vo/voenno-istoricheskiy-zhurnal-2005-5/%D0%92%D0%98%D0%96%202005-05.pdf"
+  },
+  "arcticTable": {
+    "name": "Statistics of Arctic Convoys, 1941–45, reproduced in the HMCS Saint John history",
+    "kind": "Reproduced British official-history table",
+    "locator": "Tables A and B, eastbound and westbound. Counts exclude ships sunk in harbour after arrival.",
+    "url": "https://www.forposterityssake.ca/RCN-DOCS/RCND1649.pdf"
+  },
+  "atlanticStart": {
+    "name": "Royal Canadian Navy, Battle of the Atlantic commemoration",
+    "kind": "Service history",
+    "locator": "HX 1 and the Atlantic campaign’s first and last months.",
+    "url": "https://www.canada.ca/en/department-national-defence/news/2026/05/royal-canadian-navy-commemorates-81st-anniversary-of-the-battle-of-the-atlantic.html"
+  },
+  "atlanticEnd": {
+    "name": "RAF Coastal Command Review, May 1945",
+    "kind": "Wartime command review",
+    "locator": "Review of the U-boat war and surrender in May 1945.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/coastal-cmd-rev-vol4-no5-may1945/"
+  },
+  "millennium": {
+    "name": "Bomber Command Quarterly Review, April–June 1942",
+    "kind": "Wartime command review",
+    "locator": "Cologne, night of 30–31 May. See aircraft dispatched and crews reporting an attack.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/ahb-despatches-and-reports/bomber-cmd-qtrly-rev-no1-apr-jun-1942/"
+  },
+  "ramrod": {
+    "name": "RAF Air Historical Branch, The Bombing Offensive, vol. V",
+    "kind": "British official history",
+    "locator": "Chapter 8, p. 59, No. 2 Group in 1943; night operations chapter, Berlin, 18–19 November.",
+    "url": "https://www.raf.mod.uk/what-we-do/our-history/air-historical-branch/second-world-war-campaign-narratives/raf-in-the-bombing-offensive-against-germany-vol-v-the-full-offensive-february-1943-to-february-1944/"
+  },
+  "continuation": {
+    "name": "Ilomantsi Battlegrounds Trail, Continuation War 1941–44",
+    "kind": "Finnish public history chronology",
+    "locator": "25 June 1941 and the 1944 ceasefire and armistice.",
+    "url": "https://sotatie.fi/en/battlegrouds-trail/continuation-war-1941%E2%80%9344"
+  },
+  "remagen": {
+    "name": "Capture of the Ludendorff railway bridge",
+    "kind": "Historical record",
+    "locator": "US 9th Armored Division at Remagen, 7 March 1945.",
+    "url": "https://encyclopedia.ushmm.org/content/en/timeline-event/holocaust/1942-1945/remagen"
+  },
+  "tidal": {
+    "name": "National Museum of the USAF, Operation Tidalwave",
+    "kind": "Museum mission account",
+    "locator": "Mission aircraft and personnel paragraph, 1 August 1943.",
+    "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/1519651/operation-tidalwave-ploesti-august-1-1943/"
+  },
+  "romOil": {
+    "name": "Marine Corps University Press, Oil & War",
+    "kind": "Historical study reproducing post-war oil statistics",
+    "locator": "Appendix I, Table 20.8, p. 355. Romanian national production, refinery output, consumption and exports in barrels per day.",
+    "url": "https://www.usmcu.edu/Portals/218/Oil%26War_Web_1.pdf"
+  },
+  "covDeaths": {
+    "name": "GCHQ, The Bombing of Coventry in WWII",
+    "kind": "British historical account",
+    "locator": "14–15 November 1940, city damage and death toll.",
+    "url": "https://www.gchq.gov.uk/information/the-bombing-of-coventry-in-wwii"
+  },
+  "commons": {
+    "name": "House of Lords Library, Bombing of the Palace of Westminster",
+    "kind": "Parliamentary historical briefing",
+    "locator": "Night of 10–11 May 1941, city-wide civilian deaths and damage to Parliament.",
+    "url": "https://lordslibrary.parliament.uk/research-briefings/LIF-2016-0028/"
+  },
+  "v1returns": {
+    "name": "Historic England, Military Command and Control Organisation, RAF",
+    "kind": "Historical research report",
+    "locator": "First V-1 phase, June–September 1944. London arrivals and launches have different populations.",
+    "url": "https://historicengland.org.uk/research/results/reports/8750/MilitaryCommandandControlOrganisationVol3RAF"
+  },
+  "northCape": {
+    "name": "S. W. Roskill, The War at Sea, vol. III, part I",
+    "kind": "British official history",
+    "locator": "The sinking of Scharnhorst, JW 55B, 22–26 December 1943.",
+    "url": "https://www.generalstaff.org/WW2/Hist_UK/WaratSea1939-1945Vol3-Part1.pdf"
+  },
+  "dresden": {
+    "name": "City of Dresden, final report of the historical commission",
+    "kind": "City commission’s historical investigation",
+    "locator": "Final report on the Dresden air raids, 13–15 February 1945, findings on the death toll.",
+    "url": "https://www.dresden.de/media/pdf/infoblaetter/Historikerkommission_Dresden1945_Abschlussbericht_V1_14a.pdf"
+  },
+  "dresdenAir": {
+    "name": "US Air Force Historical Division, Bombings of Dresden",
+    "kind": "Official retrospective study",
+    "locator": "Chronology of RAF and USAAF operations, 13–15 February 1945.",
+    "url": "https://media.defense.gov/2011/Feb/08/2001329907/-1/-1/0/Bombings%20of%20Dresden.pdf"
+  },
+  "manna": {
+    "name": "RAF Museum, Operation Manna",
+    "kind": "Museum history",
+    "locator": "29 April–8 May 1945, Bomber Command’s food drops for the Netherlands.",
+    "url": "https://www.rafmuseum.org.uk/blog/operation-manna-29th-april-to-8th-may-1945/"
+  },
+  "dutchManna": {
+    "name": "Militaire Spectator, food drops in the western Netherlands",
+    "kind": "Dutch military historical journal",
+    "locator": "Retrospectator, May 2020, first drops on 29 April and agreed reception areas.",
+    "url": "https://www.militairespectator.nl/sites/default/files/bestanden/artikelen/militaire_spectator_5_2020_retrospectator.pdf"
+  },
+  "kron": {
+    "name": "Hermann Plocher, The German Air Force versus Russia, 1941 (USAF Historical Study 153)",
+    "kind": "USAF historical study using German operational reports",
+    "locator": "September 1941 attacks on the Soviet Baltic Fleet, including the 22–24 September reports and damage to Marat.",
+    "url": "https://www.dafhistory.af.mil/Portals/16/documents/Studies/151-200/AFD-090515-102.pdf"
+  },
+  "korsDay": {
+    "name": "Niklas Zetterling and Anders Frankson, The Korsun Pocket",
+    "kind": "Specialist history citing operational returns",
+    "locator": "8 February, initial reports under Air Supplies to the Pocket. Landing and dropping have different reporting units.",
+    "url": "https://www.rulit.me/books/the-korsun-pocket-the-encirclement-and-breakout-of-a-german-army-in-the-east-1944-read-432583-49.html"
+  },
+  "crimea44": {
+    "name": "Marine Corps University Press, On Contested Shores",
+    "kind": "Scholarly operational history",
+    "locator": "Crimea evacuation, 14–27 April 1944. The subtotal by nationality is incomplete; the overall figure includes other personnel.",
+    "url": "https://www.usmcu.edu/Portals/218/OnContestedShores_web.pdf"
+  }
+}

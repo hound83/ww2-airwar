@@ -2,6 +2,10 @@
 
 [Active milestone roadmap after v10.1](ATLAS_ROADMAP_AFTER_V10_1.md) · [Completed roadmap through v10](ATLAS_ROADMAP_TO_V10.md) · [Latest evidence and open source work](LATEST_INSIGHTS.md)
 
+## 27 November 2026 · v12.0, Europe, North Africa and the convoy routes
+
+The active map and campaign picker now cover 42 dossiers. The 22 new studies contain 93 episodes and 95 scoped figures. Four full source tables add 114 rows. The new force lists describe selected episode participants. Matched daily aircraft strength, readiness and losses on both sides remain open across much of the expansion. [Catalogue](../campaign-expansion.html) · [Method and sources](../research/sources/atlas-v12-campaign-expansion.md)
+
 ## 25 November 2026 · v11.0, What changed because aircraft flew?
 
 Seven studies compare the records of dispatchers and recipients, air and naval commands, manufacturers and forces in the field. At Arnhem the recorded drop-only collection was 92 of 1,431 tons. At Stalingrad a matched cargo dispatch and unit receipt remains open. The audit revisits both sides of all 20 dossiers and names the next document needed for each. [Studies](../operational-effects.html) · [Dossier audit](../dossier-audit.html) · [Research and remaining gaps](../research/sources/atlas-v11-operational-effects.md)

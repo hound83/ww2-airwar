@@ -1,0 +1,82 @@
+[
+  {
+    "period": "1944-08",
+    "area": "Yugoslavia and Greece",
+    "attempts": 261,
+    "landings": 215,
+    "aircrewAndPartisans": 479,
+    "wounded": 2321,
+    "others": 626,
+    "evacuated": 3426
+  },
+  {
+    "period": "1944-09",
+    "area": "Yugoslavia and Greece",
+    "attempts": 309,
+    "landings": 253,
+    "aircrewAndPartisans": 153,
+    "wounded": 1812,
+    "others": 1044,
+    "evacuated": 3009
+  },
+  {
+    "period": "1944-10",
+    "area": "Yugoslavia and Greece",
+    "attempts": 248,
+    "landings": 230,
+    "aircrewAndPartisans": 165,
+    "wounded": 200,
+    "others": 668,
+    "evacuated": 1033
+  },
+  {
+    "period": "1944-11",
+    "area": "Yugoslavia and Greece",
+    "attempts": 135,
+    "landings": 135,
+    "aircrewAndPartisans": 59,
+    "wounded": 102,
+    "others": 234,
+    "evacuated": 395
+  },
+  {
+    "period": "1945-01",
+    "area": "Yugoslavia and Albania",
+    "attempts": 87,
+    "landings": 85,
+    "aircrewAndPartisans": 106,
+    "wounded": 174,
+    "others": 98,
+    "evacuated": 378
+  },
+  {
+    "period": "1945-02",
+    "area": "Yugoslavia and Albania",
+    "attempts": 117,
+    "landings": 110,
+    "aircrewAndPartisans": 116,
+    "wounded": 40,
+    "others": 730,
+    "evacuated": 886
+  },
+  {
+    "period": "1945-03",
+    "area": "Yugoslavia and Albania",
+    "attempts": 136,
+    "landings": 100,
+    "aircrewAndPartisans": 57,
+    "wounded": 215,
+    "others": 783,
+    "evacuated": 1055
+  },
+  {
+    "period": "1945-04",
+    "area": "Yugoslavia and Albania",
+    "attempts": 114,
+    "landings": 112,
+    "aircrewAndPartisans": 31,
+    "wounded": 1266,
+    "others": 22,
+    "evacuated": 1319
+  }
+]

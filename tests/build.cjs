@@ -7,11 +7,13 @@ try{
  files.push('scripts/build-operational-effects.cjs','research/transcriptions/v11-operational-effects.json','research/transcriptions/v11-dossier-audit.json');
  files.push('scripts/build-campaign-evidence.cjs', ...fs.readdirSync(path.join(root,'research/transcriptions')).filter(f=>/^v102-.*\.json$/.test(f)).map(f=>'research/transcriptions/'+f));
  files.push('scripts/build-force-rosters.cjs', ...['campaign-force-coverage.json','deployment-stations.json','deployment-roster-context.json','deployment-benchmark-populations.csv','deployment-benchmark-members.csv','deployment-eastern-populations.csv','deployment-eastern-members.csv'].map(f=>'research/transcriptions/'+f));
+ const expansionOutputs=["campaign-expansion.html","dist/campaign-expansion-data.js",...["episodes","figures","sources","atlantic-passages","arctic-passages","balkan-airlift","romanian-oil"].map(f=>"research/exports/v12-"+f+".csv")];
+ files.push("scripts/build-campaign-expansion.cjs",...fs.readdirSync(path.join(root,"research/transcriptions")).filter(f=>f.startsWith("v12-")).map(f=>"research/transcriptions/"+f));
  const build=()=>cp.execFileSync(process.execPath,[path.join(tmp,'scripts/build-web.cjs')],{stdio:'pipe'});
  for(const file of files)fs.writeFileSync(path.join(tmp,file),fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n'));
  build();
  const histories=fs.readFileSync(path.join(tmp,'formations.html'),'utf8');
- const balanceFiles=['operational-effects.html','dossier-audit.html','research/exports/operational-effects.csv','research/exports/dossier-audit.csv','research/exports/campaign-coverage.csv','research/exports/campaign-missions.csv','dist/force-rosters-data.js','research/exports/force-rosters.csv','europe.html','dist/europe-index.js','operational-balance.html','dist/operational-balance-index.js',...fs.readdirSync(path.join(tmp,'research/exports')).filter(n=>n.startsWith('operational-balance')).map(n=>'research/exports/'+n)];
+ const balanceFiles=[...expansionOutputs,'operational-effects.html','dossier-audit.html','research/exports/operational-effects.csv','research/exports/dossier-audit.csv','research/exports/campaign-coverage.csv','research/exports/campaign-missions.csv','dist/force-rosters-data.js','research/exports/force-rosters.csv','europe.html','dist/europe-index.js','operational-balance.html','dist/operational-balance-index.js',...fs.readdirSync(path.join(tmp,'research/exports')).filter(n=>n.startsWith('operational-balance')).map(n=>'research/exports/'+n)];
  const balanceOutputs=balanceFiles.map(p=>fs.readFileSync(path.join(tmp,p),'utf8'));
  const narvik=fs.readFileSync(path.join(tmp,'narvik.html'),'utf8');
  const lf=fs.readFileSync(path.join(tmp,'index.html'),'utf8'),data=fs.readFileSync(path.join(tmp,'dist/atlas-v75-performance-data.js'),'utf8');
@@ -75,3 +77,5 @@ require('./sicily.cjs');
 require('./campaign-review.cjs');
 require('./formations.cjs');
 require('./operational-balance.cjs');
+
+require("./campaign-expansion.cjs");

@@ -18,11 +18,11 @@ const lossRows=[...A.monthlyReturns,...B.monthlyReturns].map(x=>({...x,period:((
 const sourceIndex={...A.sourceIndex,...B.sourceIndex};
 const groupRows=G.rows.map(r=>Object.fromEntries(G.columns.map((c,i)=>[c,r[i]])));
 const state={month:"1944-06",theater:"all",search:"",all:true,selected:"normandy",selectedChapter:null,lastDossierId:null,selectedMoment:null,map:null,mapMarkers:null,play:null,lossCommand:"Western Front",lossOutcome:"destroyed",lossWindow:"all",lossMonth:"1944-06",forceSeries:"usaaf",forceArea:"ETO",forceMetric:"totalCombatGroups",forceSelected:"1944-06"};
-const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Eastern Front",med:"Mediterranean / Italy",north:"Northern Europe"};
+const themes={west:"Western Front",reich:"Reich / strategic bombing",east:"Eastern Front",med:"Mediterranean / North Africa",north:"Northern Europe",atlantic:"North Atlantic"};
 // Spain is grouped with the West for filtering, but it is not the WWII Western Front.
 const campaignRegion=c=>c.id==="spain"?"Spanish Civil War / Spain":themes[c.theater];
-const active=c=>c.start<=state.month&&c.end>=state.month;
-// The search field promises battles/missions, not only the 20 catalogue titles.
+const active=c=>c.intervals ? c.intervals.some(([from,to])=>from<=state.month&&state.month<=to) : c.start<=state.month&&c.end>=state.month;
+// The search field promises battles/missions, not only catalogue titles.
 // Include researched phase names and dated operations, without treating the
 // free-text search as a license to merge numerical reporting populations.
 const rosterFor = id => window.AtlasForceRosters?.campaigns?.[id];
@@ -66,7 +66,7 @@ function pickCampaign(id,fly=true,share=false){
  state.selected=id;
  state.selectedChapter=null;
  state.selectedMoment=null;
- if(!active(c))state.month=c.start;
+ if(!active(c))state.month=c.intervals?.find(([,end])=>end>=state.month)?.[0] || c.start;
  if(state.theater!=="all"&&state.theater!==c.theater)state.theater="all";
  update();
  if (share) recordCampaignSelection(id);
@@ -94,13 +94,13 @@ function selectMoment(cId,date,lat,lng,title,share=false){
 function selectChapter(id,fit=true){
  window.AtlasNormandyOperations?.onNavigate();
  const c=D.campaigns.find(x=>x.id===state.selected),ch=c?.chapters?.find(x=>x.id===id);
- if(c?.story&&ch){cancelPlay();state.month=ch.start.slice(0,7);renderTime();}
+ if((c?.story || c?.episodeMap) && ch){cancelPlay();state.month=ch.start.slice(0,7);renderTime();}
  state.selectedChapter=id;
  state.selectedMoment=null;
  renderMoments();
  $("moment-list").scrollTop=0;
  const points=c?.moments.filter(e=>ch?.start<=e.date&&e.date<=ch?.end)||[];
- if(fit&&c?.story&&points.length&&state.map?.flyToBounds&&window.L){
+ if(fit&&(c?.story || c?.episodeMap)&&points.length&&state.map?.flyToBounds&&window.L){
   state.map.flyToBounds(window.L.latLngBounds(points.map(e=>[e.lat,e.lng])).pad(.6),{maxZoom:8,duration:.5});
  }
  drawMap();
@@ -121,7 +121,7 @@ function clipRing(ring){
  // Generous geography margin keeps all clipping edges *outside* the displayed
  // European theatre, even at the initial most-zoomed-out map view.
  const edges=[
-  {inside:p=>p[0]>=-50,intersect:(a,b)=>[-50,a[1]+(-50-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
+  {inside:p=>p[0]>=-80,intersect:(a,b)=>[-80,a[1]+(-80-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
   {inside:p=>p[0]<=100,intersect:(a,b)=>[100,a[1]+(100-a[0])*(b[1]-a[1])/(b[0]-a[0])]},
   {inside:p=>p[1]>=0,intersect:(a,b)=>[a[0]+(0-a[1])*(b[0]-a[0])/(b[1]-a[1]),0]},
   {inside:p=>p[1]<=83,intersect:(a,b)=>[a[0]+(83-a[1])*(b[0]-a[0])/(b[1]-a[1]),83]}
@@ -196,7 +196,7 @@ function setupMap(){
   // The coastline has thousands of vertices across 357 clipped polygons.
   // Keep it on the SVG renderer: Canvas silently rendered only a tiny land
   // fragment after map moves on some Chromium/Leaflet combinations.
-  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-50],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:false,worldCopyJump:false,attributionControl:false});
+  state.map=L.map("campaign-map",{zoomControl:false,minZoom:3,maxZoom:12,maxBounds:[[20,-80],[80,100]],scrollWheelZoom:true,touchZoom:true,keyboard:true,preferCanvas:false,worldCopyJump:false,attributionControl:false});
   // Keep physical land below graticules and operational paths across renderers.
   const landPane=state.map.createPane?.("historical-land");
   if(landPane){landPane.style.zIndex="250";landPane.style.pointerEvents="none";}
@@ -253,11 +253,11 @@ function drawMap(){
  const chosenPhase=selectedCampaign?.chapters?.find(ch=>ch.id===state.selectedChapter);
  // At local scale, devote the chart to this chapter's historical episodes.
  // A Europe-wide cluster placed over Normandy concealed those smaller points.
- // Zooming out restores the normal twenty-campaign navigator.
- const chapterMode=!!(selectedCampaign?.story&&chosenPhase&&state.map.getZoom()>=6);
- const episodes=chapterMode?selectedCampaign.moments.filter(e=>chosenPhase.start<=e.date&&e.date<=chosenPhase.end):[];
+ // Zooming out restores the campaign navigator.
+ const chapterMode=!!((selectedCampaign?.story || selectedCampaign?.episodeMap) && chosenPhase && matches(selectedCampaign) && (state.all || active(selectedCampaign)) && state.map.getZoom()>=6);
+ const episodes=chapterMode?(selectedCampaign.episodeMap ? selectedCampaign.moments : selectedCampaign.moments.filter(e=>chosenPhase.start<=e.date&&e.date<=chosenPhase.end)):[];
  if(chapterMode){
-  $("map-heading").textContent="Normandy · "+episodes.length+" chapter episodes mapped";
+  $("map-heading").textContent=(selectedCampaign.episodeMap ? selectedCampaign.name : "Normandy")+" · "+episodes.length+(selectedCampaign.episodeMap?" campaign episodes mapped":" chapter episodes mapped");
   $("map-legend").textContent="Gold points = approximate episode locations; numbers group nearby events (click to choose). Zoom out to see other campaigns.";
   $("map-source-note").textContent="Locations are indicative, not aircraft tracks · Natural Earth coastlines, no modern borders";
  }else{
@@ -356,7 +356,7 @@ function groupEvidence(facts) {
 }
 
 function renderCampaignFact(fact) {
- const prefix = /lower[- ]bound/.test(fact.type || "") ? "&gt; " : fact.type?.includes("approximate") ? "≈ " : "";
+ const prefix = fact.type === "upper bound" ? "≤ " : /lower[- ]bound/.test(fact.type || "") ? "&gt; " : fact.type?.includes("approximate") ? "≈ " : "";
  return '<article class="fact"><b>'+prefix+fmt(fact.value)+'</b>'+
   '<span class="fact-unit">'+esc(fact.unit)+'</span><p>'+esc(fact.label)+'</p>'+
   '<small>'+esc(fact.scope)+' · '+esc(fact.period || fact.date)+' · '+esc(fact.type)+'</small>'+
@@ -464,7 +464,7 @@ function renderCampaignComparisons(c){
   const entries=(comp.rows||[]).map(row=>{
    const f=(row.factId&&byId.get(row.factId))||(row.factLabel&&c.facts.find(x=>x.label===row.factLabel));
    if(!f)return '<div class="comparison-cell comparison-unknown">Source observation unavailable; no substitute zero.</div>';
-   const prefix=/lower[- ]bound/.test(f.type||"")? "&gt; ":f.type?.includes("approximate")?"≈ ":"";
+   const prefix=f.type === "upper bound" ? "≤ " : /lower[- ]bound/.test(f.type||"")? "&gt; ":f.type?.includes("approximate")?"≈ ":"";
    return '<article class="comparison-cell" data-evidence-id="'+esc(f.id||f.label)+'"><span class="comparison-side">'+esc(row.side)+'</span><strong>'+prefix+fmt(f.value)+'</strong><small>'+esc(f.unit)+' · '+esc(f.date)+'</small>'+sourceLink(f.sourceId,"View original reporting source")+'</article>';
   }).join("");
   blocks.push('<section class="comparison-section" data-comparison-quality="'+esc(comp.quality||"caution")+'"><h4>'+esc(comp.title)+'</h4><p class="comparison-metric">'+esc(comp.measure)+'</p><div class="comparison-grid">'+entries+'</div><p class="comparison-caution">'+esc(comp.caution)+'</p></section>');
@@ -493,7 +493,7 @@ const studyDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "sho
 
 function renderDossier(){
  const c=D.campaigns.find(x=>x.id===state.selected);
- const study = window.AtlasCampaignStudies?.[c?.id];
+ const study = window.AtlasCampaignStudies?.[c?.id] || window.AtlasExpansionIndex?.studies[c?.id];
  const chapterLink = $("dossier-europe");
  const europeId = window.AtlasEurope?.byCampaign[c?.id];
  chapterLink.hidden = !europeId;
@@ -511,7 +511,7 @@ function renderDossier(){
    const rows = roster.populations.map(p => '<li><a href="'+href+'&amp;population='+encodeURIComponent(p.id)+'">'+esc(p.label)+'</a><small>'+esc(window.AtlasRosterTools.labelDate(p.date))+' · '+esc(window.AtlasRosterTools.coverage(p))+' · '+esc(p.echelon)+'</small></li>').join("");
    const leadCase = roster.cases?.[0];
    const caseLink = leadCase ? '<p><a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'#mission-1">'+esc(leadCase.title)+'</a> · '+esc(window.AtlasRosterTools.labelDate(leadCase.date))+'</p>' : "";
-   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p>'+caseLink+'<a class="roster-open" href="'+href+'">Explore units, dates and stations</a> · <a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'">Missions, outcomes and coverage</a> · <a href="./dossier-audit.html#'+encodeURIComponent(c.id)+'">What the evidence establishes</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
+   rosterPanel.innerHTML = '<h3>Which forces were there?</h3><p>'+esc(roster.summary)+'</p>'+caseLink+'<a class="roster-open" href="'+href+'">Explore units, dates and stations</a> · <a href="./campaign-evidence.html?campaign='+encodeURIComponent(c.id)+'">Missions, outcomes and coverage</a> · <a href="'+(window.AtlasExpansionIndex?.byId[c.id]?"./campaign-expansion.html#":"./dossier-audit.html#")+encodeURIComponent(c.id)+'">What the evidence establishes</a><details><summary>Dated returns and coverage</summary><ul>'+rows+'</ul><a href="'+href+'#scope">Read the evidence by force</a></details>';
   } else { rosterPanel.innerHTML = ""; }
  }
  const formationLink = $("dossier-formations");
@@ -552,7 +552,7 @@ function renderDossier(){
  $("dossier-meta").textContent="BATTLE DOSSIER · "+campaignRegion(c)+(active(c)?" · ACTIVE":" · OTHER PERIOD");
  $("dossier-title").textContent=c.name;
  $("dossier-facts-heading").textContent=c.facts.length?"Campaign evidence · "+countPhrase(c.facts.length,"sourced figure","sourced figures"):"Numerical evidence · not yet audited";
- $("dossier-dates").textContent=mLabel(c.start)+" — "+mLabel(c.end)+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
+ $("dossier-dates").textContent=(c.intervals||[[c.start,c.end]]).map(([from,to])=>mLabel(from)+" — "+mLabel(to)).join(" / ")+" · approximate focus: "+c.focus.lat.toFixed(1)+"°, "+c.focus.lng.toFixed(1)+"°";
  $("dossier-aim").textContent=c.objective;$("dossier-turn").textContent=c.turningPoint;$("dossier-outcome").textContent=c.consequence;
  $("dossier-forces").innerHTML=(roster ? roster.forces.map(f=>f.name) : c.participants).map(x=>'<span class="force-chip">'+esc(x)+'</span>').join("");
  $("dossier-facts").innerHTML=(c.facts.length?renderCampaignEvidence(c.facts):'<div class="no-evidence">No campaign-local numerical observation has been source-audited here. This does <strong>not</strong> mean there were zero aircraft, sorties or losses. The dossier still includes '+countPhrase(c.moments.length,"dated event","dated events")+' and '+countPhrase(c.sources.length,"linked research source","linked research sources")+'.</div>')+renderBilateralCoverage(c)+renderCampaignComparisons(c);
@@ -561,6 +561,10 @@ function renderDossier(){
  const norm=c.id==="normandy",lossScope=norm?"normandy-campaign":c.id==="britain"?"britain-campaign":"";
  const links=norm?['<a href="./grand-air-war-v76.html">Explore the dated Normandy airfield notebook ↗</a>']:[];
  if(norm)links.push('<a href="./operations-1944.html?preset=d-day">D-Day air operations timeline</a>');
+ for(const id of c.related || []){
+  const next=D.campaigns.find(candidate=>candidate.id===id);
+  if(next)links.push('<a href="./grand-air-war-v80.html?campaign='+encodeURIComponent(id)+'#campaign-dossier">'+esc(next.name)+'</a>');
+ }
  if(c.id==="bigweek")links.push('<a href="./operations-1944.html?preset=big-week">Big Week mission and loss records</a>');
  if(c.id==="sicily")links.push('<a href="./sicily.html">Explore the Sicily air campaign</a>');
  if(c.id==="malta")links.push('<a href="./malta.html">Explore Malta’s airfields, fighter deliveries and convoys</a>');
@@ -627,7 +631,7 @@ function renderMoments(){
  if(!chosen){$("moment-detail").innerHTML='';return;}
  const detail=chosen.summary?(chosen.airAction?'<h4>What happened and why</h4><p>'+esc(chosen.summary)+'</p><h4>Air operations and their limits</h4><p>'+esc(chosen.airAction)+'</p><h4>German perspective</h4><p>'+esc(chosen.opposingView)+'</p>':'<p>'+esc(chosen.summary)+'</p><h4>Units and reporting scope</h4><p>'+esc(chosen.units||"Air units not yet individually verified")+'</p>')+'<h4>What changed</h4><p>'+esc(chosen.outcome||"Event-level effects not yet quantified")+'</p><p class="evidence-confidence">Evidence limit: '+esc(chosen.confidence||"No event-level source audit")+'</p>':'<p>This is a dated campaign marker, not yet an event-level research dossier. The general campaign sources do not prove individual missions, unit positions or losses.</p>';
  const ids=chosen.sourceIds?.length?chosen.sourceIds:c.sources;
- const study = window.AtlasCampaignStudies?.[c.id];
+ const study = window.AtlasCampaignStudies?.[c.id] || window.AtlasExpansionIndex?.studies[c.id];
  const casePassage = study?.episodeHeading && study.date === chosen.date && (!study.episode || study.episode === chosen.title)
   ? '<section class="event-study"><h4>' + esc(study.episodeHeading) + '</h4><p>' + esc(study.answer) + '</p><a href="' + esc(study.source) + '">' + esc(study.locator) + '</a></section>' : '';
  $("moment-detail").innerHTML='<span class="eyebrow">'+esc(chosen.date)+' · '+esc(chosen.place)+(chosen.dating==="period-anchor"?' · PERIOD CONTEXT / REPRESENTATIVE DATE':'')+'</span><h3>'+esc(chosen.title)+'</h3>'+detail+casePassage+renderEventBilateralEvidence(c,chosen.date)+'<div class="dossier-links">'+ids.map(id=>sourceLink(id)).join("")+'</div><p class="moment-navigation"><a href="'+esc(momentUrl(c,chosen))+'">Link to this event</a> · <a href="./grand-air-war-v80.html?campaign='+esc(c.id)+'#campaign-dossier">Return to the campaign dossier</a></p>';

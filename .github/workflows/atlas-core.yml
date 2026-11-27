@@ -21,7 +21,7 @@ jobs:
       - name: Confirm generated GitHub Pages assets are current
         run: |
           node scripts/build-web.cjs
-          git diff --exit-code -- operational-effects.html dossier-audit.html research/exports/operational-effects.csv research/exports/dossier-audit.csv index.html dist/force-rosters-data.js research/exports/force-rosters.csv research/exports/campaign-coverage.csv research/exports/campaign-missions.csv europe.html dist/europe-index.js formations.html operational-balance.html dist/operational-balance-index.js research/exports/operational-balance*.csv dist/atlas-v75-performance-data.js
+          git diff --exit-code -- campaign-expansion.html dist/campaign-expansion-data.js research/exports/v12-*.csv operational-effects.html dossier-audit.html research/exports/operational-effects.csv research/exports/dossier-audit.csv index.html dist/force-rosters-data.js research/exports/force-rosters.csv research/exports/campaign-coverage.csv research/exports/campaign-missions.csv europe.html dist/europe-index.js formations.html operational-balance.html dist/operational-balance-index.js research/exports/operational-balance*.csv dist/atlas-v75-performance-data.js
       - name: Dependency-free Atlas regression suites
         run: |
           set -eu

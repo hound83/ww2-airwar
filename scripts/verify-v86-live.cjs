@@ -15,6 +15,7 @@ files.push('reich-defence.html','dist/reich-defence.js','dist/reich-defence.css'
 files.push('malta.html','dist/malta.js','dist/malta.css','research/transcriptions/malta-air-campaign-1940-1942.json','research/sources/atlas-malta-air-campaign-2026-11-13.md');
 files.push('dieppe.html','sicily.html','dist/sicily.js','dist/sicily.css','research/transcriptions/sicily-air-campaign-1943.json','research/sources/atlas-sicily-air-campaign-2026-11-14.md');
 files.push('dist/grand-air-war-v80-studies.js','dist/grand-air-war-v80.css','narvik.html','big-week.html','dist/campaign-studies.css','research/transcriptions/narvik-daily-1940.json');
+files.push('campaign-expansion.html','dist/campaign-expansion.js','dist/campaign-expansion-data.js',...['episodes','figures','sources','atlantic-passages','arctic-passages','balkan-airlift','romanian-oil'].map(f=>'research/exports/v12-'+f+'.csv'));
 async function verify(){
  for(let attempt=1;attempt<=30;attempt++){
   const checks=await Promise.all(files.map(async file=>{try{const response=await fetch(base+file+'?verify='+encodeURIComponent(process.env.GITHUB_SHA||'v86'),{signal:AbortSignal.timeout(15000)});return response.ok&&hash(await response.text())===hash(fs.readFileSync(path.join(root,file),'utf8'));}catch{return false;}}));

@@ -19,7 +19,7 @@ module.exports = async function(browser,base) {
       if(width<500) await go.tap(); else await go.press("Enter");
       await page.locator("table").first().waitFor();
       assert.equal(await page.locator(".region tbody tr").count(),40);
-      assert.equal(await page.locator("#campaign-choice option").count(),21);
+      assert.equal(await page.locator("#campaign-choice option").count(),43);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
       await page.locator("#campaign-choice").selectOption("marketgarden");
       await page.waitForURL(/campaign=marketgarden/);

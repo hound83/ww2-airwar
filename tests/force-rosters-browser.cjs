@@ -15,7 +15,7 @@ module.exports=async(browser,base)=>{
           return [!panel.hidden,panel.querySelectorAll("li").length,document.querySelector("#dossier-roster-jump").href.includes("campaign="+c.id)];
         });
       });
-      assert.equal(dossierCoverage.length,20);
+      assert.equal(dossierCoverage.length,42);
       assert.ok(dossierCoverage.every(([shown,n,link])=>shown && n>0 && link));
       await page.evaluate(()=>window.GrandAirWarV77.choose("sicily",false));
       await page.locator("#dossier-roster-jump").click();
