@@ -43,6 +43,7 @@
     $("assessment-fields").innerHTML=Object.entries(labels).map(([field,label])=>'<dt>'+esc(label)+'</dt><dd>'+esc(campaign[field])+'</dd>').join("");
     $("assessment-source").innerHTML=anchor(campaign.source,campaign.locator);
     $("mission-study").href="./campaign-evidence.html?campaign="+encodeURIComponent(campaignId);
+    $("mission-study").hidden=false;
     const study=window.AtlasCampaignStudies?.[campaignId] || window.AtlasExpansionIndex?.studies[campaignId];
     if (study) {
       const q = new URLSearchParams({campaign:campaignId,event:study.date});
