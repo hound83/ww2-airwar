@@ -27,6 +27,8 @@ module.exports=async(browser,base)=>{
       await page.locator("#moment-detail h3").getByText(/Bluebird and Dove/).waitFor();
       assert.match(await page.locator("#moment-detail").innerText(),/550th Glider Infantry/);
       await page.locator("#dossier-deployments").getByRole("link",{name:"Missions, outcomes and coverage"}).click();
+      await page.locator("#page-title").getByText("Operation Dragoon and southern France",{exact:true}).waitFor();
+      await page.locator("#evidence .mission").first().waitFor();
       assert.equal(await page.locator("#evidence .mission").count(),3);
       await goto("campaign-evidence.html?campaign=east-prussia#mission-2");
       const event=page.locator("#mission-2");

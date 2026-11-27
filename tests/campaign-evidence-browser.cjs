@@ -23,10 +23,11 @@ module.exports = async function(browser,base) {
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
       await page.locator("#campaign-choice").selectOption("marketgarden");
       await page.waitForURL(/campaign=marketgarden/);
+      await page.locator("#evidence .mission").first().waitFor();
       assert.ok((await page.locator(".mission").count())>0);
       assert.equal(await page.locator("#coverage tbody tr").count(),7);
       await page.locator("#related").getByRole("link",{name:"Dated rosters"}).click();
-      await page.locator("#mission-study").click();
+      await page.locator('#mission-study[href*="campaign=marketgarden"]').click();
       await page.waitForURL(/campaign-evidence.html\?campaign=marketgarden/);
       const [download] = await Promise.all([page.waitForEvent("download"),page.locator('a[download][href*="campaign-missions.csv"]').click()]);
       const data = fs.readFileSync(await download.path(),"utf8");
