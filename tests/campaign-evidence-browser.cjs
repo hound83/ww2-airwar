@@ -23,6 +23,7 @@ module.exports = async function(browser,base) {
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
       await page.locator("#campaign-choice").selectOption("marketgarden");
       await page.waitForURL(/campaign=marketgarden/);
+      await page.locator("#evidence .mission").first().waitFor();
       assert.ok((await page.locator(".mission").count())>0);
       assert.equal(await page.locator("#coverage tbody tr").count(),7);
       await page.locator("#related").getByRole("link",{name:"Dated rosters"}).click();

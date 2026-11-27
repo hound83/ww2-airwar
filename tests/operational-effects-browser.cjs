@@ -10,6 +10,7 @@ module.exports = async function(browser,base,root) {
     try {
       await page.goto(new URL("grand-air-war-v80.html",base).href);
       await page.getByRole("link",{name:"Operational effects",exact:true}).press("Enter");
+      await page.waitForURL(/operational-effects\.html/);
       assert.match(await page.title(),/v11\.0/);
       const air=page.getByRole("link",{name:"Airlift and supply",exact:true});
       if(width<500) await air.tap(); else await air.press("Enter");
@@ -23,6 +24,7 @@ module.exports = async function(browser,base,root) {
       const [download]=await Promise.all([page.waitForEvent("download"),page.locator("a[download]").click()]);
       assert.match(fs.readFileSync(await download.path(),"utf8"),/106 − 14/);
       await page.getByRole("link",{name:"20-campaign audit"}).click();
+      await page.locator("section .side").first().waitFor();
       assert.equal(await page.locator("section .side").count(),40);
       await page.locator('.campaign-index a[href="#marketgarden"]').press("Enter");
       await page.locator("#marketgarden summary").press("Enter");
