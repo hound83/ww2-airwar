@@ -1,0 +1,24 @@
+# Sources for the European and Mediterranean air campaigns
+
+The v12 catalogue adds 22 campaign studies to the 20 already in the explorer. The 93 new episodes link to 84 sources. The 95 numerical observations carry a unit, original reporting period, scope and source. Each episode has an approximate geographic reference and an account of its outcome. Named services, formations and receiving forces are indexed by episode. A command and one of its squadrons may both appear, so membership counts cannot establish a force’s strength. [Campaign index](../../campaign-expansion.html) · [Source register and locators](../exports/v12-sources.csv) · [Dated episodes](../exports/v12-episodes.csv) · [Numerical observations](../exports/v12-figures.csv)
+
+## Published reporting series
+
+| Source and interval | Rows | How to read the figures |
+| --- | ---: | --- |
+| [Roskill, *War at Sea*, vol. II, chapter XIV, Table 32](https://www.ibiblio.org/hyperwar/UN/UK/UK-RN-II/UK-RN-II-14.html#table32) | 20 convoy passages | Named entries in a selected North Atlantic escort table. Arrival dates sometimes fall in June. In-convoy merchant losses, stragglers and the HX 235 collision occupy separate columns. It is not a census of all Atlantic shipping. [CSV](../exports/v12-atlantic-passages.csv) |
+| [Arctic convoy statistics, Tables A and B in the HMCS *Saint John* history](https://www.forposterityssake.ca/RCN-DOCS/RCND1649.pdf) | 78 convoy passages | 42 outward and 36 return entries. The ledger records departures, return to port, arrivals and cause of merchant loss. Losses of escorts and ships sunk after arrival have different scopes. PQ 17 has 36 sailed, two returned, 11 arrived, 13 lost to aircraft and ten to submarines in this account. [CSV](../exports/v12-arctic-passages.csv) |
+| [USAF Historical Study 121, Partisan support and evacuation tables](https://www.dafhistory.af.mil/Portals/16/documents/Studies/101-150/AFD-090522-060.pdf) | 8 monthly returns | The 1944 series covers Yugoslavia and Greece. The 1945 series covers Yugoslavia and Albania. Each row preserves attempts, successful landings and three categories of evacuees. October 1944 includes landings connected with the British occupation of Greece. [CSV](../exports/v12-balkan-airlift.csv) |
+| [Marine Corps University Press, *Oil & War*, Table 20.8](https://www.usmcu.edu/Portals/218/Oil%26War_Web_1.pdf) | 8 annual observations | Romania’s annual average crude production, refinery output, domestic consumption and exports in barrels per day. Six cells are unavailable in 1944–45. The production series spans the entire country, a change of government and multiple offensive operations. [CSV](../exports/v12-romanian-oil.csv) |
+
+## Where the records disagree
+
+- The German high-command return dated 25 February gives 1,975.3 tonnes for the Budapest airlift. The Hungarian study quotes another account giving 1,515.33 tonnes for the same interval. Both observations are visible, and the assessment distinguishes recorded deliveries from supplies defenders recovered. [Hungarian study, pp. 31–32](https://ojs3.mtak.hu/index.php/hadtudomany/article/download/20803/17163)
+- Groehler and Hiestand give 516 bombers for the 18th Air Army attack on Königsberg on 7 April 1945. Their escort figures differ, at 108 and 125 fighters respectively. The catalogue retains both under the same episode. [Groehler](https://www.diva-portal.org/smash/get/diva2%3A1339565/FULLTEXT01.pdf) · [Hiestand](https://api.pageplace.de/preview/DT0400.9781472857842_A47811854/preview-9781472857842_A47811854.pdf)
+- The Leningrad airlift return records freight and passengers in opposite directions between 13 September and 31 December 1941. The city evacuation commission used a different period and register. The study also distinguishes food from the broader cargo total. [Prigodich, transport returns and notes 53–55](https://journals.rudn.ru/russian-history/article/view/23774)
+
+## Reproduction and limits
+
+The checked-in JSON files under `research/transcriptions/v12-*` contain the transcribed facts, reporting series and bibliographic locators. Run `node scripts/build-web.cjs` to regenerate the static study index, browser data and seven CSVs. The build uses the stored transcriptions so a changed archive URL cannot silently change a published figure. Run `node tests/campaign-expansion.cjs` to check references, date and geographic ranges, convoy accounting and evacuation totals.
+
+Coverage is strongest where both the contemporary return and the history of its population survive. The episode lists are selective. They do not reconstruct every sortie, every station move or both sides’ daily aircraft losses. Episode coordinates can describe an entire sea area or front. Dates anchored to a monthly return or reporting interval are marked in the data. The v11 audit continues to describe its original twenty dossiers.

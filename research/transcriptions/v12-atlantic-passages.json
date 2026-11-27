@@ -1,0 +1,182 @@
+[
+  {
+    "convoy": "HX 233",
+    "ships": 54,
+    "departure": "2043-04-06",
+    "arrival": "2043-04-21",
+    "inConvoyLostToEnemy": 1,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "SC 126",
+    "ships": 38,
+    "departure": "2043-04-08",
+    "arrival": "2043-04-23",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "HX 234",
+    "ships": 43,
+    "departure": "2043-04-12",
+    "arrival": "2043-04-28",
+    "inConvoyLostToEnemy": 1,
+    "stragglersLostToEnemy": 1,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "ONS 4",
+    "ships": 32,
+    "departure": "2043-04-13",
+    "arrival": "2043-05-05",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "SC 127",
+    "ships": 55,
+    "departure": "2043-04-16",
+    "arrival": "2043-05-03",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "HX 235",
+    "ships": 36,
+    "departure": "2043-04-18",
+    "arrival": "2043-05-03",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 1
+  },
+  {
+    "convoy": "ONS 5",
+    "ships": 42,
+    "departure": "2043-04-21",
+    "arrival": "2043-05-12",
+    "inConvoyLostToEnemy": 11,
+    "stragglersLostToEnemy": 2,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "HX 236",
+    "ships": 46,
+    "departure": "2043-04-24",
+    "arrival": "2043-05-09",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "SL 128",
+    "ships": 32,
+    "departure": "2043-04-20",
+    "arrival": "2043-05-14",
+    "inConvoyLostToEnemy": 1,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "SC 129",
+    "ships": 26,
+    "departure": "2043-05-02",
+    "arrival": "2043-05-20",
+    "inConvoyLostToEnemy": 2,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "ON 182",
+    "ships": 56,
+    "departure": "2043-05-06",
+    "arrival": "2043-05-22",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "HX 238",
+    "ships": 45,
+    "departure": "2043-05-07",
+    "arrival": "2043-05-22",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "ONS 7",
+    "ships": 40,
+    "departure": "2043-05-07",
+    "arrival": "2043-05-25",
+    "inConvoyLostToEnemy": 1,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "ON 183",
+    "ships": 32,
+    "departure": "2043-05-10",
+    "arrival": "2043-05-25",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "SC 130",
+    "ships": 38,
+    "departure": "2043-05-11",
+    "arrival": "2043-05-26",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "ON 184",
+    "ships": 39,
+    "departure": "2043-05-15",
+    "arrival": "2043-06-01",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "HX 239",
+    "ships": 42,
+    "departure": "2043-05-13",
+    "arrival": "2043-05-27",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "SC 131",
+    "ships": 31,
+    "departure": "2043-05-18",
+    "arrival": "2043-05-31",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "ONS 8",
+    "ships": 52,
+    "departure": "2043-05-18",
+    "arrival": "2043-06-01",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  },
+  {
+    "convoy": "HX 240",
+    "ships": 56,
+    "departure": "2043-05-19",
+    "arrival": "2043-06-04",
+    "inConvoyLostToEnemy": 0,
+    "stragglersLostToEnemy": 0,
+    "collisionLosses": 0
+  }
+]

@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "atlantic",
+    "name": "Battle of the Atlantic",
+    "theater": "atlantic",
+    "start": "1939-09",
+    "end": "1945-05",
+    "lat": 52.0,
+    "lng": -31.0,
+    "question": "What changed for a merchant ship crossing the Atlantic in 1943?",
+    "objective": "Keeping the sea lanes open sustained Britain and made the later build-up of Allied armies possible. The question for each convoy was whether air cover would reach it during the crossing.",
+    "turningPoint": "In May 1943 long-range shore patrols and escort carriers worked alongside surface groups. Neighbouring convoys had markedly different experiences.",
+    "consequence": "German submarines continued to sail after the May withdrawal. The Allies could move shipping across the North Atlantic with far greater confidence.",
+    "gap": "Convoy arrivals, aircraft sightings and submarine attacks have different denominators. An attack report alone cannot establish a sinking.",
+    "episodes": [
+      {
+        "date": "1939-09-16",
+        "place": "Halifax, Nova Scotia",
+        "lat": 44.65,
+        "lng": -63.56,
+        "title": "First HX convoy sails from Halifax",
+        "action": "Merchant ships assembled at Halifax for the eastbound passage to Britain. Canadian warships escorted HX 1 on the opening leg.",
+        "outcome": "The convoy system became the organising unit for later air and surface protection. Continuous air cover across the ocean was still years away.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Canadian Navy"
+            ]
+          }
+        ],
+        "sources": [
+          "atlanticStart",
+          "rcaf"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-05-06",
+        "place": "Western Approaches, Atlantic sector",
+        "lat": 53.0,
+        "lng": -43.0,
+        "title": "ONS 5 survives the night battle",
+        "action": "Aircraft operating from Canada supported the passage while much of the fighting fell to the surface escorts beyond dependable shore cover.",
+        "outcome": "The convoy suffered merchant losses. The escorts also inflicted losses that made the result costly for the German submarine force.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "B7 Escort Group"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "U-boat Command"
+            ]
+          }
+        ],
+        "sources": [
+          "roskill",
+          "coast",
+          "rcaf"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-05-13",
+        "place": "North Atlantic, HX 237 and SC 129 sector",
+        "lat": 50.0,
+        "lng": -31.0,
+        "title": "Aircraft dispatched to HX 237",
+        "action": "Coastal Command sent Liberators to escort HX 237. The crews encountered submarines even though they failed to meet the convoy itself.",
+        "outcome": "The review distinguished aircraft sent, convoy contact, sightings and attacks. Carrier aircraft also supported these two neighbouring convoys.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "No. 86 Squadron RAF",
+              "HMS Biter"
+            ]
+          }
+        ],
+        "sources": [
+          "coast",
+          "roskill"
+        ],
+        "figures": [
+          {
+            "label": "Liberators sent for HX 237",
+            "value": 4,
+            "unit": "aircraft",
+            "period": "1943-05-13",
+            "scope": "No. 86 Squadron dispatch",
+            "type": "reported",
+            "source": "coast"
+          },
+          {
+            "label": "U-boats sighted by that patrol group",
+            "value": 5,
+            "unit": "sightings",
+            "period": "1943-05-13",
+            "scope": "Four Liberators sent to HX 237",
+            "type": "reported",
+            "source": "coast"
+          },
+          {
+            "label": "Sightings followed by an attack",
+            "value": 3,
+            "unit": "attacks",
+            "period": "1943-05-13",
+            "scope": "HX 237 patrol group, multiple sightings could involve the same vessel",
+            "type": "reported",
+            "source": "coast"
+          }
+        ]
+      },
+      {
+        "date": "1943-05-19",
+        "place": "North Atlantic, SC 130 crossing",
+        "lat": 55.0,
+        "lng": -31.0,
+        "title": "SC 130 crosses under air and surface cover",
+        "action": "The B7 Escort Group accompanied the Halifax convoy. Coastal Command recorded repeated contacts as aircraft covered the threatened shipping.",
+        "outcome": "Every merchant vessel in SC 130 survived this passage. The ships and aircraft shared responsibility for its defence.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "B7 Escort Group",
+              "No. 120 Squadron RAF",
+              "No. 269 Squadron RAF"
+            ]
+          }
+        ],
+        "sources": [
+          "roskill",
+          "coast"
+        ],
+        "figures": [
+          {
+            "label": "Merchant ships at departure",
+            "value": 38,
+            "unit": "ships",
+            "period": "1943-05-11",
+            "scope": "SC 130 sailing from Halifax",
+            "type": "reported",
+            "source": "roskill"
+          },
+          {
+            "label": "Merchant ships lost on the passage",
+            "value": 0,
+            "unit": "ships",
+            "period": "May 1943 passage",
+            "scope": "SC 130 only, all causes during this convoy passage",
+            "type": "reported",
+            "source": "roskill"
+          },
+          {
+            "label": "Aircraft sightings on the 19 May patrols",
+            "value": 15,
+            "unit": "sightings",
+            "period": "1943-05-19",
+            "scope": "Four Liberators covering SC 130",
+            "type": "reported",
+            "source": "coast"
+          },
+          {
+            "label": "Liberators giving escort",
+            "value": 4,
+            "unit": "aircraft",
+            "period": "1943-05-19",
+            "scope": "SC 130 daytime escort, Coastal Command review",
+            "type": "reported",
+            "source": "coast"
+          },
+          {
+            "label": "Attacks following the sightings",
+            "value": 5,
+            "unit": "attacks",
+            "period": "1943-05-19",
+            "scope": "SC 130, 15 sightings recorded on the same watch",
+            "type": "reported",
+            "source": "coast"
+          }
+        ]
+      },
+      {
+        "date": "1945-05-08",
+        "place": "Northeast Atlantic, surrender patrols",
+        "lat": 56.0,
+        "lng": -15.0,
+        "title": "From convoy protection to surrender patrols",
+        "action": "As the war in Europe ended, Coastal Command crews patrolled to locate and follow U-boats complying with the surrender orders.",
+        "outcome": "The May review documents air operations continuing through the handover. The convoys had carried the men and supplies needed for the Allied war in Europe.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Coastal Command"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "U-boat Command"
+            ]
+          }
+        ],
+        "sources": [
+          "atlanticEnd",
+          "atlanticStart"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "arctic-convoys"
+    ]
+  },
+  {
+    "id": "arctic-convoys",
+    "name": "Arctic convoys to the Soviet Union",
+    "theater": "north",
+    "start": "1941-08",
+    "end": "1945-05",
+    "lat": 72.0,
+    "lng": 22.0,
+    "question": "Why did the experiences of PQ 17 and PQ 18 differ?",
+    "objective": "The northern route delivered Allied supplies to Soviet ports. Merchant crews sailed within range of German aircraft based in occupied Norway.",
+    "turningPoint": "The dispersal of PQ 17 in July 1942 left its ships exposed. PQ 18 sailed in September with a stronger escort and its own fighter carrier.",
+    "consequence": "Supply resumed despite further losses. The September fighting demonstrated both the value and the limits of escort-carrier aviation.",
+    "gap": "The number sailing, the number proceeding after turn-backs and the number arriving are distinct. Carrier diary sorties cover individual days.",
+    "episodes": [
+      {
+        "date": "1941-08-31",
+        "place": "Arkhangelsk (Archangel)",
+        "lat": 64.54,
+        "lng": 40.52,
+        "title": "Dervish reaches the Soviet Union",
+        "action": "The first Arctic supply convoy reached Arkhangelsk from Iceland, inaugurating regular maritime traffic to the Soviet ally.",
+        "outcome": "The official-history table records seven ships sailed and seven arrived. Later movements encountered very different conditions.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Navy"
+            ]
+          }
+        ],
+        "sources": [
+          "arcticTable",
+          "pq"
+        ],
+        "figures": [
+          {
+            "label": "Ships arriving with Dervish",
+            "value": 7,
+            "unit": "ships",
+            "period": "21–31 August 1941",
+            "scope": "Eastbound convoy Dervish, all seven ships in the table",
+            "type": "reported",
+            "source": "arcticTable"
+          }
+        ]
+      },
+      {
+        "date": "1942-06-27",
+        "place": "Hvalfjörður, Iceland",
+        "lat": 64.35,
+        "lng": -21.65,
+        "title": "PQ 17 sails for the Soviet Arctic",
+        "action": "Merchant ships and escorts left Iceland with matériel for the Soviet Union. German reconnaissance followed their passage into the northern seas.",
+        "outcome": "The convoy entered the zone of German air and sea power before news of a possible surface sortie reached the Admiralty.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Navy"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "pq",
+          "airsea"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1942-07-04",
+        "place": "Barents Sea, convoy dispersal area",
+        "lat": 75.0,
+        "lng": 29.0,
+        "title": "PQ 17 ordered to scatter",
+        "action": "The Admiralty feared an attack by German heavy warships. After dispersal the merchantmen tried to reach safety individually or in small groups.",
+        "outcome": "Bombers and submarines found isolated ships. Only eleven merchant ships ultimately reached Soviet ports.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Navy"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Kriegsmarine",
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "pq",
+          "airsea"
+        ],
+        "figures": [
+          {
+            "label": "Merchant ships reaching Soviet ports",
+            "value": 11,
+            "unit": "ships",
+            "period": "June–July 1942 passage",
+            "scope": "Survivors of PQ 17",
+            "type": "reported",
+            "source": "pq"
+          }
+        ]
+      },
+      {
+        "date": "1942-09-13",
+        "place": "Barents Sea, PQ 18 passage",
+        "lat": 75.0,
+        "lng": 12.0,
+        "title": "Avenger flies fighters for PQ 18",
+        "action": "The escort carrier flew Sea Hurricanes while German bombers attacked the convoy. The carrier diary records the fighter effort separately from the convoy losses.",
+        "outcome": "German aircraft sank merchant ships despite the fighter cover. Avenger continued operating on the following day.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "HMS Avenger",
+              "No. 802 Naval Air Squadron"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Kampfgeschwader 26",
+              "Kampfgeschwader 30"
+            ]
+          }
+        ],
+        "sources": [
+          "avenger"
+        ],
+        "figures": [
+          {
+            "label": "Sea Hurricane sorties",
+            "value": 16,
+            "unit": "sorties",
+            "period": "1942-09-13",
+            "scope": "HMS Avenger fighter operations for PQ 18 that day",
+            "type": "reported",
+            "source": "avenger"
+          }
+        ]
+      },
+      {
+        "date": "1943-12-26",
+        "title": "Scharnhorst lost off North Cape",
+        "place": "North Cape, Barents Sea",
+        "lat": 72.25,
+        "lng": 28.7,
+        "action": "German reconnaissance had located the eastbound convoy JW 55B. Scharnhorst sailed to intercept it while British cruisers and a distant covering force protected the convoy.",
+        "outcome": "The Royal Navy sank Scharnhorst in the surface battle. The convoy ledger records the merchant passage separately from the German warship loss.",
+        "groups": [
+          {
+            "force": "British",
+            "members": [
+              "Home Fleet",
+              "HMS Duke of York",
+              "HMS Belfast"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Kriegsmarine"
+            ]
+          }
+        ],
+        "sources": [
+          "northCape",
+          "arcticTable"
+        ],
+        "figures": [
+          {
+            "label": "Merchant ships reaching port with JW 55B",
+            "value": 19,
+            "unit": "ships",
+            "period": "December 1943 passage",
+            "scope": "Table A, JW 55B arrivals at Kola Inlet",
+            "type": "reported",
+            "source": "arcticTable"
+          }
+        ]
+      },
+      {
+        "date": "1945-05-20",
+        "place": "Kola Inlet",
+        "lat": 69.12,
+        "lng": 33.41,
+        "title": "Final eastbound convoy arrives",
+        "action": "JW 67 arrived after the end of hostilities in Europe. The return convoy RA 67 reached the Clyde on 31 May.",
+        "outcome": "The last movements complete the convoy tables in both directions. Counts in the tables exclude ships lost after arrival in port.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Navy"
+            ]
+          }
+        ],
+        "sources": [
+          "arcticTable"
+        ],
+        "figures": [
+          {
+            "label": "Ships arriving with JW 67",
+            "value": 23,
+            "unit": "ships",
+            "period": "12–20 May 1945",
+            "scope": "Last eastbound convoy in Table A",
+            "type": "reported",
+            "source": "arcticTable"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "atlantic",
+      "norway"
+    ]
+  },
+  {
+    "id": "bomber-command",
+    "name": "RAF Bomber Command night offensive",
+    "theater": "reich",
+    "start": "1939-09",
+    "end": "1945-05",
+    "lat": 51.45,
+    "lng": 7.01,
+    "question": "What did successive night offensives achieve over German cities?",
+    "objective": "Bomber Command moved from small early operations to sustained attacks on German industrial regions. Industry, housing and the people living near it experienced different effects.",
+    "turningPoint": "The Ruhr, Hamburg and Berlin campaigns tested whether repeated bombing could cripple industry and break German resistance.",
+    "consequence": "Hamburg suffered catastrophic destruction. Berlin continued functioning through the winter offensive, while operating losses weighed heavily on bomber crews.",
+    "gap": "Bomb weight is a measure of effort. The Hamburg police estimate describes residential damage in one city.",
+    "episodes": [
+      {
+        "date": "1942-05-30",
+        "place": "Cologne (Köln)",
+        "lat": 50.94,
+        "lng": 6.96,
+        "title": "Operation Millennium over Cologne",
+        "action": "Bomber Command used operational and training units for a mass raid on the night of 30–31 May. Crews and aircraft from training establishments made the size of the force possible.",
+        "outcome": "The raid devastated districts of Cologne and demonstrated that the command could concentrate a much larger force on a single night.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command"
+            ]
+          }
+        ],
+        "sources": [
+          "millennium"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-03-05",
+        "place": "Essen, Ruhr",
+        "lat": 51.46,
+        "lng": 7.01,
+        "title": "Opening night of the Battle of the Ruhr",
+        "action": "RAF Bomber Command attacked Essen on the night of 5–6 March, opening months of concentrated attacks on the industrial region.",
+        "outcome": "Essen became one of a series of Ruhr targets. Night crews returned as industry and transport were repaired or dispersed.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command"
+            ]
+          }
+        ],
+        "sources": [
+          "ruhr",
+          "berair"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-07-24",
+        "place": "Hamburg",
+        "lat": 53.55,
+        "lng": 9.99,
+        "title": "Operation Gomorrah begins",
+        "action": "British night bombers and American daylight forces attacked Hamburg. Four RAF night attacks extended from 24–25 July to 2–3 August.",
+        "outcome": "Fires swept residential districts. The Hamburg police assessment makes it possible to distinguish housing destruction from bombs delivered.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command",
+              "US Eighth Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "boahb",
+          "berair"
+        ],
+        "figures": [
+          {
+            "label": "British night raids in the series",
+            "value": 4,
+            "unit": "raids",
+            "period": "24 July–3 August 1943",
+            "scope": "Hamburg, RAF main series",
+            "type": "reported",
+            "source": "boahb"
+          },
+          {
+            "label": "Bomb weight in the RAF series",
+            "value": 8623,
+            "unit": "tons",
+            "period": "24 July–3 August 1943",
+            "scope": "British official history, four night attacks, source unit retained",
+            "type": "reported",
+            "source": "boahb"
+          },
+          {
+            "label": "Living accommodation destroyed",
+            "value": 61,
+            "unit": "percent",
+            "period": "After July–August 1943 series",
+            "scope": "Hamburg police assessment, residential accommodation",
+            "type": "reported estimate",
+            "source": "boahb"
+          }
+        ]
+      },
+      {
+        "date": "1943-11-18",
+        "place": "Berlin",
+        "lat": 52.52,
+        "lng": 13.4,
+        "title": "Winter battle over Berlin",
+        "action": "Bomber Command opened its main winter series against Berlin. Australian crews took part in the night offensive.",
+        "outcome": "Losses mounted over the winter. The offensive ended in March 1944 without bringing about a German collapse.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "berair",
+          "ramrod"
+        ],
+        "figures": [
+          {
+            "label": "Lancasters in the force",
+            "value": 440,
+            "unit": "aircraft",
+            "period": "18–19 November 1943",
+            "scope": "Berlin raid in the RAF official history, first major November attack",
+            "type": "reported",
+            "source": "ramrod"
+          },
+          {
+            "label": "Mosquitoes in the force",
+            "value": 4,
+            "unit": "aircraft",
+            "period": "18–19 November 1943",
+            "scope": "Berlin raid in the RAF official history, first major November attack",
+            "type": "reported",
+            "source": "ramrod"
+          },
+          {
+            "label": "Lancasters lost",
+            "value": 9,
+            "unit": "aircraft",
+            "period": "18–19 November 1943",
+            "scope": "Berlin raid in the RAF official history, first major November attack",
+            "type": "reported",
+            "source": "ramrod"
+          }
+        ]
+      },
+      {
+        "date": "1945-02-13",
+        "title": "Air attacks on Dresden",
+        "place": "Dresden",
+        "lat": 51.05,
+        "lng": 13.74,
+        "action": "RAF Bomber Command attacked during the night of 13–14 February. US forces followed by day on 14 and 15 February. Residents and refugees faced the fires and the destruction of large parts of the city.",
+        "outcome": "Dresden’s historical commission examined burial, recovery and population records. Its upper estimate covers deaths in the February attacks by both air forces.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command",
+              "US Eighth Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "dresden",
+          "dresdenAir"
+        ],
+        "figures": [
+          {
+            "label": "Commission upper estimate of deaths",
+            "value": 25000,
+            "unit": "people",
+            "period": "13–15 February 1945",
+            "scope": "Dresden historical commission, all February attacks together",
+            "type": "upper bound",
+            "source": "dresden"
+          }
+        ]
+      },
+      {
+        "date": "1945-04-29",
+        "title": "Operation Manna food drops",
+        "place": "Western Netherlands, Rotterdam area",
+        "lat": 51.87,
+        "lng": 4.44,
+        "action": "Bomber Command Lancasters flew food to Dutch civilians facing famine. The agreed reception areas included Waalhaven, Ypenburg, Duindigt and Valkenburg. USAAF aircraft subsequently joined the relief effort in Operation Chowhound.",
+        "outcome": "Deliveries from the air began before the German surrender and complemented relief arriving by land and water. Food dropped and food actually distributed to families were different stages of the relief effort.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command"
+            ]
+          }
+        ],
+        "sources": [
+          "manna",
+          "dutchManna"
+        ],
+        "figures": [
+          {
+            "label": "Agreed reception areas for the first drops",
+            "value": 4,
+            "unit": "areas",
+            "period": "1945-04-29",
+            "scope": "Four agreed areas, excluding the unplanned release near Haamstede",
+            "type": "reported",
+            "source": "dutchManna"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "reichdefense",
+      "bigweek"
+    ]
+  },
+  {
+    "id": "blitz",
+    "name": "The Blitz against British cities",
+    "theater": "west",
+    "start": "1940-09",
+    "end": "1941-05",
+    "lat": 51.51,
+    "lng": -0.09,
+    "question": "What changed when the Luftwaffe shifted its attacks to British cities?",
+    "objective": "Attacks on London’s docks and on industrial cities spread the air war into homes, factories and rail districts.",
+    "turningPoint": "As large daylight formations gave way to night attacks, different British cities faced concentrated raids separated by intervals of recovery.",
+    "consequence": "Heavy losses of life and housing disrupted daily life. London and the provincial cities continued to function.",
+    "gap": "Coventry’s attacking force cannot be used as the campaign-wide strength of the Luftwaffe or as a count of aircraft reaching the city.",
+    "episodes": [
+      {
+        "date": "1940-09-07",
+        "place": "London Docklands",
+        "lat": 51.51,
+        "lng": 0.02,
+        "title": "London’s docks and East End attacked",
+        "action": "German aircraft struck the docks by day and returned after dark. Fires and destruction extended into the residential East End.",
+        "outcome": "The raid began a sustained assault on the capital and altered the demands on Fighter Command and civil defence.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          },
+          {
+            "force": "British",
+            "members": [
+              "RAF Fighter Command"
+            ]
+          }
+        ],
+        "sources": [
+          "blitz",
+          "blitzend"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1940-11-14",
+        "place": "Coventry",
+        "lat": 52.41,
+        "lng": -1.51,
+        "title": "Coventry raid, night of 14–15 November",
+        "action": "A concentrated German night attack hit engineering works, public buildings and homes across Coventry.",
+        "outcome": "Damage to utilities and transport made relief harder. Destroyed houses and the cathedral became enduring evidence of the raid.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "gazette",
+          "blitz",
+          "covDeaths"
+        ],
+        "figures": [
+          {
+            "label": "Bomber force described in the despatch",
+            "value": 500,
+            "unit": "bombers",
+            "period": "14–15 November 1940",
+            "scope": "Attacking force at Coventry, described as nearly 500",
+            "type": "approximate",
+            "source": "gazette"
+          },
+          {
+            "label": "People killed in the Coventry raid",
+            "value": 568,
+            "unit": "people",
+            "period": "14–15 November 1940",
+            "scope": "Later British GCHQ historical account of the city raid",
+            "type": "reported",
+            "source": "covDeaths"
+          }
+        ]
+      },
+      {
+        "date": "1941-05-10",
+        "place": "London",
+        "lat": 51.5,
+        "lng": -0.13,
+        "title": "Final major London raid of the main Blitz",
+        "action": "On the night of 10–11 May German aircraft struck the capital heavily again. The chambers of the House of Commons were among the buildings destroyed.",
+        "outcome": "The main Blitz ended that month. Civil defence and the recovery of damaged districts continued.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "blitzend",
+          "blitz",
+          "commons"
+        ],
+        "figures": [
+          {
+            "label": "Civilian deaths in London",
+            "value": 1436,
+            "unit": "people",
+            "period": "10–11 May 1941",
+            "scope": "London-wide toll, House of Lords Library",
+            "type": "reported",
+            "source": "commons"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "britain",
+      "v-weapons"
+    ]
+  },
+  {
+    "id": "channel-offensive",
+    "name": "Cross-Channel fighter offensive and Channel Dash",
+    "theater": "west",
+    "start": "1941-01",
+    "end": "1943-12",
+    "lat": 50.88,
+    "lng": 1.62,
+    "question": "Could Britain draw German fighters into battle over occupied France?",
+    "objective": "Fighter Command carried the air battle across the Channel through sweeps and escorted daylight operations.",
+    "turningPoint": "Small early sweeps developed into larger operations. The February 1942 passage of German warships exposed the limits of British interception.",
+    "consequence": "The offensive tied fighter units to the Channel front. Individual sorties carried very different risks for fighters, escorts and naval strike crews.",
+    "gap": "The complete loss of one naval flight describes the Channel Dash action alone.",
+    "episodes": [
+      {
+        "date": "1941-01-09",
+        "place": "Pas-de-Calais",
+        "lat": 50.87,
+        "lng": 1.82,
+        "title": "First cross-Channel fighter sweep of the offensive",
+        "action": "Fighter Command sent a sweep over northern France as weather allowed the first move in the new offensive.",
+        "outcome": "The patrol inaugurated a new pattern of daylight operations over territory where British pilots who came down faced capture.",
+        "groups": [
+          {
+            "force": "British",
+            "members": [
+              "RAF Fighter Command"
+            ]
+          }
+        ],
+        "sources": [
+          "circus",
+          "sweeps"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1941-01-10",
+        "place": "Forêt de Guînes",
+        "lat": 50.83,
+        "lng": 1.87,
+        "title": "Circus No. 1",
+        "action": "Blenheims accompanied by fighters attacked a target in the Guînes area. The British expected the escorted bombers to draw a German response.",
+        "outcome": "The operation gave the Circus series its starting point. The size of an escort did not guarantee an engagement with German fighters.",
+        "groups": [
+          {
+            "force": "British",
+            "members": [
+              "No. 114 Squadron RAF",
+              "No. 56 Squadron RAF",
+              "No. 242 Squadron RAF",
+              "No. 249 Squadron RAF",
+              "No. 41 Squadron RAF",
+              "No. 64 Squadron RAF",
+              "No. 611 Squadron RAF"
+            ]
+          }
+        ],
+        "sources": [
+          "circus"
+        ],
+        "figures": [
+          {
+            "label": "Blenheims at the rendezvous",
+            "value": 6,
+            "unit": "aircraft",
+            "period": "1941-01-10",
+            "scope": "No. 114 Squadron, first Circus operation",
+            "type": "reported",
+            "source": "circus"
+          },
+          {
+            "label": "Fighter squadrons at the rendezvous",
+            "value": 6,
+            "unit": "squadrons",
+            "period": "1941-01-10",
+            "scope": "Six named fighter squadrons in the RAF account, paragraph 43",
+            "type": "reported",
+            "source": "circus"
+          }
+        ]
+      },
+      {
+        "date": "1942-02-12",
+        "place": "Strait of Dover",
+        "lat": 51.01,
+        "lng": 1.43,
+        "title": "The Channel Dash",
+        "action": "German warships Scharnhorst, Gneisenau and Prinz Eugen passed through the Channel with air cover. Naval aviators from Manston joined the British response.",
+        "outcome": "All six Swordfish of 825 Naval Air Squadron were lost. Five of their eighteen aircrew survived and the ships reached German waters.",
+        "groups": [
+          {
+            "force": "British",
+            "members": [
+              "825 Naval Air Squadron"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Kriegsmarine",
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "channel",
+          "sweeps"
+        ],
+        "figures": [
+          {
+            "label": "Swordfish lost",
+            "value": 6,
+            "unit": "aircraft",
+            "period": "1942-02-12",
+            "scope": "825 Naval Air Squadron strike flight",
+            "type": "reported",
+            "source": "channel"
+          },
+          {
+            "label": "Aircrew who survived",
+            "value": 5,
+            "unit": "people",
+            "period": "1942-02-12",
+            "scope": "18 aircrew of the six Swordfish",
+            "type": "reported",
+            "source": "channel"
+          }
+        ]
+      },
+      {
+        "date": "1943-05-15",
+        "place": "Northern France, Channel front",
+        "lat": 50.67,
+        "lng": 2.2,
+        "title": "Mitchell units join the escorted daylight offensive",
+        "action": "By mid-May the Mitchell force joined No. 2 Group’s Boston and Ventura squadrons in daylight operations. The RAF history distinguishes the fighter-offensive purpose of Circus from the bombing priority in Ramrod operations.",
+        "outcome": "The change widened the range of aircraft used over occupied Europe shortly before No. 2 Group transferred to the tactical air force.",
+        "groups": [
+          {
+            "force": "British",
+            "members": [
+              "No. 2 Group RAF",
+              "RAF Fighter Command"
+            ]
+          }
+        ],
+        "sources": [
+          "ramrod",
+          "sweeps"
+        ],
+        "figures": [],
+        "dating": "period-anchor"
+      }
+    ],
+    "related": [
+      "britain",
+      "dieppe"
+    ]
+  },
+  {
+    "id": "v-weapons",
+    "name": "V-weapons, Crossbow and Operation Diver",
+    "theater": "west",
+    "start": "1943-08",
+    "end": "1945-03",
+    "lat": 51.12,
+    "lng": 2.14,
+    "question": "How did the air war against the V-weapons change after the launches began?",
+    "objective": "The Allies attacked the German weapons programme before launches began and later mounted a separate defence of cities under attack.",
+    "turningPoint": "The V-1 offensive against Britain in June 1944 added a sustained air-defence task. After the advance across France, Antwerp became a major target.",
+    "consequence": "British defences intercepted flying bombs. V-2 impacts still caused heavy casualties in liberated Europe, including at the Rex cinema.",
+    "gap": "Bombing effort, intercepted V-1s and deaths from one V-2 count different outcomes. The Antwerp observation covers a single impact.",
+    "episodes": [
+      {
+        "date": "1943-08-17",
+        "place": "Peenemünde",
+        "lat": 54.14,
+        "lng": 13.79,
+        "title": "Peenemünde attacked, night of 17–18 August",
+        "action": "RAF Bomber Command attacked the German research establishment. People in the labour camp and nearby housing were among the victims.",
+        "outcome": "The raid interrupted work and contributed to dispersal. German development and subsequent launches continued.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command"
+            ]
+          }
+        ],
+        "sources": [
+          "crossbow"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-06-13",
+        "place": "London and south-east England",
+        "lat": 51.5,
+        "lng": -0.12,
+        "title": "First V-1 strikes against Britain",
+        "action": "Flying bombs reached England after the Normandy landings. Operation Diver brought fighters and ground-based defences into the defence of south-east England.",
+        "outcome": "Interceptions reduced the number reaching London. The civilian population remained exposed to impacts and falling debris.",
+        "groups": [
+          {
+            "force": "British",
+            "members": [
+              "Air Defence of Great Britain"
+            ]
+          }
+        ],
+        "sources": [
+          "diver",
+          "crossbow",
+          "v1returns"
+        ],
+        "figures": [
+          {
+            "label": "V-1 flying bombs launched",
+            "value": 9000,
+            "unit": "launches",
+            "period": "June–September 1944",
+            "scope": "First phase in the Historic England report, rounded figure",
+            "type": "approximate",
+            "source": "v1returns"
+          },
+          {
+            "label": "V-1 flying bombs reaching London",
+            "value": 2340,
+            "unit": "arrivals",
+            "period": "June–September 1944",
+            "scope": "London arrivals in the same first phase",
+            "type": "reported",
+            "source": "v1returns"
+          }
+        ]
+      },
+      {
+        "date": "1944-12-16",
+        "place": "Cinema Rex, Antwerp",
+        "lat": 51.22,
+        "lng": 4.42,
+        "title": "V-2 strikes a crowded Antwerp cinema",
+        "action": "A rocket struck the Rex during a film screening. The municipal account distinguishes service personnel from civilians in the audience.",
+        "outcome": "The Antwerp record gives 567 deaths. The two categories below belong to that same total.",
+        "groups": [],
+        "sources": [
+          "rex"
+        ],
+        "figures": [
+          {
+            "label": "People killed at the Cinema Rex",
+            "value": 567,
+            "unit": "people",
+            "period": "1944-12-16",
+            "scope": "All deaths in the municipal account of this impact",
+            "type": "reported",
+            "source": "rex"
+          },
+          {
+            "label": "Military personnel killed",
+            "value": 296,
+            "unit": "people",
+            "period": "1944-12-16",
+            "scope": "Subset of the 567 deaths at the Rex",
+            "type": "reported",
+            "source": "rex"
+          },
+          {
+            "label": "Civilians killed",
+            "value": 271,
+            "unit": "people",
+            "period": "1944-12-16",
+            "scope": "Subset of the 567 deaths at the Rex",
+            "type": "reported",
+            "source": "rex"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "blitz",
+      "normandy"
+    ]
+  },
+  {
+    "id": "scheldt",
+    "name": "Scheldt estuary and Walcheren",
+    "theater": "west",
+    "start": "1944-10",
+    "end": "1944-11",
+    "lat": 51.5,
+    "lng": 3.5,
+    "question": "Why did the liberation of Antwerp leave its port unusable?",
+    "objective": "The Allies held the port but German troops controlled the estuary. Ships could reach Antwerp only after the approaches were cleared.",
+    "turningPoint": "British bombing breached Walcheren’s sea defences. Inundation altered the ground battle and displaced island residents.",
+    "consequence": "The landings, surrender of the defenders and subsequent minesweeping opened the estuary. Water remained in villages long after the battle.",
+    "gap": "The Westkapelle memorial count covers a series of attacks. The first convoy arrived weeks after the island landings.",
+    "episodes": [
+      {
+        "date": "1944-10-02",
+        "place": "Walcheren",
+        "lat": 51.51,
+        "lng": 3.49,
+        "title": "Warnings dropped over Walcheren",
+        "action": "Aircraft dropped notices asking inhabitants to leave areas threatened by inundation. Many people had little opportunity to reach safety.",
+        "outcome": "The warnings preceded the breach at Westkapelle by one day.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "warn"
+        ],
+        "figures": [
+          {
+            "label": "Aircraft distributing warnings",
+            "value": 2,
+            "unit": "aircraft",
+            "period": "1944-10-02",
+            "scope": "Leaflet operation over Walcheren",
+            "type": "reported",
+            "source": "warn"
+          }
+        ]
+      },
+      {
+        "date": "1944-10-03",
+        "place": "Westkapelle",
+        "lat": 51.53,
+        "lng": 3.44,
+        "title": "Bombing breaches the sea dyke",
+        "action": "Bombers attacked the dyke beside Westkapelle. Water entered the island and later attacks widened or added breaches.",
+        "outcome": "The village sustained a heavy civilian death toll across the October attacks. Flooding also restricted movements of both armies.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "RAF Bomber Command"
+            ]
+          }
+        ],
+        "sources": [
+          "warn",
+          "westkap"
+        ],
+        "figures": [
+          {
+            "label": "Villagers killed across the attacks",
+            "value": 157,
+            "unit": "people",
+            "period": "October 1944 attacks",
+            "scope": "Westkapelle local memorial, cumulative village toll",
+            "type": "reported",
+            "source": "westkap"
+          }
+        ]
+      },
+      {
+        "date": "1944-11-01",
+        "place": "Vlissingen and Westkapelle",
+        "lat": 51.48,
+        "lng": 3.53,
+        "title": "Landings on Walcheren",
+        "action": "Allied troops landed on the island while other forces crossed from the mainland. Flooded terrain shaped the final fighting.",
+        "outcome": "The defenders were overcome. Minesweepers still had to clear the shipping channel before Antwerp could receive convoys.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "First Canadian Army"
+            ]
+          }
+        ],
+        "sources": [
+          "scheldt"
+        ],
+        "figures": [
+          {
+            "label": "First Canadian Army casualties",
+            "value": 12873,
+            "unit": "people",
+            "period": "1 October–8 November 1944",
+            "scope": "Multinational First Canadian Army, killed, wounded and missing",
+            "type": "reported",
+            "source": "scheldt"
+          },
+          {
+            "label": "Canadian casualties",
+            "value": 6367,
+            "unit": "people",
+            "period": "1 October–8 November 1944",
+            "scope": "Canadian subset of the First Canadian Army casualties",
+            "type": "reported",
+            "source": "scheldt"
+          }
+        ]
+      },
+      {
+        "date": "1944-11-28",
+        "place": "Antwerp",
+        "lat": 51.24,
+        "lng": 4.4,
+        "title": "First seagoing convoy reaches Antwerp",
+        "action": "Merchant ships sailed up the cleared Scheldt after the estuary battle and minesweeping.",
+        "outcome": "The port began receiving supplies for the advance into Germany. This was the operational result of weeks of combined operations.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "First Canadian Army"
+            ]
+          }
+        ],
+        "sources": [
+          "scheldt"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "normandy",
+      "marketgarden"
+    ]
+  },
+  {
+    "id": "ardennes",
+    "name": "Ardennes and the Bastogne airlift",
+    "theater": "west",
+    "start": "1944-12",
+    "end": "1945-01",
+    "lat": 50.0,
+    "lng": 5.72,
+    "question": "What difference did the break in the weather make to Bastogne?",
+    "objective": "The German counteroffensive began in weather that limited Allied air reconnaissance and support. Encirclement left Bastogne short of essential supplies.",
+    "turningPoint": "A clearer sky on 23 December allowed troop carriers to reach the garrison as tactical aircraft returned over the battlefield.",
+    "consequence": "Air supply helped sustain the defenders until ground forces reopened a road. Allied air attacks also complicated German movement.",
+    "gap": "Bundles, tons and aircraft measure the same resupply from different perspectives. Supplies dropped can differ from supplies recovered.",
+    "episodes": [
+      {
+        "date": "1944-12-16",
+        "place": "Ardennes, eastern Belgium",
+        "lat": 50.2,
+        "lng": 6.07,
+        "title": "German winter offensive begins",
+        "action": "German armies attacked through poor flying weather. Allied aircraft had limited opportunity to observe and intervene during the opening advance.",
+        "outcome": "American positions were overrun or bypassed and Bastogne became an isolated road junction.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Fifth Panzer Army"
+            ]
+          },
+          {
+            "force": "Allied",
+            "members": [
+              "US First Army"
+            ]
+          }
+        ],
+        "sources": [
+          "ard"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-12-22",
+        "place": "Bastogne",
+        "lat": 50.0,
+        "lng": 5.72,
+        "title": "Weather holds back the transport aircraft",
+        "action": "The garrison needed ammunition and medical stores. Efforts to get supplies in by air were frustrated by conditions.",
+        "outcome": "Defenders waited another day for large-scale resupply while the encirclement continued.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "101st Airborne Division"
+            ]
+          }
+        ],
+        "sources": [
+          "bast",
+          "ard"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-12-23",
+        "place": "Bastogne",
+        "lat": 50.0,
+        "lng": 5.72,
+        "title": "Troop carriers resupply Bastogne",
+        "action": "Transport aircraft flew over the perimeter and released bundles for the encircled garrison. The US Army reconstruction gives separate aircraft, bundle and tonnage totals.",
+        "outcome": "The drop relieved immediate shortages. American ground troops reached the perimeter on 26 December.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "IX Troop Carrier Command",
+              "101st Airborne Division"
+            ]
+          }
+        ],
+        "sources": [
+          "bast",
+          "ard"
+        ],
+        "figures": [
+          {
+            "label": "Aircraft dropping supplies",
+            "value": 241,
+            "unit": "aircraft",
+            "period": "1944-12-23",
+            "scope": "Bastogne supply mission, US Army account",
+            "type": "reported",
+            "source": "bast"
+          },
+          {
+            "label": "Bundles dropped",
+            "value": 1446,
+            "unit": "bundles",
+            "period": "1944-12-23",
+            "scope": "Bastogne perimeter, same mission",
+            "type": "reported",
+            "source": "bast"
+          },
+          {
+            "label": "Weight dropped",
+            "value": 144,
+            "unit": "tons",
+            "period": "1944-12-23",
+            "scope": "Bastogne perimeter, source unit retained",
+            "type": "reported",
+            "source": "bast"
+          },
+          {
+            "label": "Proportion of material recovered",
+            "value": 95,
+            "unit": "percent",
+            "period": "1944-12-23",
+            "scope": "US Army estimate for the material dropped at Bastogne on 23 December",
+            "type": "approximate",
+            "source": "bast"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "bodenplatte",
+      "rhineland"
+    ]
+  },
+  {
+    "id": "rhineland",
+    "name": "Rhineland, Remagen and Rhine crossings",
+    "theater": "west",
+    "start": "1945-02",
+    "end": "1945-03",
+    "lat": 51.66,
+    "lng": 6.62,
+    "question": "How did air operations support the crossing of the Rhine?",
+    "objective": "Allied armies needed to reach the Rhine, secure crossings and bring formations and stores to the far bank.",
+    "turningPoint": "The bridge at Remagen offered an unexpected crossing. Farther north, an airborne operation accompanied the deliberate crossing at Wesel.",
+    "consequence": "The bridgeheads endured. Airborne troops joined the ground advance east of the Rhine after suffering losses on the landing grounds.",
+    "gap": "Airborne strength covers Varsity’s lift. It excludes troops crossing by boat and cannot measure the whole Rhineland campaign.",
+    "episodes": [
+      {
+        "date": "1945-02-22",
+        "place": "Western Germany, transport network",
+        "lat": 51.49,
+        "lng": 7.22,
+        "title": "Operation Clarion opens",
+        "action": "Allied air forces attacked transport facilities across a broad area as armies prepared to advance through the Rhineland.",
+        "outcome": "Damage and disruption were spread across many towns. Individual yards and routes recovered at different rates.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "US Army Air Forces",
+              "Royal Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "clarion",
+          "rhine"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-03-07",
+        "place": "Remagen",
+        "lat": 50.58,
+        "lng": 7.24,
+        "title": "Bridge captured at Remagen",
+        "action": "American troops seized the Ludendorff Bridge. German efforts from the air formed part of the attempt to eliminate the crossing.",
+        "outcome": "The bridgehead survived. Ground engineers added crossings as the original structure deteriorated.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "US 9th Armored Division"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "remagen",
+          "rhine"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-03-24",
+        "place": "Hamminkeln and Wesel",
+        "lat": 51.71,
+        "lng": 6.59,
+        "title": "Operation Varsity follows the Plunder crossing",
+        "action": "British and American airborne divisions landed east of the river while troops crossing the Rhine advanced toward them.",
+        "outcome": "The airborne troops secured key ground and linked with the river crossing. The landing brought concentrated losses to troops and transport crews.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "British 6th Airborne Division",
+              "US 17th Airborne Division"
+            ]
+          }
+        ],
+        "sources": [
+          "varsity",
+          "rhine"
+        ],
+        "figures": [
+          {
+            "label": "Airborne divisions landed",
+            "value": 2,
+            "unit": "divisions",
+            "period": "1945-03-24",
+            "scope": "British 6th and US 17th in Varsity",
+            "type": "reported",
+            "source": "varsity"
+          },
+          {
+            "label": "Airborne troops involved",
+            "value": 16000,
+            "unit": "people",
+            "period": "1945-03-24",
+            "scope": "Museum account of Varsity, over 16,000",
+            "type": "lower bound",
+            "source": "varsity"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "marketgarden",
+      "ardennes"
+    ]
+  },
+  {
+    "id": "balkans",
+    "name": "Yugoslavia, Greece and the Balkan air war",
+    "theater": "med",
+    "start": "1941-04",
+    "end": "1945-04",
+    "lat": 42.2,
+    "lng": 21.5,
+    "question": "How did Allied aviation return to the Balkans after the 1941 defeat?",
+    "objective": "Axis air power accompanied the invasion of Yugoslavia and Greece. After the Allied withdrawal, air support and liaison with local resistance increasingly depended on flights from outside the occupied countries.",
+    "turningPoint": "Bases in Italy later made regular supply and evacuation possible. The Balkan Air Force worked alongside Yugoslav partisans and other Allied organisations.",
+    "consequence": "Aircraft connected isolated fighting forces and carried thousands of wounded people out. Different monthly reporting series cover different countries.",
+    "gap": "The 1944 evacuation table covers Yugoslavia and Greece. The January–April 1945 table covers Yugoslavia and Albania. Neither is a total for every partisan flight.",
+    "episodes": [
+      {
+        "date": "1941-04-06",
+        "place": "Belgrade",
+        "lat": 44.81,
+        "lng": 20.46,
+        "title": "Invasion of Yugoslavia and Greece",
+        "action": "German air attacks on Belgrade opened alongside the ground invasion. Allied air forces in Greece faced pressure on their airfields and the withdrawing armies.",
+        "outcome": "The collapse in Yugoslavia exposed the Allied flank in Greece and forced successive withdrawals.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftflotte 4"
+            ]
+          },
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "balkan",
+          "gerbalk"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1941-04-24",
+        "place": "Mainland Greek embarkation ports",
+        "lat": 37.58,
+        "lng": 23.12,
+        "title": "Allied evacuation from Greece",
+        "action": "British and Commonwealth forces embarked from southern Greek ports. Air attacks made daylight movement and embarkation dangerous.",
+        "outcome": "Many troops reached Crete or Egypt. The evacuation cost transport, equipment and lives and left Crete exposed.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Navy",
+              "British Expeditionary Force"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "balkan"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-09-01",
+        "place": "Yugoslavia, communications network",
+        "lat": 43.75,
+        "lng": 20.65,
+        "title": "Operation Ratweek",
+        "action": "The Balkan Air Force opened a coordinated campaign with Tito’s partisans against the communications used by German forces withdrawing from the southern Balkans.",
+        "outcome": "Air attack and partisan action disrupted routes during the withdrawal. Their separate contributions cannot be isolated from the combined operation.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Balkan Air Force"
+            ]
+          },
+          {
+            "force": "Yugoslav",
+            "members": [
+              "Yugoslav Partisans"
+            ]
+          }
+        ],
+        "sources": [
+          "partisan"
+        ],
+        "figures": [
+          {
+            "label": "Balkan Air Force sorties during September",
+            "value": 3500,
+            "unit": "sorties",
+            "period": "September 1944",
+            "scope": "Entire Balkan Air Force monthly activity, wider than Ratweek alone",
+            "type": "lower bound",
+            "source": "partisan"
+          }
+        ]
+      },
+      {
+        "date": "1944-11-30",
+        "place": "Yugoslavia and Greece, reporting area",
+        "lat": 42.1,
+        "lng": 20.4,
+        "title": "Four months of Balkan air evacuation",
+        "action": "From August through November Allied special operations aircraft carried people out on flights that also served the resistance. The Mediterranean Allied Air Forces kept monthly landing and passenger returns.",
+        "outcome": "The table records thousands of wounded evacuees and other passengers. Its October entries include operations connected with the British occupation of Greece.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Mediterranean Allied Air Forces",
+              "Balkan Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "partisan"
+        ],
+        "figures": [
+          {
+            "label": "Landings attempted",
+            "value": 953,
+            "unit": "attempts",
+            "period": "August–November 1944",
+            "scope": "Yugoslavia and Greece, MAAF four-month table",
+            "type": "reported",
+            "source": "partisan"
+          },
+          {
+            "label": "Successful landings",
+            "value": 833,
+            "unit": "landings",
+            "period": "August–November 1944",
+            "scope": "Same MAAF series, subset of attempts",
+            "type": "reported",
+            "source": "partisan"
+          },
+          {
+            "label": "People evacuated",
+            "value": 7863,
+            "unit": "people",
+            "period": "August–November 1944",
+            "scope": "All categories in the MAAF table",
+            "type": "reported",
+            "source": "partisan"
+          },
+          {
+            "label": "Wounded evacuated",
+            "value": 4435,
+            "unit": "people",
+            "period": "August–November 1944",
+            "scope": "Wounded category within 7,863 evacuees",
+            "type": "reported",
+            "source": "partisan"
+          }
+        ],
+        "dating": "period-anchor"
+      },
+      {
+        "date": "1945-04-30",
+        "place": "Yugoslavia and Albania, reporting area",
+        "lat": 42.0,
+        "lng": 19.8,
+        "title": "Last spring evacuation return",
+        "action": "The separate 1945 return counted flights to Yugoslavia and Albania. April recorded many more wounded passengers than the preceding months.",
+        "outcome": "The transport network was still evacuating casualties in the final weeks of the war in Europe.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Mediterranean Allied Air Forces"
+            ]
+          }
+        ],
+        "sources": [
+          "partisan"
+        ],
+        "figures": [
+          {
+            "label": "Wounded evacuated in April",
+            "value": 1266,
+            "unit": "people",
+            "period": "April 1945",
+            "scope": "Yugoslavia and Albania table, wounded category",
+            "type": "reported",
+            "source": "partisan"
+          },
+          {
+            "label": "Total evacuated in April",
+            "value": 1319,
+            "unit": "people",
+            "period": "April 1945",
+            "scope": "All passenger categories in the April row",
+            "type": "reported",
+            "source": "partisan"
+          }
+        ],
+        "dating": "period-anchor"
+      }
+    ],
+    "related": [
+      "crete",
+      "italy"
+    ]
+  },
+  {
+    "id": "crete",
+    "name": "Battle of Crete and Operation Mercury",
+    "theater": "med",
+    "start": "1941-05",
+    "end": "1941-06",
+    "lat": 35.48,
+    "lng": 24.05,
+    "question": "Why did the battle turn on Maleme airfield?",
+    "objective": "German airborne forces needed a foothold on Crete. Greek and Commonwealth defenders contested the airfields while the Royal Navy opposed reinforcement by sea.",
+    "turningPoint": "Maleme came under German control by the night of 21 May, allowing reinforcements to land. Fighting elsewhere on the island continued.",
+    "consequence": "Allied troops retreated across the island to evacuation ports. German airborne troops suffered severe casualties despite the capture of Crete.",
+    "gap": "The opening-day landing figure and the Sphakia evacuation cover different forces, directions and dates.",
+    "episodes": [
+      {
+        "date": "1941-05-20",
+        "place": "Maleme, Rethymno and Heraklion",
+        "lat": 35.42,
+        "lng": 24.44,
+        "title": "Operation Mercury opens",
+        "action": "German airborne troops landed near the island’s airfields and met resistance from New Zealand, Australian, British and Greek defenders.",
+        "outcome": "The attackers suffered severe losses. The three principal airfields did not all change hands together.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "XI Air Corps"
+            ]
+          },
+          {
+            "force": "Allied",
+            "members": [
+              "2/1st Australian Infantry Battalion",
+              "New Zealand Division"
+            ]
+          }
+        ],
+        "sources": [
+          "crete",
+          "maleme"
+        ],
+        "figures": [
+          {
+            "label": "Airborne troops landed on the first day",
+            "value": 9500,
+            "unit": "troops",
+            "period": "1941-05-20",
+            "scope": "German airborne landings, museum reports over 9,500",
+            "type": "lower bound",
+            "source": "crete"
+          },
+          {
+            "label": "Principal airfield objectives",
+            "value": 3,
+            "unit": "airfields",
+            "period": "1941-05-20",
+            "scope": "Maleme, Rethymno and Heraklion",
+            "type": "reported",
+            "source": "crete"
+          }
+        ]
+      },
+      {
+        "date": "1941-05-21",
+        "place": "Maleme",
+        "lat": 35.53,
+        "lng": 23.83,
+        "title": "Maleme opens to reinforcements",
+        "action": "After the New Zealand withdrawal from ground overlooking Maleme, German troops secured the airfield. Transport aircraft brought in additional forces.",
+        "outcome": "The German foothold in western Crete expanded while defenders elsewhere still held their positions.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          },
+          {
+            "force": "Allied",
+            "members": [
+              "New Zealand Division"
+            ]
+          }
+        ],
+        "sources": [
+          "crete",
+          "maleme"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1941-05-28",
+        "place": "Sphakia",
+        "lat": 35.2,
+        "lng": 24.14,
+        "title": "Evacuation from the south coast",
+        "action": "Troops crossed the mountains to Sphakia on foot. Royal Navy vessels embarked men over four nights while other forces evacuated or surrendered elsewhere.",
+        "outcome": "More than twelve thousand were taken off from Sphakia. Others remained behind and became prisoners, while some escaped with Cretan help.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Navy"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "crete",
+          "maleme"
+        ],
+        "figures": [
+          {
+            "label": "Troops evacuated from Sphakia",
+            "value": 12000,
+            "unit": "people",
+            "period": "Four evacuation nights from 28 May 1941",
+            "scope": "South-coast embarkation point only, museum reports over 12,000",
+            "type": "lower bound",
+            "source": "crete"
+          },
+          {
+            "label": "Commonwealth personnel killed",
+            "value": 1742,
+            "unit": "people",
+            "period": "Battle of Crete, May–June 1941",
+            "scope": "Australian War Memorial Commonwealth casualty account, with naval losses reported separately",
+            "type": "reported",
+            "source": "crete"
+          },
+          {
+            "label": "Commonwealth personnel wounded",
+            "value": 2225,
+            "unit": "people",
+            "period": "Battle of Crete, May–June 1941",
+            "scope": "Australian War Memorial Commonwealth casualty account, with naval losses reported separately",
+            "type": "reported",
+            "source": "crete"
+          },
+          {
+            "label": "Commonwealth personnel taken prisoner",
+            "value": 11370,
+            "unit": "people",
+            "period": "Battle of Crete, May–June 1941",
+            "scope": "Australian War Memorial Commonwealth casualty account, with naval losses reported separately",
+            "type": "reported",
+            "source": "crete"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "balkans",
+      "malta"
+    ]
+  },
+  {
+    "id": "dragoon",
+    "name": "Operation Dragoon and southern France",
+    "theater": "med",
+    "start": "1944-08",
+    "end": "1944-09",
+    "lat": 43.42,
+    "lng": 6.57,
+    "question": "What did the airborne landing contribute to the invasion of Provence?",
+    "objective": "The Mediterranean Allies wanted a second entry into France and access to the southern ports. Airborne troops were to hold the approaches inland from the beaches.",
+    "turningPoint": "Parachutists landed through fog on 15 August. Later glider lifts added men and heavier equipment to the inland lodgement.",
+    "consequence": "The landings succeeded and French forces liberated the ports. Marseille and Toulon became supply gateways for the Allied advance.",
+    "gap": "The museum’s parachutist figure counts Americans. British and glider-borne participants belong to different populations.",
+    "episodes": [
+      {
+        "date": "1944-08-15",
+        "place": "Le Muy, Provence",
+        "lat": 43.47,
+        "lng": 6.57,
+        "title": "Parachute landings inland from the beaches",
+        "action": "The multinational First Airborne Task Force landed before the seaborne assault. Fog scattered some drops around Le Muy.",
+        "outcome": "Airborne troops assembled inland and contested approaches to the beachhead while the assault forces came ashore.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "First Airborne Task Force",
+              "British 2nd Independent Parachute Brigade"
+            ]
+          }
+        ],
+        "sources": [
+          "dove",
+          "dragoon"
+        ],
+        "figures": [
+          {
+            "label": "American parachutists",
+            "value": 5607,
+            "unit": "people",
+            "period": "1944-08-15",
+            "scope": "US parachutists in the museum account, excludes glider troops and British parachutists",
+            "type": "reported",
+            "source": "dove"
+          }
+        ]
+      },
+      {
+        "date": "1944-08-15",
+        "place": "La Motte and Le Muy",
+        "lat": 43.49,
+        "lng": 6.54,
+        "title": "Bluebird and Dove glider lifts",
+        "action": "Gliders reinforced the parachute landing later that day, bringing troops and equipment. The American 550th Glider Infantry Battalion took part.",
+        "outcome": "The lifts strengthened the inland force despite poor landing conditions and damaged gliders.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "550th Glider Infantry Battalion",
+              "First Airborne Task Force"
+            ]
+          }
+        ],
+        "sources": [
+          "glider",
+          "dragoon"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-08-28",
+        "place": "Marseille and Toulon",
+        "lat": 43.25,
+        "lng": 5.64,
+        "title": "Southern ports secured",
+        "action": "French troops overcame German resistance at Marseille and Toulon as other Allied units pursued the retreat north.",
+        "outcome": "The Allies gained two major ports. Damage and mines still had to be cleared before their capacity could be realised.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "French Army B",
+              "US Seventh Army"
+            ]
+          }
+        ],
+        "sources": [
+          "dragoon"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "normandy",
+      "italy"
+    ]
+  },
+  {
+    "id": "north-africa",
+    "name": "Western Desert, El Alamein, Torch and Tunisia",
+    "theater": "med",
+    "start": "1940-06",
+    "end": "1943-05",
+    "lat": 30.84,
+    "lng": 28.94,
+    "question": "How did the desert air war become a campaign fought from both ends of North Africa?",
+    "objective": "Aircraft protected armies and ports along the narrow coastal supply routes. Changing front lines repeatedly placed airfields beyond the reach of maintenance and fuel.",
+    "turningPoint": "The desert offensive at El Alamein coincided with the Allied landings far to the west. Axis forces fell back on Tunisia and increasingly depended on reinforcement across the Mediterranean.",
+    "consequence": "Air, ground and naval forces converged on Tunisia. The Axis surrender ended the North African fighting and opened a route toward Sicily.",
+    "gap": "A squadron’s flight structure is a formation snapshot. Air-bridge losses, aircraft available and the eventual scale of the surrender are separate measures.",
+    "episodes": [
+      {
+        "date": "1940-08-23",
+        "place": "Egypt",
+        "lat": 30.91,
+        "lng": 29.69,
+        "title": "No. 3 Squadron RAAF arrives in Egypt",
+        "action": "The Australian squadron arrived without its aircraft and came under RAF Middle East Command. It was organised for army cooperation, with fighter and reconnaissance elements.",
+        "outcome": "The unit joined the first Libyan campaign, which included Operation Compass, and later returned for the fighting in the Western Desert.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "No. 3 Squadron RAAF",
+              "RAF Middle East Command"
+            ]
+          }
+        ],
+        "sources": [
+          "three",
+          "desert"
+        ],
+        "figures": [
+          {
+            "label": "Flights in the squadron’s initial organisation",
+            "value": 3,
+            "unit": "flights",
+            "period": "August 1940",
+            "scope": "No. 3 Squadron RAAF in Egypt, organisational elements",
+            "type": "reported",
+            "source": "three"
+          },
+          {
+            "label": "Flights equipped with fighters",
+            "value": 2,
+            "unit": "flights",
+            "period": "August 1940",
+            "scope": "Two of the three flights, Gladiator and Gauntlet fighters",
+            "type": "reported",
+            "source": "three"
+          }
+        ]
+      },
+      {
+        "date": "1941-04-10",
+        "place": "Tobruk",
+        "lat": 32.08,
+        "lng": 23.96,
+        "title": "Tobruk isolated",
+        "action": "Axis forces advanced east while the port held out. The RAF and the Royal Navy supported a garrison increasingly dependent on its maritime connection.",
+        "outcome": "Holding the port denied its facilities to the Axis and imposed a continuing air and sea supply burden on the Allies.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Royal Air Force",
+              "Royal Navy"
+            ]
+          },
+          {
+            "force": "Axis",
+            "members": [
+              "Luftwaffe",
+              "Regia Aeronautica"
+            ]
+          }
+        ],
+        "sources": [
+          "desert"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1942-10-23",
+        "place": "El Alamein",
+        "lat": 30.83,
+        "lng": 28.96,
+        "title": "Second Battle of El Alamein begins",
+        "action": "The Desert Air Force supported the Eighth Army as it attacked in Egypt. The battle grew out of months of air fighting over the desert supply routes.",
+        "outcome": "The breakthrough forced the Axis retreat west and required Allied squadrons to move forward behind the army.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Western Desert Air Force",
+              "British Eighth Army"
+            ]
+          }
+        ],
+        "sources": [
+          "desert",
+          "three"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1942-11-08",
+        "place": "Algiers and the western landing areas",
+        "lat": 36.78,
+        "lng": 3.06,
+        "title": "Operation Torch opens a western front",
+        "action": "Allied forces landed in French Morocco and Algeria. Carriers and newly occupied airfields supported operations at widely separated ports.",
+        "outcome": "Allied columns approached Tunisia from the west, while Axis aircraft and shipping carried reinforcements into the bridgehead.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "US Army",
+              "Royal Navy"
+            ]
+          }
+        ],
+        "sources": [
+          "torch",
+          "flax"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-04-18",
+        "place": "Strait of Sicily, approaches to Tunisia",
+        "lat": 37.14,
+        "lng": 10.95,
+        "title": "Operation Flax and the Tunisian air bridge",
+        "action": "Allied fighters intercepted Axis transports crossing toward or returning from Tunisia. These flights were part of the wider effort to sustain the bridgehead.",
+        "outcome": "Transport losses restricted an increasingly precarious supply route. Aircrew claims and German transport losses require separate returns.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Northwest African Air Forces"
+            ]
+          },
+          {
+            "force": "Axis",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "flax",
+          "desert"
+        ],
+        "figures": [
+          {
+            "label": "Ju 52 transports destroyed",
+            "value": 105,
+            "unit": "aircraft",
+            "period": "April 1943, through month end",
+            "scope": "German air transport losses in the Operation Flax account, wider than the 18 April engagement",
+            "type": "reported",
+            "source": "flax"
+          },
+          {
+            "label": "Ju 52 transports damaged",
+            "value": 22,
+            "unit": "aircraft",
+            "period": "April 1943, through month end",
+            "scope": "German air transport losses in the Operation Flax account, wider than the 18 April engagement",
+            "type": "reported",
+            "source": "flax"
+          },
+          {
+            "label": "Me 323 transports lost",
+            "value": 19,
+            "unit": "aircraft",
+            "period": "April 1943, through month end",
+            "scope": "German air transport losses in the Operation Flax account, wider than the 18 April engagement",
+            "type": "reported",
+            "source": "flax"
+          }
+        ]
+      },
+      {
+        "date": "1943-05-13",
+        "place": "Cap Bon, Tunisia",
+        "lat": 36.79,
+        "lng": 10.72,
+        "title": "Axis resistance ends in Tunisia",
+        "action": "Converging Allied forces captured the remaining Axis positions. The desert and Tunisian air forces could turn to the central Mediterranean.",
+        "outcome": "Surrender ended the North African campaign, bringing Sicily within reach from Allied bases.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "British Eighth Army",
+              "US Army"
+            ]
+          },
+          {
+            "force": "Axis",
+            "members": [
+              "Army Group Africa"
+            ]
+          }
+        ],
+        "sources": [
+          "torch",
+          "three"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "malta",
+      "sicily"
+    ]
+  },
+  {
+    "id": "leningrad",
+    "name": "Siege of Leningrad and the Ladoga airlift",
+    "theater": "east",
+    "start": "1941-09",
+    "end": "1944-01",
+    "lat": 59.93,
+    "lng": 30.33,
+    "question": "What could aircraft carry into a city cut off by land?",
+    "objective": "The siege isolated Leningrad from its normal supply routes. Aircraft carried high-priority food and ammunition in and evacuated people on return flights, alongside a much larger Ladoga transport effort.",
+    "turningPoint": "The autumn 1941 transport returns record both directions of flight. In January 1943 a narrow land corridor changed the supply situation.",
+    "consequence": "A year later the siege was lifted. Air transport had relieved some shortages and taken civilians to safety, while hunger killed on a scale the airlift could not prevent.",
+    "gap": "The transport organisations and the city evacuation commission used different time windows and registers. Food is included in cargo totals.",
+    "episodes": [
+      {
+        "date": "1941-09-13",
+        "place": "Leningrad and the Ladoga approaches",
+        "lat": 59.96,
+        "lng": 30.59,
+        "title": "Start of the autumn airlift reporting period",
+        "action": "Soviet civil and military transport crews flew priority supplies into the besieged city and carried people and industrial items east on return flights.",
+        "outcome": "Archived returns count flights, inbound cargo and outbound passengers separately. The reporting window here ends on 31 December.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "Moscow Special Purpose Air Group",
+              "Northern Special Air Group"
+            ]
+          }
+        ],
+        "sources": [
+          "ladoga",
+          "siege"
+        ],
+        "figures": [
+          {
+            "label": "Transport flights in the return",
+            "value": 3115,
+            "unit": "flights",
+            "period": "13 September–31 December 1941",
+            "scope": "Combined transport aviation return",
+            "type": "reported",
+            "source": "ladoga"
+          },
+          {
+            "label": "Cargo brought into Leningrad",
+            "value": 6186.6,
+            "unit": "tonnes",
+            "period": "13 September–31 December 1941",
+            "scope": "All inbound cargo in the transport return",
+            "type": "reported",
+            "source": "ladoga"
+          },
+          {
+            "label": "Food brought into Leningrad",
+            "value": 4325.4,
+            "unit": "tonnes",
+            "period": "13 September–31 December 1941",
+            "scope": "Food subset of 6,186.6 tonnes inbound",
+            "type": "reported",
+            "source": "ladoga"
+          },
+          {
+            "label": "People flown out",
+            "value": 58301,
+            "unit": "people",
+            "period": "13 September–31 December 1941",
+            "scope": "Transport aviation reporting series, outward journeys",
+            "type": "reported",
+            "source": "ladoga"
+          }
+        ]
+      },
+      {
+        "date": "1941-09-23",
+        "title": "Air raids on the Baltic Fleet at Kronstadt",
+        "place": "Kronstadt",
+        "lat": 59.99,
+        "lng": 29.77,
+        "action": "German bombers attacked warships in and around Kronstadt over several days. Soviet shipboard and shore-based guns contested the attacks. Marat sustained catastrophic damage.",
+        "outcome": "The damaged battleship settled in shallow water. Some of its guns remained available for the defence of Leningrad, qualifying the German description of the ship as sunk.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Sturzkampfgeschwader 2"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Baltic Fleet",
+              "Marat"
+            ]
+          }
+        ],
+        "sources": [
+          "kron"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-01-18",
+        "place": "Shlisselburg, south shore of Lake Ladoga",
+        "lat": 59.95,
+        "lng": 31.04,
+        "title": "Operation Iskra opens a corridor",
+        "action": "The Leningrad and Volkhov fronts broke through south of Lake Ladoga. The corridor restored a narrow land connection to the city.",
+        "outcome": "A railway could be built through the corridor, changing the burden on the lake and air routes even while the siege continued.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "Leningrad Front",
+              "Volkhov Front"
+            ]
+          }
+        ],
+        "sources": [
+          "siege"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-01-27",
+        "place": "Leningrad",
+        "lat": 59.93,
+        "lng": 30.33,
+        "title": "Siege lifted",
+        "action": "A Soviet offensive drove German forces far enough from Leningrad to end the siege. The city marked its liberation on 27 January.",
+        "outcome": "The immediate siege ended after more than two years. Much of the city's population and infrastructure had already been lost.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "Leningrad Front"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Army Group North"
+            ]
+          }
+        ],
+        "sources": [
+          "siege"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "barbarossa",
+      "finland"
+    ]
+  },
+  {
+    "id": "finland",
+    "name": "Finland, the Winter War and Continuation War",
+    "theater": "north",
+    "start": "1939-11",
+    "end": "1944-09",
+    "lat": 60.36,
+    "lng": 25.42,
+    "question": "How did the air war over Finland change between the two wars?",
+    "objective": "In the Winter War a small Finnish air force defended cities and supported troops against a much larger Soviet force. Hostilities resumed in June 1941 under different strategic circumstances.",
+    "turningPoint": "Soviet long-range aviation attacked Helsinki on three nights in February 1944. The summer offensive brought the air battle back to the Karelian Isthmus.",
+    "consequence": "Finland left the war against the Soviet Union in September 1944. The municipal damage record and Soviet operations over the front describe distinct parts of the campaign.",
+    "gap": "The wars were separated by the 1940–41 interim peace. February totals combine three Helsinki raids, and the inner-city count is part of the wider city total.",
+    "episodes": [
+      {
+        "date": "1939-11-30",
+        "place": "Helsinki",
+        "lat": 60.17,
+        "lng": 24.94,
+        "title": "Winter War opens with attacks on Finnish cities",
+        "action": "Soviet aviation attacked Helsinki as Soviet ground forces crossed the frontier. Finnish fighters and anti-aircraft units contested raids throughout the winter.",
+        "outcome": "The March 1940 peace ended this phase. Finland continued building its air arm during the interval before the next war.",
+        "groups": [
+          {
+            "force": "Finnish",
+            "members": [
+              "Finnish Air Force"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Soviet Air Forces"
+            ]
+          }
+        ],
+        "sources": [
+          "winter"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1941-06-25",
+        "place": "Helsinki and southern Finland",
+        "lat": 60.17,
+        "lng": 24.94,
+        "title": "Air attacks and the opening of the Continuation War",
+        "action": "Soviet aircraft attacked targets in Finland days after Germany invaded the Soviet Union. Finland entered a second war against the Soviet Union.",
+        "outcome": "The air and ground fronts reopened after the interim peace. Finnish and German forces now operated against a common enemy.",
+        "groups": [
+          {
+            "force": "Finnish",
+            "members": [
+              "Finnish Air Force"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Soviet Air Forces"
+            ]
+          }
+        ],
+        "sources": [
+          "continuation"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-02-06",
+        "place": "Helsinki",
+        "lat": 60.17,
+        "lng": 24.94,
+        "title": "Three nights of bombing against Helsinki",
+        "action": "Soviet long-range aviation attacked on 6–7, 16–17 and 26–27 February. Finland’s 1st Anti-Aircraft Regiment defended the capital.",
+        "outcome": "Helsinki’s historical account distinguishes bombs dropped across the operation from impacts inside the city and in its central districts.",
+        "groups": [
+          {
+            "force": "Finnish",
+            "members": [
+              "1st Anti-Aircraft Regiment"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Long-Range Aviation (ADD)"
+            ]
+          }
+        ],
+        "sources": [
+          "helsinki"
+        ],
+        "figures": [
+          {
+            "label": "Bombs dropped across the operation",
+            "value": 16500,
+            "unit": "bombs",
+            "period": "Three raids, February 1944",
+            "scope": "Soviet operation aimed at Helsinki, city estimate",
+            "type": "approximate",
+            "source": "helsinki"
+          },
+          {
+            "label": "Bombs falling within Helsinki",
+            "value": 670,
+            "unit": "bombs",
+            "period": "Three raids, February 1944",
+            "scope": "Wider city area in Helsinki account",
+            "type": "approximate",
+            "source": "helsinki"
+          },
+          {
+            "label": "Bombs falling in the inner city",
+            "value": 530,
+            "unit": "bombs",
+            "period": "Three raids, February 1944",
+            "scope": "Inner-city impacts, subset of city count",
+            "type": "approximate",
+            "source": "helsinki"
+          }
+        ]
+      },
+      {
+        "date": "1944-06-09",
+        "place": "Karelian Isthmus and Viipuri (Vyborg)",
+        "lat": 60.43,
+        "lng": 29.6,
+        "title": "Soviet summer offensive on the isthmus",
+        "action": "Soviet forces opened their offensive against Finnish positions. Weather affected the planned participation of long-range aviation near Viipuri.",
+        "outcome": "The advance forced Finnish units back. Operational plans, aborts and actual arrivals over a target describe different levels of effort.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "Long-Range Aviation (ADD)"
+            ]
+          },
+          {
+            "force": "Finnish",
+            "members": [
+              "Finnish Defence Forces"
+            ]
+          }
+        ],
+        "sources": [
+          "karelia"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-09-19",
+        "place": "Helsinki and Moscow",
+        "lat": 60.17,
+        "lng": 24.94,
+        "title": "Armistice with the Soviet Union",
+        "action": "After the September ceasefire Finland signed the Moscow Armistice. This ended the Continuation War and required the removal of German forces.",
+        "outcome": "The northern fighting that followed against Germany was a separate war, with a different opponent.",
+        "groups": [
+          {
+            "force": "Finnish",
+            "members": [
+              "Finnish Defence Forces"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Red Army"
+            ]
+          }
+        ],
+        "sources": [
+          "continuation"
+        ],
+        "figures": []
+      }
+    ],
+    "intervals": [
+      [
+        "1939-11",
+        "1940-03"
+      ],
+      [
+        "1941-06",
+        "1944-09"
+      ]
+    ],
+    "related": [
+      "leningrad"
+    ]
+  },
+  {
+    "id": "crimea-kuban",
+    "name": "Crimea, the Caucasus and the Kuban bridgehead",
+    "theater": "east",
+    "start": "1941-10",
+    "end": "1944-05",
+    "lat": 45.13,
+    "lng": 36.7,
+    "question": "Why did the air war repeatedly return to the Kerch Strait?",
+    "objective": "The strait connected Crimea with the Taman peninsula. Sevastopol, the Caucasus advance and the Kuban bridgehead each put different demands on air and sea transport.",
+    "turningPoint": "The German retreat from the Caucasus left an army dependent on a bridgehead. The Luftwaffe diverted transport and rescue aircraft to its supply.",
+    "consequence": "The Axis evacuated Taman in October 1943. Soviet forces subsequently recovered Crimea, including Sevastopol, in May 1944.",
+    "gap": "The flying-boat allocation describes one element of the transport effort. It cannot be treated as the entire airlift or as the strength of the opposing air armies.",
+    "episodes": [
+      {
+        "date": "1941-12-17",
+        "title": "Second Axis assault on Sevastopol",
+        "place": "Sevastopol",
+        "lat": 44.61,
+        "lng": 33.53,
+        "action": "German IV Air Corps returned to support the December assault on the fortress. The campaign history identifies separate bomber, dive-bomber and fighter allocations.",
+        "outcome": "The attack failed to secure Sevastopol, and IV Air Corps moved away. The forces committed here preceded the much larger June 1942 assault.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "IV Air Corps",
+              "German Eleventh Army"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Black Sea Fleet"
+            ]
+          }
+        ],
+        "sources": [
+          "crimea"
+        ],
+        "figures": [
+          {
+            "label": "Bombers allocated",
+            "value": 60,
+            "unit": "aircraft",
+            "period": "December 1941 assault",
+            "scope": "IV Air Corps commitment at the second assault",
+            "type": "reported",
+            "source": "crimea"
+          },
+          {
+            "label": "Dive bombers allocated",
+            "value": 25,
+            "unit": "aircraft",
+            "period": "December 1941 assault",
+            "scope": "IV Air Corps commitment at the second assault",
+            "type": "reported",
+            "source": "crimea"
+          },
+          {
+            "label": "Bf 109 fighters allocated",
+            "value": 25,
+            "unit": "aircraft",
+            "period": "December 1941 assault",
+            "scope": "IV Air Corps commitment at the second assault",
+            "type": "reported",
+            "source": "crimea"
+          }
+        ]
+      },
+      {
+        "date": "1942-06-07",
+        "place": "Sevastopol",
+        "lat": 44.61,
+        "lng": 33.53,
+        "title": "Final Axis ground assault on Sevastopol",
+        "action": "German and Romanian forces attacked the Soviet fortress after an air and artillery bombardment. Soviet defenders and the Black Sea Fleet struggled to keep the garrison supplied.",
+        "outcome": "The last defences collapsed in early July. The same port would change hands again less than two years later.",
+        "groups": [
+          {
+            "force": "Axis",
+            "members": [
+              "German Eleventh Army",
+              "VIII Air Corps"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Black Sea Fleet"
+            ]
+          }
+        ],
+        "sources": [
+          "crimea"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-01-24",
+        "place": "Taman and Kerch Strait",
+        "lat": 45.3,
+        "lng": 36.61,
+        "title": "Supplying the Kuban bridgehead",
+        "action": "As the German Seventeenth Army withdrew from the Caucasus, aircraft supplemented the limited crossing capacity. Air-sea rescue flying boats joined the transport effort.",
+        "outcome": "The bridgehead held through the spring. Diverting specialised aircraft illustrates the cost of sustaining it in winter.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Seenotstaffel 7",
+              "Seenotstaffel 8",
+              "German Seventeenth Army"
+            ]
+          }
+        ],
+        "sources": [
+          "kuban",
+          "blacksea"
+        ],
+        "figures": [
+          {
+            "label": "Do 24T flying boats diverted to transport",
+            "value": 18,
+            "unit": "aircraft",
+            "period": "Winter 1943 bridgehead airlift",
+            "scope": "Combined allocation from Seenotstaffeln 7 and 8",
+            "type": "reported",
+            "source": "kuban"
+          }
+        ],
+        "dating": "period-anchor"
+      },
+      {
+        "date": "1943-04-17",
+        "place": "Myskhako, south of Novorossiysk",
+        "lat": 44.65,
+        "lng": 37.76,
+        "title": "Air fighting above the Soviet beachhead",
+        "action": "German aircraft supported the attempt to eliminate the Soviet foothold at Myskhako. Soviet aviation contested the airspace over a narrow coastal front.",
+        "outcome": "The beachhead survived. Air fighting continued across the Kuban as Soviet forces pressed toward Krymskaya.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftflotte 4"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "4th Air Army"
+            ]
+          }
+        ],
+        "sources": [
+          "kuban",
+          "blacksea"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-10-09",
+        "place": "Taman peninsula",
+        "lat": 45.2,
+        "lng": 36.76,
+        "title": "Axis evacuation of Taman completed",
+        "action": "Axis troops crossed into Crimea after a staged withdrawal from the bridgehead. Soviet forces recovered the peninsula.",
+        "outcome": "The Kerch Strait became the front line again, with air and sea movement central to the next campaign.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "German Seventeenth Army"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "North Caucasus Front"
+            ]
+          }
+        ],
+        "sources": [
+          "kuban",
+          "blacksea"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-05-09",
+        "place": "Sevastopol",
+        "lat": 44.61,
+        "lng": 33.53,
+        "title": "Soviet troops retake Sevastopol",
+        "action": "The Soviet advance through Crimea reached Sevastopol as Axis forces attempted to evacuate by sea and air.",
+        "outcome": "The city fell on 9 May and the remaining Axis positions in Crimea collapsed in the following days.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "4th Ukrainian Front",
+              "Black Sea Fleet"
+            ]
+          },
+          {
+            "force": "Axis",
+            "members": [
+              "German Seventeenth Army"
+            ]
+          }
+        ],
+        "sources": [
+          "crimea44",
+          "siege"
+        ],
+        "figures": [
+          {
+            "label": "Personnel evacuated by sea",
+            "value": 71238,
+            "unit": "people",
+            "period": "14–27 April 1944",
+            "scope": "Early evacuation interval, before the final Sevastopol fighting",
+            "type": "reported",
+            "source": "crimea44"
+          },
+          {
+            "label": "German personnel evacuated",
+            "value": 28394,
+            "unit": "people",
+            "period": "14–27 April 1944",
+            "scope": "Subset of the early maritime evacuation",
+            "type": "reported",
+            "source": "crimea44"
+          },
+          {
+            "label": "Romanian personnel evacuated",
+            "value": 20779,
+            "unit": "people",
+            "period": "14–27 April 1944",
+            "scope": "Subset of the early maritime evacuation",
+            "type": "reported",
+            "source": "crimea44"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "barbarossa",
+      "stalingrad"
+    ]
+  },
+  {
+    "id": "dnieper-korsun",
+    "name": "Ukraine after Kursk, the Dnieper and Korsun",
+    "theater": "east",
+    "start": "1943-08",
+    "end": "1944-02",
+    "lat": 49.7,
+    "lng": 31.44,
+    "question": "What could airborne troops and air transport contribute after Kursk?",
+    "objective": "The Red Army sought bridgeheads across the Dnieper during its advance into Ukraine. Aircraft carried parachute troops across the river and later supported very different fighting around Korsun.",
+    "turningPoint": "The September drop scattered Soviet formations. Survivors regrouped and later fought alongside ground forces. The German pocket at Korsun created an air-supply emergency the following winter.",
+    "consequence": "Kyiv returned to Soviet control and the German front retreated. At Korsun aircraft sustained a pocket temporarily before its surviving troops broke out.",
+    "gap": "The regrouped airborne strength is an October estimate. It is smaller in scope than the original lift and says nothing about total German air transport losses at Korsun.",
+    "episodes": [
+      {
+        "date": "1943-09-24",
+        "place": "Bukryn bend, Dnieper",
+        "lat": 49.99,
+        "lng": 31.34,
+        "title": "Airborne landing west of the Dnieper",
+        "action": "Soviet troops jumped on the night of 24–25 September. Scattered drops and communications failures made it difficult to assemble the planned force.",
+        "outcome": "Survivors joined local partisans and formed a composite brigade. Its October strength is a later observation than the initial landings.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "3rd Guards Airborne Brigade",
+              "5th Guards Airborne Brigade"
+            ]
+          }
+        ],
+        "sources": [
+          "dnieper"
+        ],
+        "figures": [
+          {
+            "label": "Strength of the regrouped brigade",
+            "value": 1200,
+            "unit": "people",
+            "period": "October 1943",
+            "scope": "Composite brigade at the end of October, reported at up to 1,200 including partisans",
+            "type": "upper bound",
+            "source": "dnieper"
+          }
+        ]
+      },
+      {
+        "date": "1943-11-06",
+        "place": "Kyiv (Kiev)",
+        "lat": 50.45,
+        "lng": 30.52,
+        "title": "Kyiv recaptured",
+        "action": "Soviet armies advanced from bridgeheads north of Kyiv. Fighting at other crossings continued after the city fell.",
+        "outcome": "The Dnieper line was breached. Farther downstream regrouped parachutists later supported the 52nd Army’s crossing operations.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "1st Ukrainian Front",
+              "52nd Army"
+            ]
+          }
+        ],
+        "sources": [
+          "kyiv",
+          "dnieper"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-01-28",
+        "place": "Korsun-Shevchenkivskyi (Cherkassy pocket)",
+        "lat": 49.42,
+        "lng": 31.26,
+        "title": "Korsun pocket closes",
+        "action": "The encirclement isolated German formations. Luftwaffe transports carried supplies into the pocket and took wounded men out when landing was possible.",
+        "outcome": "Deteriorating conditions reduced the value of the airstrip. Surviving troops attempted a ground breakout in mid-February.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "1st Ukrainian Front",
+              "2nd Ukrainian Front"
+            ]
+          }
+        ],
+        "sources": [
+          "korsun"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-02-08",
+        "title": "Supplies landed and dropped at Korsun",
+        "place": "Korsun airfield and pocket",
+        "lat": 49.42,
+        "lng": 31.26,
+        "action": "Initial reports distinguished aircraft landing stores at the airfield from containers dropped to the garrison. The amounts landed were reported in separate units for ammunition and fuel.",
+        "outcome": "The day brought a temporary improvement in air supply. The initial return could not establish how many of the dropped containers ground troops recovered.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Gruppe Stemmermann",
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "korsDay",
+          "korsun"
+        ],
+        "figures": [
+          {
+            "label": "Ammunition landed",
+            "value": 20,
+            "unit": "tons",
+            "period": "1944-02-08",
+            "scope": "Initial daily supply reports for the Korsun pocket",
+            "type": "reported",
+            "source": "korsDay"
+          },
+          {
+            "label": "Fuel landed",
+            "value": 14,
+            "unit": "cubic metres",
+            "period": "1944-02-08",
+            "scope": "Initial daily supply reports for the Korsun pocket",
+            "type": "reported",
+            "source": "korsDay"
+          },
+          {
+            "label": "Supply containers dropped",
+            "value": 127,
+            "unit": "containers",
+            "period": "1944-02-08",
+            "scope": "Initial daily supply reports for the Korsun pocket",
+            "type": "reported",
+            "source": "korsDay"
+          }
+        ]
+      }
+    ],
+    "related": [
+      "kursk",
+      "romania"
+    ]
+  },
+  {
+    "id": "romania",
+    "name": "Romania, Ploiești and the August reversal",
+    "theater": "east",
+    "start": "1942-06",
+    "end": "1944-09",
+    "lat": 44.94,
+    "lng": 26.03,
+    "question": "Did attacks on Ploiești permanently remove Romanian oil from Axis supply?",
+    "objective": "Romanian oil mattered to the Axis and placed the refineries at Ploiești high on the Allied target list. Romania’s air force initially helped defend the country alongside Germany.",
+    "turningPoint": "A costly American attack in 1943 was followed by a sustained 1944 offensive. A Soviet ground breakthrough and Romania’s August change of sides then transformed the situation.",
+    "consequence": "Bombing interrupted refining to varying degrees. Loss of access to Romanian oil and the reversal of Romanian military alignment went beyond the effects of any individual raid.",
+    "gap": "Tidal Wave’s losses belong to one mission. A change of allegiance in August requires Romanian forces to be identified by date.",
+    "episodes": [
+      {
+        "date": "1942-06-12",
+        "place": "Ploiești (Ploesti)",
+        "lat": 44.94,
+        "lng": 26.02,
+        "title": "Early American raid on the oil region",
+        "action": "American heavy bombers operating from the Middle East attacked the Romanian oil area, an early demonstration of the distance involved.",
+        "outcome": "The limited raid preceded the much larger operations mounted from North Africa and Italy.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Halverson Detachment"
+            ]
+          }
+        ],
+        "sources": [
+          "roman"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1943-08-01",
+        "place": "Ploiești",
+        "lat": 44.94,
+        "lng": 26.02,
+        "title": "Operation Tidal Wave",
+        "action": "American B-24 groups flew from Libya against the refineries. Romanian and German defences inflicted severe losses.",
+        "outcome": "Damage interrupted production but repairs restored much of the capacity. The USAF museum records 54 bombers that failed to return from a force of 178.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Ninth Air Force",
+              "Eighth Air Force"
+            ]
+          },
+          {
+            "force": "Axis",
+            "members": [
+              "Royal Romanian Air Force",
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "ploesti",
+          "roman",
+          "tidal",
+          "romOil"
+        ],
+        "figures": [
+          {
+            "label": "Bombers on the mission",
+            "value": 178,
+            "unit": "aircraft",
+            "period": "1943-08-01",
+            "scope": "USAF museum’s Tidal Wave mission population",
+            "type": "reported",
+            "source": "tidal"
+          },
+          {
+            "label": "Aircraft failing to return",
+            "value": 54,
+            "unit": "aircraft",
+            "period": "1943-08-01",
+            "scope": "Same museum return, missing from mission rather than all subsequent write-offs",
+            "type": "reported",
+            "source": "tidal"
+          },
+          {
+            "label": "Men listed as captured",
+            "value": 186,
+            "unit": "people",
+            "period": "1943-08-01",
+            "scope": "USAF museum’s Tidal Wave personnel account",
+            "type": "reported",
+            "source": "tidal"
+          },
+          {
+            "label": "Romanian national refinery output",
+            "value": 100747,
+            "unit": "barrels per day",
+            "period": "1943 annual average",
+            "scope": "All Romanian refineries, includes dates before and after Tidal Wave",
+            "type": "reported",
+            "source": "romOil"
+          }
+        ]
+      },
+      {
+        "date": "1944-08-19",
+        "place": "Ploiești",
+        "lat": 44.94,
+        "lng": 26.02,
+        "title": "Final Fifteenth Air Force raid on Ploiești",
+        "action": "American bombers struck the refinery area for the final time as Soviet forces prepared their offensive in Romania.",
+        "outcome": "The air campaign ended days before the Romanian government changed sides. It had involved repeated attacks from Italian bases.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "Fifteenth Air Force"
+            ]
+          }
+        ],
+        "sources": [
+          "roman",
+          "romOil"
+        ],
+        "figures": [
+          {
+            "label": "Crude oil produced in Romania",
+            "value": 71560,
+            "unit": "barrels per day",
+            "period": "1944 annual average",
+            "scope": "National crude production, separate from refined output and unrelated to any one raid",
+            "type": "reported",
+            "source": "romOil"
+          }
+        ]
+      },
+      {
+        "date": "1944-08-23",
+        "place": "Bucharest",
+        "lat": 44.43,
+        "lng": 26.1,
+        "title": "Romania changes sides",
+        "action": "King Michael removed Antonescu as Soviet forces broke through in the Iași–Chișinău offensive. German forces attempted to overturn the change, including attacks on Bucharest.",
+        "outcome": "Romanian pilots fought former German allies. Their later operations over Hungary belong to a different coalition from their defence of the oil region.",
+        "groups": [
+          {
+            "force": "Romanian",
+            "members": [
+              "Royal Romanian Air Force"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftwaffe"
+            ]
+          }
+        ],
+        "sources": [
+          "romanian",
+          "roman"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "dnieper-korsun",
+      "hungary"
+    ]
+  },
+  {
+    "id": "hungary",
+    "name": "Hungary, Budapest and Lake Balaton",
+    "theater": "east",
+    "start": "1944-10",
+    "end": "1945-03",
+    "lat": 47.44,
+    "lng": 18.9,
+    "question": "Could the isolated Budapest garrison be supplied by air through the winter?",
+    "objective": "The Debrecen and Budapest offensives brought Soviet, Romanian, German and Hungarian aviation over a rapidly moving front. Encirclement made supply flights essential to the Budapest defenders.",
+    "turningPoint": "Air transport continued through bad weather and Soviet opposition. A German retrospective return and a second account give substantially different totals.",
+    "consequence": "The capital fell in February. Fighting shifted to Lake Balaton, where the German March offensive failed to reverse the Soviet advance.",
+    "gap": "The two airlift figures are competing estimates for the same interval. Some dropped supplies never reached the defenders.",
+    "episodes": [
+      {
+        "date": "1944-10-06",
+        "place": "Debrecen",
+        "lat": 47.53,
+        "lng": 21.63,
+        "title": "Debrecen offensive begins",
+        "action": "The Soviet advance into Hungary brought major air fighting above mobile ground forces. German and Hungarian formations opposed the advance, while Romania now fought on the Soviet side.",
+        "outcome": "The campaign moved toward Budapest after the Debrecen operation ended in late October.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "2nd Ukrainian Front"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Luftflotte 4"
+            ]
+          }
+        ],
+        "sources": [
+          "hungary"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-12-26",
+        "place": "Budapest",
+        "lat": 47.5,
+        "lng": 19.04,
+        "title": "Encirclement of Budapest",
+        "action": "The city was cut off and the German and Hungarian defenders depended on an airlift. The Budapest supply staff recorded deliveries while ground fighting consumed much of the city.",
+        "outcome": "A 25 February German return and an alternative figure quoted in the Hungarian study disagree on the tonnage. Neither measures what individual units recovered.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Versorgungsstab Budapest",
+              "Luftwaffe"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "2nd Ukrainian Front"
+            ]
+          }
+        ],
+        "sources": [
+          "buda",
+          "hungary"
+        ],
+        "figures": [
+          {
+            "label": "Military supplies in the OKL return",
+            "value": 1975.3,
+            "unit": "tonnes",
+            "period": "29 December 1944–15 February 1945",
+            "scope": "25 February German return, Versorgungsstab Budapest",
+            "type": "reported",
+            "source": "buda"
+          },
+          {
+            "label": "Alternative total quoted by the study",
+            "value": 1515.33,
+            "unit": "tonnes",
+            "period": "29 December 1944–15 February 1945",
+            "scope": "Alternative for the same airlift, non-additive",
+            "type": "alternative report",
+            "source": "buda"
+          }
+        ]
+      },
+      {
+        "date": "1945-02-13",
+        "place": "Budapest",
+        "lat": 47.5,
+        "lng": 19.04,
+        "title": "Resistance in Budapest ends",
+        "action": "The last organised Axis resistance in the capital collapsed after a failed breakout. Supplies dropped in the later phases had often fallen outside defenders’ control.",
+        "outcome": "The Soviet forces could shift their effort west. The airlift had failed to secure the garrison’s survival.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Versorgungsstab Budapest"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "2nd Ukrainian Front"
+            ]
+          }
+        ],
+        "sources": [
+          "buda",
+          "hungary"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-03-06",
+        "place": "Lake Balaton",
+        "lat": 46.99,
+        "lng": 18.04,
+        "title": "Lake Balaton offensive opens",
+        "action": "Germany mounted its final major offensive in Hungary. Soviet and Axis aircraft supported the ground battle in difficult early-spring conditions.",
+        "outcome": "The German attack stalled and the Soviet advance resumed. The Balaton defensive operation ran through 15 March.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "3rd Ukrainian Front"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Army Group South"
+            ]
+          }
+        ],
+        "sources": [
+          "hungary"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "romania"
+    ]
+  },
+  {
+    "id": "baltic-courland",
+    "name": "Baltic states, Tallinn and Courland",
+    "theater": "east",
+    "start": "1944-03",
+    "end": "1945-05",
+    "lat": 57.74,
+    "lng": 23.44,
+    "question": "How did the Baltic air war change as the ground front moved toward the coast?",
+    "objective": "Long-range aircraft struck Tallinn while it remained under German occupation. Later the fighting shifted to withdrawal routes and the sea supply of German forces isolated in Courland.",
+    "turningPoint": "The evacuation of Estonia in September and the severing of the land route to Courland in October increased the importance of shipping.",
+    "consequence": "The Tallinn raid devastated civilian areas. Army Group Courland retained contact by sea until the final German surrender.",
+    "gap": "The Soviet flying return counts flights and completed missions separately. Shipping casualties during evacuation and the later Courland supply traffic belong to different operations.",
+    "episodes": [
+      {
+        "date": "1944-03-09",
+        "place": "Tallinn",
+        "lat": 59.44,
+        "lng": 24.75,
+        "title": "Soviet night raid on Tallinn",
+        "action": "Soviet long-range aviation attacked in two waves on 9–10 March. Researchers compared its headquarters returns with damage recorded in the city.",
+        "outcome": "Residential neighbourhoods and cultural buildings burned. The flying return separates all flights from those credited with accomplishing the mission.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "Long-Range Aviation (ADD)"
+            ]
+          }
+        ],
+        "sources": [
+          "tallinn"
+        ],
+        "figures": [
+          {
+            "label": "Flights recorded",
+            "value": 659,
+            "unit": "flights",
+            "period": "9–10 March 1944",
+            "scope": "ADD headquarters Tallinn return, both waves",
+            "type": "reported",
+            "source": "tallinn"
+          },
+          {
+            "label": "Flights credited with mission completion",
+            "value": 624,
+            "unit": "flights",
+            "period": "9–10 March 1944",
+            "scope": "Subset of the 659 flights in the same return",
+            "type": "reported",
+            "source": "tallinn"
+          },
+          {
+            "label": "Bomb weight in the return",
+            "value": 816.42,
+            "unit": "tonnes",
+            "period": "9–10 March 1944",
+            "scope": "Soviet headquarters return, both waves",
+            "type": "reported",
+            "source": "tallinn"
+          },
+          {
+            "label": "Aircraft reported missing",
+            "value": 11,
+            "unit": "aircraft",
+            "period": "9–10 March 1944",
+            "scope": "ADD aircraft listed missing in Soviet return",
+            "type": "reported",
+            "source": "tallinn"
+          }
+        ]
+      },
+      {
+        "date": "1944-09-22",
+        "place": "Tallinn and Gulf of Riga evacuation routes",
+        "lat": 59.44,
+        "lng": 24.75,
+        "title": "Withdrawal from Tallinn and loss of Moero",
+        "action": "German troops evacuated Estonia as Soviet forces entered Tallinn. The German naval diary records the loss of the evacuation ship Moero in a Soviet air attack at sea.",
+        "outcome": "The evacuation moved troops, wounded people and civilians. The naval diary documents a separate maritime loss during the retreat.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Kriegsmarine"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "Red Army"
+            ]
+          }
+        ],
+        "sources": [
+          "estonia",
+          "naval"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1944-10-10",
+        "place": "Memel approaches and Courland",
+        "lat": 55.72,
+        "lng": 21.12,
+        "title": "Army Group North cut off in Courland",
+        "action": "Soviet forces reached the Baltic, separating the German forces in Latvia from East Prussia. Shipping became the main connection with German-held ports.",
+        "outcome": "German formations remained in Courland over the winter. Air and naval operations continued along the routes that sustained them.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Army Group North",
+              "Kriegsmarine"
+            ]
+          }
+        ],
+        "sources": [
+          "courland"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-05-08",
+        "place": "Liepāja (Libau), Courland",
+        "lat": 56.51,
+        "lng": 21.01,
+        "title": "Surrender in Courland",
+        "action": "With Germany’s capitulation the isolated army group surrendered in Latvia. The ports had remained essential throughout months of fighting.",
+        "outcome": "The surrender closed the Courland campaign. Movements of soldiers and refugees by sea had continued into the final days.",
+        "groups": [
+          {
+            "force": "German",
+            "members": [
+              "Army Group Courland",
+              "Kriegsmarine"
+            ]
+          }
+        ],
+        "sources": [
+          "courland"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "bagration",
+      "east-prussia"
+    ]
+  },
+  {
+    "id": "vistula-oder",
+    "name": "Vistula–Oder offensive and the Warsaw advance",
+    "theater": "east",
+    "start": "1945-01",
+    "end": "1945-02",
+    "lat": 52.05,
+    "lng": 17.01,
+    "question": "How much could Soviet aviation fly during the opening breakthrough?",
+    "objective": "Soviet armies concentrated in the Vistula bridgeheads for a westward advance into Poland and Germany. Winter weather limited the air support available at the outset.",
+    "turningPoint": "The 16th Air Army recorded limited flying in the first two days of the 1st Belorussian Front’s attack. Improving visibility enabled reconnaissance to follow the German retreat.",
+    "consequence": "Warsaw fell and Soviet troops reached the Oder. The rapid displacement of the front made forward airfields and their supply increasingly important.",
+    "gap": "The two-day sortie total belongs to one air army on one front. The 1st Ukrainian Front opened its own offensive two days earlier.",
+    "episodes": [
+      {
+        "date": "1945-01-12",
+        "place": "Sandomierz bridgehead",
+        "lat": 50.55,
+        "lng": 21.64,
+        "title": "1st Ukrainian Front leaves the Vistula bridgehead",
+        "action": "Konev’s front attacked from the Sandomierz area, opening the southern arm of the offensive in winter conditions.",
+        "outcome": "The ground advance developed rapidly, before the opening of the corresponding offensive farther north.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "1st Ukrainian Front",
+              "2nd Air Army"
+            ]
+          }
+        ],
+        "sources": [
+          "prussia",
+          "oder",
+          "vvs"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-01-14",
+        "place": "Magnuszew bridgehead",
+        "lat": 51.76,
+        "lng": 21.38,
+        "title": "1st Belorussian Front attacks",
+        "action": "Zhukov’s front attacked from the central Vistula bridgeheads. Poor weather restricted the 16th Air Army to a limited number of sorties in the first two days.",
+        "outcome": "On 16 January reconnaissance could identify retreating columns and routes. The two-day return documents how little of the air army’s potential had initially been available.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "16th Air Army",
+              "1st Belorussian Front"
+            ]
+          }
+        ],
+        "sources": [
+          "vistulaJournal",
+          "vvs"
+        ],
+        "figures": [
+          {
+            "label": "Sorties by the 16th Air Army",
+            "value": 276,
+            "unit": "sorties",
+            "period": "14–15 January 1945",
+            "scope": "1st Belorussian Front, first two days of its offensive",
+            "type": "reported",
+            "source": "vistulaJournal"
+          }
+        ]
+      },
+      {
+        "date": "1945-01-17",
+        "place": "Warsaw",
+        "lat": 52.23,
+        "lng": 21.01,
+        "title": "Warsaw taken",
+        "action": "Polish and Soviet troops entered Warsaw as German units withdrew. Soviet aviation increasingly operated against columns west of the city.",
+        "outcome": "The city lay in ruins after the occupation and 1944 uprising. The westward offensive continued toward Poznań and the Oder.",
+        "groups": [
+          {
+            "force": "Allied",
+            "members": [
+              "First Polish Army"
+            ]
+          },
+          {
+            "force": "Soviet",
+            "members": [
+              "1st Belorussian Front"
+            ]
+          }
+        ],
+        "sources": [
+          "vvs",
+          "prussia"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-01-31",
+        "place": "Küstrin (Kostrzyn), Oder valley",
+        "lat": 52.59,
+        "lng": 14.65,
+        "title": "Advance reaches the Oder",
+        "action": "Forward troops of the 1st Belorussian Front reached the Oder and established bridgeheads north of Küstrin. Air units were still moving forward across Poland.",
+        "outcome": "The river became the next operational boundary. Fighting for the bridgeheads continued before the April attack on Berlin.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "1st Belorussian Front",
+              "16th Air Army"
+            ]
+          }
+        ],
+        "sources": [
+          "prussia",
+          "vvs"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "bagration",
+      "berlin"
+    ]
+  },
+  {
+    "id": "east-prussia",
+    "name": "East Prussia, Königsberg and Pillau",
+    "theater": "east",
+    "start": "1945-01",
+    "end": "1945-04",
+    "lat": 54.71,
+    "lng": 20.51,
+    "question": "What can the records establish about the air attack during the fall of Königsberg?",
+    "objective": "The Soviet offensive isolated German centres of resistance in East Prussia. Civilians fled toward coastal evacuation routes as the land front contracted.",
+    "turningPoint": "The April assault concentrated several Soviet air formations over Königsberg. Even historical studies that agree on the bomber force give different fighter-escort counts.",
+    "consequence": "The city capitulated on 9 April. Fighting for Pillau and the coastal evacuation routes continued after the surrender of Königsberg.",
+    "gap": "The two escort counts describe the same 7 April attack. They are alternatives and cannot be summed or turned into a confirmed loss figure.",
+    "episodes": [
+      {
+        "date": "1945-01-13",
+        "place": "Gumbinnen (Gusev), East Prussia",
+        "lat": 54.59,
+        "lng": 22.2,
+        "title": "East Prussian offensive opens",
+        "action": "The 3rd Belorussian Front began its attack toward Königsberg. Snow and poor visibility limited flying during early stages.",
+        "outcome": "The ground advance isolated German pockets and drove refugees toward the Baltic coast.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "3rd Belorussian Front"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Army Group Centre"
+            ]
+          }
+        ],
+        "sources": [
+          "prussia",
+          "eastref"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-04-07",
+        "place": "Königsberg (Kaliningrad)",
+        "lat": 54.71,
+        "lng": 20.51,
+        "title": "18th Air Army attacks during the assault",
+        "action": "The Soviet long-range force flew a rare mass daylight operation during the ground assault that had begun on 6 April. Baltic Fleet aviation and other air armies also took part in the wider battle.",
+        "outcome": "Two studies give the same number of bombers for this attack and different escort strengths. The city’s capitulation followed on 9 April.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "18th Air Army",
+              "Baltic Fleet aviation",
+              "3rd Belorussian Front"
+            ]
+          }
+        ],
+        "sources": [
+          "prussia",
+          "konig"
+        ],
+        "figures": [
+          {
+            "label": "Bombers in the daylight operation",
+            "value": 516,
+            "unit": "aircraft",
+            "period": "1945-04-07",
+            "scope": "18th Air Army bombers, both cited studies agree",
+            "type": "reported",
+            "source": "prussia"
+          },
+          {
+            "label": "Fighter escort in the long-range aviation study",
+            "value": 108,
+            "unit": "aircraft",
+            "period": "1945-04-07",
+            "scope": "Same Königsberg attack, alternative accounts of escort",
+            "type": "reported",
+            "source": "konig"
+          },
+          {
+            "label": "Fighter escort in Hiestand’s account",
+            "value": 125,
+            "unit": "aircraft",
+            "period": "1945-04-07",
+            "scope": "Same Königsberg attack, alternative to 108",
+            "type": "alternative report",
+            "source": "prussia"
+          }
+        ]
+      },
+      {
+        "date": "1945-04-09",
+        "place": "Königsberg",
+        "lat": 54.71,
+        "lng": 20.51,
+        "title": "Königsberg garrison capitulates",
+        "action": "The German garrison surrendered after the combined Soviet air, artillery and ground assault. Civilian survivors faced displacement and loss of homes.",
+        "outcome": "The fall of the city left the remaining German forces concentrated on the coast.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "3rd Belorussian Front"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Königsberg garrison"
+            ]
+          }
+        ],
+        "sources": [
+          "prussia",
+          "eastref"
+        ],
+        "figures": []
+      },
+      {
+        "date": "1945-04-25",
+        "place": "Pillau (Baltiysk)",
+        "lat": 54.64,
+        "lng": 19.89,
+        "title": "Pillau falls",
+        "action": "Soviet troops reached the Baltic port after fighting on the Samland peninsula. German sea evacuations had carried soldiers and civilians away while the route remained open.",
+        "outcome": "The capture of Pillau closed a major East Prussian port during the final weeks of the European war.",
+        "groups": [
+          {
+            "force": "Soviet",
+            "members": [
+              "3rd Belorussian Front"
+            ]
+          },
+          {
+            "force": "German",
+            "members": [
+              "Kriegsmarine"
+            ]
+          }
+        ],
+        "sources": [
+          "eastref",
+          "prussia"
+        ],
+        "figures": []
+      }
+    ],
+    "related": [
+      "baltic-courland",
+      "vistula-oder"
+    ]
+  }
+]

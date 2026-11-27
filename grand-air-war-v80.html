@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="./dist/europe-return.css"><script defer src="./dist/europe-index.js"></script><script defer src="./dist/europe-return.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#09131b"><meta name="description" content="Grand Air War: European WWII air campaigns, source-backed loss reports, force data and interactive map 1936–1945.">
-<title>Grand Air War Atlas v11.0 · Operational effects</title>
+<title>Grand Air War Atlas v12.0 · Campaign Explorer</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="./dist/grand-air-war-v77.css">
 <link rel="stylesheet" href="./dist/grand-air-war-v80.css?v=10.2">
@@ -21,7 +21,9 @@
 <script defer src="./dist/grand-air-war-v80-studies.js"></script>
 <script defer src="./dist/operational-balance-index.js?v=9.10"></script>
 <script defer src="./dist/force-rosters-data.js?v=10.2"></script><script defer src="./dist/force-rosters-shared.js?v=10.2"></script>
-<script defer src="./dist/grand-air-war-v80-core.js?v=11.0"></script>
+<script defer src="./dist/campaign-expansion-data.js?v=12.0"></script>
+<script defer src="./dist/campaign-expansion.js?v=12.0"></script>
+<script defer src="./dist/grand-air-war-v80-core.js?v=12.0"></script>
 <script defer src="./dist/grand-air-war-v88-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-data.js?v=9.0.0"></script>
 <script defer src="./dist/grand-air-war-v90-campaign-losses.js?v=9.0.0"></script>
@@ -30,15 +32,15 @@
 <script defer src="./dist/grand-air-war-v80-german.js"></script>
 <script defer src="./dist/grand-air-war-v80-lab.js"></script>
 </head><body>
-<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas v11.0 · Campaign Explorer</b></nav></div></header>
+<header class="mast"><div class="shell mast-inner"><div class="brand"><span class="emblem">✦</span><span>GRAND AIR WAR<small>EUROPEAN AIR WAR ATLAS · RESEARCH RELEASE</small></span></div><nav><a href="./?legacy=1">Legacy pilot & aircraft lab</a><a href="./grand-air-war-v76.html">Normandy field notebook</a><a href="https://github.com/hound83/ww2-airwar" target="_blank" rel="noopener noreferrer">Research GitHub</a><b>Live Atlas v12.0 · Campaign Explorer</b></nav></div></header>
 <main class="shell">
-<section class="intro" id="overview"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Read how air power changed the war for the people who flew, the armies they supported and the towns beneath them. Explore a campaign on the map or follow the story across Europe.</p><a class="europe-start" href="./europe.html">Read the seven chapters <span aria-hidden="true">→</span></a></section>
+<section class="intro" id="overview"><div class="eyebrow">1936–1945 · European theatre · interactive research</div><h1>The European <em>air war.</em></h1><p>Read how air power changed the war for the people who flew, the armies they supported and the towns beneath them. Explore a campaign on the map or follow the story across Europe.</p><a class="europe-start" href="./europe.html">Read the seven chapters <span aria-hidden="true">→</span></a> <a class="europe-start" href="./campaign-expansion.html">Explore the 22 new campaigns <span aria-hidden="true">→</span></a></section>
 <nav class="atlas-sections" aria-label="Explore the Atlas"><a href="#overview">Overview</a><a href="#campaigns">Campaigns &amp; operational phases</a><a href="./forces.html">Forces in the field</a><a href="./campaign-evidence.html">Missions and outcomes</a><a href="./operational-effects.html">Operational effects</a><a href="#claim-loss-calculator">Claims and losses</a><a href="./operations-1944.html">1944 mission timeline</a><a href="./operational-balance.html">Operational balance studies</a><a href="#research-library">Independent research library</a><a href="#research-sources">Sources &amp; gaps</a><a href="./?legacy=1">Pilot &amp; aircraft lab ↗</a></nav>
 <section class="timebar" aria-label="Date and theatre controls">
 <div class="time-top"><div><span class="eyebrow">SELECT A HISTORICAL MONTH</span><output id="date-display" for="date-slider">June 1944</output></div><div class="time-actions"><button type="button" id="prev-month" aria-label="Previous month">‹</button><button type="button" id="next-month" aria-label="Next month">›</button><button type="button" id="play-time">▶ Play</button><button type="button" id="jump-today">June 1944</button></div></div>
 <input type="range" id="date-slider" min="0" max="106" step="1" value="95" aria-label="Historical month from July 1936 through May 1945">
 <div class="ticks"><span>1936</span><span>1939</span><span>1941</span><span>1943</span><span>1945</span></div>
-<div class="toolbar"><label>Campaign region <select id="theater-select"><option value="all">All European theatres</option><option value="west">Western Front &amp; Spain</option><option value="reich">Defence of the Reich</option><option value="east">Eastern Front</option><option value="med">Italy &amp; Mediterranean</option><option value="north">Northern Europe</option></select></label><label>Find a campaign <input type="search" id="campaign-search" placeholder="Battle, country, mission, air force…" autocomplete="off"></label><label class="tick-control"><input type="checkbox" id="all-campaigns" checked>Show campaigns from all dates</label><button type="button" class="subtle" id="fit-map">Fit map</button><span id="coverage-label" class="coverage-label">All campaigns · selected month highlighted</span></div>
+<div class="toolbar"><label>Campaign region <select id="theater-select"><option value="all">All theatres</option><option value="west">Western Front &amp; Spain</option><option value="reich">Defence of the Reich</option><option value="east">Eastern Front</option><option value="med">Mediterranean &amp; North Africa</option><option value="atlantic">North Atlantic</option><option value="north">Northern Europe</option></select></label><label>Find a campaign <input type="search" id="campaign-search" placeholder="Battle, country, mission, air force…" autocomplete="off"></label><label class="tick-control"><input type="checkbox" id="all-campaigns" checked>Show campaigns from all dates</label><button type="button" class="subtle" id="fit-map">Fit map</button><span id="coverage-label" class="coverage-label">All campaigns · selected month highlighted</span></div>
 </section>
 <section id="normandy-operations" aria-label="Campaign operation explorer" hidden><div class="operation-intro"><div><span class="eyebrow" id="operation-intro-label">NORMANDY · 1944</span><h2 id="operation-intro-title">Explore the Normandy operations</h2><p>Choose an operation to see the dated map, forces and evidence.</p></div></div><div id="operation-choices" role="group" aria-label="Choose an operation"></div></section>
 <section class="mainstage" aria-label="Campaign geography and battle dossier">

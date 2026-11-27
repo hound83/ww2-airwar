@@ -8,7 +8,8 @@
     ["Eastern Front", {barbarossa:"Barbarossa", stalingrad:"Stalingrad", kursk:"Kursk", bagration:"Bagration", berlin:"Berlin"}],
     ["Western air offensive and invasion", {reichdefense:"Defence of the Reich", schweinfurt:"Schweinfurt", bigweek:"Big Week", normandy:"Normandy", marketgarden:"Market Garden", bodenplatte:"Bodenplatte"}]
   ];
-  const names = Object.assign({}, ...regions.map(([,names]) => names));
+  const additions = window.AtlasExpansionIndex;
+  const names = Object.assign({}, ...regions.map(([,names]) => names), additions.names);
   const metrics = {lists:"Dated rosters", named:"Named memberships", located:"Members with a reported place", mapped:"Members with a mapped station", held:"Members with aircraft on strength recorded", ready:"Members with serviceability recorded", activity:"Members with a specific activity recorded"};
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? "").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -17,9 +18,21 @@
   const roster = (id,pop) => "./forces.html?campaign="+encodeURIComponent(id)+(pop?"&population="+encodeURIComponent(pop):"");
   const dossier = id => "./grand-air-war-v80.html?campaign="+encodeURIComponent(id)+"#campaign-dossier";
   const table = (caption,headers,rows) => '<div class="table-wrap"><table><caption>'+esc(caption)+'</caption><thead><tr>'+headers.map(h=>'<th scope="col">'+esc(h)+'</th>').join("")+'</tr></thead><tbody>'+rows.join("")+'</tbody></table></div>';
+  function expandedFigures(e) {
+    if (!e.figures.length) return "";
+    const rows = e.figures.map(f => {
+      const s = window.AtlasExpansion.sources[f.source];
+      return "<tr><th scope='row'>"+esc(f.label)+"</th><td>"+esc(f.value.toLocaleString("en-US"))+" "+esc(f.unit)+"</td><td>"+esc(f.period)+" · "+esc(f.scope)+"</td><td>"+esc(f.type)+" · "+link(s.url,s.name)+"</td></tr>";
+    });
+    return table("Figures for this episode",["Observation","Value","Period and scope","Evidence"],rows);
+  }
+  function expansionOverview() {
+    const rows=Object.values(additions.byId).map(c=>"<tr><th scope='row'>"+link(study(c.id),c.name)+"</th><td>"+c.episodes.length+"</td><td>"+c.episodes.reduce((n,e)=>n+e.figures.length,0)+"</td></tr>");
+    return '<section class="study-intro"><h2>Campaigns added in v12.0</h2>'+link("./campaign-expansion.html","Read the campaign studies and reporting tables")+table("Evidence in the expanded catalogue",["Campaign","Dated episodes","Sourced figures"],rows)+"</section>";
+  }
   function overview() {
     const intro = '<section class="study-intro"><h2>Coverage by campaign and side</h2><p>The two counts show named unit memberships in v10.1 and v10.2. A formation can appear on more than one date. Zero means the roster has no named entry for that side.</p></section>';
-    return intro + regions.map(([title,group])=>{
+    return expansionOverview() + intro + regions.map(([title,group])=>{
       const rows = [];
       for (const [id,label] of Object.entries(group)) {
         const c = campaigns[id];
@@ -36,7 +49,7 @@
       const p=c.populations.find(p=>p.id===pid);
       return link(roster(id,pid),p.label);
     });
-    return '<article class="mission" id="mission-'+(index+1)+'"><p class="kicker">'+esc(labelDate(k.date))+'</p><h3>'+esc(k.title)+'</h3><p>'+esc(k.mission)+'</p><h4>Recorded outcome</h4><p>'+esc(k.effect)+'</p><p class="limit"><strong>Evidence limit</strong> '+esc(k.limit)+'</p><details class="witnesses"><summary>Sources ('+k.sources.length+')</summary><ul>'+refs+'</ul></details>'+
+    return '<article class="mission" id="mission-'+(index+1)+'"><p class="kicker">'+esc(labelDate(k.date))+'</p><h3>'+esc(k.title)+'</h3><p>'+esc(k.mission)+'</p><h4>Recorded outcome</h4><p>'+esc(k.effect)+'</p>'+(additions.byId[id]?expandedFigures(additions.byId[id].episodes[index]):"")+'<p class="limit"><strong>Evidence limit</strong> '+esc(k.limit)+'</p><details class="witnesses"><summary>Sources ('+k.sources.length+')</summary><ul>'+refs+'</ul></details>'+
       (related.length?'<nav class="study-nav" aria-label="Dated rosters for this case">'+related.join(" ")+'</nav>':'')+'</article>';
   }
   function allocations(c) {
@@ -45,6 +58,9 @@
     return '<section class="region">'+table("Allied allocations at Dieppe",["Role","Allocated","Identified","Evidence"],rows)+'</section>';
   }
   function campaignView(c,id) {
+    if (additions.byId[id]) {
+      return '<section class="study-intro"><h2>Dated episodes and evidence</h2>'+c.cases.map((k,i)=>showCase(k,c,id,i)).join("")+'</section><p>'+link("./campaign-expansion.html#"+id,"Campaign overview, sources and downloads")+"</p>";
+    }
     const sides = Object.keys(c.coverage);
     const rows = Object.entries(metrics).map(([field,label])=>{
       const values = sides.map(side=>{
@@ -63,7 +79,7 @@
       '<section class="region"><h2>Evidence by force</h2><div class="force-accounts">'+accounts.join("")+'</div></section>';
   }
   const id = new URLSearchParams(location.search).get("campaign");
-  for (const [region,group] of regions) {
+  for (const [region,group] of [...regions,["Added in v12.0", additions.names]]) {
     const optgroup = document.createElement("optgroup"); optgroup.label = region;
     for (const [value,name] of Object.entries(group)) optgroup.append(new Option(name,value));
     $("campaign-choice").append(optgroup);

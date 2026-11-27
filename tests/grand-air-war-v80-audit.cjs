@@ -335,13 +335,13 @@ assert.ok(el("moment-detail").innerHTML.includes("muzeumlotnictwa.pl"),"specific
 assert.equal(A.selectedChapter(),"border","selecting a dated event should restore its parent phase");
 assert.equal(el("date-display").textContent,"September 1939");
 const before=A.selected();A.setMonth("1944-06");assert.equal(A.selected(),before,"time scrub changed dossier without consent");
-const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-55,-5],[105,-5],[105,90],[-55,90],[-55,-5]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
+const raw={type:"Feature",geometry:{type:"MultiPolygon",coordinates:[[[[-85,-5],[0,-5],[105,-5],[105,90],[0,90],[-85,90],[-85,-5]]],[[[-10,40],[0,40],[0,50],[-10,50],[-10,40]]]]}};
 const cropped=A.clipEuropeanLand(raw);
 assert.ok(cropped.geometry.coordinates.length);
 const collection=A.clipEuropeanLand({type:"FeatureCollection",features:[raw]});
 assert.equal(collection.geometry.coordinates.length,cropped.geometry.coordinates.length,"world-atlas GeometryCollection conversion");
-for(const poly of cropped.geometry.coordinates)for(const ring of poly)for(const [lon,lat] of ring){assert.ok(lon>=-50&&lon<=100&&lat>=0&&lat<=83,"world-land edge extends outside Europe chart");}
-assert.ok(cropped.geometry.coordinates.some(poly=>poly.some(r=>r.some(pt=>pt[0]===-50))),"global-ring boundary was not clipped");
+for(const poly of cropped.geometry.coordinates)for(const ring of poly)for(const [lon,lat] of ring){assert.ok(lon>=-80&&lon<=100&&lat>=0&&lat<=83,"world-land edge extends outside Europe chart");}
+assert.ok(cropped.geometry.coordinates.some(poly=>poly.some(r=>r.some(pt=>pt[0]===-80))),"global-ring boundary was not clipped");
 const seam={type:"Feature",geometry:{type:"Polygon",coordinates:[[
  [-180,65],[179.8,65],[20,40],[-10,40],[20,50],[100,60],[179.8,69],[-180,69],[-180,65]
 ]]}};

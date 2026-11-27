@@ -1,0 +1,58 @@
+[
+  {
+    "year": 1938,
+    "crudeProduction": 132743,
+    "refineryOutput": 127973,
+    "domesticUse": 34397,
+    "exports": 92661
+  },
+  {
+    "year": 1939,
+    "crudeProduction": 125313,
+    "refineryOutput": 119938,
+    "domesticUse": 36678,
+    "exports": 85849
+  },
+  {
+    "year": 1940,
+    "crudeProduction": 116359,
+    "refineryOutput": 112131,
+    "domesticUse": 38156,
+    "exports": 71578
+  },
+  {
+    "year": 1941,
+    "crudeProduction": 111998,
+    "refineryOutput": 107979,
+    "domesticUse": 37212,
+    "exports": 83671
+  },
+  {
+    "year": 1942,
+    "crudeProduction": 113766,
+    "refineryOutput": 107609,
+    "domesticUse": 43110,
+    "exports": 69329
+  },
+  {
+    "year": 1943,
+    "crudeProduction": 105753,
+    "refineryOutput": 100747,
+    "domesticUse": 41240,
+    "exports": 64726
+  },
+  {
+    "year": 1944,
+    "crudeProduction": 71560,
+    "refineryOutput": null,
+    "domesticUse": null,
+    "exports": null
+  },
+  {
+    "year": 1945,
+    "crudeProduction": 95266,
+    "refineryOutput": null,
+    "domesticUse": null,
+    "exports": null
+  }
+]
